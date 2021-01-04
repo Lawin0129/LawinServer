@@ -1,0 +1,18 @@
+{
+  "created": "2020-01-01T17:22:28.023Z",
+  "updated": "2020-07-11T19:06:31.519Z",
+  "rvn": 4,
+  "wipeNumber": 1,
+  "accountId": "LawinServer",
+  "profileId": "common_public",
+  "version": "no_version",
+  "items": {},
+  "stats": {
+    "attributes": {
+      "banner_color": "DefaultColor8",
+      "homebase_name": "LawinServer",
+      "banner_icon": "BRSeason02Salt"
+    }
+  },
+  "commandRevision": 2
+}

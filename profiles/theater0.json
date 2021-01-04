@@ -1,0 +1,121 @@
+{
+                "_id": "lawinserver",
+                "created": "2018-04-25T18:39:56.467Z",
+                "updated": "2020-02-05T22:45:21.455Z",
+                "rvn": 30689,
+                "wipeNumber": 9,
+                "accountId": "lawinserver",
+                "profileId": "theater0",
+                "version": "remove_hero_ability_weapons_from_world_items_mar_2019",
+                "items": {
+                    "7bccd279-9575-45c7-8c1e-bf99cb49a7b3": {
+                        "templateId": "Weapon:wid_assault_auto_halloween_sr_crystal_t05",
+                        "attributes": {
+                            "clipSizeScale": 0,
+                            "loadedAmmo": 70,
+                            "inventory_overflow_date": false,
+                            "level": 50,
+                            "alterationDefinitions": [
+                                "Alteration:aid_ele_water_t05",
+                                "Alteration:aid_att_damage_t05",
+                                "Alteration:aid_conditional_afflicted_dmgbonus_t05",
+                                "Alteration:aid_att_critdamage_t05",
+                                "Alteration:aid_att_magazinesize_t05",
+                                "Alteration:aid_g_affliction_v2"
+                            ],
+                            "baseClipSize": 40,
+                            "durability": 300,
+                            "itemSource": ""
+                        },
+                        "quantity": 1
+                    }
+                },
+                "stats": {
+                    "attributes": {
+                        "player_loadout": {
+                            "bPlayerIsNew": false,
+                            "pinnedSchematicInstances": [],
+                            "primaryQuickBarRecord": {
+                                "slots": [
+                                    {
+                                        "items": []
+                                    },
+                                    {
+                                        "items": [
+                                            "7BCCD279957545C78C1EBF99CB49A7B3"
+                                        ]
+                                    },
+                                    {
+                                        "items": [
+                                            ""
+                                        ]
+                                    },
+                                    {
+                                        "items": [
+                                            ""
+                                        ]
+                                    },
+                                    {
+                                        "items": []
+                                    },
+                                    {
+                                        "items": []
+                                    },
+                                    {
+                                        "items": []
+                                    },
+                                    {
+                                        "items": []
+                                    },
+                                    {
+                                        "items": []
+                                    }
+                                ]
+                            },
+                            "secondaryQuickBarRecord": {
+                                "slots": [
+                                    {
+                                        "items": [
+                                            ""
+                                        ]
+                                    },
+                                    {
+                                        "items": [
+                                            ""
+                                        ]
+                                    },
+                                    {
+                                        "items": [
+                                            ""
+                                        ]
+                                    },
+                                    {
+                                        "items": [
+                                            ""
+                                        ]
+                                    },
+                                    {
+                                        "items": [
+                                            ""
+                                        ]
+                                    },
+                                    {
+                                        "items": []
+                                    },
+                                    {
+                                        "items": []
+                                    }
+                                ]
+                            },
+                            "zonesCompleted": 533
+                        },
+                        "theater_unique_id": "",
+                        "past_lifetime_zones_completed": 0,
+                        "last_event_instance_key": "",
+                        "last_zones_completed": 0,
+                        "inventory_limit_bonus": 0
+                    }
+                },
+                "profileLockExpiration": "0001-01-01T00:00:00.000Z",
+                "commandRevision": 10116
+            }

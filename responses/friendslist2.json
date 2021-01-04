@@ -1,0 +1,79 @@
+{
+  "friends": [
+    {
+      "accountId": "SubtoLawin_LOL123",
+      "groups": [],
+      "mutual": 0,
+      "alias": "",
+      "note": "",
+      "favorite": false,
+      "created": "2000-04-08T12:32:42.069Z"
+    },
+    {
+      "accountId": "Followlawin_LOL123",
+      "groups": [],
+      "mutual": 0,
+      "alias": "",
+      "note": "",
+      "favorite": false,
+      "created": "2000-04-08T12:32:42.069Z"
+    },
+    {
+      "accountId": "NINJALOL_1238",
+      "groups": [],
+      "mutual": 0,
+      "alias": "",
+      "note": "",
+      "favorite": false,
+      "created": "2000-04-08T12:32:42.069Z"
+    },
+    {
+      "accountId": "TFUELOL_1238",
+      "groups": [],
+      "mutual": 0,
+      "alias": "",
+      "note": "",
+      "favorite": false,
+      "created": "2000-04-08T12:32:42.069Z"
+    },
+    {
+      "accountId": "ALIALOL_1238",
+      "groups": [],
+      "mutual": 0,
+      "alias": "",
+      "note": "",
+      "favorite": false,
+      "created": "2000-04-08T12:32:42.069Z"
+    },
+    {
+      "accountId": "DAKOTAZLOL_1238",
+      "groups": [],
+      "mutual": 0,
+      "alias": "",
+      "note": "",
+      "favorite": false,
+      "created": "2000-04-08T12:32:42.069Z"
+    },
+    {
+      "accountId": "SYPHERPKLOL_1238",
+      "groups": [],
+      "mutual": 0,
+      "alias": "",
+      "note": "",
+      "favorite": false,
+      "created": "2000-04-08T12:32:42.069Z"
+    }
+  ],
+  "incoming": [],
+  "outgoing": [
+    {
+      "accountId": "NICKEH30LOLL_2897669",
+      "favorite": false
+    }
+  ],
+  "suggested": [],
+  "blocklist" : [],
+  "settings": {
+    "acceptInvites": "public"
+  }
+}
