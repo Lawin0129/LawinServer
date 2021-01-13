@@ -888,6 +888,12 @@ express.post("/datarouter/api/v1/public/data", async (req, res) => {
 })
 
 express.post("/account/api/oauth/token", async (req, res) => {
+	var DisplayName = req.body.username;
+	if (req.body.username.includes("@"))
+	{
+		if (req.body.username) accountId = req.body.username.split("@")[0]
+		else if (req.body.email) accountId = req.body.email.split("@")[0]
+	}
 	res.json(
 			{
 				"access_token": "lawinstokenlol",
@@ -897,13 +903,13 @@ express.post("/account/api/oauth/token", async (req, res) => {
 				"refresh_token": "lawinstokenlol",
 				"refresh_expires": 86400,
 				"refresh_expires_at": "9999-12-02T01:12:01.100Z",
-				"account_id": req.body.username || "Invalid",
+				"account_id": DisplayName || "LawinServer",
 				"client_id": "lawinsclientidlol",
 				"internal_client": true,
 				"client_service": "fortnite",
-				"displayName": req.body.username || "Invalid",
+				"displayName": DisplayName || "LawinServer",
 				"app": "fortnite",
-				"in_app_id": req.body.username || "Invalid",
+				"in_app_id": req.body.username || "LawinServer",
 				"device_id": "lawinsdeviceidlol"
 			}
 		)
