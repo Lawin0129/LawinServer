@@ -1439,14 +1439,6 @@ express.post("/account/api/oauth/token", async (req, res) => {
 		if (req.body.slotName == "Character")
 		{
 			profile.stats.attributes.favorite_character = req.body.itemToSlot || "";
-			console.log(`Character changed to: ${req.body.itemToSlot || ""}`);
-			if (req.body.variantUpdates)
-			{
-				if (req.body.itemToSlot != "" && req.body.itemToSlot.toLowerCase() != "athenacharacter:cid_random")
-				{
-					profile.items[req.body.itemToSlot].attributes.variants = req.body.variantUpdates || [];
-				}
-			}
 			profile.rvn += 1;
 			profile.commandRevision += 1;
 			fs.writeFile(`./profiles/${req.query.profileId || "athena"}.json`, JSON.stringify(profile, null, 2), function(err) {
@@ -1459,14 +1451,6 @@ express.post("/account/api/oauth/token", async (req, res) => {
 		if (req.body.slotName == "Backpack")
 		{
 			profile.stats.attributes.favorite_backpack = req.body.itemToSlot || "";
-			console.log(`Backpack changed to: ${req.body.itemToSlot || ""}`);
-			if (req.body.variantUpdates)
-			{
-				if (req.body.itemToSlot != "" && req.body.itemToSlot.toLowerCase() != "athenabackpack:bid_random")
-				{
-					profile.items[req.body.itemToSlot].attributes.variants = req.body.variantUpdates || [];
-				}
-			}
 			profile.rvn += 1;
 			profile.commandRevision += 1;
 			fs.writeFile(`./profiles/${req.query.profileId || "athena"}.json`, JSON.stringify(profile, null, 2), function(err) {
@@ -1479,14 +1463,6 @@ express.post("/account/api/oauth/token", async (req, res) => {
 		if (req.body.slotName == "Pickaxe")
 		{
 			profile.stats.attributes.favorite_pickaxe = req.body.itemToSlot || "";
-			console.log(`Pickaxe changed to: ${req.body.itemToSlot || ""}`);
-			if (req.body.variantUpdates)
-			{
-				if (req.body.itemToSlot != "" && req.body.itemToSlot.toLowerCase() != "athenapickaxe:pickaxe_random")
-				{
-					profile.items[req.body.itemToSlot].attributes.variants = req.body.variantUpdates || [];
-				}
-			}
 			profile.rvn += 1;
 			profile.commandRevision += 1;
 			fs.writeFile(`./profiles/${req.query.profileId || "athena"}.json`, JSON.stringify(profile, null, 2), function(err) {
@@ -1499,14 +1475,6 @@ express.post("/account/api/oauth/token", async (req, res) => {
 		if (req.body.slotName == "Glider")
 		{
 			profile.stats.attributes.favorite_glider = req.body.itemToSlot || "";
-			console.log(`Glider changed to: ${req.body.itemToSlot || ""}`);
-			if (req.body.variantUpdates)
-			{
-				if (req.body.itemToSlot != "" && req.body.itemToSlot.toLowerCase() != "athenaglider:glider_random")
-				{
-					profile.items[req.body.itemToSlot].attributes.variants = req.body.variantUpdates || [];
-				}
-			}
 			profile.rvn += 1;
 			profile.commandRevision += 1;
 			fs.writeFile(`./profiles/${req.query.profileId || "athena"}.json`, JSON.stringify(profile, null, 2), function(err) {
@@ -1519,14 +1487,6 @@ express.post("/account/api/oauth/token", async (req, res) => {
 		if (req.body.slotName == "SkyDiveContrail")
 		{
 			profile.stats.attributes.favorite_skydivecontrail = req.body.itemToSlot || "";
-			console.log(`SkyDiveContrail changed to: ${req.body.itemToSlot || ""}`);
-			if (req.body.variantUpdates)
-			{
-				if (req.body.itemToSlot != "" && req.body.itemToSlot.toLowerCase() != "athenaskydivecontrail:trails_random")
-				{
-					profile.items[req.body.itemToSlot].attributes.variants = req.body.variantUpdates || [];
-				}
-			}
 			profile.rvn += 1;
 			profile.commandRevision += 1;
 			fs.writeFile(`./profiles/${req.query.profileId || "athena"}.json`, JSON.stringify(profile, null, 2), function(err) {
@@ -1539,14 +1499,6 @@ express.post("/account/api/oauth/token", async (req, res) => {
 		if (req.body.slotName == "MusicPack")
 		{
 			profile.stats.attributes.favorite_musicpack = req.body.itemToSlot || "";
-			console.log(`MusicPack changed to: ${req.body.itemToSlot || ""}`);
-			if (req.body.variantUpdates)
-			{
-				if (req.body.itemToSlot != "" && req.body.itemToSlot.toLowerCase() != "athenamusicpack:musicpack_random")
-				{
-					profile.items[req.body.itemToSlot].attributes.variants = req.body.variantUpdates || [];
-				}
-			}
 			profile.rvn += 1;
 			profile.commandRevision += 1;
 			fs.writeFile(`./profiles/${req.query.profileId || "athena"}.json`, JSON.stringify(profile, null, 2), function(err) {
@@ -1559,14 +1511,6 @@ express.post("/account/api/oauth/token", async (req, res) => {
 		if (req.body.slotName == "LoadingScreen")
 		{
 			profile.stats.attributes.favorite_loadingscreen = req.body.itemToSlot || "";
-			console.log(`LoadingScreen changed to: ${req.body.itemToSlot || ""}`);
-			if (req.body.variantUpdates)
-			{
-				if (req.body.itemToSlot != "" && req.body.itemToSlot.toLowerCase() != "athenaloadingscreen:lsid_random")
-				{
-					profile.items[req.body.itemToSlot].attributes.variants = req.body.variantUpdates || [];
-				}
-			}
 			profile.rvn += 1;
 			profile.commandRevision += 1;
 			fs.writeFile(`./profiles/${req.query.profileId || "athena"}.json`, JSON.stringify(profile, null, 2), function(err) {
@@ -1605,14 +1549,6 @@ express.post("/account/api/oauth/token", async (req, res) => {
 				profile.stats.attributes.favorite_dance[5] = req.body.itemToSlot || "";
 			}
 
-			console.log(`Dance slot ${indexwithinslot} changed to: ${req.body.itemToSlot || ""}`);
-			if (req.body.variantUpdates)
-			{
-				if (req.body.itemToSlot != "")
-				{
-					profile.items[req.body.itemToSlot].attributes.variants = req.body.variantUpdates || [];
-				}
-			}
 			profile.rvn += 1;
 			profile.commandRevision += 1;
 			fs.writeFile(`./profiles/${req.query.profileId || "athena"}.json`, JSON.stringify(profile, null, 2), function(err) {
@@ -1665,19 +1601,6 @@ express.post("/account/api/oauth/token", async (req, res) => {
 				profile.stats.attributes.favorite_itemwraps[6] = req.body.itemToSlot || "";
 			}
 
-			var poggers = `ItemWrap slot ${indexwithinslot} changed to: ${req.body.itemToSlot || ""}`
-			if (indexwithinslot == -1)
-			{
-				poggers = `All ItemWrap slots changed to: ${req.body.itemToSlot || ""}`;
-			}
-			console.log(poggers);
-			if (req.body.variantUpdates)
-			{
-				if (req.body.itemToSlot != "" && req.body.itemToSlot.toLowerCase() != "athenaitemwrap:wrap_random")
-				{
-					profile.items[req.body.itemToSlot].attributes.variants = req.body.variantUpdates || [];
-				}
-			}
 			profile.rvn += 1;
 			profile.commandRevision += 1;
 			fs.writeFile(`./profiles/${req.query.profileId || "athena"}.json`, JSON.stringify(profile, null, 2), function(err) {
@@ -1687,6 +1610,20 @@ express.post("/account/api/oauth/token", async (req, res) => {
 				};
 			  });
 		}
+		
+		const ReturnVariantsAsString = JSON.stringify(req.body.variantUpdates || [])
+		if (req.body.variantUpdates && ReturnVariantsAsString.includes("active"))
+		{
+				if (JSON.stringify(profile.items[req.body.itemToSlot].attributes.variants) == "[]")
+				{
+					profile.items[req.body.itemToSlot].attributes.variants = req.body.variantUpdates || [];
+				}
+				for(var i = 0; i < profile.items[req.body.itemToSlot].attributes.variants.length; i++) 
+				{
+					profile.items[req.body.itemToSlot].attributes.variants[i].active = req.body.variantUpdates[i].active || "";
+				}
+		}
+		
 		res.json(
 			{
 				"profileRevision": profile.rvn || 1,
@@ -1793,13 +1730,6 @@ express.post("/account/api/oauth/token", async (req, res) => {
 		if (req.body.category == "Character")
 		{
 			profile.items[req.body.lockerItem].attributes.locker_slots_data.slots.Character.items = [req.body.itemToSlot || ""];
-			if (req.body.variantUpdates && profile.profileId != "campaign")
-			{
-				if (req.body.itemToSlot != "" && req.body.itemToSlot.toLowerCase() != "athenacharacter:cid_random")
-				{
-					profile.items[req.body.itemToSlot].attributes.variants = req.body.variantUpdates || [];
-				}
-			}
 			profile.rvn += 1;
 			profile.commandRevision += 1;
 			fs.writeFile(`./profiles/${req.query.profileId || "athena"}.json`, JSON.stringify(profile, null, 2), function(err) {
@@ -1812,13 +1742,6 @@ express.post("/account/api/oauth/token", async (req, res) => {
 		if (req.body.category == "Backpack")
 		{
 			profile.items[req.body.lockerItem].attributes.locker_slots_data.slots.Backpack.items = [req.body.itemToSlot || ""];
-			if (req.body.variantUpdates && profile.profileId != "campaign")
-			{
-				if (req.body.itemToSlot != "" && req.body.itemToSlot.toLowerCase() != "athenabackpack:bid_random")
-				{
-					profile.items[req.body.itemToSlot].attributes.variants = req.body.variantUpdates || [];
-				}
-			}
 			profile.rvn += 1;
 			profile.commandRevision += 1;
 			fs.writeFile(`./profiles/${req.query.profileId || "athena"}.json`, JSON.stringify(profile, null, 2), function(err) {
@@ -1831,13 +1754,6 @@ express.post("/account/api/oauth/token", async (req, res) => {
 		if (req.body.category == "Pickaxe")
 		{
 			profile.items[req.body.lockerItem].attributes.locker_slots_data.slots.Pickaxe.items = [req.body.itemToSlot || ""];
-			if (req.body.variantUpdates && profile.profileId != "campaign")
-			{
-				if (req.body.itemToSlot != "" && req.body.itemToSlot.toLowerCase() != "athenapickaxe:pickaxe_random")
-				{
-					profile.items[req.body.itemToSlot].attributes.variants = req.body.variantUpdates || [];
-				}
-			}
 			profile.rvn += 1;
 			profile.commandRevision += 1;
 			fs.writeFile(`./profiles/${req.query.profileId || "athena"}.json`, JSON.stringify(profile, null, 2), function(err) {
@@ -1850,13 +1766,6 @@ express.post("/account/api/oauth/token", async (req, res) => {
 		if (req.body.category == "Glider")
 		{
 			profile.items[req.body.lockerItem].attributes.locker_slots_data.slots.Glider.items = [req.body.itemToSlot || ""];
-			if (req.body.variantUpdates && profile.profileId != "campaign")
-			{
-				if (req.body.itemToSlot != "" && req.body.itemToSlot.toLowerCase() != "athenaglider:glider_random")
-				{
-					profile.items[req.body.itemToSlot].attributes.variants = req.body.variantUpdates || [];
-				}
-			}
 			profile.rvn += 1;
 			profile.commandRevision += 1;
 			fs.writeFile(`./profiles/${req.query.profileId || "athena"}.json`, JSON.stringify(profile, null, 2), function(err) {
@@ -1869,13 +1778,6 @@ express.post("/account/api/oauth/token", async (req, res) => {
 		if (req.body.category == "SkyDiveContrail")
 		{
 			profile.items[req.body.lockerItem].attributes.locker_slots_data.slots.SkyDiveContrail.items = [req.body.itemToSlot || ""];
-			if (req.body.variantUpdates && profile.profileId != "campaign")
-			{
-				if (req.body.itemToSlot != "" && req.body.itemToSlot.toLowerCase() != "athenaskydivecontrail:trails_random")
-				{
-					profile.items[req.body.itemToSlot].attributes.variants = req.body.variantUpdates || [];
-				}
-			}
 			profile.rvn += 1;
 			profile.commandRevision += 1;
 			fs.writeFile(`./profiles/${req.query.profileId || "athena"}.json`, JSON.stringify(profile, null, 2), function(err) {
@@ -1888,13 +1790,6 @@ express.post("/account/api/oauth/token", async (req, res) => {
 		if (req.body.category == "MusicPack")
 		{
 			profile.items[req.body.lockerItem].attributes.locker_slots_data.slots.MusicPack.items = [req.body.itemToSlot || ""];
-			if (req.body.variantUpdates && profile.profileId != "campaign")
-			{
-				if (req.body.itemToSlot != "" && req.body.itemToSlot.toLowerCase() != "athenamusicpack:musicpack_random")
-				{
-					profile.items[req.body.itemToSlot].attributes.variants = req.body.variantUpdates || [];
-				}
-			}
 			profile.rvn += 1;
 			profile.commandRevision += 1;
 			fs.writeFile(`./profiles/${req.query.profileId || "athena"}.json`, JSON.stringify(profile, null, 2), function(err) {
@@ -1907,13 +1802,6 @@ express.post("/account/api/oauth/token", async (req, res) => {
 		if (req.body.category == "LoadingScreen")
 		{
 			profile.items[req.body.lockerItem].attributes.locker_slots_data.slots.LoadingScreen.items = [req.body.itemToSlot || ""];
-			if (req.body.variantUpdates && profile.profileId != "campaign")
-			{
-				if (req.body.itemToSlot != "" && req.body.itemToSlot.toLowerCase() != "athenaloadingscreen:lsid_random")
-				{
-					profile.items[req.body.itemToSlot].attributes.variants = req.body.variantUpdates || [];
-				}
-			}
 			profile.rvn += 1;
 			profile.commandRevision += 1;
 			fs.writeFile(`./profiles/${req.query.profileId || "athena"}.json`, JSON.stringify(profile, null, 2), function(err) {
@@ -1950,14 +1838,6 @@ express.post("/account/api/oauth/token", async (req, res) => {
 			if (indexwithinslot == 5)
 			{
 				profile.items[req.body.lockerItem].attributes.locker_slots_data.slots.Dance.items[5] = req.body.itemToSlot || "";
-			}
-
-			if (req.body.variantUpdates && profile.profileId != "campaign")
-			{
-				if (req.body.itemToSlot != "")
-				{
-					profile.items[req.body.itemToSlot].attributes.variants = req.body.variantUpdates || [];
-				}
 			}
 
 			profile.rvn += 1;
@@ -2012,14 +1892,6 @@ express.post("/account/api/oauth/token", async (req, res) => {
 				profile.items[req.body.lockerItem].attributes.locker_slots_data.slots.ItemWrap.items[6] = req.body.itemToSlot || "";
 			}
 
-			if (req.body.variantUpdates && profile.profileId != "campaign")
-			{
-				if (req.body.itemToSlot != "" && req.body.itemToSlot.toLowerCase() != "athenaitemwrap:wrap_random")
-				{
-					profile.items[req.body.itemToSlot].attributes.variants = req.body.variantUpdates || [];
-				}
-			}
-
 			profile.rvn += 1;
 			profile.commandRevision += 1;
 			fs.writeFile(`./profiles/${req.query.profileId || "athena"}.json`, JSON.stringify(profile, null, 2), function(err) {
@@ -2029,6 +1901,20 @@ express.post("/account/api/oauth/token", async (req, res) => {
 				};
 			  });
 		}
+		
+		const ReturnVariantsAsString = JSON.stringify(req.body.variantUpdates || [])
+		if (req.body.variantUpdates && ReturnVariantsAsString.includes("active") && profile.profileId != "campaign")
+		{
+				if (JSON.stringify(profile.items[req.body.itemToSlot].attributes.variants) == "[]")
+				{
+					profile.items[req.body.itemToSlot].attributes.variants = req.body.variantUpdates || [];
+				}
+				for(var i = 0; i < profile.items[req.body.itemToSlot].attributes.variants.length; i++) 
+				{
+					profile.items[req.body.itemToSlot].attributes.variants[i].active = req.body.variantUpdates[i].active || "";
+				}
+		}
+		
 		res.json(
 			{
 				"profileRevision": profile.rvn || 1,
