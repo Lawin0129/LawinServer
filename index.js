@@ -1620,7 +1620,14 @@ express.post("/account/api/oauth/token", async (req, res) => {
 				}
 				for(var i = 0; i < profile.items[req.body.itemToSlot].attributes.variants.length; i++) 
 				{
-					profile.items[req.body.itemToSlot].attributes.variants[i].active = req.body.variantUpdates[i].active || "";
+					try
+					{
+						profile.items[req.body.itemToSlot].attributes.variants[i].active = req.body.variantUpdates[i].active || "";
+					}
+					catch(err)
+					{
+						profile.items[req.body.itemToSlot].attributes.variants[i].active = "";
+					}
 				}
 		}
 		
@@ -1911,7 +1918,14 @@ express.post("/account/api/oauth/token", async (req, res) => {
 				}
 				for(var i = 0; i < profile.items[req.body.itemToSlot].attributes.variants.length; i++) 
 				{
-					profile.items[req.body.itemToSlot].attributes.variants[i].active = req.body.variantUpdates[i].active || "";
+					try
+					{
+						profile.items[req.body.itemToSlot].attributes.variants[i].active = req.body.variantUpdates[i].active || "";
+					}
+					catch(err)
+					{
+						profile.items[req.body.itemToSlot].attributes.variants[i].active = "";
+					}
 				}
 		}
 		
