@@ -9,6 +9,21 @@ function CheckLobbyAndSeason(req, seasondata) {
         seasondata.season = 1;
         seasondata.lobby = "LobbySeason1";
     }
+    // patch 1.8.2
+    if (req.headers["user-agent"].includes("3741772")) {
+        seasondata.season = 1;
+        seasondata.lobby = "LobbySeason1";
+    }
+    // patch 1.9
+    if (req.headers["user-agent"].includes("3757339")) {
+        seasondata.season = 1;
+        seasondata.lobby = "LobbySeason1";
+    }
+    // patch 1.9.1
+    if (req.headers["user-agent"].includes("3775276")) {
+        seasondata.season = 1;
+        seasondata.lobby = "LobbySeason1";
+    }
     // patch 1.10
     if (req.headers["user-agent"].includes("3790078")) {
         seasondata.season = 1;
@@ -24,8 +39,18 @@ function CheckLobbyAndSeason(req, seasondata) {
         seasondata.season = 2;
         seasondata.lobby = "LobbyWinterDecor";
     }
+    // patch 2.2
+    if (req.headers["user-agent"].includes("3841827")) {
+        seasondata.season = 2;
+        seasondata.lobby = "LobbyWinterDecor";
+    }
     // patch 2.3.0
     if (req.headers["user-agent"].includes("3847564")) {
+        seasondata.season = 2;
+        seasondata.lobby = "LobbyWinterDecor";
+    }
+    // patch 2.4.0
+    if (req.headers["user-agent"].includes("3858292")) {
         seasondata.season = 2;
         seasondata.lobby = "LobbyWinterDecor";
     }
@@ -135,6 +160,11 @@ function CheckLobbyAndSeason(req, seasondata) {
         seasondata.lobby = "LobbySeason4";
     }
     // patch 4.4
+    if (req.headers["user-agent"].includes("4117433")) {
+        seasondata.season = 4;
+        seasondata.lobby = "LobbySeason4";
+    }
+    // patch 4.4 (2)
     if (req.headers["user-agent"].includes("4127312")) {
         seasondata.season = 4;
         seasondata.lobby = "LobbySeason4";
@@ -195,11 +225,16 @@ function CheckLobbyAndSeason(req, seasondata) {
         seasondata.lobby = "LobbySeason5";
     }
     // patch 5.30
-    if (req.headers["user-agent"].includes("4312945")) {
+    if (req.headers["user-agent"].includes("4305896")) {
         seasondata.season = 5;
         seasondata.lobby = "LobbySeason5";
     }
     // patch 5.30 (2)
+    if (req.headers["user-agent"].includes("4312945")) {
+        seasondata.season = 5;
+        seasondata.lobby = "LobbySeason5";
+    }
+    // patch 5.30 (3)
     if (req.headers["user-agent"].includes("4317672")) {
         seasondata.season = 5;
         seasondata.lobby = "LobbySeason5";
@@ -903,6 +938,226 @@ function CheckLobbyAndSeason(req, seasondata) {
     if (req.headers["user-agent"].includes("14937640")) {
         seasondata.season = 15;
         seasondata.lobby = "LobbySeason15";
+    }
+    // patch 15.10 (3)
+    if (req.headers["user-agent"].includes("15014719")) {
+        seasondata.season = 15;
+        seasondata.lobby = "LobbySeason15";
+    }
+    // patch 15.20
+    if (req.headers["user-agent"].includes("15033494")) {
+        seasondata.season = 15;
+        seasondata.lobby = "LobbySeason15";
+    }
+    // patch 15.20 (2)
+    if (req.headers["user-agent"].includes("15070882")) {
+        seasondata.season = 15;
+        seasondata.lobby = "LobbySeason15";
+    }
+    // patch 15.21
+    if (req.headers["user-agent"].includes("15083856")) {
+        seasondata.season = 15;
+        seasondata.lobby = "LobbySeason15";
+    }
+    // patch 15.30
+    if (req.headers["user-agent"].includes("15233634")) {
+        seasondata.season = 15;
+        seasondata.lobby = "LobbySeason15";
+    }
+    // patch 15.30 (2)
+    if (req.headers["user-agent"].includes("15316852")) {
+        seasondata.season = 15;
+        seasondata.lobby = "LobbySeason15";
+    }
+    // patch 15.30 (3)
+    if (req.headers["user-agent"].includes("15341163")) {
+        seasondata.season = 15;
+        seasondata.lobby = "LobbySeason15";
+    }
+    // patch 15.40
+    if (req.headers["user-agent"].includes("15385160")) {
+        seasondata.season = 15;
+        seasondata.lobby = "LobbySeason15";
+    }
+    // patch 15.40 (2)
+    if (req.headers["user-agent"].includes("15419568")) {
+        seasondata.season = 15;
+        seasondata.lobby = "LobbySeason15";
+    }
+    // patch 15.40 (3)
+    if (req.headers["user-agent"].includes("15424013")) {
+        seasondata.season = 15;
+        seasondata.lobby = "LobbySeason15";
+    }
+    // patch 15.40 (4)
+    if (req.headers["user-agent"].includes("15496915")) {
+        seasondata.season = 15;
+        seasondata.lobby = "LobbySeason15";
+    }
+    // patch 15.50
+    if (req.headers["user-agent"].includes("15526472")) {
+        seasondata.season = 15;
+        seasondata.lobby = "LobbySeason15";
+    }
+    // patch 15.50 (2)
+    if (req.headers["user-agent"].includes("15570449")) {
+        seasondata.season = 15;
+        seasondata.lobby = "LobbySeason15";
+    }
+    // patch 16.00
+    if (req.headers["user-agent"].includes("15685441")) {
+        seasondata.season = 16;
+        seasondata.lobby = "LobbySeason16";
+    }
+    // patch 16.00 (2)
+    if (req.headers["user-agent"].includes("15713390")) {
+        seasondata.season = 16;
+        seasondata.lobby = "LobbySeason16";
+    }
+    // patch 16.00 (3)
+    if (req.headers["user-agent"].includes("15727376")) {
+        seasondata.season = 16;
+        seasondata.lobby = "LobbySeason16";
+    }
+    // patch 16.10
+    if (req.headers["user-agent"].includes("15851811")) {
+        seasondata.season = 16;
+        seasondata.lobby = "LobbySeason16";
+    }
+    // patch 16.10 (2)
+    if (req.headers["user-agent"].includes("15862581")) {
+        seasondata.season = 16;
+        seasondata.lobby = "LobbySeason16";
+    }
+    // patch 16.10 (3)
+    if (req.headers["user-agent"].includes("15883297")) {
+        seasondata.season = 16;
+        seasondata.lobby = "LobbySeason16";
+    }
+    // patch 16.10 (4)
+    if (req.headers["user-agent"].includes("15898731")) {
+        seasondata.season = 16;
+        seasondata.lobby = "LobbySeason16";
+    }
+    // patch 16.10 (5)
+    if (req.headers["user-agent"].includes("15913292")) {
+        seasondata.season = 16;
+        seasondata.lobby = "LobbySeason16";
+    }
+    // patch 16.20
+    if (req.headers["user-agent"].includes("15961073")) {
+        seasondata.season = 16;
+        seasondata.lobby = "LobbySeason16";
+    }
+    // patch 16.20 (2)
+    if (req.headers["user-agent"].includes("15987165")) {
+        seasondata.season = 16;
+        seasondata.lobby = "LobbySeason16";
+    }
+    // patch 16.20 (3)
+    if (req.headers["user-agent"].includes("15998392")) {
+        seasondata.season = 16;
+        seasondata.lobby = "LobbySeason16";
+    }
+    // patch 16.20 (4)
+    if (req.headers["user-agent"].includes("16042441")) {
+        seasondata.season = 16;
+        seasondata.lobby = "LobbySeason16";
+    }
+    // patch 16.30
+    if (req.headers["user-agent"].includes("16086208")) {
+        seasondata.season = 16;
+        seasondata.lobby = "LobbySeason16";
+    }
+    // patch 16.30 (2)
+    if (req.headers["user-agent"].includes("16163563")) {
+        seasondata.season = 16;
+        seasondata.lobby = "LobbySeason16";
+    }
+    // patch 16.40
+    if (req.headers["user-agent"].includes("16218553")) {
+        seasondata.season = 16;
+        seasondata.lobby = "LobbySeason16";
+    }
+    // patch 16.50
+    if (req.headers["user-agent"].includes("16432754")) {
+        seasondata.season = 16;
+        seasondata.lobby = "LobbySeason16";
+    }
+    // patch 16.50 (2)
+    if (req.headers["user-agent"].includes("16469788")) {
+        seasondata.season = 16;
+        seasondata.lobby = "LobbySeason16";
+    }
+    // patch 17.00
+    if (req.headers["user-agent"].includes("16555138")) {
+        seasondata.season = 17;
+        seasondata.lobby = "LobbySeason17";
+    }
+    // patch 17.00 (2)
+    if (req.headers["user-agent"].includes("16593740")) {
+        seasondata.season = 17;
+        seasondata.lobby = "LobbySeason17";
+    }
+    // patch 17.10
+    if (req.headers["user-agent"].includes("16701187")) {
+        seasondata.season = 17;
+        seasondata.lobby = "LobbySeason17";
+    }
+    // patch 17.10 (2)
+    if (req.headers["user-agent"].includes("16745144")) {
+        seasondata.season = 17;
+        seasondata.lobby = "LobbySeason17";
+    }
+    // patch 17.20
+    if (req.headers["user-agent"].includes("16868155")) {
+        seasondata.season = 17;
+        seasondata.lobby = "LobbySeason17";
+    }
+    // patch 17.21
+    if (req.headers["user-agent"].includes("16949556")) {
+        seasondata.season = 17;
+        seasondata.lobby = "LobbySeason17";
+    }
+    // patch 17.21 (2)
+    if (req.headers["user-agent"].includes("16967001")) {
+        seasondata.season = 17;
+        seasondata.lobby = "LobbySeason17";
+    }
+    // patch 17.30
+    if (req.headers["user-agent"].includes("17004569")) {
+        seasondata.season = 17;
+        seasondata.lobby = "LobbySeason17";
+    }
+    // patch 17.40
+    if (req.headers["user-agent"].includes("17162853")) {
+        seasondata.season = 17;
+        seasondata.lobby = "LobbySeason17";
+    }
+    // patch 17.40 (2)
+    if (req.headers["user-agent"].includes("17215766")) {
+        seasondata.season = 17;
+        seasondata.lobby = "LobbySeason17";
+    }
+    // patch 17.40 (3)
+    if (req.headers["user-agent"].includes("17269705")) {
+        seasondata.season = 17;
+        seasondata.lobby = "LobbySeason17";
+    }
+    // patch 17.50
+    if (req.headers["user-agent"].includes("17388565")) {
+        seasondata.season = 17;
+        seasondata.lobby = "LobbySeason17";
+    }
+    // patch 18.00
+    if (req.headers["user-agent"].includes("17519952")) {
+        seasondata.season = 18;
+        seasondata.lobby = "LobbySeason18";
+    }
+    // patch 18.10
+    if (req.headers["user-agent"].includes("17619277")) {
+        seasondata.season = 18;
+        seasondata.lobby = "LobbySeason18";
     }
 }
 
