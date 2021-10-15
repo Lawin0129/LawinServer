@@ -42,32 +42,32 @@ function CheckLobbyAndSeason(req, seasondata) {
     // patch 2.2
     if (req.headers["user-agent"].includes("3841827")) {
         seasondata.season = 2;
-        seasondata.lobby = "LobbySeason1";
+        seasondata.lobby = "LobbySeason2";
     }
     // patch 2.3.0
     if (req.headers["user-agent"].includes("3847564")) {
         seasondata.season = 2;
-        seasondata.lobby = "LobbySeason1";
+        seasondata.lobby = "LobbySeason2";
     }
     // patch 2.4.0
     if (req.headers["user-agent"].includes("3858292")) {
         seasondata.season = 2;
-        seasondata.lobby = "LobbySeason1";
+        seasondata.lobby = "LobbySeason2";
     }
     // patch 2.4.X
     if (req.headers["user-agent"].includes("3876086")) {
         seasondata.season = 2;
-        seasondata.lobby = "LobbySeason1";
+        seasondata.lobby = "LobbySeason2";
     }
     // patch 2.4.2
     if (req.headers["user-agent"].includes("3870737")) {
         seasondata.season = 2;
-        seasondata.lobby = "LobbySeason1";
+        seasondata.lobby = "LobbySeason2";
     }
     // patch 2.5
     if (req.headers["user-agent"].includes("3889387")) {
         seasondata.season = 2;
-        seasondata.lobby = "LobbySeason1";
+        seasondata.lobby = "LobbySeason2";
     }
     // patch 3.0
     if (req.headers["user-agent"].includes("3901517")) {
