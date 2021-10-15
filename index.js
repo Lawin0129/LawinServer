@@ -2,6 +2,7 @@ const Express = require("express");
 const express = Express();
 const fs = require("fs");
 const bodyparser = require("body-parser");
+const moment = require("moment");
 const worldstw = require("./responses/worldstw.json");
 const friendslist = require("./responses/friendslist.json");
 const friendslist2 = require("./responses/friendslist2.json");
@@ -853,6 +854,21 @@ express.get("/content/api/pages/fortnite-game", async (req, res) => {
 		contentpages.dynamicbackgrounds.backgrounds.backgrounds[0].stage = "season15"
 		contentpages.dynamicbackgrounds.backgrounds.backgrounds[1].stage = "season15"
 	}
+	if (seasondata.season == 16)
+	{
+		contentpages.dynamicbackgrounds.backgrounds.backgrounds[0].stage = "season16"
+		contentpages.dynamicbackgrounds.backgrounds.backgrounds[1].stage = "season16"
+	}
+	if (seasondata.season == 17)
+	{
+		contentpages.dynamicbackgrounds.backgrounds.backgrounds[0].stage = "season17"
+		contentpages.dynamicbackgrounds.backgrounds.backgrounds[1].stage = "season17"
+	}
+	if (seasondata.season == 18)
+	{
+		contentpages.dynamicbackgrounds.backgrounds.backgrounds[0].stage = "season18"
+		contentpages.dynamicbackgrounds.backgrounds.backgrounds[1].stage = "season18"
+	}
 	res.json(contentpages)
 	res.status(200);
 	res.end();
@@ -913,50 +929,66 @@ express.post("/account/api/oauth/token", async (req, res) => {
 
 		// MCP BELOW
 
+
+		// Set support a creator code
 		express.post("/fortnite/api/game/v2/profile/*/client/SetAffiliateName", async (req, res) => {
-			if (req.headers["user-agent"].includes("Mozilla")) {
-				return res
-				.status(405)
-				.json(
-					{
-						"errorCode":"errors.com.epicgames.common.method_not_allowed",
-						"errorMessage":"Sorry the resource you were trying to access cannot be accessed with the HTTP method you used.",
-						"numericErrorCode":1009,
-						"originatingService":"fortnite",
-						"intent":"prod-live"
-					})
-				}
-			const profile = require(`./profiles/${req.query.profileId || "common_core"}.json`);
-			if (profile.profileId == "athena") {
-				const seasonchecker = require("./seasonchecker.js");
-				const seasondata = require("./season.json");
-				seasonchecker(req, seasondata);
-				profile.stats.attributes.season_num = seasondata.season;
-			}
-			if (req.body.affiliateName.toLowerCase() == "lawin" && profile.profileId == "common_core")
+			const profile = require("./profiles/common_core.json");
+
+			// do not change any of these or you will end up breaking it
+			var ApplyProfileChanges = [];
+			var BaseRevision = profile.rvn || 1;
+			var QueryRevision = req.query.rvn || -1;
+			var StatChanged = false;
+
+			if (req.body.affiliateName.toLowerCase() == "lawin")
 			{
 				profile.stats.attributes.mtx_affiliate_set_time = new Date().toISOString();
-				profile.stats.attributes.mtx_affiliate = req.body.affiliateName || "";
+				profile.stats.attributes.mtx_affiliate = req.body.affiliateName;
+				StatChanged = true;
+			}
+
+			if (StatChanged == true)
+			{
 				profile.rvn += 1;
 				profile.commandRevision += 1;
-				fs.writeFile(`./profiles/${req.query.profileId || "common_core"}.json`, JSON.stringify(profile, null, 2), function(err) {
+
+				ApplyProfileChanges.push({
+					"changeType": "statModified",
+					"name": "mtx_affiliate_set_time",
+					"value": profile.stats.attributes.mtx_affiliate_set_time
+				})
+
+				ApplyProfileChanges.push({
+					"changeType": "statModified",
+					"name": "mtx_affiliate",
+					"value": profile.stats.attributes.mtx_affiliate
+				})
+
+				fs.writeFileSync("./profiles/common_core.json", JSON.stringify(profile, null, 2), function(err) {
 					if (err) 
 					{ 
 						console.log('error:', err) 
 					};
-				  });
+				});
 			}
+
+			// this doesn't work properly on version v12.20 and above but whatever
+			if (QueryRevision != BaseRevision)
+			{
+				ApplyProfileChanges = [
+					{
+						"changeType": "fullProfileUpdate",
+						"profile": profile
+					}
+				];
+			}
+
 			res.json(
 				{
 					"profileRevision": profile.rvn || 1,
-					"profileId": req.query.profileId || "common_core",
-					"profileChangesBaseRevision": profile.rvn || 1,
-					"profileChanges": [
-						{
-							"changeType": "fullProfileUpdate",
-							"profile": profile
-						}
-					],
+					"profileId": "common_core",
+					"profileChangesBaseRevision": BaseRevision,
+					"profileChanges": ApplyProfileChanges,
 					"profileCommandRevision": profile.commandRevision || 0,
 					"serverTime": new Date().toISOString(),
 					"responseVersion": 1
@@ -966,63 +998,89 @@ express.post("/account/api/oauth/token", async (req, res) => {
 			res.end();
 		});
 
+		// Set STW banner
 		express.post("/fortnite/api/game/v2/profile/*/client/SetHomebaseBanner", async (req, res) => {
-			if (req.headers["user-agent"].includes("Mozilla")) {
-				return res
-				.status(405)
-				.json(
-					{
-						"errorCode":"errors.com.epicgames.common.method_not_allowed",
-						"errorMessage":"Sorry the resource you were trying to access cannot be accessed with the HTTP method you used.",
-						"numericErrorCode":1009,
-						"originatingService":"fortnite",
-						"intent":"prod-live"
+			const profile = require(`./profiles/${req.query.profileId || "profile0"}.json`);
+
+			// do not change any of these or you will end up breaking it
+			var ApplyProfileChanges = [];
+			var BaseRevision = profile.rvn || 1;
+			var QueryRevision = req.query.rvn || -1;
+			var StatChanged = false;
+
+			if (req.body.homebaseBannerIconId && req.body.homebaseBannerColorId)
+			{
+				switch(req.query.profileId) {
+
+					case "profile0":
+						profile.stats.attributes.homebase.bannerIconId = req.body.homebaseBannerIconId;
+						profile.stats.attributes.homebase.bannerColorId = req.body.homebaseBannerColorId;
+						StatChanged = true;
+					break;
+
+					case "common_public":
+						profile.stats.attributes.banner_icon = req.body.homebaseBannerIconId;
+						profile.stats.attributes.banner_color = req.body.homebaseBannerColorId;
+						StatChanged = true;
+					break;
+
+				}
+			}
+
+			if (StatChanged == true)
+			{
+				profile.rvn += 1;
+				profile.commandRevision += 1;
+
+				if (req.query.profileId == "profile0")
+				{
+					ApplyProfileChanges.push({
+						"changeType": "statModified",
+						"name": "homebase",
+						"value": profile.stats.attributes.homebase
 					})
 				}
-			const profile = require(`./profiles/${req.query.profileId || "profile0"}.json`);
-			if (profile.profileId == "athena") {
-				const seasonchecker = require("./seasonchecker.js");
-				const seasondata = require("./season.json");
-				seasonchecker(req, seasondata);
-				profile.stats.attributes.season_num = seasondata.season;
-			}
-			if (req.query.profileId == "profile0") 
-			{
-				profile.stats.attributes.homebase.bannerIconId = req.body.homebaseBannerIconId || "";
-				profile.stats.attributes.homebase.bannerColorId = req.body.homebaseBannerColorId || "";
-				profile.rvn += 1;
-				profile.commandRevision += 1;
-				fs.writeFile(`./profiles/${req.query.profileId || "profile0"}.json`, JSON.stringify(profile, null, 2), function(err) {
+
+				if (req.query.profileId == "common_public")
+				{
+					ApplyProfileChanges.push({
+						"changeType": "statModified",
+						"name": "banner_icon",
+						"value": profile.stats.attributes.banner_icon
+					})
+
+					ApplyProfileChanges.push({
+						"changeType": "statModified",
+						"name": "banner_color",
+						"value": profile.stats.attributes.banner_color
+					})
+				}
+
+				fs.writeFileSync(`./profiles/${req.query.profileId || "profile0"}.json`, JSON.stringify(profile, null, 2), function(err) {
 					if (err) 
 					{ 
 						console.log('error:', err) 
 					};
-				  });
+				});
 			}
-			if (req.query.profileId == "common_public") 
+
+			// this doesn't work properly on version v12.20 and above but whatever
+			if (QueryRevision != BaseRevision)
 			{
-				profile.stats.attributes.banner_icon = req.body.homebaseBannerIconId || "";
-				profile.stats.attributes.banner_color = req.body.homebaseBannerColorId || "";
-				profile.rvn += 1;
-				profile.commandRevision += 1;
-				fs.writeFile(`./profiles/${req.query.profileId || "profile0"}.json`, JSON.stringify(profile, null, 2), function(err) {
-					if (err) 
-					{ 
-						console.log('error:', err) 
-					};
-				  });
+				ApplyProfileChanges = [
+					{
+						"changeType": "fullProfileUpdate",
+						"profile": profile
+					}
+				];
 			}
+
 			res.json(
 				{
 					"profileRevision": profile.rvn || 1,
 					"profileId": req.query.profileId || "profile0",
-					"profileChangesBaseRevision": profile.rvn || 1,
-					"profileChanges": [
-						{
-							"changeType": "fullProfileUpdate",
-							"profile": profile
-						}
-					],
+					"profileChangesBaseRevision": BaseRevision,
+					"profileChanges": ApplyProfileChanges,
 					"profileCommandRevision": profile.commandRevision || 0,
 					"serverTime": new Date().toISOString(),
 					"responseVersion": 1
@@ -1032,19 +1090,8 @@ express.post("/account/api/oauth/token", async (req, res) => {
 			res.end();
 		});
 
+		// Buy skill tree perk STW
 		express.post("/fortnite/api/game/v2/profile/*/client/PurchaseHomebaseNode", async (req, res) => {
-			if (req.headers["user-agent"].includes("Mozilla")) {
-				return res
-				.status(405)
-				.json(
-					{
-						"errorCode":"errors.com.epicgames.common.method_not_allowed",
-						"errorMessage":"Sorry the resource you were trying to access cannot be accessed with the HTTP method you used.",
-						"numericErrorCode":1009,
-						"originatingService":"fortnite",
-						"intent":"prod-live"
-					})
-				}
 			function makeid(length) {
 				var result           = '';
 				var characters       = '0123456789abcdefghiklmnopqrstuvwxyz';
@@ -1054,33 +1101,59 @@ express.post("/account/api/oauth/token", async (req, res) => {
 				}
 				return result;
 			}
+
 			const profile = require(`./profiles/${req.query.profileId || "profile0"}.json`);
-			if (profile.profileId == "athena") {
-				const seasonchecker = require("./seasonchecker.js");
-				const seasondata = require("./season.json");
-				seasonchecker(req, seasondata);
-				profile.stats.attributes.season_num = seasondata.season;
+
+			// do not change any of these or you will end up breaking it
+			var ApplyProfileChanges = [];
+			var BaseRevision = profile.rvn || 1;
+			var QueryRevision = req.query.rvn || -1;
+			var ItemAdded = false;
+
+			const ID = makeid(5) + "-" + makeid(4) + "-" + makeid(6) + "-" + makeid(4);
+
+			if (req.body.nodeId)
+			{
+				profile.items[ID] = {"templateId":`HomebaseNode:${req.body.nodeId}`,"attributes":{"item_seen":true},"quantity":1};
+				ItemAdded = true;
 			}
-			profile.items[makeid(5) + "-" + makeid(4) + "-" + makeid(6) + "-" + makeid(4)] = {"templateId":`HomebaseNode:${req.body.nodeId || "no"}`,"attributes":{"item_seen":true},"quantity":1};
-			profile.rvn += 1;
-			profile.commandRevision += 1;
-			fs.writeFile(`./profiles/${req.query.profileId || "profile0"}.json`, JSON.stringify(profile, null, 2), function(err) {
-				if (err) 
-				{ 
-					console.log('error:', err) 
-				};
-			  });
+
+			if (ItemAdded == true)
+			{
+				profile.rvn += 1;
+				profile.commandRevision += 1;
+
+				ApplyProfileChanges.push({
+					"changeType": "itemAdded",
+					"itemId": ID,
+					"item": profile.items[ID]
+				})
+
+				fs.writeFileSync(`./profiles/${req.query.profileId || "profile0"}.json`, JSON.stringify(profile, null, 2), function(err) {
+					if (err) 
+					{ 
+						console.log('error:', err) 
+					};
+				});
+			}
+
+			// this doesn't work properly on version v12.20 and above but whatever
+			if (QueryRevision != BaseRevision)
+			{
+				ApplyProfileChanges = [
+					{
+						"changeType": "fullProfileUpdate",
+						"profile": profile
+					}
+				];
+			}
+
 			res.json(
 				{
 					"profileRevision": profile.rvn || 1,
 					"profileId": req.query.profileId || "profile0",
-					"profileChangesBaseRevision": profile.rvn || 1,
-					"profileChanges": [
-						{
-							"changeType": "fullProfileUpdate",
-							"profile": profile
-						}
-					],
+					"profileChangesBaseRevision": BaseRevision,
+					"profileChanges": ApplyProfileChanges,
 					"profileCommandRevision": profile.commandRevision || 0,
 					"serverTime": new Date().toISOString(),
 					"responseVersion": 1
@@ -1090,147 +1163,58 @@ express.post("/account/api/oauth/token", async (req, res) => {
 			res.end();
 		});
 
+		// Set pinned STW quests
 		express.post("/fortnite/api/game/v2/profile/*/client/SetPinnedQuests", async (req, res) => {
-			if (req.headers["user-agent"].includes("Mozilla")) {
-				return res
-				.status(405)
-				.json(
-					{
-						"errorCode":"errors.com.epicgames.common.method_not_allowed",
-						"errorMessage":"Sorry the resource you were trying to access cannot be accessed with the HTTP method you used.",
-						"numericErrorCode":1009,
-						"originatingService":"fortnite",
-						"intent":"prod-live"
-					})
-				}
 			const profile = require(`./profiles/${req.query.profileId || "campaign"}.json`);
-			if (profile.profileId == "athena") {
-				const seasonchecker = require("./seasonchecker.js");
-				const seasondata = require("./season.json");
-				seasonchecker(req, seasondata);
-				profile.stats.attributes.season_num = seasondata.season;
-			}
-			profile.stats.attributes.client_settings.pinnedQuestInstances = req.body.pinnedQuestIds || [];
-			profile.rvn += 1;
-			profile.commandRevision += 1;
-			fs.writeFile(`./profiles/${req.query.profileId || "campaign"}.json`, JSON.stringify(profile, null, 2), function(err) {
-				if (err) 
-				{ 
-					console.log('error:', err) 
-				};
-			  });
-			res.json(
-				{
-					"profileRevision": profile.rvn || 1,
-					"profileId": req.query.profileId || "campaign",
-					"profileChangesBaseRevision": profile.rvn || 1,
-					"profileChanges": [
-						{
-							"changeType": "fullProfileUpdate",
-							"profile": profile
-						}
-					],
-					"profileCommandRevision": profile.commandRevision || 0,
-					"serverTime": new Date().toISOString(),
-					"responseVersion": 1
-				}
-			)
-			res.status(200);
-			res.end();
-		});
 
-		express.post("/fortnite/api/game/v2/profile/*/client/ClaimLoginReward", async (req, res) => {
-			if (req.headers["user-agent"].includes("Mozilla")) {
-				return res
-				.status(405)
-				.json(
-					{
-						"errorCode":"errors.com.epicgames.common.method_not_allowed",
-						"errorMessage":"Sorry the resource you were trying to access cannot be accessed with the HTTP method you used.",
-						"numericErrorCode":1009,
-						"originatingService":"fortnite",
-						"intent":"prod-live"
-					})
-				}
-			const profile = require(`./profiles/${req.query.profileId || "campaign"}.json`);
-			if (profile.profileId == "athena") {
-				const seasonchecker = require("./seasonchecker.js");
-				const seasondata = require("./season.json");
-				seasonchecker(req, seasondata);
-				profile.stats.attributes.season_num = seasondata.season;
+			// do not change any of these or you will end up breaking it
+			var ApplyProfileChanges = [];
+			var BaseRevision = profile.rvn || 1;
+			var QueryRevision = req.query.rvn || -1;
+			var StatChanged = false;
+
+			if (req.body.pinnedQuestIds)
+			{
+				profile.stats.attributes.client_settings.pinnedQuestInstances = req.body.pinnedQuestIds;
+				StatChanged = true;
 			}
-			profile.stats.attributes.daily_rewards.nextDefaultReward += 1;
-			profile.stats.attributes.daily_rewards.totalDaysLoggedIn += 1;
-			profile.stats.attributes.daily_rewards.lastClaimDate = new Date().toISOString();
-			profile.stats.attributes.daily_rewards.additionalSchedules.founderspackdailyrewardtoken.rewardsClaimed += 1;
-			profile.rvn += 1;
-			profile.commandRevision += 1;
-			fs.writeFile(`./profiles/${req.query.profileId || "campaign"}.json`, JSON.stringify(profile, null, 2), function(err) {
-				if (err) 
-				{ 
-					console.log('error:', err) 
-				};
-			  });
-			res.json(
-				{
-					"profileRevision": profile.rvn || 1,
-					"profileId": req.query.profileId || "campaign",
-					"profileChangesBaseRevision": profile.rvn || 1,
-					"profileChanges": [
-						{
-							"changeType": "fullProfileUpdate",
-							"profile": profile
-						}
-					],
-					"profileCommandRevision": profile.commandRevision || 0,
-					"serverTime": new Date().toISOString(),
-					"responseVersion": 1
-				}
-			)
-			res.status(200);
-			res.end();
-		});
-	
-	express.post("/fortnite/api/game/v2/profile/*/client/AssignTeamPerkToLoadout", async (req, res) => {
-		if (req.headers["user-agent"].includes("Mozilla")) {
-			return res
-			.status(405)
-			.json(
-				{
-					"errorCode":"errors.com.epicgames.common.method_not_allowed",
-					"errorMessage":"Sorry the resource you were trying to access cannot be accessed with the HTTP method you used.",
-					"numericErrorCode":1009,
-					"originatingService":"fortnite",
-					"intent":"prod-live"
+
+			if (StatChanged == true)
+			{
+				profile.rvn += 1;
+				profile.commandRevision += 1;
+
+				ApplyProfileChanges.push({
+					"changeType": "statModified",
+					"name": "client_settings",
+					"value": profile.stats.attributes.client_settings
 				})
+
+				fs.writeFileSync(`./profiles/${req.query.profileId || "campaign"}.json`, JSON.stringify(profile, null, 2), function(err) {
+					if (err) 
+					{ 
+						console.log('error:', err) 
+					};
+				});
 			}
-			const profile = require(`./profiles/${req.query.profileId || "campaign"}.json`);
-			if (profile.profileId == "athena") {
-				const seasonchecker = require("./seasonchecker.js");
-				const seasondata = require("./season.json");
-				seasonchecker(req, seasondata);
-				profile.stats.attributes.season_num = seasondata.season;
+
+			// this doesn't work properly on version v12.20 and above but whatever
+			if (QueryRevision != BaseRevision)
+			{
+				ApplyProfileChanges = [
+					{
+						"changeType": "fullProfileUpdate",
+						"profile": profile
+					}
+				];
 			}
-			profile.items[req.body.loadoutId].attributes.team_perk = req.body.teamPerkId || "";
-			profile.rvn += 1;
-			profile.commandRevision += 1;
-			fs.writeFile(`./profiles/${req.query.profileId || "campaign"}.json`, JSON.stringify(profile, null, 2), function(err) {
-				if (err) 
-				{ 
-					console.log('error:', err) 
-				};
-			  });
+
 			res.json(
 				{
 					"profileRevision": profile.rvn || 1,
 					"profileId": req.query.profileId || "campaign",
-					"profileChangesBaseRevision": profile.rvn || 1,
-					"profileChanges": [
-						{
-							"changeType": "fullProfileUpdate",
-							"profile": profile
-						}
-					],
+					"profileChangesBaseRevision": BaseRevision,
+					"profileChanges": ApplyProfileChanges,
 					"profileCommandRevision": profile.commandRevision || 0,
 					"serverTime": new Date().toISOString(),
 					"responseVersion": 1
@@ -1240,61 +1224,199 @@ express.post("/account/api/oauth/token", async (req, res) => {
 			res.end();
 		});
 
+		// Claim STW daily reward
+		express.post("/fortnite/api/game/v2/profile/*/client/ClaimLoginReward", async (req, res) => {
+			const profile = require(`./profiles/${req.query.profileId || "campaign"}.json`);
+
+			// do not change any of these or you will end up breaking it
+			var ApplyProfileChanges = [];
+			var BaseRevision = profile.rvn || 1;
+			var QueryRevision = req.query.rvn || -1;
+			var StatChanged = false;
+
+			let CurrentDate = new Date();
+			var DateFormat = moment(CurrentDate).format('YYYY-MM-DD') + "T00:00:00.000Z";
+
+			if (profile.stats.attributes.daily_rewards.lastClaimDate != DateFormat)
+			{
+				profile.stats.attributes.daily_rewards.nextDefaultReward += 1;
+				profile.stats.attributes.daily_rewards.totalDaysLoggedIn += 1;
+				profile.stats.attributes.daily_rewards.lastClaimDate = DateFormat;
+				profile.stats.attributes.daily_rewards.additionalSchedules.founderspackdailyrewardtoken.rewardsClaimed += 1;
+				StatChanged = true;
+			}
+
+			if (StatChanged == true)
+			{
+				profile.rvn += 1;
+				profile.commandRevision += 1;
+
+				ApplyProfileChanges.push({
+					"changeType": "statModified",
+					"name": "daily_rewards",
+					"value": profile.stats.attributes.daily_rewards
+				})
+
+				fs.writeFileSync(`./profiles/${req.query.profileId || "campaign"}.json`, JSON.stringify(profile, null, 2), function(err) {
+					if (err) 
+					{ 
+						console.log('error:', err) 
+					};
+				});
+			}
+
+			// this doesn't work properly on version v12.20 and above but whatever
+			if (QueryRevision != BaseRevision)
+			{
+				ApplyProfileChanges = [
+					{
+						"changeType": "fullProfileUpdate",
+						"profile": profile
+					}
+				];
+			}
+
+			res.json(
+				{
+					"profileRevision": profile.rvn || 1,
+					"profileId": req.query.profileId || "campaign",
+					"profileChangesBaseRevision": BaseRevision,
+					"profileChanges": ApplyProfileChanges,
+					"profileCommandRevision": profile.commandRevision || 0,
+					"serverTime": new Date().toISOString(),
+					"responseVersion": 1
+				}
+			)
+			res.status(200);
+			res.end();
+		});
+
+	// Equip team perk STW
+	express.post("/fortnite/api/game/v2/profile/*/client/AssignTeamPerkToLoadout", async (req, res) => {
+			const profile = require("./profiles/campaign.json");
+
+			// do not change any of these or you will end up breaking it
+			var ApplyProfileChanges = [];
+			var BaseRevision = profile.rvn || 1;
+			var QueryRevision = req.query.rvn || -1;
+			var StatChanged = false;
+
+			if (req.body.loadoutId)
+			{
+				profile.items[req.body.loadoutId].attributes.team_perk = req.body.teamPerkId || "";
+				StatChanged = true;
+			}
+
+			if (StatChanged == true)
+			{
+				profile.rvn += 1;
+				profile.commandRevision += 1;
+
+				ApplyProfileChanges.push({
+						"changeType": "itemAttrChanged",
+						"itemId": req.body.loadoutId,
+						"attributeName": "team_perk",
+						"attributeValue": profile.items[req.body.loadoutId].attributes.team_perk
+				})
+
+				fs.writeFileSync("./profiles/campaign.json", JSON.stringify(profile, null, 2), function(err) {
+					if (err) 
+					{
+						console.log('error:', err) 
+					};
+				});
+			}
+
+			// this doesn't work properly on version v12.20 and above but whatever
+			if (QueryRevision != BaseRevision)
+			{
+				ApplyProfileChanges = [
+					{
+						"changeType": "fullProfileUpdate",
+						"profile": profile
+					}
+				];
+			}
+
+			res.json(
+				{
+					"profileRevision": profile.rvn || 1,
+					"profileId": "campaign",
+					"profileChangesBaseRevision": BaseRevision,
+					"profileChanges": ApplyProfileChanges,
+					"profileCommandRevision": profile.commandRevision || 0,
+					"serverTime": new Date().toISOString(),
+					"responseVersion": 1
+				}
+			)
+			res.status(200);
+			res.end();
+		});
+
+		// Equip gadget STW
 		express.post("/fortnite/api/game/v2/profile/*/client/AssignGadgetToLoadout", async (req, res) => {
-			if (req.headers["user-agent"].includes("Mozilla")) {
-				return res
-				.status(405)
-				.json(
-					{
-						"errorCode":"errors.com.epicgames.common.method_not_allowed",
-						"errorMessage":"Sorry the resource you were trying to access cannot be accessed with the HTTP method you used.",
-						"numericErrorCode":1009,
-						"originatingService":"fortnite",
-						"intent":"prod-live"
-					})
+			const profile = require("./profiles/campaign.json");
+
+			// do not change any of these or you will end up breaking it
+			var ApplyProfileChanges = [];
+			var BaseRevision = profile.rvn || 1;
+			var QueryRevision = req.query.rvn || -1;
+			var StatChanged = false;
+
+			if (req.body.slotIndex && req.body.loadoutId)
+			{
+				switch(req.body.slotIndex) {
+
+					case 0:
+						profile.items[req.body.loadoutId].attributes.gadgets = [{"gadget":req.body.gadgetId || "","slot_index":0},profile.items[req.body.loadoutId].attributes.gadgets[1]];
+						StatChanged = true;
+					break;
+					
+					case 1:
+						profile.items[req.body.loadoutId].attributes.gadgets = [profile.items[req.body.loadoutId].attributes.gadgets[0],{"gadget":req.body.gadgetId || "","slot_index":1}];
+						StatChanged = true;
+					break;
+
 				}
-			const profile = require(`./profiles/${req.query.profileId || "campaign"}.json`);
-			if (profile.profileId == "athena") {
-				const seasonchecker = require("./seasonchecker.js");
-				const seasondata = require("./season.json");
-				seasonchecker(req, seasondata);
-				profile.stats.attributes.season_num = seasondata.season;
 			}
-			if (req.body.slotIndex == 0)
+
+			if (StatChanged == true)
 			{
-				profile.items[req.body.loadoutId].attributes.gadgets = [{"gadget":req.body.gadgetId || "","slot_index":0},profile.items[req.body.loadoutId].attributes.gadgets[1]];
 				profile.rvn += 1;
 				profile.commandRevision += 1;
-				fs.writeFile(`./profiles/${req.query.profileId || "campaign"}.json`, JSON.stringify(profile, null, 2), function(err) {
+
+				ApplyProfileChanges.push({
+						"changeType": "itemAttrChanged",
+						"itemId": req.body.loadoutId,
+						"attributeName": "gadgets",
+						"attributeValue": profile.items[req.body.loadoutId].attributes.gadgets
+				})
+
+				fs.writeFileSync("./profiles/campaign.json", JSON.stringify(profile, null, 2), function(err) {
 					if (err) 
-					{ 
+					{
 						console.log('error:', err) 
 					};
-				  });
+				});
 			}
-			if (req.body.slotIndex == 1)
+
+			// this doesn't work properly on version v12.20 and above but whatever
+			if (QueryRevision != BaseRevision)
 			{
-				profile.items[req.body.loadoutId].attributes.gadgets = [profile.items[req.body.loadoutId].attributes.gadgets[0],{"gadget":req.body.gadgetId || "","slot_index":1}];
-				profile.rvn += 1;
-				profile.commandRevision += 1;
-				fs.writeFile(`./profiles/${req.query.profileId || "campaign"}.json`, JSON.stringify(profile, null, 2), function(err) {
-					if (err) 
-					{ 
-						console.log('error:', err) 
-					};
-				  });
+				ApplyProfileChanges = [
+					{
+						"changeType": "fullProfileUpdate",
+						"profile": profile
+					}
+				];
 			}
+
 			res.json(
 				{
 					"profileRevision": profile.rvn || 1,
-					"profileId": req.query.profileId || "campaign",
-					"profileChangesBaseRevision": profile.rvn || 1,
-					"profileChanges": [
-						{
-							"changeType": "fullProfileUpdate",
-							"profile": profile
-						}
-					],
+					"profileId": "campaign",
+					"profileChangesBaseRevision": BaseRevision,
+					"profileChanges": ApplyProfileChanges,
 					"profileCommandRevision": profile.commandRevision || 0,
 					"serverTime": new Date().toISOString(),
 					"responseVersion": 1
@@ -1304,46 +1426,102 @@ express.post("/account/api/oauth/token", async (req, res) => {
 			res.end();
 		});
 
+		// Assign worker to squad STW
 		express.post("/fortnite/api/game/v2/profile/*/client/AssignWorkerToSquad", async (req, res) => {
-			if (req.headers["user-agent"].includes("Mozilla")) {
-				return res
-				.status(405)
-				.json(
-					{
-						"errorCode":"errors.com.epicgames.common.method_not_allowed",
-						"errorMessage":"Sorry the resource you were trying to access cannot be accessed with the HTTP method you used.",
-						"numericErrorCode":1009,
-						"originatingService":"fortnite",
-						"intent":"prod-live"
-					})
-				}
 			const profile = require(`./profiles/${req.query.profileId || "profile0"}.json`);
-			if (profile.profileId == "athena") {
-				const seasonchecker = require("./seasonchecker.js");
-				const seasondata = require("./season.json");
-				seasonchecker(req, seasondata);
-				profile.stats.attributes.season_num = seasondata.season;
+
+			// do not change any of these or you will end up breaking it
+			var ApplyProfileChanges = [];
+			var BaseRevision = profile.rvn || 1;
+			var QueryRevision = req.query.rvn || -1;
+			var StatChanged = false;
+
+			if (req.body.characterId)
+			{
+				for(var key in profile.items)
+				{
+					if (profile.items[key].hasOwnProperty('attributes'))
+					{
+						if (profile.items[key].attributes.hasOwnProperty('squad_id') && profile.items[key].attributes.hasOwnProperty('squad_slot_idx'))
+						{
+							if (profile.items[key].attributes.squad_id != "" && profile.items[key].attributes.squad_slot_idx != -1)
+							{
+								if (profile.items[key].attributes.squad_id == req.body.squadId && profile.items[key].attributes.squad_slot_idx == req.body.slotIndex)
+								{
+									profile.items[key].attributes.squad_id = profile.items[req.body.characterId].attributes.squad_id || "";
+									profile.items[key].attributes.squad_slot_idx = profile.items[req.body.characterId].attributes.squad_slot_idx || 0;
+
+									ApplyProfileChanges.push({
+										"changeType": "itemAttrChanged",
+										"itemId": key,
+										"attributeName": "squad_id",
+										"attributeValue": profile.items[key].attributes.squad_id
+									})
+
+									ApplyProfileChanges.push({
+										"changeType": "itemAttrChanged",
+										"itemId": key,
+										"attributeName": "squad_slot_idx",
+										"attributeValue": profile.items[key].attributes.squad_slot_idx
+									})
+								}
+							}
+						}
+					}
+				}
 			}
-			profile.items[req.body.characterId].attributes.squad_id = req.body.squadId || "";
-			profile.rvn += 1;
-			profile.commandRevision += 1;
-			fs.writeFile(`./profiles/${req.query.profileId || "profile0"}.json`, JSON.stringify(profile, null, 2), function(err) {
-				if (err) 
-				{ 
-					console.log('error:', err) 
-				};
-			  });
+
+			if (req.body.characterId)
+			{
+				profile.items[req.body.characterId].attributes.squad_id = req.body.squadId || "";
+				profile.items[req.body.characterId].attributes.squad_slot_idx = req.body.slotIndex || 0;
+				StatChanged = true;
+			}
+
+			if (StatChanged == true)
+			{
+				profile.rvn += 1;
+				profile.commandRevision += 1;
+
+				ApplyProfileChanges.push({
+						"changeType": "itemAttrChanged",
+						"itemId": req.body.characterId,
+						"attributeName": "squad_id",
+						"attributeValue": profile.items[req.body.characterId].attributes.squad_id
+				})
+
+				ApplyProfileChanges.push({
+					"changeType": "itemAttrChanged",
+					"itemId": req.body.characterId,
+					"attributeName": "squad_slot_idx",
+					"attributeValue": profile.items[req.body.characterId].attributes.squad_slot_idx
+				})
+
+				fs.writeFileSync(`./profiles/${req.query.profileId || "profile0"}.json`, JSON.stringify(profile, null, 2), function(err) {
+					if (err) 
+					{
+						console.log('error:', err) 
+					};
+				});
+			}
+
+			// this doesn't work properly on version v12.20 and above but whatever
+			if (QueryRevision != BaseRevision)
+			{
+				ApplyProfileChanges = [
+					{
+						"changeType": "fullProfileUpdate",
+						"profile": profile
+					}
+				];
+			}
+
 			res.json(
 				{
 					"profileRevision": profile.rvn || 1,
 					"profileId": req.query.profileId || "profile0",
-					"profileChangesBaseRevision": profile.rvn || 1,
-					"profileChanges": [
-						{
-							"changeType": "fullProfileUpdate",
-							"profile": profile
-						}
-					],
+					"profileChangesBaseRevision": BaseRevision,
+					"profileChanges": ApplyProfileChanges,
 					"profileCommandRevision": profile.commandRevision || 0,
 					"serverTime": new Date().toISOString(),
 					"responseVersion": 1
@@ -1353,47 +1531,67 @@ express.post("/account/api/oauth/token", async (req, res) => {
 			res.end();
 		});
 
+	// Claim STW quest reward
 	express.post("/fortnite/api/game/v2/profile/*/client/ClaimQuestReward", async (req, res) => {
-		if (req.headers["user-agent"].includes("Mozilla")) {
-			return res
-			.status(405)
-			.json(
-				{
-					"errorCode":"errors.com.epicgames.common.method_not_allowed",
-					"errorMessage":"Sorry the resource you were trying to access cannot be accessed with the HTTP method you used.",
-					"numericErrorCode":1009,
-					"originatingService":"fortnite",
-					"intent":"prod-live"
-				})
-			}
 		const profile = require(`./profiles/${req.query.profileId || "campaign"}.json`);
-		if (profile.profileId == "athena") {
-			const seasonchecker = require("./seasonchecker.js");
-			const seasondata = require("./season.json");
-			seasonchecker(req, seasondata);
-			profile.stats.attributes.season_num = seasondata.season;
+
+		// do not change any of these or you will end up breaking it
+		var ApplyProfileChanges = [];
+		var BaseRevision = profile.rvn || 1;
+		var QueryRevision = req.query.rvn || -1;
+		var StatChanged = false;
+
+		if (req.body.questId)
+		{
+			profile.items[req.body.questId].attributes.quest_state = "Claimed";
+			profile.items[req.body.questId].attributes.last_state_change_time = new Date().toISOString();
+			StatChanged = true;
 		}
-		profile.items[req.body.questId].attributes.quest_state = "Claimed";
-		profile.items[req.body.questId].attributes.last_state_change_time = new Date().toISOString();
-		profile.rvn += 1;
-		profile.commandRevision += 1;
-		fs.writeFile(`./profiles/${req.query.profileId || "campaign"}.json`, JSON.stringify(profile, null, 2), function(err) {
-			if (err) 
-			{ 
-				console.log('error:', err) 
-			};
-		  });
+
+		if (StatChanged == true)
+		{
+			profile.rvn += 1;
+			profile.commandRevision += 1;
+
+			ApplyProfileChanges.push({
+				"changeType": "itemAttrChanged",
+				"itemId": req.body.questId,
+				"attributeName": "quest_state",
+				"attributeValue": profile.items[req.body.questId].attributes.quest_state
+			})
+
+			ApplyProfileChanges.push({
+				"changeType": "itemAttrChanged",
+				"itemId": req.body.questId,
+				"attributeName": "last_state_change_time",
+				"attributeValue": profile.items[req.body.questId].attributes.last_state_change_time
+			})
+
+			fs.writeFileSync(`./profiles/${req.query.profileId || "campaign"}.json`, JSON.stringify(profile, null, 2), function(err) {
+				if (err) 
+				{
+					console.log('error:', err) 
+				};
+			});
+		}
+
+		// this doesn't work properly on version v12.20 and above but whatever
+		if (QueryRevision != BaseRevision)
+		{
+			ApplyProfileChanges = [
+				{
+					"changeType": "fullProfileUpdate",
+					"profile": profile
+				}
+			];
+		}
+
 		res.json(
 			{
 				"profileRevision": profile.rvn || 1,
 				"profileId": req.query.profileId || "campaign",
-				"profileChangesBaseRevision": profile.rvn || 1,
-				"profileChanges": [
-					{
-						"changeType": "fullProfileUpdate",
-						"profile": profile
-					}
-				],
+				"profileChangesBaseRevision": BaseRevision,
+				"profileChanges": ApplyProfileChanges,
 				"profileCommandRevision": profile.commandRevision || 0,
 				"serverTime": new Date().toISOString(),
 				"responseVersion": 1
@@ -1403,218 +1601,25 @@ express.post("/account/api/oauth/token", async (req, res) => {
 		res.end();
 	});
 
+	// Equip BR Locker 1
 	express.post("/fortnite/api/game/v2/profile/*/client/EquipBattleRoyaleCustomization", async (req, res) => {
-		if (req.headers["user-agent"].includes("Mozilla")) {
-			return res
-			.status(405)
-			.json(
-				{
-					"errorCode":"errors.com.epicgames.common.method_not_allowed",
-					"errorMessage":"Sorry the resource you were trying to access cannot be accessed with the HTTP method you used.",
-					"numericErrorCode":1009,
-					"originatingService":"fortnite",
-					"intent":"prod-live"
-				})
-			}
-			if (req.query.profileId != "athena") 
-			{
-				return res
-				.status(403)
-				.json(
-					{
-						"errorCode":"errors.com.epicgames.common.wrong_profile",
-						"errorMessage":"Sorry, this endpoint requires the athena profile.",
-						"numericErrorCode":1009,
-						"originatingService":"fortnite",
-						"intent":"prod-live"
-					})
-			}
-		const profile = require(`./profiles/${req.query.profileId || "athena"}.json`);
-		if (profile.profileId == "athena") {
-			const seasonchecker = require("./seasonchecker.js");
-			const seasondata = require("./season.json");
-			seasonchecker(req, seasondata);
-			profile.stats.attributes.season_num = seasondata.season;
-		}
-		if (req.body.slotName == "Character")
-		{
-			profile.stats.attributes.favorite_character = req.body.itemToSlot || "";
-			profile.rvn += 1;
-			profile.commandRevision += 1;
-			fs.writeFile(`./profiles/${req.query.profileId || "athena"}.json`, JSON.stringify(profile, null, 2), function(err) {
-				if (err) 
-				{ 
-					console.log('error:', err) 
-				};
-			  });
-		}
-		if (req.body.slotName == "Backpack")
-		{
-			profile.stats.attributes.favorite_backpack = req.body.itemToSlot || "";
-			profile.rvn += 1;
-			profile.commandRevision += 1;
-			fs.writeFile(`./profiles/${req.query.profileId || "athena"}.json`, JSON.stringify(profile, null, 2), function(err) {
-				if (err) 
-				{ 
-					console.log('error:', err) 
-				};
-			  });
-		}
-		if (req.body.slotName == "Pickaxe")
-		{
-			profile.stats.attributes.favorite_pickaxe = req.body.itemToSlot || "";
-			profile.rvn += 1;
-			profile.commandRevision += 1;
-			fs.writeFile(`./profiles/${req.query.profileId || "athena"}.json`, JSON.stringify(profile, null, 2), function(err) {
-				if (err) 
-				{ 
-					console.log('error:', err) 
-				};
-			  });
-		}
-		if (req.body.slotName == "Glider")
-		{
-			profile.stats.attributes.favorite_glider = req.body.itemToSlot || "";
-			profile.rvn += 1;
-			profile.commandRevision += 1;
-			fs.writeFile(`./profiles/${req.query.profileId || "athena"}.json`, JSON.stringify(profile, null, 2), function(err) {
-				if (err) 
-				{ 
-					console.log('error:', err) 
-				};
-			  });
-		}
-		if (req.body.slotName == "SkyDiveContrail")
-		{
-			profile.stats.attributes.favorite_skydivecontrail = req.body.itemToSlot || "";
-			profile.rvn += 1;
-			profile.commandRevision += 1;
-			fs.writeFile(`./profiles/${req.query.profileId || "athena"}.json`, JSON.stringify(profile, null, 2), function(err) {
-				if (err) 
-				{ 
-					console.log('error:', err) 
-				};
-			  });
-		}
-		if (req.body.slotName == "MusicPack")
-		{
-			profile.stats.attributes.favorite_musicpack = req.body.itemToSlot || "";
-			profile.rvn += 1;
-			profile.commandRevision += 1;
-			fs.writeFile(`./profiles/${req.query.profileId || "athena"}.json`, JSON.stringify(profile, null, 2), function(err) {
-				if (err) 
-				{ 
-					console.log('error:', err) 
-				};
-			  });
-		}
-		if (req.body.slotName == "LoadingScreen")
-		{
-			profile.stats.attributes.favorite_loadingscreen = req.body.itemToSlot || "";
-			profile.rvn += 1;
-			profile.commandRevision += 1;
-			fs.writeFile(`./profiles/${req.query.profileId || "athena"}.json`, JSON.stringify(profile, null, 2), function(err) {
-				if (err) 
-				{ 
-					console.log('error:', err) 
-				};
-			  });
-		}
-		if (req.body.slotName == "Dance")
-		{
-			var indexwithinslot = req.body.indexWithinSlot || 0;
+		const profile = require("./profiles/athena.json");
+		const seasonchecker = require("./seasonchecker.js");
+		const seasondata = require("./season.json");
+		seasonchecker(req, seasondata);
+		profile.stats.attributes.season_num = seasondata.season;
 
-			if (indexwithinslot == 0)
-			{
-				profile.stats.attributes.favorite_dance[0] = req.body.itemToSlot || "";
-			}
-			if (indexwithinslot == 1)
-			{
-				profile.stats.attributes.favorite_dance[1] = req.body.itemToSlot || "";
-			}
-			if (indexwithinslot == 2)
-			{
-				profile.stats.attributes.favorite_dance[2] = req.body.itemToSlot || "";
-			}
-			if (indexwithinslot == 3)
-			{
-				profile.stats.attributes.favorite_dance[3] = req.body.itemToSlot || "";
-			}
-			if (indexwithinslot == 4)
-			{
-				profile.stats.attributes.favorite_dance[4] = req.body.itemToSlot || "";
-			}
-			if (indexwithinslot == 5)
-			{
-				profile.stats.attributes.favorite_dance[5] = req.body.itemToSlot || "";
-			}
+		// do not change any of these or you will end up breaking it
+		var ApplyProfileChanges = [];
+		var BaseRevision = profile.rvn || 1;
+		var QueryRevision = req.query.rvn || -1;
+		var StatChanged = false;
+		var VariantChanged = false;
 
-			profile.rvn += 1;
-			profile.commandRevision += 1;
-			fs.writeFile(`./profiles/${req.query.profileId || "athena"}.json`, JSON.stringify(profile, null, 2), function(err) {
-				if (err) 
-				{ 
-					console.log('error:', err) 
-				};
-			  });
-		}
-		if (req.body.slotName == "ItemWrap")
-		{
-			var indexwithinslot = req.body.indexWithinSlot || 0;
-
-			if (indexwithinslot == 0)
-			{
-				profile.stats.attributes.favorite_itemwraps[0] = req.body.itemToSlot || "";
-			}
-			if (indexwithinslot == 1)
-			{
-				profile.stats.attributes.favorite_itemwraps[1] = req.body.itemToSlot || "";
-			}
-			if (indexwithinslot == 2)
-			{
-				profile.stats.attributes.favorite_itemwraps[2] = req.body.itemToSlot || "";
-			}
-			if (indexwithinslot == 3)
-			{
-				profile.stats.attributes.favorite_itemwraps[3] = req.body.itemToSlot || "";
-			}
-			if (indexwithinslot == 4)
-			{
-				profile.stats.attributes.favorite_itemwraps[4] = req.body.itemToSlot || "";
-			}
-			if (indexwithinslot == 5)
-			{
-				profile.stats.attributes.favorite_itemwraps[5] = req.body.itemToSlot || "";
-			}
-			if (indexwithinslot == 6)
-			{
-				profile.stats.attributes.favorite_itemwraps[6] = req.body.itemToSlot || "";
-			}
-			if (indexwithinslot == -1)
-			{
-				profile.stats.attributes.favorite_itemwraps[0] = req.body.itemToSlot || "";
-				profile.stats.attributes.favorite_itemwraps[1] = req.body.itemToSlot || "";
-				profile.stats.attributes.favorite_itemwraps[2] = req.body.itemToSlot || "";
-				profile.stats.attributes.favorite_itemwraps[3] = req.body.itemToSlot || "";
-				profile.stats.attributes.favorite_itemwraps[4] = req.body.itemToSlot || "";
-				profile.stats.attributes.favorite_itemwraps[5] = req.body.itemToSlot || "";
-				profile.stats.attributes.favorite_itemwraps[6] = req.body.itemToSlot || "";
-			}
-
-			profile.rvn += 1;
-			profile.commandRevision += 1;
-			fs.writeFile(`./profiles/${req.query.profileId || "athena"}.json`, JSON.stringify(profile, null, 2), function(err) {
-				if (err) 
-				{ 
-					console.log('error:', err) 
-				};
-			  });
-		}
-		
 		const ReturnVariantsAsString = JSON.stringify(req.body.variantUpdates || [])
 		if (req.body.variantUpdates && ReturnVariantsAsString.includes("active"))
 		{
-				if (JSON.stringify(profile.items[req.body.itemToSlot].attributes.variants) == "[]")
+				if (profile.items[req.body.itemToSlot].attributes.variants.length == 0)
 				{
 					profile.items[req.body.itemToSlot].attributes.variants = req.body.variantUpdates || [];
 				}
@@ -1626,85 +1631,145 @@ express.post("/account/api/oauth/token", async (req, res) => {
 					}
 					catch(err)
 					{
-						profile.items[req.body.itemToSlot].attributes.variants[i].active = "";
+						profile.items[req.body.itemToSlot].attributes.variants[i].active = profile.items[req.body.itemToSlot].attributes.variants[i].active;
 					}
 				}
+				VariantChanged = true;
 		}
-		
-		res.json(
-			{
-				"profileRevision": profile.rvn || 1,
-				"profileId": req.query.profileId || "athena",
-				"profileChangesBaseRevision": profile.rvn || 1,
-				"profileChanges": [
-					{
-						"changeType": "fullProfileUpdate",
-						"profile": profile
-					}
-				],
-				"profileCommandRevision": profile.commandRevision || 0,
-				"serverTime": new Date().toISOString(),
-				"responseVersion": 1
-			}
-		)
-		res.status(200);
-		res.end();
-	});
 
-	express.post("/fortnite/api/game/v2/profile/*/client/SetBattleRoyaleBanner", async (req, res) => {
-		if (req.headers["user-agent"].includes("Mozilla")) {
-			return res
-			.status(405)
-			.json(
-				{
-					"errorCode":"errors.com.epicgames.common.method_not_allowed",
-					"errorMessage":"Sorry the resource you were trying to access cannot be accessed with the HTTP method you used.",
-					"numericErrorCode":1009,
-					"originatingService":"fortnite",
-					"intent":"prod-live"
-				})
-			}
-			if (req.query.profileId != "athena") 
+		if (req.body.slotName)
+		{
+
+		switch(req.body.slotName) {
+
+		case "Character":
+			profile.stats.attributes.favorite_character = req.body.itemToSlot || "";
+			StatChanged = true;
+		break;
+
+		case "Backpack":
+			profile.stats.attributes.favorite_backpack = req.body.itemToSlot || "";
+			StatChanged = true;
+		break;
+
+		case "Pickaxe":
+			profile.stats.attributes.favorite_pickaxe = req.body.itemToSlot || "";
+			StatChanged = true;
+		break;
+
+		case "Glider":
+			profile.stats.attributes.favorite_glider = req.body.itemToSlot || "";
+			StatChanged = true;
+		break;
+
+		case "SkyDiveContrail":
+			profile.stats.attributes.favorite_skydivecontrail = req.body.itemToSlot || "";
+			StatChanged = true;
+		break;
+
+		case "MusicPack":
+			profile.stats.attributes.favorite_musicpack = req.body.itemToSlot || "";
+			StatChanged = true;
+		break;
+
+		case "LoadingScreen":
+			profile.stats.attributes.favorite_loadingscreen = req.body.itemToSlot || "";
+			StatChanged = true;
+		break;
+
+		case "Dance":
+			var indexwithinslot = req.body.indexWithinSlot || 0;
+
+			if (Math.sign(indexwithinslot) == 1 || Math.sign(indexwithinslot) == 0)
 			{
-				return res
-				.status(403)
-				.json(
+				profile.stats.attributes.favorite_dance[indexwithinslot] = req.body.itemToSlot || "";
+			}
+
+			StatChanged = true;
+		break;
+
+		case "ItemWrap":
+			var indexwithinslot = req.body.indexWithinSlot || 0;
+
+			switch(Math.sign(indexwithinslot)) {
+
+			case 0:
+				profile.stats.attributes.favorite_itemwraps[indexwithinslot] = req.body.itemToSlot || "";
+			break;
+
+			case 1:
+				profile.stats.attributes.favorite_itemwraps[indexwithinslot] = req.body.itemToSlot || "";
+			break;
+
+			case -1:
+				for(var i = 0; i < profile.stats.attributes.favorite_itemwraps.length; i++) 
+				{
+					profile.stats.attributes.favorite_itemwraps[i] = req.body.itemToSlot || "";
+				}
+			break;
+
+			}
+
+			StatChanged = true;
+		break;
+
+		}
+
+		}
+
+		if (StatChanged == true)
+		{
+			var Category = `favorite_${req.body.slotName.toLowerCase() || "character"}`
+
+			if (Category == "favorite_itemwrap")
+			{
+				Category += "s"
+			}
+
+			profile.rvn += 1;
+			profile.commandRevision += 1;
+
+			ApplyProfileChanges.push({
+				"changeType": "statModified",
+				"name": Category,
+				"value": profile.stats.attributes[Category]
+			})
+
+			if (VariantChanged == true)
+			{
+				ApplyProfileChanges.push(
 					{
-						"errorCode":"errors.com.epicgames.common.wrong_profile",
-						"errorMessage":"Sorry, this endpoint requires the athena profile.",
-						"numericErrorCode":1009,
-						"originatingService":"fortnite",
-						"intent":"prod-live"
+						"changeType": "itemAttrChanged",
+						"itemId": req.body.itemToSlot,
+						"attributeName": "variants",
+						"attributeValue": profile.items[req.body.itemToSlot].attributes.variants
 					})
 			}
-		const profile = require(`./profiles/${req.query.profileId || "athena"}.json`);
-		if (profile.profileId == "athena") {
-			const seasonchecker = require("./seasonchecker.js");
-			const seasondata = require("./season.json");
-			seasonchecker(req, seasondata);
-			profile.stats.attributes.season_num = seasondata.season;
+			fs.writeFileSync("./profiles/athena.json", JSON.stringify(profile, null, 2), function(err) {
+				if (err) 
+				{ 
+					console.log('error:', err) 
+				};
+			});
 		}
-		profile.stats.attributes.banner_icon = req.body.homebaseBannerIconId || "BRSeason01";
-		profile.stats.attributes.banner_color = req.body.homebaseBannerColorId || "DefaultColor1";
-		profile.rvn += 1;
-		profile.commandRevision += 1;
-		fs.writeFile(`./profiles/${req.query.profileId || "athena"}.json`, JSON.stringify(profile, null, 2), function(err) {
-			if (err) 
-			{ 
-				console.log('error:', err) 
-			};
-		  });
+
+		// this doesn't work properly on version v12.20 and above but whatever
+		if (QueryRevision != BaseRevision)
+		{
+			ApplyProfileChanges = [
+				{
+					"changeType": "fullProfileUpdate",
+					"profile": profile
+				}
+			];
+		}
+
 		res.json(
 			{
 				"profileRevision": profile.rvn || 1,
-				"profileId": req.query.profileId || "athena",
-				"profileChangesBaseRevision": profile.rvn || 1,
-				"profileChanges": [
-					{
-						"changeType": "fullProfileUpdate",
-						"profile": profile
-					}
-				],
+				"profileId": "athena",
+				"profileChangesBaseRevision": BaseRevision,
+				"profileChanges": ApplyProfileChanges,
 				"profileCommandRevision": profile.commandRevision || 0,
 				"serverTime": new Date().toISOString(),
 				"responseVersion": 1
@@ -1714,205 +1779,176 @@ express.post("/account/api/oauth/token", async (req, res) => {
 		res.end();
 	});
 
-	express.post("/fortnite/api/game/v2/profile/*/client/SetCosmeticLockerSlot", async (req, res) => {
-		if (req.headers["user-agent"].includes("Mozilla")) {
-			return res
-			.status(405)
-			.json(
+	// Set BR Banner 1
+	express.post("/fortnite/api/game/v2/profile/*/client/SetBattleRoyaleBanner", async (req, res) => {
+		const profile = require("./profiles/athena.json");
+		const seasonchecker = require("./seasonchecker.js");
+		const seasondata = require("./season.json");
+		seasonchecker(req, seasondata);
+		profile.stats.attributes.season_num = seasondata.season;
+
+		// do not change any of these or you will end up breaking it
+		var ApplyProfileChanges = [];
+		var BaseRevision = profile.rvn || 1;
+		var QueryRevision = req.query.rvn || -1;
+		var StatChanged = false;
+
+		if (req.body.homebaseBannerIconId && req.body.homebaseBannerColorId)
+		{
+			profile.stats.attributes.banner_icon = req.body.homebaseBannerIconId;
+			profile.stats.attributes.banner_color = req.body.homebaseBannerColorId;
+			StatChanged = true;
+		}
+
+		if (StatChanged == true)
+		{
+			profile.rvn += 1;
+			profile.commandRevision += 1;
+
+			ApplyProfileChanges.push({
+				"changeType": "statModified",
+				"name": "banner_icon",
+				"value": profile.stats.attributes.banner_icon
+			})
+
+			ApplyProfileChanges.push({
+				"changeType": "statModified",
+				"name": "banner_color",
+				"value": profile.stats.attributes.banner_color
+			})
+
+			fs.writeFileSync("./profiles/athena.json", JSON.stringify(profile, null, 2), function(err) {
+				if (err) 
+				{ 
+					console.log('error:', err) 
+				};
+			});
+		}
+
+		// this doesn't work properly on version v12.20 and above but whatever
+		if (QueryRevision != BaseRevision)
+		{
+			ApplyProfileChanges = [
 				{
-					"errorCode":"errors.com.epicgames.common.method_not_allowed",
-					"errorMessage":"Sorry the resource you were trying to access cannot be accessed with the HTTP method you used.",
-					"numericErrorCode":1009,
-					"originatingService":"fortnite",
-					"intent":"prod-live"
-				})
+					"changeType": "fullProfileUpdate",
+					"profile": profile
+				}
+			];
+		}
+
+		res.json(
+			{
+				"profileRevision": profile.rvn || 1,
+				"profileId": "athena",
+				"profileChangesBaseRevision": BaseRevision,
+				"profileChanges": ApplyProfileChanges,
+				"profileCommandRevision": profile.commandRevision || 0,
+				"serverTime": new Date().toISOString(),
+				"responseVersion": 1
 			}
+		)
+		res.status(200);
+		res.end();
+	});
+
+		// Set BR Banner 2
+		express.post("/fortnite/api/game/v2/profile/*/client/SetCosmeticLockerBanner", async (req, res) => {
+			const profile = require(`./profiles/${req.query.profileId || "athena"}.json`);
+
+			if (profile.profileId == "athena")
+			{
+				const seasonchecker = require("./seasonchecker.js");
+				const seasondata = require("./season.json");
+				seasonchecker(req, seasondata);
+				profile.stats.attributes.season_num = seasondata.season;
+			}
+
+			// do not change any of these or you will end up breaking it
+			var ApplyProfileChanges = [];
+			var BaseRevision = profile.rvn || 1;
+			var QueryRevision = req.query.rvn || -1;
+			var StatChanged = false;
+	
+			if (req.body.bannerIconTemplateName && req.body.bannerColorTemplateName && req.body.lockerItem)
+			{
+				profile.items[req.body.lockerItem].attributes.banner_icon_template = req.body.bannerIconTemplateName;
+				profile.items[req.body.lockerItem].attributes.banner_color_template = req.body.bannerColorTemplateName;
+				StatChanged = true;
+			}
+	
+			if (StatChanged == true)
+			{
+				profile.rvn += 1;
+				profile.commandRevision += 1;
+	
+				ApplyProfileChanges.push({
+					"changeType": "statModified",
+					"name": "banner_icon",
+					"value": profile.stats.attributes.banner_icon
+				})
+	
+				ApplyProfileChanges.push({
+					"changeType": "statModified",
+					"name": "banner_color",
+					"value": profile.stats.attributes.banner_color
+				})
+	
+				fs.writeFileSync(`./profiles/${req.query.profileId || "athena"}.json`, JSON.stringify(profile, null, 2), function(err) {
+					if (err) 
+					{ 
+						console.log('error:', err) 
+					};
+				});
+			}
+	
+			// this doesn't work properly on version v12.20 and above but whatever
+			if (QueryRevision != BaseRevision)
+			{
+				ApplyProfileChanges = [
+					{
+						"changeType": "fullProfileUpdate",
+						"profile": profile
+					}
+				];
+			}
+	
+			res.json(
+				{
+					"profileRevision": profile.rvn || 1,
+					"profileId": req.query.profileId || "athena",
+					"profileChangesBaseRevision": BaseRevision,
+					"profileChanges": ApplyProfileChanges,
+					"profileCommandRevision": profile.commandRevision || 0,
+					"serverTime": new Date().toISOString(),
+					"responseVersion": 1
+				}
+			)
+			res.status(200);
+			res.end();
+		});
+
+	// Set BR Locker 2
+	express.post("/fortnite/api/game/v2/profile/*/client/SetCosmeticLockerSlot", async (req, res) => {
 		const profile = require(`./profiles/${req.query.profileId || "athena"}.json`);
+
 		if (profile.profileId == "athena") {
 			const seasonchecker = require("./seasonchecker.js");
 			const seasondata = require("./season.json");
 			seasonchecker(req, seasondata);
 			profile.stats.attributes.season_num = seasondata.season;
 		}
-		if (req.body.category == "Character")
-		{
-			profile.items[req.body.lockerItem].attributes.locker_slots_data.slots.Character.items = [req.body.itemToSlot || ""];
-			profile.rvn += 1;
-			profile.commandRevision += 1;
-			fs.writeFile(`./profiles/${req.query.profileId || "athena"}.json`, JSON.stringify(profile, null, 2), function(err) {
-				if (err) 
-				{ 
-					console.log('error:', err) 
-				};
-			  });
-		}
-		if (req.body.category == "Backpack")
-		{
-			profile.items[req.body.lockerItem].attributes.locker_slots_data.slots.Backpack.items = [req.body.itemToSlot || ""];
-			profile.rvn += 1;
-			profile.commandRevision += 1;
-			fs.writeFile(`./profiles/${req.query.profileId || "athena"}.json`, JSON.stringify(profile, null, 2), function(err) {
-				if (err) 
-				{ 
-					console.log('error:', err) 
-				};
-			  });
-		}
-		if (req.body.category == "Pickaxe")
-		{
-			profile.items[req.body.lockerItem].attributes.locker_slots_data.slots.Pickaxe.items = [req.body.itemToSlot || ""];
-			profile.rvn += 1;
-			profile.commandRevision += 1;
-			fs.writeFile(`./profiles/${req.query.profileId || "athena"}.json`, JSON.stringify(profile, null, 2), function(err) {
-				if (err) 
-				{ 
-					console.log('error:', err) 
-				};
-			  });
-		}
-		if (req.body.category == "Glider")
-		{
-			profile.items[req.body.lockerItem].attributes.locker_slots_data.slots.Glider.items = [req.body.itemToSlot || ""];
-			profile.rvn += 1;
-			profile.commandRevision += 1;
-			fs.writeFile(`./profiles/${req.query.profileId || "athena"}.json`, JSON.stringify(profile, null, 2), function(err) {
-				if (err) 
-				{ 
-					console.log('error:', err) 
-				};
-			  });
-		}
-		if (req.body.category == "SkyDiveContrail")
-		{
-			profile.items[req.body.lockerItem].attributes.locker_slots_data.slots.SkyDiveContrail.items = [req.body.itemToSlot || ""];
-			profile.rvn += 1;
-			profile.commandRevision += 1;
-			fs.writeFile(`./profiles/${req.query.profileId || "athena"}.json`, JSON.stringify(profile, null, 2), function(err) {
-				if (err) 
-				{ 
-					console.log('error:', err) 
-				};
-			  });
-		}
-		if (req.body.category == "MusicPack")
-		{
-			profile.items[req.body.lockerItem].attributes.locker_slots_data.slots.MusicPack.items = [req.body.itemToSlot || ""];
-			profile.rvn += 1;
-			profile.commandRevision += 1;
-			fs.writeFile(`./profiles/${req.query.profileId || "athena"}.json`, JSON.stringify(profile, null, 2), function(err) {
-				if (err) 
-				{ 
-					console.log('error:', err) 
-				};
-			  });
-		}
-		if (req.body.category == "LoadingScreen")
-		{
-			profile.items[req.body.lockerItem].attributes.locker_slots_data.slots.LoadingScreen.items = [req.body.itemToSlot || ""];
-			profile.rvn += 1;
-			profile.commandRevision += 1;
-			fs.writeFile(`./profiles/${req.query.profileId || "athena"}.json`, JSON.stringify(profile, null, 2), function(err) {
-				if (err) 
-				{ 
-					console.log('error:', err) 
-				};
-			  });
-		}
-		if (req.body.category == "Dance")
-		{
-			var indexwithinslot = req.body.slotIndex || 0;
 
-			if (indexwithinslot == 0)
-			{
-				profile.items[req.body.lockerItem].attributes.locker_slots_data.slots.Dance.items[0] = req.body.itemToSlot || "";
-			}
-			if (indexwithinslot == 1)
-			{
-				profile.items[req.body.lockerItem].attributes.locker_slots_data.slots.Dance.items[1] = req.body.itemToSlot || "";
-			}
-			if (indexwithinslot == 2)
-			{
-				profile.items[req.body.lockerItem].attributes.locker_slots_data.slots.Dance.items[2] = req.body.itemToSlot || "";
-			}
-			if (indexwithinslot == 3)
-			{
-				profile.items[req.body.lockerItem].attributes.locker_slots_data.slots.Dance.items[3] = req.body.itemToSlot || "";
-			}
-			if (indexwithinslot == 4)
-			{
-				profile.items[req.body.lockerItem].attributes.locker_slots_data.slots.Dance.items[4] = req.body.itemToSlot || "";
-			}
-			if (indexwithinslot == 5)
-			{
-				profile.items[req.body.lockerItem].attributes.locker_slots_data.slots.Dance.items[5] = req.body.itemToSlot || "";
-			}
+		// do not change any of these or you will end up breaking it
+		var ApplyProfileChanges = [];
+		var BaseRevision = profile.rvn || 1;
+		var QueryRevision = req.query.rvn || -1;
+		var StatChanged = false;
+		var VariantChanged = false;
 
-			profile.rvn += 1;
-			profile.commandRevision += 1;
-			fs.writeFile(`./profiles/${req.query.profileId || "athena"}.json`, JSON.stringify(profile, null, 2), function(err) {
-				if (err) 
-				{ 
-					console.log('error:', err) 
-				};
-			  });
-		}
-		if (req.body.category == "ItemWrap")
-		{
-			var indexwithinslot = req.body.slotIndex || 0;
-
-			if (indexwithinslot == 0)
-			{
-				profile.items[req.body.lockerItem].attributes.locker_slots_data.slots.ItemWrap.items[0] = req.body.itemToSlot || "";
-			}
-			if (indexwithinslot == 1)
-			{
-				profile.items[req.body.lockerItem].attributes.locker_slots_data.slots.ItemWrap.items[1] = req.body.itemToSlot || "";
-			}
-			if (indexwithinslot == 2)
-			{
-				profile.items[req.body.lockerItem].attributes.locker_slots_data.slots.ItemWrap.items[2] = req.body.itemToSlot || "";
-			}
-			if (indexwithinslot == 3)
-			{
-				profile.items[req.body.lockerItem].attributes.locker_slots_data.slots.ItemWrap.items[3] = req.body.itemToSlot || "";
-			}
-			if (indexwithinslot == 4)
-			{
-				profile.items[req.body.lockerItem].attributes.locker_slots_data.slots.ItemWrap.items[4] = req.body.itemToSlot || "";
-			}
-			if (indexwithinslot == 5)
-			{
-				profile.items[req.body.lockerItem].attributes.locker_slots_data.slots.ItemWrap.items[5] = req.body.itemToSlot || "";
-			}
-			if (indexwithinslot == 6)
-			{
-				profile.items[req.body.lockerItem].attributes.locker_slots_data.slots.ItemWrap.items[6] = req.body.itemToSlot || "";
-			}
-			if (indexwithinslot == -1)
-			{
-				profile.items[req.body.lockerItem].attributes.locker_slots_data.slots.ItemWrap.items[0] = req.body.itemToSlot || "";
-				profile.items[req.body.lockerItem].attributes.locker_slots_data.slots.ItemWrap.items[1] = req.body.itemToSlot || "";
-				profile.items[req.body.lockerItem].attributes.locker_slots_data.slots.ItemWrap.items[2] = req.body.itemToSlot || "";
-				profile.items[req.body.lockerItem].attributes.locker_slots_data.slots.ItemWrap.items[3] = req.body.itemToSlot || "";
-				profile.items[req.body.lockerItem].attributes.locker_slots_data.slots.ItemWrap.items[4] = req.body.itemToSlot || "";
-				profile.items[req.body.lockerItem].attributes.locker_slots_data.slots.ItemWrap.items[5] = req.body.itemToSlot || "";
-				profile.items[req.body.lockerItem].attributes.locker_slots_data.slots.ItemWrap.items[6] = req.body.itemToSlot || "";
-			}
-
-			profile.rvn += 1;
-			profile.commandRevision += 1;
-			fs.writeFile(`./profiles/${req.query.profileId || "athena"}.json`, JSON.stringify(profile, null, 2), function(err) {
-				if (err) 
-				{ 
-					console.log('error:', err) 
-				};
-			  });
-		}
-		
 		const ReturnVariantsAsString = JSON.stringify(req.body.variantUpdates || [])
 		if (req.body.variantUpdates && ReturnVariantsAsString.includes("active") && profile.profileId != "campaign")
 		{
-				if (JSON.stringify(profile.items[req.body.itemToSlot].attributes.variants) == "[]")
+				if (profile.items[req.body.itemToSlot].attributes.variants.length == 0)
 				{
 					profile.items[req.body.itemToSlot].attributes.variants = req.body.variantUpdates || [];
 				}
@@ -1924,22 +1960,139 @@ express.post("/account/api/oauth/token", async (req, res) => {
 					}
 					catch(err)
 					{
-						profile.items[req.body.itemToSlot].attributes.variants[i].active = "";
+						profile.items[req.body.itemToSlot].attributes.variants[i].active = profile.items[req.body.itemToSlot].attributes.variants[i].active;
 					}
 				}
+				VariantChanged = true;
 		}
-		
+
+		if (req.body.category && req.body.lockerItem)
+		{
+
+		switch(req.body.category) {
+
+		case "Character":
+			profile.items[req.body.lockerItem].attributes.locker_slots_data.slots.Character.items = [req.body.itemToSlot || ""];
+			StatChanged = true;
+		break;
+
+		case "Backpack":
+			profile.items[req.body.lockerItem].attributes.locker_slots_data.slots.Backpack.items = [req.body.itemToSlot || ""];
+			StatChanged = true;
+		break;
+
+		case "Pickaxe":
+			profile.items[req.body.lockerItem].attributes.locker_slots_data.slots.Pickaxe.items = [req.body.itemToSlot || ""];
+			StatChanged = true;
+		break;
+
+		case "Glider":
+			profile.items[req.body.lockerItem].attributes.locker_slots_data.slots.Glider.items = [req.body.itemToSlot || ""];
+			StatChanged = true;
+		break;
+
+		case "SkyDiveContrail":
+			profile.items[req.body.lockerItem].attributes.locker_slots_data.slots.SkyDiveContrail.items = [req.body.itemToSlot || ""];
+			StatChanged = true;
+		break;
+
+		case "MusicPack":
+			profile.items[req.body.lockerItem].attributes.locker_slots_data.slots.MusicPack.items = [req.body.itemToSlot || ""];
+			StatChanged = true;
+		break;
+
+		case "LoadingScreen":
+			profile.items[req.body.lockerItem].attributes.locker_slots_data.slots.LoadingScreen.items = [req.body.itemToSlot || ""];
+			StatChanged = true;
+		break;
+
+		case "Dance":
+			var indexwithinslot = req.body.slotIndex || 0;
+
+			if (Math.sign(indexwithinslot) == 1 || Math.sign(indexwithinslot) == 0)
+			{
+				profile.items[req.body.lockerItem].attributes.locker_slots_data.slots.Dance.items[indexwithinslot] = req.body.itemToSlot || "";
+			}
+
+			StatChanged = true;
+		break;
+
+		case "ItemWrap":
+			var indexwithinslot = req.body.slotIndex || 0;
+
+			switch(Math.sign(indexwithinslot)) {
+
+				case 0:
+					profile.items[req.body.lockerItem].attributes.locker_slots_data.slots.ItemWrap.items[indexwithinslot] = req.body.itemToSlot || "";
+				break;
+
+				case 1:
+					profile.items[req.body.lockerItem].attributes.locker_slots_data.slots.ItemWrap.items[indexwithinslot] = req.body.itemToSlot || "";
+				break;
+	
+				case -1:
+					for(var i = 0; i < profile.items[req.body.lockerItem].attributes.locker_slots_data.slots.ItemWrap.items.length; i++) 
+					{
+						profile.items[req.body.lockerItem].attributes.locker_slots_data.slots.ItemWrap.items[i] = req.body.itemToSlot || "";
+					}
+				break;
+	
+			}
+
+			StatChanged = true;
+		break;
+
+		}
+
+		}
+
+		if (StatChanged == true)
+		{
+			profile.rvn += 1;
+			profile.commandRevision += 1;
+
+			ApplyProfileChanges.push({
+					"changeType": "itemAttrChanged",
+					"itemId": req.body.lockerItem,
+					"attributeName": "locker_slots_data",
+					"attributeValue": profile.items[req.body.lockerItem].attributes.locker_slots_data
+			})
+
+			if (VariantChanged == true)
+			{
+				ApplyProfileChanges.push({
+						"changeType": "itemAttrChanged",
+						"itemId": req.body.itemToSlot,
+						"attributeName": "variants",
+						"attributeValue": profile.items[req.body.itemToSlot].attributes.variants
+				})
+			}
+
+			fs.writeFileSync(`./profiles/${req.query.profileId || "athena"}.json`, JSON.stringify(profile, null, 2), function(err) {
+				if (err) 
+				{ 
+					console.log('error:', err) 
+				};
+			});
+		}
+
+		// this doesn't work properly on version v12.20 and above but whatever
+		if (QueryRevision != BaseRevision)
+		{
+			ApplyProfileChanges = [
+				{
+					"changeType": "fullProfileUpdate",
+					"profile": profile
+				}
+			];
+		}
+
 		res.json(
 			{
 				"profileRevision": profile.rvn || 1,
 				"profileId": req.query.profileId || "athena",
-				"profileChangesBaseRevision": profile.rvn || 1,
-				"profileChanges": [
-					{
-						"changeType": "fullProfileUpdate",
-						"profile": profile
-					}
-				],
+				"profileChangesBaseRevision": BaseRevision,
+				"profileChanges": ApplyProfileChanges,
 				"profileCommandRevision": profile.commandRevision || 0,
 				"serverTime": new Date().toISOString(),
 				"responseVersion": 1
@@ -1949,44 +2102,39 @@ express.post("/account/api/oauth/token", async (req, res) => {
 		res.end();
 	});
 
+	// any mcp request that doesn't have something assigned to it
 	express.post("/fortnite/api/game/v2/profile/*/client/*", async (req, res) => {
-		if (req.headers["user-agent"].includes("Mozilla")) {
-			return res
-			.status(405)
-			.json(
-				{
-					"errorCode":"errors.com.epicgames.common.method_not_allowed",
-					"errorMessage":"Sorry the resource you were trying to access cannot be accessed with the HTTP method you used.",
-					"numericErrorCode":1009,
-					"originatingService":"fortnite",
-					"intent":"prod-live"
-				})
-			}
 		const profile = require(`./profiles/${req.query.profileId || "athena"}.json`);
+
 		if (profile.profileId == "athena") {
 			const seasonchecker = require("./seasonchecker.js");
 			const seasondata = require("./season.json");
 			seasonchecker(req, seasondata);
 			profile.stats.attributes.season_num = seasondata.season;
 		}
-		if (req.headers["user-agent"].includes("3724489")) {
-			if (req.query.profileId == "profile0") {
-				return res
-				.status(200)
-				.json({})
-			}
+
+		// do not change any of these or you will end up breaking it
+		var ApplyProfileChanges = [];
+		var BaseRevision = profile.rvn || 1;
+		var QueryRevision = req.query.rvn || -1;
+
+		// this doesn't work properly on version v12.20 and above but whatever
+		if (QueryRevision != BaseRevision)
+		{
+			ApplyProfileChanges = [
+				{
+					"changeType": "fullProfileUpdate",
+					"profile": profile
+				}
+			];
 		}
+
 		res.json(
 			{
 				"profileRevision": profile.rvn || 1,
 				"profileId": req.query.profileId || "athena",
-				"profileChangesBaseRevision": profile.rvn || 1,
-				"profileChanges": [
-					{
-						"changeType": "fullProfileUpdate",
-						"profile": profile
-					}
-				],
+				"profileChangesBaseRevision": BaseRevision,
+				"profileChanges": ApplyProfileChanges,
 				"profileCommandRevision": profile.commandRevision || 0,
 				"serverTime": new Date().toISOString(),
 				"responseVersion": 1
