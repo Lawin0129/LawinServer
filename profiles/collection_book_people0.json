@@ -7,7 +7,168 @@
     "accountId": "LawinServer",
     "profileId": "collection_book_people0",
     "version": "no_version",
-    "items": {},
+    "items": {
+        "CollectionBookPage:pageHeroes_Commando": {
+            "templateId": "CollectionBookPage:pageHeroes_Commando",
+            "attributes": {
+                "sectionStates": [],
+                "state": "Active"
+            },
+            "quantity": 1
+        },
+        "CollectionBookPage:pageHeroes_Constructor": {
+            "templateId": "CollectionBookPage:pageHeroes_Constructor",
+            "attributes": {
+                "sectionStates": [],
+                "state": "Active"
+            },
+            "quantity": 1
+        },
+        "CollectionBookPage:pageHeroes_Ninja": {
+            "templateId": "CollectionBookPage:pageHeroes_Ninja",
+            "attributes": {
+                "sectionStates": [],
+                "state": "Active"
+            },
+            "quantity": 1
+        },
+        "CollectionBookPage:pageHeroes_Outlander": {
+            "templateId": "CollectionBookPage:pageHeroes_Outlander",
+            "attributes": {
+                "sectionStates": [],
+                "state": "Active"
+            },
+            "quantity": 1
+        },
+        "CollectionBookPage:pagePeople_Defenders": {
+            "templateId": "CollectionBookPage:pagePeople_Defenders",
+            "attributes": {
+                "sectionStates": [],
+                "state": "Active"
+            },
+            "quantity": 1
+        },
+        "CollectionBookPage:pagePeople_Survivors": {
+            "templateId": "CollectionBookPage:pagePeople_Survivors",
+            "attributes": {
+                "sectionStates": [],
+                "state": "Active"
+            },
+            "quantity": 1
+        },
+        "CollectionBookPage:pagePeople_Leads": {
+            "templateId": "CollectionBookPage:pagePeople_Leads",
+            "attributes": {
+                "sectionStates": [],
+                "state": "Active"
+            },
+            "quantity": 1
+        },
+        "CollectionBookPage:pagePeople_UniqueLeads": {
+            "templateId": "CollectionBookPage:pagePeople_UniqueLeads",
+            "attributes": {
+                "sectionStates": [],
+                "state": "Active"
+            },
+            "quantity": 1
+        },
+        "CollectionBookPage:PageSpecial_Winter2017_Heroes": {
+            "templateId": "CollectionBookPage:PageSpecial_Winter2017_Heroes",
+            "attributes": {
+                "sectionStates": [],
+                "state": "Active"
+            },
+            "quantity": 1
+        },
+        "CollectionBookPage:PageSpecial_Halloween2017_Heroes": {
+            "templateId": "CollectionBookPage:PageSpecial_Halloween2017_Heroes",
+            "attributes": {
+                "sectionStates": [],
+                "state": "Active"
+            },
+            "quantity": 1
+        },
+        "CollectionBookPage:PageSpecial_Halloween2017_Workers": {
+            "templateId": "CollectionBookPage:PageSpecial_Halloween2017_Workers",
+            "attributes": {
+                "sectionStates": [],
+                "state": "Active"
+            },
+            "quantity": 1
+        },
+        "CollectionBookPage:PageSpecial_ChineseNewYear2018_Heroes": {
+            "templateId": "CollectionBookPage:PageSpecial_ChineseNewYear2018_Heroes",
+            "attributes": {
+                "sectionStates": [],
+                "state": "Active"
+            },
+            "quantity": 1
+        },
+        "CollectionBookPage:PageSpecial_SpringItOn2018_People": {
+            "templateId": "CollectionBookPage:PageSpecial_SpringItOn2018_People",
+            "attributes": {
+                "sectionStates": [],
+                "state": "Active"
+            },
+            "quantity": 1
+        },
+        "CollectionBookPage:PageSpecial_StormZoneCyber_Heroes": {
+            "templateId": "CollectionBookPage:PageSpecial_StormZoneCyber_Heroes",
+            "attributes": {
+                "sectionStates": [],
+                "state": "Active"
+            },
+            "quantity": 1
+        },
+        "CollectionBookPage:PageSpecial_Blockbuster2018_Heroes": {
+            "templateId": "CollectionBookPage:PageSpecial_Blockbuster2018_Heroes",
+            "attributes": {
+                "sectionStates": [],
+                "state": "Active"
+            },
+            "quantity": 1
+        },
+        "CollectionBookPage:PageSpecial_ShadowOps_Heroes": {
+            "templateId": "CollectionBookPage:PageSpecial_ShadowOps_Heroes",
+            "attributes": {
+                "sectionStates": [],
+                "state": "Active"
+            },
+            "quantity": 1
+        },
+        "CollectionBookPage:PageSpecial_RoadTrip2018_Heroes": {
+            "templateId": "CollectionBookPage:PageSpecial_RoadTrip2018_Heroes",
+            "attributes": {
+                "sectionStates": [],
+                "state": "Active"
+            },
+            "quantity": 1
+        },
+        "CollectionBookPage:PageSpecial_WildWest_Heroes": {
+            "templateId": "CollectionBookPage:PageSpecial_WildWest_Heroes",
+            "attributes": {
+                "sectionStates": [],
+                "state": "Active"
+            },
+            "quantity": 1
+        },
+        "CollectionBookPage:PageSpecial_StormZone_Heroes": {
+            "templateId": "CollectionBookPage:PageSpecial_StormZone_Heroes",
+            "attributes": {
+                "sectionStates": [],
+                "state": "Active"
+            },
+            "quantity": 1
+        },
+        "CollectionBookPage:PageSpecial_Scavenger_Heroes": {
+            "templateId": "CollectionBookPage:PageSpecial_Scavenger_Heroes",
+            "attributes": {
+                "sectionStates": [],
+                "state": "Active"
+            },
+            "quantity": 1
+        }
+    },
     "stats": {
       "attributes": {
         "inventory_limit_bonus": 0

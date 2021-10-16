@@ -7,7 +7,448 @@
     "accountId": "LawinServer",
     "profileId": "collection_book_schematics0",
     "version": "no_version",
-    "items": {},
+    "items": {
+        "CollectionBookPage:pageMelee_Axes_Weapons": {
+            "templateId": "CollectionBookPage:pageMelee_Axes_Weapons",
+            "attributes": {
+                "sectionStates": [],
+                "state": "Active"
+            },
+            "quantity": 1
+        },
+        "CollectionBookPage:pageMelee_Axes_Weapons_Crystal": {
+            "templateId": "CollectionBookPage:pageMelee_Axes_Weapons_Crystal",
+            "attributes": {
+                "sectionStates": [],
+                "state": "Active"
+            },
+            "quantity": 1
+        },
+        "CollectionBookPage:pageMelee_Clubs_Weapons": {
+            "templateId": "CollectionBookPage:pageMelee_Clubs_Weapons",
+            "attributes": {
+                "sectionStates": [],
+                "state": "Active"
+            },
+            "quantity": 1
+        },
+        "CollectionBookPage:pageMelee_Clubs_Weapons_Crystal": {
+            "templateId": "CollectionBookPage:pageMelee_Clubs_Weapons_Crystal",
+            "attributes": {
+                "sectionStates": [],
+                "state": "Active"
+            },
+            "quantity": 1
+        },
+        "CollectionBookPage:pageMelee_Scythes_Weapons": {
+            "templateId": "CollectionBookPage:pageMelee_Scythes_Weapons",
+            "attributes": {
+                "sectionStates": [],
+                "state": "Active"
+            },
+            "quantity": 1
+        },
+        "CollectionBookPage:pageMelee_Scythes_Weapons_Crystal": {
+            "templateId": "CollectionBookPage:pageMelee_Scythes_Weapons_Crystal",
+            "attributes": {
+                "sectionStates": [],
+                "state": "Active"
+            },
+            "quantity": 1
+        },
+        "CollectionBookPage:pageMelee_Spears_Weapons": {
+            "templateId": "CollectionBookPage:pageMelee_Spears_Weapons",
+            "attributes": {
+                "sectionStates": [],
+                "state": "Active"
+            },
+            "quantity": 1
+        },
+        "CollectionBookPage:pageMelee_Spears_Weapons_Crystal": {
+            "templateId": "CollectionBookPage:pageMelee_Spears_Weapons_Crystal",
+            "attributes": {
+                "sectionStates": [],
+                "state": "Active"
+            },
+            "quantity": 1
+        },
+        "CollectionBookPage:pageMelee_Swords_Weapons": {
+            "templateId": "CollectionBookPage:pageMelee_Swords_Weapons",
+            "attributes": {
+                "sectionStates": [],
+                "state": "Active"
+            },
+            "quantity": 1
+        },
+        "CollectionBookPage:pageMelee_Swords_Weapons_Crystal": {
+            "templateId": "CollectionBookPage:pageMelee_Swords_Weapons_Crystal",
+            "attributes": {
+                "sectionStates": [],
+                "state": "Active"
+            },
+            "quantity": 1
+        },
+        "CollectionBookPage:pageMelee_Tools_Weapons": {
+            "templateId": "CollectionBookPage:pageMelee_Tools_Weapons",
+            "attributes": {
+                "sectionStates": [],
+                "state": "Active"
+            },
+            "quantity": 1
+        },
+        "CollectionBookPage:pageMelee_Tools_Weapons_Crystal": {
+            "templateId": "CollectionBookPage:pageMelee_Tools_Weapons_Crystal",
+            "attributes": {
+                "sectionStates": [],
+                "state": "Active"
+            },
+            "quantity": 1
+        },
+        "CollectionBookPage:pageRanged_Assault_Weapons": {
+            "templateId": "CollectionBookPage:pageRanged_Assault_Weapons",
+            "attributes": {
+                "sectionStates": [],
+                "state": "Active"
+            },
+            "quantity": 1
+        },
+        "CollectionBookPage:pageRanged_Assault_Weapons_Crystal": {
+            "templateId": "CollectionBookPage:pageRanged_Assault_Weapons_Crystal",
+            "attributes": {
+                "sectionStates": [],
+                "state": "Active"
+            },
+            "quantity": 1
+        },
+        "CollectionBookPage:pageRanged_Shotgun_Weapons": {
+            "templateId": "CollectionBookPage:pageRanged_Shotgun_Weapons",
+            "attributes": {
+                "sectionStates": [],
+                "state": "Active"
+            },
+            "quantity": 1
+        },
+        "CollectionBookPage:pageRanged_Shotgun_Weapons_Crystal": {
+            "templateId": "CollectionBookPage:pageRanged_Shotgun_Weapons_Crystal",
+            "attributes": {
+                "sectionStates": [],
+                "state": "Active"
+            },
+            "quantity": 1
+        },
+        "CollectionBookPage:page_Ranged_Pistols_Weapons": {
+            "templateId": "CollectionBookPage:page_Ranged_Pistols_Weapons",
+            "attributes": {
+                "sectionStates": [],
+                "state": "Active"
+            },
+            "quantity": 1
+        },
+        "CollectionBookPage:page_Ranged_Pistols_Weapons_Crystal": {
+            "templateId": "CollectionBookPage:page_Ranged_Pistols_Weapons_Crystal",
+            "attributes": {
+                "sectionStates": [],
+                "state": "Active"
+            },
+            "quantity": 1
+        },
+        "CollectionBookPage:pageRanged_Snipers_Weapons": {
+            "templateId": "CollectionBookPage:pageRanged_Snipers_Weapons",
+            "attributes": {
+                "sectionStates": [],
+                "state": "Active"
+            },
+            "quantity": 1
+        },
+        "CollectionBookPage:pageRanged_Snipers_Weapons_Crystal": {
+            "templateId": "CollectionBookPage:pageRanged_Snipers_Weapons_Crystal",
+            "attributes": {
+                "sectionStates": [],
+                "state": "Active"
+            },
+            "quantity": 1
+        },
+        "CollectionBookPage:pageRanged_Explosive_Weapons": {
+            "templateId": "CollectionBookPage:pageRanged_Explosive_Weapons",
+            "attributes": {
+                "sectionStates": [],
+                "state": "Active"
+            },
+            "quantity": 1
+        },
+        "CollectionBookPage:pageTraps_Wall": {
+            "templateId": "CollectionBookPage:pageTraps_Wall",
+            "attributes": {
+                "sectionStates": [],
+                "state": "Active"
+            },
+            "quantity": 1
+        },
+        "CollectionBookPage:pageTraps_Ceiling": {
+            "templateId": "CollectionBookPage:pageTraps_Ceiling",
+            "attributes": {
+                "sectionStates": [],
+                "state": "Active"
+            },
+            "quantity": 1
+        },
+        "CollectionBookPage:pageTraps_Floor": {
+            "templateId": "CollectionBookPage:pageTraps_Floor",
+            "attributes": {
+                "sectionStates": [],
+                "state": "Active"
+            },
+            "quantity": 1
+        },
+        "CollectionBookPage:PageSpecial_Weapons_Ranged_Medieval": {
+            "templateId": "CollectionBookPage:PageSpecial_Weapons_Ranged_Medieval",
+            "attributes": {
+                "sectionStates": [],
+                "state": "Active"
+            },
+            "quantity": 1
+        },
+        "CollectionBookPage:PageSpecial_Weapons_Ranged_Medieval_Crystal": {
+            "templateId": "CollectionBookPage:PageSpecial_Weapons_Ranged_Medieval_Crystal",
+            "attributes": {
+                "sectionStates": [],
+                "state": "Active"
+            },
+            "quantity": 1
+        },
+        "CollectionBookPage:PageSpecial_Weapons_Melee_Medieval": {
+            "templateId": "CollectionBookPage:PageSpecial_Weapons_Melee_Medieval",
+            "attributes": {
+                "sectionStates": [],
+                "state": "Active"
+            },
+            "quantity": 1
+        },
+        "CollectionBookPage:PageSpecial_Weapons_Melee_Medieval_Crystal": {
+            "templateId": "CollectionBookPage:PageSpecial_Weapons_Melee_Medieval_Crystal",
+            "attributes": {
+                "sectionStates": [],
+                "state": "Active"
+            },
+            "quantity": 1
+        },
+        "CollectionBookPage:PageSpecial_Winter2017_Weapons": {
+            "templateId": "CollectionBookPage:PageSpecial_Winter2017_Weapons",
+            "attributes": {
+                "sectionStates": [],
+                "state": "Active"
+            },
+            "quantity": 1
+        },
+        "CollectionBookPage:PageSpecial_Winter2017_Weapons_Crystal": {
+            "templateId": "CollectionBookPage:PageSpecial_Winter2017_Weapons_Crystal",
+            "attributes": {
+                "sectionStates": [],
+                "state": "Active"
+            },
+            "quantity": 1
+        },
+        "CollectionBookPage:PageSpecial_RatRod_Weapons": {
+            "templateId": "CollectionBookPage:PageSpecial_RatRod_Weapons",
+            "attributes": {
+                "sectionStates": [],
+                "state": "Active"
+            },
+            "quantity": 1
+        },
+        "CollectionBookPage:PageSpecial_RatRod_Weapons_Crystal": {
+            "templateId": "CollectionBookPage:PageSpecial_RatRod_Weapons_Crystal",
+            "attributes": {
+                "sectionStates": [],
+                "state": "Active"
+            },
+            "quantity": 1
+        },
+        "CollectionBookPage:PageSpecial_Weapons_Ranged_Winter2017": {
+            "templateId": "CollectionBookPage:PageSpecial_Weapons_Ranged_Winter2017",
+            "attributes": {
+                "sectionStates": [],
+                "state": "Active"
+            },
+            "quantity": 1
+        },
+        "CollectionBookPage:PageSpecial_Weapons_Ranged_Winter2017_Crystal": {
+            "templateId": "CollectionBookPage:PageSpecial_Weapons_Ranged_Winter2017_Crystal",
+            "attributes": {
+                "sectionStates": [],
+                "state": "Active"
+            },
+            "quantity": 1
+        },
+        "CollectionBookPage:PageSpecial_Weapons_Melee_Winter2017": {
+            "templateId": "CollectionBookPage:PageSpecial_Weapons_Melee_Winter2017",
+            "attributes": {
+                "sectionStates": [],
+                "state": "Active"
+            },
+            "quantity": 1
+        },
+        "CollectionBookPage:PageSpecial_Weapons_Melee_Winter2017_Crystal": {
+            "templateId": "CollectionBookPage:PageSpecial_Weapons_Melee_Winter2017_Crystal",
+            "attributes": {
+                "sectionStates": [],
+                "state": "Active"
+            },
+            "quantity": 1
+        },
+        "CollectionBookPage:PageSpecial_Weapons_ChineseNewYear2018": {
+            "templateId": "CollectionBookPage:PageSpecial_Weapons_ChineseNewYear2018",
+            "attributes": {
+                "sectionStates": [],
+                "state": "Active"
+            },
+            "quantity": 1
+        },
+        "CollectionBookPage:PageSpecial_Weapons_Crystal_ChineseNewYear2018": {
+            "templateId": "CollectionBookPage:PageSpecial_Weapons_Crystal_ChineseNewYear2018",
+            "attributes": {
+                "sectionStates": [],
+                "state": "Active"
+            },
+            "quantity": 1
+        },
+        "CollectionBookPage:PageSpecial_StormZoneCyber_Ranged": {
+            "templateId": "CollectionBookPage:PageSpecial_StormZoneCyber_Ranged",
+            "attributes": {
+                "sectionStates": [],
+                "state": "Active"
+            },
+            "quantity": 1
+        },
+        "CollectionBookPage:PageSpecial_StormZoneCyber_Melee": {
+            "templateId": "CollectionBookPage:PageSpecial_StormZoneCyber_Melee",
+            "attributes": {
+                "sectionStates": [],
+                "state": "Active"
+            },
+            "quantity": 1
+        },
+        "CollectionBookPage:PageSpecial_StormZoneCyber_Ranged_Crystal": {
+            "templateId": "CollectionBookPage:PageSpecial_StormZoneCyber_Ranged_Crystal",
+            "attributes": {
+                "sectionStates": [],
+                "state": "Active"
+            },
+            "quantity": 1
+        },
+        "CollectionBookPage:PageSpecial_StormZoneCyber_Melee_Crystal": {
+            "templateId": "CollectionBookPage:PageSpecial_StormZoneCyber_Melee_Crystal",
+            "attributes": {
+                "sectionStates": [],
+                "state": "Active"
+            },
+            "quantity": 1
+        },
+        "CollectionBookPage:PageSpecial_Blockbuster2018_Ranged": {
+            "templateId": "CollectionBookPage:PageSpecial_Blockbuster2018_Ranged",
+            "attributes": {
+                "sectionStates": [],
+                "state": "Active"
+            },
+            "quantity": 1
+        },
+        "CollectionBookPage:PageSpecial_Blockbuster2018_Ranged_Crystal": {
+            "templateId": "CollectionBookPage:PageSpecial_Blockbuster2018_Ranged_Crystal",
+            "attributes": {
+                "sectionStates": [],
+                "state": "Active"
+            },
+            "quantity": 1
+        },
+        "CollectionBookPage:PageSpecial_RoadTrip2018_Weapons": {
+            "templateId": "CollectionBookPage:PageSpecial_RoadTrip2018_Weapons",
+            "attributes": {
+                "sectionStates": [],
+                "state": "Active"
+            },
+            "quantity": 1
+        },
+        "CollectionBookPage:PageSpecial_RoadTrip2018_Weapons_Crystal": {
+            "templateId": "CollectionBookPage:PageSpecial_RoadTrip2018_Weapons_Crystal",
+            "attributes": {
+                "sectionStates": [],
+                "state": "Active"
+            },
+            "quantity": 1
+        },
+        "CollectionBookPage:PageSpecial_Weapons_Ranged_StormZone2": {
+            "templateId": "CollectionBookPage:PageSpecial_Weapons_Ranged_StormZone2",
+            "attributes": {
+                "sectionStates": [],
+                "state": "Active"
+            },
+            "quantity": 1
+        },
+        "CollectionBookPage:PageSpecial_Weapons_Ranged_StormZone2_Crystal": {
+            "templateId": "CollectionBookPage:PageSpecial_Weapons_Ranged_StormZone2_Crystal",
+            "attributes": {
+                "sectionStates": [],
+                "state": "Active"
+            },
+            "quantity": 1
+        },
+        "CollectionBookPage:PageSpecial_Weapons_Melee_StormZone2": {
+            "templateId": "CollectionBookPage:PageSpecial_Weapons_Melee_StormZone2",
+            "attributes": {
+                "sectionStates": [],
+                "state": "Active"
+            },
+            "quantity": 1
+        },
+        "CollectionBookPage:PageSpecial_Weapons_Melee_StormZone2_Crystal": {
+            "templateId": "CollectionBookPage:PageSpecial_Weapons_Melee_StormZone2_Crystal",
+            "attributes": {
+                "sectionStates": [],
+                "state": "Active"
+            },
+            "quantity": 1
+        },
+        "CollectionBookPage:PageSpecial_Hydraulic": {
+            "templateId": "CollectionBookPage:PageSpecial_Hydraulic",
+            "attributes": {
+                "sectionStates": [],
+                "state": "Active"
+            },
+            "quantity": 1
+        },
+        "CollectionBookPage:PageSpecial_Hydraulic_Crystal": {
+            "templateId": "CollectionBookPage:PageSpecial_Hydraulic_Crystal",
+            "attributes": {
+                "sectionStates": [],
+                "state": "Active"
+            },
+            "quantity": 1
+        },
+        "CollectionBookPage:PageSpecial_Scavenger": {
+            "templateId": "CollectionBookPage:PageSpecial_Scavenger",
+            "attributes": {
+                "sectionStates": [],
+                "state": "Active"
+            },
+            "quantity": 1
+        },
+        "CollectionBookPage:PageSpecial_Scavenger_Crystal": {
+            "templateId": "CollectionBookPage:PageSpecial_Scavenger_Crystal",
+            "attributes": {
+                "sectionStates": [],
+                "state": "Active"
+            },
+            "quantity": 1
+        },
+        "CollectionBookPage:test_TestPage": {
+            "templateId": "CollectionBookPage:test_TestPage",
+            "attributes": {
+                "sectionStates": [],
+                "state": "Active"
+            },
+            "quantity": 1
+        }
+    },
     "stats": {
       "attributes": {
         "inventory_limit_bonus": 0
