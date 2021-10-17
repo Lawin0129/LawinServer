@@ -29292,6 +29292,22 @@
       },
       "quantity": 1
     },
+    "Schematic:SID_Floor_Track": {
+      "templateId": "Schematic:SID_Floor_Track",
+      "attributes": {
+        "legacy_alterations": [],
+        "max_level_bonus": 0,
+        "level": 1,
+        "refund_legacy_item": false,
+        "item_seen": true,
+        "alterations": [],
+        "xp": 0,
+        "refundable": false,
+        "alteration_base_rarities": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
     "Schematic:SID_Floor_Ward_VR_T05": {
       "templateId": "Schematic:SID_Floor_Ward_VR_T05",
       "attributes": {
@@ -37308,6 +37324,22 @@
       },
       "quantity": 1
     },
+    "Schematic:SID_Pistol_FireCracker_R_Ore_T04": {
+      "templateId": "Schematic:SID_Pistol_FireCracker_R_Ore_T04",
+      "attributes": {
+        "legacy_alterations": [],
+        "max_level_bonus": 0,
+        "level": 40,
+        "refund_legacy_item": false,
+        "item_seen": true,
+        "alterations": [],
+        "xp": 0,
+        "refundable": false,
+        "alteration_base_rarities": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
     "Schematic:SID_Pistol_FireCracker_R_Crystal_T04": {
       "templateId": "Schematic:SID_Pistol_FireCracker_R_Crystal_T04",
       "attributes": {
@@ -39884,6 +39916,22 @@
       },
       "quantity": 1
     },
+    "Schematic:SID_Assault_NeonGlow_SR_Ore_T05": {
+      "templateId": "Schematic:SID_Assault_NeonGlow_SR_Ore_T05",
+      "attributes": {
+        "legacy_alterations": [],
+        "max_level_bonus": 0,
+        "level": 50,
+        "refund_legacy_item": false,
+        "item_seen": true,
+        "alterations": [],
+        "xp": 0,
+        "refundable": false,
+        "alteration_base_rarities": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
     "Schematic:SID_Assault_NeonGlow_SR_Crystal_T05": {
       "templateId": "Schematic:SID_Assault_NeonGlow_SR_Crystal_T05",
       "attributes": {
@@ -41292,6 +41340,22 @@
       },
       "quantity": 1
     },
+    "Schematic:SID_Assault_Auto_SR_Crystal_T05": {
+      "templateId": "Schematic:SID_Assault_Auto_SR_Crystal_T05",
+      "attributes": {
+        "legacy_alterations": [],
+        "max_level_bonus": 0,
+        "level": 50,
+        "refund_legacy_item": false,
+        "item_seen": true,
+        "alterations": [],
+        "xp": 0,
+        "refundable": false,
+        "alteration_base_rarities": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
     "Schematic:SID_Assault_Auto_Halloween_SR_Ore_T05": {
       "templateId": "Schematic:SID_Assault_Auto_Halloween_SR_Ore_T05",
       "attributes": {
@@ -41346,6 +41410,22 @@
         "legacy_alterations": [],
         "max_level_bonus": 0,
         "level": 50,
+        "refund_legacy_item": false,
+        "item_seen": true,
+        "alterations": [],
+        "xp": 0,
+        "refundable": false,
+        "alteration_base_rarities": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Schematic:SID_OB_Assault_Auto_T03": {
+      "templateId": "Schematic:SID_OB_Assault_Auto_T03",
+      "attributes": {
+        "legacy_alterations": [],
+        "max_level_bonus": 0,
+        "level": 30,
         "refund_legacy_item": false,
         "item_seen": true,
         "alterations": [],
@@ -41506,6 +41586,22 @@
         "legacy_alterations": [],
         "max_level_bonus": 0,
         "level": 20,
+        "refund_legacy_item": false,
+        "item_seen": true,
+        "alterations": [],
+        "xp": 0,
+        "refundable": false,
+        "alteration_base_rarities": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Schematic:SID_Assault_Auto_C_Ore_T00": {
+      "templateId": "Schematic:SID_Assault_Auto_C_Ore_T00",
+      "attributes": {
+        "legacy_alterations": [],
+        "max_level_bonus": 0,
+        "level": 1,
         "refund_legacy_item": false,
         "item_seen": true,
         "alterations": [],
@@ -47198,6 +47294,70 @@
     },
     "Schematic:Ammo_EnergyCell": {
       "templateId": "Schematic:Ammo_EnergyCell",
+      "attributes": {
+        "legacy_alterations": [],
+        "max_level_bonus": 0,
+        "level": 1,
+        "refund_legacy_item": false,
+        "item_seen": true,
+        "alterations": [],
+        "xp": 0,
+        "refundable": false,
+        "alteration_base_rarities": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Schematic:Ammo_Shells": {
+      "templateId": "Schematic:Ammo_Shells",
+      "attributes": {
+        "legacy_alterations": [],
+        "max_level_bonus": 0,
+        "level": 1,
+        "refund_legacy_item": false,
+        "item_seen": true,
+        "alterations": [],
+        "xp": 0,
+        "refundable": false,
+        "alteration_base_rarities": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Schematic:Ammo_BulletsMedium": {
+      "templateId": "Schematic:Ammo_BulletsMedium",
+      "attributes": {
+        "legacy_alterations": [],
+        "max_level_bonus": 0,
+        "level": 1,
+        "refund_legacy_item": false,
+        "item_seen": true,
+        "alterations": [],
+        "xp": 0,
+        "refundable": false,
+        "alteration_base_rarities": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Schematic:Ammo_BulletsHeavy": {
+      "templateId": "Schematic:Ammo_BulletsHeavy",
+      "attributes": {
+        "legacy_alterations": [],
+        "max_level_bonus": 0,
+        "level": 1,
+        "refund_legacy_item": false,
+        "item_seen": true,
+        "alterations": [],
+        "xp": 0,
+        "refundable": false,
+        "alteration_base_rarities": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Schematic:Ammo_BulletsLight": {
+      "templateId": "Schematic:Ammo_BulletsLight",
       "attributes": {
         "legacy_alterations": [],
         "max_level_bonus": 0,
