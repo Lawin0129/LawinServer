@@ -40,6 +40,40 @@
       },
       "quantity": 1
     },
+<<<<<<< HEAD
+=======
+    "0d609e04-d740-4d99-bef5-fcfa9ceaf561": {
+      "templateId": "HomebaseBannerColor:defaultcolor16",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "4ba2652c-0077-4474-8901-6feb2b48d135": {
+      "templateId": "Schematic:sid_wall_wood_spikes_c_t01",
+      "attributes": {
+        "alteration_slots": [
+          {
+            "Type": "GameplaySlot",
+            "NumSlots": 1
+          },
+          {
+            "Type": "AttributeSlot",
+            "NumSlots": 1
+          }
+        ],
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "alterations": [
+          "Alteration:aid_att_trap_coredamage_t02"
+        ],
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+>>>>>>> parent of 544c51f (Merge pull request #22 from PRO100KatYT/main)
     "0f0e1281-25ab-405b-89d8-d9dcb86439fa": {
       "templateId": "CollectedResource:Token_collectionresource_nodegatetoken01",
       "attributes": {
@@ -59,6 +93,45 @@
       },
       "quantity": 2730
     },
+<<<<<<< HEAD
+=======
+    "0f003ec1-4185-4bf8-9b44-ade02e9826ba": {
+      "templateId": "Hero:hid_ninja_007_uc_t01",
+      "attributes": {
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "gender": 0,
+        "level": 1,
+        "item_seen": false,
+        "squad_slot_idx": -1,
+        "portrait": "",
+        "hero_name": "DefaultHeroName",
+        "max_level_bonus": 0,
+        "squad_id": "",
+        "mode_loadouts": [],
+        "xp": 0,
+        "slotted_building_id": "",
+        "building_slot_used": -1,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "a5c968fc-501d-43fc-8d3f-62bc1419fb1f": {
+      "templateId": "HomebaseBannerColor:defaultcolor12",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+>>>>>>> parent of 544c51f (Merge pull request #22 from PRO100KatYT/main)
     "295ca2c9-e177-4bf2-9907-a7a867e27bb8": {
       "templateId": "Quest:homebasequest_researchpurchase",
       "attributes": {
@@ -85,6 +158,55 @@
         "xp": 0,
         "sent_new_notification": true,
         "completion_kill_husk_smasher": 0,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "08b7e75e-cfdc-4845-8d32-2b10d96a5f3e": {
+      "templateId": "Schematic:sid_assault_surgical_vr_ore_t01",
+      "attributes": {
+        "alteration_slots": [
+          {
+            "Type": "GameplaySlot",
+            "NumSlots": 1
+          },
+          {
+            "Type": "AttributeSlot",
+            "NumSlots": 4
+          }
+        ],
+        "max_level_bonus": 0,
+        "level": 4,
+        "item_seen": true,
+        "alterations": [
+          "Alteration:aid_att_ranged_damage",
+          "Alteration:aid_att_ranged_clipsize",
+          "Alteration:aid_att_ranged_recoil_alt1",
+          "Alteration:aid_g_ranged_energyaffliction"
+        ],
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "1b03da0e-c8cb-44bf-84eb-429566ac73ca": {
+      "templateId": "Schematic:sid_pistol_semiauto_c_ore_t00",
+      "attributes": {
+        "alteration_slots": [
+          {
+            "Type": "GameplaySlot",
+            "NumSlots": 1
+          },
+          {
+            "Type": "AttributeSlot",
+            "NumSlots": 1
+          }
+        ],
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "alterations": [],
+        "xp": 0,
         "favorite": false
       },
       "quantity": 1
@@ -116,6 +238,59 @@
       },
       "quantity": 1
     },
+<<<<<<< HEAD
+=======
+    "da82bdcc-3f4d-426b-91a8-13e6f60f3e56": {
+      "templateId": "HomebaseBannerIcon:standardbanner21",
+      "attributes": {
+        "item_seen": false
+      },
+      "quantity": 1
+    },
+    "70372fc5-2826-4b87-8326-8227d1db98cf": {
+      "templateId": "HomebaseBannerColor:defaultcolor21",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "c0eae21a-50aa-48a3-a723-61958cefbbb9": {
+      "templateId": "HomebaseBannerColor:defaultcolor20",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "99fb9ead-c6f9-489c-9488-6f2a6555e71f": {
+      "templateId": "HomebaseBannerIcon:standardbanner17",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "3b352a6e-8731-4e41-8084-b82a3b6bc784": {
+      "templateId": "Schematic:ammo_shells",
+      "attributes": {
+        "alteration_slots": [
+          {
+            "Type": "GameplaySlot",
+            "NumSlots": 1
+          },
+          {
+            "Type": "AttributeSlot",
+            "NumSlots": 3
+          }
+        ],
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "alterations": [],
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+>>>>>>> parent of 544c51f (Merge pull request #22 from PRO100KatYT/main)
     "7bfbc8f3-83ac-4ec7-88a2-b293526e0536": {
       "templateId": "Quest:homebaseonboarding",
       "attributes": {
@@ -160,6 +335,19 @@
       },
       "quantity": 1
     },
+    "7ag-gegggfgfgfgfgfgfgtdereetsgv": {
+      "templateId": "Schematic:sid_assault_auto_sr_crystal_t05",
+      "attributes": {
+        "last_state_change_time": "2017-08-29T21:05:57.087Z",
+        "max_level_bonus": 0,
+        "level": 50,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": true,
+        "favorite": false
+      },
+      "quantity": 1
+    },
     "agresdarti48ut387t8bgggaa": {
       "templateId": "Quest:TestQuest_Narrative",
       "attributes": {
@@ -188,6 +376,141 @@
       },
       "quantity": 1
     },
+<<<<<<< HEAD
+=======
+    "003c9c95-cf60-4bf5-a34a-2f0c06eb466a": {
+      "templateId": "HomebaseBannerIcon:standardbanner16",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "c8c4d5eb-962d-424e-a27a-4c84d2a3e577": {
+      "templateId": "Schematic:ammo_energycell",
+      "attributes": {
+        "alteration_slots": [
+          {
+            "Type": "GameplaySlot",
+            "NumSlots": 1
+          },
+          {
+            "Type": "AttributeSlot",
+            "NumSlots": 3
+          }
+        ],
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": false,
+        "alterations": [],
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "b6af432f-5326-4b39-bbff-94c790abaa35": {
+      "templateId": "HomebaseBannerIcon:standardbanner20",
+      "attributes": {
+        "item_seen": false
+      },
+      "quantity": 1
+    },
+    "1af055df-0e55-4f01-8e0b-9b7b000e9a9f": {
+      "templateId": "Schematic:sid_sniper_amr_r_ore_t01",
+      "attributes": {
+        "alteration_slots": [
+          {
+            "Type": "GameplaySlot",
+            "NumSlots": 1
+          },
+          {
+            "Type": "AttributeSlot",
+            "NumSlots": 3
+          }
+        ],
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": false,
+        "alterations": [
+          "Alteration:aid_att_ranged_durabilitydecay",
+          "Alteration:aid_att_weapon_afflicted_dmgbonus",
+          "Alteration:aid_att_weapon_slowed_dmgbonus_alt1"
+        ],
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "1agfhf-5hrfhfhhfhth5t-4sxszzz-sdgg": {
+      "templateId": "Schematic:sid_assault_auto_sr_crystal_t06",
+      "attributes": {
+        "alteration_slots": [
+          {
+            "Type": "GameplaySlot",
+            "NumSlots": 1
+          },
+          {
+            "Type": "AttributeSlot",
+            "NumSlots": 3
+          }
+        ],
+        "max_level_bonus": 0,
+        "level": 60,
+        "item_seen": false,
+        "alterations": [
+          "Alteration:aid_att_ranged_durabilitydecay",
+          "Alteration:aid_att_weapon_afflicted_dmgbonus",
+          "Alteration:aid_att_weapon_slowed_dmgbonus_alt1"
+        ],
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "1agfhf-5hrfwyth5t-4sxszzz-sdgg": {
+      "templateId": "Schematic:sid_harvest_pickaxe_athena_c_t01",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": false,
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "1agfhf-5hrfwaxxbnyth5t-4sxszzz-sdgg": {
+      "templateId": "Schematic:sid_ammodatarockets",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": false,
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "1fakfgrughghgudghudhgdughdughudhgugg": {
+      "templateId": "Schematic:gadget_generic_turret",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": false,
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "1fakfgrughfaitcudghudhgdughdughudhgugg": {
+      "templateId": "Schematic:gadget_generic_turret",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": false,
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+>>>>>>> parent of 544c51f (Merge pull request #22 from PRO100KatYT/main)
     "1fakfgrughfaitcudghudhgdughdughudhgug": {
       "templateId": "gadget:g_commando_goincommando",
       "attributes": {
@@ -199,6 +522,27 @@
       },
       "quantity": 1
     },
+<<<<<<< HEAD
+=======
+    "1gbbbnmlf-5hrfwaxxbnyth5t-4sxszzz-sdgg": {
+      "templateId": "Schematic:sid_sniper_tripleshot_athena_sr_ore_t03",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 20,
+        "item_seen": false,
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "dc8bf72e-af1c-44ca-88cb-5ffe6a11e42d": {
+      "templateId": "HomebaseBannerIcon:standardbanner26",
+      "attributes": {
+        "item_seen": false
+      },
+      "quantity": 1
+    },
+>>>>>>> parent of 544c51f (Merge pull request #22 from PRO100KatYT/main)
     "3e4b6dd6-452c-42a7-a37a-0e5bae90b259": {
       "templateId": "Token:accountinventorybonus",
       "attributes": {
@@ -298,6 +642,83 @@
       },
       "quantity": 1
     },
+<<<<<<< HEAD
+=======
+    "6ec233e2-fc4b-43a1-94d0-0b7034b76442": {
+      "templateId": "Schematic:ammo_bulletsheavy",
+      "attributes": {
+        "alteration_slots": [
+          {
+            "Type": "GameplaySlot",
+            "NumSlots": 1
+          },
+          {
+            "Type": "AttributeSlot",
+            "NumSlots": 3
+          }
+        ],
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "alterations": [],
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "cec34fa5-ea54-43b5-99ab-76ec237ed005": {
+      "templateId": "HomebaseBannerIcon:standardbanner3",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "9efaf6ca-2513-4fd9-9500-52859d7c9d7d": {
+      "templateId": "Schematic:sid_ceiling_electric_single_c_t01",
+      "attributes": {
+        "alteration_slots": [
+          {
+            "Type": "GameplaySlot",
+            "NumSlots": 1
+          },
+          {
+            "Type": "AttributeSlot",
+            "NumSlots": 1
+          }
+        ],
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "alterations": [
+          "Alteration:aid_att_trap_critdamage"
+        ],
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "3aeca522-2d1f-4663-a2a6-c27b3fb7c43b": {
+      "templateId": "HomebaseBannerIcon:standardbanner19",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "d9e17bb4-3b0b-426b-9ec7-6b504af1c006": {
+      "templateId": "HomebaseBannerColor:defaultcolor6",
+      "attributes": {
+        "item_seen": false
+      },
+      "quantity": 1
+    },
+    "091395e7-5d85-49d7-915f-6e4f4329593c": {
+      "templateId": "HomebaseBannerColor:defaultcolor9",
+      "attributes": {
+        "item_seen": false
+      },
+      "quantity": 1
+    },
+>>>>>>> parent of 544c51f (Merge pull request #22 from PRO100KatYT/main)
     "d075ab2339-9fae-44f0-a348-62d7d30d03bf": {
       "templateId": "Quest:StonewoodQuest_TreasuredFriends",
       "attributes": {
@@ -342,6 +763,31 @@
         "slotted_building_id": "",
         "managerSynergy": "Homebase.Manager.IsSoldier",
         "building_slot_used": -1,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "4f0f823e-d214-410c-a68d-72547758f4ce": {
+      "templateId": "Schematic:sid_pistol_boltrevolver_uc_ore_t01",
+      "attributes": {
+        "alteration_slots": [
+          {
+            "Type": "GameplaySlot",
+            "NumSlots": 1
+          },
+          {
+            "Type": "AttributeSlot",
+            "NumSlots": 2
+          }
+        ],
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "alterations": [
+          "Alteration:aid_att_ranged_durabilitydecay",
+          "Alteration:aid_att_ranged_recoil"
+        ],
+        "xp": 0,
         "favorite": false
       },
       "quantity": 1
@@ -434,6 +880,38 @@
       },
       "quantity": 1
     },
+<<<<<<< HEAD
+=======
+    "a4ded5dd-b011-4f64-b5ba-3f76b0471490": {
+      "templateId": "Schematic:ingredient_blastpowder",
+      "attributes": {
+        "alteration_slots": [
+          {
+            "Type": "GameplaySlot",
+            "NumSlots": 1
+          },
+          {
+            "Type": "AttributeSlot",
+            "NumSlots": 3
+          }
+        ],
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "alterations": [],
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "6668e671-11e2-4029-84d6-133d4dd83e47": {
+      "templateId": "HomebaseBannerIcon:standardbanner9",
+      "attributes": {
+        "item_seen": false
+      },
+      "quantity": 1
+    },
+>>>>>>> parent of 544c51f (Merge pull request #22 from PRO100KatYT/main)
     "3c1493d9-edac-4f89-b423-cd14e371596a": {
       "templateId": "Worker:workerbasic_r_t01",
       "attributes": {
@@ -468,6 +946,40 @@
       },
       "quantity": 1
     },
+<<<<<<< HEAD
+=======
+    "bc467a2e-9394-455d-b39a-278133f39c05": {
+      "templateId": "HomebaseBannerIcon:standardbanner12",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "800154ba-cef7-48aa-897a-47541a6e2208": {
+      "templateId": "Schematic:sid_edged_scythe_c_ore_t01",
+      "attributes": {
+        "alteration_slots": [
+          {
+            "Type": "GameplaySlot",
+            "NumSlots": 1
+          },
+          {
+            "Type": "AttributeSlot",
+            "NumSlots": 1
+          }
+        ],
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "alterations": [
+          "Alteration:aid_att_melee_damage"
+        ],
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+>>>>>>> parent of 544c51f (Merge pull request #22 from PRO100KatYT/main)
     "ac7c555e-83bd-4884-b628-f4e2421fd8aa": {
       "templateId": "Quest:homebasequest_weakpointvision",
       "attributes": {
@@ -564,6 +1076,70 @@
       },
       "quantity": 1
     },
+<<<<<<< HEAD
+=======
+    "80d4a192-9206-4bb3-9a34-a4e0139f16b3": {
+      "templateId": "HomebaseBannerColor:defaultcolor15",
+      "attributes": {
+        "item_seen": false
+      },
+      "quantity": 1
+    },
+    "f3bc3098-48e2-4874-a6dd-43eabe20e9e5": {
+      "templateId": "Schematic:sid_shotgun_auto_uc_ore_t01",
+      "attributes": {
+        "alteration_slots": [
+          {
+            "Type": "GameplaySlot",
+            "NumSlots": 1
+          },
+          {
+            "Type": "AttributeSlot",
+            "NumSlots": 2
+          }
+        ],
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "alterations": [
+          "Alteration:aid_att_ranged_clipsize",
+          "Alteration:aid_att_ranged_clipsize_alt1"
+        ],
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "7c5d6c34-2f0b-4bb4-b8e3-7c5e28defa3c": {
+      "templateId": "HomebaseBannerIcon:standardbanner15",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "af5c4f1e-e193-4157-aaf6-04066f6bd6f5": {
+      "templateId": "Schematic:ingredient_duct_tape",
+      "attributes": {
+        "alteration_slots": [
+          {
+            "Type": "GameplaySlot",
+            "NumSlots": 1
+          },
+          {
+            "Type": "AttributeSlot",
+            "NumSlots": 3
+          }
+        ],
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "alterations": [],
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+>>>>>>> parent of 544c51f (Merge pull request #22 from PRO100KatYT/main)
     "79f15de0-e59e-4526-af03-0b52fa926a9a": {
       "templateId": "Worker:workerbasic_r_t01",
       "attributes": {
@@ -583,6 +1159,90 @@
       },
       "quantity": 1
     },
+<<<<<<< HEAD
+=======
+    "f1feb54d-74ec-4f57-8a50-e0e6eaad3e4d": {
+      "templateId": "Schematic:sid_shotgun_tactical_precision_r_ore_t01",
+      "attributes": {
+        "alteration_slots": [
+          {
+            "Type": "GameplaySlot",
+            "NumSlots": 1
+          },
+          {
+            "Type": "AttributeSlot",
+            "NumSlots": 3
+          }
+        ],
+        "max_level_bonus": 0,
+        "level": 2,
+        "item_seen": true,
+        "alterations": [
+          "Alteration:aid_att_ranged_damage",
+          "Alteration:aid_att_ranged_critchance_alt1",
+          "Alteration:aid_g_ranged_electricalaffliction"
+        ],
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "32fd68a2-960f-4a32-bca2-d982c5372c2d": {
+      "templateId": "Schematic:sid_floor_health_c_t00",
+      "attributes": {
+        "alteration_slots": [
+          {
+            "Type": "GameplaySlot",
+            "NumSlots": 1
+          },
+          {
+            "Type": "AttributeSlot",
+            "NumSlots": 2
+          }
+        ],
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": false,
+        "alterations": [],
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "073706f8-eb8b-4f4b-9234-585077217fdf": {
+      "templateId": "Schematic:sid_assault_burst_r_ore_t01",
+      "attributes": {
+        "alteration_slots": [
+          {
+            "Type": "GameplaySlot",
+            "NumSlots": 1
+          },
+          {
+            "Type": "AttributeSlot",
+            "NumSlots": 3
+          }
+        ],
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "alterations": [
+          "Alteration:aid_att_ranged_firerate",
+          "Alteration:aid_att_ranged_damage",
+          "Alteration:aid_g_ranged_electricalaffliction"
+        ],
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "93263e0d-eb6d-42bb-8459-7a288122cdde": {
+      "templateId": "HomebaseBannerIcon:standardbanner31",
+      "attributes": {
+        "item_seen": false
+      },
+      "quantity": 1
+    },
+>>>>>>> parent of 544c51f (Merge pull request #22 from PRO100KatYT/main)
     "dc35569d-db9e-4978-8d66-6c90b35a33d1": {
       "templateId": "Worker:workerbasic_c_t01",
       "attributes": {
@@ -599,6 +1259,32 @@
         "building_slot_used": -1,
         "favorite": false,
         "set_bonus": "Homebase.Worker.SetBonus.IsTrapDamageLow"
+      },
+      "quantity": 1
+    },
+    "5066f6d3-34ec-49e2-b25f-d9afe5c0f94d": {
+      "templateId": "Schematic:sid_blunt_light_bat_r_ore_t01",
+      "attributes": {
+        "alteration_slots": [
+          {
+            "Type": "GameplaySlot",
+            "NumSlots": 1
+          },
+          {
+            "Type": "AttributeSlot",
+            "NumSlots": 1
+          }
+        ],
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": false,
+        "alterations": [
+          "Alteration:aid_att_melee_damage",
+          "Alteration:aid_att_weapon_slowed_dmgbonus_alt1",
+          "Alteration:aid_att_melee_critdamage_alt2"
+        ],
+        "xp": 0,
+        "favorite": false
       },
       "quantity": 1
     },
@@ -647,6 +1333,49 @@
       },
       "quantity": 1
     },
+<<<<<<< HEAD
+=======
+    "6c37293a-3ffa-441f-8147-f55d0571babf": {
+      "templateId": "HomebaseBannerIcon:standardbanner28",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "d9977644-d196-4e9f-93b9-126523ae5ae3": {
+      "templateId": "HomebaseBannerColor:defaultcolor14",
+      "attributes": {
+        "item_seen": false
+      },
+      "quantity": 1
+    },
+    "f9fb7413-9c59-49dd-9e17-e2f5277871fc": {
+      "templateId": "Schematic:sid_blunt_light_r_ore_t01",
+      "attributes": {
+        "alteration_slots": [
+          {
+            "Type": "GameplaySlot",
+            "NumSlots": 1
+          },
+          {
+            "Type": "AttributeSlot",
+            "NumSlots": 3
+          }
+        ],
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "alterations": [
+          "Alteration:aid_att_melee_critchance",
+          "Alteration:aid_att_melee_durabilitydecay_alt2",
+          "Alteration:aid_g_melee_incendiary"
+        ],
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+>>>>>>> parent of 544c51f (Merge pull request #22 from PRO100KatYT/main)
     "83f598e7-ce64-4502-8201-6144fbc7e120": {
       "templateId": "Token:founderspack_1",
       "attributes": {
@@ -722,6 +1451,40 @@
       },
       "quantity": 1
     },
+<<<<<<< HEAD
+    "71344f5e-5d23-47e9-a952-847952b4d9b5": {
+      "templateId": "Quest:challenge_weaponupgrade_1",
+=======
+    "c4eddfea-d11e-47ac-b8da-fce009cffb89": {
+      "templateId": "Schematic:sid_edged_sword_medium_c_ore_t00",
+>>>>>>> parent of 544c51f (Merge pull request #22 from PRO100KatYT/main)
+      "attributes": {
+        "alteration_slots": [
+          {
+            "Type": "GameplaySlot",
+            "NumSlots": 1
+          },
+          {
+            "Type": "AttributeSlot",
+            "NumSlots": 1
+          }
+        ],
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": false,
+        "alterations": [],
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "f81b9dd4-35c0-40a0-bebf-400ab1283b82": {
+      "templateId": "HomebaseBannerIcon:standardbanner13",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
     "71344f5e-5d23-47e9-a952-847952b4d9b5": {
       "templateId": "Quest:challenge_weaponupgrade_1",
       "attributes": {
@@ -752,6 +1515,83 @@
       },
       "quantity": 1
     },
+<<<<<<< HEAD
+=======
+    "d1f90b14-611f-42d0-b4bf-1d30caeaebd2": {
+      "templateId": "Hero:hid_outlander_007_uc_t01",
+      "attributes": {
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "gender": 0,
+        "level": 1,
+        "item_seen": true,
+        "squad_slot_idx": -1,
+        "portrait": "",
+        "hero_name": "DefaultHeroName",
+        "max_level_bonus": 0,
+        "squad_id": "",
+        "mode_loadouts": [],
+        "xp": 0,
+        "slotted_building_id": "",
+        "building_slot_used": -1,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "d1f90fdfdfdfdfdf4-611f-42d0-b4bf-1d30caeaebd2": {
+      "templateId": "Hero:hid_outlander_zonefragment_sr_t05",
+      "attributes": {
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "gender": 0,
+        "level": 50,
+        "item_seen": true,
+        "squad_slot_idx": 0,
+        "portrait": "",
+        "hero_name": "DefaultHeroName",
+        "max_level_bonus": 0,
+        "squad_id": "",
+        "personality": "Homebase.Worker.Personality.IsCompetitive",
+        "managerSynergy": "Homebase.Manager.IsExplorer",
+        "mode_loadouts": [],
+        "xp": 0,
+        "slotted_building_id": "",
+        "building_slot_used": -1,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "410d8f37-8216-4466-b987-af3a7303f217": {
+      "templateId": "HomebaseBannerIcon:standardbanner29",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "110c9ba5-3b17-4625-b74e-a581f0ed823e": {
+      "templateId": "HomebaseBannerIcon:foundertier1banner3",
+      "attributes": {
+        "item_seen": false
+      },
+      "quantity": 1
+    },
+>>>>>>> parent of 544c51f (Merge pull request #22 from PRO100KatYT/main)
     "2d4ea84f-b6d7-42dc-b193-98bb9a31b3aa": {
       "templateId": "Quest:foundersquest_getrewards_0_1",
       "attributes": {
@@ -801,6 +1641,41 @@
       },
       "quantity": 1
     },
+<<<<<<< HEAD
+=======
+    "8c67473e-3f3a-4cb7-bf9c-1637d285cdaa": {
+      "templateId": "HomebaseBannerIcon:foundertier1banner2",
+      "attributes": {
+        "item_seen": false
+      },
+      "quantity": 1
+    },
+    "e4d92b7c-4591-472d-a32f-71251ec8786f": {
+      "templateId": "Schematic:sid_assault_burst_uc_ore_t01",
+      "attributes": {
+        "alteration_slots": [
+          {
+            "Type": "GameplaySlot",
+            "NumSlots": 1
+          },
+          {
+            "Type": "AttributeSlot",
+            "NumSlots": 2
+          }
+        ],
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "alterations": [
+          "Alteration:aid_att_ranged_durabilitydecay",
+          "Alteration:aid_att_ranged_damage"
+        ],
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+>>>>>>> parent of 544c51f (Merge pull request #22 from PRO100KatYT/main)
     "9aafecdc-c09f-4741-add3-41f3e521d955": {
       "templateId": "Quest:homebaseonboardinggrantschematics",
       "attributes": {
@@ -835,6 +1710,106 @@
       },
       "quantity": 1
     },
+<<<<<<< HEAD
+=======
+    "6edce324-aa06-4f46-b311-e87dfb780f03": {
+      "templateId": "Schematic:sid_piercing_spear_uc_ore_t01",
+      "attributes": {
+        "alteration_slots": [
+          {
+            "Type": "GameplaySlot",
+            "NumSlots": 1
+          },
+          {
+            "Type": "AttributeSlot",
+            "NumSlots": 2
+          }
+        ],
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "alterations": [
+          "Alteration:aid_att_melee_damage",
+          "Alteration:aid_g_melee_affliction"
+        ],
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "3abeaad4-31fd-49b9-ac16-35fcee36de7d": {
+      "templateId": "HomebaseBannerIcon:standardbanner10",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "f1ad0bee-6a0a-4a39-871c-df12f3647849": {
+      "templateId": "Schematic:sid_blunt_medium_uc_ore_t01",
+      "attributes": {
+        "alteration_slots": [
+          {
+            "Type": "GameplaySlot",
+            "NumSlots": 1
+          },
+          {
+            "Type": "AttributeSlot",
+            "NumSlots": 2
+          }
+        ],
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "alterations": [
+          "Alteration:aid_att_melee_damage",
+          "Alteration:aid_att_melee_staminacostreduction"
+        ],
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "edba2920-969d-495a-b782-c27b3b0320e3": {
+      "templateId": "Schematic:sid_sniper_boltaction_scope_r_ore_t01",
+      "attributes": {
+        "alteration_slots": [
+          {
+            "Type": "GameplaySlot",
+            "NumSlots": 1
+          },
+          {
+            "Type": "AttributeSlot",
+            "NumSlots": 3
+          }
+        ],
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "alterations": [
+          "Alteration:aid_att_ranged_damage",
+          "Alteration:aid_att_ranged_durabilitydecay",
+          "Alteration:aid_g_ranged_cryoaffliction"
+        ],
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "bd18cee3-fe9e-4da1-8d31-9aea8c7b76a2": {
+      "templateId": "HomebaseBannerIcon:standardbanner4",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "bd6d7ee4-d76e-4856-9352-eb0238ff6350": {
+      "templateId": "HomebaseBannerColor:defaultcolor10",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+>>>>>>> parent of 544c51f (Merge pull request #22 from PRO100KatYT/main)
     "6b4f7407-bf62-4122-962d-fb5099a97c33": {
       "templateId": "DailyRewardScheduleToken:founderspackdailyrewardtoken",
       "attributes": {
@@ -857,6 +1832,40 @@
       },
       "quantity": 10
     },
+<<<<<<< HEAD
+=======
+    "f3c84f3b-b88f-4d26-977f-b0ef79b2bc96": {
+      "templateId": "HomebaseBannerIcon:standardbanner7",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "80d1701f-f9f5-4c46-9ee5-c32dbff9148c": {
+      "templateId": "Schematic:sid_edged_scythe_c_ore_t01",
+      "attributes": {
+        "alteration_slots": [
+          {
+            "Type": "GameplaySlot",
+            "NumSlots": 1
+          },
+          {
+            "Type": "AttributeSlot",
+            "NumSlots": 1
+          }
+        ],
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": false,
+        "alterations": [
+          "Alteration:aid_att_melee_damage"
+        ],
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+>>>>>>> parent of 544c51f (Merge pull request #22 from PRO100KatYT/main)
     "bb5e6cc5-8083-412e-a391-3b434462f4a6": {
       "templateId": "Token:campaignaccess",
       "attributes": {
@@ -943,6 +1952,77 @@
       },
       "quantity": 1
     },
+<<<<<<< HEAD
+=======
+    "c5575af8-bb4e-4bca-9d4a-1a5470977b12": {
+      "templateId": "Schematic:sid_floor_spikes_wood_c_t01",
+      "attributes": {
+        "alteration_slots": [
+          {
+            "Type": "GameplaySlot",
+            "NumSlots": 1
+          },
+          {
+            "Type": "AttributeSlot",
+            "NumSlots": 1
+          }
+        ],
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "alterations": [],
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "903efe28-0319-4ef0-9cc0-23df20ff39c1": {
+      "templateId": "HomebaseBannerIcon:standardbanner8",
+      "attributes": {
+        "item_seen": false
+      },
+      "quantity": 1
+    },
+    "fac3f7bb-08e7-46ef-b369-44d0469ababe": {
+      "templateId": "HomebaseBannerColor:defaultcolor8",
+      "attributes": {
+        "item_seen": false
+      },
+      "quantity": 1
+    },
+    "f7877f09-0826-45e2-8224-c833443d9c56": {
+      "templateId": "HomebaseBannerIcon:foundertier1banner1",
+      "attributes": {
+        "item_seen": false
+      },
+      "quantity": 1
+    },
+    "690b1a71-4260-4751-802d-9683dfd76929": {
+      "templateId": "Schematic:sid_wall_darts_uc_t01",
+      "attributes": {
+        "alteration_slots": [
+          {
+            "Type": "GameplaySlot",
+            "NumSlots": 1
+          },
+          {
+            "Type": "AttributeSlot",
+            "NumSlots": 2
+          }
+        ],
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "alterations": [
+          "Alteration:aid_att_trap_maxdurability",
+          "Alteration:aid_att_trap_critchance"
+        ],
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+>>>>>>> parent of 544c51f (Merge pull request #22 from PRO100KatYT/main)
     "a04fe907-248d-4b60-b918-53cc7497ab32": {
       "templateId": "AccountResource:eventcurrency_snowballs",
       "attributes": {
@@ -1056,6 +2136,122 @@
       },
       "quantity": 1
     },
+    "ad0e53a8-b8ec-4bed-aaf3-ca414c42d929": {
+      "templateId": "Hero:hid_constructor_rushbase_sr_t04",
+      "attributes": {
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "gender": 0,
+        "level": 40,
+        "item_seen": true,
+        "squad_slot_idx": 1,
+        "portrait": "",
+        "hero_name": "DefaultHeroName",
+        "max_level_bonus": 0,
+        "mode_loadouts": [
+          {
+            "loadoutName": "Default",
+            "selectedGadgets": [
+              "Gadget:g_constructor_bullrush",
+              "",
+              ""
+            ]
+          }
+        ],
+        "squad_id": "squad_combat_adventuresquadone",
+        "xp": 0,
+        "slotted_building_id": "",
+        "building_slot_used": -1,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "ad0e53a8-b8ec-4bed-aaf3-ca414sdgdgdgd2d929": {
+      "templateId": "Hero:hid_constructor_rushbase_sr_t05",
+      "attributes": {
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "gender": 1,
+        "level": 50,
+        "item_seen": true,
+        "squad_slot_idx": 0,
+        "portrait": "",
+        "hero_name": "DefaultHeroName",
+        "max_level_bonus": 0,
+        "mode_loadouts": [
+          {
+            "loadoutName": "Default",
+            "selectedGadgets": [
+              "Gadget:g_constructor_bullrush",
+              "",
+              ""
+            ]
+          }
+        ],
+        "squad_id": "",
+        "personality": "Homebase.Worker.Personality.IsCooperative",
+        "managerSynergy": "Homebase.Manager.IsEngineer",
+        "xp": 0,
+        "slotted_building_id": "",
+        "building_slot_used": -1,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "agfgfgfg-b8ec-4bed-aaf3-ssdfdfddfd929": {
+      "templateId": "Hero:hid_commando_athena_menu",
+      "attributes": {
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "gender": 0,
+        "level": 1,
+        "item_seen": true,
+        "squad_slot_idx": 0,
+        "portrait": "",
+        "hero_name": "DefaultHeroName",
+        "max_level_bonus": 0,
+        "mode_loadouts": [
+          {
+            "loadoutName": "Default",
+            "selectedGadgets": [
+              "",
+              "",
+              ""
+            ]
+          }
+        ],
+        "squad_id": "",
+        "xp": 0,
+        "slotted_building_id": "",
+        "building_slot_used": -1,
+        "favorite": false
+      },
+      "quantity": 1
+    },
     "632493cd-5d36-422e-a7ad-277797afebeb": {
       "templateId": "AccountResource:peopleresource",
       "attributes": {
@@ -1066,6 +2262,81 @@
         "favorite": false
       },
       "quantity": 15
+    },
+    "90388843-a2b1-43c4-8ec7-49d1e40e8e98": {
+      "templateId": "Hero:hid_commando_grenadegun_sr_t05",
+      "attributes": {
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "gender": 0,
+        "level": 50,
+        "item_seen": true,
+        "squad_slot_idx": 0,
+        "portrait": "",
+        "hero_name": "DefaultHeroName",
+        "max_level_bonus": 0,
+        "squad_id": "squad_combat_adventuresquadone",
+        "mode_loadouts": [
+          {
+            "loadoutName": "Default",
+            "selectedGadgets": [
+              "Schematic:sid_assault_auto_sr_crystal_t06",
+              "Gadget:g_commando_goincommando",
+              "Gadget:g_commando_fraggrenade",
+              "Gadget:gadget_generic_turret"
+            ]
+          }
+        ],
+        "xp": 0,
+        "slotted_building_id": "",
+        "building_slot_used": -1,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "903888ggfg3-a2b1-43c4-8ec7-49d1e40e8e98": {
+      "templateId": "Hero:hid_commando_cinematic_test_r_t03",
+      "attributes": {
+        "equipped_cosmetics": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "gender": 0,
+        "level": 30,
+        "item_seen": true,
+        "squad_slot_idx": 2,
+        "portrait": "",
+        "hero_name": "DefaultHeroName",
+        "max_level_bonus": 0,
+        "squad_id": "squad_combat_adventuresquadone",
+        "mode_loadouts": [
+          {
+            "loadoutName": "Default",
+            "selectedGadgets": [
+              "Gadget:g_commando_goincommando"
+            ]
+          }
+        ],
+        "xp": 0,
+        "slotted_building_id": "",
+        "building_slot_used": -1,
+        "favorite": false
+      },
+      "quantity": 1
     },
     "de06b39f-0819-40e5-8c3b-fec5e417758c": {
       "templateId": "Quest:homebasequest_unlocksquads",
@@ -1079,6 +2350,72 @@
         "sent_new_notification": true,
         "favorite": false,
         "completion_unlock_skill_tree_squads": 1
+      },
+      "quantity": 1
+    },
+    "b8f6d78f-15e5-4ea0-9cd7-423f834ed661": {
+      "templateId": "Schematic:sid_assault_auto_c_ore_t00",
+      "attributes": {
+        "alteration_slots": [
+          {
+            "Type": "GameplaySlot",
+            "NumSlots": 1
+          },
+          {
+            "Type": "AttributeSlot",
+            "NumSlots": 1
+          }
+        ],
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "alterations": [],
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "a1d2391f-8a36-4382-ad6f-342c0b4224f2": {
+      "templateId": "Schematic:ammo_bulletslight",
+      "attributes": {
+        "alteration_slots": [
+          {
+            "Type": "GameplaySlot",
+            "NumSlots": 1
+          },
+          {
+            "Type": "AttributeSlot",
+            "NumSlots": 3
+          }
+        ],
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "alterations": [],
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "b997b439-70ef-4c1b-bf9c-f3de3bac88a2": {
+      "templateId": "Schematic:ammo_bulletsmedium",
+      "attributes": {
+        "alteration_slots": [
+          {
+            "Type": "GameplaySlot",
+            "NumSlots": 1
+          },
+          {
+            "Type": "AttributeSlot",
+            "NumSlots": 3
+          }
+        ],
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": false,
+        "alterations": [],
+        "xp": 0,
+        "favorite": false
       },
       "quantity": 1
     },
@@ -7189,6 +8526,7 @@
         "set_bonus": "Homebase.Worker.SetBonus.IsTrapDurabilityHigh"
       },
       "quantity": 1
+<<<<<<< HEAD
     },
     "Hero:HID_Commando_XBOX_VR_T05": {
       "templateId": "Hero:HID_Commando_XBOX_VR_T05",
@@ -37563,6 +38901,8 @@
         "item_seen": true
       },
       "quantity": 1
+=======
+>>>>>>> parent of 544c51f (Merge pull request #22 from PRO100KatYT/main)
     }
   },
   "stats": {
