@@ -81,22 +81,6 @@
       },
       "quantity": 1
     },
-    "0650a588-193c-4764-ac43-381823351f3c": {
-      "templateId": "Defender:did_defenderassault_basic_c_t01",
-      "attributes": {
-        "max_level_bonus": 0,
-        "squad_id": "",
-        "level": 1,
-        "item_seen": true,
-        "squad_slot_idx": -1,
-        "alterations": [
-          "Alteration:aid_att_def_shieldregen"
-        ],
-        "xp": 0,
-        "favorite": false
-      },
-      "quantity": 1
-    },
     "9070d673-1981-491b-9069-99f18872d9ad": {
       "templateId": "HomebaseNode:questreward_newheroloadout2_dummy",
       "attributes": {
@@ -623,11 +607,6 @@
       },
       "quantity": 1
     },
-    "4e633bd4-1ac7-42b3-a03a-adc25b7448cc": {
-      "templateId": "TeamPerk:tpid_kineticoverdrive",
-      "attributes": {},
-      "quantity": 1
-    },
     "a808d44a-7455-4757-b75c-14657e7cf962": {
       "templateId": "Worker:workerbasic_r_t01",
       "attributes": {
@@ -765,24 +744,6 @@
         "last_state_change_time": "2020-01-31T15:20:20.016Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
-        "xp": 0,
-        "favorite": false
-      },
-      "quantity": 1
-    },
-    "a9a485ee-9fbb-41d8-9c56-49a65204ff93": {
-      "templateId": "Defender:did_defendersniper_basic_r_t01",
-      "attributes": {
-        "max_level_bonus": 0,
-        "squad_id": "",
-        "level": 1,
-        "item_seen": true,
-        "squad_slot_idx": -1,
-        "alterations": [
-          "Alteration:aid_att_def_clipsize",
-          "Alteration:aid_att_def_shieldregen",
-          "Alteration:aid_att_def_maxhealth"
-        ],
         "xp": 0,
         "favorite": false
       },
@@ -1459,46 +1420,6 @@
       },
       "quantity": 1
     },
-    "c66d5d68-ffa8-4a23-bc47-3b7a59ddd978": {
-      "templateId": "Defender:did_defendershotgun_basic_uc_t01",
-      "attributes": {
-        "max_level_bonus": 0,
-        "squad_id": "",
-        "level": 1,
-        "item_seen": false,
-        "squad_slot_idx": -1,
-        "alterations": [
-          "Alteration:aid_att_def_durability",
-          "Alteration:aid_att_def_shieldregen"
-        ],
-        "xp": 0,
-        "favorite": false
-      },
-      "quantity": 1
-    },
-    "c3936b84-3c0d-43a5-8933-1a8fb86b5b91": {
-      "templateId": "TeamPerk:tpid_recycling",
-      "attributes": {},
-      "quantity": 1
-    },
-    "4d0950d2-f498-468c-8032-ff52d6fe3656": {
-      "templateId": "Defender:did_defendermelee_basic_r_t01",
-      "attributes": {
-        "max_level_bonus": 0,
-        "squad_id": "",
-        "level": 1,
-        "item_seen": false,
-        "squad_slot_idx": -1,
-        "alterations": [
-          "Alteration:aid_att_def_weapondamage_axe",
-          "Alteration:aid_att_def_maxhealth",
-          "Alteration:aid_att_def_maxshield"
-        ],
-        "xp": 0,
-        "favorite": false
-      },
-      "quantity": 1
-    },
     "2f0c4a53-11ad-413b-94e5-886c20733871": {
       "templateId": "Quest:starlightquest_complete_d1_b",
       "attributes": {
@@ -1836,41 +1757,6 @@
       },
       "quantity": 1
     },
-    "13ef15b4-812b-43b4-961b-8dfee955ec46": {
-      "templateId": "Defender:did_defendershotgun_basic_r_t01",
-      "attributes": {
-        "max_level_bonus": 0,
-        "squad_id": "",
-        "level": 3,
-        "item_seen": true,
-        "squad_slot_idx": -1,
-        "alterations": [
-          "Alteration:aid_att_def_firerate",
-          "Alteration:aid_att_def_maxshield",
-          "Alteration:aid_att_def_weapondamage_shotgun"
-        ],
-        "xp": 0,
-        "favorite": false
-      },
-      "quantity": 1
-    },
-    "6e6b4f27-df61-4c37-a0d5-26515743f97c": {
-      "templateId": "Defender:did_defendermelee_basic_uc_t01",
-      "attributes": {
-        "max_level_bonus": 0,
-        "squad_id": "",
-        "level": 1,
-        "item_seen": true,
-        "squad_slot_idx": -1,
-        "alterations": [
-          "Alteration:aid_att_def_weapondamage_melee",
-          "Alteration:aid_att_def_maxhealth"
-        ],
-        "xp": 0,
-        "favorite": false
-      },
-      "quantity": 1
-    },
     "f06de7c1-7119-41c4-91ff-16976a438134": {
       "templateId": "Quest:challenge_eldritchabominations_20",
       "attributes": {
@@ -1886,24 +1772,6 @@
         "last_state_change_time": "2020-01-22T12:16:01.864Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
-        "xp": 0,
-        "favorite": false
-      },
-      "quantity": 1
-    },
-    "a8956815-b7b4-445d-b14a-d1a5d6fc7a3a": {
-      "templateId": "Defender:did_defendersniper_basic_r_t01",
-      "attributes": {
-        "max_level_bonus": 0,
-        "squad_id": "",
-        "level": 1,
-        "item_seen": true,
-        "squad_slot_idx": -1,
-        "alterations": [
-          "Alteration:aid_att_def_durability",
-          "Alteration:aid_att_def_shieldregen",
-          "Alteration:aid_att_def_critchance_ranged"
-        ],
         "xp": 0,
         "favorite": false
       },
@@ -2208,24 +2076,6 @@
       },
       "quantity": 1
     },
-    "fd10cc29-5eab-470e-ada3-c9e6f348f260": {
-      "templateId": "Defender:did_defenderpistol_basic_f_r_t01",
-      "attributes": {
-        "max_level_bonus": 0,
-        "squad_id": "",
-        "level": 1,
-        "item_seen": true,
-        "squad_slot_idx": -1,
-        "alterations": [
-          "Alteration:aid_att_def_weapondamage_pistol",
-          "Alteration:aid_att_def_maxhealth",
-          "Alteration:aid_att_def_critdamage_ranged"
-        ],
-        "xp": 0,
-        "favorite": false
-      },
-      "quantity": 1
-    },
     "deb5b5ce-02f2-4384-99dd-28210a35a008": {
       "templateId": "Quest:s11_holdfastquest_legend_15",
       "attributes": {
@@ -2393,23 +2243,6 @@
       },
       "quantity": 1
     },
-    "6af044b7-d914-4af7-9242-2886d2a8d974": {
-      "templateId": "Defender:did_defendermelee_basic_uc_t01",
-      "attributes": {
-        "max_level_bonus": 0,
-        "squad_id": "",
-        "level": 1,
-        "item_seen": true,
-        "squad_slot_idx": -1,
-        "alterations": [
-          "Alteration:aid_att_def_critchance_melee",
-          "Alteration:aid_att_def_maxhealth"
-        ],
-        "xp": 0,
-        "favorite": false
-      },
-      "quantity": 1
-    },
     "8ca02155-d846-4af2-bace-081543322241": {
       "templateId": "Quest:plankertonquest_filler_4_d1",
       "attributes": {
@@ -2428,11 +2261,6 @@
         "favorite": false,
         "completion_complete_buildradargrid_2": 1
       },
-      "quantity": 1
-    },
-    "a738ed15-f4b8-4fd5-9a7d-54c7c57629a0": {
-      "templateId": "TeamPerk:tpid_superchargedtraps",
-      "attributes": {},
       "quantity": 1
     },
     "1bbe7bab-ad2a-4780-9624-2eb656821a60": {
@@ -2511,11 +2339,6 @@
         "xp": 0,
         "favorite": false
       },
-      "quantity": 1
-    },
-    "4b6ad008-c7e3-4872-995b-aaa5ee5faee7": {
-      "templateId": "TeamPerk:tpid_onetwopunch",
-      "attributes": {},
       "quantity": 1
     },
     "711cf5ad-e661-4aca-af5a-a9357e13eec9": {
@@ -2802,24 +2625,6 @@
       },
       "quantity": 1
     },
-    "276d8900-229e-445e-9b65-5fe3c63e8bce": {
-      "templateId": "Defender:did_defendermelee_basic_r_t01",
-      "attributes": {
-        "max_level_bonus": 0,
-        "squad_id": "",
-        "level": 1,
-        "item_seen": false,
-        "squad_slot_idx": -1,
-        "alterations": [
-          "Alteration:aid_att_def_durability",
-          "Alteration:aid_att_def_shieldregen",
-          "Alteration:aid_att_def_maxhealth"
-        ],
-        "xp": 0,
-        "favorite": false
-      },
-      "quantity": 1
-    },
     "c43c0174-a35f-4fd2-a8d2-f4098a53a6fd": {
       "templateId": "Quest:plankertonquest_reactive_records",
       "attributes": {
@@ -2988,25 +2793,6 @@
       "templateId": "HomebaseNode:questreward_stonewood_squad_ssd5",
       "attributes": {
         "item_seen": true
-      },
-      "quantity": 1
-    },
-    "443e8dd3-f4ca-43cd-bf32-62f1b7a28ca8": {
-      "templateId": "Defender:did_defendersniper_basic_vr_t01",
-      "attributes": {
-        "max_level_bonus": 0,
-        "squad_id": "",
-        "level": 2,
-        "item_seen": true,
-        "squad_slot_idx": -1,
-        "alterations": [
-          "Alteration:aid_att_def_firerate",
-          "Alteration:aid_att_def_maxhealth",
-          "Alteration:aid_att_def_shieldregen",
-          "Alteration:aid_att_def_maxshield"
-        ],
-        "xp": 0,
-        "favorite": false
       },
       "quantity": 1
     },
@@ -3179,7 +2965,7 @@
     "CampaignHeroLoadout:defaultloadout": {
       "templateId": "CampaignHeroLoadout:defaultloadout",
       "attributes": {
-        "team_perk": "0e63ac3b-0f3c-46bb-b000-8c2fe7fe75b3",
+        "team_perk": "TeamPerk:TPID_PreemptiveStrike",
         "loadout_name": "",
         "crew_members": {
           "followerslot5": "Hero:HID_Outlander_028_RetroSciFiStoryOutlander_SR_T05",
@@ -3591,23 +3377,6 @@
         "building_slot_used": -1,
         "favorite": false,
         "set_bonus": "Homebase.Worker.SetBonus.IsRangedDamageLow"
-      },
-      "quantity": 1
-    },
-    "0c2e928e-e89b-4226-b687-e4cd0d101d01": {
-      "templateId": "Defender:did_defendershotgun_basic_uc_t01",
-      "attributes": {
-        "max_level_bonus": 0,
-        "squad_id": "",
-        "level": 1,
-        "item_seen": true,
-        "squad_slot_idx": -1,
-        "alterations": [
-          "Alteration:aid_att_def_durability",
-          "Alteration:aid_att_def_maxshield"
-        ],
-        "xp": 0,
-        "favorite": false
       },
       "quantity": 1
     },
@@ -4075,23 +3844,6 @@
       },
       "quantity": 1
     },
-    "1feff066-9d89-4c7a-97b4-40285ace5bfd": {
-      "templateId": "Defender:did_defendersniper_basic_uc_t01",
-      "attributes": {
-        "max_level_bonus": 0,
-        "squad_id": "",
-        "level": 1,
-        "item_seen": true,
-        "squad_slot_idx": -1,
-        "alterations": [
-          "Alteration:aid_att_def_durability",
-          "Alteration:aid_att_def_maxshield"
-        ],
-        "xp": 0,
-        "favorite": false
-      },
-      "quantity": 1
-    },
     "5deee3f5-6638-4b49-9847-00f698ed239e": {
       "templateId": "Worker:workerbasic_r_t01",
       "attributes": {
@@ -4133,23 +3885,6 @@
         "last_state_change_time": "2020-01-21T20:00:06.716Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
-        "xp": 0,
-        "favorite": false
-      },
-      "quantity": 1
-    },
-    "fbeabedb-b48d-44f1-b443-1210cfd67585": {
-      "templateId": "Defender:did_defendermelee_basic_uc_t01",
-      "attributes": {
-        "max_level_bonus": 0,
-        "squad_id": "",
-        "level": 1,
-        "item_seen": true,
-        "squad_slot_idx": -1,
-        "alterations": [
-          "Alteration:aid_att_def_weapondamage_spears",
-          "Alteration:aid_att_def_shieldregen"
-        ],
         "xp": 0,
         "favorite": false
       },
@@ -4476,16 +4211,6 @@
       },
       "quantity": 1
     },
-    "8f4adbda-4586-41a5-88d6-d33f9f8631aa": {
-      "templateId": "TeamPerk:tpid_dimmak",
-      "attributes": {},
-      "quantity": 1
-    },
-    "a65b4afb-5611-4090-96d4-27d000894197": {
-      "templateId": "TeamPerk:tpid_nevertellmetheodds",
-      "attributes": {},
-      "quantity": 1
-    },
     "1446b973-586f-418a-9db5-4665119bb670": {
       "templateId": "Quest:wargames_visibilityquest_challenge_dangerclose",
       "attributes": {
@@ -4542,24 +4267,6 @@
         "max_level_bonus": 0,
         "xp": 0,
         "completion_complete_outpost_1_7": 1,
-        "favorite": false
-      },
-      "quantity": 1
-    },
-    "59dd2dfe-69dc-470b-99a4-6dc0e3c14daa": {
-      "templateId": "Defender:did_defenderpistol_basic_r_t01",
-      "attributes": {
-        "max_level_bonus": 0,
-        "squad_id": "",
-        "level": 1,
-        "item_seen": true,
-        "squad_slot_idx": -1,
-        "alterations": [
-          "Alteration:aid_att_def_clipsize",
-          "Alteration:aid_att_def_shieldregen",
-          "Alteration:aid_att_def_maxhealth"
-        ],
-        "xp": 0,
         "favorite": false
       },
       "quantity": 1
@@ -4671,22 +4378,6 @@
       },
       "quantity": 1
     },
-    "f9a96455-0d81-480f-a3ae-ff7587b2710c": {
-      "templateId": "Defender:did_defenderassault_basic_c_t01",
-      "attributes": {
-        "max_level_bonus": 0,
-        "squad_id": "",
-        "level": 1,
-        "item_seen": true,
-        "squad_slot_idx": -1,
-        "alterations": [
-          "Alteration:aid_att_def_maxshield"
-        ],
-        "xp": 0,
-        "favorite": false
-      },
-      "quantity": 1
-    },
     "ec189e43-c22c-4241-9f4f-feac6f5f58ed": {
       "templateId": "Worker:worker_halloween_husky_vr_t01",
       "attributes": {
@@ -4703,22 +4394,6 @@
         "building_slot_used": -1,
         "favorite": false,
         "set_bonus": "Homebase.Worker.SetBonus.IsMeleeDamageLow"
-      },
-      "quantity": 1
-    },
-    "e59cb428-a9f7-49e4-ad84-8f2f01b552fc": {
-      "templateId": "Defender:did_defenderassault_basic_c_t01",
-      "attributes": {
-        "max_level_bonus": 0,
-        "squad_id": "",
-        "level": 1,
-        "item_seen": true,
-        "squad_slot_idx": -1,
-        "alterations": [
-          "Alteration:aid_att_def_critchance_ranged"
-        ],
-        "xp": 0,
-        "favorite": false
       },
       "quantity": 1
     },
@@ -5390,24 +5065,6 @@
         "slotted_building_id": "",
         "managerSynergy": "Homebase.Manager.IsExplorer",
         "building_slot_used": -1,
-        "favorite": false
-      },
-      "quantity": 1
-    },
-    "604593f6-d03e-43ef-aed4-d042c7f838ca": {
-      "templateId": "Defender:did_defenderpistol_basic_f_r_t01",
-      "attributes": {
-        "max_level_bonus": 0,
-        "squad_id": "",
-        "level": 1,
-        "item_seen": true,
-        "squad_slot_idx": -1,
-        "alterations": [
-          "Alteration:aid_att_def_weapondamage_pistol",
-          "Alteration:aid_att_def_shieldregen",
-          "Alteration:aid_att_def_maxshield"
-        ],
-        "xp": 0,
         "favorite": false
       },
       "quantity": 1
@@ -6104,24 +5761,6 @@
       },
       "quantity": 1
     },
-    "8aa90b9c-f6ef-4c86-9bf7-bdca1ef820a4": {
-      "templateId": "Defender:did_defenderpistol_basic_f_r_t01",
-      "attributes": {
-        "max_level_bonus": 0,
-        "squad_id": "",
-        "level": 1,
-        "item_seen": true,
-        "squad_slot_idx": -1,
-        "alterations": [
-          "Alteration:aid_att_def_weapondamage_pistol",
-          "Alteration:aid_att_def_maxhealth",
-          "Alteration:aid_att_def_weapondamage_pistol"
-        ],
-        "xp": 0,
-        "favorite": false
-      },
-      "quantity": 1
-    },
     "a1282f97-875f-4e97-bf64-becad0ce16cf": {
       "templateId": "Worker:workerbasic_c_t01",
       "attributes": {
@@ -6210,24 +5849,6 @@
         "favorite": false
       },
       "quantity": 5000
-    },
-    "7904a674-7d0f-4c84-97bf-7007060e917d": {
-      "templateId": "Defender:did_defenderassault_basic_r_t01",
-      "attributes": {
-        "max_level_bonus": 0,
-        "squad_id": "",
-        "level": 1,
-        "item_seen": true,
-        "squad_slot_idx": -1,
-        "alterations": [
-          "Alteration:aid_att_def_reload",
-          "Alteration:aid_att_def_maxhealth",
-          "Alteration:aid_att_def_critchance_ranged"
-        ],
-        "xp": 0,
-        "favorite": false
-      },
-      "quantity": 1
     },
     "70bc37c0-8298-4d94-9844-938d8f0d58b7": {
       "templateId": "AccountResource:reagent_c_t02",
@@ -6332,24 +5953,6 @@
         "completion_unlock_skill_tree_constructor_leadership": 1,
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
-        "xp": 0,
-        "favorite": false
-      },
-      "quantity": 1
-    },
-    "ff0addb1-36c3-4f1f-b071-235f73ca11fd": {
-      "templateId": "Defender:did_defenderassault_basic_r_t01",
-      "attributes": {
-        "max_level_bonus": 0,
-        "squad_id": "",
-        "level": 1,
-        "item_seen": true,
-        "squad_slot_idx": -1,
-        "alterations": [
-          "Alteration:aid_att_def_critchance_ranged",
-          "Alteration:aid_att_def_maxshield",
-          "Alteration:aid_att_def_weapondamage_assault"
-        ],
         "xp": 0,
         "favorite": false
       },
@@ -6565,22 +6168,6 @@
       "templateId": "HomebaseNode:questreward_expedition_speedboat3",
       "attributes": {
         "item_seen": false
-      },
-      "quantity": 1
-    },
-    "41a17006-4d60-4b7f-99c6-6923252e6dea": {
-      "templateId": "Defender:did_defenderpistol_basic_c_t01",
-      "attributes": {
-        "max_level_bonus": 0,
-        "squad_id": "",
-        "level": 1,
-        "item_seen": true,
-        "squad_slot_idx": -1,
-        "alterations": [
-          "Alteration:aid_att_def_maxshield"
-        ],
-        "xp": 0,
-        "favorite": false
       },
       "quantity": 1
     },
@@ -6836,22 +6423,6 @@
       },
       "quantity": 1
     },
-    "2f8d0d43-abb6-4b55-a4c1-c8d42ab669be": {
-      "templateId": "Defender:did_defenderpistol_basic_c_t01",
-      "attributes": {
-        "max_level_bonus": 0,
-        "squad_id": "",
-        "level": 1,
-        "item_seen": true,
-        "squad_slot_idx": -1,
-        "alterations": [
-          "Alteration:aid_att_def_firerate"
-        ],
-        "xp": 0,
-        "favorite": false
-      },
-      "quantity": 1
-    },
     "2b1fad8b-d49d-4741-8747-3b5629f74bba": {
       "templateId": "Quest:s11_holdfastquest_season_survive_15",
       "attributes": {
@@ -6927,24 +6498,6 @@
         "max_level_bonus": 0,
         "xp": 0,
         "completion_complete_powerreactor_2_diff2_v2": 1,
-        "favorite": false
-      },
-      "quantity": 1
-    },
-    "ac935f8b-449e-4d5a-9887-d13b50860c70": {
-      "templateId": "Defender:did_defendermelee_basic_r_t01",
-      "attributes": {
-        "max_level_bonus": 0,
-        "squad_id": "",
-        "level": 1,
-        "item_seen": true,
-        "squad_slot_idx": -1,
-        "alterations": [
-          "Alteration:aid_att_def_weapondamage_spears",
-          "Alteration:aid_att_def_maxhealth",
-          "Alteration:aid_att_def_maxhealth"
-        ],
-        "xp": 0,
         "favorite": false
       },
       "quantity": 1
@@ -7149,20 +6702,6 @@
       },
       "quantity": 1
     },
-    "7053e12d-530d-4317-994a-e3d8224a4688": {
-      "templateId": "Defender:did_defenderassault_basic_c_t00",
-      "attributes": {
-        "max_level_bonus": 0,
-        "squad_id": "",
-        "level": 1,
-        "item_seen": true,
-        "squad_slot_idx": -1,
-        "alterations": [],
-        "xp": 0,
-        "favorite": false
-      },
-      "quantity": 1
-    },
     "3674af5f-d635-40c6-8019-e90d20323e8e": {
       "templateId": "Quest:heroquest_constructor_1",
       "attributes": {
@@ -7241,25 +6780,6 @@
         "building_slot_used": -1,
         "favorite": false,
         "set_bonus": "Homebase.Worker.SetBonus.IsAbilityDamageLow"
-      },
-      "quantity": 1
-    },
-    "1790cea9-093d-4798-b883-24c34637a1a4": {
-      "templateId": "Defender:did_defendermelee_basic_vr_t01",
-      "attributes": {
-        "max_level_bonus": 0,
-        "squad_id": "",
-        "level": 1,
-        "item_seen": true,
-        "squad_slot_idx": -1,
-        "alterations": [
-          "Alteration:aid_att_def_weapondamage_hammer",
-          "Alteration:aid_att_def_maxshield",
-          "Alteration:aid_att_def_critchance_melee",
-          "Alteration:aid_att_def_weapondamage_melee"
-        ],
-        "xp": 0,
-        "favorite": false
       },
       "quantity": 1
     },
@@ -7465,41 +6985,6 @@
         "max_level_bonus": 0,
         "xp": 0,
         "completion_plankertonquest_tutorial_perk_obj_tabcallout": 1,
-        "favorite": false
-      },
-      "quantity": 1
-    },
-    "225a13bc-87b3-442b-aeef-b3988712a3ee": {
-      "templateId": "Defender:did_defenderassault_basic_m_r_t01",
-      "attributes": {
-        "max_level_bonus": 0,
-        "squad_id": "",
-        "level": 1,
-        "item_seen": false,
-        "squad_slot_idx": -1,
-        "alterations": [
-          "Alteration:aid_att_def_firerate",
-          "Alteration:aid_att_def_maxshield",
-          "Alteration:aid_att_def_shieldregen"
-        ],
-        "xp": 0,
-        "favorite": false
-      },
-      "quantity": 1
-    },
-    "c1fbe539-d1fe-479a-bce6-8e1cbae225f2": {
-      "templateId": "Defender:did_defenderpistol_basic_uc_t01",
-      "attributes": {
-        "max_level_bonus": 0,
-        "squad_id": "",
-        "level": 1,
-        "item_seen": true,
-        "squad_slot_idx": -1,
-        "alterations": [
-          "Alteration:aid_att_def_clipsize",
-          "Alteration:aid_att_def_maxshield"
-        ],
-        "xp": 0,
         "favorite": false
       },
       "quantity": 1
@@ -7959,22 +7444,6 @@
       },
       "quantity": 1
     },
-    "d2c44a9f-b035-4107-a83e-bfd419376733": {
-      "templateId": "Defender:did_defenderassault_basic_c_t01",
-      "attributes": {
-        "max_level_bonus": 0,
-        "squad_id": "",
-        "level": 1,
-        "item_seen": true,
-        "squad_slot_idx": -1,
-        "alterations": [
-          "Alteration:aid_att_def_reload"
-        ],
-        "xp": 0,
-        "favorite": false
-      },
-      "quantity": 1
-    },
     "3b47779c-d566-436b-89a3-3f8455fc4c45": {
       "templateId": "Worker:managermartialartist_c_t01",
       "attributes": {
@@ -8197,22 +7666,6 @@
         "completion_wargames_visibilityquest_wargame_tprifts": 0,
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
-        "xp": 0,
-        "favorite": false
-      },
-      "quantity": 1
-    },
-    "325cd3b5-71a5-413b-a0ae-1185cb7b678f": {
-      "templateId": "Defender:did_defendersniper_basic_c_t01",
-      "attributes": {
-        "max_level_bonus": 0,
-        "squad_id": "",
-        "level": 1,
-        "item_seen": true,
-        "squad_slot_idx": -1,
-        "alterations": [
-          "Alteration:aid_att_def_shieldregen"
-        ],
         "xp": 0,
         "favorite": false
       },
@@ -9764,22 +9217,6 @@
       },
       "quantity": 1
     },
-    "2053077e-ec1f-4dd1-9053-a74399d1d261": {
-      "templateId": "Defender:did_defenderassault_basic_c_t01",
-      "attributes": {
-        "max_level_bonus": 0,
-        "squad_id": "",
-        "level": 1,
-        "item_seen": true,
-        "squad_slot_idx": -1,
-        "alterations": [
-          "Alteration:aid_att_def_firerate"
-        ],
-        "xp": 0,
-        "favorite": false
-      },
-      "quantity": 1
-    },
     "f49e1679-5590-4f27-8917-fbcfda4ef6db": {
       "templateId": "Quest:stonewoodquest_retrievedata_d1",
       "attributes": {
@@ -10115,24 +9552,6 @@
       },
       "quantity": 1
     },
-    "f34fad78-baa8-42c8-8738-bd7ddfec8a64": {
-      "templateId": "Defender:did_defenderpistol_basic_f_r_t01",
-      "attributes": {
-        "max_level_bonus": 0,
-        "squad_id": "",
-        "level": 1,
-        "item_seen": false,
-        "squad_slot_idx": -1,
-        "alterations": [
-          "Alteration:aid_att_def_durability",
-          "Alteration:aid_att_def_maxshield",
-          "Alteration:aid_att_def_shieldregen"
-        ],
-        "xp": 0,
-        "favorite": false
-      },
-      "quantity": 1
-    },
     "5e202149-d063-43e4-8632-e1c6cce36283": {
       "templateId": "HomebaseNode:questreward_feature_skillsystem",
       "attributes": {
@@ -10159,11 +9578,6 @@
         "xp": 0,
         "favorite": false
       },
-      "quantity": 1
-    },
-    "2ce7d5a9-f31a-4e91-937b-5cd4d1db70cd": {
-      "templateId": "TeamPerk:tpid_keepout",
-      "attributes": {},
       "quantity": 1
     },
     "706cac0c-951a-4618-84bc-947289a133f9": {
@@ -10488,11 +9902,6 @@
       },
       "quantity": 1
     },
-    "249514bc-797b-4407-8463-fafac0fc2d15": {
-      "templateId": "TeamPerk:tpid_endlessshadow",
-      "attributes": {},
-      "quantity": 1
-    },
     "7b32a825-5a7a-4c3f-bca1-2b2b0aa7cea2": {
       "templateId": "Quest:wargames_visibilityquest_wargame_overload",
       "attributes": {
@@ -10717,11 +10126,6 @@
       },
       "quantity": 1
     },
-    "97b72ad1-628d-46b3-8af5-ed682f15bd0f": {
-      "templateId": "TeamPerk:tpid_longarmofthelaw",
-      "attributes": {},
-      "quantity": 1
-    },
     "89510765-be81-4ae5-9924-461c68301963": {
       "templateId": "Quest:heroquest_ninjaleadership",
       "attributes": {
@@ -10808,23 +10212,6 @@
       },
       "quantity": 1
     },
-    "6978b397-e070-4793-abff-f75db884d0d3": {
-      "templateId": "Defender:did_defenderpistol_basic_uc_t01",
-      "attributes": {
-        "max_level_bonus": 0,
-        "squad_id": "",
-        "level": 1,
-        "item_seen": false,
-        "squad_slot_idx": -1,
-        "alterations": [
-          "Alteration:aid_att_def_firerate",
-          "Alteration:aid_att_def_maxhealth"
-        ],
-        "xp": 0,
-        "favorite": false
-      },
-      "quantity": 1
-    },
     "e21465df-e153-45e4-ba48-7ad8bb79258f": {
       "templateId": "CollectedResource:Token_collectionresource_nodegatetoken01",
       "attributes": {
@@ -10852,11 +10239,6 @@
         "xp": 0,
         "favorite": false
       },
-      "quantity": 1
-    },
-    "eaa66457-a576-4132-a489-8b0c9458b5cb": {
-      "templateId": "TeamPerk:tpid_roundtrip",
-      "attributes": {},
       "quantity": 1
     },
     "4e419a70-a5b5-403d-997f-cb41304ed10e": {
@@ -11274,23 +10656,6 @@
       },
       "quantity": 1
     },
-    "8db8eaf6-b936-40c7-b6f5-a87cd8a2c9e6": {
-      "templateId": "Defender:did_defendermelee_basic_uc_t01",
-      "attributes": {
-        "max_level_bonus": 0,
-        "squad_id": "",
-        "level": 3,
-        "item_seen": true,
-        "squad_slot_idx": -1,
-        "alterations": [
-          "Alteration:aid_att_def_weapondamage_sword",
-          "Alteration:aid_att_def_maxhealth"
-        ],
-        "xp": 0,
-        "favorite": false
-      },
-      "quantity": 1
-    },
     "b1b4f70d-1537-40fe-aa71-6cf76e804a29": {
       "templateId": "Quest:challenge_eldritchabominations_5",
       "attributes": {
@@ -11339,44 +10704,6 @@
       },
       "quantity": 1
     },
-    "b0792012-c1b2-4f37-82f2-ccc320824097": {
-      "templateId": "Defender:did_defenderassault_basic_m_r_t01",
-      "attributes": {
-        "max_level_bonus": 0,
-        "squad_id": "",
-        "level": 1,
-        "item_seen": false,
-        "squad_slot_idx": -1,
-        "alterations": [
-          "Alteration:aid_att_def_critdamage_ranged",
-          "Alteration:aid_att_def_shieldregen",
-          "Alteration:aid_att_def_weapondamage_assault"
-        ],
-        "xp": 0,
-        "favorite": false
-      },
-      "quantity": 1
-    },
-    "3284cbe5-8c8b-4473-bbca-7f30cbf3963f": {
-      "templateId": "Defender:did_defendersniper_basic_sr_t01",
-      "attributes": {
-        "max_level_bonus": 0,
-        "squad_id": "",
-        "level": 4,
-        "item_seen": true,
-        "squad_slot_idx": -1,
-        "alterations": [
-          "Alteration:aid_att_def_critdamage_ranged",
-          "Alteration:aid_att_def_maxhealth",
-          "Alteration:aid_att_def_clipsize",
-          "Alteration:aid_att_def_critchance_ranged",
-          "Alteration:aid_att_def_maxhealth"
-        ],
-        "xp": 0,
-        "favorite": false
-      },
-      "quantity": 1
-    },
     "73d5357c-59bb-4396-bc12-fb3b7e8f57b4": {
       "templateId": "Quest:homebasequest_slotoutpostdefender",
       "attributes": {
@@ -11393,24 +10720,6 @@
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "completion_assign_defender": 1,
-        "xp": 0,
-        "favorite": false
-      },
-      "quantity": 1
-    },
-    "4d4cdc66-d884-4e5a-8883-8715a1908487": {
-      "templateId": "Defender:did_defenderassault_basic_r_t01",
-      "attributes": {
-        "max_level_bonus": 0,
-        "squad_id": "",
-        "level": 1,
-        "item_seen": true,
-        "squad_slot_idx": -1,
-        "alterations": [
-          "Alteration:aid_att_def_durability",
-          "Alteration:aid_att_def_shieldregen",
-          "Alteration:aid_att_def_critdamage_ranged"
-        ],
         "xp": 0,
         "favorite": false
       },
@@ -11678,42 +10987,6 @@
         "favorite": false
       },
       "quantity": 9884342
-    },
-    "cdaae870-3953-42b9-8654-4cc0cc0cf349": {
-      "templateId": "Defender:did_defendershotgun_basic_f_r_t01",
-      "attributes": {
-        "max_level_bonus": 0,
-        "squad_id": "",
-        "level": 1,
-        "item_seen": false,
-        "squad_slot_idx": -1,
-        "alterations": [
-          "Alteration:aid_att_def_critdamage_ranged",
-          "Alteration:aid_att_def_shieldregen",
-          "Alteration:aid_att_def_critchance_ranged"
-        ],
-        "xp": 0,
-        "favorite": false
-      },
-      "quantity": 1
-    },
-    "47f87e55-e32d-41b1-be7a-eecc9be59e00": {
-      "templateId": "Defender:did_defendershotgun_basic_f_r_t01",
-      "attributes": {
-        "max_level_bonus": 0,
-        "squad_id": "",
-        "level": 1,
-        "item_seen": true,
-        "squad_slot_idx": -1,
-        "alterations": [
-          "Alteration:aid_att_def_reload",
-          "Alteration:aid_att_def_maxhealth",
-          "Alteration:aid_att_def_maxhealth"
-        ],
-        "xp": 0,
-        "favorite": false
-      },
-      "quantity": 1
     },
     "8ebaf589-95ef-4fe2-9bf7-f9f8b075d288": {
       "templateId": "Quest:challenge_upgradealteration",
@@ -12136,24 +11409,6 @@
       },
       "quantity": 1
     },
-    "ba7b1b3e-c5ef-4c19-80fd-c51af20c425e": {
-      "templateId": "Defender:did_defenderpistol_basic_f_r_t01",
-      "attributes": {
-        "max_level_bonus": 0,
-        "squad_id": "",
-        "level": 1,
-        "item_seen": true,
-        "squad_slot_idx": -1,
-        "alterations": [
-          "Alteration:aid_att_def_ammosave",
-          "Alteration:aid_att_def_maxshield",
-          "Alteration:aid_att_def_critdamage_ranged"
-        ],
-        "xp": 0,
-        "favorite": false
-      },
-      "quantity": 1
-    },
     "b2f981d8-a2c6-4bfd-99ec-40713a875311": {
       "templateId": "Quest:starlightquest_complete_dailies_1",
       "attributes": {
@@ -12287,24 +11542,6 @@
       },
       "quantity": 1
     },
-    "d7346c86-ce78-422e-8bf3-13720f840d1e": {
-      "templateId": "Defender:did_defendershotgun_basic_r_t01",
-      "attributes": {
-        "max_level_bonus": 0,
-        "squad_id": "",
-        "level": 1,
-        "item_seen": true,
-        "squad_slot_idx": -1,
-        "alterations": [
-          "Alteration:aid_att_def_clipsize",
-          "Alteration:aid_att_def_maxhealth",
-          "Alteration:aid_att_def_weapondamage_shotgun"
-        ],
-        "xp": 0,
-        "favorite": false
-      },
-      "quantity": 1
-    },
     "1f791aec-e24f-4a0f-8ec4-5a102c33beae": {
       "templateId": "Quest:outpostquest_t1_endless",
       "attributes": {
@@ -12433,24 +11670,6 @@
         "slotted_building_id": "",
         "managerSynergy": "Homebase.Manager.IsDoctor",
         "building_slot_used": -1,
-        "favorite": false
-      },
-      "quantity": 1
-    },
-    "c700d209-bf45-4679-94ef-2e830c27c10e": {
-      "templateId": "Defender:did_defenderpistol_basic_f_r_t01",
-      "attributes": {
-        "max_level_bonus": 0,
-        "squad_id": "",
-        "level": 1,
-        "item_seen": true,
-        "squad_slot_idx": -1,
-        "alterations": [
-          "Alteration:aid_att_def_firerate",
-          "Alteration:aid_att_def_shieldregen",
-          "Alteration:aid_att_def_maxshield"
-        ],
-        "xp": 0,
         "favorite": false
       },
       "quantity": 1
@@ -12657,23 +11876,6 @@
       },
       "quantity": 1
     },
-    "a9678792-efc8-463b-8cf4-72b3147c15dd": {
-      "templateId": "Defender:did_defendershotgun_basic_uc_t01",
-      "attributes": {
-        "max_level_bonus": 0,
-        "squad_id": "",
-        "level": 1,
-        "item_seen": true,
-        "squad_slot_idx": -1,
-        "alterations": [
-          "Alteration:aid_att_def_critdamage_ranged",
-          "Alteration:aid_att_def_maxshield"
-        ],
-        "xp": 0,
-        "favorite": false
-      },
-      "quantity": 1
-    },
     "86d5879e-1701-445e-ba63-93c161d53035": {
       "templateId": "Worker:workerbasic_c_t01",
       "attributes": {
@@ -12690,24 +11892,6 @@
         "building_slot_used": -1,
         "favorite": false,
         "set_bonus": "Homebase.Worker.SetBonus.IsTrapDamageLow"
-      },
-      "quantity": 1
-    },
-    "8afb1296-85bd-4ad1-9d2f-2004271f351e": {
-      "templateId": "Defender:did_defenderpistol_basic_f_r_t01",
-      "attributes": {
-        "max_level_bonus": 0,
-        "squad_id": "",
-        "level": 1,
-        "item_seen": false,
-        "squad_slot_idx": -1,
-        "alterations": [
-          "Alteration:aid_att_def_clipsize",
-          "Alteration:aid_att_def_maxhealth",
-          "Alteration:aid_att_def_shieldregen"
-        ],
-        "xp": 0,
-        "favorite": false
       },
       "quantity": 1
     },
@@ -12843,24 +12027,6 @@
       },
       "quantity": 1
     },
-    "1e852511-976a-458b-bf6c-3b19cbe3e7b7": {
-      "templateId": "Defender:did_defendersniper_basic_m_r_t01",
-      "attributes": {
-        "max_level_bonus": 0,
-        "squad_id": "",
-        "level": 1,
-        "item_seen": false,
-        "squad_slot_idx": -1,
-        "alterations": [
-          "Alteration:aid_att_def_critdamage_ranged",
-          "Alteration:aid_att_def_maxshield",
-          "Alteration:aid_att_def_maxhealth"
-        ],
-        "xp": 0,
-        "favorite": false
-      },
-      "quantity": 1
-    },
     "15c1c2ef-77a9-4927-ad32-1ac62831847f": {
       "templateId": "Quest:challenge_leavenoonebehind_11",
       "attributes": {
@@ -12924,23 +12090,6 @@
       "templateId": "HomebaseNode:questreward_buildingupgradelevel",
       "attributes": {
         "item_seen": false
-      },
-      "quantity": 1
-    },
-    "6b2caadf-0f50-4054-a72a-46d12312310a": {
-      "templateId": "Defender:did_defenderassault_basic_uc_t01",
-      "attributes": {
-        "max_level_bonus": 0,
-        "squad_id": "",
-        "level": 1,
-        "item_seen": true,
-        "squad_slot_idx": -1,
-        "alterations": [
-          "Alteration:aid_att_def_weapondamage_assault",
-          "Alteration:aid_att_def_maxshield"
-        ],
-        "xp": 0,
-        "favorite": false
       },
       "quantity": 1
     },
@@ -13229,11 +12378,6 @@
       },
       "quantity": 1
     },
-    "0e63ac3b-0f3c-46bb-b000-8c2fe7fe75b3": {
-      "templateId": "TeamPerk:tpid_preemptivestrike",
-      "attributes": {},
-      "quantity": 1
-    },
     "8aa8e985-efe9-4643-b039-72077c44f310": {
       "templateId": "Worker:workerbasic_uc_t01",
       "attributes": {
@@ -13250,24 +12394,6 @@
         "building_slot_used": -1,
         "favorite": false,
         "set_bonus": "Homebase.Worker.SetBonus.IsResistanceLow"
-      },
-      "quantity": 1
-    },
-    "2b1c8ebb-de44-47d6-aa78-a271ac8b8f93": {
-      "templateId": "Defender:did_defendersniper_basic_m_r_t01",
-      "attributes": {
-        "max_level_bonus": 0,
-        "squad_id": "",
-        "level": 1,
-        "item_seen": false,
-        "squad_slot_idx": -1,
-        "alterations": [
-          "Alteration:aid_att_def_weapondamage_sniper",
-          "Alteration:aid_att_def_maxshield",
-          "Alteration:aid_att_def_maxshield"
-        ],
-        "xp": 0,
-        "favorite": false
       },
       "quantity": 1
     },
@@ -13346,26 +12472,6 @@
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "completion_heroloadout_support4_guardscreen1": 1,
-        "xp": 0,
-        "favorite": false
-      },
-      "quantity": 1
-    },
-    "063ea6a8-08c6-42e9-a6bf-90fda42f76a2": {
-      "templateId": "Defender:did_defendersniper_basic_sr_t01",
-      "attributes": {
-        "max_level_bonus": 0,
-        "squad_id": "",
-        "level": 1,
-        "item_seen": true,
-        "squad_slot_idx": -1,
-        "alterations": [
-          "Alteration:aid_att_def_ammosave",
-          "Alteration:aid_att_def_maxhealth",
-          "Alteration:aid_att_def_clipsize",
-          "Alteration:aid_att_def_weapondamage_sniper",
-          "Alteration:aid_att_def_shieldregen"
-        ],
         "xp": 0,
         "favorite": false
       },
@@ -13471,22 +12577,6 @@
         "last_state_change_time": "2020-01-30T17:56:17.305Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
-        "xp": 0,
-        "favorite": false
-      },
-      "quantity": 1
-    },
-    "45c232e3-2e82-4273-8867-1b60650cc152": {
-      "templateId": "Defender:did_defendersniper_basic_c_t01",
-      "attributes": {
-        "max_level_bonus": 0,
-        "squad_id": "",
-        "level": 1,
-        "item_seen": false,
-        "squad_slot_idx": -1,
-        "alterations": [
-          "Alteration:aid_att_def_critchance_ranged"
-        ],
         "xp": 0,
         "favorite": false
       },
@@ -14476,24 +13566,6 @@
       },
       "quantity": 1
     },
-    "86de5d17-73e0-4da4-a60f-a6bfa52875d2": {
-      "templateId": "Defender:did_defendermelee_basic_r_t01",
-      "attributes": {
-        "max_level_bonus": 0,
-        "squad_id": "",
-        "level": 1,
-        "item_seen": true,
-        "squad_slot_idx": -1,
-        "alterations": [
-          "Alteration:aid_att_def_weapondamage_melee",
-          "Alteration:aid_att_def_maxhealth",
-          "Alteration:aid_att_def_weapondamage_melee"
-        ],
-        "xp": 0,
-        "favorite": false
-      },
-      "quantity": 1
-    },
     "76303693-e9a5-46b5-82db-34e2754c777c": {
       "templateId": "Quest:challenge_eldritchabominations_12",
       "attributes": {
@@ -14567,23 +13639,6 @@
         "last_state_change_time": "2020-01-01T00:04:07.797Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
-        "xp": 0,
-        "favorite": false
-      },
-      "quantity": 1
-    },
-    "280c27c3-938c-4e69-ae17-61abc21eb8ff": {
-      "templateId": "Defender:did_defenderassault_basic_uc_t01",
-      "attributes": {
-        "max_level_bonus": 0,
-        "squad_id": "",
-        "level": 1,
-        "item_seen": true,
-        "squad_slot_idx": -1,
-        "alterations": [
-          "Alteration:aid_att_def_clipsize",
-          "Alteration:aid_att_def_shieldregen"
-        ],
         "xp": 0,
         "favorite": false
       },
@@ -47370,6 +46425,715 @@
         "alteration_base_rarities": [],
         "favorite": false
       },
+      "quantity": 1
+    },
+    "Defender:DID_DefenderSniper_Basic_VR_T05": {
+      "templateId": "Defender:DID_DefenderSniper_Basic_VR_T05",
+      "attributes": {
+        "max_level_bonus": 0,
+        "squad_id": "",
+        "level": 50,
+        "item_seen": true,
+        "squad_slot_idx": -1,
+        "alterations": [],
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Defender:DID_DefenderSniper_Basic_UC_T03": {
+      "templateId": "Defender:DID_DefenderSniper_Basic_UC_T03",
+      "attributes": {
+        "max_level_bonus": 0,
+        "squad_id": "",
+        "level": 30,
+        "item_seen": true,
+        "squad_slot_idx": -1,
+        "alterations": [],
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Defender:DID_DefenderSniper_Basic_SR_T05": {
+      "templateId": "Defender:DID_DefenderSniper_Basic_SR_T05",
+      "attributes": {
+        "max_level_bonus": 0,
+        "squad_id": "",
+        "level": 50,
+        "item_seen": true,
+        "squad_slot_idx": -1,
+        "alterations": [],
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Defender:DID_DefenderSniper_Basic_R_T04": {
+      "templateId": "Defender:DID_DefenderSniper_Basic_R_T04",
+      "attributes": {
+        "max_level_bonus": 0,
+        "squad_id": "",
+        "level": 40,
+        "item_seen": true,
+        "squad_slot_idx": -1,
+        "alterations": [],
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Defender:DID_DefenderSniper_Basic_M_VR_T05": {
+      "templateId": "Defender:DID_DefenderSniper_Basic_M_VR_T05",
+      "attributes": {
+        "max_level_bonus": 0,
+        "squad_id": "",
+        "level": 50,
+        "item_seen": true,
+        "squad_slot_idx": -1,
+        "alterations": [],
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Defender:DID_DefenderSniper_Basic_M_SR_T05": {
+      "templateId": "Defender:DID_DefenderSniper_Basic_M_SR_T05",
+      "attributes": {
+        "max_level_bonus": 0,
+        "squad_id": "",
+        "level": 50,
+        "item_seen": true,
+        "squad_slot_idx": -1,
+        "alterations": [],
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Defender:DID_DefenderSniper_Basic_M_R_T04": {
+      "templateId": "Defender:DID_DefenderSniper_Basic_M_R_T04",
+      "attributes": {
+        "max_level_bonus": 0,
+        "squad_id": "",
+        "level": 40,
+        "item_seen": true,
+        "squad_slot_idx": -1,
+        "alterations": [],
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Defender:DID_DefenderSniper_Basic_C_T02": {
+      "templateId": "Defender:DID_DefenderSniper_Basic_C_T02",
+      "attributes": {
+        "max_level_bonus": 0,
+        "squad_id": "",
+        "level": 20,
+        "item_seen": true,
+        "squad_slot_idx": -1,
+        "alterations": [],
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Defender:DID_DefenderShotgun_Basic_VR_T05": {
+      "templateId": "Defender:DID_DefenderShotgun_Basic_VR_T05",
+      "attributes": {
+        "max_level_bonus": 0,
+        "squad_id": "",
+        "level": 50,
+        "item_seen": true,
+        "squad_slot_idx": -1,
+        "alterations": [],
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Defender:DID_DefenderShotgun_Basic_UC_T03": {
+      "templateId": "Defender:DID_DefenderShotgun_Basic_UC_T03",
+      "attributes": {
+        "max_level_bonus": 0,
+        "squad_id": "",
+        "level": 30,
+        "item_seen": true,
+        "squad_slot_idx": -1,
+        "alterations": [],
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Defender:DID_DefenderShotgun_Basic_SR_T05": {
+      "templateId": "Defender:DID_DefenderShotgun_Basic_SR_T05",
+      "attributes": {
+        "max_level_bonus": 0,
+        "squad_id": "",
+        "level": 50,
+        "item_seen": true,
+        "squad_slot_idx": -1,
+        "alterations": [],
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Defender:DID_DefenderShotgun_Basic_R_T04": {
+      "templateId": "Defender:DID_DefenderShotgun_Basic_R_T04",
+      "attributes": {
+        "max_level_bonus": 0,
+        "squad_id": "",
+        "level": 40,
+        "item_seen": true,
+        "squad_slot_idx": -1,
+        "alterations": [],
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Defender:DID_DefenderShotgun_Basic_F_VR_T05": {
+      "templateId": "Defender:DID_DefenderShotgun_Basic_F_VR_T05",
+      "attributes": {
+        "max_level_bonus": 0,
+        "squad_id": "",
+        "level": 50,
+        "item_seen": true,
+        "squad_slot_idx": -1,
+        "alterations": [],
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Defender:DID_DefenderShotgun_Basic_F_SR_T05": {
+      "templateId": "Defender:DID_DefenderShotgun_Basic_F_SR_T05",
+      "attributes": {
+        "max_level_bonus": 0,
+        "squad_id": "",
+        "level": 50,
+        "item_seen": true,
+        "squad_slot_idx": -1,
+        "alterations": [],
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Defender:DID_DefenderShotgun_Basic_F_R_T04": {
+      "templateId": "Defender:DID_DefenderShotgun_Basic_F_R_T04",
+      "attributes": {
+        "max_level_bonus": 0,
+        "squad_id": "",
+        "level": 40,
+        "item_seen": true,
+        "squad_slot_idx": -1,
+        "alterations": [],
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Defender:DID_DefenderShotgun_Basic_C_T02": {
+      "templateId": "Defender:DID_DefenderShotgun_Basic_C_T02",
+      "attributes": {
+        "max_level_bonus": 0,
+        "squad_id": "",
+        "level": 20,
+        "item_seen": true,
+        "squad_slot_idx": -1,
+        "alterations": [],
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Defender:DID_DefenderPistol_Founders_VR_T05": {
+      "templateId": "Defender:DID_DefenderPistol_Founders_VR_T05",
+      "attributes": {
+        "max_level_bonus": 0,
+        "squad_id": "",
+        "level": 50,
+        "item_seen": true,
+        "squad_slot_idx": -1,
+        "alterations": [],
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Defender:DID_DefenderPistol_Basic_VR_T05": {
+      "templateId": "Defender:DID_DefenderPistol_Basic_VR_T05",
+      "attributes": {
+        "max_level_bonus": 0,
+        "squad_id": "",
+        "level": 50,
+        "item_seen": true,
+        "squad_slot_idx": -1,
+        "alterations": [],
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Defender:DID_DefenderPistol_Basic_UC_T03": {
+      "templateId": "Defender:DID_DefenderPistol_Basic_UC_T03",
+      "attributes": {
+        "max_level_bonus": 0,
+        "squad_id": "",
+        "level": 30,
+        "item_seen": true,
+        "squad_slot_idx": -1,
+        "alterations": [],
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Defender:DID_DefenderPistol_Basic_SR_T05": {
+      "templateId": "Defender:DID_DefenderPistol_Basic_SR_T05",
+      "attributes": {
+        "max_level_bonus": 0,
+        "squad_id": "",
+        "level": 50,
+        "item_seen": true,
+        "squad_slot_idx": -1,
+        "alterations": [],
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Defender:DID_DefenderPistol_Basic_R_T04": {
+      "templateId": "Defender:DID_DefenderPistol_Basic_R_T04",
+      "attributes": {
+        "max_level_bonus": 0,
+        "squad_id": "",
+        "level": 40,
+        "item_seen": true,
+        "squad_slot_idx": -1,
+        "alterations": [],
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Defender:DID_DefenderPistol_Basic_F_VR_T05": {
+      "templateId": "Defender:DID_DefenderPistol_Basic_F_VR_T05",
+      "attributes": {
+        "max_level_bonus": 0,
+        "squad_id": "",
+        "level": 50,
+        "item_seen": true,
+        "squad_slot_idx": -1,
+        "alterations": [],
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Defender:DID_DefenderPistol_Basic_F_SR_T05": {
+      "templateId": "Defender:DID_DefenderPistol_Basic_F_SR_T05",
+      "attributes": {
+        "max_level_bonus": 0,
+        "squad_id": "",
+        "level": 50,
+        "item_seen": true,
+        "squad_slot_idx": -1,
+        "alterations": [],
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Defender:DID_DefenderPistol_Basic_F_R_T04": {
+      "templateId": "Defender:DID_DefenderPistol_Basic_F_R_T04",
+      "attributes": {
+        "max_level_bonus": 0,
+        "squad_id": "",
+        "level": 40,
+        "item_seen": true,
+        "squad_slot_idx": -1,
+        "alterations": [],
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Defender:DID_DefenderPistol_Basic_C_T02": {
+      "templateId": "Defender:DID_DefenderPistol_Basic_C_T02",
+      "attributes": {
+        "max_level_bonus": 0,
+        "squad_id": "",
+        "level": 20,
+        "item_seen": true,
+        "squad_slot_idx": -1,
+        "alterations": [],
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Defender:DID_DefenderMelee_Basic_VR_T05": {
+      "templateId": "Defender:DID_DefenderMelee_Basic_VR_T05",
+      "attributes": {
+        "max_level_bonus": 0,
+        "squad_id": "",
+        "level": 50,
+        "item_seen": true,
+        "squad_slot_idx": -1,
+        "alterations": [],
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Defender:DID_DefenderMelee_Basic_UC_T03": {
+      "templateId": "Defender:DID_DefenderMelee_Basic_UC_T03",
+      "attributes": {
+        "max_level_bonus": 0,
+        "squad_id": "",
+        "level": 30,
+        "item_seen": true,
+        "squad_slot_idx": -1,
+        "alterations": [],
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Defender:DID_DefenderMelee_Basic_SR_T05": {
+      "templateId": "Defender:DID_DefenderMelee_Basic_SR_T05",
+      "attributes": {
+        "max_level_bonus": 0,
+        "squad_id": "",
+        "level": 50,
+        "item_seen": true,
+        "squad_slot_idx": -1,
+        "alterations": [],
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Defender:DID_DefenderMelee_Basic_R_T04": {
+      "templateId": "Defender:DID_DefenderMelee_Basic_R_T04",
+      "attributes": {
+        "max_level_bonus": 0,
+        "squad_id": "",
+        "level": 40,
+        "item_seen": true,
+        "squad_slot_idx": -1,
+        "alterations": [],
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Defender:DID_DefenderMelee_Basic_F_SR_T05": {
+      "templateId": "Defender:DID_DefenderMelee_Basic_F_SR_T05",
+      "attributes": {
+        "max_level_bonus": 0,
+        "squad_id": "",
+        "level": 50,
+        "item_seen": true,
+        "squad_slot_idx": -1,
+        "alterations": [],
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Defender:DID_DefenderMelee_Basic_C_T02": {
+      "templateId": "Defender:DID_DefenderMelee_Basic_C_T02",
+      "attributes": {
+        "max_level_bonus": 0,
+        "squad_id": "",
+        "level": 20,
+        "item_seen": true,
+        "squad_slot_idx": -1,
+        "alterations": [],
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Defender:DID_DefenderAssault_Founders_VR_T05": {
+      "templateId": "Defender:DID_DefenderAssault_Founders_VR_T05",
+      "attributes": {
+        "max_level_bonus": 0,
+        "squad_id": "",
+        "level": 50,
+        "item_seen": true,
+        "squad_slot_idx": -1,
+        "alterations": [],
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Defender:DID_DefenderAssault_Basic_VR_T05": {
+      "templateId": "Defender:DID_DefenderAssault_Basic_VR_T05",
+      "attributes": {
+        "max_level_bonus": 0,
+        "squad_id": "",
+        "level": 50,
+        "item_seen": true,
+        "squad_slot_idx": -1,
+        "alterations": [],
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Defender:DID_DefenderAssault_Basic_UC_T03": {
+      "templateId": "Defender:DID_DefenderAssault_Basic_UC_T03",
+      "attributes": {
+        "max_level_bonus": 0,
+        "squad_id": "",
+        "level": 30,
+        "item_seen": true,
+        "squad_slot_idx": -1,
+        "alterations": [],
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Defender:DID_DefenderAssault_Basic_SR_T05": {
+      "templateId": "Defender:DID_DefenderAssault_Basic_SR_T05",
+      "attributes": {
+        "max_level_bonus": 0,
+        "squad_id": "",
+        "level": 50,
+        "item_seen": true,
+        "squad_slot_idx": -1,
+        "alterations": [],
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Defender:DID_DefenderAssault_Basic_R_T04": {
+      "templateId": "Defender:DID_DefenderAssault_Basic_R_T04",
+      "attributes": {
+        "max_level_bonus": 0,
+        "squad_id": "",
+        "level": 40,
+        "item_seen": true,
+        "squad_slot_idx": -1,
+        "alterations": [],
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Defender:DID_DefenderAssault_Basic_M_VR_T05": {
+      "templateId": "Defender:DID_DefenderAssault_Basic_M_VR_T05",
+      "attributes": {
+        "max_level_bonus": 0,
+        "squad_id": "",
+        "level": 50,
+        "item_seen": true,
+        "squad_slot_idx": -1,
+        "alterations": [],
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Defender:DID_DefenderAssault_Basic_M_SR_T05": {
+      "templateId": "Defender:DID_DefenderAssault_Basic_M_SR_T05",
+      "attributes": {
+        "max_level_bonus": 0,
+        "squad_id": "",
+        "level": 50,
+        "item_seen": true,
+        "squad_slot_idx": -1,
+        "alterations": [],
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Defender:DID_DefenderAssault_Basic_M_R_T04": {
+      "templateId": "Defender:DID_DefenderAssault_Basic_M_R_T04",
+      "attributes": {
+        "max_level_bonus": 0,
+        "squad_id": "",
+        "level": 40,
+        "item_seen": true,
+        "squad_slot_idx": -1,
+        "alterations": [],
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Defender:DID_DefenderAssault_Basic_C_T02": {
+      "templateId": "Defender:DID_DefenderAssault_Basic_C_T02",
+      "attributes": {
+        "max_level_bonus": 0,
+        "squad_id": "",
+        "level": 20,
+        "item_seen": true,
+        "squad_slot_idx": -1,
+        "alterations": [],
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Defender:DID_DefenderAssault_Basic_C_T00": {
+      "templateId": "Defender:DID_DefenderAssault_Basic_C_T00",
+      "attributes": {
+        "max_level_bonus": 0,
+        "squad_id": "",
+        "level": 1,
+        "item_seen": true,
+        "squad_slot_idx": -1,
+        "alterations": [],
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "TeamPerk:TPID_ViolentInspiration": {
+      "templateId": "TeamPerk:TPID_ViolentInspiration",
+      "attributes": {},
+      "quantity": 1
+    },
+    "TeamPerk:TPID_TrickAndTreat": {
+      "templateId": "TeamPerk:TPID_TrickAndTreat",
+      "attributes": {},
+      "quantity": 1
+    },
+    "TeamPerk:TPID_TotallyGnarly": {
+      "templateId": "TeamPerk:TPID_TotallyGnarly",
+      "attributes": {},
+      "quantity": 1
+    },
+    "TeamPerk:TPID_SuperchargedTraps": {
+      "templateId": "TeamPerk:TPID_SuperchargedTraps",
+      "attributes": {},
+      "quantity": 1
+    },
+    "TeamPerk:TPID_SoaringMantis": {
+      "templateId": "TeamPerk:TPID_SoaringMantis",
+      "attributes": {},
+      "quantity": 1
+    },
+    "TeamPerk:TPID_SlowYourRoll": {
+      "templateId": "TeamPerk:TPID_SlowYourRoll",
+      "attributes": {},
+      "quantity": 1
+    },
+    "TeamPerk:TPID_ShiftingGears": {
+      "templateId": "TeamPerk:TPID_ShiftingGears",
+      "attributes": {},
+      "quantity": 1
+    },
+    "TeamPerk:TPID_ShakeItOff": {
+      "templateId": "TeamPerk:TPID_ShakeItOff",
+      "attributes": {},
+      "quantity": 1
+    },
+    "TeamPerk:TPID_RoundTrip": {
+      "templateId": "TeamPerk:TPID_RoundTrip",
+      "attributes": {},
+      "quantity": 1
+    },
+    "TeamPerk:TPID_Recycling": {
+      "templateId": "TeamPerk:TPID_Recycling",
+      "attributes": {},
+      "quantity": 1
+    },
+    "TeamPerk:TPID_PreemptiveStrike": {
+      "templateId": "TeamPerk:TPID_PreemptiveStrike",
+      "attributes": {},
+      "quantity": 1
+    },
+    "TeamPerk:TPID_PhaseBlaster": {
+      "templateId": "TeamPerk:TPID_PhaseBlaster",
+      "attributes": {},
+      "quantity": 1
+    },
+    "TeamPerk:TPID_OneTwoPunch": {
+      "templateId": "TeamPerk:TPID_OneTwoPunch",
+      "attributes": {},
+      "quantity": 1
+    },
+    "TeamPerk:TPID_NeverTellMeTheOdds": {
+      "templateId": "TeamPerk:TPID_NeverTellMeTheOdds",
+      "attributes": {},
+      "quantity": 1
+    },
+    "TeamPerk:TPID_LongArmOfTheLaw": {
+      "templateId": "TeamPerk:TPID_LongArmOfTheLaw",
+      "attributes": {},
+      "quantity": 1
+    },
+    "TeamPerk:TPID_KineticOverdrive": {
+      "templateId": "TeamPerk:TPID_KineticOverdrive",
+      "attributes": {},
+      "quantity": 1
+    },
+    "TeamPerk:TPID_KeepOut": {
+      "templateId": "TeamPerk:TPID_KeepOut",
+      "attributes": {},
+      "quantity": 1
+    },
+    "TeamPerk:TPID_HuntersInstinct": {
+      "templateId": "TeamPerk:TPID_HuntersInstinct",
+      "attributes": {},
+      "quantity": 1
+    },
+    "TeamPerk:TPID_HolidayCheer": {
+      "templateId": "TeamPerk:TPID_HolidayCheer",
+      "attributes": {},
+      "quantity": 1
+    },
+    "TeamPerk:TPID_EndlessShadow": {
+      "templateId": "TeamPerk:TPID_EndlessShadow",
+      "attributes": {},
+      "quantity": 1
+    },
+    "TeamPerk:TPID_DimMak": {
+      "templateId": "TeamPerk:TPID_DimMak",
+      "attributes": {},
+      "quantity": 1
+    },
+    "TeamPerk:TPID_DangerDanger": {
+      "templateId": "TeamPerk:TPID_DangerDanger",
+      "attributes": {},
+      "quantity": 1
+    },
+    "TeamPerk:TPID_CoolCustomer": {
+      "templateId": "TeamPerk:TPID_CoolCustomer",
+      "attributes": {},
+      "quantity": 1
+    },
+    "TeamPerk:TPID_BOOMBASE": {
+      "templateId": "TeamPerk:TPID_BOOMBASE",
+      "attributes": {},
+      "quantity": 1
+    },
+    "TeamPerk:TPID_BlastFromThePast": {
+      "templateId": "TeamPerk:TPID_BlastFromThePast",
+      "attributes": {},
+      "quantity": 1
+    },
+    "TeamPerk:TPID_BlakebeardsStash": {
+      "templateId": "TeamPerk:TPID_BlakebeardsStash",
+      "attributes": {},
+      "quantity": 1
+    },
+    "TeamPerk:TPID_BioEnergySource": {
+      "templateId": "TeamPerk:TPID_BioEnergySource",
+      "attributes": {},
       "quantity": 1
     }
   },
