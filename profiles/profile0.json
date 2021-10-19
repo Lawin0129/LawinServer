@@ -1461,29 +1461,6 @@
       },
       "quantity": 1
     },
-    "2688163d-2bbc-491f-a0c0-dc59339aa479": {
-      "templateId": "Defender:did_defenderassault_basic_uc_t01",
-      "attributes": {
-        "alteration_slots": [
-          {
-            "Type": "AttributeSlot",
-            "NumSlots": 2
-          }
-        ],
-        "max_level_bonus": 0,
-        "squad_id": "",
-        "level": 1,
-        "item_seen": true,
-        "squad_slot_idx": -1,
-        "alterations": [
-          "Alteration:aid_att_def_critchance_ranged",
-          "Alteration:aid_att_def_maxshield"
-        ],
-        "xp": 0,
-        "favorite": false
-      },
-      "quantity": 1
-    },
     "faca07b8-8fbe-4cb5-800f-6de994c1f500": {
       "templateId": "Quest:homebaseonboardingafteroutpost",
       "attributes": {
@@ -36025,6 +36002,580 @@
         "max_level_bonus": 0,
         "level": 1,
         "item_seen": true,
+        "alterations": [],
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Defender:DID_DefenderSniper_Basic_VR_T05": {
+      "templateId": "Defender:DID_DefenderSniper_Basic_VR_T05",
+      "attributes": {
+        "max_level_bonus": 0,
+        "squad_id": "",
+        "level": 50,
+        "item_seen": true,
+        "squad_slot_idx": -1,
+        "alterations": [],
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Defender:DID_DefenderSniper_Basic_UC_T03": {
+      "templateId": "Defender:DID_DefenderSniper_Basic_UC_T03",
+      "attributes": {
+        "max_level_bonus": 0,
+        "squad_id": "",
+        "level": 30,
+        "item_seen": true,
+        "squad_slot_idx": -1,
+        "alterations": [],
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Defender:DID_DefenderSniper_Basic_SR_T05": {
+      "templateId": "Defender:DID_DefenderSniper_Basic_SR_T05",
+      "attributes": {
+        "max_level_bonus": 0,
+        "squad_id": "",
+        "level": 50,
+        "item_seen": true,
+        "squad_slot_idx": -1,
+        "alterations": [],
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Defender:DID_DefenderSniper_Basic_R_T04": {
+      "templateId": "Defender:DID_DefenderSniper_Basic_R_T04",
+      "attributes": {
+        "max_level_bonus": 0,
+        "squad_id": "",
+        "level": 40,
+        "item_seen": true,
+        "squad_slot_idx": -1,
+        "alterations": [],
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Defender:DID_DefenderSniper_Basic_M_VR_T05": {
+      "templateId": "Defender:DID_DefenderSniper_Basic_M_VR_T05",
+      "attributes": {
+        "max_level_bonus": 0,
+        "squad_id": "",
+        "level": 50,
+        "item_seen": true,
+        "squad_slot_idx": -1,
+        "alterations": [],
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Defender:DID_DefenderSniper_Basic_M_SR_T05": {
+      "templateId": "Defender:DID_DefenderSniper_Basic_M_SR_T05",
+      "attributes": {
+        "max_level_bonus": 0,
+        "squad_id": "",
+        "level": 50,
+        "item_seen": true,
+        "squad_slot_idx": -1,
+        "alterations": [],
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Defender:DID_DefenderSniper_Basic_M_R_T04": {
+      "templateId": "Defender:DID_DefenderSniper_Basic_M_R_T04",
+      "attributes": {
+        "max_level_bonus": 0,
+        "squad_id": "",
+        "level": 40,
+        "item_seen": true,
+        "squad_slot_idx": -1,
+        "alterations": [],
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Defender:DID_DefenderSniper_Basic_C_T02": {
+      "templateId": "Defender:DID_DefenderSniper_Basic_C_T02",
+      "attributes": {
+        "max_level_bonus": 0,
+        "squad_id": "",
+        "level": 20,
+        "item_seen": true,
+        "squad_slot_idx": -1,
+        "alterations": [],
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Defender:DID_DefenderShotgun_Basic_VR_T05": {
+      "templateId": "Defender:DID_DefenderShotgun_Basic_VR_T05",
+      "attributes": {
+        "max_level_bonus": 0,
+        "squad_id": "",
+        "level": 50,
+        "item_seen": true,
+        "squad_slot_idx": -1,
+        "alterations": [],
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Defender:DID_DefenderShotgun_Basic_UC_T03": {
+      "templateId": "Defender:DID_DefenderShotgun_Basic_UC_T03",
+      "attributes": {
+        "max_level_bonus": 0,
+        "squad_id": "",
+        "level": 30,
+        "item_seen": true,
+        "squad_slot_idx": -1,
+        "alterations": [],
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Defender:DID_DefenderShotgun_Basic_SR_T05": {
+      "templateId": "Defender:DID_DefenderShotgun_Basic_SR_T05",
+      "attributes": {
+        "max_level_bonus": 0,
+        "squad_id": "",
+        "level": 50,
+        "item_seen": true,
+        "squad_slot_idx": -1,
+        "alterations": [],
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Defender:DID_DefenderShotgun_Basic_R_T04": {
+      "templateId": "Defender:DID_DefenderShotgun_Basic_R_T04",
+      "attributes": {
+        "max_level_bonus": 0,
+        "squad_id": "",
+        "level": 40,
+        "item_seen": true,
+        "squad_slot_idx": -1,
+        "alterations": [],
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Defender:DID_DefenderShotgun_Basic_F_VR_T05": {
+      "templateId": "Defender:DID_DefenderShotgun_Basic_F_VR_T05",
+      "attributes": {
+        "max_level_bonus": 0,
+        "squad_id": "",
+        "level": 50,
+        "item_seen": true,
+        "squad_slot_idx": -1,
+        "alterations": [],
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Defender:DID_DefenderShotgun_Basic_F_SR_T05": {
+      "templateId": "Defender:DID_DefenderShotgun_Basic_F_SR_T05",
+      "attributes": {
+        "max_level_bonus": 0,
+        "squad_id": "",
+        "level": 50,
+        "item_seen": true,
+        "squad_slot_idx": -1,
+        "alterations": [],
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Defender:DID_DefenderShotgun_Basic_F_R_T04": {
+      "templateId": "Defender:DID_DefenderShotgun_Basic_F_R_T04",
+      "attributes": {
+        "max_level_bonus": 0,
+        "squad_id": "",
+        "level": 40,
+        "item_seen": true,
+        "squad_slot_idx": -1,
+        "alterations": [],
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Defender:DID_DefenderShotgun_Basic_C_T02": {
+      "templateId": "Defender:DID_DefenderShotgun_Basic_C_T02",
+      "attributes": {
+        "max_level_bonus": 0,
+        "squad_id": "",
+        "level": 20,
+        "item_seen": true,
+        "squad_slot_idx": -1,
+        "alterations": [],
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Defender:DID_DefenderPistol_Founders_VR_T05": {
+      "templateId": "Defender:DID_DefenderPistol_Founders_VR_T05",
+      "attributes": {
+        "max_level_bonus": 0,
+        "squad_id": "",
+        "level": 50,
+        "item_seen": true,
+        "squad_slot_idx": -1,
+        "alterations": [],
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Defender:DID_DefenderPistol_Basic_VR_T05": {
+      "templateId": "Defender:DID_DefenderPistol_Basic_VR_T05",
+      "attributes": {
+        "max_level_bonus": 0,
+        "squad_id": "",
+        "level": 50,
+        "item_seen": true,
+        "squad_slot_idx": -1,
+        "alterations": [],
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Defender:DID_DefenderPistol_Basic_UC_T03": {
+      "templateId": "Defender:DID_DefenderPistol_Basic_UC_T03",
+      "attributes": {
+        "max_level_bonus": 0,
+        "squad_id": "",
+        "level": 30,
+        "item_seen": true,
+        "squad_slot_idx": -1,
+        "alterations": [],
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Defender:DID_DefenderPistol_Basic_SR_T05": {
+      "templateId": "Defender:DID_DefenderPistol_Basic_SR_T05",
+      "attributes": {
+        "max_level_bonus": 0,
+        "squad_id": "",
+        "level": 50,
+        "item_seen": true,
+        "squad_slot_idx": -1,
+        "alterations": [],
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Defender:DID_DefenderPistol_Basic_R_T04": {
+      "templateId": "Defender:DID_DefenderPistol_Basic_R_T04",
+      "attributes": {
+        "max_level_bonus": 0,
+        "squad_id": "",
+        "level": 40,
+        "item_seen": true,
+        "squad_slot_idx": -1,
+        "alterations": [],
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Defender:DID_DefenderPistol_Basic_F_VR_T05": {
+      "templateId": "Defender:DID_DefenderPistol_Basic_F_VR_T05",
+      "attributes": {
+        "max_level_bonus": 0,
+        "squad_id": "",
+        "level": 50,
+        "item_seen": true,
+        "squad_slot_idx": -1,
+        "alterations": [],
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Defender:DID_DefenderPistol_Basic_F_SR_T05": {
+      "templateId": "Defender:DID_DefenderPistol_Basic_F_SR_T05",
+      "attributes": {
+        "max_level_bonus": 0,
+        "squad_id": "",
+        "level": 50,
+        "item_seen": true,
+        "squad_slot_idx": -1,
+        "alterations": [],
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Defender:DID_DefenderPistol_Basic_F_R_T04": {
+      "templateId": "Defender:DID_DefenderPistol_Basic_F_R_T04",
+      "attributes": {
+        "max_level_bonus": 0,
+        "squad_id": "",
+        "level": 40,
+        "item_seen": true,
+        "squad_slot_idx": -1,
+        "alterations": [],
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Defender:DID_DefenderPistol_Basic_C_T02": {
+      "templateId": "Defender:DID_DefenderPistol_Basic_C_T02",
+      "attributes": {
+        "max_level_bonus": 0,
+        "squad_id": "",
+        "level": 20,
+        "item_seen": true,
+        "squad_slot_idx": -1,
+        "alterations": [],
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Defender:DID_DefenderMelee_Basic_VR_T05": {
+      "templateId": "Defender:DID_DefenderMelee_Basic_VR_T05",
+      "attributes": {
+        "max_level_bonus": 0,
+        "squad_id": "",
+        "level": 50,
+        "item_seen": true,
+        "squad_slot_idx": -1,
+        "alterations": [],
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Defender:DID_DefenderMelee_Basic_UC_T03": {
+      "templateId": "Defender:DID_DefenderMelee_Basic_UC_T03",
+      "attributes": {
+        "max_level_bonus": 0,
+        "squad_id": "",
+        "level": 30,
+        "item_seen": true,
+        "squad_slot_idx": -1,
+        "alterations": [],
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Defender:DID_DefenderMelee_Basic_SR_T05": {
+      "templateId": "Defender:DID_DefenderMelee_Basic_SR_T05",
+      "attributes": {
+        "max_level_bonus": 0,
+        "squad_id": "",
+        "level": 50,
+        "item_seen": true,
+        "squad_slot_idx": -1,
+        "alterations": [],
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Defender:DID_DefenderMelee_Basic_R_T04": {
+      "templateId": "Defender:DID_DefenderMelee_Basic_R_T04",
+      "attributes": {
+        "max_level_bonus": 0,
+        "squad_id": "",
+        "level": 40,
+        "item_seen": true,
+        "squad_slot_idx": -1,
+        "alterations": [],
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Defender:DID_DefenderMelee_Basic_F_SR_T05": {
+      "templateId": "Defender:DID_DefenderMelee_Basic_F_SR_T05",
+      "attributes": {
+        "max_level_bonus": 0,
+        "squad_id": "",
+        "level": 50,
+        "item_seen": true,
+        "squad_slot_idx": -1,
+        "alterations": [],
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Defender:DID_DefenderMelee_Basic_C_T02": {
+      "templateId": "Defender:DID_DefenderMelee_Basic_C_T02",
+      "attributes": {
+        "max_level_bonus": 0,
+        "squad_id": "",
+        "level": 20,
+        "item_seen": true,
+        "squad_slot_idx": -1,
+        "alterations": [],
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Defender:DID_DefenderAssault_Founders_VR_T05": {
+      "templateId": "Defender:DID_DefenderAssault_Founders_VR_T05",
+      "attributes": {
+        "max_level_bonus": 0,
+        "squad_id": "",
+        "level": 50,
+        "item_seen": true,
+        "squad_slot_idx": -1,
+        "alterations": [],
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Defender:DID_DefenderAssault_Basic_VR_T05": {
+      "templateId": "Defender:DID_DefenderAssault_Basic_VR_T05",
+      "attributes": {
+        "max_level_bonus": 0,
+        "squad_id": "",
+        "level": 50,
+        "item_seen": true,
+        "squad_slot_idx": -1,
+        "alterations": [],
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Defender:DID_DefenderAssault_Basic_UC_T03": {
+      "templateId": "Defender:DID_DefenderAssault_Basic_UC_T03",
+      "attributes": {
+        "max_level_bonus": 0,
+        "squad_id": "",
+        "level": 30,
+        "item_seen": true,
+        "squad_slot_idx": -1,
+        "alterations": [],
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Defender:DID_DefenderAssault_Basic_SR_T05": {
+      "templateId": "Defender:DID_DefenderAssault_Basic_SR_T05",
+      "attributes": {
+        "max_level_bonus": 0,
+        "squad_id": "",
+        "level": 50,
+        "item_seen": true,
+        "squad_slot_idx": -1,
+        "alterations": [],
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Defender:DID_DefenderAssault_Basic_R_T04": {
+      "templateId": "Defender:DID_DefenderAssault_Basic_R_T04",
+      "attributes": {
+        "max_level_bonus": 0,
+        "squad_id": "",
+        "level": 40,
+        "item_seen": true,
+        "squad_slot_idx": -1,
+        "alterations": [],
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Defender:DID_DefenderAssault_Basic_M_VR_T05": {
+      "templateId": "Defender:DID_DefenderAssault_Basic_M_VR_T05",
+      "attributes": {
+        "max_level_bonus": 0,
+        "squad_id": "",
+        "level": 50,
+        "item_seen": true,
+        "squad_slot_idx": -1,
+        "alterations": [],
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Defender:DID_DefenderAssault_Basic_M_SR_T05": {
+      "templateId": "Defender:DID_DefenderAssault_Basic_M_SR_T05",
+      "attributes": {
+        "max_level_bonus": 0,
+        "squad_id": "",
+        "level": 50,
+        "item_seen": true,
+        "squad_slot_idx": -1,
+        "alterations": [],
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Defender:DID_DefenderAssault_Basic_M_R_T04": {
+      "templateId": "Defender:DID_DefenderAssault_Basic_M_R_T04",
+      "attributes": {
+        "max_level_bonus": 0,
+        "squad_id": "",
+        "level": 40,
+        "item_seen": true,
+        "squad_slot_idx": -1,
+        "alterations": [],
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Defender:DID_DefenderAssault_Basic_C_T02": {
+      "templateId": "Defender:DID_DefenderAssault_Basic_C_T02",
+      "attributes": {
+        "max_level_bonus": 0,
+        "squad_id": "",
+        "level": 20,
+        "item_seen": true,
+        "squad_slot_idx": -1,
+        "alterations": [],
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Defender:DID_DefenderAssault_Basic_C_T00": {
+      "templateId": "Defender:DID_DefenderAssault_Basic_C_T00",
+      "attributes": {
+        "max_level_bonus": 0,
+        "squad_id": "",
+        "level": 1,
+        "item_seen": true,
+        "squad_slot_idx": -1,
         "alterations": [],
         "xp": 0,
         "favorite": false
