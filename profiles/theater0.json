@@ -2,8 +2,8 @@
   "_id": "LawinServer",
   "created": "2018-04-25T18:39:56.467Z",
   "updated": "2020-02-05T22:45:21.455Z",
-  "rvn": 30689,
-  "wipeNumber": 9,
+  "rvn": 1,
+  "wipeNumber": 1,
   "accountId": "LawinServer",
   "profileId": "theater0",
   "version": "no_version",
@@ -85,7 +85,7 @@
             }
           ]
         },
-        "zonesCompleted": 533
+        "zonesCompleted": 0
       },
       "theater_unique_id": "",
       "past_lifetime_zones_completed": 0,
@@ -95,5 +95,5 @@
     }
   },
   "profileLockExpiration": "0001-01-01T00:00:00.000Z",
-  "commandRevision": 10116
+  "commandRevision": 0
 }
