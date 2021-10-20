@@ -1,12 +1,12 @@
 {
-  "_id": "faefefcfdaad4eae8aed65c3139376f8",
+  "_id": "LawinServer",
   "created": "2017-08-29T20:38:59.824Z",
   "updated": "2017-12-25T02:08:43.518Z",
   "rvn": 498,
   "wipeNumber": 9,
-  "accountId": "b810c129520946d6801a58bb9d5859fc",
+  "accountId": "LawinServer",
   "profileId": "profile0",
-  "version": "grant_collectionbook_lvl_100_reward_change_dec_2017",
+  "version": "no_version",
   "items": {
     "32b0b965-f82f-4e0c-9494-357c7c2817bc": {
       "templateId": "Quest:stonewoodquest_filler_1_d2",
@@ -30104,12 +30104,12 @@
         }
       },
       "daily_rewards": {
-        "nextDefaultReward": 65,
-        "totalDaysLoggedIn": 65,
+        "nextDefaultReward": 0,
+        "totalDaysLoggedIn": 0,
         "lastClaimDate": "2020-12-13T11:55:27.041Z",
         "additionalSchedules": {
           "founderspackdailyrewardtoken": {
-            "rewardsClaimed": 65,
+            "rewardsClaimed": 0,
             "claimedToday": true
           }
         }
