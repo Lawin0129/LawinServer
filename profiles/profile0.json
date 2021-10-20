@@ -29871,6 +29871,28 @@
         "favorite": false
       },
       "quantity": 1
+    },
+    "CodeToken:FounderFriendInvite": {
+      "templateId": "CodeToken:FounderFriendInvite",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Token:FounderChatUnlock": {
+      "templateId": "Token:FounderChatUnlock",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1
     }
   },
   "stats": {
