@@ -29893,6 +29893,291 @@
         "favorite": false
       },
       "quantity": 1
+    },
+    "Worker:Worker_Halloween_Troll_VR_T05": {
+      "templateId": "Worker:Worker_Halloween_Troll_VR_T05",
+      "attributes": {
+        "gender": 0,
+        "level": 50,
+        "squad_slot_idx": 1,
+        "item_seen": true,
+        "portrait": "/Game/UI/Icons/Icon-Worker/IconDefinitions/IconDef-WorkerPortrait-Troll.IconDef-WorkerPortrait-Troll",
+        "max_level_bonus": 0,
+        "squad_id": "",
+        "personality": "Homebase.Worker.Personality.IsCurious",
+        "xp": 0,
+        "slotted_building_id": "",
+        "building_slot_used": -1,
+        "favorite": false,
+        "set_bonus": "Homebase.Worker.SetBonus.IsTrapDurabilityHigh"
+      },
+      "quantity": 1
+    },
+    "Worker:Worker_Halloween_Troll_SR_T05": {
+      "templateId": "Worker:Worker_Halloween_Troll_SR_T05",
+      "attributes": {
+        "gender": 0,
+        "level": 50,
+        "squad_slot_idx": 1,
+        "item_seen": true,
+        "portrait": "/Game/UI/Icons/Icon-Worker/IconDefinitions/IconDef-WorkerPortrait-Troll.IconDef-WorkerPortrait-Troll",
+        "max_level_bonus": 0,
+        "squad_id": "",
+        "personality": "Homebase.Worker.Personality.IsCurious",
+        "xp": 0,
+        "slotted_building_id": "",
+        "building_slot_used": -1,
+        "favorite": false,
+        "set_bonus": "Homebase.Worker.SetBonus.IsTrapDurabilityHigh"
+      },
+      "quantity": 1
+    },
+    "Worker:Worker_Halloween_Smasher_SR_T05": {
+      "templateId": "Worker:Worker_Halloween_Smasher_SR_T05",
+      "attributes": {
+        "gender": 0,
+        "level": 50,
+        "squad_slot_idx": 1,
+        "item_seen": true,
+        "portrait": "/Game/UI/Icons/Icon-Worker/IconDefinitions/IconDef-WorkerPortrait-Smasher.IconDef-WorkerPortrait-Smasher",
+        "max_level_bonus": 0,
+        "squad_id": "",
+        "personality": "Homebase.Worker.Personality.IsCurious",
+        "xp": 0,
+        "slotted_building_id": "",
+        "building_slot_used": -1,
+        "favorite": false,
+        "set_bonus": "Homebase.Worker.SetBonus.IsTrapDurabilityHigh"
+      },
+      "quantity": 1
+    },
+    "Worker:Worker_Halloween_Pitcher_UC_T03": {
+      "templateId": "Worker:Worker_Halloween_Pitcher_UC_T03",
+      "attributes": {
+        "gender": 0,
+        "level": 30,
+        "squad_slot_idx": 1,
+        "item_seen": true,
+        "portrait": "/Game/UI/Icons/Icon-Worker/IconDefinitions/IconDef-WorkerPortrait-Pitcher.IconDef-WorkerPortrait-Pitcher",
+        "max_level_bonus": 0,
+        "squad_id": "",
+        "personality": "Homebase.Worker.Personality.IsCurious",
+        "xp": 0,
+        "slotted_building_id": "",
+        "building_slot_used": -1,
+        "favorite": false,
+        "set_bonus": "Homebase.Worker.SetBonus.IsTrapDurabilityHigh"
+      },
+      "quantity": 1
+    },
+    "Worker:Worker_Halloween_Pitcher_R_T04": {
+      "templateId": "Worker:Worker_Halloween_Pitcher_R_T04",
+      "attributes": {
+        "gender": 0,
+        "level": 40,
+        "squad_slot_idx": 1,
+        "item_seen": true,
+        "portrait": "/Game/UI/Icons/Icon-Worker/IconDefinitions/IconDef-WorkerPortrait-Pitcher.IconDef-WorkerPortrait-Pitcher",
+        "max_level_bonus": 0,
+        "squad_id": "",
+        "personality": "Homebase.Worker.Personality.IsCurious",
+        "xp": 0,
+        "slotted_building_id": "",
+        "building_slot_used": -1,
+        "favorite": false,
+        "set_bonus": "Homebase.Worker.SetBonus.IsTrapDurabilityHigh"
+      },
+      "quantity": 1
+    },
+    "Worker:Worker_Halloween_Pitcher_C_T02": {
+      "templateId": "Worker:Worker_Halloween_Pitcher_C_T02",
+      "attributes": {
+        "gender": 0,
+        "level": 20,
+        "squad_slot_idx": 1,
+        "item_seen": true,
+        "portrait": "/Game/UI/Icons/Icon-Worker/IconDefinitions/IconDef-WorkerPortrait-Pitcher.IconDef-WorkerPortrait-Pitcher",
+        "max_level_bonus": 0,
+        "squad_id": "",
+        "personality": "Homebase.Worker.Personality.IsCurious",
+        "xp": 0,
+        "slotted_building_id": "",
+        "building_slot_used": -1,
+        "favorite": false,
+        "set_bonus": "Homebase.Worker.SetBonus.IsTrapDurabilityHigh"
+      },
+      "quantity": 1
+    },
+    "Worker:Worker_Halloween_Lobber_VR_T05": {
+      "templateId": "Worker:Worker_Halloween_Lobber_VR_T05",
+      "attributes": {
+        "gender": 0,
+        "level": 50,
+        "squad_slot_idx": 1,
+        "item_seen": true,
+        "portrait": "/Game/UI/Icons/Icon-Worker/IconDefinitions/IconDef-WorkerPortrait-Lobber.IconDef-WorkerPortrait-Lobber",
+        "max_level_bonus": 0,
+        "squad_id": "",
+        "personality": "Homebase.Worker.Personality.IsCurious",
+        "xp": 0,
+        "slotted_building_id": "",
+        "building_slot_used": -1,
+        "favorite": false,
+        "set_bonus": "Homebase.Worker.SetBonus.IsTrapDurabilityHigh"
+      },
+      "quantity": 1
+    },
+    "Worker:Worker_Halloween_Lobber_SR_T05": {
+      "templateId": "Worker:Worker_Halloween_Lobber_SR_T05",
+      "attributes": {
+        "gender": 0,
+        "level": 50,
+        "squad_slot_idx": 1,
+        "item_seen": true,
+        "portrait": "/Game/UI/Icons/Icon-Worker/IconDefinitions/IconDef-WorkerPortrait-Lobber.IconDef-WorkerPortrait-Lobber",
+        "max_level_bonus": 0,
+        "squad_id": "",
+        "personality": "Homebase.Worker.Personality.IsCurious",
+        "xp": 0,
+        "slotted_building_id": "",
+        "building_slot_used": -1,
+        "favorite": false,
+        "set_bonus": "Homebase.Worker.SetBonus.IsTrapDurabilityHigh"
+      },
+      "quantity": 1
+    },
+    "Worker:Worker_Halloween_Lobber_R_T04": {
+      "templateId": "Worker:Worker_Halloween_Lobber_R_T04",
+      "attributes": {
+        "gender": 0,
+        "level": 40,
+        "squad_slot_idx": 1,
+        "item_seen": true,
+        "portrait": "/Game/UI/Icons/Icon-Worker/IconDefinitions/IconDef-WorkerPortrait-Lobber.IconDef-WorkerPortrait-Lobber",
+        "max_level_bonus": 0,
+        "squad_id": "",
+        "personality": "Homebase.Worker.Personality.IsCurious",
+        "xp": 0,
+        "slotted_building_id": "",
+        "building_slot_used": -1,
+        "favorite": false,
+        "set_bonus": "Homebase.Worker.SetBonus.IsTrapDurabilityHigh"
+      },
+      "quantity": 1
+    },
+    "Worker:Worker_Halloween_Husky_VR_T05": {
+      "templateId": "Worker:Worker_Halloween_Husky_VR_T05",
+      "attributes": {
+        "gender": 0,
+        "level": 50,
+        "squad_slot_idx": 1,
+        "item_seen": true,
+        "portrait": "/Game/UI/Icons/Icon-Worker/IconDefinitions/IconDef-WorkerPortrait-Husky.IconDef-WorkerPortrait-Husky",
+        "max_level_bonus": 0,
+        "squad_id": "",
+        "personality": "Homebase.Worker.Personality.IsCurious",
+        "xp": 0,
+        "slotted_building_id": "",
+        "building_slot_used": -1,
+        "favorite": false,
+        "set_bonus": "Homebase.Worker.SetBonus.IsTrapDurabilityHigh"
+      },
+      "quantity": 1
+    },
+    "Worker:Worker_Halloween_Husky_UC_T03": {
+      "templateId": "Worker:Worker_Halloween_Husky_UC_T03",
+      "attributes": {
+        "gender": 0,
+        "level": 30,
+        "squad_slot_idx": 1,
+        "item_seen": true,
+        "portrait": "/Game/UI/Icons/Icon-Worker/IconDefinitions/IconDef-WorkerPortrait-Husky.IconDef-WorkerPortrait-Husky",
+        "max_level_bonus": 0,
+        "squad_id": "",
+        "personality": "Homebase.Worker.Personality.IsCurious",
+        "xp": 0,
+        "slotted_building_id": "",
+        "building_slot_used": -1,
+        "favorite": false,
+        "set_bonus": "Homebase.Worker.SetBonus.IsTrapDurabilityHigh"
+      },
+      "quantity": 1
+    },
+    "Worker:Worker_Halloween_Husky_R_T04": {
+      "templateId": "Worker:Worker_Halloween_Husky_R_T04",
+      "attributes": {
+        "gender": 0,
+        "level": 40,
+        "squad_slot_idx": 1,
+        "item_seen": true,
+        "portrait": "/Game/UI/Icons/Icon-Worker/IconDefinitions/IconDef-WorkerPortrait-Husky.IconDef-WorkerPortrait-Husky",
+        "max_level_bonus": 0,
+        "squad_id": "",
+        "personality": "Homebase.Worker.Personality.IsCurious",
+        "xp": 0,
+        "slotted_building_id": "",
+        "building_slot_used": -1,
+        "favorite": false,
+        "set_bonus": "Homebase.Worker.SetBonus.IsTrapDurabilityHigh"
+      },
+      "quantity": 1
+    },
+    "Worker:Worker_Halloween_Husky_C_T02": {
+      "templateId": "Worker:Worker_Halloween_Husky_C_T02",
+      "attributes": {
+        "gender": 0,
+        "level": 50,
+        "squad_slot_idx": 1,
+        "item_seen": true,
+        "portrait": "/Game/UI/Icons/Icon-Worker/IconDefinitions/IconDef-WorkerPortrait-Husky.IconDef-WorkerPortrait-Husky",
+        "max_level_bonus": 0,
+        "squad_id": "",
+        "personality": "Homebase.Worker.Personality.IsCurious",
+        "xp": 0,
+        "slotted_building_id": "",
+        "building_slot_used": -1,
+        "favorite": false,
+        "set_bonus": "Homebase.Worker.SetBonus.IsTrapDurabilityHigh"
+      },
+      "quantity": 1
+    },
+    "Worker:Worker_Halloween_Husk_UC_T03": {
+      "templateId": "Worker:Worker_Halloween_Husk_UC_T03",
+      "attributes": {
+        "gender": 0,
+        "level": 30,
+        "squad_slot_idx": 1,
+        "item_seen": true,
+        "portrait": "/Game/UI/Icons/Icon-Worker/IconDefinitions/IconDef-WorkerPortrait-Husk.IconDef-WorkerPortrait-Husk",
+        "max_level_bonus": 0,
+        "squad_id": "",
+        "personality": "Homebase.Worker.Personality.IsCurious",
+        "xp": 0,
+        "slotted_building_id": "",
+        "building_slot_used": -1,
+        "favorite": false,
+        "set_bonus": "Homebase.Worker.SetBonus.IsTrapDurabilityHigh"
+      },
+      "quantity": 1
+    },
+    "Worker:Worker_Halloween_Husk_C_T02": {
+      "templateId": "Worker:Worker_Halloween_Husk_C_T02",
+      "attributes": {
+        "gender": 0,
+        "level": 50,
+        "squad_slot_idx": 1,
+        "item_seen": true,
+        "portrait": "/Game/UI/Icons/Icon-Worker/IconDefinitions/IconDef-WorkerPortrait-Husk.IconDef-WorkerPortrait-Husk",
+        "max_level_bonus": 0,
+        "squad_id": "",
+        "personality": "Homebase.Worker.Personality.IsCurious",
+        "xp": 0,
+        "slotted_building_id": "",
+        "building_slot_used": -1,
+        "favorite": false,
+        "set_bonus": "Homebase.Worker.SetBonus.IsTrapDurabilityHigh"
+      },
+      "quantity": 1
     }
   },
   "stats": {
