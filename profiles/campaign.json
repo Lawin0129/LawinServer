@@ -2,7 +2,7 @@
   "_id": "LawinServer",
   "created": "2020-01-01T11:10:13.470Z",
   "updated": "2020-08-04T19:30:07.409Z",
-  "rvn": 627,
+  "rvn": 0,
   "wipeNumber": 1,
   "accountId": "LawinServer",
   "profileId": "campaign",
@@ -47485,15 +47485,15 @@
           }
         }
       },
-      "legacy_research_points_spent": 287140,
+      "legacy_research_points_spent": 0,
       "gameplay_stats": [
         {
           "statName": "zonescompleted",
-          "statValue": 566
+          "statValue": 1
         }
       ],
       "permissions": [],
-      "unslot_mtx_spend": 300,
+      "unslot_mtx_spend": 0,
       "twitch": {},
       "client_settings": {
         "pinnedQuestInstances": []
@@ -47504,33 +47504,33 @@
         "offense": 5000,
         "resistance": 5000
       },
-      "level": 300,
+      "level": 310,
       "xp_overflow": 0,
       "latent_xp_marker": "4977938",
       "event_currency": {
         "templateId": "AccountResource:eventcurrency_snowballs",
         "cf": 9111182
       },
-      "inventory_limit_bonus": 0,
+      "inventory_limit_bonus": 100000,
       "matches_played": 0,
       "xp_lost": 0,
       "mode_loadouts": [],
       "daily_rewards": {
-        "nextDefaultReward": 69,
-        "totalDaysLoggedIn": 69,
-        "lastClaimDate": "2021-01-04T01:16:50.760Z",
+        "nextDefaultReward": 0,
+        "totalDaysLoggedIn": 0,
+        "lastClaimDate": "",
         "additionalSchedules": {
           "founderspackdailyrewardtoken": {
-            "rewardsClaimed": 69,
+            "rewardsClaimed": 0,
             "claimedToday": true
           }
         }
       },
       "last_applied_loadout": "CosmeticLocker:cosmeticlocker_stw_1",
-      "xp": 5940875,
+      "xp": 0,
       "packs_granted": 1056,
       "active_loadout_index": 0
     }
   },
-  "commandRevision": 617
+  "commandRevision": 0
 }

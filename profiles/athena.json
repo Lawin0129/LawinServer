@@ -1,7 +1,7 @@
 {
     "created": "2020-01-01T17:22:28.023Z",
     "updated": "2020-01-02T19:03:01.738Z",
-    "rvn": 6887,
+    "rvn": 0,
     "wipeNumber": 1,
     "accountId": "LawinServer",
     "profileId": "athena",
@@ -58372,5 +58372,5 @@
             ]
         }
     },
-    "commandRevision": 2617
+    "commandRevision": 0
 }
