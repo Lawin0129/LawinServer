@@ -936,7 +936,7 @@ express.post("/account/api/oauth/token", async (req, res) => {
 
 			// do not change any of these or you will end up breaking it
 			var ApplyProfileChanges = [];
-			var BaseRevision = profile.rvn || 1;
+			var BaseRevision = profile.rvn || 0;
 			var QueryRevision = req.query.rvn || -1;
 			var StatChanged = false;
 
@@ -985,7 +985,7 @@ express.post("/account/api/oauth/token", async (req, res) => {
 
 			res.json(
 				{
-					"profileRevision": profile.rvn || 1,
+					"profileRevision": profile.rvn || 0,
 					"profileId": "common_core",
 					"profileChangesBaseRevision": BaseRevision,
 					"profileChanges": ApplyProfileChanges,
@@ -1004,7 +1004,7 @@ express.post("/account/api/oauth/token", async (req, res) => {
 
 			// do not change any of these or you will end up breaking it
 			var ApplyProfileChanges = [];
-			var BaseRevision = profile.rvn || 1;
+			var BaseRevision = profile.rvn || 0;
 			var QueryRevision = req.query.rvn || -1;
 			var StatChanged = false;
 
@@ -1077,7 +1077,7 @@ express.post("/account/api/oauth/token", async (req, res) => {
 
 			res.json(
 				{
-					"profileRevision": profile.rvn || 1,
+					"profileRevision": profile.rvn || 0,
 					"profileId": req.query.profileId || "profile0",
 					"profileChangesBaseRevision": BaseRevision,
 					"profileChanges": ApplyProfileChanges,
@@ -1106,7 +1106,7 @@ express.post("/account/api/oauth/token", async (req, res) => {
 
 			// do not change any of these or you will end up breaking it
 			var ApplyProfileChanges = [];
-			var BaseRevision = profile.rvn || 1;
+			var BaseRevision = profile.rvn || 0;
 			var QueryRevision = req.query.rvn || -1;
 			var ItemAdded = false;
 
@@ -1150,7 +1150,7 @@ express.post("/account/api/oauth/token", async (req, res) => {
 
 			res.json(
 				{
-					"profileRevision": profile.rvn || 1,
+					"profileRevision": profile.rvn || 0,
 					"profileId": req.query.profileId || "profile0",
 					"profileChangesBaseRevision": BaseRevision,
 					"profileChanges": ApplyProfileChanges,
@@ -1169,7 +1169,7 @@ express.post("/account/api/oauth/token", async (req, res) => {
 
 			// do not change any of these or you will end up breaking it
 			var ApplyProfileChanges = [];
-			var BaseRevision = profile.rvn || 1;
+			var BaseRevision = profile.rvn || 0;
 			var QueryRevision = req.query.rvn || -1;
 			var StatChanged = false;
 
@@ -1211,7 +1211,7 @@ express.post("/account/api/oauth/token", async (req, res) => {
 
 			res.json(
 				{
-					"profileRevision": profile.rvn || 1,
+					"profileRevision": profile.rvn || 0,
 					"profileId": req.query.profileId || "campaign",
 					"profileChangesBaseRevision": BaseRevision,
 					"profileChanges": ApplyProfileChanges,
@@ -1230,7 +1230,7 @@ express.post("/account/api/oauth/token", async (req, res) => {
 
 			// do not change any of these or you will end up breaking it
 			var ApplyProfileChanges = [];
-			var BaseRevision = profile.rvn || 1;
+			var BaseRevision = profile.rvn || 0;
 			var QueryRevision = req.query.rvn || -1;
 			var StatChanged = false;
 
@@ -1278,7 +1278,7 @@ express.post("/account/api/oauth/token", async (req, res) => {
 
 			res.json(
 				{
-					"profileRevision": profile.rvn || 1,
+					"profileRevision": profile.rvn || 0,
 					"profileId": req.query.profileId || "campaign",
 					"profileChangesBaseRevision": BaseRevision,
 					"profileChanges": ApplyProfileChanges,
@@ -1297,7 +1297,7 @@ express.post("/account/api/oauth/token", async (req, res) => {
 
 			// do not change any of these or you will end up breaking it
 			var ApplyProfileChanges = [];
-			var BaseRevision = profile.rvn || 1;
+			var BaseRevision = profile.rvn || 0;
 			var QueryRevision = req.query.rvn || -1;
 			var StatChanged = false;
 
@@ -1340,7 +1340,7 @@ express.post("/account/api/oauth/token", async (req, res) => {
 
 			res.json(
 				{
-					"profileRevision": profile.rvn || 1,
+					"profileRevision": profile.rvn || 0,
 					"profileId": "campaign",
 					"profileChangesBaseRevision": BaseRevision,
 					"profileChanges": ApplyProfileChanges,
@@ -1359,7 +1359,7 @@ express.post("/account/api/oauth/token", async (req, res) => {
 
 			// do not change any of these or you will end up breaking it
 			var ApplyProfileChanges = [];
-			var BaseRevision = profile.rvn || 1;
+			var BaseRevision = profile.rvn || 0;
 			var QueryRevision = req.query.rvn || -1;
 			var StatChanged = false;
 
@@ -1413,7 +1413,7 @@ express.post("/account/api/oauth/token", async (req, res) => {
 
 			res.json(
 				{
-					"profileRevision": profile.rvn || 1,
+					"profileRevision": profile.rvn || 0,
 					"profileId": "campaign",
 					"profileChangesBaseRevision": BaseRevision,
 					"profileChanges": ApplyProfileChanges,
@@ -1432,7 +1432,7 @@ express.post("/account/api/oauth/token", async (req, res) => {
 
 			// do not change any of these or you will end up breaking it
 			var ApplyProfileChanges = [];
-			var BaseRevision = profile.rvn || 1;
+			var BaseRevision = profile.rvn || 0;
 			var QueryRevision = req.query.rvn || -1;
 			var StatChanged = false;
 
@@ -1518,7 +1518,7 @@ express.post("/account/api/oauth/token", async (req, res) => {
 
 			res.json(
 				{
-					"profileRevision": profile.rvn || 1,
+					"profileRevision": profile.rvn || 0,
 					"profileId": req.query.profileId || "profile0",
 					"profileChangesBaseRevision": BaseRevision,
 					"profileChanges": ApplyProfileChanges,
@@ -1537,7 +1537,7 @@ express.post("/account/api/oauth/token", async (req, res) => {
 
 		// do not change any of these or you will end up breaking it
 		var ApplyProfileChanges = [];
-		var BaseRevision = profile.rvn || 1;
+		var BaseRevision = profile.rvn || 0;
 		var QueryRevision = req.query.rvn || -1;
 		var StatChanged = false;
 
@@ -1588,7 +1588,7 @@ express.post("/account/api/oauth/token", async (req, res) => {
 
 		res.json(
 			{
-				"profileRevision": profile.rvn || 1,
+				"profileRevision": profile.rvn || 0,
 				"profileId": req.query.profileId || "campaign",
 				"profileChangesBaseRevision": BaseRevision,
 				"profileChanges": ApplyProfileChanges,
@@ -1611,7 +1611,7 @@ express.post("/account/api/oauth/token", async (req, res) => {
 
 		// do not change any of these or you will end up breaking it
 		var ApplyProfileChanges = [];
-		var BaseRevision = profile.rvn || 1;
+		var BaseRevision = profile.rvn || 0;
 		var QueryRevision = req.query.rvn || -1;
 		var StatChanged = false;
 		var VariantChanged = false;
@@ -1766,7 +1766,7 @@ express.post("/account/api/oauth/token", async (req, res) => {
 
 		res.json(
 			{
-				"profileRevision": profile.rvn || 1,
+				"profileRevision": profile.rvn || 0,
 				"profileId": "athena",
 				"profileChangesBaseRevision": BaseRevision,
 				"profileChanges": ApplyProfileChanges,
@@ -1789,7 +1789,7 @@ express.post("/account/api/oauth/token", async (req, res) => {
 
 		// do not change any of these or you will end up breaking it
 		var ApplyProfileChanges = [];
-		var BaseRevision = profile.rvn || 1;
+		var BaseRevision = profile.rvn || 0;
 		var QueryRevision = req.query.rvn || -1;
 		var StatChanged = false;
 
@@ -1838,7 +1838,7 @@ express.post("/account/api/oauth/token", async (req, res) => {
 
 		res.json(
 			{
-				"profileRevision": profile.rvn || 1,
+				"profileRevision": profile.rvn || 0,
 				"profileId": "athena",
 				"profileChangesBaseRevision": BaseRevision,
 				"profileChanges": ApplyProfileChanges,
@@ -1865,7 +1865,7 @@ express.post("/account/api/oauth/token", async (req, res) => {
 
 			// do not change any of these or you will end up breaking it
 			var ApplyProfileChanges = [];
-			var BaseRevision = profile.rvn || 1;
+			var BaseRevision = profile.rvn || 0;
 			var QueryRevision = req.query.rvn || -1;
 			var StatChanged = false;
 	
@@ -1914,7 +1914,7 @@ express.post("/account/api/oauth/token", async (req, res) => {
 	
 			res.json(
 				{
-					"profileRevision": profile.rvn || 1,
+					"profileRevision": profile.rvn || 0,
 					"profileId": req.query.profileId || "athena",
 					"profileChangesBaseRevision": BaseRevision,
 					"profileChanges": ApplyProfileChanges,
@@ -1940,7 +1940,7 @@ express.post("/account/api/oauth/token", async (req, res) => {
 
 		// do not change any of these or you will end up breaking it
 		var ApplyProfileChanges = [];
-		var BaseRevision = profile.rvn || 1;
+		var BaseRevision = profile.rvn || 0;
 		var QueryRevision = req.query.rvn || -1;
 		var StatChanged = false;
 		var VariantChanged = false;
@@ -2089,7 +2089,7 @@ express.post("/account/api/oauth/token", async (req, res) => {
 
 		res.json(
 			{
-				"profileRevision": profile.rvn || 1,
+				"profileRevision": profile.rvn || 0,
 				"profileId": req.query.profileId || "athena",
 				"profileChangesBaseRevision": BaseRevision,
 				"profileChanges": ApplyProfileChanges,
@@ -2115,7 +2115,7 @@ express.post("/account/api/oauth/token", async (req, res) => {
 
 		// do not change any of these or you will end up breaking it
 		var ApplyProfileChanges = [];
-		var BaseRevision = profile.rvn || 1;
+		var BaseRevision = profile.rvn || 0;
 		var QueryRevision = req.query.rvn || -1;
 
 		// this doesn't work properly on version v12.20 and above but whatever
@@ -2131,7 +2131,7 @@ express.post("/account/api/oauth/token", async (req, res) => {
 
 		res.json(
 			{
-				"profileRevision": profile.rvn || 1,
+				"profileRevision": profile.rvn || 0,
 				"profileId": req.query.profileId || "athena",
 				"profileChangesBaseRevision": BaseRevision,
 				"profileChanges": ApplyProfileChanges,
