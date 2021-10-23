@@ -1363,17 +1363,17 @@ express.post("/account/api/oauth/token", async (req, res) => {
 			var QueryRevision = req.query.rvn || -1;
 			var StatChanged = false;
 
-			if (req.body.slotIndex && req.body.loadoutId)
+			if (req.body.loadoutId)
 			{
 				switch(req.body.slotIndex) {
 
 					case 0:
-						profile.items[req.body.loadoutId].attributes.gadgets = [{"gadget":req.body.gadgetId || "","slot_index":0},profile.items[req.body.loadoutId].attributes.gadgets[1]];
+						profile.items[req.body.loadoutId].attributes.gadgets[req.body.slotIndex].gadget = req.body.gadgetId || "";
 						StatChanged = true;
 					break;
 					
 					case 1:
-						profile.items[req.body.loadoutId].attributes.gadgets = [profile.items[req.body.loadoutId].attributes.gadgets[0],{"gadget":req.body.gadgetId || "","slot_index":1}];
+						profile.items[req.body.loadoutId].attributes.gadgets[req.body.slotIndex].gadget = req.body.gadgetId || "";
 						StatChanged = true;
 					break;
 
@@ -1880,19 +1880,21 @@ express.post("/account/api/oauth/token", async (req, res) => {
 			{
 				profile.rvn += 1;
 				profile.commandRevision += 1;
-	
+
 				ApplyProfileChanges.push({
-					"changeType": "statModified",
-					"name": "banner_icon",
-					"value": profile.stats.attributes.banner_icon
+					"changeType": "itemAttrChanged",
+					"itemId": req.body.lockerItem,
+					"attributeName": "banner_icon_template",
+					"attributeValue": profile.items[req.body.lockerItem].attributes.banner_icon_template
 				})
-	
+
 				ApplyProfileChanges.push({
-					"changeType": "statModified",
-					"name": "banner_color",
-					"value": profile.stats.attributes.banner_color
+					"changeType": "itemAttrChanged",
+					"itemId": req.body.lockerItem,
+					"attributeName": "banner_color_template",
+					"attributeValue": profile.items[req.body.lockerItem].attributes.banner_color_template
 				})
-	
+
 				fs.writeFileSync(`./profiles/${req.query.profileId || "athena"}.json`, JSON.stringify(profile, null, 2), function(err) {
 					if (err) 
 					{ 
