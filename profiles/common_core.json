@@ -1,7 +1,7 @@
 {
   "created": "2020-01-01T17:22:28.023Z",
   "updated": "2020-06-21T19:06:31.519Z",
-  "rvn": 205,
+  "rvn": 0,
   "wipeNumber": 1,
   "accountId": "LawinServer",
   "profileId": "common_core",
@@ -1393,10 +1393,10 @@
       "import_friends_claimed": {},
       "mtx_purchase_history": {},
       "undo_cooldowns": [],
-      "mtx_affiliate_set_time": "2021-01-04T22:02:50.157Z",
+      "mtx_affiliate_set_time": "",
       "inventory_limit_bonus": 0,
       "current_mtx_platform": "EpicPC",
-      "mtx_affiliate": "Lawin",
+      "mtx_affiliate": "",
       "weekly_purchases": {},
       "daily_purchases": {},
       "ban_history": {},
@@ -1410,5 +1410,5 @@
       "gift_history": {}
     }
   },
-  "commandRevision": 207
+  "commandRevision": 0
 }
