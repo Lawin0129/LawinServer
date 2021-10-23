@@ -2,8 +2,8 @@
   "_id": "LawinServer",
   "created": "2017-08-29T20:38:59.824Z",
   "updated": "2017-12-25T02:08:43.518Z",
-  "rvn": 498,
-  "wipeNumber": 9,
+  "rvn": 0,
+  "wipeNumber": 1,
   "accountId": "LawinServer",
   "profileId": "profile0",
   "version": "no_version",
@@ -30302,11 +30302,12 @@
       "level": 10,
       "named_counters": {
         "SubGameSelectCount_Campaign": {
-          "current_count": 2,
-          "last_incremented_time": "2017-12-25T02:08:43.518Z"
+          "current_count": 0,
+          "last_incremented_time": ""
         },
         "SubGameSelectCount_Athena": {
-          "current_count": 0
+          "current_count": 0,
+          "last_incremented_time": ""
         }
       },
       "default_hero_squad_id": "",
@@ -30355,10 +30356,10 @@
       "gameplay_stats": [
         {
           "statName": "zonescompleted",
-          "statValue": 7
+          "statValue": 1
         }
       ],
-      "inventory_limit_bonus": 0,
+      "inventory_limit_bonus": 100000,
       "current_mtx_platform": "Epic",
       "weekly_purchases": {},
       "daily_purchases": {
@@ -30391,7 +30392,7 @@
       "daily_rewards": {
         "nextDefaultReward": 0,
         "totalDaysLoggedIn": 0,
-        "lastClaimDate": "2020-12-13T11:55:27.041Z",
+        "lastClaimDate": "",
         "additionalSchedules": {
           "founderspackdailyrewardtoken": {
             "rewardsClaimed": 0,
@@ -30400,7 +30401,7 @@
         }
       },
       "monthly_purchases": {},
-      "xp": 955528,
+      "xp": 0,
       "homebase": {
         "townName": "LawinServer",
         "bannerIconId": "StandardBanner29",
@@ -30411,5 +30412,5 @@
       "packs_granted": 13
     }
   },
-  "commandRevision": 281
+  "commandRevision": 0
 }
