@@ -2,8 +2,8 @@
   "_id": "LawinServer",
   "created": "2017-11-24T18:39:56.363Z",
   "updated": "2019-07-26T17:25:56.784Z",
-  "rvn": 3254,
-  "wipeNumber": 4,
+  "rvn": 0,
+  "wipeNumber": 1,
   "accountId": "LawinServer",
   "profileId": "metadata",
   "version": "no_version",
@@ -227,5 +227,5 @@
       "inventory_limit_bonus": 0
     }
   },
-  "commandRevision": 1531
+  "commandRevision": 0
 }
