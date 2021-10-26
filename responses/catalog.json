@@ -1,0 +1,517 @@
+{
+   "refreshIntervalHrs":24,
+   "dailyPurchaseHrs":24,
+   "expiration":"9999-12-31T00:00:00.000Z",
+   "storefronts":[
+      {
+         "name":"CardPackStore",
+         "catalogEntries":[
+            {
+               "offerId":"B9B0CE758A5049F898773C1A47A69ED4",
+               "devName":"Always.UpgradePack.03",
+               "offerType":"StaticPrice",
+               "prices":[
+                  {
+                     "currencyType":"MtxCurrency",
+                     "currencySubType":"",
+                     "regularPrice":50,
+                     "finalPrice":50,
+                     "saleExpiration":"9999-12-31T23:59:59.999Z",
+                     "basePrice":50
+                  }
+               ],
+               "categories":[],
+               "dailyLimit":-1,
+               "weeklyLimit":-1,
+               "monthlyLimit":-1,
+               "appStoreId":[
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+               ],
+               "requirements":[
+                  {
+                     "requirementType":"DenyOnFulfillment",
+                     "requiredId":"63BE689248CAF1251C84B4B3574F90EF",
+                     "minQuantity":1
+                  }
+               ],
+               "metaInfo":[],
+               "metaAssetInfo":{
+                  "structName":"FortCatalogMeta",
+                  "payload":{
+                     "chaseItems":[
+                        "FortSchematicItemDefinition'/Game/Items/Schematics/Ranged/Assault/Raygun/SID_Assault_Raygun_VR_Ore_T01.SID_Assault_Raygun_VR_Ore_T01'",
+                        "FortSchematicItemDefinition'/Game/Items/Schematics/Melee/Blunt/Tools/Hammer_Heavy/SID_Blunt_Hammer_Heavy_R_Ore_T01.SID_Blunt_Hammer_Heavy_R_Ore_T01'",
+                        "FortWorkerType'/Game/Items/Workers/Managers/ManagerDoctor_R_T01.ManagerDoctor_R_T01'"
+                     ],
+                     "packDefinition":"FortCardPackItemDefinition'/Game/Items/CardPacks/CardPack_Bronze.CardPack_Bronze'"
+                  }
+               },
+               "catalogGroup":"",
+               "catalogGroupPriority":0,
+               "sortPriority":0,
+               "title":{
+                  "de":"Upgrade-Lama",
+                  "ru":"Лама с улучшениями",
+                  "ko":"업그레이드 라마",
+                  "en":"Upgrade Llama",
+                  "it":"Lama plus",
+                  "fr":"Lama amélioré",
+                  "es":"Llama mejorable",
+                  "ar":"لاما الترقية",
+                  "ja":"アップグレードラマ",
+                  "pl":"Ulepszlama",
+                  "es-419":"Llama de mejoras",
+                  "tr":"Geliştirme Laması"
+               },
+               "shortDescription":"",
+               "description":{
+                  "de":"Das treue alte Lama, vollgepackt mit einer Fülle toller Sachen und Upgrade-Materialien. Enthält mindestens 4 Gegenstände, darunter ein seltener Gegenstand oder ein Held! Hat eine hohe Chance, sich aufzurüsten.",
+                  "ru":"Старая добрая лама, набитая полезными вещами и материалами для улучшений. Содержит как минимум 4 предмета, включая один редкий предмет или героя. Высокая вероятность получить улучшение.",
+                  "ko":"다양한 물건과 업그레이드 재료가 담긴 믿음직한 라마입니다. 희귀 아이템이나 영웅을 포함해 최소 4개의 아이템이 들어있습니다! 업그레이드 확률이 높습니다.",
+                  "en":"The old faithful llama, packed with a variety of goodies and upgrade materials. Contains at least 4 items, including a rare item or a hero! Has a high chance to upgrade.",
+                  "it":"Il caro vecchio lama, carico di oggetti e materiali da potenziamento. Include almeno 4 oggetti, di cui un oggetto o un eroe rari! Probabilità elevata di potenziamento.",
+                  "fr":"Un bon vieux lama, plein de marchandises et de matériaux d'amélioration divers et variés. Contient au moins 4 objets, dont un objet rare ou un héros. A de fortes chances de gagner en valeur.",
+                  "es":"La vieja y querida llama de siempre, atiborrada con una variedad de artículos y de materiales de mejora. Contiene al menos 4 objetos, ¡entre ellos un objeto raro o un héroe! Tiene una alta probabilidad de mejorarse.",
+                  "ar":"اللاما المخلصة القديمة المكدسة بمجموعة متنوعة من السلع ومواد الترقية. يحتوي على 4 عناصر على الأقل، تشتمل على عنصر نادر أو بطل! لديه فرصة كبيرة للترقية.",
+                  "ja":"様々なアイテムやアップグレード用素材が詰まった、安心定番のラマ。レアアイテム1個、またはヒーロー1体を含む4個以上のアイテムが入っている！ 高確率でアップグレードのチャンスあり。",
+                  "pl":"Stara dobra lama, pełna różnych skarbów i materiałów do ulepszania. Zawiera przynajmniej 4 elementy. Jednym z nich jest na pewno rzadki przedmiot lub bohater. Ma duże szanse na ulepszenie.",
+                  "es-419":"La llama siempre fiel, llena de una variedad de productos y materiales de mejora. Contiene al menos 4 objetos, ¡incluido un héroe u objeto raro! Tiene una alta probabilidad de mejora.",
+                  "tr":"Çeşitli ürünler ve geliştirme malzemeleri ile doldurulmuş bildiğimiz lama. Nadir bir eşya veya kahraman da dahil olmak üzere en az 4 eşya içerir! Geliştirme şansı yüksektir."
+               },
+               "displayAssetPath":"",
+               "itemGrants":[
+                  {
+                     "templateId":"CardPack:cardpack_bronze",
+                     "quantity":1
+                  }
+               ]
+            },
+            {
+               "offerId":"1F6B613D4B7BAD47D8A93CAEED2C4996",
+               "devName":"Mini Llama Manual Tutorial - high SharedDisplayPriority",
+               "offerType":"StaticPrice",
+               "prices":[
+                  {
+                     "currencyType":"GameItem",
+                     "currencySubType":"AccountResource:voucher_basicpack",
+                     "regularPrice":1,
+                     "finalPrice":1,
+                     "saleExpiration":"9999-12-31T23:59:59.999Z",
+                     "basePrice":1
+                  }
+               ],
+               "categories":[],
+               "dailyLimit":1,
+               "weeklyLimit":-1,
+               "monthlyLimit":-1,
+               "appStoreId":[
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+               ],
+               "requirements":[
+                  {
+                     "requirementType":"DenyOnFulfillment",
+                     "requiredId":"82ADCC874CFC2D47927208BAE871CF2B",
+                     "minQuantity":1
+                  }
+               ],
+               "metaInfo":[
+                  {
+                     "key":"bUseSharedDisplay",
+                     "value":"true"
+                  },
+                  {
+                     "key":"SharedDisplayPriority",
+                     "value":"999999"
+                  }
+               ],
+               "metaAssetInfo":{
+                  "structName":"FortCatalogMeta",
+                  "payload":{
+                     "chaseItems":[
+                        "FortWorkerType'/Game/Items/Workers/WorkerBasic_UC_T02.WorkerBasic_UC_T02'",
+                        "FortSchematicItemDefinition'/Game/Items/Schematics/Melee/Blunt/Tools/Hammer_Heavy/SID_Blunt_Hammer_Heavy_UC_Ore_T02.SID_Blunt_Hammer_Heavy_UC_Ore_T02'",
+                        "FortWorkerType'/Game/Items/Workers/Managers/ManagerDoctor_UC_T01.ManagerDoctor_UC_T01'"
+                     ],
+                     "packDefinition":"FortCardPackItemDefinition'/Game/Items/CardPacks/CardPack_Basic.CardPack_Basic'"
+                  }
+               },
+               "catalogGroup":"",
+               "catalogGroupPriority":0,
+               "sortPriority":0,
+               "title":{
+                  "de":"Mini-Belohnungslama",
+                  "ru":"Мини-лама с наградой",
+                  "ko":"미니 보상 라마",
+                  "en":"Mini Reward Llama",
+                  "it":"Lama miniricompensa",
+                  "fr":"Mini lama à récompense",
+                  "es":"Minillama de recompensa",
+                  "ar":"لاما جوائز مصغرة",
+                  "ja":"ミニ報酬ラマ",
+                  "pl":"Minilama",
+                  "es-419":"Minillama de recompensa",
+                  "tr":"Mini Ödül Laması"
+               },
+               "shortDescription":"",
+               "description":{
+                  "de":"Ein einfaches Lama, das mit allerlei gewöhnlichen Dingen gefüllt ist, um dich durch deine erste Apokalypse zu bringen. Enthält mindestens 3 Gegenstände.\r\n",
+                  "ru":"Простенькая лама, набитая самыми важными вещами, которые помогут вам пережить ваш первый апокалипсис. Содержит по меньшей мере 3 предмета.\r\n",
+                  "ko":"첫 종말에서 생존을 도와줄 기본적인 물품이 담긴 단촐한 라마입니다. 최소 아이템 3개를 얻을 수 있습니다!\r\n",
+                  "en":"A simple llama stuffed with basic goods to get you through your first apocalypse. Contains at least 3 items.\r\n",
+                  "it":"Lama comune carico di oggetti base con cui affrontare la tua prima apocalisse. Include almeno 3 oggetti.\r\n",
+                  "fr":"Un lama rempli de marchandises de base pour vous permettre de survivre à votre première apocalypse. Contient au moins 3 objets.\r\n",
+                  "es":"Una simple llama rellena de artículos básicos con los que sobrevivir a tu primer apocalipsis. Contiene al menos 3 objetos.\r\n",
+                  "ar":"لاما بسيطة مملوءة بالسلع الأساسية لتخرج من نهاية العالم الأولى. تحتوي على 3 عناصر.\r\n",
+                  "ja":"最初のアポカリプスを乗り切れるよう、基本グッズを詰め込んだシンプルなラマ。アイテムが3個以上入っている。\r\n",
+                  "pl":"Zwykła lama wypchana podstawowymi rzeczami, które pomogą ci przetrwać pierwszą apokalipsę. Zawiera co najmniej 3 przedmioty.\u0020\u0050\u0052\u004f\u0031\u0030\u0030\u004b\u0105\u0074\u0020\u0070\u006f\u007a\u0064\u0072\u0061\u0077\u0069\u0061\u0020\u0077\u0073\u007a\u0079\u0073\u0074\u006b\u0069\u0063\u0068\u0020\u0050\u006f\u006c\u0061\u006b\u00f3\u0077\u002e\r\n",
+                  "es-419":"Una llama simple llena de productos básicos para que puedas sobrevivir a tu primer apocalipsis. Contiene al menos 3 objetos.\r\n",
+                  "tr":"İlk kıyametinden sağ salim çıkabilmen için gerekli temel ürünlerle doldurulmuş basit bir lama. En az 3 öğe içerir.\r\n"
+               },
+               "displayAssetPath":"",
+               "itemGrants":[
+                  {
+                     "templateId":"CardPack:cardpack_basic",
+                     "quantity":1
+                  }
+               ]
+            },
+            {
+               "offerId":"73216346454B1B2892DDA381C75E1BCB",
+               "devName":"Mini Llama Manual Default - Low SharedDisplayPriority",
+               "offerType":"StaticPrice",
+               "prices":[
+                  {
+                     "currencyType":"GameItem",
+                     "currencySubType":"AccountResource:voucher_basicpack",
+                     "regularPrice":1,
+                     "finalPrice":1,
+                     "saleExpiration":"9999-12-31T23:59:59.999Z",
+                     "basePrice":1
+                  }
+               ],
+               "categories":[],
+               "dailyLimit":-1,
+               "weeklyLimit":-1,
+               "monthlyLimit":-1,
+               "appStoreId":[
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+               ],
+               "requirements":[
+                  {
+                     "requirementType":"RequireFulfillment",
+                     "requiredId":"82ADCC874CFC2D47927208BAE871CF2B",
+                     "minQuantity":1
+                  }
+               ],
+               "metaInfo":[
+                  {
+                     "key":"bUseSharedDisplay",
+                     "value":"true"
+                  },
+                  {
+                     "key":"SharedDisplayPriority",
+                     "value":"1"
+                  }
+               ],
+               "metaAssetInfo":{
+                  "structName":"FortCatalogMeta",
+                  "payload":{
+                     "chaseItems":[
+                        "FortWorkerType'/Game/Items/Workers/WorkerBasic_UC_T02.WorkerBasic_UC_T02'",
+                        "FortSchematicItemDefinition'/Game/Items/Schematics/Melee/Blunt/Tools/Hammer_Heavy/SID_Blunt_Hammer_Heavy_UC_Ore_T02.SID_Blunt_Hammer_Heavy_UC_Ore_T02'",
+                        "FortWorkerType'/Game/Items/Workers/Managers/ManagerDoctor_UC_T01.ManagerDoctor_UC_T01'"
+                     ],
+                     "packDefinition":"FortCardPackItemDefinition'/Game/Items/CardPacks/CardPack_Basic.CardPack_Basic'"
+                  }
+               },
+               "catalogGroup":"",
+               "catalogGroupPriority":0,
+               "sortPriority":0,
+               "title":{
+                  "de":"Mini-Belohnungslama",
+                  "ru":"Мини-лама с наградой",
+                  "ko":"미니 보상 라마",
+                  "en":"Mini Reward Llama",
+                  "it":"Lama miniricompensa",
+                  "fr":"Mini lama à récompense",
+                  "es":"Minillama de recompensa",
+                  "ar":"لاما جوائز مصغرة",
+                  "ja":"ミニ報酬ラマ",
+                  "pl":"Minilama",
+                  "es-419":"Minillama de recompensa",
+                  "tr":"Mini Ödül Laması"
+               },
+               "shortDescription":"",
+               "description":{
+                  "de":"Ein einfaches Lama, das mit allerlei gewöhnlichen Dingen gefüllt ist, um dich durch deine erste Apokalypse zu bringen. Enthält mindestens 3 Gegenstände.\r\n",
+                  "ru":"Простенькая лама, набитая самыми важными вещами, которые помогут вам пережить ваш первый апокалипсис. Содержит по меньшей мере 3 предмета.\r\n",
+                  "ko":"첫 종말에서 생존을 도와줄 기본적인 물품이 담긴 단촐한 라마입니다. 최소 아이템 3개를 얻을 수 있습니다!\r\n",
+                  "en":"A simple llama stuffed with basic goods to get you through your first apocalypse. Contains at least 3 items.\r\n",
+                  "it":"Lama comune carico di oggetti base con cui affrontare la tua prima apocalisse. Include almeno 3 oggetti.\r\n",
+                  "fr":"Un lama rempli de marchandises de base pour vous permettre de survivre à votre première apocalypse. Contient au moins 3 objets.\r\n",
+                  "es":"Una simple llama rellena de artículos básicos con los que sobrevivir a tu primer apocalipsis. Contiene al menos 3 objetos.\r\n",
+                  "ar":"لاما بسيطة مملوءة بالسلع الأساسية لتخرج من نهاية العالم الأولى. تحتوي على 3 عناصر.\r\n",
+                  "ja":"最初のアポカリプスを乗り切れるよう、基本グッズを詰め込んだシンプルなラマ。アイテムが3個以上入っている。\r\n",
+                  "pl":"Zwykła lama wypchana podstawowymi rzeczami, które pomogą ci przetrwać pierwszą apokalipsę. Zawiera co najmniej 3 przedmioty.\u0020\u0050\u0052\u004f\u0031\u0030\u0030\u004b\u0105\u0074\u0020\u0070\u006f\u007a\u0064\u0072\u0061\u0077\u0069\u0061\u0020\u0077\u0073\u007a\u0079\u0073\u0074\u006b\u0069\u0063\u0068\u0020\u0050\u006f\u006c\u0061\u006b\u00f3\u0077\u002e\r\n",
+                  "es-419":"Una llama simple llena de productos básicos para que puedas sobrevivir a tu primer apocalipsis. Contiene al menos 3 objetos.\r\n",
+                  "tr":"İlk kıyametinden sağ salim çıkabilmen için gerekli temel ürünlerle doldurulmuş basit bir lama. En az 3 öğe içerir.\r\n"
+               },
+               "displayAssetPath":"",
+               "itemGrants":[
+                  {
+                     "templateId":"CardPack:cardpack_basic",
+                     "quantity":1
+                  }
+               ]
+            }
+         ]
+      },
+      {
+         "name":"CardPackStorePreroll",
+         "catalogEntries":[
+            {
+               "offerId":"D2E08EFA731D437B85B7340EB51A5E1D",
+               "devName":"Always.UpgradePack.01",
+               "fulfillmentIds":[],
+               "dailyLimit":-1,
+               "weeklyLimit":-1,
+               "monthlyLimit":-1,
+               "categories":[],
+               "prices":[
+                  {
+                     "currencyType":"MtxCurrency",
+                     "currencySubType":"",
+                     "regularPrice":50,
+                     "dynamicRegularPrice":50,
+                     "finalPrice":50,
+                     "saleExpiration":"9999-12-31T23:59:59.999Z",
+                     "basePrice":50
+                  }
+               ],
+               "meta":{
+                  "MaxConcurrentPurchases":"-1",
+                  "Preroll":"True",
+                  "ProfileId":"campaign",
+                  "EventLimit":"-1"
+               },
+               "matchFilter":"",
+               "filterWeight":0.0,
+               "appStoreId":[],
+               "requirements":[],
+               "offerType":"StaticPrice",
+               "refundable":false,
+               "metaInfo":[
+                  {
+                     "key":"MaxConcurrentPurchases",
+                     "value":"-1"
+                  },
+                  {
+                     "key":"Preroll",
+                     "value":"True"
+                  },
+                  {
+                     "key":"ProfileId",
+                     "value":"campaign"
+                  },
+                  {
+                     "key":"EventLimit",
+                     "value":"-1"
+                  }
+               ],
+               "displayAssetPath":"/Game/Items/CardPacks/CardPack_Bronze.CardPack_Bronze",
+               "itemGrants":[
+                  {
+                     "templateId":"CardPack:cardpack_bronze",
+                     "quantity":1
+                  }
+               ],
+               "additionalGrants":[],
+               "sortPriority":0,
+               "catalogGroup":"Upgrade",
+               "catalogGroupPriority":2,
+               "fulfillmentClass":"com.epicgames.fortnite.core.game.fulfillments.PrerollFulfillment"
+            },
+            {
+               "offerId":"2D09C70ABD0049EBAF1D4054127287FF",
+               "devName":"Always.Jackpot.01",
+               "fulfillmentIds":[
+                  
+               ],
+               "dailyLimit":-1,
+               "weeklyLimit":-1,
+               "monthlyLimit":-1,
+               "categories":[],
+               "prices":[
+                  {
+                     "currencyType":"MtxCurrency",
+                     "currencySubType":"",
+                     "regularPrice":500,
+                     "dynamicRegularPrice":500,
+                     "finalPrice":500,
+                     "saleExpiration":"9999-12-31T23:59:59.999Z",
+                     "basePrice":500
+                  }
+               ],
+               "meta":{
+                  "MaxConcurrentPurchases":"-1",
+                  "Preroll":"True",
+                  "ProfileId":"campaign",
+                  "EventLimit":"-1"
+               },
+               "matchFilter":"",
+               "filterWeight":0.0,
+               "appStoreId":[],
+               "requirements":[],
+               "offerType":"StaticPrice",
+               "refundable":false,
+               "metaInfo":[
+                  {
+                     "key":"MaxConcurrentPurchases",
+                     "value":"-1"
+                  },
+                  {
+                     "key":"Preroll",
+                     "value":"True"
+                  },
+                  {
+                     "key":"ProfileId",
+                     "value":"campaign"
+                  },
+                  {
+                     "key":"EventLimit",
+                     "value":"-1"
+                  }
+               ],
+               "displayAssetPath":"/Game/Items/CardPacks/CardPack_Jackpot.CardPack_Jackpot",
+               "itemGrants":[
+                  {
+                     "templateId":"CardPack:cardpack_jackpot",
+                     "quantity":1
+                  }
+               ],
+               "additionalGrants":[],
+               "sortPriority":0,
+               "catalogGroup":"Shared",
+               "catalogGroupPriority":2,
+               "fulfillmentClass":"com.epicgames.fortnite.core.game.fulfillments.PrerollFulfillment"
+            }
+         ]
+      },
+      {
+         "name":"CardPackStoreGameplay",
+         "catalogEntries":[
+            {
+               "offerId":"1F6B613D4B7BAD47D8A93CAEED2C4996",
+               "devName":"Mini Llama Manual Tutorial - high SharedDisplayPriority",
+               "offerType":"StaticPrice",
+               "prices":[
+                  {
+                     "currencyType":"GameItem",
+                     "currencySubType":"AccountResource:voucher_basicpack",
+                     "regularPrice":1,
+                     "finalPrice":1,
+                     "saleExpiration":"9999-12-31T23:59:59.999Z",
+                     "basePrice":1
+                  }
+               ],
+               "categories":[],
+               "dailyLimit":1,
+               "weeklyLimit":-1,
+               "monthlyLimit":-1,
+               "appStoreId":[
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  "",
+                  ""
+               ],
+               "requirements":[
+                  {
+                     "requirementType":"DenyOnFulfillment",
+                     "requiredId":"82ADCC874CFC2D47927208BAE871CF2B",
+                     "minQuantity":1
+                  }
+               ],
+               "metaInfo":[
+                  {
+                     "key":"bUseSharedDisplay",
+                     "value":"true"
+                  },
+                  {
+                     "key":"SharedDisplayPriority",
+                     "value":"999999"
+                  }
+               ],
+               "catalogGroup":"",
+               "catalogGroupPriority":0,
+               "sortPriority":0,
+               "title":{
+                  "de":"Mini-Belohnungslama",
+                  "ru":"Мини-лама с наградой",
+                  "ko":"미니 보상 라마",
+                  "en":"Mini Reward Llama",
+                  "it":"Lama miniricompensa",
+                  "fr":"Mini lama à récompense",
+                  "es":"Minillama de recompensa",
+                  "ar":"لاما جوائز مصغرة",
+                  "ja":"ミニ報酬ラマ",
+                  "pl":"Minilama",
+                  "es-419":"Minillama de recompensa",
+                  "tr":"Mini Ödül Laması"
+               },
+               "shortDescription":"",
+               "description":{
+                  "de":"Ein einfaches Lama, das mit allerlei gewöhnlichen Dingen gefüllt ist, um dich durch deine erste Apokalypse zu bringen. Enthält mindestens 3 Gegenstände.\r\n",
+                  "ru":"Простенькая лама, набитая самыми важными вещами, которые помогут вам пережить ваш первый апокалипсис. Содержит по меньшей мере 3 предмета.\r\n",
+                  "ko":"첫 종말에서 생존을 도와줄 기본적인 물품이 담긴 단촐한 라마입니다. 최소 아이템 3개를 얻을 수 있습니다!\r\n",
+                  "en":"A simple llama stuffed with basic goods to get you through your first apocalypse. Contains at least 3 items.\r\n",
+                  "it":"Lama comune carico di oggetti base con cui affrontare la tua prima apocalisse. Include almeno 3 oggetti.\r\n",
+                  "fr":"Un lama rempli de marchandises de base pour vous permettre de survivre à votre première apocalypse. Contient au moins 3 objets.\r\n",
+                  "es":"Una simple llama rellena de artículos básicos con los que sobrevivir a tu primer apocalipsis. Contiene al menos 3 objetos.\r\n",
+                  "ar":"لاما بسيطة مملوءة بالسلع الأساسية لتخرج من نهاية العالم الأولى. تحتوي على 3 عناصر.\r\n",
+                  "ja":"最初のアポカリプスを乗り切れるよう、基本グッズを詰め込んだシンプルなラマ。アイテムが3個以上入っている。\r\n",
+                  "pl":"Zwykła lama wypchana podstawowymi rzeczami, które pomogą ci przetrwać pierwszą apokalipsę. Zawiera co najmniej 3 przedmioty.\u0020\u0050\u0052\u004f\u0031\u0030\u0030\u004b\u0105\u0074\u0020\u0070\u006f\u007a\u0064\u0072\u0061\u0077\u0069\u0061\u0020\u0077\u0073\u007a\u0079\u0073\u0074\u006b\u0069\u0063\u0068\u0020\u0050\u006f\u006c\u0061\u006b\u00f3\u0077\u002e\r\n",
+                  "es-419":"Una llama simple llena de productos básicos para que puedas sobrevivir a tu primer apocalipsis. Contiene al menos 3 objetos.\r\n",
+                  "tr":"İlk kıyametinden sağ salim çıkabilmen için gerekli temel ürünlerle doldurulmuş basit bir lama. En az 3 öğe içerir.\r\n"
+               },
+               "displayAssetPath":"/Game/Items/CardPacks/CardPack_Basic.CardPack_Basic",
+               "itemGrants":[
+                  {
+                     "templateId":"CardPack:cardpack_basic",
+                     "quantity":1
+                  }
+               ]
+            }
+         ]
+      }
+   ]
+}

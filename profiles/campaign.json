@@ -6236,58 +6236,6 @@
       },
       "quantity": 1
     },
-    "10f912aa-6c9c-4107-a8f6-529389bc72d9": {
-      "templateId": "PrerollData:preroll_basic",
-      "attributes": {
-        "linked_offer": "",
-        "fulfillmentId": "63BE689248CAF1251C84B4B3574F90EF",
-        "expended_streakbreakers": {},
-        "level": 1,
-        "item_seen": false,
-        "max_level_bonus": 0,
-        "highest_rarity": 0,
-        "xp": 0,
-        "offerId": "B9B0CE758A5049F898773C1A47A69ED4",
-        "expiration": "2020-02-06T00:00:00.000Z",
-        "items": [
-          {
-            "itemType": "AccountResource:schematicxp",
-            "attributes": {},
-            "quantity": 307934838
-          },
-          {
-            "itemType": "Defender:did_defendermelee_basic_c_t01",
-            "attributes": {
-              "Alteration": {
-                "LootTierGroup": "AlterationTG.Defender.Melee.C",
-                "Tier": 0
-              },
-              "alterations": [
-                "Alteration:aid_att_def_maxshield"
-              ]
-            },
-            "quantity": 1
-          },
-          {
-            "itemType": "Worker:workerbasic_uc_t01",
-            "attributes": {
-              "personality": "Homebase.Worker.Personality.IsCurious",
-              "gender": "1",
-              "portrait": "/Game/UI/Icons/Icon-Worker/IconDefinitions/IconDef-WorkerPortrait-Curious-M01.IconDef-WorkerPortrait-Curious-M01",
-              "set_bonus": "Homebase.Worker.SetBonus.IsRangedDamageLow"
-            },
-            "quantity": 1
-          },
-          {
-            "itemType": "AccountResource:eventcurrency_snowballs",
-            "attributes": {},
-            "quantity": 2426612
-          }
-        ],
-        "favorite": false
-      },
-      "quantity": 1
-    },
     "1216b26a-a260-43b1-8d17-2c02fee5316f": {
       "templateId": "Quest:s11_fetch_quest_g1",
       "attributes": {
@@ -11069,40 +11017,6 @@
       },
       "quantity": 1
     },
-    "8c7a029b-645d-4b20-952c-ada0968e55be": {
-      "templateId": "PrerollData:preroll_basic",
-      "attributes": {
-        "linked_offer": "OfferId:4D64CBE3618D41FBB5CAD0E472F4610A",
-        "fulfillmentId": "OfferId:D2E08EFA731D437B85B7340EB51A5E1D",
-        "expended_streakbreakers": {},
-        "level": 1,
-        "item_seen": false,
-        "max_level_bonus": 0,
-        "highest_rarity": 0,
-        "xp": 0,
-        "offerId": "D2E08EFA731D437B85B7340EB51A5E1D",
-        "expiration": "2020-02-06T00:00:00.000Z",
-        "items": [
-          {
-            "itemType": "Worker:workerbasic_c_t01",
-            "attributes": {
-              "personality": "Homebase.Worker.Personality.IsDreamer",
-              "gender": "1",
-              "portrait": "/Game/UI/Icons/Icon-Worker/IconDefinitions/IconDef-WorkerPortrait-Dreamer-M03.IconDef-WorkerPortrait-Dreamer-M03",
-              "set_bonus": "Homebase.Worker.SetBonus.IsFortitudeLow"
-            },
-            "quantity": 1
-          },
-          {
-            "itemType": "AccountResource:eventcurrency_snowballs",
-            "attributes": {},
-            "quantity": 4422359
-          }
-        ],
-        "favorite": false
-      },
-      "quantity": 1
-    },
     "a4842a13-0615-4487-8533-8a22f10e2e73": {
       "templateId": "Quest:challenge_toxictreasures_8",
       "attributes": {
@@ -11353,40 +11267,6 @@
         "building_slot_used": -1,
         "favorite": false,
         "set_bonus": "Homebase.Worker.SetBonus.IsTrapDamageLow"
-      },
-      "quantity": 1
-    },
-    "3ab3e405-f70f-49c9-8493-a60baa01c382": {
-      "templateId": "PrerollData:preroll_basic",
-      "attributes": {
-        "linked_offer": "",
-        "fulfillmentId": "OfferId:4D64CBE3618D41FBB5CAD0E472F4610A",
-        "expended_streakbreakers": {},
-        "level": 1,
-        "item_seen": false,
-        "max_level_bonus": 0,
-        "highest_rarity": 0,
-        "xp": 0,
-        "offerId": "4D64CBE3618D41FBB5CAD0E472F4610A",
-        "expiration": "2020-02-06T00:00:00.000Z",
-        "items": [
-          {
-            "itemType": "Worker:workerbasic_c_t01",
-            "attributes": {
-              "personality": "Homebase.Worker.Personality.IsDreamer",
-              "gender": "1",
-              "portrait": "/Game/UI/Icons/Icon-Worker/IconDefinitions/IconDef-WorkerPortrait-Dreamer-M03.IconDef-WorkerPortrait-Dreamer-M03",
-              "set_bonus": "Homebase.Worker.SetBonus.IsFortitudeLow"
-            },
-            "quantity": 1
-          },
-          {
-            "itemType": "AccountResource:eventcurrency_snowballs",
-            "attributes": {},
-            "quantity": 6090396
-          }
-        ],
-        "favorite": false
       },
       "quantity": 1
     },
@@ -12447,139 +12327,6 @@
         "max_level_bonus": 0,
         "selection": 1,
         "xp": 0,
-        "favorite": false
-      },
-      "quantity": 1
-    },
-    "e37c76a2-4d7e-4a99-835b-891267077145": {
-      "templateId": "PrerollData:preroll_basic",
-      "attributes": {
-        "linked_offer": "",
-        "fulfillmentId": "92720BF0A9FC455AA99604ACB2310962",
-        "expended_streakbreakers": {
-          "Currency:SB_Bronze": 100
-        },
-        "level": 1,
-        "item_seen": false,
-        "max_level_bonus": 0,
-        "highest_rarity": 1,
-        "xp": 0,
-        "offerId": "92720BF0A9FC455AA99604ACB2310962",
-        "expiration": "2020-02-06T00:00:00.000Z",
-        "items": [
-          {
-            "itemType": "Worker:managerdoctor_c_t01",
-            "attributes": {
-              "personality": "Homebase.Worker.Personality.IsAnalytical",
-              "gender": "2",
-              "portrait": "/Game/UI/Icons/Icon-Worker/IconDefinitions/IconDef-ManagerPortrait-Doctor-F01.IconDef-ManagerPortrait-Doctor-F01"
-            },
-            "quantity": 1
-          },
-          {
-            "itemType": "Worker:workerbasic_uc_t01",
-            "attributes": {
-              "personality": "Homebase.Worker.Personality.IsDependable",
-              "gender": "1",
-              "portrait": "/Game/UI/Icons/Icon-Worker/IconDefinitions/IconDef-WorkerPortrait-Dependable-M02.IconDef-WorkerPortrait-Dependable-M02",
-              "set_bonus": "Homebase.Worker.SetBonus.IsShieldRegenLow"
-            },
-            "quantity": 1
-          },
-          {
-            "itemType": "Worker:workerbasic_r_t01",
-            "attributes": {
-              "personality": "Homebase.Worker.Personality.IsCooperative",
-              "gender": "2",
-              "portrait": "/Game/UI/Icons/Icon-Worker/IconDefinitions/IconDef-WorkerPortrait-Cooperative-F03.IconDef-WorkerPortrait-Cooperative-F03",
-              "set_bonus": "Homebase.Worker.SetBonus.IsMeleeDamageLow"
-            },
-            "quantity": 1
-          },
-          {
-            "itemType": "ConsumableAccountItem:smallxpboost_gift",
-            "attributes": {},
-            "quantity": 168745
-          },
-          {
-            "itemType": "AccountResource:eventcurrency_snowballs",
-            "attributes": {},
-            "quantity": 5525209
-          },
-          {
-            "itemType": "Worker:managertrainer_c_t01",
-            "attributes": {
-              "personality": "Homebase.Worker.Personality.IsDreamer",
-              "gender": "1",
-              "portrait": "/Game/UI/Icons/Icon-Worker/IconDefinitions/IconDef-ManagerPortrait-PersonalTrainer-M01.IconDef-ManagerPortrait-PersonalTrainer-M01"
-            },
-            "quantity": 1
-          },
-          {
-            "itemType": "Defender:did_defenderassault_basic_uc_t01",
-            "attributes": {
-              "Alteration": {
-                "LootTierGroup": "AlterationTG.Defender.Assault.UC",
-                "Tier": 0
-              },
-              "alterations": [
-                "Alteration:aid_att_def_firerate",
-                "Alteration:aid_att_def_maxshield"
-              ]
-            },
-            "quantity": 1
-          },
-          {
-            "itemType": "Worker:workerbasic_uc_t01",
-            "attributes": {
-              "personality": "Homebase.Worker.Personality.IsDependable",
-              "gender": "1",
-              "portrait": "/Game/UI/Icons/Icon-Worker/IconDefinitions/IconDef-WorkerPortrait-Dependable-M03.IconDef-WorkerPortrait-Dependable-M03",
-              "set_bonus": "Homebase.Worker.SetBonus.IsTrapDurabilityHigh"
-            },
-            "quantity": 1
-          },
-          {
-            "itemType": "AccountResource:eventcurrency_snowballs",
-            "attributes": {},
-            "quantity": 1905622
-          },
-          {
-            "itemType": "Worker:workerbasic_r_t01",
-            "attributes": {
-              "personality": "Homebase.Worker.Personality.IsDependable",
-              "gender": "2",
-              "portrait": "/Game/UI/Icons/Icon-Worker/IconDefinitions/IconDef-WorkerPortrait-Dependable-F02.IconDef-WorkerPortrait-Dependable-F02",
-              "set_bonus": "Homebase.Worker.SetBonus.IsAbilityDamageLow"
-            },
-            "quantity": 1
-          },
-          {
-            "itemType": "AccountResource:eventcurrency_snowballs",
-            "attributes": {},
-            "quantity": 1181268
-          },
-          {
-            "itemType": "Hero:hid_commando_011_r_t01",
-            "attributes": {},
-            "quantity": 1
-          },
-          {
-            "itemType": "Defender:did_defendershotgun_basic_f_r_t01",
-            "attributes": {
-              "Alteration": {
-                "LootTierGroup": "AlterationTG.Defender.Shotgun.R",
-                "Tier": 0
-              },
-              "alterations": [
-                "Alteration:aid_att_def_weapondamage_shotgun",
-                "Alteration:aid_att_def_shieldregen",
-                "Alteration:aid_att_def_critchance_ranged"
-              ]
-            },
-            "quantity": 1
-          }
-        ],
         "favorite": false
       },
       "quantity": 1
@@ -47268,6 +47015,227 @@
         "set_bonus": "Homebase.Worker.SetBonus.IsTrapDurabilityHigh"
       },
       "quantity": 1
+    },
+    "0511ef8c-5e23-4ad4-92e9-c7dd730e3b1e":{
+      "templateId":"PrerollData:preroll_basic",
+      "attributes":{
+        "linked_offer":"",
+        "fulfillmentId":"2D09C70ABD0049EBAF1D4054127287FF",
+        "expended_streakbreakers":{},
+        "level":1,
+        "item_seen":true,
+        "max_level_bonus":0,
+        "highest_rarity":2,
+        "xp":0,
+        "offerId":"2D09C70ABD0049EBAF1D4054127287FF",
+        "expiration":"2021-10-27T00:00:00.000Z",
+        "items":[
+          {
+            "itemType":"Hero:hid_constructor_015_r_t01",
+            "attributes":{},
+            "quantity":1
+          },
+          {
+            "itemType":"Schematic:sid_assault_singleshot_r_ore_t01",
+            "attributes":{
+              "Alteration":{
+                "LootTierGroup":"AlterationTG.Ranged.R",
+                "Tier":0
+              },
+              "alterations":[
+                "Alteration:aid_att_critdamage_t01",
+                "Alteration:aid_att_reloadspeed_ranged_t02",
+                "Alteration:aid_att_damage_physical_t02",
+                "Alteration:aid_att_critdamage_t02",
+                "Alteration:aid_conditional_boss_dmgbonus_t03",
+                "Alteration:aid_g_ranged_headshot_explodeondeath_v2"
+              ]
+            },
+            "quantity":1
+          },
+          {
+            "itemType":"Worker:workerbasic_r_t01",
+            "attributes":{
+              "personality":"Homebase.Worker.Personality.IsAnalytical",
+              "gender":"1",
+              "portrait":"/Game/UI/Icons/Icon-Worker/IconDefinitions/IconDef-WorkerPortrait-Analytical-M01.IconDef-WorkerPortrait-Analytical-M01",
+              "set_bonus":"Homebase.Worker.SetBonus.IsTrapDurabilityHigh"
+            },
+            "quantity":1
+          },
+          {
+            "itemType":"Worker:managermartialartist_r_t01",
+            "attributes":{
+              "personality":"Homebase.Worker.Personality.IsCurious",
+              "gender":"2",
+              "portrait":"/Game/UI/Icons/Icon-Worker/IconDefinitions/IconDef-ManagerPortrait-MartialArtist-F01.IconDef-ManagerPortrait-MartialArtist-F01"
+            },
+            "quantity":1
+          },
+          {
+            "itemType":"CardPack:cardpack_choice_melee_vr",
+            "attributes":{
+              "pack_source":"",
+              "options":[
+                {
+                  "itemType":"Schematic:sid_piercing_spear_laser_vr_ore_t01",
+                  "attributes":{
+                    "alterations":[
+                      "Alteration:aid_att_critdamage_t02",
+                      "Alteration:aid_att_movementspeed_t01",
+                      "Alteration:aid_ele_energy_t02",
+                      "Alteration:aid_att_firerate_melee_t03",
+                      "Alteration:aid_conditional_slowed_dmgbonus_t03",
+                      "Alteration:aid_g_onmeleekill_regenshields"
+                    ]
+                  },
+                  "quantity":1
+                },
+                {
+                  "itemType":"Schematic:sid_piercing_spear_scavenger_vr_ore_t01",
+                  "attributes":{
+                    "alterations":[
+                      "Alteration:aid_att_critdamage_t01",
+                      "Alteration:aid_att_damage_t02",
+                      "Alteration:aid_att_damage_physical_t03",
+                      "Alteration:aid_att_critdamage_t02",
+                      "Alteration:aid_conditional_boss_dmgbonus_t03",
+                      "Alteration:aid_g_onmeleehit_stackbuff_critrate"
+                    ]
+                  },
+                  "quantity":1
+                }
+              ]
+            },
+            "quantity":1
+          },
+          {
+            "itemType":"Worker:workerbasic_vr_t01",
+            "attributes":{
+              "personality":"Homebase.Worker.Personality.IsDependable",
+              "gender":"1",
+              "portrait":"/Game/UI/Icons/Icon-Worker/IconDefinitions/IconDef-WorkerPortrait-Dependable-M02.IconDef-WorkerPortrait-Dependable-M02",
+              "set_bonus":"Homebase.Worker.SetBonus.IsResistanceLow"
+            },
+            "quantity":1
+          },
+          {
+            "itemType":"AccountResource:eventcurrency_candy",
+            "attributes":{},
+            "quantity":500
+          },
+          {
+            "itemType":"Schematic:sid_wall_electric_sr_t01",
+            "attributes":{
+              "alterations":[
+                "Alteration:aid_ele_nature_intrin_t01",
+                "Alteration:aid_att_damage_t02",
+                "Alteration:aid_att_reloadspeed_trap_t02",
+                "Alteration:aid_att_damage_t03",
+                "Alteration:aid_att_damage_t03",
+                "Alteration:aid_att_buildingheal_t03"
+              ]
+            },
+            "quantity":1
+          },
+          {
+            "itemType":"Schematic:sid_blunt_hammer_rocket_vt_sr_ore_t01",
+            "attributes":{
+              "alterations":[
+                "Alteration:aid_att_firerate_melee_t01",
+                "Alteration:aid_att_movementspeed_t02",
+                "Alteration:aid_att_damage_physical_t02",
+                "Alteration:aid_att_damage_t02",
+                "Alteration:aid_conditional_afflicted_dmgbonus_t03",
+                "Alteration:aid_g_onmeleehit_stackbuff_movespeed"
+              ]
+            },
+            "quantity":1
+          }
+        ],
+        "favorite":false
+      },
+      "quantity":1
+    },
+    "84b0ccde-28ec-494c-807a-7997a1b9d5cc":{
+      "templateId":"PrerollData:preroll_basic",
+      "attributes":{
+        "linked_offer":"",
+        "fulfillmentId":"D2E08EFA731D437B85B7340EB51A5E1D",
+        "expended_streakbreakers":{},
+        "level":1,
+        "item_seen":false,
+        "max_level_bonus":0,
+        "highest_rarity":0,
+        "xp":0,
+        "offerId":"D2E08EFA731D437B85B7340EB51A5E1D",
+        "expiration":"2021-10-27T00:00:00.000Z",
+        "items":[
+          {
+            "itemType":"Worker:workerbasic_uc_t01",
+            "attributes":{
+              "personality":"Homebase.Worker.Personality.IsCooperative",
+              "gender":"2",
+              "portrait":"/Game/UI/Icons/Icon-Worker/IconDefinitions/IconDef-WorkerPortrait-Cooperative-F03.IconDef-WorkerPortrait-Cooperative-F03",
+              "set_bonus":"Homebase.Worker.SetBonus.IsFortitudeLow"
+            },
+            "quantity":1
+          },
+          {
+            "itemType":"Schematic:sid_pistol_auto_uc_ore_t01",
+            "attributes":{
+              "Alteration":{
+                "LootTierGroup":"AlterationTG.Ranged.UC",
+                "Tier":0
+              },
+              "alterations":[
+                "Alteration:aid_att_damage_t01",
+                "Alteration:aid_att_stability_t01",
+                "Alteration:aid_ele_energy_t02",
+                "Alteration:aid_att_magazinesize_t02",
+                "Alteration:aid_conditional_boss_dmgbonus_t03",
+                "Alteration:aid_g_ranged_headshotstreak_dmgbonus_v2"
+              ]
+            },
+            "quantity":1
+          },
+          {
+            "itemType":"Schematic:sid_blunt_light_uc_ore_t01",
+            "attributes":{
+              "Alteration":{
+                "LootTierGroup":"AlterationTG.Melee.UC",
+                "Tier":0
+              },
+              "alterations":[
+                "Alteration:aid_att_firerate_melee_t01",
+                "Alteration:aid_att_maxdurability_t01",
+                "Alteration:aid_att_damage_physical_t02",
+                "Alteration:aid_att_damage_t03",
+                "Alteration:aid_conditional_boss_dmgbonus_t03",
+                "Alteration:aid_g_weapon_ondmg_applysnare_v2"
+              ]
+            },
+            "quantity":1
+          },
+          {
+            "itemType":"Worker:workerbasic_r_t01",
+            "attributes":{
+              "personality":"Homebase.Worker.Personality.IsAnalytical",
+              "gender":"1",
+              "portrait":"/Game/UI/Icons/Icon-Worker/IconDefinitions/IconDef-WorkerPortrait-Analytical-M02.IconDef-WorkerPortrait-Analytical-M02",
+              "set_bonus":"Homebase.Worker.SetBonus.IsTrapDurabilityHigh"
+            },
+            "quantity":1
+          },
+          {
+            "itemType":"AccountResource:eventcurrency_candy",
+            "attributes":{},
+            "quantity":50
+          }
+        ],
+        "favorite":false
+      },
+      "quantity":1
     }
   },
   "stats": {
