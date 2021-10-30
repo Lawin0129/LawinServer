@@ -694,6 +694,73 @@ express.get("/fortnite/api/calendar/v1/timeline", async (req, res) => {
 		})
 	}
 
+	if (seasondata.season == 6) {
+		activeEvents.push(
+		{
+			"eventType": "EventFlag.Fortnitemares",
+			"activeUntil": "9999-01-01T00:00:00.000Z",
+			"activeSince": "2020-01-01T00:00:00.000Z"
+		},
+		{
+			"eventType": "EventFlag.FortnitemaresPhase1",
+			"activeUntil": "9999-01-01T00:00:00.000Z",
+			"activeSince": "2020-01-01T00:00:00.000Z"
+		},
+		{
+			"eventType": "EventFlag.FortnitemaresPhase2",
+			"activeUntil": "9999-01-01T00:00:00.000Z",
+			"activeSince": "2020-01-01T00:00:00.000Z"
+		})
+	}
+
+	if (seasondata.season == 7) {
+		activeEvents.push(
+		{
+			"eventType": "EventFlag.Frostnite",
+			"activeUntil": "9999-01-01T00:00:00.000Z",
+			"activeSince": "2020-01-01T00:00:00.000Z"
+		})
+	}
+
+	if (seasondata.season == 8) {
+		activeEvents.push(
+		{
+			"eventType": "EventFlag.Spring2019",
+			"activeUntil": "9999-01-01T00:00:00.000Z",
+			"activeSince": "2020-01-01T00:00:00.000Z"
+		},
+		{
+			"eventType": "EventFlag.Spring2019.Phase1",
+			"activeUntil": "9999-01-01T00:00:00.000Z",
+			"activeSince": "2020-01-01T00:00:00.000Z"
+		},
+		{
+			"eventType": "EventFlag.Spring2019.Phase2",
+			"activeUntil": "9999-01-01T00:00:00.000Z",
+			"activeSince": "2020-01-01T00:00:00.000Z"
+		})
+	}
+
+
+	if (seasondata.season == 9) {
+		activeEvents.push(
+		{
+			"eventType": "EventFlag.Season9",
+			"activeUntil": "9999-01-01T00:00:00.000Z",
+			"activeSince": "2020-01-01T00:00:00.000Z"
+		},
+		{
+			"eventType": "EventFlag.Season9.Phase1",
+			"activeUntil": "9999-01-01T00:00:00.000Z",
+			"activeSince": "2020-01-01T00:00:00.000Z"
+		},
+		{
+			"eventType": "EventFlag.Season9.Phase2",
+			"activeUntil": "9999-01-01T00:00:00.000Z",
+			"activeSince": "2020-01-01T00:00:00.000Z"
+		})
+	}
+
     res.json({
         "channels": {
             "client-matchmaking": {
