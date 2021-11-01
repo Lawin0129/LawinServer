@@ -8,13 +8,15 @@ const friendslist2 = require("./responses/friendslist2.json");
 const Keychain = require("./responses/keychain.json");
 const catalog = require("./responses/catalog.json");
 const contentpages = require("./responses/contentpages.json");
+const path = require("path");
+const port = process.env.PORT || 5595;
+const crypto = require("crypto");
+
 express.use(Express.json());
-express.use(Express.urlencoded({
-    extended: true
-}));
+express.use(Express.urlencoded({extended: true}));
+
 express.use(Express.static('public'));
 
-const port = process.env.PORT || 3551;
 express.listen(port, console.log("Started listening on port", port));
 
 express.get("/", async (req, res) => {
@@ -569,34 +571,35 @@ express.get("/fortnite/api/receipts/v1/account/*/receipts", async (req, res) => 
 })
 
 express.get("/fortnite/api/cloudstorage/system", async (req, res) => {
-    // patch 9.40
-    if (req.headers["user-agent"].includes("7315705")) {
-        return res
-            .status(404)
-            .json()
-    }
-    // patch 9.41
-    if (req.headers["user-agent"].includes("7463579")) {
-        return res
-            .status(404)
-            .json()
-    }
-    // patch 9.41 (2)
-    if (req.headers["user-agent"].includes("7609292")) {
-        return res
-            .status(404)
-            .json()
-    }
-    const seasonchecker = require("./seasonchecker.js");
-    const seasondata = require("./season.json");
-    seasonchecker(req, seasondata);
-    if (seasondata.season > 9) {
-        return res.status(404).json();
-    }
-    res.json([])
+    let response = [];
+
+    fs.readdirSync(`${__dirname}/CloudStorage`).forEach(file => {
+        response.push({
+            uniqueFilename: file,
+            filename: file,
+            hash: crypto.createHash("sha1").update(fs.readFileSync(`${__dirname}/CloudStorage/${file}`)).digest("hex"),
+            hash256: crypto.createHash("sha256").update(fs.readFileSync(`${__dirname}/CloudStorage/${file}`)).digest("hex"),
+            length: file.length,
+            contentType: "application/octet-stream",
+            uploaded: fs.statSync(`${__dirname}/CloudStorage/${file}`).mtime,
+            storageType: "S3",
+            doNotCache: false
+        });
+    });
+
+    res.json(response);
     res.status(200);
     res.end();
-})
+});
+
+express.get("/fortnite/api/cloudstorage/system/:fileName", (req, res) => {
+    if (fs.existsSync(`${__dirname}/CloudStorage/${req.params.fileName}`)) {
+        res.sendFile(path.join(__dirname, `/CloudStorage/${req.params.fileName}`));
+    } else {
+        res.status(404);
+        res.end();
+    }
+});
 
 express.get("/fortnite/api/cloudstorage/user/*", async (req, res) => {
     res.json([])
@@ -900,6 +903,27 @@ express.post("/datarouter/api/v1/public/data", async (req, res) => {
 })
 
 express.post("/account/api/oauth/token", async (req, res) => {
+    if (req.body.grant_type.toLowerCase() != "password") {
+        return res.json({
+            "access_token": "lawinstokenlol",
+            "expires_in": 28800,
+            "expires_at": "9999-12-02T01:12:01.100Z",
+            "token_type": "bearer",
+            "refresh_token": "lawinstokenlol",
+            "refresh_expires": 86400,
+            "refresh_expires_at": "9999-12-02T01:12:01.100Z",
+            "account_id": "DeezNuts",
+            "client_id": "lawinsclientidlol",
+            "internal_client": true,
+            "client_service": "fortnite",
+            "displayName": "DeezNuts",
+            "app": "fortnite",
+            "in_app_id": "DeezNuts",
+            "device_id": "lawinsdeviceidlol"
+        })
+    }
+
+    var name = req.body.username.split("@")[0]
     res.json({
         "access_token": "lawinstokenlol",
         "expires_in": 28800,
@@ -908,13 +932,13 @@ express.post("/account/api/oauth/token", async (req, res) => {
         "refresh_token": "lawinstokenlol",
         "refresh_expires": 86400,
         "refresh_expires_at": "9999-12-02T01:12:01.100Z",
-        "account_id": req.body.username || "Invalid",
+        "account_id": name || "Invalid",
         "client_id": "lawinsclientidlol",
         "internal_client": true,
         "client_service": "fortnite",
-        "displayName": req.body.username || "Invalid",
+        "displayName": name || "Invalid",
         "app": "fortnite",
-        "in_app_id": req.body.username || "Invalid",
+        "in_app_id": name || "Invalid",
         "device_id": "lawinsdeviceidlol"
     })
     res.status(200);
