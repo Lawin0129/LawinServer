@@ -2943,33 +2943,6 @@
       },
       "quantity": 1
     },
-    "CampaignHeroLoadout:defaultloadout": {
-      "templateId": "CampaignHeroLoadout:defaultloadout",
-      "attributes": {
-        "team_perk": "TeamPerk:TPID_PreemptiveStrike",
-        "loadout_name": "",
-        "crew_members": {
-          "followerslot5": "Hero:HID_Outlander_028_RetroSciFiStoryOutlander_SR_T05",
-          "followerslot4": "Hero:HID_Constructor_029_RadStoryConstructor_SR_T05",
-          "followerslot3": "Hero:HID_Ninja_043_Cranium_SR_T05",
-          "followerslot2": "Hero:HID_Constructor_028_RetroSciFiConstructor_SR_T05",
-          "followerslot1": "Hero:HID_Commando_GrenadeGun_SR_T05",
-          "commanderslot": "Hero:HID_Ninja_023_SR_T05"
-        },
-        "loadout_index": 0,
-        "gadgets": [
-          {
-            "gadget": "Gadget:g_generic_slowfield",
-            "slot_index": 0
-          },
-          {
-            "gadget": "Gadget:g_generic_adrenalinerush",
-            "slot_index": 1
-          }
-        ]
-      },
-      "quantity": 1
-    },
     "ac1aa694-8aed-42bf-b975-7cd2e3b82908": {
       "templateId": "Quest:plankertonquest_filler_7_d3",
       "attributes": {
@@ -47280,6 +47253,222 @@
         "favorite":false
       },
       "quantity":1
+    },
+    "2e4d4357-1868-4de3-806c-38482269b23c": {
+      "templateId": "CampaignHeroLoadout:defaultloadout",
+      "attributes": {
+        "team_perk": "TeamPerk:TPID_KeepOut",
+        "loadout_name": "",
+        "crew_members": {
+          "followerslot3": "Hero:HID_Commando_ShockDamage_SR_T05",
+          "followerslot2": "Hero:HID_Commando_GunTough_SR_T05",
+          "followerslot1": "Hero:HID_Commando_GrenadeMaster_SR_T05",
+          "commanderslot": "Hero:HID_Commando_GrenadeGun_SR_T05",
+          "followerslot5": "Hero:HID_Commando_GunHeadshot_SR_T05",
+          "followerslot4": "Hero:HID_Commando_015_M_V1_VR_T05"
+        },
+        "loadout_index": 0,
+        "gadgets": [
+          {
+            "gadget": "Gadget:g_generic_botturret",
+            "slot_index": 0
+          },
+          {
+            "gadget": "Gadget:g_generic_adrenalinerush",
+            "slot_index": 1
+          }
+        ]
+      },
+      "quantity": 1
+    },
+    "4d53bfbf-38e2-4025-817f-b759f885dafb": {
+      "templateId": "CampaignHeroLoadout:defaultloadout",
+      "attributes": {
+        "team_perk": "TeamPerk:TPID_LongArmOfTheLaw",
+        "loadout_name": "",
+        "crew_members": {
+          "followerslot3": "",
+          "followerslot2": "Hero:HID_Outlander_SphereFragment_SR_T05",
+          "followerslot1": "",
+          "commanderslot": "Hero:HID_Commando_GrenadeGun_SR_T05",
+          "followerslot5": "",
+          "followerslot4": "Hero:HID_Commando_GunTough_SR_T05"
+        },
+        "loadout_index": 1,
+        "gadgets": []
+      },
+      "quantity": 1
+    },
+    "77b2810f-ea49-48dc-a9a8-df1538d0322b": {
+      "templateId": "CampaignHeroLoadout:defaultloadout",
+      "attributes": {
+        "team_perk": "TeamPerk:TPID_HolidayCheer",
+        "loadout_name": "",
+        "crew_members": {
+          "followerslot3": "Hero:HID_Outlander_034_Period_Fleming_SR_T05",
+          "followerslot2": "Hero:HID_Outlander_021_SR_T05",
+          "followerslot1": "Hero:HID_Outlander_007_RS01_SR_T05",
+          "commanderslot": "Hero:HID_Outlander_SphereFragment_SR_T05",
+          "followerslot5": "Hero:HID_Commando_031_RadSoldier_VR_T05",
+          "followerslot4": "Hero:HID_Outlander_032_ToyOutlander_SR_T05"
+        },
+        "loadout_index": 2,
+        "gadgets": [
+          {
+            "gadget": "Gadget:g_generic_botturret",
+            "slot_index": 0
+          },
+          {
+            "gadget": "Gadget:g_generic_adrenalinerush",
+            "slot_index": 1
+          }
+        ]
+      },
+      "quantity": 1
+    },
+    "16ad474a-88db-4913-b7f1-bfaa4f9d9ad5": {
+      "templateId": "CampaignHeroLoadout:defaultloadout",
+      "attributes": {
+        "team_perk": "TeamPerk:TPID_Recycling",
+        "loadout_name": "",
+        "crew_members": {
+          "followerslot3": "Hero:HID_Constructor_023_SR_T05",
+          "followerslot2": "Hero:HID_Constructor_RushBASE_SR_T05",
+          "followerslot1": "Hero:HID_Constructor_013_SR_T05",
+          "commanderslot": "Hero:HID_Constructor_008_SR_T05",
+          "followerslot5": "Hero:HID_Commando_GunTough_SR_T05",
+          "followerslot4": "Hero:HID_Constructor_011_VR_T05"
+        },
+        "loadout_index": 3,
+        "gadgets": [
+          {
+            "gadget": "Gadget:g_generic_botturret",
+            "slot_index": 0
+          },
+          {
+            "gadget": "Gadget:g_generic_adrenalinerush",
+            "slot_index": 1
+          }
+        ]
+      },
+      "quantity": 1
+    },
+    "8a44ad05-2e25-49ba-91af-6d7f4d65b7ab": {
+      "templateId": "CampaignHeroLoadout:defaultloadout",
+      "attributes": {
+        "team_perk": "TeamPerk:TPID_BlastFromThePast",
+        "loadout_name": "",
+        "crew_members": {
+          "followerslot3": "Hero:HID_Commando_031_RadSoldier_VR_T05",
+          "followerslot2": "Hero:HID_Constructor_HammerTank_SR_T05",
+          "followerslot1": "Hero:HID_Commando_039_Pajama_Party_SR_T05",
+          "commanderslot": "Hero:HID_Ninja_029_DinoNinja_SR_T05",
+          "followerslot5": "Hero:HID_Constructor_027_DinoConstructor_SR_T05",
+          "followerslot4": "Hero:HID_Commando_GunTough_SR_T05"
+        },
+        "loadout_index": 4,
+        "gadgets": [
+          {
+            "gadget": "Gadget:g_generic_botturret",
+            "slot_index": 0
+          },
+          {
+            "gadget": "Gadget:g_generic_adrenalinerush",
+            "slot_index": 1
+          }
+        ]
+      },
+      "quantity": 1
+    },
+    "172c2cf1-f06b-4be2-a0fa-628fc2a6aee2": {
+      "templateId": "CampaignHeroLoadout:defaultloadout",
+      "attributes": {
+        "team_perk": "TeamPerk:TPID_TotallyGnarly",
+        "loadout_name": "",
+        "crew_members": {
+          "followerslot3": "Hero:HID_Constructor_RushBASE_SR_T05",
+          "followerslot2": "Hero:HID_Ninja_031_RadNinja_VR_T05",
+          "followerslot1": "Hero:HID_Commando_031_RadSoldier_VR_T05",
+          "commanderslot": "Hero:HID_Constructor_HammerTank_SR_T05",
+          "followerslot5": "Hero:HID_Commando_GrenadeGun_SR_T05",
+          "followerslot4": "Hero:HID_Outlander_034_Period_Fleming_SR_T05"
+        },
+        "loadout_index": 5,
+        "gadgets": [
+          {
+            "gadget": "Gadget:g_generic_botturret",
+            "slot_index": 0
+          },
+          {
+            "gadget": "Gadget:g_supplydrop",
+            "slot_index": 1
+          }
+        ]
+      },
+      "quantity": 1
+    },
+    "493617f9-2565-450f-8a34-fa3239e3508b": {
+      "templateId": "CampaignHeroLoadout:defaultloadout",
+      "attributes": {
+        "team_perk": "TeamPerk:TPID_HolidayCheer",
+        "loadout_name": "",
+        "crew_members": {
+          "followerslot3": "Hero:HID_Outlander_034_Period_Fleming_SR_T05",
+          "followerslot2": "Hero:HID_Commando_GrenadeGun_SR_T05",
+          "followerslot1": "Hero:HID_Commando_022_SR_T05",
+          "commanderslot": "Hero:HID_Commando_GCGrenade_SR_T05",
+          "followerslot5": "Hero:HID_Commando_031_RadSoldier_VR_T05",
+          "followerslot4": "Hero:HID_Commando_GunTough_SR_T05"
+        },
+        "loadout_index": 6,
+        "gadgets": [
+          {
+            "gadget": "Gadget:g_generic_botturret",
+            "slot_index": 0
+          },
+          {
+            "gadget": "Gadget:g_generic_adrenalinerush",
+            "slot_index": 1
+          }
+        ]
+      },
+      "quantity": 1
+    },
+    "12011eab-16fc-49d8-93fa-8d8494c5e634": {
+      "templateId": "CampaignHeroLoadout:defaultloadout",
+      "attributes": {
+        "team_perk": "TeamPerk:TPID_HolidayCheer",
+        "loadout_name": "",
+        "crew_members": {
+          "followerslot3": "Hero:HID_Outlander_034_Period_Fleming_SR_T05",
+          "followerslot2": "Hero:HID_Commando_GunTough_SR_T05",
+          "followerslot1": "Hero:HID_Commando_011_M_Easter_SR_T05",
+          "commanderslot": "Hero:HID_Ninja_023_SR_T05",
+          "followerslot5": "Hero:HID_Commando_GrenadeGun_SR_T05",
+          "followerslot4": "Hero:HID_Commando_GunHeadshotHW_SR_T05"
+        },
+        "loadout_index": 7,
+        "gadgets": []
+      },
+      "quantity": 1
+    },
+    "626e0274-6e02-42d8-ba95-964937e64b6b": {
+      "templateId": "CampaignHeroLoadout:defaultloadout",
+      "attributes": {
+        "team_perk": "TeamPerk:TPID_HolidayCheer",
+        "loadout_name": "",
+        "crew_members": {
+          "followerslot3": "Hero:HID_Outlander_034_Period_Fleming_SR_T05",
+          "followerslot2": "Hero:HID_Commando_GrenadeGun_SR_T05",
+          "followerslot1": "Hero:HID_Commando_GunTough_SR_T05",
+          "commanderslot": "Hero:HID_Commando_008_SR_T05",
+          "followerslot5": "Hero:HID_Outlander_SphereFragment_SR_T05",
+          "followerslot4": "Hero:HID_Ninja_023_SR_T05"
+        },
+        "loadout_index": 8,
+        "gadgets": []
+      },
+      "quantity": 1
     }
   },
   "stats": {
@@ -47297,7 +47486,7 @@
         "claimData": []
       },
       "rewards_claimed_post_max_level": 0,
-      "selected_hero_loadout": "CampaignHeroLoadout:defaultloadout",
+      "selected_hero_loadout": "77b2810f-ea49-48dc-a9a8-df1538d0322b",
       "loadouts": [
         "CosmeticLocker:cosmeticlocker_stw",
         "CosmeticLocker:cosmeticlocker_stw_1"
