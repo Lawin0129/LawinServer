@@ -182,7 +182,7 @@ express.get("/lightswitch/api/service/bulk/status", async (req, res) => {
 express.get("/account/api/public/account", async (req, res) => {
     res.json(
         [
-			{
+	    {
                 "id": req.query.accountId,
                 "displayName": req.query.accountId,
                 "externalAuths": {}
@@ -2464,18 +2464,38 @@ express.post("/fortnite/api/game/v2/profile/*/client/SetCosmeticLockerSlot", asy
     var VariantChanged = false;
 
     const ReturnVariantsAsString = JSON.stringify(req.body.variantUpdates || [])
-    if (req.body.variantUpdates && ReturnVariantsAsString.includes("active") && profile.profileId != "campaign") {
-        if (profile.items[req.body.itemToSlot].attributes.variants.length == 0) {
-            profile.items[req.body.itemToSlot].attributes.variants = req.body.variantUpdates || [];
-        }
-        for (var i = 0; i < profile.items[req.body.itemToSlot].attributes.variants.length; i++) {
-            try {
-                profile.items[req.body.itemToSlot].attributes.variants[i].active = req.body.variantUpdates[i].active || "";
-            } catch (err) {
-                profile.items[req.body.itemToSlot].attributes.variants[i].active = profile.items[req.body.itemToSlot].attributes.variants[i].active;
+    if (req.body.variantUpdates && ReturnVariantsAsString.includes("active")) {
+        var new_variants = [
+            {
+                "variants": []
+            }
+        ];
+
+        if (profile.profileId == "athena") {
+            if (profile.items[req.body.itemToSlot].attributes.variants.length == 0) {
+                profile.items[req.body.itemToSlot].attributes.variants = req.body.variantUpdates || [];
+            }
+            for (var i = 0; i < profile.items[req.body.itemToSlot].attributes.variants.length; i++) {
+                try {
+                    profile.items[req.body.itemToSlot].attributes.variants[i].active = req.body.variantUpdates[i].active || "";
+                } catch (err) {
+                    profile.items[req.body.itemToSlot].attributes.variants[i].active = profile.items[req.body.itemToSlot].attributes.variants[i].active;
+                }
             }
         }
-        VariantChanged = true;
+
+        for (var i = 0; i < req.body.variantUpdates.length; i++) {
+            try {
+                new_variants[0].variants.push({
+                    "channel": req.body.variantUpdates[i].channel,
+                    "active": req.body.variantUpdates[i].active
+                })
+
+                profile.items[req.body.lockerItem].attributes.locker_slots_data.slots[req.body.category].activeVariants = new_variants;
+            } catch (err) {
+                profile.items[req.body.lockerItem].attributes.locker_slots_data.slots[req.body.category].activeVariants = profile.items[req.body.lockerItem].attributes.locker_slots_data[req.body.category].activeVariants;
+            }
+        }
     }
 
     if (req.body.category && req.body.lockerItem) {
@@ -2566,15 +2586,6 @@ express.post("/fortnite/api/game/v2/profile/*/client/SetCosmeticLockerSlot", asy
             "attributeValue": profile.items[req.body.lockerItem].attributes.locker_slots_data
         })
 
-        if (VariantChanged == true) {
-            ApplyProfileChanges.push({
-                "changeType": "itemAttrChanged",
-                "itemId": req.body.itemToSlot,
-                "attributeName": "variants",
-                "attributeValue": profile.items[req.body.itemToSlot].attributes.variants
-            })
-        }
-
         fs.writeFileSync(`./profiles/${req.query.profileId || "athena"}.json`, JSON.stringify(profile, null, 2), function(err) {
             if (err) {
                 console.log('error:', err)
@@ -2593,6 +2604,68 @@ express.post("/fortnite/api/game/v2/profile/*/client/SetCosmeticLockerSlot", asy
     res.json({
         "profileRevision": profile.rvn || 0,
         "profileId": req.query.profileId || "athena",
+        "profileChangesBaseRevision": BaseRevision,
+        "profileChanges": ApplyProfileChanges,
+        "profileCommandRevision": profile.commandRevision || 0,
+        "serverTime": new Date().toISOString(),
+        "responseVersion": 1
+    })
+    res.status(200);
+    res.end();
+});
+
+// Set hero variants STW
+express.post("/fortnite/api/game/v2/profile/*/client/SetHeroCosmeticVariants", async (req, res) => {
+    const profile = require(`./profiles/${req.query.profileId || "campaign"}.json`);
+
+    // do not change any of these or you will end up breaking it
+    var ApplyProfileChanges = [];
+    var BaseRevision = profile.rvn || 0;
+    var QueryRevision = req.query.rvn || -1;
+    var StatChanged = false;
+
+    if (req.body.outfitVariants && req.body.backblingVariants && req.body.heroItem) {
+        profile.items[req.body.heroItem].attributes.outfitvariants = req.body.outfitVariants;
+        profile.items[req.body.heroItem].attributes.backblingvariants = req.body.backblingVariants;
+        StatChanged = true;
+    }
+
+    if (StatChanged == true) {
+        profile.rvn += 1;
+        profile.commandRevision += 1;
+
+        ApplyProfileChanges.push({
+            "changeType": "itemAttrChanged",
+            "itemId": req.body.heroItem,
+            "attributeName": "outfitvariants",
+            "attributeValue": profile.items[req.body.heroItem].attributes.outfitvariants
+        })
+
+        ApplyProfileChanges.push({
+            "changeType": "itemAttrChanged",
+            "itemId": req.body.heroItem,
+            "attributeName": "backblingvariants",
+            "attributeValue": profile.items[req.body.heroItem].attributes.backblingvariants
+        })
+
+        fs.writeFileSync(`./profiles/${req.query.profileId || "campaign"}.json`, JSON.stringify(profile, null, 2), function(err) {
+            if (err) {
+                console.log('error:', err)
+            };
+        });
+    }
+
+    // this doesn't work properly on version v12.20 and above but whatever
+    if (QueryRevision != BaseRevision) {
+        ApplyProfileChanges = [{
+            "changeType": "fullProfileUpdate",
+            "profile": profile
+        }];
+    }
+
+    res.json({
+        "profileRevision": profile.rvn || 0,
+        "profileId": req.query.profileId || "campaign",
         "profileChangesBaseRevision": BaseRevision,
         "profileChanges": ApplyProfileChanges,
         "profileCommandRevision": profile.commandRevision || 0,
