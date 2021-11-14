@@ -820,7 +820,7 @@
         "expedition_slot_id": "expedition.generation.miningore",
         "expedition_squad_id": "",
         "max_level_bonus": 0,
-        "expedition_expiration_end_time": "2020-02-05T23:12:19.785Z",
+        "expedition_expiration_end_time": "9999-12-31T23:12:19.785Z",
         "expedition_success_chance": 0,
         "xp": 0,
         "expedition_expiration_start_time": "2020-02-05T21:42:19.785Z",
@@ -1568,7 +1568,7 @@
         "expedition_slot_id": "expedition.generation.sea.t03_0",
         "expedition_squad_id": "",
         "max_level_bonus": 0,
-        "expedition_expiration_end_time": "2020-02-05T23:12:19.783Z",
+        "expedition_expiration_end_time": "9999-12-31T23:12:19.783Z",
         "expedition_success_chance": 0,
         "xp": 0,
         "expedition_expiration_start_time": "2020-02-05T21:42:19.783Z",
@@ -2175,7 +2175,7 @@
         "expedition_slot_id": "expedition.generation.air.t03_1",
         "expedition_squad_id": "",
         "max_level_bonus": 0,
-        "expedition_expiration_end_time": "2020-02-05T23:12:19.783Z",
+        "expedition_expiration_end_time": "9999-12-31T23:12:19.783Z",
         "expedition_success_chance": 0,
         "xp": 0,
         "expedition_expiration_start_time": "2020-02-05T21:42:19.783Z",
@@ -2216,7 +2216,7 @@
         "expedition_slot_id": "expedition.generation.land.t01_0",
         "expedition_squad_id": "",
         "max_level_bonus": 0,
-        "expedition_expiration_end_time": "2020-02-05T23:12:19.786Z",
+        "expedition_expiration_end_time": "9999-12-31T23:12:19.786Z",
         "expedition_success_chance": 0,
         "xp": 0,
         "expedition_expiration_start_time": "2020-02-05T21:42:19.786Z",
@@ -2943,33 +2943,6 @@
       },
       "quantity": 1
     },
-    "CampaignHeroLoadout:defaultloadout": {
-      "templateId": "CampaignHeroLoadout:defaultloadout",
-      "attributes": {
-        "team_perk": "TeamPerk:TPID_PreemptiveStrike",
-        "loadout_name": "",
-        "crew_members": {
-          "followerslot5": "Hero:HID_Outlander_028_RetroSciFiStoryOutlander_SR_T05",
-          "followerslot4": "Hero:HID_Constructor_029_RadStoryConstructor_SR_T05",
-          "followerslot3": "Hero:HID_Ninja_043_Cranium_SR_T05",
-          "followerslot2": "Hero:HID_Constructor_028_RetroSciFiConstructor_SR_T05",
-          "followerslot1": "Hero:HID_Commando_GrenadeGun_SR_T05",
-          "commanderslot": "Hero:HID_Ninja_023_SR_T05"
-        },
-        "loadout_index": 0,
-        "gadgets": [
-          {
-            "gadget": "Gadget:g_generic_slowfield",
-            "slot_index": 0
-          },
-          {
-            "gadget": "Gadget:g_generic_adrenalinerush",
-            "slot_index": 1
-          }
-        ]
-      },
-      "quantity": 1
-    },
     "ac1aa694-8aed-42bf-b975-7cd2e3b82908": {
       "templateId": "Quest:plankertonquest_filler_7_d3",
       "attributes": {
@@ -3596,7 +3569,7 @@
         "expedition_slot_id": "expedition.generation.sea.t01_1",
         "expedition_squad_id": "",
         "max_level_bonus": 0,
-        "expedition_expiration_end_time": "2020-02-05T23:12:19.786Z",
+        "expedition_expiration_end_time": "9999-12-31T23:12:19.786Z",
         "expedition_success_chance": 0,
         "xp": 0,
         "expedition_expiration_start_time": "2020-02-05T21:42:19.786Z",
@@ -4035,7 +4008,7 @@
         "expedition_slot_id": "expedition.generation.sea.t01_0",
         "expedition_squad_id": "",
         "max_level_bonus": 0,
-        "expedition_expiration_end_time": "2020-02-05T23:12:19.786Z",
+        "expedition_expiration_end_time": "9999-12-31T23:12:19.786Z",
         "expedition_success_chance": 0,
         "xp": 0,
         "expedition_expiration_start_time": "2020-02-05T21:42:19.786Z",
@@ -4539,7 +4512,7 @@
         "expedition_slot_id": "expedition.generation.air.t02_0",
         "expedition_squad_id": "",
         "max_level_bonus": 0,
-        "expedition_expiration_end_time": "2020-02-05T23:12:19.784Z",
+        "expedition_expiration_end_time": "9999-12-31T23:12:19.784Z",
         "expedition_success_chance": 0,
         "xp": 0,
         "expedition_expiration_start_time": "2020-02-05T21:42:19.784Z",
@@ -4993,7 +4966,7 @@
         "expedition_slot_id": "expedition.generation.sea.t03_1",
         "expedition_squad_id": "",
         "max_level_bonus": 0,
-        "expedition_expiration_end_time": "2020-02-05T23:12:19.783Z",
+        "expedition_expiration_end_time": "9999-12-31T23:12:19.783Z",
         "expedition_success_chance": 0,
         "xp": 0,
         "expedition_expiration_start_time": "2020-02-05T21:42:19.783Z",
@@ -6021,7 +5994,7 @@
         "expedition_slot_id": "expedition.generation.land.t02_0",
         "expedition_squad_id": "",
         "max_level_bonus": 0,
-        "expedition_expiration_end_time": "2020-02-05T23:12:19.785Z",
+        "expedition_expiration_end_time": "9999-12-31T23:12:19.785Z",
         "expedition_success_chance": 0,
         "xp": 0,
         "expedition_expiration_start_time": "2020-02-05T21:42:19.785Z",
@@ -6813,7 +6786,7 @@
         "expedition_slot_id": "expedition.generation.land.t03_1",
         "expedition_squad_id": "",
         "max_level_bonus": 0,
-        "expedition_expiration_end_time": "2020-02-05T23:12:19.786Z",
+        "expedition_expiration_end_time": "9999-12-31T23:12:19.786Z",
         "expedition_success_chance": 0,
         "xp": 0,
         "expedition_expiration_start_time": "2020-02-05T21:42:19.786Z",
@@ -7727,7 +7700,7 @@
         "expedition_slot_id": "expedition.generation.land.t02_1",
         "expedition_squad_id": "",
         "max_level_bonus": 0,
-        "expedition_expiration_end_time": "2020-02-05T23:12:19.787Z",
+        "expedition_expiration_end_time": "9999-12-31T23:12:19.787Z",
         "expedition_success_chance": 0,
         "xp": 0,
         "expedition_expiration_start_time": "2020-02-05T21:42:19.787Z",
@@ -8206,7 +8179,7 @@
         "expedition_slot_id": "expedition.generation.sea.t02_1",
         "expedition_squad_id": "",
         "max_level_bonus": 0,
-        "expedition_expiration_end_time": "2020-02-05T23:12:19.782Z",
+        "expedition_expiration_end_time": "9999-12-31T23:12:19.782Z",
         "expedition_success_chance": 0,
         "xp": 0,
         "expedition_expiration_start_time": "2020-02-05T21:42:19.782Z",
@@ -8228,7 +8201,7 @@
         "expedition_slot_id": "expedition.generation.air.t02_1",
         "expedition_squad_id": "",
         "max_level_bonus": 0,
-        "expedition_expiration_end_time": "2020-02-05T23:12:19.784Z",
+        "expedition_expiration_end_time": "9999-12-31T23:12:19.784Z",
         "expedition_success_chance": 0,
         "xp": 0,
         "expedition_expiration_start_time": "2020-02-05T21:42:19.784Z",
@@ -9702,7 +9675,7 @@
         "expedition_slot_id": "expedition.generation.air.t03_0",
         "expedition_squad_id": "",
         "max_level_bonus": 0,
-        "expedition_expiration_end_time": "2020-02-05T23:12:19.784Z",
+        "expedition_expiration_end_time": "9999-12-31T23:12:19.784Z",
         "expedition_success_chance": 0,
         "xp": 0,
         "expedition_expiration_start_time": "2020-02-05T21:42:19.784Z",
@@ -10332,7 +10305,7 @@
         "expedition_slot_id": "expedition.generation.land.t01_1",
         "expedition_squad_id": "",
         "max_level_bonus": 0,
-        "expedition_expiration_end_time": "2020-02-05T23:12:19.785Z",
+        "expedition_expiration_end_time": "9999-12-31T23:12:19.785Z",
         "expedition_success_chance": 0,
         "xp": 0,
         "expedition_expiration_start_time": "2020-02-05T21:42:19.785Z",
@@ -10373,7 +10346,7 @@
         "expedition_slot_id": "expedition.generation.land.t03_0",
         "expedition_squad_id": "",
         "max_level_bonus": 0,
-        "expedition_expiration_end_time": "2020-02-05T23:12:19.787Z",
+        "expedition_expiration_end_time": "9999-12-31T23:12:19.787Z",
         "expedition_success_chance": 0,
         "xp": 0,
         "expedition_expiration_start_time": "2020-02-05T21:42:19.787Z",
@@ -10616,7 +10589,7 @@
         "expedition_slot_id": "expedition.generation.sea.t02_0",
         "expedition_squad_id": "",
         "max_level_bonus": 0,
-        "expedition_expiration_end_time": "2020-02-05T23:12:19.786Z",
+        "expedition_expiration_end_time": "9999-12-31T23:12:19.786Z",
         "expedition_success_chance": 0,
         "xp": 0,
         "expedition_expiration_start_time": "2020-02-05T21:42:19.786Z",
@@ -11113,7 +11086,7 @@
         "expedition_slot_id": "expedition.generation.choppingwood",
         "expedition_squad_id": "",
         "max_level_bonus": 0,
-        "expedition_expiration_end_time": "2020-02-05T23:12:19.785Z",
+        "expedition_expiration_end_time": "9999-12-31T23:12:19.785Z",
         "expedition_success_chance": 0,
         "xp": 0,
         "expedition_expiration_start_time": "2020-02-05T21:42:19.785Z",
@@ -47280,6 +47253,249 @@
         "favorite":false
       },
       "quantity":1
+    },
+    "CampaignHeroLoadout1": {
+      "templateId": "CampaignHeroLoadout:defaultloadout",
+      "attributes": {
+        "team_perk": "",
+        "loadout_name": "",
+        "crew_members": {
+          "followerslot3": "",
+          "followerslot2": "",
+          "followerslot1": "",
+          "commanderslot": "Hero:HID_Commando_GrenadeGun_SR_T05",
+          "followerslot5": "",
+          "followerslot4": ""
+        },
+        "loadout_index": 0,
+        "gadgets": [
+          {
+            "gadget": "",
+            "slot_index": 0
+          },
+          {
+            "gadget": "",
+            "slot_index": 1
+          }
+        ]
+      },
+      "quantity": 1
+    },
+    "CampaignHeroLoadout2": {
+      "templateId": "CampaignHeroLoadout:defaultloadout",
+      "attributes": {
+        "team_perk": "",
+        "loadout_name": "",
+        "crew_members": {
+          "followerslot3": "",
+          "followerslot2": "",
+          "followerslot1": "",
+          "commanderslot": "Hero:HID_Commando_GrenadeGun_SR_T05",
+          "followerslot5": "",
+          "followerslot4": ""
+        },
+        "loadout_index": 1,
+        "gadgets": [
+          {
+            "gadget": "",
+            "slot_index": 0
+          },
+          {
+            "gadget": "",
+            "slot_index": 1
+          }
+        ]
+      },
+      "quantity": 1
+    },
+    "CampaignHeroLoadout3": {
+      "templateId": "CampaignHeroLoadout:defaultloadout",
+      "attributes": {
+        "team_perk": "",
+        "loadout_name": "",
+        "crew_members": {
+          "followerslot3": "",
+          "followerslot2": "",
+          "followerslot1": "",
+          "commanderslot": "Hero:HID_Outlander_SphereFragment_SR_T05",
+          "followerslot5": "",
+          "followerslot4": ""
+        },
+        "loadout_index": 2,
+        "gadgets": [
+          {
+            "gadget": "",
+            "slot_index": 0
+          },
+          {
+            "gadget": "",
+            "slot_index": 1
+          }
+        ]
+      },
+      "quantity": 1
+    },
+    "CampaignHeroLoadout4": {
+      "templateId": "CampaignHeroLoadout:defaultloadout",
+      "attributes": {
+        "team_perk": "",
+        "loadout_name": "",
+        "crew_members": {
+          "followerslot3": "",
+          "followerslot2": "",
+          "followerslot1": "",
+          "commanderslot": "Hero:HID_Constructor_008_SR_T05",
+          "followerslot5": "",
+          "followerslot4": ""
+        },
+        "loadout_index": 3,
+        "gadgets": [
+          {
+            "gadget": "",
+            "slot_index": 0
+          },
+          {
+            "gadget": "",
+            "slot_index": 1
+          }
+        ]
+      },
+      "quantity": 1
+    },
+    "CampaignHeroLoadout5": {
+      "templateId": "CampaignHeroLoadout:defaultloadout",
+      "attributes": {
+        "team_perk": "",
+        "loadout_name": "",
+        "crew_members": {
+          "followerslot3": "",
+          "followerslot2": "",
+          "followerslot1": "",
+          "commanderslot": "Hero:HID_Ninja_029_DinoNinja_SR_T05",
+          "followerslot5": "",
+          "followerslot4": ""
+        },
+        "loadout_index": 4,
+        "gadgets": [
+          {
+            "gadget": "",
+            "slot_index": 0
+          },
+          {
+            "gadget": "",
+            "slot_index": 1
+          }
+        ]
+      },
+      "quantity": 1
+    },
+    "CampaignHeroLoadout6": {
+      "templateId": "CampaignHeroLoadout:defaultloadout",
+      "attributes": {
+        "team_perk": "",
+        "loadout_name": "",
+        "crew_members": {
+          "followerslot3": "",
+          "followerslot2": "",
+          "followerslot1": "",
+          "commanderslot": "Hero:HID_Constructor_HammerTank_SR_T05",
+          "followerslot5": "",
+          "followerslot4": ""
+        },
+        "loadout_index": 5,
+        "gadgets": [
+          {
+            "gadget": "",
+            "slot_index": 0
+          },
+          {
+            "gadget": "",
+            "slot_index": 1
+          }
+        ]
+      },
+      "quantity": 1
+    },
+    "CampaignHeroLoadout7": {
+      "templateId": "CampaignHeroLoadout:defaultloadout",
+      "attributes": {
+        "team_perk": "",
+        "loadout_name": "",
+        "crew_members": {
+          "followerslot3": "",
+          "followerslot2": "",
+          "followerslot1": "",
+          "commanderslot": "Hero:HID_Commando_GCGrenade_SR_T05",
+          "followerslot5": "",
+          "followerslot4": ""
+        },
+        "loadout_index": 6,
+        "gadgets": [
+          {
+            "gadget": "",
+            "slot_index": 0
+          },
+          {
+            "gadget": "",
+            "slot_index": 1
+          }
+        ]
+      },
+      "quantity": 1
+    },
+    "CampaignHeroLoadout8": {
+      "templateId": "CampaignHeroLoadout:defaultloadout",
+      "attributes": {
+        "team_perk": "",
+        "loadout_name": "",
+        "crew_members": {
+          "followerslot3": "",
+          "followerslot2": "",
+          "followerslot1": "",
+          "commanderslot": "Hero:HID_Ninja_023_SR_T05",
+          "followerslot5": "",
+          "followerslot4": ""
+        },
+        "loadout_index": 7,
+        "gadgets": [
+          {
+            "gadget": "",
+            "slot_index": 0
+          },
+          {
+            "gadget": "",
+            "slot_index": 1
+          }
+        ]
+      },
+      "quantity": 1
+    },
+    "CampaignHeroLoadout9": {
+      "templateId": "CampaignHeroLoadout:defaultloadout",
+      "attributes": {
+        "team_perk": "",
+        "loadout_name": "",
+        "crew_members": {
+          "followerslot3": "",
+          "followerslot2": "",
+          "followerslot1": "",
+          "commanderslot": "Hero:HID_Commando_008_SR_T05",
+          "followerslot5": "",
+          "followerslot4": ""
+        },
+        "loadout_index": 8,
+        "gadgets": [
+          {
+            "gadget": "",
+            "slot_index": 0
+          },
+          {
+            "gadget": "",
+            "slot_index": 1
+          }
+        ]
+      },
+      "quantity": 1
     }
   },
   "stats": {
@@ -47297,7 +47513,7 @@
         "claimData": []
       },
       "rewards_claimed_post_max_level": 0,
-      "selected_hero_loadout": "CampaignHeroLoadout:defaultloadout",
+      "selected_hero_loadout": "CampaignHeroLoadout1",
       "loadouts": [
         "CosmeticLocker:cosmeticlocker_stw",
         "CosmeticLocker:cosmeticlocker_stw_1"
