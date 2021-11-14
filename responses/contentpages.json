@@ -50,12 +50,12 @@
       "saveTheWorldUnowned": {
         "_type": "CommonUI Simple Message",
         "message": {
-          "image": "https://progameguides.com/wp-content/uploads/2018/12/fortnite-outfit-fishstick.jpg",
+          "image": "",
           "hidden": false,
           "messagetype": "normal",
           "_type": "CommonUI Simple Message Base",
-          "title": "The Premium Experience",
-          "body": "Uncooperative PvE storm-fighting adventure! Only the finest premium experience delivered by Epic.",
+          "title": "Co-op PvE",
+          "body": "Cooperative PvE storm-fighting adventure!",
           "spotlight": false
         }
       },
@@ -63,36 +63,36 @@
       "battleRoyale": {
         "_type": "CommonUI Simple Message",
         "message": {
-          "image": "https://progameguides.com/wp-content/uploads/2018/12/fortnite-outfit-fishstick.jpg",
+          "image": "",
           "hidden": false,
           "messagetype": "normal",
           "_type": "CommonUI Simple Message Base",
-          "title": "Cash Cow",
-          "body": "microtransactions galore",
+          "title": "100 Player PvP",
+          "body": "100 Player PvP Battle Royale.\n\nPvE progress does not affect Battle Royale.",
           "spotlight": false
         }
       },
       "creative": {
         "_type": "CommonUI Simple Message",
         "message": {
-          "image": "https://progameguides.com/wp-content/uploads/2018/12/fortnite-outfit-fishstick.jpg",
+          "image": "",
           "hidden": false,
           "messagetype": "normal",
           "_type": "CommonUI Simple Message Base",
-          "title": "this is creative",
-          "body": "you can not play creative..",
+          "title": "New Featured Islands!",
+          "body": "Your Island. Your Friends. Your Rules.\n\nDiscover new ways to play Fortnite, play community made games with friends and build your dream island.",
           "spotlight": false
         }
       },
       "saveTheWorld": {
         "_type": "CommonUI Simple Message",
         "message": {
-          "image": "https://progameguides.com/wp-content/uploads/2018/12/fortnite-outfit-fishstick.jpg",
+          "image": "",
           "hidden": false,
           "messagetype": "normal",
           "_type": "CommonUI Simple Message Base",
-          "title": "The Premium Experience",
-          "body": "Uncooperative PvE storm-fighting adventure! Only the finest premium experience delivered by Epic.\n\nfor the love of fuck, epic, please continue developing this game",
+          "title": "Co-op PvE",
+          "body": "Cooperative PvE storm-fighting adventure!",
           "spotlight": false
         }
       },
@@ -1051,7 +1051,7 @@
             "_type": "FortPlaylistInfo"
           },
           {
-            "image": "https://progameguides.com/wp-content/uploads/2018/12/fortnite-outfit-fishstick.jpg",
+            "image": "",
             "playlist_name": "Playlist_DefaultSolo",
             "special_border": "None",
             "violator": "h",
@@ -5705,31 +5705,31 @@
     },
     "subgameinfo": {
       "battleroyale": {
-        "image": "https://progameguides.com/wp-content/uploads/2018/12/fortnite-outfit-fishstick.jpg",
+        "image": "",
         "color": "1164c1",
         "_type": "Subgame Info",
-        "description": "microtransactions galore",
+        "description": "100 Player PvP",
         "subgame": "battleroyale",
         "standardMessageLine2": "",
-        "title": "Cash Cow",
+        "title": "Battle Royale",
         "standardMessageLine1": ""
       },
       "savetheworld": {
-        "image": "https://progameguides.com/wp-content/uploads/2018/12/fortnite-outfit-fishstick.jpg",
+        "image": "",
         "color": "7615E9FF",
         "specialMessage": "",
         "_type": "Subgame Info",
-        "description": "Uncooperative PvE storm-fighting adventure! Only the finest premium experience delivered by Epic.\n\nfor the love of fuck, epic, please continue developing this game",
+        "description": "Cooperative PvE Adventure",
         "subgame": "savetheworld",
-        "title": "The Premium Experience"
+        "title": "Server created by Lawin"
       },
       "_title": "SubgameInfo",
       "_noIndex": false,
       "creative": {
-        "image": "https://progameguides.com/wp-content/uploads/2018/12/fortnite-outfit-fishstick.jpg",
+        "image": "",
         "color": "13BDA1FF",
         "_type": "Subgame Info",
-        "description": "pp",
+        "description": "Your Islands. Your Friends. Your Rules.",
         "subgame": "creative",
         "title": "Creative",
         "standardMessageLine1": ""
