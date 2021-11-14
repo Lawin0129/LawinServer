@@ -2,6 +2,8 @@ const Express = require("express");
 const express = Express();
 const fs = require("fs");
 const moment = require("moment");
+const crypto = require("crypto");
+const config = require("./config.json");
 const worldstw = require("./responses/worldstw.json");
 const friendslist = require("./responses/friendslist.json");
 const friendslist2 = require("./responses/friendslist2.json");
@@ -29,6 +31,66 @@ express.get("/fortnite/api/storefront/v2/catalog", async (req, res) => {
 
 express.get("/purchase", async (req, res) => {
     res.json({});
+    res.status(200);
+    res.end();
+})
+
+express.get("/lightswitch/api/service/Fortnite/status", async (req, res) => {
+    res.json({
+        "serviceInstanceId": "fortnite",
+        "status": "UP",
+        "message": "Fortnite is online",
+        "maintenanceUri": null,
+        "overrideCatalogIds": [
+          "a7f138b2e51945ffbfdacc1af0541053"
+        ],
+        "allowedActions": [],
+        "banned": false,
+        "launcherInfoDTO": {
+          "appName": "Fortnite",
+          "catalogItemId": "4fe75bbc5a674f4f9b356b5c90567da5",
+          "namespace": "fn"
+        }
+      });
+    res.status(200);
+    res.end();
+})
+
+express.get("/fortnite/api/version", async (req, res) => {
+    res.json({
+        "app": "fortnite",
+        "serverDate": new Date().toISOString(),
+        "overridePropertiesVersion": "unknown",
+        "cln": "17951730",
+        "build": "444",
+        "moduleName": "Fortnite-Core",
+        "buildDate": "2021-10-27T21:00:51.697Z",
+        "version": "18.30",
+        "branch": "Release-18.30",
+        "modules": {
+          "Epic-LightSwitch-AccessControlCore": {
+            "cln": "17237679",
+            "build": "b2130",
+            "buildDate": "2021-08-19T18:56:08.144Z",
+            "version": "1.0.0",
+            "branch": "trunk"
+          },
+          "epic-xmpp-api-v1-base": {
+            "cln": "5131a23c1470acbd9c94fae695ef7d899c1a41d6",
+            "build": "b3595",
+            "buildDate": "2019-07-30T09:11:06.587Z",
+            "version": "0.0.1",
+            "branch": "master"
+          },
+          "epic-common-core": {
+            "cln": "17909521",
+            "build": "3217",
+            "buildDate": "2021-10-25T18:41:12.486Z",
+            "version": "3.0",
+            "branch": "TRUNK"
+          }
+        }
+      });
     res.status(200);
     res.end();
 })
@@ -484,6 +546,10 @@ express.get("/account/api/epicdomains/ssodomains", async (req, res) => {
 })
 
 express.get("/fortnite/api/game/v2/matchmakingservice/ticket/player/*", async (req, res) => {
+    config.currentbuildUniqueId = req.query.bucketId.split(":")[0];
+
+    fs.writeFileSync("./config.json", JSON.stringify(config, null, 2));
+
     res.json({
         "serviceUrl": "ws://127.0.0.1:443",
         "ticketType": "mms-player",
@@ -502,6 +568,57 @@ express.get("/fortnite/api/game/v2/matchmaking/account/:accountId/session/:sessi
     })
     res.status(200);
     res.end();
+})
+
+express.get("/fortnite/api/matchmaking/session/:session_id", async (req, res) => {
+    res.json({
+        "id": req.params.session_id,
+        "ownerId": crypto.createHash('md5').update(`1${Math.random().toString()}`).digest('hex').toUpperCase(),
+        "ownerName": "[DS]fortnite-liveeugcec1c2e30ubrcore0a-z8hj-1968",
+        "serverName": "[DS]fortnite-liveeugcec1c2e30ubrcore0a-z8hj-1968",
+        "serverAddress": "127.0.0.1",
+        "serverPort": 9015,
+        "maxPublicPlayers": 220,
+        "openPublicPlayers": 175,
+        "maxPrivatePlayers": 0,
+        "openPrivatePlayers": 0,
+        "attributes": {
+          "REGION_s": "EU",
+          "GAMEMODE_s": "FORTATHENA",
+          "ALLOWBROADCASTING_b": true,
+          "SUBREGION_s": "GB",
+          "DCID_s": "FORTNITE-LIVEEUGCEC1C2E30UBRCORE0A-14840880",
+          "tenant_s": "Fortnite",
+          "MATCHMAKINGPOOL_s": "Any",
+          "STORMSHIELDDEFENSETYPE_i": 0,
+          "HOTFIXVERSION_i": 0,
+          "PLAYLISTNAME_s": "Playlist_DefaultSolo",
+          "SESSIONKEY_s": crypto.createHash('md5').update(`2${Math.random().toString()}`).digest('hex').toUpperCase(),
+          "TENANT_s": "Fortnite",
+          "BEACONPORT_i": 15009
+        },
+        "publicPlayers": [],
+        "privatePlayers": [],
+        "totalPlayers": 45,
+        "allowJoinInProgress": false,
+        "shouldAdvertise": false,
+        "isDedicated": false,
+        "usesStats": false,
+        "allowInvites": false,
+        "usesPresence": false,
+        "allowJoinViaPresence": true,
+        "allowJoinViaPresenceFriendsOnly": false,
+        "buildUniqueId": config.currentbuildUniqueId, // buildUniqueId is different for every build, this uses the netver of the version you're currently using
+        "lastUpdated": new Date().toISOString(),
+        "started": false
+      })
+    res.status(200);
+    res.end();
+})
+
+express.post("/fortnite/api/matchmaking/session/*/join", async (req, res) => {
+	res.status(204);
+	res.end();
 })
 
 express.post("/fortnite/api/matchmaking/session/matchMakingRequest", async (req, res) => {
@@ -908,13 +1025,13 @@ express.post("/account/api/oauth/token", async (req, res) => {
         "refresh_token": "lawinstokenlol",
         "refresh_expires": 86400,
         "refresh_expires_at": "9999-12-02T01:12:01.100Z",
-        "account_id": req.body.username || "Invalid",
+        "account_id": req.body.username || "LawinServer",
         "client_id": "lawinsclientidlol",
         "internal_client": true,
         "client_service": "fortnite",
-        "displayName": req.body.username || "Invalid",
+        "displayName": req.body.username || "LawinServer",
         "app": "fortnite",
-        "in_app_id": req.body.username || "Invalid",
+        "in_app_id": req.body.username || "LawinServer",
         "device_id": "lawinsdeviceidlol"
     })
     res.status(200);
@@ -1068,14 +1185,12 @@ express.post("/fortnite/api/game/v2/profile/*/client/SetHomebaseBanner", async (
 
 // Buy skill tree perk STW
 express.post("/fortnite/api/game/v2/profile/*/client/PurchaseHomebaseNode", async (req, res) => {
-    function makeid(length) {
-        var result = '';
-        var characters = '0123456789abcdefghiklmnopqrstuvwxyz';
-        var charactersLength = characters.length;
-        for (var i = 0; i < length; i++) {
-            result += characters.charAt(Math.floor(Math.random() * charactersLength));
-        }
-        return result;
+    function makeid() {
+        let CurrentDate = (new Date()).valueOf().toString();
+        let RandomFloat = Math.random().toString();
+        let ID = crypto.createHash('md5').update(CurrentDate + RandomFloat).digest('hex');
+        let FinishedID = ID.slice(0, 8) + "-" + ID.slice(8, 12) + "-" + ID.slice(12, 16) + "-" + ID.slice(16, 20) + "-" + ID.slice(20, 32);
+        return FinishedID;
     }
 
     const profile = require(`./profiles/${req.query.profileId || "profile0"}.json`);
@@ -1086,7 +1201,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/PurchaseHomebaseNode", asyn
     var QueryRevision = req.query.rvn || -1;
     var ItemAdded = false;
 
-    const ID = makeid(5) + "-" + makeid(4) + "-" + makeid(6) + "-" + makeid(4);
+    const ID = makeid();
 
     if (req.body.nodeId) {
         profile.items[ID] = {
@@ -1317,11 +1432,17 @@ express.post("/fortnite/api/game/v2/profile/*/client/AssignGadgetToLoadout", asy
         switch (req.body.slotIndex) {
 
             case 0:
+                if (req.body.gadgetId.toLowerCase() == profile.items[req.body.loadoutId].attributes.gadgets[1].gadget.toLowerCase()) {
+                    profile.items[req.body.loadoutId].attributes.gadgets[1].gadget = "";
+                }
                 profile.items[req.body.loadoutId].attributes.gadgets[req.body.slotIndex].gadget = req.body.gadgetId || "";
                 StatChanged = true;
                 break;
 
             case 1:
+                if (req.body.gadgetId.toLowerCase() == profile.items[req.body.loadoutId].attributes.gadgets[0].gadget.toLowerCase()) {
+                    profile.items[req.body.loadoutId].attributes.gadgets[0].gadget = "";
+                }
                 profile.items[req.body.loadoutId].attributes.gadgets[req.body.slotIndex].gadget = req.body.gadgetId || "";
                 StatChanged = true;
                 break;
@@ -1521,16 +1642,1731 @@ express.post("/fortnite/api/game/v2/profile/*/client/ClaimQuestReward", async (r
     res.end();
 });
 
+// Level item up STW 1
+express.post("/fortnite/api/game/v2/profile/*/client/UpgradeItem", async (req, res) => {
+    const profile = require(`./profiles/${req.query.profileId || "campaign"}.json`);
+
+    // do not change any of these or you will end up breaking it
+    var ApplyProfileChanges = [];
+    var BaseRevision = profile.rvn || 0;
+    var QueryRevision = req.query.rvn || -1;
+    var StatChanged = false;
+
+    if (req.body.targetItemId) {
+        profile.items[req.body.targetItemId].attributes.level += 1;
+        StatChanged = true;
+    }
+
+    if (StatChanged == true) {
+        profile.rvn += 1;
+        profile.commandRevision += 1;
+
+        ApplyProfileChanges.push({
+            "changeType": "itemAttrChanged",
+            "itemId": req.body.targetItemId,
+            "attributeName": "level",
+            "attributeValue": profile.items[req.body.targetItemId].attributes.level
+        })
+
+        fs.writeFileSync(`./profiles/${req.query.profileId || "campaign"}.json`, JSON.stringify(profile, null, 2), function(err) {
+            if (err) {
+                console.log('error:', err)
+            };
+        });
+    }
+
+    // this doesn't work properly on version v12.20 and above but whatever
+    if (QueryRevision != BaseRevision) {
+        ApplyProfileChanges = [{
+            "changeType": "fullProfileUpdate",
+            "profile": profile
+        }];
+    }
+
+    res.json({
+        "profileRevision": profile.rvn || 0,
+        "profileId": req.query.profileId || "campaign",
+        "profileChangesBaseRevision": BaseRevision,
+        "profileChanges": ApplyProfileChanges,
+        "profileCommandRevision": profile.commandRevision || 0,
+        "serverTime": new Date().toISOString(),
+        "responseVersion": 1
+    })
+    res.status(200);
+    res.end();
+});
+
+// Level item up STW 2
+express.post("/fortnite/api/game/v2/profile/*/client/UpgradeItemBulk", async (req, res) => {
+    const profile = require(`./profiles/${req.query.profileId || "campaign"}.json`);
+
+    // do not change any of these or you will end up breaking it
+    var ApplyProfileChanges = [];
+    var BaseRevision = profile.rvn || 0;
+    var QueryRevision = req.query.rvn || -1;
+    var StatChanged = false;
+
+    if (req.body.targetItemId) {
+        var new_level = Number(req.body.desiredLevel);
+
+        profile.items[req.body.targetItemId].attributes.level = new_level;
+        StatChanged = true;
+    }
+
+    if (StatChanged == true) {
+        profile.rvn += 1;
+        profile.commandRevision += 1;
+
+        ApplyProfileChanges.push({
+            "changeType": "itemAttrChanged",
+            "itemId": req.body.targetItemId,
+            "attributeName": "level",
+            "attributeValue": profile.items[req.body.targetItemId].attributes.level
+        })
+
+        fs.writeFileSync(`./profiles/${req.query.profileId || "campaign"}.json`, JSON.stringify(profile, null, 2), function(err) {
+            if (err) {
+                console.log('error:', err)
+            };
+        });
+    }
+
+    // this doesn't work properly on version v12.20 and above but whatever
+    if (QueryRevision != BaseRevision) {
+        ApplyProfileChanges = [{
+            "changeType": "fullProfileUpdate",
+            "profile": profile
+        }];
+    }
+
+    res.json({
+        "profileRevision": profile.rvn || 0,
+        "profileId": req.query.profileId || "campaign",
+        "profileChangesBaseRevision": BaseRevision,
+        "profileChanges": ApplyProfileChanges,
+        "profileCommandRevision": profile.commandRevision || 0,
+        "serverTime": new Date().toISOString(),
+        "responseVersion": 1
+    })
+    res.status(200);
+    res.end();
+});
+
+// Evolve item STW
+express.post("/fortnite/api/game/v2/profile/*/client/ConvertItem", async (req, res) => {
+    function makeid() {
+        let CurrentDate = (new Date()).valueOf().toString();
+        let RandomFloat = Math.random().toString();
+        let ID = crypto.createHash('md5').update(CurrentDate + RandomFloat).digest('hex');
+        let FinishedID = ID.slice(0, 8) + "-" + ID.slice(8, 12) + "-" + ID.slice(12, 16) + "-" + ID.slice(16, 20) + "-" + ID.slice(20, 32);
+        return FinishedID;
+    }
+
+    const profile = require(`./profiles/${req.query.profileId || "campaign"}.json`);
+
+    // do not change any of these or you will end up breaking it
+    var ApplyProfileChanges = [];
+    var Notifications = [];
+    var BaseRevision = profile.rvn || 0;
+    var QueryRevision = req.query.rvn || -1;
+    var StatChanged = false;
+
+    if (req.body.targetItemId) {
+        if (profile.items[req.body.targetItemId].templateId.toLowerCase().includes("t04")) {
+            profile.items[req.body.targetItemId].templateId = profile.items[req.body.targetItemId].templateId.replace(/t04/ig, "T05");
+        }
+
+        if (profile.items[req.body.targetItemId].templateId.toLowerCase().includes("t03")) {
+            profile.items[req.body.targetItemId].templateId = profile.items[req.body.targetItemId].templateId.replace(/t03/ig, "T04");
+        }
+
+        if (profile.items[req.body.targetItemId].templateId.toLowerCase().includes("t02")) {
+            profile.items[req.body.targetItemId].templateId = profile.items[req.body.targetItemId].templateId.replace(/t02/ig, "T03");
+        }
+
+        if (profile.items[req.body.targetItemId].templateId.toLowerCase().includes("t01")) {
+            profile.items[req.body.targetItemId].templateId = profile.items[req.body.targetItemId].templateId.replace(/t01/ig, "T02");
+        }
+
+        // Conversion Index: 0 = Ore, 1 = Crystal
+        if (req.body.conversionIndex == 1) {
+            profile.items[req.body.targetItemId].templateId = profile.items[req.body.targetItemId].templateId.replace(/ore/ig, "Crystal");
+        }
+
+        StatChanged = true;
+    }
+
+    if (StatChanged == true) {
+        profile.rvn += 1;
+        profile.commandRevision += 1;
+
+        const ID = makeid();
+
+        profile.items[ID] = profile.items[req.body.targetItemId];
+        ApplyProfileChanges.push({
+            "changeType": "itemAdded",
+            "itemId": ID,
+            "item": profile.items[ID]
+        })
+
+        delete profile.items[req.body.targetItemId]
+        ApplyProfileChanges.push({
+            "changeType": "itemRemoved",
+            "itemId": req.body.targetItemId
+        })
+
+        Notifications.push({
+            "type": "conversionResult",
+            "primary": true,
+            "itemsGranted": [
+                {
+                    "itemType": profile.items[ID].templateId,
+                    "itemGuid": ID,
+                    "itemProfile": req.query.profileId || "campaign",
+                    "attributes": {
+                        "level": profile.items[ID].attributes.level,
+                        "alterations": profile.items[ID].attributes.alterations || []
+                    },
+                    "quantity": 1
+                }
+            ]
+        })
+
+        fs.writeFileSync(`./profiles/${req.query.profileId || "campaign"}.json`, JSON.stringify(profile, null, 2), function(err) {
+            if (err) {
+                console.log('error:', err)
+            };
+        });
+    }
+
+    // this doesn't work properly on version v12.20 and above but whatever
+    if (QueryRevision != BaseRevision) {
+        ApplyProfileChanges = [{
+            "changeType": "fullProfileUpdate",
+            "profile": profile
+        }];
+    }
+
+    res.json({
+        "profileRevision": profile.rvn || 0,
+        "profileId": req.query.profileId || "campaign",
+        "profileChangesBaseRevision": BaseRevision,
+        "profileChanges": ApplyProfileChanges,
+        "notifications": Notifications,
+        "profileCommandRevision": profile.commandRevision || 0,
+        "serverTime": new Date().toISOString(),
+        "responseVersion": 1
+    })
+    res.status(200);
+    res.end();
+});
+
+// Craft item STW (Guns, melees and traps only)
+express.post("/fortnite/api/game/v2/profile/*/client/CraftWorldItem", async (req, res) => {
+    function makeid() {
+        let CurrentDate = (new Date()).valueOf().toString();
+        let RandomFloat = Math.random().toString();
+        let ID = crypto.createHash('md5').update(CurrentDate + RandomFloat).digest('hex');
+        let FinishedID = ID.slice(0, 8) + "-" + ID.slice(8, 12) + "-" + ID.slice(12, 16) + "-" + ID.slice(16, 20) + "-" + ID.slice(20, 32);
+        return FinishedID;
+    }
+
+    const seasondata = require("./season.json");
+    const seasonchecker = require("./seasonchecker.js");
+    seasonchecker(req, seasondata);
+
+    const profile = require(`./profiles/${req.query.profileId || "theater0"}.json`);
+    var schematic_profile;
+    // do not change this
+    var chosen_profile = false;
+
+    if (4 <= seasondata.season || req.headers["user-agent"].includes("Release-3.5") || req.headers["user-agent"].includes("Release-3.6") && chosen_profile == false) {
+        schematic_profile = require("./profiles/campaign.json");
+        chosen_profile = true;
+    }
+
+    if (3 >= seasondata.season && chosen_profile == false) {
+        schematic_profile = require("./profiles/profile0.json");
+        chosen_profile = true;
+    }
+
+    // do not change any of these or you will end up breaking it
+    var ApplyProfileChanges = [];
+    var Notifications = [];
+    var BaseRevision = profile.rvn || 0;
+    var QueryRevision = req.query.rvn || -1;
+    var StatChanged = false;
+
+    var Item;
+    const ID = makeid();
+
+    if (req.body.targetSchematicItemId) {
+        var Body = '';
+        Body += JSON.stringify(schematic_profile.items[req.body.targetSchematicItemId]);
+        Item = JSON.parse(Body);
+
+        var ItemType = 'Weapon:';
+        var ItemIDType = 'WID';
+        if (Item.templateId.split("_")[1].split("_")[0].toLowerCase() == "wall") {
+            ItemType = "Trap:";
+            ItemIDType = "TID";
+        }
+        if (Item.templateId.split("_")[1].split("_")[0].toLowerCase() == "floor") {
+            ItemType = "Trap:";
+            ItemIDType = "TID";
+        }
+        if (Item.templateId.split("_")[1].split("_")[0].toLowerCase() == "ceiling") {
+            ItemType = "Trap:";
+            ItemIDType = "TID";
+        }
+
+        Item.quantity = req.body.numTimesToCraft || 1;
+        Item.templateId = Item.templateId.replace(/schematic:/ig, ItemType);
+        Item.templateId = Item.templateId.replace(/sid/ig, ItemIDType);
+        if (req.body.targetSchematicTier) {
+            switch (req.body.targetSchematicTier.toLowerCase()) {
+
+                case "i":
+                    if (!Item.templateId.toLowerCase().includes("t01")) {
+                        Item.attributes.level = 10;
+                    }
+                    Item.templateId = Item.templateId.substring(0, Item.templateId.length-3) + "T01"
+                    Item.templateId = Item.templateId.replace(/crystal/ig, "Ore")
+                break;
+
+                case "ii":
+                    if (!Item.templateId.toLowerCase().includes("t02")) {
+                        Item.attributes.level = 20;
+                    }
+                    Item.templateId = Item.templateId.substring(0, Item.templateId.length-3) + "T02"
+                    Item.templateId = Item.templateId.replace(/crystal/ig, "Ore")
+                break;
+
+                case "iii":
+                    if (!Item.templateId.toLowerCase().includes("t03")) {
+                        Item.attributes.level = 30;
+                    }
+                    Item.templateId = Item.templateId.substring(0, Item.templateId.length-3) + "T03"
+                    Item.templateId = Item.templateId.replace(/crystal/ig, "Ore")
+                break;
+
+                case "iv":
+                    if (!Item.templateId.toLowerCase().includes("t04")) {
+                        Item.attributes.level = 40;
+                    }
+                    Item.templateId = Item.templateId.substring(0, Item.templateId.length-3) + "T04"
+                break;
+
+                case "v":
+                    Item.templateId = Item.templateId.substring(0, Item.templateId.length-3) + "T05"
+                break;
+            }
+        }
+
+        Item.attributes = {
+            "clipSizeScale": 0,
+            "loadedAmmo": 999,
+            "level": Item.attributes.level || 1,
+            "alterationDefinitions": Item.attributes.alterations || [],
+            "baseClipSize": 999,
+            "durability": 375,
+            "itemSource": ""
+        };
+
+        profile.items[ID] = Item;
+
+        StatChanged = true;
+    }
+
+    if (StatChanged == true) {
+        profile.rvn += 1;
+        profile.commandRevision += 1;
+
+        ApplyProfileChanges.push({
+            "changeType": "itemAdded",
+            "itemId": ID,
+            "item": profile.items[ID]
+        });
+
+        Notifications.push({
+            "type": "craftingResult",
+            "primary": true,
+            "itemsCrafted": [
+                {
+                    "itemType": profile.items[ID].templateId,
+                    "itemGuid": ID,
+                    "itemProfile": req.query.profileId || "theater0",
+                    "attributes": {
+                        "loadedAmmo": profile.items[ID].attributes.loadedAmmo,
+                        "level": profile.items[ID].attributes.level,
+                        "alterationDefinitions": profile.items[ID].attributes.alterationDefinitions,
+                        "durability": profile.items[ID].attributes.durability
+                    },
+                    "quantity": profile.items[ID].quantity
+                }
+            ]
+        })
+
+        fs.writeFileSync(`./profiles/${req.query.profileId || "theater0"}.json`, JSON.stringify(profile, null, 2), function(err) {
+            if (err) {
+                console.log('error:', err)
+            };
+        });
+    }
+
+    // this doesn't work properly on version v12.20 and above but whatever
+    if (QueryRevision != BaseRevision) {
+        ApplyProfileChanges = [{
+            "changeType": "fullProfileUpdate",
+            "profile": profile
+        }];
+    }
+
+    res.json({
+        "profileRevision": profile.rvn || 0,
+        "profileId": req.query.profileId || "theater0",
+        "profileChangesBaseRevision": BaseRevision,
+        "profileChanges": ApplyProfileChanges,
+        "notifications": Notifications,
+        "profileCommandRevision": profile.commandRevision || 0,
+        "serverTime": new Date().toISOString(),
+        "responseVersion": 1
+    })
+    res.status(200);
+    res.end();
+});
+
+// Destroy item STW
+express.post("/fortnite/api/game/v2/profile/*/client/DestroyWorldItems", async (req, res) => {
+    const profile = require(`./profiles/${req.query.profileId || "theater0"}.json`);
+
+    // do not change any of these or you will end up breaking it
+    var ApplyProfileChanges = [];
+    var BaseRevision = profile.rvn || 0;
+    var QueryRevision = req.query.rvn || -1;
+    var StatChanged = false;
+
+    if (req.body.itemIds) {
+        for (var i = 0; i < req.body.itemIds.length; i++) {
+            var id = req.body.itemIds[i];
+            delete profile.items[id]
+
+            ApplyProfileChanges.push({
+                "changeType": "itemRemoved",
+                "itemId": id
+            })
+        }
+
+        StatChanged = true;
+    }
+
+    if (StatChanged == true) {
+        profile.rvn += 1;
+        profile.commandRevision += 1;
+
+        fs.writeFileSync(`./profiles/${req.query.profileId || "theater0"}.json`, JSON.stringify(profile, null, 2), function(err) {
+            if (err) {
+                console.log('error:', err)
+            };
+        });
+    }
+
+    // this doesn't work properly on version v12.20 and above but whatever
+    if (QueryRevision != BaseRevision) {
+        ApplyProfileChanges = [{
+            "changeType": "fullProfileUpdate",
+            "profile": profile
+        }];
+    }
+
+    res.json({
+        "profileRevision": profile.rvn || 0,
+        "profileId": req.query.profileId || "theater0",
+        "profileChangesBaseRevision": BaseRevision,
+        "profileChanges": ApplyProfileChanges,
+        "profileCommandRevision": profile.commandRevision || 0,
+        "serverTime": new Date().toISOString(),
+        "responseVersion": 1
+    })
+    res.status(200);
+    res.end();
+});
+
+// Disassemble items STW
+express.post("/fortnite/api/game/v2/profile/*/client/DisassembleWorldItems", async (req, res) => {
+    const profile = require(`./profiles/${req.query.profileId || "theater0"}.json`);
+
+    // do not change any of these or you will end up breaking it
+    var ApplyProfileChanges = [];
+    var BaseRevision = profile.rvn || 0;
+    var QueryRevision = req.query.rvn || -1;
+    var StatChanged = false;
+
+    if (req.body.targetItemIdAndQuantityPairs) {
+        for (var i = 0; i < req.body.targetItemIdAndQuantityPairs.length; i++) {
+            var id = req.body.targetItemIdAndQuantityPairs[i].itemId;
+            var quantity = Number(req.body.targetItemIdAndQuantityPairs[i].quantity);
+            var orig_quantity = Number(profile.items[id].quantity);
+
+            if (quantity >= orig_quantity) {
+                delete profile.items[id]
+
+                ApplyProfileChanges.push({
+                    "changeType": "itemRemoved",
+                    "itemId": id
+                })
+            }
+
+            if (quantity < orig_quantity) {
+                profile.items[id].quantity -= quantity;
+
+                ApplyProfileChanges.push({
+                    "changeType": "itemQuantityChanged",
+                    "itemId": id,
+                    "quantity": profile.items[id].quantity
+                })
+            }
+        }
+
+        StatChanged = true;
+    }
+
+    if (StatChanged == true) {
+        profile.rvn += 1;
+        profile.commandRevision += 1;
+
+        fs.writeFileSync(`./profiles/${req.query.profileId || "theater0"}.json`, JSON.stringify(profile, null, 2), function(err) {
+            if (err) {
+                console.log('error:', err)
+            };
+        });
+    }
+
+    // this doesn't work properly on version v12.20 and above but whatever
+    if (QueryRevision != BaseRevision) {
+        ApplyProfileChanges = [{
+            "changeType": "fullProfileUpdate",
+            "profile": profile
+        }];
+    }
+
+    res.json({
+        "profileRevision": profile.rvn || 0,
+        "profileId": req.query.profileId || "theater0",
+        "profileChangesBaseRevision": BaseRevision,
+        "profileChanges": ApplyProfileChanges,
+        "profileCommandRevision": profile.commandRevision || 0,
+        "serverTime": new Date().toISOString(),
+        "responseVersion": 1
+    })
+    res.status(200);
+    res.end();
+});
+
+// Storage transfer STW
+express.post("/fortnite/api/game/v2/profile/*/client/StorageTransfer", async (req, res) => {
+    const theater0 = require("./profiles/theater0.json");
+    const outpost0 = require("./profiles/outpost0.json");
+
+    // do not change any of these or you will end up breaking it
+    var ApplyProfileChanges = [];
+    var MultiUpdate = [];
+    var BaseRevision = theater0.rvn || 0;
+    var OutpostBaseRevision = outpost0.rvn || 0;
+    var QueryRevision = req.query.rvn || -1;
+    var StatChanged = false;
+
+    if (req.body.transferOperations) {
+        MultiUpdate.push({
+            "profileRevision": outpost0.rvn || 0,
+            "profileId": "outpost0",
+            "profileChangesBaseRevision": OutpostBaseRevision,
+            "profileChanges": [],
+            "profileCommandRevision": outpost0.commandRevision || 0,
+        })
+
+        for (var i = 0; i < req.body.transferOperations.length; i++) {
+            if (req.body.transferOperations[i].toStorage == false) {
+                let id = req.body.transferOperations[i].itemId;
+                let body_quantity = Number(req.body.transferOperations[i].quantity);
+                if (outpost0.items[id]) {
+                    var outpost0_quantity = Number(outpost0.items[id].quantity);
+                } else {
+                    var outpost0_quantity = "Unknown";
+                }
+                if (theater0.items[id]) {
+                    var theater0_quantity = Number(theater0.items[id].quantity);
+                } else {
+                    var theater0_quantity = "Unknown";
+                }
+
+                if (theater0.items[id] && outpost0.items[id]) {
+                    if (outpost0_quantity > body_quantity) {
+                        theater0.items[id].quantity += body_quantity;
+                        outpost0.items[id].quantity -= body_quantity;
+
+                        ApplyProfileChanges.push({
+                            "changeType": "itemQuantityChanged",
+                            "itemId": id,
+                            "quantity": theater0.items[id].quantity
+                        });
+
+                        MultiUpdate[0].profileChanges.push({
+                            "changeType": "itemQuantityChanged",
+                            "itemId": id,
+                            "quantity": outpost0.items[id].quantity
+                        })
+                    }
+
+                    if (outpost0_quantity <= body_quantity) {
+                        theater0.items[id].quantity += body_quantity;
+
+                        delete outpost0.items[id]
+
+                        ApplyProfileChanges.push({
+                            "changeType": "itemQuantityChanged",
+                            "itemId": id,
+                            "quantity": theater0.items[id].quantity
+                        });
+
+                        MultiUpdate[0].profileChanges.push({
+                            "changeType": "itemRemoved",
+                            "itemId": id
+                        });
+                    }
+                }
+
+                if (!theater0.items[id] && outpost0.items[id]) {
+                    const Item = JSON.parse(JSON.stringify(outpost0.items[id]));
+
+                    if (outpost0_quantity > body_quantity) {
+                        outpost0.items[id].quantity -= body_quantity;
+
+                        Item.quantity = body_quantity;
+
+                        theater0.items[id] = Item;
+
+                        ApplyProfileChanges.push({
+                            "changeType": "itemAdded",
+                            "itemId": id,
+                            "item": Item
+                        })
+
+                        MultiUpdate[0].profileChanges.push({
+                            "changeType": "itemQuantityChanged",
+                            "itemId": id,
+                            "quantity": outpost0.items[id].quantity
+                        });
+                    }
+
+                    if (outpost0_quantity <= body_quantity) {
+                        theater0.items[id] = Item;
+
+                        delete outpost0.items[id]
+
+                        ApplyProfileChanges.push({
+                            "changeType": "itemAdded",
+                            "itemId": id,
+                            "item": Item
+                        })
+
+                        MultiUpdate[0].profileChanges.push({
+                            "changeType": "itemRemoved",
+                            "itemId": id
+                        })
+                    }
+                }
+            }
+
+            if (req.body.transferOperations[i].toStorage == true) {
+                let id = req.body.transferOperations[i].itemId;
+                let body_quantity = Number(req.body.transferOperations[i].quantity);
+                if (outpost0.items[id]) {
+                    var outpost0_quantity = Number(outpost0.items[id].quantity);
+                } else {
+                    var outpost0_quantity = "Unknown";
+                }
+                if (theater0.items[id]) {
+                    var theater0_quantity = Number(theater0.items[id].quantity);
+                } else {
+                    var theater0_quantity = "Unknown";
+                }
+
+                if (outpost0.items[id] && theater0.items[id]) {
+                    if (theater0_quantity > body_quantity) {
+                        outpost0.items[id].quantity += body_quantity;
+                        theater0.items[id].quantity -= body_quantity;
+
+                        ApplyProfileChanges.push({
+                            "changeType": "itemQuantityChanged",
+                            "itemId": id,
+                            "quantity": theater0.items[id].quantity
+                        });
+
+                        MultiUpdate[0].profileChanges.push({
+                            "changeType": "itemQuantityChanged",
+                            "itemId": id,
+                            "quantity": outpost0.items[id].quantity
+                        })
+                    }
+
+                    if (theater0_quantity <= body_quantity) {
+                        outpost0.items[id].quantity += body_quantity;
+
+                        delete theater0.items[id]
+
+                        MultiUpdate[0].profileChanges.push({
+                            "changeType": "itemQuantityChanged",
+                            "itemId": id,
+                            "quantity": outpost0.items[id].quantity
+                        });
+
+                        ApplyProfileChanges.push({
+                            "changeType": "itemRemoved",
+                            "itemId": id
+                        });
+                    }
+                }
+
+                if (!outpost0.items[id] && theater0.items[id]) {
+                    const Item = JSON.parse(JSON.stringify(theater0.items[id]));
+
+                    if (theater0_quantity > body_quantity) {
+                        theater0.items[id].quantity -= body_quantity;
+
+                        Item.quantity = body_quantity;
+
+                        outpost0.items[id] = Item;
+
+                        MultiUpdate[0].profileChanges.push({
+                            "changeType": "itemAdded",
+                            "itemId": id,
+                            "item": Item
+                        })
+
+                        ApplyProfileChanges.push({
+                            "changeType": "itemQuantityChanged",
+                            "itemId": id,
+                            "quantity": theater0.items[id].quantity
+                        });
+                    }
+
+                    if (theater0_quantity <= body_quantity) {
+                        outpost0.items[id] = Item;
+
+                        delete theater0.items[id]
+
+                        MultiUpdate[0].profileChanges.push({
+                            "changeType": "itemAdded",
+                            "itemId": id,
+                            "item": Item
+                        })
+
+                        ApplyProfileChanges.push({
+                            "changeType": "itemRemoved",
+                            "itemId": id,
+                        })
+                    }
+                }
+            }
+        }
+
+        StatChanged = true;
+    }
+
+    if (req.body.theaterToOutpostItems && req.body.outpostToTheaterItems) {
+        MultiUpdate.push({
+            "profileRevision": outpost0.rvn || 0,
+            "profileId": "outpost0",
+            "profileChangesBaseRevision": OutpostBaseRevision,
+            "profileChanges": [],
+            "profileCommandRevision": outpost0.commandRevision || 0,
+        })
+
+        for (var i = 0; i < req.body.theaterToOutpostItems.length; i++) {
+            let id = req.body.theaterToOutpostItems[i].itemId;
+            let body_quantity = Number(req.body.theaterToOutpostItems[i].quantity);
+            if (outpost0.items[id]) {
+                var outpost0_quantity = Number(outpost0.items[id].quantity);
+            } else {
+                var outpost0_quantity = "Unknown";
+            }
+            if (theater0.items[id]) {
+                var theater0_quantity = Number(theater0.items[id].quantity);
+            } else {
+                var theater0_quantity = "Unknown";
+            }
+
+            if (outpost0.items[id] && theater0.items[id]) {
+                if (theater0_quantity > body_quantity) {
+                    outpost0.items[id].quantity += body_quantity;
+                    theater0.items[id].quantity -= body_quantity;
+
+                    ApplyProfileChanges.push({
+                        "changeType": "itemQuantityChanged",
+                        "itemId": id,
+                        "quantity": theater0.items[id].quantity
+                    });
+
+                    MultiUpdate[0].profileChanges.push({
+                        "changeType": "itemQuantityChanged",
+                        "itemId": id,
+                        "quantity": outpost0.items[id].quantity
+                    })
+                }
+
+                if (theater0_quantity <= body_quantity) {
+                    outpost0.items[id].quantity += body_quantity;
+
+                    delete theater0.items[id]
+
+                    MultiUpdate[0].profileChanges.push({
+                        "changeType": "itemQuantityChanged",
+                        "itemId": id,
+                        "quantity": outpost0.items[id].quantity
+                    });
+
+                    ApplyProfileChanges.push({
+                        "changeType": "itemRemoved",
+                        "itemId": id
+                    });
+                }
+            }
+
+            if (!outpost0.items[id] && theater0.items[id]) {
+                const Item = JSON.parse(JSON.stringify(theater0.items[id]));
+
+                if (theater0_quantity > body_quantity) {
+                    theater0.items[id].quantity -= body_quantity;
+
+                    Item.quantity = body_quantity;
+
+                    outpost0.items[id] = Item;
+
+                    MultiUpdate[0].profileChanges.push({
+                        "changeType": "itemAdded",
+                        "itemId": id,
+                        "item": Item
+                    })
+
+                    ApplyProfileChanges.push({
+                        "changeType": "itemQuantityChanged",
+                        "itemId": id,
+                        "quantity": theater0.items[id].quantity
+                    });
+                }
+
+                if (theater0_quantity <= body_quantity) {
+                    outpost0.items[id] = Item;
+
+                    delete theater0.items[id]
+
+                    MultiUpdate[0].profileChanges.push({
+                        "changeType": "itemAdded",
+                        "itemId": id,
+                        "item": Item
+                    })
+
+                    ApplyProfileChanges.push({
+                        "changeType": "itemRemoved",
+                        "itemId": id,
+                    })
+                }
+            }
+        }
+
+            for (var i = 0; i < req.body.outpostToTheaterItems.length; i++) {
+                let id = req.body.outpostToTheaterItems[i].itemId;
+                let body_quantity = Number(req.body.outpostToTheaterItems[i].quantity);
+                if (outpost0.items[id]) {
+                    var outpost0_quantity = Number(outpost0.items[id].quantity);
+                } else {
+                    var outpost0_quantity = "Unknown";
+                }
+                if (theater0.items[id]) {
+                    var theater0_quantity = Number(theater0.items[id].quantity);
+                } else {
+                    var theater0_quantity = "Unknown";
+                }
+
+                if (theater0.items[id] && outpost0.items[id]) {
+                    if (outpost0_quantity > body_quantity) {
+                        theater0.items[id].quantity += body_quantity;
+                        outpost0.items[id].quantity -= body_quantity;
+
+                        ApplyProfileChanges.push({
+                            "changeType": "itemQuantityChanged",
+                            "itemId": id,
+                            "quantity": theater0.items[id].quantity
+                        });
+
+                        MultiUpdate[0].profileChanges.push({
+                            "changeType": "itemQuantityChanged",
+                            "itemId": id,
+                            "quantity": outpost0.items[id].quantity
+                        })
+                    }
+
+                    if (outpost0_quantity <= body_quantity) {
+                        theater0.items[id].quantity += body_quantity;
+
+                        delete outpost0.items[id]
+
+                        ApplyProfileChanges.push({
+                            "changeType": "itemQuantityChanged",
+                            "itemId": id,
+                            "quantity": theater0.items[id].quantity
+                        });
+
+                        MultiUpdate[0].profileChanges.push({
+                            "changeType": "itemRemoved",
+                            "itemId": id
+                        });
+                    }
+                }
+
+                if (!theater0.items[id] && outpost0.items[id]) {
+                    const Item = JSON.parse(JSON.stringify(outpost0.items[id]));
+
+                    if (outpost0_quantity > body_quantity) {
+                        outpost0.items[id].quantity -= body_quantity;
+
+                        Item.quantity = body_quantity;
+
+                        theater0.items[id] = Item;
+
+                        ApplyProfileChanges.push({
+                            "changeType": "itemAdded",
+                            "itemId": id,
+                            "item": Item
+                        })
+
+                        MultiUpdate[0].profileChanges.push({
+                            "changeType": "itemQuantityChanged",
+                            "itemId": id,
+                            "quantity": outpost0.items[id].quantity
+                        });
+                    }
+
+                    if (outpost0_quantity <= body_quantity) {
+                        theater0.items[id] = Item;
+
+                        delete outpost0.items[id]
+
+                        ApplyProfileChanges.push({
+                            "changeType": "itemAdded",
+                            "itemId": id,
+                            "item": Item
+                        })
+
+                        MultiUpdate[0].profileChanges.push({
+                            "changeType": "itemRemoved",
+                            "itemId": id
+                        })
+                    }
+                }
+            }
+
+        StatChanged = true;
+    }
+
+    if (StatChanged == true) {
+        theater0.rvn += 1;
+        theater0.commandRevision += 1;
+        outpost0.rvn += 1;
+        outpost0.commandRevision += 1;
+
+        MultiUpdate[0].profileRevision = outpost0.rvn || 0;
+        MultiUpdate[0].profileCommandRevision = outpost0.commandRevision || 0;
+
+        fs.writeFileSync("./profiles/theater0.json", JSON.stringify(theater0, null, 2), function(err) {
+            if (err) {
+                console.log('error:', err)
+            };
+        });
+        fs.writeFileSync("./profiles/outpost0.json", JSON.stringify(outpost0, null, 2), function(err) {
+            if (err) {
+                console.log('error:', err)
+            };
+        });
+    }
+
+    // this doesn't work properly on version v12.20 and above but whatever
+    if (QueryRevision != BaseRevision) {
+        ApplyProfileChanges = [{
+            "changeType": "fullProfileUpdate",
+            "profile": theater0
+        }];
+    }
+
+    res.json({
+        "profileRevision": theater0.rvn || 0,
+        "profileId": "theater0",
+        "profileChangesBaseRevision": BaseRevision,
+        "profileChanges": ApplyProfileChanges,
+        "profileCommandRevision": theater0.commandRevision || 0,
+        "serverTime": new Date().toISOString(),
+        "multiUpdate": MultiUpdate,
+        "responseVersion": 1
+    })
+    res.status(200);
+    res.end();
+});
+
+// Modify quickbar STW
+express.post("/fortnite/api/game/v2/profile/*/client/ModifyQuickbar", async (req, res) => {
+    const profile = require(`./profiles/${req.query.profileId || "theater0"}.json`);
+
+    // do not change any of these or you will end up breaking it
+    var ApplyProfileChanges = [];
+    var BaseRevision = profile.rvn || 0;
+    var QueryRevision = req.query.rvn || -1;
+    var StatChanged = false;
+
+    if (req.body.primaryQuickbarChoices) {
+        for (var i = 0; i < req.body.primaryQuickbarChoices.length; i++) {
+            let a = i + 1;
+            var value = [req.body.primaryQuickbarChoices[i].replace(/-/ig, "").toUpperCase()];
+            if (req.body.primaryQuickbarChoices[i] == "") {
+                value = [];
+            }
+
+            profile.stats.attributes.player_loadout.primaryQuickBarRecord.slots[a].items = value;
+        }
+
+        StatChanged = true;
+    }
+
+    if (typeof req.body.secondaryQuickbarChoice == "string") {
+        var value = [req.body.secondaryQuickbarChoice.replace(/-/ig, "").toUpperCase()];
+        if (req.body.secondaryQuickbarChoice == "") {
+            value = [];
+        }
+
+        profile.stats.attributes.player_loadout.secondaryQuickBarRecord.slots[5].items = value;
+
+        StatChanged = true;
+    }
+
+    if (StatChanged == true) {
+        profile.rvn += 1;
+        profile.commandRevision += 1;
+
+        ApplyProfileChanges.push({
+            "changeType": "statModified",
+            "name": "player_loadout",
+            "value": profile.stats.attributes.player_loadout
+        })
+
+        fs.writeFileSync(`./profiles/${req.query.profileId || "theater0"}.json`, JSON.stringify(profile, null, 2), function(err) {
+            if (err) {
+                console.log('error:', err)
+            };
+        });
+    }
+
+    // this doesn't work properly on version v12.20 and above but whatever
+    if (QueryRevision != BaseRevision) {
+        ApplyProfileChanges = [{
+            "changeType": "fullProfileUpdate",
+            "profile": profile
+        }];
+    }
+
+    res.json({
+        "profileRevision": profile.rvn || 0,
+        "profileId": req.query.profileId || "theater0",
+        "profileChangesBaseRevision": BaseRevision,
+        "profileChanges": ApplyProfileChanges,
+        "profileCommandRevision": profile.commandRevision || 0,
+        "serverTime": new Date().toISOString(),
+        "responseVersion": 1
+    })
+    res.status(200);
+    res.end();
+});
+
+// Hero equipping STW
+express.post("/fortnite/api/game/v2/profile/*/client/AssignHeroToLoadout", async (req, res) => {
+    const profile = require(`./profiles/${req.query.profileId || "campaign"}.json`);
+
+    // do not change any of these or you will end up breaking it
+    var ApplyProfileChanges = [];
+    var BaseRevision = profile.rvn || 0;
+    var QueryRevision = req.query.rvn || -1;
+    var StatChanged = false;
+
+    if (req.body.loadoutId && req.body.slotName) {
+        switch (req.body.slotName) {
+            case "CommanderSlot":
+                if (req.body.heroId.toLowerCase() == profile.items[req.body.loadoutId].attributes.crew_members.followerslot1.toLowerCase()) {
+                    profile.items[req.body.loadoutId].attributes.crew_members.followerslot1 = "";
+                }
+                if (req.body.heroId.toLowerCase() == profile.items[req.body.loadoutId].attributes.crew_members.followerslot2.toLowerCase()) {
+                    profile.items[req.body.loadoutId].attributes.crew_members.followerslot2 = "";
+                }
+                if (req.body.heroId.toLowerCase() == profile.items[req.body.loadoutId].attributes.crew_members.followerslot3.toLowerCase()) {
+                    profile.items[req.body.loadoutId].attributes.crew_members.followerslot3 = "";
+                }
+                if (req.body.heroId.toLowerCase() == profile.items[req.body.loadoutId].attributes.crew_members.followerslot4.toLowerCase()) {
+                    profile.items[req.body.loadoutId].attributes.crew_members.followerslot4 = "";
+                }
+                if (req.body.heroId.toLowerCase() == profile.items[req.body.loadoutId].attributes.crew_members.followerslot5.toLowerCase()) {
+                    profile.items[req.body.loadoutId].attributes.crew_members.followerslot5 = "";
+                }
+
+                profile.items[req.body.loadoutId].attributes.crew_members.commanderslot = req.body.heroId || "";
+
+                StatChanged = true;
+            break;
+
+            case "FollowerSlot1":
+                if (req.body.heroId.toLowerCase() == profile.items[req.body.loadoutId].attributes.crew_members.commanderslot.toLowerCase()) {
+                    profile.items[req.body.loadoutId].attributes.crew_members.commanderslot = "";
+                }
+                if (req.body.heroId.toLowerCase() == profile.items[req.body.loadoutId].attributes.crew_members.followerslot2.toLowerCase()) {
+                    profile.items[req.body.loadoutId].attributes.crew_members.followerslot2 = "";
+                }
+                if (req.body.heroId.toLowerCase() == profile.items[req.body.loadoutId].attributes.crew_members.followerslot3.toLowerCase()) {
+                    profile.items[req.body.loadoutId].attributes.crew_members.followerslot3 = "";
+                }
+                if (req.body.heroId.toLowerCase() == profile.items[req.body.loadoutId].attributes.crew_members.followerslot4.toLowerCase()) {
+                    profile.items[req.body.loadoutId].attributes.crew_members.followerslot4 = "";
+                }
+                if (req.body.heroId.toLowerCase() == profile.items[req.body.loadoutId].attributes.crew_members.followerslot5.toLowerCase()) {
+                    profile.items[req.body.loadoutId].attributes.crew_members.followerslot5 = "";
+                }
+
+                profile.items[req.body.loadoutId].attributes.crew_members.followerslot1 = req.body.heroId || "";
+
+                StatChanged = true;
+            break;
+
+            case "FollowerSlot2":
+                if (req.body.heroId.toLowerCase() == profile.items[req.body.loadoutId].attributes.crew_members.followerslot1.toLowerCase()) {
+                    profile.items[req.body.loadoutId].attributes.crew_members.followerslot1 = "";
+                }
+                if (req.body.heroId.toLowerCase() == profile.items[req.body.loadoutId].attributes.crew_members.commanderslot.toLowerCase()) {
+                    profile.items[req.body.loadoutId].attributes.crew_members.commanderslot = "";
+                }
+                if (req.body.heroId.toLowerCase() == profile.items[req.body.loadoutId].attributes.crew_members.followerslot3.toLowerCase()) {
+                    profile.items[req.body.loadoutId].attributes.crew_members.followerslot3 = "";
+                }
+                if (req.body.heroId.toLowerCase() == profile.items[req.body.loadoutId].attributes.crew_members.followerslot4.toLowerCase()) {
+                    profile.items[req.body.loadoutId].attributes.crew_members.followerslot4 = "";
+                }
+                if (req.body.heroId.toLowerCase() == profile.items[req.body.loadoutId].attributes.crew_members.followerslot5.toLowerCase()) {
+                    profile.items[req.body.loadoutId].attributes.crew_members.followerslot5 = "";
+                }
+
+                profile.items[req.body.loadoutId].attributes.crew_members.followerslot2 = req.body.heroId || "";
+
+                StatChanged = true;
+            break;
+
+            case "FollowerSlot3":
+                if (req.body.heroId.toLowerCase() == profile.items[req.body.loadoutId].attributes.crew_members.followerslot1.toLowerCase()) {
+                    profile.items[req.body.loadoutId].attributes.crew_members.followerslot1 = "";
+                }
+                if (req.body.heroId.toLowerCase() == profile.items[req.body.loadoutId].attributes.crew_members.followerslot2.toLowerCase()) {
+                    profile.items[req.body.loadoutId].attributes.crew_members.followerslot2 = "";
+                }
+                if (req.body.heroId.toLowerCase() == profile.items[req.body.loadoutId].attributes.crew_members.commanderslot.toLowerCase()) {
+                    profile.items[req.body.loadoutId].attributes.crew_members.commanderslot = "";
+                }
+                if (req.body.heroId.toLowerCase() == profile.items[req.body.loadoutId].attributes.crew_members.followerslot4.toLowerCase()) {
+                    profile.items[req.body.loadoutId].attributes.crew_members.followerslot4 = "";
+                }
+                if (req.body.heroId.toLowerCase() == profile.items[req.body.loadoutId].attributes.crew_members.followerslot5.toLowerCase()) {
+                    profile.items[req.body.loadoutId].attributes.crew_members.followerslot5 = "";
+                }
+
+                profile.items[req.body.loadoutId].attributes.crew_members.followerslot3 = req.body.heroId || "";
+
+                StatChanged = true;
+            break;
+
+            case "FollowerSlot4":
+                if (req.body.heroId.toLowerCase() == profile.items[req.body.loadoutId].attributes.crew_members.followerslot1.toLowerCase()) {
+                    profile.items[req.body.loadoutId].attributes.crew_members.followerslot1 = "";
+                }
+                if (req.body.heroId.toLowerCase() == profile.items[req.body.loadoutId].attributes.crew_members.followerslot2.toLowerCase()) {
+                    profile.items[req.body.loadoutId].attributes.crew_members.followerslot2 = "";
+                }
+                if (req.body.heroId.toLowerCase() == profile.items[req.body.loadoutId].attributes.crew_members.followerslot3.toLowerCase()) {
+                    profile.items[req.body.loadoutId].attributes.crew_members.followerslot3 = "";
+                }
+                if (req.body.heroId.toLowerCase() == profile.items[req.body.loadoutId].attributes.crew_members.commanderslot.toLowerCase()) {
+                    profile.items[req.body.loadoutId].attributes.crew_members.commanderslot = "";
+                }
+                if (req.body.heroId.toLowerCase() == profile.items[req.body.loadoutId].attributes.crew_members.followerslot5.toLowerCase()) {
+                    profile.items[req.body.loadoutId].attributes.crew_members.followerslot5 = "";
+                }
+
+                profile.items[req.body.loadoutId].attributes.crew_members.followerslot4 = req.body.heroId || "";
+
+                StatChanged = true;
+            break;
+
+            case "FollowerSlot5":
+                if (req.body.heroId.toLowerCase() == profile.items[req.body.loadoutId].attributes.crew_members.followerslot1.toLowerCase()) {
+                    profile.items[req.body.loadoutId].attributes.crew_members.followerslot1 = "";
+                }
+                if (req.body.heroId.toLowerCase() == profile.items[req.body.loadoutId].attributes.crew_members.followerslot2.toLowerCase()) {
+                    profile.items[req.body.loadoutId].attributes.crew_members.followerslot2 = "";
+                }
+                if (req.body.heroId.toLowerCase() == profile.items[req.body.loadoutId].attributes.crew_members.followerslot3.toLowerCase()) {
+                    profile.items[req.body.loadoutId].attributes.crew_members.followerslot3 = "";
+                }
+                if (req.body.heroId.toLowerCase() == profile.items[req.body.loadoutId].attributes.crew_members.followerslot4.toLowerCase()) {
+                    profile.items[req.body.loadoutId].attributes.crew_members.followerslot4 = "";
+                }
+                if (req.body.heroId.toLowerCase() == profile.items[req.body.loadoutId].attributes.crew_members.commanderslot.toLowerCase()) {
+                    profile.items[req.body.loadoutId].attributes.crew_members.commanderslot = "";
+                }
+
+                profile.items[req.body.loadoutId].attributes.crew_members.followerslot5 = req.body.heroId || "";
+
+                StatChanged = true;
+            break;
+        }
+    }
+
+    if (StatChanged == true) {
+        profile.rvn += 1;
+        profile.commandRevision += 1;
+
+        ApplyProfileChanges.push({
+            "changeType": "itemAttrChanged",
+            "itemId": req.body.loadoutId,
+            "attributeName": "crew_members",
+            "attributeValue": profile.items[req.body.loadoutId].attributes.crew_members
+        })
+
+        fs.writeFileSync(`./profiles/${req.query.profileId || "campaign"}.json`, JSON.stringify(profile, null, 2), function(err) {
+            if (err) {
+                console.log('error:', err)
+            };
+        });
+    }
+
+    // this doesn't work properly on version v12.20 and above but whatever
+    if (QueryRevision != BaseRevision) {
+        ApplyProfileChanges = [{
+            "changeType": "fullProfileUpdate",
+            "profile": profile
+        }];
+    }
+
+    res.json({
+        "profileRevision": profile.rvn || 0,
+        "profileId": req.query.profileId || "campaign",
+        "profileChangesBaseRevision": BaseRevision,
+        "profileChanges": ApplyProfileChanges,
+        "profileCommandRevision": profile.commandRevision || 0,
+        "serverTime": new Date().toISOString(),
+        "responseVersion": 1
+    })
+    res.status(200);
+    res.end();
+});
+
+// Clear hero loadout STW
+express.post("/fortnite/api/game/v2/profile/*/client/ClearHeroLoadout", async (req, res) => {
+    const profile = require(`./profiles/${req.query.profileId || "campaign"}.json`);
+
+    // do not change any of these or you will end up breaking it
+    var ApplyProfileChanges = [];
+    var BaseRevision = profile.rvn || 0;
+    var QueryRevision = req.query.rvn || -1;
+    var StatChanged = false;
+
+    if (req.body.loadoutId) {
+        profile.items[req.body.loadoutId].attributes = {
+            "team_perk": "",
+            "loadout_name": profile.items[req.body.loadoutId].attributes.loadout_name,
+            "crew_members": {
+                "followerslot5": "",
+                "followerslot4": "",
+                "followerslot3": "",
+                "followerslot2": "",
+                "followerslot1": "",
+                "commanderslot": profile.items[req.body.loadoutId].attributes.crew_members.commanderslot
+            },
+            "loadout_index": profile.items[req.body.loadoutId].attributes.loadout_index,
+            "gadgets": [
+                {
+                    "gadget": "",
+                    "slot_index": 0
+                },
+                {
+                    "gadget": "",
+                    "slot_index": 1
+                }
+            ]
+        }
+
+        StatChanged = true;
+    }
+
+    if (StatChanged == true) {
+        profile.rvn += 1;
+        profile.commandRevision += 1;
+
+        ApplyProfileChanges.push({
+            "changeType": "itemAttrChanged",
+            "itemId": req.body.loadoutId,
+            "attributeName": "team_perk",
+            "attributeValue": profile.items[req.body.loadoutId].attributes.team_perk
+        })
+
+        ApplyProfileChanges.push({
+            "changeType": "itemAttrChanged",
+            "itemId": req.body.loadoutId,
+            "attributeName": "crew_members",
+            "attributeValue": profile.items[req.body.loadoutId].attributes.crew_members
+        })
+
+        ApplyProfileChanges.push({
+            "changeType": "itemAttrChanged",
+            "itemId": req.body.loadoutId,
+            "attributeName": "gadgets",
+            "attributeValue": profile.items[req.body.loadoutId].attributes.gadgets
+        })
+
+        fs.writeFileSync(`./profiles/${req.query.profileId || "campaign"}.json`, JSON.stringify(profile, null, 2), function(err) {
+            if (err) {
+                console.log('error:', err)
+            };
+        });
+    }
+
+    // this doesn't work properly on version v12.20 and above but whatever
+    if (QueryRevision != BaseRevision) {
+        ApplyProfileChanges = [{
+            "changeType": "fullProfileUpdate",
+            "profile": profile
+        }];
+    }
+
+    res.json({
+        "profileRevision": profile.rvn || 0,
+        "profileId": req.query.profileId || "campaign",
+        "profileChangesBaseRevision": BaseRevision,
+        "profileChanges": ApplyProfileChanges,
+        "profileCommandRevision": profile.commandRevision || 0,
+        "serverTime": new Date().toISOString(),
+        "responseVersion": 1
+    })
+    res.status(200);
+    res.end();
+});
+
+// Recycle items STW
+express.post("/fortnite/api/game/v2/profile/*/client/RecycleItemBatch", async (req, res) => {
+    const profile = require(`./profiles/${req.query.profileId || "campaign"}.json`);
+
+    // do not change any of these or you will end up breaking it
+    var ApplyProfileChanges = [];
+    var BaseRevision = profile.rvn || 0;
+    var QueryRevision = req.query.rvn || -1;
+    var StatChanged = false;
+
+    if (req.body.targetItemIds) {
+        for (var i = 0; i < req.body.targetItemIds.length; i++) {
+            let id = req.body.targetItemIds[i];
+
+            delete profile.items[id];
+
+            ApplyProfileChanges.push({
+                "changeType": "itemRemoved",
+                "itemId": id
+            })
+        }
+        StatChanged = true;
+    }
+
+    if (StatChanged == true) {
+        profile.rvn += 1;
+        profile.commandRevision += 1;
+
+        fs.writeFileSync(`./profiles/${req.query.profileId || "campaign"}.json`, JSON.stringify(profile, null, 2), function(err) {
+            if (err) {
+                console.log('error:', err)
+            };
+        });
+    }
+
+    // this doesn't work properly on version v12.20 and above but whatever
+    if (QueryRevision != BaseRevision) {
+        ApplyProfileChanges = [{
+            "changeType": "fullProfileUpdate",
+            "profile": profile
+        }];
+    }
+
+    res.json({
+        "profileRevision": profile.rvn || 0,
+        "profileId": req.query.profileId || "campaign",
+        "profileChangesBaseRevision": BaseRevision,
+        "profileChanges": ApplyProfileChanges,
+        "profileCommandRevision": profile.commandRevision || 0,
+        "serverTime": new Date().toISOString(),
+        "responseVersion": 1
+    })
+    res.status(200);
+    res.end();
+});
+
+// Add item from collection book STW
+express.post("/fortnite/api/game/v2/profile/*/client/ResearchItemFromCollectionBook", async (req, res) => {
+    function makeid() {
+        let CurrentDate = (new Date()).valueOf().toString();
+        let RandomFloat = Math.random().toString();
+        let ID = crypto.createHash('md5').update(CurrentDate + RandomFloat).digest('hex');
+        let FinishedID = ID.slice(0, 8) + "-" + ID.slice(8, 12) + "-" + ID.slice(12, 16) + "-" + ID.slice(16, 20) + "-" + ID.slice(20, 32);
+        return FinishedID;
+    }
+
+    const profile = require(`./profiles/${req.query.profileId || "campaign"}.json`);
+
+    // do not change any of these or you will end up breaking it
+    var ApplyProfileChanges = [];
+    var BaseRevision = profile.rvn || 0;
+    var QueryRevision = req.query.rvn || -1;
+    var StatChanged = false;
+
+    const ID = makeid();
+
+    if (req.body.templateId) {
+        profile.items[ID] = {
+            "templateId": req.body.templateId,
+            "attributes": {
+                "last_state_change_time": "2017-08-29T21:05:57.087Z",
+                "max_level_bonus": 0,
+                "level": 1,
+                "item_seen": false,
+                "xp": 0,
+                "sent_new_notification": true,
+                "favorite": false
+            },
+            "quantity": 1
+        }
+
+        StatChanged = true;
+    }
+
+    if (StatChanged == true) {
+        profile.rvn += 1;
+        profile.commandRevision += 1;
+
+        ApplyProfileChanges.push({
+            "changeType": "itemAdded",
+            "itemId": ID,
+            "item": profile.items[ID]
+        })
+
+        fs.writeFileSync(`./profiles/${req.query.profileId || "campaign"}.json`, JSON.stringify(profile, null, 2), function(err) {
+            if (err) {
+                console.log('error:', err)
+            };
+        });
+    }
+
+    // this doesn't work properly on version v12.20 and above but whatever
+    if (QueryRevision != BaseRevision) {
+        ApplyProfileChanges = [{
+            "changeType": "fullProfileUpdate",
+            "profile": profile
+        }];
+    }
+
+    res.json({
+        "profileRevision": profile.rvn || 0,
+        "profileId": req.query.profileId || "campaign",
+        "profileChangesBaseRevision": BaseRevision,
+        "profileChanges": ApplyProfileChanges,
+        "profileCommandRevision": profile.commandRevision || 0,
+        "serverTime": new Date().toISOString(),
+        "responseVersion": 1
+    })
+    res.status(200);
+    res.end();
+});
+
+// Slot item in collection book STW
+express.post("/fortnite/api/game/v2/profile/*/client/SlotItemInCollectionBook", async (req, res) => {
+    const profile = require(`./profiles/${req.query.profileId || "campaign"}.json`);
+
+    // do not change any of these or you will end up breaking it
+    var ApplyProfileChanges = [];
+    var MultiUpdate = [];
+    var Notifications = [];
+    var BaseRevision = profile.rvn || 0;
+    var QueryRevision = req.query.rvn || -1;
+    var StatChanged = false;
+
+    var collection_book_profile = require("./profiles/collection_book_people0.json");
+
+    if (profile.items[req.body.itemId].templateId.toLowerCase().startsWith("schematic:")) {
+        collection_book_profile = require("./profiles/collection_book_schematics0.json");
+    }
+
+    var CollectionBookProfileBaseRevision = collection_book_profile.rvn || 0;
+
+    if (req.body.itemId) {
+        MultiUpdate.push({
+            "profileRevision": collection_book_profile.rvn || 0,
+            "profileId": collection_book_profile.profileId || "collection_book_people0",
+            "profileChangesBaseRevision": CollectionBookProfileBaseRevision,
+            "profileChanges": [],
+            "profileCommandRevision": collection_book_profile.commandRevision || 0,
+        })
+
+        collection_book_profile.items[req.body.itemId] = profile.items[req.body.itemId];
+
+        delete profile.items[req.body.itemId];
+
+        StatChanged = true;
+    }
+
+    if (StatChanged == true) {
+        profile.rvn += 1;
+        profile.commandRevision += 1;
+        collection_book_profile.rvn += 1;
+        collection_book_profile.commandRevision += 1;
+
+        MultiUpdate[0].profileRevision = collection_book_profile.rvn || 0;
+        MultiUpdate[0].profileCommandRevision = collection_book_profile.commandRevision || 0;
+
+        ApplyProfileChanges.push({
+            "changeType": "itemRemoved",
+            "itemId": req.body.itemId
+        })
+
+        MultiUpdate[0].profileChanges.push({
+            "changeType": "itemAdded",
+            "itemId": req.body.itemId,
+            "item": collection_book_profile.items[req.body.itemId]
+        })
+
+        Notifications.push({
+            "type": "slotItemResult",
+            "primary": true,
+            "slottedItemId": req.body.itemId
+        })
+
+        fs.writeFileSync(`./profiles/${req.query.profileId || "campaign"}.json`, JSON.stringify(profile, null, 2), function(err) {
+            if (err) {
+                console.log('error:', err)
+            };
+        });
+        fs.writeFileSync(`./profiles/${collection_book_profile.profileId || "collection_book_people0"}.json`, JSON.stringify(collection_book_profile, null, 2), function(err) {
+            if (err) {
+                console.log('error:', err)
+            };
+        });
+    }
+
+    // this doesn't work properly on version v12.20 and above but whatever
+    if (QueryRevision != BaseRevision) {
+        ApplyProfileChanges = [{
+            "changeType": "fullProfileUpdate",
+            "profile": profile
+        }];
+    }
+
+    res.json({
+        "profileRevision": profile.rvn || 0,
+        "profileId": req.query.profileId || "campaign",
+        "profileChangesBaseRevision": BaseRevision,
+        "profileChanges": ApplyProfileChanges,
+        "notifications": Notifications,
+        "profileCommandRevision": profile.commandRevision || 0,
+        "serverTime": new Date().toISOString(),
+        "multiUpdate": MultiUpdate,
+        "responseVersion": 1
+    })
+    res.status(200);
+    res.end();
+});
+
+// Unslot item from collection book STW
+express.post("/fortnite/api/game/v2/profile/*/client/UnslotItemFromCollectionBook", async (req, res) => {
+    function makeid() {
+        let CurrentDate = (new Date()).valueOf().toString();
+        let RandomFloat = Math.random().toString();
+        let ID = crypto.createHash('md5').update(CurrentDate + RandomFloat).digest('hex');
+        let FinishedID = ID.slice(0, 8) + "-" + ID.slice(8, 12) + "-" + ID.slice(12, 16) + "-" + ID.slice(16, 20) + "-" + ID.slice(20, 32);
+        return FinishedID;
+    }
+
+    const profile = require(`./profiles/${req.query.profileId || "campaign"}.json`);
+
+    // do not change any of these or you will end up breaking it
+    var ApplyProfileChanges = [];
+    var MultiUpdate = [];
+    var Notifications = [];
+    var BaseRevision = profile.rvn || 0;
+    var QueryRevision = req.query.rvn || -1;
+    var StatChanged = false;
+
+    var collection_book_profile = require("./profiles/collection_book_people0.json");
+
+    if (req.body.templateId.toLowerCase().startsWith("schematic:")) {
+        collection_book_profile = require("./profiles/collection_book_schematics0.json");
+    }
+
+    var CollectionBookProfileBaseRevision = collection_book_profile.rvn || 0;
+    const ID = makeid();
+
+    MultiUpdate.push({
+        "profileRevision": collection_book_profile.rvn || 0,
+        "profileId": collection_book_profile.profileId || "collection_book_people0",
+        "profileChangesBaseRevision": CollectionBookProfileBaseRevision,
+        "profileChanges": [],
+        "profileCommandRevision": collection_book_profile.commandRevision || 0,
+    })
+
+    if (profile.items[req.body.itemId]) {
+        profile.items[ID] = collection_book_profile.items[req.body.itemId];
+        ApplyProfileChanges.push({
+            "changeType": "itemAdded",
+            "itemId": ID,
+            "item": profile.items[ID]
+        })
+
+        delete collection_book_profile.items[req.body.itemId];
+        MultiUpdate[0].profileChanges.push({
+            "changeType": "itemRemoved",
+            "itemId": req.body.itemId
+        })
+
+        StatChanged = true;
+    }
+
+    if (!profile.items[req.body.itemId]) {
+        profile.items[req.body.itemId] = collection_book_profile.items[req.body.itemId];
+        ApplyProfileChanges.push({
+            "changeType": "itemAdded",
+            "itemId": req.body.itemId,
+            "item": profile.items[req.body.itemId]
+        })
+
+        delete collection_book_profile.items[req.body.itemId];
+        MultiUpdate[0].profileChanges.push({
+            "changeType": "itemRemoved",
+            "itemId": req.body.itemId
+        })
+
+        StatChanged = true;
+    }
+
+    if (StatChanged == true) {
+        profile.rvn += 1;
+        profile.commandRevision += 1;
+        collection_book_profile.rvn += 1;
+        collection_book_profile.commandRevision += 1;
+
+        MultiUpdate[0].profileRevision = collection_book_profile.rvn || 0;
+        MultiUpdate[0].profileCommandRevision = collection_book_profile.commandRevision || 0;
+
+        fs.writeFileSync(`./profiles/${req.query.profileId || "campaign"}.json`, JSON.stringify(profile, null, 2), function(err) {
+            if (err) {
+                console.log('error:', err)
+            };
+        });
+        fs.writeFileSync(`./profiles/${collection_book_profile.profileId || "collection_book_people0"}.json`, JSON.stringify(collection_book_profile, null, 2), function(err) {
+            if (err) {
+                console.log('error:', err)
+            };
+        });
+    }
+
+    // this doesn't work properly on version v12.20 and above but whatever
+    if (QueryRevision != BaseRevision) {
+        ApplyProfileChanges = [{
+            "changeType": "fullProfileUpdate",
+            "profile": profile
+        }];
+    }
+
+    res.json({
+        "profileRevision": profile.rvn || 0,
+        "profileId": req.query.profileId || "campaign",
+        "profileChangesBaseRevision": BaseRevision,
+        "profileChanges": ApplyProfileChanges,
+        "notifications": Notifications,
+        "profileCommandRevision": profile.commandRevision || 0,
+        "serverTime": new Date().toISOString(),
+        "multiUpdate": MultiUpdate,
+        "responseVersion": 1
+    })
+    res.status(200);
+    res.end();
+});
+
+// Claim collection book rewards STW
+express.post("/fortnite/api/game/v2/profile/*/client/ClaimCollectionBookRewards", async (req, res) => {
+    const profile = require(`./profiles/${req.query.profileId || "campaign"}.json`);
+
+    // do not change any of these or you will end up breaking it
+    var ApplyProfileChanges = [];
+    var BaseRevision = profile.rvn || 0;
+    var QueryRevision = req.query.rvn || -1;
+    var StatChanged = false;
+
+    if (req.body.requiredXp) {
+        profile.stats.attributes.collection_book.maxBookXpLevelAchieved += 1;
+        StatChanged = true;
+    }
+
+    if (StatChanged == true) {
+        profile.rvn += 1;
+        profile.commandRevision += 1;
+
+        ApplyProfileChanges.push({
+            "changeType": "statModified",
+            "name": "collection_book",
+            "value": profile.stats.attributes.collection_book
+        })
+
+        fs.writeFileSync(`./profiles/${req.query.profileId || "campaign"}.json`, JSON.stringify(profile, null, 2), function(err) {
+            if (err) {
+                console.log('error:', err)
+            };
+        });
+    }
+
+    // this doesn't work properly on version v12.20 and above but whatever
+    if (QueryRevision != BaseRevision) {
+        ApplyProfileChanges = [{
+            "changeType": "fullProfileUpdate",
+            "profile": profile
+        }];
+    }
+
+    res.json({
+        "profileRevision": profile.rvn || 0,
+        "profileId": req.query.profileId || "campaign",
+        "profileChangesBaseRevision": BaseRevision,
+        "profileChanges": ApplyProfileChanges,
+        "profileCommandRevision": profile.commandRevision || 0,
+        "serverTime": new Date().toISOString(),
+        "responseVersion": 1
+    })
+    res.status(200);
+    res.end();
+});
+
 // Open llama STW
 express.post("/fortnite/api/game/v2/profile/*/client/OpenCardPack", async (req, res) => {
-    function makeid(length) {
-        var result = '';
-        var characters = '0123456789abcdefghiklmnopqrstuvwxyz';
-        var charactersLength = characters.length;
-        for (var i = 0; i < length; i++) {
-            result += characters.charAt(Math.floor(Math.random() * charactersLength));
-        }
-        return result;
+    function makeid() {
+        let CurrentDate = (new Date()).valueOf().toString();
+        let RandomFloat = Math.random().toString();
+        let ID = crypto.createHash('md5').update(CurrentDate + RandomFloat).digest('hex');
+        let FinishedID = ID.slice(0, 8) + "-" + ID.slice(8, 12) + "-" + ID.slice(12, 16) + "-" + ID.slice(16, 20) + "-" + ID.slice(20, 32);
+        return FinishedID;
     }
 
     const profile = require(`./profiles/${req.query.profileId || "campaign"}.json`);
@@ -1558,11 +3394,11 @@ express.post("/fortnite/api/game/v2/profile/*/client/OpenCardPack", async (req, 
 
         for (var i = 0; i < 10; i++) {
             const randomNumber = Math.floor(Math.random() * ItemIDS.length);
-            const Letters = makeid(9) + "-" + makeid(4);
+            const ID = makeid();
 
             ApplyProfileChanges.push({
                 "changeType": "itemAdded",
-                "itemId": ItemIDS[randomNumber] + Letters,
+                "itemId": ID,
                 "item": {
                     "templateId": ItemIDS[randomNumber],
                     "attributes": {
@@ -1580,7 +3416,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/OpenCardPack", async (req, 
 
             Notifications[0].lootGranted.items.push({
                 "itemType": ItemIDS[randomNumber],
-                "itemGuid": ItemIDS[randomNumber] + Letters,
+                "itemGuid": ID,
                 "itemProfile": req.query.profileId,
                 "attributes": {
                     "Alteration": {
@@ -1591,7 +3427,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/OpenCardPack", async (req, 
                 "quantity": 1
             })
 
-            profile.items[ItemIDS[randomNumber] + Letters] = {
+            profile.items[ID] = {
                 "templateId": ItemIDS[randomNumber],
                 "attributes": {
                     "last_state_change_time": "2017-08-29T21:05:57.087Z",
@@ -1658,15 +3494,13 @@ express.post("/fortnite/api/game/v2/profile/*/client/OpenCardPack", async (req, 
 
 	// Purchase llama STW
 	express.post("/fortnite/api/game/v2/profile/*/client/PurchaseCatalogEntry", async (req, res) => {
-	    function makeid(length) {
-	        var result = '';
-	        var characters = '0123456789abcdefghiklmnopqrstuvwxyz';
-	        var charactersLength = characters.length;
-	        for (var i = 0; i < length; i++) {
-	            result += characters.charAt(Math.floor(Math.random() * charactersLength));
-	        }
-	        return result;
-	    }
+	function makeid() {
+		let CurrentDate = (new Date()).valueOf().toString();
+		let RandomFloat = Math.random().toString();
+		let ID = crypto.createHash('md5').update(CurrentDate + RandomFloat).digest('hex');
+		let FinishedID = ID.slice(0, 8) + "-" + ID.slice(8, 12) + "-" + ID.slice(12, 16) + "-" + ID.slice(16, 20) + "-" + ID.slice(20, 32);
+		return FinishedID;
+	}
 
 	    const profile = require(`./profiles/${req.query.profileId || "profile0"}.json`);
 	    const campaign = require("./profiles/campaign.json");
@@ -1681,7 +3515,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/OpenCardPack", async (req, 
 	    var QueryRevision = req.query.rvn || -1;
 	    var PurchasedLlama = false;
 
-	    const Letters = makeid(9) + "-" + makeid(4)
+	    const ID = makeid();
 
 	    if (req.body.offerId && profile.profileId == "profile0" && PurchasedLlama == false) {
 	        profile.rvn += 1;
@@ -1708,11 +3542,11 @@ express.post("/fortnite/api/game/v2/profile/*/client/OpenCardPack", async (req, 
 
 	                        Item.quantity = req.body.purchaseQuantity || 1;
 
-	                        profile.items[value.templateId + Letters] = Item
+	                        profile.items[ID] = Item
 
 	                        ApplyProfileChanges.push({
 	                            "changeType": "itemAdded",
-	                            "itemId": value.templateId + Letters,
+	                            "itemId": ID,
 	                            "item": Item
 	                        })
 	                    })
@@ -1759,7 +3593,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/OpenCardPack", async (req, 
 
 	                            Item.quantity = req.body.purchaseQuantity || 1;
 
-	                            campaign.items[value.templateId + Letters] = Item
+	                            campaign.items[ID] = Item
 
 	                            MultiUpdate.push({
 	                                "profileRevision": campaign.rvn || 0,
@@ -1767,7 +3601,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/OpenCardPack", async (req, 
 	                                "profileChangesBaseRevision": CampaignBaseRevision,
 	                                "profileChanges": [{
 	                                    "changeType": "itemAdded",
-	                                    "itemId": value.templateId + Letters,
+	                                    "itemId": ID,
 	                                    "item": Item
 	                                }],
 	                                "profileCommandRevision": campaign.commandRevision || 0,
@@ -1794,7 +3628,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/OpenCardPack", async (req, 
 
 	                            Item.quantity = req.body.purchaseQuantity || 1;
 
-	                            campaign.items[value.templateId + Letters] = Item
+	                            campaign.items[ID] = Item
 
 	                            MultiUpdate.push({
 	                                "profileRevision": campaign.rvn || 0,
@@ -1802,7 +3636,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/OpenCardPack", async (req, 
 	                                "profileChangesBaseRevision": CampaignBaseRevision,
 	                                "profileChanges": [{
 	                                    "changeType": "itemAdded",
-	                                    "itemId": value.templateId + Letters,
+	                                    "itemId": ID,
 	                                    "item": Item
 	                                }],
 	                                "profileCommandRevision": campaign.commandRevision || 0,
@@ -1812,7 +3646,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/OpenCardPack", async (req, 
 	                                "type": "cardPackResult",
 	                                "primary": true,
 	                                "lootGranted": {
-	                                    "tierGroupName": campaign.items[value.templateId + Letters].templateId.split(":")[1],
+	                                    "tierGroupName": campaign.items[ID].templateId.split(":")[1],
 	                                    "items": []
 	                                },
 	                                "displayLevel": 0
@@ -1839,7 +3673,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/OpenCardPack", async (req, 
 
 	                            Item.quantity = req.body.purchaseQuantity || 1;
 
-	                            campaign.items[value.templateId + Letters] = Item
+	                            campaign.items[ID] = Item
 
 	                            MultiUpdate.push({
 	                                "profileRevision": campaign.rvn || 0,
@@ -1851,7 +3685,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/OpenCardPack", async (req, 
 
 	                            MultiUpdate[0].profileChanges.push({
 	                                "changeType": "itemAdded",
-	                                "itemId": value.templateId + Letters,
+	                                "itemId": ID,
 	                                "item": Item
 	                            })
 
@@ -1865,11 +3699,11 @@ express.post("/fortnite/api/game/v2/profile/*/client/OpenCardPack", async (req, 
 
 	                            for (var i = 0; i < 10; i++) {
 	                                const randomNumber = Math.floor(Math.random() * ItemIDS.length);
-	                                const ItemLetters = makeid(9) + "-" + makeid(4);
+	                                const id = makeid();
 
 	                                MultiUpdate[0].profileChanges.push({
 	                                    "changeType": "itemAdded",
-	                                    "itemId": ItemIDS[randomNumber] + ItemLetters,
+	                                    "itemId": id,
 	                                    "item": {
 	                                        "templateId": ItemIDS[randomNumber],
 	                                        "attributes": {
@@ -1887,13 +3721,13 @@ express.post("/fortnite/api/game/v2/profile/*/client/OpenCardPack", async (req, 
 
 	                                Notifications[0].lootResult.items.push({
 	                                    "itemType": ItemIDS[randomNumber],
-	                                    "itemGuid": ItemIDS[randomNumber] + ItemLetters,
+	                                    "itemGuid": id,
 	                                    "itemProfile": "campaign",
 	                                    "attributes": {},
 	                                    "quantity": 1
 	                                })
 
-	                                campaign.items[ItemIDS[randomNumber] + ItemLetters] = {
+	                                campaign.items[id] = {
 	                                    "templateId": ItemIDS[randomNumber],
 	                                    "attributes": {
 	                                        "last_state_change_time": "2017-08-29T21:05:57.087Z",
@@ -1908,23 +3742,23 @@ express.post("/fortnite/api/game/v2/profile/*/client/OpenCardPack", async (req, 
 	                                }
 	                            }
 
-	                            if (campaign.items[value.templateId + Letters].quantity == 1) {
-	                                delete campaign.items[value.templateId + Letters]
+	                            if (campaign.items[ID].quantity == 1) {
+	                                delete campaign.items[ID]
 
 	                                MultiUpdate[0].profileChanges.push({
 	                                    "changeType": "itemRemoved",
-	                                    "itemId": value.templateId + Letters
+	                                    "itemId": ID
 	                                })
 	                            }
 
 	                            if (true) {
 	                                try {
-	                                    campaign.items[value.templateId + Letters].quantity -= 1;
+	                                    campaign.items[ID].quantity -= 1;
 
 	                                    MultiUpdate[0].profileChanges.push({
 	                                        "changeType": "itemQuantityChanged",
-	                                        "itemId": value.templateId + Letters,
-	                                        "quantity": campaign.items[value.templateId + Letters].quantity
+	                                        "itemId": ID,
+	                                        "quantity": campaign.items[ID].quantity
 	                                    })
 	                                } catch (err) {}
 	                            }
@@ -1975,6 +3809,11 @@ express.post("/fortnite/api/game/v2/profile/*/client/OpenCardPack", async (req, 
 	        const seasondata = require("./season.json");
 	        seasonchecker(req, seasondata);
 	        profile.stats.attributes.season_num = seasondata.season;
+            	if (seasondata.season == 2) {
+                	profile.stats.attributes.book_level = 70;
+            	} else {
+                	profile.stats.attributes.book_level = 100;
+            	}
 	    }
 
 	    // do not change any of these or you will end up breaking it
@@ -2038,6 +3877,11 @@ express.post("/fortnite/api/game/v2/profile/*/client/OpenCardPack", async (req, 
 	        const seasondata = require("./season.json");
 	        seasonchecker(req, seasondata);
 	        profile.stats.attributes.season_num = seasondata.season;
+            	if (seasondata.season == 2) {
+                	profile.stats.attributes.book_level = 70;
+            	} else {
+                	profile.stats.attributes.book_level = 100;
+            	}
 	    }
 
 	    // do not change any of these or you will end up breaking it
@@ -2099,6 +3943,11 @@ express.post("/fortnite/api/game/v2/profile/*/client/OpenCardPack", async (req, 
 	        const seasondata = require("./season.json");
 	        seasonchecker(req, seasondata);
 	        profile.stats.attributes.season_num = seasondata.season;
+            	if (seasondata.season == 2) {
+                	profile.stats.attributes.book_level = 70;
+            	} else {
+                	profile.stats.attributes.book_level = 100;
+            	}
 	    }
 
 	    // do not change any of these or you will end up breaking it
@@ -2160,6 +4009,11 @@ express.post("/fortnite/api/game/v2/profile/*/client/EquipBattleRoyaleCustomizat
     const seasondata = require("./season.json");
     seasonchecker(req, seasondata);
     profile.stats.attributes.season_num = seasondata.season;
+    if (seasondata.season == 2) {
+	    profile.stats.attributes.book_level = 70;
+    } else {
+	    profile.stats.attributes.book_level = 100;
+    }
 
     // do not change any of these or you will end up breaking it
     var ApplyProfileChanges = [];
@@ -2319,6 +4173,11 @@ express.post("/fortnite/api/game/v2/profile/*/client/SetBattleRoyaleBanner", asy
     const seasondata = require("./season.json");
     seasonchecker(req, seasondata);
     profile.stats.attributes.season_num = seasondata.season;
+    if (seasondata.season == 2) {
+	    profile.stats.attributes.book_level = 70;
+    } else {
+	    profile.stats.attributes.book_level = 100;
+    }
 
     // do not change any of these or you will end up breaking it
     var ApplyProfileChanges = [];
@@ -2385,6 +4244,11 @@ express.post("/fortnite/api/game/v2/profile/*/client/SetCosmeticLockerBanner", a
         const seasondata = require("./season.json");
         seasonchecker(req, seasondata);
         profile.stats.attributes.season_num = seasondata.season;
+	if (seasondata.season == 2) {
+		profile.stats.attributes.book_level = 70;
+	} else {
+		profile.stats.attributes.book_level = 100;
+	}
     }
 
     // do not change any of these or you will end up breaking it
@@ -2454,6 +4318,11 @@ express.post("/fortnite/api/game/v2/profile/*/client/SetCosmeticLockerSlot", asy
         const seasondata = require("./season.json");
         seasonchecker(req, seasondata);
         profile.stats.attributes.season_num = seasondata.season;
+	if (seasondata.season == 2) {
+		profile.stats.attributes.book_level = 70;
+	} else {
+		profile.stats.attributes.book_level = 100;
+	}
     }
 
     // do not change any of these or you will end up breaking it
@@ -2685,6 +4554,11 @@ express.post("/fortnite/api/game/v2/profile/*/client/*", async (req, res) => {
         const seasondata = require("./season.json");
         seasonchecker(req, seasondata);
         profile.stats.attributes.season_num = seasondata.season;
+	if (seasondata.season == 2) {
+		profile.stats.attributes.book_level = 70;
+	} else {
+		profile.stats.attributes.book_level = 100;
+	}
     }
 
     // do not change any of these or you will end up breaking it
@@ -2710,5 +4584,26 @@ express.post("/fortnite/api/game/v2/profile/*/client/*", async (req, res) => {
         "responseVersion": 1
     })
     res.status(200);
+    res.end();
+});
+
+// keep this at the end of the code thanks
+express.all("*", async (req, res) => {
+    var XEpicErrorName = "errors.com.lawinserver.common.not_found";
+    var XEpicErrorCode = 1004;
+
+    res.set({
+        'X-Epic-Error-Name': XEpicErrorName,
+        'X-Epic-Error-Code': XEpicErrorCode
+    });
+
+    res.status(404);
+    res.json({
+        "errorCode": XEpicErrorName,
+        "errorMessage": "Sorry the resource you were trying to find could not be found",
+        "numericErrorCode": XEpicErrorCode,
+        "originatingService": "any",
+        "intent": "prod"
+    });
     res.end();
 });
