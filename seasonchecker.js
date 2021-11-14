@@ -3,9 +3,6 @@ function CheckLobbyAndSeason(req, seasondata) {
     if (req.headers["user-agent"]) 
     {
         var season = req.headers["user-agent"].slice(28, 30)
-        if (season.includes(".")){season = season.replace(/./ig, "")}
-        if (season.includes("-")){season = season.replace(/-/ig, "")}
-
         var seasonInt = Number(season)
 
         if (!Number.isNaN(seasonInt))
@@ -17,9 +14,6 @@ function CheckLobbyAndSeason(req, seasondata) {
         if (Number.isNaN(seasonInt))
         {
             var season = req.headers["user-agent"].slice(32, 34)
-            if (season.includes(".")){season = season.replace(/./ig, "")}
-            if (season.includes("-")){season = season.replace(/-/ig, "")}
-
             var seasonInt = Number(season)
 
             if (!Number.isNaN(seasonInt))
@@ -31,9 +25,6 @@ function CheckLobbyAndSeason(req, seasondata) {
             if (Number.isNaN(seasonInt))
             {
                 var season = req.headers["user-agent"].slice(52, 54)
-                if (season.includes(".")){season = season.replace(/./ig, "")}
-                if (season.includes("-")){season = season.replace(/-/ig, "")}
-
                 var seasonInt = Number(season)
 
                 if (!Number.isNaN(seasonInt))
