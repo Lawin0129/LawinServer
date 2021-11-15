@@ -17649,7 +17649,13 @@
     "Hero:HID_Commando_045_Chaos_Agent_SR_T05": {
       "templateId": "Hero:HID_Commando_045_Chaos_Agent_SR_T05",
       "attributes": {
-        "outfitvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier3.Legendary",
+            "owned": []
+          }
+        ],
         "backblingvariants": [],
         "gender": 0,
         "level": 50,
@@ -17693,8 +17699,20 @@
     "Hero:HID_Commando_GrenadeGun_VR_T05": {
       "templateId": "Hero:HID_Commando_GrenadeGun_VR_T05",
       "attributes": {
-        "outfitvariants": [],
-        "backblingvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Epic",
+            "owned": []
+          }
+        ],
+        "backblingvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier3.Epic",
+            "owned": []
+          }
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -17737,7 +17755,13 @@
     "Hero:HID_Commando_GunTough_RS01_SR_T05": {
       "templateId": "Hero:HID_Commando_GunTough_RS01_SR_T05",
       "attributes": {
-        "outfitvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Legendary",
+            "owned": []
+          }
+        ],
         "backblingvariants": [],
         "gender": 0,
         "level": 50,
@@ -17759,8 +17783,20 @@
     "Hero:HID_Commando_013_VR_T05": {
       "templateId": "Hero:HID_Commando_013_VR_T05",
       "attributes": {
-        "outfitvariants": [],
-        "backblingvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Epic",
+            "owned": []
+          }
+        ],
+        "backblingvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier3.Epic",
+            "owned": []
+          }
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -17781,8 +17817,20 @@
     "Hero:HID_Commando_008_VR_T05": {
       "templateId": "Hero:HID_Commando_008_VR_T05",
       "attributes": {
-        "outfitvariants": [],
-        "backblingvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Epic",
+            "owned": []
+          }
+        ],
+        "backblingvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier3.Epic",
+            "owned": []
+          }
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -17803,7 +17851,13 @@
     "Hero:HID_Commando_GCGrenade_R_T04": {
       "templateId": "Hero:HID_Commando_GCGrenade_R_T04",
       "attributes": {
-        "outfitvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Rare",
+            "owned": []
+          }
+        ],
         "backblingvariants": [],
         "gender": 0,
         "level": 40,
@@ -17825,7 +17879,13 @@
     "Hero:HID_Commando_XBOX_VR_T05": {
       "templateId": "Hero:HID_Commando_XBOX_VR_T05",
       "attributes": {
-        "outfitvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Rare",
+            "owned": []
+          }
+        ],
         "backblingvariants": [],
         "gender": 0,
         "level": 50,
@@ -17847,7 +17907,13 @@
     "Hero:HID_Commando_XBOX_SR_T05": {
       "templateId": "Hero:HID_Commando_XBOX_SR_T05",
       "attributes": {
-        "outfitvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Rare",
+            "owned": []
+          }
+        ],
         "backblingvariants": [],
         "gender": 0,
         "level": 50,
@@ -17869,7 +17935,13 @@
     "Hero:HID_Commando_XBOX_R_T04": {
       "templateId": "Hero:HID_Commando_XBOX_R_T04",
       "attributes": {
-        "outfitvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Rare",
+            "owned": []
+          }
+        ],
         "backblingvariants": [],
         "gender": 0,
         "level": 40,
@@ -17891,7 +17963,13 @@
     "Hero:HID_Commando_Sony_VR_T05": {
       "templateId": "Hero:HID_Commando_Sony_VR_T05",
       "attributes": {
-        "outfitvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Rare",
+            "owned": []
+          }
+        ],
         "backblingvariants": [],
         "gender": 0,
         "level": 50,
@@ -17913,7 +17991,13 @@
     "Hero:HID_Commando_Sony_SR_T05": {
       "templateId": "Hero:HID_Commando_Sony_SR_T05",
       "attributes": {
-        "outfitvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Rare",
+            "owned": []
+          }
+        ],
         "backblingvariants": [],
         "gender": 0,
         "level": 50,
@@ -17935,7 +18019,13 @@
     "Hero:HID_Commando_Sony_R_T04": {
       "templateId": "Hero:HID_Commando_Sony_R_T04",
       "attributes": {
-        "outfitvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Rare",
+            "owned": []
+          }
+        ],
         "backblingvariants": [],
         "gender": 0,
         "level": 40,
@@ -17957,8 +18047,20 @@
     "Hero:HID_Commando_ShockDamage_VR_T05": {
       "templateId": "Hero:HID_Commando_ShockDamage_VR_T05",
       "attributes": {
-        "outfitvariants": [],
-        "backblingvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Epic",
+            "owned": []
+          }
+        ],
+        "backblingvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier3.Epic",
+            "owned": []
+          }
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -17979,8 +18081,20 @@
     "Hero:HID_Commando_ShockDamage_SR_T05": {
       "templateId": "Hero:HID_Commando_ShockDamage_SR_T05",
       "attributes": {
-        "outfitvariants": [],
-        "backblingvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Legendary",
+            "owned": []
+          }
+        ],
+        "backblingvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier3.Legendary",
+            "owned": []
+          }
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -18001,7 +18115,13 @@
     "Hero:HID_Commando_ShockDamage_R_T04": {
       "templateId": "Hero:HID_Commando_ShockDamage_R_T04",
       "attributes": {
-        "outfitvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Rare",
+            "owned": []
+          }
+        ],
         "backblingvariants": [],
         "gender": 0,
         "level": 40,
@@ -18023,7 +18143,13 @@
     "Hero:HID_Commando_Myth03_SR_T05": {
       "templateId": "Hero:HID_Commando_Myth03_SR_T05",
       "attributes": {
-        "outfitvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier5.Legendary",
+            "owned": []
+          }
+        ],
         "backblingvariants": [],
         "gender": 0,
         "level": 50,
@@ -18067,8 +18193,20 @@
     "Hero:HID_Commando_GunTough_VR_T05": {
       "templateId": "Hero:HID_Commando_GunTough_VR_T05",
       "attributes": {
-        "outfitvariants": [],
-        "backblingvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Epic",
+            "owned": []
+          }
+        ],
+        "backblingvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier3.Epic",
+            "owned": []
+          }
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -18111,8 +18249,20 @@
     "Hero:HID_Commando_GunTough_SR_T05": {
       "templateId": "Hero:HID_Commando_GunTough_SR_T05",
       "attributes": {
-        "outfitvariants": [],
-        "backblingvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Legendary",
+            "owned": []
+          }
+        ],
+        "backblingvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier3.Legendary",
+            "owned": []
+          }
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -18133,7 +18283,13 @@
     "Hero:HID_Commando_GunTough_R_T04": {
       "templateId": "Hero:HID_Commando_GunTough_R_T04",
       "attributes": {
-        "outfitvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Rare",
+            "owned": []
+          }
+        ],
         "backblingvariants": [],
         "gender": 0,
         "level": 40,
@@ -18177,7 +18333,13 @@
     "Hero:HID_Commando_GunTough_M_4thJuly_SR_T05": {
       "templateId": "Hero:HID_Commando_GunTough_M_4thJuly_SR_T05",
       "attributes": {
-        "outfitvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Legendary",
+            "owned": []
+          }
+        ],
         "backblingvariants": [],
         "gender": 0,
         "level": 50,
@@ -18199,7 +18361,13 @@
     "Hero:HID_Commando_GunTough_F_4thJuly_SR_T05": {
       "templateId": "Hero:HID_Commando_GunTough_F_4thJuly_SR_T05",
       "attributes": {
-        "outfitvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Legendary",
+            "owned": []
+          }
+        ],
         "backblingvariants": [],
         "gender": 0,
         "level": 50,
@@ -18221,8 +18389,20 @@
     "Hero:HID_Commando_GunHeadshot_VR_T05": {
       "templateId": "Hero:HID_Commando_GunHeadshot_VR_T05",
       "attributes": {
-        "outfitvariants": [],
-        "backblingvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Epic",
+            "owned": []
+          }
+        ],
+        "backblingvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier3.Epic",
+            "owned": []
+          }
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -18243,7 +18423,13 @@
     "Hero:HID_Commando_GunHeadShot_Starter_M_SR_T05": {
       "templateId": "Hero:HID_Commando_GunHeadShot_Starter_M_SR_T05",
       "attributes": {
-        "outfitvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Legendary",
+            "owned": []
+          }
+        ],
         "backblingvariants": [],
         "gender": 0,
         "level": 50,
@@ -18265,8 +18451,20 @@
     "Hero:HID_Commando_GunHeadshot_SR_T05": {
       "templateId": "Hero:HID_Commando_GunHeadshot_SR_T05",
       "attributes": {
-        "outfitvariants": [],
-        "backblingvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Legendary",
+            "owned": []
+          }
+        ],
+        "backblingvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier3.Legendary",
+            "owned": []
+          }
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -18309,7 +18507,13 @@
     "Hero:HID_Commando_GunHeadshotHW_VR_T05": {
       "templateId": "Hero:HID_Commando_GunHeadshotHW_VR_T05",
       "attributes": {
-        "outfitvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Epic",
+            "owned": []
+          }
+        ],
         "backblingvariants": [],
         "gender": 0,
         "level": 50,
@@ -18331,7 +18535,13 @@
     "Hero:HID_Commando_GunHeadshotHW_SR_T05": {
       "templateId": "Hero:HID_Commando_GunHeadshotHW_SR_T05",
       "attributes": {
-        "outfitvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Epic",
+            "owned": []
+          }
+        ],
         "backblingvariants": [],
         "gender": 0,
         "level": 50,
@@ -18353,7 +18563,13 @@
     "Hero:HID_Commando_GunHeadshotHW_RS01_SR_T05": {
       "templateId": "Hero:HID_Commando_GunHeadshotHW_RS01_SR_T05",
       "attributes": {
-        "outfitvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Legendary",
+            "owned": []
+          }
+        ],
         "backblingvariants": [],
         "gender": 0,
         "level": 50,
@@ -18375,7 +18591,13 @@
     "Hero:HID_Commando_GrenadeMaster_SR_T05": {
       "templateId": "Hero:HID_Commando_GrenadeMaster_SR_T05",
       "attributes": {
-        "outfitvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Mythic",
+            "owned": []
+          }
+        ],
         "backblingvariants": [],
         "gender": 0,
         "level": 50,
@@ -18419,8 +18641,20 @@
     "Hero:HID_Commando_GrenadeGun_SR_T05": {
       "templateId": "Hero:HID_Commando_GrenadeGun_SR_T05",
       "attributes": {
-        "outfitvariants": [],
-        "backblingvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Legendary",
+            "owned": []
+          }
+        ],
+        "backblingvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier3.Legendary",
+            "owned": []
+          }
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -18485,8 +18719,20 @@
     "Hero:HID_Commando_GCGrenade_VR_T05": {
       "templateId": "Hero:HID_Commando_GCGrenade_VR_T05",
       "attributes": {
-        "outfitvariants": [],
-        "backblingvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Epic",
+            "owned": []
+          }
+        ],
+        "backblingvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier3.Epic",
+            "owned": []
+          }
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -18507,7 +18753,13 @@
     "Hero:HID_Commando_GCGrenade_T_VR_T05": {
       "templateId": "Hero:HID_Commando_GCGrenade_T_VR_T05",
       "attributes": {
-        "outfitvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Epic",
+            "owned": []
+          }
+        ],
         "backblingvariants": [],
         "gender": 0,
         "level": 50,
@@ -18529,7 +18781,13 @@
     "Hero:HID_Commando_GCGrenade_T_SR_T05": {
       "templateId": "Hero:HID_Commando_GCGrenade_T_SR_T05",
       "attributes": {
-        "outfitvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Epic",
+            "owned": []
+          }
+        ],
         "backblingvariants": [],
         "gender": 0,
         "level": 50,
@@ -18551,8 +18809,20 @@
     "Hero:HID_Commando_GCGrenade_SR_T05": {
       "templateId": "Hero:HID_Commando_GCGrenade_SR_T05",
       "attributes": {
-        "outfitvariants": [],
-        "backblingvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Legendary",
+            "owned": []
+          }
+        ],
+        "backblingvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier3.Legendary",
+            "owned": []
+          }
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -18837,7 +19107,13 @@
     "Hero:HID_Commando_035_Caped_Valentine_SR_T05": {
       "templateId": "Hero:HID_Commando_035_Caped_Valentine_SR_T05",
       "attributes": {
-        "outfitvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Epic",
+            "owned": []
+          }
+        ],
         "backblingvariants": [],
         "gender": 0,
         "level": 50,
@@ -18859,7 +19135,13 @@
     "Hero:HID_Commando_034_ToyTinkerer_VR_T05": {
       "templateId": "Hero:HID_Commando_034_ToyTinkerer_VR_T05",
       "attributes": {
-        "outfitvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Epic",
+            "owned": []
+          }
+        ],
         "backblingvariants": [],
         "gender": 0,
         "level": 50,
@@ -18881,7 +19163,13 @@
     "Hero:HID_Commando_034_ToyTinkerer_SR_T05": {
       "templateId": "Hero:HID_Commando_034_ToyTinkerer_SR_T05",
       "attributes": {
-        "outfitvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Epic",
+            "owned": []
+          }
+        ],
         "backblingvariants": [],
         "gender": 0,
         "level": 50,
@@ -18991,7 +19279,13 @@
     "Hero:HID_Commando_029_DinoSoldier_SR_T05": {
       "templateId": "Hero:HID_Commando_029_DinoSoldier_SR_T05",
       "attributes": {
-        "outfitvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Legendary",
+            "owned": []
+          }
+        ],
         "backblingvariants": [],
         "gender": 0,
         "level": 50,
@@ -19035,7 +19329,13 @@
     "Hero:HID_Commando_027_PirateSoldier_VR_T05": {
       "templateId": "Hero:HID_Commando_027_PirateSoldier_VR_T05",
       "attributes": {
-        "outfitvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Epic",
+            "owned": []
+          }
+        ],
         "backblingvariants": [],
         "gender": 0,
         "level": 50,
@@ -19057,7 +19357,13 @@
     "Hero:HID_Commando_027_PirateSoldier_SR_T05": {
       "templateId": "Hero:HID_Commando_027_PirateSoldier_SR_T05",
       "attributes": {
-        "outfitvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Epic",
+            "owned": []
+          }
+        ],
         "backblingvariants": [],
         "gender": 0,
         "level": 50,
@@ -19079,7 +19385,13 @@
     "Hero:HID_Commando_026_SR_T05": {
       "templateId": "Hero:HID_Commando_026_SR_T05",
       "attributes": {
-        "outfitvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Legendary",
+            "owned": []
+          }
+        ],
         "backblingvariants": [],
         "gender": 0,
         "level": 50,
@@ -19167,7 +19479,13 @@
     "Hero:HID_Commando_023_VR_T05": {
       "templateId": "Hero:HID_Commando_023_VR_T05",
       "attributes": {
-        "outfitvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Epic",
+            "owned": []
+          }
+        ],
         "backblingvariants": [],
         "gender": 0,
         "level": 50,
@@ -19189,7 +19507,13 @@
     "Hero:HID_Commando_023_SR_T05": {
       "templateId": "Hero:HID_Commando_023_SR_T05",
       "attributes": {
-        "outfitvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Epic",
+            "owned": []
+          }
+        ],
         "backblingvariants": [],
         "gender": 0,
         "level": 50,
@@ -19255,7 +19579,13 @@
     "Hero:HID_Commando_019_SR_T05": {
       "templateId": "Hero:HID_Commando_019_SR_T05",
       "attributes": {
-        "outfitvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Mythic",
+            "owned": []
+          }
+        ],
         "backblingvariants": [],
         "gender": 0,
         "level": 50,
@@ -19277,7 +19607,13 @@
     "Hero:HID_Commando_018_SR_T05": {
       "templateId": "Hero:HID_Commando_018_SR_T05",
       "attributes": {
-        "outfitvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier5.Legendary",
+            "owned": []
+          }
+        ],
         "backblingvariants": [],
         "gender": 0,
         "level": 50,
@@ -19299,8 +19635,20 @@
     "Hero:HID_Commando_017_F_V1_VR_T05": {
       "templateId": "Hero:HID_Commando_017_F_V1_VR_T05",
       "attributes": {
-        "outfitvariants": [],
-        "backblingvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Epic",
+            "owned": []
+          }
+        ],
+        "backblingvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier3.Epic",
+            "owned": []
+          }
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -19321,8 +19669,20 @@
     "Hero:HID_Commando_017_F_V1_SR_T05": {
       "templateId": "Hero:HID_Commando_017_F_V1_SR_T05",
       "attributes": {
-        "outfitvariants": [],
-        "backblingvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Legendary",
+            "owned": []
+          }
+        ],
+        "backblingvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier3.Legendary",
+            "owned": []
+          }
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -19343,7 +19703,13 @@
     "Hero:HID_Commando_017_F_V1_R_T04": {
       "templateId": "Hero:HID_Commando_017_F_V1_R_T04",
       "attributes": {
-        "outfitvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Rare",
+            "owned": []
+          }
+        ],
         "backblingvariants": [],
         "gender": 0,
         "level": 40,
@@ -19365,7 +19731,13 @@
     "Hero:HID_Commando_016_M_V1_SR_T05": {
       "templateId": "Hero:HID_Commando_016_M_V1_SR_T05",
       "attributes": {
-        "outfitvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Legendary",
+            "owned": []
+          }
+        ],
         "backblingvariants": [],
         "gender": 0,
         "level": 50,
@@ -19387,7 +19759,13 @@
     "Hero:HID_Commando_016_F_V1_VR_T05": {
       "templateId": "Hero:HID_Commando_016_F_V1_VR_T05",
       "attributes": {
-        "outfitvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Epic",
+            "owned": []
+          }
+        ],
         "backblingvariants": [],
         "gender": 0,
         "level": 50,
@@ -19409,7 +19787,13 @@
     "Hero:HID_Commando_016_F_V1_SR_T05": {
       "templateId": "Hero:HID_Commando_016_F_V1_SR_T05",
       "attributes": {
-        "outfitvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Epic",
+            "owned": []
+          }
+        ],
         "backblingvariants": [],
         "gender": 0,
         "level": 50,
@@ -19431,7 +19815,13 @@
     "Hero:HID_Commando_015_M_V1_VR_T05": {
       "templateId": "Hero:HID_Commando_015_M_V1_VR_T05",
       "attributes": {
-        "outfitvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Epic",
+            "owned": []
+          }
+        ],
         "backblingvariants": [],
         "gender": 0,
         "level": 50,
@@ -19453,7 +19843,13 @@
     "Hero:HID_Commando_015_M_V1_SR_T05": {
       "templateId": "Hero:HID_Commando_015_M_V1_SR_T05",
       "attributes": {
-        "outfitvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Epic",
+            "owned": []
+          }
+        ],
         "backblingvariants": [],
         "gender": 0,
         "level": 50,
@@ -19475,7 +19871,13 @@
     "Hero:HID_Commando_015_M_V1_BlockBuster_SR_T05": {
       "templateId": "Hero:HID_Commando_015_M_V1_BlockBuster_SR_T05",
       "attributes": {
-        "outfitvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Legendary",
+            "owned": []
+          }
+        ],
         "backblingvariants": [],
         "gender": 0,
         "level": 50,
@@ -19497,7 +19899,13 @@
     "Hero:HID_Commando_015_F_V1_BlockBuster_SR_T05": {
       "templateId": "Hero:HID_Commando_015_F_V1_BlockBuster_SR_T05",
       "attributes": {
-        "outfitvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Legendary",
+            "owned": []
+          }
+        ],
         "backblingvariants": [],
         "gender": 0,
         "level": 50,
@@ -19519,7 +19927,13 @@
     "Hero:HID_Commando_014_Wukong_SR_T05": {
       "templateId": "Hero:HID_Commando_014_Wukong_SR_T05",
       "attributes": {
-        "outfitvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Mythic",
+            "owned": []
+          }
+        ],
         "backblingvariants": [],
         "gender": 0,
         "level": 50,
@@ -19541,8 +19955,20 @@
     "Hero:HID_Commando_014_VR_T05": {
       "templateId": "Hero:HID_Commando_014_VR_T05",
       "attributes": {
-        "outfitvariants": [],
-        "backblingvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Epic",
+            "owned": []
+          }
+        ],
+        "backblingvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier3.Epic",
+            "owned": []
+          }
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -19563,8 +19989,20 @@
     "Hero:HID_Commando_014_SR_T05": {
       "templateId": "Hero:HID_Commando_014_SR_T05",
       "attributes": {
-        "outfitvariants": [],
-        "backblingvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Legendary",
+            "owned": []
+          }
+        ],
+        "backblingvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier3.Legendary",
+            "owned": []
+          }
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -19585,7 +20023,13 @@
     "Hero:HID_Commando_014_M_SR_T05": {
       "templateId": "Hero:HID_Commando_014_M_SR_T05",
       "attributes": {
-        "outfitvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Legendary",
+            "owned": []
+          }
+        ],
         "backblingvariants": [],
         "gender": 0,
         "level": 50,
@@ -19607,7 +20051,13 @@
     "Hero:HID_Commando_013_StPatricks_M_SR_T05": {
       "templateId": "Hero:HID_Commando_013_StPatricks_M_SR_T05",
       "attributes": {
-        "outfitvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Legendary",
+            "owned": []
+          }
+        ],
         "backblingvariants": [],
         "gender": 0,
         "level": 50,
@@ -19651,7 +20101,13 @@
     "Hero:HID_Commando_013_StPatricks_F_V1_SR_T05": {
       "templateId": "Hero:HID_Commando_013_StPatricks_F_V1_SR_T05",
       "attributes": {
-        "outfitvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Legendary",
+            "owned": []
+          }
+        ],
         "backblingvariants": [],
         "gender": 0,
         "level": 50,
@@ -19673,8 +20129,20 @@
     "Hero:HID_Commando_013_SR_T05": {
       "templateId": "Hero:HID_Commando_013_SR_T05",
       "attributes": {
-        "outfitvariants": [],
-        "backblingvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Legendary",
+            "owned": []
+          }
+        ],
+        "backblingvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier3.Legendary",
+            "owned": []
+          }
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -19695,7 +20163,13 @@
     "Hero:HID_Commando_013_R_T04": {
       "templateId": "Hero:HID_Commando_013_R_T04",
       "attributes": {
-        "outfitvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Rare",
+            "owned": []
+          }
+        ],
         "backblingvariants": [],
         "gender": 0,
         "level": 40,
@@ -19717,8 +20191,20 @@
     "Hero:HID_Commando_011_VR_T05": {
       "templateId": "Hero:HID_Commando_011_VR_T05",
       "attributes": {
-        "outfitvariants": [],
-        "backblingvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Epic",
+            "owned": []
+          }
+        ],
+        "backblingvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier3.Epic",
+            "owned": []
+          }
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -19761,8 +20247,20 @@
     "Hero:HID_Commando_011_SR_T05": {
       "templateId": "Hero:HID_Commando_011_SR_T05",
       "attributes": {
-        "outfitvariants": [],
-        "backblingvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Legendary",
+            "owned": []
+          }
+        ],
+        "backblingvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier3.Legendary",
+            "owned": []
+          }
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -19783,7 +20281,13 @@
     "Hero:HID_Commando_011_R_T04": {
       "templateId": "Hero:HID_Commando_011_R_T04",
       "attributes": {
-        "outfitvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Rare",
+            "owned": []
+          }
+        ],
         "backblingvariants": [],
         "gender": 0,
         "level": 40,
@@ -19805,7 +20309,13 @@
     "Hero:HID_Commando_011_M_SR_T05": {
       "templateId": "Hero:HID_Commando_011_M_SR_T05",
       "attributes": {
-        "outfitvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Legendary",
+            "owned": []
+          }
+        ],
         "backblingvariants": [],
         "gender": 0,
         "level": 50,
@@ -19827,7 +20337,13 @@
     "Hero:HID_Commando_011_M_Easter_SR_T05": {
       "templateId": "Hero:HID_Commando_011_M_Easter_SR_T05",
       "attributes": {
-        "outfitvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Legendary",
+            "owned": []
+          }
+        ],
         "backblingvariants": [],
         "gender": 0,
         "level": 50,
@@ -19849,7 +20365,13 @@
     "Hero:HID_Commando_011_F_V1_RoadTrip_SR_T05": {
       "templateId": "Hero:HID_Commando_011_F_V1_RoadTrip_SR_T05",
       "attributes": {
-        "outfitvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Legendary",
+            "owned": []
+          }
+        ],
         "backblingvariants": [],
         "gender": 0,
         "level": 50,
@@ -19871,8 +20393,20 @@
     "Hero:HID_Commando_010_VR_T05": {
       "templateId": "Hero:HID_Commando_010_VR_T05",
       "attributes": {
-        "outfitvariants": [],
-        "backblingvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Epic",
+            "owned": []
+          }
+        ],
+        "backblingvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier3.Epic",
+            "owned": []
+          }
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -19893,8 +20427,20 @@
     "Hero:HID_Commando_010_SR_T05": {
       "templateId": "Hero:HID_Commando_010_SR_T05",
       "attributes": {
-        "outfitvariants": [],
-        "backblingvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Legendary",
+            "owned": []
+          }
+        ],
+        "backblingvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier3.Legendary",
+            "owned": []
+          }
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -19915,7 +20461,13 @@
     "Hero:HID_Commando_010_Bday_SR_T05": {
       "templateId": "Hero:HID_Commando_010_Bday_SR_T05",
       "attributes": {
-        "outfitvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Legendary",
+            "owned": []
+          }
+        ],
         "backblingvariants": [],
         "gender": 0,
         "level": 50,
@@ -19937,8 +20489,20 @@
     "Hero:HID_Commando_009_VR_T05": {
       "templateId": "Hero:HID_Commando_009_VR_T05",
       "attributes": {
-        "outfitvariants": [],
-        "backblingvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Epic",
+            "owned": []
+          }
+        ],
+        "backblingvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier3.Epic",
+            "owned": []
+          }
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -19959,8 +20523,20 @@
     "Hero:HID_Commando_009_SR_T05": {
       "templateId": "Hero:HID_Commando_009_SR_T05",
       "attributes": {
-        "outfitvariants": [],
-        "backblingvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Legendary",
+            "owned": []
+          }
+        ],
+        "backblingvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier3.Legendary",
+            "owned": []
+          }
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -19981,7 +20557,13 @@
     "Hero:HID_Commando_009_R_T04": {
       "templateId": "Hero:HID_Commando_009_R_T04",
       "attributes": {
-        "outfitvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Rare",
+            "owned": []
+          }
+        ],
         "backblingvariants": [],
         "gender": 0,
         "level": 40,
@@ -20003,8 +20585,20 @@
     "Hero:HID_Commando_009_M_VR_T05": {
       "templateId": "Hero:HID_Commando_009_M_VR_T05",
       "attributes": {
-        "outfitvariants": [],
-        "backblingvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Epic",
+            "owned": []
+          }
+        ],
+        "backblingvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier3.Epic",
+            "owned": []
+          }
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -20025,8 +20619,20 @@
     "Hero:HID_Commando_009_M_SR_T05": {
       "templateId": "Hero:HID_Commando_009_M_SR_T05",
       "attributes": {
-        "outfitvariants": [],
-        "backblingvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Legendary",
+            "owned": []
+          }
+        ],
+        "backblingvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier3.Legendary",
+            "owned": []
+          }
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -20047,7 +20653,13 @@
     "Hero:HID_Commando_009_M_R_T04": {
       "templateId": "Hero:HID_Commando_009_M_R_T04",
       "attributes": {
-        "outfitvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Rare",
+            "owned": []
+          }
+        ],
         "backblingvariants": [],
         "gender": 0,
         "level": 40,
@@ -20069,8 +20681,20 @@
     "Hero:HID_Commando_008_SR_T05": {
       "templateId": "Hero:HID_Commando_008_SR_T05",
       "attributes": {
-        "outfitvariants": [],
-        "backblingvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Legendary",
+            "owned": []
+          }
+        ],
+        "backblingvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier3.Legendary",
+            "owned": []
+          }
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -20091,7 +20715,13 @@
     "Hero:HID_Commando_008_R_T04": {
       "templateId": "Hero:HID_Commando_008_R_T04",
       "attributes": {
-        "outfitvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Rare",
+            "owned": []
+          }
+        ],
         "backblingvariants": [],
         "gender": 0,
         "level": 40,
@@ -20113,7 +20743,13 @@
     "Hero:HID_Commando_008_FoundersM_SR_T05": {
       "templateId": "Hero:HID_Commando_008_FoundersM_SR_T05",
       "attributes": {
-        "outfitvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Legendary",
+            "owned": []
+          }
+        ],
         "backblingvariants": [],
         "gender": 0,
         "level": 50,
@@ -20135,7 +20771,13 @@
     "Hero:HID_Commando_008_FoundersF_SR_T05": {
       "templateId": "Hero:HID_Commando_008_FoundersF_SR_T05",
       "attributes": {
-        "outfitvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Legendary",
+            "owned": []
+          }
+        ],
         "backblingvariants": [],
         "gender": 0,
         "level": 50,
@@ -20157,8 +20799,20 @@
     "Hero:HID_Commando_007_VR_T05": {
       "templateId": "Hero:HID_Commando_007_VR_T05",
       "attributes": {
-        "outfitvariants": [],
-        "backblingvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Epic",
+            "owned": []
+          }
+        ],
+        "backblingvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier3.Epic",
+            "owned": []
+          }
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -20201,8 +20855,20 @@
     "Hero:HID_Commando_007_SR_T05": {
       "templateId": "Hero:HID_Commando_007_SR_T05",
       "attributes": {
-        "outfitvariants": [],
-        "backblingvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Legendary",
+            "owned": []
+          }
+        ],
+        "backblingvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier3.Legendary",
+            "owned": []
+          }
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -20223,7 +20889,13 @@
     "Hero:HID_Commando_007_R_T04": {
       "templateId": "Hero:HID_Commando_007_R_T04",
       "attributes": {
-        "outfitvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Rare",
+            "owned": []
+          }
+        ],
         "backblingvariants": [],
         "gender": 0,
         "level": 40,
@@ -20377,7 +21049,13 @@
     "Hero:HID_Constructor_XBOX_VR_T05": {
       "templateId": "Hero:HID_Constructor_XBOX_VR_T05",
       "attributes": {
-        "outfitvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Rare",
+            "owned": []
+          }
+        ],
         "backblingvariants": [],
         "gender": 0,
         "level": 50,
@@ -20399,7 +21077,13 @@
     "Hero:HID_Constructor_XBOX_SR_T05": {
       "templateId": "Hero:HID_Constructor_XBOX_SR_T05",
       "attributes": {
-        "outfitvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Rare",
+            "owned": []
+          }
+        ],
         "backblingvariants": [],
         "gender": 0,
         "level": 50,
@@ -20421,7 +21105,13 @@
     "Hero:HID_Constructor_XBOX_R_T04": {
       "templateId": "Hero:HID_Constructor_XBOX_R_T04",
       "attributes": {
-        "outfitvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Rare",
+            "owned": []
+          }
+        ],
         "backblingvariants": [],
         "gender": 0,
         "level": 40,
@@ -20443,7 +21133,13 @@
     "Hero:HID_Constructor_Sony_VR_T05": {
       "templateId": "Hero:HID_Constructor_Sony_VR_T05",
       "attributes": {
-        "outfitvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Rare",
+            "owned": []
+          }
+        ],
         "backblingvariants": [],
         "gender": 0,
         "level": 50,
@@ -20465,7 +21161,13 @@
     "Hero:HID_Constructor_Sony_SR_T05": {
       "templateId": "Hero:HID_Constructor_Sony_SR_T05",
       "attributes": {
-        "outfitvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Rare",
+            "owned": []
+          }
+        ],
         "backblingvariants": [],
         "gender": 0,
         "level": 50,
@@ -20487,7 +21189,13 @@
     "Hero:HID_Constructor_Sony_R_T04": {
       "templateId": "Hero:HID_Constructor_Sony_R_T04",
       "attributes": {
-        "outfitvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Rare",
+            "owned": []
+          }
+        ],
         "backblingvariants": [],
         "gender": 0,
         "level": 40,
@@ -20509,7 +21217,13 @@
     "Hero:HID_Constructor_RushBASE_VR_T05": {
       "templateId": "Hero:HID_Constructor_RushBASE_VR_T05",
       "attributes": {
-        "outfitvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Epic",
+            "owned": []
+          }
+        ],
         "backblingvariants": [],
         "gender": 0,
         "level": 50,
@@ -20553,7 +21267,13 @@
     "Hero:HID_Constructor_RushBASE_SR_T05": {
       "templateId": "Hero:HID_Constructor_RushBASE_SR_T05",
       "attributes": {
-        "outfitvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Legendary",
+            "owned": []
+          }
+        ],
         "backblingvariants": [],
         "gender": 0,
         "level": 50,
@@ -20575,7 +21295,13 @@
     "Hero:HID_Constructor_RushBASE_R_T04": {
       "templateId": "Hero:HID_Constructor_RushBASE_R_T04",
       "attributes": {
-        "outfitvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier1.Rare",
+            "owned": []
+          }
+        ],
         "backblingvariants": [],
         "gender": 0,
         "level": 40,
@@ -20597,8 +21323,20 @@
     "Hero:HID_Constructor_RushBASE_F_VR_T05": {
       "templateId": "Hero:HID_Constructor_RushBASE_F_VR_T05",
       "attributes": {
-        "outfitvariants": [],
-        "backblingvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Epic",
+            "owned": []
+          }
+        ],
+        "backblingvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier3.Epic",
+            "owned": []
+          }
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -20619,8 +21357,20 @@
     "Hero:HID_Constructor_RushBASE_F_SR_T05": {
       "templateId": "Hero:HID_Constructor_RushBASE_F_SR_T05",
       "attributes": {
-        "outfitvariants": [],
-        "backblingvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Legendary",
+            "owned": []
+          }
+        ],
+        "backblingvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier3.Legendary",
+            "owned": []
+          }
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -20641,8 +21391,20 @@
     "Hero:HID_Constructor_PlasmaDamage_VR_T05": {
       "templateId": "Hero:HID_Constructor_PlasmaDamage_VR_T05",
       "attributes": {
-        "outfitvariants": [],
-        "backblingvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Epic",
+            "owned": []
+          }
+        ],
+        "backblingvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier3.Epic",
+            "owned": []
+          }
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -20663,8 +21425,20 @@
     "Hero:HID_Constructor_PlasmaDamage_SR_T05": {
       "templateId": "Hero:HID_Constructor_PlasmaDamage_SR_T05",
       "attributes": {
-        "outfitvariants": [],
-        "backblingvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Legendary",
+            "owned": []
+          }
+        ],
+        "backblingvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier3.Legendary",
+            "owned": []
+          }
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -20685,7 +21459,13 @@
     "Hero:HID_Constructor_PlasmaDamage_R_T04": {
       "templateId": "Hero:HID_Constructor_PlasmaDamage_R_T04",
       "attributes": {
-        "outfitvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Rare",
+            "owned": []
+          }
+        ],
         "backblingvariants": [],
         "gender": 0,
         "level": 40,
@@ -20751,8 +21531,20 @@
     "Hero:HID_Constructor_HammerTank_VR_T05": {
       "templateId": "Hero:HID_Constructor_HammerTank_VR_T05",
       "attributes": {
-        "outfitvariants": [],
-        "backblingvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Epic",
+            "owned": []
+          }
+        ],
+        "backblingvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier3.Epic",
+            "owned": []
+          }
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -20773,7 +21565,13 @@
     "Hero:HID_Constructor_HammerTank_R_T04": {
       "templateId": "Hero:HID_Constructor_HammerTank_R_T04",
       "attributes": {
-        "outfitvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Rare",
+            "owned": []
+          }
+        ],
         "backblingvariants": [],
         "gender": 0,
         "level": 40,
@@ -20817,8 +21615,20 @@
     "Hero:HID_Constructor_HammerTank_SR_T05": {
       "templateId": "Hero:HID_Constructor_HammerTank_SR_T05",
       "attributes": {
-        "outfitvariants": [],
-        "backblingvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Legendary",
+            "owned": []
+          }
+        ],
+        "backblingvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier3.Legendary",
+            "owned": []
+          }
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -20839,8 +21649,20 @@
     "Hero:HID_Constructor_HammerPlasma_VR_T05": {
       "templateId": "Hero:HID_Constructor_HammerPlasma_VR_T05",
       "attributes": {
-        "outfitvariants": [],
-        "backblingvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Epic",
+            "owned": []
+          }
+        ],
+        "backblingvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier3.Epic",
+            "owned": []
+          }
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -20861,8 +21683,20 @@
     "Hero:HID_Constructor_HammerPlasma_SR_T05": {
       "templateId": "Hero:HID_Constructor_HammerPlasma_SR_T05",
       "attributes": {
-        "outfitvariants": [],
-        "backblingvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Legendary",
+            "owned": []
+          }
+        ],
+        "backblingvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier3.Legendary",
+            "owned": []
+          }
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -20883,7 +21717,13 @@
     "Hero:HID_Constructor_HammerPlasma_4thJuly_SR_T05": {
       "templateId": "Hero:HID_Constructor_HammerPlasma_4thJuly_SR_T05",
       "attributes": {
-        "outfitvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Legendary",
+            "owned": []
+          }
+        ],
         "backblingvariants": [],
         "gender": 0,
         "level": 50,
@@ -20905,8 +21745,20 @@
     "Hero:HID_Constructor_BaseHyper_SR_T05": {
       "templateId": "Hero:HID_Constructor_BaseHyper_SR_T05",
       "attributes": {
-        "outfitvariants": [],
-        "backblingvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Legendary",
+            "owned": []
+          }
+        ],
+        "backblingvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier3.Legendary",
+            "owned": []
+          }
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -20927,8 +21779,20 @@
     "Hero:HID_Constructor_BaseHyper_VR_T05": {
       "templateId": "Hero:HID_Constructor_BaseHyper_VR_T05",
       "attributes": {
-        "outfitvariants": [],
-        "backblingvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Epic",
+            "owned": []
+          }
+        ],
+        "backblingvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier3.Epic",
+            "owned": []
+          }
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -20949,7 +21813,13 @@
     "Hero:HID_Constructor_BaseHyper_R_T04": {
       "templateId": "Hero:HID_Constructor_BaseHyper_R_T04",
       "attributes": {
-        "outfitvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Rare",
+            "owned": []
+          }
+        ],
         "backblingvariants": [],
         "gender": 0,
         "level": 40,
@@ -21015,7 +21885,13 @@
     "Hero:HID_Constructor_BASEBig_SR_T05": {
       "templateId": "Hero:HID_Constructor_BASEBig_SR_T05",
       "attributes": {
-        "outfitvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Mythic",
+            "owned": []
+          }
+        ],
         "backblingvariants": [],
         "gender": 0,
         "level": 50,
@@ -21169,7 +22045,13 @@
     "Hero:HID_Constructor_036_Dino_Constructor_VR_T05": {
       "templateId": "Hero:HID_Constructor_036_Dino_Constructor_VR_T05",
       "attributes": {
-        "outfitvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Epic",
+            "owned": []
+          }
+        ],
         "backblingvariants": [],
         "gender": 0,
         "level": 50,
@@ -21191,7 +22073,13 @@
     "Hero:HID_Constructor_036_Dino_Constructor_SR_T05": {
       "templateId": "Hero:HID_Constructor_036_Dino_Constructor_SR_T05",
       "attributes": {
-        "outfitvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Epic",
+            "owned": []
+          }
+        ],
         "backblingvariants": [],
         "gender": 0,
         "level": 50,
@@ -21213,7 +22101,13 @@
     "Hero:HID_Constructor_035_Birthday_Constructor_SR_T05": {
       "templateId": "Hero:HID_Constructor_035_Birthday_Constructor_SR_T05",
       "attributes": {
-        "outfitvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Epic",
+            "owned": []
+          }
+        ],
         "backblingvariants": [],
         "gender": 0,
         "level": 50,
@@ -21235,7 +22129,13 @@
     "Hero:HID_Constructor_035_Birthday_Constructor_VR_T05": {
       "templateId": "Hero:HID_Constructor_035_Birthday_Constructor_VR_T05",
       "attributes": {
-        "outfitvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Epic",
+            "owned": []
+          }
+        ],
         "backblingvariants": [],
         "gender": 0,
         "level": 50,
@@ -21257,7 +22157,13 @@
     "Hero:HID_Constructor_034_Mechstructor_VR_T05": {
       "templateId": "Hero:HID_Constructor_034_Mechstructor_VR_T05",
       "attributes": {
-        "outfitvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Epic",
+            "owned": []
+          }
+        ],
         "backblingvariants": [],
         "gender": 0,
         "level": 50,
@@ -21279,7 +22185,13 @@
     "Hero:HID_Constructor_034_Mechstructor_SR_T05": {
       "templateId": "Hero:HID_Constructor_034_Mechstructor_SR_T05",
       "attributes": {
-        "outfitvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Epic",
+            "owned": []
+          }
+        ],
         "backblingvariants": [],
         "gender": 0,
         "level": 50,
@@ -21345,7 +22257,13 @@
     "Hero:HID_Constructor_032_ToyConstructor_VR_T05": {
       "templateId": "Hero:HID_Constructor_032_ToyConstructor_VR_T05",
       "attributes": {
-        "outfitvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Epic",
+            "owned": []
+          }
+        ],
         "backblingvariants": [],
         "gender": 0,
         "level": 50,
@@ -21367,7 +22285,13 @@
     "Hero:HID_Constructor_032_ToyConstructor_SR_T05": {
       "templateId": "Hero:HID_Constructor_032_ToyConstructor_SR_T05",
       "attributes": {
-        "outfitvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Epic",
+            "owned": []
+          }
+        ],
         "backblingvariants": [],
         "gender": 0,
         "level": 50,
@@ -21521,7 +22445,13 @@
     "Hero:HID_Constructor_027_DinoConstructor_SR_T05": {
       "templateId": "Hero:HID_Constructor_027_DinoConstructor_SR_T05",
       "attributes": {
-        "outfitvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Legendary",
+            "owned": []
+          }
+        ],
         "backblingvariants": [],
         "gender": 0,
         "level": 50,
@@ -21543,7 +22473,13 @@
     "Hero:HID_Constructor_026_BombSquadConstructor_VR_T05": {
       "templateId": "Hero:HID_Constructor_026_BombSquadConstructor_VR_T05",
       "attributes": {
-        "outfitvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier1.Legendary",
+            "owned": []
+          }
+        ],
         "backblingvariants": [],
         "gender": 0,
         "level": 50,
@@ -21565,7 +22501,13 @@
     "Hero:HID_Constructor_026_BombSquadConstructor_SR_T05": {
       "templateId": "Hero:HID_Constructor_026_BombSquadConstructor_SR_T05",
       "attributes": {
-        "outfitvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Legendary",
+            "owned": []
+          }
+        ],
         "backblingvariants": [],
         "gender": 0,
         "level": 50,
@@ -21587,7 +22529,13 @@
     "Hero:HID_Constructor_025_ProgressivePirateConstructor_SR_T05": {
       "templateId": "Hero:HID_Constructor_025_ProgressivePirateConstructor_SR_T05",
       "attributes": {
-        "outfitvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier5.Legendary",
+            "owned": []
+          }
+        ],
         "backblingvariants": [],
         "gender": 0,
         "level": 50,
@@ -21609,7 +22557,13 @@
     "Hero:HID_Constructor_024_PirateConstructor_VR_T05": {
       "templateId": "Hero:HID_Constructor_024_PirateConstructor_VR_T05",
       "attributes": {
-        "outfitvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Epic",
+            "owned": []
+          }
+        ],
         "backblingvariants": [],
         "gender": 0,
         "level": 50,
@@ -21631,7 +22585,13 @@
     "Hero:HID_Constructor_024_PirateConstructor_SR_T05": {
       "templateId": "Hero:HID_Constructor_024_PirateConstructor_SR_T05",
       "attributes": {
-        "outfitvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Epic",
+            "owned": []
+          }
+        ],
         "backblingvariants": [],
         "gender": 0,
         "level": 50,
@@ -21697,7 +22657,13 @@
     "Hero:HID_Constructor_021_SR_T05": {
       "templateId": "Hero:HID_Constructor_021_SR_T05",
       "attributes": {
-        "outfitvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Legendary",
+            "owned": []
+          }
+        ],
         "backblingvariants": [],
         "gender": 0,
         "level": 50,
@@ -21719,7 +22685,13 @@
     "Hero:HID_Constructor_020_SR_T05": {
       "templateId": "Hero:HID_Constructor_020_SR_T05",
       "attributes": {
-        "outfitvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Legendary",
+            "owned": []
+          }
+        ],
         "backblingvariants": [],
         "gender": 0,
         "level": 50,
@@ -21785,8 +22757,20 @@
     "Hero:HID_Constructor_017_F_V1_VR_T05": {
       "templateId": "Hero:HID_Constructor_017_F_V1_VR_T05",
       "attributes": {
-        "outfitvariants": [],
-        "backblingvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Epic",
+            "owned": []
+          }
+        ],
+        "backblingvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier3.Epic",
+            "owned": []
+          }
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -21807,8 +22791,20 @@
     "Hero:HID_Constructor_017_F_V1_SR_T05": {
       "templateId": "Hero:HID_Constructor_017_F_V1_SR_T05",
       "attributes": {
-        "outfitvariants": [],
-        "backblingvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Legendary",
+            "owned": []
+          }
+        ],
+        "backblingvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier3.Legendary",
+            "owned": []
+          }
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -21829,7 +22825,13 @@
     "Hero:HID_Constructor_017_F_V1_R_T04": {
       "templateId": "Hero:HID_Constructor_017_F_V1_R_T04",
       "attributes": {
-        "outfitvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Rare",
+            "owned": []
+          }
+        ],
         "backblingvariants": [],
         "gender": 0,
         "level": 40,
@@ -21851,7 +22853,13 @@
     "Hero:HID_Constructor_016_M_V1_SR_T05": {
       "templateId": "Hero:HID_Constructor_016_M_V1_SR_T05",
       "attributes": {
-        "outfitvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Legendary",
+            "owned": []
+          }
+        ],
         "backblingvariants": [],
         "gender": 0,
         "level": 50,
@@ -21873,7 +22881,13 @@
     "Hero:HID_Constructor_016_M_V1_BlockBuster_SR_T05": {
       "templateId": "Hero:HID_Constructor_016_M_V1_BlockBuster_SR_T05",
       "attributes": {
-        "outfitvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Legendary",
+            "owned": []
+          }
+        ],
         "backblingvariants": [],
         "gender": 0,
         "level": 50,
@@ -21895,7 +22909,13 @@
     "Hero:HID_Constructor_016_F_V1_VR_T05": {
       "templateId": "Hero:HID_Constructor_016_F_V1_VR_T05",
       "attributes": {
-        "outfitvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Epic",
+            "owned": []
+          }
+        ],
         "backblingvariants": [],
         "gender": 0,
         "level": 50,
@@ -21917,7 +22937,13 @@
     "Hero:HID_Constructor_016_F_V1_SR_T05": {
       "templateId": "Hero:HID_Constructor_016_F_V1_SR_T05",
       "attributes": {
-        "outfitvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Epic",
+            "owned": []
+          }
+        ],
         "backblingvariants": [],
         "gender": 0,
         "level": 50,
@@ -21939,8 +22965,20 @@
     "Hero:HID_Constructor_015_VR_T05": {
       "templateId": "Hero:HID_Constructor_015_VR_T05",
       "attributes": {
-        "outfitvariants": [],
-        "backblingvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Epic",
+            "owned": []
+          }
+        ],
+        "backblingvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier3.Epic",
+            "owned": []
+          }
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -21961,8 +22999,20 @@
     "Hero:HID_Constructor_015_SR_T05": {
       "templateId": "Hero:HID_Constructor_015_SR_T05",
       "attributes": {
-        "outfitvariants": [],
-        "backblingvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Legendary",
+            "owned": []
+          }
+        ],
+        "backblingvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier3.Legendary",
+            "owned": []
+          }
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -21983,7 +23033,13 @@
     "Hero:HID_Constructor_015_R_T04": {
       "templateId": "Hero:HID_Constructor_015_R_T04",
       "attributes": {
-        "outfitvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Rare",
+            "owned": []
+          }
+        ],
         "backblingvariants": [],
         "gender": 0,
         "level": 40,
@@ -22005,8 +23061,20 @@
     "Hero:HID_Constructor_014_VR_T05": {
       "templateId": "Hero:HID_Constructor_014_VR_T05",
       "attributes": {
-        "outfitvariants": [],
-        "backblingvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Epic",
+            "owned": []
+          }
+        ],
+        "backblingvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier3.Epic",
+            "owned": []
+          }
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -22027,8 +23095,20 @@
     "Hero:HID_Constructor_014_SR_T05": {
       "templateId": "Hero:HID_Constructor_014_SR_T05",
       "attributes": {
-        "outfitvariants": [],
-        "backblingvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Legendary",
+            "owned": []
+          }
+        ],
+        "backblingvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier3.Legendary",
+            "owned": []
+          }
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -22049,7 +23129,13 @@
     "Hero:HID_Constructor_014_R_T04": {
       "templateId": "Hero:HID_Constructor_014_R_T04",
       "attributes": {
-        "outfitvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Rare",
+            "owned": []
+          }
+        ],
         "backblingvariants": [],
         "gender": 0,
         "level": 40,
@@ -22071,7 +23157,13 @@
     "Hero:HID_Constructor_014_F_SR_T05": {
       "templateId": "Hero:HID_Constructor_014_F_SR_T05",
       "attributes": {
-        "outfitvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Legendary",
+            "owned": []
+          }
+        ],
         "backblingvariants": [],
         "gender": 0,
         "level": 50,
@@ -22093,8 +23185,20 @@
     "Hero:HID_Constructor_013_VR_T05": {
       "templateId": "Hero:HID_Constructor_013_VR_T05",
       "attributes": {
-        "outfitvariants": [],
-        "backblingvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Epic",
+            "owned": []
+          }
+        ],
+        "backblingvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier3.Epic",
+            "owned": []
+          }
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -22137,8 +23241,20 @@
     "Hero:HID_Constructor_013_SR_T05": {
       "templateId": "Hero:HID_Constructor_013_SR_T05",
       "attributes": {
-        "outfitvariants": [],
-        "backblingvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Legendary",
+            "owned": []
+          }
+        ],
+        "backblingvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier3.Legendary",
+            "owned": []
+          }
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -22159,7 +23275,13 @@
     "Hero:HID_Constructor_013_R_T04": {
       "templateId": "Hero:HID_Constructor_013_R_T04",
       "attributes": {
-        "outfitvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Rare",
+            "owned": []
+          }
+        ],
         "backblingvariants": [],
         "gender": 0,
         "level": 40,
@@ -22181,8 +23303,20 @@
     "Hero:HID_Constructor_011_VR_T05": {
       "templateId": "Hero:HID_Constructor_011_VR_T05",
       "attributes": {
-        "outfitvariants": [],
-        "backblingvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Epic",
+            "owned": []
+          }
+        ],
+        "backblingvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier3.Epic",
+            "owned": []
+          }
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -22203,8 +23337,20 @@
     "Hero:HID_Constructor_011_SR_T05": {
       "templateId": "Hero:HID_Constructor_011_SR_T05",
       "attributes": {
-        "outfitvariants": [],
-        "backblingvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Legendary",
+            "owned": []
+          }
+        ],
+        "backblingvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier3.Legendary",
+            "owned": []
+          }
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -22225,7 +23371,13 @@
     "Hero:HID_Constructor_011_R_T04": {
       "templateId": "Hero:HID_Constructor_011_R_T04",
       "attributes": {
-        "outfitvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Rare",
+            "owned": []
+          }
+        ],
         "backblingvariants": [],
         "gender": 0,
         "level": 40,
@@ -22269,8 +23421,20 @@
     "Hero:HID_Constructor_010_VR_T05": {
       "templateId": "Hero:HID_Constructor_010_VR_T05",
       "attributes": {
-        "outfitvariants": [],
-        "backblingvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Epic",
+            "owned": []
+          }
+        ],
+        "backblingvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier3.Epic",
+            "owned": []
+          }
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -22291,8 +23455,20 @@
     "Hero:HID_Constructor_010_SR_T05": {
       "templateId": "Hero:HID_Constructor_010_SR_T05",
       "attributes": {
-        "outfitvariants": [],
-        "backblingvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Legendary",
+            "owned": []
+          }
+        ],
+        "backblingvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier3.Legendary",
+            "owned": []
+          }
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -22313,8 +23489,20 @@
     "Hero:HID_Constructor_009_VR_T05": {
       "templateId": "Hero:HID_Constructor_009_VR_T05",
       "attributes": {
-        "outfitvariants": [],
-        "backblingvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Epic",
+            "owned": []
+          }
+        ],
+        "backblingvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier3.Epic",
+            "owned": []
+          }
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -22335,8 +23523,20 @@
     "Hero:HID_Constructor_009_SR_T05": {
       "templateId": "Hero:HID_Constructor_009_SR_T05",
       "attributes": {
-        "outfitvariants": [],
-        "backblingvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Legendary",
+            "owned": []
+          }
+        ],
+        "backblingvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier3.Legendary",
+            "owned": []
+          }
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -22357,7 +23557,13 @@
     "Hero:HID_Constructor_009_R_T04": {
       "templateId": "Hero:HID_Constructor_009_R_T04",
       "attributes": {
-        "outfitvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Rare",
+            "owned": []
+          }
+        ],
         "backblingvariants": [],
         "gender": 0,
         "level": 40,
@@ -22379,7 +23585,13 @@
     "Hero:HID_Constructor_008_VR_T05": {
       "templateId": "Hero:HID_Constructor_008_VR_T05",
       "attributes": {
-        "outfitvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Epic",
+            "owned": []
+          }
+        ],
         "backblingvariants": [],
         "gender": 0,
         "level": 50,
@@ -22401,8 +23613,20 @@
     "Hero:HID_Constructor_008_SR_T05": {
       "templateId": "Hero:HID_Constructor_008_SR_T05",
       "attributes": {
-        "outfitvariants": [],
-        "backblingvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Legendary",
+            "owned": []
+          }
+        ],
+        "backblingvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier3.Legendary",
+            "owned": []
+          }
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -22423,7 +23647,13 @@
     "Hero:HID_Constructor_008_R_T04": {
       "templateId": "Hero:HID_Constructor_008_R_T04",
       "attributes": {
-        "outfitvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Rare",
+            "owned": []
+          }
+        ],
         "backblingvariants": [],
         "gender": 0,
         "level": 40,
@@ -22445,7 +23675,13 @@
     "Hero:HID_Constructor_008_FoundersM_SR_T05": {
       "templateId": "Hero:HID_Constructor_008_FoundersM_SR_T05",
       "attributes": {
-        "outfitvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Legendary",
+            "owned": []
+          }
+        ],
         "backblingvariants": [],
         "gender": 0,
         "level": 50,
@@ -22467,7 +23703,13 @@
     "Hero:HID_Constructor_008_FoundersF_SR_T05": {
       "templateId": "Hero:HID_Constructor_008_FoundersF_SR_T05",
       "attributes": {
-        "outfitvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Legendary",
+            "owned": []
+          }
+        ],
         "backblingvariants": [],
         "gender": 0,
         "level": 50,
@@ -22489,8 +23731,20 @@
     "Hero:HID_Constructor_007_VR_T05": {
       "templateId": "Hero:HID_Constructor_007_VR_T05",
       "attributes": {
-        "outfitvariants": [],
-        "backblingvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Epic",
+            "owned": []
+          }
+        ],
+        "backblingvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier3.Epic",
+            "owned": []
+          }
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -22533,8 +23787,20 @@
     "Hero:HID_Constructor_007_SR_T05": {
       "templateId": "Hero:HID_Constructor_007_SR_T05",
       "attributes": {
-        "outfitvariants": [],
-        "backblingvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Legendary",
+            "owned": []
+          }
+        ],
+        "backblingvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier3.Legendary",
+            "owned": []
+          }
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -22555,7 +23821,13 @@
     "Hero:HID_Constructor_007_R_T04": {
       "templateId": "Hero:HID_Constructor_007_R_T04",
       "attributes": {
-        "outfitvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Rare",
+            "owned": []
+          }
+        ],
         "backblingvariants": [],
         "gender": 0,
         "level": 40,
@@ -22621,7 +23893,13 @@
     "Hero:HID_Ninja_XBOX_VR_T05": {
       "templateId": "Hero:HID_Ninja_XBOX_VR_T05",
       "attributes": {
-        "outfitvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Rare",
+            "owned": []
+          }
+        ],
         "backblingvariants": [],
         "gender": 0,
         "level": 50,
@@ -22643,7 +23921,13 @@
     "Hero:HID_Ninja_XBOX_SR_T05": {
       "templateId": "Hero:HID_Ninja_XBOX_SR_T05",
       "attributes": {
-        "outfitvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Rare",
+            "owned": []
+          }
+        ],
         "backblingvariants": [],
         "gender": 0,
         "level": 50,
@@ -22665,7 +23949,13 @@
     "Hero:HID_Ninja_XBOX_R_T04": {
       "templateId": "Hero:HID_Ninja_XBOX_R_T04",
       "attributes": {
-        "outfitvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Rare",
+            "owned": []
+          }
+        ],
         "backblingvariants": [],
         "gender": 0,
         "level": 40,
@@ -22687,7 +23977,13 @@
     "Hero:HID_Ninja_Swordmaster_SR_T05": {
       "templateId": "Hero:HID_Ninja_Swordmaster_SR_T05",
       "attributes": {
-        "outfitvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Mythic",
+            "owned": []
+          }
+        ],
         "backblingvariants": [],
         "gender": 0,
         "level": 50,
@@ -22709,7 +24005,13 @@
     "Hero:HID_Ninja_StarsRain_VR_T05": {
       "templateId": "Hero:HID_Ninja_StarsRain_VR_T05",
       "attributes": {
-        "outfitvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Epic",
+            "owned": []
+          }
+        ],
         "backblingvariants": [],
         "gender": 0,
         "level": 50,
@@ -22731,7 +24033,13 @@
     "Hero:HID_Ninja_StarsRain_SR_T05": {
       "templateId": "Hero:HID_Ninja_StarsRain_SR_T05",
       "attributes": {
-        "outfitvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Legendary",
+            "owned": []
+          }
+        ],
         "backblingvariants": [],
         "gender": 0,
         "level": 50,
@@ -22797,7 +24105,13 @@
     "Hero:HID_Ninja_StarsAssassin_FoundersF_SR_T05": {
       "templateId": "Hero:HID_Ninja_StarsAssassin_FoundersF_SR_T05",
       "attributes": {
-        "outfitvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Legendary",
+            "owned": []
+          }
+        ],
         "backblingvariants": [],
         "gender": 0,
         "level": 50,
@@ -22819,8 +24133,20 @@
     "Hero:HID_Ninja_StarsAssassin_VR_T05": {
       "templateId": "Hero:HID_Ninja_StarsAssassin_VR_T05",
       "attributes": {
-        "outfitvariants": [],
-        "backblingvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Epic",
+            "owned": []
+          }
+        ],
+        "backblingvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier3.Epic",
+            "owned": []
+          }
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -22863,8 +24189,20 @@
     "Hero:HID_Ninja_StarsAssassin_SR_T05": {
       "templateId": "Hero:HID_Ninja_StarsAssassin_SR_T05",
       "attributes": {
-        "outfitvariants": [],
-        "backblingvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Legendary",
+            "owned": []
+          }
+        ],
+        "backblingvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier3.Legendary",
+            "owned": []
+          }
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -22885,7 +24223,13 @@
     "Hero:HID_Ninja_StarsAssassin_R_T04": {
       "templateId": "Hero:HID_Ninja_StarsAssassin_R_T04",
       "attributes": {
-        "outfitvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier1.Rare",
+            "owned": []
+          }
+        ],
         "backblingvariants": [],
         "gender": 0,
         "level": 40,
@@ -22907,7 +24251,13 @@
     "Hero:HID_Ninja_StarsAssassin_FoundersM_SR_T05": {
       "templateId": "Hero:HID_Ninja_StarsAssassin_FoundersM_SR_T05",
       "attributes": {
-        "outfitvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Legendary",
+            "owned": []
+          }
+        ],
         "backblingvariants": [],
         "gender": 0,
         "level": 50,
@@ -22929,7 +24279,13 @@
     "Hero:HID_Ninja_Sony_VR_T05": {
       "templateId": "Hero:HID_Ninja_Sony_VR_T05",
       "attributes": {
-        "outfitvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Rare",
+            "owned": []
+          }
+        ],
         "backblingvariants": [],
         "gender": 0,
         "level": 50,
@@ -22951,7 +24307,13 @@
     "Hero:HID_Ninja_Sony_SR_T05": {
       "templateId": "Hero:HID_Ninja_Sony_SR_T05",
       "attributes": {
-        "outfitvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Rare",
+            "owned": []
+          }
+        ],
         "backblingvariants": [],
         "gender": 0,
         "level": 50,
@@ -22973,7 +24335,13 @@
     "Hero:HID_Ninja_Sony_R_T04": {
       "templateId": "Hero:HID_Ninja_Sony_R_T04",
       "attributes": {
-        "outfitvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Rare",
+            "owned": []
+          }
+        ],
         "backblingvariants": [],
         "gender": 0,
         "level": 40,
@@ -22995,8 +24363,20 @@
     "Hero:HID_Ninja_SmokeDimMak_SR_T05": {
       "templateId": "Hero:HID_Ninja_SmokeDimMak_SR_T05",
       "attributes": {
-        "outfitvariants": [],
-        "backblingvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Legendary",
+            "owned": []
+          }
+        ],
+        "backblingvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier3.Legendary",
+            "owned": []
+          }
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -23017,8 +24397,20 @@
     "Hero:HID_Ninja_SmokeDimMak_VR_T05": {
       "templateId": "Hero:HID_Ninja_SmokeDimMak_VR_T05",
       "attributes": {
-        "outfitvariants": [],
-        "backblingvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Epic",
+            "owned": []
+          }
+        ],
+        "backblingvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier3.Epic",
+            "owned": []
+          }
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -23039,7 +24431,13 @@
     "Hero:HID_Ninja_SmokeDimMak_R_T04": {
       "templateId": "Hero:HID_Ninja_SmokeDimMak_R_T04",
       "attributes": {
-        "outfitvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Rare",
+            "owned": []
+          }
+        ],
         "backblingvariants": [],
         "gender": 0,
         "level": 40,
@@ -23061,8 +24459,20 @@
     "Hero:HID_Ninja_SlashTail_VR_T05": {
       "templateId": "Hero:HID_Ninja_SlashTail_VR_T05",
       "attributes": {
-        "outfitvariants": [],
-        "backblingvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Epic",
+            "owned": []
+          }
+        ],
+        "backblingvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier3.Epic",
+            "owned": []
+          }
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -23105,8 +24515,20 @@
     "Hero:HID_Ninja_SlashTail_SR_T05": {
       "templateId": "Hero:HID_Ninja_SlashTail_SR_T05",
       "attributes": {
-        "outfitvariants": [],
-        "backblingvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Legendary",
+            "owned": []
+          }
+        ],
+        "backblingvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier3.Legendary",
+            "owned": []
+          }
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -23127,7 +24549,13 @@
     "Hero:HID_Ninja_SlashTail_R_T04": {
       "templateId": "Hero:HID_Ninja_SlashTail_R_T04",
       "attributes": {
-        "outfitvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier1.Rare",
+            "owned": []
+          }
+        ],
         "backblingvariants": [],
         "gender": 0,
         "level": 40,
@@ -23149,7 +24577,13 @@
     "Hero:HID_Ninja_SlashBreath_R_T04": {
       "templateId": "Hero:HID_Ninja_SlashBreath_R_T04",
       "attributes": {
-        "outfitvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Rare",
+            "owned": []
+          }
+        ],
         "backblingvariants": [],
         "gender": 0,
         "level": 40,
@@ -23171,8 +24605,20 @@
     "Hero:HID_Ninja_SlashBreath_VR_T05": {
       "templateId": "Hero:HID_Ninja_SlashBreath_VR_T05",
       "attributes": {
-        "outfitvariants": [],
-        "backblingvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Epic",
+            "owned": []
+          }
+        ],
+        "backblingvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier3.Epic",
+            "owned": []
+          }
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -23193,8 +24639,20 @@
     "Hero:HID_Ninja_SlashBreath_SR_T05": {
       "templateId": "Hero:HID_Ninja_SlashBreath_SR_T05",
       "attributes": {
-        "outfitvariants": [],
-        "backblingvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Legendary",
+            "owned": []
+          }
+        ],
+        "backblingvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier3.Legendary",
+            "owned": []
+          }
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -23303,8 +24761,20 @@
     "Hero:HID_Ninja_043_Cranium_VR_T05": {
       "templateId": "Hero:HID_Ninja_043_Cranium_VR_T05",
       "attributes": {
-        "outfitvariants": [],
-        "backblingvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier4.Epic",
+            "owned": []
+          }
+        ],
+        "backblingvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier4.Epic",
+            "owned": []
+          }
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -23325,8 +24795,20 @@
     "Hero:HID_Ninja_043_Cranium_SR_T05": {
       "templateId": "Hero:HID_Ninja_043_Cranium_SR_T05",
       "attributes": {
-        "outfitvariants": [],
-        "backblingvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier4.Epic",
+            "owned": []
+          }
+        ],
+        "backblingvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier4.Epic",
+            "owned": []
+          }
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -23479,7 +24961,13 @@
     "Hero:HID_Ninja_039_Dino_Ninja_VR_T05": {
       "templateId": "Hero:HID_Ninja_039_Dino_Ninja_VR_T05",
       "attributes": {
-        "outfitvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Epic",
+            "owned": []
+          }
+        ],
         "backblingvariants": [],
         "gender": 0,
         "level": 50,
@@ -23501,7 +24989,13 @@
     "Hero:HID_Ninja_039_Dino_Ninja_SR_T05": {
       "templateId": "Hero:HID_Ninja_039_Dino_Ninja_SR_T05",
       "attributes": {
-        "outfitvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Epic",
+            "owned": []
+          }
+        ],
         "backblingvariants": [],
         "gender": 0,
         "level": 50,
@@ -23523,7 +25017,13 @@
     "Hero:HID_Ninja_038_Male_Ninja_Pirate_VR_T05": {
       "templateId": "Hero:HID_Ninja_038_Male_Ninja_Pirate_VR_T05",
       "attributes": {
-        "outfitvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier1.Legendary",
+            "owned": []
+          }
+        ],
         "backblingvariants": [],
         "gender": 0,
         "level": 50,
@@ -23545,7 +25045,13 @@
     "Hero:HID_Ninja_038_Male_Ninja_Pirate_SR_T05": {
       "templateId": "Hero:HID_Ninja_038_Male_Ninja_Pirate_SR_T05",
       "attributes": {
-        "outfitvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Legendary",
+            "owned": []
+          }
+        ],
         "backblingvariants": [],
         "gender": 0,
         "level": 50,
@@ -23567,7 +25073,13 @@
     "Hero:HID_Ninja_037_Junk_Samurai_SR_T05": {
       "templateId": "Hero:HID_Ninja_037_Junk_Samurai_SR_T05",
       "attributes": {
-        "outfitvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Epic",
+            "owned": []
+          }
+        ],
         "backblingvariants": [],
         "gender": 0,
         "level": 50,
@@ -23589,7 +25101,13 @@
     "Hero:HID_Ninja_037_Junk_Samurai_VR_T05": {
       "templateId": "Hero:HID_Ninja_037_Junk_Samurai_VR_T05",
       "attributes": {
-        "outfitvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Epic",
+            "owned": []
+          }
+        ],
         "backblingvariants": [],
         "gender": 0,
         "level": 50,
@@ -23743,7 +25261,13 @@
     "Hero:HID_Ninja_030_RetroSciFiNinja_SR_T05": {
       "templateId": "Hero:HID_Ninja_030_RetroSciFiNinja_SR_T05",
       "attributes": {
-        "outfitvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Epic",
+            "owned": []
+          }
+        ],
         "backblingvariants": [],
         "gender": 0,
         "level": 50,
@@ -23765,7 +25289,13 @@
     "Hero:HID_Ninja_030_RetroSciFiNinja_VR_T05": {
       "templateId": "Hero:HID_Ninja_030_RetroSciFiNinja_VR_T05",
       "attributes": {
-        "outfitvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Epic",
+            "owned": []
+          }
+        ],
         "backblingvariants": [],
         "gender": 0,
         "level": 50,
@@ -23787,7 +25317,13 @@
     "Hero:HID_Ninja_029_DinoNinja_SR_T05": {
       "templateId": "Hero:HID_Ninja_029_DinoNinja_SR_T05",
       "attributes": {
-        "outfitvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Legendary",
+            "owned": []
+          }
+        ],
         "backblingvariants": [],
         "gender": 0,
         "level": 50,
@@ -23831,7 +25367,13 @@
     "Hero:HID_Ninja_027_BunnyNinja_SR_T05": {
       "templateId": "Hero:HID_Ninja_027_BunnyNinja_SR_T05",
       "attributes": {
-        "outfitvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Legendary",
+            "owned": []
+          }
+        ],
         "backblingvariants": [],
         "gender": 0,
         "level": 50,
@@ -23853,7 +25395,13 @@
     "Hero:HID_Ninja_026_RedDragonNinja_SR_T05": {
       "templateId": "Hero:HID_Ninja_026_RedDragonNinja_SR_T05",
       "attributes": {
-        "outfitvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier4.Legendary",
+            "owned": []
+          }
+        ],
         "backblingvariants": [],
         "gender": 0,
         "level": 50,
@@ -23875,7 +25423,13 @@
     "Hero:HID_Ninja_025_PirateNinja_VR_T05": {
       "templateId": "Hero:HID_Ninja_025_PirateNinja_VR_T05",
       "attributes": {
-        "outfitvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Epic",
+            "owned": []
+          }
+        ],
         "backblingvariants": [],
         "gender": 0,
         "level": 50,
@@ -23897,7 +25451,13 @@
     "Hero:HID_Ninja_025_PirateNinja_SR_T05": {
       "templateId": "Hero:HID_Ninja_025_PirateNinja_SR_T05",
       "attributes": {
-        "outfitvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Epic",
+            "owned": []
+          }
+        ],
         "backblingvariants": [],
         "gender": 0,
         "level": 50,
@@ -23919,7 +25479,13 @@
     "Hero:HID_Ninja_024_SR_T05": {
       "templateId": "Hero:HID_Ninja_024_SR_T05",
       "attributes": {
-        "outfitvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Legendary",
+            "owned": []
+          }
+        ],
         "backblingvariants": [],
         "gender": 0,
         "level": 50,
@@ -23941,7 +25507,13 @@
     "Hero:HID_Ninja_023_SR_T05": {
       "templateId": "Hero:HID_Ninja_023_SR_T05",
       "attributes": {
-        "outfitvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier5.Mythic",
+            "owned": []
+          }
+        ],
         "backblingvariants": [],
         "gender": 0,
         "level": 50,
@@ -23963,7 +25535,13 @@
     "Hero:HID_Ninja_022_SR_T05": {
       "templateId": "Hero:HID_Ninja_022_SR_T05",
       "attributes": {
-        "outfitvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Legendary",
+            "owned": []
+          }
+        ],
         "backblingvariants": [],
         "gender": 0,
         "level": 50,
@@ -24007,7 +25585,13 @@
     "Hero:HID_Ninja_020_SR_T05": {
       "templateId": "Hero:HID_Ninja_020_SR_T05",
       "attributes": {
-        "outfitvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Legendary",
+            "owned": []
+          }
+        ],
         "backblingvariants": [],
         "gender": 0,
         "level": 50,
@@ -24029,7 +25613,13 @@
     "Hero:HID_Ninja_019_SR_T05": {
       "templateId": "Hero:HID_Ninja_019_SR_T05",
       "attributes": {
-        "outfitvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier5.Legendary",
+            "owned": []
+          }
+        ],
         "backblingvariants": [],
         "gender": 0,
         "level": 50,
@@ -24073,8 +25663,20 @@
     "Hero:HID_Ninja_017_M_V1_VR_T05": {
       "templateId": "Hero:HID_Ninja_017_M_V1_VR_T05",
       "attributes": {
-        "outfitvariants": [],
-        "backblingvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Epic",
+            "owned": []
+          }
+        ],
+        "backblingvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier3.Epic",
+            "owned": []
+          }
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -24095,8 +25697,20 @@
     "Hero:HID_Ninja_017_M_V1_SR_T05": {
       "templateId": "Hero:HID_Ninja_017_M_V1_SR_T05",
       "attributes": {
-        "outfitvariants": [],
-        "backblingvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Legendary",
+            "owned": []
+          }
+        ],
+        "backblingvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier3.Legendary",
+            "owned": []
+          }
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -24117,7 +25731,13 @@
     "Hero:HID_Ninja_017_M_V1_R_T04": {
       "templateId": "Hero:HID_Ninja_017_M_V1_R_T04",
       "attributes": {
-        "outfitvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Rare",
+            "owned": []
+          }
+        ],
         "backblingvariants": [],
         "gender": 0,
         "level": 40,
@@ -24139,7 +25759,13 @@
     "Hero:HID_Ninja_016_M_V1_VR_T05": {
       "templateId": "Hero:HID_Ninja_016_M_V1_VR_T05",
       "attributes": {
-        "outfitvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Epic",
+            "owned": []
+          }
+        ],
         "backblingvariants": [],
         "gender": 0,
         "level": 50,
@@ -24161,7 +25787,13 @@
     "Hero:HID_Ninja_016_M_V1_SR_T05": {
       "templateId": "Hero:HID_Ninja_016_M_V1_SR_T05",
       "attributes": {
-        "outfitvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Epic",
+            "owned": []
+          }
+        ],
         "backblingvariants": [],
         "gender": 0,
         "level": 50,
@@ -24183,7 +25815,13 @@
     "Hero:HID_Ninja_016_F_V1_SR_T05": {
       "templateId": "Hero:HID_Ninja_016_F_V1_SR_T05",
       "attributes": {
-        "outfitvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Legendary",
+            "owned": []
+          }
+        ],
         "backblingvariants": [],
         "gender": 0,
         "level": 50,
@@ -24205,8 +25843,20 @@
     "Hero:HID_Ninja_015_F_V1_VR_T05": {
       "templateId": "Hero:HID_Ninja_015_F_V1_VR_T05",
       "attributes": {
-        "outfitvariants": [],
-        "backblingvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Epic",
+            "owned": []
+          }
+        ],
+        "backblingvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier3.Epic",
+            "owned": []
+          }
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -24249,8 +25899,20 @@
     "Hero:HID_Ninja_015_F_V1_SR_T05": {
       "templateId": "Hero:HID_Ninja_015_F_V1_SR_T05",
       "attributes": {
-        "outfitvariants": [],
-        "backblingvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Legendary",
+            "owned": []
+          }
+        ],
+        "backblingvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier3.Legendary",
+            "owned": []
+          }
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -24271,7 +25933,13 @@
     "Hero:HID_Ninja_015_F_V1_R_T04": {
       "templateId": "Hero:HID_Ninja_015_F_V1_R_T04",
       "attributes": {
-        "outfitvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Rare",
+            "owned": []
+          }
+        ],
         "backblingvariants": [],
         "gender": 0,
         "level": 40,
@@ -24315,8 +25983,20 @@
     "Hero:HID_Ninja_014_VR_T05": {
       "templateId": "Hero:HID_Ninja_014_VR_T05",
       "attributes": {
-        "outfitvariants": [],
-        "backblingvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Epic",
+            "owned": []
+          }
+        ],
+        "backblingvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier3.Epic",
+            "owned": []
+          }
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -24359,8 +26039,20 @@
     "Hero:HID_Ninja_014_SR_T05": {
       "templateId": "Hero:HID_Ninja_014_SR_T05",
       "attributes": {
-        "outfitvariants": [],
-        "backblingvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Legendary",
+            "owned": []
+          }
+        ],
+        "backblingvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier3.Legendary",
+            "owned": []
+          }
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -24381,7 +26073,13 @@
     "Hero:HID_Ninja_014_R_T04": {
       "templateId": "Hero:HID_Ninja_014_R_T04",
       "attributes": {
-        "outfitvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Rare",
+            "owned": []
+          }
+        ],
         "backblingvariants": [],
         "gender": 0,
         "level": 40,
@@ -24403,7 +26101,13 @@
     "Hero:HID_Ninja_014_F_SR_T05": {
       "templateId": "Hero:HID_Ninja_014_F_SR_T05",
       "attributes": {
-        "outfitvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Legendary",
+            "owned": []
+          }
+        ],
         "backblingvariants": [],
         "gender": 0,
         "level": 50,
@@ -24425,8 +26129,20 @@
     "Hero:HID_Ninja_013_VR_T05": {
       "templateId": "Hero:HID_Ninja_013_VR_T05",
       "attributes": {
-        "outfitvariants": [],
-        "backblingvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Epic",
+            "owned": []
+          }
+        ],
+        "backblingvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier3.Epic",
+            "owned": []
+          }
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -24447,8 +26163,20 @@
     "Hero:HID_Ninja_013_SR_T05": {
       "templateId": "Hero:HID_Ninja_013_SR_T05",
       "attributes": {
-        "outfitvariants": [],
-        "backblingvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Legendary",
+            "owned": []
+          }
+        ],
+        "backblingvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier3.Legendary",
+            "owned": []
+          }
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -24469,7 +26197,13 @@
     "Hero:HID_Ninja_013_R_T04": {
       "templateId": "Hero:HID_Ninja_013_R_T04",
       "attributes": {
-        "outfitvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Rare",
+            "owned": []
+          }
+        ],
         "backblingvariants": [],
         "gender": 0,
         "level": 40,
@@ -24491,8 +26225,20 @@
     "Hero:HID_Ninja_011_VR_T05": {
       "templateId": "Hero:HID_Ninja_011_VR_T05",
       "attributes": {
-        "outfitvariants": [],
-        "backblingvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Epic",
+            "owned": []
+          }
+        ],
+        "backblingvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier3.Epic",
+            "owned": []
+          }
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -24513,8 +26259,20 @@
     "Hero:HID_Ninja_011_SR_T05": {
       "templateId": "Hero:HID_Ninja_011_SR_T05",
       "attributes": {
-        "outfitvariants": [],
-        "backblingvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Legendary",
+            "owned": []
+          }
+        ],
+        "backblingvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier3.Legendary",
+            "owned": []
+          }
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -24535,7 +26293,13 @@
     "Hero:HID_Ninja_011_R_T04": {
       "templateId": "Hero:HID_Ninja_011_R_T04",
       "attributes": {
-        "outfitvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Rare",
+            "owned": []
+          }
+        ],
         "backblingvariants": [],
         "gender": 0,
         "level": 40,
@@ -24557,8 +26321,20 @@
     "Hero:HID_Ninja_010_VR_T05": {
       "templateId": "Hero:HID_Ninja_010_VR_T05",
       "attributes": {
-        "outfitvariants": [],
-        "backblingvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Epic",
+            "owned": []
+          }
+        ],
+        "backblingvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier3.Epic",
+            "owned": []
+          }
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -24579,8 +26355,20 @@
     "Hero:HID_Ninja_010_SR_T05": {
       "templateId": "Hero:HID_Ninja_010_SR_T05",
       "attributes": {
-        "outfitvariants": [],
-        "backblingvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Legendary",
+            "owned": []
+          }
+        ],
+        "backblingvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier3.Legendary",
+            "owned": []
+          }
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -24601,8 +26389,20 @@
     "Hero:HID_Ninja_010_F_VR_T05": {
       "templateId": "Hero:HID_Ninja_010_F_VR_T05",
       "attributes": {
-        "outfitvariants": [],
-        "backblingvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Epic",
+            "owned": []
+          }
+        ],
+        "backblingvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier3.Epic",
+            "owned": []
+          }
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -24623,8 +26423,20 @@
     "Hero:HID_Ninja_010_F_SR_T05": {
       "templateId": "Hero:HID_Ninja_010_F_SR_T05",
       "attributes": {
-        "outfitvariants": [],
-        "backblingvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Legendary",
+            "owned": []
+          }
+        ],
+        "backblingvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier3.Legendary",
+            "owned": []
+          }
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -24645,8 +26457,20 @@
     "Hero:HID_Ninja_009_VR_T05": {
       "templateId": "Hero:HID_Ninja_009_VR_T05",
       "attributes": {
-        "outfitvariants": [],
-        "backblingvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Epic",
+            "owned": []
+          }
+        ],
+        "backblingvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier3.Epic",
+            "owned": []
+          }
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -24667,8 +26491,20 @@
     "Hero:HID_Ninja_009_SR_T05": {
       "templateId": "Hero:HID_Ninja_009_SR_T05",
       "attributes": {
-        "outfitvariants": [],
-        "backblingvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Legendary",
+            "owned": []
+          }
+        ],
+        "backblingvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier3.Legendary",
+            "owned": []
+          }
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -24689,7 +26525,13 @@
     "Hero:HID_Ninja_009_R_T04": {
       "templateId": "Hero:HID_Ninja_009_R_T04",
       "attributes": {
-        "outfitvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Rare",
+            "owned": []
+          }
+        ],
         "backblingvariants": [],
         "gender": 0,
         "level": 40,
@@ -24711,7 +26553,13 @@
     "Hero:HID_Ninja_009_F_Valentine_SR_T05": {
       "templateId": "Hero:HID_Ninja_009_F_Valentine_SR_T05",
       "attributes": {
-        "outfitvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Legendary",
+            "owned": []
+          }
+        ],
         "backblingvariants": [],
         "gender": 0,
         "level": 50,
@@ -24733,8 +26581,20 @@
     "Hero:HID_Ninja_008_VR_T05": {
       "templateId": "Hero:HID_Ninja_008_VR_T05",
       "attributes": {
-        "outfitvariants": [],
-        "backblingvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Epic",
+            "owned": []
+          }
+        ],
+        "backblingvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier3.Epic",
+            "owned": []
+          }
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -24755,8 +26615,20 @@
     "Hero:HID_Ninja_008_SR_T05": {
       "templateId": "Hero:HID_Ninja_008_SR_T05",
       "attributes": {
-        "outfitvariants": [],
-        "backblingvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Legendary",
+            "owned": []
+          }
+        ],
+        "backblingvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier3.Legendary",
+            "owned": []
+          }
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -24777,7 +26649,13 @@
     "Hero:HID_Ninja_008_R_T04": {
       "templateId": "Hero:HID_Ninja_008_R_T04",
       "attributes": {
-        "outfitvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Rare",
+            "owned": []
+          }
+        ],
         "backblingvariants": [],
         "gender": 0,
         "level": 40,
@@ -24799,8 +26677,20 @@
     "Hero:HID_Ninja_007_VR_T05": {
       "templateId": "Hero:HID_Ninja_007_VR_T05",
       "attributes": {
-        "outfitvariants": [],
-        "backblingvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Epic",
+            "owned": []
+          }
+        ],
+        "backblingvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier3.Epic",
+            "owned": []
+          }
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -24843,8 +26733,20 @@
     "Hero:HID_Ninja_007_SR_T05": {
       "templateId": "Hero:HID_Ninja_007_SR_T05",
       "attributes": {
-        "outfitvariants": [],
-        "backblingvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Legendary",
+            "owned": []
+          }
+        ],
+        "backblingvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier3.Legendary",
+            "owned": []
+          }
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -24865,7 +26767,13 @@
     "Hero:HID_Ninja_007_R_T04": {
       "templateId": "Hero:HID_Ninja_007_R_T04",
       "attributes": {
-        "outfitvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Rare",
+            "owned": []
+          }
+        ],
         "backblingvariants": [],
         "gender": 0,
         "level": 40,
@@ -24887,8 +26795,20 @@
     "Hero:HID_Outlander_ZonePistol_VR_T05": {
       "templateId": "Hero:HID_Outlander_ZonePistol_VR_T05",
       "attributes": {
-        "outfitvariants": [],
-        "backblingvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Epic",
+            "owned": []
+          }
+        ],
+        "backblingvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier3.Epic",
+            "owned": []
+          }
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -24909,8 +26829,20 @@
     "Hero:HID_Outlander_ZonePistol_SR_T05": {
       "templateId": "Hero:HID_Outlander_ZonePistol_SR_T05",
       "attributes": {
-        "outfitvariants": [],
-        "backblingvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Legendary",
+            "owned": []
+          }
+        ],
+        "backblingvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier3.Legendary",
+            "owned": []
+          }
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -24931,7 +26863,13 @@
     "Hero:HID_Outlander_ZonePistol_R_T04": {
       "templateId": "Hero:HID_Outlander_ZonePistol_R_T04",
       "attributes": {
-        "outfitvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Rare",
+            "owned": []
+          }
+        ],
         "backblingvariants": [],
         "gender": 0,
         "level": 40,
@@ -25019,7 +26957,13 @@
     "Hero:HID_Outlander_ZoneHarvest_SR_T05": {
       "templateId": "Hero:HID_Outlander_ZoneHarvest_SR_T05",
       "attributes": {
-        "outfitvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Legendary",
+            "owned": []
+          }
+        ],
         "backblingvariants": [],
         "gender": 0,
         "level": 50,
@@ -25041,7 +26985,13 @@
     "Hero:HID_Outlander_ZoneHarvest_VR_T05": {
       "templateId": "Hero:HID_Outlander_ZoneHarvest_VR_T05",
       "attributes": {
-        "outfitvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Epic",
+            "owned": []
+          }
+        ],
         "backblingvariants": [],
         "gender": 0,
         "level": 50,
@@ -25063,7 +27013,13 @@
     "Hero:HID_Outlander_ZoneHarvest_R_T04": {
       "templateId": "Hero:HID_Outlander_ZoneHarvest_R_T04",
       "attributes": {
-        "outfitvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier1.Rare",
+            "owned": []
+          }
+        ],
         "backblingvariants": [],
         "gender": 0,
         "level": 40,
@@ -25085,7 +27041,13 @@
     "Hero:HID_Outlander_ZoneHarvest_BlockBuster_SR_T05": {
       "templateId": "Hero:HID_Outlander_ZoneHarvest_BlockBuster_SR_T05",
       "attributes": {
-        "outfitvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Legendary",
+            "owned": []
+          }
+        ],
         "backblingvariants": [],
         "gender": 0,
         "level": 50,
@@ -25129,7 +27091,13 @@
     "Hero:HID_Outlander_ZoneFragment_SR_T05": {
       "templateId": "Hero:HID_Outlander_ZoneFragment_SR_T05",
       "attributes": {
-        "outfitvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Mythic",
+            "owned": []
+          }
+        ],
         "backblingvariants": [],
         "gender": 0,
         "level": 50,
@@ -25151,7 +27119,13 @@
     "Hero:HID_Outlander_XBOX_VR_T05": {
       "templateId": "Hero:HID_Outlander_XBOX_VR_T05",
       "attributes": {
-        "outfitvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Rare",
+            "owned": []
+          }
+        ],
         "backblingvariants": [],
         "gender": 0,
         "level": 50,
@@ -25173,7 +27147,13 @@
     "Hero:HID_Outlander_XBOX_SR_T05": {
       "templateId": "Hero:HID_Outlander_XBOX_SR_T05",
       "attributes": {
-        "outfitvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Rare",
+            "owned": []
+          }
+        ],
         "backblingvariants": [],
         "gender": 0,
         "level": 50,
@@ -25195,7 +27175,13 @@
     "Hero:HID_Outlander_XBOX_R_T04": {
       "templateId": "Hero:HID_Outlander_XBOX_R_T04",
       "attributes": {
-        "outfitvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Rare",
+            "owned": []
+          }
+        ],
         "backblingvariants": [],
         "gender": 0,
         "level": 40,
@@ -25217,8 +27203,20 @@
     "Hero:HID_Outlander_SphereFragment_VR_T05": {
       "templateId": "Hero:HID_Outlander_SphereFragment_VR_T05",
       "attributes": {
-        "outfitvariants": [],
-        "backblingvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Epic",
+            "owned": []
+          }
+        ],
+        "backblingvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier3.Epic",
+            "owned": []
+          }
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -25261,8 +27259,20 @@
     "Hero:HID_Outlander_SphereFragment_SR_T05": {
       "templateId": "Hero:HID_Outlander_SphereFragment_SR_T05",
       "attributes": {
-        "outfitvariants": [],
-        "backblingvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Legendary",
+            "owned": []
+          }
+        ],
+        "backblingvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier3.Legendary",
+            "owned": []
+          }
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -25283,7 +27293,13 @@
     "Hero:HID_Outlander_SphereFragment_R_T04": {
       "templateId": "Hero:HID_Outlander_SphereFragment_R_T04",
       "attributes": {
-        "outfitvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Rare",
+            "owned": []
+          }
+        ],
         "backblingvariants": [],
         "gender": 0,
         "level": 40,
@@ -25305,7 +27321,13 @@
     "Hero:HID_Outlander_Sony_VR_T05": {
       "templateId": "Hero:HID_Outlander_Sony_VR_T05",
       "attributes": {
-        "outfitvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Rare",
+            "owned": []
+          }
+        ],
         "backblingvariants": [],
         "gender": 0,
         "level": 50,
@@ -25327,7 +27349,13 @@
     "Hero:HID_Outlander_Sony_SR_T05": {
       "templateId": "Hero:HID_Outlander_Sony_SR_T05",
       "attributes": {
-        "outfitvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Rare",
+            "owned": []
+          }
+        ],
         "backblingvariants": [],
         "gender": 0,
         "level": 50,
@@ -25349,7 +27377,13 @@
     "Hero:HID_Outlander_Sony_R_T04": {
       "templateId": "Hero:HID_Outlander_Sony_R_T04",
       "attributes": {
-        "outfitvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Rare",
+            "owned": []
+          }
+        ],
         "backblingvariants": [],
         "gender": 0,
         "level": 40,
@@ -25371,7 +27405,13 @@
     "Hero:HID_Outlander_PunchPhase_VR_T05": {
       "templateId": "Hero:HID_Outlander_PunchPhase_VR_T05",
       "attributes": {
-        "outfitvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier1.Epic",
+            "owned": []
+          }
+        ],
         "backblingvariants": [],
         "gender": 0,
         "level": 50,
@@ -25415,7 +27455,13 @@
     "Hero:HID_Outlander_PunchPhase_SR_T05": {
       "templateId": "Hero:HID_Outlander_PunchPhase_SR_T05",
       "attributes": {
-        "outfitvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier1.Legendary",
+            "owned": []
+          }
+        ],
         "backblingvariants": [],
         "gender": 0,
         "level": 50,
@@ -25437,7 +27483,13 @@
     "Hero:HID_Outlander_PunchPhase_R_T04": {
       "templateId": "Hero:HID_Outlander_PunchPhase_R_T04",
       "attributes": {
-        "outfitvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier1.Rare",
+            "owned": []
+          }
+        ],
         "backblingvariants": [],
         "gender": 0,
         "level": 40,
@@ -25459,8 +27511,20 @@
     "Hero:HID_Outlander_PunchDamage_SR_T05": {
       "templateId": "Hero:HID_Outlander_PunchDamage_SR_T05",
       "attributes": {
-        "outfitvariants": [],
-        "backblingvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Legendary",
+            "owned": []
+          }
+        ],
+        "backblingvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier3.Legendary",
+            "owned": []
+          }
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -25481,8 +27545,20 @@
     "Hero:HID_Outlander_PunchDamage_VR_T05": {
       "templateId": "Hero:HID_Outlander_PunchDamage_VR_T05",
       "attributes": {
-        "outfitvariants": [],
-        "backblingvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Epic",
+            "owned": []
+          }
+        ],
+        "backblingvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier3.Epic",
+            "owned": []
+          }
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -25503,7 +27579,13 @@
     "Hero:HID_Outlander_Myth03_SR_T05": {
       "templateId": "Hero:HID_Outlander_Myth03_SR_T05",
       "attributes": {
-        "outfitvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Mythic",
+            "owned": []
+          }
+        ],
         "backblingvariants": [],
         "gender": 0,
         "level": 50,
@@ -25525,7 +27607,13 @@
     "Hero:HID_Outlander_Myth02_SR_T05": {
       "templateId": "Hero:HID_Outlander_Myth02_SR_T05",
       "attributes": {
-        "outfitvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier5.Legendary",
+            "owned": []
+          }
+        ],
         "backblingvariants": [],
         "gender": 0,
         "level": 50,
@@ -25723,7 +27811,13 @@
     "Hero:HID_Outlander_036_Dino_Outlander_VR_T05": {
       "templateId": "Hero:HID_Outlander_036_Dino_Outlander_VR_T05",
       "attributes": {
-        "outfitvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Epic",
+            "owned": []
+          }
+        ],
         "backblingvariants": [],
         "gender": 0,
         "level": 50,
@@ -25745,7 +27839,13 @@
     "Hero:HID_Outlander_036_Dino_Outlander_SR_T05": {
       "templateId": "Hero:HID_Outlander_036_Dino_Outlander_SR_T05",
       "attributes": {
-        "outfitvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Epic",
+            "owned": []
+          }
+        ],
         "backblingvariants": [],
         "gender": 0,
         "level": 50,
@@ -25767,7 +27867,13 @@
     "Hero:HID_Outlander_035_Palespooky_Outlander_Holiday_SR_T05": {
       "templateId": "Hero:HID_Outlander_035_Palespooky_Outlander_Holiday_SR_T05",
       "attributes": {
-        "outfitvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Epic",
+            "owned": []
+          }
+        ],
         "backblingvariants": [],
         "gender": 0,
         "level": 50,
@@ -25789,7 +27895,13 @@
     "Hero:HID_Outlander_035_Palespooky_Outlander_Holiday_VR_T05": {
       "templateId": "Hero:HID_Outlander_035_Palespooky_Outlander_Holiday_VR_T05",
       "attributes": {
-        "outfitvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Epic",
+            "owned": []
+          }
+        ],
         "backblingvariants": [],
         "gender": 0,
         "level": 50,
@@ -25899,7 +28011,13 @@
     "Hero:HID_Outlander_031_HalloweenOutlander_SR_T05": {
       "templateId": "Hero:HID_Outlander_031_HalloweenOutlander_SR_T05",
       "attributes": {
-        "outfitvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Epic",
+            "owned": []
+          }
+        ],
         "backblingvariants": [],
         "gender": 0,
         "level": 50,
@@ -26031,7 +28149,13 @@
     "Hero:HID_Outlander_027_DinoOutlander_SR_T05": {
       "templateId": "Hero:HID_Outlander_027_DinoOutlander_SR_T05",
       "attributes": {
-        "outfitvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Legendary",
+            "owned": []
+          }
+        ],
         "backblingvariants": [],
         "gender": 0,
         "level": 50,
@@ -26075,7 +28199,13 @@
     "Hero:HID_Outlander_025_PirateOutlander_VR_T05": {
       "templateId": "Hero:HID_Outlander_025_PirateOutlander_VR_T05",
       "attributes": {
-        "outfitvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Epic",
+            "owned": []
+          }
+        ],
         "backblingvariants": [],
         "gender": 0,
         "level": 50,
@@ -26097,7 +28227,13 @@
     "Hero:HID_Outlander_025_PirateOutlander_SR_T05": {
       "templateId": "Hero:HID_Outlander_025_PirateOutlander_SR_T05",
       "attributes": {
-        "outfitvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Epic",
+            "owned": []
+          }
+        ],
         "backblingvariants": [],
         "gender": 0,
         "level": 50,
@@ -26163,7 +28299,13 @@
     "Hero:HID_Outlander_022_SR_T05": {
       "templateId": "Hero:HID_Outlander_022_SR_T05",
       "attributes": {
-        "outfitvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier4.Legendary",
+            "owned": []
+          }
+        ],
         "backblingvariants": [],
         "gender": 0,
         "level": 50,
@@ -26251,7 +28393,13 @@
     "Hero:HID_Outlander_017_M_V1_VR_T05": {
       "templateId": "Hero:HID_Outlander_017_M_V1_VR_T05",
       "attributes": {
-        "outfitvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Epic",
+            "owned": []
+          }
+        ],
         "backblingvariants": [],
         "gender": 0,
         "level": 50,
@@ -26273,7 +28421,13 @@
     "Hero:HID_Outlander_017_M_V1_SR_T05": {
       "templateId": "Hero:HID_Outlander_017_M_V1_SR_T05",
       "attributes": {
-        "outfitvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Epic",
+            "owned": []
+          }
+        ],
         "backblingvariants": [],
         "gender": 0,
         "level": 50,
@@ -26295,7 +28449,13 @@
     "Hero:HID_Outlander_016_M_V1_VR_T05": {
       "templateId": "Hero:HID_Outlander_016_M_V1_VR_T05",
       "attributes": {
-        "outfitvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Epic",
+            "owned": []
+          }
+        ],
         "backblingvariants": [],
         "gender": 0,
         "level": 50,
@@ -26317,7 +28477,13 @@
     "Hero:HID_Outlander_016_M_V1_SR_T05": {
       "templateId": "Hero:HID_Outlander_016_M_V1_SR_T05",
       "attributes": {
-        "outfitvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Epic",
+            "owned": []
+          }
+        ],
         "backblingvariants": [],
         "gender": 0,
         "level": 50,
@@ -26339,7 +28505,13 @@
     "Hero:HID_Outlander_016_F_V1_SR_T05": {
       "templateId": "Hero:HID_Outlander_016_F_V1_SR_T05",
       "attributes": {
-        "outfitvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Legendary",
+            "owned": []
+          }
+        ],
         "backblingvariants": [],
         "gender": 0,
         "level": 50,
@@ -26361,8 +28533,20 @@
     "Hero:HID_Outlander_015_F_V1_VR_T05": {
       "templateId": "Hero:HID_Outlander_015_F_V1_VR_T05",
       "attributes": {
-        "outfitvariants": [],
-        "backblingvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Epic",
+            "owned": []
+          }
+        ],
+        "backblingvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier3.Epic",
+            "owned": []
+          }
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -26383,8 +28567,20 @@
     "Hero:HID_Outlander_015_F_V1_SR_T05": {
       "templateId": "Hero:HID_Outlander_015_F_V1_SR_T05",
       "attributes": {
-        "outfitvariants": [],
-        "backblingvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Legendary",
+            "owned": []
+          }
+        ],
+        "backblingvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier3.Legendary",
+            "owned": []
+          }
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -26405,7 +28601,13 @@
     "Hero:HID_Outlander_015_F_V1_R_T04": {
       "templateId": "Hero:HID_Outlander_015_F_V1_R_T04",
       "attributes": {
-        "outfitvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Rare",
+            "owned": []
+          }
+        ],
         "backblingvariants": [],
         "gender": 0,
         "level": 40,
@@ -26427,8 +28629,20 @@
     "Hero:HID_Outlander_014_VR_T05": {
       "templateId": "Hero:HID_Outlander_014_VR_T05",
       "attributes": {
-        "outfitvariants": [],
-        "backblingvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Epic",
+            "owned": []
+          }
+        ],
+        "backblingvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier3.Epic",
+            "owned": []
+          }
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -26449,8 +28663,20 @@
     "Hero:HID_Outlander_014_SR_T05": {
       "templateId": "Hero:HID_Outlander_014_SR_T05",
       "attributes": {
-        "outfitvariants": [],
-        "backblingvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Legendary",
+            "owned": []
+          }
+        ],
+        "backblingvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier3.Legendary",
+            "owned": []
+          }
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -26471,7 +28697,13 @@
     "Hero:HID_Outlander_014_R_T04": {
       "templateId": "Hero:HID_Outlander_014_R_T04",
       "attributes": {
-        "outfitvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Rare",
+            "owned": []
+          }
+        ],
         "backblingvariants": [],
         "gender": 0,
         "level": 40,
@@ -26493,7 +28725,13 @@
     "Hero:HID_Outlander_014_M_SR_T05": {
       "templateId": "Hero:HID_Outlander_014_M_SR_T05",
       "attributes": {
-        "outfitvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Legendary",
+            "owned": []
+          }
+        ],
         "backblingvariants": [],
         "gender": 0,
         "level": 50,
@@ -26515,8 +28753,20 @@
     "Hero:HID_Outlander_013_VR_T05": {
       "templateId": "Hero:HID_Outlander_013_VR_T05",
       "attributes": {
-        "outfitvariants": [],
-        "backblingvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Epic",
+            "owned": []
+          }
+        ],
+        "backblingvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier3.Epic",
+            "owned": []
+          }
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -26537,7 +28787,13 @@
     "Hero:HID_Outlander_013_StPatricks_SR_T05": {
       "templateId": "Hero:HID_Outlander_013_StPatricks_SR_T05",
       "attributes": {
-        "outfitvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Legendary",
+            "owned": []
+          }
+        ],
         "backblingvariants": [],
         "gender": 0,
         "level": 50,
@@ -26559,8 +28815,20 @@
     "Hero:HID_Outlander_013_SR_T05": {
       "templateId": "Hero:HID_Outlander_013_SR_T05",
       "attributes": {
-        "outfitvariants": [],
-        "backblingvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Legendary",
+            "owned": []
+          }
+        ],
+        "backblingvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier3.Legendary",
+            "owned": []
+          }
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -26581,8 +28849,20 @@
     "Hero:HID_Outlander_011_VR_T05": {
       "templateId": "Hero:HID_Outlander_011_VR_T05",
       "attributes": {
-        "outfitvariants": [],
-        "backblingvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Epic",
+            "owned": []
+          }
+        ],
+        "backblingvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier3.Epic",
+            "owned": []
+          }
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -26603,8 +28883,20 @@
     "Hero:HID_Outlander_011_SR_T05": {
       "templateId": "Hero:HID_Outlander_011_SR_T05",
       "attributes": {
-        "outfitvariants": [],
-        "backblingvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Legendary",
+            "owned": []
+          }
+        ],
+        "backblingvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier3.Legendary",
+            "owned": []
+          }
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -26625,8 +28917,20 @@
     "Hero:HID_Outlander_010_VR_T05": {
       "templateId": "Hero:HID_Outlander_010_VR_T05",
       "attributes": {
-        "outfitvariants": [],
-        "backblingvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Epic",
+            "owned": []
+          }
+        ],
+        "backblingvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier3.Epic",
+            "owned": []
+          }
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -26647,8 +28951,20 @@
     "Hero:HID_Outlander_010_SR_T05": {
       "templateId": "Hero:HID_Outlander_010_SR_T05",
       "attributes": {
-        "outfitvariants": [],
-        "backblingvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Legendary",
+            "owned": []
+          }
+        ],
+        "backblingvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier3.Legendary",
+            "owned": []
+          }
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -26669,8 +28985,20 @@
     "Hero:HID_Outlander_010_M_VR_T05": {
       "templateId": "Hero:HID_Outlander_010_M_VR_T05",
       "attributes": {
-        "outfitvariants": [],
-        "backblingvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Epic",
+            "owned": []
+          }
+        ],
+        "backblingvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier3.Epic",
+            "owned": []
+          }
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -26691,8 +29019,20 @@
     "Hero:HID_Outlander_010_M_SR_T05": {
       "templateId": "Hero:HID_Outlander_010_M_SR_T05",
       "attributes": {
-        "outfitvariants": [],
-        "backblingvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Legendary",
+            "owned": []
+          }
+        ],
+        "backblingvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier3.Legendary",
+            "owned": []
+          }
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -26713,7 +29053,13 @@
     "Hero:HID_Outlander_010_M_4thJuly_SR_T05": {
       "templateId": "Hero:HID_Outlander_010_M_4thJuly_SR_T05",
       "attributes": {
-        "outfitvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Legendary",
+            "owned": []
+          }
+        ],
         "backblingvariants": [],
         "gender": 0,
         "level": 50,
@@ -26735,8 +29081,20 @@
     "Hero:HID_Outlander_009_VR_T05": {
       "templateId": "Hero:HID_Outlander_009_VR_T05",
       "attributes": {
-        "outfitvariants": [],
-        "backblingvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Epic",
+            "owned": []
+          }
+        ],
+        "backblingvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier3.Epic",
+            "owned": []
+          }
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -26757,8 +29115,20 @@
     "Hero:HID_Outlander_009_SR_T05": {
       "templateId": "Hero:HID_Outlander_009_SR_T05",
       "attributes": {
-        "outfitvariants": [],
-        "backblingvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Legendary",
+            "owned": []
+          }
+        ],
+        "backblingvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier3.Legendary",
+            "owned": []
+          }
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -26779,7 +29149,13 @@
     "Hero:HID_Outlander_009_R_T04": {
       "templateId": "Hero:HID_Outlander_009_R_T04",
       "attributes": {
-        "outfitvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Rare",
+            "owned": []
+          }
+        ],
         "backblingvariants": [],
         "gender": 0,
         "level": 40,
@@ -26801,8 +29177,20 @@
     "Hero:HID_Outlander_008_VR_T05": {
       "templateId": "Hero:HID_Outlander_008_VR_T05",
       "attributes": {
-        "outfitvariants": [],
-        "backblingvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Epic",
+            "owned": []
+          }
+        ],
+        "backblingvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier3.Epic",
+            "owned": []
+          }
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -26823,8 +29211,20 @@
     "Hero:HID_Outlander_008_SR_T05": {
       "templateId": "Hero:HID_Outlander_008_SR_T05",
       "attributes": {
-        "outfitvariants": [],
-        "backblingvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Legendary",
+            "owned": []
+          }
+        ],
+        "backblingvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier3.Legendary",
+            "owned": []
+          }
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -26845,7 +29245,13 @@
     "Hero:HID_Outlander_008_R_T04": {
       "templateId": "Hero:HID_Outlander_008_R_T04",
       "attributes": {
-        "outfitvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Rare",
+            "owned": []
+          }
+        ],
         "backblingvariants": [],
         "gender": 0,
         "level": 40,
@@ -26867,7 +29273,13 @@
     "Hero:HID_Outlander_008_FoundersM_SR_T05": {
       "templateId": "Hero:HID_Outlander_008_FoundersM_SR_T05",
       "attributes": {
-        "outfitvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Legendary",
+            "owned": []
+          }
+        ],
         "backblingvariants": [],
         "gender": 0,
         "level": 50,
@@ -26889,7 +29301,13 @@
     "Hero:HID_Outlander_008_FoundersF_SR_T05": {
       "templateId": "Hero:HID_Outlander_008_FoundersF_SR_T05",
       "attributes": {
-        "outfitvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Legendary",
+            "owned": []
+          }
+        ],
         "backblingvariants": [],
         "gender": 0,
         "level": 50,
@@ -26911,8 +29329,20 @@
     "Hero:HID_Outlander_007_VR_T05": {
       "templateId": "Hero:HID_Outlander_007_VR_T05",
       "attributes": {
-        "outfitvariants": [],
-        "backblingvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Epic",
+            "owned": []
+          }
+        ],
+        "backblingvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier3.Epic",
+            "owned": []
+          }
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -26955,8 +29385,20 @@
     "Hero:HID_Outlander_007_SR_T05": {
       "templateId": "Hero:HID_Outlander_007_SR_T05",
       "attributes": {
-        "outfitvariants": [],
-        "backblingvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Legendary",
+            "owned": []
+          }
+        ],
+        "backblingvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier3.Legendary",
+            "owned": []
+          }
+        ],
         "gender": 0,
         "level": 50,
         "item_seen": true,
@@ -26977,7 +29419,13 @@
     "Hero:HID_Outlander_007_R_T04": {
       "templateId": "Hero:HID_Outlander_007_R_T04",
       "attributes": {
-        "outfitvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Rare",
+            "owned": []
+          }
+        ],
         "backblingvariants": [],
         "gender": 0,
         "level": 40,
@@ -26999,7 +29447,13 @@
     "Hero:HID_Outlander_007_RS01_SR_T05": {
       "templateId": "Hero:HID_Outlander_007_RS01_SR_T05",
       "attributes": {
-        "outfitvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Legendary",
+            "owned": []
+          }
+        ],
         "backblingvariants": [],
         "gender": 0,
         "level": 50,
