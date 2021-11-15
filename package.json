@@ -10,7 +10,8 @@
     "crypto": "^1.0.1",
     "express": "^4.17.1",
     "fs": "^0.0.1-security",
-    "moment": "^2.29.1"
+    "moment": "^2.29.1",
+    "path": "^0.12.7"
   },
   "engines": {
     "node": "8.x"
