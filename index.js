@@ -3,6 +3,7 @@ const express = Express();
 const fs = require("fs");
 const moment = require("moment");
 const crypto = require("crypto");
+const path = require("path");
 const config = require("./config.json");
 const worldstw = require("./responses/worldstw.json");
 const friendslist = require("./responses/friendslist.json");
@@ -10,6 +11,23 @@ const friendslist2 = require("./responses/friendslist2.json");
 const Keychain = require("./responses/keychain.json");
 const catalog = require("./responses/catalog.json");
 const contentpages = require("./responses/contentpages.json");
+express.use(function(req, res, next) {
+    // Getting the raw body of a request for client saving
+    if (req.originalUrl.includes('/fortnite/api/cloudstorage/user/')) {
+        req.rawBody = '';
+        req.setEncoding('latin1');
+
+        req.on('data', function(chunk) {
+            req.rawBody += chunk;
+        });
+
+        req.on('end', function() {
+            next();
+        });
+    } else {
+        return next();
+    }
+});
 express.use(Express.json());
 express.use(Express.urlencoded({
     extended: true
@@ -715,16 +733,102 @@ express.get("/fortnite/api/cloudstorage/system", async (req, res) => {
     res.end();
 })
 
-express.get("/fortnite/api/cloudstorage/user/*", async (req, res) => {
-    res.json([])
-    res.status(200);
-    res.end();
+express.get("/fortnite/api/cloudstorage/user/*/:file", async (req, res) => {
+    res.set("Content-Type", "application/octet-stream")
+
+    if (req.params.file.toLowerCase() != "clientsettings.sav") {
+        return res.status(404).json({
+            "error": "file not found"
+        });
+    }
+
+    var currentBuildID = "";
+
+    if (req.headers["user-agent"]) {
+        var BuildID = req.headers["user-agent"].split("-")[3].split(",")[0]
+        if (!Number.isNaN(Number(BuildID))) {
+            currentBuildID = BuildID;
+        }
+
+        if (Number.isNaN(Number(BuildID))) {
+            var BuildID = req.headers["user-agent"].split("-")[3].split(" ")[0]
+            if (!Number.isNaN(Number(BuildID))) {
+                currentBuildID = BuildID;
+            }
+        }
+    }
+
+    const file = path.join(__dirname, `./ClientSettings/ClientSettings-${currentBuildID}.Sav`);
+
+    if (fs.existsSync(file)) {
+        return res.status(200).sendFile(file);
+    } else {
+        return res.status(404).json({
+            "error": "file not found"
+        });
+    }
 })
 
-express.get("/fortnite/api/cloudstorage/user/*/*", async (req, res) => {
-    res.json([])
-    res.status(204);
-    res.end();
+express.get("/fortnite/api/cloudstorage/user/:accountId", async (req, res) => {
+    res.set("Content-Type", "application/json")
+
+    var currentBuildID = "";
+
+    if (req.headers["user-agent"]) {
+        var BuildID = req.headers["user-agent"].split("-")[3].split(",")[0]
+        if (!Number.isNaN(Number(BuildID))) {
+            currentBuildID = BuildID;
+        }
+
+        if (Number.isNaN(Number(BuildID))) {
+            var BuildID = req.headers["user-agent"].split("-")[3].split(" ")[0]
+            if (!Number.isNaN(Number(BuildID))) {
+                currentBuildID = BuildID;
+            }
+        }
+    }
+
+    const file = `./ClientSettings/ClientSettings-${currentBuildID}.Sav`;
+
+    if (fs.existsSync(file)) {
+        const utf8_file = fs.readFileSync(path.join(__dirname, file), 'utf8');
+
+        return res.status(200).json([{
+            "uniqueFilename": "ClientSettings.Sav",
+            "filename": "ClientSettings.Sav",
+            "hash": crypto.createHash('sha1').update(utf8_file).digest('hex'),
+            "hash256": crypto.createHash('sha256').update(utf8_file).digest('hex'),
+            "length": Buffer.byteLength(utf8_file),
+            "contentType": "application/octet-stream",
+            "uploaded": new Date().toISOString(),
+            "storageType": "S3",
+            "storageIds": {},
+            "accountId": req.params.accountId
+        }]).end();
+    } else {
+        return res.status(200).json([]).end();
+    }
+})
+
+express.put("/fortnite/api/cloudstorage/user/*/*", async (req, res) => {
+    var currentBuildID = "";
+
+    if (req.headers["user-agent"]) {
+        var BuildID = req.headers["user-agent"].split("-")[3].split(",")[0]
+        if (!Number.isNaN(Number(BuildID))) {
+            currentBuildID = BuildID;
+        }
+
+        if (Number.isNaN(Number(BuildID))) {
+            var BuildID = req.headers["user-agent"].split("-")[3].split(" ")[0]
+            if (!Number.isNaN(Number(BuildID))) {
+                currentBuildID = BuildID;
+            }
+        }
+    }
+
+    fs.writeFileSync(`./ClientSettings/ClientSettings-${currentBuildID}.Sav`, req.rawBody, 'latin1');
+    res.status(204).end();
 })
 
 express.get("/fortnite/api/game/v2/leaderboards/cohort/*", async (req, res) => {
@@ -984,11 +1088,6 @@ express.get("/content/api/pages/fortnite-game", async (req, res) => {
 
     res.json(contentpages)
     res.status(200);
-    res.end();
-})
-
-express.put("/fortnite/api/cloudstorage/user/*/*", async (req, res) => {
-    res.status(204);
     res.end();
 })
 
