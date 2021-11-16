@@ -725,10 +725,47 @@ express.get("/fortnite/api/cloudstorage/system", async (req, res) => {
     const seasonchecker = require("./seasonchecker.js");
     const seasondata = require("./season.json");
     seasonchecker(req, seasondata);
-    if (seasondata.season > 9) {
+    if (seasondata.season == 10) {
         return res.status(404).json();
     }
-    res.json([])
+
+    const dir = path.join(__dirname, 'CloudStorage')
+    var CloudFiles = [];
+
+    fs.readdirSync(dir).forEach(name => {
+        if (name.toLowerCase().endsWith(".ini")) {
+            const ParsedFile = fs.readFileSync(path.join(__dirname, 'CloudStorage', name));
+            const ParsedStats = fs.statSync(path.join(__dirname, 'CloudStorage', name));
+
+            CloudFiles.push({
+                "uniqueFilename": name,
+                "filename": name,
+                "hash": crypto.createHash('sha1').update(ParsedFile).digest('hex'),
+                "hash256": crypto.createHash('sha256').update(ParsedFile).digest('hex'),
+                "length": ParsedFile.length,
+                "contentType": "application/octet-stream",
+                "uploaded": ParsedStats.mtime,
+                "storageType": "S3",
+                "storageIds": {},
+                "doNotCache": true
+            })
+        }
+    });
+
+    res.json(CloudFiles)
+    res.status(200);
+    res.end();
+})
+
+express.get("/fortnite/api/cloudstorage/system/:file", async (req, res) => {
+    const file = path.join(__dirname, 'CloudStorage', req.params.file);
+
+    if (fs.existsSync(file)) {
+        const ParsedFile = fs.readFileSync(file);
+
+        return res.status(200).send(ParsedFile).end();
+    }
+
     res.status(200);
     res.end();
 })
@@ -792,6 +829,7 @@ express.get("/fortnite/api/cloudstorage/user/:accountId", async (req, res) => {
 
     if (fs.existsSync(file)) {
         const utf8_file = fs.readFileSync(path.join(__dirname, file), 'utf8');
+	const file_stats = fs.statSync(path.join(__dirname, file));
 
         return res.status(200).json([{
             "uniqueFilename": "ClientSettings.Sav",
@@ -800,10 +838,11 @@ express.get("/fortnite/api/cloudstorage/user/:accountId", async (req, res) => {
             "hash256": crypto.createHash('sha256').update(utf8_file).digest('hex'),
             "length": Buffer.byteLength(utf8_file),
             "contentType": "application/octet-stream",
-            "uploaded": new Date().toISOString(),
+            "uploaded": file_stats.mtime,
             "storageType": "S3",
             "storageIds": {},
-            "accountId": req.params.accountId
+            "accountId": req.params.accountId,
+	    "doNotCache": true
         }]).end();
     } else {
         return res.status(200).json([]).end();
