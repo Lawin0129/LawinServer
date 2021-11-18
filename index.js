@@ -782,13 +782,20 @@ express.get("/fortnite/api/cloudstorage/user/*/:file", async (req, res) => {
     var currentBuildID = "";
 
     if (req.headers["user-agent"]) {
-        var BuildID = req.headers["user-agent"].split("-")[3].split(",")[0]
-        if (!Number.isNaN(Number(BuildID))) {
-            currentBuildID = BuildID;
-        }
-
-        if (Number.isNaN(Number(BuildID))) {
-            var BuildID = req.headers["user-agent"].split("-")[3].split(" ")[0]
+        try {
+            var BuildID = req.headers["user-agent"].split("-")[3].split(",")[0]
+            if (!Number.isNaN(Number(BuildID))) {
+                currentBuildID = BuildID;
+            }
+    
+            if (Number.isNaN(Number(BuildID))) {
+                var BuildID = req.headers["user-agent"].split("-")[3].split(" ")[0]
+                if (!Number.isNaN(Number(BuildID))) {
+                    currentBuildID = BuildID;
+                }
+            }
+        } catch (err) {
+            var BuildID = req.headers["user-agent"].split("-")[1].split("+")[0]
             if (!Number.isNaN(Number(BuildID))) {
                 currentBuildID = BuildID;
             }
@@ -812,13 +819,20 @@ express.get("/fortnite/api/cloudstorage/user/:accountId", async (req, res) => {
     var currentBuildID = "";
 
     if (req.headers["user-agent"]) {
-        var BuildID = req.headers["user-agent"].split("-")[3].split(",")[0]
-        if (!Number.isNaN(Number(BuildID))) {
-            currentBuildID = BuildID;
-        }
-
-        if (Number.isNaN(Number(BuildID))) {
-            var BuildID = req.headers["user-agent"].split("-")[3].split(" ")[0]
+        try {
+            var BuildID = req.headers["user-agent"].split("-")[3].split(",")[0]
+            if (!Number.isNaN(Number(BuildID))) {
+                currentBuildID = BuildID;
+            }
+    
+            if (Number.isNaN(Number(BuildID))) {
+                var BuildID = req.headers["user-agent"].split("-")[3].split(" ")[0]
+                if (!Number.isNaN(Number(BuildID))) {
+                    currentBuildID = BuildID;
+                }
+            }
+        } catch (err) {
+            var BuildID = req.headers["user-agent"].split("-")[1].split("+")[0]
             if (!Number.isNaN(Number(BuildID))) {
                 currentBuildID = BuildID;
             }
@@ -853,13 +867,20 @@ express.put("/fortnite/api/cloudstorage/user/*/*", async (req, res) => {
     var currentBuildID = "";
 
     if (req.headers["user-agent"]) {
-        var BuildID = req.headers["user-agent"].split("-")[3].split(",")[0]
-        if (!Number.isNaN(Number(BuildID))) {
-            currentBuildID = BuildID;
-        }
-
-        if (Number.isNaN(Number(BuildID))) {
-            var BuildID = req.headers["user-agent"].split("-")[3].split(" ")[0]
+        try {
+            var BuildID = req.headers["user-agent"].split("-")[3].split(",")[0]
+            if (!Number.isNaN(Number(BuildID))) {
+                currentBuildID = BuildID;
+            }
+    
+            if (Number.isNaN(Number(BuildID))) {
+                var BuildID = req.headers["user-agent"].split("-")[3].split(" ")[0]
+                if (!Number.isNaN(Number(BuildID))) {
+                    currentBuildID = BuildID;
+                }
+            }
+        } catch (err) {
+            var BuildID = req.headers["user-agent"].split("-")[1].split("+")[0]
             if (!Number.isNaN(Number(BuildID))) {
                 currentBuildID = BuildID;
             }
