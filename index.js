@@ -42,6 +42,10 @@ express.get("/", async (req, res) => {
 })
 
 express.get("/fortnite/api/storefront/v2/catalog", async (req, res) => {
+    if (req.headers["user-agent"].includes("2870186")) {
+        return res.status(404).end();
+    }
+
     res.json(catalog);
     res.status(200);
     res.end();
@@ -3518,6 +3522,187 @@ express.post("/fortnite/api/game/v2/profile/*/client/ClaimCollectionBookRewards"
     res.end();
 });
 
+// Modify schematic perk STW
+express.post("/fortnite/api/game/v2/profile/*/client/RespecAlteration", async (req, res) => {
+    const profile = require(`./profiles/${req.query.profileId || "campaign"}.json`);
+
+    // do not change any of these or you will end up breaking it
+    var ApplyProfileChanges = [];
+    var BaseRevision = profile.rvn || 0;
+    var QueryRevision = req.query.rvn || -1;
+    var StatChanged = false;
+
+    if (req.body.targetItemId && req.body.alterationId) {
+        if (!profile.items[req.body.targetItemId].attributes.alterations) {
+            profile.items[req.body.targetItemId].attributes.alterations = ["","","","","",""];
+        }
+
+        profile.items[req.body.targetItemId].attributes.alterations[req.body.alterationSlot] = req.body.alterationId;
+        StatChanged = true;
+    }
+
+    if (StatChanged == true) {
+        profile.rvn += 1;
+        profile.commandRevision += 1;
+
+        ApplyProfileChanges.push({
+            "changeType": "itemAttrChanged",
+            "itemId": req.body.targetItemId,
+            "attributeName": "alterations",
+            "attributeValue": profile.items[req.body.targetItemId].attributes.alterations
+        })
+
+        fs.writeFileSync(`./profiles/${req.query.profileId || "campaign"}.json`, JSON.stringify(profile, null, 2), function(err) {
+            if (err) {
+                console.log('error:', err)
+            };
+        });
+    }
+
+    // this doesn't work properly on version v12.20 and above but whatever
+    if (QueryRevision != BaseRevision) {
+        ApplyProfileChanges = [{
+            "changeType": "fullProfileUpdate",
+            "profile": profile
+        }];
+    }
+
+    res.json({
+        "profileRevision": profile.rvn || 0,
+        "profileId": req.query.profileId || "campaign",
+        "profileChangesBaseRevision": BaseRevision,
+        "profileChanges": ApplyProfileChanges,
+        "profileCommandRevision": profile.commandRevision || 0,
+        "serverTime": new Date().toISOString(),
+        "responseVersion": 1
+    })
+    res.status(200);
+    res.end();
+});
+
+// Upgrade schematic perk STW
+express.post("/fortnite/api/game/v2/profile/*/client/UpgradeAlteration", async (req, res) => {
+    const profile = require(`./profiles/${req.query.profileId || "campaign"}.json`);
+
+    // do not change any of these or you will end up breaking it
+    var ApplyProfileChanges = [];
+    var BaseRevision = profile.rvn || 0;
+    var QueryRevision = req.query.rvn || -1;
+    var StatChanged = false;
+
+    if (req.body.targetItemId) {
+        if (profile.items[req.body.targetItemId].attributes.alterations[req.body.alterationSlot].toLowerCase().includes("t04")) {
+            profile.items[req.body.targetItemId].attributes.alterations[req.body.alterationSlot] = profile.items[req.body.targetItemId].attributes.alterations[req.body.alterationSlot].replace(/t04/ig, "T05");
+        }
+
+        if (profile.items[req.body.targetItemId].attributes.alterations[req.body.alterationSlot].toLowerCase().includes("t03")) {
+            profile.items[req.body.targetItemId].attributes.alterations[req.body.alterationSlot] = profile.items[req.body.targetItemId].attributes.alterations[req.body.alterationSlot].replace(/t03/ig, "T04");
+        }
+
+        if (profile.items[req.body.targetItemId].attributes.alterations[req.body.alterationSlot].toLowerCase().includes("t02")) {
+            profile.items[req.body.targetItemId].attributes.alterations[req.body.alterationSlot] = profile.items[req.body.targetItemId].attributes.alterations[req.body.alterationSlot].replace(/t02/ig, "T03");
+        }
+
+        if (profile.items[req.body.targetItemId].attributes.alterations[req.body.alterationSlot].toLowerCase().includes("t01")) {
+            profile.items[req.body.targetItemId].attributes.alterations[req.body.alterationSlot] = profile.items[req.body.targetItemId].attributes.alterations[req.body.alterationSlot].replace(/t01/ig, "T02");
+        }
+
+        StatChanged = true;
+    }
+
+    if (StatChanged == true) {
+        profile.rvn += 1;
+        profile.commandRevision += 1;
+
+        ApplyProfileChanges.push({
+            "changeType": "itemAttrChanged",
+            "itemId": req.body.targetItemId,
+            "attributeName": "alterations",
+            "attributeValue": profile.items[req.body.targetItemId].attributes.alterations
+        })
+
+        fs.writeFileSync(`./profiles/${req.query.profileId || "campaign"}.json`, JSON.stringify(profile, null, 2), function(err) {
+            if (err) {
+                console.log('error:', err)
+            };
+        });
+    }
+
+    // this doesn't work properly on version v12.20 and above but whatever
+    if (QueryRevision != BaseRevision) {
+        ApplyProfileChanges = [{
+            "changeType": "fullProfileUpdate",
+            "profile": profile
+        }];
+    }
+
+    res.json({
+        "profileRevision": profile.rvn || 0,
+        "profileId": req.query.profileId || "campaign",
+        "profileChangesBaseRevision": BaseRevision,
+        "profileChanges": ApplyProfileChanges,
+        "profileCommandRevision": profile.commandRevision || 0,
+        "serverTime": new Date().toISOString(),
+        "responseVersion": 1
+    })
+    res.status(200);
+    res.end();
+});
+
+// Set active hero loadout STW
+express.post("/fortnite/api/game/v2/profile/*/client/SetActiveHeroLoadout", async (req, res) => {
+    const profile = require(`./profiles/${req.query.profileId || "campaign"}.json`);
+
+    // do not change any of these or you will end up breaking it
+    var ApplyProfileChanges = [];
+    var BaseRevision = profile.rvn || 0;
+    var QueryRevision = req.query.rvn || -1;
+    var StatChanged = false;
+
+    if (req.body.selectedLoadout) {
+        profile.stats.attributes.selected_hero_loadout = req.body.selectedLoadout;
+
+        StatChanged = true;
+    }
+
+    if (StatChanged == true) {
+        profile.rvn += 1;
+        profile.commandRevision += 1;
+
+        ApplyProfileChanges.push({
+            "changeType": "statModified",
+            "name": "selected_hero_loadout",
+            "value": profile.stats.attributes.selected_hero_loadout
+        })
+
+        fs.writeFileSync(`./profiles/${req.query.profileId || "campaign"}.json`, JSON.stringify(profile, null, 2), function(err) {
+            if (err) {
+                console.log('error:', err)
+            };
+        });
+    }
+
+    // this doesn't work properly on version v12.20 and above but whatever
+    if (QueryRevision != BaseRevision) {
+        ApplyProfileChanges = [{
+            "changeType": "fullProfileUpdate",
+            "profile": profile
+        }];
+    }
+
+    res.json({
+        "profileRevision": profile.rvn || 0,
+        "profileId": req.query.profileId || "campaign",
+        "profileChangesBaseRevision": BaseRevision,
+        "profileChanges": ApplyProfileChanges,
+        "profileCommandRevision": profile.commandRevision || 0,
+        "serverTime": new Date().toISOString(),
+        "responseVersion": 1
+    })
+    res.status(200);
+    res.end();
+});
+
 // Open llama STW
 express.post("/fortnite/api/game/v2/profile/*/client/OpenCardPack", async (req, res) => {
     function makeid() {
@@ -3565,6 +3750,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/OpenCardPack", async (req, 
                         "max_level_bonus": 0,
                         "level": 1,
                         "item_seen": false,
+                        "alterations": [],
                         "xp": 0,
                         "sent_new_notification": true,
                         "favorite": false
@@ -3593,6 +3779,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/OpenCardPack", async (req, 
                     "max_level_bonus": 0,
                     "level": 1,
                     "item_seen": false,
+                    "alterations": [],
                     "xp": 0,
                     "sent_new_notification": true,
                     "favorite": false
@@ -3870,6 +4057,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/OpenCardPack", async (req, 
 	                                            "max_level_bonus": 0,
 	                                            "level": 1,
 	                                            "item_seen": false,
+                                                    "alterations": [],
 	                                            "xp": 0,
 	                                            "sent_new_notification": true,
 	                                            "favorite": false
@@ -3893,6 +4081,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/OpenCardPack", async (req, 
 	                                        "max_level_bonus": 0,
 	                                        "level": 1,
 	                                        "item_seen": false,
+                                            	"alterations": [],
 	                                        "xp": 0,
 	                                        "sent_new_notification": true,
 	                                        "favorite": false
