@@ -1667,7 +1667,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/AssignWorkerToSquad", async
             if (profile.items[key].hasOwnProperty('attributes')) {
                 if (profile.items[key].attributes.hasOwnProperty('squad_id') && profile.items[key].attributes.hasOwnProperty('squad_slot_idx')) {
                     if (profile.items[key].attributes.squad_id != "" && profile.items[key].attributes.squad_slot_idx != -1) {
-                        if (profile.items[key].attributes.squad_id == req.body.squadId && profile.items[key].attributes.squad_slot_idx == req.body.slotIndex) {
+                        if (profile.items[key].attributes.squad_id.toLowerCase() == req.body.squadId.toLowerCase() && profile.items[key].attributes.squad_slot_idx == req.body.slotIndex) {
                             profile.items[key].attributes.squad_id = profile.items[req.body.characterId].attributes.squad_id || "";
                             profile.items[key].attributes.squad_slot_idx = profile.items[req.body.characterId].attributes.squad_slot_idx || 0;
 
