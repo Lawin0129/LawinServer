@@ -3838,517 +3838,521 @@ express.post("/fortnite/api/game/v2/profile/*/client/OpenCardPack", async (req, 
     res.end();
 });
 
-	// Purchase llama STW
-	express.post("/fortnite/api/game/v2/profile/*/client/PurchaseCatalogEntry", async (req, res) => {
-	function makeid() {
-		let CurrentDate = (new Date()).valueOf().toString();
-		let RandomFloat = Math.random().toString();
-		let ID = crypto.createHash('md5').update(CurrentDate + RandomFloat).digest('hex');
-		let FinishedID = ID.slice(0, 8) + "-" + ID.slice(8, 12) + "-" + ID.slice(12, 16) + "-" + ID.slice(16, 20) + "-" + ID.slice(20, 32);
-		return FinishedID;
-	}
-
-	    const profile = require(`./profiles/${req.query.profileId || "profile0"}.json`);
-	    const campaign = require("./profiles/campaign.json");
-	    const ItemIDS = require("./responses/ItemIDS.json");
-
-	    // do not change any of these or you will end up breaking it
-	    var ApplyProfileChanges = [];
-	    var MultiUpdate = [];
-	    var Notifications = [];
-	    var BaseRevision = profile.rvn || 0;
-	    var CampaignBaseRevision = campaign.rvn || 0;
-	    var QueryRevision = req.query.rvn || -1;
-	    var PurchasedLlama = false;
-
-	    const ID = makeid();
-
-	    if (req.body.offerId && profile.profileId == "profile0" && PurchasedLlama == false) {
-	        profile.rvn += 1;
-	        profile.commandRevision += 1;
-
-	        catalog.storefronts.forEach(function(value, a) {
-	            catalog.storefronts[a].catalogEntries.forEach(function(value, b) {
-	                if (value.offerId == req.body.offerId) {
-	                    catalog.storefronts[a].catalogEntries[b].itemGrants.forEach(function(value, c) {
-	                        const Item = {
-	                            "templateId": value.templateId,
-	                            "attributes": {
-	                                "is_loot_tier_overridden": false,
-	                                "max_level_bonus": 0,
-	                                "level": 1391,
-	                                "pack_source": "Schedule",
-	                                "item_seen": false,
-	                                "xp": 0,
-	                                "favorite": false,
-	                                "override_loot_tier": 0
-	                            },
-	                            "quantity": 1
-	                        };
-
-	                        Item.quantity = req.body.purchaseQuantity || 1;
-
-	                        profile.items[ID] = Item
-
-	                        ApplyProfileChanges.push({
-	                            "changeType": "itemAdded",
-	                            "itemId": ID,
-	                            "item": Item
-	                        })
-	                    })
-	                }
-	            })
-	        })
-
-	        PurchasedLlama = true;
-
-	        fs.writeFileSync(`./profiles/${req.query.profileId || "profile0"}.json`, JSON.stringify(profile, null, 2), function(err) {
-	            if (err) {
-	                console.log('error:', err)
-	            };
-	        });
-	    }
-
-	    if (req.body.offerId && profile.profileId == "common_core") {
-	        campaign.rvn += 1;
-	        campaign.commandRevision += 1;
-
-	        catalog.storefronts.forEach(function(value, a) {
-	            catalog.storefronts[a].catalogEntries.forEach(function(value, b) {
-	                if (value.offerId == req.body.offerId) {
-	                    catalog.storefronts[a].catalogEntries[b].itemGrants.forEach(function(value, c) {
-	                        const seasonchecker = require("./seasonchecker.js");
-	                        const seasondata = require("./season.json");
-	                        seasonchecker(req, seasondata);
-
-	                        if (4 > seasondata.season || seasondata.season == 4 && PurchasedLlama == false) {
-	                            const Item = {
-	                                "templateId": value.templateId,
-	                                "attributes": {
-	                                    "is_loot_tier_overridden": false,
-	                                    "max_level_bonus": 0,
-	                                    "level": 1391,
-	                                    "pack_source": "Schedule",
-	                                    "item_seen": false,
-	                                    "xp": 0,
-	                                    "favorite": false,
-	                                    "override_loot_tier": 0
-	                                },
-	                                "quantity": 1
-	                            };
-
-	                            Item.quantity = req.body.purchaseQuantity || 1;
-
-	                            campaign.items[ID] = Item
-
-	                            MultiUpdate.push({
-	                                "profileRevision": campaign.rvn || 0,
-	                                "profileId": "campaign",
-	                                "profileChangesBaseRevision": CampaignBaseRevision,
-	                                "profileChanges": [{
-	                                    "changeType": "itemAdded",
-	                                    "itemId": ID,
-	                                    "item": Item
-	                                }],
-	                                "profileCommandRevision": campaign.commandRevision || 0,
-	                            })
-
-	                            PurchasedLlama = true;
-	                        }
-
-	                        if (seasondata.season == 5 || seasondata.season == 6 || req.headers["user-agent"].includes("Release-7.00") || req.headers["user-agent"].includes("Release-7.01") || req.headers["user-agent"].includes("Release-7.10") || req.headers["user-agent"].includes("Release-7.20") && PurchasedLlama == false) {
-	                            const Item = {
-	                                "templateId": value.templateId,
-	                                "attributes": {
-	                                    "is_loot_tier_overridden": false,
-	                                    "max_level_bonus": 0,
-	                                    "level": 1391,
-	                                    "pack_source": "Schedule",
-	                                    "item_seen": false,
-	                                    "xp": 0,
-	                                    "favorite": false,
-	                                    "override_loot_tier": 0
-	                                },
-	                                "quantity": 1
-	                            };
-
-	                            Item.quantity = req.body.purchaseQuantity || 1;
-
-	                            campaign.items[ID] = Item
-
-	                            MultiUpdate.push({
-	                                "profileRevision": campaign.rvn || 0,
-	                                "profileId": "campaign",
-	                                "profileChangesBaseRevision": CampaignBaseRevision,
-	                                "profileChanges": [{
-	                                    "changeType": "itemAdded",
-	                                    "itemId": ID,
-	                                    "item": Item
-	                                }],
-	                                "profileCommandRevision": campaign.commandRevision || 0,
-	                            });
-
-	                            Notifications.push({
-	                                "type": "cardPackResult",
-	                                "primary": true,
-	                                "lootGranted": {
-	                                    "tierGroupName": campaign.items[ID].templateId.split(":")[1],
-	                                    "items": []
-	                                },
-	                                "displayLevel": 0
-	                            })
-
-	                            PurchasedLlama = true;
-	                        }
-
-	                        if (6 < seasondata.season && PurchasedLlama == false) {
-	                            const Item = {
-	                                "templateId": value.templateId,
-	                                "attributes": {
-	                                    "is_loot_tier_overridden": false,
-	                                    "max_level_bonus": 0,
-	                                    "level": 1391,
-	                                    "pack_source": "Schedule",
-	                                    "item_seen": false,
-	                                    "xp": 0,
-	                                    "favorite": false,
-	                                    "override_loot_tier": 0
-	                                },
-	                                "quantity": 1
-	                            };
-
-	                            Item.quantity = req.body.purchaseQuantity || 1;
-
-	                            campaign.items[ID] = Item
-
-	                            MultiUpdate.push({
-	                                "profileRevision": campaign.rvn || 0,
-	                                "profileId": "campaign",
-	                                "profileChangesBaseRevision": CampaignBaseRevision,
-	                                "profileChanges": [],
-	                                "profileCommandRevision": campaign.commandRevision || 0,
-	                            });
-
-	                            MultiUpdate[0].profileChanges.push({
-	                                "changeType": "itemAdded",
-	                                "itemId": ID,
-	                                "item": Item
-	                            })
-
-	                            Notifications.push({
-	                                "type": "CatalogPurchase",
-	                                "primary": true,
-	                                "lootResult": {
-	                                    "items": []
-	                                }
-	                            })
-
-	                            for (var i = 0; i < 10; i++) {
-	                                const randomNumber = Math.floor(Math.random() * ItemIDS.length);
-	                                const id = makeid();
-
-	                                MultiUpdate[0].profileChanges.push({
-	                                    "changeType": "itemAdded",
-	                                    "itemId": id,
-	                                    "item": {
-	                                        "templateId": ItemIDS[randomNumber],
-	                                        "attributes": {
-	                                            "last_state_change_time": "2017-08-29T21:05:57.087Z",
-	                                            "max_level_bonus": 0,
-	                                            "level": 1,
-	                                            "item_seen": false,
-                                                    "alterations": [],
-	                                            "xp": 0,
-	                                            "sent_new_notification": true,
-	                                            "favorite": false
-	                                        },
-	                                        "quantity": 1
-	                                    }
-	                                })
-
-	                                Notifications[0].lootResult.items.push({
-	                                    "itemType": ItemIDS[randomNumber],
-	                                    "itemGuid": id,
-	                                    "itemProfile": "campaign",
-	                                    "attributes": {},
-	                                    "quantity": 1
-	                                })
-
-	                                campaign.items[id] = {
-	                                    "templateId": ItemIDS[randomNumber],
-	                                    "attributes": {
-	                                        "last_state_change_time": "2017-08-29T21:05:57.087Z",
-	                                        "max_level_bonus": 0,
-	                                        "level": 1,
-	                                        "item_seen": false,
-                                            	"alterations": [],
-	                                        "xp": 0,
-	                                        "sent_new_notification": true,
-	                                        "favorite": false
-	                                    },
-	                                    "quantity": 1
-	                                }
-	                            }
-
-	                            if (campaign.items[ID].quantity == 1) {
-	                                delete campaign.items[ID]
-
-	                                MultiUpdate[0].profileChanges.push({
-	                                    "changeType": "itemRemoved",
-	                                    "itemId": ID
-	                                })
-	                            }
-
-	                            if (true) {
-	                                try {
-	                                    campaign.items[ID].quantity -= 1;
-
-	                                    MultiUpdate[0].profileChanges.push({
-	                                        "changeType": "itemQuantityChanged",
-	                                        "itemId": ID,
-	                                        "quantity": campaign.items[ID].quantity
-	                                    })
-	                                } catch (err) {}
-	                            }
-
-	                            PurchasedLlama = true;
-	                        }
-	                    })
-	                }
-	            })
-	        })
-
-	        fs.writeFileSync("./profiles/campaign.json", JSON.stringify(campaign, null, 2), function(err) {
-	            if (err) {
-	                console.log('error:', err)
-	            };
-	        });
-	    }
-
-	    // this doesn't work properly on version v12.20 and above but whatever
-	    if (QueryRevision != BaseRevision) {
-	        ApplyProfileChanges = [{
-	            "changeType": "fullProfileUpdate",
-	            "profile": profile
-	        }];
-	    }
-
-	    res.json({
-	        "profileRevision": profile.rvn || 0,
-	        "profileId": req.query.profileId || "profile0",
-	        "profileChangesBaseRevision": BaseRevision,
-	        "profileChanges": ApplyProfileChanges,
-	        "notifications": Notifications,
-	        "profileCommandRevision": profile.commandRevision || 0,
-	        "serverTime": new Date().toISOString(),
-	        "multiUpdate": MultiUpdate,
-	        "responseVersion": 1
-	    })
-	    res.status(200);
-	    res.end();
-	});
-
-	// Set multiple items favorite
-	express.post("/fortnite/api/game/v2/profile/*/client/SetItemFavoriteStatusBatch", async (req, res) => {
-	    const profile = require(`./profiles/${req.query.profileId || "athena"}.json`);
-
-	    if (profile.profileId == "athena") {
-	        const seasonchecker = require("./seasonchecker.js");
-	        const seasondata = require("./season.json");
-	        seasonchecker(req, seasondata);
-	        profile.stats.attributes.season_num = seasondata.season;
-            	if (seasondata.season == 2) {
-                	profile.stats.attributes.book_level = 70;
-            	} else {
-                	profile.stats.attributes.book_level = 100;
-            	}
-	    }
-
-	    // do not change any of these or you will end up breaking it
-	    var ApplyProfileChanges = [];
-	    var BaseRevision = profile.rvn || 0;
-	    var QueryRevision = req.query.rvn || -1;
-	    var StatChanged = false;
-
-	    if (req.body.itemIds) {
-	        for (var i = 0; i < req.body.itemIds.length; i++) {
-	            profile.items[req.body.itemIds[i]].attributes.favorite = req.body.itemFavStatus[i] || false;
-
-	            ApplyProfileChanges.push({
-	                "changeType": "itemAttrChanged",
-	                "itemId": req.body.itemIds[i],
-	                "attributeName": "favorite",
-	                "attributeValue": profile.items[req.body.itemIds[i]].attributes.favorite
-	            })
-	        }
-	        StatChanged = true;
-	    }
-
-	    if (StatChanged == true) {
-	        profile.rvn += 1;
-	        profile.commandRevision += 1;
-
-	        fs.writeFileSync(`./profiles/${req.query.profileId || "athena"}.json`, JSON.stringify(profile, null, 2), function(err) {
-	            if (err) {
-	                console.log('error:', err)
-	            };
-	        });
-	    }
-
-	    // this doesn't work properly on version v12.20 and above but whatever
-	    if (QueryRevision != BaseRevision) {
-	        ApplyProfileChanges = [{
-	            "changeType": "fullProfileUpdate",
-	            "profile": profile
-	        }];
-	    }
-
-	    res.json({
-	        "profileRevision": profile.rvn || 0,
-	        "profileId": req.query.profileId || "athena",
-	        "profileChangesBaseRevision": BaseRevision,
-	        "profileChanges": ApplyProfileChanges,
-	        "profileCommandRevision": profile.commandRevision || 0,
-	        "serverTime": new Date().toISOString(),
-	        "responseVersion": 1
-	    })
-	    res.status(200);
-	    res.end();
-	});
-
-	// Set favorite on item
-	express.post("/fortnite/api/game/v2/profile/*/client/SetItemFavoriteStatus", async (req, res) => {
-	    const profile = require(`./profiles/${req.query.profileId || "athena"}.json`);
-
-	    if (profile.profileId == "athena") {
-	        const seasonchecker = require("./seasonchecker.js");
-	        const seasondata = require("./season.json");
-	        seasonchecker(req, seasondata);
-	        profile.stats.attributes.season_num = seasondata.season;
-            	if (seasondata.season == 2) {
-                	profile.stats.attributes.book_level = 70;
-            	} else {
-                	profile.stats.attributes.book_level = 100;
-            	}
-	    }
-
-	    // do not change any of these or you will end up breaking it
-	    var ApplyProfileChanges = [];
-	    var BaseRevision = profile.rvn || 0;
-	    var QueryRevision = req.query.rvn || -1;
-	    var StatChanged = false;
-
-	    if (req.body.targetItemId) {
-	        profile.items[req.body.targetItemId].attributes.favorite = req.body.bFavorite || false;
-	        StatChanged = true;
-	    }
-
-	    if (StatChanged == true) {
-	        profile.rvn += 1;
-	        profile.commandRevision += 1;
-
-	        ApplyProfileChanges.push({
-	            "changeType": "itemAttrChanged",
-	            "itemId": req.body.targetItemId,
-	            "attributeName": "favorite",
-	            "attributeValue": profile.items[req.body.targetItemId].attributes.favorite
-	        })
-
-	        fs.writeFileSync(`./profiles/${req.query.profileId || "athena"}.json`, JSON.stringify(profile, null, 2), function(err) {
-	            if (err) {
-	                console.log('error:', err)
-	            };
-	        });
-	    }
-
-	    // this doesn't work properly on version v12.20 and above but whatever
-	    if (QueryRevision != BaseRevision) {
-	        ApplyProfileChanges = [{
-	            "changeType": "fullProfileUpdate",
-	            "profile": profile
-	        }];
-	    }
-
-	    res.json({
-	        "profileRevision": profile.rvn || 0,
-	        "profileId": req.query.profileId || "athena",
-	        "profileChangesBaseRevision": BaseRevision,
-	        "profileChanges": ApplyProfileChanges,
-	        "profileCommandRevision": profile.commandRevision || 0,
-	        "serverTime": new Date().toISOString(),
-	        "responseVersion": 1
-	    })
-	    res.status(200);
-	    res.end();
-	});
-
-	// Mark item as seen
-	express.post("/fortnite/api/game/v2/profile/*/client/MarkItemSeen", async (req, res) => {
-	    const profile = require(`./profiles/${req.query.profileId || "athena"}.json`);
-
-	    if (profile.profileId == "athena") {
-	        const seasonchecker = require("./seasonchecker.js");
-	        const seasondata = require("./season.json");
-	        seasonchecker(req, seasondata);
-	        profile.stats.attributes.season_num = seasondata.season;
-            	if (seasondata.season == 2) {
-                	profile.stats.attributes.book_level = 70;
-            	} else {
-                	profile.stats.attributes.book_level = 100;
-            	}
-	    }
-
-	    // do not change any of these or you will end up breaking it
-	    var ApplyProfileChanges = [];
-	    var BaseRevision = profile.rvn || 0;
-	    var QueryRevision = req.query.rvn || -1;
-	    var StatChanged = false;
-
-	    if (req.body.itemIds) {
-	        for (var i = 0; i < req.body.itemIds.length; i++) {
-	            profile.items[req.body.itemIds[i]].attributes.item_seen = true;
-
-	            ApplyProfileChanges.push({
-	                "changeType": "itemAttrChanged",
-	                "itemId": req.body.itemIds[i],
-	                "attributeName": "item_seen",
-	                "attributeValue": profile.items[req.body.itemIds[i]].attributes.item_seen
-	            })
-	        }
-	        StatChanged = true;
-	    }
-
-	    if (StatChanged == true) {
-	        profile.rvn += 1;
-	        profile.commandRevision += 1;
-
-	        fs.writeFileSync(`./profiles/${req.query.profileId || "athena"}.json`, JSON.stringify(profile, null, 2), function(err) {
-	            if (err) {
-	                console.log('error:', err)
-	            };
-	        });
-	    }
-
-	    // this doesn't work properly on version v12.20 and above but whatever
-	    if (QueryRevision != BaseRevision) {
-	        ApplyProfileChanges = [{
-	            "changeType": "fullProfileUpdate",
-	            "profile": profile
-	        }];
-	    }
-
-	    res.json({
-	        "profileRevision": profile.rvn || 0,
-	        "profileId": req.query.profileId || "athena",
-	        "profileChangesBaseRevision": BaseRevision,
-	        "profileChanges": ApplyProfileChanges,
-	        "profileCommandRevision": profile.commandRevision || 0,
-	        "serverTime": new Date().toISOString(),
-	        "responseVersion": 1
-	    })
-	    res.status(200);
-	    res.end();
-	});
+// Purchase llama STW
+express.post("/fortnite/api/game/v2/profile/*/client/PurchaseCatalogEntry", async (req, res) => {
+    function makeid() {
+        let CurrentDate = (new Date()).valueOf().toString();
+        let RandomFloat = Math.random().toString();
+        let ID = crypto.createHash('md5').update(CurrentDate + RandomFloat).digest('hex');
+        let FinishedID = ID.slice(0, 8) + "-" + ID.slice(8, 12) + "-" + ID.slice(12, 16) + "-" + ID.slice(16, 20) + "-" + ID.slice(20, 32);
+        return FinishedID;
+    }
+
+    const profile = require(`./profiles/${req.query.profileId || "profile0"}.json`);
+    const campaign = require("./profiles/campaign.json");
+    const ItemIDS = require("./responses/ItemIDS.json");
+
+    // do not change any of these or you will end up breaking it
+    var ApplyProfileChanges = [];
+    var MultiUpdate = [];
+    var Notifications = [];
+    var BaseRevision = profile.rvn || 0;
+    var CampaignBaseRevision = campaign.rvn || 0;
+    var QueryRevision = req.query.rvn || -1;
+    var PurchasedLlama = false;
+
+    const ID = makeid();
+
+    if (req.body.offerId && profile.profileId == "profile0" && PurchasedLlama == false) {
+        profile.rvn += 1;
+        profile.commandRevision += 1;
+
+        catalog.storefronts.forEach(function(value, a) {
+            if (value.name.toLowerCase().startsWith("cardpack")) {
+                catalog.storefronts[a].catalogEntries.forEach(function(value, b) {
+                    if (value.offerId == req.body.offerId) {
+                        catalog.storefronts[a].catalogEntries[b].itemGrants.forEach(function(value, c) {
+                            const Item = {
+                                "templateId": value.templateId,
+                                "attributes": {
+                                    "is_loot_tier_overridden": false,
+                                    "max_level_bonus": 0,
+                                    "level": 1391,
+                                    "pack_source": "Schedule",
+                                    "item_seen": false,
+                                    "xp": 0,
+                                    "favorite": false,
+                                    "override_loot_tier": 0
+                                },
+                                "quantity": 1
+                            };
+
+                            Item.quantity = req.body.purchaseQuantity || 1;
+
+                            profile.items[ID] = Item
+
+                            ApplyProfileChanges.push({
+                                "changeType": "itemAdded",
+                                "itemId": ID,
+                                "item": Item
+                            })
+                        })
+                    }
+                })
+            }
+        })
+
+        PurchasedLlama = true;
+
+        fs.writeFileSync(`./profiles/${req.query.profileId || "profile0"}.json`, JSON.stringify(profile, null, 2), function(err) {
+            if (err) {
+                console.log('error:', err)
+            };
+        });
+    }
+
+    if (req.body.offerId && profile.profileId == "common_core") {
+        campaign.rvn += 1;
+        campaign.commandRevision += 1;
+
+        catalog.storefronts.forEach(function(value, a) {
+            if (value.name.toLowerCase().startsWith("cardpack")) {
+                catalog.storefronts[a].catalogEntries.forEach(function(value, b) {
+                    if (value.offerId == req.body.offerId) {
+                        catalog.storefronts[a].catalogEntries[b].itemGrants.forEach(function(value, c) {
+                            const seasonchecker = require("./seasonchecker.js");
+                            const seasondata = require("./season.json");
+                            seasonchecker(req, seasondata);
+
+                            if (4 > seasondata.season || seasondata.season == 4 && PurchasedLlama == false) {
+                                const Item = {
+                                    "templateId": value.templateId,
+                                    "attributes": {
+                                        "is_loot_tier_overridden": false,
+                                        "max_level_bonus": 0,
+                                        "level": 1391,
+                                        "pack_source": "Schedule",
+                                        "item_seen": false,
+                                        "xp": 0,
+                                        "favorite": false,
+                                        "override_loot_tier": 0
+                                    },
+                                    "quantity": 1
+                                };
+
+                                Item.quantity = req.body.purchaseQuantity || 1;
+
+                                campaign.items[ID] = Item
+
+                                MultiUpdate.push({
+                                    "profileRevision": campaign.rvn || 0,
+                                    "profileId": "campaign",
+                                    "profileChangesBaseRevision": CampaignBaseRevision,
+                                    "profileChanges": [{
+                                        "changeType": "itemAdded",
+                                        "itemId": ID,
+                                        "item": Item
+                                    }],
+                                    "profileCommandRevision": campaign.commandRevision || 0,
+                                })
+
+                                PurchasedLlama = true;
+                            }
+
+                            if (seasondata.season == 5 || seasondata.season == 6 || req.headers["user-agent"].includes("Release-7.00") || req.headers["user-agent"].includes("Release-7.01") || req.headers["user-agent"].includes("Release-7.10") || req.headers["user-agent"].includes("Release-7.20") && PurchasedLlama == false) {
+                                const Item = {
+                                    "templateId": value.templateId,
+                                    "attributes": {
+                                        "is_loot_tier_overridden": false,
+                                        "max_level_bonus": 0,
+                                        "level": 1391,
+                                        "pack_source": "Schedule",
+                                        "item_seen": false,
+                                        "xp": 0,
+                                        "favorite": false,
+                                        "override_loot_tier": 0
+                                    },
+                                    "quantity": 1
+                                };
+
+                                Item.quantity = req.body.purchaseQuantity || 1;
+
+                                campaign.items[ID] = Item
+
+                                MultiUpdate.push({
+                                    "profileRevision": campaign.rvn || 0,
+                                    "profileId": "campaign",
+                                    "profileChangesBaseRevision": CampaignBaseRevision,
+                                    "profileChanges": [{
+                                        "changeType": "itemAdded",
+                                        "itemId": ID,
+                                        "item": Item
+                                    }],
+                                    "profileCommandRevision": campaign.commandRevision || 0,
+                                });
+
+                                Notifications.push({
+                                    "type": "cardPackResult",
+                                    "primary": true,
+                                    "lootGranted": {
+                                        "tierGroupName": campaign.items[ID].templateId.split(":")[1],
+                                        "items": []
+                                    },
+                                    "displayLevel": 0
+                                })
+
+                                PurchasedLlama = true;
+                            }
+
+                            if (6 < seasondata.season && PurchasedLlama == false) {
+                                const Item = {
+                                    "templateId": value.templateId,
+                                    "attributes": {
+                                        "is_loot_tier_overridden": false,
+                                        "max_level_bonus": 0,
+                                        "level": 1391,
+                                        "pack_source": "Schedule",
+                                        "item_seen": false,
+                                        "xp": 0,
+                                        "favorite": false,
+                                        "override_loot_tier": 0
+                                    },
+                                    "quantity": 1
+                                };
+
+                                Item.quantity = req.body.purchaseQuantity || 1;
+
+                                campaign.items[ID] = Item
+
+                                MultiUpdate.push({
+                                    "profileRevision": campaign.rvn || 0,
+                                    "profileId": "campaign",
+                                    "profileChangesBaseRevision": CampaignBaseRevision,
+                                    "profileChanges": [],
+                                    "profileCommandRevision": campaign.commandRevision || 0,
+                                });
+
+                                MultiUpdate[0].profileChanges.push({
+                                    "changeType": "itemAdded",
+                                    "itemId": ID,
+                                    "item": Item
+                                })
+
+                                Notifications.push({
+                                    "type": "CatalogPurchase",
+                                    "primary": true,
+                                    "lootResult": {
+                                        "items": []
+                                    }
+                                })
+
+                                for (var i = 0; i < 10; i++) {
+                                    const randomNumber = Math.floor(Math.random() * ItemIDS.length);
+                                    const id = makeid();
+
+                                    MultiUpdate[0].profileChanges.push({
+                                        "changeType": "itemAdded",
+                                        "itemId": id,
+                                        "item": {
+                                            "templateId": ItemIDS[randomNumber],
+                                            "attributes": {
+                                                "last_state_change_time": "2017-08-29T21:05:57.087Z",
+                                                "max_level_bonus": 0,
+                                                "level": 1,
+                                                "item_seen": false,
+                                                "alterations": [],
+                                                "xp": 0,
+                                                "sent_new_notification": true,
+                                                "favorite": false
+                                            },
+                                            "quantity": 1
+                                        }
+                                    })
+
+                                    Notifications[0].lootResult.items.push({
+                                        "itemType": ItemIDS[randomNumber],
+                                        "itemGuid": id,
+                                        "itemProfile": "campaign",
+                                        "attributes": {},
+                                        "quantity": 1
+                                    })
+
+                                    campaign.items[id] = {
+                                        "templateId": ItemIDS[randomNumber],
+                                        "attributes": {
+                                            "last_state_change_time": "2017-08-29T21:05:57.087Z",
+                                            "max_level_bonus": 0,
+                                            "level": 1,
+                                            "item_seen": false,
+                                            "alterations": [],
+                                            "xp": 0,
+                                            "sent_new_notification": true,
+                                            "favorite": false
+                                        },
+                                        "quantity": 1
+                                    }
+                                }
+
+                                if (campaign.items[ID].quantity == 1) {
+                                    delete campaign.items[ID]
+
+                                    MultiUpdate[0].profileChanges.push({
+                                        "changeType": "itemRemoved",
+                                        "itemId": ID
+                                    })
+                                }
+
+                                if (true) {
+                                    try {
+                                        campaign.items[ID].quantity -= 1;
+
+                                        MultiUpdate[0].profileChanges.push({
+                                            "changeType": "itemQuantityChanged",
+                                            "itemId": ID,
+                                            "quantity": campaign.items[ID].quantity
+                                        })
+                                    } catch (err) {}
+                                }
+
+                                PurchasedLlama = true;
+                            }
+                        })
+                    }
+                })
+            }
+        })
+
+        fs.writeFileSync("./profiles/campaign.json", JSON.stringify(campaign, null, 2), function(err) {
+            if (err) {
+                console.log('error:', err)
+            };
+        });
+    }
+
+    // this doesn't work properly on version v12.20 and above but whatever
+    if (QueryRevision != BaseRevision) {
+        ApplyProfileChanges = [{
+            "changeType": "fullProfileUpdate",
+            "profile": profile
+        }];
+    }
+
+    res.json({
+        "profileRevision": profile.rvn || 0,
+        "profileId": req.query.profileId || "profile0",
+        "profileChangesBaseRevision": BaseRevision,
+        "profileChanges": ApplyProfileChanges,
+        "notifications": Notifications,
+        "profileCommandRevision": profile.commandRevision || 0,
+        "serverTime": new Date().toISOString(),
+        "multiUpdate": MultiUpdate,
+        "responseVersion": 1
+    })
+    res.status(200);
+    res.end();
+});
+
+// Set multiple items favorite
+express.post("/fortnite/api/game/v2/profile/*/client/SetItemFavoriteStatusBatch", async (req, res) => {
+    const profile = require(`./profiles/${req.query.profileId || "athena"}.json`);
+
+    if (profile.profileId == "athena") {
+        const seasonchecker = require("./seasonchecker.js");
+        const seasondata = require("./season.json");
+        seasonchecker(req, seasondata);
+        profile.stats.attributes.season_num = seasondata.season;
+        if (seasondata.season == 2) {
+            profile.stats.attributes.book_level = 70;
+        } else {
+            profile.stats.attributes.book_level = 100;
+        }
+    }
+
+    // do not change any of these or you will end up breaking it
+    var ApplyProfileChanges = [];
+    var BaseRevision = profile.rvn || 0;
+    var QueryRevision = req.query.rvn || -1;
+    var StatChanged = false;
+
+    if (req.body.itemIds) {
+        for (var i = 0; i < req.body.itemIds.length; i++) {
+            profile.items[req.body.itemIds[i]].attributes.favorite = req.body.itemFavStatus[i] || false;
+
+            ApplyProfileChanges.push({
+                "changeType": "itemAttrChanged",
+                "itemId": req.body.itemIds[i],
+                "attributeName": "favorite",
+                "attributeValue": profile.items[req.body.itemIds[i]].attributes.favorite
+            })
+        }
+        StatChanged = true;
+    }
+
+    if (StatChanged == true) {
+        profile.rvn += 1;
+        profile.commandRevision += 1;
+
+        fs.writeFileSync(`./profiles/${req.query.profileId || "athena"}.json`, JSON.stringify(profile, null, 2), function(err) {
+            if (err) {
+                console.log('error:', err)
+            };
+        });
+    }
+
+    // this doesn't work properly on version v12.20 and above but whatever
+    if (QueryRevision != BaseRevision) {
+        ApplyProfileChanges = [{
+            "changeType": "fullProfileUpdate",
+            "profile": profile
+        }];
+    }
+
+    res.json({
+        "profileRevision": profile.rvn || 0,
+        "profileId": req.query.profileId || "athena",
+        "profileChangesBaseRevision": BaseRevision,
+        "profileChanges": ApplyProfileChanges,
+        "profileCommandRevision": profile.commandRevision || 0,
+        "serverTime": new Date().toISOString(),
+        "responseVersion": 1
+    })
+    res.status(200);
+    res.end();
+});
+
+// Set favorite on item
+express.post("/fortnite/api/game/v2/profile/*/client/SetItemFavoriteStatus", async (req, res) => {
+    const profile = require(`./profiles/${req.query.profileId || "athena"}.json`);
+
+    if (profile.profileId == "athena") {
+        const seasonchecker = require("./seasonchecker.js");
+        const seasondata = require("./season.json");
+        seasonchecker(req, seasondata);
+        profile.stats.attributes.season_num = seasondata.season;
+        if (seasondata.season == 2) {
+            profile.stats.attributes.book_level = 70;
+        } else {
+            profile.stats.attributes.book_level = 100;
+        }
+    }
+
+    // do not change any of these or you will end up breaking it
+    var ApplyProfileChanges = [];
+    var BaseRevision = profile.rvn || 0;
+    var QueryRevision = req.query.rvn || -1;
+    var StatChanged = false;
+
+    if (req.body.targetItemId) {
+        profile.items[req.body.targetItemId].attributes.favorite = req.body.bFavorite || false;
+        StatChanged = true;
+    }
+
+    if (StatChanged == true) {
+        profile.rvn += 1;
+        profile.commandRevision += 1;
+
+        ApplyProfileChanges.push({
+            "changeType": "itemAttrChanged",
+            "itemId": req.body.targetItemId,
+            "attributeName": "favorite",
+            "attributeValue": profile.items[req.body.targetItemId].attributes.favorite
+        })
+
+        fs.writeFileSync(`./profiles/${req.query.profileId || "athena"}.json`, JSON.stringify(profile, null, 2), function(err) {
+            if (err) {
+                console.log('error:', err)
+            };
+        });
+    }
+
+    // this doesn't work properly on version v12.20 and above but whatever
+    if (QueryRevision != BaseRevision) {
+        ApplyProfileChanges = [{
+            "changeType": "fullProfileUpdate",
+            "profile": profile
+        }];
+    }
+
+    res.json({
+        "profileRevision": profile.rvn || 0,
+        "profileId": req.query.profileId || "athena",
+        "profileChangesBaseRevision": BaseRevision,
+        "profileChanges": ApplyProfileChanges,
+        "profileCommandRevision": profile.commandRevision || 0,
+        "serverTime": new Date().toISOString(),
+        "responseVersion": 1
+    })
+    res.status(200);
+    res.end();
+});
+
+// Mark item as seen
+express.post("/fortnite/api/game/v2/profile/*/client/MarkItemSeen", async (req, res) => {
+    const profile = require(`./profiles/${req.query.profileId || "athena"}.json`);
+
+    if (profile.profileId == "athena") {
+        const seasonchecker = require("./seasonchecker.js");
+        const seasondata = require("./season.json");
+        seasonchecker(req, seasondata);
+        profile.stats.attributes.season_num = seasondata.season;
+        if (seasondata.season == 2) {
+            profile.stats.attributes.book_level = 70;
+        } else {
+            profile.stats.attributes.book_level = 100;
+        }
+    }
+
+    // do not change any of these or you will end up breaking it
+    var ApplyProfileChanges = [];
+    var BaseRevision = profile.rvn || 0;
+    var QueryRevision = req.query.rvn || -1;
+    var StatChanged = false;
+
+    if (req.body.itemIds) {
+        for (var i = 0; i < req.body.itemIds.length; i++) {
+            profile.items[req.body.itemIds[i]].attributes.item_seen = true;
+
+            ApplyProfileChanges.push({
+                "changeType": "itemAttrChanged",
+                "itemId": req.body.itemIds[i],
+                "attributeName": "item_seen",
+                "attributeValue": profile.items[req.body.itemIds[i]].attributes.item_seen
+            })
+        }
+        StatChanged = true;
+    }
+
+    if (StatChanged == true) {
+        profile.rvn += 1;
+        profile.commandRevision += 1;
+
+        fs.writeFileSync(`./profiles/${req.query.profileId || "athena"}.json`, JSON.stringify(profile, null, 2), function(err) {
+            if (err) {
+                console.log('error:', err)
+            };
+        });
+    }
+
+    // this doesn't work properly on version v12.20 and above but whatever
+    if (QueryRevision != BaseRevision) {
+        ApplyProfileChanges = [{
+            "changeType": "fullProfileUpdate",
+            "profile": profile
+        }];
+    }
+
+    res.json({
+        "profileRevision": profile.rvn || 0,
+        "profileId": req.query.profileId || "athena",
+        "profileChangesBaseRevision": BaseRevision,
+        "profileChanges": ApplyProfileChanges,
+        "profileCommandRevision": profile.commandRevision || 0,
+        "serverTime": new Date().toISOString(),
+        "responseVersion": 1
+    })
+    res.status(200);
+    res.end();
+});
 
 // Equip BR Locker 1
 express.post("/fortnite/api/game/v2/profile/*/client/EquipBattleRoyaleCustomization", async (req, res) => {
