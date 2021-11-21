@@ -40,14 +40,6 @@
       },
       "quantity": 1
     },
-    "0f0e1281-25ab-405b-89d8-d9dcb86439fa": {
-      "templateId": "CollectedResource:Token_collectionresource_nodegatetoken01",
-      "attributes": {
-        "last_updated": "2017-08-31T15:02:57.896Z",
-        "stored_value": 0.06272159999999971
-      },
-      "quantity": 1
-    },
     "8fcfb7a3-976e-45bc-889e-a43f14179167": {
       "templateId": "AccountResource:heroxp",
       "attributes": {
@@ -1076,7 +1068,7 @@
         "xp": 0,
         "favorite": false
       },
-      "quantity": 81
+      "quantity": 27690
     },
     "42517541-1c5f-46ae-9537-1d7dc08acb3b": {
       "templateId": "AccountResource:schematicxp",
