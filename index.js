@@ -3885,6 +3885,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/PurchaseCatalogEntry", asyn
     var Notifications = [];
     var BaseRevision = profile.rvn || 0;
     var CampaignBaseRevision = campaign.rvn || 0;
+    var AthenaBaseRevision = athena.rvn || 0;
     var QueryRevision = req.query.rvn || -1;
     var PurchasedLlama = false;
     var AthenaModified = false;
