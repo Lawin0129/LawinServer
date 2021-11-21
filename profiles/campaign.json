@@ -8654,14 +8654,6 @@
       },
       "quantity": 1
     },
-    "e21465df-e153-45e4-ba48-7ad8bb79258f": {
-      "templateId": "CollectedResource:Token_collectionresource_nodegatetoken01",
-      "attributes": {
-        "last_updated": "2020-02-05T22:42:01.707Z",
-        "stored_value": 0
-      },
-      "quantity": 1
-    },
     "6959e216-d078-4bd3-9d3f-40fe98a0afef": {
       "templateId": "Quest:homebasequest_slotmissiondefender",
       "attributes": {
