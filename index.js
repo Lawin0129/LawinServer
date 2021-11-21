@@ -9,7 +9,7 @@ const worldstw = require("./responses/worldstw.json");
 const friendslist = require("./responses/friendslist.json");
 const friendslist2 = require("./responses/friendslist2.json");
 const Keychain = require("./responses/keychain.json");
-const catalog = require("./responses/catalog.json");
+const catalog = getItemShop();
 const contentpages = require("./responses/contentpages.json");
 express.use(function(req, res, next) {
     // Getting the raw body of a request for client saving
@@ -39,6 +39,32 @@ express.listen(port, console.log("Started listening on port", port));
 
 express.get("/", async (req, res) => {
     res.sendFile('index.html');
+})
+
+express.get("/clearitemsforshop", async (req, res) => {
+    res.set("Content-Type", "text/plain");
+
+    const athena = require("./profiles/athena.json");
+    const CatalogConfig = require("./catalog_config.json");
+
+    for (var value in CatalogConfig) {
+        for (var key in athena.items) {
+            if (typeof CatalogConfig[value] == "string") {
+                if (CatalogConfig[value].length != 0) {
+                    if (CatalogConfig[value].toLowerCase() == athena.items[key].templateId.toLowerCase()) {
+                        delete athena.items[key]
+                    }
+                }
+            }
+        }
+    }
+
+    athena.rvn += 1;
+    athena.commandRevision += 1;
+
+    fs.writeFileSync("./profiles/athena.json", JSON.stringify(athena, null, 2));
+
+    res.send('Success')
 })
 
 express.get("/fortnite/api/storefront/v2/catalog", async (req, res) => {
@@ -3850,6 +3876,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/PurchaseCatalogEntry", asyn
 
     const profile = require(`./profiles/${req.query.profileId || "profile0"}.json`);
     const campaign = require("./profiles/campaign.json");
+    const athena = require("./profiles/athena.json");
     const ItemIDS = require("./responses/ItemIDS.json");
 
     // do not change any of these or you will end up breaking it
@@ -3860,6 +3887,8 @@ express.post("/fortnite/api/game/v2/profile/*/client/PurchaseCatalogEntry", asyn
     var CampaignBaseRevision = campaign.rvn || 0;
     var QueryRevision = req.query.rvn || -1;
     var PurchasedLlama = false;
+    var AthenaModified = false;
+    var ItemExists = false;
 
     const ID = makeid();
 
@@ -3900,9 +3929,91 @@ express.post("/fortnite/api/game/v2/profile/*/client/PurchaseCatalogEntry", asyn
                     }
                 })
             }
+            if (value.name.toLowerCase().startsWith("br")) {
+                catalog.storefronts[a].catalogEntries.forEach(function(value, b) {
+                    if (value.offerId == req.body.offerId) {
+                        catalog.storefronts[a].catalogEntries[b].itemGrants.forEach(function(value, c) {
+                            const ID = value.templateId;
+
+                            for (var key in athena.items) {
+                                if (value.templateId.toLowerCase() == athena.items[key].templateId.toLowerCase()) {
+                                    ItemExists = true;
+                                }
+                            }
+
+                            if (ItemExists == false) {
+                                if (MultiUpdate.length == 0) {
+                                    MultiUpdate.push({
+                                        "profileRevision": athena.rvn || 0,
+                                        "profileId": "athena",
+                                        "profileChangesBaseRevision": AthenaBaseRevision,
+                                        "profileChanges": [],
+                                        "profileCommandRevision": athena.commandRevision || 0,
+                                    })
+                                }
+
+                                if (Notifications.length == 0) {
+                                    Notifications.push({
+                                        "type": "CatalogPurchase",
+                                        "primary": true,
+                                        "lootResult": {
+                                            "items": []
+                                        }
+                                    })
+                                }
+
+                                const Item = {
+                                    "templateId": value.templateId,
+                                    "attributes": {
+                                        "max_level_bonus": 0,
+                                        "level": 1,
+                                        "item_seen": false,
+                                        "xp": 0,
+                                        "variants": [],
+                                        "favorite": false
+                                    },
+                                    "quantity": 1
+                                };
+
+                                athena.items[ID] = Item;
+
+                                MultiUpdate[0].profileChanges.push({
+                                    "changeType": "itemAdded",
+                                    "itemId": ID,
+                                    "item": Item
+                                })
+
+                                Notifications[0].lootResult.items.push({
+                                    "itemType": Item.templateId,
+                                    "itemGuid": ID,
+                                    "itemProfile": "athena",
+                                    "attributes": Item.attributes,
+                                    "quantity": 1
+                                })
+
+                                AthenaModified = true;
+                            }
+                        })
+                    }
+                })
+            }
         })
 
         PurchasedLlama = true;
+
+        if (AthenaModified == true) {
+            athena.rvn += 1;
+            athena.commandRevision += 1;
+
+            MultiUpdate[0].profileRevision = athena.rvn || 0;
+            MultiUpdate[0].profileCommandRevision = athena.commandRevision || 0;
+
+            fs.writeFileSync("./profiles/athena.json", JSON.stringify(athena, null, 2), function(err) {
+                if (err) {
+                    console.log('error:', err)
+                };
+            });
+        }
 
         fs.writeFileSync(`./profiles/${req.query.profileId || "profile0"}.json`, JSON.stringify(profile, null, 2), function(err) {
             if (err) {
@@ -4120,7 +4231,89 @@ express.post("/fortnite/api/game/v2/profile/*/client/PurchaseCatalogEntry", asyn
                     }
                 })
             }
+            if (value.name.toLowerCase().startsWith("br")) {
+                catalog.storefronts[a].catalogEntries.forEach(function(value, b) {
+                    if (value.offerId == req.body.offerId) {
+                        catalog.storefronts[a].catalogEntries[b].itemGrants.forEach(function(value, c) {
+                            const ID = value.templateId;
+
+                            for (var key in athena.items) {
+                                if (value.templateId.toLowerCase() == athena.items[key].templateId.toLowerCase()) {
+                                    ItemExists = true;
+                                }
+                            }
+
+                            if (ItemExists == false) {
+                                if (MultiUpdate.length == 0) {
+                                    MultiUpdate.push({
+                                        "profileRevision": athena.rvn || 0,
+                                        "profileId": "athena",
+                                        "profileChangesBaseRevision": AthenaBaseRevision,
+                                        "profileChanges": [],
+                                        "profileCommandRevision": athena.commandRevision || 0,
+                                    })
+                                }
+
+                                if (Notifications.length == 0) {
+                                    Notifications.push({
+                                        "type": "CatalogPurchase",
+                                        "primary": true,
+                                        "lootResult": {
+                                            "items": []
+                                        }
+                                    })
+                                }
+
+                                const Item = {
+                                    "templateId": value.templateId,
+                                    "attributes": {
+                                        "max_level_bonus": 0,
+                                        "level": 1,
+                                        "item_seen": false,
+                                        "xp": 0,
+                                        "variants": [],
+                                        "favorite": false
+                                    },
+                                    "quantity": 1
+                                };
+
+                                athena.items[ID] = Item;
+
+                                MultiUpdate[0].profileChanges.push({
+                                    "changeType": "itemAdded",
+                                    "itemId": ID,
+                                    "item": Item
+                                })
+
+                                Notifications[0].lootResult.items.push({
+                                    "itemType": Item.templateId,
+                                    "itemGuid": ID,
+                                    "itemProfile": "athena",
+                                    "attributes": Item.attributes,
+                                    "quantity": 1
+                                })
+
+                                AthenaModified = true;
+                            }
+                        })
+                    }
+                })
+            }
         })
+
+        if (AthenaModified == true) {
+            athena.rvn += 1;
+            athena.commandRevision += 1;
+
+            MultiUpdate[0].profileRevision = athena.rvn || 0;
+            MultiUpdate[0].profileCommandRevision = athena.commandRevision || 0;
+
+            fs.writeFileSync("./profiles/athena.json", JSON.stringify(athena, null, 2), function(err) {
+                if (err) {
+                    console.log('error:', err)
+                };
+            });
+        }
 
         fs.writeFileSync("./profiles/campaign.json", JSON.stringify(campaign, null, 2), function(err) {
             if (err) {
@@ -4959,3 +5152,111 @@ express.all("*", async (req, res) => {
     });
     res.end();
 });
+
+function getItemShop() {
+    const catalog = JSON.parse(JSON.stringify(require("./responses/catalog.json")));
+    const CatalogConfig = require("./catalog_config.json");
+
+    for (var value in CatalogConfig) {
+        if (typeof CatalogConfig[value] == "string") {
+            if (CatalogConfig[value].length != 0) {
+                if (value.toLowerCase().startsWith("daily")) {
+                    catalog.storefronts.forEach((storefront, i) => {
+                        if (storefront.name.toLowerCase() == "brdailystorefront") {
+                            catalog.storefronts[i].catalogEntries.push({
+                                "devName": CatalogConfig[value],
+                                "offerId": CatalogConfig[value],
+                                "fulfillmentIds": [],
+                                "dailyLimit": -1,
+                                "weeklyLimit": -1,
+                                "monthlyLimit": -1,
+                                "categories": [],
+                                "prices": [{
+                                    "currencyType": "MtxCurrency",
+                                    "currencySubType": "",
+                                    "regularPrice": 0,
+                                    "finalPrice": 0,
+                                    "saleExpiration": "9999-12-02T01:12:00Z",
+                                    "basePrice": 0
+                                }],
+                                "matchFilter": "",
+                                "filterWeight": 0,
+                                "appStoreId": [],
+                                "requirements": [{
+                                    "requirementType": "DenyOnItemOwnership",
+                                    "requiredId": CatalogConfig[value],
+                                    "minQuantity": 1
+                                }],
+                                "offerType": "StaticPrice",
+                                "giftInfo": {
+                                    "bIsEnabled": false,
+                                    "forcedGiftBoxTemplateId": "",
+                                    "purchaseRequirements": [],
+                                    "giftRecordIds": []
+                                },
+                                "refundable": true,
+                                "metaInfo": [],
+                                "displayAssetPath": "",
+                                "itemGrants": [{
+                                    "templateId": CatalogConfig[value],
+                                    "quantity": 1
+                                }],
+                                "sortPriority": 0,
+                                "catalogGroupPriority": 0
+                            })
+                        }
+                    })
+                }
+                if (value.toLowerCase().startsWith("featured")) {
+                    catalog.storefronts.forEach((storefront, i) => {
+                        if (storefront.name.toLowerCase() == "brweeklystorefront") {
+                            catalog.storefronts[i].catalogEntries.push({
+                                "devName": CatalogConfig[value],
+                                "offerId": CatalogConfig[value],
+                                "fulfillmentIds": [],
+                                "dailyLimit": -1,
+                                "weeklyLimit": -1,
+                                "monthlyLimit": -1,
+                                "categories": [],
+                                "prices": [{
+                                    "currencyType": "MtxCurrency",
+                                    "currencySubType": "",
+                                    "regularPrice": 0,
+                                    "finalPrice": 0,
+                                    "saleExpiration": "9999-12-02T01:12:00Z",
+                                    "basePrice": 0
+                                }],
+                                "matchFilter": "",
+                                "filterWeight": 0,
+                                "appStoreId": [],
+                                "requirements": [{
+                                    "requirementType": "DenyOnItemOwnership",
+                                    "requiredId": CatalogConfig[value],
+                                    "minQuantity": 1
+                                }],
+                                "offerType": "StaticPrice",
+                                "giftInfo": {
+                                    "bIsEnabled": false,
+                                    "forcedGiftBoxTemplateId": "",
+                                    "purchaseRequirements": [],
+                                    "giftRecordIds": []
+                                },
+                                "refundable": true,
+                                "metaInfo": [],
+                                "displayAssetPath": "",
+                                "itemGrants": [{
+                                    "templateId": CatalogConfig[value],
+                                    "quantity": 1
+                                }],
+                                "sortPriority": 0,
+                                "catalogGroupPriority": 0
+                            })
+                        }
+                    })
+                }
+            }
+        }
+    }
+
+    return catalog;
+}
