@@ -40,25 +40,6 @@
       },
       "quantity": 1
     },
-    "0f0e1281-25ab-405b-89d8-d9dcb86439fa": {
-      "templateId": "CollectedResource:Token_collectionresource_nodegatetoken01",
-      "attributes": {
-        "last_updated": "2017-08-31T15:02:57.896Z",
-        "stored_value": 0.06272159999999971
-      },
-      "quantity": 1
-    },
-    "8fcfb7a3-976e-45bc-889e-a43f14179167": {
-      "templateId": "AccountResource:heroxp",
-      "attributes": {
-        "max_level_bonus": 0,
-        "level": 1,
-        "item_seen": true,
-        "xp": 0,
-        "favorite": false
-      },
-      "quantity": 2730
-    },
     "295ca2c9-e177-4bf2-9907-a7a867e27bb8": {
       "templateId": "Quest:homebasequest_researchpurchase",
       "attributes": {
@@ -88,17 +69,6 @@
         "favorite": false
       },
       "quantity": 1
-    },
-    "69cf0f04-34a6-4eff-a31e-91acd1ad8fcb": {
-      "templateId": "AccountResource:voucher_basicpack",
-      "attributes": {
-        "max_level_bonus": 0,
-        "level": 1,
-        "item_seen": false,
-        "xp": 0,
-        "favorite": false
-      },
-      "quantity": 2
     },
     "cc33ae01-f558-4613-ae30-c5c83ba1c9da": {
       "templateId": "Quota:restxp",
@@ -346,17 +316,6 @@
       },
       "quantity": 1
     },
-    "f0a7e3bd-9987-4566-b12b-bd4ab0479f39": {
-      "templateId": "AccountResource:reagent_c_t01",
-      "attributes": {
-        "max_level_bonus": 0,
-        "level": 1,
-        "item_seen": false,
-        "xp": 0,
-        "favorite": false
-      },
-      "quantity": 1
-    },
     "5e3f0933-ff56-4ce3-a693-0251fc37a296": {
       "templateId": "Quest:heroquest_constructorleadership",
       "attributes": {
@@ -383,53 +342,6 @@
         "xp": 0,
         "sent_new_notification": true,
         "completion_complete_launchweatherballoon_1": 1,
-        "favorite": false
-      },
-      "quantity": 1
-    },
-    "391ed81f-9fb6-438f-94fe-fc4f2413f11c": {
-      "templateId": "Quest:outpostquest_t1_l2",
-      "attributes": {
-        "quest_state": "Claimed",
-        "last_state_change_time": "2017-08-31T15:02:00.477Z",
-        "max_level_bonus": 0,
-        "level": -1,
-        "item_seen": true,
-        "xp": 0,
-        "completion_complete_outpost_1_2": 1,
-        "sent_new_notification": true,
-        "favorite": false
-      },
-      "quantity": 1
-    },
-    "39faa81f-9fb6-438f-94fe-fc4f2413f11c": {
-      "templateId": "Quest:outpostquest_t1_l3",
-      "attributes": {
-        "quest_state": "Claimed",
-        "last_state_change_time": "2017-08-31T15:02:00.477Z",
-        "max_level_bonus": 0,
-        "level": -1,
-        "item_seen": true,
-        "xp": 0,
-        "completion_complete_outpost_1_3": 1,
-        "sent_new_notification": true,
-        "favorite": false
-      },
-      "quantity": 1
-    },
-    "d566752a-1910-460c-9c71-0b389ec635ed": {
-      "templateId": "Quest:outpostquest_t1_l1",
-      "attributes": {
-        "quest_state": "Claimed",
-        "last_state_change_time": "2017-08-29T21:18:18.955Z",
-        "max_level_bonus": 0,
-        "level": -1,
-        "completion_custom_supplydropreceived": 1,
-        "completion_complete_outpost_1_1": 1,
-        "item_seen": true,
-        "xp": 0,
-        "sent_new_notification": true,
-        "completion_custom_deployoutpost": 1,
         "favorite": false
       },
       "quantity": 1
@@ -507,17 +419,6 @@
         "favorite": false
       },
       "quantity": 1
-    },
-    "05d71f97-2626-467a-85d8-9036e8217ec3": {
-      "templateId": "AccountResource:eventcurrency_scaling",
-      "attributes": {
-        "max_level_bonus": 0,
-        "level": 1,
-        "item_seen": false,
-        "xp": 0,
-        "favorite": false
-      },
-      "quantity": 46
     },
     "55007fd2-edcc-487d-9e7b-df9044abacb3": {
       "templateId": "Worker:workerbasic_c_t01",
@@ -943,17 +844,6 @@
       },
       "quantity": 1
     },
-    "a04fe907-248d-4b60-b918-53cc7497ab32": {
-      "templateId": "AccountResource:eventcurrency_snowballs",
-      "attributes": {
-        "max_level_bonus": 0,
-        "level": 1,
-        "item_seen": false,
-        "xp": 0,
-        "favorite": false
-      },
-      "quantity": 100
-    },
     "28a3a983-16ee-4243-a71e-7f5f3b0953e4": {
       "templateId": "Worker:managerexplorer_c_t01",
       "attributes": {
@@ -1056,17 +946,6 @@
       },
       "quantity": 1
     },
-    "632493cd-5d36-422e-a7ad-277797afebeb": {
-      "templateId": "AccountResource:peopleresource",
-      "attributes": {
-        "max_level_bonus": 0,
-        "level": 1,
-        "item_seen": true,
-        "xp": 0,
-        "favorite": false
-      },
-      "quantity": 15
-    },
     "de06b39f-0819-40e5-8c3b-fec5e417758c": {
       "templateId": "Quest:homebasequest_unlocksquads",
       "attributes": {
@@ -1123,29 +1002,7 @@
         "xp": 0,
         "favorite": false
       },
-      "quantity": 81
-    },
-    "42517541-1c5f-46ae-9537-1d7dc08acb3b": {
-      "templateId": "AccountResource:schematicxp",
-      "attributes": {
-        "max_level_bonus": 0,
-        "level": 1,
-        "item_seen": true,
-        "xp": 0,
-        "favorite": false
-      },
-      "quantity": 2220
-    },
-    "8e1169bc-b242-4d8f-9707-a01aef0e1847": {
-      "templateId": "AccountResource:personnelxp",
-      "attributes": {
-        "max_level_bonus": 0,
-        "level": 1,
-        "item_seen": true,
-        "xp": 0,
-        "favorite": false
-      },
-      "quantity": 3590
+      "quantity": 27690
     },
     "f3bda5ee-3521-40b8-b5d9-4262726458b5": {
       "templateId": "Quest:achievement_buildstructures",
@@ -1167,7 +1024,7 @@
       "attributes": {
         "platform": "Shared"
       },
-      "quantity": 1000000000
+      "quantity": 1000000
     },
     "f9e2e4b6-58f7-4b31-829d-f5c6c620ffe7": {
       "templateId": "Quest:challenge_collectionbook_1",
@@ -31256,6 +31113,5054 @@
         "item_seen": true
       },
       "quantity": 1
+    },
+    "Quest:outpostquest_t1_l1": {
+      "templateId": "Quest:outpostquest_t1_l1",
+      "attributes": {
+        "creation_time": "min",
+        "level": -1,
+        "completion_custom_supplydropreceived": 1,
+        "completion_complete_outpost_1_1": 1,
+        "item_seen": true,
+        "playlists": [],
+        "sent_new_notification": true,
+        "completion_custom_deployoutpost": 1,
+        "challenge_bundle_id": "",
+        "xp_reward_scalar": 1,
+        "challenge_linked_quest_given": "",
+        "quest_pool": "",
+        "quest_state": "Claimed",
+        "bucket": "",
+        "last_state_change_time": "2019-10-21T13:45:24.247Z",
+        "challenge_linked_quest_parent": "",
+        "max_level_bonus": 0,
+        "xp": 0,
+        "quest_rarity": "uncommon",
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:outpostquest_t1_l2": {
+      "templateId": "Quest:outpostquest_t1_l2",
+      "attributes": {
+        "creation_time": "min",
+        "level": -1,
+        "item_seen": true,
+        "playlists": [],
+        "sent_new_notification": true,
+        "challenge_bundle_id": "",
+        "xp_reward_scalar": 1,
+        "challenge_linked_quest_given": "",
+        "quest_pool": "",
+        "quest_state": "Claimed",
+        "bucket": "",
+        "last_state_change_time": "2019-10-21T15:37:01.947Z",
+        "challenge_linked_quest_parent": "",
+        "max_level_bonus": 0,
+        "xp": 0,
+        "completion_complete_outpost_1_2": 1,
+        "quest_rarity": "uncommon",
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:outpostquest_t1_l3": {
+      "templateId": "Quest:outpostquest_t1_l3",
+      "attributes": {
+        "creation_time": "min",
+        "level": -1,
+        "item_seen": true,
+        "playlists": [],
+        "sent_new_notification": true,
+        "challenge_bundle_id": "",
+        "xp_reward_scalar": 1,
+        "challenge_linked_quest_given": "",
+        "quest_pool": "",
+        "quest_state": "Claimed",
+        "bucket": "",
+        "last_state_change_time": "2019-10-21T17:14:01.473Z",
+        "challenge_linked_quest_parent": "",
+        "max_level_bonus": 0,
+        "completion_complete_outpost_1_3": 1,
+        "xp": 0,
+        "quest_rarity": "uncommon",
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:outpostquest_t1_l4": {
+      "templateId": "Quest:outpostquest_t1_l4",
+      "attributes": {
+        "creation_time": "min",
+        "level": -1,
+        "item_seen": true,
+        "playlists": [],
+        "sent_new_notification": true,
+        "challenge_bundle_id": "",
+        "xp_reward_scalar": 1,
+        "challenge_linked_quest_given": "",
+        "quest_pool": "",
+        "quest_state": "Claimed",
+        "bucket": "",
+        "last_state_change_time": "2019-10-23T13:41:57.009Z",
+        "challenge_linked_quest_parent": "",
+        "max_level_bonus": 0,
+        "xp": 0,
+        "completion_complete_outpost_1_4": 1,
+        "quest_rarity": "uncommon",
+        "completion_custom_defendersupplyreceived": 1,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:outpostquest_t1_l5": {
+      "templateId": "Quest:outpostquest_t1_l5",
+      "attributes": {
+        "creation_time": "min",
+        "level": -1,
+        "item_seen": true,
+        "playlists": [],
+        "sent_new_notification": true,
+        "challenge_bundle_id": "",
+        "xp_reward_scalar": 1,
+        "challenge_linked_quest_given": "",
+        "quest_pool": "",
+        "quest_state": "Claimed",
+        "bucket": "",
+        "last_state_change_time": "2019-10-25T14:42:11.295Z",
+        "challenge_linked_quest_parent": "",
+        "max_level_bonus": 0,
+        "xp": 0,
+        "completion_complete_outpost_1_5": 1,
+        "quest_rarity": "uncommon",
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:outpostquest_t1_l6": {
+      "templateId": "Quest:outpostquest_t1_l6",
+      "attributes": {
+        "creation_time": "min",
+        "level": -1,
+        "item_seen": true,
+        "playlists": [],
+        "sent_new_notification": true,
+        "challenge_bundle_id": "",
+        "xp_reward_scalar": 1,
+        "challenge_linked_quest_given": "",
+        "quest_pool": "",
+        "quest_state": "Claimed",
+        "bucket": "",
+        "last_state_change_time": "2019-10-26T07:43:42.708Z",
+        "challenge_linked_quest_parent": "",
+        "max_level_bonus": 0,
+        "xp": 0,
+        "quest_rarity": "uncommon",
+        "completion_complete_outpost_1_6": 1,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:outpostquest_t1_l7": {
+      "templateId": "Quest:outpostquest_t1_l7",
+      "attributes": {
+        "creation_time": "min",
+        "level": -1,
+        "item_seen": false,
+        "playlists": [],
+        "sent_new_notification": true,
+        "challenge_bundle_id": "",
+        "xp_reward_scalar": 1,
+        "challenge_linked_quest_given": "",
+        "quest_pool": "",
+        "quest_state": "Claimed",
+        "bucket": "",
+        "last_state_change_time": "2019-10-26T09:17:18.893Z",
+        "challenge_linked_quest_parent": "",
+        "max_level_bonus": 0,
+        "xp": 0,
+        "completion_complete_outpost_1_7": 1,
+        "quest_rarity": "uncommon",
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:outpostquest_t1_l8": {
+      "templateId": "Quest:outpostquest_t1_l8",
+      "attributes": {
+        "creation_time": "min",
+        "level": -1,
+        "item_seen": true,
+        "playlists": [],
+        "sent_new_notification": true,
+        "challenge_bundle_id": "",
+        "xp_reward_scalar": 1,
+        "challenge_linked_quest_given": "",
+        "quest_pool": "",
+        "quest_state": "Claimed",
+        "bucket": "",
+        "last_state_change_time": "2019-10-26T10:12:11.791Z",
+        "challenge_linked_quest_parent": "",
+        "max_level_bonus": 0,
+        "xp": 0,
+        "quest_rarity": "uncommon",
+        "favorite": false,
+        "completion_complete_outpost_1_8": 1
+      },
+      "quantity": 1
+    },
+    "Quest:outpostquest_t1_l9": {
+      "templateId": "Quest:outpostquest_t1_l9",
+      "attributes": {
+        "creation_time": "min",
+        "level": -1,
+        "item_seen": false,
+        "playlists": [],
+        "sent_new_notification": true,
+        "challenge_bundle_id": "",
+        "xp_reward_scalar": 1,
+        "challenge_linked_quest_given": "",
+        "quest_pool": "",
+        "quest_state": "Claimed",
+        "bucket": "",
+        "last_state_change_time": "2019-10-26T10:57:09.344Z",
+        "challenge_linked_quest_parent": "",
+        "max_level_bonus": 0,
+        "xp": 0,
+        "quest_rarity": "uncommon",
+        "favorite": false,
+        "completion_complete_outpost_1_9": 1
+      },
+      "quantity": 1
+    },
+    "Quest:outpostquest_t1_l10": {
+      "templateId": "Quest:outpostquest_t1_l10",
+      "attributes": {
+        "creation_time": "min",
+        "level": -1,
+        "item_seen": true,
+        "playlists": [],
+        "sent_new_notification": true,
+        "completion_complete_outpost_1_10": 1,
+        "challenge_bundle_id": "",
+        "xp_reward_scalar": 1,
+        "challenge_linked_quest_given": "",
+        "quest_pool": "",
+        "quest_state": "Claimed",
+        "bucket": "",
+        "last_state_change_time": "2019-10-26T11:35:40.261Z",
+        "challenge_linked_quest_parent": "",
+        "max_level_bonus": 0,
+        "xp": 0,
+        "quest_rarity": "uncommon",
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:outpostquest_t1_endless": {
+      "templateId": "Quest:outpostquest_t1_endless",
+      "attributes": {
+        "creation_time": "min",
+        "level": -1,
+        "item_seen": false,
+        "playlists": [],
+        "sent_new_notification": true,
+        "challenge_bundle_id": "",
+        "xp_reward_scalar": 1,
+        "challenge_linked_quest_given": "",
+        "quest_pool": "",
+        "completion_complete_outpost_1_endless": 0,
+        "quest_state": "Active",
+        "bucket": "",
+        "last_state_change_time": "2019-10-26T11:35:40.264Z",
+        "challenge_linked_quest_parent": "",
+        "max_level_bonus": 0,
+        "xp": 0,
+        "quest_rarity": "uncommon",
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:outpostquest_t2_l1": {
+      "templateId": "Quest:outpostquest_t2_l1",
+      "attributes": {
+        "creation_time": "min",
+        "level": -1,
+        "item_seen": true,
+        "playlists": [],
+        "completion_custom_plankdeployoutpost": 1,
+        "sent_new_notification": true,
+        "challenge_bundle_id": "",
+        "xp_reward_scalar": 1,
+        "challenge_linked_quest_given": "",
+        "quest_pool": "",
+        "quest_state": "Claimed",
+        "bucket": "",
+        "last_state_change_time": "2019-10-26T13:57:03.465Z",
+        "challenge_linked_quest_parent": "",
+        "max_level_bonus": 0,
+        "xp": 0,
+        "completion_complete_outpost_2_1": 1,
+        "quest_rarity": "uncommon",
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:outpostquest_t2_l2": {
+      "templateId": "Quest:outpostquest_t2_l2",
+      "attributes": {
+        "creation_time": "min",
+        "level": -1,
+        "item_seen": true,
+        "playlists": [],
+        "sent_new_notification": true,
+        "challenge_bundle_id": "",
+        "xp_reward_scalar": 1,
+        "challenge_linked_quest_given": "",
+        "quest_pool": "",
+        "quest_state": "Claimed",
+        "bucket": "",
+        "last_state_change_time": "2019-10-26T20:07:12.034Z",
+        "challenge_linked_quest_parent": "",
+        "max_level_bonus": 0,
+        "completion_complete_outpost_2_2": 1,
+        "xp": 0,
+        "quest_rarity": "uncommon",
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:outpostquest_t2_l3": {
+      "templateId": "Quest:outpostquest_t2_l3",
+      "attributes": {
+        "creation_time": "min",
+        "level": -1,
+        "item_seen": true,
+        "playlists": [],
+        "sent_new_notification": true,
+        "challenge_bundle_id": "",
+        "xp_reward_scalar": 1,
+        "challenge_linked_quest_given": "",
+        "quest_pool": "",
+        "quest_state": "Claimed",
+        "bucket": "",
+        "last_state_change_time": "2019-11-09T15:47:26.883Z",
+        "challenge_linked_quest_parent": "",
+        "max_level_bonus": 0,
+        "xp": 0,
+        "completion_complete_outpost_2_3": 1,
+        "quest_rarity": "uncommon",
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:outpostquest_t2_l4": {
+      "templateId": "Quest:outpostquest_t2_l4",
+      "attributes": {
+        "creation_time": "min",
+        "level": -1,
+        "item_seen": true,
+        "playlists": [],
+        "sent_new_notification": true,
+        "challenge_bundle_id": "",
+        "xp_reward_scalar": 1,
+        "challenge_linked_quest_given": "",
+        "quest_pool": "",
+        "quest_state": "Claimed",
+        "bucket": "",
+        "last_state_change_time": "2019-11-10T10:52:40.398Z",
+        "challenge_linked_quest_parent": "",
+        "max_level_bonus": 0,
+        "xp": 0,
+        "completion_complete_outpost_2_4": 1,
+        "quest_rarity": "uncommon",
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:outpostquest_t2_l5": {
+      "templateId": "Quest:outpostquest_t2_l5",
+      "attributes": {
+        "creation_time": "min",
+        "level": -1,
+        "item_seen": true,
+        "playlists": [],
+        "sent_new_notification": true,
+        "challenge_bundle_id": "",
+        "xp_reward_scalar": 1,
+        "challenge_linked_quest_given": "",
+        "quest_pool": "",
+        "quest_state": "Claimed",
+        "bucket": "",
+        "last_state_change_time": "2019-11-10T19:05:12.712Z",
+        "challenge_linked_quest_parent": "",
+        "max_level_bonus": 0,
+        "xp": 0,
+        "quest_rarity": "uncommon",
+        "completion_complete_outpost_2_5": 1,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:outpostquest_t2_l6": {
+      "templateId": "Quest:outpostquest_t2_l6",
+      "attributes": {
+        "creation_time": "min",
+        "level": -1,
+        "item_seen": true,
+        "playlists": [],
+        "sent_new_notification": true,
+        "challenge_bundle_id": "",
+        "xp_reward_scalar": 1,
+        "challenge_linked_quest_given": "",
+        "quest_pool": "",
+        "quest_state": "Claimed",
+        "bucket": "",
+        "last_state_change_time": "2019-11-10T20:46:26.147Z",
+        "challenge_linked_quest_parent": "",
+        "max_level_bonus": 0,
+        "xp": 0,
+        "completion_complete_outpost_2_6": 1,
+        "quest_rarity": "uncommon",
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:outpostquest_t2_l7": {
+      "templateId": "Quest:outpostquest_t2_l7",
+      "attributes": {
+        "creation_time": "min",
+        "level": -1,
+        "item_seen": true,
+        "playlists": [],
+        "sent_new_notification": true,
+        "challenge_bundle_id": "",
+        "xp_reward_scalar": 1,
+        "challenge_linked_quest_given": "",
+        "quest_pool": "",
+        "quest_state": "Claimed",
+        "bucket": "",
+        "last_state_change_time": "2019-11-16T14:10:07.281Z",
+        "challenge_linked_quest_parent": "",
+        "max_level_bonus": 0,
+        "xp": 0,
+        "quest_rarity": "uncommon",
+        "favorite": false,
+        "completion_complete_outpost_2_7": 1
+      },
+      "quantity": 1
+    },
+    "Quest:outpostquest_t2_l8": {
+      "templateId": "Quest:outpostquest_t2_l8",
+      "attributes": {
+        "creation_time": "min",
+        "level": -1,
+        "item_seen": true,
+        "playlists": [],
+        "sent_new_notification": true,
+        "challenge_bundle_id": "",
+        "xp_reward_scalar": 1,
+        "challenge_linked_quest_given": "",
+        "quest_pool": "",
+        "quest_state": "Claimed",
+        "bucket": "",
+        "last_state_change_time": "2019-11-25T16:01:16.591Z",
+        "challenge_linked_quest_parent": "",
+        "max_level_bonus": 0,
+        "xp": 0,
+        "quest_rarity": "uncommon",
+        "favorite": false,
+        "completion_complete_outpost_2_8": 1
+      },
+      "quantity": 1
+    },
+    "Quest:outpostquest_t2_l9": {
+      "templateId": "Quest:outpostquest_t2_l9",
+      "attributes": {
+        "creation_time": "min",
+        "level": -1,
+        "item_seen": true,
+        "playlists": [],
+        "sent_new_notification": true,
+        "challenge_bundle_id": "",
+        "xp_reward_scalar": 1,
+        "challenge_linked_quest_given": "",
+        "quest_pool": "",
+        "quest_state": "Claimed",
+        "bucket": "",
+        "last_state_change_time": "2019-12-01T15:42:38.342Z",
+        "completion_complete_outpost_2_9": 1,
+        "challenge_linked_quest_parent": "",
+        "max_level_bonus": 0,
+        "xp": 0,
+        "quest_rarity": "uncommon",
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:outpostquest_t2_l10": {
+      "templateId": "Quest:outpostquest_t2_l10",
+      "attributes": {
+        "creation_time": "min",
+        "level": -1,
+        "item_seen": true,
+        "playlists": [],
+        "sent_new_notification": true,
+        "challenge_bundle_id": "",
+        "completion_complete_outpost_2_10": 1,
+        "xp_reward_scalar": 1,
+        "challenge_linked_quest_given": "",
+        "quest_pool": "",
+        "quest_state": "Claimed",
+        "bucket": "",
+        "last_state_change_time": "2019-12-01T16:58:09.093Z",
+        "challenge_linked_quest_parent": "",
+        "max_level_bonus": 0,
+        "xp": 0,
+        "quest_rarity": "uncommon",
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:outpostquest_t2_endless": {
+      "templateId": "Quest:outpostquest_t2_endless",
+      "attributes": {
+        "creation_time": "min",
+        "level": -1,
+        "item_seen": false,
+        "playlists": [],
+        "sent_new_notification": true,
+        "challenge_bundle_id": "",
+        "xp_reward_scalar": 1,
+        "challenge_linked_quest_given": "",
+        "quest_pool": "",
+        "quest_state": "Active",
+        "bucket": "",
+        "last_state_change_time": "2019-12-01T16:58:09.095Z",
+        "completion_complete_outpost_2_endless": 0,
+        "challenge_linked_quest_parent": "",
+        "max_level_bonus": 0,
+        "xp": 0,
+        "quest_rarity": "uncommon",
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:outpostquest_t3_l1": {
+      "templateId": "Quest:outpostquest_t3_l1",
+      "attributes": {
+        "creation_time": "min",
+        "level": -1,
+        "item_seen": true,
+        "playlists": [],
+        "sent_new_notification": true,
+        "challenge_bundle_id": "",
+        "xp_reward_scalar": 1,
+        "challenge_linked_quest_given": "",
+        "quest_pool": "",
+        "quest_state": "Claimed",
+        "bucket": "",
+        "last_state_change_time": "2019-11-16T12:13:06.057Z",
+        "challenge_linked_quest_parent": "",
+        "max_level_bonus": 0,
+        "completion_complete_outpost_3_1": 1,
+        "xp": 0,
+        "completion_custom_cannydeployoutpost": 1,
+        "quest_rarity": "uncommon",
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:outpostquest_t3_l2": {
+      "templateId": "Quest:outpostquest_t3_l2",
+      "attributes": {
+        "creation_time": "min",
+        "level": -1,
+        "item_seen": true,
+        "playlists": [],
+        "sent_new_notification": true,
+        "challenge_bundle_id": "",
+        "xp_reward_scalar": 1,
+        "challenge_linked_quest_given": "",
+        "quest_pool": "",
+        "quest_state": "Claimed",
+        "bucket": "",
+        "last_state_change_time": "2019-12-02T16:37:35.118Z",
+        "challenge_linked_quest_parent": "",
+        "max_level_bonus": 0,
+        "xp": 0,
+        "completion_complete_outpost_3_2": 1,
+        "quest_rarity": "uncommon",
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:outpostquest_t3_l3": {
+      "templateId": "Quest:outpostquest_t3_l3",
+      "attributes": {
+        "creation_time": "min",
+        "level": -1,
+        "item_seen": true,
+        "playlists": [],
+        "sent_new_notification": true,
+        "challenge_bundle_id": "",
+        "xp_reward_scalar": 1,
+        "challenge_linked_quest_given": "",
+        "quest_pool": "",
+        "quest_state": "Claimed",
+        "bucket": "",
+        "last_state_change_time": "2019-12-07T08:13:33.307Z",
+        "challenge_linked_quest_parent": "",
+        "max_level_bonus": 0,
+        "xp": 0,
+        "completion_complete_outpost_3_3": 1,
+        "quest_rarity": "uncommon",
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:outpostquest_t3_l4": {
+      "templateId": "Quest:outpostquest_t3_l4",
+      "attributes": {
+        "creation_time": "min",
+        "level": -1,
+        "item_seen": false,
+        "playlists": [],
+        "sent_new_notification": true,
+        "challenge_bundle_id": "",
+        "xp_reward_scalar": 1,
+        "challenge_linked_quest_given": "",
+        "quest_pool": "",
+        "quest_state": "Claimed",
+        "bucket": "",
+        "last_state_change_time": "2019-12-07T08:36:40.401Z",
+        "challenge_linked_quest_parent": "",
+        "max_level_bonus": 0,
+        "xp": 0,
+        "quest_rarity": "uncommon",
+        "completion_complete_outpost_3_4": 1,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:outpostquest_t3_l5": {
+      "templateId": "Quest:outpostquest_t3_l5",
+      "attributes": {
+        "creation_time": "min",
+        "level": -1,
+        "item_seen": false,
+        "playlists": [],
+        "sent_new_notification": true,
+        "challenge_bundle_id": "",
+        "xp_reward_scalar": 1,
+        "challenge_linked_quest_given": "",
+        "quest_pool": "",
+        "quest_state": "Claimed",
+        "bucket": "",
+        "last_state_change_time": "2019-12-07T08:56:28.282Z",
+        "challenge_linked_quest_parent": "",
+        "max_level_bonus": 0,
+        "xp": 0,
+        "completion_complete_outpost_3_5": 1,
+        "quest_rarity": "uncommon",
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:outpostquest_t3_l6": {
+      "templateId": "Quest:outpostquest_t3_l6",
+      "attributes": {
+        "creation_time": "min",
+        "level": -1,
+        "item_seen": true,
+        "playlists": [],
+        "sent_new_notification": true,
+        "challenge_bundle_id": "",
+        "xp_reward_scalar": 1,
+        "challenge_linked_quest_given": "",
+        "quest_pool": "",
+        "quest_state": "Claimed",
+        "bucket": "",
+        "last_state_change_time": "2019-12-08T13:17:58.981Z",
+        "challenge_linked_quest_parent": "",
+        "max_level_bonus": 0,
+        "xp": 0,
+        "quest_rarity": "uncommon",
+        "favorite": false,
+        "completion_complete_outpost_3_6": 1
+      },
+      "quantity": 1
+    },
+    "Quest:outpostquest_t3_l7": {
+      "templateId": "Quest:outpostquest_t3_l7",
+      "attributes": {
+        "creation_time": "min",
+        "level": -1,
+        "item_seen": true,
+        "playlists": [],
+        "sent_new_notification": true,
+        "challenge_bundle_id": "",
+        "xp_reward_scalar": 1,
+        "challenge_linked_quest_given": "",
+        "quest_pool": "",
+        "quest_state": "Claimed",
+        "bucket": "",
+        "last_state_change_time": "2019-12-15T12:01:00.118Z",
+        "challenge_linked_quest_parent": "",
+        "max_level_bonus": 0,
+        "xp": 0,
+        "quest_rarity": "uncommon",
+        "favorite": false,
+        "completion_complete_outpost_3_7": 1
+      },
+      "quantity": 1
+    },
+    "Quest:outpostquest_t3_l8": {
+      "templateId": "Quest:outpostquest_t3_l8",
+      "attributes": {
+        "creation_time": "min",
+        "level": -1,
+        "item_seen": false,
+        "playlists": [],
+        "sent_new_notification": true,
+        "challenge_bundle_id": "",
+        "xp_reward_scalar": 1,
+        "challenge_linked_quest_given": "",
+        "quest_pool": "",
+        "quest_state": "Claimed",
+        "bucket": "",
+        "last_state_change_time": "2019-12-15T12:36:50.544Z",
+        "completion_complete_outpost_3_8": 1,
+        "challenge_linked_quest_parent": "",
+        "max_level_bonus": 0,
+        "xp": 0,
+        "quest_rarity": "uncommon",
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:outpostquest_t3_l9": {
+      "templateId": "Quest:outpostquest_t3_l9",
+      "attributes": {
+        "creation_time": "min",
+        "level": -1,
+        "item_seen": false,
+        "playlists": [],
+        "sent_new_notification": true,
+        "challenge_bundle_id": "",
+        "xp_reward_scalar": 1,
+        "challenge_linked_quest_given": "",
+        "quest_pool": "",
+        "completion_complete_outpost_3_9": 1,
+        "quest_state": "Claimed",
+        "bucket": "",
+        "last_state_change_time": "2019-12-15T13:06:06.512Z",
+        "challenge_linked_quest_parent": "",
+        "max_level_bonus": 0,
+        "xp": 0,
+        "quest_rarity": "uncommon",
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:outpostquest_t3_l10": {
+      "templateId": "Quest:outpostquest_t3_l10",
+      "attributes": {
+        "creation_time": "min",
+        "level": -1,
+        "item_seen": false,
+        "playlists": [],
+        "sent_new_notification": true,
+        "challenge_bundle_id": "",
+        "xp_reward_scalar": 1,
+        "challenge_linked_quest_given": "",
+        "quest_pool": "",
+        "quest_state": "Claimed",
+        "bucket": "",
+        "last_state_change_time": "2019-12-15T13:47:16.025Z",
+        "completion_complete_outpost_3_10": 1,
+        "challenge_linked_quest_parent": "",
+        "max_level_bonus": 0,
+        "xp": 0,
+        "quest_rarity": "uncommon",
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:outpostquest_t3_endless": {
+      "templateId": "Quest:outpostquest_t3_endless",
+      "attributes": {
+        "creation_time": "min",
+        "level": -1,
+        "item_seen": false,
+        "playlists": [],
+        "sent_new_notification": true,
+        "challenge_bundle_id": "",
+        "xp_reward_scalar": 1,
+        "challenge_linked_quest_given": "",
+        "quest_pool": "",
+        "quest_state": "Active",
+        "bucket": "",
+        "last_state_change_time": "2019-12-15T13:47:16.030Z",
+        "challenge_linked_quest_parent": "",
+        "completion_complete_outpost_3_endless": 0,
+        "max_level_bonus": 0,
+        "xp": 0,
+        "quest_rarity": "uncommon",
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:outpostquest_t4_l1": {
+      "templateId": "Quest:outpostquest_t4_l1",
+      "attributes": {
+        "creation_time": "min",
+        "level": -1,
+        "item_seen": true,
+        "playlists": [],
+        "sent_new_notification": true,
+        "challenge_bundle_id": "",
+        "xp_reward_scalar": 1,
+        "challenge_linked_quest_given": "",
+        "quest_pool": "",
+        "quest_state": "Claimed",
+        "bucket": "",
+        "last_state_change_time": "2019-12-19T11:56:37.628Z",
+        "challenge_linked_quest_parent": "",
+        "max_level_bonus": 0,
+        "xp": 0,
+        "completion_complete_outpost_4_1": 1,
+        "completion_custom_twinedeployoutpost": 1,
+        "quest_rarity": "uncommon",
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:outpostquest_t4_l2": {
+      "templateId": "Quest:outpostquest_t4_l2",
+      "attributes": {
+        "creation_time": "min",
+        "level": -1,
+        "item_seen": false,
+        "playlists": [],
+        "sent_new_notification": true,
+        "challenge_bundle_id": "",
+        "xp_reward_scalar": 1,
+        "challenge_linked_quest_given": "",
+        "quest_pool": "",
+        "quest_state": "Claimed",
+        "bucket": "",
+        "last_state_change_time": "2019-12-19T13:23:16.961Z",
+        "challenge_linked_quest_parent": "",
+        "max_level_bonus": 0,
+        "xp": 0,
+        "completion_complete_outpost_4_2": 1,
+        "quest_rarity": "uncommon",
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:outpostquest_t4_l3": {
+      "templateId": "Quest:outpostquest_t4_l3",
+      "attributes": {
+        "creation_time": "min",
+        "level": -1,
+        "item_seen": false,
+        "playlists": [],
+        "sent_new_notification": true,
+        "challenge_bundle_id": "",
+        "xp_reward_scalar": 1,
+        "challenge_linked_quest_given": "",
+        "quest_pool": "",
+        "quest_state": "Claimed",
+        "bucket": "",
+        "last_state_change_time": "2019-12-19T13:58:12.505Z",
+        "challenge_linked_quest_parent": "",
+        "max_level_bonus": 0,
+        "xp": 0,
+        "quest_rarity": "uncommon",
+        "completion_complete_outpost_4_3": 1,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:outpostquest_t4_l4": {
+      "templateId": "Quest:outpostquest_t4_l4",
+      "attributes": {
+        "creation_time": "min",
+        "level": -1,
+        "item_seen": false,
+        "playlists": [],
+        "sent_new_notification": true,
+        "challenge_bundle_id": "",
+        "xp_reward_scalar": 1,
+        "challenge_linked_quest_given": "",
+        "quest_pool": "",
+        "quest_state": "Claimed",
+        "bucket": "",
+        "last_state_change_time": "2019-12-19T15:02:57.127Z",
+        "challenge_linked_quest_parent": "",
+        "max_level_bonus": 0,
+        "xp": 0,
+        "completion_complete_outpost_4_4": 1,
+        "quest_rarity": "uncommon",
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:outpostquest_t4_l5": {
+      "templateId": "Quest:outpostquest_t4_l5",
+      "attributes": {
+        "creation_time": "min",
+        "level": -1,
+        "item_seen": true,
+        "playlists": [],
+        "sent_new_notification": true,
+        "challenge_bundle_id": "",
+        "xp_reward_scalar": 1,
+        "challenge_linked_quest_given": "",
+        "quest_pool": "",
+        "quest_state": "Claimed",
+        "bucket": "",
+        "last_state_change_time": "2019-12-19T16:17:04.872Z",
+        "challenge_linked_quest_parent": "",
+        "max_level_bonus": 0,
+        "xp": 0,
+        "quest_rarity": "uncommon",
+        "favorite": false,
+        "completion_complete_outpost_4_5": 1
+      },
+      "quantity": 1
+    },
+    "AccountResource:Voucher_Generic_Worker_VR": {
+      "templateId": "AccountResource:Voucher_Generic_Worker_VR",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1000000
+    },
+    "AccountResource:Voucher_Generic_Worker_SR": {
+      "templateId": "AccountResource:Voucher_Generic_Worker_SR",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1000000
+    },
+    "AccountResource:Voucher_Generic_Worker_R": {
+      "templateId": "AccountResource:Voucher_Generic_Worker_R",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1000000
+    },
+    "AccountResource:Voucher_Generic_Weapon_VR": {
+      "templateId": "AccountResource:Voucher_Generic_Weapon_VR",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1000000
+    },
+    "AccountResource:Voucher_Generic_Weapon_SR": {
+      "templateId": "AccountResource:Voucher_Generic_Weapon_SR",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1000000
+    },
+    "AccountResource:Voucher_Generic_Weapon_R": {
+      "templateId": "AccountResource:Voucher_Generic_Weapon_R",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1000000
+    },
+    "AccountResource:Voucher_Generic_Trap_VR": {
+      "templateId": "AccountResource:Voucher_Generic_Trap_VR",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1000000
+    },
+    "AccountResource:Voucher_Generic_Trap_SR": {
+      "templateId": "AccountResource:Voucher_Generic_Trap_SR",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1000000
+    },
+    "AccountResource:Voucher_Generic_Trap_R": {
+      "templateId": "AccountResource:Voucher_Generic_Trap_R",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1000000
+    },
+    "AccountResource:Voucher_Generic_Schematic_VR": {
+      "templateId": "AccountResource:Voucher_Generic_Schematic_VR",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1000000
+    },
+    "AccountResource:Voucher_Generic_Schematic_SR": {
+      "templateId": "AccountResource:Voucher_Generic_Schematic_SR",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1000000
+    },
+    "AccountResource:Voucher_Generic_Schematic_R": {
+      "templateId": "AccountResource:Voucher_Generic_Schematic_R",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1000000
+    },
+    "AccountResource:Voucher_Generic_Ranged_VR": {
+      "templateId": "AccountResource:Voucher_Generic_Ranged_VR",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1000000
+    },
+    "AccountResource:Voucher_Generic_Ranged_SR": {
+      "templateId": "AccountResource:Voucher_Generic_Ranged_SR",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1000000
+    },
+    "AccountResource:Voucher_Generic_Ranged_R": {
+      "templateId": "AccountResource:Voucher_Generic_Ranged_R",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1000000
+    },
+    "AccountResource:Voucher_Generic_Melee_VR": {
+      "templateId": "AccountResource:Voucher_Generic_Melee_VR",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1000000
+    },
+    "AccountResource:Voucher_Generic_Melee_SR": {
+      "templateId": "AccountResource:Voucher_Generic_Melee_SR",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1000000
+    },
+    "AccountResource:Voucher_Generic_Melee_R": {
+      "templateId": "AccountResource:Voucher_Generic_Melee_R",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1000000
+    },
+    "AccountResource:Voucher_Generic_Manager_VR": {
+      "templateId": "AccountResource:Voucher_Generic_Manager_VR",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1000000
+    },
+    "AccountResource:Voucher_Generic_Manager_SR": {
+      "templateId": "AccountResource:Voucher_Generic_Manager_SR",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1000000
+    },
+    "AccountResource:Voucher_Generic_Manager_R": {
+      "templateId": "AccountResource:Voucher_Generic_Manager_R",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1000000
+    },
+    "AccountResource:Voucher_Generic_Hero_VR": {
+      "templateId": "AccountResource:Voucher_Generic_Hero_VR",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1000000
+    },
+    "AccountResource:Voucher_Generic_Hero_SR": {
+      "templateId": "AccountResource:Voucher_Generic_Hero_SR",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1000000
+    },
+    "AccountResource:Voucher_Generic_Hero_R": {
+      "templateId": "AccountResource:Voucher_Generic_Hero_R",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1000000
+    },
+    "AccountResource:Voucher_Generic_Defender_VR": {
+      "templateId": "AccountResource:Voucher_Generic_Defender_VR",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1000000
+    },
+    "AccountResource:Voucher_Generic_Defender_SR": {
+      "templateId": "AccountResource:Voucher_Generic_Defender_SR",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1000000
+    },
+    "AccountResource:Voucher_Generic_Defender_R": {
+      "templateId": "AccountResource:Voucher_Generic_Defender_R",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1000000
+    },
+    "AccountResource:Voucher_Founders_StarterWeapons_Bundle": {
+      "templateId": "AccountResource:Voucher_Founders_StarterWeapons_Bundle",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1000000
+    },
+    "AccountResource:Voucher_Founders_Soldier_Weapon_VR": {
+      "templateId": "AccountResource:Voucher_Founders_Soldier_Weapon_VR",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1000000
+    },
+    "AccountResource:Voucher_Founders_Soldier_Weapon_SR": {
+      "templateId": "AccountResource:Voucher_Founders_Soldier_Weapon_SR",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1000000
+    },
+    "AccountResource:Voucher_Founders_Soldier_Bundle": {
+      "templateId": "AccountResource:Voucher_Founders_Soldier_Bundle",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1000000
+    },
+    "AccountResource:Voucher_Founders_Outlander_Weapon_VR": {
+      "templateId": "AccountResource:Voucher_Founders_Outlander_Weapon_VR",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1000000
+    },
+    "AccountResource:Voucher_Founders_Outlander_Weapon_SR": {
+      "templateId": "AccountResource:Voucher_Founders_Outlander_Weapon_SR",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1000000
+    },
+    "AccountResource:Voucher_Founders_Outlander_Bundle": {
+      "templateId": "AccountResource:Voucher_Founders_Outlander_Bundle",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1000000
+    },
+    "AccountResource:Voucher_Founders_Ninja_Weapon_VR": {
+      "templateId": "AccountResource:Voucher_Founders_Ninja_Weapon_VR",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1000000
+    },
+    "AccountResource:Voucher_Founders_Ninja_Weapon_SR": {
+      "templateId": "AccountResource:Voucher_Founders_Ninja_Weapon_SR",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1000000
+    },
+    "AccountResource:Voucher_Founders_Ninja_Bundle": {
+      "templateId": "AccountResource:Voucher_Founders_Ninja_Bundle",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1000000
+    },
+    "AccountResource:Voucher_Founders_Constructor_Weapon_VR": {
+      "templateId": "AccountResource:Voucher_Founders_Constructor_Weapon_VR",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1000000
+    },
+    "AccountResource:Voucher_Founders_Constructor_Weapon_SR": {
+      "templateId": "AccountResource:Voucher_Founders_Constructor_Weapon_SR",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1000000
+    },
+    "AccountResource:Voucher_Founders_Constructor_Bundle": {
+      "templateId": "AccountResource:Voucher_Founders_Constructor_Bundle",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1000000
+    },
+    "AccountResource:Voucher_Custom_Firecracker_R": {
+      "templateId": "AccountResource:Voucher_Custom_Firecracker_R",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1000000
+    },
+    "AccountResource:Voucher_CardPack_Bronze": {
+      "templateId": "AccountResource:Voucher_CardPack_Bronze",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1000000
+    },
+    "AccountResource:Voucher_BasicPack": {
+      "templateId": "AccountResource:Voucher_BasicPack",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1000000
+    },
+    "AccountResource:SpecialCurrency_Daily": {
+      "templateId": "AccountResource:SpecialCurrency_Daily",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1000000
+    },
+    "AccountResource:SchematicXP": {
+      "templateId": "AccountResource:SchematicXP",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1000000
+    },
+    "AccountResource:Reagent_Weapons": {
+      "templateId": "AccountResource:Reagent_Weapons",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1000000
+    },
+    "AccountResource:Reagent_Traps": {
+      "templateId": "AccountResource:Reagent_Traps",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1000000
+    },
+    "AccountResource:Reagent_People": {
+      "templateId": "AccountResource:Reagent_People",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1000000
+    },
+    "AccountResource:Reagent_EvolveRarity_VR": {
+      "templateId": "AccountResource:Reagent_EvolveRarity_VR",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1000000
+    },
+    "AccountResource:Reagent_EvolveRarity_SR": {
+      "templateId": "AccountResource:Reagent_EvolveRarity_SR",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1000000
+    },
+    "AccountResource:Reagent_EvolveRarity_R": {
+      "templateId": "AccountResource:Reagent_EvolveRarity_R",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1000000
+    },
+    "AccountResource:Reagent_C_T04": {
+      "templateId": "AccountResource:Reagent_C_T04",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1000000
+    },
+    "AccountResource:Reagent_C_T03": {
+      "templateId": "AccountResource:Reagent_C_T03",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1000000
+    },
+    "AccountResource:Reagent_C_T02": {
+      "templateId": "AccountResource:Reagent_C_T02",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1000000
+    },
+    "AccountResource:Reagent_C_T01": {
+      "templateId": "AccountResource:Reagent_C_T01",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1000000
+    },
+    "AccountResource:PersonnelXP": {
+      "templateId": "AccountResource:PersonnelXP",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1000000
+    },
+    "AccountResource:PeopleResource": {
+      "templateId": "AccountResource:PeopleResource",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1000000
+    },
+    "AccountResource:HeroXP": {
+      "templateId": "AccountResource:HeroXP",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1000000
+    },
+    "AccountResource:EventCurrency_StormZone": {
+      "templateId": "AccountResource:EventCurrency_StormZone",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1000000
+    },
+    "AccountResource:EventCurrency_Snowballs": {
+      "templateId": "AccountResource:EventCurrency_Snowballs",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1000000
+    },
+    "AccountResource:EventCurrency_Scavenger": {
+      "templateId": "AccountResource:EventCurrency_Scavenger",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1000000
+    },
+    "AccountResource:EventCurrency_Scaling": {
+      "templateId": "AccountResource:EventCurrency_Scaling",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1000000
+    },
+    "AccountResource:EventCurrency_PumpkinWarhead": {
+      "templateId": "AccountResource:EventCurrency_PumpkinWarhead",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1000000
+    },
+    "AccountResource:EventCurrency_Founders": {
+      "templateId": "AccountResource:EventCurrency_Founders",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1000000
+    },
+    "AccountResource:EventCurrency_Candy": {
+      "templateId": "AccountResource:EventCurrency_Candy",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1000000
+    },
+    "AccountResource:CompendiumXP": {
+      "templateId": "AccountResource:CompendiumXP",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1000000
+    },
+    "AccountResource:BattleBucks": {
+      "templateId": "AccountResource:BattleBucks",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1000000
+    },
+    "AccountResource:AthenaSeasonalXP": {
+      "templateId": "AccountResource:AthenaSeasonalXP",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1000000
+    },
+    "AccountResource:AthenaSeasonalBP": {
+      "templateId": "AccountResource:AthenaSeasonalBP",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1000000
+    },
+    "AccountResource:EventCurrency_Spring": {
+      "templateId": "AccountResource:EventCurrency_Spring",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1000000
+    },
+    "Quest:WinterQuest_2017_Reactive_Gather_Trees": {
+      "templateId": "Quest:WinterQuest_2017_Reactive_Gather_Trees",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:WinterQuest_2017_Reactive_Gather_FruitNuts": {
+      "templateId": "Quest:WinterQuest_2017_Reactive_Gather_FruitNuts",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:WinterQuest_2017_Reactive_Gather_Books": {
+      "templateId": "Quest:WinterQuest_2017_Reactive_Gather_Books",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:WinterQuest_2017_Reactive_Gather_TrafficLights": {
+      "templateId": "Quest:WinterQuest_2017_Reactive_Gather_TrafficLights",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:WinterQuest_2017_Reactive_Fetch_Radios": {
+      "templateId": "Quest:WinterQuest_2017_Reactive_Fetch_Radios",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:WinterQuest_2017_Reactive_Fetch_PackingPresents": {
+      "templateId": "Quest:WinterQuest_2017_Reactive_Fetch_PackingPresents",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:WinterQuest_2017_Reactive_Fetch_DeployTrees": {
+      "templateId": "Quest:WinterQuest_2017_Reactive_Fetch_DeployTrees",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:WinterQuest_2017_Reactive_Fetch_Decorations": {
+      "templateId": "Quest:WinterQuest_2017_Reactive_Fetch_Decorations",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:WinterQuest_2017_Reactive_Fetch_CollectPresent": {
+      "templateId": "Quest:WinterQuest_2017_Reactive_Fetch_CollectPresent",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:WinterQuest_2017_Reactive_Gather_Fridges": {
+      "templateId": "Quest:WinterQuest_2017_Reactive_Gather_Fridges",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:WinterQuest_2017_Reactive_Presents_Hidden": {
+      "templateId": "Quest:WinterQuest_2017_Reactive_Presents_Hidden",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:WinterQuest_2017_Reactive_FrozenTroll": {
+      "templateId": "Quest:WinterQuest_2017_Reactive_FrozenTroll",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:WinterQuest_2017_LarsLandmarkMission": {
+      "templateId": "Quest:WinterQuest_2017_LarsLandmarkMission",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:WinterQuest_2017_KillMistMonsters": {
+      "templateId": "Quest:WinterQuest_2017_KillMistMonsters",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:WinterQuest_2017_KillMiniBosses_Repeatable": {
+      "templateId": "Quest:WinterQuest_2017_KillMiniBosses_Repeatable",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:WinterQuest_2017_KillMiniBosses": {
+      "templateId": "Quest:WinterQuest_2017_KillMiniBosses",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:WinterQuest_2017_KillMallSantas": {
+      "templateId": "Quest:WinterQuest_2017_KillMallSantas",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:WinterQuest_2017_KillEvilHelpers": {
+      "templateId": "Quest:WinterQuest_2017_KillEvilHelpers",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:WinterQuest_2017_KillCoalLobbers": {
+      "templateId": "Quest:WinterQuest_2017_KillCoalLobbers",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:WinterQuest_2017_Hidden_WatchVideo": {
+      "templateId": "Quest:WinterQuest_2017_Hidden_WatchVideo",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:WinterQuest_2017_Hidden_1": {
+      "templateId": "Quest:WinterQuest_2017_Hidden_1",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:WinterQuest_2017_CompleteSurviveAny": {
+      "templateId": "Quest:WinterQuest_2017_CompleteSurviveAny",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:WinterQuest_2017_CompleteSurvive7Day_D3": {
+      "templateId": "Quest:WinterQuest_2017_CompleteSurvive7Day_D3",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:WinterQuest_2017_CompleteSurvive7Day_D2": {
+      "templateId": "Quest:WinterQuest_2017_CompleteSurvive7Day_D2",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:WinterQuest_2017_CompleteSurvive7Day_D1": {
+      "templateId": "Quest:WinterQuest_2017_CompleteSurvive7Day_D1",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:WinterQuest_2017_Complete_PresentDrop_Repeatable": {
+      "templateId": "Quest:WinterQuest_2017_Complete_PresentDrop_Repeatable",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:VindertechQuest_TreasureChests_8": {
+      "templateId": "Quest:VindertechQuest_TreasureChests_8",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:VindertechQuest_TreasureChests_7": {
+      "templateId": "Quest:VindertechQuest_TreasureChests_7",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:VindertechQuest_TreasureChests_6": {
+      "templateId": "Quest:VindertechQuest_TreasureChests_6",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:VindertechQuest_TreasureChests_5": {
+      "templateId": "Quest:VindertechQuest_TreasureChests_5",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:VindertechQuest_TreasureChests_4": {
+      "templateId": "Quest:VindertechQuest_TreasureChests_4",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:VindertechQuest_TreasureChests_3": {
+      "templateId": "Quest:VindertechQuest_TreasureChests_3",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:VindertechQuest_TreasureChests_2": {
+      "templateId": "Quest:VindertechQuest_TreasureChests_2",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:VindertechQuest_TreasureChests_1": {
+      "templateId": "Quest:VindertechQuest_TreasureChests_1",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:VindertechQuest_Safes_8": {
+      "templateId": "Quest:VindertechQuest_Safes_8",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:VindertechQuest_Safes_7": {
+      "templateId": "Quest:VindertechQuest_Safes_7",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:VindertechQuest_Safes_6": {
+      "templateId": "Quest:VindertechQuest_Safes_6",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:VindertechQuest_Safes_5": {
+      "templateId": "Quest:VindertechQuest_Safes_5",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:VindertechQuest_Safes_4": {
+      "templateId": "Quest:VindertechQuest_Safes_4",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:VindertechQuest_Safes_3": {
+      "templateId": "Quest:VindertechQuest_Safes_3",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:VindertechQuest_Safes_2": {
+      "templateId": "Quest:VindertechQuest_Safes_2",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:VindertechQuest_Safes_1": {
+      "templateId": "Quest:VindertechQuest_Safes_1",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:VindertechQuest_LevelUp_Vindertech": {
+      "templateId": "Quest:VindertechQuest_LevelUp_Vindertech",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:VindertechQuest_KillWallWeakeningLobbers": {
+      "templateId": "Quest:VindertechQuest_KillWallWeakeningLobbers",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:VindertechQuest_KillQuickenedPitchers": {
+      "templateId": "Quest:VindertechQuest_KillQuickenedPitchers",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:VindertechQuest_KillEnragedHuskyHusks": {
+      "templateId": "Quest:VindertechQuest_KillEnragedHuskyHusks",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:VindertechQuest_ExploreZones_8": {
+      "templateId": "Quest:VindertechQuest_ExploreZones_8",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:VindertechQuest_ExploreZones_7": {
+      "templateId": "Quest:VindertechQuest_ExploreZones_7",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:VindertechQuest_ExploreZones_6": {
+      "templateId": "Quest:VindertechQuest_ExploreZones_6",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:VindertechQuest_ExploreZones_5": {
+      "templateId": "Quest:VindertechQuest_ExploreZones_5",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:VindertechQuest_ExploreZones_4": {
+      "templateId": "Quest:VindertechQuest_ExploreZones_4",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:VindertechQuest_ExploreZones_3": {
+      "templateId": "Quest:VindertechQuest_ExploreZones_3",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:VindertechQuest_ExploreZones_2": {
+      "templateId": "Quest:VindertechQuest_ExploreZones_2",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:VindertechQuest_ExploreZones_1": {
+      "templateId": "Quest:VindertechQuest_ExploreZones_1",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:VindertechQuest_Evolve_Vindertech": {
+      "templateId": "Quest:VindertechQuest_Evolve_Vindertech",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:VindertechQuest_CompleteTreasureChests": {
+      "templateId": "Quest:VindertechQuest_CompleteTreasureChests",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:VindertechQuest_CompleteStorms_Ranged": {
+      "templateId": "Quest:VindertechQuest_CompleteStorms_Ranged",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:VindertechQuest_CompleteStorms_Melee": {
+      "templateId": "Quest:VindertechQuest_CompleteStorms_Melee",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:VindertechQuest_CompleteStorms_8": {
+      "templateId": "Quest:VindertechQuest_CompleteStorms_8",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:VindertechQuest_CompleteStorms_7": {
+      "templateId": "Quest:VindertechQuest_CompleteStorms_7",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:VindertechQuest_CompleteStorms_6": {
+      "templateId": "Quest:VindertechQuest_CompleteStorms_6",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:VindertechQuest_CompleteStorms_5": {
+      "templateId": "Quest:VindertechQuest_CompleteStorms_5",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:VindertechQuest_CompleteStorms_4": {
+      "templateId": "Quest:VindertechQuest_CompleteStorms_4",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:VindertechQuest_CompleteStorms_3": {
+      "templateId": "Quest:VindertechQuest_CompleteStorms_3",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:VindertechQuest_CompleteStorms_2": {
+      "templateId": "Quest:VindertechQuest_CompleteStorms_2",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:VindertechQuest_CompleteStorms_1": {
+      "templateId": "Quest:VindertechQuest_CompleteStorms_1",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:VindertechQuest_CompleteStorms": {
+      "templateId": "Quest:VindertechQuest_CompleteStorms",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:VindertechQuest_CompleteSafes": {
+      "templateId": "Quest:VindertechQuest_CompleteSafes",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:VindertechQuest_CompleteExploreZones": {
+      "templateId": "Quest:VindertechQuest_CompleteExploreZones",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:SurvivalModeQuest_PlankertonDiff_7Missions": {
+      "templateId": "Quest:SurvivalModeQuest_PlankertonDiff_7Missions",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:SurvivalModeQuest_AnyMode_3Missions": {
+      "templateId": "Quest:SurvivalModeQuest_AnyMode_3Missions",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:SurvivalModeQuest_AnyMode": {
+      "templateId": "Quest:SurvivalModeQuest_AnyMode",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:SurvivalModeQuest_14Days_D3": {
+      "templateId": "Quest:SurvivalModeQuest_14Days_D3",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:SurvivalModeQuest_14Days_D2": {
+      "templateId": "Quest:SurvivalModeQuest_14Days_D2",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:SurvivalModeQuest_14Days_D1": {
+      "templateId": "Quest:SurvivalModeQuest_14Days_D1",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:ScavengerQuest_PurchaseLlama": {
+      "templateId": "Quest:ScavengerQuest_PurchaseLlama",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:ScavengerQuest_MissionAlert_Soldier": {
+      "templateId": "Quest:ScavengerQuest_MissionAlert_Soldier",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:ScavengerQuest_MissionAlert_Outlander": {
+      "templateId": "Quest:ScavengerQuest_MissionAlert_Outlander",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:ScavengerQuest_MissionAlert_Ninja": {
+      "templateId": "Quest:ScavengerQuest_MissionAlert_Ninja",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:ScavengerQuest_MissionAlert_Constructor": {
+      "templateId": "Quest:ScavengerQuest_MissionAlert_Constructor",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:ScavengerQuest_LevelUp_Scavenger": {
+      "templateId": "Quest:ScavengerQuest_LevelUp_Scavenger",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:ScavengerQuest_LevelUp_Collection_2": {
+      "templateId": "Quest:ScavengerQuest_LevelUp_Collection_2",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:ScavengerQuest_LevelUp_Collection_1": {
+      "templateId": "Quest:ScavengerQuest_LevelUp_Collection_1",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:ScavengerQuest_KillHusks_9": {
+      "templateId": "Quest:ScavengerQuest_KillHusks_9",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:ScavengerQuest_KillHusks_8": {
+      "templateId": "Quest:ScavengerQuest_KillHusks_8",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:ScavengerQuest_KillHusks_7": {
+      "templateId": "Quest:ScavengerQuest_KillHusks_7",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:ScavengerQuest_KillHusks_6": {
+      "templateId": "Quest:ScavengerQuest_KillHusks_6",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:ScavengerQuest_KillHusks_5": {
+      "templateId": "Quest:ScavengerQuest_KillHusks_5",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:ScavengerQuest_KillHusks_4": {
+      "templateId": "Quest:ScavengerQuest_KillHusks_4",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:ScavengerQuest_KillHusks_3": {
+      "templateId": "Quest:ScavengerQuest_KillHusks_3",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:ScavengerQuest_KillHusks_2": {
+      "templateId": "Quest:ScavengerQuest_KillHusks_2",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:ScavengerQuest_KillHusks_10": {
+      "templateId": "Quest:ScavengerQuest_KillHusks_10",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:ScavengerQuest_KillHusks_1": {
+      "templateId": "Quest:ScavengerQuest_KillHusks_1",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:ScavengerQuest_Evolve_Scavenger": {
+      "templateId": "Quest:ScavengerQuest_Evolve_Scavenger",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:ScavengerQuest_CompleteStormZones": {
+      "templateId": "Quest:ScavengerQuest_CompleteStormZones",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:ScavengerQuest_CompleteExpeditions": {
+      "templateId": "Quest:ScavengerQuest_CompleteExpeditions",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:HalloweenQuest_2017_TtS_Intro": {
+      "templateId": "Quest:HalloweenQuest_2017_TtS_Intro",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:HalloweenQuest_2017_TrainHero": {
+      "templateId": "Quest:HalloweenQuest_2017_TrainHero",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:HalloweenQuest_2017_Opener": {
+      "templateId": "Quest:HalloweenQuest_2017_Opener",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:HalloweenQuest_2017_LegendaryHeroes": {
+      "templateId": "Quest:HalloweenQuest_2017_LegendaryHeroes",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:HalloweenQuest_2017_KillPumpkinHusks": {
+      "templateId": "Quest:HalloweenQuest_2017_KillPumpkinHusks",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:HalloweenQuest_2017_KillMistMonsters": {
+      "templateId": "Quest:HalloweenQuest_2017_KillMistMonsters",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:HalloweenQuest_2017_Hidden_WatchVideo": {
+      "templateId": "Quest:HalloweenQuest_2017_Hidden_WatchVideo",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:HalloweenQuest_2017_Hidden_6": {
+      "templateId": "Quest:HalloweenQuest_2017_Hidden_6",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:HalloweenQuest_2017_Hidden_5": {
+      "templateId": "Quest:HalloweenQuest_2017_Hidden_5",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:HalloweenQuest_2017_Hidden_4": {
+      "templateId": "Quest:HalloweenQuest_2017_Hidden_4",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:HalloweenQuest_2017_Hidden_3": {
+      "templateId": "Quest:HalloweenQuest_2017_Hidden_3",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:HalloweenQuest_2017_Hidden_2": {
+      "templateId": "Quest:HalloweenQuest_2017_Hidden_2",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:HalloweenQuest_2017_Hidden_1": {
+      "templateId": "Quest:HalloweenQuest_2017_Hidden_1",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:HalloweenQuest_2017_EpicHeroes": {
+      "templateId": "Quest:HalloweenQuest_2017_EpicHeroes",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:HalloweenQuest_2017_CompleteMissions_9": {
+      "templateId": "Quest:HalloweenQuest_2017_CompleteMissions_9",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:HalloweenQuest_2017_CompleteMissions_8": {
+      "templateId": "Quest:HalloweenQuest_2017_CompleteMissions_8",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:HalloweenQuest_2017_CompleteMissions_7": {
+      "templateId": "Quest:HalloweenQuest_2017_CompleteMissions_7",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:HalloweenQuest_2017_CompleteMissions_6": {
+      "templateId": "Quest:HalloweenQuest_2017_CompleteMissions_6",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:HalloweenQuest_2017_CompleteMissions_5": {
+      "templateId": "Quest:HalloweenQuest_2017_CompleteMissions_5",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:HalloweenQuest_2017_CompleteMissions_4": {
+      "templateId": "Quest:HalloweenQuest_2017_CompleteMissions_4",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:HalloweenQuest_2017_CompleteMissions_3": {
+      "templateId": "Quest:HalloweenQuest_2017_CompleteMissions_3",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:HalloweenQuest_2017_CompleteMissions_2": {
+      "templateId": "Quest:HalloweenQuest_2017_CompleteMissions_2",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:HalloweenQuest_2017_CompleteMissions_14": {
+      "templateId": "Quest:HalloweenQuest_2017_CompleteMissions_14",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:HalloweenQuest_2017_CompleteMissions_13": {
+      "templateId": "Quest:HalloweenQuest_2017_CompleteMissions_13",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:HalloweenQuest_2017_CompleteMissions_12": {
+      "templateId": "Quest:HalloweenQuest_2017_CompleteMissions_12",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:HalloweenQuest_2017_CompleteMissions_11": {
+      "templateId": "Quest:HalloweenQuest_2017_CompleteMissions_11",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:HalloweenQuest_2017_CompleteMissions_10": {
+      "templateId": "Quest:HalloweenQuest_2017_CompleteMissions_10",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:HalloweenQuest_2017_CompleteMissions_1": {
+      "templateId": "Quest:HalloweenQuest_2017_CompleteMissions_1",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:HalloweenQuest_SaveSurvivors": {
+      "templateId": "Quest:HalloweenQuest_SaveSurvivors",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:HalloweenQuest_PlankertonMissions": {
+      "templateId": "Quest:HalloweenQuest_PlankertonMissions",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:HalloweenQuest_KillPumpkinHusks": {
+      "templateId": "Quest:HalloweenQuest_KillPumpkinHusks",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:HalloweenQuest_FindGravestones": {
+      "templateId": "Quest:HalloweenQuest_FindGravestones",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:HalloweenQuest_CraftPumpkinLauncher": {
+      "templateId": "Quest:HalloweenQuest_CraftPumpkinLauncher",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:HalloweenQuest_CollectPumpkinHeads": {
+      "templateId": "Quest:HalloweenQuest_CollectPumpkinHeads",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:HalloweenQuest_ClearHuskEncampments": {
+      "templateId": "Quest:HalloweenQuest_ClearHuskEncampments",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:HalloweenQuest_CannyValleyMissions": {
+      "templateId": "Quest:HalloweenQuest_CannyValleyMissions",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:FirstStormQuest_LevelUp_Hydraulic": {
+      "templateId": "Quest:FirstStormQuest_LevelUp_Hydraulic",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:FirstStormQuest_KillWallWeakeningHusks": {
+      "templateId": "Quest:FirstStormQuest_KillWallWeakeningHusks",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:FirstStormQuest_KillQuickenedHusks": {
+      "templateId": "Quest:FirstStormQuest_KillQuickenedHusks",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:FirstStormQuest_KillMistMonsters": {
+      "templateId": "Quest:FirstStormQuest_KillMistMonsters",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:FirstStormQuest_KillMetalCorrosionHusks": {
+      "templateId": "Quest:FirstStormQuest_KillMetalCorrosionHusks",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:FirstStormQuest_KillLifeLeechAttackHusks": {
+      "templateId": "Quest:FirstStormQuest_KillLifeLeechAttackHusks",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:FirstStormQuest_KillHusksTraps": {
+      "templateId": "Quest:FirstStormQuest_KillHusksTraps",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:FirstStormQuest_KillHealingDeathburstHusks": {
+      "templateId": "Quest:FirstStormQuest_KillHealingDeathburstHusks",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:FirstStormQuest_KillFrenziedDeathburstHusks": {
+      "templateId": "Quest:FirstStormQuest_KillFrenziedDeathburstHusks",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:FirstStormQuest_KillExplodingDeathburstHusks": {
+      "templateId": "Quest:FirstStormQuest_KillExplodingDeathburstHusks",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:FirstStormQuest_KillEnragedHusks": {
+      "templateId": "Quest:FirstStormQuest_KillEnragedHusks",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:FirstStormQuest_HydraulicStormLlama": {
+      "templateId": "Quest:FirstStormQuest_HydraulicStormLlama",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:FirstStormQuest_Evolve_Hydraulic": {
+      "templateId": "Quest:FirstStormQuest_Evolve_Hydraulic",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:FirstStormQuest_CompleteStormZones": {
+      "templateId": "Quest:FirstStormQuest_CompleteStormZones",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:FirstStormQuest_CannyDiff_CompleteStormZones": {
+      "templateId": "Quest:FirstStormQuest_CannyDiff_CompleteStormZones",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:HordeQuest_Progression_Twine_9": {
+      "templateId": "Quest:HordeQuest_Progression_Twine_9",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:HordeQuest_Progression_Twine_8": {
+      "templateId": "Quest:HordeQuest_Progression_Twine_8",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:HordeQuest_Progression_Twine_7": {
+      "templateId": "Quest:HordeQuest_Progression_Twine_7",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:HordeQuest_Progression_Twine_6": {
+      "templateId": "Quest:HordeQuest_Progression_Twine_6",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:HordeQuest_Progression_Twine_5": {
+      "templateId": "Quest:HordeQuest_Progression_Twine_5",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:HordeQuest_Progression_Twine_4": {
+      "templateId": "Quest:HordeQuest_Progression_Twine_4",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:HordeQuest_Progression_Twine_3": {
+      "templateId": "Quest:HordeQuest_Progression_Twine_3",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:HordeQuest_Progression_Twine_2": {
+      "templateId": "Quest:HordeQuest_Progression_Twine_2",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:HordeQuest_Progression_Twine_13": {
+      "templateId": "Quest:HordeQuest_Progression_Twine_13",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:HordeQuest_Progression_Twine_12": {
+      "templateId": "Quest:HordeQuest_Progression_Twine_12",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:HordeQuest_Progression_Twine_11": {
+      "templateId": "Quest:HordeQuest_Progression_Twine_11",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:HordeQuest_Progression_Twine_10": {
+      "templateId": "Quest:HordeQuest_Progression_Twine_10",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:HordeQuest_Progression_Twine_1": {
+      "templateId": "Quest:HordeQuest_Progression_Twine_1",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:HordeQuest_Progression_Stonewood_4": {
+      "templateId": "Quest:HordeQuest_Progression_Stonewood_4",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:HordeQuest_Progression_Stonewood_3": {
+      "templateId": "Quest:HordeQuest_Progression_Stonewood_3",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:HordeQuest_Progression_Stonewood_2": {
+      "templateId": "Quest:HordeQuest_Progression_Stonewood_2",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:HordeQuest_Progression_Stonewood_1": {
+      "templateId": "Quest:HordeQuest_Progression_Stonewood_1",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:HordeQuest_Progression_Plankerton_5": {
+      "templateId": "Quest:HordeQuest_Progression_Plankerton_5",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:HordeQuest_Progression_Plankerton_4": {
+      "templateId": "Quest:HordeQuest_Progression_Plankerton_4",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:HordeQuest_Progression_Plankerton_3": {
+      "templateId": "Quest:HordeQuest_Progression_Plankerton_3",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:HordeQuest_Progression_Plankerton_2": {
+      "templateId": "Quest:HordeQuest_Progression_Plankerton_2",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:HordeQuest_Progression_Plankerton_1": {
+      "templateId": "Quest:HordeQuest_Progression_Plankerton_1",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:HordeQuest_Progression_Canny_5": {
+      "templateId": "Quest:HordeQuest_Progression_Canny_5",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:HordeQuest_Progression_Canny_4": {
+      "templateId": "Quest:HordeQuest_Progression_Canny_4",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:HordeQuest_Progression_Canny_3": {
+      "templateId": "Quest:HordeQuest_Progression_Canny_3",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:HordeQuest_Progression_Canny_2": {
+      "templateId": "Quest:HordeQuest_Progression_Canny_2",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:HordeQuest_Progression_Canny_1": {
+      "templateId": "Quest:HordeQuest_Progression_Canny_1",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:HordeQuest_HordeUnlock": {
+      "templateId": "Quest:HordeQuest_HordeUnlock",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:HordeQuest_BuildBase": {
+      "templateId": "Quest:HordeQuest_BuildBase",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:MutantStormsQuest_2018_CompleteStormZones_1": {
+      "templateId": "Quest:MutantStormsQuest_2018_CompleteStormZones_1",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:MutantStormsQuest_2018_CompleteStormZones_2": {
+      "templateId": "Quest:MutantStormsQuest_2018_CompleteStormZones_2",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:MutantStormsQuest_2018_CompleteStormZones_3": {
+      "templateId": "Quest:MutantStormsQuest_2018_CompleteStormZones_3",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:MutantStormsQuest_2018_HydraulicStormLlama": {
+      "templateId": "Quest:MutantStormsQuest_2018_HydraulicStormLlama",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:MutantStormsQuest_2018_KillEnragedHusks_1": {
+      "templateId": "Quest:MutantStormsQuest_2018_KillEnragedHusks_1",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:MutantStormsQuest_2018_KillEnragedHusks_2": {
+      "templateId": "Quest:MutantStormsQuest_2018_KillEnragedHusks_2",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:MutantStormsQuest_2018_KillEnragedHusks_3": {
+      "templateId": "Quest:MutantStormsQuest_2018_KillEnragedHusks_3",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:MutantStormsQuest_2018_KillExplodingDeathburstHusks_1": {
+      "templateId": "Quest:MutantStormsQuest_2018_KillExplodingDeathburstHusks_1",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:MutantStormsQuest_2018_KillExplodingDeathburstHusks_2": {
+      "templateId": "Quest:MutantStormsQuest_2018_KillExplodingDeathburstHusks_2",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:MutantStormsQuest_2018_KillExplodingDeathburstHusks_3": {
+      "templateId": "Quest:MutantStormsQuest_2018_KillExplodingDeathburstHusks_3",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:MutantStormsQuest_2018_KillFrenziedDeathburstHusks_1": {
+      "templateId": "Quest:MutantStormsQuest_2018_KillFrenziedDeathburstHusks_1",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:MutantStormsQuest_2018_KillFrenziedDeathburstHusks_2": {
+      "templateId": "Quest:MutantStormsQuest_2018_KillFrenziedDeathburstHusks_2",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:MutantStormsQuest_2018_KillFrenziedDeathburstHusks_3": {
+      "templateId": "Quest:MutantStormsQuest_2018_KillFrenziedDeathburstHusks_3",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:MutantStormsQuest_2018_KillHealingDeathburstHusks_1": {
+      "templateId": "Quest:MutantStormsQuest_2018_KillHealingDeathburstHusks_1",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:MutantStormsQuest_2018_KillHealingDeathburstHusks_2": {
+      "templateId": "Quest:MutantStormsQuest_2018_KillHealingDeathburstHusks_2",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:MutantStormsQuest_2018_KillHealingDeathburstHusks_3": {
+      "templateId": "Quest:MutantStormsQuest_2018_KillHealingDeathburstHusks_3",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:MutantStormsQuest_2018_KillHusksTraps": {
+      "templateId": "Quest:MutantStormsQuest_2018_KillHusksTraps",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:MutantStormsQuest_2018_KillLifeLeechAttackHusks_1": {
+      "templateId": "Quest:MutantStormsQuest_2018_KillLifeLeechAttackHusks_1",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:MutantStormsQuest_2018_KillLifeLeechAttackHusks_2": {
+      "templateId": "Quest:MutantStormsQuest_2018_KillLifeLeechAttackHusks_2",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:MutantStormsQuest_2018_KillLifeLeechAttackHusks_3": {
+      "templateId": "Quest:MutantStormsQuest_2018_KillLifeLeechAttackHusks_3",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:MutantStormsQuest_2018_KillMetalCorrosionHusks_1": {
+      "templateId": "Quest:MutantStormsQuest_2018_KillMetalCorrosionHusks_1",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:MutantStormsQuest_2018_KillMetalCorrosionHusks_2": {
+      "templateId": "Quest:MutantStormsQuest_2018_KillMetalCorrosionHusks_2",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:MutantStormsQuest_2018_KillMetalCorrosionHusks_3": {
+      "templateId": "Quest:MutantStormsQuest_2018_KillMetalCorrosionHusks_3",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:MutantStormsQuest_2018_KillMiniBosses_Repeatable": {
+      "templateId": "Quest:MutantStormsQuest_2018_KillMiniBosses_Repeatable",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:MutantStormsQuest_2018_KillMistMonsters": {
+      "templateId": "Quest:MutantStormsQuest_2018_KillMistMonsters",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:MutantStormsQuest_2018_KillQuickenedHusks_1": {
+      "templateId": "Quest:MutantStormsQuest_2018_KillQuickenedHusks_1",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:MutantStormsQuest_2018_KillQuickenedHusks_2": {
+      "templateId": "Quest:MutantStormsQuest_2018_KillQuickenedHusks_2",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:MutantStormsQuest_2018_KillQuickenedHusks_3": {
+      "templateId": "Quest:MutantStormsQuest_2018_KillQuickenedHusks_3",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:MutantStormsQuest_2018_KillWallWeakeningHusks_1": {
+      "templateId": "Quest:MutantStormsQuest_2018_KillWallWeakeningHusks_1",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:MutantStormsQuest_2018_KillWallWeakeningHusks_2": {
+      "templateId": "Quest:MutantStormsQuest_2018_KillWallWeakeningHusks_2",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:MutantStormsQuest_2018_KillWallWeakeningHusks_3": {
+      "templateId": "Quest:MutantStormsQuest_2018_KillWallWeakeningHusks_3",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:LoveQuest_2018_Reactive_Chocolates": {
+      "templateId": "Quest:LoveQuest_2018_Reactive_Chocolates",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:LoveQuest_2018_Reactive_Flowers": {
+      "templateId": "Quest:LoveQuest_2018_Reactive_Flowers",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:LoveQuest_2018_Reactive_Mailboxes": {
+      "templateId": "Quest:LoveQuest_2018_Reactive_Mailboxes",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:LoveQuest_2018_Reactive_RescueDennis": {
+      "templateId": "Quest:LoveQuest_2018_Reactive_RescueDennis",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:LoveQuest_2018_Reactive_RescueSummer": {
+      "templateId": "Quest:LoveQuest_2018_Reactive_RescueSummer",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:LoveQuest_2018_Reactive_Song": {
+      "templateId": "Quest:LoveQuest_2018_Reactive_Song",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:LoveQuest_2018_Reactive_TeddyBears": {
+      "templateId": "Quest:LoveQuest_2018_Reactive_TeddyBears",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:SpringQuest_2018_Build_Trojan_Bunny": {
+      "templateId": "Quest:SpringQuest_2018_Build_Trojan_Bunny",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:SpringQuest_2018_Complete_BumpedDifficulty": {
+      "templateId": "Quest:SpringQuest_2018_Complete_BumpedDifficulty",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:SpringQuest_2018_Complete_FireworkClusters": {
+      "templateId": "Quest:SpringQuest_2018_Complete_FireworkClusters",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:SpringQuest_2018_EvolveDragonWeapon": {
+      "templateId": "Quest:SpringQuest_2018_EvolveDragonWeapon",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:SpringQuest_2018_KillHusksDragonWeapon": {
+      "templateId": "Quest:SpringQuest_2018_KillHusksDragonWeapon",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:SpringQuest_2018_KillHusksMelee": {
+      "templateId": "Quest:SpringQuest_2018_KillHusksMelee",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:SpringQuest_2018_KillMistMonstersDragonWeapon": {
+      "templateId": "Quest:SpringQuest_2018_KillMistMonstersDragonWeapon",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:SpringQuest_2018_Reactive_CCTV_Cameras": {
+      "templateId": "Quest:SpringQuest_2018_Reactive_CCTV_Cameras",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:SpringQuest_2018_Reactive_Clothing": {
+      "templateId": "Quest:SpringQuest_2018_Reactive_Clothing",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:SpringQuest_2018_Reactive_EggHunt": {
+      "templateId": "Quest:SpringQuest_2018_Reactive_EggHunt",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:SpringQuest_2018_Reactive_Fireworks": {
+      "templateId": "Quest:SpringQuest_2018_Reactive_Fireworks",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:SpringQuest_2018_Reactive_Fireworks_Repeatable": {
+      "templateId": "Quest:SpringQuest_2018_Reactive_Fireworks_Repeatable",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:SpringQuest_2018_Reactive_Fountains": {
+      "templateId": "Quest:SpringQuest_2018_Reactive_Fountains",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:SpringQuest_2018_Reactive_Garden_Gnomes": {
+      "templateId": "Quest:SpringQuest_2018_Reactive_Garden_Gnomes",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:SpringQuest_2018_Reactive_GymStuff": {
+      "templateId": "Quest:SpringQuest_2018_Reactive_GymStuff",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:SpringQuest_2018_Reactive_HuntMiniboss_Finale": {
+      "templateId": "Quest:SpringQuest_2018_Reactive_HuntMiniboss_Finale",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:SpringQuest_2018_Reactive_KillCollect_Clovers": {
+      "templateId": "Quest:SpringQuest_2018_Reactive_KillCollect_Clovers",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:SpringQuest_2018_Reactive_Lanterns": {
+      "templateId": "Quest:SpringQuest_2018_Reactive_Lanterns",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:SpringQuest_2018_Reactive_Leprechaun_Traps": {
+      "templateId": "Quest:SpringQuest_2018_Reactive_Leprechaun_Traps",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:SpringQuest_2018_Reactive_LocationDiscovery_Pub": {
+      "templateId": "Quest:SpringQuest_2018_Reactive_LocationDiscovery_Pub",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:SpringQuest_2018_Reactive_PotsOfGold": {
+      "templateId": "Quest:SpringQuest_2018_Reactive_PotsOfGold",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:SpringQuest_2018_Reactive_Quotes": {
+      "templateId": "Quest:SpringQuest_2018_Reactive_Quotes",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:SpringQuest_2018_Reactive_RescueVal": {
+      "templateId": "Quest:SpringQuest_2018_Reactive_RescueVal",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:SpringQuest_2018_Reactive_Tents": {
+      "templateId": "Quest:SpringQuest_2018_Reactive_Tents",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:SpringQuest_2018_Reactive_VHS": {
+      "templateId": "Quest:SpringQuest_2018_Reactive_VHS",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Quest:SpringQuest_2018_StarterHidden": {
+      "templateId": "Quest:SpringQuest_2018_StarterHidden",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": false,
+        "xp": 0,
+        "sent_new_notification": false,
+        "favorite": false
+      },
+      "quantity": 1
     }
   },
   "stats": {
@@ -31390,40 +36295,6 @@
       },
       "default_hero_squad_id": "",
       "collection_book": {
-        "pages": [
-          "CollectionBookPage:pageheroes_ninja",
-          "CollectionBookPage:pageheroes_outlander",
-          "CollectionBookPage:pageheroes_commando",
-          "CollectionBookPage:pageheroes_constructor",
-          "CollectionBookPage:pagepeople_defenders",
-          "CollectionBookPage:pagepeople_leads",
-          "CollectionBookPage:pagepeople_uniqueleads",
-          "CollectionBookPage:pagepeople_survivors",
-          "CollectionBookPage:pageranged_assault_weapons",
-          "CollectionBookPage:pageranged_shotgun_weapons",
-          "CollectionBookPage:page_ranged_pistols_weapons",
-          "CollectionBookPage:pageranged_snipers_weapons",
-          "CollectionBookPage:pageranged_shotgun_weapons_crystal",
-          "CollectionBookPage:pageranged_assault_weapons_crystal",
-          "CollectionBookPage:page_ranged_pistols_weapons_crystal",
-          "CollectionBookPage:pageranged_snipers_weapons_crystal",
-          "CollectionBookPage:pagetraps_wall",
-          "CollectionBookPage:pagetraps_ceiling",
-          "CollectionBookPage:pagetraps_floor",
-          "CollectionBookPage:pagemelee_swords_weapons",
-          "CollectionBookPage:pagemelee_swords_weapons_crystal",
-          "CollectionBookPage:pagemelee_axes_weapons",
-          "CollectionBookPage:pagemelee_axes_weapons_crystal",
-          "CollectionBookPage:pagemelee_scythes_weapons",
-          "CollectionBookPage:pagemelee_scythes_weapons_crystal",
-          "CollectionBookPage:pagemelee_clubs_weapons",
-          "CollectionBookPage:pagemelee_clubs_weapons_crystal",
-          "CollectionBookPage:pagemelee_spears_weapons",
-          "CollectionBookPage:pagemelee_spears_weapons_crystal",
-          "CollectionBookPage:pagemelee_tools_weapons",
-          "CollectionBookPage:pagemelee_tools_weapons_crystal",
-          "CollectionBookPage:pageranged_explosive_weapons"
-        ],
         "maxBookXpLevelAchieved": 0
       },
       "quest_manager": {
