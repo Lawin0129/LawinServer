@@ -40,17 +40,6 @@
       },
       "quantity": 1
     },
-    "8fcfb7a3-976e-45bc-889e-a43f14179167": {
-      "templateId": "AccountResource:heroxp",
-      "attributes": {
-        "max_level_bonus": 0,
-        "level": 1,
-        "item_seen": true,
-        "xp": 0,
-        "favorite": false
-      },
-      "quantity": 2730
-    },
     "295ca2c9-e177-4bf2-9907-a7a867e27bb8": {
       "templateId": "Quest:homebasequest_researchpurchase",
       "attributes": {
@@ -80,17 +69,6 @@
         "favorite": false
       },
       "quantity": 1
-    },
-    "69cf0f04-34a6-4eff-a31e-91acd1ad8fcb": {
-      "templateId": "AccountResource:voucher_basicpack",
-      "attributes": {
-        "max_level_bonus": 0,
-        "level": 1,
-        "item_seen": false,
-        "xp": 0,
-        "favorite": false
-      },
-      "quantity": 2
     },
     "cc33ae01-f558-4613-ae30-c5c83ba1c9da": {
       "templateId": "Quota:restxp",
@@ -338,17 +316,6 @@
       },
       "quantity": 1
     },
-    "f0a7e3bd-9987-4566-b12b-bd4ab0479f39": {
-      "templateId": "AccountResource:reagent_c_t01",
-      "attributes": {
-        "max_level_bonus": 0,
-        "level": 1,
-        "item_seen": false,
-        "xp": 0,
-        "favorite": false
-      },
-      "quantity": 1
-    },
     "5e3f0933-ff56-4ce3-a693-0251fc37a296": {
       "templateId": "Quest:heroquest_constructorleadership",
       "attributes": {
@@ -452,17 +419,6 @@
         "favorite": false
       },
       "quantity": 1
-    },
-    "05d71f97-2626-467a-85d8-9036e8217ec3": {
-      "templateId": "AccountResource:eventcurrency_scaling",
-      "attributes": {
-        "max_level_bonus": 0,
-        "level": 1,
-        "item_seen": false,
-        "xp": 0,
-        "favorite": false
-      },
-      "quantity": 46
     },
     "55007fd2-edcc-487d-9e7b-df9044abacb3": {
       "templateId": "Worker:workerbasic_c_t01",
@@ -888,17 +844,6 @@
       },
       "quantity": 1
     },
-    "a04fe907-248d-4b60-b918-53cc7497ab32": {
-      "templateId": "AccountResource:eventcurrency_snowballs",
-      "attributes": {
-        "max_level_bonus": 0,
-        "level": 1,
-        "item_seen": false,
-        "xp": 0,
-        "favorite": false
-      },
-      "quantity": 100
-    },
     "28a3a983-16ee-4243-a71e-7f5f3b0953e4": {
       "templateId": "Worker:managerexplorer_c_t01",
       "attributes": {
@@ -1001,17 +946,6 @@
       },
       "quantity": 1
     },
-    "632493cd-5d36-422e-a7ad-277797afebeb": {
-      "templateId": "AccountResource:peopleresource",
-      "attributes": {
-        "max_level_bonus": 0,
-        "level": 1,
-        "item_seen": true,
-        "xp": 0,
-        "favorite": false
-      },
-      "quantity": 15
-    },
     "de06b39f-0819-40e5-8c3b-fec5e417758c": {
       "templateId": "Quest:homebasequest_unlocksquads",
       "attributes": {
@@ -1070,28 +1004,6 @@
       },
       "quantity": 27690
     },
-    "42517541-1c5f-46ae-9537-1d7dc08acb3b": {
-      "templateId": "AccountResource:schematicxp",
-      "attributes": {
-        "max_level_bonus": 0,
-        "level": 1,
-        "item_seen": true,
-        "xp": 0,
-        "favorite": false
-      },
-      "quantity": 2220
-    },
-    "8e1169bc-b242-4d8f-9707-a01aef0e1847": {
-      "templateId": "AccountResource:personnelxp",
-      "attributes": {
-        "max_level_bonus": 0,
-        "level": 1,
-        "item_seen": true,
-        "xp": 0,
-        "favorite": false
-      },
-      "quantity": 3590
-    },
     "f3bda5ee-3521-40b8-b5d9-4262726458b5": {
       "templateId": "Quest:achievement_buildstructures",
       "attributes": {
@@ -1112,7 +1024,7 @@
       "attributes": {
         "platform": "Shared"
       },
-      "quantity": 1000000000
+      "quantity": 1000000
     },
     "f9e2e4b6-58f7-4b31-829d-f5c6c620ffe7": {
       "templateId": "Quest:challenge_collectionbook_1",
@@ -32119,6 +32031,776 @@
         "completion_complete_outpost_4_5": 1
       },
       "quantity": 1
+    },
+    "AccountResource:Voucher_Generic_Worker_VR": {
+      "templateId": "AccountResource:Voucher_Generic_Worker_VR",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1000000
+    },
+    "AccountResource:Voucher_Generic_Worker_SR": {
+      "templateId": "AccountResource:Voucher_Generic_Worker_SR",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1000000
+    },
+    "AccountResource:Voucher_Generic_Worker_R": {
+      "templateId": "AccountResource:Voucher_Generic_Worker_R",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1000000
+    },
+    "AccountResource:Voucher_Generic_Weapon_VR": {
+      "templateId": "AccountResource:Voucher_Generic_Weapon_VR",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1000000
+    },
+    "AccountResource:Voucher_Generic_Weapon_SR": {
+      "templateId": "AccountResource:Voucher_Generic_Weapon_SR",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1000000
+    },
+    "AccountResource:Voucher_Generic_Weapon_R": {
+      "templateId": "AccountResource:Voucher_Generic_Weapon_R",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1000000
+    },
+    "AccountResource:Voucher_Generic_Trap_VR": {
+      "templateId": "AccountResource:Voucher_Generic_Trap_VR",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1000000
+    },
+    "AccountResource:Voucher_Generic_Trap_SR": {
+      "templateId": "AccountResource:Voucher_Generic_Trap_SR",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1000000
+    },
+    "AccountResource:Voucher_Generic_Trap_R": {
+      "templateId": "AccountResource:Voucher_Generic_Trap_R",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1000000
+    },
+    "AccountResource:Voucher_Generic_Schematic_VR": {
+      "templateId": "AccountResource:Voucher_Generic_Schematic_VR",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1000000
+    },
+    "AccountResource:Voucher_Generic_Schematic_SR": {
+      "templateId": "AccountResource:Voucher_Generic_Schematic_SR",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1000000
+    },
+    "AccountResource:Voucher_Generic_Schematic_R": {
+      "templateId": "AccountResource:Voucher_Generic_Schematic_R",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1000000
+    },
+    "AccountResource:Voucher_Generic_Ranged_VR": {
+      "templateId": "AccountResource:Voucher_Generic_Ranged_VR",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1000000
+    },
+    "AccountResource:Voucher_Generic_Ranged_SR": {
+      "templateId": "AccountResource:Voucher_Generic_Ranged_SR",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1000000
+    },
+    "AccountResource:Voucher_Generic_Ranged_R": {
+      "templateId": "AccountResource:Voucher_Generic_Ranged_R",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1000000
+    },
+    "AccountResource:Voucher_Generic_Melee_VR": {
+      "templateId": "AccountResource:Voucher_Generic_Melee_VR",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1000000
+    },
+    "AccountResource:Voucher_Generic_Melee_SR": {
+      "templateId": "AccountResource:Voucher_Generic_Melee_SR",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1000000
+    },
+    "AccountResource:Voucher_Generic_Melee_R": {
+      "templateId": "AccountResource:Voucher_Generic_Melee_R",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1000000
+    },
+    "AccountResource:Voucher_Generic_Manager_VR": {
+      "templateId": "AccountResource:Voucher_Generic_Manager_VR",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1000000
+    },
+    "AccountResource:Voucher_Generic_Manager_SR": {
+      "templateId": "AccountResource:Voucher_Generic_Manager_SR",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1000000
+    },
+    "AccountResource:Voucher_Generic_Manager_R": {
+      "templateId": "AccountResource:Voucher_Generic_Manager_R",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1000000
+    },
+    "AccountResource:Voucher_Generic_Hero_VR": {
+      "templateId": "AccountResource:Voucher_Generic_Hero_VR",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1000000
+    },
+    "AccountResource:Voucher_Generic_Hero_SR": {
+      "templateId": "AccountResource:Voucher_Generic_Hero_SR",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1000000
+    },
+    "AccountResource:Voucher_Generic_Hero_R": {
+      "templateId": "AccountResource:Voucher_Generic_Hero_R",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1000000
+    },
+    "AccountResource:Voucher_Generic_Defender_VR": {
+      "templateId": "AccountResource:Voucher_Generic_Defender_VR",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1000000
+    },
+    "AccountResource:Voucher_Generic_Defender_SR": {
+      "templateId": "AccountResource:Voucher_Generic_Defender_SR",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1000000
+    },
+    "AccountResource:Voucher_Generic_Defender_R": {
+      "templateId": "AccountResource:Voucher_Generic_Defender_R",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1000000
+    },
+    "AccountResource:Voucher_Founders_StarterWeapons_Bundle": {
+      "templateId": "AccountResource:Voucher_Founders_StarterWeapons_Bundle",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1000000
+    },
+    "AccountResource:Voucher_Founders_Soldier_Weapon_VR": {
+      "templateId": "AccountResource:Voucher_Founders_Soldier_Weapon_VR",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1000000
+    },
+    "AccountResource:Voucher_Founders_Soldier_Weapon_SR": {
+      "templateId": "AccountResource:Voucher_Founders_Soldier_Weapon_SR",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1000000
+    },
+    "AccountResource:Voucher_Founders_Soldier_Bundle": {
+      "templateId": "AccountResource:Voucher_Founders_Soldier_Bundle",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1000000
+    },
+    "AccountResource:Voucher_Founders_Outlander_Weapon_VR": {
+      "templateId": "AccountResource:Voucher_Founders_Outlander_Weapon_VR",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1000000
+    },
+    "AccountResource:Voucher_Founders_Outlander_Weapon_SR": {
+      "templateId": "AccountResource:Voucher_Founders_Outlander_Weapon_SR",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1000000
+    },
+    "AccountResource:Voucher_Founders_Outlander_Bundle": {
+      "templateId": "AccountResource:Voucher_Founders_Outlander_Bundle",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1000000
+    },
+    "AccountResource:Voucher_Founders_Ninja_Weapon_VR": {
+      "templateId": "AccountResource:Voucher_Founders_Ninja_Weapon_VR",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1000000
+    },
+    "AccountResource:Voucher_Founders_Ninja_Weapon_SR": {
+      "templateId": "AccountResource:Voucher_Founders_Ninja_Weapon_SR",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1000000
+    },
+    "AccountResource:Voucher_Founders_Ninja_Bundle": {
+      "templateId": "AccountResource:Voucher_Founders_Ninja_Bundle",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1000000
+    },
+    "AccountResource:Voucher_Founders_Constructor_Weapon_VR": {
+      "templateId": "AccountResource:Voucher_Founders_Constructor_Weapon_VR",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1000000
+    },
+    "AccountResource:Voucher_Founders_Constructor_Weapon_SR": {
+      "templateId": "AccountResource:Voucher_Founders_Constructor_Weapon_SR",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1000000
+    },
+    "AccountResource:Voucher_Founders_Constructor_Bundle": {
+      "templateId": "AccountResource:Voucher_Founders_Constructor_Bundle",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1000000
+    },
+    "AccountResource:Voucher_Custom_Firecracker_R": {
+      "templateId": "AccountResource:Voucher_Custom_Firecracker_R",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1000000
+    },
+    "AccountResource:Voucher_CardPack_Bronze": {
+      "templateId": "AccountResource:Voucher_CardPack_Bronze",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1000000
+    },
+    "AccountResource:Voucher_BasicPack": {
+      "templateId": "AccountResource:Voucher_BasicPack",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1000000
+    },
+    "AccountResource:SpecialCurrency_Daily": {
+      "templateId": "AccountResource:SpecialCurrency_Daily",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1000000
+    },
+    "AccountResource:SchematicXP": {
+      "templateId": "AccountResource:SchematicXP",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1000000
+    },
+    "AccountResource:Reagent_Weapons": {
+      "templateId": "AccountResource:Reagent_Weapons",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1000000
+    },
+    "AccountResource:Reagent_Traps": {
+      "templateId": "AccountResource:Reagent_Traps",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1000000
+    },
+    "AccountResource:Reagent_People": {
+      "templateId": "AccountResource:Reagent_People",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1000000
+    },
+    "AccountResource:Reagent_EvolveRarity_VR": {
+      "templateId": "AccountResource:Reagent_EvolveRarity_VR",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1000000
+    },
+    "AccountResource:Reagent_EvolveRarity_SR": {
+      "templateId": "AccountResource:Reagent_EvolveRarity_SR",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1000000
+    },
+    "AccountResource:Reagent_EvolveRarity_R": {
+      "templateId": "AccountResource:Reagent_EvolveRarity_R",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1000000
+    },
+    "AccountResource:Reagent_C_T04": {
+      "templateId": "AccountResource:Reagent_C_T04",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1000000
+    },
+    "AccountResource:Reagent_C_T03": {
+      "templateId": "AccountResource:Reagent_C_T03",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1000000
+    },
+    "AccountResource:Reagent_C_T02": {
+      "templateId": "AccountResource:Reagent_C_T02",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1000000
+    },
+    "AccountResource:Reagent_C_T01": {
+      "templateId": "AccountResource:Reagent_C_T01",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1000000
+    },
+    "AccountResource:PersonnelXP": {
+      "templateId": "AccountResource:PersonnelXP",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1000000
+    },
+    "AccountResource:PeopleResource": {
+      "templateId": "AccountResource:PeopleResource",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1000000
+    },
+    "AccountResource:HeroXP": {
+      "templateId": "AccountResource:HeroXP",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1000000
+    },
+    "AccountResource:EventCurrency_StormZone": {
+      "templateId": "AccountResource:EventCurrency_StormZone",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1000000
+    },
+    "AccountResource:EventCurrency_Snowballs": {
+      "templateId": "AccountResource:EventCurrency_Snowballs",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1000000
+    },
+    "AccountResource:EventCurrency_Scavenger": {
+      "templateId": "AccountResource:EventCurrency_Scavenger",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1000000
+    },
+    "AccountResource:EventCurrency_Scaling": {
+      "templateId": "AccountResource:EventCurrency_Scaling",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1000000
+    },
+    "AccountResource:EventCurrency_PumpkinWarhead": {
+      "templateId": "AccountResource:EventCurrency_PumpkinWarhead",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1000000
+    },
+    "AccountResource:EventCurrency_Founders": {
+      "templateId": "AccountResource:EventCurrency_Founders",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1000000
+    },
+    "AccountResource:EventCurrency_Candy": {
+      "templateId": "AccountResource:EventCurrency_Candy",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1000000
+    },
+    "AccountResource:CompendiumXP": {
+      "templateId": "AccountResource:CompendiumXP",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1000000
+    },
+    "AccountResource:BattleBucks": {
+      "templateId": "AccountResource:BattleBucks",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1000000
+    },
+    "AccountResource:AthenaSeasonalXP": {
+      "templateId": "AccountResource:AthenaSeasonalXP",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1000000
+    },
+    "AccountResource:AthenaSeasonalBP": {
+      "templateId": "AccountResource:AthenaSeasonalBP",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1000000
+    },
+    "AccountResource:EventCurrency_Spring": {
+      "templateId": "AccountResource:EventCurrency_Spring",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1000000
     }
   },
   "stats": {
