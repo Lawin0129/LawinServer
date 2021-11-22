@@ -3908,6 +3908,17 @@
       },
       "quantity": 9579248
     },
+    "xp-boost": {
+      "templateId": "Token:xpboost",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": false,
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 0
+    },
     "b863ca8b-be12-4715-8a84-7d34e1b306f4": {
       "templateId": "Worker:workerbasic_c_t01",
       "attributes": {
@@ -86832,7 +86843,7 @@
         "offense": 5000,
         "resistance": 5000
       },
-      "level": 310,
+      "level": 309,
       "xp_overflow": 0,
       "latent_xp_marker": "4977938",
       "event_currency": {

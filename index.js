@@ -873,7 +873,7 @@ express.get("/fortnite/api/cloudstorage/user/:accountId", async (req, res) => {
 
     if (fs.existsSync(file)) {
         const utf8_file = fs.readFileSync(path.join(__dirname, file), 'utf8');
-	const file_stats = fs.statSync(path.join(__dirname, file));
+        const file_stats = fs.statSync(path.join(__dirname, file));
 
         return res.status(200).json([{
             "uniqueFilename": "ClientSettings.Sav",
@@ -886,7 +886,7 @@ express.get("/fortnite/api/cloudstorage/user/:accountId", async (req, res) => {
             "storageType": "S3",
             "storageIds": {},
             "accountId": req.params.accountId,
-	    "doNotCache": true
+            "doNotCache": true
         }]).end();
     } else {
         return res.status(200).json([]).end();
@@ -1374,14 +1374,6 @@ express.post("/fortnite/api/game/v2/profile/*/client/SetHomebaseBanner", async (
 
 // Buy skill tree perk STW
 express.post("/fortnite/api/game/v2/profile/*/client/PurchaseHomebaseNode", async (req, res) => {
-    function makeid() {
-        let CurrentDate = (new Date()).valueOf().toString();
-        let RandomFloat = Math.random().toString();
-        let ID = crypto.createHash('md5').update(CurrentDate + RandomFloat).digest('hex');
-        let FinishedID = ID.slice(0, 8) + "-" + ID.slice(8, 12) + "-" + ID.slice(12, 16) + "-" + ID.slice(16, 20) + "-" + ID.slice(20, 32);
-        return FinishedID;
-    }
-
     const profile = require(`./profiles/${req.query.profileId || "profile0"}.json`);
 
     // do not change any of these or you will end up breaking it
@@ -1943,14 +1935,6 @@ express.post("/fortnite/api/game/v2/profile/*/client/UpgradeItemBulk", async (re
 
 // Evolve item STW
 express.post("/fortnite/api/game/v2/profile/*/client/ConvertItem", async (req, res) => {
-    function makeid() {
-        let CurrentDate = (new Date()).valueOf().toString();
-        let RandomFloat = Math.random().toString();
-        let ID = crypto.createHash('md5').update(CurrentDate + RandomFloat).digest('hex');
-        let FinishedID = ID.slice(0, 8) + "-" + ID.slice(8, 12) + "-" + ID.slice(12, 16) + "-" + ID.slice(16, 20) + "-" + ID.slice(20, 32);
-        return FinishedID;
-    }
-
     const profile = require(`./profiles/${req.query.profileId || "campaign"}.json`);
 
     // do not change any of these or you will end up breaking it
@@ -2050,16 +2034,62 @@ express.post("/fortnite/api/game/v2/profile/*/client/ConvertItem", async (req, r
     res.end();
 });
 
-// Craft item STW (Guns, melees and traps only)
-express.post("/fortnite/api/game/v2/profile/*/client/CraftWorldItem", async (req, res) => {
-    function makeid() {
-        let CurrentDate = (new Date()).valueOf().toString();
-        let RandomFloat = Math.random().toString();
-        let ID = crypto.createHash('md5').update(CurrentDate + RandomFloat).digest('hex');
-        let FinishedID = ID.slice(0, 8) + "-" + ID.slice(8, 12) + "-" + ID.slice(12, 16) + "-" + ID.slice(16, 20) + "-" + ID.slice(20, 32);
-        return FinishedID;
+// Super charge item STW
+express.post("/fortnite/api/game/v2/profile/*/client/PromoteItem", async (req, res) => {
+    const profile = require(`./profiles/${req.query.profileId || "campaign"}.json`);
+
+    // do not change any of these or you will end up breaking it
+    var ApplyProfileChanges = [];
+    var BaseRevision = profile.rvn || 0;
+    var QueryRevision = req.query.rvn || -1;
+    var StatChanged = false;
+
+    if (req.body.targetItemId) {
+        profile.items[req.body.targetItemId].attributes.level += 2;
+        StatChanged = true;
     }
 
+    if (StatChanged == true) {
+        profile.rvn += 1;
+        profile.commandRevision += 1;
+
+        ApplyProfileChanges.push({
+            "changeType": "itemAttrChanged",
+            "itemId": req.body.targetItemId,
+            "attributeName": "level",
+            "attributeValue": profile.items[req.body.targetItemId].attributes.level
+        })
+
+        fs.writeFileSync(`./profiles/${req.query.profileId || "campaign"}.json`, JSON.stringify(profile, null, 2), function(err) {
+            if (err) {
+                console.log('error:', err)
+            };
+        });
+    }
+
+    // this doesn't work properly on version v12.20 and above but whatever
+    if (QueryRevision != BaseRevision) {
+        ApplyProfileChanges = [{
+            "changeType": "fullProfileUpdate",
+            "profile": profile
+        }];
+    }
+
+    res.json({
+        "profileRevision": profile.rvn || 0,
+        "profileId": req.query.profileId || "campaign",
+        "profileChangesBaseRevision": BaseRevision,
+        "profileChanges": ApplyProfileChanges,
+        "profileCommandRevision": profile.commandRevision || 0,
+        "serverTime": new Date().toISOString(),
+        "responseVersion": 1
+    })
+    res.status(200);
+    res.end();
+});
+
+// Craft item STW (Guns, melees and traps only)
+express.post("/fortnite/api/game/v2/profile/*/client/CraftWorldItem", async (req, res) => {
     const seasondata = require("./season.json");
     const seasonchecker = require("./seasonchecker.js");
     seasonchecker(req, seasondata);
@@ -3209,14 +3239,6 @@ express.post("/fortnite/api/game/v2/profile/*/client/RecycleItemBatch", async (r
 
 // Add item from collection book STW
 express.post("/fortnite/api/game/v2/profile/*/client/ResearchItemFromCollectionBook", async (req, res) => {
-    function makeid() {
-        let CurrentDate = (new Date()).valueOf().toString();
-        let RandomFloat = Math.random().toString();
-        let ID = crypto.createHash('md5').update(CurrentDate + RandomFloat).digest('hex');
-        let FinishedID = ID.slice(0, 8) + "-" + ID.slice(8, 12) + "-" + ID.slice(12, 16) + "-" + ID.slice(16, 20) + "-" + ID.slice(20, 32);
-        return FinishedID;
-    }
-
     const profile = require(`./profiles/${req.query.profileId || "campaign"}.json`);
 
     // do not change any of these or you will end up breaking it
@@ -3382,14 +3404,6 @@ express.post("/fortnite/api/game/v2/profile/*/client/SlotItemInCollectionBook", 
 
 // Unslot item from collection book STW
 express.post("/fortnite/api/game/v2/profile/*/client/UnslotItemFromCollectionBook", async (req, res) => {
-    function makeid() {
-        let CurrentDate = (new Date()).valueOf().toString();
-        let RandomFloat = Math.random().toString();
-        let ID = crypto.createHash('md5').update(CurrentDate + RandomFloat).digest('hex');
-        let FinishedID = ID.slice(0, 8) + "-" + ID.slice(8, 12) + "-" + ID.slice(12, 16) + "-" + ID.slice(16, 20) + "-" + ID.slice(20, 32);
-        return FinishedID;
-    }
-
     const profile = require(`./profiles/${req.query.profileId || "campaign"}.json`);
 
     // do not change any of these or you will end up breaking it
@@ -3729,16 +3743,150 @@ express.post("/fortnite/api/game/v2/profile/*/client/SetActiveHeroLoadout", asyn
     res.end();
 });
 
-// Open llama STW
-express.post("/fortnite/api/game/v2/profile/*/client/OpenCardPack", async (req, res) => {
-    function makeid() {
-        let CurrentDate = (new Date()).valueOf().toString();
-        let RandomFloat = Math.random().toString();
-        let ID = crypto.createHash('md5').update(CurrentDate + RandomFloat).digest('hex');
-        let FinishedID = ID.slice(0, 8) + "-" + ID.slice(8, 12) + "-" + ID.slice(12, 16) + "-" + ID.slice(16, 20) + "-" + ID.slice(20, 32);
-        return FinishedID;
+// Activate consumable stw STW
+express.post("/fortnite/api/game/v2/profile/*/client/ActivateConsumable", async (req, res) => {
+    const profile = require(`./profiles/${req.query.profileId || "campaign"}.json`);
+
+    // do not change any of these or you will end up breaking it
+    var ApplyProfileChanges = [];
+    var BaseRevision = profile.rvn || 0;
+    var QueryRevision = req.query.rvn || -1;
+    var StatChanged = false;
+
+    var XPBoost;
+
+    if (req.body.targetItemId) {
+        profile.items[req.body.targetItemId].quantity -= 1;
+
+        for (var key in profile.items) {
+            if (profile.items[key].templateId == "Token:xpboost") {
+                var randomNumber = Math.floor(Math.random() * 1250000);
+                if (randomNumber < 1000000) {
+                    randomNumber += 1000000
+                }
+
+                profile.items[key].quantity += randomNumber;
+
+                XPBoost = key;
+            }
+        }
+
+        StatChanged = true;
     }
 
+    if (StatChanged == true) {
+        profile.rvn += 1;
+        profile.commandRevision += 1;
+
+        ApplyProfileChanges.push({
+            "changeType": "itemQuantityChanged",
+            "itemId": req.body.targetItemId,
+            "quantity": profile.items[req.body.targetItemId].quantity
+        })
+
+        if (XPBoost) {
+            ApplyProfileChanges.push({
+                "changeType": "itemQuantityChanged",
+                "itemId": XPBoost,
+                "quantity": profile.items[XPBoost].quantity
+            })
+        }
+
+        fs.writeFileSync(`./profiles/${req.query.profileId || "campaign"}.json`, JSON.stringify(profile, null, 2), function(err) {
+            if (err) {
+                console.log('error:', err)
+            };
+        });
+    }
+
+    // this doesn't work properly on version v12.20 and above but whatever
+    if (QueryRevision != BaseRevision) {
+        ApplyProfileChanges = [{
+            "changeType": "fullProfileUpdate",
+            "profile": profile
+        }];
+    }
+
+    res.json({
+        "profileRevision": profile.rvn || 0,
+        "profileId": req.query.profileId || "campaign",
+        "profileChangesBaseRevision": BaseRevision,
+        "profileChanges": ApplyProfileChanges,
+        "profileCommandRevision": profile.commandRevision || 0,
+        "serverTime": new Date().toISOString(),
+        "responseVersion": 1
+    })
+    res.status(200);
+    res.end();
+});
+
+// Unassign all squads STW
+express.post("/fortnite/api/game/v2/profile/*/client/UnassignAllSquads", async (req, res) => {
+    const profile = require(`./profiles/${req.query.profileId || "campaign"}.json`);
+
+    // do not change any of these or you will end up breaking it
+    var ApplyProfileChanges = [];
+    var BaseRevision = profile.rvn || 0;
+    var QueryRevision = req.query.rvn || -1;
+    var StatChanged = false;
+
+    if (req.body.squadIds) {
+        for (var i = 0; i < req.body.squadIds.length; i++) {
+            let id = req.body.squadIds[i];
+
+            for (var key in profile.items) {
+                if (profile.items[key].attributes.hasOwnProperty('squad_id')) {
+                    if (profile.items[key].attributes.squad_id.toLowerCase() == id.toLowerCase()) {
+                        profile.items[key].attributes.squad_id = "";
+
+                        ApplyProfileChanges.push({
+                            "changeType": "itemAttrChanged",
+                            "itemId": key,
+                            "attributeName": "squad_id",
+                            "attributeValue": profile.items[key].attributes.squad_id
+                        })
+                    }
+                }
+            }
+        }
+
+        StatChanged = true;
+    }
+
+    if (StatChanged == true) {
+        profile.rvn += 1;
+        profile.commandRevision += 1;
+
+        fs.writeFileSync(`./profiles/${req.query.profileId || "campaign"}.json`, JSON.stringify(profile, null, 2), function(err) {
+            if (err) {
+                console.log('error:', err)
+            };
+        });
+    }
+
+    // this doesn't work properly on version v12.20 and above but whatever
+    if (QueryRevision != BaseRevision) {
+        ApplyProfileChanges = [{
+            "changeType": "fullProfileUpdate",
+            "profile": profile
+        }];
+    }
+
+    res.json({
+        "profileRevision": profile.rvn || 0,
+        "profileId": req.query.profileId || "campaign",
+        "profileChangesBaseRevision": BaseRevision,
+        "profileChanges": ApplyProfileChanges,
+        "profileCommandRevision": profile.commandRevision || 0,
+        "serverTime": new Date().toISOString(),
+        "responseVersion": 1
+    })
+    res.status(200);
+    res.end();
+});
+
+// Open llama STW
+express.post("/fortnite/api/game/v2/profile/*/client/OpenCardPack", async (req, res) => {
     const profile = require(`./profiles/${req.query.profileId || "campaign"}.json`);
     const ItemIDS = require("./responses/ItemIDS.json");
 
@@ -3866,14 +4014,6 @@ express.post("/fortnite/api/game/v2/profile/*/client/OpenCardPack", async (req, 
 
 // Purchase llama STW
 express.post("/fortnite/api/game/v2/profile/*/client/PurchaseCatalogEntry", async (req, res) => {
-    function makeid() {
-        let CurrentDate = (new Date()).valueOf().toString();
-        let RandomFloat = Math.random().toString();
-        let ID = crypto.createHash('md5').update(CurrentDate + RandomFloat).digest('hex');
-        let FinishedID = ID.slice(0, 8) + "-" + ID.slice(8, 12) + "-" + ID.slice(12, 16) + "-" + ID.slice(16, 20) + "-" + ID.slice(20, 32);
-        return FinishedID;
-    }
-
     const profile = require(`./profiles/${req.query.profileId || "profile0"}.json`);
     const campaign = require("./profiles/campaign.json");
     const athena = require("./profiles/athena.json");
@@ -5260,4 +5400,12 @@ function getItemShop() {
     }
 
     return catalog;
+}
+
+function makeid() {
+    let CurrentDate = (new Date()).valueOf().toString();
+    let RandomFloat = Math.random().toString();
+    let ID = crypto.createHash('md5').update(CurrentDate + RandomFloat).digest('hex');
+    let FinishedID = ID.slice(0, 8) + "-" + ID.slice(8, 12) + "-" + ID.slice(12, 16) + "-" + ID.slice(16, 20) + "-" + ID.slice(20, 32);
+    return FinishedID;
 }
