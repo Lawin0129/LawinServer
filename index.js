@@ -1675,8 +1675,8 @@ express.post("/fortnite/api/game/v2/profile/*/client/AssignWorkerToSquad", async
                 if (profile.items[key].attributes.hasOwnProperty('squad_id') && profile.items[key].attributes.hasOwnProperty('squad_slot_idx')) {
                     if (profile.items[key].attributes.squad_id != "" && profile.items[key].attributes.squad_slot_idx != -1) {
                         if (profile.items[key].attributes.squad_id.toLowerCase() == req.body.squadId.toLowerCase() && profile.items[key].attributes.squad_slot_idx == req.body.slotIndex) {
-                            profile.items[key].attributes.squad_id = profile.items[req.body.characterId].attributes.squad_id || "";
-                            profile.items[key].attributes.squad_slot_idx = profile.items[req.body.characterId].attributes.squad_slot_idx || 0;
+                            profile.items[key].attributes.squad_id = "";
+                            profile.items[key].attributes.squad_slot_idx = 0;
 
                             ApplyProfileChanges.push({
                                 "changeType": "itemAttrChanged",
@@ -1721,6 +1721,98 @@ express.post("/fortnite/api/game/v2/profile/*/client/AssignWorkerToSquad", async
             "attributeName": "squad_slot_idx",
             "attributeValue": profile.items[req.body.characterId].attributes.squad_slot_idx
         })
+
+        fs.writeFileSync(`./profiles/${req.query.profileId || "profile0"}.json`, JSON.stringify(profile, null, 2), function(err) {
+            if (err) {
+                console.log('error:', err)
+            };
+        });
+    }
+
+    // this doesn't work properly on version v12.20 and above but whatever
+    if (QueryRevision != BaseRevision) {
+        ApplyProfileChanges = [{
+            "changeType": "fullProfileUpdate",
+            "profile": profile
+        }];
+    }
+
+    res.json({
+        "profileRevision": profile.rvn || 0,
+        "profileId": req.query.profileId || "profile0",
+        "profileChangesBaseRevision": BaseRevision,
+        "profileChanges": ApplyProfileChanges,
+        "profileCommandRevision": profile.commandRevision || 0,
+        "serverTime": new Date().toISOString(),
+        "responseVersion": 1
+    })
+    res.status(200);
+    res.end();
+});
+
+// Assign multiple workers to squad STW
+express.post("/fortnite/api/game/v2/profile/*/client/AssignWorkerToSquadBatch", async (req, res) => {
+    const profile = require(`./profiles/${req.query.profileId || "profile0"}.json`);
+
+    // do not change any of these or you will end up breaking it
+    var ApplyProfileChanges = [];
+    var BaseRevision = profile.rvn || 0;
+    var QueryRevision = req.query.rvn || -1;
+    var StatChanged = false;
+
+    if (req.body.characterIds && req.body.squadIds && req.body.slotIndices) {
+        for (var i = 0; i < req.body.characterIds.length; i++) {
+            for (var key in profile.items) {
+                if (profile.items[key].hasOwnProperty('attributes')) {
+                    if (profile.items[key].attributes.hasOwnProperty('squad_id') && profile.items[key].attributes.hasOwnProperty('squad_slot_idx')) {
+                        if (profile.items[key].attributes.squad_id != "" && profile.items[key].attributes.squad_slot_idx != -1) {
+                            if (profile.items[key].attributes.squad_id.toLowerCase() == req.body.squadIds[i].toLowerCase() && profile.items[key].attributes.squad_slot_idx == req.body.slotIndices[i]) {
+                                profile.items[key].attributes.squad_id = "";
+                                profile.items[key].attributes.squad_slot_idx = 0;
+
+                                ApplyProfileChanges.push({
+                                    "changeType": "itemAttrChanged",
+                                    "itemId": key,
+                                    "attributeName": "squad_id",
+                                    "attributeValue": profile.items[key].attributes.squad_id
+                                })
+
+                                ApplyProfileChanges.push({
+                                    "changeType": "itemAttrChanged",
+                                    "itemId": key,
+                                    "attributeName": "squad_slot_idx",
+                                    "attributeValue": profile.items[key].attributes.squad_slot_idx
+                                })
+                            }
+                        }
+                    }
+                }
+            }
+
+            profile.items[req.body.characterIds[i]].attributes.squad_id = req.body.squadIds[i] || "";
+            profile.items[req.body.characterIds[i]].attributes.squad_slot_idx = req.body.slotIndices[i] || 0;
+
+            ApplyProfileChanges.push({
+                "changeType": "itemAttrChanged",
+                "itemId": req.body.characterIds[i],
+                "attributeName": "squad_id",
+                "attributeValue": profile.items[req.body.characterIds[i]].attributes.squad_id
+            })
+
+            ApplyProfileChanges.push({
+                "changeType": "itemAttrChanged",
+                "itemId": req.body.characterIds[i],
+                "attributeName": "squad_slot_idx",
+                "attributeValue": profile.items[req.body.characterIds[i]].attributes.squad_slot_idx
+            })
+        }
+
+        StatChanged = true;
+    }
+
+    if (StatChanged == true) {
+        profile.rvn += 1;
+        profile.commandRevision += 1;
 
         fs.writeFileSync(`./profiles/${req.query.profileId || "profile0"}.json`, JSON.stringify(profile, null, 2), function(err) {
             if (err) {
