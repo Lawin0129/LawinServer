@@ -3323,6 +3323,17 @@ express.post("/fortnite/api/game/v2/profile/*/client/SlotItemInCollectionBook", 
             "profileCommandRevision": collection_book_profile.commandRevision || 0,
         })
 
+        for (var key in collection_book_profile.items) {
+            if (profile.items[req.body.itemId].templateId.toLowerCase() == collection_book_profile.items[key].templateId.toLowerCase()) {
+                delete collection_book_profile.items[key];
+
+                ApplyProfileChanges.push({
+                    "changeType": "itemRemoved",
+                    "itemId": key
+                })
+            }
+        }
+
         collection_book_profile.items[req.body.itemId] = profile.items[req.body.itemId];
 
         delete profile.items[req.body.itemId];
