@@ -1866,6 +1866,66 @@ express.post("/fortnite/api/game/v2/profile/*/client/UpgradeItem", async (req, r
     res.end();
 });
 
+// Level slotted item up STW
+express.post("/fortnite/api/game/v2/profile/*/client/UpgradeSlottedItem", async (req, res) => {
+    const profile = require(`./profiles/${req.query.profileId || "collection_book_people0"}.json`);
+
+    // do not change any of these or you will end up breaking it
+    var ApplyProfileChanges = [];
+    var BaseRevision = profile.rvn || 0;
+    var QueryRevision = req.query.rvn || -1;
+    var StatChanged = false;
+
+    if (req.body.targetItemId) {
+        if (req.body.desiredLevel) {
+            var new_level = Number(req.body.desiredLevel);
+
+            profile.items[req.body.targetItemId].attributes.level = new_level;
+        } else {
+            profile.items[req.body.targetItemId].attributes.level += 1;
+        }
+        StatChanged = true;
+    }
+
+    if (StatChanged == true) {
+        profile.rvn += 1;
+        profile.commandRevision += 1;
+
+        ApplyProfileChanges.push({
+            "changeType": "itemAttrChanged",
+            "itemId": req.body.targetItemId,
+            "attributeName": "level",
+            "attributeValue": profile.items[req.body.targetItemId].attributes.level
+        })
+
+        fs.writeFileSync(`./profiles/${req.query.profileId || "collection_book_people0"}.json`, JSON.stringify(profile, null, 2), function(err) {
+            if (err) {
+                console.log('error:', err)
+            };
+        });
+    }
+
+    // this doesn't work properly on version v12.20 and above but whatever
+    if (QueryRevision != BaseRevision) {
+        ApplyProfileChanges = [{
+            "changeType": "fullProfileUpdate",
+            "profile": profile
+        }];
+    }
+
+    res.json({
+        "profileRevision": profile.rvn || 0,
+        "profileId": req.query.profileId || "collection_book_people0",
+        "profileChangesBaseRevision": BaseRevision,
+        "profileChanges": ApplyProfileChanges,
+        "profileCommandRevision": profile.commandRevision || 0,
+        "serverTime": new Date().toISOString(),
+        "responseVersion": 1
+    })
+    res.status(200);
+    res.end();
+});
+
 // Level item up STW 2
 express.post("/fortnite/api/game/v2/profile/*/client/UpgradeItemBulk", async (req, res) => {
     const profile = require(`./profiles/${req.query.profileId || "campaign"}.json`);
@@ -2012,6 +2072,107 @@ express.post("/fortnite/api/game/v2/profile/*/client/ConvertItem", async (req, r
     res.json({
         "profileRevision": profile.rvn || 0,
         "profileId": req.query.profileId || "campaign",
+        "profileChangesBaseRevision": BaseRevision,
+        "profileChanges": ApplyProfileChanges,
+        "notifications": Notifications,
+        "profileCommandRevision": profile.commandRevision || 0,
+        "serverTime": new Date().toISOString(),
+        "responseVersion": 1
+    })
+    res.status(200);
+    res.end();
+});
+
+// Evolve slotted item STW
+express.post("/fortnite/api/game/v2/profile/*/client/ConvertSlottedItem", async (req, res) => {
+    const profile = require(`./profiles/${req.query.profileId || "collection_book_people0"}.json`);
+
+    // do not change any of these or you will end up breaking it
+    var ApplyProfileChanges = [];
+    var Notifications = [];
+    var BaseRevision = profile.rvn || 0;
+    var QueryRevision = req.query.rvn || -1;
+    var StatChanged = false;
+
+    if (req.body.targetItemId) {
+        if (profile.items[req.body.targetItemId].templateId.toLowerCase().includes("t04")) {
+            profile.items[req.body.targetItemId].templateId = profile.items[req.body.targetItemId].templateId.replace(/t04/ig, "T05");
+        }
+
+        if (profile.items[req.body.targetItemId].templateId.toLowerCase().includes("t03")) {
+            profile.items[req.body.targetItemId].templateId = profile.items[req.body.targetItemId].templateId.replace(/t03/ig, "T04");
+        }
+
+        if (profile.items[req.body.targetItemId].templateId.toLowerCase().includes("t02")) {
+            profile.items[req.body.targetItemId].templateId = profile.items[req.body.targetItemId].templateId.replace(/t02/ig, "T03");
+        }
+
+        if (profile.items[req.body.targetItemId].templateId.toLowerCase().includes("t01")) {
+            profile.items[req.body.targetItemId].templateId = profile.items[req.body.targetItemId].templateId.replace(/t01/ig, "T02");
+        }
+
+        // Conversion Index: 0 = Ore, 1 = Crystal
+        if (req.body.conversionIndex == 1) {
+            profile.items[req.body.targetItemId].templateId = profile.items[req.body.targetItemId].templateId.replace(/ore/ig, "Crystal");
+        }
+
+        StatChanged = true;
+    }
+
+    if (StatChanged == true) {
+        profile.rvn += 1;
+        profile.commandRevision += 1;
+
+        const ID = makeid();
+
+        profile.items[ID] = profile.items[req.body.targetItemId];
+        ApplyProfileChanges.push({
+            "changeType": "itemAdded",
+            "itemId": ID,
+            "item": profile.items[ID]
+        })
+
+        delete profile.items[req.body.targetItemId]
+        ApplyProfileChanges.push({
+            "changeType": "itemRemoved",
+            "itemId": req.body.targetItemId
+        })
+
+        Notifications.push({
+            "type": "conversionResult",
+            "primary": true,
+            "itemsGranted": [
+                {
+                    "itemType": profile.items[ID].templateId,
+                    "itemGuid": ID,
+                    "itemProfile": req.query.profileId || "campaign",
+                    "attributes": {
+                        "level": profile.items[ID].attributes.level,
+                        "alterations": profile.items[ID].attributes.alterations || []
+                    },
+                    "quantity": 1
+                }
+            ]
+        })
+
+        fs.writeFileSync(`./profiles/${req.query.profileId || "collection_book_people0"}.json`, JSON.stringify(profile, null, 2), function(err) {
+            if (err) {
+                console.log('error:', err)
+            };
+        });
+    }
+
+    // this doesn't work properly on version v12.20 and above but whatever
+    if (QueryRevision != BaseRevision) {
+        ApplyProfileChanges = [{
+            "changeType": "fullProfileUpdate",
+            "profile": profile
+        }];
+    }
+
+    res.json({
+        "profileRevision": profile.rvn || 0,
+        "profileId": req.query.profileId || "collection_book_people0",
         "profileChangesBaseRevision": BaseRevision,
         "profileChanges": ApplyProfileChanges,
         "notifications": Notifications,
