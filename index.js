@@ -10,7 +10,6 @@ const friendslist = require("./responses/friendslist.json");
 const friendslist2 = require("./responses/friendslist2.json");
 const Keychain = require("./responses/keychain.json");
 const catalog = getItemShop();
-const contentpages = require("./responses/contentpages.json");
 express.use(function(req, res, next) {
     // Getting the raw body of a request for client saving
     if (req.originalUrl.includes('/fortnite/api/cloudstorage/user/')) {
@@ -1149,7 +1148,7 @@ express.get("/fortnite/api/calendar/v1/timeline", async (req, res) => {
         },
         "eventsTimeOffsetHrs": 0,
         "cacheIntervalMins": 10,
-        "currentTime": "2020-01-01T18:13:41.770Z"
+        "currentTime": new Date().toISOString()
     });
     res.status(200);
     res.end();
@@ -1164,17 +1163,7 @@ express.get("/friends/api/public/blocklist/*", async (req, res) => {
 })
 
 express.get("/content/api/pages/fortnite-game", async (req, res) => {
-    const seasonchecker = require("./seasonchecker.js");
-    const seasondata = require("./season.json");
-    seasonchecker(req, seasondata);
-	
-	contentpages.dynamicbackgrounds.backgrounds.backgrounds[0].stage = `season${seasondata.season}`;
-	contentpages.dynamicbackgrounds.backgrounds.backgrounds[1].stage = `season${seasondata.season}`;
-
-	if (seasondata.season == 10) {
-		contentpages.dynamicbackgrounds.backgrounds.backgrounds[0].stage = "seasonx";
-		contentpages.dynamicbackgrounds.backgrounds.backgrounds[1].stage = "seasonx";
-	}
+    const contentpages = getContentPages(req);
 
     res.json(contentpages)
     res.status(200);
@@ -5400,6 +5389,45 @@ function getItemShop() {
     }
 
     return catalog;
+}
+
+function getContentPages(req) {
+    const seasonchecker = require("./seasonchecker.js");
+    const seasondata = require("./season.json");
+    seasonchecker(req, seasondata);
+
+    const contentpages = JSON.parse(JSON.stringify(require("./responses/contentpages.json")));
+
+    var Language = "en";
+
+    if (req.headers["accept-language"]) {
+        if (req.headers["accept-language"].includes("-") && !req.headers["accept-language"].startsWith("es-4")) {
+            Language = req.headers["accept-language"].split("-")[0];
+        } else {
+            Language = req.headers["accept-language"];
+        }
+    }
+
+    const modes = ["saveTheWorldUnowned", "battleRoyale", "creative", "saveTheWorld"];
+
+    try {
+        modes.forEach(mode => {
+            contentpages.subgameselectdata[mode].message.title = contentpages.subgameselectdata[mode].message.title[Language]
+            contentpages.subgameselectdata[mode].message.body = contentpages.subgameselectdata[mode].message.body[Language]
+        })
+    } catch (err) {}
+
+    try {
+        contentpages.dynamicbackgrounds.backgrounds.backgrounds[0].stage = `season${seasondata.season}`;
+        contentpages.dynamicbackgrounds.backgrounds.backgrounds[1].stage = `season${seasondata.season}`;
+
+        if (seasondata.season == 10) {
+            contentpages.dynamicbackgrounds.backgrounds.backgrounds[0].stage = "seasonx";
+            contentpages.dynamicbackgrounds.backgrounds.backgrounds[1].stage = "seasonx";
+        }
+    } catch (err) {}
+
+    return contentpages;
 }
 
 function makeid() {
