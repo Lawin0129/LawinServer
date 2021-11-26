@@ -3516,25 +3516,121 @@ express.post("/fortnite/api/game/v2/profile/*/client/ClearHeroLoadout", async (r
 
 // Recycle items STW
 express.post("/fortnite/api/game/v2/profile/*/client/RecycleItemBatch", async (req, res) => {
+    const seasonchecker = require("./seasonchecker.js");
+    const seasondata = require("./season.json");
+    seasonchecker(req, seasondata);
+
     const profile = require(`./profiles/${req.query.profileId || "campaign"}.json`);
 
     // do not change any of these or you will end up breaking it
     var ApplyProfileChanges = [];
+    var MultiUpdate = [];
+    var Notifications = [];
     var BaseRevision = profile.rvn || 0;
     var QueryRevision = req.query.rvn || -1;
     var StatChanged = false;
+    var ItemExists = false;
 
     if (req.body.targetItemIds) {
         for (var i = 0; i < req.body.targetItemIds.length; i++) {
             let id = req.body.targetItemIds[i];
 
-            delete profile.items[id];
+            if (seasondata.season > 11 || req.headers["user-agent"].includes("Release-11.30") || req.headers["user-agent"].includes("Release-11.31") || req.headers["user-agent"].includes("Release-11.40") || req.headers["user-agent"].includes("Release-11.50")) {
+                var collection_book_profile = require("./profiles/collection_book_people0.json");
 
-            ApplyProfileChanges.push({
-                "changeType": "itemRemoved",
-                "itemId": id
-            })
+                if (profile.items[id].templateId.toLowerCase().startsWith("schematic:")) {
+                    collection_book_profile = require("./profiles/collection_book_schematics0.json");
+                }
+
+                var CollectionBookProfileBaseRevision = collection_book_profile.rvn || 0;
+
+                if (MultiUpdate.length == 0) {
+                    MultiUpdate.push({
+                        "profileRevision": collection_book_profile.rvn || 0,
+                        "profileId": collection_book_profile.profileId || "collection_book_people0",
+                        "profileChangesBaseRevision": CollectionBookProfileBaseRevision,
+                        "profileChanges": [],
+                        "profileCommandRevision": collection_book_profile.commandRevision || 0,
+                    })
+                }
+
+                for (var key in collection_book_profile.items) {
+                    const Template1 = profile.items[id].templateId;
+                    const Template2 = collection_book_profile.items[key].templateId;
+                    if (Template1.substring(0, Template1.length - 4).toLowerCase() == Template2.substring(0, Template2.length - 4).toLowerCase()) {
+                        if (Template1.toLowerCase().startsWith("worker:") && Template2.toLowerCase().startsWith("worker:")) {
+                            if (profile.items[id].attributes.hasOwnProperty("personality") && collection_book_profile.items[key].attributes.hasOwnProperty("personality")) {
+                                const Personality1 = profile.items[id].attributes.personality;
+                                const Personality2 = collection_book_profile.items[key].attributes.personality;
+
+                                if (Personality1.toLowerCase() == Personality2.toLowerCase()) {
+                                    if (profile.items[id].attributes.level > collection_book_profile.items[key].attributes.level) {
+                                        delete collection_book_profile.items[key];
+
+                                        MultiUpdate[0].profileChanges.push({
+                                            "changeType": "itemRemoved",
+                                            "itemId": key
+                                        })
+
+                                        ItemExists = false;
+                                    } else {
+                                        ItemExists = true;
+                                    }
+                                }
+                            }
+                        } else {
+                            if (profile.items[id].attributes.level > collection_book_profile.items[key].attributes.level) {
+                                delete collection_book_profile.items[key];
+
+                                MultiUpdate[0].profileChanges.push({
+                                    "changeType": "itemRemoved",
+                                    "itemId": key
+                                })
+
+                                ItemExists = false;
+                            } else {
+                                ItemExists = true;
+                            }
+                        }
+                    }
+                }
+
+                if (ItemExists == false) {
+                    collection_book_profile.items[id] = profile.items[id];
+                    MultiUpdate[0].profileChanges.push({
+                        "changeType": "itemAdded",
+                        "itemId": id,
+                        "item": collection_book_profile.items[id]
+                    })
+
+                    Notifications.push({
+                        "type": "slotItemResult",
+                        "primary": true,
+                        "slottedItemId": id
+                    })
+                }
+
+                delete profile.items[id];
+                ApplyProfileChanges.push({
+                    "changeType": "itemRemoved",
+                    "itemId": id
+                })
+
+                collection_book_profile.rvn += 1;
+                collection_book_profile.commandRevision += 1;
+
+                MultiUpdate[0].profileRevision = collection_book_profile.rvn;
+                MultiUpdate[0].profileCommandRevision = collection_book_profile.commandRevision;
+            } else {
+                delete profile.items[id];
+
+                ApplyProfileChanges.push({
+                    "changeType": "itemRemoved",
+                    "itemId": id
+                })
+            }
         }
+
         StatChanged = true;
     }
 
@@ -3562,8 +3658,10 @@ express.post("/fortnite/api/game/v2/profile/*/client/RecycleItemBatch", async (r
         "profileId": req.query.profileId || "campaign",
         "profileChangesBaseRevision": BaseRevision,
         "profileChanges": ApplyProfileChanges,
+        "notifications": Notifications,
         "profileCommandRevision": profile.commandRevision || 0,
         "serverTime": new Date().toISOString(),
+        "multiUpdate": MultiUpdate,
         "responseVersion": 1
     })
     res.status(200);
