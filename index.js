@@ -1055,11 +1055,6 @@ express.get("/fortnite/api/calendar/v1/timeline", async (req, res) => {
 	if (seasondata.season == 9) {
 		activeEvents.push(
 		{
-			"eventType": "EventFlag.Season9",
-			"activeUntil": "9999-01-01T00:00:00.000Z",
-			"activeSince": "2020-01-01T00:00:00.000Z"
-		},
-		{
 			"eventType": "EventFlag.Season9.Phase1",
 			"activeUntil": "9999-01-01T00:00:00.000Z",
 			"activeSince": "2020-01-01T00:00:00.000Z"
@@ -2237,7 +2232,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/ConvertSlottedItem", async 
                 {
                     "itemType": profile.items[ID].templateId,
                     "itemGuid": ID,
-                    "itemProfile": req.query.profileId || "campaign",
+                    "itemProfile": req.query.profileId || "collection_book_people0",
                     "attributes": {
                         "level": profile.items[ID].attributes.level,
                         "alterations": profile.items[ID].attributes.alterations || []
@@ -2265,6 +2260,102 @@ express.post("/fortnite/api/game/v2/profile/*/client/ConvertSlottedItem", async 
     res.json({
         "profileRevision": profile.rvn || 0,
         "profileId": req.query.profileId || "collection_book_people0",
+        "profileChangesBaseRevision": BaseRevision,
+        "profileChanges": ApplyProfileChanges,
+        "notifications": Notifications,
+        "profileCommandRevision": profile.commandRevision || 0,
+        "serverTime": new Date().toISOString(),
+        "responseVersion": 1
+    })
+    res.status(200);
+    res.end();
+});
+
+// Upgrade item rarity STW
+express.post("/fortnite/api/game/v2/profile/*/client/UpgradeItemRarity", async (req, res) => {
+    const profile = require(`./profiles/${req.query.profileId || "campaign"}.json`);
+
+    // do not change any of these or you will end up breaking it
+    var ApplyProfileChanges = [];
+    var Notifications = [];
+    var BaseRevision = profile.rvn || 0;
+    var QueryRevision = req.query.rvn || -1;
+    var StatChanged = false;
+
+    if (req.body.targetItemId) {
+        if (profile.items[req.body.targetItemId].templateId.toLowerCase().includes("_vr_")) {
+            profile.items[req.body.targetItemId].templateId = profile.items[req.body.targetItemId].templateId.replace(/_vr_/ig, "_SR_");
+        }
+
+        if (profile.items[req.body.targetItemId].templateId.toLowerCase().includes("_r_")) {
+            profile.items[req.body.targetItemId].templateId = profile.items[req.body.targetItemId].templateId.replace(/_r_/ig, "_VR_");
+        }
+
+        if (profile.items[req.body.targetItemId].templateId.toLowerCase().includes("_uc_")) {
+            profile.items[req.body.targetItemId].templateId = profile.items[req.body.targetItemId].templateId.replace(/_uc_/ig, "_R_");
+        }
+
+        if (profile.items[req.body.targetItemId].templateId.toLowerCase().includes("_c_")) {
+            profile.items[req.body.targetItemId].templateId = profile.items[req.body.targetItemId].templateId.replace(/_c_/ig, "_UC_");
+        }
+
+        StatChanged = true;
+    }
+
+    if (StatChanged == true) {
+        profile.rvn += 1;
+        profile.commandRevision += 1;
+
+        const ID = makeid();
+
+        profile.items[ID] = profile.items[req.body.targetItemId];
+        ApplyProfileChanges.push({
+            "changeType": "itemAdded",
+            "itemId": ID,
+            "item": profile.items[ID]
+        })
+
+        delete profile.items[req.body.targetItemId]
+        ApplyProfileChanges.push({
+            "changeType": "itemRemoved",
+            "itemId": req.body.targetItemId
+        })
+
+        Notifications.push([{
+            "type": "upgradeItemRarityNotification",
+            "primary": true,
+            "itemsGranted": [
+                {
+                    "itemType": profile.items[ID].templateId,
+                    "itemGuid": ID,
+                    "itemProfile": req.query.profileId || "campaign",
+                    "attributes": {
+                        "level": profile.items[ID].attributes.level,
+                        "alterations": profile.items[ID].attributes.alterations || []
+                    },
+                    "quantity": 1
+                }
+            ]
+        }])
+
+        fs.writeFileSync(`./profiles/${req.query.profileId || "campaign"}.json`, JSON.stringify(profile, null, 2), function(err) {
+            if (err) {
+                console.log('error:', err)
+            };
+        });
+    }
+
+    // this doesn't work properly on version v12.20 and above but whatever
+    if (QueryRevision != BaseRevision) {
+        ApplyProfileChanges = [{
+            "changeType": "fullProfileUpdate",
+            "profile": profile
+        }];
+    }
+
+    res.json({
+        "profileRevision": profile.rvn || 0,
+        "profileId": req.query.profileId || "campaign",
         "profileChangesBaseRevision": BaseRevision,
         "profileChanges": ApplyProfileChanges,
         "notifications": Notifications,
@@ -3577,13 +3668,31 @@ express.post("/fortnite/api/game/v2/profile/*/client/SlotItemInCollectionBook", 
         })
 
         for (var key in collection_book_profile.items) {
-            if (profile.items[req.body.itemId].templateId.toLowerCase() == collection_book_profile.items[key].templateId.toLowerCase()) {
-                delete collection_book_profile.items[key];
+            const Template1 = profile.items[req.body.itemId].templateId;
+            const Template2 = collection_book_profile.items[key].templateId;
+            if (Template1.substring(0, Template1.length-4).toLowerCase() == Template2.substring(0, Template2.length-4).toLowerCase()) {
+                if (Template1.toLowerCase().startsWith("worker:") && Template2.toLowerCase().startsWith("worker:")) {
+                    if (profile.items[req.body.itemId].attributes.hasOwnProperty("personality") && collection_book_profile.items[key].attributes.hasOwnProperty("personality")) {
+                        const Personality1 = profile.items[req.body.itemId].attributes.personality;
+                        const Personality2 = collection_book_profile.items[key].attributes.personality;
 
-                ApplyProfileChanges.push({
-                    "changeType": "itemRemoved",
-                    "itemId": key
-                })
+                        if (Personality1.toLowerCase() == Personality2.toLowerCase()) {
+                            delete collection_book_profile.items[key];
+
+                            MultiUpdate[0].profileChanges.push({
+                                "changeType": "itemRemoved",
+                                "itemId": key
+                            })
+                        }
+                    }
+                } else {
+                    delete collection_book_profile.items[key];
+
+                    MultiUpdate[0].profileChanges.push({
+                        "changeType": "itemRemoved",
+                        "itemId": key
+                    })
+                }
             }
         }
 
