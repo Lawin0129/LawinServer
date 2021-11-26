@@ -3621,6 +3621,12 @@ express.post("/fortnite/api/game/v2/profile/*/client/RecycleItemBatch", async (r
 
                 MultiUpdate[0].profileRevision = collection_book_profile.rvn;
                 MultiUpdate[0].profileCommandRevision = collection_book_profile.commandRevision;
+
+                fs.writeFileSync(`./profiles/${collection_book_profile.profileId || "collection_book_people0"}.json`, JSON.stringify(collection_book_profile, null, 2), function(err) {
+                    if (err) {
+                        console.log('error:', err)
+                    };
+                });
             } else {
                 delete profile.items[id];
 
