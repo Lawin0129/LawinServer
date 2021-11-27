@@ -36183,6 +36183,17 @@
         "favorite": false
       },
       "quantity": 8339478
+    },
+    "xp-boost": {
+      "templateId": "Token:xpboost",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": false,
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 0
     }
   },
   "stats": {
