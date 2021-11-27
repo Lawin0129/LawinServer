@@ -36161,6 +36161,28 @@
         "favorite": false
       },
       "quantity": 1
+    },
+    "0e0ba06b-e2dc-4000-a105-d35d7573b49d": {
+      "templateId": "ConsumableAccountItem:smallxpboost_gift",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 9579248
+    },
+    "9f34b734-3851-430f-8b24-2a3c6871ca54": {
+      "templateId": "ConsumableAccountItem:smallxpboost",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 8339478
     }
   },
   "stats": {
