@@ -961,6 +961,30 @@ express.get("/fortnite/api/calendar/v1/timeline", async (req, res) => {
 		"activeSince": "2020-01-01T00:00:00.000Z"
 	}];
 
+	if (seasondata.season == 3) {
+		activeEvents.push(
+		{
+			"eventType": "EventFlag.Spring2018Phase1",
+			"activeUntil": "9999-01-01T00:00:00.000Z",
+			"activeSince": "2020-01-01T00:00:00.000Z"
+		},
+		{
+			"eventType": "EventFlag.Spring2018Phase2",
+			"activeUntil": "9999-01-01T00:00:00.000Z",
+			"activeSince": "2020-01-01T00:00:00.000Z"
+		},
+		{
+			"eventType": "EventFlag.Spring2018Phase3",
+			"activeUntil": "9999-01-01T00:00:00.000Z",
+			"activeSince": "2020-01-01T00:00:00.000Z"
+		},
+		{
+			"eventType": "EventFlag.Spring2018Phase4",
+			"activeUntil": "9999-01-01T00:00:00.000Z",
+			"activeSince": "2020-01-01T00:00:00.000Z"
+		})
+	}
+
 	if (seasondata.season == 4) {
 		activeEvents.push(
 		{
@@ -1003,6 +1027,15 @@ express.get("/fortnite/api/calendar/v1/timeline", async (req, res) => {
 			"activeSince": "2020-01-01T00:00:00.000Z"
 		})
 	}
+	
+	if (req.headers["user-agent"].includes("Release-5.10")) {
+		activeEvents.push(
+		{
+			"eventType": "EventFlag.BirthdayBattleBus",
+			"activeUntil": "9999-01-01T00:00:00.000Z",
+			"activeSince": "2020-01-01T00:00:00.000Z"
+		})
+	}
 
 	if (seasondata.season == 6) {
 		activeEvents.push(
@@ -1018,6 +1051,20 @@ express.get("/fortnite/api/calendar/v1/timeline", async (req, res) => {
 		},
 		{
 			"eventType": "EventFlag.FortnitemaresPhase2",
+			"activeUntil": "9999-01-01T00:00:00.000Z",
+			"activeSince": "2020-01-01T00:00:00.000Z"
+		})
+	}
+	
+	if (req.headers["user-agent"].includes("Release-6.20") || req.headers["user-agent"].includes("Release-6.21")) {
+		activeEvents.push(
+		{
+			"eventType": "EventFlag.LobbySeason6Halloween",
+			"activeUntil": "9999-01-01T00:00:00.000Z",
+			"activeSince": "2020-01-01T00:00:00.000Z"
+		},
+		{
+			"eventType": "EventFlag.HalloweenBattleBus",
 			"activeUntil": "9999-01-01T00:00:00.000Z",
 			"activeSince": "2020-01-01T00:00:00.000Z"
 		})
@@ -1081,7 +1128,7 @@ express.get("/fortnite/api/calendar/v1/timeline", async (req, res) => {
 	}
 
 	// Credits to Silas for three of these event flags and credits to uni for testing on 11.31
-    	if (req.headers["user-agent"].includes("Release-11.31")) {
+    	if (req.headers["user-agent"].includes("Release-11.31") || req.headers["user-agent"].includes("Release-11.40")) {
         	activeEvents.push(
         	{
             		"eventType": "EventFlag.Winterfest.Tree",
@@ -1094,12 +1141,27 @@ express.get("/fortnite/api/calendar/v1/timeline", async (req, res) => {
             		"activeSince": "2020-01-01T00:00:00.000Z"
         	},
         	{
-            		"eventType": "EventFlag.Phoenix.Winterfest",
+            		"eventType": "EventFlag.LTE_WinterFest2019",
+            		"activeUntil": "9999-01-01T00:00:00.000Z",
+            		"activeSince": "2020-01-01T00:00:00.000Z"
+        	},
+        	{
+            		"eventType": "EventFlag.HolidayDeco",
             		"activeUntil": "9999-01-01T00:00:00.000Z",
             		"activeSince": "2020-01-01T00:00:00.000Z"
         	},
         	{
             		"eventType": "EventFlag.Season11.Frostnite",
+            		"activeUntil": "9999-01-01T00:00:00.000Z",
+            		"activeSince": "2020-01-01T00:00:00.000Z"
+        	},
+        	{
+            		"eventType": "EventFlag.Season11.WinterFest.Quests.Phase1",
+            		"activeUntil": "9999-01-01T00:00:00.000Z",
+            		"activeSince": "2020-01-01T00:00:00.000Z"
+        	},
+        	{
+            		"eventType": "EventFlag.Season11.WinterFest.Quests.Phase2",
             		"activeUntil": "9999-01-01T00:00:00.000Z",
             		"activeSince": "2020-01-01T00:00:00.000Z"
         	})
@@ -5940,6 +6002,11 @@ function getContentPages(req) {
         if (seasondata.season == 10) {
             contentpages.dynamicbackgrounds.backgrounds.backgrounds[0].stage = "seasonx";
             contentpages.dynamicbackgrounds.backgrounds.backgrounds[1].stage = "seasonx";
+        }
+
+        if (req.headers["user-agent"].includes("Release-11.31") || req.headers["user-agent"].includes("Release-11.40")) {
+            contentpages.dynamicbackgrounds.backgrounds.backgrounds[0].stage = "Winter19";
+            contentpages.dynamicbackgrounds.backgrounds.backgrounds[1].stage = "Winter19";
         }
     } catch (err) {}
 
