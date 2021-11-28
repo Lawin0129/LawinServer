@@ -1080,6 +1080,31 @@ express.get("/fortnite/api/calendar/v1/timeline", async (req, res) => {
 		})
 	}
 
+	// Credits to Silas for three of these event flags and credits to uni for testing on 11.31
+    	if (req.headers["user-agent"].includes("Release-11.31")) {
+        	activeEvents.push(
+        	{
+            		"eventType": "EventFlag.Winterfest.Tree",
+            		"activeUntil": "9999-01-01T00:00:00.000Z",
+            		"activeSince": "2020-01-01T00:00:00.000Z"
+        	},
+        	{
+            		"eventType": "EventFlag.LTE_WinterFest",
+            		"activeUntil": "9999-01-01T00:00:00.000Z",
+            		"activeSince": "2020-01-01T00:00:00.000Z"
+        	},
+        	{
+            		"eventType": "EventFlag.Phoenix.Winterfest",
+            		"activeUntil": "9999-01-01T00:00:00.000Z",
+            		"activeSince": "2020-01-01T00:00:00.000Z"
+        	},
+        	{
+            		"eventType": "EventFlag.Season11.Frostnite",
+            		"activeUntil": "9999-01-01T00:00:00.000Z",
+            		"activeSince": "2020-01-01T00:00:00.000Z"
+        	})
+    	}
+
     res.json({
         "channels": {
             "client-matchmaking": {
