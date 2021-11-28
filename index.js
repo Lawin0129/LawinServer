@@ -1128,7 +1128,7 @@ express.get("/fortnite/api/calendar/v1/timeline", async (req, res) => {
 	}
 
 	// Credits to Silas for three of these event flags and credits to uni for testing on 11.31
-    	if (req.headers["user-agent"].includes("Release-11.31")) {
+    	if (req.headers["user-agent"].includes("Release-11.31") || req.headers["user-agent"].includes("Release-11.40")) {
         	activeEvents.push(
         	{
             		"eventType": "EventFlag.Winterfest.Tree",
