@@ -1026,6 +1026,14 @@ express.get("/fortnite/api/calendar/v1/timeline", async (req, res) => {
 			"activeUntil": "9999-01-01T00:00:00.000Z",
 			"activeSince": "2020-01-01T00:00:00.000Z"
 		})
+        if (req.headers["user-agent"].includes("Release-5.10")) {
+        	activeEvents.push(
+            {
+                "eventType": "EventFlag.BirthdayBattleBus",
+                "activeUntil": "9999-01-01T00:00:00.000Z",
+                "activeSince": "2020-01-01T00:00:00.000Z"
+            })
+        }
 	}
 
 	if (seasondata.season == 6) {
@@ -1045,6 +1053,19 @@ express.get("/fortnite/api/calendar/v1/timeline", async (req, res) => {
 			"activeUntil": "9999-01-01T00:00:00.000Z",
 			"activeSince": "2020-01-01T00:00:00.000Z"
 		})
+        if (req.headers["user-agent"].includes("Release-6.20") || req.headers["user-agent"].includes("Release-6.21")) {
+        	activeEvents.push(
+        	{
+            	"eventType": "EventFlag.LobbySeason6Halloween",
+            	"activeUntil": "9999-01-01T00:00:00.000Z",
+            	"activeSince": "2020-01-01T00:00:00.000Z"
+        	},
+            {
+                "eventType": "EventFlag.HalloweenBattleBus",
+                "activeUntil": "9999-01-01T00:00:00.000Z",
+                "activeSince": "2020-01-01T00:00:00.000Z"
+            })
+        }
 	}
 
 	if (seasondata.season == 7) {
