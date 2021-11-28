@@ -1279,7 +1279,22 @@ express.get("/fortnite/api/storefront/v2/keychain", async (req, res) => {
 })
 
 express.get("/account/api/oauth/verify", async (req, res) => {
-    res.json({})
+    res.json({
+        "token": "lawinstokenlol",
+        "session_id": "3c3662bcb661d6de679c636744c66b62",
+        "token_type": "bearer",
+        "client_id": "lawinsclientidlol",
+        "internal_client": true,
+        "client_service": "fortnite",
+        "account_id": "LawinServer",
+        "expires_in": 28800,
+        "expires_at": "9999-12-02T01:12:01.100Z",
+        "auth_method": "exchange_code",
+        "display_name": "LawinServer",
+        "app": "fortnite",
+        "in_app_id": "LawinServer",
+        "device_id": "lawinsdeviceidlol"
+    })
     res.status(200);
     res.end();
 })
