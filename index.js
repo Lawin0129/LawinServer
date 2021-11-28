@@ -960,7 +960,7 @@ express.get("/fortnite/api/calendar/v1/timeline", async (req, res) => {
 		"activeUntil": "9999-01-01T00:00:00.000Z",
 		"activeSince": "2020-01-01T00:00:00.000Z"
 	}];
-	
+
 	if (seasondata.season == 3) {
 		activeEvents.push(
 		{
@@ -1026,6 +1026,8 @@ express.get("/fortnite/api/calendar/v1/timeline", async (req, res) => {
 			"activeUntil": "9999-01-01T00:00:00.000Z",
 			"activeSince": "2020-01-01T00:00:00.000Z"
 		})
+	}
+	
 	if (req.headers["user-agent"].includes("Release-5.10")) {
 		activeEvents.push(
 		{
@@ -1033,7 +1035,6 @@ express.get("/fortnite/api/calendar/v1/timeline", async (req, res) => {
 			"activeUntil": "9999-01-01T00:00:00.000Z",
 			"activeSince": "2020-01-01T00:00:00.000Z"
 		})
-		}
 	}
 
 	if (seasondata.season == 6) {
@@ -1053,6 +1054,8 @@ express.get("/fortnite/api/calendar/v1/timeline", async (req, res) => {
 			"activeUntil": "9999-01-01T00:00:00.000Z",
 			"activeSince": "2020-01-01T00:00:00.000Z"
 		})
+	}
+	
 	if (req.headers["user-agent"].includes("Release-6.20") || req.headers["user-agent"].includes("Release-6.21")) {
 		activeEvents.push(
 		{
@@ -1065,7 +1068,6 @@ express.get("/fortnite/api/calendar/v1/timeline", async (req, res) => {
 			"activeUntil": "9999-01-01T00:00:00.000Z",
 			"activeSince": "2020-01-01T00:00:00.000Z"
 		})
-		}
 	}
 
 	if (seasondata.season == 7) {
@@ -6001,7 +6003,8 @@ function getContentPages(req) {
             contentpages.dynamicbackgrounds.backgrounds.backgrounds[0].stage = "seasonx";
             contentpages.dynamicbackgrounds.backgrounds.backgrounds[1].stage = "seasonx";
         }
-        if (req.headers["user-agent"].includes("Release-11.31")) {
+
+        if (req.headers["user-agent"].includes("Release-11.31") || req.headers["user-agent"].includes("Release-11.40")) {
             contentpages.dynamicbackgrounds.backgrounds.backgrounds[0].stage = "Winter19";
             contentpages.dynamicbackgrounds.backgrounds.backgrounds[1].stage = "Winter19";
         }
