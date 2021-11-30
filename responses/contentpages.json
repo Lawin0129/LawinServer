@@ -640,16 +640,14 @@
             "_type": "FortPlaylistInfo"
           },
           {
-            "image": "https://yt3.ggpht.com/a/AGF-l79CQOPeiM3Ve_skW5DrQ2B_uFzEJ54pFBdvoQ=s900-c-k-c0xffffffff-no-rj-mo",
+            "image": "",
             "playlist_name": "Playlist_PlaygroundV2",
-            "_type": "FortPlaylistInfo",
-            "description": "sicko mode"
+            "_type": "FortPlaylistInfo"
           },
           {
-            "image": "https://yt3.ggpht.com/a/AGF-l79CQOPeiM3Ve_skW5DrQ2B_uFzEJ54pFBdvoQ=s900-c-k-c0xffffffff-no-rj-mo",
+            "image": "",
             "playlist_name": "Playlist_Playground",
-            "_type": "FortPlaylistInfo",
-            "description": "sicko mode"
+            "_type": "FortPlaylistInfo"
           },
           {
             "image": "https://cdn2.unrealengine.com/Fortnite/fortnite-game/playlistinformation/08BR_LTM_FloorIsLava_ModeTile-1024x512-f1af4cd98c7ff0ce4058f4e3b65a853641d0a35e.jpg",
@@ -1046,9 +1044,8 @@
             "_type": "FortPlaylistInfo"
           },
           {
-            "image": "https://yt3.ggpht.com/a/AGF-l79CQOPeiM3Ve_skW5DrQ2B_uFzEJ54pFBdvoQ=s900-c-k-c0xffffffff-no-rj-mo",
+            "image": "",
             "playlist_name": "Playlist_Creative_PlayOnly",
-            "violator": "",
             "special_border": "None",
             "_type": "FortPlaylistInfo",
             "display_subname": "-"
@@ -1145,12 +1142,12 @@
             "_type": "FortPlaylistInfo"
           },
           {
-            "image": "https://yt3.ggpht.com/a/AGF-l79CQOPeiM3Ve_skW5DrQ2B_uFzEJ54pFBdvoQ=s900-c-k-c0xffffffff-no-rj-mo",
+            "image": "",
             "playlist_name": "Playlist_50v50",
             "_type": "FortPlaylistInfo"
           },
           {
-            "image": "https://yt3.ggpht.com/a/AGF-l79CQOPeiM3Ve_skW5DrQ2B_uFzEJ54pFBdvoQ=s900-c-k-c0xffffffff-no-rj-mo",
+            "image": "",
             "playlist_name": "Playlist_Carmine",
             "_type": "FortPlaylistInfo"
           },
@@ -1158,21 +1155,19 @@
             "image": "",
             "playlist_name": "Playlist_DefaultSolo",
             "special_border": "None",
-            "violator": "h",
             "_type": "FortPlaylistInfo"
           },
           {
-            "image": "https://yt3.ggpht.com/a/AGF-l79CQOPeiM3Ve_skW5DrQ2B_uFzEJ54pFBdvoQ=s900-c-k-c0xffffffff-no-rj-mo",
+            "image": "",
             "playlist_name": "Playlist_DefaultDuo",
             "special_border": "None",
             "violator": "cool",
             "_type": "FortPlaylistInfo"
           },
           {
-            "image": "https://yt3.ggpht.com/a/AGF-l79CQOPeiM3Ve_skW5DrQ2B_uFzEJ54pFBdvoQ=s900-c-k-c0xffffffff-no-rj-mo",
+            "image": "",
             "playlist_name": "Playlist_DefaultSquad",
             "special_border": "None",
-            "violator": "ok, boomer",
             "_type": "FortPlaylistInfo"
           }
         ]
