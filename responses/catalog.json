@@ -1,19 +1,19 @@
 {
-   "refreshIntervalHrs":24,
-   "dailyPurchaseHrs":24,
-   "expiration":"9999-12-31T00:00:00.000Z",
-   "storefronts":[
-    {
-      "name": "BRDailyStorefront",
-      "catalogEntries": []
-    },
-    {
-      "name": "BRWeeklyStorefront",
-      "catalogEntries": []
-    },
+   "refreshIntervalHrs": 24,
+   "dailyPurchaseHrs": 24,
+   "expiration": "9999-12-31T00:00:00.000Z",
+   "storefronts": [
       {
-         "name":"CardPackStore",
-         "catalogEntries":[
+         "name": "BRDailyStorefront",
+         "catalogEntries": []
+      },
+      {
+         "name": "BRWeeklyStorefront",
+         "catalogEntries": []
+      },
+      {
+         "name": "CardPackStore",
+         "catalogEntries": [
             {
                "offerId":"B9B0CE758A5049F898773C1A47A69ED4",
                "devName":"Always.UpgradePack.03",
@@ -299,8 +299,8 @@
          ]
       },
       {
-         "name":"CardPackStorePreroll",
-         "catalogEntries":[
+         "name": "CardPackStorePreroll",
+         "catalogEntries": [
             {
                "offerId":"D2E08EFA731D437B85B7340EB51A5E1D",
                "devName":"Always.UpgradePack.01",
@@ -488,8 +488,8 @@
          ]
       },
       {
-         "name":"CardPackStoreGameplay",
-         "catalogEntries":[
+         "name": "CardPackStoreGameplay",
+         "catalogEntries": [
             {
                "offerId":"1F6B613D4B7BAD47D8A93CAEED2C4996",
                "devName":"Mini Llama Manual Tutorial - high SharedDisplayPriority",

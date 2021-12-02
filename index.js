@@ -8,7 +8,8 @@ const config = require("./config.json");
 const worldstw = require("./responses/worldstw.json");
 const friendslist = require("./responses/friendslist.json");
 const friendslist2 = require("./responses/friendslist2.json");
-const Keychain = require("./responses/keychain.json");
+const keychain = require("./responses/keychain.json");
+const privacy = require("./responses/privacy.json");
 const catalog = getItemShop();
 express.use(function(req, res, next) {
     // Getting the raw body of a request for client saving
@@ -142,12 +143,6 @@ express.get("/fortnite/api/version", async (req, res) => {
     res.end();
 })
 
-express.post("/fortnite/api/feedback/Bug", async (req, res) => {
-    res.json({});
-    res.status(200);
-    res.end();
-})
-
 express.get("/launcher/api/public/distributionpoints/", async (req, res) => {
     res.json({
         "distributions": [
@@ -244,11 +239,68 @@ express.get("/fortnite/api/matchmaking/session/findPlayer/*", async (req, res) =
     res.end();
 })
 
-express.get("/fortnite/api/statsv2/account/*", async (req, res) => {
-    res.json([])
+express.get("/fortnite/api/game/v2/privacy/account/:accountId", async (req, res) => {
+    privacy.accountId = req.params.accountId;
+
+    res.json(privacy);
     res.status(200);
     res.end();
-})
+});
+
+express.post("/fortnite/api/game/v2/privacy/account/:accountId", async (req, res) => {
+    privacy.accountId = req.params.accountId;
+    privacy.optOutOfPublicLeaderboards = req.body.optOutOfPublicLeaderboards;
+
+    fs.writeFileSync("./responses/privacy.json", JSON.stringify(privacy, null, 2));
+
+    res.json(privacy);
+    res.status(200);
+    res.end();
+});
+
+express.get("/fortnite/api/statsv2/account/:accountId", async (req, res) => {
+    res.json({
+        "startTime": 0,
+        "endTime": 0,
+        "stats": {},
+        "accountId": req.params.accountId
+    });
+    res.status(200);
+    res.end();
+});
+
+express.get("/statsproxy/api/statsv2/account/:accountId", async (req, res) => {
+    res.json({
+        "startTime": 0,
+        "endTime": 0,
+        "stats": {},
+        "accountId": req.params.accountId
+    });
+    res.status(200);
+    res.end();
+});
+
+express.post("/fortnite/api/feedback/*", async (req, res) => {
+    res.status(200);
+    res.end();
+});
+
+express.post("/fortnite/api/statsv2/query", async (req, res) => {
+    res.json([]);
+    res.status(200);
+    res.end();
+});
+
+express.post("/statsproxy/api/statsv2/query", async (req, res) => {
+    res.json([]);
+    res.status(200);
+    res.end();
+});
+
+express.post("/fortnite/api/game/v2/events/v2/setSubgroup/*", async (req, res) => {
+    res.status(204);
+    res.end();
+});
 
 express.get("/fortnite/api/game/v2/enabled_features", async (req, res) => {
     res.json([])
@@ -514,12 +566,6 @@ express.get("/account/api/public/account", async (req, res) => {
             }
         ]
     )
-    res.status(200);
-    res.end();
-})
-
-express.get("/fortnite/api/game/v2/privacy/account/*", async (req, res) => {
-    res.json({})
     res.status(200);
     res.end();
 })
@@ -1258,7 +1304,7 @@ express.get("/friends/api/public/blocklist/*", async (req, res) => {
     res.end();
 })
 
-express.get("/content/api/pages/fortnite-game", async (req, res) => {
+express.get("/content/api/pages/*", async (req, res) => {
     const contentpages = getContentPages(req);
 
     res.json(contentpages)
@@ -1273,7 +1319,7 @@ express.get("/fortnite/api/game/v2/world/info", async (req, res) => {
 })
 
 express.get("/fortnite/api/storefront/v2/keychain", async (req, res) => {
-    res.json(Keychain)
+    res.json(keychain)
     res.status(200);
     res.end();
 })
