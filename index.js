@@ -5598,7 +5598,7 @@ function getContentPages(req) {
             contentpages.dynamicbackgrounds.backgrounds.backgrounds[1].stage = "Winter19";
         }
 
-        if (req.headers["user-agent"].includes("Release-19.01")) {
+        if (seasondata.build == 19.01) {
             contentpages.dynamicbackgrounds.backgrounds.backgrounds[0].stage = "winter2021";
             contentpages.dynamicbackgrounds.backgrounds.backgrounds[0].backgroundimage = "https://cdn2.unrealengine.com/t-bp19-lobby-xmas-2048x1024-f85d2684b4af.png";
             contentpages.specialoffervideo.bSpecialOfferEnabled = "true";
