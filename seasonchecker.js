@@ -1,44 +1,52 @@
 function CheckLobbyAndSeason(req, seasondata) {
-    // Works perfectly fine for any version
-    if (req.headers["user-agent"]) 
+    if (req.headers["user-agent"])
     {
-        var season = req.headers["user-agent"].slice(28, 30)
-        var seasonInt = Number(season)
+        var CL = "";
 
-        if (!Number.isNaN(seasonInt))
-        {
-            seasondata.season = seasonInt;
-            seasondata.lobby = `LobbySeason${seasonInt}`;
+        if (req.headers["user-agent"]) {
+            try {
+                var BuildID = req.headers["user-agent"].split("-")[3].split(",")[0]
+                if (!Number.isNaN(Number(BuildID))) {
+                    CL = BuildID;
+                }
+
+                if (Number.isNaN(Number(BuildID))) {
+                    var BuildID = req.headers["user-agent"].split("-")[3].split(" ")[0]
+                    if (!Number.isNaN(Number(BuildID))) {
+                        CL = BuildID;
+                    }
+                }
+            } catch (err) {
+                try {
+                    var BuildID = req.headers["user-agent"].split("-")[1].split("+")[0]
+                    if (!Number.isNaN(Number(BuildID))) {
+                        CL = BuildID;
+                    }
+                } catch (err) {}
+            }
         }
 
-        if (Number.isNaN(seasonInt))
-        {
-            var season = req.headers["user-agent"].slice(32, 34)
-            var seasonInt = Number(season)
+        try {
+            var Build = req.headers["user-agent"].split("Release-")[1].split("-")[0];
 
-            if (!Number.isNaN(seasonInt))
-            {
-                seasondata.season = seasonInt;
-                seasondata.lobby = `LobbySeason${seasonInt}`;
+            if (Build.split(".").length == 3) {
+                Value = Build.split(".");
+                Build = Value[0] + "." + Value[1] + Value[2];
             }
 
-            if (Number.isNaN(seasonInt))
-            {
-                var season = req.headers["user-agent"].slice(52, 54)
-                var seasonInt = Number(season)
+            seasondata.season = Number(Build.split(".")[0]);
+            seasondata.build = Number(Build);
+            seasondata.CL = CL;
+            seasondata.lobby = `LobbySeason${seasondata.season}`;
 
-                if (!Number.isNaN(seasonInt))
-                {
-                    seasondata.season = seasonInt;
-                    seasondata.lobby = `LobbySeason${seasonInt}`;
-                }
-
-                if (Number.isNaN(seasonInt))
-                {
-                    seasondata.season = 2;
-                    seasondata.lobby = "LobbyWinterDecor";
-                }
+            if (Number.isNaN(seasondata.season)) {
+                throw new Error();
             }
+        } catch (err) {
+            seasondata.season = 2;
+            seasondata.build = 2.0;
+            seasondata.CL = CL;
+            seasondata.lobby = "LobbyWinterDecor";
         }
     }
 }
