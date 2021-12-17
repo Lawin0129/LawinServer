@@ -5802,6 +5802,23 @@
       "lastModified": "2019-06-20T22:06:24.590Z",
       "_locale": "en-US"
     },
+    "specialoffervideo": {
+      "_activeDate": "2021-08-14T23:58:00.000Z",
+      "_locale": "pl",
+      "_noIndex": false,
+      "_title": "specialoffervideo",
+      "bSpecialOfferEnabled": false,
+      "jcr:baseVersion": "a7ca237317f1e78e4627c4-c68f-4a12-9480-066c92dd14e5",
+      "jcr:isCheckedOut": true,
+      "lastModified": "2021-07-12T16:08:40.485Z",
+      "specialoffervideo": {
+        "_type": "SpecialOfferVideoConfig",
+        "bCheckAutoPlay": true,
+        "bStreamingEnabled": true,
+        "videoString": "",
+        "videoUID": ""
+      }
+    },
     "subgameinfo": {
       "battleroyale": {
         "image": "",

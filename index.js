@@ -5,7 +5,6 @@ const moment = require("moment");
 const crypto = require("crypto");
 const path = require("path");
 const config = require("./config.json");
-const worldstw = require("./responses/worldstw.json");
 const friendslist = require("./responses/friendslist.json");
 const friendslist2 = require("./responses/friendslist2.json");
 const keychain = require("./responses/keychain.json");
@@ -1152,6 +1151,7 @@ express.get("/content/api/pages/*", async (req, res) => {
 })
 
 express.get("/fortnite/api/game/v2/world/info", async (req, res) => {
+    const worldstw = getTheater(req);
     res.json(worldstw)
 })
 
@@ -5540,6 +5540,24 @@ function getItemShop() {
     return catalog;
 }
 
+function getTheater(req) {
+    const seasonchecker = require("./seasonchecker.js");
+    const seasondata = require("./season.json");
+    seasonchecker(req, seasondata);
+
+    var theater = JSON.stringify(require("./responses/worldstw.json"));
+
+    try {
+        if (seasondata.season >= 16 || seasondata.build == 15.30 || seasondata.build == 15.40 || seasondata.build == 15.50) {
+            theater = theater.replaceAll(/\/Game\//g, "\/SaveTheWorld\/");
+        }
+    } catch (err) {}
+
+    theater = JSON.parse(theater)
+
+    return theater;
+}
+
 function getContentPages(req) {
     const seasonchecker = require("./seasonchecker.js");
     const seasondata = require("./season.json");
@@ -5578,6 +5596,12 @@ function getContentPages(req) {
         if (seasondata.build == 11.31 || seasondata.build == 11.40) {
             contentpages.dynamicbackgrounds.backgrounds.backgrounds[0].stage = "Winter19";
             contentpages.dynamicbackgrounds.backgrounds.backgrounds[1].stage = "Winter19";
+        }
+
+        if (seasondata.build == 19.01) {
+            contentpages.dynamicbackgrounds.backgrounds.backgrounds[0].stage = "winter2021";
+            contentpages.dynamicbackgrounds.backgrounds.backgrounds[0].backgroundimage = "https://cdn2.unrealengine.com/t-bp19-lobby-xmas-2048x1024-f85d2684b4af.png";
+            contentpages.specialoffervideo.bSpecialOfferEnabled = "true";
         }
     } catch (err) {}
 
