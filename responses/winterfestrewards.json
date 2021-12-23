@@ -1,0 +1,36 @@
+{
+  "author": "List made by PRO100KatYT",
+  "Season11": {
+    "ERG.Node.A.1": "AthenaCharacter:cid_645_athena_commando_f_wolly",
+    "ERG.Node.B.1": "AthenaGlider:glider_id_188_galileorocket_g7oki",
+    "ERG.Node.C.1": "AthenaBackpack:bid_430_galileospeedboat_9rxe3",
+    "ERG.Node.D.1": "AthenaCharacter:cid_643_athena_commando_m_ornamentsoldier",
+    "ERG.Node.A.2": "AthenaPickaxe:pickaxe_id_329_gingerbreadcookie1h",
+    "ERG.Node.A.3": "AthenaPickaxe:pickaxe_id_332_mintminer",
+    "ERG.Node.A.4": "AthenaDance:eid_snowglobe",
+    "ERG.Node.A.5": "AthenaGlider:glider_id_191_pinetree",
+    "ERG.Node.A.6": "AthenaItemWrap:wrap_188_wrappingpaper",
+    "ERG.Node.A.7": "AthenaItemWrap:wrap_183_newyear2020",
+    "ERG.Node.A.8": "AthenaSkyDiveContrail:trails_id_082_holidaygarland",
+    "ERG.Node.A.9": "AthenaMusicPack:musicpack_040_xmaschiptunes",
+    "ERG.Node.A.10": "AthenaLoadingScreen:lsid_208_smpattern",
+    "ERG.Node.A.11": "AthenaLoadingScreen:lsid_209_akcrackshot"
+  },
+  "Season19": {
+    "ERG.Node.A.1": "Token:14daysoffortnite_small_giftbox",
+    "ERG.Node.B.1": "AthenaDance:emoji_s19_animwinterfest2021",
+    "ERG.Node.C.1": "AthenaGlider:glider_id_335_logarithm_40qgl",
+    "ERG.Node.D.1": "AthenaCharacter:cid_a_323_athena_commando_m_bananawinter",
+    "ERG.Node.A.2": "HomebaseBannerIcon:brs19_winterfest2021",
+    "ERG.Node.A.3": "AthenaSkyDiveContrail:trails_id_137_turtleneckcrystal",
+    "ERG.Node.A.4": "AthenaItemWrap:wrap_429_holidaysweater",
+    "ERG.Node.A.5": "AthenaLoadingScreen:lsid_393_winterfest2021",
+    "ERG.Node.A.6": "AthenaMusicPack:musicpack_117_winterfest2021",
+    "ERG.Node.A.7": "AthenaDance:eid_epicyarn",
+    "ERG.Node.A.8": "AthenaCharacter:cid_a_310_athena_commando_F_scholarfestive",
+    "ERG.Node.A.9": "AthenaPickaxe:pickaxe_id_731_scholarfestivefemale1h",
+    "ERG.Node.A.10": "AthenaItemWrap:wrap_430_winterlights",
+    "ERG.Node.A.11": "AthenaDance:spid_346_winterfest_2021",
+    "ERG.Node.A.12": "AthenaPickaxe:pickaxe_ID_732_shovelmale"
+  }
+}
