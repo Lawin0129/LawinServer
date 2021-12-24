@@ -1393,11 +1393,14 @@ express.post("/fortnite/api/game/v2/profile/*/client/PurchaseHomebaseNode", asyn
     res.end();
 });
 
-// Open gift 19.01
+// Open Winterfest presents (11.31 & 19.01)
 express.post("/fortnite/api/game/v2/profile/*/client/UnlockRewardNode", async (req, res) => {
     const profile = require(`./profiles/${req.query.profileId || "athena"}.json`);
     const common_core = require("./profiles/common_core.json");
-    const WinterFestIDS = require("./responses/winterfest2021rewards.json");
+    const WinterFestIDS = require("./responses/winterfestrewards.json");
+    const seasondata = require("./season.json");
+    const seasonchecker = require("./seasonchecker.js");
+    seasonchecker(req, seasondata);
 
     // do not change any of these or you will end up breaking it
     var ApplyProfileChanges = [];
@@ -1405,12 +1408,13 @@ express.post("/fortnite/api/game/v2/profile/*/client/UnlockRewardNode", async (r
     var BaseRevision = profile.rvn || 0;
     var QueryRevision = req.query.rvn || -1;
     var StatChanged = false;
+    var Season = "Season" + seasondata.season;
 
     const ID = makeid();
     const GiftID = makeid();
 
     if (req.body.nodeId && req.body.rewardGraphId) {
-        if (WinterFestIDS[req.body.nodeId].toLowerCase().startsWith("homebasebannericon:")) {
+        if (WinterFestIDS[Season][req.body.nodeId].toLowerCase().startsWith("homebasebannericon:")) {
             MultiUpdate.push({
                 "profileRevision": common_core.rvn || 0,
                 "profileId": "common_core",
@@ -1420,7 +1424,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/UnlockRewardNode", async (r
             })
 
             common_core.items[ID] = {
-                "templateId": WinterFestIDS[req.body.nodeId],
+                "templateId": WinterFestIDS[Season][req.body.nodeId],
                 "attributes": {
                     "max_level_bonus": 0,
                     "level": 1,
@@ -1445,9 +1449,9 @@ express.post("/fortnite/api/game/v2/profile/*/client/UnlockRewardNode", async (r
             MultiUpdate[0].profileCommandRevision = common_core.commandRevision || 0;
         }
 
-        if (!WinterFestIDS[req.body.nodeId].toLowerCase().startsWith("homebasebannericon:")) {
+        if (!WinterFestIDS[Season][req.body.nodeId].toLowerCase().startsWith("homebasebannericon:")) {
             profile.items[ID] = {
-                "templateId": WinterFestIDS[req.body.nodeId],
+                "templateId": WinterFestIDS[Season][req.body.nodeId],
                 "attributes": {
                     "max_level_bonus": 0,
                     "level": 1,
@@ -1466,7 +1470,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/UnlockRewardNode", async (r
             })
         }
 
-        profile.items[GiftID] = {"templateId":"GiftBox:gb_winterfestreward","attributes":{"max_level_bonus":0,"fromAccountId":"","lootList":[{"itemType":WinterFestIDS[req.body.nodeId],"itemGuid":ID,"itemProfile":"athena","attributes":{"creation_time":new Date().toISOString()},"quantity":1}],"level":1,"item_seen":false,"xp":0,"giftedOn":new Date().toISOString(),"params":{"SubGame":"Athena","winterfestGift":"true"},"favorite":false},"quantity":1};
+        profile.items[GiftID] = {"templateId":"GiftBox:gb_winterfestreward","attributes":{"max_level_bonus":0,"fromAccountId":"","lootList":[{"itemType":WinterFestIDS[Season][req.body.nodeId],"itemGuid":ID,"itemProfile":"athena","attributes":{"creation_time":new Date().toISOString()},"quantity":1}],"level":1,"item_seen":false,"xp":0,"giftedOn":new Date().toISOString(),"params":{"SubGame":"Athena","winterfestGift":"true"},"favorite":false},"quantity":1};
         profile.items[req.body.rewardGraphId].attributes.reward_keys[0].unlock_keys_used += 1;
         profile.items[req.body.rewardGraphId].attributes.reward_nodes_claimed.push(req.body.nodeId);
 
@@ -1532,6 +1536,21 @@ express.post("/fortnite/api/game/v2/profile/*/client/RemoveGiftBox", async (req,
     var QueryRevision = req.query.rvn || -1;
     var StatChanged = false;
 
+    // Gift box ID on 11.31
+    if (req.body.giftBoxItemId) {
+        var id = req.body.giftBoxItemId;
+
+        delete profile.items[id];
+
+        ApplyProfileChanges.push({
+            "changeType": "itemRemoved",
+            "itemId": id
+        })
+
+        StatChanged = true;
+    }
+
+    // Gift box ID on 19.01
     if (req.body.giftBoxItemIds) {
         for (var i = 0; i < req.body.giftBoxItemIds.length; i++) {
             var id = req.body.giftBoxItemIds[i];
