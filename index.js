@@ -1102,6 +1102,11 @@ express.get("/fortnite/api/calendar/v1/timeline", async (req, res) => {
             "eventType": "EventFlag.LTE_WinterFest",
             "activeUntil": "9999-01-01T00:00:00.000Z",
             "activeSince": "2020-01-01T00:00:00.000Z"
+        },
+        {
+            "eventType": "WF_IG_AVAIL",
+            "activeUntil": "9999-01-01T00:00:00.000Z",
+            "activeSince": "2020-01-01T00:00:00.000Z"
         })
     }
 
