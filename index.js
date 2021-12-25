@@ -172,15 +172,19 @@ express.get("/socialban/api/public/v1/*", async (req, res) => {
 })
 
 express.get("/affiliate/api/public/affiliates/slug/:slug", async (req, res) => {
-    if (req.params.slug.toLowerCase() == "lawin") {
-        return res.json({
-            "id": "Lawin",
-            "slug": "lawin",
-            "displayName": "Lawin",
-            "status": "ACTIVE",
-            "verified": false
-        });
-    }
+    const SupportedCodes = require("./responses/SAC.json");
+    SupportedCodes.forEach(code => {
+        if (req.params.slug.toLowerCase() == code.toLowerCase()) {
+            return res.json({
+                "id": code,
+                "slug": code,
+                "displayName": code,
+                "status": "ACTIVE",
+                "verified": false
+            });
+        }
+    })
+
     res.status(404);
     res.json({});
 })
@@ -1214,11 +1218,14 @@ express.post("/fortnite/api/game/v2/profile/*/client/SetAffiliateName", async (r
     var QueryRevision = req.query.rvn || -1;
     var StatChanged = false;
 
-    if (req.body.affiliateName.toLowerCase() == "lawin") {
-        profile.stats.attributes.mtx_affiliate_set_time = new Date().toISOString();
-        profile.stats.attributes.mtx_affiliate = req.body.affiliateName;
-        StatChanged = true;
-    }
+    const SupportedCodes = require("./responses/SAC.json");
+    SupportedCodes.forEach(code => {
+        if (req.body.affiliateName.toLowerCase() == code.toLowerCase() || req.body.affiliateName == "") {
+            profile.stats.attributes.mtx_affiliate_set_time = new Date().toISOString();
+            profile.stats.attributes.mtx_affiliate = req.body.affiliateName;
+            StatChanged = true;
+        }
+    })
 
     if (StatChanged == true) {
         profile.rvn += 1;
@@ -5754,7 +5761,7 @@ function getTheater(req) {
 
     try {
         if (seasondata.season >= 16 || seasondata.build == 15.30 || seasondata.build == 15.40 || seasondata.build == 15.50) {
-            theater = theater.replaceAll(/\/Game\//g, "\/SaveTheWorld\/");
+            theater = theater.replace(/\/Game\//ig, "\/SaveTheWorld\/");
         }
     } catch (err) {}
 
