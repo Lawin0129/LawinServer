@@ -1,7 +1,6 @@
 const Express = require("express");
 const express = Express();
 const fs = require("fs");
-const moment = require("moment");
 const crypto = require("crypto");
 const path = require("path");
 const config = require("./config.json");
@@ -1651,8 +1650,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/ClaimLoginReward", async (r
     var QueryRevision = req.query.rvn || -1;
     var StatChanged = false;
 
-    let CurrentDate = new Date();
-    var DateFormat = moment(CurrentDate).format('YYYY-MM-DD') + "T00:00:00.000Z";
+    var DateFormat = (new Date().toISOString()).split("T")[0] + "T00:00:00.000Z";
 
     if (profile.stats.attributes.daily_rewards.lastClaimDate != DateFormat) {
         profile.stats.attributes.daily_rewards.nextDefaultReward += 1;
