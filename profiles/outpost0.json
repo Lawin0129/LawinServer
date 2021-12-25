@@ -1,17 +1,17 @@
 {
-    "_id": "LawinServer",
-    "created": "2020-01-01T17:22:28.023Z",
-    "updated": "2020-03-24T00:25:49.087Z",
-    "rvn": 0,
-    "wipeNumber": 1,
-    "accountId": "LawinServer",
-    "profileId": "outpost0",
-    "version": "no_version",
-    "items": {},
-    "stats": {
-      "attributes": {
-        "inventory_limit_bonus": 0
-      }
-    },
-    "commandRevision": 0
+  "_id": "LawinServer",
+  "created": "2020-01-01T17:22:28.023Z",
+  "updated": "2020-03-24T00:25:49.087Z",
+  "rvn": 0,
+  "wipeNumber": 1,
+  "accountId": "LawinServer",
+  "profileId": "outpost0",
+  "version": "no_version",
+  "items": {},
+  "stats": {
+    "attributes": {
+      "inventory_limit_bonus": 0
+    }
+  },
+  "commandRevision": 0
 }
