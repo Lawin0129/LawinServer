@@ -5153,20 +5153,19 @@ express.post("/fortnite/api/game/v2/profile/*/client/EquipBattleRoyaleCustomizat
     var StatChanged = false;
     var VariantChanged = false;
 
-    const ReturnVariantsAsString = JSON.stringify(req.body.variantUpdates || [])
-    if (req.body.variantUpdates && ReturnVariantsAsString.includes("active")) {
-        if (profile.items[req.body.itemToSlot].attributes.variants.length == 0) {
-            profile.items[req.body.itemToSlot].attributes.variants = req.body.variantUpdates || [];
-        }
-        for (var i = 0; i < profile.items[req.body.itemToSlot].attributes.variants.length; i++) {
-            try {
-                profile.items[req.body.itemToSlot].attributes.variants[i].active = req.body.variantUpdates[i].active || "";
-            } catch (err) {
-                profile.items[req.body.itemToSlot].attributes.variants[i].active = profile.items[req.body.itemToSlot].attributes.variants[i].active;
+    try {
+        const ReturnVariantsAsString = JSON.stringify(req.body.variantUpdates || [])
+
+        if (ReturnVariantsAsString.includes("active")) {
+            if (profile.items[req.body.itemToSlot].attributes.variants.length == 0) {
+                profile.items[req.body.itemToSlot].attributes.variants = req.body.variantUpdates || [];
             }
+            for (var i = 0; i < profile.items[req.body.itemToSlot].attributes.variants.length; i++) {
+                profile.items[req.body.itemToSlot].attributes.variants[i].active = req.body.variantUpdates[i].active || "";
+            }
+            VariantChanged = true;
         }
-        VariantChanged = true;
-    }
+    } catch (err) {}
 
     if (req.body.slotName) {
 
@@ -5246,7 +5245,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/EquipBattleRoyaleCustomizat
     }
 
     if (StatChanged == true) {
-        var Category = `favorite_${req.body.slotName.toLowerCase() || "character"}`
+        var Category = (`favorite_${req.body.slotName || "character"}`).toLowerCase()
 
         if (Category == "favorite_itemwrap") {
             Category += "s"
@@ -5434,11 +5433,11 @@ express.post("/fortnite/api/game/v2/profile/*/client/SetCosmeticLockerSlot", asy
         const seasondata = require("./season.json");
         seasonchecker(req, seasondata);
         profile.stats.attributes.season_num = seasondata.season;
-	if (seasondata.season == 2) {
-		profile.stats.attributes.book_level = 70;
-	} else {
-		profile.stats.attributes.book_level = 100;
-	}
+        if (seasondata.season == 2) {
+            profile.stats.attributes.book_level = 70;
+        } else {
+            profile.stats.attributes.book_level = 100;
+        }
     }
 
     // do not change any of these or you will end up breaking it
@@ -5446,42 +5445,36 @@ express.post("/fortnite/api/game/v2/profile/*/client/SetCosmeticLockerSlot", asy
     var BaseRevision = profile.rvn || 0;
     var QueryRevision = req.query.rvn || -1;
     var StatChanged = false;
-    var VariantChanged = false;
 
-    const ReturnVariantsAsString = JSON.stringify(req.body.variantUpdates || [])
-    if (req.body.variantUpdates && ReturnVariantsAsString.includes("active")) {
-        var new_variants = [
-            {
-                "variants": []
-            }
-        ];
+    try {
+        const ReturnVariantsAsString = JSON.stringify(req.body.variantUpdates || [])
 
-        if (profile.profileId == "athena") {
-            if (profile.items[req.body.itemToSlot].attributes.variants.length == 0) {
-                profile.items[req.body.itemToSlot].attributes.variants = req.body.variantUpdates || [];
-            }
-            for (var i = 0; i < profile.items[req.body.itemToSlot].attributes.variants.length; i++) {
-                try {
+        if (ReturnVariantsAsString.includes("active")) {
+            var new_variants = [
+                {
+                    "variants": []
+                }
+            ];
+
+            if (profile.profileId == "athena") {
+                if (profile.items[req.body.itemToSlot].attributes.variants.length == 0) {
+                    profile.items[req.body.itemToSlot].attributes.variants = req.body.variantUpdates || [];
+                }
+                for (var i = 0; i < profile.items[req.body.itemToSlot].attributes.variants.length; i++) {
                     profile.items[req.body.itemToSlot].attributes.variants[i].active = req.body.variantUpdates[i].active || "";
-                } catch (err) {
-                    profile.items[req.body.itemToSlot].attributes.variants[i].active = profile.items[req.body.itemToSlot].attributes.variants[i].active;
                 }
             }
-        }
 
-        for (var i = 0; i < req.body.variantUpdates.length; i++) {
-            try {
+            for (var i = 0; i < req.body.variantUpdates.length; i++) {
                 new_variants[0].variants.push({
                     "channel": req.body.variantUpdates[i].channel,
                     "active": req.body.variantUpdates[i].active
                 })
 
                 profile.items[req.body.lockerItem].attributes.locker_slots_data.slots[req.body.category].activeVariants = new_variants;
-            } catch (err) {
-                profile.items[req.body.lockerItem].attributes.locker_slots_data.slots[req.body.category].activeVariants = profile.items[req.body.lockerItem].attributes.locker_slots_data[req.body.category].activeVariants;
             }
         }
-    }
+    } catch (err) {}
 
     if (req.body.category && req.body.lockerItem) {
 
