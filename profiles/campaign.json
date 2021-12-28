@@ -2134,6 +2134,7 @@
         "building_slot_used": -1,
         "favorite": false
       },
+      "refundable": "L ",
       "quantity": 1
     },
     "9c0afee3-2379-47e4-93b1-4067bab1ae0a": {
@@ -4270,6 +4271,7 @@
         "xp_reward_scalar": 1,
         "challenge_linked_quest_given": "",
         "quest_pool": "",
+        "max_reward_slot": " a",
         "quest_state": "Claimed",
         "last_state_change_time": "2020-01-25T19:10:31.437Z",
         "challenge_linked_quest_parent": "",
@@ -6399,8 +6401,6 @@
         "personality": "Homebase.Worker.Personality.IsPragmatic",
         "squad_id": "",
         "xp": 0,
-        "slotted_building_id": "",
-        "building_slot_used": -1,
         "favorite": false,
         "set_bonus": "Homebase.Worker.SetBonus.IsRangedDamageLow"
       },
@@ -6408,6 +6408,7 @@
     },
     "4edf74f5-7581-41ac-9775-df839fada583": {
       "templateId": "Quest:stonewoodquest_side_1_d3",
+      "variants": "w ",
       "attributes": {
         "completion_complete_whackatroll_1_diff3": 2,
         "level": -1,
@@ -8543,7 +8544,8 @@
         "favorite": false,
         "set_bonus": "Homebase.Worker.SetBonus.IsAbilityDamageLow"
       },
-      "quantity": 1
+      "quantity": 1,
+      "item_guid": " i"
     },
     "4e72b4db-5378-4fa8-acf2-4eede383fdf8": {
       "templateId": "Expedition:expedition_resourcerun_wood_short",
@@ -10542,200 +10544,6 @@
       },
       "quantity": 1
     },
-    "12f109a4-8218-456d-bef1-f269c3638918": {
-      "templateId": "ConditionalAction:generic_instance",
-      "attributes": {
-        "alt_profile_types": [
-          "athena"
-        ],
-        "_private": true,
-        "devName": "MAJOR: Season 11 - Starlight",
-        "conditions": {
-          "event": {
-            "instanceId": "00b216kh3uhp2s6ll2a0s37qid[0]0",
-            "eventName": "CalendarEvent_Starlight2019",
-            "eventStart": "2020-01-20T00:00:00.000Z",
-            "eventEnd": "2020-07-03T20:00:00.000Z",
-            "startActions": {
-              "hasRun": true,
-              "conversions": [],
-              "itemsToGrant": [
-                {
-                  "templateId": "Quest:starlightquest_destroy_urns",
-                  "quantity": 1
-                },
-                {
-                  "templateId": "Quest:starlightquest_kill_minibosses",
-                  "quantity": 1
-                },
-                {
-                  "templateId": "Quest:starlightquest_kill_mimics",
-                  "quantity": 1
-                },
-                {
-                  "templateId": "Quest:starlightquest_destructiblespawners",
-                  "quantity": 1
-                },
-                {
-                  "templateId": "Quest:starlightquest_finitespawners",
-                  "quantity": 1
-                },
-                {
-                  "templateId": "Quest:starlightquest_traptrial",
-                  "quantity": 1
-                },
-                {
-                  "templateId": "Quest:starlightquest_complete_dailies_1",
-                  "quantity": 1
-                },
-                {
-                  "templateId": "Quest:starlightquest_complete_dailies_2",
-                  "quantity": 1
-                },
-                {
-                  "templateId": "Quest:starlightquest_complete_dailies_3",
-                  "quantity": 1
-                },
-                {
-                  "templateId": "Quest:starlightquest_complete_all",
-                  "quantity": 1
-                },
-                {
-                  "templateId": "Quest:starlightquest_complete_all_hard",
-                  "quantity": 1
-                },
-                {
-                  "templateId": "Quest:starlightquest_dungeoneer_soldier",
-                  "quantity": 1
-                },
-                {
-                  "templateId": "Quest:starlightquest_complete_d1_a",
-                  "quantity": 1
-                }
-              ],
-              "questsToUnpause": []
-            },
-            "endActions": {
-              "hasRun": false,
-              "conversions": [],
-              "itemsToRemove": [
-                {
-                  "templateId": "Quest:starlightquest_destroy_urns",
-                  "quantity": 1
-                },
-                {
-                  "templateId": "Quest:starlightquest_kill_minibosses",
-                  "quantity": 1
-                },
-                {
-                  "templateId": "Quest:starlightquest_kill_mimics",
-                  "quantity": 1
-                },
-                {
-                  "templateId": "Quest:starlightquest_destructiblespawners",
-                  "quantity": 1
-                },
-                {
-                  "templateId": "Quest:starlightquest_finitespawners",
-                  "quantity": 1
-                },
-                {
-                  "templateId": "Quest:starlightquest_traptrial",
-                  "quantity": 1
-                },
-                {
-                  "templateId": "Quest:starlightquest_complete_dailies_1",
-                  "quantity": 1
-                },
-                {
-                  "templateId": "Quest:starlightquest_complete_dailies_2",
-                  "quantity": 1
-                },
-                {
-                  "templateId": "Quest:starlightquest_complete_dailies_3",
-                  "quantity": 1
-                },
-                {
-                  "templateId": "Quest:starlightquest_complete_all",
-                  "quantity": 1
-                },
-                {
-                  "templateId": "Quest:starlightquest_complete_all_hard",
-                  "quantity": 1
-                },
-                {
-                  "templateId": "Quest:starlightquest_dungeoneer_soldier",
-                  "quantity": 1
-                },
-                {
-                  "templateId": "Quest:starlightquest_complete_d1_a",
-                  "quantity": 1
-                },
-                {
-                  "templateId": "Quest:starlightquest_complete_d1_b",
-                  "quantity": 1
-                },
-                {
-                  "templateId": "Quest:starlightquest_complete_d1_c",
-                  "quantity": 1
-                },
-                {
-                  "templateId": "Quest:starlightquest_complete_d2_a",
-                  "quantity": 1
-                },
-                {
-                  "templateId": "Quest:starlightquest_complete_d2_b",
-                  "quantity": 1
-                },
-                {
-                  "templateId": "Quest:starlightquest_complete_d2_c",
-                  "quantity": 1
-                },
-                {
-                  "templateId": "Quest:starlightquest_complete_d3_a",
-                  "quantity": 1
-                },
-                {
-                  "templateId": "Quest:starlightquest_complete_d3_b",
-                  "quantity": 1
-                },
-                {
-                  "templateId": "Quest:starlightquest_complete_d3_c",
-                  "quantity": 1
-                },
-                {
-                  "templateId": "Quest:starlightquest_complete_d4_a",
-                  "quantity": 1
-                },
-                {
-                  "templateId": "Quest:starlightquest_complete_d4_b",
-                  "quantity": 1
-                },
-                {
-                  "templateId": "Quest:starlightquest_complete_d4_c",
-                  "quantity": 1
-                },
-                {
-                  "templateId": "Quest:starlightquest_dungeoneer_constructor",
-                  "quantity": 1
-                },
-                {
-                  "templateId": "Quest:starlightquest_dungeoneer_outlander",
-                  "quantity": 1
-                },
-                {
-                  "templateId": "Quest:starlightquest_dungeoneer_ninja",
-                  "quantity": 1
-                }
-              ],
-              "questsToPause": []
-            },
-            "metaData": {}
-          }
-        }
-      },
-      "quantity": 1
-    },
     "ab95decc-7f4c-438a-b33f-b57f4201ff33": {
       "templateId": "Quest:tutorial_loadout_commander",
       "attributes": {
@@ -10874,6 +10682,7 @@
         "xp_reward_scalar": 1,
         "challenge_linked_quest_given": "",
         "quest_pool": "",
+        "max_quest_level": "n ",
         "quest_state": "Claimed",
         "last_state_change_time": "2020-01-11T17:41:52.577Z",
         "challenge_linked_quest_parent": "",
@@ -10924,29 +10733,6 @@
         "quest_pool": "",
         "quest_state": "Claimed",
         "last_state_change_time": "2020-01-19T23:26:07.268Z",
-        "challenge_linked_quest_parent": "",
-        "max_level_bonus": 0,
-        "xp": 0,
-        "favorite": false
-      },
-      "quantity": 1
-    },
-    "aa63e2ee-b6bf-4b7d-9874-da06cbaaa584": {
-      "templateId": "Quest:heroquest_ninja_2",
-      "attributes": {
-        "completion_ability_mantisleap": 3,
-        "level": -1,
-        "completion_upgrade_ninja_lvl_3": 1,
-        "completion_complete_pve01_diff3_ninja": 3,
-        "item_seen": true,
-        "sent_new_notification": true,
-        "challenge_bundle_id": "",
-        "xp_reward_scalar": 1,
-        "challenge_linked_quest_given": "",
-        "quest_pool": "",
-        "quest_state": "Claimed",
-        "last_state_change_time": "2020-01-31T14:24:40.090Z",
-        "completion_ability_throwingstars": 3,
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -13022,6 +12808,30 @@
       "templateId": "HomebaseNode:T3_Main_AE0417420",
       "attributes": {
         "item_seen": true
+      },
+      "quantity": 1
+    },
+    "aa63e2ee-b6bf-4b7d-9874-da06cbaaa584": {
+      "templateId": "Quest:heroquest_ninja_2",
+      "attributes": {
+        "completion_ability_mantisleap": 3,
+        "level": -1,
+        "completion_upgrade_ninja_lvl_3": 1,
+        "completion_complete_pve01_diff3_ninja": 3,
+        "item_seen": true,
+        "required_quest": " S",
+        "sent_new_notification": true,
+        "challenge_bundle_id": "",
+        "xp_reward_scalar": 1,
+        "challenge_linked_quest_given": "",
+        "quest_pool": "",
+        "quest_state": "Claimed",
+        "last_state_change_time": "2020-01-31T14:24:40.090Z",
+        "completion_ability_throwingstars": 3,
+        "challenge_linked_quest_parent": "",
+        "max_level_bonus": 0,
+        "xp": 0,
+        "favorite": false
       },
       "quantity": 1
     },
@@ -15146,7 +14956,7 @@
       },
       "quantity": 1
     },
-    "ng35z-kf35-2f257m-7uwg": {
+    "e ": {
       "templateId": "HomebaseNode:T4_Research_0002FFCE0",
       "attributes": {
         "item_seen": true
@@ -17283,6 +17093,7 @@
         "max_level_bonus": 0,
         "squad_id": "",
         "mode_loadouts": [],
+        "durability": " r",
         "xp": 0,
         "slotted_building_id": "",
         "refundable": false,
@@ -19419,6 +19230,7 @@
         "building_slot_used": -1,
         "favorite": false
       },
+      "slot_unlocked": "v ",
       "quantity": 1
     },
     "Hero:HID_Constructor_XBOX_R_T04": {
@@ -21555,6 +21367,7 @@
         "building_slot_used": -1,
         "favorite": false
       },
+      "requirement": " e",
       "quantity": 1
     },
     "Hero:HID_Constructor_013_SR_T05": {
@@ -23690,7 +23503,8 @@
           {
             "channel": "Parts",
             "active": "CampaignHero.Tier2.Legendary",
-            "owned": []
+            "owned": [],
+            "parts": "r "
           }
         ],
         "backblingvariants": [],
@@ -25820,15 +25634,14 @@
         "squad_id": "",
         "mode_loadouts": [],
         "xp": 0,
-        "slotted_building_id": "",
         "refundable": false,
-        "building_slot_used": -1,
         "favorite": false
       },
       "quantity": 1
     },
     "Hero:HID_Outlander_PunchDamage_SR_T05": {
       "templateId": "Hero:HID_Outlander_PunchDamage_SR_T05",
+      "visibility": " ",
       "attributes": {
         "outfitvariants": [
           {
@@ -25888,9 +25701,7 @@
         "squad_id": "",
         "mode_loadouts": [],
         "xp": 0,
-        "slotted_building_id": "",
         "refundable": false,
-        "building_slot_used": -1,
         "favorite": false
       },
       "quantity": 1
@@ -25916,9 +25727,7 @@
         "squad_id": "",
         "mode_loadouts": [],
         "xp": 0,
-        "slotted_building_id": "",
         "refundable": false,
-        "building_slot_used": -1,
         "favorite": false
       },
       "quantity": 1
@@ -25944,9 +25753,7 @@
         "squad_id": "",
         "mode_loadouts": [],
         "xp": 0,
-        "slotted_building_id": "",
         "refundable": false,
-        "building_slot_used": -1,
         "favorite": false
       },
       "quantity": 1
@@ -25966,9 +25773,7 @@
         "squad_id": "",
         "mode_loadouts": [],
         "xp": 0,
-        "slotted_building_id": "",
         "refundable": false,
-        "building_slot_used": -1,
         "favorite": false
       },
       "quantity": 1
@@ -27973,6 +27778,7 @@
         "alteration_base_rarities": [],
         "favorite": false
       },
+      "book_requirement": " P",
       "quantity": 1
     },
     "Schematic:SID_Wall_Speaker_R_T04": {
@@ -30109,6 +29915,7 @@
         ],
         "xp": 0,
         "refundable": false,
+        "itemSource": "R ",
         "alteration_base_rarities": [],
         "favorite": false
       },
@@ -32225,7 +32032,6 @@
         ],
         "xp": 0,
         "refundable": false,
-        "alteration_base_rarities": [],
         "favorite": false
       },
       "quantity": 1
@@ -32246,6 +32052,7 @@
           "",
           ""
         ],
+        "owned": " O",
         "xp": 0,
         "refundable": false,
         "alteration_base_rarities": [],
@@ -34349,7 +34156,6 @@
     "Schematic:SID_Shotgun_Standard_R_Crystal_T04": {
       "templateId": "Schematic:SID_Shotgun_Standard_R_Crystal_T04",
       "attributes": {
-        "legacy_alterations": [],
         "max_level_bonus": 0,
         "level": 40,
         "refund_legacy_item": false,
@@ -34364,7 +34170,6 @@
         ],
         "xp": 0,
         "refundable": false,
-        "alteration_base_rarities": [],
         "favorite": false
       },
       "quantity": 1
@@ -34372,7 +34177,6 @@
     "Schematic:SID_Shotgun_Standard_C_Ore_T02": {
       "templateId": "Schematic:SID_Shotgun_Standard_C_Ore_T02",
       "attributes": {
-        "legacy_alterations": [],
         "max_level_bonus": 0,
         "level": 20,
         "refund_legacy_item": false,
@@ -34385,6 +34189,7 @@
           "",
           ""
         ],
+        "bundle_id": 1,
         "xp": 0,
         "refundable": false,
         "alteration_base_rarities": [],
@@ -36480,7 +36285,6 @@
         ],
         "xp": 0,
         "refundable": false,
-        "alteration_base_rarities": [],
         "favorite": false
       },
       "quantity": 1
@@ -36488,7 +36292,6 @@
     "Schematic:SID_Shotgun_Boombox_Break_R_Crystal_T04": {
       "templateId": "Schematic:SID_Shotgun_Boombox_Break_R_Crystal_T04",
       "attributes": {
-        "legacy_alterations": [],
         "max_level_bonus": 0,
         "level": 40,
         "refund_legacy_item": false,
@@ -36503,7 +36306,6 @@
         ],
         "xp": 0,
         "refundable": false,
-        "alteration_base_rarities": [],
         "favorite": false
       },
       "quantity": 1
@@ -36511,7 +36313,6 @@
     "Schematic:SID_Shotgun_Auto_VR_Ore_T05": {
       "templateId": "Schematic:SID_Shotgun_Auto_VR_Ore_T05",
       "attributes": {
-        "legacy_alterations": [],
         "max_level_bonus": 0,
         "level": 50,
         "refund_legacy_item": false,
@@ -36525,6 +36326,7 @@
           ""
         ],
         "xp": 0,
+        "inventory_overflow_level": 0,
         "refundable": false,
         "alteration_base_rarities": [],
         "favorite": false
@@ -38627,7 +38429,6 @@
     "Schematic:SID_Pistol_NeonGlow_VR_Ore_T05": {
       "templateId": "Schematic:SID_Pistol_NeonGlow_VR_Ore_T05",
       "attributes": {
-        "legacy_alterations": [],
         "max_level_bonus": 0,
         "level": 50,
         "refund_legacy_item": false,
@@ -38650,7 +38451,6 @@
     "Schematic:SID_Pistol_NeonGlow_VR_Crystal_T05": {
       "templateId": "Schematic:SID_Pistol_NeonGlow_VR_Crystal_T05",
       "attributes": {
-        "legacy_alterations": [],
         "max_level_bonus": 0,
         "level": 50,
         "refund_legacy_item": false,
@@ -38663,6 +38463,7 @@
           "",
           ""
         ],
+        "required_level": 0,
         "xp": 0,
         "refundable": false,
         "alteration_base_rarities": [],
@@ -40766,7 +40567,6 @@
     "Schematic:SID_Pistol_AutoHeavy_Founders_VR_Crystal_T05": {
       "templateId": "Schematic:SID_Pistol_AutoHeavy_Founders_VR_Crystal_T05",
       "attributes": {
-        "legacy_alterations": [],
         "max_level_bonus": 0,
         "level": 50,
         "refund_legacy_item": false,
@@ -40781,7 +40581,6 @@
         ],
         "xp": 0,
         "refundable": false,
-        "alteration_base_rarities": [],
         "favorite": false
       },
       "quantity": 1
@@ -40789,7 +40588,6 @@
     "Schematic:SID_Pistol_AutoHeavy_Founders_SR_Ore_T05": {
       "templateId": "Schematic:SID_Pistol_AutoHeavy_Founders_SR_Ore_T05",
       "attributes": {
-        "legacy_alterations": [],
         "max_level_bonus": 0,
         "level": 50,
         "refund_legacy_item": false,
@@ -40802,6 +40600,7 @@
           "",
           ""
         ],
+        "base_rarity": "K ",
         "xp": 0,
         "refundable": false,
         "alteration_base_rarities": [],
@@ -42874,7 +42673,6 @@
         ],
         "xp": 0,
         "refundable": false,
-        "alteration_base_rarities": [],
         "favorite": false
       },
       "quantity": 1
@@ -42905,8 +42703,6 @@
     "Schematic:SID_Assault_Shockwave_SR_Crystal_T05": {
       "templateId": "Schematic:SID_Assault_Shockwave_SR_Crystal_T05",
       "attributes": {
-        "legacy_alterations": [],
-        "max_level_bonus": 0,
         "level": 50,
         "refund_legacy_item": false,
         "item_seen": true,
@@ -42920,7 +42716,6 @@
         ],
         "xp": 0,
         "refundable": false,
-        "alteration_base_rarities": [],
         "favorite": false
       },
       "quantity": 1
@@ -42928,7 +42723,6 @@
     "Schematic:SID_Assault_SemiAuto_Steampunk_VR_Ore_T05": {
       "templateId": "Schematic:SID_Assault_SemiAuto_Steampunk_VR_Ore_T05",
       "attributes": {
-        "legacy_alterations": [],
         "max_level_bonus": 0,
         "level": 50,
         "refund_legacy_item": false,
@@ -42943,6 +42737,7 @@
         ],
         "xp": 0,
         "refundable": false,
+        "index": " a",
         "alteration_base_rarities": [],
         "favorite": false
       },
@@ -45067,7 +44862,6 @@
     "Schematic:SID_Assault_Dragon_R_Ore_T04": {
       "templateId": "Schematic:SID_Assault_Dragon_R_Ore_T04",
       "attributes": {
-        "legacy_alterations": [],
         "max_level_bonus": 0,
         "level": 40,
         "refund_legacy_item": false,
@@ -45080,6 +44874,7 @@
           "",
           ""
         ],
+        "state": "t ",
         "xp": 0,
         "refundable": false,
         "alteration_base_rarities": [],
@@ -47183,7 +46978,6 @@
     "Schematic:SID_Piercing_Spear_Dragon_SR_Crystal_T05": {
       "templateId": "Schematic:SID_Piercing_Spear_Dragon_SR_Crystal_T05",
       "attributes": {
-        "legacy_alterations": [],
         "max_level_bonus": 0,
         "level": 50,
         "refund_legacy_item": false,
@@ -47198,7 +46992,6 @@
         ],
         "xp": 0,
         "refundable": false,
-        "alteration_base_rarities": [],
         "favorite": false
       },
       "quantity": 1
@@ -47206,7 +46999,6 @@
     "Schematic:SID_Piercing_Spear_Boombox_VR_Ore_T05": {
       "templateId": "Schematic:SID_Piercing_Spear_Boombox_VR_Ore_T05",
       "attributes": {
-        "legacy_alterations": [],
         "max_level_bonus": 0,
         "level": 50,
         "refund_legacy_item": false,
@@ -47219,9 +47011,9 @@
           "",
           ""
         ],
+        "new_notification": " Y",
         "xp": 0,
         "refundable": false,
-        "alteration_base_rarities": [],
         "favorite": false
       },
       "quantity": 1
@@ -49276,7 +49068,6 @@
     "Schematic:SID_Edged_Sword_ArtDeco_VR_Ore_T05": {
       "templateId": "Schematic:SID_Edged_Sword_ArtDeco_VR_Ore_T05",
       "attributes": {
-        "legacy_alterations": [],
         "max_level_bonus": 0,
         "level": 50,
         "refund_legacy_item": false,
@@ -49291,7 +49082,6 @@
         ],
         "xp": 0,
         "refundable": false,
-        "alteration_base_rarities": [],
         "favorite": false
       },
       "quantity": 1
@@ -49299,7 +49089,6 @@
     "Schematic:SID_Edged_Sword_ArtDeco_VR_Crystal_T05": {
       "templateId": "Schematic:SID_Edged_Sword_ArtDeco_VR_Crystal_T05",
       "attributes": {
-        "legacy_alterations": [],
         "max_level_bonus": 0,
         "level": 50,
         "refund_legacy_item": false,
@@ -49314,7 +49103,6 @@
         ],
         "xp": 0,
         "refundable": false,
-        "alteration_base_rarities": [],
         "favorite": false
       },
       "quantity": 1
@@ -49360,6 +49148,7 @@
         ],
         "xp": 0,
         "refundable": false,
+        "building_id": "T ",
         "alteration_base_rarities": [],
         "favorite": false
       },
@@ -51484,7 +51273,6 @@
     "Schematic:SID_Blunt_Shovel_Halloween_VR_Ore_T05": {
       "templateId": "Schematic:SID_Blunt_Shovel_Halloween_VR_Ore_T05",
       "attributes": {
-        "legacy_alterations": [],
         "max_level_bonus": 0,
         "level": 50,
         "refund_legacy_item": false,
@@ -51497,6 +51285,7 @@
           "",
           ""
         ],
+        "equipped": " ",
         "xp": 0,
         "refundable": false,
         "alteration_base_rarities": [],
@@ -53546,7 +53335,6 @@
         ],
         "xp": 0,
         "refundable": false,
-        "alteration_base_rarities": [],
         "favorite": false
       },
       "quantity": 1
@@ -53554,7 +53342,6 @@
     "Schematic:SID_Blunt_Medium_RatRod_SR_Crystal_T05": {
       "templateId": "Schematic:SID_Blunt_Medium_RatRod_SR_Crystal_T05",
       "attributes": {
-        "legacy_alterations": [],
         "max_level_bonus": 0,
         "level": 50,
         "refund_legacy_item": false,
@@ -53569,7 +53356,6 @@
         ],
         "xp": 0,
         "refundable": false,
-        "alteration_base_rarities": [],
         "favorite": false
       },
       "quantity": 1
@@ -53577,7 +53363,6 @@
     "Schematic:SID_Blunt_Light_Rocketbat_VR_Ore_T05": {
       "templateId": "Schematic:SID_Blunt_Light_Rocketbat_VR_Ore_T05",
       "attributes": {
-        "legacy_alterations": [],
         "max_level_bonus": 0,
         "level": 50,
         "refund_legacy_item": false,
@@ -53637,8 +53422,8 @@
           ""
         ],
         "xp": 0,
+        "alteration_base_rarities": " L",
         "refundable": false,
-        "alteration_base_rarities": [],
         "favorite": false
       },
       "quantity": 1
@@ -55774,6 +55559,7 @@
     "CampaignHeroLoadout5": {
       "templateId": "CampaignHeroLoadout:defaultloadout",
       "attributes": {
+        "slot_id": "a ",
         "team_perk": "",
         "loadout_name": "",
         "crew_members": {
@@ -57910,6 +57696,7 @@
       "attributes": {
         "max_level_bonus": 0,
         "level": 1,
+        "item_source": " w",
         "item_seen": true,
         "xp": 0,
         "favorite": false
@@ -59596,6 +59383,7 @@
         "completion_cannyvalley_reactive_tinfoil": 7,
         "item_seen": true,
         "playlists": [],
+        "loadouts": "i ",
         "sent_new_notification": true,
         "challenge_bundle_id": "",
         "xp_reward_scalar": 1,
@@ -62167,8 +61955,6 @@
         "sent_new_notification": true,
         "challenge_bundle_id": "",
         "xp_reward_scalar": 1,
-        "challenge_linked_quest_given": "",
-        "quest_pool": "",
         "quest_state": "Claimed",
         "bucket": "",
         "last_state_change_time": "2018-12-10T20:42:03.956Z",
@@ -62184,7 +61970,7 @@
     "fd1322ea-976c-42bb-9074-ed882324b098": {
       "templateId": "Quest:cannyvalleyquest_filler_6_d3",
       "attributes": {
-        "creation_time": "min",
+        "creation_time": " n",
         "level": -1,
         "item_seen": true,
         "completion_complete_gate_3_diff3": 3,

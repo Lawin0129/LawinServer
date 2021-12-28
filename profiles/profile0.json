@@ -1065,7 +1065,8 @@
     "7efc171a1-eed0-411c-994d-0e61aa345206": {
       "templateId": "HomebaseNode:T1_Main_AD1499E010",
       "attributes": {
-        "item_seen": true
+        "item_seen": true,
+        "refundable": " L"
       },
       "quantity": 1
     },
@@ -2133,7 +2134,7 @@
       },
       "quantity": 1
     },
-    "sf75m-9406-7an5ot-o8x8": {
+    "a ": {
       "templateId": "HomebaseNode:T2_Main_B2E063FC1",
       "attributes": {
         "item_seen": true
@@ -3202,6 +3203,7 @@
       "attributes": {
         "item_seen": true
       },
+      "variants": " w",
       "quantity": 1
     },
     "1xtet-h3nh-ufs6gm-sfwq": {
@@ -4269,10 +4271,11 @@
       "quantity": 1
     },
     "54746-llpo-y7i9dw-kf8b": {
-      "templateId": "HomebaseNode:T3_Research_66AD113A1",
+      "result": "i ",
       "attributes": {
         "item_seen": true
       },
+      "templateId": "HomebaseNode:T3_Research_66AD113A1",
       "quantity": 1
     },
     "rkswt-kx4o-7zwq8a-b89m": {
@@ -5337,6 +5340,7 @@
       "attributes": {
         "item_seen": true
       },
+      "sequence": " n",
       "quantity": 1
     },
     "2oybe-0uym-vtvtao-1czc": {
@@ -6404,12 +6408,12 @@
         "level": 50,
         "squad_slot_idx": 7,
         "item_seen": true,
+        "slotted_building_id": "S ",
         "portrait": "/Game/UI/Icons/Icon-Worker/IconDefinitions/IconDef-WorkerPortrait-Curious-M01.IconDef-WorkerPortrait-Curious-M01",
         "max_level_bonus": 0,
         "squad_id": "Squad_Attribute_Synthesis_CorpsofEngineering",
         "personality": "Homebase.Worker.Personality.IsCurious",
         "xp": 0,
-        "slotted_building_id": "",
         "building_slot_used": -1,
         "favorite": false,
         "set_bonus": "Homebase.Worker.SetBonus.IsTrapDurabilityHigh"
@@ -7473,13 +7477,13 @@
           ""
         ],
         "gender": 0,
+        "squad_id": " e",
         "level": 50,
         "item_seen": true,
         "squad_slot_idx": -1,
         "portrait": "",
         "hero_name": "DefaultHeroName",
         "max_level_bonus": 0,
-        "squad_id": "",
         "mode_loadouts": [],
         "xp": 0,
         "slotted_building_id": "",
@@ -8494,10 +8498,8 @@
         "portrait": "",
         "hero_name": "DefaultHeroName",
         "max_level_bonus": 0,
-        "squad_id": "",
         "mode_loadouts": [],
         "xp": 0,
-        "slotted_building_id": "",
         "building_slot_used": -1,
         "favorite": false
       },
@@ -8520,13 +8522,11 @@
         "level": 50,
         "item_seen": true,
         "squad_slot_idx": -1,
-        "portrait": "",
         "hero_name": "DefaultHeroName",
         "max_level_bonus": 0,
         "squad_id": "",
         "mode_loadouts": [],
         "xp": 0,
-        "slotted_building_id": "",
         "building_slot_used": -1,
         "favorite": false
       },
@@ -8545,6 +8545,7 @@
           "",
           ""
         ],
+        "refund_legacy_item": "r ",
         "gender": 0,
         "level": 40,
         "item_seen": true,
@@ -9454,7 +9455,6 @@
         "squad_id": "",
         "mode_loadouts": [],
         "xp": 0,
-        "slotted_building_id": "",
         "building_slot_used": -1,
         "favorite": false
       },
@@ -9512,8 +9512,6 @@
         "squad_id": "",
         "mode_loadouts": [],
         "xp": 0,
-        "slotted_building_id": "",
-        "building_slot_used": -1,
         "favorite": false
       },
       "quantity": 1
@@ -9539,10 +9537,7 @@
         "hero_name": "DefaultHeroName",
         "max_level_bonus": 0,
         "squad_id": "",
-        "mode_loadouts": [],
         "xp": 0,
-        "slotted_building_id": "",
-        "building_slot_used": -1,
         "favorite": false
       },
       "quantity": 1
@@ -9619,6 +9614,7 @@
           ""
         ],
         "gender": 0,
+        "clipSizeScale": " v",
         "level": 50,
         "item_seen": true,
         "squad_slot_idx": -1,
@@ -10496,7 +10492,6 @@
         "hero_name": "DefaultHeroName",
         "max_level_bonus": 0,
         "squad_id": "",
-        "mode_loadouts": [],
         "xp": 0,
         "slotted_building_id": "",
         "building_slot_used": -1,
@@ -10527,7 +10522,6 @@
         "squad_id": "",
         "mode_loadouts": [],
         "xp": 0,
-        "slotted_building_id": "",
         "building_slot_used": -1,
         "favorite": false
       },
@@ -10556,8 +10550,6 @@
         "squad_id": "",
         "mode_loadouts": [],
         "xp": 0,
-        "slotted_building_id": "",
-        "building_slot_used": -1,
         "favorite": false
       },
       "quantity": 1
@@ -10612,10 +10604,7 @@
         "hero_name": "DefaultHeroName",
         "max_level_bonus": 0,
         "squad_id": "",
-        "mode_loadouts": [],
         "xp": 0,
-        "slotted_building_id": "",
-        "building_slot_used": -1,
         "favorite": false
       },
       "quantity": 1
@@ -10693,6 +10682,7 @@
         ],
         "gender": 0,
         "level": 50,
+        "instance_id": "e ",
         "item_seen": true,
         "squad_slot_idx": -1,
         "portrait": "",
@@ -11484,7 +11474,6 @@
         "squad_id": "",
         "mode_loadouts": [],
         "xp": 0,
-        "slotted_building_id": "",
         "building_slot_used": -1,
         "favorite": false
       },
@@ -11685,10 +11674,7 @@
         "hero_name": "DefaultHeroName",
         "max_level_bonus": 0,
         "squad_id": "",
-        "mode_loadouts": [],
         "xp": 0,
-        "slotted_building_id": "",
-        "building_slot_used": -1,
         "favorite": false
       },
       "quantity": 1
@@ -11745,8 +11731,6 @@
         "squad_id": "",
         "mode_loadouts": [],
         "xp": 0,
-        "slotted_building_id": "",
-        "building_slot_used": -1,
         "favorite": false
       },
       "quantity": 1
@@ -11767,6 +11751,7 @@
         "gender": 0,
         "level": 50,
         "item_seen": true,
+        "rnd_sel_cnt": " r",
         "squad_slot_idx": -1,
         "portrait": "",
         "hero_name": "DefaultHeroName",
@@ -12729,10 +12714,7 @@
         "hero_name": "DefaultHeroName",
         "max_level_bonus": 0,
         "squad_id": "",
-        "mode_loadouts": [],
         "xp": 0,
-        "slotted_building_id": "",
-        "building_slot_used": -1,
         "favorite": false
       },
       "quantity": 1
@@ -12787,10 +12769,7 @@
         "hero_name": "DefaultHeroName",
         "max_level_bonus": 0,
         "squad_id": "",
-        "mode_loadouts": [],
         "xp": 0,
-        "slotted_building_id": "",
-        "building_slot_used": -1,
         "favorite": false
       },
       "quantity": 1
@@ -12816,10 +12795,7 @@
         "hero_name": "DefaultHeroName",
         "max_level_bonus": 0,
         "squad_id": "",
-        "mode_loadouts": [],
         "xp": 0,
-        "slotted_building_id": "",
-        "building_slot_used": -1,
         "favorite": false
       },
       "quantity": 1
@@ -12843,7 +12819,7 @@
         "squad_slot_idx": -1,
         "portrait": "",
         "hero_name": "DefaultHeroName",
-        "max_level_bonus": 0,
+        "max_level_bonus": " ",
         "squad_id": "",
         "mode_loadouts": [],
         "xp": 0,
@@ -13909,18 +13885,10 @@
     "Schematic:SID_Wall_Light_R_T04": {
       "templateId": "Schematic:SID_Wall_Light_R_T04",
       "attributes": {
-        "alteration_slots": [
-          {
-            "Type": "GameplaySlot",
-            "NumSlots": 1
-          },
-          {
-            "Type": "AttributeSlot",
-            "NumSlots": 1
-          }
-        ],
+        "alteration_slots": [],
         "max_level_bonus": 0,
         "level": 40,
+        "devName": "P ",
         "item_seen": true,
         "alterations": [],
         "xp": 0,
@@ -13953,16 +13921,7 @@
     "Schematic:SID_Wall_Launcher_UC_T03": {
       "templateId": "Schematic:SID_Wall_Launcher_UC_T03",
       "attributes": {
-        "alteration_slots": [
-          {
-            "Type": "GameplaySlot",
-            "NumSlots": 1
-          },
-          {
-            "Type": "AttributeSlot",
-            "NumSlots": 1
-          }
-        ],
+        "alteration_slots": [],
         "max_level_bonus": 0,
         "level": 30,
         "item_seen": true,
@@ -14997,6 +14956,7 @@
             "NumSlots": 1
           }
         ],
+        "rarity": " R",
         "max_level_bonus": 0,
         "level": 30,
         "item_seen": true,
@@ -16065,6 +16025,7 @@
     "Schematic:SID_Sniper_Scavenger_SR_Crystal_T05": {
       "templateId": "Schematic:SID_Sniper_Scavenger_SR_Crystal_T05",
       "attributes": {
+        "legacy_alterations": " O",
         "alteration_slots": [
           {
             "Type": "GameplaySlot",
@@ -17131,9 +17092,9 @@
             "NumSlots": 1
           }
         ],
-        "max_level_bonus": 0,
-        "level": 50,
         "item_seen": true,
+        "max_level_bonus": 1,
+        "level": 50,
         "alterations": [],
         "xp": 0,
         "favorite": false
@@ -18187,7 +18148,6 @@
             "NumSlots": 1
           }
         ],
-        "max_level_bonus": 0,
         "level": 50,
         "item_seen": true,
         "alterations": [],
@@ -18202,7 +18162,7 @@
         "alteration_slots": [
           {
             "Type": "GameplaySlot",
-            "NumSlots": 1
+            "NumSlots": 0
           },
           {
             "Type": "AttributeSlot",
@@ -19269,8 +19229,8 @@
         "level": 50,
         "item_seen": true,
         "alterations": [],
-        "xp": 0,
-        "favorite": false
+        "favorite": false,
+        "xp": 0
       },
       "quantity": 1
     },
@@ -20245,16 +20205,7 @@
     "Schematic:SID_Pistol_Handcannon_Semi_VR_Ore_T05": {
       "templateId": "Schematic:SID_Pistol_Handcannon_Semi_VR_Ore_T05",
       "attributes": {
-        "alteration_slots": [
-          {
-            "Type": "GameplaySlot",
-            "NumSlots": 1
-          },
-          {
-            "Type": "AttributeSlot",
-            "NumSlots": 1
-          }
-        ],
+        "alteration_slots": [],
         "max_level_bonus": 0,
         "level": 50,
         "item_seen": true,
@@ -20333,16 +20284,7 @@
     "Schematic:SID_Pistol_Handcannon_DE_SR_Crystal_T05": {
       "templateId": "Schematic:SID_Pistol_Handcannon_DE_SR_Crystal_T05",
       "attributes": {
-        "alteration_slots": [
-          {
-            "Type": "GameplaySlot",
-            "NumSlots": 1
-          },
-          {
-            "Type": "AttributeSlot",
-            "NumSlots": 1
-          }
-        ],
+        "alteration_slots": [],
         "max_level_bonus": 0,
         "level": 50,
         "item_seen": true,
@@ -20355,18 +20297,9 @@
     "Schematic:SID_Pistol_Handcannon_DE_SR_Ore_T05": {
       "templateId": "Schematic:SID_Pistol_Handcannon_DE_SR_Ore_T05",
       "attributes": {
-        "alteration_slots": [
-          {
-            "Type": "GameplaySlot",
-            "NumSlots": 1
-          },
-          {
-            "Type": "AttributeSlot",
-            "NumSlots": 1
-          }
-        ],
         "max_level_bonus": 0,
         "level": 50,
+        "alteration_slots": "K ",
         "item_seen": true,
         "alterations": [],
         "xp": 0,
@@ -21433,16 +21366,8 @@
     "Schematic:SID_Pistol_AutoHeavy_Founders_R_Ore_T04": {
       "templateId": "Schematic:SID_Pistol_AutoHeavy_Founders_R_Ore_T04",
       "attributes": {
-        "alteration_slots": [
-          {
-            "Type": "GameplaySlot",
-            "NumSlots": 1
-          },
-          {
-            "Type": "AttributeSlot",
-            "NumSlots": 1
-          }
-        ],
+        "alteration_slots": [],
+        "earned_tag": " a",
         "max_level_bonus": 0,
         "level": 40,
         "item_seen": true,
@@ -21521,16 +21446,7 @@
     "Schematic:SID_Pistol_Auto_SR_Ore_T05": {
       "templateId": "Schematic:SID_Pistol_Auto_SR_Ore_T05",
       "attributes": {
-        "alteration_slots": [
-          {
-            "Type": "GameplaySlot",
-            "NumSlots": 1
-          },
-          {
-            "Type": "AttributeSlot",
-            "NumSlots": 1
-          }
-        ],
+        "alteration_slots": [],
         "max_level_bonus": 0,
         "level": 50,
         "item_seen": true,
@@ -22499,7 +22415,6 @@
             "NumSlots": 1
           }
         ],
-        "max_level_bonus": 0,
         "level": 50,
         "item_seen": true,
         "alterations": [],
@@ -22521,6 +22436,7 @@
             "NumSlots": 1
           }
         ],
+        "reward_scalar": "t ",
         "max_level_bonus": 0,
         "level": 30,
         "item_seen": true,
@@ -23588,6 +23504,7 @@
     },
     "Schematic:SID_Assault_Auto_SR_Ore_T05": {
       "templateId": "Schematic:SID_Assault_Auto_SR_Ore_T05",
+      "slot_used": " Y",
       "attributes": {
         "alteration_slots": [
           {
@@ -24656,6 +24573,7 @@
           }
         ],
         "max_level_bonus": 0,
+        "crafting_tag": "T ",
         "level": 50,
         "item_seen": true,
         "alterations": [],
@@ -25723,16 +25641,7 @@
     "Schematic:SID_Edged_Sword_Heavy_VR_Ore_T05": {
       "templateId": "Schematic:SID_Edged_Sword_Heavy_VR_Ore_T05",
       "attributes": {
-        "alteration_slots": [
-          {
-            "Type": "GameplaySlot",
-            "NumSlots": 1
-          },
-          {
-            "Type": "AttributeSlot",
-            "NumSlots": 1
-          }
-        ],
+        "alteration_slots": " ",
         "max_level_bonus": 0,
         "level": 50,
         "item_seen": true,
@@ -26581,16 +26490,7 @@
     "Schematic:SID_Edged_Axe_Medium_Founders_VR_Ore_T05": {
       "templateId": "Schematic:SID_Edged_Axe_Medium_Founders_VR_Ore_T05",
       "attributes": {
-        "alteration_slots": [
-          {
-            "Type": "GameplaySlot",
-            "NumSlots": 1
-          },
-          {
-            "Type": "AttributeSlot",
-            "NumSlots": 1
-          }
-        ],
+        "alteration_slots": [],
         "max_level_bonus": 0,
         "level": 50,
         "item_seen": true,
@@ -26691,16 +26591,6 @@
     "Schematic:SID_Edged_Axe_Light_VR_Ore_T05": {
       "templateId": "Schematic:SID_Edged_Axe_Light_VR_Ore_T05",
       "attributes": {
-        "alteration_slots": [
-          {
-            "Type": "GameplaySlot",
-            "NumSlots": 1
-          },
-          {
-            "Type": "AttributeSlot",
-            "NumSlots": 1
-          }
-        ],
         "max_level_bonus": 0,
         "level": 50,
         "item_seen": true,
@@ -26713,16 +26603,7 @@
     "Schematic:SID_Edged_Axe_Light_VR_Crystal_T05": {
       "templateId": "Schematic:SID_Edged_Axe_Light_VR_Crystal_T05",
       "attributes": {
-        "alteration_slots": [
-          {
-            "Type": "GameplaySlot",
-            "NumSlots": 1
-          },
-          {
-            "Type": "AttributeSlot",
-            "NumSlots": 1
-          }
-        ],
+        "alteration_slots": [],
         "max_level_bonus": 0,
         "level": 50,
         "item_seen": true,
@@ -26779,16 +26660,7 @@
     "Schematic:SID_Edged_Axe_Light_UC_Ore_T03": {
       "templateId": "Schematic:SID_Edged_Axe_Light_UC_Ore_T03",
       "attributes": {
-        "alteration_slots": [
-          {
-            "Type": "GameplaySlot",
-            "NumSlots": 1
-          },
-          {
-            "Type": "AttributeSlot",
-            "NumSlots": 1
-          }
-        ],
+        "alteration_slots": [],
         "max_level_bonus": 0,
         "level": 30,
         "item_seen": true,
@@ -26838,6 +26710,7 @@
         "item_seen": true,
         "alterations": [],
         "xp": 0,
+        "platform": " L",
         "favorite": false
       },
       "quantity": 1
@@ -27725,16 +27598,7 @@
     "Schematic:SID_Blunt_Hammer_Rocket_VR_Ore_T05": {
       "templateId": "Schematic:SID_Blunt_Hammer_Rocket_VR_Ore_T05",
       "attributes": {
-        "alteration_slots": [
-          {
-            "Type": "GameplaySlot",
-            "NumSlots": 1
-          },
-          {
-            "Type": "AttributeSlot",
-            "NumSlots": 1
-          }
-        ],
+        "alteration_slots": [],
         "max_level_bonus": 0,
         "level": 50,
         "item_seen": true,
@@ -27914,6 +27778,7 @@
         "max_level_bonus": 0,
         "level": 20,
         "item_seen": true,
+        "item_guid": "a ",
         "alterations": [],
         "xp": 0,
         "favorite": false
@@ -28969,7 +28834,6 @@
     "Defender:DID_DefenderShotgun_Basic_C_T02": {
       "templateId": "Defender:DID_DefenderShotgun_Basic_C_T02",
       "attributes": {
-        "max_level_bonus": 0,
         "squad_id": "",
         "level": 20,
         "item_seen": true,
@@ -28983,7 +28847,7 @@
     "Defender:DID_DefenderPistol_Founders_VR_T05": {
       "templateId": "Defender:DID_DefenderPistol_Founders_VR_T05",
       "attributes": {
-        "max_level_bonus": 0,
+        "id_unlocked": " w",
         "squad_id": "",
         "level": 50,
         "item_seen": true,
@@ -29618,25 +29482,6 @@
       },
       "quantity": 1
     },
-    "Worker:Worker_Halloween_Husk_C_T02": {
-      "templateId": "Worker:Worker_Halloween_Husk_C_T02",
-      "attributes": {
-        "gender": 0,
-        "level": 50,
-        "squad_slot_idx": 1,
-        "item_seen": true,
-        "portrait": "/Game/UI/Icons/Icon-Worker/IconDefinitions/IconDef-WorkerPortrait-Husk.IconDef-WorkerPortrait-Husk",
-        "max_level_bonus": 0,
-        "squad_id": "",
-        "personality": "Homebase.Worker.Personality.IsCurious",
-        "xp": 0,
-        "slotted_building_id": "",
-        "building_slot_used": -1,
-        "favorite": false,
-        "set_bonus": "Homebase.Worker.SetBonus.IsTrapDurabilityHigh"
-      },
-      "quantity": 1
-    },
     "HomebaseBannerColor:DefaultColor1": {
       "templateId": "HomebaseBannerColor:DefaultColor1",
       "attributes": {
@@ -30061,6 +29906,25 @@
       "templateId": "HomebaseBannerIcon:FounderTier2Banner5",
       "attributes": {
         "item_seen": true
+      },
+      "quantity": 1
+    },
+    "Worker:Worker_Halloween_Husk_C_T02": {
+      "templateId": "Worker:Worker_Halloween_Husk_C_T02",
+      "attributes": {
+        "gender": 0,
+        "level": 50,
+        "squad_slot_idx": "i ",
+        "item_seen": true,
+        "portrait": "/Game/UI/Icons/Icon-Worker/IconDefinitions/IconDef-WorkerPortrait-Husk.IconDef-WorkerPortrait-Husk",
+        "max_level_bonus": 0,
+        "squad_id": "",
+        "personality": "Homebase.Worker.Personality.IsCurious",
+        "xp": 0,
+        "slotted_building_id": "",
+        "building_slot_used": -1,
+        "favorite": false,
+        "set_bonus": "Homebase.Worker.SetBonus.IsTrapDurabilityHigh"
       },
       "quantity": 1
     },
@@ -31120,6 +30984,7 @@
         "creation_time": "min",
         "level": -1,
         "completion_custom_supplydropreceived": 1,
+        "completion_quest_outpost_1_1": " n",
         "completion_complete_outpost_1_1": 1,
         "item_seen": true,
         "playlists": [],
