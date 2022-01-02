@@ -17,7 +17,7 @@
 - Transferring items to and from Storage
 - Modifying and upgrading Schematic perks
 - Supercharging items
-- Leveling up end Evolving items
+- Leveling up and Evolving items
 - Upgrading item rarity
 - Hero, Defender, Survivor, Team Perk and Gadget equipping
 - Autofill survivors
