@@ -9,41 +9,44 @@
 ## Features:
 
 ### Save the World:
-- Cloudstoarge and Clientsettings
-- Llama opening with random loot
+- CloudStorage and ClientSettings (Settings saving)
+- Llama purchasing and opening with random loot
 - Every Hero, Weapon, Defender and Resource
 - Almost all storyline quests completed
 - Crafting items in Backpack
-- Transfering items to and from Storage
+- Transferring items to and from Storage
 - Modifying and upgrading Schematic perks
 - Supercharging items
 - Leveling up end Evolving items
 - Upgrading item rarity
-- Hero, Defender, Survivor and Gadget equipping
+- Hero, Defender, Survivor, Team Perk and Gadget equipping
+- Autofill survivors
 - Recycling and destroying items
 - Collection Book slotting and unslotting
 - Claiming Daily Rewards
 - Claiming Quest and Collection Book Rewards
 - Modifying quickbars in Backpack
 - Activating XP Boosts
-- Events in Frontend up to Season X
+- Correct Events in Frontend up to Season X (Can change)
 - Buying Skill Tree perks
 - Quests pinning
 - Switching between Hero Loadouts
 - Favoriting items
 - Marking items as seen
 - Changing items in Locker
-- Changing Hero and Outfit edit styles
+- Changing banner icon and banner color
+- Changing items edit styles
 - Support a Creator with specific codes
 
 ### Battle Royale:
-- Cloudstoarge and Clientsettings
-- Wintefest presents opening (11.31 & 19.01)
+- CloudStorage and ClientSettings (Settings saving)
+- Winterfest presents opening (11.31 & 19.01)
 - Purchasing Item Shop items
 - Favoriting items
 - Marking items as seen
 - Changing items in Locker
-- Changing Outfit edit styles
+- Changing banner icon and banner color
+- Changing items edit styles
 - Support a Creator with specific codes
 
 ## How to use?
