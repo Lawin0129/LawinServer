@@ -8,25 +8,6 @@
   "profileId": "collection_book_people0",
   "version": "no_version",
   "items": {
-    "Worker:workerbasic_c_t01": {
-      "templateId": "Worker:workerbasic_c_t01",
-      "attributes": {
-        "gender": "1",
-        "level": 1,
-        "item_seen": true,
-        "squad_slot_idx": -1,
-        "portrait": "WorkerPortrait:IconDef-WorkerPortrait-Cooperative-M01",
-        "max_level_bonus": 0,
-        "personality": "Homebase.Worker.Personality.IsCooperative",
-        "squad_id": "",
-        "xp": 0,
-        "slotted_building_id": "",
-        "building_slot_used": -1,
-        "favorite": false,
-        "set_bonus": "Homebase.Worker.SetBonus.IsMeleeDamageLow"
-      },
-      "quantity": 1
-    },
     "CollectionBookPage:pageHeroes_Commando": {
       "templateId": "CollectionBookPage:pageHeroes_Commando",
       "attributes": {
