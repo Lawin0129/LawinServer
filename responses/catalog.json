@@ -324,16 +324,7 @@
                      "minQuantity":1
                   }
                ],
-               "metaInfo":[
-                  {
-                     "key":"bUseSharedDisplay",
-                     "value":"true"
-                  },
-                  {
-                     "key":"SharedDisplayPriority",
-                     "value":"999999"
-                  }
-               ],
+               "metaInfo":[],
                "metaAssetInfo":{
                   "structName":"FortCatalogMeta",
                   "payload":{
@@ -421,16 +412,7 @@
                      "minQuantity":1
                   }
                ],
-               "metaInfo":[
-                  {
-                     "key":"bUseSharedDisplay",
-                     "value":"true"
-                  },
-                  {
-                     "key":"SharedDisplayPriority",
-                     "value":"1"
-                  }
-               ],
+               "metaInfo":[],
                "metaAssetInfo":{
                   "structName":"FortCatalogMeta",
                   "payload":{
