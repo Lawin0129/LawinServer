@@ -208,7 +208,8 @@
                      "currencyType":"MtxCurrency",
                      "currencySubType":"",
                      "regularPrice":50,
-                     "finalPrice":50,
+                     "finalPrice":0,
+                     "saleType":"Strikethrough",
                      "saleExpiration":"9999-12-31T23:59:59.999Z",
                      "basePrice":50
                   }
