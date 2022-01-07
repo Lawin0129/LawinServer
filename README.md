@@ -1,5 +1,5 @@
 <div align=center>
-  <img src="https://i.imgur.com/fpysHlE.png" alt="LawinServer">
+  <img src="https://i.imgur.com/y86II4q.png" alt="LawinServer Logo">
 
   ### LawinServer is a private server that supports all Fortnite versions!
   
