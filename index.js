@@ -1652,6 +1652,156 @@ express.post("/fortnite/api/game/v2/profile/*/client/SetPinnedQuests", async (re
     res.end();
 });
 
+// Replace STW Quests
+express.post("/fortnite/api/game/v2/profile/*/client/FortRerollDailyQuest", async (req, res) => {
+    const profile = require(`./profiles/${req.query.profileId || "campaign"}.json`);
+    const QuestIDS = require("./responses/stwquests.json");
+
+    // do not change any of these or you will end up breaking it
+    var ApplyProfileChanges = [];
+    var Notifications = [];
+    var BaseRevision = profile.rvn || 0;
+    var QueryRevision = req.query.rvn || -1;
+    var StatChanged = false;
+
+    const NewQuestID = makeid();
+    const randomNumber = Math.floor(Math.random() * QuestIDS.length);
+
+    if (req.body.questId && profile.stats.attributes.quest_manager.dailyQuestRerolls >= 1) {
+        profile.stats.attributes.quest_manager.dailyQuestRerolls -= 1;
+        delete profile.items[req.body.questId]
+        profile.items[NewQuestID] = {
+            "templateId": QuestIDS[randomNumber],
+            "attributes": {
+                "creation_time": new Date().toISOString(),
+                "completion_complete": 0,
+                "level": -1,
+                "item_seen": false,
+                "playlists": [],
+                "sent_new_notification": false,
+                "challenge_bundle_id": "",
+                "xp_reward_scalar": 1,
+                "challenge_linked_quest_given": "",
+                "quest_pool": "",
+                "quest_state": "Active",
+                "bucket": "",
+                "last_state_change_time": new Date().toISOString(),
+                "challenge_linked_quest_parent": "",
+                "max_level_bonus": 0,
+                "xp": 0,
+                "quest_rarity": "uncommon",
+                "favorite": false
+            },
+            "quantity": 1
+        };
+        StatChanged = true;
+    }
+
+    if (StatChanged == true) {
+        profile.rvn += 1;
+        profile.commandRevision += 1;
+
+        ApplyProfileChanges.push({
+            "changeType": "statModified",
+            "name": "quest_manager",
+            "value": profile.stats.attributes.quest_manager
+        })
+
+        ApplyProfileChanges.push({
+            "changeType": "itemAdded",
+            "itemId": NewQuestID,
+            "item": profile.items[NewQuestID]
+        })
+
+        ApplyProfileChanges.push({
+            "changeType": "itemRemoved",
+            "itemId": req.body.questId
+        })
+
+        Notifications.push({
+            "type": "dailyQuestReroll",
+            "primary": true,
+            "newQuestId": QuestIDS[randomNumber]
+        })
+
+        fs.writeFileSync(`./profiles/${req.query.profileId || "campaign"}.json`, JSON.stringify(profile, null, 2));
+    }
+
+    // this doesn't work properly on version v12.20 and above but whatever
+    if (QueryRevision != BaseRevision) {
+        ApplyProfileChanges = [{
+            "changeType": "fullProfileUpdate",
+            "profile": profile
+        }];
+    }
+
+    res.json({
+        "profileRevision": profile.rvn || 0,
+        "profileId": req.query.profileId || "campaign",
+        "profileChangesBaseRevision": BaseRevision,
+        "profileChanges": ApplyProfileChanges,
+        "notifications": Notifications,
+        "profileCommandRevision": profile.commandRevision || 0,
+        "serverTime": new Date().toISOString(),
+        "responseVersion": 1
+    })
+    res.end();
+});
+
+// Mark New Quest Notification Sent
+express.post("/fortnite/api/game/v2/profile/*/client/MarkNewQuestNotificationSent", async (req, res) => {
+    const profile = require(`./profiles/${req.query.profileId || "campaign"}.json`);
+
+    // do not change any of these or you will end up breaking it
+    var ApplyProfileChanges = [];
+    var BaseRevision = profile.rvn || 0;
+    var QueryRevision = req.query.rvn || -1;
+    var StatChanged = false;
+
+    if (req.body.itemIds) {
+        for (var i = 0; i < req.body.itemIds.length; i++) {
+            var id = req.body.itemIds[i];
+
+            profile.items[id].attributes.sent_new_notification = true
+
+            ApplyProfileChanges.push({
+                "changeType": "itemAttrChanged",
+                "itemId": id,
+                "attributeName": "sent_new_notification",
+                "attributeValue": true
+            })
+        }
+
+        StatChanged = true;
+    }
+
+    if (StatChanged == true) {
+        profile.rvn += 1;
+        profile.commandRevision += 1;
+
+        fs.writeFileSync(`./profiles/${req.query.profileId || "campaign"}.json`, JSON.stringify(profile, null, 2));
+    }
+
+    // this doesn't work properly on version v12.20 and above but whatever
+    if (QueryRevision != BaseRevision) {
+        ApplyProfileChanges = [{
+            "changeType": "fullProfileUpdate",
+            "profile": profile
+        }];
+    }
+
+    res.json({
+        "profileRevision": profile.rvn || 0,
+        "profileId": req.query.profileId || "campaign",
+        "profileChangesBaseRevision": BaseRevision,
+        "profileChanges": ApplyProfileChanges,
+        "profileCommandRevision": profile.commandRevision || 0,
+        "serverTime": new Date().toISOString(),
+        "responseVersion": 1
+    })
+    res.end();
+});
+
 // Claim STW daily reward
 express.post("/fortnite/api/game/v2/profile/*/client/ClaimLoginReward", async (req, res) => {
     const profile = require(`./profiles/${req.query.profileId || "campaign"}.json`);
@@ -1669,6 +1819,9 @@ express.post("/fortnite/api/game/v2/profile/*/client/ClaimLoginReward", async (r
         profile.stats.attributes.daily_rewards.totalDaysLoggedIn += 1;
         profile.stats.attributes.daily_rewards.lastClaimDate = DateFormat;
         profile.stats.attributes.daily_rewards.additionalSchedules.founderspackdailyrewardtoken.rewardsClaimed += 1;
+        if (profile.stats.attributes.quest_manager.dailyQuestRerolls == 0) {
+            profile.stats.attributes.quest_manager.dailyQuestRerolls += 1
+        }
         StatChanged = true;
     }
 
@@ -1680,6 +1833,12 @@ express.post("/fortnite/api/game/v2/profile/*/client/ClaimLoginReward", async (r
             "changeType": "statModified",
             "name": "daily_rewards",
             "value": profile.stats.attributes.daily_rewards
+        })
+
+        ApplyProfileChanges.push({
+            "changeType": "statModified",
+            "name": "quest_manager",
+            "value": profile.stats.attributes.quest_manager
         })
 
         fs.writeFileSync(`./profiles/${req.query.profileId || "campaign"}.json`, JSON.stringify(profile, null, 2));
