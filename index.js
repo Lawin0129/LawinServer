@@ -1652,6 +1652,164 @@ express.post("/fortnite/api/game/v2/profile/*/client/SetPinnedQuests", async (re
     res.end();
 });
 
+// Replace Daily Quests
+express.post("/fortnite/api/game/v2/profile/*/client/FortRerollDailyQuest", async (req, res) => {
+    const profile = require(`./profiles/${req.query.profileId || "campaign"}.json`);
+    var QuestIDS = require("./responses/quests.json");
+
+    // do not change any of these or you will end up breaking it
+    var ApplyProfileChanges = [];
+    var Notifications = [];
+    var BaseRevision = profile.rvn || 0;
+    var QueryRevision = req.query.rvn || -1;
+    var StatChanged = false;
+
+    if (req.query.profileId == "profile0" || req.query.profileId == "campaign") {
+        QuestIDS = QuestIDS.SaveTheWorld
+    }
+
+    if (req.query.profileId == "athena") {
+        QuestIDS = QuestIDS.BattleRoyale
+    }
+
+    const NewQuestID = makeid();
+    const randomNumber = Math.floor(Math.random() * QuestIDS.length);
+
+    if (req.body.questId && profile.stats.attributes.quest_manager.dailyQuestRerolls >= 1) {
+        profile.stats.attributes.quest_manager.dailyQuestRerolls -= 1;
+        delete profile.items[req.body.questId]
+        profile.items[NewQuestID] = {
+            "templateId": QuestIDS[randomNumber],
+            "attributes": {
+                "creation_time": new Date().toISOString(),
+                "completion_complete": 0,
+                "level": -1,
+                "item_seen": false,
+                "playlists": [],
+                "sent_new_notification": false,
+                "challenge_bundle_id": "",
+                "xp_reward_scalar": 1,
+                "challenge_linked_quest_given": "",
+                "quest_pool": "",
+                "quest_state": "Active",
+                "bucket": "",
+                "last_state_change_time": new Date().toISOString(),
+                "challenge_linked_quest_parent": "",
+                "max_level_bonus": 0,
+                "xp": 0,
+                "quest_rarity": "uncommon",
+                "favorite": false
+            },
+            "quantity": 1
+        };
+        StatChanged = true;
+    }
+
+    if (StatChanged == true) {
+        profile.rvn += 1;
+        profile.commandRevision += 1;
+
+        ApplyProfileChanges.push({
+            "changeType": "statModified",
+            "name": "quest_manager",
+            "value": profile.stats.attributes.quest_manager
+        })
+
+        ApplyProfileChanges.push({
+            "changeType": "itemAdded",
+            "itemId": NewQuestID,
+            "item": profile.items[NewQuestID]
+        })
+
+        ApplyProfileChanges.push({
+            "changeType": "itemRemoved",
+            "itemId": req.body.questId
+        })
+
+        Notifications.push({
+            "type": "dailyQuestReroll",
+            "primary": true,
+            "newQuestId": QuestIDS[randomNumber]
+        })
+
+        fs.writeFileSync(`./profiles/${req.query.profileId || "campaign"}.json`, JSON.stringify(profile, null, 2));
+    }
+
+    // this doesn't work properly on version v12.20 and above but whatever
+    if (QueryRevision != BaseRevision) {
+        ApplyProfileChanges = [{
+            "changeType": "fullProfileUpdate",
+            "profile": profile
+        }];
+    }
+
+    res.json({
+        "profileRevision": profile.rvn || 0,
+        "profileId": req.query.profileId || "campaign",
+        "profileChangesBaseRevision": BaseRevision,
+        "profileChanges": ApplyProfileChanges,
+        "notifications": Notifications,
+        "profileCommandRevision": profile.commandRevision || 0,
+        "serverTime": new Date().toISOString(),
+        "responseVersion": 1
+    })
+    res.end();
+});
+
+// Mark New Quest Notification Sent
+express.post("/fortnite/api/game/v2/profile/*/client/MarkNewQuestNotificationSent", async (req, res) => {
+    const profile = require(`./profiles/${req.query.profileId || "campaign"}.json`);
+
+    // do not change any of these or you will end up breaking it
+    var ApplyProfileChanges = [];
+    var BaseRevision = profile.rvn || 0;
+    var QueryRevision = req.query.rvn || -1;
+    var StatChanged = false;
+
+    if (req.body.itemIds) {
+        for (var i = 0; i < req.body.itemIds.length; i++) {
+            var id = req.body.itemIds[i];
+
+            profile.items[id].attributes.sent_new_notification = true
+
+            ApplyProfileChanges.push({
+                "changeType": "itemAttrChanged",
+                "itemId": id,
+                "attributeName": "sent_new_notification",
+                "attributeValue": true
+            })
+        }
+
+        StatChanged = true;
+    }
+
+    if (StatChanged == true) {
+        profile.rvn += 1;
+        profile.commandRevision += 1;
+
+        fs.writeFileSync(`./profiles/${req.query.profileId || "campaign"}.json`, JSON.stringify(profile, null, 2));
+    }
+
+    // this doesn't work properly on version v12.20 and above but whatever
+    if (QueryRevision != BaseRevision) {
+        ApplyProfileChanges = [{
+            "changeType": "fullProfileUpdate",
+            "profile": profile
+        }];
+    }
+
+    res.json({
+        "profileRevision": profile.rvn || 0,
+        "profileId": req.query.profileId || "campaign",
+        "profileChangesBaseRevision": BaseRevision,
+        "profileChanges": ApplyProfileChanges,
+        "profileCommandRevision": profile.commandRevision || 0,
+        "serverTime": new Date().toISOString(),
+        "responseVersion": 1
+    })
+    res.end();
+});
+
 // Claim STW daily reward
 express.post("/fortnite/api/game/v2/profile/*/client/ClaimLoginReward", async (req, res) => {
     const profile = require(`./profiles/${req.query.profileId || "campaign"}.json`);
@@ -1669,6 +1827,9 @@ express.post("/fortnite/api/game/v2/profile/*/client/ClaimLoginReward", async (r
         profile.stats.attributes.daily_rewards.totalDaysLoggedIn += 1;
         profile.stats.attributes.daily_rewards.lastClaimDate = DateFormat;
         profile.stats.attributes.daily_rewards.additionalSchedules.founderspackdailyrewardtoken.rewardsClaimed += 1;
+        if (profile.stats.attributes.quest_manager.dailyQuestRerolls == 0) {
+            profile.stats.attributes.quest_manager.dailyQuestRerolls += 1
+        }
         StatChanged = true;
     }
 
@@ -1680,6 +1841,12 @@ express.post("/fortnite/api/game/v2/profile/*/client/ClaimLoginReward", async (r
             "changeType": "statModified",
             "name": "daily_rewards",
             "value": profile.stats.attributes.daily_rewards
+        })
+
+        ApplyProfileChanges.push({
+            "changeType": "statModified",
+            "name": "quest_manager",
+            "value": profile.stats.attributes.quest_manager
         })
 
         fs.writeFileSync(`./profiles/${req.query.profileId || "campaign"}.json`, JSON.stringify(profile, null, 2));
@@ -5794,6 +5961,17 @@ function getContentPages(req) {
         })
     } catch (err) {}
 
+    const news = ["savetheworldnews", "battleroyalenews"]
+
+    if (seasondata.season < 5 || (seasondata.season == 5 && parseInt(seasondata.build.toString().split(".")[1]) < 30)) { 
+        try {
+            news.forEach(mode => {
+                contentpages[mode].news.messages[0].image = "https://i.imgur.com/Az6kyrk.png";
+                contentpages[mode].news.messages[1].image = "https://i.imgur.com/Wf8wQQy.png";
+            })
+        } catch (err) {}
+    }
+
     try {
         contentpages.dynamicbackgrounds.backgrounds.backgrounds[0].stage = `season${seasondata.season}`;
         contentpages.dynamicbackgrounds.backgrounds.backgrounds[1].stage = `season${seasondata.season}`;
@@ -5811,6 +5989,7 @@ function getContentPages(req) {
         if (seasondata.build == 19.01) {
             contentpages.dynamicbackgrounds.backgrounds.backgrounds[0].stage = "winter2021";
             contentpages.dynamicbackgrounds.backgrounds.backgrounds[0].backgroundimage = "https://cdn2.unrealengine.com/t-bp19-lobby-xmas-2048x1024-f85d2684b4af.png";
+            contentpages.subgameinfo.battleroyale.image = "https://cdn2.unrealengine.com/19br-wf-subgame-select-512x1024-16d8bb0f218f.jpg";
             contentpages.specialoffervideo.bSpecialOfferEnabled = "true";
         }
     } catch (err) {}

@@ -37,6 +37,7 @@
 - Changing banner icon and banner color
 - Changing items edit styles
 - Support a Creator with specific codes
+- Daily Quest replacing
 
 ### Battle Royale:
 - CloudStorage and ClientSettings (Settings saving)
@@ -48,6 +49,7 @@
 - Changing banner icon and banner color
 - Changing items edit styles
 - Support a Creator with specific codes
+- Daily Quest replacing
 
 ## How to use?
 1) Install [NodeJS](https://nodejs.org/en/)
