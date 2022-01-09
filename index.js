@@ -1652,10 +1652,10 @@ express.post("/fortnite/api/game/v2/profile/*/client/SetPinnedQuests", async (re
     res.end();
 });
 
-// Replace STW Quests
+// Replace Daily Quests
 express.post("/fortnite/api/game/v2/profile/*/client/FortRerollDailyQuest", async (req, res) => {
     const profile = require(`./profiles/${req.query.profileId || "campaign"}.json`);
-    const QuestIDS = require("./responses/stwquests.json");
+    var QuestIDS = require("./responses/quests.json");
 
     // do not change any of these or you will end up breaking it
     var ApplyProfileChanges = [];
@@ -1663,6 +1663,14 @@ express.post("/fortnite/api/game/v2/profile/*/client/FortRerollDailyQuest", asyn
     var BaseRevision = profile.rvn || 0;
     var QueryRevision = req.query.rvn || -1;
     var StatChanged = false;
+
+    if (req.query.profileId == "profile0" || req.query.profileId == "campaign") {
+        QuestIDS = QuestIDS.SaveTheWorld
+    }
+
+    if (req.query.profileId == "athena") {
+        QuestIDS = QuestIDS.BattleRoyale
+    }
 
     const NewQuestID = makeid();
     const randomNumber = Math.floor(Math.random() * QuestIDS.length);
