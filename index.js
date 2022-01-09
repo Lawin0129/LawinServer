@@ -5953,6 +5953,17 @@ function getContentPages(req) {
         })
     } catch (err) {}
 
+    const news = ["savetheworldnews", "battleroyalenews"]
+
+    if (seasondata.season < 5 || (seasondata.season == 5 && parseInt(seasondata.build.toString().split(".")[1]) < 30)) { 
+        try {
+            news.forEach(mode => {
+                contentpages[mode].news.messages[0].image = "https://i.imgur.com/Az6kyrk.png";
+                contentpages[mode].news.messages[1].image = "https://i.imgur.com/Wf8wQQy.png";
+            })
+        } catch (err) {}
+    }
+
     try {
         contentpages.dynamicbackgrounds.backgrounds.backgrounds[0].stage = `season${seasondata.season}`;
         contentpages.dynamicbackgrounds.backgrounds.backgrounds[1].stage = `season${seasondata.season}`;
