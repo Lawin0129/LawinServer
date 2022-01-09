@@ -1654,7 +1654,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/SetPinnedQuests", async (re
 
 // Replace Daily Quests
 express.post("/fortnite/api/game/v2/profile/*/client/FortRerollDailyQuest", async (req, res) => {
-    const profile = require(`./profiles/${req.query.profileId || "campaign"}.json`);
+    const profile = require(`./profiles/${req.query.profileId || "athena"}.json`);
     var QuestIDS = require("./responses/quests.json");
 
     // do not change any of these or you will end up breaking it
@@ -1663,6 +1663,8 @@ express.post("/fortnite/api/game/v2/profile/*/client/FortRerollDailyQuest", asyn
     var BaseRevision = profile.rvn || 0;
     var QueryRevision = req.query.rvn || -1;
     var StatChanged = false;
+
+    var DateFormat = (new Date().toISOString()).split("T")[0] + "T00:00:00.000Z";
 
     if (req.query.profileId == "profile0" || req.query.profileId == "campaign") {
         QuestIDS = QuestIDS.SaveTheWorld
@@ -1677,11 +1679,13 @@ express.post("/fortnite/api/game/v2/profile/*/client/FortRerollDailyQuest", asyn
 
     if (req.body.questId && profile.stats.attributes.quest_manager.dailyQuestRerolls >= 1) {
         profile.stats.attributes.quest_manager.dailyQuestRerolls -= 1;
-        delete profile.items[req.body.questId]
+
+        delete profile.items[req.body.questId];
+
         profile.items[NewQuestID] = {
             "templateId": QuestIDS[randomNumber],
             "attributes": {
-                "creation_time": new Date().toISOString(),
+                "creation_time": DateFormat,
                 "completion_complete": 0,
                 "level": -1,
                 "item_seen": false,
@@ -1693,7 +1697,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/FortRerollDailyQuest", asyn
                 "quest_pool": "",
                 "quest_state": "Active",
                 "bucket": "",
-                "last_state_change_time": new Date().toISOString(),
+                "last_state_change_time": DateFormat,
                 "challenge_linked_quest_parent": "",
                 "max_level_bonus": 0,
                 "xp": 0,
@@ -1702,6 +1706,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/FortRerollDailyQuest", asyn
             },
             "quantity": 1
         };
+
         StatChanged = true;
     }
 
@@ -1732,7 +1737,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/FortRerollDailyQuest", asyn
             "newQuestId": QuestIDS[randomNumber]
         })
 
-        fs.writeFileSync(`./profiles/${req.query.profileId || "campaign"}.json`, JSON.stringify(profile, null, 2));
+        fs.writeFileSync(`./profiles/${req.query.profileId || "athena"}.json`, JSON.stringify(profile, null, 2));
     }
 
     // this doesn't work properly on version v12.20 and above but whatever
@@ -1745,7 +1750,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/FortRerollDailyQuest", asyn
 
     res.json({
         "profileRevision": profile.rvn || 0,
-        "profileId": req.query.profileId || "campaign",
+        "profileId": req.query.profileId || "athena",
         "profileChangesBaseRevision": BaseRevision,
         "profileChanges": ApplyProfileChanges,
         "notifications": Notifications,
@@ -1758,7 +1763,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/FortRerollDailyQuest", asyn
 
 // Mark New Quest Notification Sent
 express.post("/fortnite/api/game/v2/profile/*/client/MarkNewQuestNotificationSent", async (req, res) => {
-    const profile = require(`./profiles/${req.query.profileId || "campaign"}.json`);
+    const profile = require(`./profiles/${req.query.profileId || "athena"}.json`);
 
     // do not change any of these or you will end up breaking it
     var ApplyProfileChanges = [];
@@ -1787,7 +1792,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/MarkNewQuestNotificationSen
         profile.rvn += 1;
         profile.commandRevision += 1;
 
-        fs.writeFileSync(`./profiles/${req.query.profileId || "campaign"}.json`, JSON.stringify(profile, null, 2));
+        fs.writeFileSync(`./profiles/${req.query.profileId || "athena"}.json`, JSON.stringify(profile, null, 2));
     }
 
     // this doesn't work properly on version v12.20 and above but whatever
@@ -1800,7 +1805,145 @@ express.post("/fortnite/api/game/v2/profile/*/client/MarkNewQuestNotificationSen
 
     res.json({
         "profileRevision": profile.rvn || 0,
-        "profileId": req.query.profileId || "campaign",
+        "profileId": req.query.profileId || "athena",
+        "profileChangesBaseRevision": BaseRevision,
+        "profileChanges": ApplyProfileChanges,
+        "profileCommandRevision": profile.commandRevision || 0,
+        "serverTime": new Date().toISOString(),
+        "responseVersion": 1
+    })
+    res.end();
+});
+
+// Check for new quests
+express.post("/fortnite/api/game/v2/profile/*/client/ClientQuestLogin", async (req, res) => {
+    const profile = require(`./profiles/${req.query.profileId || "athena"}.json`);
+    var QuestIDS = require("./responses/quests.json");
+
+    // do not change any of these or you will end up breaking it
+    var ApplyProfileChanges = [];
+    var BaseRevision = profile.rvn || 0;
+    var QueryRevision = req.query.rvn || -1;
+    var StatChanged = false;
+
+    var QuestCount = 0;
+    var ShouldGiveQuest = true;
+    var StopCheck = false;
+    var DateFormat = (new Date().toISOString()).split("T")[0] + "T00:00:00.000Z";
+
+    try {
+        if (req.query.profileId == "profile0" || req.query.profileId == "campaign") {
+            QuestIDS = QuestIDS.SaveTheWorld
+
+            for (var key in profile.items) {
+                if (profile.items[key].templateId.toLowerCase().startsWith("quest:daily")) {
+                    QuestCount += 1;
+                }
+            }
+        }
+
+        if (req.query.profileId == "athena") {
+            QuestIDS = QuestIDS.BattleRoyale
+
+            for (var key in profile.items) {
+                if (profile.items[key].templateId.toLowerCase().startsWith("quest:athenadaily")) {
+                    QuestCount += 1;
+                }
+            }
+        }
+
+        if (profile.stats.attributes.hasOwnProperty("quest_manager")) {
+            if (profile.stats.attributes.quest_manager.hasOwnProperty("dailyLoginInterval")) {
+                if (profile.stats.attributes.quest_manager.dailyLoginInterval.includes("T")) {
+                    var DailyLoginDate = (profile.stats.attributes.quest_manager.dailyLoginInterval).split("T")[0] + "T00:00:00.000Z";
+
+                    if (StopCheck == false) {
+                        if (DailyLoginDate.toLowerCase() == DateFormat.toLowerCase()) {
+                            ShouldGiveQuest = false;
+                            StopCheck = true;
+                        } else {
+                            ShouldGiveQuest = true;
+                        }
+                    }
+                }
+            }
+        }
+
+        if (QuestCount < 3 && ShouldGiveQuest == true) {
+            const NewQuestID = makeid();
+            var randomNumber = Math.floor(Math.random() * QuestIDS.length);
+
+            for (var key in profile.items) {
+                while (QuestIDS[randomNumber].toLowerCase() == profile.items[key].templateId.toLowerCase()) {
+                    randomNumber = Math.floor(Math.random() * QuestIDS.length);
+                }
+            }
+
+            profile.items[NewQuestID] = {
+                "templateId": QuestIDS[randomNumber],
+                "attributes": {
+                    "creation_time": DateFormat,
+                    "completion_complete": 0,
+                    "level": -1,
+                    "item_seen": false,
+                    "playlists": [],
+                    "sent_new_notification": false,
+                    "challenge_bundle_id": "",
+                    "xp_reward_scalar": 1,
+                    "challenge_linked_quest_given": "",
+                    "quest_pool": "",
+                    "quest_state": "Active",
+                    "bucket": "",
+                    "last_state_change_time": DateFormat,
+                    "challenge_linked_quest_parent": "",
+                    "max_level_bonus": 0,
+                    "xp": 0,
+                    "quest_rarity": "uncommon",
+                    "favorite": false
+                },
+                "quantity": 1
+            };
+
+            profile.stats.attributes.quest_manager.dailyLoginInterval = DateFormat;
+
+            if (profile.stats.attributes.quest_manager.dailyQuestRerolls == 0) {
+                profile.stats.attributes.quest_manager.dailyQuestRerolls += 1
+            }
+
+            ApplyProfileChanges.push({
+                "changeType": "itemAdded",
+                "itemId": NewQuestID,
+                "item": profile.items[NewQuestID]
+            })
+
+            ApplyProfileChanges.push({
+                "changeType": "statModified",
+                "name": "quest_manager",
+                "value": profile.stats.attributes.quest_manager
+            })
+
+            StatChanged = true;
+        }
+    } catch (err) {}
+
+    if (StatChanged == true) {
+        profile.rvn += 1;
+        profile.commandRevision += 1;
+
+        fs.writeFileSync(`./profiles/${req.query.profileId || "athena"}.json`, JSON.stringify(profile, null, 2));
+    }
+
+    // this doesn't work properly on version v12.20 and above but whatever
+    if (QueryRevision != BaseRevision) {
+        ApplyProfileChanges = [{
+            "changeType": "fullProfileUpdate",
+            "profile": profile
+        }];
+    }
+
+    res.json({
+        "profileRevision": profile.rvn || 0,
+        "profileId": req.query.profileId || "athena",
         "profileChangesBaseRevision": BaseRevision,
         "profileChanges": ApplyProfileChanges,
         "profileCommandRevision": profile.commandRevision || 0,
@@ -1827,9 +1970,6 @@ express.post("/fortnite/api/game/v2/profile/*/client/ClaimLoginReward", async (r
         profile.stats.attributes.daily_rewards.totalDaysLoggedIn += 1;
         profile.stats.attributes.daily_rewards.lastClaimDate = DateFormat;
         profile.stats.attributes.daily_rewards.additionalSchedules.founderspackdailyrewardtoken.rewardsClaimed += 1;
-        if (profile.stats.attributes.quest_manager.dailyQuestRerolls == 0) {
-            profile.stats.attributes.quest_manager.dailyQuestRerolls += 1
-        }
         StatChanged = true;
     }
 
@@ -1841,12 +1981,6 @@ express.post("/fortnite/api/game/v2/profile/*/client/ClaimLoginReward", async (r
             "changeType": "statModified",
             "name": "daily_rewards",
             "value": profile.stats.attributes.daily_rewards
-        })
-
-        ApplyProfileChanges.push({
-            "changeType": "statModified",
-            "name": "quest_manager",
-            "value": profile.stats.attributes.quest_manager
         })
 
         fs.writeFileSync(`./profiles/${req.query.profileId || "campaign"}.json`, JSON.stringify(profile, null, 2));
@@ -5953,6 +6087,7 @@ function getContentPages(req) {
     }
 
     const modes = ["saveTheWorldUnowned", "battleRoyale", "creative", "saveTheWorld"];
+    const news = ["savetheworldnews", "battleroyalenews"]
 
     try {
         modes.forEach(mode => {
@@ -5961,16 +6096,14 @@ function getContentPages(req) {
         })
     } catch (err) {}
 
-    const news = ["savetheworldnews", "battleroyalenews"]
-
-    if (seasondata.season < 5 || (seasondata.season == 5 && parseInt(seasondata.build.toString().split(".")[1]) < 30)) { 
-        try {
+    try {
+        if (seasondata.season < 5 || (seasondata.season == 5 && Number(seasondata.build.toString().split(".")[1]) < 30)) { 
             news.forEach(mode => {
                 contentpages[mode].news.messages[0].image = "https://i.imgur.com/Az6kyrk.png";
                 contentpages[mode].news.messages[1].image = "https://i.imgur.com/Wf8wQQy.png";
             })
-        } catch (err) {}
-    }
+        }
+    } catch (err) {}
 
     try {
         contentpages.dynamicbackgrounds.backgrounds.backgrounds[0].stage = `season${seasondata.season}`;

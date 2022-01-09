@@ -32699,51 +32699,6 @@
         "favorite": false
       },
       "quantity": 0
-    },
-    "Quest:Daily_DestroyTVs": {
-      "templateId": "Quest:Daily_DestroyTVs",
-      "attributes": {
-        "quest_state": "Active",
-        "last_state_change_time": "2017-12-25T02:06:00.508Z",
-        "completion_complete": 0,
-        "max_level_bonus": 0,
-        "level": -1,
-        "item_seen": true,
-        "xp": 0,
-        "sent_new_notification": true,
-        "favorite": false
-      },
-      "quantity": 1
-    },
-    "Quest:Daily_Mission_Specialist_Soldier": {
-      "templateId": "Quest:Daily_Mission_Specialist_Soldier",
-      "attributes": {
-        "quest_state": "Active",
-        "last_state_change_time": "2017-12-25T02:06:00.508Z",
-        "completion_complete": 0,
-        "max_level_bonus": 0,
-        "level": -1,
-        "item_seen": true,
-        "xp": 0,
-        "sent_new_notification": true,
-        "favorite": false
-      },
-      "quantity": 1
-    },
-    "Quest:Daily_PartyOf50": {
-      "templateId": "Quest:Daily_PartyOf50",
-      "attributes": {
-        "quest_state": "Active",
-        "last_state_change_time": "2017-12-25T02:06:00.508Z",
-        "completion_complete": 0,
-        "max_level_bonus": 0,
-        "level": -1,
-        "item_seen": true,
-        "xp": 0,
-        "sent_new_notification": true,
-        "favorite": false
-      },
-      "quantity": 1
     }
   },
   "stats": {

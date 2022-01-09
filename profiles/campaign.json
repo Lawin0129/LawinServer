@@ -5668,26 +5668,6 @@
       },
       "quantity": 1
     },
-    "4351e29f-ae0f-4265-a95b-a5c19b2f2b25": {
-      "templateId": "Quest:daily_high_priority",
-      "attributes": {
-        "level": -1,
-        "item_seen": false,
-        "sent_new_notification": true,
-        "challenge_bundle_id": "",
-        "xp_reward_scalar": 1,
-        "challenge_linked_quest_given": "",
-        "quest_pool": "",
-        "quest_state": "Active",
-        "last_state_change_time": "2020-02-02T00:16:55.189Z",
-        "challenge_linked_quest_parent": "",
-        "max_level_bonus": 0,
-        "completion_quick_complete": 0,
-        "xp": 0,
-        "favorite": false
-      },
-      "quantity": 1
-    },
     "b8cc42f5-21f1-4e56-b5c2-6fd96cf3b642": {
       "templateId": "Quest:stonewoodquest_joelkarolina_killhusks",
       "attributes": {
@@ -5825,26 +5805,6 @@
         "quest_pool": "",
         "quest_state": "Claimed",
         "last_state_change_time": "2020-01-24T19:05:34.808Z",
-        "challenge_linked_quest_parent": "",
-        "max_level_bonus": 0,
-        "xp": 0,
-        "favorite": false
-      },
-      "quantity": 1
-    },
-    "87f15436-b2c6-4e6f-8d9e-4642414848d9": {
-      "templateId": "Quest:daily_huskextermination_ninja",
-      "attributes": {
-        "level": -1,
-        "item_seen": true,
-        "sent_new_notification": true,
-        "challenge_bundle_id": "",
-        "xp_reward_scalar": 1,
-        "challenge_linked_quest_given": "",
-        "quest_pool": "",
-        "quest_state": "Claimed",
-        "last_state_change_time": "2020-02-01T18:45:46.704Z",
-        "completion_kill_husk_ninja_v2": 300,
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -9377,26 +9337,6 @@
       },
       "quantity": 1
     },
-    "61c4c5f4-c078-4060-882a-0b65be2e9e23": {
-      "templateId": "Quest:daily_discovery_shelters",
-      "attributes": {
-        "level": -1,
-        "item_seen": true,
-        "sent_new_notification": true,
-        "completion_quest_reactive_discovershelter_v2": 0,
-        "challenge_bundle_id": "",
-        "xp_reward_scalar": 1,
-        "challenge_linked_quest_given": "",
-        "quest_pool": "",
-        "quest_state": "Active",
-        "last_state_change_time": "2020-01-20T18:20:56.052Z",
-        "challenge_linked_quest_parent": "",
-        "max_level_bonus": 0,
-        "xp": 0,
-        "favorite": false
-      },
-      "quantity": 1
-    },
     "30789ea2-1bc0-4cce-8ecb-10253fd38270": {
       "templateId": "Worker:workerbasic_c_t01",
       "attributes": {
@@ -9521,26 +9461,6 @@
         "quest_pool": "",
         "quest_state": "Claimed",
         "last_state_change_time": "2020-01-24T20:29:28.801Z",
-        "challenge_linked_quest_parent": "",
-        "max_level_bonus": 0,
-        "xp": 0,
-        "favorite": false
-      },
-      "quantity": 1
-    },
-    "df9d5cac-4bfb-4fa6-a754-3cadababd91b": {
-      "templateId": "Quest:daily_mission_specialist_outlander",
-      "attributes": {
-        "level": -1,
-        "item_seen": true,
-        "sent_new_notification": true,
-        "challenge_bundle_id": "",
-        "completion_complete_outlander": 0,
-        "xp_reward_scalar": 1,
-        "challenge_linked_quest_given": "",
-        "quest_pool": "",
-        "quest_state": "Active",
-        "last_state_change_time": "2020-01-18T16:25:31.007Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,

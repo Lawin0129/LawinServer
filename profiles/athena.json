@@ -58375,51 +58375,6 @@
         "favorite": false
       },
       "quantity": 1
-    },
-    "Quest:AthenaDaily_Outlive_Solo": {
-      "templateId": "Quest:AthenaDaily_Outlive_Solo",
-      "attributes": {
-        "quest_state": "Active",
-        "last_state_change_time": "2017-12-25T02:06:00.508Z",
-        "completion_complete": 0,
-        "max_level_bonus": 0,
-        "level": -1,
-        "item_seen": true,
-        "xp": 0,
-        "sent_new_notification": true,
-        "favorite": false
-      },
-      "quantity": 1
-    },
-    "Quest:AthenaDailyQuest_InteractTreasureChest": {
-      "templateId": "Quest:AthenaDailyQuest_InteractTreasureChest",
-      "attributes": {
-        "quest_state": "Active",
-        "last_state_change_time": "2017-12-25T02:06:00.508Z",
-        "completion_complete": 0,
-        "max_level_bonus": 0,
-        "level": -1,
-        "item_seen": true,
-        "xp": 0,
-        "sent_new_notification": true,
-        "favorite": false
-      },
-      "quantity": 1
-    },
-    "Quest:AthenaDailyQuest_PlayerElimination": {
-      "templateId": "Quest:AthenaDailyQuest_PlayerElimination",
-      "attributes": {
-        "quest_state": "Active",
-        "last_state_change_time": "2017-12-25T02:06:00.508Z",
-        "completion_complete": 0,
-        "max_level_bonus": 0,
-        "level": -1,
-        "item_seen": true,
-        "xp": 0,
-        "sent_new_notification": true,
-        "favorite": false
-      },
-      "quantity": 1
     }
   },
   "stats": {
