@@ -1664,8 +1664,6 @@ express.post("/fortnite/api/game/v2/profile/*/client/FortRerollDailyQuest", asyn
     var QueryRevision = req.query.rvn || -1;
     var StatChanged = false;
 
-    var DateFormat = (new Date().toISOString()).split("T")[0] + "T00:00:00.000Z";
-
     if (req.query.profileId == "profile0" || req.query.profileId == "campaign") {
         QuestIDS = QuestIDS.SaveTheWorld
     }
@@ -1675,7 +1673,13 @@ express.post("/fortnite/api/game/v2/profile/*/client/FortRerollDailyQuest", asyn
     }
 
     const NewQuestID = makeid();
-    const randomNumber = Math.floor(Math.random() * QuestIDS.length);
+    var randomNumber = Math.floor(Math.random() * QuestIDS.length);
+
+    for (var key in profile.items) {
+        while (QuestIDS[randomNumber].toLowerCase() == profile.items[key].templateId.toLowerCase()) {
+            randomNumber = Math.floor(Math.random() * QuestIDS.length);
+        }
+    }
 
     if (req.body.questId && profile.stats.attributes.quest_manager.dailyQuestRerolls >= 1) {
         profile.stats.attributes.quest_manager.dailyQuestRerolls -= 1;
@@ -1685,7 +1689,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/FortRerollDailyQuest", asyn
         profile.items[NewQuestID] = {
             "templateId": QuestIDS[randomNumber],
             "attributes": {
-                "creation_time": DateFormat,
+                "creation_time": new Date().toISOString(),
                 "completion_complete": 0,
                 "level": -1,
                 "item_seen": false,
@@ -1697,7 +1701,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/FortRerollDailyQuest", asyn
                 "quest_pool": "",
                 "quest_state": "Active",
                 "bucket": "",
-                "last_state_change_time": DateFormat,
+                "last_state_change_time": new Date().toISOString(),
                 "challenge_linked_quest_parent": "",
                 "max_level_bonus": 0,
                 "xp": 0,
@@ -1828,8 +1832,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/ClientQuestLogin", async (r
 
     var QuestCount = 0;
     var ShouldGiveQuest = true;
-    var StopCheck = false;
-    var DateFormat = (new Date().toISOString()).split("T")[0] + "T00:00:00.000Z";
+    var DateFormat = (new Date().toISOString()).split("T")[0];
 
     try {
         if (req.query.profileId == "profile0" || req.query.profileId == "campaign") {
@@ -1855,15 +1858,13 @@ express.post("/fortnite/api/game/v2/profile/*/client/ClientQuestLogin", async (r
         if (profile.stats.attributes.hasOwnProperty("quest_manager")) {
             if (profile.stats.attributes.quest_manager.hasOwnProperty("dailyLoginInterval")) {
                 if (profile.stats.attributes.quest_manager.dailyLoginInterval.includes("T")) {
-                    var DailyLoginDate = (profile.stats.attributes.quest_manager.dailyLoginInterval).split("T")[0] + "T00:00:00.000Z";
+                    var DailyLoginDate = (profile.stats.attributes.quest_manager.dailyLoginInterval).split("T")[0];
 
-                    if (StopCheck == false) {
-                        if (DailyLoginDate.toLowerCase() == DateFormat.toLowerCase()) {
-                            ShouldGiveQuest = false;
-                            StopCheck = true;
-                        } else {
-                            ShouldGiveQuest = true;
-                        }
+                    if (DailyLoginDate == DateFormat) {
+                        ShouldGiveQuest = false;
+                    } else {
+                        ShouldGiveQuest = true;
+                        profile.stats.attributes.quest_manager.dailyQuestRerolls = 1;
                     }
                 }
             }
@@ -1882,7 +1883,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/ClientQuestLogin", async (r
             profile.items[NewQuestID] = {
                 "templateId": QuestIDS[randomNumber],
                 "attributes": {
-                    "creation_time": DateFormat,
+                    "creation_time": new Date().toISOString(),
                     "completion_complete": 0,
                     "level": -1,
                     "item_seen": false,
@@ -1894,7 +1895,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/ClientQuestLogin", async (r
                     "quest_pool": "",
                     "quest_state": "Active",
                     "bucket": "",
-                    "last_state_change_time": DateFormat,
+                    "last_state_change_time": new Date().toISOString(),
                     "challenge_linked_quest_parent": "",
                     "max_level_bonus": 0,
                     "xp": 0,
@@ -1903,12 +1904,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/ClientQuestLogin", async (r
                 },
                 "quantity": 1
             };
-
-            profile.stats.attributes.quest_manager.dailyLoginInterval = DateFormat;
-
-            if (profile.stats.attributes.quest_manager.dailyQuestRerolls == 0) {
-                profile.stats.attributes.quest_manager.dailyQuestRerolls += 1
-            }
+            profile.stats.attributes.quest_manager.dailyLoginInterval = new Date().toISOString();
 
             ApplyProfileChanges.push({
                 "changeType": "itemAdded",
