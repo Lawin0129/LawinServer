@@ -780,7 +780,7 @@ express.get("/fortnite/api/cloudstorage/system/:file", async (req, res) => {
     const file = path.join(__dirname, 'CloudStorage', req.params.file);
 
     if (fs.existsSync(file)) {
-        const ParsedFile = fs.readFileSync(file);
+        const ParsedFile = fs.readFileSync(file, 'utf-8');
 
         return res.status(200).send(ParsedFile).end();
     }
@@ -825,7 +825,7 @@ express.get("/fortnite/api/cloudstorage/user/:accountId", async (req, res) => {
     const file = `./ClientSettings/ClientSettings-${currentBuildID}.Sav`;
 
     if (fs.existsSync(file)) {
-        const utf8_file = fs.readFileSync(path.join(__dirname, file), 'utf8');
+        const utf8_file = fs.readFileSync(path.join(__dirname, file), 'utf-8');
         const file_stats = fs.statSync(path.join(__dirname, file));
 
         return res.json([{
@@ -5442,6 +5442,15 @@ express.post("/fortnite/api/game/v2/profile/*/client/EquipBattleRoyaleCustomizat
     } else {
 	    profile.stats.attributes.book_level = 100;
     }
+	
+    try {
+        if (!profile.stats.attributes.favorite_dance) {
+            profile.stats.attributes.favorite_dance = ["","","","","",""];
+        }
+        if (!profile.stats.attributes.favorite_itemwraps) {
+            profile.stats.attributes.favorite_itemwraps = ["","","","","","",""];
+        }
+    } catch (err) {}
 
     // do not change any of these or you will end up breaking it
     var ApplyProfileChanges = [];
