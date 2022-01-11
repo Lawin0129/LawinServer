@@ -42,7 +42,7 @@
             }
           ],
           "accountsWithEditPermission": [],
-          "highestEnduranceWaveReached": 0
+          "highestEnduranceWaveReached": 30
         }
       },
       "quantity": 1
@@ -60,7 +60,7 @@
             }
           ]
         },
-        "level": 9,
+        "level": 10,
         "outpost_core_info": {
           "placedBuildings": [
             {
@@ -85,7 +85,7 @@
             }
           ],
           "accountsWithEditPermission": [],
-          "highestEnduranceWaveReached": 0
+          "highestEnduranceWaveReached": 30
         }
       },
       "quantity": 1
@@ -103,7 +103,7 @@
             }
           ]
         },
-        "level": 5,
+        "level": 10,
         "outpost_core_info": {
           "placedBuildings": [
             {
@@ -124,7 +124,7 @@
             }
           ],
           "accountsWithEditPermission": [],
-          "highestEnduranceWaveReached": 0
+          "highestEnduranceWaveReached": 30
         }
       },
       "quantity": 1
@@ -163,7 +163,7 @@
             }
           ],
           "accountsWithEditPermission": [],
-          "highestEnduranceWaveReached": 0
+          "highestEnduranceWaveReached": 30
         }
       },
       "quantity": 1
