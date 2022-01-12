@@ -755,7 +755,7 @@ express.get("/fortnite/api/cloudstorage/system", async (req, res) => {
 
     fs.readdirSync(dir).forEach(name => {
         if (name.toLowerCase().endsWith(".ini")) {
-            const ParsedFile = fs.readFileSync(path.join(__dirname, 'CloudStorage', name));
+            const ParsedFile = fs.readFileSync(path.join(__dirname, 'CloudStorage', name), 'utf-8');
             const ParsedStats = fs.statSync(path.join(__dirname, 'CloudStorage', name));
 
             CloudFiles.push({
