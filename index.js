@@ -6104,8 +6104,8 @@ function getContentPages(req) {
     try {
         if (seasondata.season < 5 || (seasondata.season == 5 && Number(seasondata.build.toString().split(".")[1]) < 30)) { 
             news.forEach(mode => {
-                contentpages[mode].news.messages[0].image = "https://i.imgur.com/Az6kyrk.png";
-                contentpages[mode].news.messages[1].image = "https://i.imgur.com/Wf8wQQy.png";
+                contentpages[mode].news.messages[0].image = "https://cdn.discordapp.com/attachments/927739901540188200/930879507496308736/discord.png";
+                contentpages[mode].news.messages[1].image = "https://cdn.discordapp.com/attachments/927739901540188200/930879519882088508/lawin.png";
             })
         }
     } catch (err) {}
@@ -6126,8 +6126,8 @@ function getContentPages(req) {
 
         if (seasondata.build == 19.01) {
             contentpages.dynamicbackgrounds.backgrounds.backgrounds[0].stage = "winter2021";
-            contentpages.dynamicbackgrounds.backgrounds.backgrounds[0].backgroundimage = "https://cdn2.unrealengine.com/t-bp19-lobby-xmas-2048x1024-f85d2684b4af.png";
-            contentpages.subgameinfo.battleroyale.image = "https://cdn2.unrealengine.com/19br-wf-subgame-select-512x1024-16d8bb0f218f.jpg";
+            contentpages.dynamicbackgrounds.backgrounds.backgrounds[0].backgroundimage = "https://cdn.discordapp.com/attachments/927739901540188200/930880158167085116/t-bp19-lobby-xmas-2048x1024-f85d2684b4af.png";
+            contentpages.subgameinfo.battleroyale.image = "https://cdn.discordapp.com/attachments/927739901540188200/930880421514846268/19br-wf-subgame-select-512x1024-16d8bb0f218f.jpg";
             contentpages.specialoffervideo.bSpecialOfferEnabled = "true";
         }
     } catch (err) {}

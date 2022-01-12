@@ -209,7 +209,7 @@
         "_type": "Battle Royale News",
         "messages": [
           {
-            "image": "https://miro.medium.com/max/1200/1*of9OCSRWoAoS3_lNVKqM2g.png",
+            "image": "https://cdn.discordapp.com/attachments/927739901540188200/930882355818823720/1_of9OCSRWoAoS3_lNVKqM2g.png",
             "hidden": false,
             "_type": "CommonUI Simple Message Base",
             "adspace": "DISCORD!",
@@ -218,7 +218,7 @@
             "spotlight": false
           },
           {
-            "image": "https://yt3.ggpht.com/a/AGF-l79CQOPeiM3Ve_skW5DrQ2B_uFzEJ54pFBdvoQ=s900-c-k-c0xffffffff-no-rj-mo",
+            "image": "https://cdn.discordapp.com/attachments/927739901540188200/930882658546876506/lawin.jpg",
             "hidden": false,
             "_type": "CommonUI Simple Message Base",
             "adspace": "ENJOY!",
@@ -1161,7 +1161,6 @@
             "image": "",
             "playlist_name": "Playlist_DefaultDuo",
             "special_border": "None",
-            "violator": "cool",
             "_type": "FortPlaylistInfo"
           },
           {
@@ -1182,10 +1181,10 @@
         "tournaments": [
           {
             "title_color": "FFFFFF",
-            "loading_screen_image": "https://yt3.ggpht.com/a/AGF-l79CQOPeiM3Ve_skW5DrQ2B_uFzEJ54pFBdvoQ=s900-c-k-c0xffffffff-no-rj-mo",
+            "loading_screen_image": "https://cdn.discordapp.com/attachments/927739901540188200/930882658546876506/lawin.jpg",
             "background_text_color": "1B1B1B",
             "background_right_color": "DD091A",
-            "poster_back_image": "https://yt3.ggpht.com/a/AGF-l79CQOPeiM3Ve_skW5DrQ2B_uFzEJ54pFBdvoQ=s900-c-k-c0xffffffff-no-rj-mo",
+            "poster_back_image": "https://cdn.discordapp.com/attachments/927739901540188200/930882658546876506/lawin.jpg",
             "_type": "Tournament Display Info",
             "pin_earned_text": "lawin is the winner!",
             "tournament_display_id": "s11_switchcup",
@@ -1193,7 +1192,7 @@
             "schedule_info": "November 2nd & 3rd: 2pm - 5pm JST",
             "primary_color": "FFFFFF",
             "flavor_description": "cool",
-            "poster_front_image": "https://yt3.ggpht.com/a/AGF-l79CQOPeiM3Ve_skW5DrQ2B_uFzEJ54pFBdvoQ=s900-c-k-c0xffffffff-no-rj-mo",
+            "poster_front_image": "https://cdn.discordapp.com/attachments/927739901540188200/930882658546876506/lawin.jpg",
             "short_format_title": "Event Sessions",
             "title_line_2": "boomer",
             "title_line_1": "Solo",
@@ -1203,7 +1202,7 @@
             "long_format_title": "nice",
             "poster_fade_color": "DD091A",
             "secondary_color": "1B1B1B",
-            "playlist_tile_image": "https://yt3.ggpht.com/a/AGF-l79CQOPeiM3Ve_skW5DrQ2B_uFzEJ54pFBdvoQ=s900-c-k-c0xffffffff-no-rj-mo",
+            "playlist_tile_image": "https://cdn.discordapp.com/attachments/927739901540188200/930882658546876506/lawin.jpg",
             "base_color": "FFFFFF"
           }
         ],
@@ -5933,7 +5932,7 @@
       "_locale": "en-US"
     },
     "lobby": {
-      "backgroundimage": "https://cdn2.unrealengine.com/Fortnite%2Ffortnite-game%2Flobby%2FT_Lobby_SeasonX-2048x1024-24e02780ed533da8001016f4e6fb14dd15e2f860.png",
+      "backgroundimage": "https://cdn.discordapp.com/attachments/927739901540188200/930883349831118878/Fortnite_fortnite-game_lobby_T_Lobby_SeasonX-2048x1024-24e02780ed533da8001016f4e6fb14dd15e2f860.png",
       "stage": "seasonx",
       "_title": "lobby",
       "_activeDate": "2019-05-31T21:24:39.892Z",
@@ -5961,7 +5960,7 @@
         "_type": "Battle Royale News",
         "messages": [
           {
-            "image": "https://miro.medium.com/max/1200/1*of9OCSRWoAoS3_lNVKqM2g.png",
+            "image": "https://cdn.discordapp.com/attachments/927739901540188200/930882355818823720/1_of9OCSRWoAoS3_lNVKqM2g.png",
             "hidden": false,
             "_type": "CommonUI Simple Message Base",
             "adspace": "DISCORD!",
@@ -5970,7 +5969,7 @@
             "spotlight": false
           },
           {
-            "image": "https://yt3.ggpht.com/a/AGF-l79CQOPeiM3Ve_skW5DrQ2B_uFzEJ54pFBdvoQ=s900-c-k-c0xffffffff-no-rj-mo",
+            "image": "https://cdn.discordapp.com/attachments/927739901540188200/930882658546876506/lawin.jpg",
             "hidden": false,
             "_type": "CommonUI Simple Message Base",
             "adspace": "ENJOY!",
@@ -6016,7 +6015,7 @@
         "_type": "Battle Royale News",
         "messages": [
           {
-            "image": "https://miro.medium.com/max/1200/1*of9OCSRWoAoS3_lNVKqM2g.png",
+            "image": "https://cdn.discordapp.com/attachments/927739901540188200/930882355818823720/1_of9OCSRWoAoS3_lNVKqM2g.png",
             "hidden": false,
             "_type": "CommonUI Simple Message Base",
             "adspace": "DISCORD!",
@@ -6025,7 +6024,7 @@
             "spotlight": false
           },
           {
-            "image": "https://yt3.ggpht.com/a/AGF-l79CQOPeiM3Ve_skW5DrQ2B_uFzEJ54pFBdvoQ=s900-c-k-c0xffffffff-no-rj-mo",
+            "image": "https://cdn.discordapp.com/attachments/927739901540188200/930882658546876506/lawin.jpg",
             "hidden": false,
             "_type": "CommonUI Simple Message Base",
             "adspace": "ENJOY!",

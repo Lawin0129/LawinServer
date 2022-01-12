@@ -1,5 +1,5 @@
 <div align=center>
-  <img src="https://i.imgur.com/y86II4q.png" alt="LawinServer Logo">
+  <img src="https://cdn.discordapp.com/attachments/927739901540188200/930871981874757632/lawinserver.png" alt="LawinServer Logo">
 
   ### LawinServer is a private server that supports all Fortnite versions!
   
@@ -37,7 +37,7 @@
 - Changing banner icon and banner color
 - Changing items edit styles
 - Support a Creator with specific codes
-- Fully Working Daily Challenges System (New daily challenge every day, replacing daily challenges, etc...)
+- Fully working daily challenges system (New daily challenge every day, replacing daily challenges, etc...)
 
 ### Battle Royale:
 - CloudStorage and ClientSettings (Settings saving)
@@ -49,7 +49,7 @@
 - Changing banner icon and banner color
 - Changing items edit styles
 - Support a Creator with specific codes
-- Fully Working Daily Challenges System (New daily challenge every day, replacing daily challenges, etc...)
+- Fully working daily challenges system (New daily challenge every day, replacing daily challenges, etc...)
 
 ## How to use?
 1) Install [NodeJS](https://nodejs.org/en/)

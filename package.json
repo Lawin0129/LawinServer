@@ -1,28 +1,33 @@
 {
-  "name": "lawinserverfinal",
-  "version": "0.0.1",
-  "description": "A simple Node app built on Express, instantly up and running.",
+  "name": "lawinserver",
+  "version": "1.0.0",
+  "description": "A fortnite backend which supports both BR and STW for every single fortnite build.",
   "main": "index.js",
-  "scripts": {
-    "start": "node index.js"
-  },
   "dependencies": {
     "crypto": "^1.0.1",
-    "express": "^4.17.1",
+    "express": "^4.17.2",
     "fs": "^0.0.1-security",
-    "moment": "^2.29.1",
     "path": "^0.12.7"
   },
-  "engines": {
-    "node": "8.x"
+  "devDependencies": {},
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
-    "url": "https://github.com/Lawin0129/LawinServer"
+    "type": "git",
+    "url": "git+https://github.com/Lawin0129/LawinServer.git"
   },
-  "license": "GNU",
   "keywords": [
+    "fortnite",
+    "backend",
     "node",
-    "express",
-    "fortnite"
-  ]
+    "server"
+  ],
+  "author": "Lawin0129",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/Lawin0129/LawinServer/issues"
+  },
+  "homepage": "https://github.com/Lawin0129/LawinServer#readme"
 }
