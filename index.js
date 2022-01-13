@@ -1952,6 +1952,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/ClientQuestLogin", async (r
 // Refund V-Bucks purchase
 express.post("/fortnite/api/game/v2/profile/*/client/RefundMtxPurchase", async (req, res) => {
     const profile = require(`./profiles/${req.query.profileId || "common_core"}.json`);
+    const ItemProfile = require("./profiles/athena.json");
 
     // do not change any of these or you will end up breaking it
     var ApplyProfileChanges = [];
@@ -1960,48 +1961,9 @@ express.post("/fortnite/api/game/v2/profile/*/client/RefundMtxPurchase", async (
     var QueryRevision = req.query.rvn || -1;
     var StatChanged = false;
 
-    var ItemProfile = require("./profiles/athena.json");
-    var ItemCost = [];
     var ItemGuids = [];
 
     if (req.body.purchaseId) {
-        for (var purchase in profile.stats.attributes.mtx_purchase_history.purchases) {
-            if (profile.stats.attributes.mtx_purchase_history.purchases[purchase].purchaseId == req.body.purchaseId) {
-                for (var item in profile.stats.attributes.mtx_purchase_history.purchases[purchase].lootResult) {
-                    ItemGuids.push(profile.stats.attributes.mtx_purchase_history.purchases[purchase].lootResult[item].itemGuid)
-                }
-            }
-        }
-    }
-
-    if (ItemCost && ItemGuids) {
-        profile.stats.attributes.mtx_purchase_history.refundsUsed += 1;
-        profile.stats.attributes.mtx_purchase_history.refundCredits -= 1;
-        for (var purchase in profile.stats.attributes.mtx_purchase_history.purchases) {
-            if (profile.stats.attributes.mtx_purchase_history.purchases[purchase].purchaseId == req.body.purchaseId) {
-                profile.stats.attributes.mtx_purchase_history.purchases[purchase].refundDate = new Date().toISOString();
-            }
-        }
-        for (var item in ItemGuids) {
-            delete ItemProfile.items[item]
-        }
-
-        ItemProfile.rvn += 1;
-        ItemProfile.commandRevision += 1;
-
-        StatChanged = true;
-    }
-
-    if (StatChanged == true) {
-        profile.rvn += 1;
-        profile.commandRevision += 1;
-        
-        ApplyProfileChanges.push({
-            "changeType": "statModified",
-            "name": "mtx_purchase_history",
-            "value": profile.stats.attributes.mtx_purchase_history
-        })
-
         MultiUpdate.push({
             "profileRevision": ItemProfile.rvn || 0,
             "profileId": "athena",
@@ -2010,17 +1972,48 @@ express.post("/fortnite/api/game/v2/profile/*/client/RefundMtxPurchase", async (
             "profileCommandRevision": ItemProfile.commandRevision || 0,
         })
 
+        profile.stats.attributes.mtx_purchase_history.refundsUsed += 1;
+        profile.stats.attributes.mtx_purchase_history.refundCredits -= 1;
+
+        for (var purchase in profile.stats.attributes.mtx_purchase_history.purchases) {
+            if (profile.stats.attributes.mtx_purchase_history.purchases[purchase].purchaseId == req.body.purchaseId) {
+                for (var item in profile.stats.attributes.mtx_purchase_history.purchases[purchase].lootResult) {
+                    ItemGuids.push(profile.stats.attributes.mtx_purchase_history.purchases[purchase].lootResult[item].itemGuid)
+                }
+
+                profile.stats.attributes.mtx_purchase_history.purchases[purchase].refundDate = new Date().toISOString();
+            }
+        }
+
         for (var item in ItemGuids) {
+            delete ItemProfile.items[item]
+
             MultiUpdate[0].profileChanges.push({
                 "changeType": "itemRemoved",
                 "itemId": item
             })
         }
 
+        ItemProfile.rvn += 1;
+        ItemProfile.commandRevision += 1;
+        profile.rvn += 1;
+        profile.commandRevision += 1;
+
+        StatChanged = true;
+    }
+
+    if (StatChanged == true) {
+        
+        ApplyProfileChanges.push({
+            "changeType": "statModified",
+            "name": "mtx_purchase_history",
+            "value": profile.stats.attributes.mtx_purchase_history
+        })
+
         MultiUpdate[0].profileRevision = ItemProfile.rvn || 0;
         MultiUpdate[0].profileCommandRevision = ItemProfile.commandRevision || 0;
 
-        fs.writeFileSync(`./profiles/${req.query.profileId || "athena"}.json`, JSON.stringify(profile, null, 2));
+        fs.writeFileSync(`./profiles/${req.query.profileId || "common_core"}.json`, JSON.stringify(profile, null, 2));
         fs.writeFileSync(`./profiles/athena.json`, JSON.stringify(ItemProfile, null, 2));
     }
 
@@ -2034,7 +2027,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/RefundMtxPurchase", async (
 
     res.json({
         "profileRevision": profile.rvn || 0,
-        "profileId": req.query.profileId || "athena",
+        "profileId": req.query.profileId || "common_core",
         "profileChangesBaseRevision": BaseRevision,
         "profileChanges": ApplyProfileChanges,
         "profileCommandRevision": profile.commandRevision || 0,
