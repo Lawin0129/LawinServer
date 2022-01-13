@@ -13349,6 +13349,30 @@
       },
       "quantity": 1
     },
+    "AthenaCharacter:Dev_TestAsset": {
+      "templateId": "AthenaCharacter:Dev_TestAsset",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": 1,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaDance:EID_Pinwheel": {
+      "templateId": "AthenaDance:EID_Pinwheel",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": 1,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
     "AthenaCharacter:CID_760_Athena_Commando_F_NeonTightSuit": {
       "templateId": "AthenaCharacter:CID_760_Athena_Commando_F_NeonTightSuit",
       "attributes": {

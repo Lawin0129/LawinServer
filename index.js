@@ -780,7 +780,7 @@ express.get("/fortnite/api/cloudstorage/system/:file", async (req, res) => {
     const file = path.join(__dirname, 'CloudStorage', req.params.file);
 
     if (fs.existsSync(file)) {
-        const ParsedFile = fs.readFileSync(file, 'utf-8');
+        const ParsedFile = fs.readFileSync(file);
 
         return res.status(200).send(ParsedFile).end();
     }
