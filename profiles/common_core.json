@@ -2007,7 +2007,180 @@
       "personal_offers": {},
       "intro_game_played": true,
       "import_friends_claimed": {},
-      "mtx_purchase_history": {},
+      "mtx_purchase_history": {
+        "refundsUsed": 0,
+        "refundCredits": 3,
+        "purchases": [
+          {
+            "purchaseId": "AthenaCharacter:CID_009_Athena_Commando_M",
+            "offerId": "v2:/AthenaCharacter:CID_009_Athena_Commando_M",
+            "purchaseDate": "9999-12-31T00:00:00.000Z",
+            "freeRefundEligible": false,
+            "fulfillments": [],
+            "lootResult": [
+              {
+                "itemType": "AthenaCharacter:CID_009_Athena_Commando_M",
+                "itemGuid": "AthenaCharacter:CID_009_Athena_Commando_M",
+                "itemProfile": "athena",
+                "quantity": 1
+              }
+            ],
+            "totalMtxPaid": 800,
+            "metadata": {
+              "mtx_affiliate": "Lawin",
+              "mtx_affiliate_id": "29063ead167541899959bbc9c439acc6"
+            },
+            "gameContext": ""
+          },
+          {
+            "purchaseId": "AthenaCharacter:CID_010_Athena_Commando_M",
+            "offerId": "v2:/AthenaCharacter:CID_010_Athena_Commando_M",
+            "purchaseDate": "9999-12-31T00:00:00.000Z",
+            "freeRefundEligible": false,
+            "fulfillments": [],
+            "lootResult": [
+              {
+                "itemType": "AthenaCharacter:CID_010_Athena_Commando_M",
+                "itemGuid": "AthenaCharacter:CID_010_Athena_Commando_M",
+                "itemProfile": "athena",
+                "quantity": 1
+              }
+            ],
+            "totalMtxPaid": 800,
+            "metadata": {
+              "mtx_affiliate": "PRO100KatYT",
+              "mtx_affiliate_id": "29063ead167541899959bbc9c439acc6"
+            },
+            "gameContext": ""
+          },
+          {
+            "purchaseId": "AthenaCharacter:CID_011_Athena_Commando_M",
+            "offerId": "v2:/AthenaCharacter:CID_011_Athena_Commando_M",
+            "purchaseDate": "9999-12-31T00:00:00.000Z",
+            "freeRefundEligible": false,
+            "fulfillments": [],
+            "lootResult": [
+              {
+                "itemType": "AthenaCharacter:CID_011_Athena_Commando_M",
+                "itemGuid": "AthenaCharacter:CID_011_Athena_Commando_M",
+                "itemProfile": "athena",
+                "quantity": 1
+              }
+            ],
+            "totalMtxPaid": 800,
+            "metadata": {
+              "mtx_affiliate": "Lawin",
+              "mtx_affiliate_id": "29063ead167541899959bbc9c439acc6"
+            },
+            "gameContext": ""
+          },
+          {
+            "purchaseId": "AthenaCharacter:CID_012_Athena_Commando_M",
+            "offerId": "v2:/AthenaCharacter:CID_012_Athena_Commando_M",
+            "purchaseDate": "9999-12-31T00:00:00.000Z",
+            "freeRefundEligible": false,
+            "fulfillments": [],
+            "lootResult": [
+              {
+                "itemType": "AthenaCharacter:CID_012_Athena_Commando_M",
+                "itemGuid": "AthenaCharacter:CID_012_Athena_Commando_M",
+                "itemProfile": "athena",
+                "quantity": 1
+              }
+            ],
+            "totalMtxPaid": 800,
+            "metadata": {
+              "mtx_affiliate": "TI93",
+              "mtx_affiliate_id": "29063ead167541899959bbc9c439acc6"
+            },
+            "gameContext": ""
+          },
+          {
+            "purchaseId": "AthenaCharacter:CID_013_Athena_Commando_F",
+            "offerId": "v2:/AthenaCharacter:CID_013_Athena_Commando_F",
+            "purchaseDate": "9999-12-31T00:00:00.000Z",
+            "freeRefundEligible": false,
+            "fulfillments": [],
+            "lootResult": [
+              {
+                "itemType": "AthenaCharacter:CID_013_Athena_Commando_F",
+                "itemGuid": "AthenaCharacter:CID_013_Athena_Commando_F",
+                "itemProfile": "athena",
+                "quantity": 1
+              }
+            ],
+            "totalMtxPaid": 800,
+            "metadata": {
+              "mtx_affiliate": "Lawin",
+              "mtx_affiliate_id": "29063ead167541899959bbc9c439acc6"
+            },
+            "gameContext": ""
+          },
+          {
+            "purchaseId": "AthenaCharacter:CID_014_Athena_Commando_F",
+            "offerId": "v2:/AthenaCharacter:CID_014_Athena_Commando_F",
+            "purchaseDate": "9999-12-31T00:00:00.000Z",
+            "freeRefundEligible": false,
+            "fulfillments": [],
+            "lootResult": [
+              {
+                "itemType": "AthenaCharacter:CID_014_Athena_Commando_F",
+                "itemGuid": "AthenaCharacter:CID_014_Athena_Commando_F",
+                "itemProfile": "athena",
+                "quantity": 1
+              }
+            ],
+            "totalMtxPaid": 800,
+            "metadata": {
+              "mtx_affiliate": "Playeereq",
+              "mtx_affiliate_id": "29063ead167541899959bbc9c439acc6"
+            },
+            "gameContext": ""
+          },
+          {
+            "purchaseId": "AthenaCharacter:CID_015_Athena_Commando_F",
+            "offerId": "v2:/AthenaCharacter:CID_015_Athena_Commando_F",
+            "purchaseDate": "9999-12-31T00:00:00.000Z",
+            "freeRefundEligible": false,
+            "fulfillments": [],
+            "lootResult": [
+              {
+                "itemType": "AthenaCharacter:CID_015_Athena_Commando_F",
+                "itemGuid": "AthenaCharacter:CID_015_Athena_Commando_F",
+                "itemProfile": "athena",
+                "quantity": 1
+              }
+            ],
+            "totalMtxPaid": 800,
+            "metadata": {
+              "mtx_affiliate": "Lawin",
+              "mtx_affiliate_id": "29063ead167541899959bbc9c439acc6"
+            },
+            "gameContext": ""
+          },
+          {
+            "purchaseId": "AthenaCharacter:CID_016_Athena_Commando_F",
+            "offerId": "v2:/AthenaCharacter:CID_016_Athena_Commando_F",
+            "purchaseDate": "9999-12-31T00:00:00.000Z",
+            "freeRefundEligible": false,
+            "fulfillments": [],
+            "lootResult": [
+              {
+                "itemType": "AthenaCharacter:CID_016_Athena_Commando_F",
+                "itemGuid": "AthenaCharacter:CID_016_Athena_Commando_F",
+                "itemProfile": "athena",
+                "quantity": 1
+              }
+            ],
+            "totalMtxPaid": 800,
+            "metadata": {
+              "mtx_affiliate": "Matteoki",
+              "mtx_affiliate_id": "29063ead167541899959bbc9c439acc6"
+            },
+            "gameContext": ""
+          }
+        ]
+      },
       "undo_cooldowns": [],
       "mtx_affiliate_set_time": "",
       "inventory_limit_bonus": 0,

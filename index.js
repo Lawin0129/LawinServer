@@ -1949,6 +1949,102 @@ express.post("/fortnite/api/game/v2/profile/*/client/ClientQuestLogin", async (r
     res.end();
 });
 
+// Refund V-Bucks purchase
+express.post("/fortnite/api/game/v2/profile/*/client/RefundMtxPurchase", async (req, res) => {
+    const profile = require(`./profiles/${req.query.profileId || "common_core"}.json`);
+
+    // do not change any of these or you will end up breaking it
+    var ApplyProfileChanges = [];
+    var MultiUpdate = [];
+    var BaseRevision = profile.rvn || 0;
+    var QueryRevision = req.query.rvn || -1;
+    var StatChanged = false;
+
+    var ItemProfile = require("./profiles/athena.json");
+    var ItemCost = [];
+    var ItemGuids = [];
+
+    if (req.body.purchaseId) {
+        for (var purchase in profile.stats.attributes.mtx_purchase_history.purchases) {
+            if (profile.stats.attributes.mtx_purchase_history.purchases[purchase].purchaseId == req.body.purchaseId) {
+                for (var item in profile.stats.attributes.mtx_purchase_history.purchases[purchase].lootResult) {
+                    ItemGuids.push(profile.stats.attributes.mtx_purchase_history.purchases[purchase].lootResult[item].itemGuid)
+                }
+            }
+        }
+    }
+
+    if (ItemCost && ItemGuids) {
+        profile.stats.attributes.mtx_purchase_history.refundsUsed += 1;
+        profile.stats.attributes.mtx_purchase_history.refundCredits -= 1;
+        for (var purchase in profile.stats.attributes.mtx_purchase_history.purchases) {
+            if (profile.stats.attributes.mtx_purchase_history.purchases[purchase].purchaseId == req.body.purchaseId) {
+                profile.stats.attributes.mtx_purchase_history.purchases[purchase].refundDate = new Date().toISOString();
+            }
+        }
+        for (var item in ItemGuids) {
+            delete ItemProfile.items[item]
+        }
+
+        ItemProfile.rvn += 1;
+        ItemProfile.commandRevision += 1;
+
+        StatChanged = true;
+    }
+
+    if (StatChanged == true) {
+        profile.rvn += 1;
+        profile.commandRevision += 1;
+        
+        ApplyProfileChanges.push({
+            "changeType": "statModified",
+            "name": "mtx_purchase_history",
+            "value": profile.stats.attributes.mtx_purchase_history
+        })
+
+        MultiUpdate.push({
+            "profileRevision": ItemProfile.rvn || 0,
+            "profileId": "athena",
+            "profileChangesBaseRevision": ItemProfile.rvn || 0,
+            "profileChanges": [],
+            "profileCommandRevision": ItemProfile.commandRevision || 0,
+        })
+
+        for (var item in ItemGuids) {
+            MultiUpdate[0].profileChanges.push({
+                "changeType": "itemRemoved",
+                "itemId": item
+            })
+        }
+
+        MultiUpdate[0].profileRevision = ItemProfile.rvn || 0;
+        MultiUpdate[0].profileCommandRevision = ItemProfile.commandRevision || 0;
+
+        fs.writeFileSync(`./profiles/${req.query.profileId || "athena"}.json`, JSON.stringify(profile, null, 2));
+        fs.writeFileSync(`./profiles/athena.json`, JSON.stringify(ItemProfile, null, 2));
+    }
+
+    // this doesn't work properly on version v12.20 and above but whatever
+    if (QueryRevision != BaseRevision) {
+        ApplyProfileChanges = [{
+            "changeType": "fullProfileUpdate",
+            "profile": profile
+        }];
+    }
+
+    res.json({
+        "profileRevision": profile.rvn || 0,
+        "profileId": req.query.profileId || "athena",
+        "profileChangesBaseRevision": BaseRevision,
+        "profileChanges": ApplyProfileChanges,
+        "profileCommandRevision": profile.commandRevision || 0,
+        "serverTime": new Date().toISOString(),
+        "multiUpdate": MultiUpdate,
+        "responseVersion": 1
+    })
+    res.end();
+});
+
 // Claim STW daily reward
 express.post("/fortnite/api/game/v2/profile/*/client/ClaimLoginReward", async (req, res) => {
     const profile = require(`./profiles/${req.query.profileId || "campaign"}.json`);
@@ -4525,7 +4621,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/SetActiveHeroLoadout", asyn
     res.end();
 });
 
-// Activate consumable stw STW
+// Activate consumable STW
 express.post("/fortnite/api/game/v2/profile/*/client/ActivateConsumable", async (req, res) => {
     const profile = require(`./profiles/${req.query.profileId || "campaign"}.json`);
 
