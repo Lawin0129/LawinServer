@@ -43,6 +43,7 @@
 - CloudStorage and ClientSettings (Settings saving)
 - Winterfest presents opening (11.31 & 19.01)
 - Purchasing Item Shop items
+- Refunding cosmetics in the refund tab
 - Favoriting items
 - Marking items as seen
 - Changing items in Locker
