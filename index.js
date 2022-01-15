@@ -1975,22 +1975,22 @@ express.post("/fortnite/api/game/v2/profile/*/client/RefundMtxPurchase", async (
         profile.stats.attributes.mtx_purchase_history.refundsUsed += 1;
         profile.stats.attributes.mtx_purchase_history.refundCredits -= 1;
 
-        for (var purchase in profile.stats.attributes.mtx_purchase_history.purchases) {
-            if (profile.stats.attributes.mtx_purchase_history.purchases[purchase].purchaseId == req.body.purchaseId) {
-                for (var item in profile.stats.attributes.mtx_purchase_history.purchases[purchase].lootResult) {
-                    ItemGuids.push(profile.stats.attributes.mtx_purchase_history.purchases[purchase].lootResult[item].itemGuid)
+        for (var i = 0; i < profile.stats.attributes.mtx_purchase_history.purchases.length; i++) {
+            if (profile.stats.attributes.mtx_purchase_history.purchases[i].purchaseId == req.body.purchaseId) {
+                for (var x = 0; x < profile.stats.attributes.mtx_purchase_history.purchases[i].lootResult.length; x++) {
+                    ItemGuids.push(profile.stats.attributes.mtx_purchase_history.purchases[i].lootResult[x].itemGuid)
                 }
 
-                profile.stats.attributes.mtx_purchase_history.purchases[purchase].refundDate = new Date().toISOString();
+                profile.stats.attributes.mtx_purchase_history.purchases[i].refundDate = new Date().toISOString();
             }
         }
 
-        for (var item in ItemGuids) {
-            delete ItemProfile.items[item]
+        for (var i = 0; i < ItemGuids.length; i++) {
+            delete ItemProfile.items[ItemGuids[i]]
 
             MultiUpdate[0].profileChanges.push({
                 "changeType": "itemRemoved",
-                "itemId": item
+                "itemId": ItemGuids[i]
             })
         }
 
