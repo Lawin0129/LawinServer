@@ -1655,7 +1655,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/SetPinnedQuests", async (re
 // Replace Daily Quests
 express.post("/fortnite/api/game/v2/profile/*/client/FortRerollDailyQuest", async (req, res) => {
     const profile = require(`./profiles/${req.query.profileId || "athena"}.json`);
-    var QuestIDS = require("./responses/quests.json");
+    var QuestIDS = JSON.parse(JSON.stringify(require("./responses/quests.json")));
 
     // do not change any of these or you will end up breaking it
     var ApplyProfileChanges = [];
@@ -1822,7 +1822,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/MarkNewQuestNotificationSen
 // Check for new quests
 express.post("/fortnite/api/game/v2/profile/*/client/ClientQuestLogin", async (req, res) => {
     const profile = require(`./profiles/${req.query.profileId || "athena"}.json`);
-    var QuestIDS = require("./responses/quests.json");
+    var QuestIDS = JSON.parse(JSON.stringify(require("./responses/quests.json")));
 
     // do not change any of these or you will end up breaking it
     var ApplyProfileChanges = [];
