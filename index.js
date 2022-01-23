@@ -1864,7 +1864,9 @@ express.post("/fortnite/api/game/v2/profile/*/client/ClientQuestLogin", async (r
                         ShouldGiveQuest = false;
                     } else {
                         ShouldGiveQuest = true;
-                        profile.stats.attributes.quest_manager.dailyQuestRerolls = 1;
+                        if (profile.stats.attributes.quest_manager.dailyQuestRerolls < 0) {
+                            profile.stats.attributes.quest_manager.dailyQuestRerolls += 1;
+                        }
                     }
                 }
             }
