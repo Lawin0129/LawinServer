@@ -607,7 +607,7 @@ express.get("/fortnite/api/game/v2/matchmakingservice/ticket/player/*", async (r
     fs.writeFileSync("./config.json", JSON.stringify(config, null, 2));
 
     res.json({
-        "serviceUrl": "ws://127.0.0.1:443",
+        "serviceUrl": "ws://127.0.0.1:80",
         "ticketType": "mms-player",
         "payload": "69=",
         "signature": "420="
