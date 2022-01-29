@@ -20,6 +20,8 @@
 - Leveling up and Evolving items
 - Upgrading item rarity
 - Hero, Defender, Survivor, Team Perk and Gadget equipping
+- Research level resetting and upgrading
+- Upgrade level resetting and upgrading
 - Autofill survivors
 - Recycling and destroying items
 - Collection Book slotting and unslotting
