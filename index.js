@@ -3,12 +3,15 @@ const express = Express();
 const fs = require("fs");
 const crypto = require("crypto");
 const path = require("path");
-const config = require("./config.json");
+const iniparser = require("ini");
+const config = iniparser.parse(fs.readFileSync(path.join(__dirname, "Config", "config.ini")).toString());
+const memory = require("./memory.json");
 const friendslist = require("./responses/friendslist.json");
 const friendslist2 = require("./responses/friendslist2.json");
 const keychain = require("./responses/keychain.json");
 const privacy = require("./responses/privacy.json");
 const catalog = getItemShop();
+var Memory_CurrentAccountID = makeid().replace(/-/ig, "");
 express.use(function(req, res, next) {
     // Getting the raw body of a request for client saving
     if (req.originalUrl.includes('/fortnite/api/cloudstorage/user/')) {
@@ -43,7 +46,7 @@ express.get("/clearitemsforshop", async (req, res) => {
     res.set("Content-Type", "text/plain");
 
     const athena = require("./profiles/athena.json");
-    const CatalogConfig = require("./catalog_config.json");
+    const CatalogConfig = require("./Config/catalog_config.json");
 
     for (var value in CatalogConfig) {
         for (var key in athena.items) {
@@ -316,11 +319,17 @@ express.get("/lightswitch/api/service/bulk/status", async (req, res) => {
 })
 
 express.get("/account/api/public/account", async (req, res) => {
+    var displayName = config.Config.displayName;
+
+    if (config.Config.bUseConfigDisplayName == false) {
+        displayName = req.query.accountId;
+    }
+
     res.json(
         [
             {
                 "id": req.query.accountId,
-                "displayName": req.query.accountId,
+                "displayName": displayName,
                 "externalAuths": {}
             },
             {
@@ -544,11 +553,17 @@ express.get("/account/api/public/account", async (req, res) => {
 })
 
 express.get("/account/api/public/account/:accountId", async (req, res) => {
+    var displayName = config.Config.displayName;
+
+    if (config.Config.bUseConfigDisplayName == false) {
+        displayName = req.params.accountId;
+    }
+
     res.json({
         "id": req.params.accountId,
-        "displayName": req.params.accountId,
+        "displayName": displayName,
         "name": "Lawin",
-        "email": req.params.accountId + "@lawin.com",
+        "email": displayName + "@lawin.com",
         "failedLoginAttempts": 0,
         "lastLogin": new Date().toISOString(),
         "numberOfDisplayNameChanges": 0,
@@ -602,9 +617,9 @@ express.get("/account/api/epicdomains/ssodomains", async (req, res) => {
 })
 
 express.get("/fortnite/api/game/v2/matchmakingservice/ticket/player/*", async (req, res) => {
-    config.currentbuildUniqueId = req.query.bucketId.split(":")[0];
+    memory.currentbuildUniqueId = req.query.bucketId.split(":")[0];
 
-    fs.writeFileSync("./config.json", JSON.stringify(config, null, 2));
+    fs.writeFileSync("./memory.json", JSON.stringify(memory, null, 2));
 
     res.json({
         "serviceUrl": "ws://127.0.0.1:80",
@@ -661,7 +676,7 @@ express.get("/fortnite/api/matchmaking/session/:session_id", async (req, res) =>
         "usesPresence": false,
         "allowJoinViaPresence": true,
         "allowJoinViaPresenceFriendsOnly": false,
-        "buildUniqueId": config.currentbuildUniqueId, // buildUniqueId is different for every build, this uses the netver of the version you're currently using
+        "buildUniqueId": memory.currentbuildUniqueId, // buildUniqueId is different for every build, this uses the netver of the version you're currently using
         "lastUpdated": new Date().toISOString(),
         "started": false
       })
@@ -744,7 +759,7 @@ express.get("/fortnite/api/cloudstorage/system", async (req, res) => {
             .json()
     }
     const seasonchecker = require("./seasonchecker.js");
-    const seasondata = require("./season.json");
+    const seasondata = require("./memory.json");
     seasonchecker(req, seasondata);
     if (seasondata.season == 10) {
         return res.status(404).json();
@@ -799,7 +814,7 @@ express.get("/fortnite/api/cloudstorage/user/*/:file", async (req, res) => {
     }
 
     const seasonchecker = require("./seasonchecker.js")
-    const seasondata = require("./season.json");
+    const seasondata = require("./memory.json");
     seasonchecker(req, seasondata);
 
     var currentBuildID = seasondata.CL;
@@ -817,7 +832,7 @@ express.get("/fortnite/api/cloudstorage/user/:accountId", async (req, res) => {
     res.set("Content-Type", "application/json")
 
     const seasonchecker = require("./seasonchecker.js")
-    const seasondata = require("./season.json");
+    const seasondata = require("./memory.json");
     seasonchecker(req, seasondata);
 
     var currentBuildID = seasondata.CL;
@@ -848,7 +863,7 @@ express.get("/fortnite/api/cloudstorage/user/:accountId", async (req, res) => {
 
 express.put("/fortnite/api/cloudstorage/user/*/*", async (req, res) => {
     const seasonchecker = require("./seasonchecker.js")
-    const seasondata = require("./season.json");
+    const seasondata = require("./memory.json");
     seasonchecker(req, seasondata);
 
     var currentBuildID = seasondata.CL;
@@ -875,7 +890,7 @@ express.get("/friends/api/v1/*/summary", async (req, res) => {
 
 express.get("/fortnite/api/calendar/v1/timeline", async (req, res) => {
     const seasonchecker = require("./seasonchecker.js")
-    const seasondata = require("./season.json");
+    const seasondata = require("./memory.json");
     seasonchecker(req, seasondata);
 
 	var activeEvents = [
@@ -1168,6 +1183,12 @@ express.get("/fortnite/api/storefront/v2/keychain", async (req, res) => {
 })
 
 express.get("/account/api/oauth/verify", async (req, res) => {
+    var displayName = config.Config.displayName;
+
+    if (config.Config.bUseConfigDisplayName == false) {
+        displayName = Memory_CurrentAccountID
+    }
+
     res.json({
         "token": "lawinstokenlol",
         "session_id": "3c3662bcb661d6de679c636744c66b62",
@@ -1175,13 +1196,13 @@ express.get("/account/api/oauth/verify", async (req, res) => {
         "client_id": "lawinsclientidlol",
         "internal_client": true,
         "client_service": "fortnite",
-        "account_id": "LawinServer",
+        "account_id": Memory_CurrentAccountID,
         "expires_in": 28800,
         "expires_at": "9999-12-02T01:12:01.100Z",
         "auth_method": "exchange_code",
-        "display_name": "LawinServer",
+        "display_name": displayName,
         "app": "fortnite",
-        "in_app_id": "LawinServer",
+        "in_app_id": Memory_CurrentAccountID,
         "device_id": "lawinsdeviceidlol"
     })
 })
@@ -1192,6 +1213,13 @@ express.post("/datarouter/api/v1/public/data", async (req, res) => {
 })
 
 express.post("/account/api/oauth/token", async (req, res) => {
+    var displayName = config.Config.displayName;
+
+    if (config.Config.bUseConfigDisplayName == false) {
+        Memory_CurrentAccountID = req.body.username || "LawinServer"
+        displayName = req.body.username || "LawinServer"
+    }
+
     res.json({
         "access_token": "lawinstokenlol",
         "expires_in": 28800,
@@ -1200,13 +1228,13 @@ express.post("/account/api/oauth/token", async (req, res) => {
         "refresh_token": "lawinstokenlol",
         "refresh_expires": 86400,
         "refresh_expires_at": "9999-12-02T01:12:01.100Z",
-        "account_id": req.body.username || "LawinServer",
+        "account_id": Memory_CurrentAccountID,
         "client_id": "lawinsclientidlol",
         "internal_client": true,
         "client_service": "fortnite",
-        "displayName": req.body.username || "LawinServer",
+        "displayName": displayName,
         "app": "fortnite",
-        "in_app_id": req.body.username || "LawinServer",
+        "in_app_id": Memory_CurrentAccountID,
         "device_id": "lawinsdeviceidlol"
     })
 })
@@ -1409,7 +1437,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/UnlockRewardNode", async (r
     const profile = require(`./profiles/${req.query.profileId || "athena"}.json`);
     const common_core = require("./profiles/common_core.json");
     const WinterFestIDS = require("./responses/winterfestrewards.json");
-    const seasondata = require("./season.json");
+    const seasondata = require("./memory.json");
     const seasonchecker = require("./seasonchecker.js");
     seasonchecker(req, seasondata);
 
@@ -2927,7 +2955,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/PromoteItem", async (req, r
 
 // Craft item STW (Guns, melees and traps only)
 express.post("/fortnite/api/game/v2/profile/*/client/CraftWorldItem", async (req, res) => {
-    const seasondata = require("./season.json");
+    const seasondata = require("./memory.json");
     const seasonchecker = require("./seasonchecker.js");
     seasonchecker(req, seasondata);
 
@@ -3981,7 +4009,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/ClearHeroLoadout", async (r
 // Recycle items STW
 express.post("/fortnite/api/game/v2/profile/*/client/RecycleItemBatch", async (req, res) => {
     const seasonchecker = require("./seasonchecker.js");
-    const seasondata = require("./season.json");
+    const seasondata = require("./memory.json");
     seasonchecker(req, seasondata);
 
     const profile = require(`./profiles/${req.query.profileId || "campaign"}.json`);
@@ -5247,7 +5275,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/PurchaseCatalogEntry", asyn
                     if (value.offerId == req.body.offerId) {
                         catalog.storefronts[a].catalogEntries[b].itemGrants.forEach(function(value, c) {
                             const seasonchecker = require("./seasonchecker.js");
-                            const seasondata = require("./season.json");
+                            const seasondata = require("./memory.json");
                             seasonchecker(req, seasondata);
 
                             if (4 > seasondata.season || seasondata.season == 4 && PurchasedLlama == false) {
@@ -5566,7 +5594,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/SetItemFavoriteStatusBatch"
 
     if (profile.profileId == "athena") {
         const seasonchecker = require("./seasonchecker.js");
-        const seasondata = require("./season.json");
+        const seasondata = require("./memory.json");
         seasonchecker(req, seasondata);
         profile.stats.attributes.season_num = seasondata.season;
         if (seasondata.season == 2) {
@@ -5629,7 +5657,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/SetItemFavoriteStatus", asy
 
     if (profile.profileId == "athena") {
         const seasonchecker = require("./seasonchecker.js");
-        const seasondata = require("./season.json");
+        const seasondata = require("./memory.json");
         seasonchecker(req, seasondata);
         profile.stats.attributes.season_num = seasondata.season;
         if (seasondata.season == 2) {
@@ -5690,7 +5718,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/MarkItemSeen", async (req, 
 
     if (profile.profileId == "athena") {
         const seasonchecker = require("./seasonchecker.js");
-        const seasondata = require("./season.json");
+        const seasondata = require("./memory.json");
         seasonchecker(req, seasondata);
         profile.stats.attributes.season_num = seasondata.season;
         if (seasondata.season == 2) {
@@ -5751,7 +5779,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/MarkItemSeen", async (req, 
 express.post("/fortnite/api/game/v2/profile/*/client/EquipBattleRoyaleCustomization", async (req, res) => {
     const profile = require("./profiles/athena.json");
     const seasonchecker = require("./seasonchecker.js");
-    const seasondata = require("./season.json");
+    const seasondata = require("./memory.json");
     seasonchecker(req, seasondata);
     profile.stats.attributes.season_num = seasondata.season;
     if (seasondata.season == 2) {
@@ -5918,7 +5946,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/EquipBattleRoyaleCustomizat
 express.post("/fortnite/api/game/v2/profile/*/client/SetBattleRoyaleBanner", async (req, res) => {
     const profile = require("./profiles/athena.json");
     const seasonchecker = require("./seasonchecker.js");
-    const seasondata = require("./season.json");
+    const seasondata = require("./memory.json");
     seasonchecker(req, seasondata);
     profile.stats.attributes.season_num = seasondata.season;
     if (seasondata.season == 2) {
@@ -5984,7 +6012,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/SetCosmeticLockerBanner", a
 
     if (profile.profileId == "athena") {
         const seasonchecker = require("./seasonchecker.js");
-        const seasondata = require("./season.json");
+        const seasondata = require("./memory.json");
         seasonchecker(req, seasondata);
         profile.stats.attributes.season_num = seasondata.season;
 	if (seasondata.season == 2) {
@@ -6053,7 +6081,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/SetCosmeticLockerSlot", asy
 
     if (profile.profileId == "athena") {
         const seasonchecker = require("./seasonchecker.js");
-        const seasondata = require("./season.json");
+        const seasondata = require("./memory.json");
         seasonchecker(req, seasondata);
         profile.stats.attributes.season_num = seasondata.season;
         if (seasondata.season == 2) {
@@ -6273,7 +6301,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/*", async (req, res) => {
 
     if (profile.profileId == "athena") {
         const seasonchecker = require("./seasonchecker.js");
-        const seasondata = require("./season.json");
+        const seasondata = require("./memory.json");
         seasonchecker(req, seasondata);
         profile.stats.attributes.season_num = seasondata.season;
         if (seasondata.season == 2) {
@@ -6331,7 +6359,7 @@ express.all("*", async (req, res) => {
 
 function getItemShop() {
     const catalog = JSON.parse(JSON.stringify(require("./responses/catalog.json")));
-    const CatalogConfig = require("./catalog_config.json");
+    const CatalogConfig = require("./Config/catalog_config.json");
 
     try {
         for (var value in CatalogConfig) {
@@ -6375,7 +6403,7 @@ function getItemShop() {
 
 function getTheater(req) {
     const seasonchecker = require("./seasonchecker.js");
-    const seasondata = require("./season.json");
+    const seasondata = require("./memory.json");
     seasonchecker(req, seasondata);
 
     var theater = JSON.stringify(require("./responses/worldstw.json"));
@@ -6393,7 +6421,7 @@ function getTheater(req) {
 
 function getContentPages(req) {
     const seasonchecker = require("./seasonchecker.js");
-    const seasondata = require("./season.json");
+    const seasondata = require("./memory.json");
     seasonchecker(req, seasondata);
 
     const contentpages = JSON.parse(JSON.stringify(require("./responses/contentpages.json")));
