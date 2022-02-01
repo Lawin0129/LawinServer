@@ -6418,6 +6418,7 @@ function getTheater(req) {
     try {
         if (seasondata.season >= 16 || seasondata.build == 15.30 || seasondata.build == 15.40 || seasondata.build == 15.50) {
             theater = theater.replace(/\/Game\//ig, "\/SaveTheWorld\/");
+            theater = theater.replace(/\"DataTable\'\/SaveTheWorld\//ig, "\"DataTable\'\/Game\/");
         }
     } catch (err) {}
 
