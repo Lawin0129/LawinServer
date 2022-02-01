@@ -1,47 +1,210 @@
 {
   "SaveTheWorld": [
-    "Quest:Daily_DestroyTVs",
-    "Quest:Daily_DestroyTransformers",
-    "Quest:Daily_DestroyServerRacks",
-    "Quest:Daily_DestroySeesaws",
-    "Quest:Daily_DestroyPropaneTanks",
-    "Quest:Daily_DestroyGnomes",
-    "Quest:Daily_DestroyFireTrucks",
-    "Quest:Daily_DestroyBears",
-    "Quest:Daily_DestroyArcadeMachines",
-    "Quest:Daily_PartyOf50",
-    "Quest:Daily_Mission_Specialist_TwinePeaks",
-    "Quest:Daily_Mission_Specialist_Stonewood",
-    "Quest:Daily_Mission_Specialist_Soldier",
-    "Quest:Daily_Mission_Specialist_Plankerton",
-    "Quest:Daily_Mission_Specialist_Outlander",
-    "Quest:Daily_Mission_Specialist_Ninja",
-    "Quest:Daily_Mission_Specialist_Constructor",
-    "Quest:Daily_Mission_Specialist_CannyValley",
-    "Quest:Daily_HuskExtermination_Soldier",
-    "Quest:Daily_HuskExtermination_Outlander",
-    "Quest:Daily_HuskExtermination_Ninja",
-    "Quest:Daily_HuskExtermination_Constructor",
-    "Quest:Daily_HuskExtermination_AnyHero",
-    "Quest:Daily_High_Priority",
-    "Quest:Daily_GateCrasher",
-    "Quest:Daily_DataRetrieval",
-    "Quest:Daily_ALittleVanThatCould"
+    {
+      "templateId": "Quest:Daily_DestroyArcadeMachines",
+      "objectives": [
+        "quest_reactive_destroyarcade_v4"
+      ]
+    },
+    {
+      "templateId": "Quest:Daily_DestroyBears",
+      "objectives": [
+        "quest_reactive_destroybear_v3"
+      ]
+    },
+    {
+      "templateId": "Quest:Daily_DestroyFireTrucks",
+      "objectives": [
+        "quest_reactive_destroyfiretruck_v2"
+      ]
+    },
+    {
+      "templateId": "Quest:Daily_DestroyGnomes",
+      "objectives": [
+        "quest_reactive_destroygnome_v2"
+      ]
+    },
+    {
+      "templateId": "Quest:Daily_DestroyPropaneTanks",
+      "objectives": [
+        "quest_reactive_destroypropane_v2"
+      ]
+    },
+    {
+      "templateId": "Quest:Daily_DestroySeesaws",
+      "objectives": [
+        "quest_reactive_destroyseesaw_v3"
+      ]
+    },
+    {
+      "templateId": "Quest:Daily_DestroyServerRacks",
+      "objectives": [
+        "quest_reactive_destroyserverrack_v2"
+      ]
+    },
+    {
+      "templateId": "Quest:Daily_DestroyTransformers",
+      "objectives": [
+        "quest_reactive_destroytransform_v3"
+      ]
+    },
+    {
+      "templateId": "Quest:Daily_DestroyTVs",
+      "objectives": [
+        "quest_reactive_destroytv_v2"
+      ]
+    },
+    {
+      "templateId": "Quest:Daily_High_Priority",
+      "objectives": [
+        "questcollect_survivoritemdata"
+      ]
+    },
+    {
+      "templateId": "Quest:Daily_HuskExtermination_AnyHero",
+      "objectives": [
+        "kill_husk"
+      ]
+    },
+    {
+      "templateId": "Quest:Daily_HuskExtermination_Constructor",
+      "objectives": [
+        "kill_husk_constructor_v2"
+      ]
+    },
+    {
+      "templateId": "Quest:Daily_HuskExtermination_Ninja",
+      "objectives": [
+        "kill_husk_ninja_v2"
+      ]
+    },
+    {
+      "templateId": "Quest:Daily_HuskExtermination_Outlander",
+      "objectives": [
+        "kill_husk_outlander_v2"
+      ]
+    },
+    {
+      "templateId": "Quest:Daily_HuskExtermination_Soldier",
+      "objectives": [
+        "kill_husk_commando_v2"
+      ]
+    },
+    {
+      "templateId": "Quest:Daily_Mission_Specialist_Constructor",
+      "objectives": [
+        "complete_constructor"
+      ]
+    },
+    {
+      "templateId": "Quest:Daily_Mission_Specialist_Ninja",
+      "objectives": [
+        "complete_ninja"
+      ]
+    },
+    {
+      "templateId": "Quest:Daily_Mission_Specialist_Outlander",
+      "objectives": [
+        "complete_outlander"
+      ]
+    },
+    {
+      "templateId": "Quest:Daily_Mission_Specialist_Soldier",
+      "objectives": [
+        "complete_commando"
+      ]
+    },
+    {
+      "templateId": "Quest:Daily_PartyOf50",
+      "objectives": [
+        "questcollect_survivoritemdata_v2"
+      ]
+    }
   ],
   "BattleRoyale": [
-    "Quest:AthenaDaily_Outlive_Solo",
-    "Quest:AthenaDaily_Outlive_Squad",
-    "Quest:AthenaDaily_Outlive",
-    "Quest:AthenaDaily_PlayMatches",
-    "Quest:AthenaDaily_Solo_Top25",
-    "Quest:AthenaDaily_Squad_Top6",
-    "Quest:AthenaDailyQuest_InteractAmmoCrate",
-    "Quest:AthenaDailyQuest_InteractTreasureChest",
-    "Quest:AthenaDailyQuest_PlayerElimination",
-    "Quest:AthenaDailyQuest_PlayerEliminationAssaultRifles",
-    "Quest:AthenaDailyQuest_PlayerEliminationPistols",
-    "Quest:AthenaDailyQuest_PlayerEliminationShotguns",
-    "Quest:AthenaDailyQuest_PlayerEliminationSMGs",
-    "Quest:AthenaDailyQuest_PlayerEliminationSniperRifles"
+    {
+      "templateId": "Quest:AthenaDaily_Outlive_Solo",
+      "objectives": [
+        "daily_athena_outlive_solo_players"
+      ]
+    },
+    {
+      "templateId": "Quest:AthenaDaily_Outlive_Squad",
+      "objectives": [
+        "daily_athena_outlive_squad_players_v2"
+      ]
+    },
+    {
+      "templateId": "Quest:AthenaDaily_Outlive",
+      "objectives": [
+        "daily_athena_outlive_players_v3"
+      ]
+    },
+    {
+      "templateId": "Quest:AthenaDaily_PlayMatches",
+      "objectives": [
+        "daily_athena_play_matches_v3"
+      ]
+    },
+    {
+      "templateId": "Quest:AthenaDaily_Solo_Top25",
+      "objectives": [
+        "daily_athena_solo_top25_v2"
+      ]
+    },
+    {
+      "templateId": "Quest:AthenaDaily_Squad_Top6",
+      "objectives": [
+        "daily_athena_squad_top6_v2"
+      ]
+    },
+    {
+      "templateId": "Quest:AthenaDailyQuest_InteractAmmoCrate",
+      "objectives": [
+        "athena_daily_loot_ammobox_v2"
+      ]
+    },
+    {
+      "templateId": "Quest:AthenaDailyQuest_InteractTreasureChest",
+      "objectives": [
+        "daily_athena_loot_chest_v2"
+      ]
+    },
+    {
+      "templateId": "Quest:AthenaDailyQuest_PlayerElimination",
+      "objectives": [
+        "athena_daily_kill_players_v2"
+      ]
+    },
+    {
+      "templateId": "Quest:AthenaDailyQuest_PlayerEliminationAssaultRifles",
+      "objectives": [
+        "athena_daily_kill_players_assault_rifles"
+      ]
+    },
+    {
+      "templateId": "Quest:AthenaDailyQuest_PlayerEliminationPistols",
+      "objectives": [
+        "athena_daily_kill_players_pistol_v3"
+      ]
+    },
+    {
+      "templateId": "Quest:AthenaDailyQuest_PlayerEliminationShotguns",
+      "objectives": [
+        "athena_daily_kill_players_shotgun_v2"
+      ]
+    },
+    {
+      "templateId": "Quest:AthenaDailyQuest_PlayerEliminationSMGs",
+      "objectives": [
+        "athena_daily_kill_players_smg_v2"
+      ]
+    },
+    {
+      "templateId": "Quest:AthenaDailyQuest_PlayerEliminationSniperRifles",
+      "objectives": [
+        "athena_daily_kill_players_sniper_v2"
+      ]
+    }
   ]
 }

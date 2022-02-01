@@ -1704,7 +1704,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/FortRerollDailyQuest", asyn
     var randomNumber = Math.floor(Math.random() * QuestIDS.length);
 
     for (var key in profile.items) {
-        while (QuestIDS[randomNumber].toLowerCase() == profile.items[key].templateId.toLowerCase()) {
+        while (QuestIDS[randomNumber].templateId.toLowerCase() == profile.items[key].templateId.toLowerCase()) {
             randomNumber = Math.floor(Math.random() * QuestIDS.length);
         }
     }
@@ -1715,10 +1715,9 @@ express.post("/fortnite/api/game/v2/profile/*/client/FortRerollDailyQuest", asyn
         delete profile.items[req.body.questId];
 
         profile.items[NewQuestID] = {
-            "templateId": QuestIDS[randomNumber],
+            "templateId": QuestIDS[randomNumber].templateId,
             "attributes": {
                 "creation_time": new Date().toISOString(),
-                "completion_complete": 0,
                 "level": -1,
                 "item_seen": false,
                 "playlists": [],
@@ -1738,6 +1737,10 @@ express.post("/fortnite/api/game/v2/profile/*/client/FortRerollDailyQuest", asyn
             },
             "quantity": 1
         };
+
+        for (var objective in QuestIDS[randomNumber].objectives) {
+            profile.items[NewQuestID].attributes[`completion_${QuestIDS[randomNumber].objectives[objective]}`] = 0
+        }
 
         StatChanged = true;
     }
@@ -1905,16 +1908,15 @@ express.post("/fortnite/api/game/v2/profile/*/client/ClientQuestLogin", async (r
             var randomNumber = Math.floor(Math.random() * QuestIDS.length);
 
             for (var key in profile.items) {
-                while (QuestIDS[randomNumber].toLowerCase() == profile.items[key].templateId.toLowerCase()) {
+                while (QuestIDS[randomNumber].templateId.toLowerCase() == profile.items[key].templateId.toLowerCase()) {
                     randomNumber = Math.floor(Math.random() * QuestIDS.length);
                 }
             }
 
             profile.items[NewQuestID] = {
-                "templateId": QuestIDS[randomNumber],
+                "templateId": QuestIDS[randomNumber].templateId,
                 "attributes": {
                     "creation_time": new Date().toISOString(),
-                    "completion_complete": 0,
                     "level": -1,
                     "item_seen": false,
                     "playlists": [],
@@ -1934,6 +1936,11 @@ express.post("/fortnite/api/game/v2/profile/*/client/ClientQuestLogin", async (r
                 },
                 "quantity": 1
             };
+
+            for (var objective in QuestIDS[randomNumber].objectives) {
+                profile.items[NewQuestID].attributes[`completion_${QuestIDS[randomNumber].objectives[objective]}`] = 0
+            }
+
             profile.stats.attributes.quest_manager.dailyLoginInterval = new Date().toISOString();
 
             ApplyProfileChanges.push({
