@@ -180,40 +180,59 @@
       "attributes": {
         "locker_slots_data": {
           "slots": {
-            "Dance": {
-              "items": [
-                "AthenaDance:eid_dancemoves",
-                null,
-                null,
-                null,
-                null,
-                null
-              ],
-              "activeVariants": [
-                null,
-                null,
-                null,
-                null,
-                null,
-                null
-              ]
-            },
             "Pickaxe": {
               "items": [
                 "AthenaPickaxe:pickaxe_id_stw001_tier_1"
+              ]
+            },
+            "ItemWrap": {
+              "items": [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            "LoadingScreen": {
+              "items": [
+                ""
+              ]
+            },
+            "Dance": {
+              "items": [
+                "AthenaDance:eid_dancemoves",
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            },
+            "MusicPack": {
+              "items": [
+                ""
               ]
             },
             "Backpack": {
               "items": [
                 "AthenaBackpack:bid_stwhero"
               ]
+            },
+            "Character": {
+              "items": [
+                ""
+              ]
             }
           }
         },
         "use_count": 0,
         "banner_icon_template": "SurvivalBannerStonewoodComplete",
-        "locker_name": "LawinServer",
         "banner_color_template": "DefaultColor15",
+        "locker_name": "LawinServer",
         "item_seen": false,
         "favorite": false
       },
