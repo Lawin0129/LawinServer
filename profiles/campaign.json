@@ -180,59 +180,40 @@
       "attributes": {
         "locker_slots_data": {
           "slots": {
-            "Pickaxe": {
+            "Dance": {
               "items": [
-                "AthenaPickaxe:Pickaxe_ID_041_PajamaParty"
-              ]
-            },
-            "ItemWrap": {
-              "items": [
-                "AthenaItemWrap:Wrap_237_NeonPulse",
-                "AthenaItemWrap:Wrap_237_NeonPulse",
-                "AthenaItemWrap:Wrap_237_NeonPulse",
-                "AthenaItemWrap:Wrap_237_NeonPulse",
-                "AthenaItemWrap:Wrap_237_NeonPulse",
-                "AthenaItemWrap:Wrap_237_NeonPulse",
-                "AthenaItemWrap:Wrap_237_NeonPulse",
+                "AthenaDance:eid_dancemoves",
+                null,
+                null,
+                null,
+                null,
+                null
+              ],
+              "activeVariants": [
+                null,
+                null,
+                null,
+                null,
+                null,
                 null
               ]
             },
-            "LoadingScreen": {
+            "Pickaxe": {
               "items": [
-                "AthenaLoadingScreen:LSID_026_S4Cumulative8"
-              ]
-            },
-            "Dance": {
-              "items": [
-                "AthenaDance:EID_JumpStyleDance",
-                "AthenaDance:EID_CrazyFeet",
-                "AthenaDance:EID_MechPeely",
-                "AthenaDance:EID_IndigoApple",
-                "AthenaDance:EID_RunningMan",
-                "AthenaDance:EID_MonteCarlo"
-              ]
-            },
-            "MusicPack": {
-              "items": [
-                "AthenaMusicPack:MusicPack_015_GoodVibes"
+                "AthenaPickaxe:pickaxe_id_stw001_tier_1"
               ]
             },
             "Backpack": {
               "items": [
-                "AthenaBackpack:BID_168_CupidWinterMale"
-              ]
-            },
-            "Character": {
-              "items": [
-                ""
+                "AthenaBackpack:bid_stwhero"
               ]
             }
           }
         },
         "use_count": 0,
-        "banner_icon_template": "brs9worldcup2019",
-        "banner_color_template": "defaultcolor1",
-        "locker_name": "",
+        "banner_icon_template": "SurvivalBannerStonewoodComplete",
+        "locker_name": "LawinServer",
+        "banner_color_template": "DefaultColor15",
         "item_seen": false,
         "favorite": false
       },
