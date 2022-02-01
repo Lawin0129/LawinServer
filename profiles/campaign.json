@@ -63074,6 +63074,30 @@
         "favorite": false
       },
       "quantity": 1
+    },
+    "71b49db4-23f3-4a16-9bc8-9e20b7f4c3c3": {
+      "templateId": "Quest:outpostquest_t4_endless",
+      "attributes": {
+        "creation_time": "min",
+        "level": -1,
+        "item_seen": false,
+        "playlists": [],
+        "sent_new_notification": true,
+        "challenge_bundle_id": "",
+        "xp_reward_scalar": 1,
+        "challenge_linked_quest_given": "",
+        "quest_pool": "",
+        "quest_state": "Active",
+        "bucket": "",
+        "last_state_change_time": "2019-06-18T12:25:25.593Z",
+        "challenge_linked_quest_parent": "",
+        "max_level_bonus": 0,
+        "xp": 0,
+        "quest_rarity": "uncommon",
+        "favorite": false,
+        "completion_complete_outpost_4_endless": 0
+      },
+      "quantity": 1
     }
   },
   "stats": {
