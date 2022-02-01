@@ -1769,7 +1769,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/FortRerollDailyQuest", asyn
         Notifications.push({
             "type": "dailyQuestReroll",
             "primary": true,
-            "newQuestId": QuestIDS[randomNumber]
+            "newQuestId": QuestIDS[randomNumber].templateId
         })
 
         fs.writeFileSync(`./profiles/${req.query.profileId || "athena"}.json`, JSON.stringify(profile, null, 2));
