@@ -182,44 +182,44 @@
           "slots": {
             "Pickaxe": {
               "items": [
-                "AthenaPickaxe:Pickaxe_ID_041_PajamaParty"
+                "AthenaPickaxe:pickaxe_id_stw001_tier_1"
               ]
             },
             "ItemWrap": {
               "items": [
-                "AthenaItemWrap:Wrap_237_NeonPulse",
-                "AthenaItemWrap:Wrap_237_NeonPulse",
-                "AthenaItemWrap:Wrap_237_NeonPulse",
-                "AthenaItemWrap:Wrap_237_NeonPulse",
-                "AthenaItemWrap:Wrap_237_NeonPulse",
-                "AthenaItemWrap:Wrap_237_NeonPulse",
-                "AthenaItemWrap:Wrap_237_NeonPulse",
-                null
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
               ]
             },
             "LoadingScreen": {
               "items": [
-                "AthenaLoadingScreen:LSID_026_S4Cumulative8"
+                ""
               ]
             },
             "Dance": {
               "items": [
-                "AthenaDance:EID_JumpStyleDance",
-                "AthenaDance:EID_CrazyFeet",
-                "AthenaDance:EID_MechPeely",
-                "AthenaDance:EID_IndigoApple",
-                "AthenaDance:EID_RunningMan",
-                "AthenaDance:EID_MonteCarlo"
+                "AthenaDance:eid_dancemoves",
+                "",
+                "",
+                "",
+                "",
+                ""
               ]
             },
             "MusicPack": {
               "items": [
-                "AthenaMusicPack:MusicPack_015_GoodVibes"
+                ""
               ]
             },
             "Backpack": {
               "items": [
-                "AthenaBackpack:BID_168_CupidWinterMale"
+                "AthenaBackpack:bid_stwhero"
               ]
             },
             "Character": {
@@ -230,9 +230,9 @@
           }
         },
         "use_count": 0,
-        "banner_icon_template": "brs9worldcup2019",
-        "banner_color_template": "defaultcolor1",
-        "locker_name": "",
+        "banner_icon_template": "SurvivalBannerStonewoodComplete",
+        "banner_color_template": "DefaultColor15",
+        "locker_name": "LawinServer",
         "item_seen": false,
         "favorite": false
       },
@@ -413,7 +413,7 @@
         "xp": 0,
         "favorite": false
       },
-      "quantity": 5000
+      "quantity": 540
     },
     "a43eb922-b295-4482-9257-7739385e9f92": {
       "templateId": "Quest:starlightquest_complete_all",
@@ -997,7 +997,7 @@
         "xp": 0,
         "favorite": false
       },
-      "quantity": 5000
+      "quantity": 224
     },
     "7a367ed2-ac89-4ca5-8bbd-3476e2b1c68a": {
       "templateId": "Quest:plankertonquest_filler_3_d4",
@@ -3512,7 +3512,7 @@
         "xp": 0,
         "favorite": false
       },
-      "quantity": 5000
+      "quantity": 540
     },
     "ac278b23-e943-4ee7-ac4d-9a539c7cb5a0": {
       "templateId": "Quest:challenge_holdthedoor_20",
@@ -4086,7 +4086,7 @@
         "xp": 0,
         "favorite": false
       },
-      "quantity": 5000
+      "quantity": 540
     },
     "13eb4f9d-d65e-4c3d-841f-d1de2963859b": {
       "templateId": "Quest:challenge_missionaccomplished_5",
@@ -4195,7 +4195,7 @@
         "xp": 0,
         "favorite": false
       },
-      "quantity": 5000
+      "quantity": 540
     },
     "19b4591e-ed2f-4b9a-b21c-ea7bc193e236": {
       "templateId": "Worker:workerbasic_vr_t01",
@@ -4654,7 +4654,7 @@
         "xp": 0,
         "favorite": false
       },
-      "quantity": 5000
+      "quantity": 224
     },
     "e245fbb8-a31e-41f8-a16e-bacd1ea6fab9": {
       "templateId": "HomebaseNode:questreward_plankerton_squad_ssd4",
@@ -6107,7 +6107,7 @@
         "xp": 0,
         "favorite": false
       },
-      "quantity": 5000
+      "quantity": 224
     },
     "8211bfac-bc99-4128-a49f-3936dcec2e0d": {
       "templateId": "Quest:weeklyquest_tiered_completemissionalerts_t10",
@@ -10895,7 +10895,7 @@
         "xp": 0,
         "favorite": false
       },
-      "quantity": 5000
+      "quantity": 224
     },
     "06ce3df0-1405-4d1e-8d30-2a641a109afe": {
       "templateId": "HomebaseNode:questreward_cannyvalley_squad_ssd2",
@@ -63093,6 +63093,30 @@
         "favorite": false
       },
       "quantity": 1
+    },
+    "71b49db4-23f3-4a16-9bc8-9e20b7f4c3c3": {
+      "templateId": "Quest:outpostquest_t4_endless",
+      "attributes": {
+        "creation_time": "min",
+        "level": -1,
+        "item_seen": false,
+        "playlists": [],
+        "sent_new_notification": true,
+        "challenge_bundle_id": "",
+        "xp_reward_scalar": 1,
+        "challenge_linked_quest_given": "",
+        "quest_pool": "",
+        "quest_state": "Active",
+        "bucket": "",
+        "last_state_change_time": "2019-06-18T12:25:25.593Z",
+        "challenge_linked_quest_parent": "",
+        "max_level_bonus": 0,
+        "xp": 0,
+        "quest_rarity": "uncommon",
+        "favorite": false,
+        "completion_complete_outpost_4_endless": 0
+      },
+      "quantity": 1
     }
   },
   "stats": {
@@ -63324,10 +63348,10 @@
         "pinnedQuestInstances": []
       },
       "research_levels": {
-        "technology": 5000,
-        "fortitude": 5000,
-        "offense": 5000,
-        "resistance": 5000
+        "technology": 120,
+        "fortitude": 120,
+        "offense": 120,
+        "resistance": 120
       },
       "level": 309,
       "xp_overflow": 0,
