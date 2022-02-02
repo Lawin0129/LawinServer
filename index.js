@@ -5407,7 +5407,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/PurchaseCatalogEntry", asyn
                                     }
                                 })
 
-                                if (value.templateId.toLowerCase() == "cardpack:cardpack_basic") {
+                                if (req.body.currencySubType.toLowerCase() == "accountresource:voucher_basicpack") {
                                     Notifications[0].lootResult.items.push({
                                         "itemType": value.templateId,
                                         "itemGuid": ID,
