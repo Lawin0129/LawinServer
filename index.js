@@ -5407,14 +5407,50 @@ express.post("/fortnite/api/game/v2/profile/*/client/PurchaseCatalogEntry", asyn
                                     }
                                 })
 
-                                for (var i = 0; i < 10; i++) {
-                                    const randomNumber = Math.floor(Math.random() * ItemIDS.length);
-                                    const id = makeid();
-
-                                    MultiUpdate[0].profileChanges.push({
-                                        "changeType": "itemAdded",
-                                        "itemId": id,
-                                        "item": {
+                                if (req.body.currencySubType.toLowerCase() == "accountresource:voucher_basicpack") {
+                                    Notifications[0].lootResult.items.push({
+                                        "itemType": value.templateId,
+                                        "itemGuid": ID,
+                                        "itemProfile": "campaign",
+                                        "attributes": {
+                                            "pack_source": "Store"
+                                        },
+                                        "quantity": 1
+                                    })
+                                }
+                                else {
+                                    for (var i = 0; i < 10; i++) {
+                                        const randomNumber = Math.floor(Math.random() * ItemIDS.length);
+                                        const id = makeid();
+    
+                                        MultiUpdate[0].profileChanges.push({
+                                            "changeType": "itemAdded",
+                                            "itemId": id,
+                                            "item": {
+                                                "templateId": ItemIDS[randomNumber],
+                                                "attributes": {
+                                                    "last_state_change_time": "2017-08-29T21:05:57.087Z",
+                                                    "max_level_bonus": 0,
+                                                    "level": 1,
+                                                    "item_seen": false,
+                                                    "alterations": [],
+                                                    "xp": 0,
+                                                    "sent_new_notification": true,
+                                                    "favorite": false
+                                                },
+                                                "quantity": 1
+                                            }
+                                        })
+    
+                                        Notifications[0].lootResult.items.push({
+                                            "itemType": ItemIDS[randomNumber],
+                                            "itemGuid": id,
+                                            "itemProfile": "campaign",
+                                            "attributes": {},
+                                            "quantity": 1
+                                        })
+    
+                                        campaign.items[id] = {
                                             "templateId": ItemIDS[randomNumber],
                                             "attributes": {
                                                 "last_state_change_time": "2017-08-29T21:05:57.087Z",
@@ -5428,39 +5464,16 @@ express.post("/fortnite/api/game/v2/profile/*/client/PurchaseCatalogEntry", asyn
                                             },
                                             "quantity": 1
                                         }
-                                    })
-
-                                    Notifications[0].lootResult.items.push({
-                                        "itemType": ItemIDS[randomNumber],
-                                        "itemGuid": id,
-                                        "itemProfile": "campaign",
-                                        "attributes": {},
-                                        "quantity": 1
-                                    })
-
-                                    campaign.items[id] = {
-                                        "templateId": ItemIDS[randomNumber],
-                                        "attributes": {
-                                            "last_state_change_time": "2017-08-29T21:05:57.087Z",
-                                            "max_level_bonus": 0,
-                                            "level": 1,
-                                            "item_seen": false,
-                                            "alterations": [],
-                                            "xp": 0,
-                                            "sent_new_notification": true,
-                                            "favorite": false
-                                        },
-                                        "quantity": 1
                                     }
-                                }
-
-                                if (campaign.items[ID].quantity == 1) {
-                                    delete campaign.items[ID]
-
-                                    MultiUpdate[0].profileChanges.push({
-                                        "changeType": "itemRemoved",
-                                        "itemId": ID
-                                    })
+    
+                                    if (campaign.items[ID].quantity == 1) {
+                                        delete campaign.items[ID]
+    
+                                        MultiUpdate[0].profileChanges.push({
+                                            "changeType": "itemRemoved",
+                                            "itemId": ID
+                                        })
+                                    }
                                 }
 
                                 if (true) {
