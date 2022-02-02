@@ -57794,7 +57794,7 @@
         "item_seen": true,
         "portrait": "/Game/UI/Icons/Icon-Worker/IconDefinitions/IconDef-WorkerPortrait-Curious-M01.IconDef-WorkerPortrait-Curious-M01",
         "max_level_bonus": 0,
-        "squad_id": "Squad_Attribute_Medicine_EMTSquad",
+        "squad_id": "",
         "personality": "Homebase.Worker.Personality.IsCurious",
         "xp": 0,
         "slotted_building_id": "",
@@ -57813,7 +57813,7 @@
         "item_seen": true,
         "portrait": "/Game/UI/Icons/Icon-Worker/IconDefinitions/IconDef-WorkerPortrait-Curious-M01.IconDef-WorkerPortrait-Curious-M01",
         "max_level_bonus": 0,
-        "squad_id": "Squad_Attribute_Medicine_EMTSquad",
+        "squad_id": "",
         "personality": "Homebase.Worker.Personality.IsCurious",
         "xp": 0,
         "slotted_building_id": "",
@@ -63115,6 +63115,44 @@
         "quest_rarity": "uncommon",
         "favorite": false,
         "completion_complete_outpost_4_endless": 0
+      },
+      "quantity": 1
+    },
+    "caa033cd-e579-4210-9e8a-5224d12198cc": {
+      "templateId": "Worker:worker_karolina_ur_t05",
+      "attributes": {
+        "gender": 0,
+        "level": 50,
+        "squad_slot_idx": 1,
+        "item_seen": true,
+        "portrait": "",
+        "max_level_bonus": 0,
+        "squad_id": "Squad_Attribute_Medicine_EMTSquad",
+        "personality": "Homebase.Worker.Personality.IsCurious",
+        "xp": 0,
+        "slotted_building_id": "",
+        "favorite": false,
+        "building_slot_used": -1,
+        "set_bonus": "Homebase.Worker.SetBonus.IsTrapDurabilityHigh"
+      },
+      "quantity": 1
+    },
+    "6112061a-1ca1-4a0f-aaac-8f30c2bd6400": {
+      "templateId": "Worker:worker_joel_ur_t05",
+      "attributes": {
+        "gender": 0,
+        "level": 50,
+        "squad_slot_idx": 2,
+        "item_seen": true,
+        "portrait": "",
+        "max_level_bonus": 0,
+        "squad_id": "Squad_Attribute_Medicine_EMTSquad",
+        "personality": "Homebase.Worker.Personality.IsCurious",
+        "xp": 0,
+        "slotted_building_id": "",
+        "favorite": false,
+        "building_slot_used": -1,
+        "set_bonus": "Homebase.Worker.SetBonus.IsTrapDurabilityHigh"
       },
       "quantity": 1
     }
