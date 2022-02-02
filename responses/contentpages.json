@@ -1221,24 +1221,9 @@
         {
           "hidden": false,
           "_type": "CommonUI Simple Message Base",
-          "subgame": "br",
           "title": "LawinServer",
-          "body": "Server created by Lawin (Twitter: @lawin_010) \nDiscord: https://discord.gg/KJ8UaHZ",
+          "body": "Server created by Lawin (Twitter: @lawin_010)\nDiscord: https://discord.gg/KJ8UaHZ",
           "spotlight": true
-        }
-      ],
-      "region_messages": [
-        {
-          "_type": "CommonUI Simple Message Region",
-          "region": "NA",
-          "message": {
-            "hidden": false,
-            "_type": "CommonUI Simple Message Base",
-            "subgame": "br",
-            "title": "LawinServer",
-            "body": "Server created by Lawin (Twitter: @lawin_010) \nDiscord: https://discord.gg/KJ8UaHZ",
-            "spotlight": true
-          }
         }
       ]
     },
@@ -1247,6 +1232,27 @@
     "alwaysShow": false,
     "_activeDate": "2018-08-06T19:00:26.217Z",
     "lastModified": "2019-10-29T22:32:52.686Z",
+    "_locale": "en-US"
+  },
+  "emergencynoticev2": {
+    "jcr:isCheckedOut": true,
+    "_title": "emergencynoticev2",
+    "_noIndex": false,
+    "jcr:baseVersion": "a7ca237317f1e771e921e2-7f15-4485-b2e2-553b809fa363",
+    "emergencynotices": {
+      "_type": "Emergency Notices",
+      "emergencynotices": [
+        {
+          "gamemodes": [],
+          "hidden": false,
+          "_type": "CommonUI Emergency Notice Base",
+          "title": "LawinServer",
+          "body": "Server created by Lawin (Twitter: @lawin_010)\nDiscord: https://discord.gg/KJ8UaHZ"
+        }
+      ]
+    },
+    "_activeDate": "2018-08-06T19:00:26.217Z",
+    "lastModified": "2021-12-01T15:55:56.012Z",
     "_locale": "en-US"
   },
   "koreancafe": {
