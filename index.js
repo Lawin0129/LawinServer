@@ -6433,6 +6433,29 @@ function getTheater(req) {
             theater = theater.replace(/\/Game\//ig, "\/SaveTheWorld\/");
             theater = theater.replace(/\"DataTable\'\/SaveTheWorld\//ig, "\"DataTable\'\/Game\/");
         }
+
+        var date = new Date().toISOString()
+        
+        // Set the 24-hour StW mission refresh date for Season >= 9
+        if (seasondata.season >= 9) {
+            date = date.split("T")[0] + "T23:59:59.999Z";
+        }
+        // Set the 6-hour StW mission refresh date for Season < 9
+        else {
+            if (date < (date.split("T")[0] + "T05:59:59.999Z")) {
+                date = date.split("T")[0] + "T05:59:59.999Z";
+            }
+            else if (date< (date.split("T")[0] + "T11:59:59.999Z")) {
+                date = date.split("T")[0] + "T11:59:59.999Z";
+            }
+            else if (date < (date.split("T")[0] + "T17:59:59.999Z")) {
+                date = date.split("T")[0] + "T17:59:59.999Z";
+            }
+            else if (date < (date.split("T")[0] + "T23:59:59.999Z")) {
+                date = date.split("T")[0] + "T23:59:59.999Z";
+            }
+        }
+        theater = theater.replace(/2017-07-25T23:59:59.999Z/ig, date);
     } catch (err) {}
 
     theater = JSON.parse(theater)
