@@ -2195,7 +2195,7 @@
       "undo_timeout": "min",
       "monthly_purchases": {},
       "allowed_to_send_gifts": true,
-      "mfa_enabled": false,
+      "mfa_enabled": true,
       "allowed_to_receive_gifts": true,
       "gift_history": {}
     }
