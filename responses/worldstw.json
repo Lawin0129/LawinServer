@@ -18526,7 +18526,7 @@
             "rowName": "Theater_Start_Zone3"
           },
           "tileIndex": 86,
-          "availableUntil": "2017-07-22T04:19:45.000Z"
+          "availableUntil": "2017-07-25T23:59:59.999Z"
         },
         {
           "missionGuid": "798f5765-16f3-4833-a540-3dc3f8797c4a",
@@ -18549,7 +18549,7 @@
             "rowName": "Theater_Start_Zone5"
           },
           "tileIndex": 8,
-          "availableUntil": "2017-07-22T04:19:45.000Z"
+          "availableUntil": "2017-07-25T23:59:59.999Z"
         },
         {
           "missionGuid": "3e99d8c0-e60f-48b1-8785-138c48bff1aa",
@@ -18572,7 +18572,7 @@
             "rowName": "Theater_Start_Zone5"
           },
           "tileIndex": 45,
-          "availableUntil": "2017-07-22T04:19:45.000Z"
+          "availableUntil": "2017-07-25T23:59:59.999Z"
         },
         {
           "missionGuid": "21567023-9e59-4166-bf09-a1e58beec0a9",
@@ -18595,7 +18595,7 @@
             "rowName": "Theater_Start_Zone1"
           },
           "tileIndex": 65,
-          "availableUntil": "2017-07-22T04:19:45.000Z"
+          "availableUntil": "2017-07-25T23:59:59.999Z"
         },
         {
           "missionGuid": "226c0c48-7274-4c8b-8e6e-248028dcfb8f",
@@ -18618,7 +18618,7 @@
             "rowName": "Theater_Start_Zone4"
           },
           "tileIndex": 0,
-          "availableUntil": "2017-07-22T04:19:45.000Z"
+          "availableUntil": "2017-07-25T23:59:59.999Z"
         },
         {
           "missionGuid": "04984fe9-ffac-4436-9983-60489353081b",
@@ -18641,7 +18641,7 @@
             "rowName": "Theater_Start_Zone4"
           },
           "tileIndex": 14,
-          "availableUntil": "2017-07-22T04:19:45.000Z"
+          "availableUntil": "2017-07-25T23:59:59.999Z"
         },
         {
           "missionGuid": "659bd0b7-89fc-4779-ad46-b9876c1c165c",
@@ -18664,7 +18664,7 @@
             "rowName": "Theater_Start_Zone4"
           },
           "tileIndex": 18,
-          "availableUntil": "2017-07-22T04:19:45.000Z"
+          "availableUntil": "2017-07-25T23:59:59.999Z"
         },
         {
           "missionGuid": "1f6ed0b4-cf4f-45ed-bc96-798995c5d2a6",
@@ -18687,7 +18687,7 @@
             "rowName": "Theater_Start_Zone4"
           },
           "tileIndex": 20,
-          "availableUntil": "2017-07-22T04:19:45.000Z"
+          "availableUntil": "2017-07-25T23:59:59.999Z"
         },
         {
           "missionGuid": "d95970e9-e1f3-4265-886d-26968535912d",
@@ -18710,7 +18710,7 @@
             "rowName": "Theater_Start_Zone5"
           },
           "tileIndex": 1,
-          "availableUntil": "2017-07-22T04:19:45.000Z"
+          "availableUntil": "2017-07-25T23:59:59.999Z"
         },
         {
           "missionGuid": "2bb32850-fa9a-4556-bf2a-952f2e0ddb2c",
@@ -18733,7 +18733,7 @@
             "rowName": "Theater_Start_Zone2"
           },
           "tileIndex": 3,
-          "availableUntil": "2017-07-22T04:19:45.000Z"
+          "availableUntil": "2017-07-25T23:59:59.999Z"
         },
         {
           "missionGuid": "758974d4-3979-439f-88d0-58264f075abb",
@@ -18756,7 +18756,7 @@
             "rowName": "Theater_Start_Zone2"
           },
           "tileIndex": 29,
-          "availableUntil": "2017-07-22T04:19:45.000Z"
+          "availableUntil": "2017-07-25T23:59:59.999Z"
         },
         {
           "missionGuid": "b32326e5-381a-4f08-8709-65bd1f1152ae",
@@ -18779,7 +18779,7 @@
             "rowName": "Theater_Start_Zone2"
           },
           "tileIndex": 38,
-          "availableUntil": "2017-07-22T04:19:45.000Z"
+          "availableUntil": "2017-07-25T23:59:59.999Z"
         },
         {
           "missionGuid": "3344af9d-4edf-4c28-a71c-16709b5994ca",
@@ -18802,7 +18802,7 @@
             "rowName": "Theater_Start_Zone5"
           },
           "tileIndex": 21,
-          "availableUntil": "2017-07-22T04:19:45.000Z"
+          "availableUntil": "2017-07-25T23:59:59.999Z"
         },
         {
           "missionGuid": "773310bd-2604-41e4-8e19-da5ff4b77d71",
@@ -18825,7 +18825,7 @@
             "rowName": "Theater_Start_Zone5"
           },
           "tileIndex": 22,
-          "availableUntil": "9999-12-31T23:59:59.999Z"
+          "availableUntil": "2017-07-25T23:59:59.999Z"
         },
         {
           "missionGuid": "0f0409fc-c66d-4d39-887a-f71478e3d2a7",
@@ -18848,7 +18848,7 @@
             "rowName": "Theater_Start_Zone5"
           },
           "tileIndex": 23,
-          "availableUntil": "9999-12-31T23:59:59.999Z"
+          "availableUntil": "2017-07-25T23:59:59.999Z"
         },
         {
           "missionGuid": "5b36a004-f347-4af4-bb88-693c0116c7d3",
@@ -18871,7 +18871,7 @@
             "rowName": "Theater_Start_Zone5"
           },
           "tileIndex": 24,
-          "availableUntil": "2017-07-22T04:19:45.000Z"
+          "availableUntil": "2017-07-25T23:59:59.999Z"
         },
         {
           "missionGuid": "2cb32da3-529b-4bd9-bc99-a6c981c75ce8",
@@ -18894,7 +18894,7 @@
             "rowName": "Theater_Normal_Zone1"
           },
           "tileIndex": 12,
-          "availableUntil": "2017-07-22T04:19:45.000Z"
+          "availableUntil": "2017-07-25T23:59:59.999Z"
         },
         {
           "missionGuid": "80f3add7-9c74-4810-a816-fd44af4be546",
@@ -18917,7 +18917,7 @@
             "rowName": "Theater_Normal_Zone1"
           },
           "tileIndex": 30,
-          "availableUntil": "2017-07-22T04:19:45.000Z"
+          "availableUntil": "2017-07-25T23:59:59.999Z"
         },
         {
           "missionGuid": "672bda67-fbe4-43ba-af14-ccf6d6bbb432",
@@ -18940,7 +18940,7 @@
             "rowName": "Theater_Start_Zone4"
           },
           "tileIndex": 16,
-          "availableUntil": "2017-07-22T04:19:45.000Z"
+          "availableUntil": "2017-07-25T23:59:59.999Z"
         },
         {
           "missionGuid": "560db042-7ac6-4eba-abd2-b21a97449772",
@@ -18963,7 +18963,7 @@
             "rowName": "Theater_Start_Zone3"
           },
           "tileIndex": 17,
-          "availableUntil": "2017-07-22T04:19:45.000Z"
+          "availableUntil": "2017-07-25T23:59:59.999Z"
         },
         {
           "missionGuid": "1d2881a3-ce24-4be0-8765-758537087f25",
@@ -18986,7 +18986,7 @@
             "rowName": "Theater_Start_Zone3"
           },
           "tileIndex": 19,
-          "availableUntil": "9999-12-31T23:59:59.999Z"
+          "availableUntil": "2017-07-25T23:59:59.999Z"
         },
         {
           "missionGuid": "51f97106-ad84-45e4-a24b-91236a2fcf4c",
@@ -19009,7 +19009,7 @@
             "rowName": "Theater_Start_Zone3"
           },
           "tileIndex": 37,
-          "availableUntil": "2017-07-22T04:19:45.000Z"
+          "availableUntil": "2017-07-25T23:59:59.999Z"
         },
         {
           "missionGuid": "9dbdb9dd-3c0e-42c0-959f-e6db979df419",
@@ -19032,7 +19032,7 @@
             "rowName": "Theater_Start_Zone1"
           },
           "tileIndex": 28,
-          "availableUntil": "2017-07-22T04:19:45.000Z"
+          "availableUntil": "2017-07-25T23:59:59.999Z"
         },
         {
           "missionGuid": "3f9a2279-3aaf-4a05-9559-f1f1bfaeab84",
@@ -19055,7 +19055,7 @@
             "rowName": "Theater_Start_Zone1"
           },
           "tileIndex": 61,
-          "availableUntil": "9999-12-31T23:59:59.999Z"
+          "availableUntil": "2017-07-25T23:59:59.999Z"
         },
         {
           "missionGuid": "79856d10-4c4a-4b46-9ad4-fbc29597575c",
@@ -19087,10 +19087,10 @@
             "rowName": "Theater_Start_Outpost1"
           },
           "tileIndex": 64,
-          "availableUntil": "2017-07-22T04:19:45.000Z"
+          "availableUntil": "2017-07-25T23:59:59.999Z"
         }
       ],
-      "nextRefresh": "2017-07-22T04:19:45.000Z"
+      "nextRefresh": "2017-07-25T23:59:59.999Z"
     },
     {
       "theaterId": "D477605B4FA48648107B649CE97FCF27",
@@ -19116,7 +19116,7 @@
             "rowName": "Theater_Normal_Zone2"
           },
           "tileIndex": 8,
-          "availableUntil": "9999-12-31T23:59:59.999Z"
+          "availableUntil": "2017-07-25T23:59:59.999Z"
         },
         {
           "missionGuid": "340e3dac-b3e2-498f-ad50-fa3c572fa2d0",
@@ -19139,7 +19139,7 @@
             "rowName": "Theater_Normal_Zone4"
           },
           "tileIndex": 44,
-          "availableUntil": "2017-07-22T04:19:45.000Z"
+          "availableUntil": "2017-07-25T23:59:59.999Z"
         },
         {
           "missionGuid": "bde3d898-d4e8-409b-bcba-4a3f6a104b2d",
@@ -19162,7 +19162,7 @@
             "rowName": "Theater_Normal_Zone1"
           },
           "tileIndex": 1,
-          "availableUntil": "9999-12-31T23:59:59.999Z"
+          "availableUntil": "2017-07-25T23:59:59.999Z"
         },
         {
           "missionGuid": "a25df424-65e6-4071-a63b-177066008262",
@@ -19185,7 +19185,7 @@
             "rowName": "Theater_Normal_Zone1"
           },
           "tileIndex": 7,
-          "availableUntil": "9999-12-31T23:59:59.999Z"
+          "availableUntil": "2017-07-25T23:59:59.999Z"
         },
         {
           "missionGuid": "720d8dd4-cfcc-4452-9da7-1d32f02f374f",
@@ -19208,7 +19208,7 @@
             "rowName": "Theater_Normal_Zone4"
           },
           "tileIndex": 21,
-          "availableUntil": "2017-07-22T04:19:45.000Z"
+          "availableUntil": "2017-07-25T23:59:59.999Z"
         },
         {
           "missionGuid": "1ca201fd-720e-4c6c-b963-57ef181c315d",
@@ -19231,7 +19231,7 @@
             "rowName": "Theater_Normal_Zone3"
           },
           "tileIndex": 39,
-          "availableUntil": "2017-07-22T04:19:45.000Z"
+          "availableUntil": "2017-07-25T23:59:59.999Z"
         },
         {
           "missionGuid": "351d95e1-c41c-4aba-99af-1a152e74a687",
@@ -19254,7 +19254,7 @@
             "rowName": "Theater_Normal_Zone1"
           },
           "tileIndex": 132,
-          "availableUntil": "2017-07-22T04:19:45.000Z"
+          "availableUntil": "2017-07-25T23:59:59.999Z"
         },
         {
           "missionGuid": "62a9d85b-53e3-49e7-834c-61926fb33984",
@@ -19277,7 +19277,7 @@
             "rowName": "Theater_Normal_Zone1"
           },
           "tileIndex": 34,
-          "availableUntil": "2017-07-22T04:19:45.000Z"
+          "availableUntil": "2017-07-25T23:59:59.999Z"
         },
         {
           "missionGuid": "35c1a3d5-1b58-482d-8544-f61e83d68ddb",
@@ -19300,7 +19300,7 @@
             "rowName": "Theater_Normal_Zone1"
           },
           "tileIndex": 43,
-          "availableUntil": "2017-07-22T04:19:45.000Z"
+          "availableUntil": "2017-07-25T23:59:59.999Z"
         },
         {
           "missionGuid": "e8cdf407-f4ee-45fd-86fc-c894a0344bfb",
@@ -19323,7 +19323,7 @@
             "rowName": "Theater_Normal_Zone2"
           },
           "tileIndex": 16,
-          "availableUntil": "2017-07-22T04:19:45.000Z"
+          "availableUntil": "2017-07-25T23:59:59.999Z"
         },
         {
           "missionGuid": "1d2c6505-9b19-4000-af42-e52dfbe0efd0",
@@ -19346,7 +19346,7 @@
             "rowName": "Theater_Normal_Zone2"
           },
           "tileIndex": 23,
-          "availableUntil": "2017-07-22T04:19:45.000Z"
+          "availableUntil": "2017-07-25T23:59:59.999Z"
         },
         {
           "missionGuid": "dea45c72-d1c3-4da4-ab5e-405d34e26cba",
@@ -19369,7 +19369,7 @@
             "rowName": "Theater_Normal_Zone5"
           },
           "tileIndex": 36,
-          "availableUntil": "2017-07-22T04:19:45.000Z"
+          "availableUntil": "2017-07-25T23:59:59.999Z"
         },
         {
           "missionGuid": "30b6aacb-5756-43b3-b761-000f49013ee7",
@@ -19392,7 +19392,7 @@
             "rowName": "Theater_Normal_Zone5"
           },
           "tileIndex": 60,
-          "availableUntil": "2017-07-22T04:19:45.000Z"
+          "availableUntil": "2017-07-25T23:59:59.999Z"
         },
         {
           "missionGuid": "2f821e71-f501-472e-a582-7d0ef269df3a",
@@ -19415,7 +19415,7 @@
             "rowName": "Theater_Normal_Zone4"
           },
           "tileIndex": 32,
-          "availableUntil": "9999-12-31T23:59:59.999Z"
+          "availableUntil": "2017-07-25T23:59:59.999Z"
         },
         {
           "missionGuid": "3fe50d9b-5ed4-432e-bb1f-5a8df48b9064",
@@ -19438,7 +19438,7 @@
             "rowName": "Theater_Normal_Zone3"
           },
           "tileIndex": 30,
-          "availableUntil": "9999-12-31T23:59:59.999Z"
+          "availableUntil": "2017-07-25T23:59:59.999Z"
         },
         {
           "missionGuid": "f88f4660-37b3-41a1-8f96-39363bd2b82a",
@@ -19461,7 +19461,7 @@
             "rowName": "Theater_Normal_Zone3"
           },
           "tileIndex": 143,
-          "availableUntil": "2017-07-22T04:19:45.000Z"
+          "availableUntil": "2017-07-25T23:59:59.999Z"
         },
         {
           "missionGuid": "9d7d67be-94df-4c6b-84ba-fdd20790a74e",
@@ -19484,7 +19484,7 @@
             "rowName": "Theater_Normal_Zone1"
           },
           "tileIndex": 2,
-          "availableUntil": "9999-12-31T23:59:59.999Z"
+          "availableUntil": "2017-07-25T23:59:59.999Z"
         },
         {
           "missionGuid": "ec647549-e29a-4fbc-9e8c-e43eb4e3ef61",
@@ -19507,7 +19507,7 @@
             "rowName": "Theater_Normal_Zone1"
           },
           "tileIndex": 3,
-          "availableUntil": "9999-12-31T23:59:59.999Z"
+          "availableUntil": "2017-07-25T23:59:59.999Z"
         },
         {
           "missionGuid": "b20b8553-7d50-468d-be69-32953e163b31",
@@ -19530,7 +19530,7 @@
             "rowName": "Theater_Normal_Zone1"
           },
           "tileIndex": 35,
-          "availableUntil": "9999-12-31T23:59:59.999Z"
+          "availableUntil": "2017-07-25T23:59:59.999Z"
         },
         {
           "missionGuid": "38b8d7c6-c52d-4903-b290-d73affddc570",
@@ -19553,7 +19553,7 @@
             "rowName": "Theater_Normal_Zone1"
           },
           "tileIndex": 4,
-          "availableUntil": "2017-07-22T04:19:45.000Z"
+          "availableUntil": "2017-07-25T23:59:59.999Z"
         },
         {
           "missionGuid": "5e287335-fff2-4f81-9297-ddda5721c984",
@@ -19576,7 +19576,7 @@
             "rowName": "Theater_Normal_Zone2"
           },
           "tileIndex": 14,
-          "availableUntil": "2017-07-22T04:19:45.000Z"
+          "availableUntil": "2017-07-25T23:59:59.999Z"
         },
         {
           "missionGuid": "8062baf2-f2c6-4f30-93e0-791c8564bb33",
@@ -19599,7 +19599,7 @@
             "rowName": "Theater_Normal_Zone2"
           },
           "tileIndex": 15,
-          "availableUntil": "2017-07-22T04:19:45.000Z"
+          "availableUntil": "2017-07-25T23:59:59.999Z"
         },
         {
           "missionGuid": "74e59466-0ce9-403e-be43-d9f7bf868800",
@@ -19622,7 +19622,7 @@
             "rowName": "Theater_Normal_Zone2"
           },
           "tileIndex": 26,
-          "availableUntil": "9999-12-31T23:59:59.999Z"
+          "availableUntil": "2017-07-25T23:59:59.999Z"
         },
         {
           "missionGuid": "fdd8a8e3-16ef-4541-b328-3d9524125d3d",
@@ -19645,7 +19645,7 @@
             "rowName": "Theater_Normal_Zone2"
           },
           "tileIndex": 140,
-          "availableUntil": "9999-12-31T23:59:59.999Z"
+          "availableUntil": "2017-07-25T23:59:59.999Z"
         },
         {
           "missionGuid": "f8647209-4d0b-47f9-93b2-8db35168263d",
@@ -19668,7 +19668,7 @@
             "rowName": "Theater_Normal_Zone2"
           },
           "tileIndex": 13,
-          "availableUntil": "2017-07-22T04:19:45.000Z"
+          "availableUntil": "2017-07-25T23:59:59.999Z"
         },
         {
           "missionGuid": "7f531c5f-22cb-4212-ae3c-f4e015dec79c",
@@ -19691,7 +19691,7 @@
             "rowName": "Theater_Normal_Zone5"
           },
           "tileIndex": 9,
-          "availableUntil": "2017-07-22T04:19:45.000Z"
+          "availableUntil": "2017-07-25T23:59:59.999Z"
         },
         {
           "missionGuid": "2a5227f1-f14d-4881-b130-b5053becc695",
@@ -19714,7 +19714,7 @@
             "rowName": "Theater_Normal_Zone5"
           },
           "tileIndex": 18,
-          "availableUntil": "2017-07-22T04:19:45.000Z"
+          "availableUntil": "2017-07-25T23:59:59.999Z"
         },
         {
           "missionGuid": "73b9860b-31be-432f-88ed-0d3a3fe04fea",
@@ -19737,7 +19737,7 @@
             "rowName": "Theater_Normal_Zone5"
           },
           "tileIndex": 20,
-          "availableUntil": "9999-12-31T23:59:59.999Z"
+          "availableUntil": "2017-07-25T23:59:59.999Z"
         },
         {
           "missionGuid": "6a1e7259-8ac0-4673-a63c-18747cdadef5",
@@ -19760,7 +19760,7 @@
             "rowName": "Theater_Normal_Zone5"
           },
           "tileIndex": 37,
-          "availableUntil": "2017-07-22T04:19:45.000Z"
+          "availableUntil": "2017-07-25T23:59:59.999Z"
         },
         {
           "missionGuid": "581f4eb3-d132-4699-91ac-18abc85e637f",
@@ -19783,7 +19783,7 @@
             "rowName": "Theater_Normal_Zone5"
           },
           "tileIndex": 42,
-          "availableUntil": "2017-07-22T04:19:45.000Z"
+          "availableUntil": "2017-07-25T23:59:59.999Z"
         },
         {
           "missionGuid": "ddaa4990-2348-49fe-938a-7ea9b666c16f",
@@ -19806,7 +19806,7 @@
             "rowName": "Theater_Normal_Zone5"
           },
           "tileIndex": 41,
-          "availableUntil": "9999-12-31T23:59:59.999Z"
+          "availableUntil": "2017-07-25T23:59:59.999Z"
         },
         {
           "missionGuid": "f402276b-9d07-4445-a2da-6a9222e91c10",
@@ -19829,7 +19829,7 @@
             "rowName": "Theater_Normal_Zone5"
           },
           "tileIndex": 45,
-          "availableUntil": "2017-07-22T04:19:45.000Z"
+          "availableUntil": "2017-07-25T23:59:59.999Z"
         },
         {
           "missionGuid": "3af50bf3-4569-4f1d-b1d0-dcd27801becb",
@@ -19852,7 +19852,7 @@
             "rowName": "Theater_Normal_Zone5"
           },
           "tileIndex": 38,
-          "availableUntil": "2017-07-22T04:19:45.000Z"
+          "availableUntil": "2017-07-25T23:59:59.999Z"
         },
         {
           "missionGuid": "a77fc5da-4653-4c14-b27f-9f92ac5fceb6",
@@ -19875,7 +19875,7 @@
             "rowName": "Theater_Normal_Zone4"
           },
           "tileIndex": 19,
-          "availableUntil": "9999-12-31T23:59:59.999Z"
+          "availableUntil": "2017-07-25T23:59:59.999Z"
         },
         {
           "missionGuid": "95f0c55e-54d2-4a9d-a78c-143fa0732bfa",
@@ -19898,7 +19898,7 @@
             "rowName": "Theater_Normal_Zone4"
           },
           "tileIndex": 22,
-          "availableUntil": "2017-07-22T04:19:45.000Z"
+          "availableUntil": "2017-07-25T23:59:59.999Z"
         },
         {
           "missionGuid": "c0565732-6ec6-4c60-95c1-14933aa74bee",
@@ -19921,7 +19921,7 @@
             "rowName": "Theater_Normal_Zone4"
           },
           "tileIndex": 29,
-          "availableUntil": "2017-07-22T04:19:45.000Z"
+          "availableUntil": "2017-07-25T23:59:59.999Z"
         },
         {
           "missionGuid": "b151bcb2-d306-4329-a9c9-e5cce27cafb2",
@@ -19944,7 +19944,7 @@
             "rowName": "Theater_Normal_Zone4"
           },
           "tileIndex": 31,
-          "availableUntil": "2017-07-22T04:19:45.000Z"
+          "availableUntil": "2017-07-25T23:59:59.999Z"
         },
         {
           "missionGuid": "b124bab3-f83f-4f97-81e2-dbc59ac8c2fb",
@@ -19967,7 +19967,7 @@
             "rowName": "Theater_Normal_Zone4"
           },
           "tileIndex": 154,
-          "availableUntil": "2017-07-22T04:19:45.000Z"
+          "availableUntil": "2017-07-25T23:59:59.999Z"
         },
         {
           "missionGuid": "4fb97115-e1c7-419c-8ad9-c410c97ef6d1",
@@ -19990,7 +19990,7 @@
             "rowName": "Theater_Normal_Zone4"
           },
           "tileIndex": 33,
-          "availableUntil": "2017-07-22T04:19:45.000Z"
+          "availableUntil": "2017-07-25T23:59:59.999Z"
         },
         {
           "missionGuid": "7e4298f0-48d9-454d-b884-e8173f71d468",
@@ -20013,7 +20013,7 @@
             "rowName": "Theater_Normal_Zone4"
           },
           "tileIndex": 160,
-          "availableUntil": "9999-12-31T23:59:59.999Z"
+          "availableUntil": "2017-07-25T23:59:59.999Z"
         },
         {
           "missionGuid": "1bfbb501-2ce2-48ac-b7c8-8fff0bd2e9cd",
@@ -20036,7 +20036,7 @@
             "rowName": "Theater_Normal_Zone3"
           },
           "tileIndex": 102,
-          "availableUntil": "2017-07-22T04:19:45.000Z"
+          "availableUntil": "2017-07-25T23:59:59.999Z"
         },
         {
           "missionGuid": "7dd45d13-f377-4055-b3b7-afe4b24f525c",
@@ -20059,7 +20059,7 @@
             "rowName": "Theater_Normal_Zone3"
           },
           "tileIndex": 24,
-          "availableUntil": "2017-07-22T04:19:45.000Z"
+          "availableUntil": "2017-07-25T23:59:59.999Z"
         },
         {
           "missionGuid": "42e1eb7f-b4a2-4d95-a074-8f4d1d2e428b",
@@ -20082,7 +20082,7 @@
             "rowName": "Theater_Normal_Zone3"
           },
           "tileIndex": 40,
-          "availableUntil": "2017-07-22T04:19:45.000Z"
+          "availableUntil": "2017-07-25T23:59:59.999Z"
         },
         {
           "missionGuid": "4dc05e9d-699d-4757-951e-20be1bb1f7b9",
@@ -20105,7 +20105,7 @@
             "rowName": "Theater_Normal_Zone3"
           },
           "tileIndex": 144,
-          "availableUntil": "9999-12-31T23:59:59.999Z"
+          "availableUntil": "2017-07-25T23:59:59.999Z"
         },
         {
           "missionGuid": "0b02d7cd-6c9c-4627-93ef-6500d887b05f",
@@ -20128,7 +20128,7 @@
             "rowName": "Theater_Normal_Zone3"
           },
           "tileIndex": 151,
-          "availableUntil": "2017-07-22T04:19:45.000Z"
+          "availableUntil": "2017-07-25T23:59:59.999Z"
         },
         {
           "missionGuid": "c41a8eb8-abdb-4be6-b984-0f5f21db3d2e",
@@ -20151,7 +20151,7 @@
             "rowName": "Theater_Normal_Zone3"
           },
           "tileIndex": 27,
-          "availableUntil": "2017-07-22T04:19:45.000Z"
+          "availableUntil": "2017-07-25T23:59:59.999Z"
         },
         {
           "missionGuid": "a90a4757-72ae-4800-bad7-493919f1e3a1",
@@ -20174,7 +20174,7 @@
             "rowName": "Theater_Normal_Zone3"
           },
           "tileIndex": 28,
-          "availableUntil": "9999-12-31T23:59:59.999Z"
+          "availableUntil": "2017-07-25T23:59:59.999Z"
         },
         {
           "missionGuid": "7353071b-f1db-4aa7-a824-4229a04f482d",
@@ -20197,7 +20197,7 @@
             "rowName": "Theater_Normal_Zone3"
           },
           "tileIndex": 145,
-          "availableUntil": "2017-07-22T04:19:45.000Z"
+          "availableUntil": "2017-07-25T23:59:59.999Z"
         },
         {
           "missionGuid": "da00be24-6570-4004-8579-3fe5de9f8c43",
@@ -20220,7 +20220,7 @@
             "rowName": "Theater_Hard_Zone1"
           },
           "tileIndex": 54,
-          "availableUntil": "2017-07-22T04:19:45.000Z"
+          "availableUntil": "2017-07-25T23:59:59.999Z"
         },
         {
           "missionGuid": "b2720924-3d89-414f-b32d-4d5761d0ac1e",
@@ -20243,7 +20243,7 @@
             "rowName": "Theater_Hard_Zone1"
           },
           "tileIndex": 166,
-          "availableUntil": "2017-07-22T04:19:45.000Z"
+          "availableUntil": "2017-07-25T23:59:59.999Z"
         },
         {
           "missionGuid": "3559acf8-0290-4575-a463-40cd38ac4453",
@@ -20266,7 +20266,7 @@
             "rowName": "Theater_Normal_Zone2"
           },
           "tileIndex": 130,
-          "availableUntil": "2017-07-22T04:19:45.000Z"
+          "availableUntil": "2017-07-25T23:59:59.999Z"
         },
         {
           "missionGuid": "1c0a217e-4ab9-4495-9420-459a9009de71",
@@ -20289,7 +20289,7 @@
             "rowName": "Theater_Normal_Zone2"
           },
           "tileIndex": 134,
-          "availableUntil": "2017-07-22T04:19:45.000Z"
+          "availableUntil": "2017-07-25T23:59:59.999Z"
         },
         {
           "missionGuid": "9cad8b83-0117-4025-93e7-c7a01e456725",
@@ -20312,7 +20312,7 @@
             "rowName": "Theater_Normal_Zone4"
           },
           "tileIndex": 153,
-          "availableUntil": "2017-07-22T04:19:45.000Z"
+          "availableUntil": "2017-07-25T23:59:59.999Z"
         },
         {
           "missionGuid": "a5d7f3d9-c561-4a8d-b28c-66ab44099ad8",
@@ -20335,7 +20335,7 @@
             "rowName": "Theater_Normal_Zone4"
           },
           "tileIndex": 149,
-          "availableUntil": "2017-07-22T04:19:45.000Z"
+          "availableUntil": "2017-07-25T23:59:59.999Z"
         },
         {
           "missionGuid": "7aa22607-b09c-4955-9ac2-b12493f24b7f",
@@ -20358,7 +20358,7 @@
             "rowName": "Theater_Normal_Zone5"
           },
           "tileIndex": 161,
-          "availableUntil": "2017-07-22T04:19:45.000Z"
+          "availableUntil": "2017-07-25T23:59:59.999Z"
         },
         {
           "missionGuid": "17841edb-0658-4285-97ee-d384f64d56d8",
@@ -20381,7 +20381,7 @@
             "rowName": "Theater_Normal_Zone5"
           },
           "tileIndex": 155,
-          "availableUntil": "2017-07-22T04:19:45.000Z"
+          "availableUntil": "2017-07-25T23:59:59.999Z"
         },
         {
           "missionGuid": "68ca9e5f-e819-4834-9c17-d8051cc7c91f",
@@ -20413,10 +20413,10 @@
             "rowName": "Theater_Normal_Outpost1"
           },
           "tileIndex": 17,
-          "availableUntil": "2017-07-22T04:19:45.000Z"
+          "availableUntil": "2017-07-25T23:59:59.999Z"
         }
       ],
-      "nextRefresh": "2017-07-22T04:19:45.000Z"
+      "nextRefresh": "2017-07-25T23:59:59.999Z"
     },
     {
       "theaterId": "E6ECBD064B153234656CB4BDE6743870",
@@ -20442,7 +20442,7 @@
             "rowName": "Theater_Hard_Zone2"
           },
           "tileIndex": 25,
-          "availableUntil": "2017-07-22T04:19:45.000Z"
+          "availableUntil": "2017-07-25T23:59:59.999Z"
         },
         {
           "missionGuid": "6a894502-d0df-49e4-baff-b58cdce0f9ca",
@@ -20465,7 +20465,7 @@
             "rowName": "Theater_Hard_Zone3"
           },
           "tileIndex": 26,
-          "availableUntil": "2017-07-22T04:19:45.000Z"
+          "availableUntil": "2017-07-25T23:59:59.999Z"
         },
         {
           "missionGuid": "6348100e-13f7-46ca-b3c9-31b457290e44",
@@ -20488,7 +20488,7 @@
             "rowName": "Theater_Hard_Zone1"
           },
           "tileIndex": 11,
-          "availableUntil": "2017-07-22T04:19:45.000Z"
+          "availableUntil": "2017-07-25T23:59:59.999Z"
         },
         {
           "missionGuid": "021957bf-5e8c-421d-b6d2-f6c57de087a3",
@@ -20511,7 +20511,7 @@
             "rowName": "Theater_Hard_Zone5"
           },
           "tileIndex": 66,
-          "availableUntil": "2017-07-22T04:19:45.000Z"
+          "availableUntil": "2017-07-25T23:59:59.999Z"
         },
         {
           "missionGuid": "803c59c7-2236-483d-bb71-2de19c52497c",
@@ -20534,7 +20534,7 @@
             "rowName": "Theater_Hard_Zone5"
           },
           "tileIndex": 18,
-          "availableUntil": "2017-07-22T04:19:45.000Z"
+          "availableUntil": "2017-07-25T23:59:59.999Z"
         },
         {
           "missionGuid": "c8a39c29-a715-479d-a1e6-a19e1424cc1c",
@@ -20557,7 +20557,7 @@
             "rowName": "Theater_Hard_Zone2"
           },
           "tileIndex": 8,
-          "availableUntil": "9999-12-31T23:59:59.999Z"
+          "availableUntil": "2017-07-25T23:59:59.999Z"
         },
         {
           "missionGuid": "fa57f7aa-6b4d-4a32-a30b-b322cff68529",
@@ -20580,7 +20580,7 @@
             "rowName": "Theater_Hard_Zone2"
           },
           "tileIndex": 15,
-          "availableUntil": "2017-07-22T04:19:45.000Z"
+          "availableUntil": "2017-07-25T23:59:59.999Z"
         },
         {
           "missionGuid": "c51a86ea-e750-4d51-ba70-fb21a21fd011",
@@ -20603,7 +20603,7 @@
             "rowName": "Theater_Hard_Zone4"
           },
           "tileIndex": 92,
-          "availableUntil": "2017-07-22T04:19:45.000Z"
+          "availableUntil": "2017-07-25T23:59:59.999Z"
         },
         {
           "missionGuid": "9675cc22-a627-4db7-85bd-f4faf51b18b6",
@@ -20626,7 +20626,7 @@
             "rowName": "Theater_Hard_Zone4"
           },
           "tileIndex": 98,
-          "availableUntil": "9999-12-31T23:59:59.999Z"
+          "availableUntil": "2017-07-25T23:59:59.999Z"
         },
         {
           "missionGuid": "cd4447cc-8760-47ad-9971-134452fc2f7c",
@@ -20649,7 +20649,7 @@
             "rowName": "Theater_Hard_Zone4"
           },
           "tileIndex": 43,
-          "availableUntil": "2017-07-22T04:19:45.000Z"
+          "availableUntil": "2017-07-25T23:59:59.999Z"
         },
         {
           "missionGuid": "3a293435-7b35-433e-87d5-23a634dfca01",
@@ -20672,7 +20672,7 @@
             "rowName": "Theater_Hard_Zone3"
           },
           "tileIndex": 103,
-          "availableUntil": "2017-07-22T04:19:45.000Z"
+          "availableUntil": "2017-07-25T23:59:59.999Z"
         },
         {
           "missionGuid": "c1e65af3-433a-45fb-95d6-d9ece9c9e7f1",
@@ -20695,7 +20695,7 @@
             "rowName": "Theater_Hard_Zone3"
           },
           "tileIndex": 40,
-          "availableUntil": "9999-12-31T23:59:59.999Z"
+          "availableUntil": "2017-07-25T23:59:59.999Z"
         },
         {
           "missionGuid": "d813c0c1-f326-4572-8981-907285477029",
@@ -20718,7 +20718,7 @@
             "rowName": "Theater_Hard_Zone1"
           },
           "tileIndex": 13,
-          "availableUntil": "2017-07-22T04:19:45.000Z"
+          "availableUntil": "2017-07-25T23:59:59.999Z"
         },
         {
           "missionGuid": "047efcf3-902e-4d6f-866c-e5a1772faed2",
@@ -20741,7 +20741,7 @@
             "rowName": "Theater_Hard_Zone1"
           },
           "tileIndex": 12,
-          "availableUntil": "2017-07-22T04:19:45.000Z"
+          "availableUntil": "2017-07-25T23:59:59.999Z"
         },
         {
           "missionGuid": "1c08b2c8-6a34-480c-a227-80cfade4d707",
@@ -20764,7 +20764,7 @@
             "rowName": "Theater_Hard_Zone1"
           },
           "tileIndex": 45,
-          "availableUntil": "2017-07-22T04:19:45.000Z"
+          "availableUntil": "2017-07-25T23:59:59.999Z"
         },
         {
           "missionGuid": "f1e9e9a5-381a-4d9b-99db-ed979d541288",
@@ -20787,7 +20787,7 @@
             "rowName": "Theater_Hard_Zone1"
           },
           "tileIndex": 5,
-          "availableUntil": "2017-07-22T04:19:45.000Z"
+          "availableUntil": "2017-07-25T23:59:59.999Z"
         },
         {
           "missionGuid": "4fb1bff4-e6af-4ed0-b8a6-39d094cc82b5",
@@ -20810,7 +20810,7 @@
             "rowName": "Theater_Hard_Zone1"
           },
           "tileIndex": 51,
-          "availableUntil": "2017-07-22T04:19:45.000Z"
+          "availableUntil": "2017-07-25T23:59:59.999Z"
         },
         {
           "missionGuid": "409ce7b7-5d09-4baf-a46e-37c4fe24683f",
@@ -20833,7 +20833,7 @@
             "rowName": "Theater_Hard_Zone1"
           },
           "tileIndex": 14,
-          "availableUntil": "9999-12-31T23:59:59.999Z"
+          "availableUntil": "2017-07-25T23:59:59.999Z"
         },
         {
           "missionGuid": "f9673d7e-c2b0-4d43-93e9-b4ae893e82ec",
@@ -20856,7 +20856,7 @@
             "rowName": "Theater_Hard_Zone5"
           },
           "tileIndex": 67,
-          "availableUntil": "2017-07-22T04:19:45.000Z"
+          "availableUntil": "2017-07-25T23:59:59.999Z"
         },
         {
           "missionGuid": "88116067-8f9a-41e7-988d-a6cc06e2b7bb",
@@ -20879,7 +20879,7 @@
             "rowName": "Theater_Hard_Zone5"
           },
           "tileIndex": 68,
-          "availableUntil": "2017-07-22T04:19:45.000Z"
+          "availableUntil": "2017-07-25T23:59:59.999Z"
         },
         {
           "missionGuid": "607a5211-7e13-4d73-a943-c0ff1f4641cc",
@@ -20902,7 +20902,7 @@
             "rowName": "Theater_Hard_Zone5"
           },
           "tileIndex": 72,
-          "availableUntil": "2017-07-22T04:19:45.000Z"
+          "availableUntil": "2017-07-25T23:59:59.999Z"
         },
         {
           "missionGuid": "a529188c-816c-40d4-9e92-d62bdd36bf7e",
@@ -20925,7 +20925,7 @@
             "rowName": "Theater_Hard_Zone5"
           },
           "tileIndex": 22,
-          "availableUntil": "2017-07-22T04:19:45.000Z"
+          "availableUntil": "2017-07-25T23:59:59.999Z"
         },
         {
           "missionGuid": "97cfd696-de7b-4d51-8225-cf3d6dc3ec70",
@@ -20948,7 +20948,7 @@
             "rowName": "Theater_Hard_Zone5"
           },
           "tileIndex": 21,
-          "availableUntil": "9999-12-31T23:59:59.999Z"
+          "availableUntil": "2017-07-25T23:59:59.999Z"
         },
         {
           "missionGuid": "cfd9f3b7-b6d0-46e2-b3e7-3d228b723a7a",
@@ -20971,7 +20971,7 @@
             "rowName": "Theater_Hard_Zone5"
           },
           "tileIndex": 17,
-          "availableUntil": "2017-07-22T04:19:45.000Z"
+          "availableUntil": "2017-07-25T23:59:59.999Z"
         },
         {
           "missionGuid": "f294275e-44ee-466a-a2c8-33920e148e93",
@@ -20994,7 +20994,7 @@
             "rowName": "Theater_Hard_Zone5"
           },
           "tileIndex": 20,
-          "availableUntil": "2017-07-22T04:19:45.000Z"
+          "availableUntil": "2017-07-25T23:59:59.999Z"
         },
         {
           "missionGuid": "ff153073-ee0b-4a49-aafb-ac8bb55fe8dd",
@@ -21017,7 +21017,7 @@
             "rowName": "Theater_Hard_Zone5"
           },
           "tileIndex": 4,
-          "availableUntil": "9999-12-31T23:59:59.999Z"
+          "availableUntil": "2017-07-25T23:59:59.999Z"
         },
         {
           "missionGuid": "f51c3ff8-1159-4a92-b7e4-919ad7af8477",
@@ -21040,7 +21040,7 @@
             "rowName": "Theater_Hard_Zone2"
           },
           "tileIndex": 9,
-          "availableUntil": "2017-07-22T04:19:45.000Z"
+          "availableUntil": "2017-07-25T23:59:59.999Z"
         },
         {
           "missionGuid": "e4fb8849-1fbc-4daf-81a9-26e04af49eb6",
@@ -21063,7 +21063,7 @@
             "rowName": "Theater_Hard_Zone2"
           },
           "tileIndex": 60,
-          "availableUntil": "9999-12-31T23:59:59.999Z"
+          "availableUntil": "2017-07-25T23:59:59.999Z"
         },
         {
           "missionGuid": "0586d634-95a8-47ff-9501-d2006fc142f0",
@@ -21086,7 +21086,7 @@
             "rowName": "Theater_Hard_Zone2"
           },
           "tileIndex": 33,
-          "availableUntil": "2017-07-22T04:19:45.000Z"
+          "availableUntil": "2017-07-25T23:59:59.999Z"
         },
         {
           "missionGuid": "3b027d0d-dd7e-442d-981e-817a6e0b2745",
@@ -21109,7 +21109,7 @@
             "rowName": "Theater_Hard_Zone2"
           },
           "tileIndex": 27,
-          "availableUntil": "2017-07-22T04:19:45.000Z"
+          "availableUntil": "2017-07-25T23:59:59.999Z"
         },
         {
           "missionGuid": "514bbbfb-ffda-41b8-989e-a16f6297ee21",
@@ -21132,7 +21132,7 @@
             "rowName": "Theater_Hard_Zone2"
           },
           "tileIndex": 59,
-          "availableUntil": "9999-12-31T23:59:59.999Z"
+          "availableUntil": "2017-07-25T23:59:59.999Z"
         },
         {
           "missionGuid": "920431a3-936a-43c9-bd3b-c189e595e20f",
@@ -21155,7 +21155,7 @@
             "rowName": "Theater_Hard_Zone4"
           },
           "tileIndex": 24,
-          "availableUntil": "2017-07-22T04:19:45.000Z"
+          "availableUntil": "2017-07-25T23:59:59.999Z"
         },
         {
           "missionGuid": "4e6e5997-172f-4787-be05-91e854676ea1",
@@ -21178,7 +21178,7 @@
             "rowName": "Theater_Hard_Zone4"
           },
           "tileIndex": 30,
-          "availableUntil": "2017-07-22T04:19:45.000Z"
+          "availableUntil": "2017-07-25T23:59:59.999Z"
         },
         {
           "missionGuid": "686a65c2-1ce0-4e7d-9f9e-c9592dc957e9",
@@ -21201,7 +21201,7 @@
             "rowName": "Theater_Hard_Zone4"
           },
           "tileIndex": 97,
-          "availableUntil": "2017-07-22T04:19:45.000Z"
+          "availableUntil": "2017-07-25T23:59:59.999Z"
         },
         {
           "missionGuid": "b0ae0bb5-7891-4c4f-8b51-51bc3df0cf02",
@@ -21224,7 +21224,7 @@
             "rowName": "Theater_Hard_Zone4"
           },
           "tileIndex": 93,
-          "availableUntil": "2017-07-22T04:19:45.000Z"
+          "availableUntil": "2017-07-25T23:59:59.999Z"
         },
         {
           "missionGuid": "72597570-2d23-4eb5-841c-1005ada6ddd1",
@@ -21247,7 +21247,7 @@
             "rowName": "Theater_Hard_Zone4"
           },
           "tileIndex": 23,
-          "availableUntil": "9999-12-31T23:59:59.999Z"
+          "availableUntil": "2017-07-25T23:59:59.999Z"
         },
         {
           "missionGuid": "3c3917ef-881f-4cc4-9a00-69546994abcc",
@@ -21270,7 +21270,7 @@
             "rowName": "Theater_Hard_Zone4"
           },
           "tileIndex": 96,
-          "availableUntil": "2017-07-22T04:19:45.000Z"
+          "availableUntil": "2017-07-25T23:59:59.999Z"
         },
         {
           "missionGuid": "c6053f33-5071-4a90-b24b-2f3770608cbb",
@@ -21293,7 +21293,7 @@
             "rowName": "Theater_Hard_Zone4"
           },
           "tileIndex": 95,
-          "availableUntil": "9999-12-31T23:59:59.999Z"
+          "availableUntil": "2017-07-25T23:59:59.999Z"
         },
         {
           "missionGuid": "66aa0b76-2ed3-490b-a931-5e96958230b7",
@@ -21316,7 +21316,7 @@
             "rowName": "Theater_Hard_Zone3"
           },
           "tileIndex": 101,
-          "availableUntil": "2017-07-22T04:19:45.000Z"
+          "availableUntil": "2017-07-25T23:59:59.999Z"
         },
         {
           "missionGuid": "67806ed5-5dc8-455b-910d-4c66f19397f6",
@@ -21339,7 +21339,7 @@
             "rowName": "Theater_Hard_Zone3"
           },
           "tileIndex": 102,
-          "availableUntil": "2017-07-22T04:19:45.000Z"
+          "availableUntil": "2017-07-25T23:59:59.999Z"
         },
         {
           "missionGuid": "e531709e-291a-49da-b879-1ebf68796921",
@@ -21362,7 +21362,7 @@
             "rowName": "Theater_Hard_Zone3"
           },
           "tileIndex": 105,
-          "availableUntil": "2017-07-22T04:19:45.000Z"
+          "availableUntil": "2017-07-25T23:59:59.999Z"
         },
         {
           "missionGuid": "844543cd-3797-4329-b268-efd5c5bb4d9a",
@@ -21385,7 +21385,7 @@
             "rowName": "Theater_Hard_Zone3"
           },
           "tileIndex": 106,
-          "availableUntil": "9999-12-31T23:59:59.999Z"
+          "availableUntil": "2017-07-25T23:59:59.999Z"
         },
         {
           "missionGuid": "6e9e05ce-efb5-4fdd-b5f9-897cc870b01c",
@@ -21408,7 +21408,7 @@
             "rowName": "Theater_Hard_Zone3"
           },
           "tileIndex": 28,
-          "availableUntil": "9999-12-31T23:59:59.999Z"
+          "availableUntil": "2017-07-25T23:59:59.999Z"
         },
         {
           "missionGuid": "120a494e-35ab-47dc-8608-7f27f39ae90d",
@@ -21431,7 +21431,7 @@
             "rowName": "Theater_Hard_Zone3"
           },
           "tileIndex": 58,
-          "availableUntil": "2017-07-22T04:19:45.000Z"
+          "availableUntil": "2017-07-25T23:59:59.999Z"
         },
         {
           "missionGuid": "df1d9601-da18-4b09-8feb-b4ac5103e030",
@@ -21463,10 +21463,10 @@
             "rowName": "Theater_Hard_Outpost1"
           },
           "tileIndex": 16,
-          "availableUntil": "2017-07-22T04:19:45.000Z"
+          "availableUntil": "2017-07-25T23:59:59.999Z"
         }
       ],
-      "nextRefresh": "2017-07-22T04:19:45.000Z"
+      "nextRefresh": "2017-07-25T23:59:59.999Z"
     },
     {
       "theaterId": "D9A801C5444D1C74D1B7DAB5C7C12C5B",
@@ -21492,7 +21492,7 @@
             "rowName": "Theater_Nightmare_Zone2"
           },
           "tileIndex": 63,
-          "availableUntil": "2017-07-22T04:19:45.000Z"
+          "availableUntil": "2017-07-25T23:59:59.999Z"
         },
         {
           "missionGuid": "d58abe82-f43b-4106-a170-1c6492486d69",
@@ -21515,7 +21515,7 @@
             "rowName": "Theater_Nightmare_Zone3"
           },
           "tileIndex": 73,
-          "availableUntil": "9999-12-31T23:59:59.999Z"
+          "availableUntil": "2017-07-25T23:59:59.999Z"
         },
         {
           "missionGuid": "c57c03f0-69a9-4de4-bc3b-e7b29e09447c",
@@ -21538,7 +21538,7 @@
             "rowName": "Theater_Nightmare_Zone5"
           },
           "tileIndex": 3,
-          "availableUntil": "2017-07-22T04:19:45.000Z"
+          "availableUntil": "2017-07-25T23:59:59.999Z"
         },
         {
           "missionGuid": "26c615ff-739e-4d01-87c8-feced4d7b1c1",
@@ -21561,7 +21561,7 @@
             "rowName": "Theater_Nightmare_Zone5"
           },
           "tileIndex": 2,
-          "availableUntil": "2017-07-22T04:19:45.000Z"
+          "availableUntil": "2017-07-25T23:59:59.999Z"
         },
         {
           "missionGuid": "0271103b-01c5-45ad-8493-cac19a00db88",
@@ -21584,7 +21584,7 @@
             "rowName": "Theater_Nightmare_Zone4"
           },
           "tileIndex": 30,
-          "availableUntil": "2017-07-22T04:19:45.000Z"
+          "availableUntil": "2017-07-25T23:59:59.999Z"
         },
         {
           "missionGuid": "25d1f451-cae3-48e3-85c6-b04a99667e52",
@@ -21607,7 +21607,7 @@
             "rowName": "Theater_Nightmare_Zone4"
           },
           "tileIndex": 80,
-          "availableUntil": "2017-07-22T04:19:45.000Z"
+          "availableUntil": "2017-07-25T23:59:59.999Z"
         },
         {
           "missionGuid": "225870e8-f068-42fd-a2ad-674c7bb4edfa",
@@ -21630,7 +21630,7 @@
             "rowName": "Theater_Nightmare_Zone3"
           },
           "tileIndex": 44,
-          "availableUntil": "2017-07-22T04:19:45.000Z"
+          "availableUntil": "2017-07-25T23:59:59.999Z"
         },
         {
           "missionGuid": "b8ac0a36-2b59-4cac-928c-a47e9a78f1fb",
@@ -21653,7 +21653,7 @@
             "rowName": "Theater_Nightmare_Zone1"
           },
           "tileIndex": 15,
-          "availableUntil": "2017-07-22T04:19:45.000Z"
+          "availableUntil": "2017-07-25T23:59:59.999Z"
         },
         {
           "missionGuid": "35d90966-0458-46bc-8764-053f5c88eee5",
@@ -21676,7 +21676,7 @@
             "rowName": "Theater_Nightmare_Zone1"
           },
           "tileIndex": 16,
-          "availableUntil": "9999-12-31T23:59:59.999Z"
+          "availableUntil": "2017-07-25T23:59:59.999Z"
         },
         {
           "missionGuid": "0621f642-d52e-4a77-9e7e-834907c5d920",
@@ -21699,7 +21699,7 @@
             "rowName": "Theater_Nightmare_Zone2"
           },
           "tileIndex": 69,
-          "availableUntil": "9999-12-31T23:59:59.999Z"
+          "availableUntil": "2017-07-25T23:59:59.999Z"
         },
         {
           "missionGuid": "f1e0529d-c75f-43b6-b1e5-baf7b0a35387",
@@ -21722,7 +21722,7 @@
             "rowName": "Theater_Nightmare_Zone5"
           },
           "tileIndex": 0,
-          "availableUntil": "2017-07-22T04:19:45.000Z"
+          "availableUntil": "2017-07-25T23:59:59.999Z"
         },
         {
           "missionGuid": "f8b4ecb4-de69-4f83-854e-13db63def3da",
@@ -21745,7 +21745,7 @@
             "rowName": "Theater_Nightmare_Zone5"
           },
           "tileIndex": 39,
-          "availableUntil": "2017-07-22T04:19:45.000Z"
+          "availableUntil": "2017-07-25T23:59:59.999Z"
         },
         {
           "missionGuid": "c38d3c04-d8a2-4819-ae2e-7e10cbbfd1da",
@@ -21768,7 +21768,7 @@
             "rowName": "Theater_Nightmare_Zone5"
           },
           "tileIndex": 58,
-          "availableUntil": "2017-07-22T04:19:45.000Z"
+          "availableUntil": "2017-07-25T23:59:59.999Z"
         },
         {
           "missionGuid": "16db9c69-da58-419f-84d3-f7b94f3b0fb9",
@@ -21791,7 +21791,7 @@
             "rowName": "Theater_Nightmare_Zone5"
           },
           "tileIndex": 27,
-          "availableUntil": "2017-07-22T04:19:45.000Z"
+          "availableUntil": "2017-07-25T23:59:59.999Z"
         },
         {
           "missionGuid": "d3d10d20-8e18-47c1-b5c9-a4aca5573534",
@@ -21814,7 +21814,7 @@
             "rowName": "Theater_Nightmare_Zone5"
           },
           "tileIndex": 24,
-          "availableUntil": "9999-12-31T23:59:59.999Z"
+          "availableUntil": "2017-07-25T23:59:59.999Z"
         },
         {
           "missionGuid": "1158f413-6c47-4f29-b5c1-85be5594b591",
@@ -21837,7 +21837,7 @@
             "rowName": "Theater_Nightmare_Zone5"
           },
           "tileIndex": 25,
-          "availableUntil": "9999-12-31T23:59:59.999Z"
+          "availableUntil": "2017-07-25T23:59:59.999Z"
         },
         {
           "missionGuid": "0e8806e4-6d0c-47b3-8b25-258c32084024",
@@ -21860,7 +21860,7 @@
             "rowName": "Theater_Nightmare_Zone5"
           },
           "tileIndex": 26,
-          "availableUntil": "2017-07-22T04:19:45.000Z"
+          "availableUntil": "2017-07-25T23:59:59.999Z"
         },
         {
           "missionGuid": "fcfbcf0e-5873-48b4-a0cf-eb96f91517e1",
@@ -21883,7 +21883,7 @@
             "rowName": "Theater_Nightmare_Zone5"
           },
           "tileIndex": 8,
-          "availableUntil": "2017-07-22T04:19:45.000Z"
+          "availableUntil": "2017-07-25T23:59:59.999Z"
         },
         {
           "missionGuid": "1acd33d0-12d0-4f15-be39-da4e045b0f57",
@@ -21906,7 +21906,7 @@
             "rowName": "Theater_Nightmare_Zone4"
           },
           "tileIndex": 4,
-          "availableUntil": "9999-12-31T23:59:59.999Z"
+          "availableUntil": "2017-07-25T23:59:59.999Z"
         },
         {
           "missionGuid": "b5b84b46-e4f6-4e06-9cb7-e8b22845b2a8",
@@ -21929,7 +21929,7 @@
             "rowName": "Theater_Nightmare_Zone4"
           },
           "tileIndex": 31,
-          "availableUntil": "2017-07-22T04:19:45.000Z"
+          "availableUntil": "2017-07-25T23:59:59.999Z"
         },
         {
           "missionGuid": "ce30bd76-4df7-4fb6-8248-00c017455f86",
@@ -21952,7 +21952,7 @@
             "rowName": "Theater_Nightmare_Zone4"
           },
           "tileIndex": 29,
-          "availableUntil": "2017-07-22T04:19:45.000Z"
+          "availableUntil": "2017-07-25T23:59:59.999Z"
         },
         {
           "missionGuid": "b788f779-24c3-492a-839d-78e9559f4aed",
@@ -21975,7 +21975,7 @@
             "rowName": "Theater_Nightmare_Zone4"
           },
           "tileIndex": 36,
-          "availableUntil": "9999-12-31T23:59:59.999Z"
+          "availableUntil": "2017-07-25T23:59:59.999Z"
         },
         {
           "missionGuid": "8553bd0e-03e9-4ac5-b051-64086b038aff",
@@ -21998,7 +21998,7 @@
             "rowName": "Theater_Nightmare_Zone4"
           },
           "tileIndex": 46,
-          "availableUntil": "2017-07-22T04:19:45.000Z"
+          "availableUntil": "2017-07-25T23:59:59.999Z"
         },
         {
           "missionGuid": "31281580-e40f-487c-acb4-dfb7ef72d4e7",
@@ -22021,7 +22021,7 @@
             "rowName": "Theater_Nightmare_Zone4"
           },
           "tileIndex": 1,
-          "availableUntil": "2017-07-22T04:19:45.000Z"
+          "availableUntil": "2017-07-25T23:59:59.999Z"
         },
         {
           "missionGuid": "9a61eae9-0aeb-45b3-beb5-dd3c35af0ad2",
@@ -22044,7 +22044,7 @@
             "rowName": "Theater_Nightmare_Zone4"
           },
           "tileIndex": 32,
-          "availableUntil": "2017-07-22T04:19:45.000Z"
+          "availableUntil": "2017-07-25T23:59:59.999Z"
         },
         {
           "missionGuid": "f960731d-0ac1-4eca-98c7-0a11858c29b1",
@@ -22067,7 +22067,7 @@
             "rowName": "Theater_Nightmare_Zone3"
           },
           "tileIndex": 7,
-          "availableUntil": "2017-07-22T04:19:45.000Z"
+          "availableUntil": "2017-07-25T23:59:59.999Z"
         },
         {
           "missionGuid": "8c6121b2-65d2-425a-97f3-f64bfa5c2b17",
@@ -22090,7 +22090,7 @@
             "rowName": "Theater_Nightmare_Zone3"
           },
           "tileIndex": 51,
-          "availableUntil": "2017-07-22T04:19:45.000Z"
+          "availableUntil": "2017-07-25T23:59:59.999Z"
         },
         {
           "missionGuid": "7b094355-45f3-40e8-8787-a3c1d6bdb6d7",
@@ -22113,7 +22113,7 @@
             "rowName": "Theater_Nightmare_Zone3"
           },
           "tileIndex": 76,
-          "availableUntil": "9999-12-31T23:59:59.999Z"
+          "availableUntil": "2017-07-25T23:59:59.999Z"
         },
         {
           "missionGuid": "82f1bd9e-be66-4949-b87a-59941231e06d",
@@ -22136,7 +22136,7 @@
             "rowName": "Theater_Nightmare_Zone3"
           },
           "tileIndex": 6,
-          "availableUntil": "2017-07-22T04:19:45.000Z"
+          "availableUntil": "2017-07-25T23:59:59.999Z"
         },
         {
           "missionGuid": "708eea20-f47b-4a05-ad3c-ff3f25fdc840",
@@ -22159,7 +22159,7 @@
             "rowName": "Theater_Nightmare_Zone3"
           },
           "tileIndex": 50,
-          "availableUntil": "2017-07-22T04:19:45.000Z"
+          "availableUntil": "2017-07-25T23:59:59.999Z"
         },
         {
           "missionGuid": "ebbe55c6-468b-4e42-8289-e7c6d1142eef",
@@ -22182,7 +22182,7 @@
             "rowName": "Theater_Nightmare_Zone3"
           },
           "tileIndex": 72,
-          "availableUntil": "2017-07-22T04:19:45.000Z"
+          "availableUntil": "2017-07-25T23:59:59.999Z"
         },
         {
           "missionGuid": "d5c50e09-78f6-470e-acf6-457ef806fc29",
@@ -22205,7 +22205,7 @@
             "rowName": "Theater_Nightmare_Zone1"
           },
           "tileIndex": 11,
-          "availableUntil": "2017-07-22T04:19:45.000Z"
+          "availableUntil": "2017-07-25T23:59:59.999Z"
         },
         {
           "missionGuid": "7f921b76-fccd-4301-9f63-a511a8fd427b",
@@ -22228,7 +22228,7 @@
             "rowName": "Theater_Nightmare_Zone1"
           },
           "tileIndex": 12,
-          "availableUntil": "9999-12-31T23:59:59.999Z"
+          "availableUntil": "2017-07-25T23:59:59.999Z"
         },
         {
           "missionGuid": "1aeec61b-7fc4-4a2f-aa3c-65b4fda313fd",
@@ -22251,7 +22251,7 @@
             "rowName": "Theater_Nightmare_Zone1"
           },
           "tileIndex": 18,
-          "availableUntil": "2017-07-22T04:19:45.000Z"
+          "availableUntil": "2017-07-25T23:59:59.999Z"
         },
         {
           "missionGuid": "96bcc6f7-65cd-4de2-bf00-06c96beac235",
@@ -22274,7 +22274,7 @@
             "rowName": "Theater_Nightmare_Zone1"
           },
           "tileIndex": 49,
-          "availableUntil": "2017-07-22T04:19:45.000Z"
+          "availableUntil": "2017-07-25T23:59:59.999Z"
         },
         {
           "missionGuid": "125d1690-057f-4068-838e-64da0f70af16",
@@ -22297,7 +22297,7 @@
             "rowName": "Theater_Nightmare_Zone1"
           },
           "tileIndex": 17,
-          "availableUntil": "2017-07-22T04:19:45.000Z"
+          "availableUntil": "2017-07-25T23:59:59.999Z"
         },
         {
           "missionGuid": "9bb48860-d5f9-42bf-9dcd-a55150c8b3db",
@@ -22320,7 +22320,7 @@
             "rowName": "Theater_Nightmare_Zone2"
           },
           "tileIndex": 14,
-          "availableUntil": "2017-07-22T04:19:45.000Z"
+          "availableUntil": "2017-07-25T23:59:59.999Z"
         },
         {
           "missionGuid": "ac13f6d8-0d54-49af-b002-aa6467e2930f",
@@ -22343,7 +22343,7 @@
             "rowName": "Theater_Nightmare_Zone2"
           },
           "tileIndex": 41,
-          "availableUntil": "2017-07-22T04:19:45.000Z"
+          "availableUntil": "2017-07-25T23:59:59.999Z"
         },
         {
           "missionGuid": "14d3a565-b12d-4aab-ab1b-b4335ddcdfe3",
@@ -22366,7 +22366,7 @@
             "rowName": "Theater_Nightmare_Zone2"
           },
           "tileIndex": 52,
-          "availableUntil": "2017-07-22T04:19:45.000Z"
+          "availableUntil": "2017-07-25T23:59:59.999Z"
         },
         {
           "missionGuid": "ed2f97fd-9735-4909-80b9-ad81218acbbf",
@@ -22389,7 +22389,7 @@
             "rowName": "Theater_Nightmare_Zone2"
           },
           "tileIndex": 68,
-          "availableUntil": "9999-12-31T23:59:59.999Z"
+          "availableUntil": "2017-07-25T23:59:59.999Z"
         },
         {
           "missionGuid": "93fd7141-1b9f-4c79-a8c1-ad1aa2834c2a",
@@ -22412,7 +22412,7 @@
             "rowName": "Theater_Nightmare_Zone2"
           },
           "tileIndex": 67,
-          "availableUntil": "2017-07-22T04:19:45.000Z"
+          "availableUntil": "2017-07-25T23:59:59.999Z"
         },
         {
           "missionGuid": "59e67f4a-d66c-4bc6-b3de-a80610ebc072",
@@ -22444,10 +22444,10 @@
             "rowName": "Theater_Nightmare_Outpost1"
           },
           "tileIndex": 5,
-          "availableUntil": "2017-07-22T04:19:45.000Z"
+          "availableUntil": "2017-07-25T23:59:59.999Z"
         }
       ],
-      "nextRefresh": "2017-07-22T04:19:45.000Z"
+      "nextRefresh": "2017-07-25T23:59:59.999Z"
     },
     {
       "theaterId": "8633333E41A86F67F78EAEAF25BF4735",
@@ -22473,10 +22473,10 @@
             "rowName": "Theater_Tutorial_Zone1"
           },
           "tileIndex": 0,
-          "availableUntil": "2017-07-22T07:19:45.000Z"
+          "availableUntil": "2017-07-25T23:59:59.999Z"
         }
       ],
-      "nextRefresh": "2017-07-22T07:19:45.000Z"
+      "nextRefresh": "2017-07-25T23:59:59.999Z"
     }
   ],
   "missionAlerts": [
@@ -22486,7 +22486,7 @@
         {
           "missionAlertGuid": "1c017021-436b-4624-ba09-eb9ac39bfe46",
           "tileIndex": 16,
-          "availableUntil": "2017-07-22T09:19:45.000Z",
+          "availableUntil": "2017-07-25T23:59:59.999Z",
           "missionAlertRewards": {
             "tierGroupName": "MissionAlert_Proto_01",
             "items": [
@@ -22500,7 +22500,7 @@
         {
           "missionAlertGuid": "c70c5cc6-3568-4878-a4dd-69c439457234",
           "tileIndex": 23,
-          "availableUntil": "2017-07-22T09:19:45.000Z",
+          "availableUntil": "2017-07-25T23:59:59.999Z",
           "missionAlertRewards": {
             "tierGroupName": "MissionAlert_Proto_01",
             "items": [
@@ -22514,7 +22514,7 @@
         {
           "missionAlertGuid": "9335ae41-002f-4f36-bc7d-3b1bda9e7e05",
           "tileIndex": 1,
-          "availableUntil": "2017-07-22T09:19:45.000Z",
+          "availableUntil": "2017-07-25T23:59:59.999Z",
           "missionAlertRewards": {
             "tierGroupName": "MissionAlert_Proto_01",
             "items": [
@@ -22526,7 +22526,7 @@
           }
         }
       ],
-      "nextRefresh": "2017-07-22T09:19:45.000Z"
+      "nextRefresh": "2017-07-25T23:59:59.999Z"
     },
     {
       "theaterId": "D477605B4FA48648107B649CE97FCF27",
@@ -22534,7 +22534,7 @@
         {
           "missionAlertGuid": "1014117e-a215-4b93-80aa-efa849940b41",
           "tileIndex": 39,
-          "availableUntil": "2017-07-22T09:19:45.000Z",
+          "availableUntil": "2017-07-25T23:59:59.999Z",
           "missionAlertRewards": {
             "tierGroupName": "MissionAlert_Proto_01",
             "items": [
@@ -22548,7 +22548,7 @@
         {
           "missionAlertGuid": "e8126672-23b6-4d14-ba57-4c303cb6e864",
           "tileIndex": 31,
-          "availableUntil": "2017-07-22T09:19:45.000Z",
+          "availableUntil": "2017-07-25T23:59:59.999Z",
           "missionAlertRewards": {
             "tierGroupName": "MissionAlert_Proto_02",
             "items": [
@@ -22562,7 +22562,7 @@
         {
           "missionAlertGuid": "b1c70fda-c950-4b51-a3d7-63588af86a48",
           "tileIndex": 9,
-          "availableUntil": "2017-07-22T09:19:45.000Z",
+          "availableUntil": "2017-07-25T23:59:59.999Z",
           "missionAlertRewards": {
             "tierGroupName": "MissionAlert_Proto_02",
             "items": [
@@ -22574,7 +22574,7 @@
           }
         }
       ],
-      "nextRefresh": "2017-07-22T09:19:45.000Z"
+      "nextRefresh": "2017-07-25T23:59:59.999Z"
     },
     {
       "theaterId": "E6ECBD064B153234656CB4BDE6743870",
@@ -22582,7 +22582,7 @@
         {
           "missionAlertGuid": "b9b4a211-867e-42ce-8fda-f4ebda822127",
           "tileIndex": 97,
-          "availableUntil": "2017-07-22T09:19:45.000Z",
+          "availableUntil": "2017-07-25T23:59:59.999Z",
           "missionAlertRewards": {
             "tierGroupName": "MissionAlert_Proto_03",
             "items": [
@@ -22596,7 +22596,7 @@
         {
           "missionAlertGuid": "effea288-d718-41e4-a569-76a3889ea5a8",
           "tileIndex": 105,
-          "availableUntil": "2017-07-22T09:19:45.000Z",
+          "availableUntil": "2017-07-25T23:59:59.999Z",
           "missionAlertRewards": {
             "tierGroupName": "MissionAlert_Proto_02",
             "items": [
@@ -22610,7 +22610,7 @@
         {
           "missionAlertGuid": "735458f3-a7ef-4aab-be4e-a09bad520bcb",
           "tileIndex": 102,
-          "availableUntil": "2017-07-22T09:19:45.000Z",
+          "availableUntil": "2017-07-25T23:59:59.999Z",
           "missionAlertRewards": {
             "tierGroupName": "MissionAlert_Proto_02",
             "items": [
@@ -22622,7 +22622,7 @@
           }
         }
       ],
-      "nextRefresh": "2017-07-22T09:19:45.000Z"
+      "nextRefresh": "2017-07-25T23:59:59.999Z"
     },
     {
       "theaterId": "D9A801C5444D1C74D1B7DAB5C7C12C5B",
@@ -22630,7 +22630,7 @@
         {
           "missionAlertGuid": "6be13617-5287-4268-83be-09bdd5721d4e",
           "tileIndex": 4,
-          "availableUntil": "2017-07-22T09:19:45.000Z",
+          "availableUntil": "2017-07-25T23:59:59.999Z",
           "missionAlertRewards": {
             "tierGroupName": "MissionAlert_Proto_04",
             "items": [
@@ -22644,7 +22644,7 @@
         {
           "missionAlertGuid": "a7f86b46-098a-427e-ae84-6e0e158d2ac5",
           "tileIndex": 51,
-          "availableUntil": "2017-07-22T09:19:45.000Z",
+          "availableUntil": "2017-07-25T23:59:59.999Z",
           "missionAlertRewards": {
             "tierGroupName": "MissionAlert_Proto_03",
             "items": [
@@ -22658,7 +22658,7 @@
         {
           "missionAlertGuid": "c644477c-782b-4d45-b334-306c8fd9a53b",
           "tileIndex": 12,
-          "availableUntil": "2017-07-22T09:19:45.000Z",
+          "availableUntil": "2017-07-25T23:59:59.999Z",
           "missionAlertRewards": {
             "tierGroupName": "MissionAlert_Proto_03",
             "items": [
@@ -22670,12 +22670,12 @@
           }
         }
       ],
-      "nextRefresh": "2017-07-22T09:19:45.000Z"
+      "nextRefresh": "2017-07-25T23:59:59.999Z"
     },
     {
       "theaterId": "8633333E41A86F67F78EAEAF25BF4735",
       "availableMissionAlerts": [],
-      "nextRefresh": "2017-07-22T04:19:45.000Z"
+      "nextRefresh": "2017-07-25T23:59:59.999Z"
     }
   ]
 }
