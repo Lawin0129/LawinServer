@@ -3692,7 +3692,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/ModifyQuickbar", async (req
 
     if (req.body.primaryQuickbarChoices) {
         for (var i in req.body.primaryQuickbarChoices) {
-            let a = i + 1;
+            let a = Number(i) + 1;
             var value = [req.body.primaryQuickbarChoices[i].replace(/-/ig, "").toUpperCase()];
             if (req.body.primaryQuickbarChoices[i] == "") {
                 value = [];
