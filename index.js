@@ -1175,6 +1175,7 @@ express.get("/content/api/pages/*", async (req, res) => {
 
 express.get("/fortnite/api/game/v2/world/info", async (req, res) => {
     const worldstw = getTheater(req);
+
     res.json(worldstw)
 })
 
@@ -1591,7 +1592,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/RemoveGiftBox", async (req,
 
     // Gift box ID on 19.01
     if (req.body.giftBoxItemIds) {
-        for (var i = 0; i < req.body.giftBoxItemIds.length; i++) {
+        for (var i in req.body.giftBoxItemIds) {
             var id = req.body.giftBoxItemIds[i];
 
             delete profile.items[id];
@@ -1738,8 +1739,8 @@ express.post("/fortnite/api/game/v2/profile/*/client/FortRerollDailyQuest", asyn
             "quantity": 1
         };
 
-        for (var objective in QuestIDS[randomNumber].objectives) {
-            profile.items[NewQuestID].attributes[`completion_${QuestIDS[randomNumber].objectives[objective]}`] = 0
+        for (var i in QuestIDS[randomNumber].objectives) {
+            profile.items[NewQuestID].attributes[`completion_${QuestIDS[randomNumber].objectives[i]}`] = 0
         }
 
         StatChanged = true;
@@ -1807,7 +1808,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/MarkNewQuestNotificationSen
     var StatChanged = false;
 
     if (req.body.itemIds) {
-        for (var i = 0; i < req.body.itemIds.length; i++) {
+        for (var i in req.body.itemIds) {
             var id = req.body.itemIds[i];
 
             profile.items[id].attributes.sent_new_notification = true
@@ -1937,8 +1938,8 @@ express.post("/fortnite/api/game/v2/profile/*/client/ClientQuestLogin", async (r
                 "quantity": 1
             };
 
-            for (var objective in QuestIDS[randomNumber].objectives) {
-                profile.items[NewQuestID].attributes[`completion_${QuestIDS[randomNumber].objectives[objective]}`] = 0
+            for (var i in QuestIDS[randomNumber].objectives) {
+                profile.items[NewQuestID].attributes[`completion_${QuestIDS[randomNumber].objectives[i]}`] = 0
             }
 
             profile.stats.attributes.quest_manager.dailyLoginInterval = new Date().toISOString();
@@ -2012,9 +2013,9 @@ express.post("/fortnite/api/game/v2/profile/*/client/RefundMtxPurchase", async (
         profile.stats.attributes.mtx_purchase_history.refundsUsed += 1;
         profile.stats.attributes.mtx_purchase_history.refundCredits -= 1;
 
-        for (var i = 0; i < profile.stats.attributes.mtx_purchase_history.purchases.length; i++) {
+        for (var i in profile.stats.attributes.mtx_purchase_history.purchases) {
             if (profile.stats.attributes.mtx_purchase_history.purchases[i].purchaseId == req.body.purchaseId) {
-                for (var x = 0; x < profile.stats.attributes.mtx_purchase_history.purchases[i].lootResult.length; x++) {
+                for (var x in profile.stats.attributes.mtx_purchase_history.purchases[i].lootResult) {
                     ItemGuids.push(profile.stats.attributes.mtx_purchase_history.purchases[i].lootResult[x].itemGuid)
                 }
 
@@ -2022,7 +2023,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/RefundMtxPurchase", async (
             }
         }
 
-        for (var i = 0; i < ItemGuids.length; i++) {
+        for (var i in ItemGuids) {
             delete ItemProfile.items[ItemGuids[i]]
 
             MultiUpdate[0].profileChanges.push({
@@ -2340,7 +2341,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/AssignWorkerToSquadBatch", 
     var StatChanged = false;
 
     if (req.body.characterIds && req.body.squadIds && req.body.slotIndices) {
-        for (var i = 0; i < req.body.characterIds.length; i++) {
+        for (var i in req.body.characterIds) {
             for (var key in profile.items) {
                 if (profile.items[key].hasOwnProperty('attributes')) {
                     if (profile.items[key].attributes.hasOwnProperty('squad_id') && profile.items[key].attributes.hasOwnProperty('squad_slot_idx')) {
@@ -3133,7 +3134,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/DestroyWorldItems", async (
     var StatChanged = false;
 
     if (req.body.itemIds) {
-        for (var i = 0; i < req.body.itemIds.length; i++) {
+        for (var i in req.body.itemIds) {
             var id = req.body.itemIds[i];
             delete profile.items[id]
 
@@ -3184,7 +3185,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/DisassembleWorldItems", asy
     var StatChanged = false;
 
     if (req.body.targetItemIdAndQuantityPairs) {
-        for (var i = 0; i < req.body.targetItemIdAndQuantityPairs.length; i++) {
+        for (var i in req.body.targetItemIdAndQuantityPairs) {
             var id = req.body.targetItemIdAndQuantityPairs[i].itemId;
             var quantity = Number(req.body.targetItemIdAndQuantityPairs[i].quantity);
             var orig_quantity = Number(profile.items[id].quantity);
@@ -3260,7 +3261,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/StorageTransfer", async (re
             "profileCommandRevision": outpost0.commandRevision || 0,
         })
 
-        for (var i = 0; i < req.body.transferOperations.length; i++) {
+        for (var i in req.body.transferOperations) {
             if (req.body.transferOperations[i].toStorage == false) {
                 let id = req.body.transferOperations[i].itemId;
                 let body_quantity = Number(req.body.transferOperations[i].quantity);
@@ -3458,7 +3459,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/StorageTransfer", async (re
             "profileCommandRevision": outpost0.commandRevision || 0,
         })
 
-        for (var i = 0; i < req.body.theaterToOutpostItems.length; i++) {
+        for (var i in req.body.theaterToOutpostItems) {
             let id = req.body.theaterToOutpostItems[i].itemId;
             let body_quantity = Number(req.body.theaterToOutpostItems[i].quantity);
             if (outpost0.items[id]) {
@@ -3550,7 +3551,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/StorageTransfer", async (re
             }
         }
 
-            for (var i = 0; i < req.body.outpostToTheaterItems.length; i++) {
+            for (var i in req.body.outpostToTheaterItems) {
                 let id = req.body.outpostToTheaterItems[i].itemId;
                 let body_quantity = Number(req.body.outpostToTheaterItems[i].quantity);
                 if (outpost0.items[id]) {
@@ -3690,7 +3691,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/ModifyQuickbar", async (req
     var StatChanged = false;
 
     if (req.body.primaryQuickbarChoices) {
-        for (var i = 0; i < req.body.primaryQuickbarChoices.length; i++) {
+        for (var i in req.body.primaryQuickbarChoices) {
             let a = i + 1;
             var value = [req.body.primaryQuickbarChoices[i].replace(/-/ig, "").toUpperCase()];
             if (req.body.primaryQuickbarChoices[i] == "") {
@@ -4031,7 +4032,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/RecycleItemBatch", async (r
     var ItemExists = false;
 
     if (req.body.targetItemIds) {
-        for (var i = 0; i < req.body.targetItemIds.length; i++) {
+        for (var i in req.body.targetItemIds) {
             let id = req.body.targetItemIds[i];
 
             if (seasondata.season > 11 || seasondata.build == 11.30 || seasondata.build == 11.31 || seasondata.build == 11.40 || seasondata.build == 11.50) {
@@ -4960,7 +4961,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/UnassignAllSquads", async (
     var StatChanged = false;
 
     if (req.body.squadIds) {
-        for (var i = 0; i < req.body.squadIds.length; i++) {
+        for (var i in req.body.squadIds) {
             let id = req.body.squadIds[i];
 
             for (var key in profile.items) {
@@ -5631,7 +5632,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/SetItemFavoriteStatusBatch"
     var StatChanged = false;
 
     if (req.body.itemIds) {
-        for (var i = 0; i < req.body.itemIds.length; i++) {
+        for (var i in req.body.itemIds) {
             profile.items[req.body.itemIds[i]].attributes.favorite = req.body.itemFavStatus[i] || false;
 
             ApplyProfileChanges.push({
@@ -5755,7 +5756,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/MarkItemSeen", async (req, 
     var StatChanged = false;
 
     if (req.body.itemIds) {
-        for (var i = 0; i < req.body.itemIds.length; i++) {
+        for (var i in req.body.itemIds) {
             profile.items[req.body.itemIds[i]].attributes.item_seen = true;
 
             ApplyProfileChanges.push({
@@ -5831,7 +5832,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/EquipBattleRoyaleCustomizat
             if (profile.items[req.body.itemToSlot].attributes.variants.length == 0) {
                 profile.items[req.body.itemToSlot].attributes.variants = req.body.variantUpdates || [];
             }
-            for (var i = 0; i < profile.items[req.body.itemToSlot].attributes.variants.length; i++) {
+            for (var i in profile.items[req.body.itemToSlot].attributes.variants) {
                 profile.items[req.body.itemToSlot].attributes.variants[i].active = req.body.variantUpdates[i].active || "";
             }
             VariantChanged = true;
@@ -5901,7 +5902,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/EquipBattleRoyaleCustomizat
                         break;
 
                     case -1:
-                        for (var i = 0; i < profile.stats.attributes.favorite_itemwraps.length; i++) {
+                        for (var i = 0; i < 7; i++) {
                             profile.stats.attributes.favorite_itemwraps[i] = req.body.itemToSlot || "";
                         }
                         break;
@@ -6131,12 +6132,12 @@ express.post("/fortnite/api/game/v2/profile/*/client/SetCosmeticLockerSlot", asy
                 if (profile.items[req.body.itemToSlot].attributes.variants.length == 0) {
                     profile.items[req.body.itemToSlot].attributes.variants = req.body.variantUpdates || [];
                 }
-                for (var i = 0; i < profile.items[req.body.itemToSlot].attributes.variants.length; i++) {
+                for (var i in profile.items[req.body.itemToSlot].attributes.variants) {
                     profile.items[req.body.itemToSlot].attributes.variants[i].active = req.body.variantUpdates[i].active || "";
                 }
             }
 
-            for (var i = 0; i < req.body.variantUpdates.length; i++) {
+            for (var i in req.body.variantUpdates) {
                 new_variants[0].variants.push({
                     "channel": req.body.variantUpdates[i].channel,
                     "active": req.body.variantUpdates[i].active
@@ -6210,7 +6211,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/SetCosmeticLockerSlot", asy
                         break;
 
                     case -1:
-                        for (var i = 0; i < profile.items[req.body.lockerItem].attributes.locker_slots_data.slots.ItemWrap.items.length; i++) {
+                        for (var i = 0; i < 7; i++) {
                             profile.items[req.body.lockerItem].attributes.locker_slots_data.slots.ItemWrap.items[i] = req.body.itemToSlot || "";
                         }
                         break;
@@ -6435,17 +6436,17 @@ function getTheater(req) {
         }
 
         var date = new Date().toISOString()
-        
-        // Set the 24-hour StW mission refresh date for Season >= 9
+
+        // Set the 24-hour StW mission refresh date for version season 9 and above
         if (seasondata.season >= 9) {
             date = date.split("T")[0] + "T23:59:59.999Z";
         }
-        // Set the 6-hour StW mission refresh date for Season < 9
         else {
+            // Set the 6-hour StW mission refresh date for versions below season 9
             if (date < (date.split("T")[0] + "T05:59:59.999Z")) {
                 date = date.split("T")[0] + "T05:59:59.999Z";
             }
-            else if (date< (date.split("T")[0] + "T11:59:59.999Z")) {
+            else if (date < (date.split("T")[0] + "T11:59:59.999Z")) {
                 date = date.split("T")[0] + "T11:59:59.999Z";
             }
             else if (date < (date.split("T")[0] + "T17:59:59.999Z")) {
