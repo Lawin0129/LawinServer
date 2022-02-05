@@ -37,6 +37,9 @@ express.use(Express.static('public'));
 
 const port = process.env.PORT || 3551;
 express.listen(port, console.log("Started listening on port", port));
+if (!fs.existsSync(path.join(process.env.LOCALAPPDATA, "LawinServer"))) {
+    fs.mkdirSync(path.join(process.env.LOCALAPPDATA, "LawinServer"));
+}
 
 express.get("/", async (req, res) => {
     res.sendFile('index.html');
@@ -805,6 +808,10 @@ express.get("/fortnite/api/cloudstorage/system/:file", async (req, res) => {
 })
 
 express.get("/fortnite/api/cloudstorage/user/*/:file", async (req, res) => {
+    if (!fs.existsSync(path.join(process.env.LOCALAPPDATA, "LawinServer", "ClientSettings"))) {
+        fs.mkdirSync(path.join(process.env.LOCALAPPDATA, "LawinServer", "ClientSettings"));
+    }
+
     res.set("Content-Type", "application/octet-stream")
 
     if (req.params.file.toLowerCase() != "clientsettings.sav") {
@@ -818,17 +825,23 @@ express.get("/fortnite/api/cloudstorage/user/*/:file", async (req, res) => {
     seasonchecker(req, seasondata);
 
     var currentBuildID = seasondata.CL;
-
-    const file = path.join(__dirname, `./ClientSettings/ClientSettings-${currentBuildID}.Sav`);
+    const file = path.join(process.env.LOCALAPPDATA, "LawinServer", "ClientSettings", `ClientSettings-${currentBuildID}.Sav`);
 
     if (fs.existsSync(file)) {
-        return res.status(200).sendFile(file);
-    } else {
-        return res.status(200).end();
+        const ParsedFile = fs.readFileSync(file);
+
+        return res.status(200).send(ParsedFile).end();
     }
+
+    res.status(200);
+    res.end();
 })
 
 express.get("/fortnite/api/cloudstorage/user/:accountId", async (req, res) => {
+    if (!fs.existsSync(path.join(process.env.LOCALAPPDATA, "LawinServer", "ClientSettings"))) {
+        fs.mkdirSync(path.join(process.env.LOCALAPPDATA, "LawinServer", "ClientSettings"));
+    }
+
     res.set("Content-Type", "application/json")
 
     const seasonchecker = require("./seasonchecker.js")
@@ -836,21 +849,20 @@ express.get("/fortnite/api/cloudstorage/user/:accountId", async (req, res) => {
     seasonchecker(req, seasondata);
 
     var currentBuildID = seasondata.CL;
-
-    const file = `./ClientSettings/ClientSettings-${currentBuildID}.Sav`;
+    const file = path.join(process.env.LOCALAPPDATA, "LawinServer", "ClientSettings", `ClientSettings-${currentBuildID}.Sav`);
 
     if (fs.existsSync(file)) {
-        const utf8_file = fs.readFileSync(path.join(__dirname, file), 'utf-8');
-        const file_stats = fs.statSync(path.join(__dirname, file));
+        const ParsedFile = fs.readFileSync(path.join(__dirname, file), 'utf-8');
+        const ParsedStats = fs.statSync(path.join(__dirname, file));
 
         return res.json([{
             "uniqueFilename": "ClientSettings.Sav",
             "filename": "ClientSettings.Sav",
-            "hash": crypto.createHash('sha1').update(utf8_file).digest('hex'),
-            "hash256": crypto.createHash('sha256').update(utf8_file).digest('hex'),
-            "length": Buffer.byteLength(utf8_file),
+            "hash": crypto.createHash('sha1').update(ParsedFile).digest('hex'),
+            "hash256": crypto.createHash('sha256').update(ParsedFile).digest('hex'),
+            "length": Buffer.byteLength(ParsedFile),
             "contentType": "application/octet-stream",
-            "uploaded": file_stats.mtime,
+            "uploaded": ParsedStats.mtime,
             "storageType": "S3",
             "storageIds": {},
             "accountId": req.params.accountId,
@@ -862,13 +874,18 @@ express.get("/fortnite/api/cloudstorage/user/:accountId", async (req, res) => {
 })
 
 express.put("/fortnite/api/cloudstorage/user/*/*", async (req, res) => {
+    if (!fs.existsSync(path.join(process.env.LOCALAPPDATA, "LawinServer", "ClientSettings"))) {
+        fs.mkdirSync(path.join(process.env.LOCALAPPDATA, "LawinServer", "ClientSettings"));
+    }
+
     const seasonchecker = require("./seasonchecker.js")
     const seasondata = require("./memory.json");
     seasonchecker(req, seasondata);
 
     var currentBuildID = seasondata.CL;
+    const file = path.join(process.env.LOCALAPPDATA, "LawinServer", "ClientSettings", `ClientSettings-${currentBuildID}.Sav`);
 
-    fs.writeFileSync(`./ClientSettings/ClientSettings-${currentBuildID}.Sav`, req.rawBody, 'latin1');
+    fs.writeFileSync(file, req.rawBody, 'latin1');
     res.status(204).end();
 })
 
