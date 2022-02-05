@@ -852,8 +852,8 @@ express.get("/fortnite/api/cloudstorage/user/:accountId", async (req, res) => {
     const file = path.join(process.env.LOCALAPPDATA, "LawinServer", "ClientSettings", `ClientSettings-${currentBuildID}.Sav`);
 
     if (fs.existsSync(file)) {
-        const ParsedFile = fs.readFileSync(path.join(__dirname, file), 'utf-8');
-        const ParsedStats = fs.statSync(path.join(__dirname, file));
+        const ParsedFile = fs.readFileSync(file, 'utf-8');
+        const ParsedStats = fs.statSync(file);
 
         return res.json([{
             "uniqueFilename": "ClientSettings.Sav",
