@@ -1,11 +1,35 @@
 {
-    "//": "BR Item shop config",
-    "daily1": "",
-    "daily2": "",
-    "daily3": "",
-    "daily4": "",
-    "daily5": "",
-    "daily6": "",
-    "featured1": "",
-    "featured2": ""
+    "//": "BR Item Shop Config",
+    "daily1": {
+        "templateId": "",
+        "price": 0
+    },
+    "daily2": {
+        "templateId": "",
+        "price": 0
+    },
+    "daily3": {
+        "templateId": "",
+        "price": 0
+    },
+    "daily4": {
+        "templateId": "",
+        "price": 0
+    },
+    "daily5": {
+        "templateId": "",
+        "price": 0
+    },
+    "daily6": {
+        "templateId": "",
+        "price": 0
+    },
+    "featured1": {
+        "templateId": "",
+        "price": 0
+    },
+    "featured2": {
+        "templateId": "",
+        "price": 0
+    }
 }

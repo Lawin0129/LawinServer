@@ -53,9 +53,9 @@ express.get("/clearitemsforshop", async (req, res) => {
 
     for (var value in CatalogConfig) {
         for (var key in athena.items) {
-            if (typeof CatalogConfig[value] == "string") {
-                if (CatalogConfig[value].length != 0) {
-                    if (CatalogConfig[value].toLowerCase() == athena.items[key].templateId.toLowerCase()) {
+            if (typeof CatalogConfig[value].templateId == "string") {
+                if (CatalogConfig[value].templateId.length != 0) {
+                    if (CatalogConfig[value].templateId.toLowerCase() == athena.items[key].templateId.toLowerCase()) {
                         delete athena.items[key]
                     }
                 }
@@ -6401,17 +6401,20 @@ function getItemShop() {
 
     try {
         for (var value in CatalogConfig) {
-            if (typeof CatalogConfig[value] == "string") {
-                if (CatalogConfig[value].length != 0) {
+            if (typeof CatalogConfig[value].templateId == "string") {
+                if (CatalogConfig[value].templateId.length != 0) {
                     const CatalogEntry = {"devName":"","offerId":"","fulfillmentIds":[],"dailyLimit":-1,"weeklyLimit":-1,"monthlyLimit":-1,"categories":[],"prices":[{"currencyType":"MtxCurrency","currencySubType":"","regularPrice":0,"finalPrice":0,"saleExpiration":"9999-12-02T01:12:00Z","basePrice":0}],"matchFilter":"","filterWeight":0,"appStoreId":[],"requirements":[{"requirementType":"DenyOnItemOwnership","requiredId":"","minQuantity":1}],"offerType":"StaticPrice","giftInfo":{"bIsEnabled":false,"forcedGiftBoxTemplateId":"","purchaseRequirements":[],"giftRecordIds":[]},"refundable":true,"metaInfo":[],"displayAssetPath":"","itemGrants":[{"templateId":"","quantity":1}],"sortPriority":0,"catalogGroupPriority":0};
 
                     if (value.toLowerCase().startsWith("daily")) {
                         catalog.storefronts.forEach((storefront, i) => {
                             if (storefront.name == "BRDailyStorefront") {
-                                CatalogEntry.devName = CatalogConfig[value]
-                                CatalogEntry.offerId = CatalogConfig[value]
-                                CatalogEntry.requirements[0].requiredId = CatalogConfig[value]
-                                CatalogEntry.itemGrants[0].templateId = CatalogConfig[value]
+                                CatalogEntry.devName = CatalogConfig[value].templateId
+                                CatalogEntry.offerId = CatalogConfig[value].templateId
+                                CatalogEntry.requirements[0].requiredId = CatalogConfig[value].templateId
+                                CatalogEntry.itemGrants[0].templateId = CatalogConfig[value].templateId
+                                CatalogEntry.prices[0].basePrice = CatalogConfig[value].price
+                                CatalogEntry.prices[0].regularPrice = CatalogConfig[value].price
+                                CatalogEntry.prices[0].finalPrice = CatalogConfig[value].price
 
                                 catalog.storefronts[i].catalogEntries.push(CatalogEntry);
                             }
@@ -6421,10 +6424,13 @@ function getItemShop() {
                     if (value.toLowerCase().startsWith("featured")) {
                         catalog.storefronts.forEach((storefront, i) => {
                             if (storefront.name == "BRWeeklyStorefront") {
-                                CatalogEntry.devName = CatalogConfig[value]
-                                CatalogEntry.offerId = CatalogConfig[value]
-                                CatalogEntry.requirements[0].requiredId = CatalogConfig[value]
-                                CatalogEntry.itemGrants[0].templateId = CatalogConfig[value]
+                                CatalogEntry.devName = CatalogConfig[value].templateId
+                                CatalogEntry.offerId = CatalogConfig[value].templateId
+                                CatalogEntry.requirements[0].requiredId = CatalogConfig[value].templateId
+                                CatalogEntry.itemGrants[0].templateId = CatalogConfig[value].templateId
+                                CatalogEntry.prices[0].basePrice = CatalogConfig[value].price
+                                CatalogEntry.prices[0].regularPrice = CatalogConfig[value].price
+                                CatalogEntry.prices[0].finalPrice = CatalogConfig[value].price
 
                                 catalog.storefronts[i].catalogEntries.push(CatalogEntry);
                             }
