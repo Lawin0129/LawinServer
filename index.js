@@ -625,7 +625,7 @@ express.get("/fortnite/api/game/v2/matchmakingservice/ticket/player/*", async (r
     fs.writeFileSync("./memory.json", JSON.stringify(memory, null, 2));
 
     res.json({
-        "serviceUrl": "ws://127.0.0.1:80",
+        "serviceUrl": "ws://lawinservermatchmaker.herokuapp.com",
         "ticketType": "mms-player",
         "payload": "69=",
         "signature": "420="
@@ -647,8 +647,8 @@ express.get("/fortnite/api/matchmaking/session/:session_id", async (req, res) =>
         "ownerId": crypto.createHash('md5').update(`1${Math.random().toString()}`).digest('hex').toUpperCase(),
         "ownerName": "[DS]fortnite-liveeugcec1c2e30ubrcore0a-z8hj-1968",
         "serverName": "[DS]fortnite-liveeugcec1c2e30ubrcore0a-z8hj-1968",
-        "serverAddress": "127.0.0.1",
-        "serverPort": 9015,
+        "serverAddress": config.GameServer.ip,
+        "serverPort": Number(config.GameServer.port),
         "maxPublicPlayers": 220,
         "openPublicPlayers": 175,
         "maxPrivatePlayers": 0,
