@@ -5037,11 +5037,9 @@ express.post("/fortnite/api/game/v2/profile/*/client/OpenCardPack", async (req, 
     var Notifications = [];
     var BaseRevision = profile.rvn || 0;
     var QueryRevision = req.query.rvn || -1;
+    var StatChanged = false;
 
     if (req.body.cardPackItemId) {
-        profile.rvn += 1;
-        profile.commandRevision += 1;
-
         Notifications.push({
             "type": "cardPackResult",
             "primary": true,
@@ -5055,56 +5053,26 @@ express.post("/fortnite/api/game/v2/profile/*/client/OpenCardPack", async (req, 
         for (var i = 0; i < 10; i++) {
             const randomNumber = Math.floor(Math.random() * ItemIDS.length);
             const ID = makeid();
+            var Item = {"templateId":ItemIDS[randomNumber],"attributes":{"legacy_alterations":[],"max_level_bonus":0,"level":1,"refund_legacy_item":false,"item_seen":false,"alterations":["","","","","",""],"xp":0,"refundable":true,"alteration_base_rarities":[],"favorite":false},"quantity":1};
+
+            profile.items[ID] = Item
 
             ApplyProfileChanges.push({
                 "changeType": "itemAdded",
                 "itemId": ID,
-                "item": {
-                    "templateId": ItemIDS[randomNumber],
-                    "attributes": {
-                        "last_state_change_time": "2017-08-29T21:05:57.087Z",
-                        "max_level_bonus": 0,
-                        "level": 1,
-                        "item_seen": false,
-                        "alterations": [],
-                        "xp": 0,
-                        "sent_new_notification": true,
-                        "favorite": false
-                    },
-                    "quantity": 1
-                }
+                "item": Item
             })
 
             Notifications[0].lootGranted.items.push({
                 "itemType": ItemIDS[randomNumber],
                 "itemGuid": ID,
                 "itemProfile": req.query.profileId,
-                "attributes": {
-                    "Alteration": {
-                        "LootTierGroup": "AlterationTG.Trap.R",
-                        "Tier": 0
-                    }
-                },
+                "attributes": Item.attributes,
                 "quantity": 1
             })
-
-            profile.items[ID] = {
-                "templateId": ItemIDS[randomNumber],
-                "attributes": {
-                    "last_state_change_time": "2017-08-29T21:05:57.087Z",
-                    "max_level_bonus": 0,
-                    "level": 1,
-                    "item_seen": false,
-                    "alterations": [],
-                    "xp": 0,
-                    "sent_new_notification": true,
-                    "favorite": false
-                },
-                "quantity": 1
-            }
         }
 
-        if (profile.items[req.body.cardPackItemId].quantity == 1) {
+        if (profile.items[req.body.cardPackItemId].quantity <= 1) {
             delete profile.items[req.body.cardPackItemId]
 
             ApplyProfileChanges.push({
@@ -5113,17 +5081,22 @@ express.post("/fortnite/api/game/v2/profile/*/client/OpenCardPack", async (req, 
             })
         }
 
-        if (true) {
-            try {
-                profile.items[req.body.cardPackItemId].quantity -= 1;
+        try {
+            profile.items[req.body.cardPackItemId].quantity -= 1;
 
-                ApplyProfileChanges.push({
-                    "changeType": "itemQuantityChanged",
-                    "itemId": req.body.cardPackItemId,
-                    "quantity": profile.items[req.body.cardPackItemId].quantity
-                })
-            } catch (err) {}
-        }
+            ApplyProfileChanges.push({
+                "changeType": "itemQuantityChanged",
+                "itemId": req.body.cardPackItemId,
+                "quantity": profile.items[req.body.cardPackItemId].quantity
+            })
+        } catch (err) {}
+
+        StatChanged = true;
+    }
+
+    if (StatChanged == true) {
+        profile.rvn += 1;
+        profile.commandRevision += 1;
 
         fs.writeFileSync(`./profiles/${req.query.profileId || "campaign"}.json`, JSON.stringify(profile, null, 2));
     }
@@ -5166,14 +5139,14 @@ express.post("/fortnite/api/game/v2/profile/*/client/PurchaseCatalogEntry", asyn
     var AthenaModified = false;
     var ItemExists = false;
 
-    const ID = makeid();
-
     if (req.body.offerId && profile.profileId == "profile0" && PurchasedLlama == false) {
         catalog.storefronts.forEach(function(value, a) {
             if (value.name.toLowerCase().startsWith("cardpack")) {
                 catalog.storefronts[a].catalogEntries.forEach(function(value, b) {
                     if (value.offerId == req.body.offerId) {
                         catalog.storefronts[a].catalogEntries[b].itemGrants.forEach(function(value, c) {
+                            var Quantity = req.body.purchaseQuantity || 1;
+
                             const Item = {
                                 "templateId": value.templateId,
                                 "attributes": {
@@ -5189,15 +5162,17 @@ express.post("/fortnite/api/game/v2/profile/*/client/PurchaseCatalogEntry", asyn
                                 "quantity": 1
                             };
 
-                            Item.quantity = req.body.purchaseQuantity || 1;
+                            for (var i = 0; i < Quantity; i++) {
+                                var ID = makeid();
 
-                            profile.items[ID] = Item
+                                profile.items[ID] = Item
 
-                            ApplyProfileChanges.push({
-                                "changeType": "itemAdded",
-                                "itemId": ID,
-                                "item": Item
-                            })
+                                ApplyProfileChanges.push({
+                                    "changeType": "itemAdded",
+                                    "itemId": ID,
+                                    "item": profile.items[ID]
+                                })
+                            }
                         })
                     }
                 })
@@ -5253,7 +5228,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/PurchaseCatalogEntry", asyn
                                 MultiUpdate[0].profileChanges.push({
                                     "changeType": "itemAdded",
                                     "itemId": ID,
-                                    "item": Item
+                                    "item": athena.items[ID]
                                 })
 
                                 Notifications[0].lootResult.items.push({
@@ -5303,7 +5278,19 @@ express.post("/fortnite/api/game/v2/profile/*/client/PurchaseCatalogEntry", asyn
                             const seasondata = require("./memory.json");
                             seasonchecker(req, seasondata);
 
-                            if (4 > seasondata.season || seasondata.season == 4 && PurchasedLlama == false) {
+                            if (4 >= seasondata.season && PurchasedLlama == false) {
+                                if (MultiUpdate.length == 0) {
+                                    MultiUpdate.push({
+                                        "profileRevision": campaign.rvn || 0,
+                                        "profileId": "campaign",
+                                        "profileChangesBaseRevision": campaign.rvn || 0,
+                                        "profileChanges": [],
+                                        "profileCommandRevision": campaign.commandRevision || 0,
+                                    })
+                                }
+
+                                var Quantity = req.body.purchaseQuantity || 1;
+
                                 const Item = {
                                     "templateId": value.templateId,
                                     "attributes": {
@@ -5319,26 +5306,34 @@ express.post("/fortnite/api/game/v2/profile/*/client/PurchaseCatalogEntry", asyn
                                     "quantity": 1
                                 };
 
-                                Item.quantity = req.body.purchaseQuantity || 1;
+                                for (var i = 0; i < Quantity; i++) {
+                                    var ID = makeid();
+    
+                                    campaign.items[ID] = Item
 
-                                campaign.items[ID] = Item
-
-                                MultiUpdate.push({
-                                    "profileRevision": campaign.rvn || 0,
-                                    "profileId": "campaign",
-                                    "profileChangesBaseRevision": campaign.rvn || 0,
-                                    "profileChanges": [{
+                                    MultiUpdate[0].profileChanges.push({
                                         "changeType": "itemAdded",
                                         "itemId": ID,
-                                        "item": Item
-                                    }],
-                                    "profileCommandRevision": campaign.commandRevision || 0,
-                                })
+                                        "item": campaign.items[ID]
+                                    })
+                                }
 
                                 PurchasedLlama = true;
                             }
 
-                            if (seasondata.season == 5 || seasondata.season == 6 || seasondata.build == 7.00 || seasondata.build == 7.01 || seasondata.build == 7.10 || seasondata.build == 7.20 && PurchasedLlama == false) {
+                            if (seasondata.build >= 5 && seasondata.build <= 7.20 && PurchasedLlama == false) {
+                                if (MultiUpdate.length == 0) {
+                                    MultiUpdate.push({
+                                        "profileRevision": campaign.rvn || 0,
+                                        "profileId": "campaign",
+                                        "profileChangesBaseRevision": campaign.rvn || 0,
+                                        "profileChanges": [],
+                                        "profileCommandRevision": campaign.commandRevision || 0,
+                                    })
+                                }
+
+                                var Quantity = req.body.purchaseQuantity || 1;
+
                                 const Item = {
                                     "templateId": value.templateId,
                                     "attributes": {
@@ -5354,27 +5349,23 @@ express.post("/fortnite/api/game/v2/profile/*/client/PurchaseCatalogEntry", asyn
                                     "quantity": 1
                                 };
 
-                                Item.quantity = req.body.purchaseQuantity || 1;
+                                for (var i = 0; i < Quantity; i++) {
+                                    var ID = makeid();
+    
+                                    campaign.items[ID] = Item
 
-                                campaign.items[ID] = Item
-
-                                MultiUpdate.push({
-                                    "profileRevision": campaign.rvn || 0,
-                                    "profileId": "campaign",
-                                    "profileChangesBaseRevision": campaign.rvn || 0,
-                                    "profileChanges": [{
+                                    MultiUpdate[0].profileChanges.push({
                                         "changeType": "itemAdded",
                                         "itemId": ID,
-                                        "item": Item
-                                    }],
-                                    "profileCommandRevision": campaign.commandRevision || 0,
-                                });
+                                        "item": campaign.items[ID]
+                                    })
+                                }
 
                                 Notifications.push({
                                     "type": "cardPackResult",
                                     "primary": true,
                                     "lootGranted": {
-                                        "tierGroupName": campaign.items[ID].templateId.split(":")[1],
+                                        "tierGroupName": "",
                                         "items": []
                                     },
                                     "displayLevel": 0
@@ -5384,7 +5375,20 @@ express.post("/fortnite/api/game/v2/profile/*/client/PurchaseCatalogEntry", asyn
                             }
 
                             if (6 < seasondata.season && PurchasedLlama == false) {
-                                const Item = {
+                                if (MultiUpdate.length == 0) {
+                                    MultiUpdate.push({
+                                        "profileRevision": campaign.rvn || 0,
+                                        "profileId": "campaign",
+                                        "profileChangesBaseRevision": campaign.rvn || 0,
+                                        "profileChanges": [],
+                                        "profileCommandRevision": campaign.commandRevision || 0,
+                                    })
+                                }
+
+                                var Quantity = req.body.purchaseQuantity || 1;
+                                var LlamaItemIDS = [];
+
+                                var Item = {
                                     "templateId": value.templateId,
                                     "attributes": {
                                         "is_loot_tier_overridden": false,
@@ -5399,23 +5403,19 @@ express.post("/fortnite/api/game/v2/profile/*/client/PurchaseCatalogEntry", asyn
                                     "quantity": 1
                                 };
 
-                                Item.quantity = req.body.purchaseQuantity || 1;
+                                for (var i = 0; i < Quantity; i++) {
+                                    var ID = makeid();
+    
+                                    campaign.items[ID] = Item
 
-                                campaign.items[ID] = Item
+                                    MultiUpdate[0].profileChanges.push({
+                                        "changeType": "itemAdded",
+                                        "itemId": ID,
+                                        "item": campaign.items[ID]
+                                    })
 
-                                MultiUpdate.push({
-                                    "profileRevision": campaign.rvn || 0,
-                                    "profileId": "campaign",
-                                    "profileChangesBaseRevision": campaign.rvn || 0,
-                                    "profileChanges": [],
-                                    "profileCommandRevision": campaign.commandRevision || 0,
-                                });
-
-                                MultiUpdate[0].profileChanges.push({
-                                    "changeType": "itemAdded",
-                                    "itemId": ID,
-                                    "item": Item
-                                })
+                                    LlamaItemIDS.push(ID);
+                                }
 
                                 Notifications.push({
                                     "type": "CatalogPurchase",
@@ -5435,76 +5435,43 @@ express.post("/fortnite/api/game/v2/profile/*/client/PurchaseCatalogEntry", asyn
                                         },
                                         "quantity": 1
                                     })
-                                }
-                                else {
-                                    for (var i = 0; i < 10; i++) {
-                                        const randomNumber = Math.floor(Math.random() * ItemIDS.length);
-                                        const id = makeid();
+                                } else {
+                                    for (var x = 0; x < Quantity; x++) {
+                                        for (var i = 0; i < 10; i++) {
+                                            const randomNumber = Math.floor(Math.random() * ItemIDS.length);
+                                            const id = makeid();
+                                            var Item = {"templateId":ItemIDS[randomNumber],"attributes":{"legacy_alterations":[],"max_level_bonus":0,"level":1,"refund_legacy_item":false,"item_seen":false,"alterations":["","","","","",""],"xp":0,"refundable":true,"alteration_base_rarities":[],"favorite":false},"quantity":1};
     
-                                        MultiUpdate[0].profileChanges.push({
-                                            "changeType": "itemAdded",
-                                            "itemId": id,
-                                            "item": {
-                                                "templateId": ItemIDS[randomNumber],
-                                                "attributes": {
-                                                    "last_state_change_time": "2017-08-29T21:05:57.087Z",
-                                                    "max_level_bonus": 0,
-                                                    "level": 1,
-                                                    "item_seen": false,
-                                                    "alterations": [],
-                                                    "xp": 0,
-                                                    "sent_new_notification": true,
-                                                    "favorite": false
-                                                },
+                                            campaign.items[id] = Item;
+
+                                            MultiUpdate[0].profileChanges.push({
+                                                "changeType": "itemAdded",
+                                                "itemId": id,
+                                                "item": Item
+                                            })
+
+                                            Notifications[0].lootResult.items.push({
+                                                "itemType": ItemIDS[randomNumber],
+                                                "itemGuid": id,
+                                                "itemProfile": "campaign",
+                                                "attributes": Item.attributes,
                                                 "quantity": 1
-                                            }
-                                        })
-    
-                                        Notifications[0].lootResult.items.push({
-                                            "itemType": ItemIDS[randomNumber],
-                                            "itemGuid": id,
-                                            "itemProfile": "campaign",
-                                            "attributes": {},
-                                            "quantity": 1
-                                        })
-    
-                                        campaign.items[id] = {
-                                            "templateId": ItemIDS[randomNumber],
-                                            "attributes": {
-                                                "last_state_change_time": "2017-08-29T21:05:57.087Z",
-                                                "max_level_bonus": 0,
-                                                "level": 1,
-                                                "item_seen": false,
-                                                "alterations": [],
-                                                "xp": 0,
-                                                "sent_new_notification": true,
-                                                "favorite": false
-                                            },
-                                            "quantity": 1
+                                            })
                                         }
                                     }
-    
-                                    if (campaign.items[ID].quantity == 1) {
-                                        delete campaign.items[ID]
-    
+                                }
+
+                                try {
+                                    for (var i in LlamaItemIDS) {
+                                        var id = LlamaItemIDS[i];
+
+                                        delete campaign.items[id];
                                         MultiUpdate[0].profileChanges.push({
                                             "changeType": "itemRemoved",
-                                            "itemId": ID
+                                            "itemId": id
                                         })
                                     }
-                                }
-
-                                if (true) {
-                                    try {
-                                        campaign.items[ID].quantity -= 1;
-
-                                        MultiUpdate[0].profileChanges.push({
-                                            "changeType": "itemQuantityChanged",
-                                            "itemId": ID,
-                                            "quantity": campaign.items[ID].quantity
-                                        })
-                                    } catch (err) {}
-                                }
+                                } catch (err) {}
 
                                 PurchasedLlama = true;
                             }
