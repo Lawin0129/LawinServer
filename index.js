@@ -910,219 +910,509 @@ express.get("/fortnite/api/calendar/v1/timeline", async (req, res) => {
     const seasondata = require("./memory.json");
     seasonchecker(req, seasondata);
 
-	var activeEvents = [
-	{
-		"eventType": `EventFlag.Season${seasondata.season}`,
-		"activeUntil": "9999-01-01T00:00:00.000Z",
-		"activeSince": "2020-01-01T00:00:00.000Z"
-	},
-	{
-		"eventType": `EventFlag.${seasondata.lobby}`,
-		"activeUntil": "9999-01-01T00:00:00.000Z",
-		"activeSince": "2020-01-01T00:00:00.000Z"
-	}];
+    var activeEvents = [
+    {
+        "eventType": `EventFlag.Season${seasondata.season}`,
+        "activeUntil": "9999-01-01T00:00:00.000Z",
+        "activeSince": "2020-01-01T00:00:00.000Z"
+    },
+    {
+        "eventType": `EventFlag.${seasondata.lobby}`,
+        "activeUntil": "9999-01-01T00:00:00.000Z",
+        "activeSince": "2020-01-01T00:00:00.000Z"
+    }];
 
-	if (seasondata.season == 3) {
-		activeEvents.push(
-		{
-			"eventType": "EventFlag.Spring2018Phase1",
-			"activeUntil": "9999-01-01T00:00:00.000Z",
-			"activeSince": "2020-01-01T00:00:00.000Z"
-		},
-		{
-			"eventType": "EventFlag.Spring2018Phase2",
-			"activeUntil": "9999-01-01T00:00:00.000Z",
-			"activeSince": "2020-01-01T00:00:00.000Z"
-		},
-		{
-			"eventType": "EventFlag.Spring2018Phase3",
-			"activeUntil": "9999-01-01T00:00:00.000Z",
-			"activeSince": "2020-01-01T00:00:00.000Z"
-		},
-		{
-			"eventType": "EventFlag.Spring2018Phase4",
-			"activeUntil": "9999-01-01T00:00:00.000Z",
-			"activeSince": "2020-01-01T00:00:00.000Z"
-		})
-	}
-
-	if (seasondata.season == 4) {
-		activeEvents.push(
-		{
-			"eventType": "EventFlag.Blockbuster2018",
-			"activeUntil": "9999-01-01T00:00:00.000Z",
-			"activeSince": "2020-01-01T00:00:00.000Z"
-		},
-		{
-			"eventType": "EventFlag.Blockbuster2018Phase1",
-			"activeUntil": "9999-01-01T00:00:00.000Z",
-			"activeSince": "2020-01-01T00:00:00.000Z"
-		},
-		{
-			"eventType": "EventFlag.Blockbuster2018Phase2",
-			"activeUntil": "9999-01-01T00:00:00.000Z",
-			"activeSince": "2020-01-01T00:00:00.000Z"
-		},
-		{
-			"eventType": "EventFlag.Blockbuster2018Phase3",
-			"activeUntil": "9999-01-01T00:00:00.000Z",
-			"activeSince": "2020-01-01T00:00:00.000Z"
-		},
-		{
-			"eventType": "EventFlag.Blockbuster2018Phase4",
-			"activeUntil": "9999-01-01T00:00:00.000Z",
-			"activeSince": "2020-01-01T00:00:00.000Z"
-		})
-	}
-
-	if (seasondata.season == 5) {
-		activeEvents.push(
-		{
-			"eventType": "EventFlag.RoadTrip2018",
-			"activeUntil": "9999-01-01T00:00:00.000Z",
-			"activeSince": "2020-01-01T00:00:00.000Z"
-		},
-		{
-			"eventType": "EventFlag.Horde",
-			"activeUntil": "9999-01-01T00:00:00.000Z",
-			"activeSince": "2020-01-01T00:00:00.000Z"
-		})
-	}
-	
-	if (seasondata.build == 5.10) {
-		activeEvents.push(
-		{
-			"eventType": "EventFlag.BirthdayBattleBus",
-			"activeUntil": "9999-01-01T00:00:00.000Z",
-			"activeSince": "2020-01-01T00:00:00.000Z"
-		})
-	}
-
-	if (seasondata.season == 6) {
-		activeEvents.push(
-		{
-			"eventType": "EventFlag.Fortnitemares",
-			"activeUntil": "9999-01-01T00:00:00.000Z",
-			"activeSince": "2020-01-01T00:00:00.000Z"
-		},
-		{
-			"eventType": "EventFlag.FortnitemaresPhase1",
-			"activeUntil": "9999-01-01T00:00:00.000Z",
-			"activeSince": "2020-01-01T00:00:00.000Z"
-		},
-		{
-			"eventType": "EventFlag.FortnitemaresPhase2",
-			"activeUntil": "9999-01-01T00:00:00.000Z",
-			"activeSince": "2020-01-01T00:00:00.000Z"
-		})
-	}
-	
-	if (seasondata.build == 6.20 || seasondata.build == 6.21) {
-		activeEvents.push(
-		{
-			"eventType": "EventFlag.LobbySeason6Halloween",
-			"activeUntil": "9999-01-01T00:00:00.000Z",
-			"activeSince": "2020-01-01T00:00:00.000Z"
-		},
-		{
-			"eventType": "EventFlag.HalloweenBattleBus",
-			"activeUntil": "9999-01-01T00:00:00.000Z",
-			"activeSince": "2020-01-01T00:00:00.000Z"
-		})
-	}
-
-	if (seasondata.season == 7) {
-		activeEvents.push(
-		{
-			"eventType": "EventFlag.Frostnite",
-			"activeUntil": "9999-01-01T00:00:00.000Z",
-			"activeSince": "2020-01-01T00:00:00.000Z"
-		})
-	}
-
-	if (seasondata.season == 8) {
-		activeEvents.push(
-		{
-			"eventType": "EventFlag.Spring2019",
-			"activeUntil": "9999-01-01T00:00:00.000Z",
-			"activeSince": "2020-01-01T00:00:00.000Z"
-		},
-		{
-			"eventType": "EventFlag.Spring2019.Phase1",
-			"activeUntil": "9999-01-01T00:00:00.000Z",
-			"activeSince": "2020-01-01T00:00:00.000Z"
-		},
-		{
-			"eventType": "EventFlag.Spring2019.Phase2",
-			"activeUntil": "9999-01-01T00:00:00.000Z",
-			"activeSince": "2020-01-01T00:00:00.000Z"
-		})
-	}
-
-
-	if (seasondata.season == 9) {
-		activeEvents.push(
-		{
-			"eventType": "EventFlag.Season9.Phase1",
-			"activeUntil": "9999-01-01T00:00:00.000Z",
-			"activeSince": "2020-01-01T00:00:00.000Z"
-		},
-		{
-			"eventType": "EventFlag.Season9.Phase2",
-			"activeUntil": "9999-01-01T00:00:00.000Z",
-			"activeSince": "2020-01-01T00:00:00.000Z"
-		})
-	}
-
-	if (seasondata.season == 10) {
-		activeEvents.push(
-		{
-			"eventType": "EventFlag.Season10.Phase2",
-			"activeUntil": "9999-01-01T00:00:00.000Z",
-			"activeSince": "2020-01-01T00:00:00.000Z"
-		},
-		{
-			"eventType": "EventFlag.Season10.Phase3",
-			"activeUntil": "9999-01-01T00:00:00.000Z",
-			"activeSince": "2020-01-01T00:00:00.000Z"
-		})
-	}
-
-    // Credits to Silas for three of these event flags and credits to uni for testing on 11.31
-    if (seasondata.build == 11.31 || seasondata.build == 11.40) {
+    if (seasondata.season == 3) {
         activeEvents.push(
         {
-            "eventType": "EventFlag.Winterfest.Tree",
+            "eventType": "EventFlag.Spring2018Phase1",
             "activeUntil": "9999-01-01T00:00:00.000Z",
             "activeSince": "2020-01-01T00:00:00.000Z"
         },
         {
-            "eventType": "EventFlag.LTE_WinterFest",
+            "eventType": "EventFlag.Spring2018Phase2",
             "activeUntil": "9999-01-01T00:00:00.000Z",
             "activeSince": "2020-01-01T00:00:00.000Z"
+        },
+        {
+            "eventType": "EventFlag.Spring2018Phase3",
+            "activeUntil": "9999-01-01T00:00:00.000Z",
+            "activeSince": "2020-01-01T00:00:00.000Z"
+        },
+        {
+            "eventType": "EventFlag.Spring2018Phase4",
+            "activeUntil": "9999-01-01T00:00:00.000Z",
+            "activeSince": "2020-01-01T00:00:00.000Z"
+        })
+    }
+
+    if (seasondata.season == 4) {
+        activeEvents.push(
+        {
+            "eventType": "EventFlag.Blockbuster2018",
+            "activeUntil": "9999-01-01T00:00:00.000Z",
+            "activeSince": "2020-01-01T00:00:00.000Z"
+        },
+        {
+            "eventType": "EventFlag.Blockbuster2018Phase1",
+            "activeUntil": "9999-01-01T00:00:00.000Z",
+            "activeSince": "2020-01-01T00:00:00.000Z"
+        },
+        {
+            "eventType": "EventFlag.Blockbuster2018Phase2",
+            "activeUntil": "9999-01-01T00:00:00.000Z",
+            "activeSince": "2020-01-01T00:00:00.000Z"
+        },
+        {
+            "eventType": "EventFlag.Blockbuster2018Phase3",
+            "activeUntil": "9999-01-01T00:00:00.000Z",
+            "activeSince": "2020-01-01T00:00:00.000Z"
+        },
+        {
+            "eventType": "EventFlag.Blockbuster2018Phase4",
+            "activeUntil": "9999-01-01T00:00:00.000Z",
+            "activeSince": "2020-01-01T00:00:00.000Z"
+        })
+    }
+
+    if (seasondata.season == 5) {
+        activeEvents.push(
+        {
+            "eventType": "EventFlag.RoadTrip2018",
+            "activeUntil": "9999-01-01T00:00:00.000Z",
+            "activeSince": "2020-01-01T00:00:00.000Z"
+        },
+        {
+            "eventType": "EventFlag.Horde",
+            "activeUntil": "9999-01-01T00:00:00.000Z",
+            "activeSince": "2020-01-01T00:00:00.000Z"
+        },
+        {
+            "eventType": "EventFlag.LTM_Heist",
+            "activeUntil": "9999-01-01T00:00:00.000Z",
+            "activeSince": "2020-01-01T00:00:00.000Z"
+        })
+    }
+    
+    if (seasondata.build == 5.10) {
+        activeEvents.push(
+        {
+            "eventType": "EventFlag.BirthdayBattleBus",
+            "activeUntil": "9999-01-01T00:00:00.000Z",
+            "activeSince": "2020-01-01T00:00:00.000Z"
+        })
+    }
+
+    if (seasondata.season == 6) {
+        activeEvents.push(
+        {
+            "eventType": "EventFlag.Fortnitemares",
+            "activeUntil": "9999-01-01T00:00:00.000Z",
+            "activeSince": "2020-01-01T00:00:00.000Z"
+        },
+        {
+            "eventType": "EventFlag.FortnitemaresPhase1",
+            "activeUntil": "9999-01-01T00:00:00.000Z",
+            "activeSince": "2020-01-01T00:00:00.000Z"
+        },
+        {
+            "eventType": "EventFlag.FortnitemaresPhase2",
+            "activeUntil": "9999-01-01T00:00:00.000Z",
+            "activeSince": "2020-01-01T00:00:00.000Z"
+        },
+        {
+            "eventType": "EventFlag.LTM_Fortnitemares",
+            "activeUntil": "9999-01-01T00:00:00.000Z",
+            "activeSince": "2020-01-01T00:00:00.000Z"
+        },
+        {
+            "eventType": "EventFlag.LTM_LilKevin",
+            "activeUntil": "9999-01-01T00:00:00.000Z",
+            "activeSince": "2020-01-01T00:00:00.000Z"
+        })
+    }
+    
+    if (seasondata.build == 6.20 || seasondata.build == 6.21) {
+        activeEvents.push(
+        {
+            "eventType": "EventFlag.LobbySeason6Halloween",
+            "activeUntil": "9999-01-01T00:00:00.000Z",
+            "activeSince": "2020-01-01T00:00:00.000Z"
+        },
+        {
+            "eventType": "EventFlag.HalloweenBattleBus",
+            "activeUntil": "9999-01-01T00:00:00.000Z",
+            "activeSince": "2020-01-01T00:00:00.000Z"
+        })
+    }
+
+    if (seasondata.season == 7) {
+        activeEvents.push(
+        {
+            "eventType": "EventFlag.Frostnite",
+            "activeUntil": "9999-01-01T00:00:00.000Z",
+            "activeSince": "2020-01-01T00:00:00.000Z"
+        },
+        {
+            "eventType": "EventFlag.LTM_14DaysOfFortnite",
+            "activeUntil": "9999-01-01T00:00:00.000Z",
+            "activeSince": "2020-01-01T00:00:00.000Z"
+        },
+        {
+            "eventType": "EventFlag.LTE_Festivus",
+            "activeUntil": "9999-01-01T00:00:00.000Z",
+            "activeSince": "2020-01-01T00:00:00.000Z"
+        },
+        {
+            "eventType": "EventFlag.LTM_WinterDeimos",
+            "activeUntil": "9999-01-01T00:00:00.000Z",
+            "activeSince": "2020-01-01T00:00:00.000Z"
+        },
+        {
+            "eventType": "EventFlag.LTE_S7_OverTime",
+            "activeUntil": "9999-01-01T00:00:00.000Z",
+            "activeSince": "2020-01-01T00:00:00.000Z"
+        })
+    }
+
+    if (seasondata.season == 8) {
+        activeEvents.push(
+        {
+            "eventType": "EventFlag.Spring2019",
+            "activeUntil": "9999-01-01T00:00:00.000Z",
+            "activeSince": "2020-01-01T00:00:00.000Z"
+        },
+        {
+            "eventType": "EventFlag.Spring2019.Phase1",
+            "activeUntil": "9999-01-01T00:00:00.000Z",
+            "activeSince": "2020-01-01T00:00:00.000Z"
+        },
+        {
+            "eventType": "EventFlag.Spring2019.Phase2",
+            "activeUntil": "9999-01-01T00:00:00.000Z",
+            "activeSince": "2020-01-01T00:00:00.000Z"
+        },
+        {
+            "eventType": "EventFlag.LTM_Ashton",
+            "activeUntil": "9999-01-01T00:00:00.000Z",
+            "activeSince": "2020-01-01T00:00:00.000Z"
+        },
+        {
+            "eventType": "EventFlag.LTM_Goose",
+            "activeUntil": "9999-01-01T00:00:00.000Z",
+            "activeSince": "2020-01-01T00:00:00.000Z"
+        },
+        {
+            "eventType": "EventFlag.LTM_HighStakes",
+            "activeUntil": "9999-01-01T00:00:00.000Z",
+            "activeSince": "2020-01-01T00:00:00.000Z"
+        },
+        {
+            "eventType": "EventFlag.LTE_BootyBay",
+            "activeUntil": "9999-01-01T00:00:00.000Z",
+            "activeSince": "2020-01-01T00:00:00.000Z"
+        })
+    }
+
+
+    if (seasondata.season == 9) {
+        activeEvents.push(
+        {
+            "eventType": "EventFlag.Season9.Phase1",
+            "activeUntil": "9999-01-01T00:00:00.000Z",
+            "activeSince": "2020-01-01T00:00:00.000Z"
+        },
+        {
+            "eventType": "EventFlag.Season9.Phase2",
+            "activeUntil": "9999-01-01T00:00:00.000Z",
+            "activeSince": "2020-01-01T00:00:00.000Z"
+        },
+        {
+            "eventType": "EventFlag.Anniversary2019_BR",
+            "activeUntil": "9999-01-01T00:00:00.000Z",
+            "activeSince": "2020-01-01T00:00:00.000Z"
+        },
+        {
+            "eventType": "EventFlag.LTM_14DaysOfSummer",
+            "activeUntil": "9999-01-01T00:00:00.000Z",
+            "activeSince": "2020-01-01T00:00:00.000Z"
+        },
+        {
+            "eventType": "EventFlag.LTM_Mash",
+            "activeUntil": "9999-01-01T00:00:00.000Z",
+            "activeSince": "2020-01-01T00:00:00.000Z"
+        },
+        {
+            "eventType": "EventFlag.LTM_Wax",
+            "activeUntil": "9999-01-01T00:00:00.000Z",
+            "activeSince": "2020-01-01T00:00:00.000Z"
+        })
+    }
+
+    if (seasondata.season == 10) {
+        activeEvents.push(
+        {
+            "eventType": "EventFlag.Season10.Phase2",
+            "activeUntil": "9999-01-01T00:00:00.000Z",
+            "activeSince": "2020-01-01T00:00:00.000Z"
+        },
+        {
+            "eventType": "EventFlag.Season10.Phase3",
+            "activeUntil": "9999-01-01T00:00:00.000Z",
+            "activeSince": "2020-01-01T00:00:00.000Z"
+        },
+        {
+            "eventType": "EventFlag.LTE_BlackMonday",
+            "activeUntil": "9999-01-01T00:00:00.000Z",
+            "activeSince": "2020-01-01T00:00:00.000Z"
+        },
+        {
+            "eventType": "EventFlag.S10_Oak",
+            "activeUntil": "9999-01-01T00:00:00.000Z",
+            "activeSince": "2020-01-01T00:00:00.000Z"
+        },
+        {
+            "eventType": "EEventFlag.S10_Mystery",
+            "activeUntil": "9999-01-01T00:00:00.000Z",
+            "activeSince": "2020-01-01T00:00:00.000Z"
+        })
+    }
+
+    if (seasondata.season == 11) {
+        activeEvents.push(
+        {
+            "eventType": "EventFlag.LTE_CoinCollectXP",
+            "activeUntil": "9999-01-01T00:00:00.000Z",
+            "activeSince": "2020-01-01T00:00:00.000Z" 
+        },
+        {
+            "eventType": "EventFlag.LTE_Fortnitemares2019",
+            "activeUntil": "9999-01-01T00:00:00.000Z",
+            "activeSince": "2020-01-01T00:00:00.000Z" 
+        },
+        {
+            "eventType": "EventFlag.LTE_Galileo_Feats",
+            "activeUntil": "9999-01-01T00:00:00.000Z",
+            "activeSince": "2020-01-01T00:00:00.000Z" 
+        },
+        {
+            "eventType": "EventFlag.LTE_Galileo",
+            "activeUntil": "9999-01-01T00:00:00.000Z",
+            "activeSince": "2020-01-01T00:00:00.000Z" 
         },
         {
             "eventType": "EventFlag.LTE_WinterFest2019",
             "activeUntil": "9999-01-01T00:00:00.000Z",
             "activeSince": "2020-01-01T00:00:00.000Z"
-        },
+        })
+        if (Number(seasondata.build.toString().split(".")[1].split("")[0]) >= 2) {
+            activeEvents.push(
+            {
+                "eventType": "EventFlag.Starlight",
+                "activeUntil": "9999-01-01T00:00:00.000Z",
+                "activeSince": "2020-01-01T00:00:00.000Z" 
+            })
+        }
+        if (Number(seasondata.build.toString().split(".")[1].split("")[0]) < 3) {
+            activeEvents.push(
+            {
+                "eventType": "EventFlag.Season11.Fortnitemares.Quests.Phase1",
+                "activeUntil": "9999-01-01T00:00:00.000Z",
+                "activeSince": "2020-01-01T00:00:00.000Z" 
+            },
+            {
+                "eventType": "EventFlag.Season11.Fortnitemares.Quests.Phase2",
+                "activeUntil": "9999-01-01T00:00:00.000Z",
+                "activeSince": "2020-01-01T00:00:00.000Z" 
+            },
+            {
+                "eventType": "EventFlag.Season11.Fortnitemares.Quests.Phase3",
+                "activeUntil": "9999-01-01T00:00:00.000Z",
+                "activeSince": "2020-01-01T00:00:00.000Z" 
+            },
+            {
+                "eventType": "EventFlag.Season11.Fortnitemares.Quests.Phase4",
+                "activeUntil": "9999-01-01T00:00:00.000Z",
+                "activeSince": "2020-01-01T00:00:00.000Z" 
+            },
+            {
+                "eventType": "EventFlag.StormKing.Landmark",
+                "activeUntil": "9999-01-01T00:00:00.000Z",
+                "activeSince": "2020-01-01T00:00:00.000Z" 
+            })
+        }
+        else {
+            activeEvents.push(
+            {
+                "eventType": "EventFlag.HolidayDeco",
+                "activeUntil": "9999-01-01T00:00:00.000Z",
+                "activeSince": "2020-01-01T00:00:00.000Z"
+            },
+            {
+                "eventType": "EventFlag.Season11.WinterFest.Quests.Phase1",
+                "activeUntil": "9999-01-01T00:00:00.000Z",
+                "activeSince": "2020-01-01T00:00:00.000Z"
+            },
+            {
+                "eventType": "EventFlag.Season11.WinterFest.Quests.Phase2",
+                "activeUntil": "9999-01-01T00:00:00.000Z",
+                "activeSince": "2020-01-01T00:00:00.000Z"
+            },
+            {
+                "eventType": "EventFlag.Season11.WinterFest.Quests.Phase3",
+                "activeUntil": "9999-01-01T00:00:00.000Z",
+                "activeSince": "2020-01-01T00:00:00.000Z"
+            },
+            {
+                "eventType": "EventFlag.Season11.Frostnite",
+                "activeUntil": "9999-01-01T00:00:00.000Z",
+                "activeSince": "2020-01-01T00:00:00.000Z"
+            })
+        }
+
+        // Credits to Silas for these BR Winterfest event flags and credits to uni for testing on 11.31
+        if (seasondata.build == 11.31 || seasondata.build == 11.40) {
+            activeEvents.push(
+            {
+                "eventType": "EventFlag.Winterfest.Tree",
+                "activeUntil": "9999-01-01T00:00:00.000Z",
+                "activeSince": "2020-01-01T00:00:00.000Z"
+            },
+            {
+                "eventType": "EventFlag.LTE_WinterFest",
+                "activeUntil": "9999-01-01T00:00:00.000Z",
+                "activeSince": "2020-01-01T00:00:00.000Z"
+            },
+            {
+                "eventType": "EventFlag.LTE_WinterFest2019",
+                "activeUntil": "9999-01-01T00:00:00.000Z",
+                "activeSince": "2020-01-01T00:00:00.000Z"
+            })
+        }
+    }
+
+    if (seasondata.season == 12) {
+        activeEvents.push(
         {
-            "eventType": "EventFlag.HolidayDeco",
+            "eventType": "EventFlag.LTE_SpyGames",
             "activeUntil": "9999-01-01T00:00:00.000Z",
             "activeSince": "2020-01-01T00:00:00.000Z"
         },
         {
-            "eventType": "EventFlag.Season11.Frostnite",
+            "eventType": "EventFlag.LTE_JerkyChallenges",
             "activeUntil": "9999-01-01T00:00:00.000Z",
             "activeSince": "2020-01-01T00:00:00.000Z"
         },
         {
-            "eventType": "EventFlag.Season11.WinterFest.Quests.Phase1",
+            "eventType": "EventFlag.LTE_Oro",
             "activeUntil": "9999-01-01T00:00:00.000Z",
             "activeSince": "2020-01-01T00:00:00.000Z"
         },
         {
-            "eventType": "EventFlag.Season11.WinterFest.Quests.Phase2",
+            "eventType": "EventFlag.LTE_StormTheAgency",
+            "activeUntil": "9999-01-01T00:00:00.000Z",
+            "activeSince": "2020-01-01T00:00:00.000Z"
+        })
+    }
+
+    if (seasondata.season == 14) {
+        activeEvents.push(
+        {
+            "eventType": "EventFlag.LTE_Fortnitemares_2020",
+            "activeUntil": "9999-01-01T00:00:00.000Z",
+            "activeSince": "2020-01-01T00:00:00.000Z"
+        })
+    }
+
+    if (seasondata.season == 15) {
+        activeEvents.push(
+        {
+            "eventType": "EventFlag.LTQ_S15_Legendary_Week_01",
+            "activeUntil": "9999-01-01T00:00:00.000Z",
+            "activeSince": "2020-01-01T00:00:00.000Z"
+        },
+        {
+            "eventType": "EventFlag.LTQ_S15_Legendary_Week_02",
+            "activeUntil": "9999-01-01T00:00:00.000Z",
+            "activeSince": "2020-01-01T00:00:00.000Z"
+        },
+        {
+            "eventType": "EventFlag.LTQ_S15_Legendary_Week_03",
+            "activeUntil": "9999-01-01T00:00:00.000Z",
+            "activeSince": "2020-01-01T00:00:00.000Z"
+        },
+        {
+            "eventType": "EventFlag.LTQ_S15_Legendary_Week_04",
+            "activeUntil": "9999-01-01T00:00:00.000Z",
+            "activeSince": "2020-01-01T00:00:00.000Z"
+        },
+        {
+            "eventType": "EventFlag.LTQ_S15_Legendary_Week_05",
+            "activeUntil": "9999-01-01T00:00:00.000Z",
+            "activeSince": "2020-01-01T00:00:00.000Z"
+        },
+        {
+            "eventType": "EventFlag.LTQ_S15_Legendary_Week_06",
+            "activeUntil": "9999-01-01T00:00:00.000Z",
+            "activeSince": "2020-01-01T00:00:00.000Z"
+        },
+        {
+            "eventType": "EventFlag.LTQ_S15_Legendary_Week_07",
+            "activeUntil": "9999-01-01T00:00:00.000Z",
+            "activeSince": "2020-01-01T00:00:00.000Z"
+        },
+        {
+            "eventType": "EventFlag.LTQ_S15_Legendary_Week_08",
+            "activeUntil": "9999-01-01T00:00:00.000Z",
+            "activeSince": "2020-01-01T00:00:00.000Z"
+        },
+        {
+            "eventType": "EventFlag.LTQ_S15_Legendary_Week_09",
+            "activeUntil": "9999-01-01T00:00:00.000Z",
+            "activeSince": "2020-01-01T00:00:00.000Z"
+        },
+        {
+            "eventType": "EventFlag.LTQ_S15_Legendary_Week_10",
+            "activeUntil": "9999-01-01T00:00:00.000Z",
+            "activeSince": "2020-01-01T00:00:00.000Z"
+        },
+        {
+            "eventType": "EventFlag.LTQ_S15_Legendary_Week_11",
+            "activeUntil": "9999-01-01T00:00:00.000Z",
+            "activeSince": "2020-01-01T00:00:00.000Z"
+        },
+        {
+            "eventType": "EventFlag.LTQ_S15_Legendary_Week_12",
+            "activeUntil": "9999-01-01T00:00:00.000Z",
+            "activeSince": "2020-01-01T00:00:00.000Z"
+        },
+        {
+            "eventType": "EventFlag.LTQ_S15_Legendary_Week_13",
+            "activeUntil": "9999-01-01T00:00:00.000Z",
+            "activeSince": "2020-01-01T00:00:00.000Z"
+        },
+        {
+            "eventType": "EventFlag.LTQ_S15_Legendary_Week_14",
+            "activeUntil": "9999-01-01T00:00:00.000Z",
+            "activeSince": "2020-01-01T00:00:00.000Z"
+        },
+        {
+            "eventType": "EventFlag.LTQ_S15_Legendary_Week_15",
+            "activeUntil": "9999-01-01T00:00:00.000Z",
+            "activeSince": "2020-01-01T00:00:00.000Z"
+        },
+        {
+            "eventType": "EventFlag.Event_HiddenRole",
+            "activeUntil": "9999-01-01T00:00:00.000Z",
+            "activeSince": "2020-01-01T00:00:00.000Z"
+        },
+        {
+            "eventType": "EventFlag.Event_OperationSnowdown",
+            "activeUntil": "9999-01-01T00:00:00.000Z",
+            "activeSince": "2020-01-01T00:00:00.000Z"
+        },
+        {
+            "eventType": "EventFlag.Event_PlumRetro",
             "activeUntil": "9999-01-01T00:00:00.000Z",
             "activeSince": "2020-01-01T00:00:00.000Z"
         })
@@ -1701,7 +1991,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/SetPinnedQuests", async (re
 // Replace Daily Quests
 express.post("/fortnite/api/game/v2/profile/*/client/FortRerollDailyQuest", async (req, res) => {
     const profile = require(`./profiles/${req.query.profileId || "athena"}.json`);
-    var QuestIDS = JSON.parse(JSON.stringify(require("./responses/quests.json")));
+    var DailyQuestIDS = JSON.parse(JSON.stringify(require("./responses/quests.json")));
 
     // do not change any of these or you will end up breaking it
     var ApplyProfileChanges = [];
@@ -1711,19 +2001,19 @@ express.post("/fortnite/api/game/v2/profile/*/client/FortRerollDailyQuest", asyn
     var StatChanged = false;
 
     if (req.query.profileId == "profile0" || req.query.profileId == "campaign") {
-        QuestIDS = QuestIDS.SaveTheWorld
+        DailyQuestIDS = DailyQuestIDS.SaveTheWorld.Daily
     }
 
     if (req.query.profileId == "athena") {
-        QuestIDS = QuestIDS.BattleRoyale
+        DailyQuestIDS = DailyQuestIDS.BattleRoyale.Daily
     }
 
     const NewQuestID = makeid();
-    var randomNumber = Math.floor(Math.random() * QuestIDS.length);
+    var randomNumber = Math.floor(Math.random() * DailyQuestIDS.length);
 
     for (var key in profile.items) {
-        while (QuestIDS[randomNumber].templateId.toLowerCase() == profile.items[key].templateId.toLowerCase()) {
-            randomNumber = Math.floor(Math.random() * QuestIDS.length);
+        while (DailyQuestIDS[randomNumber].templateId.toLowerCase() == profile.items[key].templateId.toLowerCase()) {
+            randomNumber = Math.floor(Math.random() * DailyQuestIDS.length);
         }
     }
 
@@ -1733,7 +2023,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/FortRerollDailyQuest", asyn
         delete profile.items[req.body.questId];
 
         profile.items[NewQuestID] = {
-            "templateId": QuestIDS[randomNumber].templateId,
+            "templateId": DailyQuestIDS[randomNumber].templateId,
             "attributes": {
                 "creation_time": new Date().toISOString(),
                 "level": -1,
@@ -1756,8 +2046,8 @@ express.post("/fortnite/api/game/v2/profile/*/client/FortRerollDailyQuest", asyn
             "quantity": 1
         };
 
-        for (var i in QuestIDS[randomNumber].objectives) {
-            profile.items[NewQuestID].attributes[`completion_${QuestIDS[randomNumber].objectives[i]}`] = 0
+        for (var i in DailyQuestIDS[randomNumber].objectives) {
+            profile.items[NewQuestID].attributes[`completion_${DailyQuestIDS[randomNumber].objectives[i]}`] = 0
         }
 
         StatChanged = true;
@@ -1787,7 +2077,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/FortRerollDailyQuest", asyn
         Notifications.push({
             "type": "dailyQuestReroll",
             "primary": true,
-            "newQuestId": QuestIDS[randomNumber].templateId
+            "newQuestId": DailyQuestIDS[randomNumber].templateId
         })
 
         fs.writeFileSync(`./profiles/${req.query.profileId || "athena"}.json`, JSON.stringify(profile, null, 2));
@@ -1872,6 +2162,9 @@ express.post("/fortnite/api/game/v2/profile/*/client/MarkNewQuestNotificationSen
 express.post("/fortnite/api/game/v2/profile/*/client/ClientQuestLogin", async (req, res) => {
     const profile = require(`./profiles/${req.query.profileId || "athena"}.json`);
     var QuestIDS = JSON.parse(JSON.stringify(require("./responses/quests.json")));
+    const seasondata = require("./memory.json");
+    const seasonchecker = require("./seasonchecker.js");
+    seasonchecker(req, seasondata);
 
     // do not change any of these or you will end up breaking it
     var ApplyProfileChanges = [];
@@ -1882,10 +2175,12 @@ express.post("/fortnite/api/game/v2/profile/*/client/ClientQuestLogin", async (r
     var QuestCount = 0;
     var ShouldGiveQuest = true;
     var DateFormat = (new Date().toISOString()).split("T")[0];
+    var DailyQuestIDS;
+    var SeasonQuestIDS;
 
     try {
         if (req.query.profileId == "profile0" || req.query.profileId == "campaign") {
-            QuestIDS = QuestIDS.SaveTheWorld
+            DailyQuestIDS = QuestIDS.SaveTheWorld.Daily
 
             for (var key in profile.items) {
                 if (profile.items[key].templateId.toLowerCase().startsWith("quest:daily")) {
@@ -1895,11 +2190,24 @@ express.post("/fortnite/api/game/v2/profile/*/client/ClientQuestLogin", async (r
         }
 
         if (req.query.profileId == "athena") {
-            QuestIDS = QuestIDS.BattleRoyale
+            DailyQuestIDS = QuestIDS.BattleRoyale.Daily
+            if (QuestIDS.BattleRoyale.hasOwnProperty(`Season${seasondata.season}`)) {
+                SeasonQuestIDS = QuestIDS.BattleRoyale[`Season${seasondata.season}`]
+            }
 
             for (var key in profile.items) {
                 if (profile.items[key].templateId.toLowerCase().startsWith("quest:athenadaily")) {
                     QuestCount += 1;
+                }
+                if (key.split("")[0] == "S" && (Number.isInteger(Number(key.split("")[1]))) && (key.split("")[2] == "-" || (Number.isInteger(Number(key.split("")[2])) && key.split("")[3] == "-"))) {
+                    if (!key.startsWith(`S${seasondata.season}-`)) {
+                        delete profile.items[key];
+                        ApplyProfileChanges.push({
+                            "changeType": "itemRemoved",
+                            "itemId": key
+                        })
+                        StatChanged = true;
+                    }
                 }
             }
         }
@@ -1923,16 +2231,16 @@ express.post("/fortnite/api/game/v2/profile/*/client/ClientQuestLogin", async (r
 
         if (QuestCount < 3 && ShouldGiveQuest == true) {
             const NewQuestID = makeid();
-            var randomNumber = Math.floor(Math.random() * QuestIDS.length);
+            var randomNumber = Math.floor(Math.random() * DailyQuestIDS.length);
 
             for (var key in profile.items) {
-                while (QuestIDS[randomNumber].templateId.toLowerCase() == profile.items[key].templateId.toLowerCase()) {
-                    randomNumber = Math.floor(Math.random() * QuestIDS.length);
+                while (DailyQuestIDS[randomNumber].templateId.toLowerCase() == profile.items[key].templateId.toLowerCase()) {
+                    randomNumber = Math.floor(Math.random() * DailyQuestIDS.length);
                 }
             }
 
             profile.items[NewQuestID] = {
-                "templateId": QuestIDS[randomNumber].templateId,
+                "templateId": DailyQuestIDS[randomNumber].templateId,
                 "attributes": {
                     "creation_time": new Date().toISOString(),
                     "level": -1,
@@ -1955,8 +2263,8 @@ express.post("/fortnite/api/game/v2/profile/*/client/ClientQuestLogin", async (r
                 "quantity": 1
             };
 
-            for (var i in QuestIDS[randomNumber].objectives) {
-                profile.items[NewQuestID].attributes[`completion_${QuestIDS[randomNumber].objectives[i]}`] = 0
+            for (var i in DailyQuestIDS[randomNumber].objectives) {
+                profile.items[NewQuestID].attributes[`completion_${DailyQuestIDS[randomNumber].objectives[i]}`] = 0
             }
 
             profile.stats.attributes.quest_manager.dailyLoginInterval = new Date().toISOString();
@@ -1976,6 +2284,127 @@ express.post("/fortnite/api/game/v2/profile/*/client/ClientQuestLogin", async (r
             StatChanged = true;
         }
     } catch (err) {}
+
+    if (SeasonQuestIDS) {
+        for (var ChallengeBundleSchedule in SeasonQuestIDS.ChallengeBundleSchedules) {
+            if (profile.items.hasOwnProperty(ChallengeBundleSchedule.itemGuid)) {
+                ApplyProfileChanges.push({
+                    "changeType": "itemRemoved",
+                    "itemId": ChallengeBundleSchedule.itemGuid
+                })
+            }
+            ChallengeBundleSchedule = SeasonQuestIDS.ChallengeBundleSchedules[ChallengeBundleSchedule];
+            profile.items[ChallengeBundleSchedule.itemGuid] = {
+                "templateId": ChallengeBundleSchedule.templateId,
+                "attributes": {
+                    "unlock_epoch": "2018-01-31T00:00:00.000Z",
+                    "max_level_bonus": 0,
+                    "level": 1,
+                    "item_seen": true,
+                    "xp": 0,
+                    "favorite": false,
+                    "granted_bundles": ChallengeBundleSchedule.granted_bundles
+                },
+                "quantity": 1
+            };
+            ApplyProfileChanges.push({
+                "changeType": "itemAdded",
+                "itemId": ChallengeBundleSchedule.itemGuid,
+                "item": profile.items[ChallengeBundleSchedule.itemGuid]
+            })
+            StatChanged = true;
+        }
+        for (var ChallengeBundle in SeasonQuestIDS.ChallengeBundles) {
+            if (profile.items.hasOwnProperty(ChallengeBundle.itemGuid)) {
+                ApplyProfileChanges.push({
+                    "changeType": "itemRemoved",
+                    "itemId": ChallengeBundle.itemGuid
+                })
+            }
+            ChallengeBundle = SeasonQuestIDS.ChallengeBundles[ChallengeBundle];
+            if (config.Profile.bCompletedSeasonalQuests == true && ChallengeBundle.hasOwnProperty("questStages")) {
+                ChallengeBundle.grantedquestinstanceids = ChallengeBundle.grantedquestinstanceids.concat(ChallengeBundle.questStages);
+            }
+            profile.items[ChallengeBundle.itemGuid] = {
+                "templateId": ChallengeBundle.templateId,
+                "attributes": {
+                    "has_unlock_by_completion": false,
+                    "num_quests_completed": 0,
+                    "level": 0,
+                    "grantedquestinstanceids": ChallengeBundle.grantedquestinstanceids,
+                    "item_seen": true,
+                    "max_allowed_bundle_level": 0,
+                    "num_granted_bundle_quests": 0,
+                    "max_level_bonus": 0,
+                    "challenge_bundle_schedule_id": ChallengeBundle.challenge_bundle_schedule_id,
+                    "num_progress_quests_completed": 0,
+                    "xp": 0,
+                    "favorite": false
+                },
+                "quantity": 1
+            };
+            profile.items[ChallengeBundle.itemGuid].attributes.num_granted_bundle_quests = ChallengeBundle.grantedquestinstanceids.length;
+            if (config.Profile.bCompletedSeasonalQuests == true) {
+                profile.items[ChallengeBundle.itemGuid].attributes.num_quests_completed = ChallengeBundle.grantedquestinstanceids.length;
+                profile.items[ChallengeBundle.itemGuid].attributes.num_progress_quests_completed = ChallengeBundle.grantedquestinstanceids.length;
+            }
+            ApplyProfileChanges.push({
+                "changeType": "itemAdded",
+                "itemId": ChallengeBundle.itemGuid,
+                "item": profile.items[ChallengeBundle.itemGuid]
+            })
+            StatChanged = true;
+        }
+        for (var Quest in SeasonQuestIDS.Quests) {
+            if (profile.items.hasOwnProperty(Quest.itemGuid)) {
+                ApplyProfileChanges.push({
+                    "changeType": "itemRemoved",
+                    "itemId": Quest.itemGuid
+                })
+            }
+            Quest = SeasonQuestIDS.Quests[Quest];
+            profile.items[Quest.itemGuid] = {
+                "templateId": Quest.templateId,
+                "attributes": {
+                    "creation_time": "2018-01-31T00:00:00.000Z",
+                    "level": -1,
+                    "item_seen": true,
+                    "playlists": [],
+                    "sent_new_notification": true,
+                    "challenge_bundle_id": Quest.challenge_bundle_id,
+                    "xp_reward_scalar": 1,
+                    "challenge_linked_quest_given": "",
+                    "quest_pool": "",
+                    "quest_state": "Active",
+                    "bucket": "",
+                    "last_state_change_time": "2018-01-31T00:00:00.000Z",
+                    "challenge_linked_quest_parent": "",
+                    "max_level_bonus": 0,
+                    "xp": 0,
+                    "quest_rarity": "uncommon",
+                    "favorite": false
+                },
+                "quantity": 1
+            };
+            if (config.Profile.bCompletedSeasonalQuests == true) {
+                profile.items[Quest.itemGuid].attributes.quest_state = "Claimed";
+            }
+            for (var i in Quest.objectives) {
+                if (config.Profile.bCompletedSeasonalQuests == true) {
+                    profile.items[Quest.itemGuid].attributes[`completion_${Quest.objectives[i].name}`] = Quest.objectives[i].count;
+                }
+                else {
+                    profile.items[Quest.itemGuid].attributes[`completion_${Quest.objectives[i].name}`] = 0;
+                }
+            }
+            ApplyProfileChanges.push({
+                "changeType": "itemAdded",
+                "itemId": Quest.itemGuid,
+                "item": profile.items[Quest.itemGuid]
+            })
+            StatChanged = true;
+        }
+    }
 
     if (StatChanged == true) {
         profile.rvn += 1;
