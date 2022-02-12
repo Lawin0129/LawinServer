@@ -5551,6 +5551,101 @@ express.post("/fortnite/api/game/v2/profile/*/client/OpenCardPack", async (req, 
     res.end();
 });
 
+// Add items to StW X-Ray Llamas
+express.post("/fortnite/api/game/v2/profile/*/client/PopulatePrerolledOffers", async (req, res) => {
+    const profile = require(`./profiles/${req.query.profileId || "campaign"}.json`);
+    const ItemIDS = require("./responses/ItemIDS.json");
+
+    // do not change any of these or you will end up breaking it
+    var ApplyProfileChanges = [];
+    var Notifications = [];
+    var BaseRevision = profile.rvn || 0;
+    var QueryRevision = req.query.rvn || -1;
+    var StatChanged = false;
+    var PrerollInProfile = false;
+
+    var date = new Date().toISOString();
+
+    for (var item in profile.items) {
+        if (profile.items[item].templateId.toLowerCase() == "prerolldata:preroll_basic") {
+            if (date > profile.items[item].attributes.expiration) {
+                delete profile.items[item]
+
+                ApplyProfileChanges.push({
+                    "changeType": "itemRemoved",
+                    "itemId": item
+                })
+                StatChanged = true;
+            }
+        }
+    }
+
+    for (var storefront in catalog.storefronts) {
+        if (catalog.storefronts[storefront].name.toLowerCase() == "cardpackstorepreroll") {
+            for (var item in catalog.storefronts[storefront].catalogEntries) {
+                PrerollInProfile = false;
+                for (var key in profile.items) {
+                    if (profile.items[key].templateId.toLowerCase() == "prerolldata:preroll_basic") {
+                        if (profile.items[key].attributes.offerId == catalog.storefronts[storefront].catalogEntries[item].offerId) {
+                            PrerollInProfile = true;
+                        }
+                    }
+                }
+                if (PrerollInProfile == false) {
+                    const ID = makeid();
+                    var llamaRarity = Math.floor(Math.random() * 3);
+                    if (llamaRarity == 3) {
+                        llamaRarity = 0;
+                    }
+
+                    var Item = {"templateId":"PrerollData:preroll_basic","attributes":{"linked_offer":"","fulfillmentId":`OfferId:${catalog.storefronts[storefront].catalogEntries[item].offerId}`,"expended_streakbreakers":{},"level":1,"item_seen":false,"max_level_bonus":0,"highest_rarity":llamaRarity,"xp":0,"offerId":catalog.storefronts[storefront].catalogEntries[item].offerId,"expiration":new Date().toISOString().split("T")[0] + "T23:59:59.999Z","items":[],"favorite":false},"quantity":1};
+
+                    for (var i = 0; i < 10; i++) {
+                        const randomNumber = Math.floor(Math.random() * ItemIDS.length);
+                        Item.attributes.items.push({"itemType":ItemIDS[randomNumber],"attributes":{"legacy_alterations":[],"max_level_bonus":0,"level":1,"refund_legacy_item":false,"item_seen":false,"alterations":["","","","","",""],"xp":0,"refundable":true,"alteration_base_rarities":[],"favorite":false},"quantity":1})
+                    }
+
+                    profile.items[ID] = Item
+
+                    ApplyProfileChanges.push({
+                        "changeType": "itemAdded",
+                        "itemId": ID,
+                        "item": Item
+                    })
+                    StatChanged = true;
+                }
+            }
+        }
+    }
+
+    if (StatChanged == true) {
+        profile.rvn += 1;
+        profile.commandRevision += 1;
+
+        fs.writeFileSync(`./profiles/${req.query.profileId || "campaign"}.json`, JSON.stringify(profile, null, 2));
+    }
+
+    // this doesn't work properly on version v12.20 and above but whatever
+    if (QueryRevision != BaseRevision) {
+        ApplyProfileChanges = [{
+            "changeType": "fullProfileUpdate",
+            "profile": profile
+        }];
+    }
+
+    res.json({
+        "profileRevision": profile.rvn || 0,
+        "profileId": req.query.profileId || "campaign",
+        "profileChangesBaseRevision": BaseRevision,
+        "profileChanges": ApplyProfileChanges,
+        "notifications": Notifications,
+        "profileCommandRevision": profile.commandRevision || 0,
+        "serverTime": new Date().toISOString(),
+        "responseVersion": 1
+    })
+    res.end();
+});
+
 // Purchase item
 express.post("/fortnite/api/game/v2/profile/*/client/PurchaseCatalogEntry", async (req, res) => {
     const profile = require(`./profiles/${req.query.profileId || "profile0"}.json`);
@@ -5866,26 +5961,55 @@ express.post("/fortnite/api/game/v2/profile/*/client/PurchaseCatalogEntry", asyn
                                     })
                                 } else {
                                     for (var x = 0; x < Quantity; x++) {
-                                        for (var i = 0; i < 10; i++) {
-                                            const randomNumber = Math.floor(Math.random() * ItemIDS.length);
-                                            const id = makeid();
-                                            var Item = {"templateId":ItemIDS[randomNumber],"attributes":{"legacy_alterations":[],"max_level_bonus":0,"level":1,"refund_legacy_item":false,"item_seen":false,"alterations":["","","","","",""],"xp":0,"refundable":true,"alteration_base_rarities":[],"favorite":false},"quantity":1};
-    
-                                            campaign.items[id] = Item;
+                                        for (var key in campaign.items) {
+                                            if (campaign.items[key].templateId.toLowerCase() == "prerolldata:preroll_basic") {
+                                                if (campaign.items[key].attributes.offerId == req.body.offerId) {
+                                                    for (var item in campaign.items[key].attributes.items) {
+                                                        const id = makeid();
+                                                        var Item = {"templateId":campaign.items[key].attributes.items[item].itemType,"attributes":campaign.items[key].attributes.items[item].attributes,"quantity":campaign.items[key].attributes.items[item].quantity};
+                
+                                                        campaign.items[id] = Item;
 
-                                            MultiUpdate[0].profileChanges.push({
-                                                "changeType": "itemAdded",
-                                                "itemId": id,
-                                                "item": Item
-                                            })
+                                                        MultiUpdate[0].profileChanges.push({
+                                                            "changeType": "itemAdded",
+                                                            "itemId": id,
+                                                            "item": Item
+                                                        })
 
-                                            Notifications[0].lootResult.items.push({
-                                                "itemType": ItemIDS[randomNumber],
-                                                "itemGuid": id,
-                                                "itemProfile": "campaign",
-                                                "attributes": Item.attributes,
-                                                "quantity": 1
-                                            })
+                                                        Notifications[0].lootResult.items.push({
+                                                            "itemType": campaign.items[key].attributes.items[item].itemType,
+                                                            "itemGuid": id,
+                                                            "itemProfile": "campaign",
+                                                            "attributes": Item.attributes,
+                                                            "quantity": 1
+                                                        })
+                                                    }
+                                                    campaign.items[key].attributes.items = [];
+                                                    for (var i = 0; i < 10; i++) {
+                                                        const randomNumber = Math.floor(Math.random() * ItemIDS.length);
+                                                        campaign.items[key].attributes.items.push({"itemType":ItemIDS[randomNumber],"attributes":{"legacy_alterations":[],"max_level_bonus":0,"level":1,"refund_legacy_item":false,"item_seen":false,"alterations":["","","","","",""],"xp":0,"refundable":true,"alteration_base_rarities":[],"favorite":false},"quantity":1})
+                                                    }
+                                                    MultiUpdate[0].profileChanges.push({
+                                                        "changeType": "itemAttrChanged",
+                                                        "itemId": key,
+                                                        "attributeName": "items",
+                                                        "attributeValue": campaign.items[key].attributes.items
+                                                    })
+                                                    var llamaRarity = Math.floor(Math.random() * 3);
+                                                    if (llamaRarity == 3) {
+                                                        llamaRarity = 0;
+                                                    }
+                                                    if (campaign.items[key].attributes.highest_rarity != llamaRarity) {
+                                                        campaign.items[key].attributes.highest_rarity = llamaRarity;
+                                                        MultiUpdate[0].profileChanges.push({
+                                                            "changeType": "itemAttrChanged",
+                                                            "itemId": key,
+                                                            "attributeName": "highest_rarity",
+                                                            "attributeValue": campaign.items[key].attributes.highest_rarity
+                                                        })
+                                                    }
+                                                }
+                                            }
                                         }
                                     }
                                 }
