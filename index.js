@@ -5566,54 +5566,31 @@ express.post("/fortnite/api/game/v2/profile/*/client/PopulatePrerolledOffers", a
 
     var date = new Date().toISOString();
 
-    for (var item in profile.items) {
-        if (profile.items[item].templateId.toLowerCase() == "prerolldata:preroll_basic") {
-            if (date > profile.items[item].attributes.expiration) {
-                delete profile.items[item]
+    for (var key in profile.items) {
+        if (profile.items[key].templateId.toLowerCase() == "prerolldata:preroll_basic") {
+            if (date > profile.items[key].attributes.expiration) {
+                profile.items[key].attributes.items = [];
+                for (var i = 0; i < 10; i++) {
+                    const randomNumber = Math.floor(Math.random() * ItemIDS.length);
+                    profile.items[key].attributes.items.push({"itemType":ItemIDS[randomNumber],"attributes":{"legacy_alterations":[],"max_level_bonus":0,"level":1,"refund_legacy_item":false,"item_seen":false,"alterations":["","","","","",""],"xp":0,"refundable":true,"alteration_base_rarities":[],"favorite":false},"quantity":1})
+                }
 
                 ApplyProfileChanges.push({
-                    "changeType": "itemRemoved",
-                    "itemId": item
+                    "changeType": "itemAttrChanged",
+                    "itemId": key,
+                    "attributeName": "items",
+                    "attributeValue": profile.items[key].attributes.items
+                })
+
+                profile.items[key].attributes.expiration = new Date().toISOString().split("T")[0] + "T23:59:59.999Z";
+
+                ApplyProfileChanges.push({
+                    "changeType": "itemAttrChanged",
+                    "itemId": key,
+                    "attributeName": "expiration",
+                    "attributeValue": profile.items[key].attributes.expiration
                 })
                 StatChanged = true;
-            }
-        }
-    }
-
-    for (var storefront in catalog.storefronts) {
-        if (catalog.storefronts[storefront].name.toLowerCase() == "cardpackstorepreroll") {
-            for (var item in catalog.storefronts[storefront].catalogEntries) {
-                PrerollInProfile = false;
-                for (var key in profile.items) {
-                    if (profile.items[key].templateId.toLowerCase() == "prerolldata:preroll_basic") {
-                        if (profile.items[key].attributes.offerId == catalog.storefronts[storefront].catalogEntries[item].offerId) {
-                            PrerollInProfile = true;
-                        }
-                    }
-                }
-                if (PrerollInProfile == false) {
-                    const ID = makeid();
-                    var llamaRarity = Math.floor(Math.random() * 3);
-                    if (llamaRarity == 3) {
-                        llamaRarity = 0;
-                    }
-
-                    var Item = {"templateId":"PrerollData:preroll_basic","attributes":{"linked_offer":"","fulfillmentId":`OfferId:${catalog.storefronts[storefront].catalogEntries[item].offerId}`,"expended_streakbreakers":{},"level":1,"item_seen":false,"max_level_bonus":0,"highest_rarity":llamaRarity,"xp":0,"offerId":catalog.storefronts[storefront].catalogEntries[item].offerId,"expiration":new Date().toISOString().split("T")[0] + "T23:59:59.999Z","items":[],"favorite":false},"quantity":1};
-
-                    for (var i = 0; i < 10; i++) {
-                        const randomNumber = Math.floor(Math.random() * ItemIDS.length);
-                        Item.attributes.items.push({"itemType":ItemIDS[randomNumber],"attributes":{"legacy_alterations":[],"max_level_bonus":0,"level":1,"refund_legacy_item":false,"item_seen":false,"alterations":["","","","","",""],"xp":0,"refundable":true,"alteration_base_rarities":[],"favorite":false},"quantity":1})
-                    }
-
-                    profile.items[ID] = Item
-
-                    ApplyProfileChanges.push({
-                        "changeType": "itemAdded",
-                        "itemId": ID,
-                        "item": Item
-                    })
-                    StatChanged = true;
-                }
             }
         }
     }
@@ -5995,19 +5972,6 @@ express.post("/fortnite/api/game/v2/profile/*/client/PurchaseCatalogEntry", asyn
                                                         "attributeName": "items",
                                                         "attributeValue": campaign.items[key].attributes.items
                                                     })
-                                                    var llamaRarity = Math.floor(Math.random() * 3);
-                                                    if (llamaRarity == 3) {
-                                                        llamaRarity = 0;
-                                                    }
-                                                    if (campaign.items[key].attributes.highest_rarity != llamaRarity) {
-                                                        campaign.items[key].attributes.highest_rarity = llamaRarity;
-                                                        MultiUpdate[0].profileChanges.push({
-                                                            "changeType": "itemAttrChanged",
-                                                            "itemId": key,
-                                                            "attributeName": "highest_rarity",
-                                                            "attributeValue": campaign.items[key].attributes.highest_rarity
-                                                        })
-                                                    }
                                                 }
                                             }
                                         }
