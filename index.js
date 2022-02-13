@@ -41,15 +41,12 @@ if (!fs.existsSync(path.join(process.env.LOCALAPPDATA, "LawinServer"))) {
     fs.mkdirSync(path.join(process.env.LOCALAPPDATA, "LawinServer"));
 }
 
-express.get("/", async (req, res) => {
-    res.sendFile('index.html');
-})
-
 express.get("/clearitemsforshop", async (req, res) => {
     res.set("Content-Type", "text/plain");
 
     const athena = require("./profiles/athena.json");
     const CatalogConfig = require("./Config/catalog_config.json");
+    var StatChanged = false;
 
     for (var value in CatalogConfig) {
         for (var key in athena.items) {
@@ -57,16 +54,20 @@ express.get("/clearitemsforshop", async (req, res) => {
                 if (CatalogConfig[value].templateId.length != 0) {
                     if (CatalogConfig[value].templateId.toLowerCase() == athena.items[key].templateId.toLowerCase()) {
                         delete athena.items[key]
+
+                        StatChanged = true;
                     }
                 }
             }
         }
     }
 
-    athena.rvn += 1;
-    athena.commandRevision += 1;
+    if (StatChanged == true) {
+        athena.rvn += 1;
+        athena.commandRevision += 1;
 
-    fs.writeFileSync("./profiles/athena.json", JSON.stringify(athena, null, 2));
+        fs.writeFileSync("./profiles/athena.json", JSON.stringify(athena, null, 2));
+    }
 
     res.send('Success')
 })
@@ -1205,6 +1206,7 @@ express.get("/fortnite/api/calendar/v1/timeline", async (req, res) => {
             "activeUntil": "9999-01-01T00:00:00.000Z",
             "activeSince": "2020-01-01T00:00:00.000Z"
         })
+
         if (Number(seasondata.build.toString().split(".")[1].split("")[0]) >= 2) {
             activeEvents.push(
             {
@@ -1213,6 +1215,7 @@ express.get("/fortnite/api/calendar/v1/timeline", async (req, res) => {
                 "activeSince": "2020-01-01T00:00:00.000Z" 
             })
         }
+
         if (Number(seasondata.build.toString().split(".")[1].split("")[0]) < 3) {
             activeEvents.push(
             {
@@ -1240,8 +1243,7 @@ express.get("/fortnite/api/calendar/v1/timeline", async (req, res) => {
                 "activeUntil": "9999-01-01T00:00:00.000Z",
                 "activeSince": "2020-01-01T00:00:00.000Z" 
             })
-        }
-        else {
+        } else {
             activeEvents.push(
             {
                 "eventType": "EventFlag.HolidayDeco",
@@ -1270,7 +1272,7 @@ express.get("/fortnite/api/calendar/v1/timeline", async (req, res) => {
             })
         }
 
-        // Credits to Silas for these BR Winterfest event flags and credits to uni for testing on 11.31
+        // Credits to Silas for these BR Winterfest event flags
         if (seasondata.build == 11.31 || seasondata.build == 11.40) {
             activeEvents.push(
             {
@@ -1692,7 +1694,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/PurchaseHomebaseNode", asyn
     var ApplyProfileChanges = [];
     var BaseRevision = profile.rvn || 0;
     var QueryRevision = req.query.rvn || -1;
-    var ItemAdded = false;
+    var StatChanged = false;
 
     const ID = makeid();
 
@@ -1703,11 +1705,12 @@ express.post("/fortnite/api/game/v2/profile/*/client/PurchaseHomebaseNode", asyn
                 "item_seen": true
             },
             "quantity": 1
-        };
-        ItemAdded = true;
+        }
+
+        StatChanged = true;
     }
 
-    if (ItemAdded == true) {
+    if (StatChanged == true) {
         profile.rvn += 1;
         profile.commandRevision += 1;
 
@@ -2191,6 +2194,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/ClientQuestLogin", async (r
 
         if (req.query.profileId == "athena") {
             DailyQuestIDS = QuestIDS.BattleRoyale.Daily
+
             if (QuestIDS.BattleRoyale.hasOwnProperty(`Season${seasondata.season}`)) {
                 SeasonQuestIDS = QuestIDS.BattleRoyale[`Season${seasondata.season}`]
             }
@@ -2199,13 +2203,16 @@ express.post("/fortnite/api/game/v2/profile/*/client/ClientQuestLogin", async (r
                 if (profile.items[key].templateId.toLowerCase().startsWith("quest:athenadaily")) {
                     QuestCount += 1;
                 }
+
                 if (key.split("")[0] == "S" && (Number.isInteger(Number(key.split("")[1]))) && (key.split("")[2] == "-" || (Number.isInteger(Number(key.split("")[2])) && key.split("")[3] == "-"))) {
                     if (!key.startsWith(`S${seasondata.season}-`)) {
                         delete profile.items[key];
+
                         ApplyProfileChanges.push({
                             "changeType": "itemRemoved",
                             "itemId": key
                         })
+
                         StatChanged = true;
                     }
                 }
@@ -2293,7 +2300,9 @@ express.post("/fortnite/api/game/v2/profile/*/client/ClientQuestLogin", async (r
                     "itemId": ChallengeBundleSchedule.itemGuid
                 })
             }
+
             ChallengeBundleSchedule = SeasonQuestIDS.ChallengeBundleSchedules[ChallengeBundleSchedule];
+
             profile.items[ChallengeBundleSchedule.itemGuid] = {
                 "templateId": ChallengeBundleSchedule.templateId,
                 "attributes": {
@@ -2306,14 +2315,17 @@ express.post("/fortnite/api/game/v2/profile/*/client/ClientQuestLogin", async (r
                     "granted_bundles": ChallengeBundleSchedule.granted_bundles
                 },
                 "quantity": 1
-            };
+            }
+
             ApplyProfileChanges.push({
                 "changeType": "itemAdded",
                 "itemId": ChallengeBundleSchedule.itemGuid,
                 "item": profile.items[ChallengeBundleSchedule.itemGuid]
             })
+
             StatChanged = true;
         }
+
         for (var ChallengeBundle in SeasonQuestIDS.ChallengeBundles) {
             if (profile.items.hasOwnProperty(ChallengeBundle.itemGuid)) {
                 ApplyProfileChanges.push({
@@ -2321,10 +2333,13 @@ express.post("/fortnite/api/game/v2/profile/*/client/ClientQuestLogin", async (r
                     "itemId": ChallengeBundle.itemGuid
                 })
             }
+
             ChallengeBundle = SeasonQuestIDS.ChallengeBundles[ChallengeBundle];
+
             if (config.Profile.bCompletedSeasonalQuests == true && ChallengeBundle.hasOwnProperty("questStages")) {
                 ChallengeBundle.grantedquestinstanceids = ChallengeBundle.grantedquestinstanceids.concat(ChallengeBundle.questStages);
             }
+
             profile.items[ChallengeBundle.itemGuid] = {
                 "templateId": ChallengeBundle.templateId,
                 "attributes": {
@@ -2342,19 +2357,24 @@ express.post("/fortnite/api/game/v2/profile/*/client/ClientQuestLogin", async (r
                     "favorite": false
                 },
                 "quantity": 1
-            };
+            }
+
             profile.items[ChallengeBundle.itemGuid].attributes.num_granted_bundle_quests = ChallengeBundle.grantedquestinstanceids.length;
+
             if (config.Profile.bCompletedSeasonalQuests == true) {
                 profile.items[ChallengeBundle.itemGuid].attributes.num_quests_completed = ChallengeBundle.grantedquestinstanceids.length;
                 profile.items[ChallengeBundle.itemGuid].attributes.num_progress_quests_completed = ChallengeBundle.grantedquestinstanceids.length;
             }
+
             ApplyProfileChanges.push({
                 "changeType": "itemAdded",
                 "itemId": ChallengeBundle.itemGuid,
                 "item": profile.items[ChallengeBundle.itemGuid]
             })
+
             StatChanged = true;
         }
+
         for (var Quest in SeasonQuestIDS.Quests) {
             if (profile.items.hasOwnProperty(Quest.itemGuid)) {
                 ApplyProfileChanges.push({
@@ -2362,7 +2382,9 @@ express.post("/fortnite/api/game/v2/profile/*/client/ClientQuestLogin", async (r
                     "itemId": Quest.itemGuid
                 })
             }
+
             Quest = SeasonQuestIDS.Quests[Quest];
+
             profile.items[Quest.itemGuid] = {
                 "templateId": Quest.templateId,
                 "attributes": {
@@ -2385,23 +2407,26 @@ express.post("/fortnite/api/game/v2/profile/*/client/ClientQuestLogin", async (r
                     "favorite": false
                 },
                 "quantity": 1
-            };
+            }
+
             if (config.Profile.bCompletedSeasonalQuests == true) {
                 profile.items[Quest.itemGuid].attributes.quest_state = "Claimed";
             }
+
             for (var i in Quest.objectives) {
                 if (config.Profile.bCompletedSeasonalQuests == true) {
                     profile.items[Quest.itemGuid].attributes[`completion_${Quest.objectives[i].name}`] = Quest.objectives[i].count;
-                }
-                else {
+                } else {
                     profile.items[Quest.itemGuid].attributes[`completion_${Quest.objectives[i].name}`] = 0;
                 }
             }
+
             ApplyProfileChanges.push({
                 "changeType": "itemAdded",
                 "itemId": Quest.itemGuid,
                 "item": profile.items[Quest.itemGuid]
             })
+
             StatChanged = true;
         }
     }
@@ -5482,7 +5507,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/OpenCardPack", async (req, 
         for (var i = 0; i < 10; i++) {
             const randomNumber = Math.floor(Math.random() * ItemIDS.length);
             const ID = makeid();
-            var Item = {"templateId":ItemIDS[randomNumber],"attributes":{"legacy_alterations":[],"max_level_bonus":0,"level":1,"refund_legacy_item":false,"item_seen":false,"alterations":["","","","","",""],"xp":0,"refundable":true,"alteration_base_rarities":[],"favorite":false},"quantity":1};
+            var Item = {"templateId":ItemIDS[randomNumber],"attributes":{"legacy_alterations":[],"max_level_bonus":0,"level":1,"refund_legacy_item":false,"item_seen":false,"alterations":["","","","","",""],"xp":0,"refundable":false,"alteration_base_rarities":[],"favorite":false},"quantity":1};
 
             profile.items[ID] = Item
 
@@ -5562,7 +5587,6 @@ express.post("/fortnite/api/game/v2/profile/*/client/PopulatePrerolledOffers", a
     var BaseRevision = profile.rvn || 0;
     var QueryRevision = req.query.rvn || -1;
     var StatChanged = false;
-    var PrerollInProfile = false;
 
     var date = new Date().toISOString();
 
@@ -5570,9 +5594,11 @@ express.post("/fortnite/api/game/v2/profile/*/client/PopulatePrerolledOffers", a
         if (profile.items[key].templateId.toLowerCase() == "prerolldata:preroll_basic") {
             if (date > profile.items[key].attributes.expiration) {
                 profile.items[key].attributes.items = [];
+
                 for (var i = 0; i < 10; i++) {
                     const randomNumber = Math.floor(Math.random() * ItemIDS.length);
-                    profile.items[key].attributes.items.push({"itemType":ItemIDS[randomNumber],"attributes":{"legacy_alterations":[],"max_level_bonus":0,"level":1,"refund_legacy_item":false,"item_seen":false,"alterations":["","","","","",""],"xp":0,"refundable":true,"alteration_base_rarities":[],"favorite":false},"quantity":1})
+
+                    profile.items[key].attributes.items.push({"itemType":ItemIDS[randomNumber],"attributes":{"legacy_alterations":[],"max_level_bonus":0,"level":1,"refund_legacy_item":false,"item_seen":false,"alterations":["","","","","",""],"xp":0,"refundable":false,"alteration_base_rarities":[],"favorite":false},"quantity":1})
                 }
 
                 ApplyProfileChanges.push({
@@ -5590,6 +5616,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/PopulatePrerolledOffers", a
                     "attributeName": "expiration",
                     "attributeValue": profile.items[key].attributes.expiration
                 })
+
                 StatChanged = true;
             }
         }
@@ -5961,11 +5988,15 @@ express.post("/fortnite/api/game/v2/profile/*/client/PurchaseCatalogEntry", asyn
                                                             "quantity": 1
                                                         })
                                                     }
+
                                                     campaign.items[key].attributes.items = [];
+
                                                     for (var i = 0; i < 10; i++) {
                                                         const randomNumber = Math.floor(Math.random() * ItemIDS.length);
-                                                        campaign.items[key].attributes.items.push({"itemType":ItemIDS[randomNumber],"attributes":{"legacy_alterations":[],"max_level_bonus":0,"level":1,"refund_legacy_item":false,"item_seen":false,"alterations":["","","","","",""],"xp":0,"refundable":true,"alteration_base_rarities":[],"favorite":false},"quantity":1})
+
+                                                        campaign.items[key].attributes.items.push({"itemType":ItemIDS[randomNumber],"attributes":{"legacy_alterations":[],"max_level_bonus":0,"level":1,"refund_legacy_item":false,"item_seen":false,"alterations":["","","","","",""],"xp":0,"refundable":false,"alteration_base_rarities":[],"favorite":false},"quantity":1})
                                                     }
+
                                                     MultiUpdate[0].profileChanges.push({
                                                         "changeType": "itemAttrChanged",
                                                         "itemId": key,
@@ -6937,7 +6968,7 @@ function getTheater(req) {
     var theater = JSON.stringify(require("./responses/worldstw.json"));
 
     try {
-        if (seasondata.season >= 16 || seasondata.build == 15.30 || seasondata.build == 15.40 || seasondata.build == 15.50) {
+        if (seasondata.build >= 15.30) {
             theater = theater.replace(/\/Game\//ig, "\/SaveTheWorld\/");
             theater = theater.replace(/\"DataTable\'\/SaveTheWorld\//ig, "\"DataTable\'\/Game\/");
         }
@@ -6947,22 +6978,19 @@ function getTheater(req) {
         // Set the 24-hour StW mission refresh date for version season 9 and above
         if (seasondata.season >= 9) {
             date = date.split("T")[0] + "T23:59:59.999Z";
-        }
-        else {
+        } else {
             // Set the 6-hour StW mission refresh date for versions below season 9
             if (date < (date.split("T")[0] + "T05:59:59.999Z")) {
                 date = date.split("T")[0] + "T05:59:59.999Z";
-            }
-            else if (date < (date.split("T")[0] + "T11:59:59.999Z")) {
+            } else if (date < (date.split("T")[0] + "T11:59:59.999Z")) {
                 date = date.split("T")[0] + "T11:59:59.999Z";
-            }
-            else if (date < (date.split("T")[0] + "T17:59:59.999Z")) {
+            } else if (date < (date.split("T")[0] + "T17:59:59.999Z")) {
                 date = date.split("T")[0] + "T17:59:59.999Z";
-            }
-            else if (date < (date.split("T")[0] + "T23:59:59.999Z")) {
+            } else if (date < (date.split("T")[0] + "T23:59:59.999Z")) {
                 date = date.split("T")[0] + "T23:59:59.999Z";
             }
         }
+
         theater = theater.replace(/2017-07-25T23:59:59.999Z/ig, date);
     } catch (err) {}
 
@@ -7037,5 +7065,6 @@ function makeid() {
     let RandomFloat = Math.random().toString();
     let ID = crypto.createHash('md5').update(CurrentDate + RandomFloat).digest('hex');
     let FinishedID = ID.slice(0, 8) + "-" + ID.slice(8, 12) + "-" + ID.slice(12, 16) + "-" + ID.slice(16, 20) + "-" + ID.slice(20, 32);
+
     return FinishedID;
 }
