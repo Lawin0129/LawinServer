@@ -29,7 +29,7 @@
 - Claiming Quest and Collection Book Rewards
 - Modifying quickbars in Backpack
 - Activating XP Boosts
-- Correct Events in Frontend up to Season X (Can change)
+- Correct Events in Frontend up to Season 11 (Can change)
 - Buying Skill Tree perks
 - Quests pinning
 - Switching between Hero Loadouts
@@ -53,6 +53,7 @@
 - Changing items edit styles
 - Support a Creator with specific codes
 - Fully working daily challenges system (New daily challenge every day, replacing daily challenges, etc...)
+- Seasonal Quests from Season 3 up to Season 15 (Can change)
 
 ## How to use?
 1) Install [NodeJS](https://nodejs.org/en/)
