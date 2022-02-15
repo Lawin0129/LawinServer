@@ -4032,7 +4032,6 @@ express.post("/fortnite/api/game/v2/profile/*/client/PopulatePrerolledOffers", a
 
     // do not change any of these or you will end up breaking it
     var ApplyProfileChanges = [];
-    var Notifications = [];
     var BaseRevision = profile.rvn || 0;
     var QueryRevision = req.query.rvn || -1;
     var StatChanged = false;
@@ -4091,7 +4090,6 @@ express.post("/fortnite/api/game/v2/profile/*/client/PopulatePrerolledOffers", a
         "profileId": req.query.profileId || "campaign",
         "profileChangesBaseRevision": BaseRevision,
         "profileChanges": ApplyProfileChanges,
-        "notifications": Notifications,
         "profileCommandRevision": profile.commandRevision || 0,
         "serverTime": new Date().toISOString(),
         "responseVersion": 1
