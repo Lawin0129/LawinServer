@@ -1,1 +1,0 @@
-Place all your cloudstorage files in this directory.

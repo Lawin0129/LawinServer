@@ -1,7 +1,7 @@
 {
   "_id": "LawinServer",
-  "created": "2020-01-01T11:10:13.470Z",
-  "updated": "2020-08-04T19:30:07.409Z",
+  "created": "0001-01-01T00:00:00.000Z",
+  "updated": "0001-01-01T00:00:00.000Z",
   "rvn": 0,
   "wipeNumber": 1,
   "accountId": "LawinServer",
@@ -63254,7 +63254,7 @@
           "CollectionBookPage:pagespecial_shadowops_heroes",
           "CollectionBookPage:pagespecial_wildwest_heroes"
         ],
-        "maxBookXpLevelAchieved": 100
+        "maxBookXpLevelAchieved": 0
       },
       "mfa_reward_claimed": true,
       "quest_manager": {
