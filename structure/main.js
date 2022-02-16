@@ -1,5 +1,6 @@
 const Express = require("express");
 const express = Express.Router();
+const fs = require("fs");
 const functions = require("./functions.js");
 
 express.get("/clearitemsforshop", async (req, res) => {
