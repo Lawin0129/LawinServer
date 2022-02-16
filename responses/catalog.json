@@ -661,12 +661,13 @@
           "offerType": "StaticPrice",
           "prices": [
             {
-              "currencyType": "GameItem",
+              "currencyType": "MtxCurrency",
               "currencySubType": "AccountResource:voucher_basicpack",
-              "regularPrice": 1,
-              "finalPrice": 1,
+              "regularPrice": 0,
+              "dynamicRegularPrice": 0,
+              "finalPrice": 0,
               "saleExpiration": "9999-12-31T23:59:59.999Z",
-              "basePrice": 1
+              "basePrice": 0
             }
           ],
           "categories": [],
