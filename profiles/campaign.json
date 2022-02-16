@@ -63155,6 +63155,28 @@
         "set_bonus": "Homebase.Worker.SetBonus.IsTrapDurabilityHigh"
       },
       "quantity": 1
+    },
+    "Hero:hid_outlander_041_dinocollector_sr_t05": {
+      "templateId": "Hero:hid_outlander_041_dinocollector_sr_t05",
+      "attributes": {
+        "outfitvariants": [],
+        "backblingvariants": [],
+        "gender": 0,
+        "level": 50,
+        "item_seen": true,
+        "squad_slot_idx": -1,
+        "portrait": "",
+        "hero_name": "DefaultHeroName",
+        "max_level_bonus": 0,
+        "squad_id": "",
+        "mode_loadouts": [],
+        "xp": 0,
+        "slotted_building_id": "",
+        "refundable": false,
+        "building_slot_used": -1,
+        "favorite": false
+      },
+      "quantity": 1
     }
   },
   "stats": {
