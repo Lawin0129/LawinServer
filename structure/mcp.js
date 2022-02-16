@@ -944,6 +944,22 @@ express.post("/fortnite/api/game/v2/profile/*/client/RefundMtxPurchase", async (
                 }
 
                 profile.stats.attributes.mtx_purchase_history.purchases[i].refundDate = new Date().toISOString();
+
+                for (var key in profile.items) {
+                    if (profile.items[key].templateId.toLowerCase().startsWith("currency:mtx")) {
+                        if (profile.items[key].attributes.platform.toLowerCase() == profile.stats.attributes.current_mtx_platform.toLowerCase() || profile.items[key].attributes.platform.toLowerCase() == "shared") {
+                            profile.items[key].quantity += profile.stats.attributes.mtx_purchase_history.purchases[i].totalMtxPaid;
+        
+                            ApplyProfileChanges.push({
+                                "changeType": "itemQuantityChanged",
+                                "itemId": key,
+                                "quantity": profile.items[key].quantity
+                            })
+        
+                            break;
+                        }
+                    }
+                }
             }
         }
 
@@ -4121,8 +4137,9 @@ express.post("/fortnite/api/game/v2/profile/*/client/PurchaseCatalogEntry", asyn
             if (value.name.toLowerCase().startsWith("cardpack")) {
                 catalog.storefronts[a].catalogEntries.forEach(function(value, b) {
                     if (value.offerId == req.body.offerId) {
+                        var Quantity = 0;
                         catalog.storefronts[a].catalogEntries[b].itemGrants.forEach(function(value, c) {
-                            var Quantity = req.body.purchaseQuantity || 1;
+                            Quantity = req.body.purchaseQuantity || 1;
 
                             const Item = {
                                 "templateId": value.templateId,
@@ -4151,6 +4168,27 @@ express.post("/fortnite/api/game/v2/profile/*/client/PurchaseCatalogEntry", asyn
                                 })
                             }
                         })
+                        // Vbucks spending
+                        if (catalog.storefronts[a].catalogEntries[b].prices[0].currencyType.toLowerCase() == "mtxcurrency") {
+                            for (var key in profile.items) {
+                                if (profile.items[key].templateId.toLowerCase().startsWith("currency:mtx")) {
+                                    if (profile.items[key].attributes.platform.toLowerCase() == profile.stats.attributes.current_mtx_platform.toLowerCase() || profile.items[key].attributes.platform.toLowerCase() == "shared") {
+                                        profile.items[key].quantity -= (catalog.storefronts[a].catalogEntries[b].prices[0].finalPrice) * Quantity;
+                                                                        
+                                        ApplyProfileChanges.push({
+                                            "changeType": "itemQuantityChanged",
+                                            "itemId": key,
+                                            "quantity": profile.items[key].quantity
+                                        })
+                                                
+                                        profile.rvn += 1;
+                                        profile.commandRevision += 1;
+                                                
+                                        break;
+                                    }
+                                }
+                            }
+                        }
                     }
                 })
             }
@@ -4220,6 +4258,27 @@ express.post("/fortnite/api/game/v2/profile/*/client/PurchaseCatalogEntry", asyn
 
                             ItemExists = false;
                         })
+                        // Vbucks spending
+                        if (catalog.storefronts[a].catalogEntries[b].prices[0].currencyType.toLowerCase() == "mtxcurrency") {
+                            for (var key in profile.items) {
+                                if (profile.items[key].templateId.toLowerCase().startsWith("currency:mtx")) {
+                                    if (profile.items[key].attributes.platform.toLowerCase() == profile.stats.attributes.current_mtx_platform.toLowerCase() || profile.items[key].attributes.platform.toLowerCase() == "shared") {
+                                        profile.items[key].quantity -= catalog.storefronts[a].catalogEntries[b].prices[0].finalPrice;
+                        
+                                        ApplyProfileChanges.push({
+                                            "changeType": "itemQuantityChanged",
+                                            "itemId": key,
+                                            "quantity": profile.items[key].quantity
+                                        })
+
+                                        profile.rvn += 1;
+                                        profile.commandRevision += 1;
+
+                                        break;
+                                    }
+                                }
+                            }
+                        }
                     }
                 })
             }
@@ -4235,6 +4294,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/PurchaseCatalogEntry", asyn
             MultiUpdate[0].profileCommandRevision = athena.commandRevision || 0;
 
             fs.writeFileSync("./profiles/athena.json", JSON.stringify(athena, null, 2));
+            fs.writeFileSync(`./profiles/${req.query.profileId || "profile0"}.json`, JSON.stringify(profile, null, 2));
         }
 
         if (AthenaModified == false) {
@@ -4250,6 +4310,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/PurchaseCatalogEntry", asyn
             if (value.name.toLowerCase().startsWith("cardpack")) {
                 catalog.storefronts[a].catalogEntries.forEach(function(value, b) {
                     if (value.offerId == req.body.offerId) {
+                        var Quantity = 0;
                         catalog.storefronts[a].catalogEntries[b].itemGrants.forEach(function(value, c) {
                             functions.GetVersionInfo(req, memory);
 
@@ -4264,7 +4325,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/PurchaseCatalogEntry", asyn
                                     })
                                 }
 
-                                var Quantity = req.body.purchaseQuantity || 1;
+                                Quantity = req.body.purchaseQuantity || 1;
 
                                 const Item = {
                                     "templateId": value.templateId,
@@ -4307,7 +4368,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/PurchaseCatalogEntry", asyn
                                     })
                                 }
 
-                                var Quantity = req.body.purchaseQuantity || 1;
+                                Quantity = req.body.purchaseQuantity || 1;
 
                                 const Item = {
                                     "templateId": value.templateId,
@@ -4360,7 +4421,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/PurchaseCatalogEntry", asyn
                                     })
                                 }
 
-                                var Quantity = req.body.purchaseQuantity || 1;
+                                Quantity = req.body.purchaseQuantity || 1;
                                 var LlamaItemIDS = [];
 
                                 var Item = {
@@ -4471,6 +4532,27 @@ express.post("/fortnite/api/game/v2/profile/*/client/PurchaseCatalogEntry", asyn
                                 PurchasedLlama = true;
                             }
                         })
+                        // Vbucks spending
+                        if (catalog.storefronts[a].catalogEntries[b].prices[0].currencyType.toLowerCase() == "mtxcurrency") {
+                            for (var key in profile.items) {
+                                if (profile.items[key].templateId.toLowerCase().startsWith("currency:mtx")) {
+                                    if (profile.items[key].attributes.platform.toLowerCase() == profile.stats.attributes.current_mtx_platform.toLowerCase() || profile.items[key].attributes.platform.toLowerCase() == "shared") {
+                                        profile.items[key].quantity -= (catalog.storefronts[a].catalogEntries[b].prices[0].finalPrice) * Quantity;
+                                                
+                                        ApplyProfileChanges.push({
+                                            "changeType": "itemQuantityChanged",
+                                            "itemId": key,
+                                            "quantity": profile.items[key].quantity
+                                        })
+                        
+                                        profile.rvn += 1;
+                                        profile.commandRevision += 1;
+                        
+                                        break;
+                                    }
+                                }
+                            }
+                        }
                     }
                 })
             }
@@ -4540,6 +4622,37 @@ express.post("/fortnite/api/game/v2/profile/*/client/PurchaseCatalogEntry", asyn
 
                             ItemExists = false;
                         })
+                        // Vbucks spending
+                        if (catalog.storefronts[a].catalogEntries[b].prices[0].currencyType.toLowerCase() == "mtxcurrency") {
+                            for (var key in profile.items) {
+                                if (profile.items[key].templateId.toLowerCase().startsWith("currency:mtx")) {
+                                    if (profile.items[key].attributes.platform.toLowerCase() == profile.stats.attributes.current_mtx_platform.toLowerCase() || profile.items[key].attributes.platform.toLowerCase() == "shared") {
+                                        profile.items[key].quantity -= catalog.storefronts[a].catalogEntries[b].prices[0].finalPrice;
+                                                
+                                        ApplyProfileChanges.push({
+                                            "changeType": "itemQuantityChanged",
+                                            "itemId": key,
+                                            "quantity": profile.items[key].quantity
+                                        })
+                        
+                                        break;
+                                    }
+                                }
+                            }
+                        }
+
+                        // Add to refunding tab
+                        var purchaseId = functions.MakeID();
+                        profile.stats.attributes.mtx_purchase_history.purchases.push({"purchaseId":purchaseId,"offerId":`v2:/${purchaseId}`,"purchaseDate":"9999-12-31T00:00:00.000Z","freeRefundEligible":false,"fulfillments":[],"lootResult":Notifications[0].lootResult.items,"totalMtxPaid":catalog.storefronts[a].catalogEntries[b].prices[0].finalPrice,"metadata":{},"gameContext":""})
+
+                        ApplyProfileChanges.push({
+                            "changeType": "statModified",
+                            "name": "mtx_purchase_history",
+                            "value": profile.stats.attributes.mtx_purchase_history
+                        })
+
+                        profile.rvn += 1;
+                        profile.commandRevision += 1;
                     }
                 })
             }
@@ -4553,6 +4666,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/PurchaseCatalogEntry", asyn
             MultiUpdate[0].profileCommandRevision = athena.commandRevision || 0;
 
             fs.writeFileSync("./profiles/athena.json", JSON.stringify(athena, null, 2));
+            fs.writeFileSync(`./profiles/${req.query.profileId || "profile0"}.json`, JSON.stringify(profile, null, 2));
         }
 
         if (AthenaModified == false) {
