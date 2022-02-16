@@ -4461,17 +4461,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/PurchaseCatalogEntry", asyn
                                     }
                                 })
 
-                                if (req.body.currencySubType.toLowerCase() == "accountresource:voucher_basicpack") {
-                                    Notifications[0].lootResult.items.push({
-                                        "itemType": value.templateId,
-                                        "itemGuid": ID,
-                                        "itemProfile": "campaign",
-                                        "attributes": {
-                                            "pack_source": "Store"
-                                        },
-                                        "quantity": 1
-                                    })
-                                } else {
+                                if (req.body.currencySubType.toLowerCase() != "accountresource:voucher_basicpack") {
                                     for (var x = 0; x < Quantity; x++) {
                                         for (var key in campaign.items) {
                                             if (campaign.items[key].templateId.toLowerCase() == "prerolldata:preroll_basic") {
@@ -4518,14 +4508,16 @@ express.post("/fortnite/api/game/v2/profile/*/client/PurchaseCatalogEntry", asyn
                                 }
 
                                 try {
-                                    for (var i in LlamaItemIDS) {
-                                        var id = LlamaItemIDS[i];
+                                    if (req.body.currencySubType.toLowerCase() != "accountresource:voucher_basicpack") {
+                                        for (var i in LlamaItemIDS) {
+                                            var id = LlamaItemIDS[i];
 
-                                        delete campaign.items[id];
-                                        MultiUpdate[0].profileChanges.push({
-                                            "changeType": "itemRemoved",
-                                            "itemId": id
-                                        })
+                                            delete campaign.items[id];
+                                            MultiUpdate[0].profileChanges.push({
+                                                "changeType": "itemRemoved",
+                                                "itemId": id
+                                            })
+                                        }
                                     }
                                 } catch (err) {}
 
