@@ -964,12 +964,14 @@ express.post("/fortnite/api/game/v2/profile/*/client/RefundMtxPurchase", async (
         }
 
         for (var i in ItemGuids) {
-            delete ItemProfile.items[ItemGuids[i]]
+			try {
+				delete ItemProfile.items[ItemGuids[i]]
 
-            MultiUpdate[0].profileChanges.push({
-                "changeType": "itemRemoved",
-                "itemId": ItemGuids[i]
-            })
+				MultiUpdate[0].profileChanges.push({
+					"changeType": "itemRemoved",
+					"itemId": ItemGuids[i]
+				})
+			} catch (err) {}
         }
 
         ItemProfile.rvn += 1;
