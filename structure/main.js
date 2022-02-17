@@ -12,12 +12,16 @@ express.get("/clearitemsforshop", async (req, res) => {
 
     for (var value in CatalogConfig) {
         for (var key in athena.items) {
-            if (typeof CatalogConfig[value].templateId == "string") {
-                if (CatalogConfig[value].templateId.length != 0) {
-                    if (CatalogConfig[value].templateId.toLowerCase() == athena.items[key].templateId.toLowerCase()) {
-                        delete athena.items[key]
+            if (Array.isArray(CatalogConfig[value].itemGrants)) {
+                for (var i in CatalogConfig[value].itemGrants) {
+                    if (typeof CatalogConfig[value].itemGrants[i] == "string") {
+                        if (CatalogConfig[value].itemGrants[i].length != 0) {
+                            if (CatalogConfig[value].itemGrants[i].toLowerCase() == athena.items[key].templateId.toLowerCase()) {
+                                delete athena.items[key]
 
-                        StatChanged = true;
+                                StatChanged = true;
+                            }
+                        }
                     }
                 }
             }

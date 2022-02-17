@@ -60,17 +60,28 @@ function getItemShop() {
 
     try {
         for (var value in CatalogConfig) {
-            if (typeof CatalogConfig[value].templateId == "string") {
-                if (CatalogConfig[value].templateId.length != 0) {
-                    const CatalogEntry = {"devName":"","offerId":"","fulfillmentIds":[],"dailyLimit":-1,"weeklyLimit":-1,"monthlyLimit":-1,"categories":[],"prices":[{"currencyType":"MtxCurrency","currencySubType":"","regularPrice":0,"finalPrice":0,"saleExpiration":"9999-12-02T01:12:00Z","basePrice":0}],"matchFilter":"","filterWeight":0,"appStoreId":[],"requirements":[{"requirementType":"DenyOnItemOwnership","requiredId":"","minQuantity":1}],"offerType":"StaticPrice","giftInfo":{"bIsEnabled":false,"forcedGiftBoxTemplateId":"","purchaseRequirements":[],"giftRecordIds":[]},"refundable":true,"metaInfo":[],"displayAssetPath":"","itemGrants":[{"templateId":"","quantity":1}],"sortPriority":0,"catalogGroupPriority":0};
+            if (Array.isArray(CatalogConfig[value].itemGrants)) {
+                if (CatalogConfig[value].itemGrants.length != 0) {
+                    const CatalogEntry = {"devName":"","offerId":"","fulfillmentIds":[],"dailyLimit":-1,"weeklyLimit":-1,"monthlyLimit":-1,"categories":[],"prices":[{"currencyType":"MtxCurrency","currencySubType":"","regularPrice":0,"finalPrice":0,"saleExpiration":"9999-12-02T01:12:00Z","basePrice":0}],"matchFilter":"","filterWeight":0,"appStoreId":[],"requirements":[],"offerType":"StaticPrice","giftInfo":{"bIsEnabled":false,"forcedGiftBoxTemplateId":"","purchaseRequirements":[],"giftRecordIds":[]},"refundable":true,"metaInfo":[],"displayAssetPath":"","itemGrants":[],"sortPriority":0,"catalogGroupPriority":0};
 
                     if (value.toLowerCase().startsWith("daily")) {
                         catalog.storefronts.forEach((storefront, i) => {
                             if (storefront.name == "BRDailyStorefront") {
-                                CatalogEntry.devName = CatalogConfig[value].templateId
-                                CatalogEntry.offerId = CatalogConfig[value].templateId
-                                CatalogEntry.requirements[0].requiredId = CatalogConfig[value].templateId
-                                CatalogEntry.itemGrants[0].templateId = CatalogConfig[value].templateId
+                                CatalogEntry.requirements = [];
+                                CatalogEntry.itemGrants = [];
+
+                                for (var i in CatalogConfig[value].itemGrants) {
+                                    if (typeof CatalogConfig[value].itemGrants[i] == "string") {
+                                        if (CatalogConfig[value].itemGrants[i].length != 0) {
+                                            CatalogEntry.devName = CatalogConfig[value].itemGrants[0]
+                                            CatalogEntry.offerId = CatalogConfig[value].itemGrants[0]
+
+                                            CatalogEntry.requirements.push({ "requirementType": "DenyOnItemOwnership", "requiredId": CatalogConfig[value].itemGrants[i], "minQuantity": 1 })
+                                            CatalogEntry.itemGrants.push({ "templateId": CatalogConfig[value].itemGrants[i], "quantity": 1 });
+                                        }
+                                    }
+                                }
+
                                 CatalogEntry.prices[0].basePrice = CatalogConfig[value].price
                                 CatalogEntry.prices[0].regularPrice = CatalogConfig[value].price
                                 CatalogEntry.prices[0].finalPrice = CatalogConfig[value].price
@@ -83,10 +94,21 @@ function getItemShop() {
                     if (value.toLowerCase().startsWith("featured")) {
                         catalog.storefronts.forEach((storefront, i) => {
                             if (storefront.name == "BRWeeklyStorefront") {
-                                CatalogEntry.devName = CatalogConfig[value].templateId
-                                CatalogEntry.offerId = CatalogConfig[value].templateId
-                                CatalogEntry.requirements[0].requiredId = CatalogConfig[value].templateId
-                                CatalogEntry.itemGrants[0].templateId = CatalogConfig[value].templateId
+                                CatalogEntry.requirements = [];
+                                CatalogEntry.itemGrants = [];
+
+                                for (var i in CatalogConfig[value].itemGrants) {
+                                    if (typeof CatalogConfig[value].itemGrants[i] == "string") {
+                                        if (CatalogConfig[value].itemGrants[i].length != 0) {
+                                            CatalogEntry.devName = CatalogConfig[value].itemGrants[0]
+                                            CatalogEntry.offerId = CatalogConfig[value].itemGrants[0]
+
+                                            CatalogEntry.requirements.push({ "requirementType": "DenyOnItemOwnership", "requiredId": CatalogConfig[value].itemGrants[i], "minQuantity": 1 })
+                                            CatalogEntry.itemGrants.push({ "templateId": CatalogConfig[value].itemGrants[i], "quantity": 1 });
+                                        }
+                                    }
+                                }
+
                                 CatalogEntry.prices[0].basePrice = CatalogConfig[value].price
                                 CatalogEntry.prices[0].regularPrice = CatalogConfig[value].price
                                 CatalogEntry.prices[0].finalPrice = CatalogConfig[value].price
@@ -95,7 +117,6 @@ function getItemShop() {
                             }
                         })
                     }
-
                 }
             }
         }

@@ -1,35 +1,35 @@
 {
     "//": "BR Item Shop Config",
     "daily1": {
-        "templateId": "",
+        "itemGrants": [""],
         "price": 0
     },
     "daily2": {
-        "templateId": "",
+        "itemGrants": [""],
         "price": 0
     },
     "daily3": {
-        "templateId": "",
+        "itemGrants": [""],
         "price": 0
     },
     "daily4": {
-        "templateId": "",
+        "itemGrants": [""],
         "price": 0
     },
     "daily5": {
-        "templateId": "",
+        "itemGrants": [""],
         "price": 0
     },
     "daily6": {
-        "templateId": "",
+        "itemGrants": [""],
         "price": 0
     },
     "featured1": {
-        "templateId": "",
+        "itemGrants": [""],
         "price": 0
     },
     "featured2": {
-        "templateId": "",
+        "itemGrants": [""],
         "price": 0
     }
 }
