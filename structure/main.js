@@ -195,4 +195,65 @@ express.post("/datarouter/api/v1/public/data", async (req, res) => {
     res.end();
 })
 
+express.post("/api/v1/assets/Fortnite/*/*", async (req, res) => {
+    res.json({"FortCreativeDiscoverySurface":{"meta":{"promotion":1},"assets":{}}})
+})
+
+express.get("/region", async (req, res) => {
+    res.json({
+        "continent": {
+            "code": "EU",
+            "geoname_id": 6255148,
+            "names": {
+                "de": "Europa",
+                "en": "Europe",
+                "es": "Europa",
+                "fr": "Europe",
+                "ja": "ヨーロッパ",
+                "pt-BR": "Europa",
+                "ru": "Европа",
+                "zh-CN": "欧洲"
+            }
+        },
+        "country": {
+            "geoname_id": 2635167,
+            "is_in_european_union": false,
+            "iso_code": "GB",
+            "names": {
+                "de": "UK",
+                "en": "United Kingdom",
+                "es": "RU",
+                "fr": "Royaume Uni",
+                "ja": "英国",
+                "pt-BR": "Reino Unido",
+                "ru": "Британия",
+                "zh-CN": "英国"
+            }
+        },
+        "subdivisions": [
+            {
+                "geoname_id": 6269131,
+                "iso_code": "ENG",
+                "names": {
+                    "de": "England",
+                    "en": "England",
+                    "es": "Inglaterra",
+                    "fr": "Angleterre",
+                    "ja": "イングランド",
+                    "pt-BR": "Inglaterra",
+                    "ru": "Англия",
+                    "zh-CN": "英格兰"
+                }
+            },
+            {
+                "geoname_id": 3333157,
+                "iso_code": "KEC",
+                "names": {
+                    "en": "Royal Kensington and Chelsea"
+                }
+            }
+        ]
+    })
+})
+
 module.exports = express;
