@@ -197,6 +197,304 @@
       ]
     },
     {
+      "name": "STWSpecialEventStorefront",
+      "catalogEntries": [
+        {
+          "devName": "[VIRTUAL]1 x Commando Renegade for 2800 GameItem : AccountResource:eventcurrency_scaling",
+          "offerId": "v2:/fe91e5ee1e64e09367f7f641e897c054a23822387ef79eb81b0bf0805f993c34",
+          "fulfillmentIds": [],
+          "dailyLimit": -1,
+          "weeklyLimit": -1,
+          "monthlyLimit": -1,
+          "categories": [],
+          "prices": [
+            {
+              "currencyType": "GameItem",
+              "currencySubType": "AccountResource:eventcurrency_scaling",
+              "regularPrice": 2800,
+              "dynamicRegularPrice": 2800,
+              "finalPrice": 2800,
+              "saleExpiration": "9999-12-31T23:59:59.999Z",
+              "basePrice": 2800
+            }
+          ],
+          "meta": {},
+          "matchFilter": "",
+          "filterWeight": 0.0,
+          "appStoreId": [],
+          "requirements": [],
+          "offerType": "StaticPrice",
+          "refundable": false,
+          "itemGrants": [
+            {
+              "templateId": "Hero:HID_Commando_XBOX_SR_T01",
+              "quantity": 1
+            }
+          ],
+          "additionalGrants": [],
+          "sortPriority": 0,
+          "catalogGroupPriority": 0
+        },
+        {
+          "devName": "[VIRTUAL]1 x Guardian Knox for 2800 GameItem : AccountResource:eventcurrency_scaling",
+          "offerId": "v2:/83ac0269acedb2d5634a031f55b643b852272903e74d9fa1bb49256a0c06abef",
+          "fulfillmentIds": [],
+          "dailyLimit": -1,
+          "weeklyLimit": -1,
+          "monthlyLimit": -1,
+          "categories": [],
+          "prices": [
+            {
+              "currencyType": "GameItem",
+              "currencySubType": "AccountResource:eventcurrency_scaling",
+              "regularPrice": 2800,
+              "dynamicRegularPrice": 2800,
+              "finalPrice": 2800,
+              "saleExpiration": "9999-12-31T23:59:59.999Z",
+              "basePrice": 2800
+            }
+          ],
+          "meta": {},
+          "matchFilter": "",
+          "filterWeight": 0.0,
+          "appStoreId": [],
+          "requirements": [],
+          "offerType": "StaticPrice",
+          "refundable": false,
+          "itemGrants": [
+            {
+              "templateId": "Hero:HID_Constructor_XBOX_SR_T01",
+              "quantity": 1
+            }
+          ],
+          "additionalGrants": [],
+          "sortPriority": 0,
+          "catalogGroupPriority": 0
+        },
+        {
+          "devName": "[VIRTUAL]1 x Jade Assassin Sarah for 2800 GameItem : AccountResource:eventcurrency_scaling",
+          "offerId": "v2:/9b91076467e61cf01a3c16e39a18331d2e23d754cdafc860aac0fdd7155615ae",
+          "fulfillmentIds": [],
+          "dailyLimit": -1,
+          "weeklyLimit": -1,
+          "monthlyLimit": -1,
+          "categories": [],
+          "prices": [
+            {
+              "currencyType": "GameItem",
+              "currencySubType": "AccountResource:eventcurrency_scaling",
+              "regularPrice": 2800,
+              "dynamicRegularPrice": 2800,
+              "finalPrice": 2800,
+              "saleExpiration": "9999-12-31T23:59:59.999Z",
+              "basePrice": 2800
+            }
+          ],
+          "meta": {},
+          "matchFilter": "",
+          "filterWeight": 0.0,
+          "appStoreId": [],
+          "requirements": [],
+          "offerType": "StaticPrice",
+          "refundable": false,
+          "itemGrants": [
+            {
+              "templateId": "Hero:HID_Ninja_XBOX_SR_T01",
+              "quantity": 1
+            }
+          ],
+          "additionalGrants": [],
+          "sortPriority": 0,
+          "catalogGroupPriority": 0
+        },
+        {
+          "devName": "[VIRTUAL]1 x Trailblazer Jess for 2800 GameItem : AccountResource:eventcurrency_scaling",
+          "offerId": "v2:/aacc97a394a9feaa106ad275caad4e4f22b987d8ceb42d64991024bf6d8a5404",
+          "fulfillmentIds": [],
+          "dailyLimit": -1,
+          "weeklyLimit": -1,
+          "monthlyLimit": -1,
+          "categories": [],
+          "prices": [
+            {
+              "currencyType": "GameItem",
+              "currencySubType": "AccountResource:eventcurrency_scaling",
+              "regularPrice": 2800,
+              "dynamicRegularPrice": 2800,
+              "finalPrice": 2800,
+              "saleExpiration": "9999-12-31T23:59:59.999Z",
+              "basePrice": 2800
+            }
+          ],
+          "meta": {},
+          "matchFilter": "",
+          "filterWeight": 0.0,
+          "appStoreId": [],
+          "requirements": [],
+          "offerType": "StaticPrice",
+          "refundable": false,
+          "itemGrants": [
+            {
+              "templateId": "Hero:HID_Outlander_XBOX_SR_T01",
+              "quantity": 1
+            }
+          ],
+          "additionalGrants": [],
+          "sortPriority": 0,
+          "catalogGroupPriority": 0
+        }
+      ]
+    },
+    {
+      "name": "STWRotationalEventStorefront",
+      "catalogEntries": [
+        {
+          "devName": "[VIRTUAL]1 x Commando Ramirez for 2800 GameItem : AccountResource:eventcurrency_scaling",
+          "offerId": "v2:/cbb7b1eb042cb87002d6a688e25dcabdb08a7de29bea0ced23aca176cd5c174a",
+          "fulfillmentIds": [],
+          "dailyLimit": -1,
+          "weeklyLimit": -1,
+          "monthlyLimit": -1,
+          "categories": [],
+          "prices": [
+            {
+              "currencyType": "GameItem",
+              "currencySubType": "AccountResource:eventcurrency_scaling",
+              "regularPrice": 2800,
+              "dynamicRegularPrice": 2800,
+              "finalPrice": 2800,
+              "saleExpiration": "9999-12-31T23:59:59.999Z",
+              "basePrice": 2800
+            }
+          ],
+          "meta": {},
+          "matchFilter": "",
+          "filterWeight": 0.0,
+          "appStoreId": [],
+          "requirements": [],
+          "offerType": "StaticPrice",
+          "refundable": false,
+          "itemGrants": [
+            {
+              "templateId": "Hero:HID_Commando_Sony_SR_T01",
+              "quantity": 1
+            }
+          ],
+          "additionalGrants": [],
+          "sortPriority": 0,
+          "catalogGroupPriority": 0
+        },
+        {
+          "devName": "[VIRTUAL]1 x Guardian Penny for 2800 GameItem : AccountResource:eventcurrency_scaling",
+          "offerId": "v2:/3e03cd9c32d3b2c809b523aac846762ef0401c701e383451e88a0594318522fa",
+          "fulfillmentIds": [],
+          "dailyLimit": -1,
+          "weeklyLimit": -1,
+          "monthlyLimit": -1,
+          "categories": [],
+          "prices": [
+            {
+              "currencyType": "GameItem",
+              "currencySubType": "AccountResource:eventcurrency_scaling",
+              "regularPrice": 2800,
+              "dynamicRegularPrice": 2800,
+              "finalPrice": 2800,
+              "saleExpiration": "9999-12-31T23:59:59.999Z",
+              "basePrice": 2800
+            }
+          ],
+          "meta": {},
+          "matchFilter": "",
+          "filterWeight": 0.0,
+          "appStoreId": [],
+          "requirements": [],
+          "offerType": "StaticPrice",
+          "refundable": false,
+          "itemGrants": [
+            {
+              "templateId": "Hero:HID_Constructor_Sony_SR_T01",
+              "quantity": 1
+            }
+          ],
+          "additionalGrants": [],
+          "sortPriority": 0,
+          "catalogGroupPriority": 0
+        },
+        {
+          "devName": "[VIRTUAL]1 x Bluestreak Ken for 2800 GameItem : AccountResource:eventcurrency_scaling",
+          "offerId": "v2:/4f1c82dc8fb66fef5a0046fb2163344069b65b6ba64e496939d2fc8e8f779157",
+          "fulfillmentIds": [],
+          "dailyLimit": -1,
+          "weeklyLimit": -1,
+          "monthlyLimit": -1,
+          "categories": [],
+          "prices": [
+            {
+              "currencyType": "GameItem",
+              "currencySubType": "AccountResource:eventcurrency_scaling",
+              "regularPrice": 2800,
+              "dynamicRegularPrice": 2800,
+              "finalPrice": 2800,
+              "saleExpiration": "9999-12-31T23:59:59.999Z",
+              "basePrice": 2800
+            }
+          ],
+          "meta": {},
+          "matchFilter": "",
+          "filterWeight": 0.0,
+          "appStoreId": [],
+          "requirements": [],
+          "offerType": "StaticPrice",
+          "refundable": false,
+          "itemGrants": [
+            {
+              "templateId": "Hero:HID_Ninja_Sony_SR_T01",
+              "quantity": 1
+            }
+          ],
+          "additionalGrants": [],
+          "sortPriority": 0,
+          "catalogGroupPriority": 0
+        },
+        {
+          "devName": "[VIRTUAL]1 x Trailblazer A.C. for 2800 GameItem : AccountResource:eventcurrency_scaling",
+          "offerId": "v2:/5e359069d870aebce7043bcca03da243402bb3ac13b39a87a17e272682b0486f",
+          "fulfillmentIds": [],
+          "dailyLimit": -1,
+          "weeklyLimit": -1,
+          "monthlyLimit": -1,
+          "categories": [],
+          "prices": [
+            {
+              "currencyType": "GameItem",
+              "currencySubType": "AccountResource:eventcurrency_scaling",
+              "regularPrice": 2800,
+              "dynamicRegularPrice": 2800,
+              "finalPrice": 2800,
+              "saleExpiration": "9999-12-31T23:59:59.999Z",
+              "basePrice": 2800
+            }
+          ],
+          "meta": {},
+          "matchFilter": "",
+          "filterWeight": 0.0,
+          "appStoreId": [],
+          "requirements": [],
+          "offerType": "StaticPrice",
+          "refundable": false,
+          "itemGrants": [
+            {
+              "templateId": "Hero:HID_Outlander_Sony_SR_T01",
+              "quantity": 1
+            }
+          ],
+          "additionalGrants": [],
+          "sortPriority": 0,
+          "catalogGroupPriority": 0
+        }
+      ]
+    },
+    {
       "name": "CardPackStore",
       "catalogEntries": [
         {
