@@ -11,9 +11,9 @@ express.get("/clearitemsforshop", async (req, res) => {
     var StatChanged = false;
 
     for (var value in CatalogConfig) {
-        for (var key in athena.items) {
+        for (var i in CatalogConfig[value].itemGrants) {
             if (Array.isArray(CatalogConfig[value].itemGrants)) {
-                for (var i in CatalogConfig[value].itemGrants) {
+                for (var key in athena.items) {
                     if (typeof CatalogConfig[value].itemGrants[i] == "string") {
                         if (CatalogConfig[value].itemGrants[i].length != 0) {
                             if (CatalogConfig[value].itemGrants[i].toLowerCase() == athena.items[key].templateId.toLowerCase()) {
