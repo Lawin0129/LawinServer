@@ -86,7 +86,9 @@ function getItemShop() {
                                 CatalogEntry.prices[0].regularPrice = CatalogConfig[value].price
                                 CatalogEntry.prices[0].finalPrice = CatalogConfig[value].price
 
-                                catalog.storefronts[i].catalogEntries.push(CatalogEntry);
+                                if (CatalogEntry.itemGrants.length != 0) {
+                                    catalog.storefronts[i].catalogEntries.push(CatalogEntry);
+                                }
                             }
                         })
                     }
@@ -113,7 +115,9 @@ function getItemShop() {
                                 CatalogEntry.prices[0].regularPrice = CatalogConfig[value].price
                                 CatalogEntry.prices[0].finalPrice = CatalogConfig[value].price
 
-                                catalog.storefronts[i].catalogEntries.push(CatalogEntry);
+                                if (CatalogEntry.itemGrants.length != 0) {
+                                    catalog.storefronts[i].catalogEntries.push(CatalogEntry);
+                                }
                             }
                         })
                     }
