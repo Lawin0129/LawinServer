@@ -70,14 +70,14 @@ function getItemShop() {
                                 CatalogEntry.requirements = [];
                                 CatalogEntry.itemGrants = [];
 
-                                for (var i in CatalogConfig[value].itemGrants) {
-                                    if (typeof CatalogConfig[value].itemGrants[i] == "string") {
-                                        if (CatalogConfig[value].itemGrants[i].length != 0) {
+                                for (var x in CatalogConfig[value].itemGrants) {
+                                    if (typeof CatalogConfig[value].itemGrants[x] == "string") {
+                                        if (CatalogConfig[value].itemGrants[x].length != 0) {
                                             CatalogEntry.devName = CatalogConfig[value].itemGrants[0]
                                             CatalogEntry.offerId = CatalogConfig[value].itemGrants[0]
 
-                                            CatalogEntry.requirements.push({ "requirementType": "DenyOnItemOwnership", "requiredId": CatalogConfig[value].itemGrants[i], "minQuantity": 1 })
-                                            CatalogEntry.itemGrants.push({ "templateId": CatalogConfig[value].itemGrants[i], "quantity": 1 });
+                                            CatalogEntry.requirements.push({ "requirementType": "DenyOnItemOwnership", "requiredId": CatalogConfig[value].itemGrants[x], "minQuantity": 1 })
+                                            CatalogEntry.itemGrants.push({ "templateId": CatalogConfig[value].itemGrants[x], "quantity": 1 });
                                         }
                                     }
                                 }
