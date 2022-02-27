@@ -4144,6 +4144,13 @@
           "granted_bundles": [
             "S5-ChallengeBundle:QuestBundle_S5_ProgressiveB"
           ]
+        },
+        {
+          "itemGuid": "S5-ChallengeBundleSchedule:Schedule_Birthday2018_BR",
+          "templateId": "ChallengeBundleSchedule:Schedule_Birthday2018_BR",
+          "granted_bundles": [
+            "S5-ChallengeBundle:QuestBundle_Birthday2018_BR"
+          ]
         }
       ],
       "ChallengeBundles": [
@@ -4368,6 +4375,16 @@
             "S5-Quest:Quest_BR_S5_Gain_SeasonXP_ProgressiveB_05"
           ],
           "challenge_bundle_schedule_id": "S5-ChallengeBundleSchedule:Season5_ProgressiveB_Schedule"
+        },
+        {
+          "itemGuid": "S5-ChallengeBundle:QuestBundle_Birthday2018_BR",
+          "templateId": "ChallengeBundle:QuestBundle_Birthday2018_BR",
+          "grantedquestinstanceids": [
+            "S5-Quest:Quest_BR_Play_Birthday",
+            "S5-Quest:Quest_BR_Damage_Birthday",
+            "S5-Quest:Quest_BR_Dance_ScavengerHunt_BirthdayCakes"
+          ],
+          "challenge_bundle_schedule_id": "S5-ChallengeBundleSchedule:Schedule_Birthday2018_BR"
         }
       ],
       "Quests": [
@@ -6148,6 +6165,75 @@
             }
           ],
           "challenge_bundle_id": "S5-ChallengeBundle:QuestBundle_S5_ProgressiveB"
+        },
+        {
+          "itemGuid": "S5-Quest:Quest_BR_Damage_Birthday",
+          "templateId": "Quest:Quest_BR_Damage_Birthday",
+          "objectives": [
+            {
+              "name": "birthdaybundle_damage_athena_player",
+              "count": 1000
+            }
+          ],
+          "challenge_bundle_id": "S5-ChallengeBundle:QuestBundle_Birthday2018_BR"
+        },
+        {
+          "itemGuid": "S5-Quest:Quest_BR_Dance_ScavengerHunt_BirthdayCakes",
+          "templateId": "Quest:Quest_BR_Dance_ScavengerHunt_BirthdayCakes",
+          "objectives": [
+            {
+              "name": "birthdaybundle_dance_location_birthdaycake_01",
+              "count": 1
+            },
+            {
+              "name": "birthdaybundle_dance_location_birthdaycake_02",
+              "count": 1
+            },
+            {
+              "name": "birthdaybundle_dance_location_birthdaycake_03",
+              "count": 1
+            },
+            {
+              "name": "birthdaybundle_dance_location_birthdaycake_04",
+              "count": 1
+            },
+            {
+              "name": "birthdaybundle_dance_location_birthdaycake_05",
+              "count": 1
+            },
+            {
+              "name": "birthdaybundle_dance_location_birthdaycake_06",
+              "count": 1
+            },
+            {
+              "name": "birthdaybundle_dance_location_birthdaycake_07",
+              "count": 1
+            },
+            {
+              "name": "birthdaybundle_dance_location_birthdaycake_08",
+              "count": 1
+            },
+            {
+              "name": "birthdaybundle_dance_location_birthdaycake_09",
+              "count": 1
+            },
+            {
+              "name": "birthdaybundle_dance_location_birthdaycake_10",
+              "count": 1
+            }
+          ],
+          "challenge_bundle_id": "S5-ChallengeBundle:QuestBundle_Birthday2018_BR"
+        },
+        {
+          "itemGuid": "S5-Quest:Quest_BR_Play_Birthday",
+          "templateId": "Quest:Quest_BR_Play_Birthday",
+          "objectives": [
+            {
+              "name": "birthdaybundle_athena_play_matches",
+              "count": 14
+            }
+          ],
+          "challenge_bundle_id": "S5-ChallengeBundle:QuestBundle_Birthday2018_BR"
         }
       ]
     },
