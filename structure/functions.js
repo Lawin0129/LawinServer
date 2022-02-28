@@ -1,5 +1,6 @@
 const crypto = require("crypto");
 const memory = require("./../memory.json");
+const XMLBuilder = require("xmlbuilder");
 
 function GetVersionInfo(req, memory) {
     if (req.headers["user-agent"])
@@ -234,10 +235,30 @@ function MakeID() {
     return FinishedID;
 }
 
+function sendXmppMessageToAll(body) {
+    if (global.Clients) {
+        if (typeof body == "object") body = JSON.stringify(body);
+
+        global.Clients.forEach(ClientData => {
+            ClientData.client.send(XMLBuilder.create("message")
+            .attribute("from", "xmpp-admin@prod.ol.epicgames.com")
+            .attribute("xmlns", "jabber:client")
+            .attribute("to", ClientData.jid)
+            .element("body", `${body}`).up().toString());
+        });
+    }
+}
+
+function DecodeBase64(str) {
+    return Buffer.from(str, 'base64').toString()
+}
+
 module.exports = {
     GetVersionInfo,
     getItemShop,
     getTheater,
     getContentPages,
-    MakeID
+    MakeID,
+    sendXmppMessageToAll,
+    DecodeBase64
 }

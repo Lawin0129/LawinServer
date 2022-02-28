@@ -5,240 +5,65 @@ const path = require("path");
 const iniparser = require("ini");
 const config = iniparser.parse(fs.readFileSync(path.join(__dirname, "..", "Config", "config.ini")).toString());
 const functions = require("./functions.js");
+const accounts = require("./../responses/account.json");
 var Memory_CurrentAccountID = functions.MakeID().replace(/-/ig, "");
 
 express.get("/account/api/public/account", async (req, res) => {
     var displayName = config.Config.displayName;
+    var response = [];
+
+    if (displayName.includes("@")) displayName = displayName.split("@")[0];
 
     if (config.Config.bUseConfigDisplayName == false) {
-        displayName = req.query.accountId;
-    }
+        if (typeof req.query.accountId == "string") {
+            displayName = req.query.accountId;
+            if (displayName.includes("@")) displayName = displayName.split("@")[0];
 
-    res.json(
-        [
-            {
+            if (!accounts.find(i => i.id.toLowerCase() == req.query.accountId.toLowerCase())) {
+                accounts.push({
+                    "id": req.query.accountId,
+                    "displayName": displayName,
+                    "externalAuths": {}
+                })
+            }
+
+            if (accounts.find(i => i.id.toLowerCase() == req.query.accountId.toLowerCase()).displayName != displayName) {
+                var index = accounts.findIndex(i => i.id.toLowerCase() == req.query.accountId.toLowerCase());
+                accounts[index].displayName = displayName;
+            }
+        }
+    } else if (typeof req.query.accountId == "string") {
+        if (!accounts.find(i => i.id.toLowerCase() == req.query.accountId.toLowerCase())) {
+            accounts.push({
                 "id": req.query.accountId,
                 "displayName": displayName,
                 "externalAuths": {}
-            },
-            {
-                "id": "SubtoLawin_LOL123",
-                "displayName": "Subscribe to Lawin on YouTube!",
-                "externalAuths": {
-                    "xbl": {
-                        "type": "xbl",
-                        "externalAuthIdType": "xuid",
-                        "accountId": "SubtoLawin_LOL123",
-                        "externalDisplayName": "YouTube-Lawin",
-                        "authIds": [{
-                            "id": "0",
-                            "type": "xuid"
-                        }]
-                    },
-                    "psn": {
-                        "type": "psn",
-                        "externalAuthId": "0",
-                        "externalAuthIdType": "psn_user_id",
-                        "accountId": "SubtoLawin_LOL123",
-                        "externalDisplayName": "YouTube-Lawin",
-                        "authIds": [{
-                            "id": "0",
-                            "type": "psn_user_id"
-                        }]
-                    }
-                }
-            },
-            {
-                "id": "Followlawin_LOL123",
-                "displayName": "Follow @lawin_010 on twitter!",
-                "externalAuths": {
-                    "xbl": {
-                        "type": "xbl",
-                        "externalAuthIdType": "xuid",
-                        "accountId": "Followlawin_LOL123",
-                        "externalDisplayName": "Twitter-lawin_010",
-                        "authIds": [{
-                            "id": "0",
-                            "type": "xuid"
-                        }]
-                    },
-                    "psn": {
-                        "type": "psn",
-                        "externalAuthId": "0",
-                        "externalAuthIdType": "psn_user_id",
-                        "accountId": "Followlawin_LOL123",
-                        "externalDisplayName": "Twitter-lawin_010",
-                        "authIds": [{
-                            "id": "0",
-                            "type": "psn_user_id"
-                        }]
-                    }
-                }
-            },
-            {
-                "id": "NINJALOL_1238",
-                "displayName": "Ninja",
-                "externalAuths": {
-                    "xbl": {
-                        "type": "xbl",
-                        "externalAuthIdType": "xuid",
-                        "accountId": "NINJALOL_1238",
-                        "externalDisplayName": "Ninja",
-                        "authIds": [{
-                            "id": "0",
-                            "type": "xuid"
-                        }]
-                    },
-                    "psn": {
-                        "type": "psn",
-                        "externalAuthId": "0",
-                        "externalAuthIdType": "psn_user_id",
-                        "accountId": "NINJALOL_1238",
-                        "externalDisplayName": "Ninja",
-                        "authIds": [{
-                            "id": "0",
-                            "type": "psn_user_id"
-                        }]
-                    }
-                }
-            },
-            {
-                "id": "TFUELOL_1238",
-                "displayName": "Tfue",
-                "externalAuths": {
-                    "xbl": {
-                        "type": "xbl",
-                        "externalAuthIdType": "xuid",
-                        "accountId": "TFUELOL_1238",
-                        "externalDisplayName": "Tfue",
-                        "authIds": [{
-                            "id": "0",
-                            "type": "xuid"
-                        }]
-                    },
-                    "psn": {
-                        "type": "psn",
-                        "externalAuthId": "0",
-                        "externalAuthIdType": "psn_user_id",
-                        "accountId": "TFUELOL_1238",
-                        "externalDisplayName": "Tfue",
-                        "authIds": [{
-                            "id": "0",
-                            "type": "psn_user_id"
-                        }]
-                    }
-                }
-            },
-            {
-                "id": "ALIALOL_1238",
-                "displayName": "Ali-A",
-                "externalAuths": {
-                    "xbl": {
-                        "type": "xbl",
-                        "externalAuthIdType": "xuid",
-                        "accountId": "ALIALOL_1238",
-                        "externalDisplayName": "Ali-A",
-                        "authIds": [{
-                            "id": "0",
-                            "type": "xuid"
-                        }]
-                    },
-                    "psn": {
-                        "type": "psn",
-                        "externalAuthId": "0",
-                        "externalAuthIdType": "psn_user_id",
-                        "accountId": "ALIALOL_1238",
-                        "externalDisplayName": "Ali-A",
-                        "authIds": [{
-                            "id": "0",
-                            "type": "psn_user_id"
-                        }]
-                    }
-                }
-            },
-            {
-                "id": "DAKOTAZLOL_1238",
-                "displayName": "Dark",
-                "externalAuths": {
-                    "xbl": {
-                        "type": "xbl",
-                        "externalAuthIdType": "xuid",
-                        "accountId": "DAKOTAZLOL_1238",
-                        "externalDisplayName": "Dark",
-                        "authIds": [{
-                            "id": "0",
-                            "type": "xuid"
-                        }]
-                    },
-                    "psn": {
-                        "type": "psn",
-                        "externalAuthId": "0",
-                        "externalAuthIdType": "psn_user_id",
-                        "accountId": "DAKOTAZLOL_1238",
-                        "externalDisplayName": "Dark",
-                        "authIds": [{
-                            "id": "0",
-                            "type": "psn_user_id"
-                        }]
-                    }
-                }
-            },
-            {
-                "id": "SYPHERPKLOL_1238",
-                "displayName": "SypherPK",
-                "externalAuths": {
-                    "xbl": {
-                        "type": "xbl",
-                        "externalAuthIdType": "xuid",
-                        "accountId": "SYPHERPKLOL_1238",
-                        "externalDisplayName": "SypherPK",
-                        "authIds": [{
-                            "id": "0",
-                            "type": "xuid"
-                        }]
-                    },
-                    "psn": {
-                        "type": "psn",
-                        "externalAuthId": "0",
-                        "externalAuthIdType": "psn_user_id",
-                        "accountId": "SYPHERPKLOL_1238",
-                        "externalDisplayName": "SypherPK",
-                        "authIds": [{
-                            "id": "0",
-                            "type": "psn_user_id"
-                        }]
-                    }
-                }
-            },
-            {
-                "id": "NICKEH30LOLL_2897669",
-                "displayName": "Nick Eh 30",
-                "externalAuths": {
-                    "xbl": {
-                        "type": "xbl",
-                        "externalAuthIdType": "xuid",
-                        "accountId": "NICKEH30LOLL_2897669",
-                        "externalDisplayName": "Nick Eh 30",
-                        "authIds": [{
-                            "id": "0",
-                            "type": "xuid"
-                        }]
-                    },
-                    "psn": {
-                        "type": "psn",
-                        "externalAuthId": "0",
-                        "externalAuthIdType": "psn_user_id",
-                        "accountId": "NICKEH30LOLL_2897669",
-                        "externalDisplayName": "Nick Eh 30",
-                        "authIds": [{
-                            "id": "0",
-                            "type": "psn_user_id"
-                        }]
-                    }
-                }
+            })
+        }
+
+        if (accounts.find(i => i.id.toLowerCase() == req.query.accountId.toLowerCase()).displayName != displayName) {
+            var index = accounts.findIndex(i => i.id.toLowerCase() == req.query.accountId.toLowerCase());
+            accounts[index].displayName = displayName;
+        }
+    }
+
+    if (typeof req.query.accountId == "string") {
+        if (accounts.find(i => i.id.toLowerCase() == req.query.accountId.toLowerCase())) {
+            response.push(accounts.find(i => i.id.toLowerCase() == req.query.accountId.toLowerCase()))
+        }
+    }
+
+    if (Array.isArray(req.query.accountId)) {
+        for (var x in req.query.accountId) {
+            if (accounts.find(i => i.id.toLowerCase() == req.query.accountId[x].toLowerCase())) {
+                response.push(accounts.find(i => i.id.toLowerCase() == req.query.accountId[x].toLowerCase()))
             }
-        ]
-    )
+        }
+    }
+
+    fs.writeFileSync("./responses/account.json", JSON.stringify(accounts, null, 2));
+
+    res.json(response)
 })
 
 express.get("/account/api/public/account/:accountId", async (req, res) => {
@@ -247,6 +72,8 @@ express.get("/account/api/public/account/:accountId", async (req, res) => {
     if (config.Config.bUseConfigDisplayName == false) {
         displayName = req.params.accountId;
     }
+
+    if (displayName.includes("@")) displayName = displayName.split("@")[0];
 
     res.json({
         "id": req.params.accountId,
@@ -315,7 +142,11 @@ express.post("/account/api/oauth/token", async (req, res) => {
     if (config.Config.bUseConfigDisplayName == false) {
         Memory_CurrentAccountID = req.body.username || "LawinServer"
         displayName = req.body.username || "LawinServer"
+
+        if (Memory_CurrentAccountID.includes("@")) Memory_CurrentAccountID = Memory_CurrentAccountID.split("@")[0];
     }
+
+    if (displayName.includes("@")) displayName = displayName.split("@")[0];
 
     res.json({
         "access_token": "lawinstokenlol",

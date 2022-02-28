@@ -40,7 +40,8 @@ express.use(require("./structure/cloudstorage.js"));
 express.use(require("./structure/mcp.js"));
 
 const port = process.env.PORT || 3551;
-express.listen(port, console.log("Started listening on port", port));
+express.listen(port, console.log("LawinServer started listening on port", port));
+require("./structure/xmpp.js");
 
 if (!fs.existsSync(path.join(process.env.LOCALAPPDATA, "LawinServer"))) fs.mkdirSync(path.join(process.env.LOCALAPPDATA, "LawinServer"));
 
