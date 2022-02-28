@@ -84,6 +84,11 @@ express.get("/fortnite/api/calendar/v1/timeline", async (req, res) => {
             "activeSince": "2020-01-01T00:00:00.000Z"
         },
         {
+            "eventType": "EventFlag.Anniversary2018_BR",
+            "activeUntil": "9999-01-01T00:00:00.000Z",
+            "activeSince": "2020-01-01T00:00:00.000Z"
+        },
+        {
             "eventType": "EventFlag.LTM_Heist",
             "activeUntil": "9999-01-01T00:00:00.000Z",
             "activeSince": "2020-01-01T00:00:00.000Z"
