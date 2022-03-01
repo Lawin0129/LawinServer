@@ -19,7 +19,7 @@ express.get("/account/api/public/account", async (req, res) => {
             displayName = req.query.accountId;
             if (displayName.includes("@")) displayName = displayName.split("@")[0];
 
-            if (!accounts.find(i => i.id.toLowerCase() == req.query.accountId.toLowerCase())) {
+            if (!accounts.find(i => i.id == req.query.accountId)) {
                 accounts.push({
                     "id": req.query.accountId,
                     "displayName": displayName,
@@ -27,13 +27,13 @@ express.get("/account/api/public/account", async (req, res) => {
                 })
             }
 
-            if (accounts.find(i => i.id.toLowerCase() == req.query.accountId.toLowerCase()).displayName != displayName) {
-                var index = accounts.findIndex(i => i.id.toLowerCase() == req.query.accountId.toLowerCase());
+            if (accounts.find(i => i.id == req.query.accountId).displayName != displayName) {
+                var index = accounts.findIndex(i => i.id == req.query.accountId);
                 accounts[index].displayName = displayName;
             }
         }
     } else if (typeof req.query.accountId == "string") {
-        if (!accounts.find(i => i.id.toLowerCase() == req.query.accountId.toLowerCase())) {
+        if (!accounts.find(i => i.id == req.query.accountId)) {
             accounts.push({
                 "id": req.query.accountId,
                 "displayName": displayName,
@@ -41,22 +41,22 @@ express.get("/account/api/public/account", async (req, res) => {
             })
         }
 
-        if (accounts.find(i => i.id.toLowerCase() == req.query.accountId.toLowerCase()).displayName != displayName) {
-            var index = accounts.findIndex(i => i.id.toLowerCase() == req.query.accountId.toLowerCase());
+        if (accounts.find(i => i.id == req.query.accountId).displayName != displayName) {
+            var index = accounts.findIndex(i => i.id == req.query.accountId);
             accounts[index].displayName = displayName;
         }
     }
 
     if (typeof req.query.accountId == "string") {
-        if (accounts.find(i => i.id.toLowerCase() == req.query.accountId.toLowerCase())) {
-            response.push(accounts.find(i => i.id.toLowerCase() == req.query.accountId.toLowerCase()))
+        if (accounts.find(i => i.id == req.query.accountId)) {
+            response.push(accounts.find(i => i.id == req.query.accountId))
         }
     }
 
     if (Array.isArray(req.query.accountId)) {
         for (var x in req.query.accountId) {
-            if (accounts.find(i => i.id.toLowerCase() == req.query.accountId[x].toLowerCase())) {
-                response.push(accounts.find(i => i.id.toLowerCase() == req.query.accountId[x].toLowerCase()))
+            if (accounts.find(i => i.id == req.query.accountId[x].toLowerCase())) {
+                response.push(accounts.find(i => i.id == req.query.accountId[x].toLowerCase()))
             }
         }
     }
