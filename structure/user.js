@@ -55,8 +55,8 @@ express.get("/account/api/public/account", async (req, res) => {
 
     if (Array.isArray(req.query.accountId)) {
         for (var x in req.query.accountId) {
-            if (accounts.find(i => i.id == req.query.accountId[x].toLowerCase())) {
-                response.push(accounts.find(i => i.id == req.query.accountId[x].toLowerCase()))
+            if (accounts.find(i => i.id == req.query.accountId[x])) {
+                response.push(accounts.find(i => i.id == req.query.accountId[x]))
             }
         }
     }
