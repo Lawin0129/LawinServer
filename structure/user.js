@@ -6,44 +6,43 @@ const iniparser = require("ini");
 const config = iniparser.parse(fs.readFileSync(path.join(__dirname, "..", "Config", "config.ini")).toString());
 const functions = require("./functions.js");
 const accounts = require("./../responses/account.json");
-var Memory_CurrentAccountID = functions.MakeID().replace(/-/ig, "");
+var Memory_CurrentAccountID = config.Config.displayName;
 
 express.get("/account/api/public/account", async (req, res) => {
-    var displayName = config.Config.displayName;
     var response = [];
 
-    if (displayName.includes("@")) displayName = displayName.split("@")[0];
+    if (Memory_CurrentAccountID.includes("@")) Memory_CurrentAccountID = Memory_CurrentAccountID.split("@")[0];
 
     if (config.Config.bUseConfigDisplayName == false) {
         if (typeof req.query.accountId == "string") {
-            displayName = req.query.accountId;
-            if (displayName.includes("@")) displayName = displayName.split("@")[0];
+            Memory_CurrentAccountID = req.query.accountId;
+            if (Memory_CurrentAccountID.includes("@")) Memory_CurrentAccountID = Memory_CurrentAccountID.split("@")[0];
 
             if (!accounts.find(i => i.id == req.query.accountId)) {
                 accounts.push({
                     "id": req.query.accountId,
-                    "displayName": displayName,
+                    "displayName": Memory_CurrentAccountID,
                     "externalAuths": {}
                 })
             }
 
-            if (accounts.find(i => i.id == req.query.accountId).displayName != displayName) {
+            if (accounts.find(i => i.id == req.query.accountId).displayName != Memory_CurrentAccountID) {
                 var index = accounts.findIndex(i => i.id == req.query.accountId);
-                accounts[index].displayName = displayName;
+                accounts[index].displayName = Memory_CurrentAccountID;
             }
         }
     } else if (typeof req.query.accountId == "string") {
         if (!accounts.find(i => i.id == req.query.accountId)) {
             accounts.push({
                 "id": req.query.accountId,
-                "displayName": displayName,
+                "displayName": Memory_CurrentAccountID,
                 "externalAuths": {}
             })
         }
 
-        if (accounts.find(i => i.id == req.query.accountId).displayName != displayName) {
+        if (accounts.find(i => i.id == req.query.accountId).displayName != Memory_CurrentAccountID) {
             var index = accounts.findIndex(i => i.id == req.query.accountId);
-            accounts[index].displayName = displayName;
+            accounts[index].displayName = Memory_CurrentAccountID;
         }
     }
 
@@ -67,19 +66,17 @@ express.get("/account/api/public/account", async (req, res) => {
 })
 
 express.get("/account/api/public/account/:accountId", async (req, res) => {
-    var displayName = config.Config.displayName;
-
     if (config.Config.bUseConfigDisplayName == false) {
-        displayName = req.params.accountId;
+        Memory_CurrentAccountID = req.params.accountId;
     }
 
-    if (displayName.includes("@")) displayName = displayName.split("@")[0];
+    if (Memory_CurrentAccountID.includes("@")) Memory_CurrentAccountID = Memory_CurrentAccountID.split("@")[0];
 
     res.json({
         "id": req.params.accountId,
-        "displayName": displayName,
+        "displayName": Memory_CurrentAccountID,
         "name": "Lawin",
-        "email": displayName + "@lawin.com",
+        "email": Memory_CurrentAccountID + "@lawin.com",
         "failedLoginAttempts": 0,
         "lastLogin": new Date().toISOString(),
         "numberOfDisplayNameChanges": 0,
@@ -112,12 +109,6 @@ express.delete("/account/api/oauth/sessions/kill/*", async (req, res) => {
 })
 
 express.get("/account/api/oauth/verify", async (req, res) => {
-    var displayName = config.Config.displayName;
-
-    if (config.Config.bUseConfigDisplayName == false) {
-        displayName = Memory_CurrentAccountID
-    }
-
     res.json({
         "token": "lawinstokenlol",
         "session_id": "3c3662bcb661d6de679c636744c66b62",
@@ -129,7 +120,7 @@ express.get("/account/api/oauth/verify", async (req, res) => {
         "expires_in": 28800,
         "expires_at": "9999-12-02T01:12:01.100Z",
         "auth_method": "exchange_code",
-        "display_name": displayName,
+        "display_name": Memory_CurrentAccountID,
         "app": "fortnite",
         "in_app_id": Memory_CurrentAccountID,
         "device_id": "lawinsdeviceidlol"
@@ -137,16 +128,11 @@ express.get("/account/api/oauth/verify", async (req, res) => {
 })
 
 express.post("/account/api/oauth/token", async (req, res) => {
-    var displayName = config.Config.displayName;
-
     if (config.Config.bUseConfigDisplayName == false) {
         Memory_CurrentAccountID = req.body.username || "LawinServer"
-        displayName = req.body.username || "LawinServer"
-
-        if (Memory_CurrentAccountID.includes("@")) Memory_CurrentAccountID = Memory_CurrentAccountID.split("@")[0];
     }
 
-    if (displayName.includes("@")) displayName = displayName.split("@")[0];
+    if (Memory_CurrentAccountID.includes("@")) Memory_CurrentAccountID = Memory_CurrentAccountID.split("@")[0];
 
     res.json({
         "access_token": "lawinstokenlol",
@@ -160,7 +146,7 @@ express.post("/account/api/oauth/token", async (req, res) => {
         "client_id": "lawinsclientidlol",
         "internal_client": true,
         "client_service": "fortnite",
-        "displayName": displayName,
+        "displayName": Memory_CurrentAccountID,
         "app": "fortnite",
         "in_app_id": Memory_CurrentAccountID,
         "device_id": "lawinsdeviceidlol"
