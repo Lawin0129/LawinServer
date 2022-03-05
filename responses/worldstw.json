@@ -22677,5 +22677,1826 @@
       "availableMissionAlerts": [],
       "nextRefresh": "2017-07-25T23:59:59.999Z"
     }
-  ]
+  ],
+  "Seasonal": {
+    "Season5": {
+      "theaters": [
+        {
+          "displayName": {
+            "de": "Die Horde",
+            "en": "The Horde",
+            "it": "L'Orda",
+            "fr": "La horde",
+            "es": "La horda",
+            "pl": "Hordobicie"
+          },
+          "uniqueId": "V12RVJQ2FOT0FE3BVD7R0W3LNBUQC5B4",
+          "author": "This theater zone was recreated by PRO100KatYT for LawinServer.",
+          "theaterSlot": 1,
+          "bIsTestTheater": false,
+          "bHideLikeTestTheater": false,
+          "requiredEventFlag": "EventFlag.RoadTrip2018",
+          "description": {
+            "de": "Baue eine tragbare Basis und stelle dich der Horde.",
+            "en": "Build a portable base and take on the horde.",
+            "it": "Costruisci una base portatile e sconfiggi I'Orda.",
+            "fr": "Construisez un fort portatif et affrontez la horde.",
+            "es": "Construye una base portátil y enfréntate a la horda.",
+            "pl": "Zbuduj przenośną bazę i staw czoła hordzie."
+          },
+          "runtimeInfo": {
+            "theaterType": "Standard",
+            "theaterTags": {
+              "gameplayTags": []
+            },
+            "theaterVisibilityRequirements": {
+              "commanderLevel": 0,
+              "personalPowerRating": 0,
+              "partyPowerRating": 0,
+              "objectiveStatHandle": {
+                "dataTable": "None",
+                "rowName": "None"
+              },
+              "itemDefinition": "None",
+              "eventFlag": "EventFlag.RoadTrip2018"
+            },
+            "requirements": {
+              "commanderLevel": 0,
+              "personalPowerRating": 0,
+              "partyPowerRating": 0,
+              "objectiveStatHandle": {
+                "dataTable": "None",
+                "rowName": "None"
+              },
+              "itemDefinition": "None"
+            },
+            "worldMapPinClass": "BlueprintGeneratedClass'/Game/Environments/WorldMap/Blueprints/WM_PinHorde.WM_PinHorde_C'",
+            "theaterImage": "Texture2D'/Game/UI/Icons/Icon-TheaterDifficulty-_normal_.Icon-TheaterDifficulty-_normal_'",
+            "theaterImages": {
+              "brush_XXS": {
+                "imageSize": {
+                  "x": 32,
+                  "y": 32
+                },
+                "drawAs": "Image",
+                "margin": {
+                  "left": 0,
+                  "top": 0,
+                  "right": 0,
+                  "bottom": 0
+                },
+                "tintColor": {
+                  "specifiedColor": {
+                    "r": 1,
+                    "g": 1,
+                    "b": 1,
+                    "a": 1
+                  },
+                  "colorUseRule": "UseColor_Specified"
+                },
+                "tiling": "NoTile",
+                "mirroring": "NoMirror",
+                "imageType": "NoImage",
+                "resourceObject": "None",
+                "resourceName": "None",
+                "bIsDynamicallyLoaded": false,
+                "uVRegion": {
+                  "min": {
+                    "x": 0,
+                    "y": 0
+                  },
+                  "max": {
+                    "x": 0,
+                    "y": 0
+                  },
+                  "isValid": 0
+                }
+              },
+              "brush_XS": {
+                "imageSize": {
+                  "x": 32,
+                  "y": 32
+                },
+                "drawAs": "Image",
+                "margin": {
+                  "left": 0,
+                  "top": 0,
+                  "right": 0,
+                  "bottom": 0
+                },
+                "tintColor": {
+                  "specifiedColor": {
+                    "r": 1,
+                    "g": 1,
+                    "b": 1,
+                    "a": 1
+                  },
+                  "colorUseRule": "UseColor_Specified"
+                },
+                "tiling": "NoTile",
+                "mirroring": "NoMirror",
+                "imageType": "NoImage",
+                "resourceObject": "None",
+                "resourceName": "None",
+                "bIsDynamicallyLoaded": false,
+                "uVRegion": {
+                  "min": {
+                    "x": 0,
+                    "y": 0
+                  },
+                  "max": {
+                    "x": 0,
+                    "y": 0
+                  },
+                  "isValid": 0
+                }
+              },
+              "brush_S": {
+                "imageSize": {
+                  "x": 32,
+                  "y": 32
+                },
+                "drawAs": "Image",
+                "margin": {
+                  "left": 0,
+                  "top": 0,
+                  "right": 0,
+                  "bottom": 0
+                },
+                "tintColor": {
+                  "specifiedColor": {
+                    "r": 1,
+                    "g": 1,
+                    "b": 1,
+                    "a": 1
+                  },
+                  "colorUseRule": "UseColor_Specified"
+                },
+                "tiling": "NoTile",
+                "mirroring": "NoMirror",
+                "imageType": "NoImage",
+                "resourceObject": "None",
+                "resourceName": "None",
+                "bIsDynamicallyLoaded": false,
+                "uVRegion": {
+                  "min": {
+                    "x": 0,
+                    "y": 0
+                  },
+                  "max": {
+                    "x": 0,
+                    "y": 0
+                  },
+                  "isValid": 0
+                }
+              },
+              "brush_M": {
+                "imageSize": {
+                  "x": 32,
+                  "y": 32
+                },
+                "drawAs": "Image",
+                "margin": {
+                  "left": 0,
+                  "top": 0,
+                  "right": 0,
+                  "bottom": 0
+                },
+                "tintColor": {
+                  "specifiedColor": {
+                    "r": 1,
+                    "g": 1,
+                    "b": 1,
+                    "a": 1
+                  },
+                  "colorUseRule": "UseColor_Specified"
+                },
+                "tiling": "NoTile",
+                "mirroring": "NoMirror",
+                "imageType": "NoImage",
+                "resourceObject": "None",
+                "resourceName": "None",
+                "bIsDynamicallyLoaded": false,
+                "uVRegion": {
+                  "min": {
+                    "x": 0,
+                    "y": 0
+                  },
+                  "max": {
+                    "x": 0,
+                    "y": 0
+                  },
+                  "isValid": 0
+                }
+              },
+              "brush_L": {
+                "imageSize": {
+                  "x": 32,
+                  "y": 32
+                },
+                "drawAs": "Image",
+                "margin": {
+                  "left": 0,
+                  "top": 0,
+                  "right": 0,
+                  "bottom": 0
+                },
+                "tintColor": {
+                  "specifiedColor": {
+                    "r": 1,
+                    "g": 1,
+                    "b": 1,
+                    "a": 1
+                  },
+                  "colorUseRule": "UseColor_Specified"
+                },
+                "tiling": "NoTile",
+                "mirroring": "NoMirror",
+                "imageType": "NoImage",
+                "resourceObject": "None",
+                "resourceName": "None",
+                "bIsDynamicallyLoaded": false,
+                "uVRegion": {
+                  "min": {
+                    "x": 0,
+                    "y": 0
+                  },
+                  "max": {
+                    "x": 0,
+                    "y": 0
+                  },
+                  "isValid": 0
+                }
+              },
+              "brush_XL": {
+                "imageSize": {
+                  "x": 32,
+                  "y": 32
+                },
+                "drawAs": "Image",
+                "margin": {
+                  "left": 0,
+                  "top": 0,
+                  "right": 0,
+                  "bottom": 0
+                },
+                "tintColor": {
+                  "specifiedColor": {
+                    "r": 1,
+                    "g": 1,
+                    "b": 1,
+                    "a": 1
+                  },
+                  "colorUseRule": "UseColor_Specified"
+                },
+                "tiling": "NoTile",
+                "mirroring": "NoMirror",
+                "imageType": "NoImage",
+                "resourceObject": "None",
+                "resourceName": "None",
+                "bIsDynamicallyLoaded": false,
+                "uVRegion": {
+                  "min": {
+                    "x": 0,
+                    "y": 0
+                  },
+                  "max": {
+                    "x": 0,
+                    "y": 0
+                  },
+                  "isValid": 0
+                }
+              }
+            },
+            "theaterColorInfo": {
+              "bUseDifficultyToDetermineColor": false,
+              "color": {
+                "specifiedColor": {
+                  "r": 0.4969330132007599,
+                  "g": 1,
+                  "b": 0.01298299990594387,
+                  "a": 1
+                },
+                "colorUseRule": "UseColor_Specified"
+              }
+            },
+            "socket": "TEST_ElderProto",
+            "missionAlertRequirements": {
+              "commanderLevel": 0,
+              "personalPowerRating": 0,
+              "partyPowerRating": 0,
+              "objectiveStatHandle": {
+                "dataTable": "None",
+                "rowName": "None"
+              },
+              "itemDefinition": "None"
+            }
+          },
+          "tiles": [
+            {
+              "tileType": "AlwaysActive",
+              "zoneTheme": "/Game/World/ZoneThemes/Horde/BP_ZT_BuildTheBase_Desert.BP_ZT_BuildTheBase_Desert_C",
+              "requirements": {
+                "commanderLevel": 0,
+                "personalPowerRating": 0,
+                "partyPowerRating": 0,
+                "objectiveStatHandle": {
+                  "dataTable": "None",
+                  "rowName": "None"
+                },
+                "itemDefinition": "None"
+              },
+              "linkedQuests": [],
+              "xCoordinate": 0,
+              "yCoordinate": 0,
+              "missionWeightOverrides": [
+                {
+                  "weight": 1,
+                  "missionGenerator": "/Game/World/MissionGens/MissionGen_BuildTheBase.MissionGen_BuildTheBase_C"
+                }
+              ],
+              "difficultyWeightOverrides": [],
+              "canBeMissionAlert": true,
+              "tileTags": {
+                "gameplayTags": []
+              }
+            },
+            {
+              "tileType": "AlwaysActive",
+              "zoneTheme": "/Game/World/ZoneThemes/Horde/Stonewood/BP_ZT_ChallengeTheHorde_SW_H.BP_ZT_ChallengeTheHorde_SW_H_C",
+              "requirements": {
+                "commanderLevel": 0,
+                "personalPowerRating": 0,
+                "partyPowerRating": 0,
+                "objectiveStatHandle": {
+                  "dataTable": "None",
+                  "rowName": "None"
+                },
+                "itemDefinition": "None"
+              },
+              "linkedQuests": [],
+              "xCoordinate": -1,
+              "yCoordinate": 1,
+              "missionWeightOverrides": [
+                {
+                  "weight": 1,
+                  "missionGenerator": "/Game/World/MissionGens/MissionGen_ChallengeTheHorde.MissionGen_ChallengeTheHorde_C"
+                }
+              ],
+              "difficultyWeightOverrides": [],
+              "canBeMissionAlert": true,
+              "tileTags": {
+                "gameplayTags": []
+              }
+            },
+            {
+              "tileType": "AlwaysActive",
+              "zoneTheme": "/Game/World/ZoneThemes/Horde/Stonewood/BP_ZT_ChallengeTheHorde_SW_VH.BP_ZT_ChallengeTheHorde_SW_VH_C",
+              "requirements": {
+                "commanderLevel": 0,
+                "personalPowerRating": 0,
+                "partyPowerRating": 0,
+                "objectiveStatHandle": {
+                  "dataTable": "None",
+                  "rowName": "None"
+                },
+                "itemDefinition": "None"
+              },
+              "linkedQuests": [],
+              "xCoordinate": 0,
+              "yCoordinate": 2,
+              "missionWeightOverrides": [
+                {
+                  "weight": 1,
+                  "missionGenerator": "/Game/World/MissionGens/MissionGen_ChallengeTheHorde.MissionGen_ChallengeTheHorde_C"
+                }
+              ],
+              "difficultyWeightOverrides": [],
+              "canBeMissionAlert": true,
+              "tileTags": {
+                "gameplayTags": []
+              }
+            },
+            {
+              "tileType": "AlwaysActive",
+              "zoneTheme": "/Game/World/ZoneThemes/Horde/Plankerton/BP_ZT_ChallengeTheHorde_Plank_VL.BP_ZT_ChallengeTheHorde_Plank_VL_C",
+              "requirements": {
+                "commanderLevel": 0,
+                "personalPowerRating": 0,
+                "partyPowerRating": 0,
+                "objectiveStatHandle": {
+                  "dataTable": "None",
+                  "rowName": "None"
+                },
+                "itemDefinition": "None"
+              },
+              "linkedQuests": [],
+              "xCoordinate": 2,
+              "yCoordinate": -1,
+              "missionWeightOverrides": [
+                {
+                  "weight": 1,
+                  "missionGenerator": "/Game/World/MissionGens/MissionGen_ChallengeTheHorde.MissionGen_ChallengeTheHorde_C"
+                }
+              ],
+              "difficultyWeightOverrides": [],
+              "canBeMissionAlert": true,
+              "tileTags": {
+                "gameplayTags": []
+              }
+            },
+            {
+              "tileType": "AlwaysActive",
+              "zoneTheme": "/Game/World/ZoneThemes/Horde/Plankerton/BP_ZT_ChallengeTheHorde_Plank_M.BP_ZT_ChallengeTheHorde_Plank_M_C",
+              "requirements": {
+                "commanderLevel": 0,
+                "personalPowerRating": 0,
+                "partyPowerRating": 0,
+                "objectiveStatHandle": {
+                  "dataTable": "None",
+                  "rowName": "None"
+                },
+                "itemDefinition": "None"
+              },
+              "linkedQuests": [],
+              "xCoordinate": 2,
+              "yCoordinate": 0,
+              "missionWeightOverrides": [
+                {
+                  "weight": 1,
+                  "missionGenerator": "/Game/World/MissionGens/MissionGen_ChallengeTheHorde.MissionGen_ChallengeTheHorde_C"
+                }
+              ],
+              "difficultyWeightOverrides": [],
+              "canBeMissionAlert": true,
+              "tileTags": {
+                "gameplayTags": []
+              }
+            },
+            {
+              "tileType": "AlwaysActive",
+              "zoneTheme": "/Game/World/ZoneThemes/Horde/Plankerton/BP_ZT_ChallengeTheHorde_Plank_VH.BP_ZT_ChallengeTheHorde_Plank_VH_C",
+              "requirements": {
+                "commanderLevel": 0,
+                "personalPowerRating": 0,
+                "partyPowerRating": 0,
+                "objectiveStatHandle": {
+                  "dataTable": "None",
+                  "rowName": "None"
+                },
+                "itemDefinition": "None"
+              },
+              "linkedQuests": [],
+              "xCoordinate": 3,
+              "yCoordinate": 0,
+              "missionWeightOverrides": [
+                {
+                  "weight": 1,
+                  "missionGenerator": "/Game/World/MissionGens/MissionGen_ChallengeTheHorde.MissionGen_ChallengeTheHorde_C"
+                }
+              ],
+              "difficultyWeightOverrides": [],
+              "canBeMissionAlert": true,
+              "tileTags": {
+                "gameplayTags": []
+              }
+            },
+            {
+              "tileType": "AlwaysActive",
+              "zoneTheme": "/Game/World/ZoneThemes/Horde/Canny/BP_ZT_ChallengeTheHorde_Canny_VL.BP_ZT_ChallengeTheHorde_Canny_VL_C",
+              "requirements": {
+                "commanderLevel": 0,
+                "personalPowerRating": 0,
+                "partyPowerRating": 0,
+                "objectiveStatHandle": {
+                  "dataTable": "None",
+                  "rowName": "None"
+                },
+                "itemDefinition": "None"
+              },
+              "linkedQuests": [],
+              "xCoordinate": -2,
+              "yCoordinate": -1,
+              "missionWeightOverrides": [
+                {
+                  "weight": 1,
+                  "missionGenerator": "/Game/World/MissionGens/MissionGen_ChallengeTheHorde.MissionGen_ChallengeTheHorde_C"
+                }
+              ],
+              "difficultyWeightOverrides": [],
+              "canBeMissionAlert": true,
+              "tileTags": {
+                "gameplayTags": []
+              }
+            },
+            {
+              "tileType": "AlwaysActive",
+              "zoneTheme": "/Game/World/ZoneThemes/Horde/Canny/BP_ZT_ChallengeTheHorde_Canny_M.BP_ZT_ChallengeTheHorde_Canny_M_C",
+              "requirements": {
+                "commanderLevel": 0,
+                "personalPowerRating": 0,
+                "partyPowerRating": 0,
+                "objectiveStatHandle": {
+                  "dataTable": "None",
+                  "rowName": "None"
+                },
+                "itemDefinition": "None"
+              },
+              "linkedQuests": [],
+              "xCoordinate": -1,
+              "yCoordinate": -2,
+              "missionWeightOverrides": [
+                {
+                  "weight": 1,
+                  "missionGenerator": "/Game/World/MissionGens/MissionGen_ChallengeTheHorde.MissionGen_ChallengeTheHorde_C"
+                }
+              ],
+              "difficultyWeightOverrides": [],
+              "canBeMissionAlert": true,
+              "tileTags": {
+                "gameplayTags": []
+              }
+            },
+            {
+              "tileType": "AlwaysActive",
+              "zoneTheme": "/Game/World/ZoneThemes/Horde/Canny/BP_ZT_ChallengeTheHorde_Canny_VH.BP_ZT_ChallengeTheHorde_Canny_VH_C",
+              "requirements": {
+                "commanderLevel": 0,
+                "personalPowerRating": 0,
+                "partyPowerRating": 0,
+                "objectiveStatHandle": {
+                  "dataTable": "None",
+                  "rowName": "None"
+                },
+                "itemDefinition": "None"
+              },
+              "linkedQuests": [],
+              "xCoordinate": -1,
+              "yCoordinate": -3,
+              "missionWeightOverrides": [
+                {
+                  "weight": 1,
+                  "missionGenerator": "/Game/World/MissionGens/MissionGen_ChallengeTheHorde.MissionGen_ChallengeTheHorde_C"
+                }
+              ],
+              "difficultyWeightOverrides": [],
+              "canBeMissionAlert": true,
+              "tileTags": {
+                "gameplayTags": []
+              }
+            },
+            {
+              "tileType": "AlwaysActive",
+              "zoneTheme": "/Game/World/ZoneThemes/Horde/Twinepeaks/BP_ZT_ChallengeTheHorde_Twine.BP_ZT_ChallengeTheHorde_Twine_C",
+              "requirements": {
+                "commanderLevel": 0,
+                "personalPowerRating": 0,
+                "partyPowerRating": 0,
+                "objectiveStatHandle": {
+                  "dataTable": "None",
+                  "rowName": "None"
+                },
+                "itemDefinition": "None"
+              },
+              "linkedQuests": [],
+              "xCoordinate": 1,
+              "yCoordinate": -3,
+              "missionWeightOverrides": [
+                {
+                  "weight": 1,
+                  "missionGenerator": "/Game/World/MissionGens/MissionGen_ChallengeTheHorde.MissionGen_ChallengeTheHorde_C"
+                }
+              ],
+              "difficultyWeightOverrides": [],
+              "canBeMissionAlert": true,
+              "tileTags": {
+                "gameplayTags": []
+              }
+            },
+            {
+              "tileType": "NonMission",
+              "zoneTheme": "/Game/World/ZoneThemes/ZT_Arid/BP_ZT_Desert.BP_ZT_Desert_C",
+              "requirements": {
+                "commanderLevel": 0,
+                "personalPowerRating": 0,
+                "partyPowerRating": 0,
+                "objectiveStatHandle": {
+                  "dataTable": "None",
+                  "rowName": "None"
+                },
+                "itemDefinition": "None"
+              },
+              "linkedQuests": [],
+              "xCoordinate": -1,
+              "yCoordinate": 0,
+              "missionWeightOverrides": [],
+              "difficultyWeightOverrides": [],
+              "canBeMissionAlert": true,
+              "tileTags": {
+                "gameplayTags": []
+              }
+            },
+            {
+              "tileType": "NonMission",
+              "zoneTheme": "/Game/World/ZoneThemes/ZT_Arid/BP_ZT_Desert.BP_ZT_Desert_C",
+              "requirements": {
+                "commanderLevel": 0,
+                "personalPowerRating": 0,
+                "partyPowerRating": 0,
+                "objectiveStatHandle": {
+                  "dataTable": "None",
+                  "rowName": "None"
+                },
+                "itemDefinition": "None"
+              },
+              "linkedQuests": [],
+              "xCoordinate": 1,
+              "yCoordinate": 0,
+              "missionWeightOverrides": [],
+              "difficultyWeightOverrides": [],
+              "canBeMissionAlert": true,
+              "tileTags": {
+                "gameplayTags": []
+              }
+            },
+            {
+              "tileType": "NonMission",
+              "zoneTheme": "/Game/World/ZoneThemes/ZT_Arid/BP_ZT_Desert.BP_ZT_Desert_C",
+              "requirements": {
+                "commanderLevel": 0,
+                "personalPowerRating": 0,
+                "partyPowerRating": 0,
+                "objectiveStatHandle": {
+                  "dataTable": "None",
+                  "rowName": "None"
+                },
+                "itemDefinition": "None"
+              },
+              "linkedQuests": [],
+              "xCoordinate": 0,
+              "yCoordinate": -1,
+              "missionWeightOverrides": [],
+              "difficultyWeightOverrides": [],
+              "canBeMissionAlert": true,
+              "tileTags": {
+                "gameplayTags": []
+              }
+            },
+            {
+              "tileType": "NonMission",
+              "zoneTheme": "/Game/World/ZoneThemes/ZT_Arid/BP_ZT_Desert.BP_ZT_Desert_C",
+              "requirements": {
+                "commanderLevel": 0,
+                "personalPowerRating": 0,
+                "partyPowerRating": 0,
+                "objectiveStatHandle": {
+                  "dataTable": "None",
+                  "rowName": "None"
+                },
+                "itemDefinition": "None"
+              },
+              "linkedQuests": [],
+              "xCoordinate": 0,
+              "yCoordinate": 1,
+              "missionWeightOverrides": [],
+              "difficultyWeightOverrides": [],
+              "canBeMissionAlert": true,
+              "tileTags": {
+                "gameplayTags": []
+              }
+            },
+            {
+              "tileType": "NonMission",
+              "zoneTheme": "/Game/World/ZoneThemes/ZT_Arid/BP_ZT_Desert.BP_ZT_Desert_C",
+              "requirements": {
+                "commanderLevel": 0,
+                "personalPowerRating": 0,
+                "partyPowerRating": 0,
+                "objectiveStatHandle": {
+                  "dataTable": "None",
+                  "rowName": "None"
+                },
+                "itemDefinition": "None"
+              },
+              "linkedQuests": [],
+              "xCoordinate": -2,
+              "yCoordinate": 1,
+              "missionWeightOverrides": [],
+              "difficultyWeightOverrides": [],
+              "canBeMissionAlert": true,
+              "tileTags": {
+                "gameplayTags": []
+              }
+            },
+            {
+              "tileType": "NonMission",
+              "zoneTheme": "/Game/World/ZoneThemes/ZT_Arid/BP_ZT_Desert.BP_ZT_Desert_C",
+              "requirements": {
+                "commanderLevel": 0,
+                "personalPowerRating": 0,
+                "partyPowerRating": 0,
+                "objectiveStatHandle": {
+                  "dataTable": "None",
+                  "rowName": "None"
+                },
+                "itemDefinition": "None"
+              },
+              "linkedQuests": [],
+              "xCoordinate": -1,
+              "yCoordinate": 2,
+              "missionWeightOverrides": [],
+              "difficultyWeightOverrides": [],
+              "canBeMissionAlert": true,
+              "tileTags": {
+                "gameplayTags": []
+              }
+            },
+            {
+              "tileType": "NonMission",
+              "zoneTheme": "/Game/World/ZoneThemes/ZT_Arid/BP_ZT_Desert.BP_ZT_Desert_C",
+              "requirements": {
+                "commanderLevel": 0,
+                "personalPowerRating": 0,
+                "partyPowerRating": 0,
+                "objectiveStatHandle": {
+                  "dataTable": "None",
+                  "rowName": "None"
+                },
+                "itemDefinition": "None"
+              },
+              "linkedQuests": [],
+              "xCoordinate": 1,
+              "yCoordinate": 2,
+              "missionWeightOverrides": [],
+              "difficultyWeightOverrides": [],
+              "canBeMissionAlert": true,
+              "tileTags": {
+                "gameplayTags": []
+              }
+            },
+            {
+              "tileType": "NonMission",
+              "zoneTheme": "/Game/World/ZoneThemes/ZT_Arid/BP_ZT_Desert.BP_ZT_Desert_C",
+              "requirements": {
+                "commanderLevel": 0,
+                "personalPowerRating": 0,
+                "partyPowerRating": 0,
+                "objectiveStatHandle": {
+                  "dataTable": "None",
+                  "rowName": "None"
+                },
+                "itemDefinition": "None"
+              },
+              "linkedQuests": [],
+              "xCoordinate": 0,
+              "yCoordinate": 3,
+              "missionWeightOverrides": [],
+              "difficultyWeightOverrides": [],
+              "canBeMissionAlert": true,
+              "tileTags": {
+                "gameplayTags": []
+              }
+            },
+            {
+              "tileType": "NonMission",
+              "zoneTheme": "/Game/World/ZoneThemes/ZT_Arid/BP_ZT_Desert.BP_ZT_Desert_C",
+              "requirements": {
+                "commanderLevel": 0,
+                "personalPowerRating": 0,
+                "partyPowerRating": 0,
+                "objectiveStatHandle": {
+                  "dataTable": "None",
+                  "rowName": "None"
+                },
+                "itemDefinition": "None"
+              },
+              "linkedQuests": [],
+              "xCoordinate": 1,
+              "yCoordinate": -1,
+              "missionWeightOverrides": [],
+              "difficultyWeightOverrides": [],
+              "canBeMissionAlert": true,
+              "tileTags": {
+                "gameplayTags": []
+              }
+            },
+            {
+              "tileType": "NonMission",
+              "zoneTheme": "/Game/World/ZoneThemes/ZT_Arid/BP_ZT_Desert.BP_ZT_Desert_C",
+              "requirements": {
+                "commanderLevel": 0,
+                "personalPowerRating": 0,
+                "partyPowerRating": 0,
+                "objectiveStatHandle": {
+                  "dataTable": "None",
+                  "rowName": "None"
+                },
+                "itemDefinition": "None"
+              },
+              "linkedQuests": [],
+              "xCoordinate": 3,
+              "yCoordinate": -1,
+              "missionWeightOverrides": [],
+              "difficultyWeightOverrides": [],
+              "canBeMissionAlert": true,
+              "tileTags": {
+                "gameplayTags": []
+              }
+            },
+            {
+              "tileType": "NonMission",
+              "zoneTheme": "/Game/World/ZoneThemes/ZT_Arid/BP_ZT_Desert.BP_ZT_Desert_C",
+              "requirements": {
+                "commanderLevel": 0,
+                "personalPowerRating": 0,
+                "partyPowerRating": 0,
+                "objectiveStatHandle": {
+                  "dataTable": "None",
+                  "rowName": "None"
+                },
+                "itemDefinition": "None"
+              },
+              "linkedQuests": [],
+              "xCoordinate": 2,
+              "yCoordinate": -2,
+              "missionWeightOverrides": [],
+              "difficultyWeightOverrides": [],
+              "canBeMissionAlert": true,
+              "tileTags": {
+                "gameplayTags": []
+              }
+            },
+            {
+              "tileType": "NonMission",
+              "zoneTheme": "/Game/World/ZoneThemes/ZT_Arid/BP_ZT_Desert.BP_ZT_Desert_C",
+              "requirements": {
+                "commanderLevel": 0,
+                "personalPowerRating": 0,
+                "partyPowerRating": 0,
+                "objectiveStatHandle": {
+                  "dataTable": "None",
+                  "rowName": "None"
+                },
+                "itemDefinition": "None"
+              },
+              "linkedQuests": [],
+              "xCoordinate": 2,
+              "yCoordinate": 1,
+              "missionWeightOverrides": [],
+              "difficultyWeightOverrides": [],
+              "canBeMissionAlert": true,
+              "tileTags": {
+                "gameplayTags": []
+              }
+            },
+            {
+              "tileType": "NonMission",
+              "zoneTheme": "/Game/World/ZoneThemes/ZT_Arid/BP_ZT_Desert.BP_ZT_Desert_C",
+              "requirements": {
+                "commanderLevel": 0,
+                "personalPowerRating": 0,
+                "partyPowerRating": 0,
+                "objectiveStatHandle": {
+                  "dataTable": "None",
+                  "rowName": "None"
+                },
+                "itemDefinition": "None"
+              },
+              "linkedQuests": [],
+              "xCoordinate": 4,
+              "yCoordinate": 0,
+              "missionWeightOverrides": [],
+              "difficultyWeightOverrides": [],
+              "canBeMissionAlert": true,
+              "tileTags": {
+                "gameplayTags": []
+              }
+            },
+            {
+              "tileType": "NonMission",
+              "zoneTheme": "/Game/World/ZoneThemes/ZT_Arid/BP_ZT_Desert.BP_ZT_Desert_C",
+              "requirements": {
+                "commanderLevel": 0,
+                "personalPowerRating": 0,
+                "partyPowerRating": 0,
+                "objectiveStatHandle": {
+                  "dataTable": "None",
+                  "rowName": "None"
+                },
+                "itemDefinition": "None"
+              },
+              "linkedQuests": [],
+              "xCoordinate": 3,
+              "yCoordinate": 1,
+              "missionWeightOverrides": [],
+              "difficultyWeightOverrides": [],
+              "canBeMissionAlert": true,
+              "tileTags": {
+                "gameplayTags": []
+              }
+            },
+            {
+              "tileType": "NonMission",
+              "zoneTheme": "/Game/World/ZoneThemes/ZT_Arid/BP_ZT_Desert.BP_ZT_Desert_C",
+              "requirements": {
+                "commanderLevel": 0,
+                "personalPowerRating": 0,
+                "partyPowerRating": 0,
+                "objectiveStatHandle": {
+                  "dataTable": "None",
+                  "rowName": "None"
+                },
+                "itemDefinition": "None"
+              },
+              "linkedQuests": [],
+              "xCoordinate": -3,
+              "yCoordinate": -1,
+              "missionWeightOverrides": [],
+              "difficultyWeightOverrides": [],
+              "canBeMissionAlert": true,
+              "tileTags": {
+                "gameplayTags": []
+              }
+            },
+            {
+              "tileType": "NonMission",
+              "zoneTheme": "/Game/World/ZoneThemes/ZT_Arid/BP_ZT_Desert.BP_ZT_Desert_C",
+              "requirements": {
+                "commanderLevel": 0,
+                "personalPowerRating": 0,
+                "partyPowerRating": 0,
+                "objectiveStatHandle": {
+                  "dataTable": "None",
+                  "rowName": "None"
+                },
+                "itemDefinition": "None"
+              },
+              "linkedQuests": [],
+              "xCoordinate": -1,
+              "yCoordinate": -1,
+              "missionWeightOverrides": [],
+              "difficultyWeightOverrides": [],
+              "canBeMissionAlert": true,
+              "tileTags": {
+                "gameplayTags": []
+              }
+            },
+            {
+              "tileType": "NonMission",
+              "zoneTheme": "/Game/World/ZoneThemes/ZT_Arid/BP_ZT_Desert.BP_ZT_Desert_C",
+              "requirements": {
+                "commanderLevel": 0,
+                "personalPowerRating": 0,
+                "partyPowerRating": 0,
+                "objectiveStatHandle": {
+                  "dataTable": "None",
+                  "rowName": "None"
+                },
+                "itemDefinition": "None"
+              },
+              "linkedQuests": [],
+              "xCoordinate": -2,
+              "yCoordinate": -2,
+              "missionWeightOverrides": [],
+              "difficultyWeightOverrides": [],
+              "canBeMissionAlert": true,
+              "tileTags": {
+                "gameplayTags": []
+              }
+            },
+            {
+              "tileType": "NonMission",
+              "zoneTheme": "/Game/World/ZoneThemes/ZT_Arid/BP_ZT_Desert.BP_ZT_Desert_C",
+              "requirements": {
+                "commanderLevel": 0,
+                "personalPowerRating": 0,
+                "partyPowerRating": 0,
+                "objectiveStatHandle": {
+                  "dataTable": "None",
+                  "rowName": "None"
+                },
+                "itemDefinition": "None"
+              },
+              "linkedQuests": [],
+              "xCoordinate": -2,
+              "yCoordinate": 0,
+              "missionWeightOverrides": [],
+              "difficultyWeightOverrides": [],
+              "canBeMissionAlert": true,
+              "tileTags": {
+                "gameplayTags": []
+              }
+            },
+            {
+              "tileType": "NonMission",
+              "zoneTheme": "/Game/World/ZoneThemes/ZT_Arid/BP_ZT_Desert.BP_ZT_Desert_C",
+              "requirements": {
+                "commanderLevel": 0,
+                "personalPowerRating": 0,
+                "partyPowerRating": 0,
+                "objectiveStatHandle": {
+                  "dataTable": "None",
+                  "rowName": "None"
+                },
+                "itemDefinition": "None"
+              },
+              "linkedQuests": [],
+              "xCoordinate": 0,
+              "yCoordinate": -2,
+              "missionWeightOverrides": [],
+              "difficultyWeightOverrides": [],
+              "canBeMissionAlert": true,
+              "tileTags": {
+                "gameplayTags": []
+              }
+            },
+            {
+              "tileType": "NonMission",
+              "zoneTheme": "/Game/World/ZoneThemes/ZT_Arid/BP_ZT_Desert.BP_ZT_Desert_C",
+              "requirements": {
+                "commanderLevel": 0,
+                "personalPowerRating": 0,
+                "partyPowerRating": 0,
+                "objectiveStatHandle": {
+                  "dataTable": "None",
+                  "rowName": "None"
+                },
+                "itemDefinition": "None"
+              },
+              "linkedQuests": [],
+              "xCoordinate": -2,
+              "yCoordinate": -3,
+              "missionWeightOverrides": [],
+              "difficultyWeightOverrides": [],
+              "canBeMissionAlert": true,
+              "tileTags": {
+                "gameplayTags": []
+              }
+            },
+            {
+              "tileType": "NonMission",
+              "zoneTheme": "/Game/World/ZoneThemes/ZT_Arid/BP_ZT_Desert.BP_ZT_Desert_C",
+              "requirements": {
+                "commanderLevel": 0,
+                "personalPowerRating": 0,
+                "partyPowerRating": 0,
+                "objectiveStatHandle": {
+                  "dataTable": "None",
+                  "rowName": "None"
+                },
+                "itemDefinition": "None"
+              },
+              "linkedQuests": [],
+              "xCoordinate": 0,
+              "yCoordinate": -3,
+              "missionWeightOverrides": [],
+              "difficultyWeightOverrides": [],
+              "canBeMissionAlert": true,
+              "tileTags": {
+                "gameplayTags": []
+              }
+            },
+            {
+              "tileType": "NonMission",
+              "zoneTheme": "/Game/World/ZoneThemes/ZT_Arid/BP_ZT_Desert.BP_ZT_Desert_C",
+              "requirements": {
+                "commanderLevel": 0,
+                "personalPowerRating": 0,
+                "partyPowerRating": 0,
+                "objectiveStatHandle": {
+                  "dataTable": "None",
+                  "rowName": "None"
+                },
+                "itemDefinition": "None"
+              },
+              "linkedQuests": [],
+              "xCoordinate": -1,
+              "yCoordinate": -4,
+              "missionWeightOverrides": [],
+              "difficultyWeightOverrides": [],
+              "canBeMissionAlert": true,
+              "tileTags": {
+                "gameplayTags": []
+              }
+            },
+            {
+              "tileType": "NonMission",
+              "zoneTheme": "/Game/World/ZoneThemes/ZT_Arid/BP_ZT_Desert.BP_ZT_Desert_C",
+              "requirements": {
+                "commanderLevel": 0,
+                "personalPowerRating": 0,
+                "partyPowerRating": 0,
+                "objectiveStatHandle": {
+                  "dataTable": "None",
+                  "rowName": "None"
+                },
+                "itemDefinition": "None"
+              },
+              "linkedQuests": [],
+              "xCoordinate": 2,
+              "yCoordinate": -3,
+              "missionWeightOverrides": [],
+              "difficultyWeightOverrides": [],
+              "canBeMissionAlert": true,
+              "tileTags": {
+                "gameplayTags": []
+              }
+            },
+            {
+              "tileType": "NonMission",
+              "zoneTheme": "/Game/World/ZoneThemes/ZT_Arid/BP_ZT_Desert.BP_ZT_Desert_C",
+              "requirements": {
+                "commanderLevel": 0,
+                "personalPowerRating": 0,
+                "partyPowerRating": 0,
+                "objectiveStatHandle": {
+                  "dataTable": "None",
+                  "rowName": "None"
+                },
+                "itemDefinition": "None"
+              },
+              "linkedQuests": [],
+              "xCoordinate": 1,
+              "yCoordinate": -4,
+              "missionWeightOverrides": [],
+              "difficultyWeightOverrides": [],
+              "canBeMissionAlert": true,
+              "tileTags": {
+                "gameplayTags": []
+              }
+            },
+            {
+              "tileType": "NonMission",
+              "zoneTheme": "/Game/World/ZoneThemes/ZT_Arid/BP_ZT_Desert.BP_ZT_Desert_C",
+              "requirements": {
+                "commanderLevel": 0,
+                "personalPowerRating": 0,
+                "partyPowerRating": 0,
+                "objectiveStatHandle": {
+                  "dataTable": "None",
+                  "rowName": "None"
+                },
+                "itemDefinition": "None"
+              },
+              "linkedQuests": [],
+              "xCoordinate": 1,
+              "yCoordinate": -2,
+              "missionWeightOverrides": [],
+              "difficultyWeightOverrides": [],
+              "canBeMissionAlert": true,
+              "tileTags": {
+                "gameplayTags": []
+              }
+            },
+            {
+              "tileType": "NonMission",
+              "zoneTheme": "/Game/World/ZoneThemes/ZT_Arid/BP_ZT_Desert.BP_ZT_Desert_C",
+              "requirements": {
+                "commanderLevel": 0,
+                "personalPowerRating": 0,
+                "partyPowerRating": 0,
+                "objectiveStatHandle": {
+                  "dataTable": "None",
+                  "rowName": "None"
+                },
+                "itemDefinition": "None"
+              },
+              "linkedQuests": [],
+              "xCoordinate": 0,
+              "yCoordinate": -5,
+              "missionWeightOverrides": [],
+              "difficultyWeightOverrides": [],
+              "canBeMissionAlert": true,
+              "tileTags": {
+                "gameplayTags": []
+              }
+            },
+            {
+              "tileType": "NonMission",
+              "zoneTheme": "/Game/World/ZoneThemes/ZT_Arid/BP_ZT_Desert.BP_ZT_Desert_C",
+              "requirements": {
+                "commanderLevel": 0,
+                "personalPowerRating": 0,
+                "partyPowerRating": 0,
+                "objectiveStatHandle": {
+                  "dataTable": "None",
+                  "rowName": "None"
+                },
+                "itemDefinition": "None"
+              },
+              "linkedQuests": [],
+              "xCoordinate": 0,
+              "yCoordinate": 5,
+              "missionWeightOverrides": [],
+              "difficultyWeightOverrides": [],
+              "canBeMissionAlert": true,
+              "tileTags": {
+                "gameplayTags": []
+              }
+            },
+            {
+              "tileType": "NonMission",
+              "zoneTheme": "/Game/World/ZoneThemes/ZT_Arid/BP_ZT_Desert.BP_ZT_Desert_C",
+              "requirements": {
+                "commanderLevel": 0,
+                "personalPowerRating": 0,
+                "partyPowerRating": 0,
+                "objectiveStatHandle": {
+                  "dataTable": "None",
+                  "rowName": "None"
+                },
+                "itemDefinition": "None"
+              },
+              "linkedQuests": [],
+              "xCoordinate": 5,
+              "yCoordinate": 0,
+              "missionWeightOverrides": [],
+              "difficultyWeightOverrides": [],
+              "canBeMissionAlert": true,
+              "tileTags": {
+                "gameplayTags": []
+              }
+            },
+            {
+              "tileType": "NonMission",
+              "zoneTheme": "/Game/World/ZoneThemes/ZT_Arid/BP_ZT_Desert.BP_ZT_Desert_C",
+              "requirements": {
+                "commanderLevel": 0,
+                "personalPowerRating": 0,
+                "partyPowerRating": 0,
+                "objectiveStatHandle": {
+                  "dataTable": "None",
+                  "rowName": "None"
+                },
+                "itemDefinition": "None"
+              },
+              "linkedQuests": [],
+              "xCoordinate": -5,
+              "yCoordinate": 0,
+              "missionWeightOverrides": [],
+              "difficultyWeightOverrides": [],
+              "canBeMissionAlert": true,
+              "tileTags": {
+                "gameplayTags": []
+              }
+            }
+          ],
+          "regions": [
+            {
+              "displayName": "The Horde",
+              "regionTags": {
+                "gameplayTags": []
+              },
+              "tileIndices": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9
+              ],
+              "regionThemeIcon": "None",
+              "missionData": {
+                "missionWeights": [],
+                "difficultyWeights": [],
+                "numMissionsAvailable": 0,
+                "numMissionsToChange": 0,
+                "missionChangeFrequency": 0
+              },
+              "requirements": {
+                "commanderLevel": 0,
+                "personalPowerRating": 0,
+                "partyPowerRating": 0,
+                "objectiveStatHandle": {
+                  "dataTable": "None",
+                  "rowName": "None"
+                },
+                "itemDefinition": "None"
+              }
+            },
+            {
+              "displayName": "Non Mission",
+              "regionTags": {
+                "gameplayTags": []
+              },
+              "tileIndices": [
+                10,
+                11,
+                12,
+                13,
+                14,
+                15,
+                16,
+                17,
+                18,
+                19,
+                20,
+                21,
+                22,
+                23,
+                24,
+                25,
+                26,
+                27,
+                28,
+                29,
+                30,
+                31,
+                32,
+                33,
+                34,
+                35,
+                36,
+                37,
+                38
+              ],
+              "regionThemeIcon": "None",
+              "missionData": {
+                "missionWeights": [],
+                "difficultyWeights": [],
+                "numMissionsAvailable": 0,
+                "numMissionsToChange": 0,
+                "missionChangeFrequency": 0
+              },
+              "requirements": {
+                "commanderLevel": 0,
+                "personalPowerRating": 0,
+                "partyPowerRating": 0,
+                "objectiveStatHandle": {
+                  "dataTable": "None",
+                  "rowName": "None"
+                },
+                "itemDefinition": "None"
+              }
+            }
+          ]
+        }
+      ],
+      "missions": [
+        {
+          "theaterId": "V12RVJQ2FOT0FE3BVD7R0W3LNBUQC5B4",
+          "availableMissions": [
+            {
+              "missionGuid": "de4cd9a1-7b60-b86f-d57a-2b69d35f6d6b",
+              "missionRewards": {},
+              "missionGenerator": "/Game/World/MissionGens/MissionGen_BuildTheBase.MissionGen_BuildTheBase_C",
+              "missionDifficultyInfo": {
+                "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
+                "rowName": "Theater_Horde_Stonewood_VeryLow"
+              },
+              "tileIndex": 0,
+              "availableUntil": "2017-07-25T23:59:59.999Z"
+            },
+            {
+              "missionGuid": "52b91f1e-942b-a87c-e239-6d4a1694f535",
+              "missionRewards": {
+                "tierGroupName": "HordeBash_Stonewood_High",
+                "items": [
+                  {
+                    "itemType": "AccountResource:schematicxp",
+                    "quantity": 1
+                  },
+                  {
+                    "itemType": "AccountResource:eventcurrency_scaling",
+                    "quantity": 1
+                  }
+                ]
+              },
+              "missionGenerator": "/Game/World/MissionGens/MissionGen_ChallengeTheHorde.MissionGen_ChallengeTheHorde_C",
+              "missionDifficultyInfo": {
+                "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
+                "rowName": "Theater_Horde_Stonewood_High"
+              },
+              "tileIndex": 1,
+              "availableUntil": "2017-07-25T23:59:59.999Z"
+            },
+            {
+              "missionGuid": "0ca13b17-4c4d-64b1-6ead-ffc0e1b09646",
+              "missionRewards": {
+                "tierGroupName": "HordeBash_Stonewood_VeryHigh",
+                "items": [
+                  {
+                    "itemType": "AccountResource:heroxp",
+                    "quantity": 1
+                  },
+                  {
+                    "itemType": "AccountResource:eventcurrency_scaling",
+                    "quantity": 1
+                  }
+                ]
+              },
+              "missionGenerator": "/Game/World/MissionGens/MissionGen_ChallengeTheHorde.MissionGen_ChallengeTheHorde_C",
+              "missionDifficultyInfo": {
+                "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
+                "rowName": "Theater_Horde_Stonewood_VeryHigh"
+              },
+              "tileIndex": 2,
+              "availableUntil": "2017-07-25T23:59:59.999Z"
+            },
+            {
+              "missionGuid": "ea1238a7-a9f1-d5e3-c6e5-8e22aefff639",
+              "missionRewards": {
+                "tierGroupName": "HordeBash_Plankerton_VeryLow",
+                "items": [
+                  {
+                    "itemType": "AccountResource:schematicxp",
+                    "quantity": 1
+                  },
+                  {
+                    "itemType": "AccountResource:eventcurrency_scaling",
+                    "quantity": 1
+                  }
+                ]
+              },
+              "missionGenerator": "/Game/World/MissionGens/MissionGen_ChallengeTheHorde.MissionGen_ChallengeTheHorde_C",
+              "missionDifficultyInfo": {
+                "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
+                "rowName": "Theater_Horde_Plankerton_VeryLow"
+              },
+              "tileIndex": 3,
+              "availableUntil": "2017-07-25T23:59:59.999Z"
+            },
+            {
+              "missionGuid": "90f74c0e-181f-7a78-b633-871a2e7d1c37",
+              "missionRewards": {
+                "tierGroupName": "HordeBash_Plankerton_Medium",
+                "items": [
+                  {
+                    "itemType": "AccountResource:personnelxp",
+                    "quantity": 1
+                  },
+                  {
+                    "itemType": "AccountResource:eventcurrency_scaling",
+                    "quantity": 1
+                  }
+                ]
+              },
+              "missionGenerator": "/Game/World/MissionGens/MissionGen_ChallengeTheHorde.MissionGen_ChallengeTheHorde_C",
+              "missionDifficultyInfo": {
+                "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
+                "rowName": "Theater_Horde_Plankerton_Medium"
+              },
+              "tileIndex": 4,
+              "availableUntil": "2017-07-25T23:59:59.999Z"
+            },
+            {
+              "missionGuid": "fe64cfcf-6310-979d-bfc5-346fa8c6ff02",
+              "missionRewards": {
+                "tierGroupName": "HordeBash_Plankerton_VeryHigh",
+                "items": [
+                  {
+                    "itemType": "AccountResource:personnelxp",
+                    "quantity": 1
+                  },
+                  {
+                    "itemType": "AccountResource:eventcurrency_scaling",
+                    "quantity": 1
+                  },
+                  {
+                    "itemType": "AccountResource:reagent_alteration_upgrade_uc",
+                    "quantity": 1
+                  }
+                ]
+              },
+              "missionGenerator": "/Game/World/MissionGens/MissionGen_ChallengeTheHorde.MissionGen_ChallengeTheHorde_C",
+              "missionDifficultyInfo": {
+                "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
+                "rowName": "Theater_Horde_Plankerton_VeryHigh"
+              },
+              "tileIndex": 5,
+              "availableUntil": "2017-07-25T23:59:59.999Z"
+            },
+            {
+              "missionGuid": "f444abb9-0d08-2ec7-4617-1a4d7b8dd630",
+              "missionRewards": {
+                "tierGroupName": "HordeBash_Canny_VeryLow",
+                "items": [
+                  {
+                    "itemType": "AccountResource:personnelxp",
+                    "quantity": 1
+                  },
+                  {
+                    "itemType": "AccountResource:eventcurrency_scaling",
+                    "quantity": 1
+                  },
+                  {
+                    "itemType": "AccountResource:reagent_alteration_generic",
+                    "quantity": 2
+                  }
+                ]
+              },
+              "missionGenerator": "/Game/World/MissionGens/MissionGen_ChallengeTheHorde.MissionGen_ChallengeTheHorde_C",
+              "missionDifficultyInfo": {
+                "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
+                "rowName": "Theater_Horde_Uncanny_VeryLow"
+              },
+              "tileIndex": 6,
+              "availableUntil": "2017-07-25T23:59:59.999Z"
+            },
+            {
+              "missionGuid": "945d8a44-3171-1f86-22c0-dfedd7b1803d",
+              "missionRewards": {
+                "tierGroupName": "HordeBash_Canny_Medium",
+                "items": [
+                  {
+                    "itemType": "AccountResource:schematicxp",
+                    "quantity": 1
+                  },
+                  {
+                    "itemType": "AccountResource:eventcurrency_scaling",
+                    "quantity": 1
+                  },
+                  {
+                    "itemType": "AccountResource:reagent_alteration_generic",
+                    "quantity": 2
+                  }
+                ]
+              },
+              "missionGenerator": "/Game/World/MissionGens/MissionGen_ChallengeTheHorde.MissionGen_ChallengeTheHorde_C",
+              "missionDifficultyInfo": {
+                "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
+                "rowName": "Theater_Horde_Uncanny_Medium"
+              },
+              "tileIndex": 7,
+              "availableUntil": "2017-07-25T23:59:59.999Z"
+            },
+            {
+              "missionGuid": "62e5861c-23a5-f5d6-9083-df142463c5ae",
+              "missionRewards": {
+                "tierGroupName": "HordeBash_Canny_VeryHigh",
+                "items": [
+                  {
+                    "itemType": "AccountResource:heroxp",
+                    "quantity": 1
+                  },
+                  {
+                    "itemType": "AccountResource:eventcurrency_scaling",
+                    "quantity": 1
+                  },
+                  {
+                    "itemType": "AccountResource:reagent_alteration_generic",
+                    "quantity": 2
+                  }
+                ]
+              },
+              "missionGenerator": "/Game/World/MissionGens/MissionGen_ChallengeTheHorde.MissionGen_ChallengeTheHorde_C",
+              "missionDifficultyInfo": {
+                "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
+                "rowName": "Theater_Horde_Uncanny_VeryHigh"
+              },
+              "tileIndex": 8,
+              "availableUntil": "2017-07-25T23:59:59.999Z"
+            },
+            {
+              "missionGuid": "65cd7461-e29e-3f62-5af5-38ab51e55325",
+              "missionRewards": {
+                "tierGroupName": "HordeBash_Final",
+                "items": [
+                  {
+                    "itemType": "AccountResource:personnelxp",
+                    "quantity": 1
+                  },
+                  {
+                    "itemType": "AccountResource:eventcurrency_scaling",
+                    "quantity": 1
+                  },
+                  {
+                    "itemType": "AccountResource:reagent_alteration_generic",
+                    "quantity": 2
+                  }
+                ]
+              },
+              "missionGenerator": "/Game/World/MissionGens/MissionGen_ChallengeTheHorde.MissionGen_ChallengeTheHorde_C",
+              "missionDifficultyInfo": {
+                "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
+                "rowName": "Theater_Horde_Final"
+              },
+              "tileIndex": 9,
+              "availableUntil": "2017-07-25T23:59:59.999Z"
+            }
+          ],
+          "nextRefresh": "2017-07-25T23:59:59.999Z"
+        }
+      ],
+      "missionAlerts": [
+        {
+          "theaterId": "V12RVJQ2FOT0FE3BVD7R0W3LNBUQC5B4",
+          "availableMissionAlerts": [
+            {
+              "name": "MissionAlert_HordeCategory_01",
+              "categoryName": "HordeCategory",
+              "spreadDataName": "None",
+              "missionAlertGuid": "bed38a34-5cac-b325-0ff3-76bd439dde21",
+              "tileIndex": 1,
+              "availableUntil": "2017-07-25T23:59:59.999Z",
+              "totalSpreadRefreshes": 0,
+              "missionAlertModifiers": {},
+              "missionAlertRewards": {
+                "tierGroupName": "HordeBash_Stonewood_High",
+                "items": [
+                  {
+                    "itemType": "AccountResource:eventcurrency_roadtrip",
+                    "quantity": 50
+                  },
+                  {
+                    "itemType": "Token:hordepointstier1",
+                    "quantity": 1
+                  }
+                ]
+              }
+            },
+            {
+              "name": "MissionAlert_HordeCategory_02",
+              "categoryName": "HordeCategory",
+              "spreadDataName": "None",
+              "missionAlertGuid": "437e80d7-5f97-22f2-1781-2fae1aa61170",
+              "tileIndex": 2,
+              "availableUntil": "2017-07-25T23:59:59.999Z",
+              "totalSpreadRefreshes": 0,
+              "missionAlertModifiers": {},
+              "missionAlertRewards": {
+                "tierGroupName": "HordeBash_Stonewood_VeryHigh",
+                "items": [
+                  {
+                    "itemType": "AccountResource:eventcurrency_roadtrip",
+                    "quantity": 50
+                  },
+                  {
+                    "itemType": "Token:hordepointstier1",
+                    "quantity": 1
+                  }
+                ]
+              }
+            },
+            {
+              "name": "MissionAlert_HordeCategory_03",
+              "categoryName": "HordeCategory",
+              "spreadDataName": "None",
+              "missionAlertGuid": "9f90630f-3f58-b608-ff42-3904c66666c2",
+              "tileIndex": 3,
+              "availableUntil": "2017-07-25T23:59:59.999Z",
+              "totalSpreadRefreshes": 0,
+              "missionAlertModifiers": {},
+              "missionAlertRewards": {
+                "tierGroupName": "HordeBash_Plankerton_VeryLow",
+                "items": [
+                  {
+                    "itemType": "AccountResource:eventcurrency_roadtrip",
+                    "quantity": 52
+                  },
+                  {
+                    "itemType": "Token:hordepointstier1",
+                    "quantity": 1
+                  }
+                ]
+              }
+            },
+            {
+              "name": "MissionAlert_HordeCategory_04",
+              "categoryName": "HordeCategory",
+              "spreadDataName": "None",
+              "missionAlertGuid": "a5e01b47-3c4e-36fe-f45f-14515dee0549",
+              "tileIndex": 4,
+              "availableUntil": "2017-07-25T23:59:59.999Z",
+              "totalSpreadRefreshes": 0,
+              "missionAlertModifiers": {},
+              "missionAlertRewards": {
+                "tierGroupName": "HordeBash_Plankerton_Medium",
+                "items": [
+                  {
+                    "itemType": "AccountResource:eventcurrency_roadtrip",
+                    "quantity": 60
+                  },
+                  {
+                    "itemType": "Token:hordepointstier2",
+                    "quantity": 1
+                  }
+                ]
+              }
+            },
+            {
+              "name": "MissionAlert_HordeCategory_05",
+              "categoryName": "HordeCategory",
+              "spreadDataName": "None",
+              "missionAlertGuid": "62761bef-979b-cc25-2d9d-f36aee639075",
+              "tileIndex": 5,
+              "availableUntil": "2017-07-25T23:59:59.999Z",
+              "totalSpreadRefreshes": 0,
+              "missionAlertModifiers": {},
+              "missionAlertRewards": {
+                "tierGroupName": "HordeBash_Plankerton_VeryHigh",
+                "items": [
+                  {
+                    "itemType": "AccountResource:eventcurrency_roadtrip",
+                    "quantity": 72
+                  },
+                  {
+                    "itemType": "Token:hordepointstier2",
+                    "quantity": 1
+                  }
+                ]
+              }
+            },
+            {
+              "name": "MissionAlert_HordeCategory_06",
+              "categoryName": "HordeCategory",
+              "spreadDataName": "None",
+              "missionAlertGuid": "56475e2-b116-ed79-6c4a-e408463f4222",
+              "tileIndex": 6,
+              "availableUntil": "2017-07-25T23:59:59.999Z",
+              "totalSpreadRefreshes": 0,
+              "missionAlertModifiers": {},
+              "missionAlertRewards": {
+                "tierGroupName": "HordeBash_Canny_VeryLow",
+                "items": [
+                  {
+                    "itemType": "AccountResource:eventcurrency_roadtrip",
+                    "quantity": 80
+                  },
+                  {
+                    "itemType": "Token:hordepointstier2",
+                    "quantity": 1
+                  }
+                ]
+              }
+            },
+            {
+              "name": "MissionAlert_HordeCategory_07",
+              "categoryName": "HordeCategory",
+              "spreadDataName": "None",
+              "missionAlertGuid": "61e46898-c8d6-6720-392f-3aaf630d9dfd",
+              "tileIndex": 7,
+              "availableUntil": "2017-07-25T23:59:59.999Z",
+              "totalSpreadRefreshes": 0,
+              "missionAlertModifiers": {},
+              "missionAlertRewards": {
+                "tierGroupName": "HordeBash_Canny_Medium",
+                "items": [
+                  {
+                    "itemType": "AccountResource:eventcurrency_roadtrip",
+                    "quantity": 92
+                  },
+                  {
+                    "itemType": "Token:hordepointstier3",
+                    "quantity": 1
+                  }
+                ]
+              }
+            },
+            {
+              "name": "MissionAlert_HordeCategory_08",
+              "categoryName": "HordeCategory",
+              "spreadDataName": "None",
+              "missionAlertGuid": "99f5c35d-d455-d644-7281-4bdda4a22b5c",
+              "tileIndex": 8,
+              "availableUntil": "2017-07-25T23:59:59.999Z",
+              "totalSpreadRefreshes": 0,
+              "missionAlertModifiers": {},
+              "missionAlertRewards": {
+                "tierGroupName": "HordeBash_Canny_VeryHigh",
+                "items": [
+                  {
+                    "itemType": "AccountResource:eventcurrency_roadtrip",
+                    "quantity": 102
+                  },
+                  {
+                    "itemType": "Token:hordepointstier3",
+                    "quantity": 1
+                  }
+                ]
+              }
+            },
+            {
+              "name": "MissionAlert_HordeCategory_09",
+              "categoryName": "HordeCategory",
+              "spreadDataName": "None",
+              "missionAlertGuid": "fc47ae9c-71bd-362d-96c2-0dc9f66605ac",
+              "tileIndex": 9,
+              "availableUntil": "2017-07-25T23:59:59.999Z",
+              "totalSpreadRefreshes": 0,
+              "missionAlertModifiers": {},
+              "missionAlertRewards": {
+                "tierGroupName": "HordeBash_Final",
+                "items": [
+                  {
+                    "itemType": "AccountResource:eventcurrency_roadtrip",
+                    "quantity": 120
+                  },
+                  {
+                    "itemType": "Token:hordepointstier4",
+                    "quantity": 1
+                  }
+                ]
+              }
+            }
+          ],
+          "nextRefresh": "2017-07-25T23:59:59.999Z"
+        }
+      ]
+    }
+  }
 }

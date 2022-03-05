@@ -134,6 +134,7 @@ function getTheater(req) {
     GetVersionInfo(req, memory);
 
     var theater = JSON.stringify(require("./../responses/worldstw.json"));
+    var Season = "Season" + memory.season;
 
     try {
         if (memory.build >= 15.30) {
@@ -163,6 +164,15 @@ function getTheater(req) {
     } catch (err) {}
 
     theater = JSON.parse(theater)
+
+    if (theater.hasOwnProperty("Seasonal")) {
+        if (theater.Seasonal.hasOwnProperty(Season)) {
+            theater.theaters = theater.theaters.concat(theater.Seasonal[Season].theaters);
+            theater.missions = theater.missions.concat(theater.Seasonal[Season].missions);
+            theater.missionAlerts = theater.missionAlerts.concat(theater.Seasonal[Season].missionAlerts);
+        }
+        delete theater.Seasonal;
+    }
 
     return theater;
 }
