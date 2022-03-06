@@ -1,24 +1,5 @@
 {
-  "friends": [
-    {
-      "accountId": "SubtoLawin_123",
-      "groups": [],
-      "mutual": 0,
-      "alias": "",
-      "note": "",
-      "favorite": false,
-      "created": "2000-04-08T12:32:42.069Z"
-    },
-    {
-      "accountId": "Followlawin_123",
-      "groups": [],
-      "mutual": 0,
-      "alias": "",
-      "note": "",
-      "favorite": false,
-      "created": "2000-04-08T12:32:42.069Z"
-    }
-  ],
+  "friends": [],
   "incoming": [],
   "outgoing": [],
   "suggested": [],

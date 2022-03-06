@@ -4,63 +4,34 @@ const fs = require("fs");
 const path = require("path");
 const iniparser = require("ini");
 const config = iniparser.parse(fs.readFileSync(path.join(__dirname, "..", "Config", "config.ini")).toString());
-const functions = require("./functions.js");
-const accounts = require("./../responses/account.json");
 var Memory_CurrentAccountID = config.Config.displayName;
 
 express.get("/account/api/public/account", async (req, res) => {
     var response = [];
 
-    if (Memory_CurrentAccountID.includes("@")) Memory_CurrentAccountID = Memory_CurrentAccountID.split("@")[0];
-
-    if (config.Config.bUseConfigDisplayName == false) {
-        if (typeof req.query.accountId == "string") {
-            Memory_CurrentAccountID = req.query.accountId;
-            if (Memory_CurrentAccountID.includes("@")) Memory_CurrentAccountID = Memory_CurrentAccountID.split("@")[0];
-
-            if (!accounts.find(i => i.id == req.query.accountId)) {
-                accounts.push({
-                    "id": req.query.accountId,
-                    "displayName": Memory_CurrentAccountID,
-                    "externalAuths": {}
-                })
-            }
-
-            if (accounts.find(i => i.id == req.query.accountId).displayName != Memory_CurrentAccountID) {
-                var index = accounts.findIndex(i => i.id == req.query.accountId);
-                accounts[index].displayName = Memory_CurrentAccountID;
-            }
-        }
-    } else if (typeof req.query.accountId == "string") {
-        if (!accounts.find(i => i.id == req.query.accountId)) {
-            accounts.push({
-                "id": req.query.accountId,
-                "displayName": Memory_CurrentAccountID,
-                "externalAuths": {}
-            })
-        }
-
-        if (accounts.find(i => i.id == req.query.accountId).displayName != Memory_CurrentAccountID) {
-            var index = accounts.findIndex(i => i.id == req.query.accountId);
-            accounts[index].displayName = Memory_CurrentAccountID;
-        }
-    }
-
     if (typeof req.query.accountId == "string") {
-        if (accounts.find(i => i.id == req.query.accountId)) {
-            response.push(accounts.find(i => i.id == req.query.accountId))
-        }
+        var accountId = req.query.accountId;
+        if (accountId.includes("@")) accountId = accountId.split("@")[0];
+
+        response.push({
+            "id": accountId,
+            "displayName": accountId,
+            "externalAuths": {}
+        })
     }
 
     if (Array.isArray(req.query.accountId)) {
         for (var x in req.query.accountId) {
-            if (accounts.find(i => i.id == req.query.accountId[x])) {
-                response.push(accounts.find(i => i.id == req.query.accountId[x]))
-            }
+            var accountId = req.query.accountId[x];
+            if (accountId.includes("@")) accountId = accountId.split("@")[0];
+
+            response.push({
+                "id": accountId,
+                "displayName": accountId,
+                "externalAuths": {}
+            })
         }
     }
-
-    fs.writeFileSync("./responses/account.json", JSON.stringify(accounts, null, 2));
 
     res.json(response)
 })

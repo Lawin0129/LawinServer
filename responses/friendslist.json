@@ -1,16 +1,1 @@
-[
-  {
-    "accountId": "SubtoLawin_123",
-    "status": "ACCEPTED",
-    "direction": "OUTBOUND",
-    "created": "2000-05-11T15:53:53.072Z",
-    "favorite": false
-  },
-  {
-    "accountId": "Followlawin_123",
-    "status": "ACCEPTED",
-    "direction": "OUTBOUND",
-    "created": "2000-04-08T12:32:42.069Z",
-    "favorite": false
-  }
-]
+[]
