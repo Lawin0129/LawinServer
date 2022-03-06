@@ -18148,7 +18148,23 @@
       ]
     },
     {
-      "displayName": "Stonewood",
+      "displayName": {
+        "de": "Steinwald",
+        "ru": "Камнелесье",
+        "ko": "스톤우드",
+        "zh-hant": "荒木石林",
+        "pt-br": "Floresta Pétrea",
+        "en": "Stonewood",
+        "it": "Pietralegno",
+        "fr": "Fontainebois",
+        "zh-cn": "荒木石林",
+        "es": "Bosque Pedregoso",
+        "ar": "ستون وود",
+        "ja": "ストーンウッド",
+        "pl": "Kamienny Las",
+        "es-419": "Bosque Pedregoso",
+        "tr": "Taşlıorman"
+      },
       "uniqueId": "8633333E41A86F67F78EAEAF25BF4735",
       "theaterSlot": 0,
       "bIsTestTheater": false,
@@ -22684,11 +22700,20 @@
         {
           "displayName": {
             "de": "Die Horde",
+            "ru": "The Horde",
+            "ko": "The Horde",
+            "zh-hant": "The Horde",
+            "pt-br": "The Horde",
             "en": "The Horde",
             "it": "L'Orda",
             "fr": "La horde",
+            "zh-cn": "The Horde",
             "es": "La horda",
-            "pl": "Hordobicie"
+            "ar": "The Horde",
+            "ja": "The Horde",
+            "pl": "Hordobicie",
+            "es-419": "The Horde",
+            "tr": "The Horde"
           },
           "uniqueId": "V12RVJQ2FOT0FE3BVD7R0W3LNBUQC5B4",
           "author": "This theater zone was recreated by PRO100KatYT for LawinServer.",
@@ -22698,11 +22723,20 @@
           "requiredEventFlag": "EventFlag.RoadTrip2018",
           "description": {
             "de": "Baue eine tragbare Basis und stelle dich der Horde.",
+            "ru": "Build a portable base and take on the horde.",
+            "ko": "Build a portable base and take on the horde.",
+            "zh-hant": "Build a portable base and take on the horde.",
+            "pt-br": "Build a portable base and take on the horde.",
             "en": "Build a portable base and take on the horde.",
             "it": "Costruisci una base portatile e sconfiggi I'Orda.",
             "fr": "Construisez un fort portatif et affrontez la horde.",
+            "zh-cn": "Build a portable base and take on the horde.",
             "es": "Construye una base portátil y enfréntate a la horda.",
-            "pl": "Zbuduj przenośną bazę i staw czoła hordzie."
+            "ar": "Build a portable base and take on the horde.",
+            "ja": "Build a portable base and take on the horde.",
+            "pl": "Zbuduj przenośną bazę i staw czoła hordzie.",
+            "es-419": "Build a portable base and take on the horde.",
+            "tr": "Build a portable base and take on the horde."
           },
           "runtimeInfo": {
             "theaterType": "Standard",
@@ -24494,6 +24528,1781 @@
               }
             }
           ],
+          "nextRefresh": "2017-07-25T23:59:59.999Z"
+        }
+      ]
+    },
+    "Season7": {
+      "theaters": [
+        {
+          "displayName": {
+            "de": "Frostnite",
+            "ru": "Frostnite",
+            "ko": "Frostnite",
+            "zh-hant": "Frostnite",
+            "pt-br": "Frostnite",
+            "en": "Frostnite",
+            "it": "Frostnite",
+            "fr": "Nuit de glace",
+            "zh-cn": "Frostnite",
+            "es": "Frostnite",
+            "ar": "Frostnite",
+            "ja": "Frostnite",
+            "pl": "Mróznite",
+            "es-419": "Frostnite",
+            "tr": "Frostnite"
+          },
+          "uniqueId": "FQ7DMNYZ6ZHTBAX2I5JGVZYUUMPGYX2M",
+          "author": "This theater zone was recreated by PRO100KatYT for LawinServer.",
+          "theaterSlot": 1,
+          "bIsTestTheater": false,
+          "bHideLikeTestTheater": false,
+          "requiredEventFlag": "EventFlag.Frostnite",
+          "description": {
+            "de": "Verteidige in einer schier endlosen Nacht zusammen mit deinem Team den weihnachtlichen Heizbrenner!",
+            "ru": "You and your team will defend the Yule Burner through a nearly endless night!",
+            "ko": "You and your team will defend the Yule Burner through a nearly endless night!",
+            "zh-hant": "You and your team will defend the Yule Burner through a nearly endless night!",
+            "pt-br": "You and your team will defend the Yule Burner through a nearly endless night!",
+            "en": "You and your team will defend the Yule Burner through a nearly endless night!",
+            "it": "Tu e la tua squadra difenderete il bruciatore natalizio nel corso di una notte infinita!",
+            "fr": "Votre groupe et vous devez défendre le brûleur pendant une nuit sans fin !",
+            "zh-cn": "You and your team will defend the Yule Burner through a nearly endless night!",
+            "es": "¡Tu equipo y tú defenderéis el quemador navideño a lo largo de una noche casi interminable!",
+            "ar": "You and your team will defend the Yule Burner through a nearly endless night!",
+            "ja": "You and your team will defend the Yule Burner through a nearly endless night!",
+            "pl": "Wraz ze swoją drużyną będziecie bronić świątecznego spalacza w niemal niekończącą się noc!",
+            "es-419": "You and your team will defend the Yule Burner through a nearly endless night!",
+            "tr": "You and your team will defend the Yule Burner through a nearly endless night!"
+          },
+          "runtimeInfo": {
+            "theaterType": "Standard",
+            "theaterTags": {
+              "gameplayTags": []
+            },
+            "theaterVisibilityRequirements": {
+              "commanderLevel": 0,
+              "personalPowerRating": 0,
+              "partyPowerRating": 0,
+              "objectiveStatHandle": {
+                "dataTable": "None",
+                "rowName": "None"
+              },
+              "itemDefinition": "None",
+              "eventFlag": "EventFlag.Frostnite"
+            },
+            "requirements": {
+              "commanderLevel": 0,
+              "personalPowerRating": 0,
+              "partyPowerRating": 0,
+              "objectiveStatHandle": {
+                "dataTable": "None",
+                "rowName": "None"
+              },
+              "itemDefinition": "None"
+            },
+            "worldMapPinClass": "BlueprintGeneratedClass'/Game/Environments/WorldMap/Blueprints/WM_PinHoliday.WM_PinHoliday_C'",
+            "theaterImage": "Texture2D'/Game/UI/Icons/EditorIcon-Atlas-Red.EditorIcon-Atlas-Red'",
+            "theaterImages": {
+              "brush_XXS": {
+                "imageSize": {
+                  "x": 32,
+                  "y": 32
+                },
+                "margin": {
+                  "left": 0,
+                  "top": 0,
+                  "right": 0,
+                  "bottom": 0
+                },
+                "tintColor": {
+                  "specifiedColor": {
+                    "r": 1,
+                    "g": 1,
+                    "b": 1,
+                    "a": 1
+                  },
+                  "colorUseRule": "UseColor_Specified"
+                },
+                "outlineSettings": {
+                  "cornerRadii": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                  },
+                  "color": {
+                    "specifiedColor": {
+                      "r": 0,
+                      "g": 0,
+                      "b": 0,
+                      "a": 0
+                    },
+                    "colorUseRule": "UseColor_Specified"
+                  },
+                  "width": 0,
+                  "roundingType": "HalfHeightRadius"
+                },
+                "resourceObject": "None",
+                "resourceName": "None",
+                "uVRegion": {
+                  "min": {
+                    "x": 0,
+                    "y": 0
+                  },
+                  "max": {
+                    "x": 0,
+                    "y": 0
+                  },
+                  "bIsValid": 0
+                },
+                "drawAs": "Image",
+                "tiling": "NoTile",
+                "mirroring": "NoMirror",
+                "imageType": "NoImage",
+                "bIsDynamicallyLoaded": false
+              },
+              "brush_XS": {
+                "imageSize": {
+                  "x": 32,
+                  "y": 32
+                },
+                "margin": {
+                  "left": 0,
+                  "top": 0,
+                  "right": 0,
+                  "bottom": 0
+                },
+                "tintColor": {
+                  "specifiedColor": {
+                    "r": 1,
+                    "g": 1,
+                    "b": 1,
+                    "a": 1
+                  },
+                  "colorUseRule": "UseColor_Specified"
+                },
+                "outlineSettings": {
+                  "cornerRadii": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                  },
+                  "color": {
+                    "specifiedColor": {
+                      "r": 0,
+                      "g": 0,
+                      "b": 0,
+                      "a": 0
+                    },
+                    "colorUseRule": "UseColor_Specified"
+                  },
+                  "width": 0,
+                  "roundingType": "HalfHeightRadius"
+                },
+                "resourceObject": "None",
+                "resourceName": "None",
+                "uVRegion": {
+                  "min": {
+                    "x": 0,
+                    "y": 0
+                  },
+                  "max": {
+                    "x": 0,
+                    "y": 0
+                  },
+                  "bIsValid": 0
+                },
+                "drawAs": "Image",
+                "tiling": "NoTile",
+                "mirroring": "NoMirror",
+                "imageType": "NoImage",
+                "bIsDynamicallyLoaded": false
+              },
+              "brush_S": {
+                "imageSize": {
+                  "x": 32,
+                  "y": 32
+                },
+                "margin": {
+                  "left": 0,
+                  "top": 0,
+                  "right": 0,
+                  "bottom": 0
+                },
+                "tintColor": {
+                  "specifiedColor": {
+                    "r": 1,
+                    "g": 1,
+                    "b": 1,
+                    "a": 1
+                  },
+                  "colorUseRule": "UseColor_Specified"
+                },
+                "outlineSettings": {
+                  "cornerRadii": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                  },
+                  "color": {
+                    "specifiedColor": {
+                      "r": 0,
+                      "g": 0,
+                      "b": 0,
+                      "a": 0
+                    },
+                    "colorUseRule": "UseColor_Specified"
+                  },
+                  "width": 0,
+                  "roundingType": "HalfHeightRadius"
+                },
+                "resourceObject": "None",
+                "resourceName": "None",
+                "uVRegion": {
+                  "min": {
+                    "x": 0,
+                    "y": 0
+                  },
+                  "max": {
+                    "x": 0,
+                    "y": 0
+                  },
+                  "bIsValid": 0
+                },
+                "drawAs": "Image",
+                "tiling": "NoTile",
+                "mirroring": "NoMirror",
+                "imageType": "NoImage",
+                "bIsDynamicallyLoaded": false
+              },
+              "brush_M": {
+                "imageSize": {
+                  "x": 32,
+                  "y": 32
+                },
+                "margin": {
+                  "left": 0,
+                  "top": 0,
+                  "right": 0,
+                  "bottom": 0
+                },
+                "tintColor": {
+                  "specifiedColor": {
+                    "r": 1,
+                    "g": 1,
+                    "b": 1,
+                    "a": 1
+                  },
+                  "colorUseRule": "UseColor_Specified"
+                },
+                "outlineSettings": {
+                  "cornerRadii": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                  },
+                  "color": {
+                    "specifiedColor": {
+                      "r": 0,
+                      "g": 0,
+                      "b": 0,
+                      "a": 0
+                    },
+                    "colorUseRule": "UseColor_Specified"
+                  },
+                  "width": 0,
+                  "roundingType": "HalfHeightRadius"
+                },
+                "resourceObject": "None",
+                "resourceName": "None",
+                "uVRegion": {
+                  "min": {
+                    "x": 0,
+                    "y": 0
+                  },
+                  "max": {
+                    "x": 0,
+                    "y": 0
+                  },
+                  "bIsValid": 0
+                },
+                "drawAs": "Image",
+                "tiling": "NoTile",
+                "mirroring": "NoMirror",
+                "imageType": "NoImage",
+                "bIsDynamicallyLoaded": false
+              },
+              "brush_L": {
+                "imageSize": {
+                  "x": 32,
+                  "y": 32
+                },
+                "margin": {
+                  "left": 0,
+                  "top": 0,
+                  "right": 0,
+                  "bottom": 0
+                },
+                "tintColor": {
+                  "specifiedColor": {
+                    "r": 1,
+                    "g": 1,
+                    "b": 1,
+                    "a": 1
+                  },
+                  "colorUseRule": "UseColor_Specified"
+                },
+                "outlineSettings": {
+                  "cornerRadii": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                  },
+                  "color": {
+                    "specifiedColor": {
+                      "r": 0,
+                      "g": 0,
+                      "b": 0,
+                      "a": 0
+                    },
+                    "colorUseRule": "UseColor_Specified"
+                  },
+                  "width": 0,
+                  "roundingType": "HalfHeightRadius"
+                },
+                "resourceObject": "None",
+                "resourceName": "None",
+                "uVRegion": {
+                  "min": {
+                    "x": 0,
+                    "y": 0
+                  },
+                  "max": {
+                    "x": 0,
+                    "y": 0
+                  },
+                  "bIsValid": 0
+                },
+                "drawAs": "Image",
+                "tiling": "NoTile",
+                "mirroring": "NoMirror",
+                "imageType": "NoImage",
+                "bIsDynamicallyLoaded": false
+              },
+              "brush_XL": {
+                "imageSize": {
+                  "x": 32,
+                  "y": 32
+                },
+                "margin": {
+                  "left": 0,
+                  "top": 0,
+                  "right": 0,
+                  "bottom": 0
+                },
+                "tintColor": {
+                  "specifiedColor": {
+                    "r": 1,
+                    "g": 1,
+                    "b": 1,
+                    "a": 1
+                  },
+                  "colorUseRule": "UseColor_Specified"
+                },
+                "outlineSettings": {
+                  "cornerRadii": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                  },
+                  "color": {
+                    "specifiedColor": {
+                      "r": 0,
+                      "g": 0,
+                      "b": 0,
+                      "a": 0
+                    },
+                    "colorUseRule": "UseColor_Specified"
+                  },
+                  "width": 0,
+                  "roundingType": "HalfHeightRadius"
+                },
+                "resourceObject": "None",
+                "resourceName": "None",
+                "uVRegion": {
+                  "min": {
+                    "x": 0,
+                    "y": 0
+                  },
+                  "max": {
+                    "x": 0,
+                    "y": 0
+                  },
+                  "bIsValid": 0
+                },
+                "drawAs": "Image",
+                "tiling": "NoTile",
+                "mirroring": "NoMirror",
+                "imageType": "NoImage",
+                "bIsDynamicallyLoaded": false
+              }
+            },
+            "theaterColorInfo": {
+              "bUseDifficultyToDetermineColor": false,
+              "color": {
+                "specifiedColor": {
+                  "r": 1,
+                  "g": 0,
+                  "b": 1,
+                  "a": 1
+                },
+                "colorUseRule": "UseColor_Specified"
+              }
+            },
+            "socket": "TEST_ElderProto",
+            "missionAlertRequirements": {
+              "commanderLevel": 0,
+              "personalPowerRating": 0,
+              "maxPersonalPowerRating": 0,
+              "partyPowerRating": 0,
+              "maxPartyPowerRating": 0,
+              "activeQuestDefinitions": [],
+              "questDefinition": "None",
+              "objectiveStatHandle": {
+                "dataTable": "None",
+                "rowName": "None"
+              },
+              "uncompletedQuestDefinition": "None",
+              "itemDefinition": "None",
+              "eventFlag": ""
+            },
+            "missionAlertCategoryRequirements": [],
+            "gameplayModifierList": []
+          },
+          "tiles": [
+            {
+              "tileType": "AlwaysActive",
+              "zoneTheme": "/Game/World/ZoneThemes/Endless/BP_ZT_Endless_Winter.BP_ZT_Endless_Winter_C",
+              "requirements": {
+                "commanderLevel": 0,
+                "personalPowerRating": 0,
+                "partyPowerRating": 0,
+                "objectiveStatHandle": {
+                  "dataTable": "None",
+                  "rowName": "None"
+                },
+                "itemDefinition": "None"
+              },
+              "linkedQuests": [],
+              "xCoordinate": 0,
+              "yCoordinate": 6,
+              "missionWeightOverrides": [
+                {
+                  "weight": 1,
+                  "missionGenerator": "/Game/World/MissionGens/MissionGen_Endless.MissionGen_Endless_C"
+                }
+              ],
+              "difficultyWeightOverrides": [],
+              "canBeMissionAlert": true,
+              "tileTags": {
+                "gameplayTags": []
+              }
+            },
+            {
+              "tileType": "AlwaysActive",
+              "zoneTheme": "/Game/World/ZoneThemes/Endless/BP_ZT_Endless_Winter.BP_ZT_Endless_Winter_C",
+              "requirements": {
+                "commanderLevel": 0,
+                "personalPowerRating": 0,
+                "partyPowerRating": 0,
+                "objectiveStatHandle": {
+                  "dataTable": "None",
+                  "rowName": "None"
+                },
+                "itemDefinition": "None"
+              },
+              "linkedQuests": [],
+              "xCoordinate": 0,
+              "yCoordinate": 5,
+              "missionWeightOverrides": [
+                {
+                  "weight": 1,
+                  "missionGenerator": "/Game/World/MissionGens/MissionGen_Endless.MissionGen_Endless_C"
+                }
+              ],
+              "difficultyWeightOverrides": [],
+              "canBeMissionAlert": true,
+              "tileTags": {
+                "gameplayTags": []
+              }
+            },
+            {
+              "tileType": "AlwaysActive",
+              "zoneTheme": "/Game/World/ZoneThemes/Endless/BP_ZT_Endless_Winter.BP_ZT_Endless_Winter_C",
+              "requirements": {
+                "commanderLevel": 0,
+                "personalPowerRating": 0,
+                "partyPowerRating": 0,
+                "objectiveStatHandle": {
+                  "dataTable": "None",
+                  "rowName": "None"
+                },
+                "itemDefinition": "None"
+              },
+              "linkedQuests": [],
+              "xCoordinate": 0,
+              "yCoordinate": 4,
+              "missionWeightOverrides": [
+                {
+                  "weight": 1,
+                  "missionGenerator": "/Game/World/MissionGens/MissionGen_Endless.MissionGen_Endless_C"
+                }
+              ],
+              "difficultyWeightOverrides": [],
+              "canBeMissionAlert": true,
+              "tileTags": {
+                "gameplayTags": []
+              }
+            },
+            {
+              "tileType": "AlwaysActive",
+              "zoneTheme": "/Game/World/ZoneThemes/Endless/BP_ZT_Endless_Winter.BP_ZT_Endless_Winter_C",
+              "requirements": {
+                "commanderLevel": 0,
+                "personalPowerRating": 0,
+                "partyPowerRating": 0,
+                "objectiveStatHandle": {
+                  "dataTable": "None",
+                  "rowName": "None"
+                },
+                "itemDefinition": "None"
+              },
+              "linkedQuests": [],
+              "xCoordinate": 0,
+              "yCoordinate": 3,
+              "missionWeightOverrides": [
+                {
+                  "weight": 1,
+                  "missionGenerator": "/Game/World/MissionGens/MissionGen_Endless.MissionGen_Endless_C"
+                }
+              ],
+              "difficultyWeightOverrides": [],
+              "canBeMissionAlert": true,
+              "tileTags": {
+                "gameplayTags": []
+              }
+            },
+            {
+              "tileType": "AlwaysActive",
+              "zoneTheme": "/Game/World/ZoneThemes/Endless/BP_ZT_Endless_Winter.BP_ZT_Endless_Winter_C",
+              "requirements": {
+                "commanderLevel": 0,
+                "personalPowerRating": 0,
+                "partyPowerRating": 0,
+                "objectiveStatHandle": {
+                  "dataTable": "None",
+                  "rowName": "None"
+                },
+                "itemDefinition": "None"
+              },
+              "linkedQuests": [],
+              "xCoordinate": 0,
+              "yCoordinate": 2,
+              "missionWeightOverrides": [
+                {
+                  "weight": 1,
+                  "missionGenerator": "/Game/World/MissionGens/MissionGen_Endless.MissionGen_Endless_C"
+                }
+              ],
+              "difficultyWeightOverrides": [],
+              "canBeMissionAlert": true,
+              "tileTags": {
+                "gameplayTags": []
+              }
+            },
+            {
+              "tileType": "AlwaysActive",
+              "zoneTheme": "/Game/World/ZoneThemes/Endless/BP_ZT_Endless_Winter.BP_ZT_Endless_Winter_C",
+              "requirements": {
+                "commanderLevel": 0,
+                "personalPowerRating": 0,
+                "partyPowerRating": 0,
+                "objectiveStatHandle": {
+                  "dataTable": "None",
+                  "rowName": "None"
+                },
+                "itemDefinition": "None"
+              },
+              "linkedQuests": [],
+              "xCoordinate": 0,
+              "yCoordinate": 1,
+              "missionWeightOverrides": [
+                {
+                  "weight": 1,
+                  "missionGenerator": "/Game/World/MissionGens/MissionGen_Endless.MissionGen_Endless_C"
+                }
+              ],
+              "difficultyWeightOverrides": [],
+              "canBeMissionAlert": true,
+              "tileTags": {
+                "gameplayTags": []
+              }
+            },
+            {
+              "tileType": "AlwaysActive",
+              "zoneTheme": "/Game/World/ZoneThemes/Endless/BP_ZT_Endless_Winter.BP_ZT_Endless_Winter_C",
+              "requirements": {
+                "commanderLevel": 0,
+                "personalPowerRating": 0,
+                "partyPowerRating": 0,
+                "objectiveStatHandle": {
+                  "dataTable": "None",
+                  "rowName": "None"
+                },
+                "itemDefinition": "None"
+              },
+              "linkedQuests": [],
+              "xCoordinate": 0,
+              "yCoordinate": 0,
+              "missionWeightOverrides": [
+                {
+                  "weight": 1,
+                  "missionGenerator": "/Game/World/MissionGens/MissionGen_Endless.MissionGen_Endless_C"
+                }
+              ],
+              "difficultyWeightOverrides": [],
+              "canBeMissionAlert": true,
+              "tileTags": {
+                "gameplayTags": []
+              }
+            },
+            {
+              "tileType": "NonMission",
+              "zoneTheme": "/Game/World/ZoneThemes/Endless/BP_ZT_Endless_Winter.BP_ZT_Endless_Winter_C",
+              "requirements": {
+                "commanderLevel": 0,
+                "personalPowerRating": 0,
+                "partyPowerRating": 0,
+                "objectiveStatHandle": {
+                  "dataTable": "None",
+                  "rowName": "None"
+                },
+                "itemDefinition": "None"
+              },
+              "linkedQuests": [],
+              "xCoordinate": -2,
+              "yCoordinate": 0,
+              "missionWeightOverrides": [],
+              "difficultyWeightOverrides": [],
+              "canBeMissionAlert": true,
+              "tileTags": {
+                "gameplayTags": []
+              }
+            },
+            {
+              "tileType": "NonMission",
+              "zoneTheme": "/Game/World/ZoneThemes/Endless/BP_ZT_Endless_Winter.BP_ZT_Endless_Winter_C",
+              "requirements": {
+                "commanderLevel": 0,
+                "personalPowerRating": 0,
+                "partyPowerRating": 0,
+                "objectiveStatHandle": {
+                  "dataTable": "None",
+                  "rowName": "None"
+                },
+                "itemDefinition": "None"
+              },
+              "linkedQuests": [],
+              "xCoordinate": -1,
+              "yCoordinate": 0,
+              "missionWeightOverrides": [],
+              "difficultyWeightOverrides": [],
+              "canBeMissionAlert": true,
+              "tileTags": {
+                "gameplayTags": []
+              }
+            },
+            {
+              "tileType": "NonMission",
+              "zoneTheme": "/Game/World/ZoneThemes/Endless/BP_ZT_Endless_Winter.BP_ZT_Endless_Winter_C",
+              "requirements": {
+                "commanderLevel": 0,
+                "personalPowerRating": 0,
+                "partyPowerRating": 0,
+                "objectiveStatHandle": {
+                  "dataTable": "None",
+                  "rowName": "None"
+                },
+                "itemDefinition": "None"
+              },
+              "linkedQuests": [],
+              "xCoordinate": 1,
+              "yCoordinate": 0,
+              "missionWeightOverrides": [],
+              "difficultyWeightOverrides": [],
+              "canBeMissionAlert": true,
+              "tileTags": {
+                "gameplayTags": []
+              }
+            },
+            {
+              "tileType": "NonMission",
+              "zoneTheme": "/Game/World/ZoneThemes/Endless/BP_ZT_Endless_Winter.BP_ZT_Endless_Winter_C",
+              "requirements": {
+                "commanderLevel": 0,
+                "personalPowerRating": 0,
+                "partyPowerRating": 0,
+                "objectiveStatHandle": {
+                  "dataTable": "None",
+                  "rowName": "None"
+                },
+                "itemDefinition": "None"
+              },
+              "linkedQuests": [],
+              "xCoordinate": 2,
+              "yCoordinate": 0,
+              "missionWeightOverrides": [],
+              "difficultyWeightOverrides": [],
+              "canBeMissionAlert": true,
+              "tileTags": {
+                "gameplayTags": []
+              }
+            },
+            {
+              "tileType": "NonMission",
+              "zoneTheme": "/Game/World/ZoneThemes/Endless/BP_ZT_Endless_Winter.BP_ZT_Endless_Winter_C",
+              "requirements": {
+                "commanderLevel": 0,
+                "personalPowerRating": 0,
+                "partyPowerRating": 0,
+                "objectiveStatHandle": {
+                  "dataTable": "None",
+                  "rowName": "None"
+                },
+                "itemDefinition": "None"
+              },
+              "linkedQuests": [],
+              "xCoordinate": 0,
+              "yCoordinate": -2,
+              "missionWeightOverrides": [],
+              "difficultyWeightOverrides": [],
+              "canBeMissionAlert": true,
+              "tileTags": {
+                "gameplayTags": []
+              }
+            },
+            {
+              "tileType": "NonMission",
+              "zoneTheme": "/Game/World/ZoneThemes/Endless/BP_ZT_Endless_Winter.BP_ZT_Endless_Winter_C",
+              "requirements": {
+                "commanderLevel": 0,
+                "personalPowerRating": 0,
+                "partyPowerRating": 0,
+                "objectiveStatHandle": {
+                  "dataTable": "None",
+                  "rowName": "None"
+                },
+                "itemDefinition": "None"
+              },
+              "linkedQuests": [],
+              "xCoordinate": 0,
+              "yCoordinate": -1,
+              "missionWeightOverrides": [],
+              "difficultyWeightOverrides": [],
+              "canBeMissionAlert": true,
+              "tileTags": {
+                "gameplayTags": []
+              }
+            },
+            {
+              "tileType": "NonMission",
+              "zoneTheme": "/Game/World/ZoneThemes/Endless/BP_ZT_Endless_Winter.BP_ZT_Endless_Winter_C",
+              "requirements": {
+                "commanderLevel": 0,
+                "personalPowerRating": 0,
+                "partyPowerRating": 0,
+                "objectiveStatHandle": {
+                  "dataTable": "None",
+                  "rowName": "None"
+                },
+                "itemDefinition": "None"
+              },
+              "linkedQuests": [],
+              "xCoordinate": -2,
+              "yCoordinate": 1,
+              "missionWeightOverrides": [],
+              "difficultyWeightOverrides": [],
+              "canBeMissionAlert": true,
+              "tileTags": {
+                "gameplayTags": []
+              }
+            },
+            {
+              "tileType": "NonMission",
+              "zoneTheme": "/Game/World/ZoneThemes/Endless/BP_ZT_Endless_Winter.BP_ZT_Endless_Winter_C",
+              "requirements": {
+                "commanderLevel": 0,
+                "personalPowerRating": 0,
+                "partyPowerRating": 0,
+                "objectiveStatHandle": {
+                  "dataTable": "None",
+                  "rowName": "None"
+                },
+                "itemDefinition": "None"
+              },
+              "linkedQuests": [],
+              "xCoordinate": -1,
+              "yCoordinate": 1,
+              "missionWeightOverrides": [],
+              "difficultyWeightOverrides": [],
+              "canBeMissionAlert": true,
+              "tileTags": {
+                "gameplayTags": []
+              }
+            },
+            {
+              "tileType": "NonMission",
+              "zoneTheme": "/Game/World/ZoneThemes/Endless/BP_ZT_Endless_Winter.BP_ZT_Endless_Winter_C",
+              "requirements": {
+                "commanderLevel": 0,
+                "personalPowerRating": 0,
+                "partyPowerRating": 0,
+                "objectiveStatHandle": {
+                  "dataTable": "None",
+                  "rowName": "None"
+                },
+                "itemDefinition": "None"
+              },
+              "linkedQuests": [],
+              "xCoordinate": 1,
+              "yCoordinate": 1,
+              "missionWeightOverrides": [],
+              "difficultyWeightOverrides": [],
+              "canBeMissionAlert": true,
+              "tileTags": {
+                "gameplayTags": []
+              }
+            },
+            {
+              "tileType": "NonMission",
+              "zoneTheme": "/Game/World/ZoneThemes/Endless/BP_ZT_Endless_Winter.BP_ZT_Endless_Winter_C",
+              "requirements": {
+                "commanderLevel": 0,
+                "personalPowerRating": 0,
+                "partyPowerRating": 0,
+                "objectiveStatHandle": {
+                  "dataTable": "None",
+                  "rowName": "None"
+                },
+                "itemDefinition": "None"
+              },
+              "linkedQuests": [],
+              "xCoordinate": 2,
+              "yCoordinate": 1,
+              "missionWeightOverrides": [],
+              "difficultyWeightOverrides": [],
+              "canBeMissionAlert": true,
+              "tileTags": {
+                "gameplayTags": []
+              }
+            },
+            {
+              "tileType": "NonMission",
+              "zoneTheme": "/Game/World/ZoneThemes/Endless/BP_ZT_Endless_Winter.BP_ZT_Endless_Winter_C",
+              "requirements": {
+                "commanderLevel": 0,
+                "personalPowerRating": 0,
+                "partyPowerRating": 0,
+                "objectiveStatHandle": {
+                  "dataTable": "None",
+                  "rowName": "None"
+                },
+                "itemDefinition": "None"
+              },
+              "linkedQuests": [],
+              "xCoordinate": -2,
+              "yCoordinate": 2,
+              "missionWeightOverrides": [],
+              "difficultyWeightOverrides": [],
+              "canBeMissionAlert": true,
+              "tileTags": {
+                "gameplayTags": []
+              }
+            },
+            {
+              "tileType": "NonMission",
+              "zoneTheme": "/Game/World/ZoneThemes/Endless/BP_ZT_Endless_Winter.BP_ZT_Endless_Winter_C",
+              "requirements": {
+                "commanderLevel": 0,
+                "personalPowerRating": 0,
+                "partyPowerRating": 0,
+                "objectiveStatHandle": {
+                  "dataTable": "None",
+                  "rowName": "None"
+                },
+                "itemDefinition": "None"
+              },
+              "linkedQuests": [],
+              "xCoordinate": -1,
+              "yCoordinate": 2,
+              "missionWeightOverrides": [],
+              "difficultyWeightOverrides": [],
+              "canBeMissionAlert": true,
+              "tileTags": {
+                "gameplayTags": []
+              }
+            },
+            {
+              "tileType": "NonMission",
+              "zoneTheme": "/Game/World/ZoneThemes/Endless/BP_ZT_Endless_Winter.BP_ZT_Endless_Winter_C",
+              "requirements": {
+                "commanderLevel": 0,
+                "personalPowerRating": 0,
+                "partyPowerRating": 0,
+                "objectiveStatHandle": {
+                  "dataTable": "None",
+                  "rowName": "None"
+                },
+                "itemDefinition": "None"
+              },
+              "linkedQuests": [],
+              "xCoordinate": 1,
+              "yCoordinate": 2,
+              "missionWeightOverrides": [],
+              "difficultyWeightOverrides": [],
+              "canBeMissionAlert": true,
+              "tileTags": {
+                "gameplayTags": []
+              }
+            },
+            {
+              "tileType": "NonMission",
+              "zoneTheme": "/Game/World/ZoneThemes/Endless/BP_ZT_Endless_Winter.BP_ZT_Endless_Winter_C",
+              "requirements": {
+                "commanderLevel": 0,
+                "personalPowerRating": 0,
+                "partyPowerRating": 0,
+                "objectiveStatHandle": {
+                  "dataTable": "None",
+                  "rowName": "None"
+                },
+                "itemDefinition": "None"
+              },
+              "linkedQuests": [],
+              "xCoordinate": 2,
+              "yCoordinate": 2,
+              "missionWeightOverrides": [],
+              "difficultyWeightOverrides": [],
+              "canBeMissionAlert": true,
+              "tileTags": {
+                "gameplayTags": []
+              }
+            },
+            {
+              "tileType": "NonMission",
+              "zoneTheme": "/Game/World/ZoneThemes/Endless/BP_ZT_Endless_Winter.BP_ZT_Endless_Winter_C",
+              "requirements": {
+                "commanderLevel": 0,
+                "personalPowerRating": 0,
+                "partyPowerRating": 0,
+                "objectiveStatHandle": {
+                  "dataTable": "None",
+                  "rowName": "None"
+                },
+                "itemDefinition": "None"
+              },
+              "linkedQuests": [],
+              "xCoordinate": -2,
+              "yCoordinate": 3,
+              "missionWeightOverrides": [],
+              "difficultyWeightOverrides": [],
+              "canBeMissionAlert": true,
+              "tileTags": {
+                "gameplayTags": []
+              }
+            },
+            {
+              "tileType": "NonMission",
+              "zoneTheme": "/Game/World/ZoneThemes/Endless/BP_ZT_Endless_Winter.BP_ZT_Endless_Winter_C",
+              "requirements": {
+                "commanderLevel": 0,
+                "personalPowerRating": 0,
+                "partyPowerRating": 0,
+                "objectiveStatHandle": {
+                  "dataTable": "None",
+                  "rowName": "None"
+                },
+                "itemDefinition": "None"
+              },
+              "linkedQuests": [],
+              "xCoordinate": -1,
+              "yCoordinate": 3,
+              "missionWeightOverrides": [],
+              "difficultyWeightOverrides": [],
+              "canBeMissionAlert": true,
+              "tileTags": {
+                "gameplayTags": []
+              }
+            },
+            {
+              "tileType": "NonMission",
+              "zoneTheme": "/Game/World/ZoneThemes/Endless/BP_ZT_Endless_Winter.BP_ZT_Endless_Winter_C",
+              "requirements": {
+                "commanderLevel": 0,
+                "personalPowerRating": 0,
+                "partyPowerRating": 0,
+                "objectiveStatHandle": {
+                  "dataTable": "None",
+                  "rowName": "None"
+                },
+                "itemDefinition": "None"
+              },
+              "linkedQuests": [],
+              "xCoordinate": 1,
+              "yCoordinate": 3,
+              "missionWeightOverrides": [],
+              "difficultyWeightOverrides": [],
+              "canBeMissionAlert": true,
+              "tileTags": {
+                "gameplayTags": []
+              }
+            },
+            {
+              "tileType": "NonMission",
+              "zoneTheme": "/Game/World/ZoneThemes/Endless/BP_ZT_Endless_Winter.BP_ZT_Endless_Winter_C",
+              "requirements": {
+                "commanderLevel": 0,
+                "personalPowerRating": 0,
+                "partyPowerRating": 0,
+                "objectiveStatHandle": {
+                  "dataTable": "None",
+                  "rowName": "None"
+                },
+                "itemDefinition": "None"
+              },
+              "linkedQuests": [],
+              "xCoordinate": 2,
+              "yCoordinate": 3,
+              "missionWeightOverrides": [],
+              "difficultyWeightOverrides": [],
+              "canBeMissionAlert": true,
+              "tileTags": {
+                "gameplayTags": []
+              }
+            },
+            {
+              "tileType": "NonMission",
+              "zoneTheme": "/Game/World/ZoneThemes/Endless/BP_ZT_Endless_Winter.BP_ZT_Endless_Winter_C",
+              "requirements": {
+                "commanderLevel": 0,
+                "personalPowerRating": 0,
+                "partyPowerRating": 0,
+                "objectiveStatHandle": {
+                  "dataTable": "None",
+                  "rowName": "None"
+                },
+                "itemDefinition": "None"
+              },
+              "linkedQuests": [],
+              "xCoordinate": -2,
+              "yCoordinate": 4,
+              "missionWeightOverrides": [],
+              "difficultyWeightOverrides": [],
+              "canBeMissionAlert": true,
+              "tileTags": {
+                "gameplayTags": []
+              }
+            },
+            {
+              "tileType": "NonMission",
+              "zoneTheme": "/Game/World/ZoneThemes/Endless/BP_ZT_Endless_Winter.BP_ZT_Endless_Winter_C",
+              "requirements": {
+                "commanderLevel": 0,
+                "personalPowerRating": 0,
+                "partyPowerRating": 0,
+                "objectiveStatHandle": {
+                  "dataTable": "None",
+                  "rowName": "None"
+                },
+                "itemDefinition": "None"
+              },
+              "linkedQuests": [],
+              "xCoordinate": -1,
+              "yCoordinate": 4,
+              "missionWeightOverrides": [],
+              "difficultyWeightOverrides": [],
+              "canBeMissionAlert": true,
+              "tileTags": {
+                "gameplayTags": []
+              }
+            },
+            {
+              "tileType": "NonMission",
+              "zoneTheme": "/Game/World/ZoneThemes/Endless/BP_ZT_Endless_Winter.BP_ZT_Endless_Winter_C",
+              "requirements": {
+                "commanderLevel": 0,
+                "personalPowerRating": 0,
+                "partyPowerRating": 0,
+                "objectiveStatHandle": {
+                  "dataTable": "None",
+                  "rowName": "None"
+                },
+                "itemDefinition": "None"
+              },
+              "linkedQuests": [],
+              "xCoordinate": 1,
+              "yCoordinate": 4,
+              "missionWeightOverrides": [],
+              "difficultyWeightOverrides": [],
+              "canBeMissionAlert": true,
+              "tileTags": {
+                "gameplayTags": []
+              }
+            },
+            {
+              "tileType": "NonMission",
+              "zoneTheme": "/Game/World/ZoneThemes/Endless/BP_ZT_Endless_Winter.BP_ZT_Endless_Winter_C",
+              "requirements": {
+                "commanderLevel": 0,
+                "personalPowerRating": 0,
+                "partyPowerRating": 0,
+                "objectiveStatHandle": {
+                  "dataTable": "None",
+                  "rowName": "None"
+                },
+                "itemDefinition": "None"
+              },
+              "linkedQuests": [],
+              "xCoordinate": 2,
+              "yCoordinate": 4,
+              "missionWeightOverrides": [],
+              "difficultyWeightOverrides": [],
+              "canBeMissionAlert": true,
+              "tileTags": {
+                "gameplayTags": []
+              }
+            },
+            {
+              "tileType": "NonMission",
+              "zoneTheme": "/Game/World/ZoneThemes/Endless/BP_ZT_Endless_Winter.BP_ZT_Endless_Winter_C",
+              "requirements": {
+                "commanderLevel": 0,
+                "personalPowerRating": 0,
+                "partyPowerRating": 0,
+                "objectiveStatHandle": {
+                  "dataTable": "None",
+                  "rowName": "None"
+                },
+                "itemDefinition": "None"
+              },
+              "linkedQuests": [],
+              "xCoordinate": -2,
+              "yCoordinate": 5,
+              "missionWeightOverrides": [],
+              "difficultyWeightOverrides": [],
+              "canBeMissionAlert": true,
+              "tileTags": {
+                "gameplayTags": []
+              }
+            },
+            {
+              "tileType": "NonMission",
+              "zoneTheme": "/Game/World/ZoneThemes/Endless/BP_ZT_Endless_Winter.BP_ZT_Endless_Winter_C",
+              "requirements": {
+                "commanderLevel": 0,
+                "personalPowerRating": 0,
+                "partyPowerRating": 0,
+                "objectiveStatHandle": {
+                  "dataTable": "None",
+                  "rowName": "None"
+                },
+                "itemDefinition": "None"
+              },
+              "linkedQuests": [],
+              "xCoordinate": -1,
+              "yCoordinate": 5,
+              "missionWeightOverrides": [],
+              "difficultyWeightOverrides": [],
+              "canBeMissionAlert": true,
+              "tileTags": {
+                "gameplayTags": []
+              }
+            },
+            {
+              "tileType": "NonMission",
+              "zoneTheme": "/Game/World/ZoneThemes/Endless/BP_ZT_Endless_Winter.BP_ZT_Endless_Winter_C",
+              "requirements": {
+                "commanderLevel": 0,
+                "personalPowerRating": 0,
+                "partyPowerRating": 0,
+                "objectiveStatHandle": {
+                  "dataTable": "None",
+                  "rowName": "None"
+                },
+                "itemDefinition": "None"
+              },
+              "linkedQuests": [],
+              "xCoordinate": 1,
+              "yCoordinate": 5,
+              "missionWeightOverrides": [],
+              "difficultyWeightOverrides": [],
+              "canBeMissionAlert": true,
+              "tileTags": {
+                "gameplayTags": []
+              }
+            },
+            {
+              "tileType": "NonMission",
+              "zoneTheme": "/Game/World/ZoneThemes/Endless/BP_ZT_Endless_Winter.BP_ZT_Endless_Winter_C",
+              "requirements": {
+                "commanderLevel": 0,
+                "personalPowerRating": 0,
+                "partyPowerRating": 0,
+                "objectiveStatHandle": {
+                  "dataTable": "None",
+                  "rowName": "None"
+                },
+                "itemDefinition": "None"
+              },
+              "linkedQuests": [],
+              "xCoordinate": 2,
+              "yCoordinate": 5,
+              "missionWeightOverrides": [],
+              "difficultyWeightOverrides": [],
+              "canBeMissionAlert": true,
+              "tileTags": {
+                "gameplayTags": []
+              }
+            },
+            {
+              "tileType": "NonMission",
+              "zoneTheme": "/Game/World/ZoneThemes/Endless/BP_ZT_Endless_Winter.BP_ZT_Endless_Winter_C",
+              "requirements": {
+                "commanderLevel": 0,
+                "personalPowerRating": 0,
+                "partyPowerRating": 0,
+                "objectiveStatHandle": {
+                  "dataTable": "None",
+                  "rowName": "None"
+                },
+                "itemDefinition": "None"
+              },
+              "linkedQuests": [],
+              "xCoordinate": 0,
+              "yCoordinate": 7,
+              "missionWeightOverrides": [],
+              "difficultyWeightOverrides": [],
+              "canBeMissionAlert": true,
+              "tileTags": {
+                "gameplayTags": []
+              }
+            },
+            {
+              "tileType": "NonMission",
+              "zoneTheme": "/Game/World/ZoneThemes/Endless/BP_ZT_Endless_Winter.BP_ZT_Endless_Winter_C",
+              "requirements": {
+                "commanderLevel": 0,
+                "personalPowerRating": 0,
+                "partyPowerRating": 0,
+                "objectiveStatHandle": {
+                  "dataTable": "None",
+                  "rowName": "None"
+                },
+                "itemDefinition": "None"
+              },
+              "linkedQuests": [],
+              "xCoordinate": -2,
+              "yCoordinate": 6,
+              "missionWeightOverrides": [],
+              "difficultyWeightOverrides": [],
+              "canBeMissionAlert": true,
+              "tileTags": {
+                "gameplayTags": []
+              }
+            },
+            {
+              "tileType": "NonMission",
+              "zoneTheme": "/Game/World/ZoneThemes/Endless/BP_ZT_Endless_Winter.BP_ZT_Endless_Winter_C",
+              "requirements": {
+                "commanderLevel": 0,
+                "personalPowerRating": 0,
+                "partyPowerRating": 0,
+                "objectiveStatHandle": {
+                  "dataTable": "None",
+                  "rowName": "None"
+                },
+                "itemDefinition": "None"
+              },
+              "linkedQuests": [],
+              "xCoordinate": -1,
+              "yCoordinate": 6,
+              "missionWeightOverrides": [],
+              "difficultyWeightOverrides": [],
+              "canBeMissionAlert": true,
+              "tileTags": {
+                "gameplayTags": []
+              }
+            },
+            {
+              "tileType": "NonMission",
+              "zoneTheme": "/Game/World/ZoneThemes/Endless/BP_ZT_Endless_Winter.BP_ZT_Endless_Winter_C",
+              "requirements": {
+                "commanderLevel": 0,
+                "personalPowerRating": 0,
+                "partyPowerRating": 0,
+                "objectiveStatHandle": {
+                  "dataTable": "None",
+                  "rowName": "None"
+                },
+                "itemDefinition": "None"
+              },
+              "linkedQuests": [],
+              "xCoordinate": 1,
+              "yCoordinate": 6,
+              "missionWeightOverrides": [],
+              "difficultyWeightOverrides": [],
+              "canBeMissionAlert": true,
+              "tileTags": {
+                "gameplayTags": []
+              }
+            },
+            {
+              "tileType": "NonMission",
+              "zoneTheme": "/Game/World/ZoneThemes/Endless/BP_ZT_Endless_Winter.BP_ZT_Endless_Winter_C",
+              "requirements": {
+                "commanderLevel": 0,
+                "personalPowerRating": 0,
+                "partyPowerRating": 0,
+                "objectiveStatHandle": {
+                  "dataTable": "None",
+                  "rowName": "None"
+                },
+                "itemDefinition": "None"
+              },
+              "linkedQuests": [],
+              "xCoordinate": 2,
+              "yCoordinate": 6,
+              "missionWeightOverrides": [],
+              "difficultyWeightOverrides": [],
+              "canBeMissionAlert": true,
+              "tileTags": {
+                "gameplayTags": []
+              }
+            },
+            {
+              "tileType": "NonMission",
+              "zoneTheme": "/Game/World/ZoneThemes/Endless/BP_ZT_Endless_Winter.BP_ZT_Endless_Winter_C",
+              "requirements": {
+                "commanderLevel": 0,
+                "personalPowerRating": 0,
+                "partyPowerRating": 0,
+                "objectiveStatHandle": {
+                  "dataTable": "None",
+                  "rowName": "None"
+                },
+                "itemDefinition": "None"
+              },
+              "linkedQuests": [],
+              "xCoordinate": 0,
+              "yCoordinate": 8,
+              "missionWeightOverrides": [],
+              "difficultyWeightOverrides": [],
+              "canBeMissionAlert": true,
+              "tileTags": {
+                "gameplayTags": []
+              }
+            },
+            {
+              "tileType": "NonMission",
+              "zoneTheme": "/Game/World/ZoneThemes/Endless/BP_ZT_Endless_Winter.BP_ZT_Endless_Winter_C",
+              "requirements": {
+                "commanderLevel": 0,
+                "personalPowerRating": 0,
+                "partyPowerRating": 0,
+                "objectiveStatHandle": {
+                  "dataTable": "None",
+                  "rowName": "None"
+                },
+                "itemDefinition": "None"
+              },
+              "linkedQuests": [],
+              "xCoordinate": -1,
+              "yCoordinate": -1,
+              "missionWeightOverrides": [],
+              "difficultyWeightOverrides": [],
+              "canBeMissionAlert": true,
+              "tileTags": {
+                "gameplayTags": []
+              }
+            },
+            {
+              "tileType": "NonMission",
+              "zoneTheme": "/Game/World/ZoneThemes/Endless/BP_ZT_Endless_Winter.BP_ZT_Endless_Winter_C",
+              "requirements": {
+                "commanderLevel": 0,
+                "personalPowerRating": 0,
+                "partyPowerRating": 0,
+                "objectiveStatHandle": {
+                  "dataTable": "None",
+                  "rowName": "None"
+                },
+                "itemDefinition": "None"
+              },
+              "linkedQuests": [],
+              "xCoordinate": 1,
+              "yCoordinate": -1,
+              "missionWeightOverrides": [],
+              "difficultyWeightOverrides": [],
+              "canBeMissionAlert": true,
+              "tileTags": {
+                "gameplayTags": []
+              }
+            },
+            {
+              "tileType": "NonMission",
+              "zoneTheme": "/Game/World/ZoneThemes/Endless/BP_ZT_Endless_Winter.BP_ZT_Endless_Winter_C",
+              "requirements": {
+                "commanderLevel": 0,
+                "personalPowerRating": 0,
+                "partyPowerRating": 0,
+                "objectiveStatHandle": {
+                  "dataTable": "None",
+                  "rowName": "None"
+                },
+                "itemDefinition": "None"
+              },
+              "linkedQuests": [],
+              "xCoordinate": 0,
+              "yCoordinate": 12,
+              "missionWeightOverrides": [],
+              "difficultyWeightOverrides": [],
+              "canBeMissionAlert": true,
+              "tileTags": {
+                "gameplayTags": []
+              }
+            },
+            {
+              "tileType": "NonMission",
+              "zoneTheme": "/Game/World/ZoneThemes/Endless/BP_ZT_Endless_Winter.BP_ZT_Endless_Winter_C",
+              "requirements": {
+                "commanderLevel": 0,
+                "personalPowerRating": 0,
+                "partyPowerRating": 0,
+                "objectiveStatHandle": {
+                  "dataTable": "None",
+                  "rowName": "None"
+                },
+                "itemDefinition": "None"
+              },
+              "linkedQuests": [],
+              "xCoordinate": 0,
+              "yCoordinate": -5,
+              "missionWeightOverrides": [],
+              "difficultyWeightOverrides": [],
+              "canBeMissionAlert": true,
+              "tileTags": {
+                "gameplayTags": []
+              }
+            },
+            {
+              "tileType": "NonMission",
+              "zoneTheme": "/Game/World/ZoneThemes/Endless/BP_ZT_Endless_Winter.BP_ZT_Endless_Winter_C",
+              "requirements": {
+                "commanderLevel": 0,
+                "personalPowerRating": 0,
+                "partyPowerRating": 0,
+                "objectiveStatHandle": {
+                  "dataTable": "None",
+                  "rowName": "None"
+                },
+                "itemDefinition": "None"
+              },
+              "linkedQuests": [],
+              "xCoordinate": -5,
+              "yCoordinate": 3,
+              "missionWeightOverrides": [],
+              "difficultyWeightOverrides": [],
+              "canBeMissionAlert": true,
+              "tileTags": {
+                "gameplayTags": []
+              }
+            },
+            {
+              "tileType": "NonMission",
+              "zoneTheme": "/Game/World/ZoneThemes/Endless/BP_ZT_Endless_Winter.BP_ZT_Endless_Winter_C",
+              "requirements": {
+                "commanderLevel": 0,
+                "personalPowerRating": 0,
+                "partyPowerRating": 0,
+                "objectiveStatHandle": {
+                  "dataTable": "None",
+                  "rowName": "None"
+                },
+                "itemDefinition": "None"
+              },
+              "linkedQuests": [],
+              "xCoordinate": 5,
+              "yCoordinate": 3,
+              "missionWeightOverrides": [],
+              "difficultyWeightOverrides": [],
+              "canBeMissionAlert": true,
+              "tileTags": {
+                "gameplayTags": []
+              }
+            }
+          ],
+          "regions": [
+            {
+              "displayName": "Frostnite",
+              "regionTags": {
+                "gameplayTags": []
+              },
+              "tileIndices": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6
+              ],
+              "regionThemeIcon": "None",
+              "missionData": {
+                "missionWeights": [],
+                "difficultyWeights": [],
+                "numMissionsAvailable": 0,
+                "numMissionsToChange": 0,
+                "missionChangeFrequency": 0
+              },
+              "requirements": {
+                "commanderLevel": 0,
+                "personalPowerRating": 0,
+                "partyPowerRating": 0,
+                "objectiveStatHandle": {
+                  "dataTable": "None",
+                  "rowName": "None"
+                },
+                "itemDefinition": "None"
+              }
+            },
+            {
+              "displayName": "Non Mission",
+              "regionTags": {
+                "gameplayTags": []
+              },
+              "tileIndices": [
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15,
+                16,
+                17,
+                18,
+                19,
+                20,
+                21,
+                22,
+                23,
+                24,
+                25,
+                26,
+                27,
+                28,
+                29,
+                30,
+                31,
+                32,
+                33,
+                34,
+                35,
+                36,
+                37,
+                38,
+                39,
+                40,
+                41,
+                42,
+                43,
+                44
+              ],
+              "regionThemeIcon": "None",
+              "missionData": {
+                "missionWeights": [],
+                "difficultyWeights": [],
+                "numMissionsAvailable": 0,
+                "numMissionsToChange": 0,
+                "missionChangeFrequency": 0
+              },
+              "requirements": {
+                "commanderLevel": 0,
+                "personalPowerRating": 0,
+                "partyPowerRating": 0,
+                "objectiveStatHandle": {
+                  "dataTable": "None",
+                  "rowName": "None"
+                },
+                "itemDefinition": "None"
+              }
+            }
+          ]
+        }
+      ],
+      "missions": [
+        {
+          "theaterId": "FQ7DMNYZ6ZHTBAX2I5JGVZYUUMPGYX2M",
+          "availableMissions": [
+            {
+              "missionGuid": "9fbb55bf-48f0-768f-6119-60a6b1809100",
+              "missionRewards": {
+                "tierGroupName": "Mission_Select_Endless_T01",
+                "items": [
+                  {
+                    "itemType": "CardPack:zcp_endless_t01",
+                    "quantity": 1
+                  }
+                ]
+              },
+              "missionGenerator": "/Game/World/MissionGens/MissionGen_Endless.MissionGen_Endless_C",
+              "missionDifficultyInfo": {
+                "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
+                "rowName": "Theater_Endless_Start_Zone5"
+              },
+              "tileIndex": 0,
+              "availableUntil": "2017-07-25T23:59:59.999Z"
+            },
+            {
+              "missionGuid": "661f922f-c92c-a2a5-6506-76481e61c622",
+              "missionRewards": {
+                "tierGroupName": "Mission_Select_Endless_T02",
+                "items": [
+                  {
+                    "itemType": "CardPack:zcp_endless_t02",
+                    "quantity": 1
+                  }
+                ]
+              },
+              "missionGenerator": "/Game/World/MissionGens/MissionGen_Endless.MissionGen_Endless_C",
+              "missionDifficultyInfo": {
+                "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
+                "rowName": "Theater_Endless_Normal_Zone3"
+              },
+              "tileIndex": 1,
+              "availableUntil": "2017-07-25T23:59:59.999Z"
+            },
+            {
+              "missionGuid": "1ee4c755-9353-1796-812c-ef81dc49833a",
+              "missionRewards": {
+                "tierGroupName": "Mission_Select_Endless_T03",
+                "items": [
+                  {
+                    "itemType": "CardPack:zcp_endless_t03",
+                    "quantity": 1
+                  }
+                ]
+              },
+              "missionGenerator": "/Game/World/MissionGens/MissionGen_Endless.MissionGen_Endless_C",
+              "missionDifficultyInfo": {
+                "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
+                "rowName": "Theater_Endless_Normal_Zone5"
+              },
+              "tileIndex": 2,
+              "availableUntil": "2017-07-25T23:59:59.999Z"
+            },
+            {
+              "missionGuid": "9f1a43d0-6c85-4756-0aa6-d1255aa7cf54",
+              "missionRewards": {
+                "tierGroupName": "Mission_Select_Endless_T04",
+                "items": [
+                  {
+                    "itemType": "CardPack:zcp_endless_t04",
+                    "quantity": 1
+                  }
+                ]
+              },
+              "missionGenerator": "/Game/World/MissionGens/MissionGen_Endless.MissionGen_Endless_C",
+              "missionDifficultyInfo": {
+                "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
+                "rowName": "Theater_Endless_Hard_Zone3"
+              },
+              "tileIndex": 3,
+              "availableUntil": "2017-07-25T23:59:59.999Z"
+            },
+            {
+              "missionGuid": "5e11cd16-27e9-ef76-84f8-73b067b09f14",
+              "missionRewards": {
+                "tierGroupName": "Mission_Select_Endless_T05",
+                "items": [
+                  {
+                    "itemType": "CardPack:zcp_endless_t05",
+                    "quantity": 1
+                  }
+                ]
+              },
+              "missionGenerator": "/Game/World/MissionGens/MissionGen_Endless.MissionGen_Endless_C",
+              "missionDifficultyInfo": {
+                "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
+                "rowName": "Theater_Endless_Hard_Zone5"
+              },
+              "tileIndex": 4,
+              "availableUntil": "2017-07-25T23:59:59.999Z"
+            },
+            {
+              "missionGuid": "ff83dbf6-3ede-acd4-71c8-616930e5d41f",
+              "missionRewards": {
+                "tierGroupName": "Mission_Select_Endless_T06",
+                "items": [
+                  {
+                    "itemType": "CardPack:zcp_endless_t06",
+                    "quantity": 1
+                  }
+                ]
+              },
+              "missionGenerator": "/Game/World/MissionGens/MissionGen_Endless.MissionGen_Endless_C",
+              "missionDifficultyInfo": {
+                "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
+                "rowName": "Theater_Endless_Nightmare_Zone3"
+              },
+              "tileIndex": 5,
+              "availableUntil": "2017-07-25T23:59:59.999Z"
+            },
+            {
+              "missionGuid": "d6a4c1ae-5676-e8fd-09c1-713751ec8e5f",
+              "missionRewards": {
+                "tierGroupName": "Mission_Select_Endless_T07",
+                "items": [
+                  {
+                    "itemType": "CardPack:zcp_endless_t07",
+                    "quantity": 1
+                  }
+                ]
+              },
+              "missionGenerator": "/Game/World/MissionGens/MissionGen_Endless.MissionGen_Endless_C",
+              "missionDifficultyInfo": {
+                "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
+                "rowName": "Theater_Endless_Nightmare_Zone5"
+              },
+              "tileIndex": 6,
+              "availableUntil": "2017-07-25T23:59:59.999Z"
+            }
+          ],
+          "nextRefresh": "2017-07-25T23:59:59.999Z"
+        }
+      ],
+      "missionAlerts": [
+        {
+          "theaterId": "FQ7DMNYZ6ZHTBAX2I5JGVZYUUMPGYX2M",
+          "availableMissionAlerts": [],
           "nextRefresh": "2017-07-25T23:59:59.999Z"
         }
       ]
