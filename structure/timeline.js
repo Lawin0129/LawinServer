@@ -224,11 +224,6 @@ express.get("/fortnite/api/calendar/v1/timeline", async (req, res) => {
             "activeSince": "2020-01-01T00:00:00.000Z"
         },
         {
-            "eventType": "EventFlag.Season9.Phase2",
-            "activeUntil": "9999-01-01T00:00:00.000Z",
-            "activeSince": "2020-01-01T00:00:00.000Z"
-        },
-        {
             "eventType": "EventFlag.Anniversary2019_BR",
             "activeUntil": "9999-01-01T00:00:00.000Z",
             "activeSince": "2020-01-01T00:00:00.000Z"
@@ -248,6 +243,14 @@ express.get("/fortnite/api/calendar/v1/timeline", async (req, res) => {
             "activeUntil": "9999-01-01T00:00:00.000Z",
             "activeSince": "2020-01-01T00:00:00.000Z"
         })
+        if (memory.build.toString().includes(".") && (Number(memory.build.toString().split(".")[1].split("")[0]) >= 2)) {
+            activeEvents.push(
+            {
+                "eventType": "EventFlag.Season9.Phase2",
+                "activeUntil": "9999-01-01T00:00:00.000Z",
+                "activeSince": "2020-01-01T00:00:00.000Z"
+            })
+        }
     }
 
     if (memory.season == 10) {
@@ -307,7 +310,7 @@ express.get("/fortnite/api/calendar/v1/timeline", async (req, res) => {
             "activeSince": "2020-01-01T00:00:00.000Z"
         })
 
-        if (Number(memory.build.toString().split(".")[1].split("")[0]) >= 2) {
+        if (memory.build.toString().includes(".") && (Number(memory.build.toString().split(".")[1].split("")[0]) >= 2)) {
             activeEvents.push(
             {
                 "eventType": "EventFlag.Starlight",
@@ -316,7 +319,7 @@ express.get("/fortnite/api/calendar/v1/timeline", async (req, res) => {
             })
         }
 
-        if (Number(memory.build.toString().split(".")[1].split("")[0]) < 3) {
+        if (memory.build.toString().includes(".") && (Number(memory.build.toString().split(".")[1].split("")[0]) < 3)) {
             activeEvents.push(
             {
                 "eventType": "EventFlag.Season11.Fortnitemares.Quests.Phase1",
