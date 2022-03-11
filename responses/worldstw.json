@@ -34287,7 +34287,23 @@
           "availableMissions": [
             {
               "missionGuid": "a76025da-4878-3b9b-b522-7e392cfbe4a7",
-              "missionRewards": {},
+              "missionRewards": {
+                "tierGroupName": "Mission_Select_T16",
+                "items": [
+                  {
+                    "itemType": "CardPack:zcp_schematicxp_t16",
+                    "quantity": 1
+                  },
+                  {
+                    "itemType": "CardPack:zcp_reagent_c_t04_veryhigh",
+                    "quantity": 1
+                  },
+                  {
+                    "itemType": "CardPack:zcp_eventscaling_t16",
+                    "quantity": 1
+                  }
+                ]
+              },
               "missionGenerator": "/Game/World/MissionGens/EventPrimaryMissions/MissionGen_FinalFrontier.MissionGen_FinalFrontier_C",
               "missionDifficultyInfo": {
                 "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
@@ -34298,7 +34314,23 @@
             },
             {
               "missionGuid": "f5cc717b-4eb9-5780-c178-afbbfaddf743",
-              "missionRewards": {},
+              "missionRewards": {
+                "tierGroupName": "Mission_Select_T15",
+                "items": [
+                  {
+                    "itemType": "CardPack:zcp_heroxp_t15",
+                    "quantity": 1
+                  },
+                  {
+                    "itemType": "CardPack:zcp_reagent_c_t04_veryhigh",
+                    "quantity": 1
+                  },
+                  {
+                    "itemType": "CardPack:zcp_eventscaling_t15",
+                    "quantity": 1
+                  }
+                ]
+              },
               "missionGenerator": "/Game/World/MissionGens/EventPrimaryMissions/MissionGen_FinalFrontier.MissionGen_FinalFrontier_C",
               "missionDifficultyInfo": {
                 "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
@@ -34309,7 +34341,23 @@
             },
             {
               "missionGuid": "f45aa168-59d3-9f3f-c3e0-134cb94cd248",
-              "missionRewards": {},
+              "missionRewards": {
+                "tierGroupName": "Mission_Select_T14",
+                "items": [
+                  {
+                    "itemType": "CardPack:zcp_personnelxp_t14",
+                    "quantity": 1
+                  },
+                  {
+                    "itemType": "CardPack:zcp_reagent_c_t04_veryhigh",
+                    "quantity": 1
+                  },
+                  {
+                    "itemType": "CardPack:zcp_eventscaling_t14",
+                    "quantity": 1
+                  }
+                ]
+              },
               "missionGenerator": "/Game/World/MissionGens/EventPrimaryMissions/MissionGen_FinalFrontier.MissionGen_FinalFrontier_C",
               "missionDifficultyInfo": {
                 "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
@@ -34320,7 +34368,23 @@
             },
             {
               "missionGuid": "209e6059-c6da-e560-06d3-88dd0ff98bf4",
-              "missionRewards": {},
+              "missionRewards": {
+                "tierGroupName": "Mission_Select_T13",
+                "items": [
+                  {
+                    "itemType": "CardPack:zcp_schematicxp_t13",
+                    "quantity": 1
+                  },
+                  {
+                    "itemType": "CardPack:zcp_reagent_c_t04_high",
+                    "quantity": 1
+                  },
+                  {
+                    "itemType": "CardPack:zcp_eventscaling_t13",
+                    "quantity": 1
+                  }
+                ]
+              },
               "missionGenerator": "/Game/World/MissionGens/EventPrimaryMissions/MissionGen_FinalFrontier.MissionGen_FinalFrontier_C",
               "missionDifficultyInfo": {
                 "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
@@ -34331,7 +34395,23 @@
             },
             {
               "missionGuid": "391a1e1e-1370-18a2-02e9-764a019a474f",
-              "missionRewards": {},
+              "missionRewards": {
+                "tierGroupName": "Mission_Select_T12",
+                "items": [
+                  {
+                    "itemType": "CardPack:zcp_heroxp_t12",
+                    "quantity": 1
+                  },
+                  {
+                    "itemType": "CardPack:zcp_reagent_c_t03_high",
+                    "quantity": 1
+                  },
+                  {
+                    "itemType": "CardPack:zcp_eventscaling_t12",
+                    "quantity": 1
+                  }
+                ]
+              },
               "missionGenerator": "/Game/World/MissionGens/EventPrimaryMissions/MissionGen_FinalFrontier.MissionGen_FinalFrontier_C",
               "missionDifficultyInfo": {
                 "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
@@ -34342,7 +34422,23 @@
             },
             {
               "missionGuid": "9f943456-d268-c8c9-ed64-a683152f111a",
-              "missionRewards": {},
+              "missionRewards": {
+                "tierGroupName": "Mission_Select_T11",
+                "items": [
+                  {
+                    "itemType": "CardPack:zcp_personnelxp_t11",
+                    "quantity": 1
+                  },
+                  {
+                    "itemType": "CardPack:zcp_reagent_c_t03_high",
+                    "quantity": 1
+                  },
+                  {
+                    "itemType": "CardPack:zcp_eventscaling_t11",
+                    "quantity": 1
+                  }
+                ]
+              },
               "missionGenerator": "/Game/World/MissionGens/EventPrimaryMissions/MissionGen_FinalFrontier.MissionGen_FinalFrontier_C",
               "missionDifficultyInfo": {
                 "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
@@ -34353,7 +34449,23 @@
             },
             {
               "missionGuid": "4e0f8dca-c9f7-a4ab-645a-1ed6d2e12a68",
-              "missionRewards": {},
+              "missionRewards": {
+                "tierGroupName": "Mission_Select_T10",
+                "items": [
+                  {
+                    "itemType": "CardPack:zcp_schematicxp_t10",
+                    "quantity": 1
+                  },
+                  {
+                    "itemType": "CardPack:zcp_reagent_c_t03_medium",
+                    "quantity": 1
+                  },
+                  {
+                    "itemType": "CardPack:zcp_eventscaling_t10",
+                    "quantity": 1
+                  }
+                ]
+              },
               "missionGenerator": "/Game/World/MissionGens/EventPrimaryMissions/MissionGen_FinalFrontier.MissionGen_FinalFrontier_C",
               "missionDifficultyInfo": {
                 "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
@@ -34364,7 +34476,23 @@
             },
             {
               "missionGuid": "83919237-9cdb-6558-18cb-dea8319e6332",
-              "missionRewards": {},
+              "missionRewards": {
+                "tierGroupName": "Mission_Select_T09",
+                "items": [
+                  {
+                    "itemType": "CardPack:zcp_heroxp_t09",
+                    "quantity": 1
+                  },
+                  {
+                    "itemType": "CardPack:zcp_reagent_c_t03_medium",
+                    "quantity": 1
+                  },
+                  {
+                    "itemType": "CardPack:zcp_eventscaling_t09",
+                    "quantity": 1
+                  }
+                ]
+              },
               "missionGenerator": "/Game/World/MissionGens/EventPrimaryMissions/MissionGen_FinalFrontier.MissionGen_FinalFrontier_C",
               "missionDifficultyInfo": {
                 "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
@@ -34375,7 +34503,23 @@
             },
             {
               "missionGuid": "88eca1ff-8a13-708f-635c-7c790ef291df",
-              "missionRewards": {},
+              "missionRewards": {
+                "tierGroupName": "Mission_Select_T08",
+                "items": [
+                  {
+                    "itemType": "CardPack:zcp_personnelxp_t08",
+                    "quantity": 1
+                  },
+                  {
+                    "itemType": "CardPack:zcp_reagent_c_t02_medium",
+                    "quantity": 1
+                  },
+                  {
+                    "itemType": "CardPack:zcp_eventscaling_t08",
+                    "quantity": 1
+                  }
+                ]
+              },
               "missionGenerator": "/Game/World/MissionGens/EventPrimaryMissions/MissionGen_FinalFrontier.MissionGen_FinalFrontier_C",
               "missionDifficultyInfo": {
                 "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
@@ -34386,7 +34530,23 @@
             },
             {
               "missionGuid": "6d92749a-c78c-5707-fa38-cd3e78b659f5",
-              "missionRewards": {},
+              "missionRewards": {
+                "tierGroupName": "Mission_Select_T07",
+                "items": [
+                  {
+                    "itemType": "CardPack:zcp_schematicxp_t07",
+                    "quantity": 1
+                  },
+                  {
+                    "itemType": "CardPack:zcp_reagent_c_t02_low",
+                    "quantity": 1
+                  },
+                  {
+                    "itemType": "CardPack:zcp_eventscaling_t07",
+                    "quantity": 1
+                  }
+                ]
+              },
               "missionGenerator": "/Game/World/MissionGens/EventPrimaryMissions/MissionGen_FinalFrontier.MissionGen_FinalFrontier_C",
               "missionDifficultyInfo": {
                 "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
@@ -34397,7 +34557,23 @@
             },
             {
               "missionGuid": "32cfc511-d654-2572-0f23-8b3c372e6e05",
-              "missionRewards": {},
+              "missionRewards": {
+                "tierGroupName": "Mission_Select_T06",
+                "items": [
+                  {
+                    "itemType": "CardPack:zcp_heroxp_t06",
+                    "quantity": 1
+                  },
+                  {
+                    "itemType": "CardPack:zcp_reagent_c_t02_low",
+                    "quantity": 1
+                  },
+                  {
+                    "itemType": "CardPack:zcp_eventscaling_t06",
+                    "quantity": 1
+                  }
+                ]
+              },
               "missionGenerator": "/Game/World/MissionGens/EventPrimaryMissions/MissionGen_FinalFrontier.MissionGen_FinalFrontier_C",
               "missionDifficultyInfo": {
                 "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
@@ -34408,7 +34584,23 @@
             },
             {
               "missionGuid": "d8ab87bb-853e-c7d5-b315-2d7e09155369",
-              "missionRewards": {},
+              "missionRewards": {
+                "tierGroupName": "Mission_Select_T05",
+                "items": [
+                  {
+                    "itemType": "CardPack:zcp_personnelxp_t05",
+                    "quantity": 1
+                  },
+                  {
+                    "itemType": "CardPack:zcp_reagent_c_t02_low",
+                    "quantity": 1
+                  },
+                  {
+                    "itemType": "CardPack:zcp_eventscaling_t05",
+                    "quantity": 1
+                  }
+                ]
+              },
               "missionGenerator": "/Game/World/MissionGens/EventPrimaryMissions/MissionGen_FinalFrontier.MissionGen_FinalFrontier_C",
               "missionDifficultyInfo": {
                 "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
@@ -34419,7 +34611,23 @@
             },
             {
               "missionGuid": "db64c80e-435a-2860-7c4a-a83c8552c958",
-              "missionRewards": {},
+              "missionRewards": {
+                "tierGroupName": "Mission_Select_T04",
+                "items": [
+                  {
+                    "itemType": "CardPack:zcp_schematicxp_t04",
+                    "quantity": 1
+                  },
+                  {
+                    "itemType": "CardPack:zcp_reagent_c_t01_verylow",
+                    "quantity": 1
+                  },
+                  {
+                    "itemType": "CardPack:zcp_eventscaling_t04",
+                    "quantity": 1
+                  }
+                ]
+              },
               "missionGenerator": "/Game/World/MissionGens/EventPrimaryMissions/MissionGen_FinalFrontier.MissionGen_FinalFrontier_C",
               "missionDifficultyInfo": {
                 "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
@@ -34430,7 +34638,23 @@
             },
             {
               "missionGuid": "cdc70d05-bcc6-644b-65ca-c238748f5d5a",
-              "missionRewards": {},
+              "missionRewards": {
+                "tierGroupName": "Mission_Select_T03",
+                "items": [
+                  {
+                    "itemType": "CardPack:zcp_heroxp_t03",
+                    "quantity": 1
+                  },
+                  {
+                    "itemType": "CardPack:zcp_reagent_c_t01_verylow",
+                    "quantity": 1
+                  },
+                  {
+                    "itemType": "CardPack:zcp_eventscaling_t03",
+                    "quantity": 1
+                  }
+                ]
+              },
               "missionGenerator": "/Game/World/MissionGens/EventPrimaryMissions/MissionGen_FinalFrontier.MissionGen_FinalFrontier_C",
               "missionDifficultyInfo": {
                 "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
@@ -34441,7 +34665,23 @@
             },
             {
               "missionGuid": "7b8c5089-3e69-3f95-01cc-b565b1916b44",
-              "missionRewards": {},
+              "missionRewards": {
+                "tierGroupName": "Mission_Select_T02",
+                "items": [
+                  {
+                    "itemType": "CardPack:zcp_personnelxp_t02",
+                    "quantity": 1
+                  },
+                  {
+                    "itemType": "CardPack:zcp_reagent_c_t01_verylow",
+                    "quantity": 1
+                  },
+                  {
+                    "itemType": "CardPack:zcp_eventscaling_t02",
+                    "quantity": 1
+                  }
+                ]
+              },
               "missionGenerator": "/Game/World/MissionGens/EventPrimaryMissions/MissionGen_FinalFrontier.MissionGen_FinalFrontier_C",
               "missionDifficultyInfo": {
                 "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
@@ -34452,7 +34692,23 @@
             },
             {
               "missionGuid": "764c9ac5-ea3b-02c8-84cb-a25d8682e929",
-              "missionRewards": {},
+              "missionRewards": {
+                "tierGroupName": "Mission_Select_T01",
+                "items": [
+                  {
+                    "itemType": "CardPack:zcp_schematicxp_t01",
+                    "quantity": 1
+                  },
+                  {
+                    "itemType": "CardPack:zcp_reagent_c_t01_verylow",
+                    "quantity": 1
+                  },
+                  {
+                    "itemType": "CardPack:zcp_eventscaling_t01",
+                    "quantity": 1
+                  }
+                ]
+              },
               "missionGenerator": "/Game/World/MissionGens/EventPrimaryMissions/MissionGen_FinalFrontier.MissionGen_FinalFrontier_C",
               "missionDifficultyInfo": {
                 "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
@@ -34463,7 +34719,23 @@
             },
             {
               "missionGuid": "de0278d3-075e-7846-57fe-315c402e5022",
-              "missionRewards": {},
+              "missionRewards": {
+                "tierGroupName": "Mission_Select_T16",
+                "items": [
+                  {
+                    "itemType": "CardPack:zcp_schematicxp_t16",
+                    "quantity": 1
+                  },
+                  {
+                    "itemType": "CardPack:zcp_reagent_c_t04_veryhigh",
+                    "quantity": 1
+                  },
+                  {
+                    "itemType": "CardPack:zcp_eventscaling_t16",
+                    "quantity": 1
+                  }
+                ]
+              },
               "missionGenerator": "/Game/World/MissionGens/EventPrimaryMissions/MissionGen_FinalRehearsal.MissionGen_FinalRehearsal_C",
               "missionDifficultyInfo": {
                 "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
@@ -34474,7 +34746,23 @@
             },
             {
               "missionGuid": "63273bce-a870-4384-bc15-8330690850bb",
-              "missionRewards": {},
+              "missionRewards": {
+                "tierGroupName": "Mission_Select_T15",
+                "items": [
+                  {
+                    "itemType": "CardPack:zcp_heroxp_t15",
+                    "quantity": 1
+                  },
+                  {
+                    "itemType": "CardPack:zcp_reagent_c_t04_veryhigh",
+                    "quantity": 1
+                  },
+                  {
+                    "itemType": "CardPack:zcp_eventscaling_t15",
+                    "quantity": 1
+                  }
+                ]
+              },
               "missionGenerator": "/Game/World/MissionGens/EventPrimaryMissions/MissionGen_FinalRehearsal.MissionGen_FinalRehearsal_C",
               "missionDifficultyInfo": {
                 "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
@@ -34485,7 +34773,23 @@
             },
             {
               "missionGuid": "4abb9b49-1c53-ddca-e5ff-b1d692efd98a",
-              "missionRewards": {},
+              "missionRewards": {
+                "tierGroupName": "Mission_Select_T14",
+                "items": [
+                  {
+                    "itemType": "CardPack:zcp_personnelxp_t14",
+                    "quantity": 1
+                  },
+                  {
+                    "itemType": "CardPack:zcp_reagent_c_t04_veryhigh",
+                    "quantity": 1
+                  },
+                  {
+                    "itemType": "CardPack:zcp_eventscaling_t14",
+                    "quantity": 1
+                  }
+                ]
+              },
               "missionGenerator": "/Game/World/MissionGens/EventPrimaryMissions/MissionGen_FinalRehearsal.MissionGen_FinalRehearsal_C",
               "missionDifficultyInfo": {
                 "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
@@ -34496,7 +34800,23 @@
             },
             {
               "missionGuid": "ae6fda55-bb7f-4dc6-49cf-aa53fa1e295a",
-              "missionRewards": {},
+              "missionRewards": {
+                "tierGroupName": "Mission_Select_T13",
+                "items": [
+                  {
+                    "itemType": "CardPack:zcp_schematicxp_t13",
+                    "quantity": 1
+                  },
+                  {
+                    "itemType": "CardPack:zcp_reagent_c_t04_high",
+                    "quantity": 1
+                  },
+                  {
+                    "itemType": "CardPack:zcp_eventscaling_t13",
+                    "quantity": 1
+                  }
+                ]
+              },
               "missionGenerator": "/Game/World/MissionGens/EventPrimaryMissions/MissionGen_FinalRehearsal.MissionGen_FinalRehearsal_C",
               "missionDifficultyInfo": {
                 "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
@@ -34507,7 +34827,23 @@
             },
             {
               "missionGuid": "6b7c6676-6449-8d5f-8710-fa41a6f3026e",
-              "missionRewards": {},
+              "missionRewards": {
+                "tierGroupName": "Mission_Select_T12",
+                "items": [
+                  {
+                    "itemType": "CardPack:zcp_heroxp_t12",
+                    "quantity": 1
+                  },
+                  {
+                    "itemType": "CardPack:zcp_reagent_c_t03_high",
+                    "quantity": 1
+                  },
+                  {
+                    "itemType": "CardPack:zcp_eventscaling_t12",
+                    "quantity": 1
+                  }
+                ]
+              },
               "missionGenerator": "/Game/World/MissionGens/EventPrimaryMissions/MissionGen_FinalRehearsal.MissionGen_FinalRehearsal_C",
               "missionDifficultyInfo": {
                 "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
@@ -34518,7 +34854,23 @@
             },
             {
               "missionGuid": "a732336e-0df5-6a4b-1310-7ddbd0809612",
-              "missionRewards": {},
+              "missionRewards": {
+                "tierGroupName": "Mission_Select_T11",
+                "items": [
+                  {
+                    "itemType": "CardPack:zcp_personnelxp_t11",
+                    "quantity": 1
+                  },
+                  {
+                    "itemType": "CardPack:zcp_reagent_c_t03_high",
+                    "quantity": 1
+                  },
+                  {
+                    "itemType": "CardPack:zcp_eventscaling_t11",
+                    "quantity": 1
+                  }
+                ]
+              },
               "missionGenerator": "/Game/World/MissionGens/EventPrimaryMissions/MissionGen_FinalRehearsal.MissionGen_FinalRehearsal_C",
               "missionDifficultyInfo": {
                 "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
@@ -34529,7 +34881,23 @@
             },
             {
               "missionGuid": "085153ec-9389-5695-a39d-460d3c689313",
-              "missionRewards": {},
+              "missionRewards": {
+                "tierGroupName": "Mission_Select_T10",
+                "items": [
+                  {
+                    "itemType": "CardPack:zcp_schematicxp_t10",
+                    "quantity": 1
+                  },
+                  {
+                    "itemType": "CardPack:zcp_reagent_c_t03_medium",
+                    "quantity": 1
+                  },
+                  {
+                    "itemType": "CardPack:zcp_eventscaling_t10",
+                    "quantity": 1
+                  }
+                ]
+              },
               "missionGenerator": "/Game/World/MissionGens/EventPrimaryMissions/MissionGen_FinalRehearsal.MissionGen_FinalRehearsal_C",
               "missionDifficultyInfo": {
                 "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
@@ -34540,7 +34908,23 @@
             },
             {
               "missionGuid": "e4381717-54a8-7269-af8b-b8bd26a82df0",
-              "missionRewards": {},
+              "missionRewards": {
+                "tierGroupName": "Mission_Select_T09",
+                "items": [
+                  {
+                    "itemType": "CardPack:zcp_heroxp_t09",
+                    "quantity": 1
+                  },
+                  {
+                    "itemType": "CardPack:zcp_reagent_c_t03_medium",
+                    "quantity": 1
+                  },
+                  {
+                    "itemType": "CardPack:zcp_eventscaling_t09",
+                    "quantity": 1
+                  }
+                ]
+              },
               "missionGenerator": "/Game/World/MissionGens/EventPrimaryMissions/MissionGen_FinalRehearsal.MissionGen_FinalRehearsal_C",
               "missionDifficultyInfo": {
                 "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
@@ -34551,7 +34935,23 @@
             },
             {
               "missionGuid": "147fca3f-9e77-de41-b67d-86f7a2126593",
-              "missionRewards": {},
+              "missionRewards": {
+                "tierGroupName": "Mission_Select_T08",
+                "items": [
+                  {
+                    "itemType": "CardPack:zcp_personnelxp_t08",
+                    "quantity": 1
+                  },
+                  {
+                    "itemType": "CardPack:zcp_reagent_c_t02_medium",
+                    "quantity": 1
+                  },
+                  {
+                    "itemType": "CardPack:zcp_eventscaling_t08",
+                    "quantity": 1
+                  }
+                ]
+              },
               "missionGenerator": "/Game/World/MissionGens/EventPrimaryMissions/MissionGen_FinalRehearsal.MissionGen_FinalRehearsal_C",
               "missionDifficultyInfo": {
                 "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
@@ -34562,7 +34962,23 @@
             },
             {
               "missionGuid": "57ed77b8-42a5-5f52-0078-94fd4ed937a1",
-              "missionRewards": {},
+              "missionRewards": {
+                "tierGroupName": "Mission_Select_T07",
+                "items": [
+                  {
+                    "itemType": "CardPack:zcp_schematicxp_t07",
+                    "quantity": 1
+                  },
+                  {
+                    "itemType": "CardPack:zcp_reagent_c_t02_low",
+                    "quantity": 1
+                  },
+                  {
+                    "itemType": "CardPack:zcp_eventscaling_t07",
+                    "quantity": 1
+                  }
+                ]
+              },
               "missionGenerator": "/Game/World/MissionGens/EventPrimaryMissions/MissionGen_FinalRehearsal.MissionGen_FinalRehearsal_C",
               "missionDifficultyInfo": {
                 "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
@@ -34573,7 +34989,23 @@
             },
             {
               "missionGuid": "18cc30c0-0684-92ab-a4c3-898715d66bbc",
-              "missionRewards": {},
+              "missionRewards": {
+                "tierGroupName": "Mission_Select_T06",
+                "items": [
+                  {
+                    "itemType": "CardPack:zcp_heroxp_t06",
+                    "quantity": 1
+                  },
+                  {
+                    "itemType": "CardPack:zcp_reagent_c_t02_low",
+                    "quantity": 1
+                  },
+                  {
+                    "itemType": "CardPack:zcp_eventscaling_t06",
+                    "quantity": 1
+                  }
+                ]
+              },
               "missionGenerator": "/Game/World/MissionGens/EventPrimaryMissions/MissionGen_FinalRehearsal.MissionGen_FinalRehearsal_C",
               "missionDifficultyInfo": {
                 "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
@@ -34584,7 +35016,23 @@
             },
             {
               "missionGuid": "525a68a1-2c51-ab17-77eb-f2b7812f7548",
-              "missionRewards": {},
+              "missionRewards": {
+                "tierGroupName": "Mission_Select_T05",
+                "items": [
+                  {
+                    "itemType": "CardPack:zcp_personnelxp_t05",
+                    "quantity": 1
+                  },
+                  {
+                    "itemType": "CardPack:zcp_reagent_c_t02_low",
+                    "quantity": 1
+                  },
+                  {
+                    "itemType": "CardPack:zcp_eventscaling_t05",
+                    "quantity": 1
+                  }
+                ]
+              },
               "missionGenerator": "/Game/World/MissionGens/EventPrimaryMissions/MissionGen_FinalRehearsal.MissionGen_FinalRehearsal_C",
               "missionDifficultyInfo": {
                 "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
@@ -34595,7 +35043,23 @@
             },
             {
               "missionGuid": "0d72f65e-8cc0-84ba-d095-c0e07a0e77b0",
-              "missionRewards": {},
+              "missionRewards": {
+                "tierGroupName": "Mission_Select_T04",
+                "items": [
+                  {
+                    "itemType": "CardPack:zcp_schematicxp_t04",
+                    "quantity": 1
+                  },
+                  {
+                    "itemType": "CardPack:zcp_reagent_c_t01_verylow",
+                    "quantity": 1
+                  },
+                  {
+                    "itemType": "CardPack:zcp_eventscaling_t04",
+                    "quantity": 1
+                  }
+                ]
+              },
               "missionGenerator": "/Game/World/MissionGens/EventPrimaryMissions/MissionGen_FinalRehearsal.MissionGen_FinalRehearsal_C",
               "missionDifficultyInfo": {
                 "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
@@ -34606,7 +35070,23 @@
             },
             {
               "missionGuid": "9a4a6bdd-3c9b-add7-69d8-92aa03c4ef39",
-              "missionRewards": {},
+              "missionRewards": {
+                "tierGroupName": "Mission_Select_T03",
+                "items": [
+                  {
+                    "itemType": "CardPack:zcp_heroxp_t03",
+                    "quantity": 1
+                  },
+                  {
+                    "itemType": "CardPack:zcp_reagent_c_t01_verylow",
+                    "quantity": 1
+                  },
+                  {
+                    "itemType": "CardPack:zcp_eventscaling_t03",
+                    "quantity": 1
+                  }
+                ]
+              },
               "missionGenerator": "/Game/World/MissionGens/EventPrimaryMissions/MissionGen_FinalRehearsal.MissionGen_FinalRehearsal_C",
               "missionDifficultyInfo": {
                 "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
@@ -34617,7 +35097,23 @@
             },
             {
               "missionGuid": "5120f088-f973-4ced-1ff1-4a7e99917eff",
-              "missionRewards": {},
+              "missionRewards": {
+                "tierGroupName": "Mission_Select_T02",
+                "items": [
+                  {
+                    "itemType": "CardPack:zcp_personnelxp_t02",
+                    "quantity": 1
+                  },
+                  {
+                    "itemType": "CardPack:zcp_reagent_c_t01_verylow",
+                    "quantity": 1
+                  },
+                  {
+                    "itemType": "CardPack:zcp_eventscaling_t02",
+                    "quantity": 1
+                  }
+                ]
+              },
               "missionGenerator": "/Game/World/MissionGens/EventPrimaryMissions/MissionGen_FinalRehearsal.MissionGen_FinalRehearsal_C",
               "missionDifficultyInfo": {
                 "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
@@ -34628,7 +35124,23 @@
             },
             {
               "missionGuid": "6029a370-a583-42cf-69fb-230c28b9e317",
-              "missionRewards": {},
+              "missionRewards": {
+                "tierGroupName": "Mission_Select_T01",
+                "items": [
+                  {
+                    "itemType": "CardPack:zcp_schematicxp_t01",
+                    "quantity": 1
+                  },
+                  {
+                    "itemType": "CardPack:zcp_reagent_c_t01_verylow",
+                    "quantity": 1
+                  },
+                  {
+                    "itemType": "CardPack:zcp_eventscaling_t01",
+                    "quantity": 1
+                  }
+                ]
+              },
               "missionGenerator": "/Game/World/MissionGens/EventPrimaryMissions/MissionGen_FinalRehearsal.MissionGen_FinalRehearsal_C",
               "missionDifficultyInfo": {
                 "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
