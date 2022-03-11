@@ -1,0 +1,1351 @@
+{
+  "author": "This list was made by PRO100KatYT",
+  "0": {
+    "itemType": "Currency:mtxgiveaway",
+    "quantity": 1000
+  },
+  "1": {
+    "itemType": "AccountResource:heroxp",
+    "quantity": 300
+  },
+  "2": {
+    "itemType": "AccountResource:voucher_basicpack",
+    "quantity": 2
+  },
+  "3": {
+    "itemType": "CardPack:cardpack_hero_r",
+    "quantity": 1
+  },
+  "4": {
+    "itemType": "CardPack:cardpack_ranged_r",
+    "quantity": 1
+  },
+  "5": {
+    "itemType": "CardPack:cardpack_melee_r",
+    "quantity": 1
+  },
+  "6": {
+    "itemType": "AccountResource:reagent_c_t01",
+    "quantity": 5
+  },
+  "7": {
+    "itemType": "PersistentResource:voucher_custom_firecracker_r",
+    "quantity": 1
+  },
+  "8": {
+    "itemType": "CardPack:cardpack_trap_r",
+    "quantity": 1
+  },
+  "9": {
+    "itemType": "CardPack:cardpack_defender_r",
+    "quantity": 1
+  },
+  "10": {
+    "itemType": "CardPack:cardpack_hero_vr",
+    "quantity": 1
+  },
+  "11": {
+    "itemType": "Currency:mtxgiveaway",
+    "quantity": 50
+  },
+  "12": {
+    "itemType": "CardPack:cardpack_manager_r",
+    "quantity": 1
+  },
+  "13": {
+    "itemType": "ConsumableAccountItem:smallxpboost",
+    "quantity": 3
+  },
+  "14": {
+    "itemType": "CardPack:cardpack_worker_vr",
+    "quantity": 1
+  },
+  "15": {
+    "itemType": "AccountResource:voucher_basicpack",
+    "quantity": 1
+  },
+  "16": {
+    "itemType": "PersistentResource:peopleresource",
+    "quantity": 20
+  },
+  "17": {
+    "itemType": "AccountResource:reagent_c_t01",
+    "quantity": 15
+  },
+  "18": {
+    "itemType": "CardPack:cardpack_bronze",
+    "quantity": 1
+  },
+  "19": {
+    "itemType": "CardPack:cardpack_trap_r",
+    "quantity": 1
+  },
+  "20": {
+    "itemType": "AccountResource:reagent_c_t02",
+    "quantity": 5
+  },
+  "21": {
+    "itemType": "ConversionControl:cck_hero_core_consumable_sr",
+    "quantity": 1
+  },
+  "22": {
+    "itemType": "AccountResource:reagent_c_t01",
+    "quantity": 15
+  },
+  "23": {
+    "itemType": "PersistentResource:peopleresource",
+    "quantity": 20
+  },
+  "24": {
+    "itemType": "AccountResource:voucher_basicpack",
+    "quantity": 2
+  },
+  "25": {
+    "itemType": "CardPack:cardpack_melee_r",
+    "quantity": 1
+  },
+  "26": {
+    "itemType": "CardPack:cardpack_bronze",
+    "quantity": 1
+  },
+  "27": {
+    "itemType": "AccountResource:reagent_c_t03",
+    "quantity": 5
+  },
+  "28": {
+    "itemType": "Currency:mtxgiveaway",
+    "quantity": 300
+  },
+  "29": {
+    "itemType": "AccountResource:voucher_basicpack",
+    "quantity": 2
+  },
+  "30": {
+    "itemType": "AccountResource:reagent_c_t01",
+    "quantity": 10
+  },
+  "31": {
+    "itemType": "CardPack:cardpack_hero_r",
+    "quantity": 1
+  },
+  "32": {
+    "itemType": "PersistentResource:peopleresource",
+    "quantity": 20
+  },
+  "33": {
+    "itemType": "CardPack:cardpack_bronze",
+    "quantity": 1
+  },
+  "34": {
+    "itemType": "ConsumableAccountItem:smallxpboost",
+    "quantity": 3
+  },
+  "35": {
+    "itemType": "Currency:mtxgiveaway",
+    "quantity": 150
+  },
+  "36": {
+    "itemType": "PersistentResource:peopleresource",
+    "quantity": 20
+  },
+  "37": {
+    "itemType": "AccountResource:reagent_c_t01",
+    "quantity": 10
+  },
+  "38": {
+    "itemType": "CardPack:cardpack_ranged_r",
+    "quantity": 1
+  },
+  "39": {
+    "itemType": "AccountResource:reagent_c_t02",
+    "quantity": 5
+  },
+  "40": {
+    "itemType": "CardPack:cardpack_bronze",
+    "quantity": 1
+  },
+  "41": {
+    "itemType": "ConsumableAccountItem:smallxpboost_gift",
+    "quantity": 3
+  },
+  "42": {
+    "itemType": "ConversionControl:cck_manager_core_consumable_vr",
+    "quantity": 1
+  },
+  "43": {
+    "itemType": "AccountResource:voucher_basicpack",
+    "quantity": 2
+  },
+  "44": {
+    "itemType": "PersistentResource:peopleresource",
+    "quantity": 20
+  },
+  "45": {
+    "itemType": "AccountResource:reagent_c_t01",
+    "quantity": 15
+  },
+  "46": {
+    "itemType": "CardPack:cardpack_bronze",
+    "quantity": 1
+  },
+  "47": {
+    "itemType": "CardPack:cardpack_trap_r",
+    "quantity": 1
+  },
+  "48": {
+    "itemType": "AccountResource:reagent_c_t02",
+    "quantity": 5
+  },
+  "49": {
+    "itemType": "Currency:mtxgiveaway",
+    "quantity": 150
+  },
+  "50": {
+    "itemType": "AccountResource:reagent_c_t01",
+    "quantity": 15
+  },
+  "51": {
+    "itemType": "PersistentResource:peopleresource",
+    "quantity": 20
+  },
+  "52": {
+    "itemType": "AccountResource:voucher_basicpack",
+    "quantity": 2
+  },
+  "53": {
+    "itemType": "CardPack:cardpack_melee_r",
+    "quantity": 1
+  },
+  "54": {
+    "itemType": "CardPack:cardpack_bronze",
+    "quantity": 1
+  },
+  "55": {
+    "itemType": "AccountResource:reagent_c_t03",
+    "quantity": 5
+  },
+  "56": {
+    "itemType": "Currency:mtxgiveaway",
+    "quantity": 300
+  },
+  "57": {
+    "itemType": "AccountResource:voucher_basicpack",
+    "quantity": 2
+  },
+  "58": {
+    "itemType": "AccountResource:reagent_c_t01",
+    "quantity": 10
+  },
+  "59": {
+    "itemType": "CardPack:cardpack_hero_r",
+    "quantity": 1
+  },
+  "60": {
+    "itemType": "PersistentResource:peopleresource",
+    "quantity": 20
+  },
+  "61": {
+    "itemType": "CardPack:cardpack_bronze",
+    "quantity": 1
+  },
+  "62": {
+    "itemType": "ConsumableAccountItem:smallxpboost",
+    "quantity": 3
+  },
+  "63": {
+    "itemType": "ConversionControl:cck_worker_core_consumable_sr",
+    "quantity": 1
+  },
+  "64": {
+    "itemType": "PersistentResource:peopleresource",
+    "quantity": 20
+  },
+  "65": {
+    "itemType": "AccountResource:reagent_c_t01",
+    "quantity": 10
+  },
+  "66": {
+    "itemType": "CardPack:cardpack_ranged_r",
+    "quantity": 1
+  },
+  "67": {
+    "itemType": "AccountResource:reagent_c_t02",
+    "quantity": 5
+  },
+  "68": {
+    "itemType": "CardPack:cardpack_bronze",
+    "quantity": 1
+  },
+  "69": {
+    "itemType": "ConsumableAccountItem:smallxpboost_gift",
+    "quantity": 3
+  },
+  "70": {
+    "itemType": "Currency:mtxgiveaway",
+    "quantity": 150
+  },
+  "71": {
+    "itemType": "AccountResource:voucher_basicpack",
+    "quantity": 2
+  },
+  "72": {
+    "itemType": "PersistentResource:peopleresource",
+    "quantity": 20
+  },
+  "73": {
+    "itemType": "AccountResource:reagent_c_t01",
+    "quantity": 15
+  },
+  "74": {
+    "itemType": "CardPack:cardpack_bronze",
+    "quantity": 1
+  },
+  "75": {
+    "itemType": "CardPack:cardpack_trap_r",
+    "quantity": 1
+  },
+  "76": {
+    "itemType": "AccountResource:reagent_c_t02",
+    "quantity": 5
+  },
+  "77": {
+    "itemType": "Currency:mtxgiveaway",
+    "quantity": 150
+  },
+  "78": {
+    "itemType": "AccountResource:reagent_c_t01",
+    "quantity": 15
+  },
+  "79": {
+    "itemType": "PersistentResource:peopleresource",
+    "quantity": 20
+  },
+  "80": {
+    "itemType": "AccountResource:voucher_basicpack",
+    "quantity": 2
+  },
+  "81": {
+    "itemType": "ConversionControl:cck_worker_core_consumable_sr",
+    "quantity": 1
+  },
+  "82": {
+    "itemType": "CardPack:cardpack_bronze",
+    "quantity": 1
+  },
+  "83": {
+    "itemType": "AccountResource:reagent_c_t03",
+    "quantity": 5
+  },
+  "84": {
+    "itemType": "Currency:mtxgiveaway",
+    "quantity": 300
+  },
+  "85": {
+    "itemType": "AccountResource:voucher_basicpack",
+    "quantity": 2
+  },
+  "86": {
+    "itemType": "AccountResource:reagent_c_t01",
+    "quantity": 10
+  },
+  "87": {
+    "itemType": "CardPack:cardpack_hero_r",
+    "quantity": 1
+  },
+  "88": {
+    "itemType": "PersistentResource:peopleresource",
+    "quantity": 20
+  },
+  "89": {
+    "itemType": "CardPack:cardpack_bronze",
+    "quantity": 1
+  },
+  "90": {
+    "itemType": "ConsumableAccountItem:smallxpboost",
+    "quantity": 3
+  },
+  "91": {
+    "itemType": "Currency:mtxgiveaway",
+    "quantity": 150
+  },
+  "92": {
+    "itemType": "PersistentResource:peopleresource",
+    "quantity": 20
+  },
+  "93": {
+    "itemType": "AccountResource:reagent_c_t01",
+    "quantity": 10
+  },
+  "94": {
+    "itemType": "CardPack:cardpack_ranged_r",
+    "quantity": 1
+  },
+  "95": {
+    "itemType": "AccountResource:reagent_c_t02",
+    "quantity": 5
+  },
+  "96": {
+    "itemType": "CardPack:cardpack_bronze",
+    "quantity": 1
+  },
+  "97": {
+    "itemType": "ConsumableAccountItem:smallxpboost_gift",
+    "quantity": 3
+  },
+  "98": {
+    "itemType": "Currency:mtxgiveaway",
+    "quantity": 150
+  },
+  "99": {
+    "itemType": "AccountResource:voucher_basicpack",
+    "quantity": 2
+  },
+  "100": {
+    "itemType": "ConversionControl:cck_hero_core_consumable_sr",
+    "quantity": 1
+  },
+  "101": {
+    "itemType": "AccountResource:reagent_c_t01",
+    "quantity": 15
+  },
+  "102": {
+    "itemType": "CardPack:cardpack_bronze",
+    "quantity": 1
+  },
+  "103": {
+    "itemType": "CardPack:cardpack_trap_r",
+    "quantity": 1
+  },
+  "104": {
+    "itemType": "AccountResource:reagent_c_t02",
+    "quantity": 5
+  },
+  "105": {
+    "itemType": "Currency:mtxgiveaway",
+    "quantity": 150
+  },
+  "106": {
+    "itemType": "AccountResource:reagent_c_t01",
+    "quantity": 15
+  },
+  "107": {
+    "itemType": "PersistentResource:peopleresource",
+    "quantity": 20
+  },
+  "108": {
+    "itemType": "AccountResource:voucher_basicpack",
+    "quantity": 2
+  },
+  "109": {
+    "itemType": "CardPack:cardpack_melee_r",
+    "quantity": 1
+  },
+  "110": {
+    "itemType": "CardPack:cardpack_bronze",
+    "quantity": 1
+  },
+  "111": {
+    "itemType": "AccountResource:reagent_c_t03",
+    "quantity": 5
+  },
+  "112": {
+    "itemType": "Currency:mtxgiveaway",
+    "quantity": 800
+  },
+  "113": {
+    "itemType": "AccountResource:voucher_basicpack",
+    "quantity": 2
+  },
+  "114": {
+    "itemType": "AccountResource:reagent_c_t01",
+    "quantity": 10
+  },
+  "115": {
+    "itemType": "CardPack:cardpack_hero_r",
+    "quantity": 1
+  },
+  "116": {
+    "itemType": "PersistentResource:peopleresource",
+    "quantity": 20
+  },
+  "117": {
+    "itemType": "CardPack:cardpack_bronze",
+    "quantity": 1
+  },
+  "118": {
+    "itemType": "ConsumableAccountItem:smallxpboost",
+    "quantity": 3
+  },
+  "119": {
+    "itemType": "Currency:mtxgiveaway",
+    "quantity": 150
+  },
+  "120": {
+    "itemType": "PersistentResource:peopleresource",
+    "quantity": 20
+  },
+  "121": {
+    "itemType": "AccountResource:reagent_c_t01",
+    "quantity": 10
+  },
+  "122": {
+    "itemType": "CardPack:cardpack_ranged_r",
+    "quantity": 1
+  },
+  "123": {
+    "itemType": "AccountResource:reagent_c_t02",
+    "quantity": 5
+  },
+  "124": {
+    "itemType": "CardPack:cardpack_bronze",
+    "quantity": 1
+  },
+  "125": {
+    "itemType": "ConsumableAccountItem:smallxpboost_gift",
+    "quantity": 3
+  },
+  "126": {
+    "itemType": "Currency:mtxgiveaway",
+    "quantity": 150
+  },
+  "127": {
+    "itemType": "AccountResource:voucher_basicpack",
+    "quantity": 2
+  },
+  "128": {
+    "itemType": "PersistentResource:peopleresource",
+    "quantity": 20
+  },
+  "129": {
+    "itemType": "AccountResource:reagent_c_t01",
+    "quantity": 15
+  },
+  "130": {
+    "itemType": "CardPack:cardpack_bronze",
+    "quantity": 1
+  },
+  "131": {
+    "itemType": "CardPack:cardpack_trap_r",
+    "quantity": 1
+  },
+  "132": {
+    "itemType": "AccountResource:reagent_c_t02",
+    "quantity": 5
+  },
+  "133": {
+    "itemType": "Currency:mtxgiveaway",
+    "quantity": 150
+  },
+  "134": {
+    "itemType": "AccountResource:reagent_c_t01",
+    "quantity": 15
+  },
+  "135": {
+    "itemType": "PersistentResource:peopleresource",
+    "quantity": 20
+  },
+  "136": {
+    "itemType": "AccountResource:voucher_basicpack",
+    "quantity": 2
+  },
+  "137": {
+    "itemType": "CardPack:cardpack_melee_r",
+    "quantity": 1
+  },
+  "138": {
+    "itemType": "CardPack:cardpack_bronze",
+    "quantity": 1
+  },
+  "139": {
+    "itemType": "AccountResource:reagent_c_t03",
+    "quantity": 5
+  },
+  "140": {
+    "itemType": "Currency:mtxgiveaway",
+    "quantity": 300
+  },
+  "141": {
+    "itemType": "AccountResource:voucher_basicpack",
+    "quantity": 2
+  },
+  "142": {
+    "itemType": "AccountResource:reagent_c_t01",
+    "quantity": 10
+  },
+  "143": {
+    "itemType": "CardPack:cardpack_hero_r",
+    "quantity": 1
+  },
+  "144": {
+    "itemType": "PersistentResource:peopleresource",
+    "quantity": 20
+  },
+  "145": {
+    "itemType": "CardPack:cardpack_bronze",
+    "quantity": 1
+  },
+  "146": {
+    "itemType": "ConsumableAccountItem:smallxpboost",
+    "quantity": 3
+  },
+  "147": {
+    "itemType": "Currency:mtxgiveaway",
+    "quantity": 150
+  },
+  "148": {
+    "itemType": "PersistentResource:peopleresource",
+    "quantity": 20
+  },
+  "149": {
+    "itemType": "AccountResource:reagent_c_t01",
+    "quantity": 10
+  },
+  "150": {
+    "itemType": "CardPack:cardpack_ranged_r",
+    "quantity": 1
+  },
+  "151": {
+    "itemType": "AccountResource:reagent_c_t02",
+    "quantity": 5
+  },
+  "152": {
+    "itemType": "CardPack:cardpack_bronze",
+    "quantity": 1
+  },
+  "153": {
+    "itemType": "ConsumableAccountItem:smallxpboost_gift",
+    "quantity": 3
+  },
+  "154": {
+    "itemType": "Currency:mtxgiveaway",
+    "quantity": 150
+  },
+  "155": {
+    "itemType": "AccountResource:voucher_basicpack",
+    "quantity": 2
+  },
+  "156": {
+    "itemType": "PersistentResource:peopleresource",
+    "quantity": 20
+  },
+  "157": {
+    "itemType": "AccountResource:reagent_c_t01",
+    "quantity": 15
+  },
+  "158": {
+    "itemType": "CardPack:cardpack_bronze",
+    "quantity": 1
+  },
+  "159": {
+    "itemType": "CardPack:cardpack_trap_r",
+    "quantity": 1
+  },
+  "160": {
+    "itemType": "AccountResource:reagent_c_t02",
+    "quantity": 5
+  },
+  "161": {
+    "itemType": "Currency:mtxgiveaway",
+    "quantity": 150
+  },
+  "162": {
+    "itemType": "AccountResource:reagent_c_t01",
+    "quantity": 15
+  },
+  "163": {
+    "itemType": "PersistentResource:peopleresource",
+    "quantity": 20
+  },
+  "164": {
+    "itemType": "AccountResource:voucher_basicpack",
+    "quantity": 2
+  },
+  "165": {
+    "itemType": "CardPack:cardpack_melee_r",
+    "quantity": 1
+  },
+  "166": {
+    "itemType": "CardPack:cardpack_bronze",
+    "quantity": 1
+  },
+  "167": {
+    "itemType": "AccountResource:reagent_c_t03",
+    "quantity": 5
+  },
+  "168": {
+    "itemType": "Currency:mtxgiveaway",
+    "quantity": 300
+  },
+  "169": {
+    "itemType": "AccountResource:voucher_basicpack",
+    "quantity": 2
+  },
+  "170": {
+    "itemType": "AccountResource:reagent_c_t01",
+    "quantity": 10
+  },
+  "171": {
+    "itemType": "CardPack:cardpack_hero_r",
+    "quantity": 1
+  },
+  "172": {
+    "itemType": "PersistentResource:peopleresource",
+    "quantity": 20
+  },
+  "173": {
+    "itemType": "CardPack:cardpack_bronze",
+    "quantity": 1
+  },
+  "174": {
+    "itemType": "ConsumableAccountItem:smallxpboost",
+    "quantity": 3
+  },
+  "175": {
+    "itemType": "Currency:mtxgiveaway",
+    "quantity": 150
+  },
+  "176": {
+    "itemType": "PersistentResource:peopleresource",
+    "quantity": 20
+  },
+  "177": {
+    "itemType": "AccountResource:reagent_c_t01",
+    "quantity": 10
+  },
+  "178": {
+    "itemType": "CardPack:cardpack_ranged_r",
+    "quantity": 1
+  },
+  "179": {
+    "itemType": "AccountResource:reagent_c_t02",
+    "quantity": 5
+  },
+  "180": {
+    "itemType": "CardPack:cardpack_bronze",
+    "quantity": 1
+  },
+  "181": {
+    "itemType": "ConsumableAccountItem:smallxpboost_gift",
+    "quantity": 3
+  },
+  "182": {
+    "itemType": "Currency:mtxgiveaway",
+    "quantity": 150
+  },
+  "183": {
+    "itemType": "AccountResource:voucher_basicpack",
+    "quantity": 2
+  },
+  "184": {
+    "itemType": "PersistentResource:peopleresource",
+    "quantity": 20
+  },
+  "185": {
+    "itemType": "AccountResource:reagent_c_t01",
+    "quantity": 15
+  },
+  "186": {
+    "itemType": "CardPack:cardpack_bronze",
+    "quantity": 1
+  },
+  "187": {
+    "itemType": "CardPack:cardpack_trap_r",
+    "quantity": 1
+  },
+  "188": {
+    "itemType": "AccountResource:reagent_c_t02",
+    "quantity": 5
+  },
+  "189": {
+    "itemType": "Currency:mtxgiveaway",
+    "quantity": 150
+  },
+  "190": {
+    "itemType": "AccountResource:reagent_c_t01",
+    "quantity": 15
+  },
+  "191": {
+    "itemType": "PersistentResource:peopleresource",
+    "quantity": 20
+  },
+  "192": {
+    "itemType": "AccountResource:voucher_basicpack",
+    "quantity": 2
+  },
+  "193": {
+    "itemType": "CardPack:cardpack_melee_r",
+    "quantity": 1
+  },
+  "194": {
+    "itemType": "CardPack:cardpack_bronze",
+    "quantity": 1
+  },
+  "195": {
+    "itemType": "AccountResource:reagent_c_t03",
+    "quantity": 5
+  },
+  "196": {
+    "itemType": "Currency:mtxgiveaway",
+    "quantity": 300
+  },
+  "197": {
+    "itemType": "AccountResource:voucher_basicpack",
+    "quantity": 2
+  },
+  "198": {
+    "itemType": "AccountResource:reagent_c_t01",
+    "quantity": 10
+  },
+  "199": {
+    "itemType": "CardPack:cardpack_hero_r",
+    "quantity": 1
+  },
+  "200": {
+    "itemType": "PersistentResource:peopleresource",
+    "quantity": 20
+  },
+  "201": {
+    "itemType": "CardPack:cardpack_bronze",
+    "quantity": 1
+  },
+  "202": {
+    "itemType": "ConsumableAccountItem:smallxpboost",
+    "quantity": 3
+  },
+  "203": {
+    "itemType": "Currency:mtxgiveaway",
+    "quantity": 150
+  },
+  "204": {
+    "itemType": "PersistentResource:peopleresource",
+    "quantity": 20
+  },
+  "205": {
+    "itemType": "AccountResource:reagent_c_t01",
+    "quantity": 10
+  },
+  "206": {
+    "itemType": "CardPack:cardpack_ranged_r",
+    "quantity": 1
+  },
+  "207": {
+    "itemType": "AccountResource:reagent_c_t02",
+    "quantity": 5
+  },
+  "208": {
+    "itemType": "CardPack:cardpack_bronze",
+    "quantity": 1
+  },
+  "209": {
+    "itemType": "ConsumableAccountItem:smallxpboost_gift",
+    "quantity": 3
+  },
+  "210": {
+    "itemType": "Currency:mtxgiveaway",
+    "quantity": 150
+  },
+  "211": {
+    "itemType": "AccountResource:voucher_basicpack",
+    "quantity": 2
+  },
+  "212": {
+    "itemType": "PersistentResource:peopleresource",
+    "quantity": 20
+  },
+  "213": {
+    "itemType": "AccountResource:reagent_c_t01",
+    "quantity": 15
+  },
+  "214": {
+    "itemType": "CardPack:cardpack_bronze",
+    "quantity": 1
+  },
+  "215": {
+    "itemType": "CardPack:cardpack_trap_r",
+    "quantity": 1
+  },
+  "216": {
+    "itemType": "AccountResource:reagent_c_t02",
+    "quantity": 5
+  },
+  "217": {
+    "itemType": "Currency:mtxgiveaway",
+    "quantity": 150
+  },
+  "218": {
+    "itemType": "AccountResource:reagent_c_t01",
+    "quantity": 15
+  },
+  "219": {
+    "itemType": "PersistentResource:peopleresource",
+    "quantity": 20
+  },
+  "220": {
+    "itemType": "AccountResource:voucher_basicpack",
+    "quantity": 2
+  },
+  "221": {
+    "itemType": "CardPack:cardpack_melee_r",
+    "quantity": 1
+  },
+  "222": {
+    "itemType": "CardPack:cardpack_bronze",
+    "quantity": 1
+  },
+  "223": {
+    "itemType": "AccountResource:reagent_c_t03",
+    "quantity": 5
+  },
+  "224": {
+    "itemType": "Currency:mtxgiveaway",
+    "quantity": 800
+  },
+  "225": {
+    "itemType": "AccountResource:voucher_basicpack",
+    "quantity": 2
+  },
+  "226": {
+    "itemType": "AccountResource:reagent_c_t01",
+    "quantity": 10
+  },
+  "227": {
+    "itemType": "CardPack:cardpack_hero_r",
+    "quantity": 1
+  },
+  "228": {
+    "itemType": "PersistentResource:peopleresource",
+    "quantity": 20
+  },
+  "229": {
+    "itemType": "CardPack:cardpack_bronze",
+    "quantity": 1
+  },
+  "230": {
+    "itemType": "ConsumableAccountItem:smallxpboost",
+    "quantity": 3
+  },
+  "231": {
+    "itemType": "Currency:mtxgiveaway",
+    "quantity": 150
+  },
+  "232": {
+    "itemType": "PersistentResource:peopleresource",
+    "quantity": 20
+  },
+  "233": {
+    "itemType": "AccountResource:reagent_c_t01",
+    "quantity": 10
+  },
+  "234": {
+    "itemType": "CardPack:cardpack_ranged_r",
+    "quantity": 1
+  },
+  "235": {
+    "itemType": "AccountResource:reagent_c_t02",
+    "quantity": 5
+  },
+  "236": {
+    "itemType": "CardPack:cardpack_bronze",
+    "quantity": 1
+  },
+  "237": {
+    "itemType": "ConsumableAccountItem:smallxpboost_gift",
+    "quantity": 3
+  },
+  "238": {
+    "itemType": "Currency:mtxgiveaway",
+    "quantity": 150
+  },
+  "239": {
+    "itemType": "AccountResource:voucher_basicpack",
+    "quantity": 2
+  },
+  "240": {
+    "itemType": "PersistentResource:peopleresource",
+    "quantity": 20
+  },
+  "241": {
+    "itemType": "AccountResource:reagent_c_t01",
+    "quantity": 15
+  },
+  "242": {
+    "itemType": "CardPack:cardpack_bronze",
+    "quantity": 1
+  },
+  "243": {
+    "itemType": "CardPack:cardpack_trap_r",
+    "quantity": 1
+  },
+  "244": {
+    "itemType": "AccountResource:reagent_c_t02",
+    "quantity": 5
+  },
+  "245": {
+    "itemType": "Currency:mtxgiveaway",
+    "quantity": 150
+  },
+  "246": {
+    "itemType": "AccountResource:reagent_c_t01",
+    "quantity": 15
+  },
+  "247": {
+    "itemType": "PersistentResource:peopleresource",
+    "quantity": 20
+  },
+  "248": {
+    "itemType": "AccountResource:voucher_basicpack",
+    "quantity": 2
+  },
+  "249": {
+    "itemType": "CardPack:cardpack_melee_r",
+    "quantity": 1
+  },
+  "250": {
+    "itemType": "CardPack:cardpack_bronze",
+    "quantity": 1
+  },
+  "251": {
+    "itemType": "AccountResource:reagent_c_t03",
+    "quantity": 5
+  },
+  "252": {
+    "itemType": "Currency:mtxgiveaway",
+    "quantity": 300
+  },
+  "253": {
+    "itemType": "AccountResource:voucher_basicpack",
+    "quantity": 2
+  },
+  "254": {
+    "itemType": "AccountResource:reagent_c_t01",
+    "quantity": 10
+  },
+  "255": {
+    "itemType": "CardPack:cardpack_hero_r",
+    "quantity": 1
+  },
+  "256": {
+    "itemType": "PersistentResource:peopleresource",
+    "quantity": 20
+  },
+  "257": {
+    "itemType": "CardPack:cardpack_bronze",
+    "quantity": 1
+  },
+  "258": {
+    "itemType": "ConsumableAccountItem:smallxpboost",
+    "quantity": 3
+  },
+  "259": {
+    "itemType": "Currency:mtxgiveaway",
+    "quantity": 150
+  },
+  "260": {
+    "itemType": "PersistentResource:peopleresource",
+    "quantity": 20
+  },
+  "261": {
+    "itemType": "AccountResource:reagent_c_t01",
+    "quantity": 10
+  },
+  "262": {
+    "itemType": "CardPack:cardpack_ranged_r",
+    "quantity": 1
+  },
+  "263": {
+    "itemType": "AccountResource:reagent_c_t02",
+    "quantity": 5
+  },
+  "264": {
+    "itemType": "CardPack:cardpack_bronze",
+    "quantity": 1
+  },
+  "265": {
+    "itemType": "ConsumableAccountItem:smallxpboost_gift",
+    "quantity": 3
+  },
+  "266": {
+    "itemType": "Currency:mtxgiveaway",
+    "quantity": 150
+  },
+  "267": {
+    "itemType": "AccountResource:voucher_basicpack",
+    "quantity": 2
+  },
+  "268": {
+    "itemType": "PersistentResource:peopleresource",
+    "quantity": 20
+  },
+  "269": {
+    "itemType": "AccountResource:reagent_c_t01",
+    "quantity": 15
+  },
+  "270": {
+    "itemType": "CardPack:cardpack_bronze",
+    "quantity": 1
+  },
+  "271": {
+    "itemType": "CardPack:cardpack_trap_r",
+    "quantity": 1
+  },
+  "272": {
+    "itemType": "AccountResource:reagent_c_t02",
+    "quantity": 5
+  },
+  "273": {
+    "itemType": "Currency:mtxgiveaway",
+    "quantity": 150
+  },
+  "274": {
+    "itemType": "AccountResource:reagent_c_t01",
+    "quantity": 15
+  },
+  "275": {
+    "itemType": "PersistentResource:peopleresource",
+    "quantity": 20
+  },
+  "276": {
+    "itemType": "AccountResource:voucher_basicpack",
+    "quantity": 2
+  },
+  "277": {
+    "itemType": "CardPack:cardpack_melee_r",
+    "quantity": 1
+  },
+  "278": {
+    "itemType": "CardPack:cardpack_bronze",
+    "quantity": 1
+  },
+  "279": {
+    "itemType": "AccountResource:reagent_c_t03",
+    "quantity": 5
+  },
+  "280": {
+    "itemType": "Currency:mtxgiveaway",
+    "quantity": 300
+  },
+  "281": {
+    "itemType": "AccountResource:voucher_basicpack",
+    "quantity": 2
+  },
+  "282": {
+    "itemType": "AccountResource:reagent_c_t01",
+    "quantity": 10
+  },
+  "283": {
+    "itemType": "CardPack:cardpack_hero_r",
+    "quantity": 1
+  },
+  "284": {
+    "itemType": "PersistentResource:peopleresource",
+    "quantity": 20
+  },
+  "285": {
+    "itemType": "CardPack:cardpack_bronze",
+    "quantity": 1
+  },
+  "286": {
+    "itemType": "ConsumableAccountItem:smallxpboost",
+    "quantity": 3
+  },
+  "287": {
+    "itemType": "Currency:mtxgiveaway",
+    "quantity": 150
+  },
+  "288": {
+    "itemType": "PersistentResource:peopleresource",
+    "quantity": 20
+  },
+  "289": {
+    "itemType": "AccountResource:reagent_c_t01",
+    "quantity": 10
+  },
+  "290": {
+    "itemType": "CardPack:cardpack_ranged_r",
+    "quantity": 1
+  },
+  "291": {
+    "itemType": "AccountResource:reagent_c_t02",
+    "quantity": 5
+  },
+  "292": {
+    "itemType": "CardPack:cardpack_bronze",
+    "quantity": 1
+  },
+  "293": {
+    "itemType": "ConsumableAccountItem:smallxpboost_gift",
+    "quantity": 3
+  },
+  "294": {
+    "itemType": "Currency:mtxgiveaway",
+    "quantity": 150
+  },
+  "295": {
+    "itemType": "AccountResource:voucher_basicpack",
+    "quantity": 2
+  },
+  "296": {
+    "itemType": "PersistentResource:peopleresource",
+    "quantity": 20
+  },
+  "297": {
+    "itemType": "AccountResource:reagent_c_t01",
+    "quantity": 15
+  },
+  "298": {
+    "itemType": "CardPack:cardpack_bronze",
+    "quantity": 1
+  },
+  "299": {
+    "itemType": "CardPack:cardpack_trap_r",
+    "quantity": 1
+  },
+  "300": {
+    "itemType": "AccountResource:reagent_c_t02",
+    "quantity": 5
+  },
+  "301": {
+    "itemType": "Currency:mtxgiveaway",
+    "quantity": 150
+  },
+  "302": {
+    "itemType": "AccountResource:reagent_c_t01",
+    "quantity": 15
+  },
+  "303": {
+    "itemType": "PersistentResource:peopleresource",
+    "quantity": 20
+  },
+  "304": {
+    "itemType": "AccountResource:voucher_basicpack",
+    "quantity": 2
+  },
+  "305": {
+    "itemType": "CardPack:cardpack_melee_r",
+    "quantity": 1
+  },
+  "306": {
+    "itemType": "CardPack:cardpack_bronze",
+    "quantity": 1
+  },
+  "307": {
+    "itemType": "AccountResource:reagent_c_t03",
+    "quantity": 5
+  },
+  "308": {
+    "itemType": "Currency:mtxgiveaway",
+    "quantity": 300
+  },
+  "309": {
+    "itemType": "AccountResource:voucher_basicpack",
+    "quantity": 2
+  },
+  "310": {
+    "itemType": "AccountResource:reagent_c_t01",
+    "quantity": 10
+  },
+  "311": {
+    "itemType": "CardPack:cardpack_hero_r",
+    "quantity": 1
+  },
+  "312": {
+    "itemType": "PersistentResource:peopleresource",
+    "quantity": 20
+  },
+  "313": {
+    "itemType": "CardPack:cardpack_bronze",
+    "quantity": 1
+  },
+  "314": {
+    "itemType": "ConsumableAccountItem:smallxpboost",
+    "quantity": 3
+  },
+  "315": {
+    "itemType": "Currency:mtxgiveaway",
+    "quantity": 150
+  },
+  "316": {
+    "itemType": "PersistentResource:peopleresource",
+    "quantity": 20
+  },
+  "317": {
+    "itemType": "AccountResource:reagent_c_t01",
+    "quantity": 10
+  },
+  "318": {
+    "itemType": "CardPack:cardpack_ranged_r",
+    "quantity": 1
+  },
+  "319": {
+    "itemType": "AccountResource:reagent_c_t02",
+    "quantity": 5
+  },
+  "320": {
+    "itemType": "CardPack:cardpack_bronze",
+    "quantity": 1
+  },
+  "321": {
+    "itemType": "ConsumableAccountItem:smallxpboost_gift",
+    "quantity": 3
+  },
+  "322": {
+    "itemType": "Currency:mtxgiveaway",
+    "quantity": 150
+  },
+  "323": {
+    "itemType": "AccountResource:voucher_basicpack",
+    "quantity": 2
+  },
+  "324": {
+    "itemType": "PersistentResource:peopleresource",
+    "quantity": 20
+  },
+  "325": {
+    "itemType": "AccountResource:reagent_c_t01",
+    "quantity": 15
+  },
+  "326": {
+    "itemType": "CardPack:cardpack_bronze",
+    "quantity": 1
+  },
+  "327": {
+    "itemType": "CardPack:cardpack_trap_r",
+    "quantity": 1
+  },
+  "328": {
+    "itemType": "AccountResource:reagent_c_t02",
+    "quantity": 5
+  },
+  "329": {
+    "itemType": "Currency:mtxgiveaway",
+    "quantity": 150
+  },
+  "330": {
+    "itemType": "AccountResource:reagent_c_t01",
+    "quantity": 15
+  },
+  "331": {
+    "itemType": "PersistentResource:peopleresource",
+    "quantity": 20
+  },
+  "332": {
+    "itemType": "AccountResource:voucher_basicpack",
+    "quantity": 2
+  },
+  "333": {
+    "itemType": "CardPack:cardpack_melee_r",
+    "quantity": 1
+  },
+  "334": {
+    "itemType": "CardPack:cardpack_bronze",
+    "quantity": 1
+  },
+  "335": {
+    "itemType": "AccountResource:reagent_c_t03",
+    "quantity": 5
+  },
+  "336": {
+    "itemType": "Currency:mtxgiveaway",
+    "quantity": 1000
+  }
+}
