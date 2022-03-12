@@ -1021,9 +1021,12 @@ express.post("/fortnite/api/game/v2/profile/*/client/RefundMtxPurchase", async (
 // Claim STW daily reward
 express.post("/fortnite/api/game/v2/profile/*/client/ClaimLoginReward", async (req, res) => {
     const profile = require(`./../profiles/${req.query.profileId || "campaign"}.json`);
+    const DailyRewards = require("./../responses/dailyrewards.json");
+    functions.GetVersionInfo(req, memory);
 
     // do not change any of these or you will end up breaking it
     var ApplyProfileChanges = [];
+    var Notifications = [];
     var BaseRevision = profile.rvn || 0;
     var QueryRevision = req.query.rvn || -1;
     var StatChanged = false;
@@ -1048,6 +1051,16 @@ express.post("/fortnite/api/game/v2/profile/*/client/ClaimLoginReward", async (r
             "value": profile.stats.attributes.daily_rewards
         })
 
+        if (memory.season < 7) {
+            var Day = profile.stats.attributes.daily_rewards.totalDaysLoggedIn % 336;
+            Notifications.push({
+                "type": "daily_rewards",
+                "primary": true,
+                "daysLoggedIn": profile.stats.attributes.daily_rewards.totalDaysLoggedIn,
+                "items": [DailyRewards[Day]]
+            })
+        }
+
         fs.writeFileSync(`./profiles/${req.query.profileId || "campaign"}.json`, JSON.stringify(profile, null, 2));
     }
 
@@ -1064,6 +1077,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/ClaimLoginReward", async (r
         "profileId": req.query.profileId || "campaign",
         "profileChangesBaseRevision": BaseRevision,
         "profileChanges": ApplyProfileChanges,
+        "notifications": Notifications,
         "profileCommandRevision": profile.commandRevision || 0,
         "serverTime": new Date().toISOString(),
         "responseVersion": 1
