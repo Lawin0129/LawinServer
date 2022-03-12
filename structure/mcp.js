@@ -4931,9 +4931,15 @@ express.post("/fortnite/api/game/v2/profile/*/client/EquipBattleRoyaleCustomizat
             if (profile.items[req.body.itemToSlot].attributes.variants.length == 0) {
                 profile.items[req.body.itemToSlot].attributes.variants = req.body.variantUpdates || [];
             }
+			
             for (var i in profile.items[req.body.itemToSlot].attributes.variants) {
-                profile.items[req.body.itemToSlot].attributes.variants[i].active = req.body.variantUpdates[i].active || "";
-            }
+				try {
+					if (profile.items[req.body.itemToSlot].attributes.variants[i].channel.toLowerCase() == req.body.variantUpdates[i].channel.toLowerCase()) {
+						profile.items[req.body.itemToSlot].attributes.variants[i].active = req.body.variantUpdates[i].active || "";
+					}
+				} catch (err) {}
+			}
+			
             VariantChanged = true;
         }
     } catch (err) {}
@@ -5231,10 +5237,15 @@ express.post("/fortnite/api/game/v2/profile/*/client/SetCosmeticLockerSlot", asy
                 if (profile.items[req.body.itemToSlot].attributes.variants.length == 0) {
                     profile.items[req.body.itemToSlot].attributes.variants = req.body.variantUpdates || [];
                 }
+				
                 for (var i in profile.items[req.body.itemToSlot].attributes.variants) {
-                    profile.items[req.body.itemToSlot].attributes.variants[i].active = req.body.variantUpdates[i].active || "";
-                }
-            }
+					try {
+						if (profile.items[req.body.itemToSlot].attributes.variants[i].channel.toLowerCase() == req.body.variantUpdates[i].channel.toLowerCase()) {
+							profile.items[req.body.itemToSlot].attributes.variants[i].active = req.body.variantUpdates[i].active || "";
+						}
+					} catch (err) {}
+				}
+			}
 
             for (var i in req.body.variantUpdates) {
                 new_variants[0].variants.push({
