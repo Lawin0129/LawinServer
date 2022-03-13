@@ -32912,6 +32912,50 @@
         "level": 0
       },
       "quantity": 1
+    },
+    "Token:hordepointstier1": {
+      "templateId": "Token:hordepointstier1",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": false,
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1000000000
+    },
+    "Token:hordepointstier2": {
+      "templateId": "Token:hordepointstier2",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": false,
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1000000000
+    },
+    "Token:hordepointstier3": {
+      "templateId": "Token:hordepointstier3",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": false,
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1000000000
+    },
+    "Token:hordepointstier4": {
+      "templateId": "Token:hordepointstier4",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": false,
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1000000000
     }
   },
   "stats": {
