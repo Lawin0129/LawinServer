@@ -27356,60 +27356,6 @@
           "theaterId": "322A87A340A50168BC74F4801F7B884A",
           "availableMissions": [
             {
-              "missionGuid": "71418b4e-2b34-4ee3-855b-20a91d7378ea",
-              "missionRewards": {
-                "tierGroupName": "Mission_Select_T05",
-                "items": [
-                  {
-                    "itemType": "CardPack:zcp_schematicxp_t05",
-                    "quantity": 1
-                  },
-                  {
-                    "itemType": "CardPack:zcp_reagent_c_t01_verylow",
-                    "quantity": 1
-                  },
-                  {
-                    "itemType": "CardPack:zcp_eventscaling_t05",
-                    "quantity": 1
-                  }
-                ]
-              },
-              "missionGenerator": "/Game/World/MissionGens/Plankerton/ParentMissionGens/MissionGen_TestTheSuit_BlockBuster_Landmark.MissionGen_TestTheSuit_BlockBuster_Landmark_C",
-              "missionDifficultyInfo": {
-                "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
-                "rowName": "Theater_Start_Zone5"
-              },
-              "tileIndex": 0,
-              "availableUntil": "2017-07-25T23:59:59.999Z"
-            },
-            {
-              "missionGuid": "ec9dee9b-fc67-4f08-908e-685ef47e2284",
-              "missionRewards": {
-                "tierGroupName": "Mission_Select_T05",
-                "items": [
-                  {
-                    "itemType": "CardPack:zcp_heroxp_t05",
-                    "quantity": 1
-                  },
-                  {
-                    "itemType": "CardPack:zcp_ore_copper_veryhigh",
-                    "quantity": 1
-                  },
-                  {
-                    "itemType": "CardPack:zcp_eventscaling_t05",
-                    "quantity": 1
-                  }
-                ]
-              },
-              "missionGenerator": "/Game/World/MissionGens/Plankerton/ParentMissionGens/MissionGen_DtM_BlockBuster_Landmark.MissionGen_DtM_BlockBuster_Landmark_C",
-              "missionDifficultyInfo": {
-                "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
-                "rowName": "Theater_Start_Zone5"
-              },
-              "tileIndex": 17,
-              "availableUntil": "2017-07-25T23:59:59.999Z"
-            },
-            {
               "missionGuid": "c9cbb7f8-4aa4-4652-b829-8f78b17ba557",
               "missionRewards": {
                 "tierGroupName": "Mission_Select_T05",
@@ -27434,33 +27380,6 @@
                 "rowName": "Theater_Start_Zone5"
               },
               "tileIndex": 50,
-              "availableUntil": "2017-07-25T23:59:59.999Z"
-            },
-            {
-              "missionGuid": "02c1326a-d690-49d4-8e9d-69f7db815ac3",
-              "missionRewards": {
-                "tierGroupName": "Mission_Select_T03",
-                "items": [
-                  {
-                    "itemType": "CardPack:zcp_schematicxp_t03",
-                    "quantity": 1
-                  },
-                  {
-                    "itemType": "CardPack:zcp_ore_copper_medium",
-                    "quantity": 1
-                  },
-                  {
-                    "itemType": "CardPack:zcp_eventscaling_t03",
-                    "quantity": 1
-                  }
-                ]
-              },
-              "missionGenerator": "/Game/World/MissionGens/Plankerton/ParentMissionGens/MissionGen_TestTheSuit_BlockBuster_Landmark.MissionGen_TestTheSuit_BlockBuster_Landmark_C",
-              "missionDifficultyInfo": {
-                "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
-                "rowName": "Theater_Start_Zone3"
-              },
-              "tileIndex": 1,
               "availableUntil": "2017-07-25T23:59:59.999Z"
             },
             {
@@ -27491,60 +27410,6 @@
               "availableUntil": "2017-07-25T23:59:59.999Z"
             },
             {
-              "missionGuid": "ef553959-d5e2-428a-b1fb-0d5fb26f6a3b",
-              "missionRewards": {
-                "tierGroupName": "Mission_Select_T03",
-                "items": [
-                  {
-                    "itemType": "CardPack:zcp_schematicxp_t03",
-                    "quantity": 1
-                  },
-                  {
-                    "itemType": "CardPack:zcp_heroxp_t03",
-                    "quantity": 1
-                  },
-                  {
-                    "itemType": "CardPack:zcp_eventscaling_t03",
-                    "quantity": 1
-                  }
-                ]
-              },
-              "missionGenerator": "/Game/World/MissionGens/Plankerton/ParentMissionGens/MissionGen_DtM_BlockBuster_Landmark.MissionGen_DtM_BlockBuster_Landmark_C",
-              "missionDifficultyInfo": {
-                "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
-                "rowName": "Theater_Start_Zone3"
-              },
-              "tileIndex": 72,
-              "availableUntil": "2017-07-25T23:59:59.999Z"
-            },
-            {
-              "missionGuid": "afa705f2-6664-47e1-ab33-1a1fe8424066",
-              "missionRewards": {
-                "tierGroupName": "Mission_Select_T04",
-                "items": [
-                  {
-                    "itemType": "CardPack:zcp_heroxp_t04",
-                    "quantity": 1
-                  },
-                  {
-                    "itemType": "CardPack:zcp_ore_copper_high",
-                    "quantity": 1
-                  },
-                  {
-                    "itemType": "CardPack:zcp_eventscaling_t04",
-                    "quantity": 1
-                  }
-                ]
-              },
-              "missionGenerator": "/Game/World/MissionGens/Plankerton/ParentMissionGens/MissionGen_TestTheSuit_BlockBuster_Landmark.MissionGen_TestTheSuit_BlockBuster_Landmark_C",
-              "missionDifficultyInfo": {
-                "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
-                "rowName": "Theater_Start_Zone4"
-              },
-              "tileIndex": 2,
-              "availableUntil": "2017-07-25T23:59:59.999Z"
-            },
-            {
               "missionGuid": "482381fb-16ca-4938-8c44-531e744bdd38",
               "missionRewards": {
                 "tierGroupName": "Mission_Select_T04",
@@ -27569,87 +27434,6 @@
                 "rowName": "Theater_Start_Zone4"
               },
               "tileIndex": 49,
-              "availableUntil": "2017-07-25T23:59:59.999Z"
-            },
-            {
-              "missionGuid": "2330640a-22b8-413a-a563-81b283eab2c5",
-              "missionRewards": {
-                "tierGroupName": "Mission_Select_T04",
-                "items": [
-                  {
-                    "itemType": "CardPack:zcp_personnelxp_t04",
-                    "quantity": 1
-                  },
-                  {
-                    "itemType": "CardPack:zcp_crystal_quartz_low",
-                    "quantity": 1
-                  },
-                  {
-                    "itemType": "CardPack:zcp_eventscaling_t04",
-                    "quantity": 1
-                  }
-                ]
-              },
-              "missionGenerator": "/Game/World/MissionGens/Plankerton/ParentMissionGens/MissionGen_DtM_BlockBuster_Landmark.MissionGen_DtM_BlockBuster_Landmark_C",
-              "missionDifficultyInfo": {
-                "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
-                "rowName": "Theater_Start_Zone4"
-              },
-              "tileIndex": 73,
-              "availableUntil": "2017-07-25T23:59:59.999Z"
-            },
-            {
-              "missionGuid": "35c1ea3c-e444-4473-96dd-2da778e93b8a",
-              "missionRewards": {
-                "tierGroupName": "Mission_Select_T07",
-                "items": [
-                  {
-                    "itemType": "CardPack:zcp_schematicxp_t07",
-                    "quantity": 1
-                  },
-                  {
-                    "itemType": "CardPack:zcp_reagent_alteration_generic_verylow",
-                    "quantity": 1
-                  },
-                  {
-                    "itemType": "CardPack:zcp_eventscaling_t07",
-                    "quantity": 1
-                  }
-                ]
-              },
-              "missionGenerator": "/Game/World/MissionGens/Plankerton/ParentMissionGens/MissionGen_TestTheSuit_BlockBuster_Landmark.MissionGen_TestTheSuit_BlockBuster_Landmark_C",
-              "missionDifficultyInfo": {
-                "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
-                "rowName": "Theater_Normal_Zone2"
-              },
-              "tileIndex": 9,
-              "availableUntil": "2017-07-25T23:59:59.999Z"
-            },
-            {
-              "missionGuid": "1d28a806-c5b6-45a7-89af-05fe587961e7",
-              "missionRewards": {
-                "tierGroupName": "Mission_Select_T07",
-                "items": [
-                  {
-                    "itemType": "CardPack:zcp_personnelxp_t07",
-                    "quantity": 1
-                  },
-                  {
-                    "itemType": "CardPack:zcp_crystal_quartz_high",
-                    "quantity": 1
-                  },
-                  {
-                    "itemType": "CardPack:zcp_eventscaling_t07",
-                    "quantity": 1
-                  }
-                ]
-              },
-              "missionGenerator": "/Game/World/MissionGens/Plankerton/ParentMissionGens/MissionGen_DtM_BlockBuster_Landmark.MissionGen_DtM_BlockBuster_Landmark_C",
-              "missionDifficultyInfo": {
-                "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
-                "rowName": "Theater_Normal_Zone2"
-              },
-              "tileIndex": 18,
               "availableUntil": "2017-07-25T23:59:59.999Z"
             },
             {
@@ -27680,60 +27464,6 @@
               "availableUntil": "2017-07-25T23:59:59.999Z"
             },
             {
-              "missionGuid": "7670e2e0-0549-47a9-a126-35d7b92e5ce5",
-              "missionRewards": {
-                "tierGroupName": "Mission_Select_T06",
-                "items": [
-                  {
-                    "itemType": "CardPack:zcp_heroxp_t06",
-                    "quantity": 1
-                  },
-                  {
-                    "itemType": "CardPack:zcp_schematicxp_t06",
-                    "quantity": 1
-                  },
-                  {
-                    "itemType": "CardPack:zcp_eventscaling_t06",
-                    "quantity": 1
-                  }
-                ]
-              },
-              "missionGenerator": "/Game/World/MissionGens/Plankerton/ParentMissionGens/MissionGen_TestTheSuit_BlockBuster_Landmark.MissionGen_TestTheSuit_BlockBuster_Landmark_C",
-              "missionDifficultyInfo": {
-                "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
-                "rowName": "Theater_Normal_Zone1"
-              },
-              "tileIndex": 10,
-              "availableUntil": "2017-07-25T23:59:59.999Z"
-            },
-            {
-              "missionGuid": "e29041cf-4858-4369-9ebf-21cf7f231765",
-              "missionRewards": {
-                "tierGroupName": "Mission_Select_T06",
-                "items": [
-                  {
-                    "itemType": "CardPack:zcp_schematicxp_t06",
-                    "quantity": 1
-                  },
-                  {
-                    "itemType": "CardPack:zcp_personnelxp_t06",
-                    "quantity": 1
-                  },
-                  {
-                    "itemType": "CardPack:zcp_eventscaling_t06",
-                    "quantity": 1
-                  }
-                ]
-              },
-              "missionGenerator": "/Game/World/MissionGens/Plankerton/ParentMissionGens/MissionGen_DtM_BlockBuster_Landmark.MissionGen_DtM_BlockBuster_Landmark_C",
-              "missionDifficultyInfo": {
-                "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
-                "rowName": "Theater_Normal_Zone1"
-              },
-              "tileIndex": 19,
-              "availableUntil": "2017-07-25T23:59:59.999Z"
-            },
-            {
               "missionGuid": "be5ed9ac-aa4e-44b5-9ceb-336fe24d0c74",
               "missionRewards": {
                 "tierGroupName": "Mission_Select_T06",
@@ -27758,60 +27488,6 @@
                 "rowName": "Theater_Normal_Zone1"
               },
               "tileIndex": 51,
-              "availableUntil": "2017-07-25T23:59:59.999Z"
-            },
-            {
-              "missionGuid": "34f90aa6-db1c-4241-be2a-baf9045ac37c",
-              "missionRewards": {
-                "tierGroupName": "Mission_Select_T08",
-                "items": [
-                  {
-                    "itemType": "CardPack:zcp_schematicxp_t08",
-                    "quantity": 1
-                  },
-                  {
-                    "itemType": "CardPack:zcp_heroxp_t08",
-                    "quantity": 1
-                  },
-                  {
-                    "itemType": "CardPack:zcp_eventscaling_t08",
-                    "quantity": 1
-                  }
-                ]
-              },
-              "missionGenerator": "/Game/World/MissionGens/Plankerton/ParentMissionGens/MissionGen_TestTheSuit_BlockBuster_Landmark.MissionGen_TestTheSuit_BlockBuster_Landmark_C",
-              "missionDifficultyInfo": {
-                "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
-                "rowName": "Theater_Normal_Zone3"
-              },
-              "tileIndex": 14,
-              "availableUntil": "2017-07-25T23:59:59.999Z"
-            },
-            {
-              "missionGuid": "f16970af-bcb1-49e8-a5f8-376361e081a6",
-              "missionRewards": {
-                "tierGroupName": "Mission_Select_T08",
-                "items": [
-                  {
-                    "itemType": "CardPack:zcp_personnelxp_t08",
-                    "quantity": 1
-                  },
-                  {
-                    "itemType": "CardPack:zcp_ore_silver_medium",
-                    "quantity": 1
-                  },
-                  {
-                    "itemType": "CardPack:zcp_eventscaling_t08",
-                    "quantity": 1
-                  }
-                ]
-              },
-              "missionGenerator": "/Game/World/MissionGens/Plankerton/ParentMissionGens/MissionGen_DtM_BlockBuster_Landmark.MissionGen_DtM_BlockBuster_Landmark_C",
-              "missionDifficultyInfo": {
-                "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
-                "rowName": "Theater_Normal_Zone3"
-              },
-              "tileIndex": 20,
               "availableUntil": "2017-07-25T23:59:59.999Z"
             },
             {
@@ -27842,60 +27518,6 @@
               "availableUntil": "2017-07-25T23:59:59.999Z"
             },
             {
-              "missionGuid": "c1b22671-3a09-4bf6-a319-2ea0eff7fb06",
-              "missionRewards": {
-                "tierGroupName": "Mission_Select_T09",
-                "items": [
-                  {
-                    "itemType": "CardPack:zcp_heroxp_t09",
-                    "quantity": 1
-                  },
-                  {
-                    "itemType": "CardPack:zcp_heroxp_t09",
-                    "quantity": 1
-                  },
-                  {
-                    "itemType": "CardPack:zcp_eventscaling_t09",
-                    "quantity": 1
-                  }
-                ]
-              },
-              "missionGenerator": "/Game/World/MissionGens/Plankerton/ParentMissionGens/MissionGen_DtM_BlockBuster_Landmark.MissionGen_DtM_BlockBuster_Landmark_C",
-              "missionDifficultyInfo": {
-                "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
-                "rowName": "Theater_Normal_Zone4"
-              },
-              "tileIndex": 21,
-              "availableUntil": "2017-07-25T23:59:59.999Z"
-            },
-            {
-              "missionGuid": "d165fa67-a5f5-47c6-8d09-1b5321e9ec17",
-              "missionRewards": {
-                "tierGroupName": "Mission_Select_T09",
-                "items": [
-                  {
-                    "itemType": "CardPack:zcp_heroxp_t09",
-                    "quantity": 1
-                  },
-                  {
-                    "itemType": "CardPack:zcp_personnelxp_t09",
-                    "quantity": 1
-                  },
-                  {
-                    "itemType": "CardPack:zcp_eventscaling_t09",
-                    "quantity": 1
-                  }
-                ]
-              },
-              "missionGenerator": "/Game/World/MissionGens/Plankerton/ParentMissionGens/MissionGen_TestTheSuit_BlockBuster_Landmark.MissionGen_TestTheSuit_BlockBuster_Landmark_C",
-              "missionDifficultyInfo": {
-                "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
-                "rowName": "Theater_Normal_Zone4"
-              },
-              "tileIndex": 24,
-              "availableUntil": "2017-07-25T23:59:59.999Z"
-            },
-            {
               "missionGuid": "695635ae-0090-4730-bfd1-b64a66f875bb",
               "missionRewards": {
                 "tierGroupName": "Mission_Select_T09",
@@ -27920,33 +27542,6 @@
                 "rowName": "Theater_Normal_Zone4"
               },
               "tileIndex": 54,
-              "availableUntil": "2017-07-25T23:59:59.999Z"
-            },
-            {
-              "missionGuid": "4e41614b-2cce-4472-a1fa-b23e4a68da8f",
-              "missionRewards": {
-                "tierGroupName": "Mission_Select_T10",
-                "items": [
-                  {
-                    "itemType": "CardPack:zcp_schematicxp_t10",
-                    "quantity": 1
-                  },
-                  {
-                    "itemType": "CardPack:zcp_schematicxp_t10",
-                    "quantity": 1
-                  },
-                  {
-                    "itemType": "CardPack:zcp_eventscaling_t10",
-                    "quantity": 1
-                  }
-                ]
-              },
-              "missionGenerator": "/Game/World/MissionGens/Plankerton/ParentMissionGens/MissionGen_TestTheSuit_BlockBuster_Landmark.MissionGen_TestTheSuit_BlockBuster_Landmark_C",
-              "missionDifficultyInfo": {
-                "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
-                "rowName": "Theater_Normal_Zone5"
-              },
-              "tileIndex": 23,
               "availableUntil": "2017-07-25T23:59:59.999Z"
             },
             {
@@ -27977,60 +27572,6 @@
               "availableUntil": "2017-07-25T23:59:59.999Z"
             },
             {
-              "missionGuid": "f7c0ce24-09ae-4888-91d1-7854ee8c0cd0",
-              "missionRewards": {
-                "tierGroupName": "Mission_Select_T10",
-                "items": [
-                  {
-                    "itemType": "CardPack:zcp_schematicxp_t10",
-                    "quantity": 1
-                  },
-                  {
-                    "itemType": "CardPack:zcp_reagent_alteration_generic_low",
-                    "quantity": 1
-                  },
-                  {
-                    "itemType": "CardPack:zcp_eventscaling_t10",
-                    "quantity": 1
-                  }
-                ]
-              },
-              "missionGenerator": "/Game/World/MissionGens/Plankerton/ParentMissionGens/MissionGen_DtM_BlockBuster_Landmark.MissionGen_DtM_BlockBuster_Landmark_C",
-              "missionDifficultyInfo": {
-                "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
-                "rowName": "Theater_Normal_Zone5"
-              },
-              "tileIndex": 70,
-              "availableUntil": "2017-07-25T23:59:59.999Z"
-            },
-            {
-              "missionGuid": "1504b280-6a11-47ea-a458-b78d2287de6a",
-              "missionRewards": {
-                "tierGroupName": "Mission_Select_T15",
-                "items": [
-                  {
-                    "itemType": "CardPack:zcp_personnelxp_t15",
-                    "quantity": 1
-                  },
-                  {
-                    "itemType": "CardPack:zcp_reagent_alteration_generic_high",
-                    "quantity": 1
-                  },
-                  {
-                    "itemType": "CardPack:zcp_eventscaling_t15",
-                    "quantity": 1
-                  }
-                ]
-              },
-              "missionGenerator": "/Game/World/MissionGens/Plankerton/ParentMissionGens/MissionGen_TestTheSuit_BlockBuster_Landmark.MissionGen_TestTheSuit_BlockBuster_Landmark_C",
-              "missionDifficultyInfo": {
-                "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
-                "rowName": "Theater_Hard_Zone5"
-              },
-              "tileIndex": 28,
-              "availableUntil": "2017-07-25T23:59:59.999Z"
-            },
-            {
               "missionGuid": "0f059b21-c5ad-488f-82cc-5426ed46a4f2",
               "missionRewards": {
                 "tierGroupName": "Mission_Select_T15",
@@ -28055,60 +27596,6 @@
                 "rowName": "Theater_Hard_Zone5"
               },
               "tileIndex": 60,
-              "availableUntil": "2017-07-25T23:59:59.999Z"
-            },
-            {
-              "missionGuid": "5e44dd10-35a5-4be9-a539-3de3617eb700",
-              "missionRewards": {
-                "tierGroupName": "Mission_Select_T15",
-                "items": [
-                  {
-                    "itemType": "CardPack:zcp_schematicxp_t15",
-                    "quantity": 1
-                  },
-                  {
-                    "itemType": "CardPack:zcp_reagent_alteration_generic_high",
-                    "quantity": 1
-                  },
-                  {
-                    "itemType": "CardPack:zcp_eventscaling_t15",
-                    "quantity": 1
-                  }
-                ]
-              },
-              "missionGenerator": "/Game/World/MissionGens/Plankerton/ParentMissionGens/MissionGen_DtM_BlockBuster_Landmark.MissionGen_DtM_BlockBuster_Landmark_C",
-              "missionDifficultyInfo": {
-                "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
-                "rowName": "Theater_Hard_Zone5"
-              },
-              "tileIndex": 82,
-              "availableUntil": "2017-07-25T23:59:59.999Z"
-            },
-            {
-              "missionGuid": "be9085b9-23c7-4ae8-9091-5c2e495ea716",
-              "missionRewards": {
-                "tierGroupName": "Mission_Select_T14",
-                "items": [
-                  {
-                    "itemType": "CardPack:zcp_schematicxp_t14",
-                    "quantity": 1
-                  },
-                  {
-                    "itemType": "CardPack:zcp_heroxp_t14",
-                    "quantity": 1
-                  },
-                  {
-                    "itemType": "CardPack:zcp_eventscaling_t14",
-                    "quantity": 1
-                  }
-                ]
-              },
-              "missionGenerator": "/Game/World/MissionGens/Plankerton/ParentMissionGens/MissionGen_TestTheSuit_BlockBuster_Landmark.MissionGen_TestTheSuit_BlockBuster_Landmark_C",
-              "missionDifficultyInfo": {
-                "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
-                "rowName": "Theater_Hard_Zone4"
-              },
-              "tileIndex": 29,
               "availableUntil": "2017-07-25T23:59:59.999Z"
             },
             {
@@ -28139,60 +27626,6 @@
               "availableUntil": "2017-07-25T23:59:59.999Z"
             },
             {
-              "missionGuid": "7163e9f9-d420-4bcf-9322-0aa9391562c1",
-              "missionRewards": {
-                "tierGroupName": "Mission_Select_T14",
-                "items": [
-                  {
-                    "itemType": "CardPack:zcp_schematicxp_t14",
-                    "quantity": 1
-                  },
-                  {
-                    "itemType": "CardPack:zcp_schematicxp_t14",
-                    "quantity": 1
-                  },
-                  {
-                    "itemType": "CardPack:zcp_eventscaling_t14",
-                    "quantity": 1
-                  }
-                ]
-              },
-              "missionGenerator": "/Game/World/MissionGens/Plankerton/ParentMissionGens/MissionGen_DtM_BlockBuster_Landmark.MissionGen_DtM_BlockBuster_Landmark_C",
-              "missionDifficultyInfo": {
-                "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
-                "rowName": "Theater_Hard_Zone4"
-              },
-              "tileIndex": 83,
-              "availableUntil": "2017-07-25T23:59:59.999Z"
-            },
-            {
-              "missionGuid": "ce3813bb-82e5-4e73-95d5-c9f83eb92045",
-              "missionRewards": {
-                "tierGroupName": "Mission_Select_T11",
-                "items": [
-                  {
-                    "itemType": "CardPack:zcp_heroxp_t11",
-                    "quantity": 1
-                  },
-                  {
-                    "itemType": "CardPack:zcp_reagent_c_t02_low",
-                    "quantity": 1
-                  },
-                  {
-                    "itemType": "CardPack:zcp_eventscaling_t11",
-                    "quantity": 1
-                  }
-                ]
-              },
-              "missionGenerator": "/Game/World/MissionGens/Plankerton/ParentMissionGens/MissionGen_TestTheSuit_BlockBuster_Landmark.MissionGen_TestTheSuit_BlockBuster_Landmark_C",
-              "missionDifficultyInfo": {
-                "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
-                "rowName": "Theater_Hard_Zone1"
-              },
-              "tileIndex": 31,
-              "availableUntil": "2017-07-25T23:59:59.999Z"
-            },
-            {
               "missionGuid": "9df21dbd-59ed-43c8-a307-c0613eb2afa1",
               "missionRewards": {
                 "tierGroupName": "Mission_Select_T11",
@@ -28217,60 +27650,6 @@
                 "rowName": "Theater_Hard_Zone1"
               },
               "tileIndex": 56,
-              "availableUntil": "2017-07-25T23:59:59.999Z"
-            },
-            {
-              "missionGuid": "48545de7-6e2c-4567-8fbf-eb4c924400c4",
-              "missionRewards": {
-                "tierGroupName": "Mission_Select_T11",
-                "items": [
-                  {
-                    "itemType": "CardPack:zcp_personnelxp_t11",
-                    "quantity": 1
-                  },
-                  {
-                    "itemType": "CardPack:zcp_ore_malachite_verylow",
-                    "quantity": 1
-                  },
-                  {
-                    "itemType": "CardPack:zcp_eventscaling_t11",
-                    "quantity": 1
-                  }
-                ]
-              },
-              "missionGenerator": "/Game/World/MissionGens/Plankerton/ParentMissionGens/MissionGen_DtM_BlockBuster_Landmark.MissionGen_DtM_BlockBuster_Landmark_C",
-              "missionDifficultyInfo": {
-                "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
-                "rowName": "Theater_Hard_Zone1"
-              },
-              "tileIndex": 69,
-              "availableUntil": "2017-07-25T23:59:59.999Z"
-            },
-            {
-              "missionGuid": "f1ab955a-fa65-491a-8150-bc5dc8a6a490",
-              "missionRewards": {
-                "tierGroupName": "Mission_Select_T12",
-                "items": [
-                  {
-                    "itemType": "CardPack:zcp_schematicxp_t12",
-                    "quantity": 1
-                  },
-                  {
-                    "itemType": "CardPack:zcp_personnelxp_t12",
-                    "quantity": 1
-                  },
-                  {
-                    "itemType": "CardPack:zcp_eventscaling_t12",
-                    "quantity": 1
-                  }
-                ]
-              },
-              "missionGenerator": "/Game/World/MissionGens/Plankerton/ParentMissionGens/MissionGen_TestTheSuit_BlockBuster_Landmark.MissionGen_TestTheSuit_BlockBuster_Landmark_C",
-              "missionDifficultyInfo": {
-                "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
-                "rowName": "Theater_Hard_Zone2"
-              },
-              "tileIndex": 32,
               "availableUntil": "2017-07-25T23:59:59.999Z"
             },
             {
@@ -28301,60 +27680,6 @@
               "availableUntil": "2017-07-25T23:59:59.999Z"
             },
             {
-              "missionGuid": "18159adf-d6f2-4b13-a929-f79ed5db8f5d",
-              "missionRewards": {
-                "tierGroupName": "Mission_Select_T12",
-                "items": [
-                  {
-                    "itemType": "CardPack:zcp_personnelxp_t12",
-                    "quantity": 1
-                  },
-                  {
-                    "itemType": "CardPack:zcp_heroxp_t12",
-                    "quantity": 1
-                  },
-                  {
-                    "itemType": "CardPack:zcp_eventscaling_t12",
-                    "quantity": 1
-                  }
-                ]
-              },
-              "missionGenerator": "/Game/World/MissionGens/Plankerton/ParentMissionGens/MissionGen_DtM_BlockBuster_Landmark.MissionGen_DtM_BlockBuster_Landmark_C",
-              "missionDifficultyInfo": {
-                "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
-                "rowName": "Theater_Hard_Zone2"
-              },
-              "tileIndex": 71,
-              "availableUntil": "2017-07-25T23:59:59.999Z"
-            },
-            {
-              "missionGuid": "0acf3f68-f4f6-4fc1-a7f8-fe0dde0ecef6",
-              "missionRewards": {
-                "tierGroupName": "Mission_Select_T13",
-                "items": [
-                  {
-                    "itemType": "CardPack:zcp_heroxp_t13",
-                    "quantity": 1
-                  },
-                  {
-                    "itemType": "CardPack:zcp_schematicxp_t13",
-                    "quantity": 1
-                  },
-                  {
-                    "itemType": "CardPack:zcp_eventscaling_t13",
-                    "quantity": 1
-                  }
-                ]
-              },
-              "missionGenerator": "/Game/World/MissionGens/Plankerton/ParentMissionGens/MissionGen_TestTheSuit_BlockBuster_Landmark.MissionGen_TestTheSuit_BlockBuster_Landmark_C",
-              "missionDifficultyInfo": {
-                "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
-                "rowName": "Theater_Hard_Zone3"
-              },
-              "tileIndex": 33,
-              "availableUntil": "2017-07-25T23:59:59.999Z"
-            },
-            {
               "missionGuid": "8f9975be-8805-4c41-9e3f-0340f94579e5",
               "missionRewards": {
                 "tierGroupName": "Mission_Select_T13",
@@ -28382,33 +27707,6 @@
               "availableUntil": "2017-07-25T23:59:59.999Z"
             },
             {
-              "missionGuid": "2e4107eb-04b8-4e8c-a2ee-020a81a8965e",
-              "missionRewards": {
-                "tierGroupName": "Mission_Select_T13",
-                "items": [
-                  {
-                    "itemType": "CardPack:zcp_heroxp_t13",
-                    "quantity": 1
-                  },
-                  {
-                    "itemType": "CardPack:zcp_reagent_c_t02_low",
-                    "quantity": 1
-                  },
-                  {
-                    "itemType": "CardPack:zcp_eventscaling_t13",
-                    "quantity": 1
-                  }
-                ]
-              },
-              "missionGenerator": "/Game/World/MissionGens/Plankerton/ParentMissionGens/MissionGen_DtM_BlockBuster_Landmark.MissionGen_DtM_BlockBuster_Landmark_C",
-              "missionDifficultyInfo": {
-                "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
-                "rowName": "Theater_Hard_Zone3"
-              },
-              "tileIndex": 68,
-              "availableUntil": "2017-07-25T23:59:59.999Z"
-            },
-            {
               "missionGuid": "da999b8e-91d4-4826-a86f-b7ca1129a3ad",
               "missionRewards": {
                 "tierGroupName": "Mission_Select_T16",
@@ -28433,60 +27731,6 @@
                 "rowName": "Theater_Nightmare_Zone1"
               },
               "tileIndex": 61,
-              "availableUntil": "2017-07-25T23:59:59.999Z"
-            },
-            {
-              "missionGuid": "e332f74e-3c93-4bf6-a8c1-a11afd5c1663",
-              "missionRewards": {
-                "tierGroupName": "Mission_Select_T16",
-                "items": [
-                  {
-                    "itemType": "CardPack:zcp_heroxp_t16",
-                    "quantity": 1
-                  },
-                  {
-                    "itemType": "CardPack:zcp_heroxp_t16",
-                    "quantity": 1
-                  },
-                  {
-                    "itemType": "CardPack:zcp_eventscaling_t16",
-                    "quantity": 1
-                  }
-                ]
-              },
-              "missionGenerator": "/Game/World/MissionGens/Plankerton/ParentMissionGens/MissionGen_TestTheSuit_BlockBuster_Landmark.MissionGen_TestTheSuit_BlockBuster_Landmark_C",
-              "missionDifficultyInfo": {
-                "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
-                "rowName": "Theater_Nightmare_Zone1"
-              },
-              "tileIndex": 63,
-              "availableUntil": "2017-07-25T23:59:59.999Z"
-            },
-            {
-              "missionGuid": "b1f2f803-d9fc-452a-b6a1-f1159d9c9c85",
-              "missionRewards": {
-                "tierGroupName": "Mission_Select_T16",
-                "items": [
-                  {
-                    "itemType": "CardPack:zcp_schematicxp_t16",
-                    "quantity": 1
-                  },
-                  {
-                    "itemType": "CardPack:zcp_reagent_c_t03_low",
-                    "quantity": 1
-                  },
-                  {
-                    "itemType": "CardPack:zcp_eventscaling_t16",
-                    "quantity": 1
-                  }
-                ]
-              },
-              "missionGenerator": "/Game/World/MissionGens/Plankerton/ParentMissionGens/MissionGen_DtM_BlockBuster_Landmark.MissionGen_DtM_BlockBuster_Landmark_C",
-              "missionDifficultyInfo": {
-                "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
-                "rowName": "Theater_Nightmare_Zone1"
-              },
-              "tileIndex": 84,
               "availableUntil": "2017-07-25T23:59:59.999Z"
             }
           ],
