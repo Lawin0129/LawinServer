@@ -36,17 +36,6 @@
       },
       "quantity": 10000000
     },
-    "Token:FounderChatUnlock": {
-      "templateId": "Token:FounderChatUnlock",
-      "attributes": {
-        "max_level_bonus": 0,
-        "level": 1,
-        "item_seen": true,
-        "xp": 0,
-        "favorite": false
-      },
-      "quantity": 1
-    },
     "HomebaseBannerColor:DefaultColor1": {
       "templateId": "HomebaseBannerColor:DefaultColor1",
       "attributes": {

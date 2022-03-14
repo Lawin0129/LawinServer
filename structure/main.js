@@ -81,35 +81,6 @@ express.get("/socialban/api/public/v1/*", async (req, res) => {
     });
 })
 
-express.get("/party/api/v1/Fortnite/user/*", async (req, res) => {
-    res.json({
-        "current": [],
-        "pending": [],
-        "invites": [],
-        "pings": []
-    });
-})
-
-express.post("/party/api/v1/Fortnite/user/*/current/*", async (req, res) => {
-    res.json({});
-})
-
-express.post("/party/api/v1/Fortnite/user/*/pending/*", async (req, res) => {
-    res.json({});
-})
-
-express.post("/party/api/v1/Fortnite/user/*/invites/*", async (req, res) => {
-    res.json({});
-})
-
-express.get("/fortnite/api/game/v2/events/tournamentandhistory/*/EU/WindowsClient", async (req, res) => {
-    res.json({});
-})
-
-express.post("/party/api/v1/Fortnite/user/*/pings/*", async (req, res) => {
-    res.json({});
-})
-
 express.get("/fortnite/api/game/v2/events/tournamentandhistory/*/EU/WindowsClient", async (req, res) => {
     res.json({});
 })
@@ -200,7 +171,14 @@ express.post("/datarouter/api/v1/public/data", async (req, res) => {
 })
 
 express.post("/api/v1/assets/Fortnite/*/*", async (req, res) => {
-    res.json({"FortCreativeDiscoverySurface":{"meta":{"promotion":1},"assets":{}}})
+    res.json({
+        "FortCreativeDiscoverySurface": {
+            "meta": {
+                "promotion": 0
+            },
+            "assets": {}
+        }
+    })
 })
 
 express.get("/region", async (req, res) => {

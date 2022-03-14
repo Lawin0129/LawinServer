@@ -24,6 +24,7 @@ express.use(Express.json());
 express.use(Express.urlencoded({ extended: true }));
 express.use(Express.static('public'));
 
+express.use(require("./structure/party.js"));
 express.use(require("./structure/discovery.js"))
 express.use(require("./structure/privacy.js"));
 express.use(require("./structure/timeline.js"));
