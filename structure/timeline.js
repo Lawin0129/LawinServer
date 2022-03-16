@@ -53,22 +53,31 @@ express.get("/fortnite/api/calendar/v1/timeline", async (req, res) => {
             "eventType": "EventFlag.Blockbuster2018Phase1",
             "activeUntil": "9999-01-01T00:00:00.000Z",
             "activeSince": "2020-01-01T00:00:00.000Z"
-        },
-        {
-            "eventType": "EventFlag.Blockbuster2018Phase2",
-            "activeUntil": "9999-01-01T00:00:00.000Z",
-            "activeSince": "2020-01-01T00:00:00.000Z"
-        },
-        {
-            "eventType": "EventFlag.Blockbuster2018Phase3",
-            "activeUntil": "9999-01-01T00:00:00.000Z",
-            "activeSince": "2020-01-01T00:00:00.000Z"
-        },
-        {
-            "eventType": "EventFlag.Blockbuster2018Phase4",
-            "activeUntil": "9999-01-01T00:00:00.000Z",
-            "activeSince": "2020-01-01T00:00:00.000Z"
         })
+        if (memory.build.toString().includes(".") && (Number(memory.build.toString().split(".")[1].split("")[0]) >= 3)) {
+            activeEvents.push(
+            {
+                "eventType": "EventFlag.Blockbuster2018Phase2",
+                "activeUntil": "9999-01-01T00:00:00.000Z",
+                "activeSince": "2020-01-01T00:00:00.000Z"
+            })
+        }
+        if (memory.build.toString().includes(".") && (Number(memory.build.toString().split(".")[1].split("")[0]) >= 4)) {
+            activeEvents.push(
+            {
+                "eventType": "EventFlag.Blockbuster2018Phase3",
+                "activeUntil": "9999-01-01T00:00:00.000Z",
+                "activeSince": "2020-01-01T00:00:00.000Z"
+            })
+        }
+        if (memory.build.toString().includes(".") && (Number(memory.build.toString().split(".")[1].split("")[0]) >= 5)) {
+            activeEvents.push(
+            {
+                "eventType": "EventFlag.Blockbuster2018Phase4",
+                "activeUntil": "9999-01-01T00:00:00.000Z",
+                "activeSince": "2020-01-01T00:00:00.000Z"
+            })
+        }
     }
 
     if (memory.season == 5) {
@@ -279,7 +288,7 @@ express.get("/fortnite/api/calendar/v1/timeline", async (req, res) => {
             "activeSince": "2020-01-01T00:00:00.000Z"
         },
         {
-            "eventType": "EEventFlag.S10_Mystery",
+            "eventType": "EventFlag.S10_Mystery",
             "activeUntil": "9999-01-01T00:00:00.000Z",
             "activeSince": "2020-01-01T00:00:00.000Z"
         })
@@ -813,6 +822,85 @@ express.get("/fortnite/api/calendar/v1/timeline", async (req, res) => {
         },
         {
             "eventType": "EventFlag.S18_WildWeek_Bargain",
+            "activeUntil": "9999-01-01T00:00:00.000Z",
+            "activeSince": "2020-01-01T00:00:00.000Z"
+        })
+    }
+
+    if (memory.season == 19) {
+        activeEvents.push(
+        {
+            "eventType": "EventFlag.LTM_Hyena",
+            "activeUntil": "9999-01-01T00:00:00.000Z",
+            "activeSince": "2020-01-01T00:00:00.000Z"
+        },
+        {
+            "eventType": "EventFlag.LTM_Vigilante",
+            "activeUntil": "9999-01-01T00:00:00.000Z",
+            "activeSince": "2020-01-01T00:00:00.000Z"
+        },
+        {
+            "eventType": "EventFlag.LTM_ZebraWallet",
+            "activeUntil": "9999-01-01T00:00:00.000Z",
+            "activeSince": "2020-01-01T00:00:00.000Z"
+        },
+        {
+            "eventType": "EventFlag.LTE_Galileo_Feats",
+            "activeUntil": "9999-01-01T00:00:00.000Z",
+            "activeSince": "2020-01-01T00:00:00.000Z"
+        },
+        {
+            "eventType": "EventFlag.Event_S19_Trey",
+            "activeUntil": "9999-01-01T00:00:00.000Z",
+            "activeSince": "2020-01-01T00:00:00.000Z"
+        },
+        {
+            "eventType": "EventFlag.Event_S19_DeviceQuestsPart1",
+            "activeUntil": "9999-01-01T00:00:00.000Z",
+            "activeSince": "2020-01-01T00:00:00.000Z"
+        },
+        {
+            "eventType": "EventFlag.Event_S19_DeviceQuestsPart2",
+            "activeUntil": "9999-01-01T00:00:00.000Z",
+            "activeSince": "2020-01-01T00:00:00.000Z"
+        },
+        {
+            "eventType": "EventFlag.Event_S19_DeviceQuestsPart3",
+            "activeUntil": "9999-01-01T00:00:00.000Z",
+            "activeSince": "2020-01-01T00:00:00.000Z"
+        },
+        {
+            "eventType": "EventFlag.Event_S19_Gow_Quests",
+            "activeUntil": "9999-01-01T00:00:00.000Z",
+            "activeSince": "2020-01-01T00:00:00.000Z"
+        },
+        {
+            "eventType": "EventFlag.Event_MonarchLevelUpPack",
+            "activeUntil": "9999-01-01T00:00:00.000Z",
+            "activeSince": "2020-01-01T00:00:00.000Z"
+        },
+        {
+            "eventType": "EventFlag.S19_WinterfestCrewGrant",
+            "activeUntil": "9999-01-01T00:00:00.000Z",
+            "activeSince": "2020-01-01T00:00:00.000Z"
+        },
+        {
+            "eventType": "EventFlag.S19_WildWeeks_Chicken",
+            "activeUntil": "9999-01-01T00:00:00.000Z",
+            "activeSince": "2020-01-01T00:00:00.000Z"
+        },
+        {
+            "eventType": "EventFlag.S19_WildWeeks_BargainBin",
+            "activeUntil": "9999-01-01T00:00:00.000Z",
+            "activeSince": "2020-01-01T00:00:00.000Z"
+        },
+        {
+            "eventType": "EventFlag.S19_WildWeeks_Spider",
+            "activeUntil": "9999-01-01T00:00:00.000Z",
+            "activeSince": "2020-01-01T00:00:00.000Z"
+        },
+        {
+            "eventType": "EventFlag.S19_WildWeeks_Primal",
             "activeUntil": "9999-01-01T00:00:00.000Z",
             "activeSince": "2020-01-01T00:00:00.000Z"
         })

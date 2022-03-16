@@ -6795,7 +6795,7 @@
         "xp": 0,
         "favorite": false
       },
-      "quantity": 395938398
+      "quantity": 1000000000
     },
     "aa696475-f325-46e7-b575-22a7361e61f7": {
       "templateId": "Worker:workerbasic_vr_t01",
@@ -63159,7 +63159,13 @@
     "Hero:hid_outlander_041_dinocollector_sr_t05": {
       "templateId": "Hero:hid_outlander_041_dinocollector_sr_t05",
       "attributes": {
-        "outfitvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier4.Legendary",
+            "owned": []
+          }
+        ],
         "backblingvariants": [],
         "gender": 0,
         "level": 50,
@@ -63177,6 +63183,39 @@
         "favorite": false
       },
       "quantity": 1
+    },
+    "Token:hordepointstier2": {
+      "templateId": "Token:hordepointstier2",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": false,
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1000000000
+    },
+    "Token:hordepointstier3": {
+      "templateId": "Token:hordepointstier3",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": false,
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1000000000
+    },
+    "Token:hordepointstier4": {
+      "templateId": "Token:hordepointstier4",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": false,
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1000000000
     }
   },
   "stats": {
