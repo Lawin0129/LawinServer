@@ -53,7 +53,7 @@
 - Changing items edit styles
 - Support a Creator with specific codes
 - Fully working daily challenges system (New daily challenge every day, replacing daily challenges, etc...)
-- Seasonal Quests from Season 3 up to Season 18 (Can change)
+- Seasonal Quests from Season 3 up to Season 19 (Can change)
 
 ## How to use?
 1) Install [NodeJS](https://nodejs.org/en/)

@@ -827,6 +827,85 @@ express.get("/fortnite/api/calendar/v1/timeline", async (req, res) => {
         })
     }
 
+    if (memory.season == 19) {
+        activeEvents.push(
+        {
+            "eventType": "EventFlag.LTM_Hyena",
+            "activeUntil": "9999-01-01T00:00:00.000Z",
+            "activeSince": "2020-01-01T00:00:00.000Z"
+        },
+        {
+            "eventType": "EventFlag.LTM_Vigilante",
+            "activeUntil": "9999-01-01T00:00:00.000Z",
+            "activeSince": "2020-01-01T00:00:00.000Z"
+        },
+        {
+            "eventType": "EventFlag.LTM_ZebraWallet",
+            "activeUntil": "9999-01-01T00:00:00.000Z",
+            "activeSince": "2020-01-01T00:00:00.000Z"
+        },
+        {
+            "eventType": "EventFlag.LTE_Galileo_Feats",
+            "activeUntil": "9999-01-01T00:00:00.000Z",
+            "activeSince": "2020-01-01T00:00:00.000Z"
+        },
+        {
+            "eventType": "EventFlag.Event_S19_Trey",
+            "activeUntil": "9999-01-01T00:00:00.000Z",
+            "activeSince": "2020-01-01T00:00:00.000Z"
+        },
+        {
+            "eventType": "EventFlag.Event_S19_DeviceQuestsPart1",
+            "activeUntil": "9999-01-01T00:00:00.000Z",
+            "activeSince": "2020-01-01T00:00:00.000Z"
+        },
+        {
+            "eventType": "EventFlag.Event_S19_DeviceQuestsPart2",
+            "activeUntil": "9999-01-01T00:00:00.000Z",
+            "activeSince": "2020-01-01T00:00:00.000Z"
+        },
+        {
+            "eventType": "EventFlag.Event_S19_DeviceQuestsPart3",
+            "activeUntil": "9999-01-01T00:00:00.000Z",
+            "activeSince": "2020-01-01T00:00:00.000Z"
+        },
+        {
+            "eventType": "EventFlag.Event_S19_Gow_Quests",
+            "activeUntil": "9999-01-01T00:00:00.000Z",
+            "activeSince": "2020-01-01T00:00:00.000Z"
+        },
+        {
+            "eventType": "EventFlag.Event_MonarchLevelUpPack",
+            "activeUntil": "9999-01-01T00:00:00.000Z",
+            "activeSince": "2020-01-01T00:00:00.000Z"
+        },
+        {
+            "eventType": "EventFlag.S19_WinterfestCrewGrant",
+            "activeUntil": "9999-01-01T00:00:00.000Z",
+            "activeSince": "2020-01-01T00:00:00.000Z"
+        },
+        {
+            "eventType": "EventFlag.S19_WildWeeks_Chicken",
+            "activeUntil": "9999-01-01T00:00:00.000Z",
+            "activeSince": "2020-01-01T00:00:00.000Z"
+        },
+        {
+            "eventType": "EventFlag.S19_WildWeeks_BargainBin",
+            "activeUntil": "9999-01-01T00:00:00.000Z",
+            "activeSince": "2020-01-01T00:00:00.000Z"
+        },
+        {
+            "eventType": "EventFlag.S19_WildWeeks_Spider",
+            "activeUntil": "9999-01-01T00:00:00.000Z",
+            "activeSince": "2020-01-01T00:00:00.000Z"
+        },
+        {
+            "eventType": "EventFlag.S19_WildWeeks_Primal",
+            "activeUntil": "9999-01-01T00:00:00.000Z",
+            "activeSince": "2020-01-01T00:00:00.000Z"
+        })
+    }
+
     if (memory.build == 19.01) {
         activeEvents.push(
         {
