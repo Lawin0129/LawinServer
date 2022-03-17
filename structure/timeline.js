@@ -268,6 +268,11 @@ express.get("/fortnite/api/calendar/v1/timeline", async (req, res) => {
     if (memory.season == 10) {
         activeEvents.push(
         {
+            "eventType": "EventFlag.Mayday",
+            "activeUntil": "9999-01-01T00:00:00.000Z",
+            "activeSince": "2020-01-01T00:00:00.000Z"
+        },
+        {
             "eventType": "EventFlag.Season10.Phase2",
             "activeUntil": "9999-01-01T00:00:00.000Z",
             "activeSince": "2020-01-01T00:00:00.000Z"
