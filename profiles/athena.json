@@ -83474,6 +83474,42 @@
         "favorite": false
       },
       "quantity": 1
+    },
+    "AthenaCharacter:CID_389_Athena_Commando_F_SpaceBunny": {
+      "templateId": "AthenaCharacter:CID_389_Athena_Commando_F_SpaceBunny",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": 1,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaCharacter:CID_TBD_Athena_Commando_F_ConstructorTest": {
+      "templateId": "AthenaCharacter:CID_TBD_Athena_Commando_F_ConstructorTest",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": 1,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaCharacter:CID_TBD_Athena_Commando_M_ConstructorTest": {
+      "templateId": "AthenaCharacter:CID_TBD_Athena_Commando_M_ConstructorTest",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": 1,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
     }
   },
   "stats": {

@@ -37468,6 +37468,4314 @@
           "nextRefresh": "2017-07-25T23:59:59.999Z"
         }
       ]
+    },
+    "Season10": {
+      "theaters": [
+        {
+          "displayName": {
+            "de": "Straße zum Sommer",
+            "ru": "Пора в путь",
+            "ko": "도로 여행",
+            "zh-hant": "上路",
+            "pt-br": "Pegando a Estrada",
+            "en": "Hit the Road",
+            "it": "Mettiti in marcia",
+            "fr": "Sur la route",
+            "zh-cn": "上路",
+            "es": "En marcha",
+            "ar": "انطلق في طريقك",
+            "ja": "出発！",
+            "pl": "Pora ruszać w drogę",
+            "es-419": "Ponte en marcha",
+            "tr": "Yola Çık"
+          },
+          "uniqueId": "4FF9902F4E66D5754137B5B8A2C06CCE",
+          "theaterSlot": 1,
+          "bIsTestTheater": false,
+          "bHideLikeTestTheater": false,
+          "requiredEventFlag": "EventFlag.Season10.Phase2",
+          "missionRewardNamedWeightsRowName": "None",
+          "description": {
+            "de": "Eskortiere das Transportfahrzeug zum Radiosender!",
+            "ru": "Сопровождайте грузовик до радиостанции!",
+            "ko": "라디오 방송국으로 길을 안내하세요!",
+            "zh-hant": "護送運輸隊前往廣播站！",
+            "pt-br": "Escolte o veículo até a estação de rádio!",
+            "en": "Escort the transport to the radio station!",
+            "it": "Scorta il mezzo fino alla stazione radio!",
+            "fr": "Escortez le véhicule jusqu'à la station de radio !",
+            "zh-cn": "护送运输队前往广播站！",
+            "es": "¡Acompaña al vehículo a la estación de radio!",
+            "ar": "اصطحب وسيلة النقل إلى محطة الراديو!",
+            "ja": "乗り物をラジオ局まで守り抜こう！",
+            "pl": "Eskortuj transport do stacji radiowej!",
+            "es-419": "¡Escolta el transporte a la estación de radio!",
+            "tr": "Kamyoneti radyo istasyonuna götür!"
+          },
+          "runtimeInfo": {
+            "theaterType": "Standard",
+            "theaterTags": {
+              "gameplayTags": [
+                {
+                  "tagName": "Stat.Theater.Mayday"
+                }
+              ]
+            },
+            "eventDependentTheaterTags": [],
+            "theaterVisibilityRequirements": {
+              "commanderLevel": 0,
+              "personalPowerRating": 0,
+              "maxPersonalPowerRating": 0,
+              "partyPowerRating": 0,
+              "maxPartyPowerRating": 0,
+              "activeQuestDefinitions": [],
+              "questDefinition": "None",
+              "objectiveStatHandle": {
+                "dataTable": "None",
+                "rowName": "None"
+              },
+              "uncompletedQuestDefinition": "None",
+              "itemDefinition": "None",
+              "eventFlag": "EventFlag.Season10.Phase2"
+            },
+            "requirements": {
+              "commanderLevel": 0,
+              "personalPowerRating": 0,
+              "maxPersonalPowerRating": 0,
+              "partyPowerRating": 0,
+              "maxPartyPowerRating": 0,
+              "activeQuestDefinitions": [],
+              "questDefinition": "None",
+              "objectiveStatHandle": {
+                "dataTable": "None",
+                "rowName": "None"
+              },
+              "uncompletedQuestDefinition": "None",
+              "itemDefinition": "None",
+              "eventFlag": ""
+            },
+            "requiredSubGameForVisibility": "Invalid",
+            "bOnlyMatchLinkedQuestsToTiles": false,
+            "worldMapPinClass": "BlueprintGeneratedClass'/Game/Environments/WorldMap/Blueprints/WM_PinMayday.WM_PinMayday_C'",
+            "theaterImage": "None",
+            "theaterImages": {
+              "brush_XXS": {
+                "imageSize": {
+                  "x": 32,
+                  "y": 32
+                },
+                "margin": {
+                  "left": 0,
+                  "top": 0,
+                  "right": 0,
+                  "bottom": 0
+                },
+                "tintColor": {
+                  "specifiedColor": {
+                    "r": 1,
+                    "g": 1,
+                    "b": 1,
+                    "a": 1
+                  },
+                  "colorUseRule": "UseColor_Specified"
+                },
+                "resourceObject": "None",
+                "resourceName": "None",
+                "uVRegion": {
+                  "min": {
+                    "x": 0,
+                    "y": 0
+                  },
+                  "max": {
+                    "x": 0,
+                    "y": 0
+                  },
+                  "bIsValid": 0
+                },
+                "drawAs": "Image",
+                "tiling": "NoTile",
+                "mirroring": "NoMirror",
+                "imageType": "NoImage",
+                "bIsDynamicallyLoaded": false
+              },
+              "brush_XS": {
+                "imageSize": {
+                  "x": 32,
+                  "y": 32
+                },
+                "margin": {
+                  "left": 0,
+                  "top": 0,
+                  "right": 0,
+                  "bottom": 0
+                },
+                "tintColor": {
+                  "specifiedColor": {
+                    "r": 1,
+                    "g": 1,
+                    "b": 1,
+                    "a": 1
+                  },
+                  "colorUseRule": "UseColor_Specified"
+                },
+                "resourceObject": "None",
+                "resourceName": "None",
+                "uVRegion": {
+                  "min": {
+                    "x": 0,
+                    "y": 0
+                  },
+                  "max": {
+                    "x": 0,
+                    "y": 0
+                  },
+                  "bIsValid": 0
+                },
+                "drawAs": "Image",
+                "tiling": "NoTile",
+                "mirroring": "NoMirror",
+                "imageType": "NoImage",
+                "bIsDynamicallyLoaded": false
+              },
+              "brush_S": {
+                "imageSize": {
+                  "x": 32,
+                  "y": 32
+                },
+                "margin": {
+                  "left": 0,
+                  "top": 0,
+                  "right": 0,
+                  "bottom": 0
+                },
+                "tintColor": {
+                  "specifiedColor": {
+                    "r": 1,
+                    "g": 1,
+                    "b": 1,
+                    "a": 1
+                  },
+                  "colorUseRule": "UseColor_Specified"
+                },
+                "resourceObject": "None",
+                "resourceName": "None",
+                "uVRegion": {
+                  "min": {
+                    "x": 0,
+                    "y": 0
+                  },
+                  "max": {
+                    "x": 0,
+                    "y": 0
+                  },
+                  "bIsValid": 0
+                },
+                "drawAs": "Image",
+                "tiling": "NoTile",
+                "mirroring": "NoMirror",
+                "imageType": "NoImage",
+                "bIsDynamicallyLoaded": false
+              },
+              "brush_M": {
+                "imageSize": {
+                  "x": 32,
+                  "y": 32
+                },
+                "margin": {
+                  "left": 0,
+                  "top": 0,
+                  "right": 0,
+                  "bottom": 0
+                },
+                "tintColor": {
+                  "specifiedColor": {
+                    "r": 1,
+                    "g": 1,
+                    "b": 1,
+                    "a": 1
+                  },
+                  "colorUseRule": "UseColor_Specified"
+                },
+                "resourceObject": "None",
+                "resourceName": "None",
+                "uVRegion": {
+                  "min": {
+                    "x": 0,
+                    "y": 0
+                  },
+                  "max": {
+                    "x": 0,
+                    "y": 0
+                  },
+                  "bIsValid": 0
+                },
+                "drawAs": "Image",
+                "tiling": "NoTile",
+                "mirroring": "NoMirror",
+                "imageType": "NoImage",
+                "bIsDynamicallyLoaded": false
+              },
+              "brush_L": {
+                "imageSize": {
+                  "x": 32,
+                  "y": 32
+                },
+                "margin": {
+                  "left": 0,
+                  "top": 0,
+                  "right": 0,
+                  "bottom": 0
+                },
+                "tintColor": {
+                  "specifiedColor": {
+                    "r": 1,
+                    "g": 1,
+                    "b": 1,
+                    "a": 1
+                  },
+                  "colorUseRule": "UseColor_Specified"
+                },
+                "resourceObject": "None",
+                "resourceName": "None",
+                "uVRegion": {
+                  "min": {
+                    "x": 0,
+                    "y": 0
+                  },
+                  "max": {
+                    "x": 0,
+                    "y": 0
+                  },
+                  "bIsValid": 0
+                },
+                "drawAs": "Image",
+                "tiling": "NoTile",
+                "mirroring": "NoMirror",
+                "imageType": "NoImage",
+                "bIsDynamicallyLoaded": false
+              },
+              "brush_XL": {
+                "imageSize": {
+                  "x": 32,
+                  "y": 32
+                },
+                "margin": {
+                  "left": 0,
+                  "top": 0,
+                  "right": 0,
+                  "bottom": 0
+                },
+                "tintColor": {
+                  "specifiedColor": {
+                    "r": 1,
+                    "g": 1,
+                    "b": 1,
+                    "a": 1
+                  },
+                  "colorUseRule": "UseColor_Specified"
+                },
+                "resourceObject": "None",
+                "resourceName": "None",
+                "uVRegion": {
+                  "min": {
+                    "x": 0,
+                    "y": 0
+                  },
+                  "max": {
+                    "x": 0,
+                    "y": 0
+                  },
+                  "bIsValid": 0
+                },
+                "drawAs": "Image",
+                "tiling": "NoTile",
+                "mirroring": "NoMirror",
+                "imageType": "NoImage",
+                "bIsDynamicallyLoaded": false
+              }
+            },
+            "theaterColorInfo": {
+              "bUseDifficultyToDetermineColor": false,
+              "color": {
+                "specifiedColor": {
+                  "r": 1,
+                  "g": 0,
+                  "b": 1,
+                  "a": 1
+                },
+                "colorUseRule": "UseColor_Specified"
+              }
+            },
+            "socket": "TEST_ElderProto",
+            "missionAlertRequirements": {
+              "commanderLevel": 0,
+              "personalPowerRating": 0,
+              "maxPersonalPowerRating": 0,
+              "partyPowerRating": 0,
+              "maxPartyPowerRating": 0,
+              "activeQuestDefinitions": [],
+              "questDefinition": "None",
+              "objectiveStatHandle": {
+                "dataTable": "None",
+                "rowName": "None"
+              },
+              "uncompletedQuestDefinition": "None",
+              "itemDefinition": "None",
+              "eventFlag": ""
+            },
+            "missionAlertCategoryRequirements": [],
+            "gameplayModifierList": [
+              {
+                "eventFlagName": "EventFlag.Mayday.Quests.Phase1",
+                "gameplayModifier": "FortGameplayModifierItemDefinition'/Game/Items/GameplayModifiers/Mutations/GM_Player_ShieldBuff.GM_Player_ShieldBuff'"
+              },
+              {
+                "eventFlagName": "EventFlag.Mayday.Quests.Phase2",
+                "gameplayModifier": "FortGameplayModifierItemDefinition'/Game/Items/GameplayModifiers/Mutations/GM_Player_OnShieldDestroyed_AOE.GM_Player_OnShieldDestroyed_AOE'"
+              },
+              {
+                "eventFlagName": "EventFlag.Mayday.Quests.Phase3",
+                "gameplayModifier": "FortGameplayModifierItemDefinition'/Game/Items/GameplayModifiers/Mutations/GM_LowG.GM_LowG'"
+              },
+              {
+                "eventFlagName": "EventFlag.Mayday.Quests.Phase3",
+                "gameplayModifier": "FortGameplayModifierItemDefinition'/Game/Items/GameplayModifiers/Mutations/GM_Enemy_OnDmgDealt_Knockback.GM_Enemy_OnDmgDealt_Knockback'"
+              },
+              {
+                "eventFlagName": "EventFlag.Mayday.Quests.Phase4",
+                "gameplayModifier": "FortGameplayModifierItemDefinition'/Game/Items/GameplayModifiers/Mutations/GM_Player_MeleeSwingSpeed_Buff.GM_Player_MeleeSwingSpeed_Buff'"
+              },
+              {
+                "eventFlagName": "EventFlag.Mayday.Quests.Phase4",
+                "gameplayModifier": "FortGameplayModifierItemDefinition'/Game/Items/GameplayModifiers/Mutations/GM_Enemy_Ricochet.GM_Enemy_Ricochet'"
+              },
+              {
+                "eventFlagName": "EventFlag.Mayday.Quests.Phase5",
+                "gameplayModifier": "FortGameplayModifierItemDefinition'/Game/Items/GameplayModifiers/Mutations/GM_Player_ShieldBuff.GM_Player_ShieldBuff'"
+              },
+              {
+                "eventFlagName": "EventFlag.Mayday.Quests.Phase5",
+                "gameplayModifier": "FortGameplayModifierItemDefinition'/Game/Items/GameplayModifiers/Defense/GM_Enemy_MaxHealthIncrease_Minor.GM_Enemy_MaxHealthIncrease_Minor'"
+              },
+              {
+                "eventFlagName": "EventFlag.Mayday.Quests.Phase6",
+                "gameplayModifier": "FortGameplayModifierItemDefinition'/Game/Items/GameplayModifiers/Mutations/GM_Enemy_HideOnMinimap.GM_Enemy_HideOnMinimap'"
+              },
+              {
+                "eventFlagName": "EventFlag.Mayday.Quests.Phase6",
+                "gameplayModifier": "FortGameplayModifierItemDefinition'/Game/Items/GameplayModifiers/Mutations/GM_BaseHusk_OnDeath_Explode.GM_BaseHusk_OnDeath_Explode'"
+              },
+              {
+                "eventFlagName": "EventFlag.Mayday.Quests.Phase6",
+                "gameplayModifier": "FortGameplayModifierItemDefinition'/Game/Items/GameplayModifiers/Mutations/GM_Player_OnShieldDestroyed_AOE.GM_Player_OnShieldDestroyed_AOE'"
+              },
+              {
+                "eventFlagName": "EventFlag.Mayday.Quests.Phase7",
+                "gameplayModifier": "FortGameplayModifierItemDefinition'/Game/Items/GameplayModifiers/Mutations/GM_LowG.GM_LowG'"
+              },
+              {
+                "eventFlagName": "EventFlag.Mayday.Quests.Phase7",
+                "gameplayModifier": "FortGameplayModifierItemDefinition'/Game/Items/GameplayModifiers/Mutations/GM_Enemy_OnDmgDealt_Knockback.GM_Enemy_OnDmgDealt_Knockback'"
+              },
+              {
+                "eventFlagName": "EventFlag.Mayday.Quests.Phase7",
+                "gameplayModifier": "FortGameplayModifierItemDefinition'/Game/Items/GameplayModifiers/Defense/GM_Enemy_MaxHealthIncrease_Minor.GM_Enemy_MaxHealthIncrease_Minor'"
+              },
+              {
+                "eventFlagName": "EventFlag.Mayday.Quests.Phase8",
+                "gameplayModifier": "FortGameplayModifierItemDefinition'/Game/Items/GameplayModifiers/Mutations/GM_Player_MeleeSwingSpeed_Buff.GM_Player_MeleeSwingSpeed_Buff'"
+              },
+              {
+                "eventFlagName": "EventFlag.Mayday.Quests.Phase8",
+                "gameplayModifier": "FortGameplayModifierItemDefinition'/Game/Items/GameplayModifiers/Mutations/GM_Player_OnDmgDealt_LifeLeech.GM_Player_OnDmgDealt_LifeLeech'"
+              },
+              {
+                "eventFlagName": "EventFlag.Mayday.Quests.Phase8",
+                "gameplayModifier": "FortGameplayModifierItemDefinition'/Game/Items/GameplayModifiers/Mutations/GM_Enemy_Ricochet_Major.GM_Enemy_Ricochet_Major'"
+              },
+              {
+                "eventFlagName": "EventFlag.Mayday.Quests.Phase8",
+                "gameplayModifier": "FortGameplayModifierItemDefinition'/Game/Items/GameplayModifiers/Mutations/GM_Enemy_OnDmgReceived_SpeedBuff.GM_Enemy_OnDmgReceived_SpeedBuff'"
+              },
+              {
+                "eventFlagName": "EventFlag.Mayday.Quests.Phase9",
+                "gameplayModifier": "FortGameplayModifierItemDefinition'/Game/Items/GameplayModifiers/Mutations/GM_Player_ShieldBuff.GM_Player_ShieldBuff'"
+              },
+              {
+                "eventFlagName": "EventFlag.Mayday.Quests.Phase9",
+                "gameplayModifier": "FortGameplayModifierItemDefinition'/Game/Items/GameplayModifiers/Defense/GM_Enemy_MaxHealthIncrease_Major.GM_Enemy_MaxHealthIncrease_Major'"
+              },
+              {
+                "eventFlagName": "EventFlag.Mayday.Quests.Phase9",
+                "gameplayModifier": "FortGameplayModifierItemDefinition'/Game/Items/GameplayModifiers/Mutations/GM_Enemy_OnDeath_AreaHeal.GM_Enemy_OnDeath_AreaHeal'"
+              },
+              {
+                "eventFlagName": "EventFlag.Mayday.Quests.Phase10",
+                "gameplayModifier": "FortGameplayModifierItemDefinition'/Game/Items/GameplayModifiers/Mutations/GM_Enemy_OnDmgDealt_Knockback.GM_Enemy_OnDmgDealt_Knockback'"
+              },
+              {
+                "eventFlagName": "EventFlag.Mayday.Quests.Phase10",
+                "gameplayModifier": "FortGameplayModifierItemDefinition'/Game/Items/GameplayModifiers/Mutations/GM_Enemy_OnDmgReceived_SpeedBuff.GM_Enemy_OnDmgReceived_SpeedBuff'"
+              },
+              {
+                "eventFlagName": "EventFlag.Mayday.Quests.Phase10",
+                "gameplayModifier": "FortGameplayModifierItemDefinition'/Game/Items/GameplayModifiers/Defense/GM_Enemy_MaxHealthIncrease_Minor.GM_Enemy_MaxHealthIncrease_Minor'"
+              },
+              {
+                "eventFlagName": "EventFlag.Mayday.Quests.Phase10",
+                "gameplayModifier": "FortGameplayModifierItemDefinition'/Game/Items/GameplayModifiers/Mutations/GM_Player_ShieldBuff.GM_Player_ShieldBuff'"
+              },
+              {
+                "eventFlagName": "EventFlag.Mayday.Quests.Phase10",
+                "gameplayModifier": "FortGameplayModifierItemDefinition'/Game/Items/GameplayModifiers/Mutations/GM_Player_OnDmgDealt_LifeLeech.GM_Player_OnDmgDealt_LifeLeech'"
+              }
+            ]
+          },
+          "tiles": [
+            {
+              "tileType": "NonMission",
+              "zoneTheme": "/Game/World/ZoneThemes/ZT_Arid/BP_ZT_Desert.BP_ZT_Desert_C",
+              "requirements": {
+                "commanderLevel": 0,
+                "personalPowerRating": 0,
+                "maxPersonalPowerRating": 0,
+                "partyPowerRating": 0,
+                "maxPartyPowerRating": 0,
+                "activeQuestDefinitions": [],
+                "questDefinition": "None",
+                "objectiveStatHandle": {
+                  "dataTable": "None",
+                  "rowName": "None"
+                },
+                "uncompletedQuestDefinition": "None",
+                "itemDefinition": "None",
+                "eventFlag": ""
+              },
+              "linkedQuests": [],
+              "xCoordinate": 6,
+              "yCoordinate": 6,
+              "missionWeightOverrides": [],
+              "difficultyWeightOverrides": [],
+              "canBeMissionAlert": false,
+              "tileTags": {
+                "gameplayTags": []
+              },
+              "bDisallowQuickplay": false
+            },
+            {
+              "tileType": "NonMission",
+              "zoneTheme": "/Game/World/ZoneThemes/ZT_Arid/BP_ZT_Desert.BP_ZT_Desert_C",
+              "requirements": {
+                "commanderLevel": 0,
+                "personalPowerRating": 0,
+                "maxPersonalPowerRating": 0,
+                "partyPowerRating": 0,
+                "maxPartyPowerRating": 0,
+                "activeQuestDefinitions": [],
+                "questDefinition": "None",
+                "objectiveStatHandle": {
+                  "dataTable": "None",
+                  "rowName": "None"
+                },
+                "uncompletedQuestDefinition": "None",
+                "itemDefinition": "None",
+                "eventFlag": ""
+              },
+              "linkedQuests": [],
+              "xCoordinate": 6,
+              "yCoordinate": 7,
+              "missionWeightOverrides": [],
+              "difficultyWeightOverrides": [],
+              "canBeMissionAlert": false,
+              "tileTags": {
+                "gameplayTags": []
+              },
+              "bDisallowQuickplay": false
+            },
+            {
+              "tileType": "NonMission",
+              "zoneTheme": "/Game/World/ZoneThemes/ZT_Arid/BP_ZT_Desert.BP_ZT_Desert_C",
+              "requirements": {
+                "commanderLevel": 0,
+                "personalPowerRating": 0,
+                "maxPersonalPowerRating": 0,
+                "partyPowerRating": 0,
+                "maxPartyPowerRating": 0,
+                "activeQuestDefinitions": [],
+                "questDefinition": "None",
+                "objectiveStatHandle": {
+                  "dataTable": "None",
+                  "rowName": "None"
+                },
+                "uncompletedQuestDefinition": "None",
+                "itemDefinition": "None",
+                "eventFlag": ""
+              },
+              "linkedQuests": [],
+              "xCoordinate": 5,
+              "yCoordinate": 6,
+              "missionWeightOverrides": [],
+              "difficultyWeightOverrides": [],
+              "canBeMissionAlert": false,
+              "tileTags": {
+                "gameplayTags": []
+              },
+              "bDisallowQuickplay": false
+            },
+            {
+              "tileType": "NonMission",
+              "zoneTheme": "/Game/World/ZoneThemes/ZT_Arid/BP_ZT_Desert.BP_ZT_Desert_C",
+              "requirements": {
+                "commanderLevel": 0,
+                "personalPowerRating": 0,
+                "maxPersonalPowerRating": 0,
+                "partyPowerRating": 0,
+                "maxPartyPowerRating": 0,
+                "activeQuestDefinitions": [],
+                "questDefinition": "None",
+                "objectiveStatHandle": {
+                  "dataTable": "None",
+                  "rowName": "None"
+                },
+                "uncompletedQuestDefinition": "None",
+                "itemDefinition": "None",
+                "eventFlag": ""
+              },
+              "linkedQuests": [],
+              "xCoordinate": 5,
+              "yCoordinate": 7,
+              "missionWeightOverrides": [],
+              "difficultyWeightOverrides": [],
+              "canBeMissionAlert": false,
+              "tileTags": {
+                "gameplayTags": []
+              },
+              "bDisallowQuickplay": false
+            },
+            {
+              "tileType": "NonMission",
+              "zoneTheme": "/Game/World/ZoneThemes/ZT_Arid/BP_ZT_Desert.BP_ZT_Desert_C",
+              "requirements": {
+                "commanderLevel": 0,
+                "personalPowerRating": 0,
+                "maxPersonalPowerRating": 0,
+                "partyPowerRating": 0,
+                "maxPartyPowerRating": 0,
+                "activeQuestDefinitions": [],
+                "questDefinition": "None",
+                "objectiveStatHandle": {
+                  "dataTable": "None",
+                  "rowName": "None"
+                },
+                "uncompletedQuestDefinition": "None",
+                "itemDefinition": "None",
+                "eventFlag": ""
+              },
+              "linkedQuests": [],
+              "xCoordinate": 6,
+              "yCoordinate": 8,
+              "missionWeightOverrides": [],
+              "difficultyWeightOverrides": [],
+              "canBeMissionAlert": false,
+              "tileTags": {
+                "gameplayTags": []
+              },
+              "bDisallowQuickplay": false
+            },
+            {
+              "tileType": "NonMission",
+              "zoneTheme": "/Game/World/ZoneThemes/ZT_Arid/BP_ZT_Desert.BP_ZT_Desert_C",
+              "requirements": {
+                "commanderLevel": 0,
+                "personalPowerRating": 0,
+                "maxPersonalPowerRating": 0,
+                "partyPowerRating": 0,
+                "maxPartyPowerRating": 0,
+                "activeQuestDefinitions": [],
+                "questDefinition": "None",
+                "objectiveStatHandle": {
+                  "dataTable": "None",
+                  "rowName": "None"
+                },
+                "uncompletedQuestDefinition": "None",
+                "itemDefinition": "None",
+                "eventFlag": ""
+              },
+              "linkedQuests": [],
+              "xCoordinate": 7,
+              "yCoordinate": 7,
+              "missionWeightOverrides": [],
+              "difficultyWeightOverrides": [],
+              "canBeMissionAlert": false,
+              "tileTags": {
+                "gameplayTags": []
+              },
+              "bDisallowQuickplay": false
+            },
+            {
+              "tileType": "NonMission",
+              "zoneTheme": "/Game/World/ZoneThemes/ZT_Arid/BP_ZT_Desert.BP_ZT_Desert_C",
+              "requirements": {
+                "commanderLevel": 0,
+                "personalPowerRating": 0,
+                "maxPersonalPowerRating": 0,
+                "partyPowerRating": 0,
+                "maxPartyPowerRating": 0,
+                "activeQuestDefinitions": [],
+                "questDefinition": "None",
+                "objectiveStatHandle": {
+                  "dataTable": "None",
+                  "rowName": "None"
+                },
+                "uncompletedQuestDefinition": "None",
+                "itemDefinition": "None",
+                "eventFlag": ""
+              },
+              "linkedQuests": [],
+              "xCoordinate": 7,
+              "yCoordinate": 6,
+              "missionWeightOverrides": [],
+              "difficultyWeightOverrides": [],
+              "canBeMissionAlert": false,
+              "tileTags": {
+                "gameplayTags": []
+              },
+              "bDisallowQuickplay": false
+            },
+            {
+              "tileType": "NonMission",
+              "zoneTheme": "/Game/World/ZoneThemes/ZT_Arid/BP_ZT_Desert.BP_ZT_Desert_C",
+              "requirements": {
+                "commanderLevel": 0,
+                "personalPowerRating": 0,
+                "maxPersonalPowerRating": 0,
+                "partyPowerRating": 0,
+                "maxPartyPowerRating": 0,
+                "activeQuestDefinitions": [],
+                "questDefinition": "None",
+                "objectiveStatHandle": {
+                  "dataTable": "None",
+                  "rowName": "None"
+                },
+                "uncompletedQuestDefinition": "None",
+                "itemDefinition": "None",
+                "eventFlag": ""
+              },
+              "linkedQuests": [],
+              "xCoordinate": 6,
+              "yCoordinate": 5,
+              "missionWeightOverrides": [],
+              "difficultyWeightOverrides": [],
+              "canBeMissionAlert": false,
+              "tileTags": {
+                "gameplayTags": []
+              },
+              "bDisallowQuickplay": false
+            },
+            {
+              "tileType": "NonMission",
+              "zoneTheme": "/Game/World/ZoneThemes/ZT_Arid/BP_ZT_Desert.BP_ZT_Desert_C",
+              "requirements": {
+                "commanderLevel": 0,
+                "personalPowerRating": 0,
+                "maxPersonalPowerRating": 0,
+                "partyPowerRating": 0,
+                "maxPartyPowerRating": 0,
+                "activeQuestDefinitions": [],
+                "questDefinition": "None",
+                "objectiveStatHandle": {
+                  "dataTable": "None",
+                  "rowName": "None"
+                },
+                "uncompletedQuestDefinition": "None",
+                "itemDefinition": "None",
+                "eventFlag": ""
+              },
+              "linkedQuests": [],
+              "xCoordinate": 7,
+              "yCoordinate": 5,
+              "missionWeightOverrides": [],
+              "difficultyWeightOverrides": [],
+              "canBeMissionAlert": false,
+              "tileTags": {
+                "gameplayTags": []
+              },
+              "bDisallowQuickplay": false
+            },
+            {
+              "tileType": "NonMission",
+              "zoneTheme": "/Game/World/ZoneThemes/ZT_Arid/BP_ZT_Desert.BP_ZT_Desert_C",
+              "requirements": {
+                "commanderLevel": 0,
+                "personalPowerRating": 0,
+                "maxPersonalPowerRating": 0,
+                "partyPowerRating": 0,
+                "maxPartyPowerRating": 0,
+                "activeQuestDefinitions": [],
+                "questDefinition": "None",
+                "objectiveStatHandle": {
+                  "dataTable": "None",
+                  "rowName": "None"
+                },
+                "uncompletedQuestDefinition": "None",
+                "itemDefinition": "None",
+                "eventFlag": ""
+              },
+              "linkedQuests": [],
+              "xCoordinate": 8,
+              "yCoordinate": 6,
+              "missionWeightOverrides": [],
+              "difficultyWeightOverrides": [],
+              "canBeMissionAlert": false,
+              "tileTags": {
+                "gameplayTags": []
+              },
+              "bDisallowQuickplay": false
+            },
+            {
+              "tileType": "NonMission",
+              "zoneTheme": "/Game/World/ZoneThemes/ZT_Arid/BP_ZT_Desert.BP_ZT_Desert_C",
+              "requirements": {
+                "commanderLevel": 0,
+                "personalPowerRating": 0,
+                "maxPersonalPowerRating": 0,
+                "partyPowerRating": 0,
+                "maxPartyPowerRating": 0,
+                "activeQuestDefinitions": [],
+                "questDefinition": "None",
+                "objectiveStatHandle": {
+                  "dataTable": "None",
+                  "rowName": "None"
+                },
+                "uncompletedQuestDefinition": "None",
+                "itemDefinition": "None",
+                "eventFlag": ""
+              },
+              "linkedQuests": [],
+              "xCoordinate": 8,
+              "yCoordinate": 7,
+              "missionWeightOverrides": [],
+              "difficultyWeightOverrides": [],
+              "canBeMissionAlert": false,
+              "tileTags": {
+                "gameplayTags": []
+              },
+              "bDisallowQuickplay": false
+            },
+            {
+              "tileType": "NonMission",
+              "zoneTheme": "/Game/World/ZoneThemes/ZT_Arid/BP_ZT_Desert.BP_ZT_Desert_C",
+              "requirements": {
+                "commanderLevel": 0,
+                "personalPowerRating": 0,
+                "maxPersonalPowerRating": 0,
+                "partyPowerRating": 0,
+                "maxPartyPowerRating": 0,
+                "activeQuestDefinitions": [],
+                "questDefinition": "None",
+                "objectiveStatHandle": {
+                  "dataTable": "None",
+                  "rowName": "None"
+                },
+                "uncompletedQuestDefinition": "None",
+                "itemDefinition": "None",
+                "eventFlag": ""
+              },
+              "linkedQuests": [],
+              "xCoordinate": 8,
+              "yCoordinate": 8,
+              "missionWeightOverrides": [],
+              "difficultyWeightOverrides": [],
+              "canBeMissionAlert": false,
+              "tileTags": {
+                "gameplayTags": []
+              },
+              "bDisallowQuickplay": false
+            },
+            {
+              "tileType": "AlwaysActive",
+              "zoneTheme": "/Game/World/ZoneThemes/Mayday/BP_ZT_Mayday_Canny2.BP_ZT_Mayday_Canny2_C",
+              "requirements": {
+                "commanderLevel": 0,
+                "personalPowerRating": 0,
+                "maxPersonalPowerRating": 0,
+                "partyPowerRating": 0,
+                "maxPartyPowerRating": 0,
+                "activeQuestDefinitions": [],
+                "questDefinition": "FortQuestItemDefinition'/Game/Quests/Outpost/OutpostQuest_T1_L3.OutpostQuest_T1_L3'",
+                "objectiveStatHandle": {
+                  "dataTable": "None",
+                  "rowName": "None"
+                },
+                "uncompletedQuestDefinition": "None",
+                "itemDefinition": "None",
+                "eventFlag": ""
+              },
+              "linkedQuests": [],
+              "xCoordinate": 7,
+              "yCoordinate": 8,
+              "missionWeightOverrides": [
+                {
+                  "weight": 1.0,
+                  "missionGenerator": "/Game/World/MissionGens/MissionGen_Mayday.MissionGen_Mayday_C"
+                }
+              ],
+              "difficultyWeightOverrides": [
+                {
+                  "weight": 0.0,
+                  "difficultyInfo": {
+                    "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
+                    "rowName": "Theater_Mayday_Start_Zone5"
+                  }
+                },
+                {
+                  "weight": 0.0,
+                  "difficultyInfo": {
+                    "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
+                    "rowName": "Theater_Mayday_Normal_Zone3"
+                  }
+                },
+                {
+                  "weight": 0.0,
+                  "difficultyInfo": {
+                    "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
+                    "rowName": "Theater_Mayday_Normal_Zone5"
+                  }
+                },
+                {
+                  "weight": 0.0,
+                  "difficultyInfo": {
+                    "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
+                    "rowName": "Theater_Mayday_Hard_Zone3"
+                  }
+                },
+                {
+                  "weight": 1.0,
+                  "difficultyInfo": {
+                    "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
+                    "rowName": "Theater_Mayday_Hard_Zone5"
+                  }
+                },
+                {
+                  "weight": 0.0,
+                  "difficultyInfo": {
+                    "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
+                    "rowName": "Theater_Mayday_Nightmare_Zone3"
+                  }
+                },
+                {
+                  "weight": 0.0,
+                  "difficultyInfo": {
+                    "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
+                    "rowName": "Theater_Mayday_Nightmare_Zone5"
+                  }
+                },
+                {
+                  "weight": 0.0,
+                  "difficultyInfo": {
+                    "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
+                    "rowName": "Theater_Mayday_Endgame_Zone5"
+                  }
+                }
+              ],
+              "canBeMissionAlert": false,
+              "tileTags": {
+                "gameplayTags": []
+              },
+              "bDisallowQuickplay": false
+            },
+            {
+              "tileType": "AlwaysActive",
+              "zoneTheme": "/Game/World/ZoneThemes/Mayday/BP_ZT_Mayday_Plankerton2.BP_ZT_Mayday_Plankerton2_C",
+              "requirements": {
+                "commanderLevel": 0,
+                "personalPowerRating": 0,
+                "maxPersonalPowerRating": 0,
+                "partyPowerRating": 0,
+                "maxPartyPowerRating": 0,
+                "activeQuestDefinitions": [],
+                "questDefinition": "FortQuestItemDefinition'/Game/Quests/Outpost/OutpostQuest_T1_L3.OutpostQuest_T1_L3'",
+                "objectiveStatHandle": {
+                  "dataTable": "None",
+                  "rowName": "None"
+                },
+                "uncompletedQuestDefinition": "None",
+                "itemDefinition": "None",
+                "eventFlag": ""
+              },
+              "linkedQuests": [],
+              "xCoordinate": 5,
+              "yCoordinate": 8,
+              "missionWeightOverrides": [
+                {
+                  "weight": 1.0,
+                  "missionGenerator": "/Game/World/MissionGens/MissionGen_Mayday.MissionGen_Mayday_C"
+                }
+              ],
+              "difficultyWeightOverrides": [
+                {
+                  "weight": 0.0,
+                  "difficultyInfo": {
+                    "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
+                    "rowName": "Theater_Mayday_Start_Zone5"
+                  }
+                },
+                {
+                  "weight": 0.0,
+                  "difficultyInfo": {
+                    "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
+                    "rowName": "Theater_Mayday_Normal_Zone3"
+                  }
+                },
+                {
+                  "weight": 1.0,
+                  "difficultyInfo": {
+                    "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
+                    "rowName": "Theater_Mayday_Normal_Zone5"
+                  }
+                },
+                {
+                  "weight": 0.0,
+                  "difficultyInfo": {
+                    "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
+                    "rowName": "Theater_Mayday_Hard_Zone3"
+                  }
+                },
+                {
+                  "weight": 0.0,
+                  "difficultyInfo": {
+                    "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
+                    "rowName": "Theater_Mayday_Hard_Zone5"
+                  }
+                },
+                {
+                  "weight": 0.0,
+                  "difficultyInfo": {
+                    "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
+                    "rowName": "Theater_Mayday_Nightmare_Zone3"
+                  }
+                },
+                {
+                  "weight": 0.0,
+                  "difficultyInfo": {
+                    "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
+                    "rowName": "Theater_Mayday_Nightmare_Zone5"
+                  }
+                },
+                {
+                  "weight": 0.0,
+                  "difficultyInfo": {
+                    "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
+                    "rowName": "Theater_Mayday_Endgame_Zone5"
+                  }
+                }
+              ],
+              "canBeMissionAlert": false,
+              "tileTags": {
+                "gameplayTags": []
+              },
+              "bDisallowQuickplay": false
+            },
+            {
+              "tileType": "NonMission",
+              "zoneTheme": "/Game/World/ZoneThemes/ZT_Arid/BP_ZT_Desert.BP_ZT_Desert_C",
+              "requirements": {
+                "commanderLevel": 0,
+                "personalPowerRating": 0,
+                "maxPersonalPowerRating": 0,
+                "partyPowerRating": 0,
+                "maxPartyPowerRating": 0,
+                "activeQuestDefinitions": [],
+                "questDefinition": "None",
+                "objectiveStatHandle": {
+                  "dataTable": "None",
+                  "rowName": "None"
+                },
+                "uncompletedQuestDefinition": "None",
+                "itemDefinition": "None",
+                "eventFlag": ""
+              },
+              "linkedQuests": [],
+              "xCoordinate": 4,
+              "yCoordinate": 8,
+              "missionWeightOverrides": [],
+              "difficultyWeightOverrides": [],
+              "canBeMissionAlert": false,
+              "tileTags": {
+                "gameplayTags": []
+              },
+              "bDisallowQuickplay": false
+            },
+            {
+              "tileType": "NonMission",
+              "zoneTheme": "/Game/World/ZoneThemes/ZT_Arid/BP_ZT_Desert.BP_ZT_Desert_C",
+              "requirements": {
+                "commanderLevel": 0,
+                "personalPowerRating": 0,
+                "maxPersonalPowerRating": 0,
+                "partyPowerRating": 0,
+                "maxPartyPowerRating": 0,
+                "activeQuestDefinitions": [],
+                "questDefinition": "None",
+                "objectiveStatHandle": {
+                  "dataTable": "None",
+                  "rowName": "None"
+                },
+                "uncompletedQuestDefinition": "None",
+                "itemDefinition": "None",
+                "eventFlag": ""
+              },
+              "linkedQuests": [],
+              "xCoordinate": 4,
+              "yCoordinate": 7,
+              "missionWeightOverrides": [],
+              "difficultyWeightOverrides": [],
+              "canBeMissionAlert": false,
+              "tileTags": {
+                "gameplayTags": []
+              },
+              "bDisallowQuickplay": false
+            },
+            {
+              "tileType": "NonMission",
+              "zoneTheme": "/Game/World/ZoneThemes/ZT_Arid/BP_ZT_Desert.BP_ZT_Desert_C",
+              "requirements": {
+                "commanderLevel": 0,
+                "personalPowerRating": 0,
+                "maxPersonalPowerRating": 0,
+                "partyPowerRating": 0,
+                "maxPartyPowerRating": 0,
+                "activeQuestDefinitions": [],
+                "questDefinition": "None",
+                "objectiveStatHandle": {
+                  "dataTable": "None",
+                  "rowName": "None"
+                },
+                "uncompletedQuestDefinition": "None",
+                "itemDefinition": "None",
+                "eventFlag": ""
+              },
+              "linkedQuests": [],
+              "xCoordinate": 4,
+              "yCoordinate": 6,
+              "missionWeightOverrides": [],
+              "difficultyWeightOverrides": [],
+              "canBeMissionAlert": false,
+              "tileTags": {
+                "gameplayTags": []
+              },
+              "bDisallowQuickplay": false
+            },
+            {
+              "tileType": "NonMission",
+              "zoneTheme": "/Game/World/ZoneThemes/ZT_Arid/BP_ZT_Desert.BP_ZT_Desert_C",
+              "requirements": {
+                "commanderLevel": 0,
+                "personalPowerRating": 0,
+                "maxPersonalPowerRating": 0,
+                "partyPowerRating": 0,
+                "maxPartyPowerRating": 0,
+                "activeQuestDefinitions": [],
+                "questDefinition": "None",
+                "objectiveStatHandle": {
+                  "dataTable": "None",
+                  "rowName": "None"
+                },
+                "uncompletedQuestDefinition": "None",
+                "itemDefinition": "None",
+                "eventFlag": ""
+              },
+              "linkedQuests": [],
+              "xCoordinate": 4,
+              "yCoordinate": 5,
+              "missionWeightOverrides": [],
+              "difficultyWeightOverrides": [],
+              "canBeMissionAlert": false,
+              "tileTags": {
+                "gameplayTags": []
+              },
+              "bDisallowQuickplay": false
+            },
+            {
+              "tileType": "NonMission",
+              "zoneTheme": "/Game/World/ZoneThemes/ZT_Arid/BP_ZT_Desert.BP_ZT_Desert_C",
+              "requirements": {
+                "commanderLevel": 0,
+                "personalPowerRating": 0,
+                "maxPersonalPowerRating": 0,
+                "partyPowerRating": 0,
+                "maxPartyPowerRating": 0,
+                "activeQuestDefinitions": [],
+                "questDefinition": "None",
+                "objectiveStatHandle": {
+                  "dataTable": "None",
+                  "rowName": "None"
+                },
+                "uncompletedQuestDefinition": "None",
+                "itemDefinition": "None",
+                "eventFlag": ""
+              },
+              "linkedQuests": [],
+              "xCoordinate": 5,
+              "yCoordinate": 4,
+              "missionWeightOverrides": [],
+              "difficultyWeightOverrides": [],
+              "canBeMissionAlert": false,
+              "tileTags": {
+                "gameplayTags": []
+              },
+              "bDisallowQuickplay": false
+            },
+            {
+              "tileType": "NonMission",
+              "zoneTheme": "/Game/World/ZoneThemes/ZT_Arid/BP_ZT_Desert.BP_ZT_Desert_C",
+              "requirements": {
+                "commanderLevel": 0,
+                "personalPowerRating": 0,
+                "maxPersonalPowerRating": 0,
+                "partyPowerRating": 0,
+                "maxPartyPowerRating": 0,
+                "activeQuestDefinitions": [],
+                "questDefinition": "None",
+                "objectiveStatHandle": {
+                  "dataTable": "None",
+                  "rowName": "None"
+                },
+                "uncompletedQuestDefinition": "None",
+                "itemDefinition": "None",
+                "eventFlag": ""
+              },
+              "linkedQuests": [],
+              "xCoordinate": 5,
+              "yCoordinate": 5,
+              "missionWeightOverrides": [],
+              "difficultyWeightOverrides": [],
+              "canBeMissionAlert": false,
+              "tileTags": {
+                "gameplayTags": []
+              },
+              "bDisallowQuickplay": false
+            },
+            {
+              "tileType": "NonMission",
+              "zoneTheme": "/Game/World/ZoneThemes/ZT_Arid/BP_ZT_Desert.BP_ZT_Desert_C",
+              "requirements": {
+                "commanderLevel": 0,
+                "personalPowerRating": 0,
+                "maxPersonalPowerRating": 0,
+                "partyPowerRating": 0,
+                "maxPartyPowerRating": 0,
+                "activeQuestDefinitions": [],
+                "questDefinition": "None",
+                "objectiveStatHandle": {
+                  "dataTable": "None",
+                  "rowName": "None"
+                },
+                "uncompletedQuestDefinition": "None",
+                "itemDefinition": "None",
+                "eventFlag": ""
+              },
+              "linkedQuests": [],
+              "xCoordinate": 6,
+              "yCoordinate": 4,
+              "missionWeightOverrides": [],
+              "difficultyWeightOverrides": [],
+              "canBeMissionAlert": false,
+              "tileTags": {
+                "gameplayTags": []
+              },
+              "bDisallowQuickplay": false
+            },
+            {
+              "tileType": "NonMission",
+              "zoneTheme": "/Game/World/ZoneThemes/ZT_Arid/BP_ZT_Desert.BP_ZT_Desert_C",
+              "requirements": {
+                "commanderLevel": 0,
+                "personalPowerRating": 0,
+                "maxPersonalPowerRating": 0,
+                "partyPowerRating": 0,
+                "maxPartyPowerRating": 0,
+                "activeQuestDefinitions": [],
+                "questDefinition": "None",
+                "objectiveStatHandle": {
+                  "dataTable": "None",
+                  "rowName": "None"
+                },
+                "uncompletedQuestDefinition": "None",
+                "itemDefinition": "None",
+                "eventFlag": ""
+              },
+              "linkedQuests": [],
+              "xCoordinate": 7,
+              "yCoordinate": 4,
+              "missionWeightOverrides": [],
+              "difficultyWeightOverrides": [],
+              "canBeMissionAlert": false,
+              "tileTags": {
+                "gameplayTags": []
+              },
+              "bDisallowQuickplay": false
+            },
+            {
+              "tileType": "NonMission",
+              "zoneTheme": "/Game/World/ZoneThemes/ZT_Arid/BP_ZT_Desert.BP_ZT_Desert_C",
+              "requirements": {
+                "commanderLevel": 0,
+                "personalPowerRating": 0,
+                "maxPersonalPowerRating": 0,
+                "partyPowerRating": 0,
+                "maxPartyPowerRating": 0,
+                "activeQuestDefinitions": [],
+                "questDefinition": "None",
+                "objectiveStatHandle": {
+                  "dataTable": "None",
+                  "rowName": "None"
+                },
+                "uncompletedQuestDefinition": "None",
+                "itemDefinition": "None",
+                "eventFlag": ""
+              },
+              "linkedQuests": [],
+              "xCoordinate": 8,
+              "yCoordinate": 5,
+              "missionWeightOverrides": [],
+              "difficultyWeightOverrides": [],
+              "canBeMissionAlert": false,
+              "tileTags": {
+                "gameplayTags": []
+              },
+              "bDisallowQuickplay": false
+            },
+            {
+              "tileType": "NonMission",
+              "zoneTheme": "/Game/World/ZoneThemes/ZT_Arid/BP_ZT_Desert.BP_ZT_Desert_C",
+              "requirements": {
+                "commanderLevel": 0,
+                "personalPowerRating": 0,
+                "maxPersonalPowerRating": 0,
+                "partyPowerRating": 0,
+                "maxPartyPowerRating": 0,
+                "activeQuestDefinitions": [],
+                "questDefinition": "None",
+                "objectiveStatHandle": {
+                  "dataTable": "None",
+                  "rowName": "None"
+                },
+                "uncompletedQuestDefinition": "None",
+                "itemDefinition": "None",
+                "eventFlag": ""
+              },
+              "linkedQuests": [],
+              "xCoordinate": 8,
+              "yCoordinate": 4,
+              "missionWeightOverrides": [],
+              "difficultyWeightOverrides": [],
+              "canBeMissionAlert": false,
+              "tileTags": {
+                "gameplayTags": []
+              },
+              "bDisallowQuickplay": false
+            },
+            {
+              "tileType": "NonMission",
+              "zoneTheme": "/Game/World/ZoneThemes/ZT_Arid/BP_ZT_Desert.BP_ZT_Desert_C",
+              "requirements": {
+                "commanderLevel": 0,
+                "personalPowerRating": 0,
+                "maxPersonalPowerRating": 0,
+                "partyPowerRating": 0,
+                "maxPartyPowerRating": 0,
+                "activeQuestDefinitions": [],
+                "questDefinition": "None",
+                "objectiveStatHandle": {
+                  "dataTable": "None",
+                  "rowName": "None"
+                },
+                "uncompletedQuestDefinition": "None",
+                "itemDefinition": "None",
+                "eventFlag": ""
+              },
+              "linkedQuests": [],
+              "xCoordinate": 4,
+              "yCoordinate": 4,
+              "missionWeightOverrides": [],
+              "difficultyWeightOverrides": [],
+              "canBeMissionAlert": false,
+              "tileTags": {
+                "gameplayTags": []
+              },
+              "bDisallowQuickplay": false
+            },
+            {
+              "tileType": "AlwaysActive",
+              "zoneTheme": "/Game/World/ZoneThemes/Mayday/BP_ZT_Mayday.BP_ZT_Mayday_C",
+              "requirements": {
+                "commanderLevel": 0,
+                "personalPowerRating": 0,
+                "maxPersonalPowerRating": 0,
+                "partyPowerRating": 0,
+                "maxPartyPowerRating": 0,
+                "activeQuestDefinitions": [],
+                "questDefinition": "FortQuestItemDefinition'/Game/Quests/Outpost/OutpostQuest_T1_L3.OutpostQuest_T1_L3'",
+                "objectiveStatHandle": {
+                  "dataTable": "None",
+                  "rowName": "None"
+                },
+                "uncompletedQuestDefinition": "None",
+                "itemDefinition": "None",
+                "eventFlag": ""
+              },
+              "linkedQuests": [],
+              "xCoordinate": 3,
+              "yCoordinate": 8,
+              "missionWeightOverrides": [
+                {
+                  "weight": 1.0,
+                  "missionGenerator": "/Game/World/MissionGens/MissionGen_Mayday.MissionGen_Mayday_C"
+                }
+              ],
+              "difficultyWeightOverrides": [
+                {
+                  "weight": 1.0,
+                  "difficultyInfo": {
+                    "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
+                    "rowName": "Theater_Mayday_Start_Zone5"
+                  }
+                },
+                {
+                  "weight": 0.0,
+                  "difficultyInfo": {
+                    "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
+                    "rowName": "Theater_Mayday_Normal_Zone3"
+                  }
+                },
+                {
+                  "weight": 0.0,
+                  "difficultyInfo": {
+                    "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
+                    "rowName": "Theater_Mayday_Normal_Zone5"
+                  }
+                },
+                {
+                  "weight": 0.0,
+                  "difficultyInfo": {
+                    "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
+                    "rowName": "Theater_Mayday_Hard_Zone3"
+                  }
+                },
+                {
+                  "weight": 0.0,
+                  "difficultyInfo": {
+                    "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
+                    "rowName": "Theater_Mayday_Hard_Zone5"
+                  }
+                },
+                {
+                  "weight": 0.0,
+                  "difficultyInfo": {
+                    "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
+                    "rowName": "Theater_Mayday_Nightmare_Zone3"
+                  }
+                },
+                {
+                  "weight": 0.0,
+                  "difficultyInfo": {
+                    "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
+                    "rowName": "Theater_Mayday_Nightmare_Zone5"
+                  }
+                },
+                {
+                  "weight": 0.0,
+                  "difficultyInfo": {
+                    "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
+                    "rowName": "Theater_Mayday_Endgame_Zone5"
+                  }
+                }
+              ],
+              "canBeMissionAlert": false,
+              "tileTags": {
+                "gameplayTags": []
+              },
+              "bDisallowQuickplay": false
+            },
+            {
+              "tileType": "NonMission",
+              "zoneTheme": "/Game/World/ZoneThemes/ZT_Arid/BP_ZT_Desert.BP_ZT_Desert_C",
+              "requirements": {
+                "commanderLevel": 0,
+                "personalPowerRating": 0,
+                "maxPersonalPowerRating": 0,
+                "partyPowerRating": 0,
+                "maxPartyPowerRating": 0,
+                "activeQuestDefinitions": [],
+                "questDefinition": "None",
+                "objectiveStatHandle": {
+                  "dataTable": "None",
+                  "rowName": "None"
+                },
+                "uncompletedQuestDefinition": "None",
+                "itemDefinition": "None",
+                "eventFlag": ""
+              },
+              "linkedQuests": [],
+              "xCoordinate": 3,
+              "yCoordinate": 7,
+              "missionWeightOverrides": [],
+              "difficultyWeightOverrides": [],
+              "canBeMissionAlert": false,
+              "tileTags": {
+                "gameplayTags": []
+              },
+              "bDisallowQuickplay": false
+            },
+            {
+              "tileType": "NonMission",
+              "zoneTheme": "/Game/World/ZoneThemes/ZT_Arid/BP_ZT_Desert.BP_ZT_Desert_C",
+              "requirements": {
+                "commanderLevel": 0,
+                "personalPowerRating": 0,
+                "maxPersonalPowerRating": 0,
+                "partyPowerRating": 0,
+                "maxPartyPowerRating": 0,
+                "activeQuestDefinitions": [],
+                "questDefinition": "None",
+                "objectiveStatHandle": {
+                  "dataTable": "None",
+                  "rowName": "None"
+                },
+                "uncompletedQuestDefinition": "None",
+                "itemDefinition": "None",
+                "eventFlag": ""
+              },
+              "linkedQuests": [],
+              "xCoordinate": 3,
+              "yCoordinate": 6,
+              "missionWeightOverrides": [],
+              "difficultyWeightOverrides": [],
+              "canBeMissionAlert": false,
+              "tileTags": {
+                "gameplayTags": []
+              },
+              "bDisallowQuickplay": false
+            },
+            {
+              "tileType": "NonMission",
+              "zoneTheme": "/Game/World/ZoneThemes/ZT_Arid/BP_ZT_Desert.BP_ZT_Desert_C",
+              "requirements": {
+                "commanderLevel": 0,
+                "personalPowerRating": 0,
+                "maxPersonalPowerRating": 0,
+                "partyPowerRating": 0,
+                "maxPartyPowerRating": 0,
+                "activeQuestDefinitions": [],
+                "questDefinition": "None",
+                "objectiveStatHandle": {
+                  "dataTable": "None",
+                  "rowName": "None"
+                },
+                "uncompletedQuestDefinition": "None",
+                "itemDefinition": "None",
+                "eventFlag": ""
+              },
+              "linkedQuests": [],
+              "xCoordinate": 3,
+              "yCoordinate": 5,
+              "missionWeightOverrides": [],
+              "difficultyWeightOverrides": [],
+              "canBeMissionAlert": false,
+              "tileTags": {
+                "gameplayTags": []
+              },
+              "bDisallowQuickplay": false
+            },
+            {
+              "tileType": "NonMission",
+              "zoneTheme": "/Game/World/ZoneThemes/ZT_Arid/BP_ZT_Desert.BP_ZT_Desert_C",
+              "requirements": {
+                "commanderLevel": 0,
+                "personalPowerRating": 0,
+                "maxPersonalPowerRating": 0,
+                "partyPowerRating": 0,
+                "maxPartyPowerRating": 0,
+                "activeQuestDefinitions": [],
+                "questDefinition": "None",
+                "objectiveStatHandle": {
+                  "dataTable": "None",
+                  "rowName": "None"
+                },
+                "uncompletedQuestDefinition": "None",
+                "itemDefinition": "None",
+                "eventFlag": ""
+              },
+              "linkedQuests": [],
+              "xCoordinate": 3,
+              "yCoordinate": 4,
+              "missionWeightOverrides": [],
+              "difficultyWeightOverrides": [],
+              "canBeMissionAlert": false,
+              "tileTags": {
+                "gameplayTags": []
+              },
+              "bDisallowQuickplay": false
+            },
+            {
+              "tileType": "NonMission",
+              "zoneTheme": "/Game/World/ZoneThemes/ZT_Arid/BP_ZT_Desert.BP_ZT_Desert_C",
+              "requirements": {
+                "commanderLevel": 0,
+                "personalPowerRating": 0,
+                "maxPersonalPowerRating": 0,
+                "partyPowerRating": 0,
+                "maxPartyPowerRating": 0,
+                "activeQuestDefinitions": [],
+                "questDefinition": "None",
+                "objectiveStatHandle": {
+                  "dataTable": "None",
+                  "rowName": "None"
+                },
+                "uncompletedQuestDefinition": "None",
+                "itemDefinition": "None",
+                "eventFlag": ""
+              },
+              "linkedQuests": [],
+              "xCoordinate": 3,
+              "yCoordinate": 3,
+              "missionWeightOverrides": [],
+              "difficultyWeightOverrides": [],
+              "canBeMissionAlert": false,
+              "tileTags": {
+                "gameplayTags": []
+              },
+              "bDisallowQuickplay": false
+            },
+            {
+              "tileType": "NonMission",
+              "zoneTheme": "/Game/World/ZoneThemes/ZT_Arid/BP_ZT_Desert.BP_ZT_Desert_C",
+              "requirements": {
+                "commanderLevel": 0,
+                "personalPowerRating": 0,
+                "maxPersonalPowerRating": 0,
+                "partyPowerRating": 0,
+                "maxPartyPowerRating": 0,
+                "activeQuestDefinitions": [],
+                "questDefinition": "None",
+                "objectiveStatHandle": {
+                  "dataTable": "None",
+                  "rowName": "None"
+                },
+                "uncompletedQuestDefinition": "None",
+                "itemDefinition": "None",
+                "eventFlag": ""
+              },
+              "linkedQuests": [],
+              "xCoordinate": 5,
+              "yCoordinate": 3,
+              "missionWeightOverrides": [],
+              "difficultyWeightOverrides": [],
+              "canBeMissionAlert": false,
+              "tileTags": {
+                "gameplayTags": []
+              },
+              "bDisallowQuickplay": false
+            },
+            {
+              "tileType": "NonMission",
+              "zoneTheme": "/Game/World/ZoneThemes/ZT_Arid/BP_ZT_Desert.BP_ZT_Desert_C",
+              "requirements": {
+                "commanderLevel": 0,
+                "personalPowerRating": 0,
+                "maxPersonalPowerRating": 0,
+                "partyPowerRating": 0,
+                "maxPartyPowerRating": 0,
+                "activeQuestDefinitions": [],
+                "questDefinition": "None",
+                "objectiveStatHandle": {
+                  "dataTable": "None",
+                  "rowName": "None"
+                },
+                "uncompletedQuestDefinition": "None",
+                "itemDefinition": "None",
+                "eventFlag": ""
+              },
+              "linkedQuests": [],
+              "xCoordinate": 7,
+              "yCoordinate": 3,
+              "missionWeightOverrides": [],
+              "difficultyWeightOverrides": [],
+              "canBeMissionAlert": false,
+              "tileTags": {
+                "gameplayTags": []
+              },
+              "bDisallowQuickplay": false
+            },
+            {
+              "tileType": "NonMission",
+              "zoneTheme": "/Game/World/ZoneThemes/ZT_Arid/BP_ZT_Desert.BP_ZT_Desert_C",
+              "requirements": {
+                "commanderLevel": 0,
+                "personalPowerRating": 0,
+                "maxPersonalPowerRating": 0,
+                "partyPowerRating": 0,
+                "maxPartyPowerRating": 0,
+                "activeQuestDefinitions": [],
+                "questDefinition": "None",
+                "objectiveStatHandle": {
+                  "dataTable": "None",
+                  "rowName": "None"
+                },
+                "uncompletedQuestDefinition": "None",
+                "itemDefinition": "None",
+                "eventFlag": ""
+              },
+              "linkedQuests": [],
+              "xCoordinate": 9,
+              "yCoordinate": 3,
+              "missionWeightOverrides": [],
+              "difficultyWeightOverrides": [],
+              "canBeMissionAlert": false,
+              "tileTags": {
+                "gameplayTags": []
+              },
+              "bDisallowQuickplay": false
+            },
+            {
+              "tileType": "NonMission",
+              "zoneTheme": "/Game/World/ZoneThemes/ZT_Arid/BP_ZT_Desert.BP_ZT_Desert_C",
+              "requirements": {
+                "commanderLevel": 0,
+                "personalPowerRating": 0,
+                "maxPersonalPowerRating": 0,
+                "partyPowerRating": 0,
+                "maxPartyPowerRating": 0,
+                "activeQuestDefinitions": [],
+                "questDefinition": "None",
+                "objectiveStatHandle": {
+                  "dataTable": "None",
+                  "rowName": "None"
+                },
+                "uncompletedQuestDefinition": "None",
+                "itemDefinition": "None",
+                "eventFlag": ""
+              },
+              "linkedQuests": [],
+              "xCoordinate": 9,
+              "yCoordinate": 4,
+              "missionWeightOverrides": [],
+              "difficultyWeightOverrides": [],
+              "canBeMissionAlert": false,
+              "tileTags": {
+                "gameplayTags": []
+              },
+              "bDisallowQuickplay": false
+            },
+            {
+              "tileType": "NonMission",
+              "zoneTheme": "/Game/World/ZoneThemes/ZT_Arid/BP_ZT_Desert.BP_ZT_Desert_C",
+              "requirements": {
+                "commanderLevel": 0,
+                "personalPowerRating": 0,
+                "maxPersonalPowerRating": 0,
+                "partyPowerRating": 0,
+                "maxPartyPowerRating": 0,
+                "activeQuestDefinitions": [],
+                "questDefinition": "None",
+                "objectiveStatHandle": {
+                  "dataTable": "None",
+                  "rowName": "None"
+                },
+                "uncompletedQuestDefinition": "None",
+                "itemDefinition": "None",
+                "eventFlag": ""
+              },
+              "linkedQuests": [],
+              "xCoordinate": 9,
+              "yCoordinate": 5,
+              "missionWeightOverrides": [],
+              "difficultyWeightOverrides": [],
+              "canBeMissionAlert": false,
+              "tileTags": {
+                "gameplayTags": []
+              },
+              "bDisallowQuickplay": false
+            },
+            {
+              "tileType": "NonMission",
+              "zoneTheme": "/Game/World/ZoneThemes/ZT_Arid/BP_ZT_Desert.BP_ZT_Desert_C",
+              "requirements": {
+                "commanderLevel": 0,
+                "personalPowerRating": 0,
+                "maxPersonalPowerRating": 0,
+                "partyPowerRating": 0,
+                "maxPartyPowerRating": 0,
+                "activeQuestDefinitions": [],
+                "questDefinition": "None",
+                "objectiveStatHandle": {
+                  "dataTable": "None",
+                  "rowName": "None"
+                },
+                "uncompletedQuestDefinition": "None",
+                "itemDefinition": "None",
+                "eventFlag": ""
+              },
+              "linkedQuests": [],
+              "xCoordinate": 9,
+              "yCoordinate": 6,
+              "missionWeightOverrides": [],
+              "difficultyWeightOverrides": [],
+              "canBeMissionAlert": false,
+              "tileTags": {
+                "gameplayTags": []
+              },
+              "bDisallowQuickplay": false
+            },
+            {
+              "tileType": "AlwaysActive",
+              "zoneTheme": "/Game/World/ZoneThemes/Mayday/BP_ZT_Mayday_Endgame.BP_ZT_Mayday_Endgame_C",
+              "requirements": {
+                "commanderLevel": 0,
+                "personalPowerRating": 0,
+                "maxPersonalPowerRating": 0,
+                "partyPowerRating": 0,
+                "maxPartyPowerRating": 0,
+                "activeQuestDefinitions": [],
+                "questDefinition": "FortQuestItemDefinition'/Game/Quests/Outpost/OutpostQuest_T1_L3.OutpostQuest_T1_L3'",
+                "objectiveStatHandle": {
+                  "dataTable": "None",
+                  "rowName": "None"
+                },
+                "uncompletedQuestDefinition": "None",
+                "itemDefinition": "None",
+                "eventFlag": ""
+              },
+              "linkedQuests": [],
+              "xCoordinate": 9,
+              "yCoordinate": 7,
+              "missionWeightOverrides": [
+                {
+                  "weight": 1.0,
+                  "missionGenerator": "/Game/World/MissionGens/MissionGen_Mayday.MissionGen_Mayday_C"
+                }
+              ],
+              "difficultyWeightOverrides": [
+                {
+                  "weight": 0.0,
+                  "difficultyInfo": {
+                    "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
+                    "rowName": "Theater_Mayday_Start_Zone5"
+                  }
+                },
+                {
+                  "weight": 0.0,
+                  "difficultyInfo": {
+                    "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
+                    "rowName": "Theater_Mayday_Normal_Zone3"
+                  }
+                },
+                {
+                  "weight": 0.0,
+                  "difficultyInfo": {
+                    "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
+                    "rowName": "Theater_Mayday_Normal_Zone5"
+                  }
+                },
+                {
+                  "weight": 0.0,
+                  "difficultyInfo": {
+                    "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
+                    "rowName": "Theater_Mayday_Hard_Zone3"
+                  }
+                },
+                {
+                  "weight": 0.0,
+                  "difficultyInfo": {
+                    "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
+                    "rowName": "Theater_Mayday_Hard_Zone5"
+                  }
+                },
+                {
+                  "weight": 0.0,
+                  "difficultyInfo": {
+                    "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
+                    "rowName": "Theater_Mayday_Nightmare_Zone3"
+                  }
+                },
+                {
+                  "weight": 0.0,
+                  "difficultyInfo": {
+                    "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
+                    "rowName": "Theater_Mayday_Nightmare_Zone5"
+                  }
+                },
+                {
+                  "weight": 1.0,
+                  "difficultyInfo": {
+                    "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
+                    "rowName": "Theater_Mayday_Endgame_Zone5"
+                  }
+                }
+              ],
+              "canBeMissionAlert": false,
+              "tileTags": {
+                "gameplayTags": []
+              },
+              "bDisallowQuickplay": false
+            },
+            {
+              "tileType": "AlwaysActive",
+              "zoneTheme": "/Game/World/ZoneThemes/Mayday/BP_ZT_Mayday_Twine2.BP_ZT_Mayday_Twine2_C",
+              "requirements": {
+                "commanderLevel": 0,
+                "personalPowerRating": 0,
+                "maxPersonalPowerRating": 0,
+                "partyPowerRating": 0,
+                "maxPartyPowerRating": 0,
+                "activeQuestDefinitions": [],
+                "questDefinition": "FortQuestItemDefinition'/Game/Quests/Outpost/OutpostQuest_T1_L3.OutpostQuest_T1_L3'",
+                "objectiveStatHandle": {
+                  "dataTable": "None",
+                  "rowName": "None"
+                },
+                "uncompletedQuestDefinition": "None",
+                "itemDefinition": "None",
+                "eventFlag": ""
+              },
+              "linkedQuests": [],
+              "xCoordinate": 9,
+              "yCoordinate": 8,
+              "missionWeightOverrides": [
+                {
+                  "weight": 1.0,
+                  "missionGenerator": "/Game/World/MissionGens/MissionGen_Mayday.MissionGen_Mayday_C"
+                }
+              ],
+              "difficultyWeightOverrides": [
+                {
+                  "weight": 0.0,
+                  "difficultyInfo": {
+                    "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
+                    "rowName": "Theater_Mayday_Start_Zone5"
+                  }
+                },
+                {
+                  "weight": 0.0,
+                  "difficultyInfo": {
+                    "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
+                    "rowName": "Theater_Mayday_Normal_Zone3"
+                  }
+                },
+                {
+                  "weight": 0.0,
+                  "difficultyInfo": {
+                    "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
+                    "rowName": "Theater_Mayday_Normal_Zone5"
+                  }
+                },
+                {
+                  "weight": 0.0,
+                  "difficultyInfo": {
+                    "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
+                    "rowName": "Theater_Mayday_Hard_Zone3"
+                  }
+                },
+                {
+                  "weight": 0.0,
+                  "difficultyInfo": {
+                    "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
+                    "rowName": "Theater_Mayday_Hard_Zone5"
+                  }
+                },
+                {
+                  "weight": 0.0,
+                  "difficultyInfo": {
+                    "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
+                    "rowName": "Theater_Mayday_Nightmare_Zone3"
+                  }
+                },
+                {
+                  "weight": 1.0,
+                  "difficultyInfo": {
+                    "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
+                    "rowName": "Theater_Mayday_Nightmare_Zone5"
+                  }
+                },
+                {
+                  "weight": 0.0,
+                  "difficultyInfo": {
+                    "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
+                    "rowName": "Theater_Mayday_Endgame_Zone5"
+                  }
+                }
+              ],
+              "canBeMissionAlert": false,
+              "tileTags": {
+                "gameplayTags": []
+              },
+              "bDisallowQuickplay": false
+            },
+            {
+              "tileType": "AlwaysActive",
+              "zoneTheme": "/Game/World/ZoneThemes/Mayday/BP_ZT_Mayday_Twine1.BP_ZT_Mayday_Twine1_C",
+              "requirements": {
+                "commanderLevel": 0,
+                "personalPowerRating": 0,
+                "maxPersonalPowerRating": 0,
+                "partyPowerRating": 0,
+                "maxPartyPowerRating": 0,
+                "activeQuestDefinitions": [],
+                "questDefinition": "FortQuestItemDefinition'/Game/Quests/Outpost/OutpostQuest_T1_L3.OutpostQuest_T1_L3'",
+                "objectiveStatHandle": {
+                  "dataTable": "None",
+                  "rowName": "None"
+                },
+                "uncompletedQuestDefinition": "None",
+                "itemDefinition": "None",
+                "eventFlag": ""
+              },
+              "linkedQuests": [],
+              "xCoordinate": 8,
+              "yCoordinate": 9,
+              "missionWeightOverrides": [
+                {
+                  "weight": 1.0,
+                  "missionGenerator": "/Game/World/MissionGens/MissionGen_Mayday.MissionGen_Mayday_C"
+                }
+              ],
+              "difficultyWeightOverrides": [
+                {
+                  "weight": 0.0,
+                  "difficultyInfo": {
+                    "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
+                    "rowName": "Theater_Mayday_Start_Zone5"
+                  }
+                },
+                {
+                  "weight": 0.0,
+                  "difficultyInfo": {
+                    "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
+                    "rowName": "Theater_Mayday_Normal_Zone3"
+                  }
+                },
+                {
+                  "weight": 0.0,
+                  "difficultyInfo": {
+                    "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
+                    "rowName": "Theater_Mayday_Normal_Zone5"
+                  }
+                },
+                {
+                  "weight": 0.0,
+                  "difficultyInfo": {
+                    "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
+                    "rowName": "Theater_Mayday_Hard_Zone3"
+                  }
+                },
+                {
+                  "weight": 0.0,
+                  "difficultyInfo": {
+                    "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
+                    "rowName": "Theater_Mayday_Hard_Zone5"
+                  }
+                },
+                {
+                  "weight": 1.0,
+                  "difficultyInfo": {
+                    "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
+                    "rowName": "Theater_Mayday_Nightmare_Zone3"
+                  }
+                },
+                {
+                  "weight": 0.0,
+                  "difficultyInfo": {
+                    "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
+                    "rowName": "Theater_Mayday_Nightmare_Zone5"
+                  }
+                },
+                {
+                  "weight": 0.0,
+                  "difficultyInfo": {
+                    "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
+                    "rowName": "Theater_Mayday_Endgame_Zone5"
+                  }
+                }
+              ],
+              "canBeMissionAlert": false,
+              "tileTags": {
+                "gameplayTags": []
+              },
+              "bDisallowQuickplay": false
+            },
+            {
+              "tileType": "AlwaysActive",
+              "zoneTheme": "/Game/World/ZoneThemes/Mayday/BP_ZT_Mayday_Canny1.BP_ZT_Mayday_Canny1_C",
+              "requirements": {
+                "commanderLevel": 0,
+                "personalPowerRating": 0,
+                "maxPersonalPowerRating": 0,
+                "partyPowerRating": 0,
+                "maxPartyPowerRating": 0,
+                "activeQuestDefinitions": [],
+                "questDefinition": "FortQuestItemDefinition'/Game/Quests/Outpost/OutpostQuest_T1_L3.OutpostQuest_T1_L3'",
+                "objectiveStatHandle": {
+                  "dataTable": "None",
+                  "rowName": "None"
+                },
+                "uncompletedQuestDefinition": "None",
+                "itemDefinition": "None",
+                "eventFlag": ""
+              },
+              "linkedQuests": [],
+              "xCoordinate": 6,
+              "yCoordinate": 9,
+              "missionWeightOverrides": [
+                {
+                  "weight": 1.0,
+                  "missionGenerator": "/Game/World/MissionGens/MissionGen_Mayday.MissionGen_Mayday_C"
+                }
+              ],
+              "difficultyWeightOverrides": [
+                {
+                  "weight": 0.0,
+                  "difficultyInfo": {
+                    "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
+                    "rowName": "Theater_Mayday_Start_Zone5"
+                  }
+                },
+                {
+                  "weight": 0.0,
+                  "difficultyInfo": {
+                    "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
+                    "rowName": "Theater_Mayday_Normal_Zone3"
+                  }
+                },
+                {
+                  "weight": 0.0,
+                  "difficultyInfo": {
+                    "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
+                    "rowName": "Theater_Mayday_Normal_Zone5"
+                  }
+                },
+                {
+                  "weight": 1.0,
+                  "difficultyInfo": {
+                    "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
+                    "rowName": "Theater_Mayday_Hard_Zone3"
+                  }
+                },
+                {
+                  "weight": 0.0,
+                  "difficultyInfo": {
+                    "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
+                    "rowName": "Theater_Mayday_Hard_Zone5"
+                  }
+                },
+                {
+                  "weight": 0.0,
+                  "difficultyInfo": {
+                    "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
+                    "rowName": "Theater_Mayday_Nightmare_Zone3"
+                  }
+                },
+                {
+                  "weight": 0.0,
+                  "difficultyInfo": {
+                    "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
+                    "rowName": "Theater_Mayday_Nightmare_Zone5"
+                  }
+                },
+                {
+                  "weight": 0.0,
+                  "difficultyInfo": {
+                    "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
+                    "rowName": "Theater_Mayday_Endgame_Zone5"
+                  }
+                }
+              ],
+              "canBeMissionAlert": false,
+              "tileTags": {
+                "gameplayTags": []
+              },
+              "bDisallowQuickplay": false
+            },
+            {
+              "tileType": "AlwaysActive",
+              "zoneTheme": "/Game/World/ZoneThemes/Mayday/BP_ZT_Mayday_Plankerton1.BP_ZT_Mayday_Plankerton1_C",
+              "requirements": {
+                "commanderLevel": 0,
+                "personalPowerRating": 0,
+                "maxPersonalPowerRating": 0,
+                "partyPowerRating": 0,
+                "maxPartyPowerRating": 0,
+                "activeQuestDefinitions": [],
+                "questDefinition": "FortQuestItemDefinition'/Game/Quests/Outpost/OutpostQuest_T1_L3.OutpostQuest_T1_L3'",
+                "objectiveStatHandle": {
+                  "dataTable": "None",
+                  "rowName": "None"
+                },
+                "uncompletedQuestDefinition": "None",
+                "itemDefinition": "None",
+                "eventFlag": ""
+              },
+              "linkedQuests": [],
+              "xCoordinate": 4,
+              "yCoordinate": 9,
+              "missionWeightOverrides": [
+                {
+                  "weight": 1.0,
+                  "missionGenerator": "/Game/World/MissionGens/MissionGen_Mayday.MissionGen_Mayday_C"
+                }
+              ],
+              "difficultyWeightOverrides": [
+                {
+                  "weight": 0.0,
+                  "difficultyInfo": {
+                    "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
+                    "rowName": "Theater_Mayday_Start_Zone5"
+                  }
+                },
+                {
+                  "weight": 1.0,
+                  "difficultyInfo": {
+                    "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
+                    "rowName": "Theater_Mayday_Normal_Zone3"
+                  }
+                },
+                {
+                  "weight": 0.0,
+                  "difficultyInfo": {
+                    "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
+                    "rowName": "Theater_Mayday_Normal_Zone5"
+                  }
+                },
+                {
+                  "weight": 0.0,
+                  "difficultyInfo": {
+                    "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
+                    "rowName": "Theater_Mayday_Hard_Zone3"
+                  }
+                },
+                {
+                  "weight": 0.0,
+                  "difficultyInfo": {
+                    "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
+                    "rowName": "Theater_Mayday_Hard_Zone5"
+                  }
+                },
+                {
+                  "weight": 0.0,
+                  "difficultyInfo": {
+                    "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
+                    "rowName": "Theater_Mayday_Nightmare_Zone3"
+                  }
+                },
+                {
+                  "weight": 0.0,
+                  "difficultyInfo": {
+                    "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
+                    "rowName": "Theater_Mayday_Nightmare_Zone5"
+                  }
+                },
+                {
+                  "weight": 0.0,
+                  "difficultyInfo": {
+                    "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
+                    "rowName": "Theater_Mayday_Endgame_Zone5"
+                  }
+                }
+              ],
+              "canBeMissionAlert": false,
+              "tileTags": {
+                "gameplayTags": []
+              },
+              "bDisallowQuickplay": false
+            },
+            {
+              "tileType": "NonMission",
+              "zoneTheme": "/Game/World/ZoneThemes/ZT_Arid/BP_ZT_Desert.BP_ZT_Desert_C",
+              "requirements": {
+                "commanderLevel": 0,
+                "personalPowerRating": 0,
+                "maxPersonalPowerRating": 0,
+                "partyPowerRating": 0,
+                "maxPartyPowerRating": 0,
+                "activeQuestDefinitions": [],
+                "questDefinition": "None",
+                "objectiveStatHandle": {
+                  "dataTable": "None",
+                  "rowName": "None"
+                },
+                "uncompletedQuestDefinition": "None",
+                "itemDefinition": "None",
+                "eventFlag": ""
+              },
+              "linkedQuests": [],
+              "xCoordinate": 4,
+              "yCoordinate": 3,
+              "missionWeightOverrides": [],
+              "difficultyWeightOverrides": [],
+              "canBeMissionAlert": false,
+              "tileTags": {
+                "gameplayTags": []
+              },
+              "bDisallowQuickplay": false
+            },
+            {
+              "tileType": "NonMission",
+              "zoneTheme": "/Game/World/ZoneThemes/ZT_Arid/BP_ZT_Desert.BP_ZT_Desert_C",
+              "requirements": {
+                "commanderLevel": 0,
+                "personalPowerRating": 0,
+                "maxPersonalPowerRating": 0,
+                "partyPowerRating": 0,
+                "maxPartyPowerRating": 0,
+                "activeQuestDefinitions": [],
+                "questDefinition": "None",
+                "objectiveStatHandle": {
+                  "dataTable": "None",
+                  "rowName": "None"
+                },
+                "uncompletedQuestDefinition": "None",
+                "itemDefinition": "None",
+                "eventFlag": ""
+              },
+              "linkedQuests": [],
+              "xCoordinate": 6,
+              "yCoordinate": 3,
+              "missionWeightOverrides": [],
+              "difficultyWeightOverrides": [],
+              "canBeMissionAlert": false,
+              "tileTags": {
+                "gameplayTags": []
+              },
+              "bDisallowQuickplay": false
+            },
+            {
+              "tileType": "NonMission",
+              "zoneTheme": "/Game/World/ZoneThemes/ZT_Arid/BP_ZT_Desert.BP_ZT_Desert_C",
+              "requirements": {
+                "commanderLevel": 0,
+                "personalPowerRating": 0,
+                "maxPersonalPowerRating": 0,
+                "partyPowerRating": 0,
+                "maxPartyPowerRating": 0,
+                "activeQuestDefinitions": [],
+                "questDefinition": "None",
+                "objectiveStatHandle": {
+                  "dataTable": "None",
+                  "rowName": "None"
+                },
+                "uncompletedQuestDefinition": "None",
+                "itemDefinition": "None",
+                "eventFlag": ""
+              },
+              "linkedQuests": [],
+              "xCoordinate": 8,
+              "yCoordinate": 3,
+              "missionWeightOverrides": [],
+              "difficultyWeightOverrides": [],
+              "canBeMissionAlert": false,
+              "tileTags": {
+                "gameplayTags": []
+              },
+              "bDisallowQuickplay": false
+            },
+            {
+              "tileType": "NonMission",
+              "zoneTheme": "/Game/World/ZoneThemes/ZT_Arid/BP_ZT_Desert.BP_ZT_Desert_C",
+              "requirements": {
+                "commanderLevel": 0,
+                "personalPowerRating": 0,
+                "maxPersonalPowerRating": 0,
+                "partyPowerRating": 0,
+                "maxPartyPowerRating": 0,
+                "activeQuestDefinitions": [],
+                "questDefinition": "None",
+                "objectiveStatHandle": {
+                  "dataTable": "None",
+                  "rowName": "None"
+                },
+                "uncompletedQuestDefinition": "None",
+                "itemDefinition": "None",
+                "eventFlag": ""
+              },
+              "linkedQuests": [],
+              "xCoordinate": 3,
+              "yCoordinate": 9,
+              "missionWeightOverrides": [],
+              "difficultyWeightOverrides": [],
+              "canBeMissionAlert": false,
+              "tileTags": {
+                "gameplayTags": []
+              },
+              "bDisallowQuickplay": false
+            },
+            {
+              "tileType": "NonMission",
+              "zoneTheme": "/Game/World/ZoneThemes/ZT_Arid/BP_ZT_Desert.BP_ZT_Desert_C",
+              "requirements": {
+                "commanderLevel": 0,
+                "personalPowerRating": 0,
+                "maxPersonalPowerRating": 0,
+                "partyPowerRating": 0,
+                "maxPartyPowerRating": 0,
+                "activeQuestDefinitions": [],
+                "questDefinition": "None",
+                "objectiveStatHandle": {
+                  "dataTable": "None",
+                  "rowName": "None"
+                },
+                "uncompletedQuestDefinition": "None",
+                "itemDefinition": "None",
+                "eventFlag": ""
+              },
+              "linkedQuests": [],
+              "xCoordinate": 3,
+              "yCoordinate": 10,
+              "missionWeightOverrides": [],
+              "difficultyWeightOverrides": [],
+              "canBeMissionAlert": false,
+              "tileTags": {
+                "gameplayTags": []
+              },
+              "bDisallowQuickplay": false
+            },
+            {
+              "tileType": "NonMission",
+              "zoneTheme": "/Game/World/ZoneThemes/ZT_Arid/BP_ZT_Desert.BP_ZT_Desert_C",
+              "requirements": {
+                "commanderLevel": 0,
+                "personalPowerRating": 0,
+                "maxPersonalPowerRating": 0,
+                "partyPowerRating": 0,
+                "maxPartyPowerRating": 0,
+                "activeQuestDefinitions": [],
+                "questDefinition": "None",
+                "objectiveStatHandle": {
+                  "dataTable": "None",
+                  "rowName": "None"
+                },
+                "uncompletedQuestDefinition": "None",
+                "itemDefinition": "None",
+                "eventFlag": ""
+              },
+              "linkedQuests": [],
+              "xCoordinate": 3,
+              "yCoordinate": 11,
+              "missionWeightOverrides": [],
+              "difficultyWeightOverrides": [],
+              "canBeMissionAlert": false,
+              "tileTags": {
+                "gameplayTags": []
+              },
+              "bDisallowQuickplay": false
+            },
+            {
+              "tileType": "NonMission",
+              "zoneTheme": "/Game/World/ZoneThemes/ZT_Arid/BP_ZT_Desert.BP_ZT_Desert_C",
+              "requirements": {
+                "commanderLevel": 0,
+                "personalPowerRating": 0,
+                "maxPersonalPowerRating": 0,
+                "partyPowerRating": 0,
+                "maxPartyPowerRating": 0,
+                "activeQuestDefinitions": [],
+                "questDefinition": "None",
+                "objectiveStatHandle": {
+                  "dataTable": "None",
+                  "rowName": "None"
+                },
+                "uncompletedQuestDefinition": "None",
+                "itemDefinition": "None",
+                "eventFlag": ""
+              },
+              "linkedQuests": [],
+              "xCoordinate": 4,
+              "yCoordinate": 10,
+              "missionWeightOverrides": [],
+              "difficultyWeightOverrides": [],
+              "canBeMissionAlert": false,
+              "tileTags": {
+                "gameplayTags": []
+              },
+              "bDisallowQuickplay": false
+            },
+            {
+              "tileType": "NonMission",
+              "zoneTheme": "/Game/World/ZoneThemes/ZT_Arid/BP_ZT_Desert.BP_ZT_Desert_C",
+              "requirements": {
+                "commanderLevel": 0,
+                "personalPowerRating": 0,
+                "maxPersonalPowerRating": 0,
+                "partyPowerRating": 0,
+                "maxPartyPowerRating": 0,
+                "activeQuestDefinitions": [],
+                "questDefinition": "None",
+                "objectiveStatHandle": {
+                  "dataTable": "None",
+                  "rowName": "None"
+                },
+                "uncompletedQuestDefinition": "None",
+                "itemDefinition": "None",
+                "eventFlag": ""
+              },
+              "linkedQuests": [],
+              "xCoordinate": 4,
+              "yCoordinate": 11,
+              "missionWeightOverrides": [],
+              "difficultyWeightOverrides": [],
+              "canBeMissionAlert": false,
+              "tileTags": {
+                "gameplayTags": []
+              },
+              "bDisallowQuickplay": false
+            },
+            {
+              "tileType": "NonMission",
+              "zoneTheme": "/Game/World/ZoneThemes/ZT_Arid/BP_ZT_Desert.BP_ZT_Desert_C",
+              "requirements": {
+                "commanderLevel": 0,
+                "personalPowerRating": 0,
+                "maxPersonalPowerRating": 0,
+                "partyPowerRating": 0,
+                "maxPartyPowerRating": 0,
+                "activeQuestDefinitions": [],
+                "questDefinition": "None",
+                "objectiveStatHandle": {
+                  "dataTable": "None",
+                  "rowName": "None"
+                },
+                "uncompletedQuestDefinition": "None",
+                "itemDefinition": "None",
+                "eventFlag": ""
+              },
+              "linkedQuests": [],
+              "xCoordinate": 5,
+              "yCoordinate": 11,
+              "missionWeightOverrides": [],
+              "difficultyWeightOverrides": [],
+              "canBeMissionAlert": false,
+              "tileTags": {
+                "gameplayTags": []
+              },
+              "bDisallowQuickplay": false
+            },
+            {
+              "tileType": "NonMission",
+              "zoneTheme": "/Game/World/ZoneThemes/ZT_Arid/BP_ZT_Desert.BP_ZT_Desert_C",
+              "requirements": {
+                "commanderLevel": 0,
+                "personalPowerRating": 0,
+                "maxPersonalPowerRating": 0,
+                "partyPowerRating": 0,
+                "maxPartyPowerRating": 0,
+                "activeQuestDefinitions": [],
+                "questDefinition": "None",
+                "objectiveStatHandle": {
+                  "dataTable": "None",
+                  "rowName": "None"
+                },
+                "uncompletedQuestDefinition": "None",
+                "itemDefinition": "None",
+                "eventFlag": ""
+              },
+              "linkedQuests": [],
+              "xCoordinate": 5,
+              "yCoordinate": 10,
+              "missionWeightOverrides": [],
+              "difficultyWeightOverrides": [],
+              "canBeMissionAlert": false,
+              "tileTags": {
+                "gameplayTags": []
+              },
+              "bDisallowQuickplay": false
+            },
+            {
+              "tileType": "NonMission",
+              "zoneTheme": "/Game/World/ZoneThemes/ZT_Arid/BP_ZT_Desert.BP_ZT_Desert_C",
+              "requirements": {
+                "commanderLevel": 0,
+                "personalPowerRating": 0,
+                "maxPersonalPowerRating": 0,
+                "partyPowerRating": 0,
+                "maxPartyPowerRating": 0,
+                "activeQuestDefinitions": [],
+                "questDefinition": "None",
+                "objectiveStatHandle": {
+                  "dataTable": "None",
+                  "rowName": "None"
+                },
+                "uncompletedQuestDefinition": "None",
+                "itemDefinition": "None",
+                "eventFlag": ""
+              },
+              "linkedQuests": [],
+              "xCoordinate": 5,
+              "yCoordinate": 9,
+              "missionWeightOverrides": [],
+              "difficultyWeightOverrides": [],
+              "canBeMissionAlert": false,
+              "tileTags": {
+                "gameplayTags": []
+              },
+              "bDisallowQuickplay": false
+            },
+            {
+              "tileType": "NonMission",
+              "zoneTheme": "/Game/World/ZoneThemes/ZT_Arid/BP_ZT_Desert.BP_ZT_Desert_C",
+              "requirements": {
+                "commanderLevel": 0,
+                "personalPowerRating": 0,
+                "maxPersonalPowerRating": 0,
+                "partyPowerRating": 0,
+                "maxPartyPowerRating": 0,
+                "activeQuestDefinitions": [],
+                "questDefinition": "None",
+                "objectiveStatHandle": {
+                  "dataTable": "None",
+                  "rowName": "None"
+                },
+                "uncompletedQuestDefinition": "None",
+                "itemDefinition": "None",
+                "eventFlag": ""
+              },
+              "linkedQuests": [],
+              "xCoordinate": 6,
+              "yCoordinate": 11,
+              "missionWeightOverrides": [],
+              "difficultyWeightOverrides": [],
+              "canBeMissionAlert": false,
+              "tileTags": {
+                "gameplayTags": []
+              },
+              "bDisallowQuickplay": false
+            },
+            {
+              "tileType": "NonMission",
+              "zoneTheme": "/Game/World/ZoneThemes/ZT_Arid/BP_ZT_Desert.BP_ZT_Desert_C",
+              "requirements": {
+                "commanderLevel": 0,
+                "personalPowerRating": 0,
+                "maxPersonalPowerRating": 0,
+                "partyPowerRating": 0,
+                "maxPartyPowerRating": 0,
+                "activeQuestDefinitions": [],
+                "questDefinition": "None",
+                "objectiveStatHandle": {
+                  "dataTable": "None",
+                  "rowName": "None"
+                },
+                "uncompletedQuestDefinition": "None",
+                "itemDefinition": "None",
+                "eventFlag": ""
+              },
+              "linkedQuests": [],
+              "xCoordinate": 6,
+              "yCoordinate": 12,
+              "missionWeightOverrides": [],
+              "difficultyWeightOverrides": [],
+              "canBeMissionAlert": false,
+              "tileTags": {
+                "gameplayTags": []
+              },
+              "bDisallowQuickplay": false
+            },
+            {
+              "tileType": "NonMission",
+              "zoneTheme": "/Game/World/ZoneThemes/ZT_Arid/BP_ZT_Desert.BP_ZT_Desert_C",
+              "requirements": {
+                "commanderLevel": 0,
+                "personalPowerRating": 0,
+                "maxPersonalPowerRating": 0,
+                "partyPowerRating": 0,
+                "maxPartyPowerRating": 0,
+                "activeQuestDefinitions": [],
+                "questDefinition": "None",
+                "objectiveStatHandle": {
+                  "dataTable": "None",
+                  "rowName": "None"
+                },
+                "uncompletedQuestDefinition": "None",
+                "itemDefinition": "None",
+                "eventFlag": ""
+              },
+              "linkedQuests": [],
+              "xCoordinate": 6,
+              "yCoordinate": 10,
+              "missionWeightOverrides": [],
+              "difficultyWeightOverrides": [],
+              "canBeMissionAlert": false,
+              "tileTags": {
+                "gameplayTags": []
+              },
+              "bDisallowQuickplay": false
+            },
+            {
+              "tileType": "NonMission",
+              "zoneTheme": "/Game/World/ZoneThemes/ZT_Arid/BP_ZT_Desert.BP_ZT_Desert_C",
+              "requirements": {
+                "commanderLevel": 0,
+                "personalPowerRating": 0,
+                "maxPersonalPowerRating": 0,
+                "partyPowerRating": 0,
+                "maxPartyPowerRating": 0,
+                "activeQuestDefinitions": [],
+                "questDefinition": "None",
+                "objectiveStatHandle": {
+                  "dataTable": "None",
+                  "rowName": "None"
+                },
+                "uncompletedQuestDefinition": "None",
+                "itemDefinition": "None",
+                "eventFlag": ""
+              },
+              "linkedQuests": [],
+              "xCoordinate": 7,
+              "yCoordinate": 9,
+              "missionWeightOverrides": [],
+              "difficultyWeightOverrides": [],
+              "canBeMissionAlert": false,
+              "tileTags": {
+                "gameplayTags": []
+              },
+              "bDisallowQuickplay": false
+            },
+            {
+              "tileType": "NonMission",
+              "zoneTheme": "/Game/World/ZoneThemes/ZT_Arid/BP_ZT_Desert.BP_ZT_Desert_C",
+              "requirements": {
+                "commanderLevel": 0,
+                "personalPowerRating": 0,
+                "maxPersonalPowerRating": 0,
+                "partyPowerRating": 0,
+                "maxPartyPowerRating": 0,
+                "activeQuestDefinitions": [],
+                "questDefinition": "None",
+                "objectiveStatHandle": {
+                  "dataTable": "None",
+                  "rowName": "None"
+                },
+                "uncompletedQuestDefinition": "None",
+                "itemDefinition": "None",
+                "eventFlag": ""
+              },
+              "linkedQuests": [],
+              "xCoordinate": 7,
+              "yCoordinate": 10,
+              "missionWeightOverrides": [],
+              "difficultyWeightOverrides": [],
+              "canBeMissionAlert": false,
+              "tileTags": {
+                "gameplayTags": []
+              },
+              "bDisallowQuickplay": false
+            },
+            {
+              "tileType": "NonMission",
+              "zoneTheme": "/Game/World/ZoneThemes/ZT_Arid/BP_ZT_Desert.BP_ZT_Desert_C",
+              "requirements": {
+                "commanderLevel": 0,
+                "personalPowerRating": 0,
+                "maxPersonalPowerRating": 0,
+                "partyPowerRating": 0,
+                "maxPartyPowerRating": 0,
+                "activeQuestDefinitions": [],
+                "questDefinition": "None",
+                "objectiveStatHandle": {
+                  "dataTable": "None",
+                  "rowName": "None"
+                },
+                "uncompletedQuestDefinition": "None",
+                "itemDefinition": "None",
+                "eventFlag": ""
+              },
+              "linkedQuests": [],
+              "xCoordinate": 7,
+              "yCoordinate": 11,
+              "missionWeightOverrides": [],
+              "difficultyWeightOverrides": [],
+              "canBeMissionAlert": false,
+              "tileTags": {
+                "gameplayTags": []
+              },
+              "bDisallowQuickplay": false
+            },
+            {
+              "tileType": "NonMission",
+              "zoneTheme": "/Game/World/ZoneThemes/ZT_Arid/BP_ZT_Desert.BP_ZT_Desert_C",
+              "requirements": {
+                "commanderLevel": 0,
+                "personalPowerRating": 0,
+                "maxPersonalPowerRating": 0,
+                "partyPowerRating": 0,
+                "maxPartyPowerRating": 0,
+                "activeQuestDefinitions": [],
+                "questDefinition": "None",
+                "objectiveStatHandle": {
+                  "dataTable": "None",
+                  "rowName": "None"
+                },
+                "uncompletedQuestDefinition": "None",
+                "itemDefinition": "None",
+                "eventFlag": ""
+              },
+              "linkedQuests": [],
+              "xCoordinate": 8,
+              "yCoordinate": 11,
+              "missionWeightOverrides": [],
+              "difficultyWeightOverrides": [],
+              "canBeMissionAlert": false,
+              "tileTags": {
+                "gameplayTags": []
+              },
+              "bDisallowQuickplay": false
+            },
+            {
+              "tileType": "NonMission",
+              "zoneTheme": "/Game/World/ZoneThemes/ZT_Arid/BP_ZT_Desert.BP_ZT_Desert_C",
+              "requirements": {
+                "commanderLevel": 0,
+                "personalPowerRating": 0,
+                "maxPersonalPowerRating": 0,
+                "partyPowerRating": 0,
+                "maxPartyPowerRating": 0,
+                "activeQuestDefinitions": [],
+                "questDefinition": "None",
+                "objectiveStatHandle": {
+                  "dataTable": "None",
+                  "rowName": "None"
+                },
+                "uncompletedQuestDefinition": "None",
+                "itemDefinition": "None",
+                "eventFlag": ""
+              },
+              "linkedQuests": [],
+              "xCoordinate": 8,
+              "yCoordinate": 10,
+              "missionWeightOverrides": [],
+              "difficultyWeightOverrides": [],
+              "canBeMissionAlert": false,
+              "tileTags": {
+                "gameplayTags": []
+              },
+              "bDisallowQuickplay": false
+            },
+            {
+              "tileType": "NonMission",
+              "zoneTheme": "/Game/World/ZoneThemes/ZT_Arid/BP_ZT_Desert.BP_ZT_Desert_C",
+              "requirements": {
+                "commanderLevel": 0,
+                "personalPowerRating": 0,
+                "maxPersonalPowerRating": 0,
+                "partyPowerRating": 0,
+                "maxPartyPowerRating": 0,
+                "activeQuestDefinitions": [],
+                "questDefinition": "None",
+                "objectiveStatHandle": {
+                  "dataTable": "None",
+                  "rowName": "None"
+                },
+                "uncompletedQuestDefinition": "None",
+                "itemDefinition": "None",
+                "eventFlag": ""
+              },
+              "linkedQuests": [],
+              "xCoordinate": 9,
+              "yCoordinate": 9,
+              "missionWeightOverrides": [],
+              "difficultyWeightOverrides": [],
+              "canBeMissionAlert": false,
+              "tileTags": {
+                "gameplayTags": []
+              },
+              "bDisallowQuickplay": false
+            },
+            {
+              "tileType": "NonMission",
+              "zoneTheme": "/Game/World/ZoneThemes/ZT_Arid/BP_ZT_Desert.BP_ZT_Desert_C",
+              "requirements": {
+                "commanderLevel": 0,
+                "personalPowerRating": 0,
+                "maxPersonalPowerRating": 0,
+                "partyPowerRating": 0,
+                "maxPartyPowerRating": 0,
+                "activeQuestDefinitions": [],
+                "questDefinition": "None",
+                "objectiveStatHandle": {
+                  "dataTable": "None",
+                  "rowName": "None"
+                },
+                "uncompletedQuestDefinition": "None",
+                "itemDefinition": "None",
+                "eventFlag": ""
+              },
+              "linkedQuests": [],
+              "xCoordinate": 9,
+              "yCoordinate": 10,
+              "missionWeightOverrides": [],
+              "difficultyWeightOverrides": [],
+              "canBeMissionAlert": false,
+              "tileTags": {
+                "gameplayTags": []
+              },
+              "bDisallowQuickplay": false
+            },
+            {
+              "tileType": "NonMission",
+              "zoneTheme": "/Game/World/ZoneThemes/ZT_Arid/BP_ZT_Desert.BP_ZT_Desert_C",
+              "requirements": {
+                "commanderLevel": 0,
+                "personalPowerRating": 0,
+                "maxPersonalPowerRating": 0,
+                "partyPowerRating": 0,
+                "maxPartyPowerRating": 0,
+                "activeQuestDefinitions": [],
+                "questDefinition": "None",
+                "objectiveStatHandle": {
+                  "dataTable": "None",
+                  "rowName": "None"
+                },
+                "uncompletedQuestDefinition": "None",
+                "itemDefinition": "None",
+                "eventFlag": ""
+              },
+              "linkedQuests": [],
+              "xCoordinate": 9,
+              "yCoordinate": 11,
+              "missionWeightOverrides": [],
+              "difficultyWeightOverrides": [],
+              "canBeMissionAlert": false,
+              "tileTags": {
+                "gameplayTags": []
+              },
+              "bDisallowQuickplay": false
+            },
+            {
+              "tileType": "NonMission",
+              "zoneTheme": "/Game/World/ZoneThemes/ZT_Arid/BP_ZT_Desert.BP_ZT_Desert_C",
+              "requirements": {
+                "commanderLevel": 0,
+                "personalPowerRating": 0,
+                "maxPersonalPowerRating": 0,
+                "partyPowerRating": 0,
+                "maxPartyPowerRating": 0,
+                "activeQuestDefinitions": [],
+                "questDefinition": "None",
+                "objectiveStatHandle": {
+                  "dataTable": "None",
+                  "rowName": "None"
+                },
+                "uncompletedQuestDefinition": "None",
+                "itemDefinition": "None",
+                "eventFlag": ""
+              },
+              "linkedQuests": [],
+              "xCoordinate": 10,
+              "yCoordinate": 11,
+              "missionWeightOverrides": [],
+              "difficultyWeightOverrides": [],
+              "canBeMissionAlert": false,
+              "tileTags": {
+                "gameplayTags": []
+              },
+              "bDisallowQuickplay": false
+            },
+            {
+              "tileType": "NonMission",
+              "zoneTheme": "/Game/World/ZoneThemes/ZT_Arid/BP_ZT_Desert.BP_ZT_Desert_C",
+              "requirements": {
+                "commanderLevel": 0,
+                "personalPowerRating": 0,
+                "maxPersonalPowerRating": 0,
+                "partyPowerRating": 0,
+                "maxPartyPowerRating": 0,
+                "activeQuestDefinitions": [],
+                "questDefinition": "None",
+                "objectiveStatHandle": {
+                  "dataTable": "None",
+                  "rowName": "None"
+                },
+                "uncompletedQuestDefinition": "None",
+                "itemDefinition": "None",
+                "eventFlag": ""
+              },
+              "linkedQuests": [],
+              "xCoordinate": 10,
+              "yCoordinate": 10,
+              "missionWeightOverrides": [],
+              "difficultyWeightOverrides": [],
+              "canBeMissionAlert": false,
+              "tileTags": {
+                "gameplayTags": []
+              },
+              "bDisallowQuickplay": false
+            },
+            {
+              "tileType": "NonMission",
+              "zoneTheme": "/Game/World/ZoneThemes/ZT_Arid/BP_ZT_Desert.BP_ZT_Desert_C",
+              "requirements": {
+                "commanderLevel": 0,
+                "personalPowerRating": 0,
+                "maxPersonalPowerRating": 0,
+                "partyPowerRating": 0,
+                "maxPartyPowerRating": 0,
+                "activeQuestDefinitions": [],
+                "questDefinition": "None",
+                "objectiveStatHandle": {
+                  "dataTable": "None",
+                  "rowName": "None"
+                },
+                "uncompletedQuestDefinition": "None",
+                "itemDefinition": "None",
+                "eventFlag": ""
+              },
+              "linkedQuests": [],
+              "xCoordinate": 10,
+              "yCoordinate": 9,
+              "missionWeightOverrides": [],
+              "difficultyWeightOverrides": [],
+              "canBeMissionAlert": false,
+              "tileTags": {
+                "gameplayTags": []
+              },
+              "bDisallowQuickplay": false
+            },
+            {
+              "tileType": "NonMission",
+              "zoneTheme": "/Game/World/ZoneThemes/ZT_Arid/BP_ZT_Desert.BP_ZT_Desert_C",
+              "requirements": {
+                "commanderLevel": 0,
+                "personalPowerRating": 0,
+                "maxPersonalPowerRating": 0,
+                "partyPowerRating": 0,
+                "maxPartyPowerRating": 0,
+                "activeQuestDefinitions": [],
+                "questDefinition": "None",
+                "objectiveStatHandle": {
+                  "dataTable": "None",
+                  "rowName": "None"
+                },
+                "uncompletedQuestDefinition": "None",
+                "itemDefinition": "None",
+                "eventFlag": ""
+              },
+              "linkedQuests": [],
+              "xCoordinate": 10,
+              "yCoordinate": 8,
+              "missionWeightOverrides": [],
+              "difficultyWeightOverrides": [],
+              "canBeMissionAlert": false,
+              "tileTags": {
+                "gameplayTags": []
+              },
+              "bDisallowQuickplay": false
+            },
+            {
+              "tileType": "NonMission",
+              "zoneTheme": "/Game/World/ZoneThemes/ZT_Arid/BP_ZT_Desert.BP_ZT_Desert_C",
+              "requirements": {
+                "commanderLevel": 0,
+                "personalPowerRating": 0,
+                "maxPersonalPowerRating": 0,
+                "partyPowerRating": 0,
+                "maxPartyPowerRating": 0,
+                "activeQuestDefinitions": [],
+                "questDefinition": "None",
+                "objectiveStatHandle": {
+                  "dataTable": "None",
+                  "rowName": "None"
+                },
+                "uncompletedQuestDefinition": "None",
+                "itemDefinition": "None",
+                "eventFlag": ""
+              },
+              "linkedQuests": [],
+              "xCoordinate": 10,
+              "yCoordinate": 7,
+              "missionWeightOverrides": [],
+              "difficultyWeightOverrides": [],
+              "canBeMissionAlert": false,
+              "tileTags": {
+                "gameplayTags": []
+              },
+              "bDisallowQuickplay": false
+            },
+            {
+              "tileType": "NonMission",
+              "zoneTheme": "/Game/World/ZoneThemes/ZT_Arid/BP_ZT_Desert.BP_ZT_Desert_C",
+              "requirements": {
+                "commanderLevel": 0,
+                "personalPowerRating": 0,
+                "maxPersonalPowerRating": 0,
+                "partyPowerRating": 0,
+                "maxPartyPowerRating": 0,
+                "activeQuestDefinitions": [],
+                "questDefinition": "None",
+                "objectiveStatHandle": {
+                  "dataTable": "None",
+                  "rowName": "None"
+                },
+                "uncompletedQuestDefinition": "None",
+                "itemDefinition": "None",
+                "eventFlag": ""
+              },
+              "linkedQuests": [],
+              "xCoordinate": 10,
+              "yCoordinate": 6,
+              "missionWeightOverrides": [],
+              "difficultyWeightOverrides": [],
+              "canBeMissionAlert": false,
+              "tileTags": {
+                "gameplayTags": []
+              },
+              "bDisallowQuickplay": false
+            },
+            {
+              "tileType": "NonMission",
+              "zoneTheme": "/Game/World/ZoneThemes/ZT_Arid/BP_ZT_Desert.BP_ZT_Desert_C",
+              "requirements": {
+                "commanderLevel": 0,
+                "personalPowerRating": 0,
+                "maxPersonalPowerRating": 0,
+                "partyPowerRating": 0,
+                "maxPartyPowerRating": 0,
+                "activeQuestDefinitions": [],
+                "questDefinition": "None",
+                "objectiveStatHandle": {
+                  "dataTable": "None",
+                  "rowName": "None"
+                },
+                "uncompletedQuestDefinition": "None",
+                "itemDefinition": "None",
+                "eventFlag": ""
+              },
+              "linkedQuests": [],
+              "xCoordinate": 10,
+              "yCoordinate": 5,
+              "missionWeightOverrides": [],
+              "difficultyWeightOverrides": [],
+              "canBeMissionAlert": false,
+              "tileTags": {
+                "gameplayTags": []
+              },
+              "bDisallowQuickplay": false
+            },
+            {
+              "tileType": "NonMission",
+              "zoneTheme": "/Game/World/ZoneThemes/ZT_Arid/BP_ZT_Desert.BP_ZT_Desert_C",
+              "requirements": {
+                "commanderLevel": 0,
+                "personalPowerRating": 0,
+                "maxPersonalPowerRating": 0,
+                "partyPowerRating": 0,
+                "maxPartyPowerRating": 0,
+                "activeQuestDefinitions": [],
+                "questDefinition": "None",
+                "objectiveStatHandle": {
+                  "dataTable": "None",
+                  "rowName": "None"
+                },
+                "uncompletedQuestDefinition": "None",
+                "itemDefinition": "None",
+                "eventFlag": ""
+              },
+              "linkedQuests": [],
+              "xCoordinate": 10,
+              "yCoordinate": 4,
+              "missionWeightOverrides": [],
+              "difficultyWeightOverrides": [],
+              "canBeMissionAlert": false,
+              "tileTags": {
+                "gameplayTags": []
+              },
+              "bDisallowQuickplay": false
+            },
+            {
+              "tileType": "NonMission",
+              "zoneTheme": "/Game/World/ZoneThemes/ZT_Arid/BP_ZT_Desert.BP_ZT_Desert_C",
+              "requirements": {
+                "commanderLevel": 0,
+                "personalPowerRating": 0,
+                "maxPersonalPowerRating": 0,
+                "partyPowerRating": 0,
+                "maxPartyPowerRating": 0,
+                "activeQuestDefinitions": [],
+                "questDefinition": "None",
+                "objectiveStatHandle": {
+                  "dataTable": "None",
+                  "rowName": "None"
+                },
+                "uncompletedQuestDefinition": "None",
+                "itemDefinition": "None",
+                "eventFlag": ""
+              },
+              "linkedQuests": [],
+              "xCoordinate": 2,
+              "yCoordinate": 4,
+              "missionWeightOverrides": [],
+              "difficultyWeightOverrides": [],
+              "canBeMissionAlert": false,
+              "tileTags": {
+                "gameplayTags": []
+              },
+              "bDisallowQuickplay": false
+            },
+            {
+              "tileType": "NonMission",
+              "zoneTheme": "/Game/World/ZoneThemes/ZT_Arid/BP_ZT_Desert.BP_ZT_Desert_C",
+              "requirements": {
+                "commanderLevel": 0,
+                "personalPowerRating": 0,
+                "maxPersonalPowerRating": 0,
+                "partyPowerRating": 0,
+                "maxPartyPowerRating": 0,
+                "activeQuestDefinitions": [],
+                "questDefinition": "None",
+                "objectiveStatHandle": {
+                  "dataTable": "None",
+                  "rowName": "None"
+                },
+                "uncompletedQuestDefinition": "None",
+                "itemDefinition": "None",
+                "eventFlag": ""
+              },
+              "linkedQuests": [],
+              "xCoordinate": 2,
+              "yCoordinate": 5,
+              "missionWeightOverrides": [],
+              "difficultyWeightOverrides": [],
+              "canBeMissionAlert": false,
+              "tileTags": {
+                "gameplayTags": []
+              },
+              "bDisallowQuickplay": false
+            },
+            {
+              "tileType": "NonMission",
+              "zoneTheme": "/Game/World/ZoneThemes/ZT_Arid/BP_ZT_Desert.BP_ZT_Desert_C",
+              "requirements": {
+                "commanderLevel": 0,
+                "personalPowerRating": 0,
+                "maxPersonalPowerRating": 0,
+                "partyPowerRating": 0,
+                "maxPartyPowerRating": 0,
+                "activeQuestDefinitions": [],
+                "questDefinition": "None",
+                "objectiveStatHandle": {
+                  "dataTable": "None",
+                  "rowName": "None"
+                },
+                "uncompletedQuestDefinition": "None",
+                "itemDefinition": "None",
+                "eventFlag": ""
+              },
+              "linkedQuests": [],
+              "xCoordinate": 2,
+              "yCoordinate": 6,
+              "missionWeightOverrides": [],
+              "difficultyWeightOverrides": [],
+              "canBeMissionAlert": false,
+              "tileTags": {
+                "gameplayTags": []
+              },
+              "bDisallowQuickplay": false
+            },
+            {
+              "tileType": "NonMission",
+              "zoneTheme": "/Game/World/ZoneThemes/ZT_Arid/BP_ZT_Desert.BP_ZT_Desert_C",
+              "requirements": {
+                "commanderLevel": 0,
+                "personalPowerRating": 0,
+                "maxPersonalPowerRating": 0,
+                "partyPowerRating": 0,
+                "maxPartyPowerRating": 0,
+                "activeQuestDefinitions": [],
+                "questDefinition": "None",
+                "objectiveStatHandle": {
+                  "dataTable": "None",
+                  "rowName": "None"
+                },
+                "uncompletedQuestDefinition": "None",
+                "itemDefinition": "None",
+                "eventFlag": ""
+              },
+              "linkedQuests": [],
+              "xCoordinate": 2,
+              "yCoordinate": 7,
+              "missionWeightOverrides": [],
+              "difficultyWeightOverrides": [],
+              "canBeMissionAlert": false,
+              "tileTags": {
+                "gameplayTags": []
+              },
+              "bDisallowQuickplay": false
+            },
+            {
+              "tileType": "NonMission",
+              "zoneTheme": "/Game/World/ZoneThemes/ZT_Arid/BP_ZT_Desert.BP_ZT_Desert_C",
+              "requirements": {
+                "commanderLevel": 0,
+                "personalPowerRating": 0,
+                "maxPersonalPowerRating": 0,
+                "partyPowerRating": 0,
+                "maxPartyPowerRating": 0,
+                "activeQuestDefinitions": [],
+                "questDefinition": "None",
+                "objectiveStatHandle": {
+                  "dataTable": "None",
+                  "rowName": "None"
+                },
+                "uncompletedQuestDefinition": "None",
+                "itemDefinition": "None",
+                "eventFlag": ""
+              },
+              "linkedQuests": [],
+              "xCoordinate": 2,
+              "yCoordinate": 8,
+              "missionWeightOverrides": [],
+              "difficultyWeightOverrides": [],
+              "canBeMissionAlert": false,
+              "tileTags": {
+                "gameplayTags": []
+              },
+              "bDisallowQuickplay": false
+            },
+            {
+              "tileType": "NonMission",
+              "zoneTheme": "/Game/World/ZoneThemes/ZT_Arid/BP_ZT_Desert.BP_ZT_Desert_C",
+              "requirements": {
+                "commanderLevel": 0,
+                "personalPowerRating": 0,
+                "maxPersonalPowerRating": 0,
+                "partyPowerRating": 0,
+                "maxPartyPowerRating": 0,
+                "activeQuestDefinitions": [],
+                "questDefinition": "None",
+                "objectiveStatHandle": {
+                  "dataTable": "None",
+                  "rowName": "None"
+                },
+                "uncompletedQuestDefinition": "None",
+                "itemDefinition": "None",
+                "eventFlag": ""
+              },
+              "linkedQuests": [],
+              "xCoordinate": 2,
+              "yCoordinate": 9,
+              "missionWeightOverrides": [],
+              "difficultyWeightOverrides": [],
+              "canBeMissionAlert": false,
+              "tileTags": {
+                "gameplayTags": []
+              },
+              "bDisallowQuickplay": false
+            },
+            {
+              "tileType": "NonMission",
+              "zoneTheme": "/Game/World/ZoneThemes/ZT_Arid/BP_ZT_Desert.BP_ZT_Desert_C",
+              "requirements": {
+                "commanderLevel": 0,
+                "personalPowerRating": 0,
+                "maxPersonalPowerRating": 0,
+                "partyPowerRating": 0,
+                "maxPartyPowerRating": 0,
+                "activeQuestDefinitions": [],
+                "questDefinition": "None",
+                "objectiveStatHandle": {
+                  "dataTable": "None",
+                  "rowName": "None"
+                },
+                "uncompletedQuestDefinition": "None",
+                "itemDefinition": "None",
+                "eventFlag": ""
+              },
+              "linkedQuests": [],
+              "xCoordinate": 2,
+              "yCoordinate": 10,
+              "missionWeightOverrides": [],
+              "difficultyWeightOverrides": [],
+              "canBeMissionAlert": false,
+              "tileTags": {
+                "gameplayTags": []
+              },
+              "bDisallowQuickplay": false
+            },
+            {
+              "tileType": "NonMission",
+              "zoneTheme": "/Game/World/ZoneThemes/ZT_Arid/BP_ZT_Desert.BP_ZT_Desert_C",
+              "requirements": {
+                "commanderLevel": 0,
+                "personalPowerRating": 0,
+                "maxPersonalPowerRating": 0,
+                "partyPowerRating": 0,
+                "maxPartyPowerRating": 0,
+                "activeQuestDefinitions": [],
+                "questDefinition": "None",
+                "objectiveStatHandle": {
+                  "dataTable": "None",
+                  "rowName": "None"
+                },
+                "uncompletedQuestDefinition": "None",
+                "itemDefinition": "None",
+                "eventFlag": ""
+              },
+              "linkedQuests": [],
+              "xCoordinate": 2,
+              "yCoordinate": 11,
+              "missionWeightOverrides": [],
+              "difficultyWeightOverrides": [],
+              "canBeMissionAlert": false,
+              "tileTags": {
+                "gameplayTags": []
+              },
+              "bDisallowQuickplay": false
+            },
+            {
+              "tileType": "NonMission",
+              "zoneTheme": "/Game/World/ZoneThemes/ZT_Arid/BP_ZT_Desert.BP_ZT_Desert_C",
+              "requirements": {
+                "commanderLevel": 0,
+                "personalPowerRating": 0,
+                "maxPersonalPowerRating": 0,
+                "partyPowerRating": 0,
+                "maxPartyPowerRating": 0,
+                "activeQuestDefinitions": [],
+                "questDefinition": "None",
+                "objectiveStatHandle": {
+                  "dataTable": "None",
+                  "rowName": "None"
+                },
+                "uncompletedQuestDefinition": "None",
+                "itemDefinition": "None",
+                "eventFlag": ""
+              },
+              "linkedQuests": [],
+              "xCoordinate": 2,
+              "yCoordinate": 3,
+              "missionWeightOverrides": [],
+              "difficultyWeightOverrides": [],
+              "canBeMissionAlert": false,
+              "tileTags": {
+                "gameplayTags": []
+              },
+              "bDisallowQuickplay": false
+            },
+            {
+              "tileType": "NonMission",
+              "zoneTheme": "/Game/World/ZoneThemes/ZT_Arid/BP_ZT_Desert.BP_ZT_Desert_C",
+              "requirements": {
+                "commanderLevel": 0,
+                "personalPowerRating": 0,
+                "maxPersonalPowerRating": 0,
+                "partyPowerRating": 0,
+                "maxPartyPowerRating": 0,
+                "activeQuestDefinitions": [],
+                "questDefinition": "None",
+                "objectiveStatHandle": {
+                  "dataTable": "None",
+                  "rowName": "None"
+                },
+                "uncompletedQuestDefinition": "None",
+                "itemDefinition": "None",
+                "eventFlag": ""
+              },
+              "linkedQuests": [],
+              "xCoordinate": 3,
+              "yCoordinate": 2,
+              "missionWeightOverrides": [],
+              "difficultyWeightOverrides": [],
+              "canBeMissionAlert": false,
+              "tileTags": {
+                "gameplayTags": []
+              },
+              "bDisallowQuickplay": false
+            },
+            {
+              "tileType": "NonMission",
+              "zoneTheme": "/Game/World/ZoneThemes/ZT_Arid/BP_ZT_Desert.BP_ZT_Desert_C",
+              "requirements": {
+                "commanderLevel": 0,
+                "personalPowerRating": 0,
+                "maxPersonalPowerRating": 0,
+                "partyPowerRating": 0,
+                "maxPartyPowerRating": 0,
+                "activeQuestDefinitions": [],
+                "questDefinition": "None",
+                "objectiveStatHandle": {
+                  "dataTable": "None",
+                  "rowName": "None"
+                },
+                "uncompletedQuestDefinition": "None",
+                "itemDefinition": "None",
+                "eventFlag": ""
+              },
+              "linkedQuests": [],
+              "xCoordinate": 4,
+              "yCoordinate": 2,
+              "missionWeightOverrides": [],
+              "difficultyWeightOverrides": [],
+              "canBeMissionAlert": false,
+              "tileTags": {
+                "gameplayTags": []
+              },
+              "bDisallowQuickplay": false
+            },
+            {
+              "tileType": "NonMission",
+              "zoneTheme": "/Game/World/ZoneThemes/ZT_Arid/BP_ZT_Desert.BP_ZT_Desert_C",
+              "requirements": {
+                "commanderLevel": 0,
+                "personalPowerRating": 0,
+                "maxPersonalPowerRating": 0,
+                "partyPowerRating": 0,
+                "maxPartyPowerRating": 0,
+                "activeQuestDefinitions": [],
+                "questDefinition": "None",
+                "objectiveStatHandle": {
+                  "dataTable": "None",
+                  "rowName": "None"
+                },
+                "uncompletedQuestDefinition": "None",
+                "itemDefinition": "None",
+                "eventFlag": ""
+              },
+              "linkedQuests": [],
+              "xCoordinate": 5,
+              "yCoordinate": 2,
+              "missionWeightOverrides": [],
+              "difficultyWeightOverrides": [],
+              "canBeMissionAlert": false,
+              "tileTags": {
+                "gameplayTags": []
+              },
+              "bDisallowQuickplay": false
+            },
+            {
+              "tileType": "NonMission",
+              "zoneTheme": "/Game/World/ZoneThemes/ZT_Arid/BP_ZT_Desert.BP_ZT_Desert_C",
+              "requirements": {
+                "commanderLevel": 0,
+                "personalPowerRating": 0,
+                "maxPersonalPowerRating": 0,
+                "partyPowerRating": 0,
+                "maxPartyPowerRating": 0,
+                "activeQuestDefinitions": [],
+                "questDefinition": "None",
+                "objectiveStatHandle": {
+                  "dataTable": "None",
+                  "rowName": "None"
+                },
+                "uncompletedQuestDefinition": "None",
+                "itemDefinition": "None",
+                "eventFlag": ""
+              },
+              "linkedQuests": [],
+              "xCoordinate": 6,
+              "yCoordinate": 2,
+              "missionWeightOverrides": [],
+              "difficultyWeightOverrides": [],
+              "canBeMissionAlert": false,
+              "tileTags": {
+                "gameplayTags": []
+              },
+              "bDisallowQuickplay": false
+            },
+            {
+              "tileType": "NonMission",
+              "zoneTheme": "/Game/World/ZoneThemes/ZT_Arid/BP_ZT_Desert.BP_ZT_Desert_C",
+              "requirements": {
+                "commanderLevel": 0,
+                "personalPowerRating": 0,
+                "maxPersonalPowerRating": 0,
+                "partyPowerRating": 0,
+                "maxPartyPowerRating": 0,
+                "activeQuestDefinitions": [],
+                "questDefinition": "None",
+                "objectiveStatHandle": {
+                  "dataTable": "None",
+                  "rowName": "None"
+                },
+                "uncompletedQuestDefinition": "None",
+                "itemDefinition": "None",
+                "eventFlag": ""
+              },
+              "linkedQuests": [],
+              "xCoordinate": 7,
+              "yCoordinate": 2,
+              "missionWeightOverrides": [],
+              "difficultyWeightOverrides": [],
+              "canBeMissionAlert": false,
+              "tileTags": {
+                "gameplayTags": []
+              },
+              "bDisallowQuickplay": false
+            },
+            {
+              "tileType": "NonMission",
+              "zoneTheme": "/Game/World/ZoneThemes/ZT_Arid/BP_ZT_Desert.BP_ZT_Desert_C",
+              "requirements": {
+                "commanderLevel": 0,
+                "personalPowerRating": 0,
+                "maxPersonalPowerRating": 0,
+                "partyPowerRating": 0,
+                "maxPartyPowerRating": 0,
+                "activeQuestDefinitions": [],
+                "questDefinition": "None",
+                "objectiveStatHandle": {
+                  "dataTable": "None",
+                  "rowName": "None"
+                },
+                "uncompletedQuestDefinition": "None",
+                "itemDefinition": "None",
+                "eventFlag": ""
+              },
+              "linkedQuests": [],
+              "xCoordinate": 8,
+              "yCoordinate": 2,
+              "missionWeightOverrides": [],
+              "difficultyWeightOverrides": [],
+              "canBeMissionAlert": false,
+              "tileTags": {
+                "gameplayTags": []
+              },
+              "bDisallowQuickplay": false
+            },
+            {
+              "tileType": "NonMission",
+              "zoneTheme": "/Game/World/ZoneThemes/ZT_Arid/BP_ZT_Desert.BP_ZT_Desert_C",
+              "requirements": {
+                "commanderLevel": 0,
+                "personalPowerRating": 0,
+                "maxPersonalPowerRating": 0,
+                "partyPowerRating": 0,
+                "maxPartyPowerRating": 0,
+                "activeQuestDefinitions": [],
+                "questDefinition": "None",
+                "objectiveStatHandle": {
+                  "dataTable": "None",
+                  "rowName": "None"
+                },
+                "uncompletedQuestDefinition": "None",
+                "itemDefinition": "None",
+                "eventFlag": ""
+              },
+              "linkedQuests": [],
+              "xCoordinate": 9,
+              "yCoordinate": 2,
+              "missionWeightOverrides": [],
+              "difficultyWeightOverrides": [],
+              "canBeMissionAlert": false,
+              "tileTags": {
+                "gameplayTags": []
+              },
+              "bDisallowQuickplay": false
+            },
+            {
+              "tileType": "NonMission",
+              "zoneTheme": "/Game/World/ZoneThemes/ZT_Arid/BP_ZT_Desert.BP_ZT_Desert_C",
+              "requirements": {
+                "commanderLevel": 0,
+                "personalPowerRating": 0,
+                "maxPersonalPowerRating": 0,
+                "partyPowerRating": 0,
+                "maxPartyPowerRating": 0,
+                "activeQuestDefinitions": [],
+                "questDefinition": "None",
+                "objectiveStatHandle": {
+                  "dataTable": "None",
+                  "rowName": "None"
+                },
+                "uncompletedQuestDefinition": "None",
+                "itemDefinition": "None",
+                "eventFlag": ""
+              },
+              "linkedQuests": [],
+              "xCoordinate": 10,
+              "yCoordinate": 2,
+              "missionWeightOverrides": [],
+              "difficultyWeightOverrides": [],
+              "canBeMissionAlert": false,
+              "tileTags": {
+                "gameplayTags": []
+              },
+              "bDisallowQuickplay": false
+            },
+            {
+              "tileType": "NonMission",
+              "zoneTheme": "/Game/World/ZoneThemes/ZT_Arid/BP_ZT_Desert.BP_ZT_Desert_C",
+              "requirements": {
+                "commanderLevel": 0,
+                "personalPowerRating": 0,
+                "maxPersonalPowerRating": 0,
+                "partyPowerRating": 0,
+                "maxPartyPowerRating": 0,
+                "activeQuestDefinitions": [],
+                "questDefinition": "None",
+                "objectiveStatHandle": {
+                  "dataTable": "None",
+                  "rowName": "None"
+                },
+                "uncompletedQuestDefinition": "None",
+                "itemDefinition": "None",
+                "eventFlag": ""
+              },
+              "linkedQuests": [],
+              "xCoordinate": 10,
+              "yCoordinate": 3,
+              "missionWeightOverrides": [],
+              "difficultyWeightOverrides": [],
+              "canBeMissionAlert": false,
+              "tileTags": {
+                "gameplayTags": []
+              },
+              "bDisallowQuickplay": false
+            }
+          ],
+          "regions": [
+            {
+              "displayName": "Non Mission",
+              "uniqueId": "Region_NonMission",
+              "regionTags": {
+                "gameplayTags": []
+              },
+              "tileIndices": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                14,
+                15,
+                16,
+                17,
+                18,
+                19,
+                20,
+                21,
+                22,
+                23,
+                24,
+                26,
+                27,
+                28,
+                29,
+                30,
+                31,
+                32,
+                33,
+                34,
+                35,
+                36,
+                42,
+                43,
+                44,
+                45,
+                46,
+                47,
+                48,
+                49,
+                50,
+                51,
+                52,
+                53,
+                54,
+                55,
+                56,
+                57,
+                58,
+                59,
+                60,
+                61,
+                62,
+                63,
+                64,
+                65,
+                66,
+                67,
+                68,
+                69,
+                70,
+                71,
+                72,
+                73,
+                74,
+                75,
+                76,
+                77,
+                78,
+                79,
+                80,
+                81,
+                82,
+                83,
+                84,
+                85,
+                86,
+                87,
+                88,
+                89
+              ],
+              "regionThemeIcon": "None",
+              "missionData": {
+                "missionWeights": [],
+                "difficultyWeights": [],
+                "numMissionsAvailable": 0,
+                "numMissionsToChange": 0,
+                "missionChangeFrequency": 0.0
+              },
+              "requirements": {
+                "commanderLevel": 0,
+                "personalPowerRating": 0,
+                "maxPersonalPowerRating": 0,
+                "partyPowerRating": 0,
+                "maxPartyPowerRating": 0,
+                "activeQuestDefinitions": [],
+                "questDefinition": "None",
+                "objectiveStatHandle": {
+                  "dataTable": "None",
+                  "rowName": "None"
+                },
+                "uncompletedQuestDefinition": "None",
+                "itemDefinition": "None",
+                "eventFlag": ""
+              },
+              "missionAlertRequirements": []
+            },
+            {
+              "displayName": "Hit the Road - Canny Valley Tier 2",
+              "uniqueId": "Region_Mayday_CannyValley_T2",
+              "regionTags": {
+                "gameplayTags": []
+              },
+              "tileIndices": [
+                12
+              ],
+              "regionThemeIcon": "None",
+              "missionData": {
+                "missionWeights": [],
+                "difficultyWeights": [],
+                "numMissionsAvailable": 0,
+                "numMissionsToChange": 0,
+                "missionChangeFrequency": 0.0
+              },
+              "requirements": {
+                "commanderLevel": 0,
+                "personalPowerRating": 64,
+                "maxPersonalPowerRating": 93,
+                "partyPowerRating": 0,
+                "maxPartyPowerRating": 0,
+                "activeQuestDefinitions": [],
+                "questDefinition": "None",
+                "objectiveStatHandle": {
+                  "dataTable": "None",
+                  "rowName": "None"
+                },
+                "uncompletedQuestDefinition": "None",
+                "itemDefinition": "None",
+                "eventFlag": ""
+              },
+              "missionAlertRequirements": []
+            },
+            {
+              "displayName": "Hit the Road - Plankerton Tier 2",
+              "uniqueId": "Region_Mayday_Plankerton_T2",
+              "regionTags": {
+                "gameplayTags": []
+              },
+              "tileIndices": [
+                13
+              ],
+              "regionThemeIcon": "None",
+              "missionData": {
+                "missionWeights": [],
+                "difficultyWeights": [],
+                "numMissionsAvailable": 0,
+                "numMissionsToChange": 0,
+                "missionChangeFrequency": 0.0
+              },
+              "requirements": {
+                "commanderLevel": 0,
+                "personalPowerRating": 34,
+                "maxPersonalPowerRating": 63,
+                "partyPowerRating": 0,
+                "maxPartyPowerRating": 0,
+                "activeQuestDefinitions": [],
+                "questDefinition": "None",
+                "objectiveStatHandle": {
+                  "dataTable": "None",
+                  "rowName": "None"
+                },
+                "uncompletedQuestDefinition": "None",
+                "itemDefinition": "None",
+                "eventFlag": ""
+              },
+              "missionAlertRequirements": []
+            },
+            {
+              "displayName": "Hit the Road - Stonewood Tier",
+              "uniqueId": "Region_Mayday_Stonewood_T1",
+              "regionTags": {
+                "gameplayTags": []
+              },
+              "tileIndices": [
+                25
+              ],
+              "regionThemeIcon": "None",
+              "missionData": {
+                "missionWeights": [],
+                "difficultyWeights": [],
+                "numMissionsAvailable": 0,
+                "numMissionsToChange": 0,
+                "missionChangeFrequency": 0.0
+              },
+              "requirements": {
+                "commanderLevel": 0,
+                "personalPowerRating": 0,
+                "maxPersonalPowerRating": 33,
+                "partyPowerRating": 0,
+                "maxPartyPowerRating": 0,
+                "activeQuestDefinitions": [],
+                "questDefinition": "None",
+                "objectiveStatHandle": {
+                  "dataTable": "None",
+                  "rowName": "None"
+                },
+                "uncompletedQuestDefinition": "None",
+                "itemDefinition": "None",
+                "eventFlag": ""
+              },
+              "missionAlertRequirements": []
+            },
+            {
+              "displayName": "Hit the Road - Twine Peaks 3",
+              "uniqueId": "Region_Mayday_TwinePeaks_T3",
+              "regionTags": {
+                "gameplayTags": []
+              },
+              "tileIndices": [
+                37
+              ],
+              "regionThemeIcon": "None",
+              "missionData": {
+                "missionWeights": [],
+                "difficultyWeights": [],
+                "numMissionsAvailable": 0,
+                "numMissionsToChange": 0,
+                "missionChangeFrequency": 0.0
+              },
+              "requirements": {
+                "commanderLevel": 0,
+                "personalPowerRating": 120,
+                "maxPersonalPowerRating": 0,
+                "partyPowerRating": 0,
+                "maxPartyPowerRating": 0,
+                "activeQuestDefinitions": [],
+                "questDefinition": "None",
+                "objectiveStatHandle": {
+                  "dataTable": "None",
+                  "rowName": "None"
+                },
+                "uncompletedQuestDefinition": "None",
+                "itemDefinition": "None",
+                "eventFlag": ""
+              },
+              "missionAlertRequirements": []
+            },
+            {
+              "displayName": "Hit the Road - Twine Peaks 2",
+              "uniqueId": "Region_Mayday_TwinePeaks_T2",
+              "regionTags": {
+                "gameplayTags": []
+              },
+              "tileIndices": [
+                38
+              ],
+              "regionThemeIcon": "None",
+              "missionData": {
+                "missionWeights": [],
+                "difficultyWeights": [],
+                "numMissionsAvailable": 0,
+                "numMissionsToChange": 0,
+                "missionChangeFrequency": 0.0
+              },
+              "requirements": {
+                "commanderLevel": 0,
+                "personalPowerRating": 94,
+                "maxPersonalPowerRating": 0,
+                "partyPowerRating": 0,
+                "maxPartyPowerRating": 0,
+                "activeQuestDefinitions": [],
+                "questDefinition": "None",
+                "objectiveStatHandle": {
+                  "dataTable": "None",
+                  "rowName": "None"
+                },
+                "uncompletedQuestDefinition": "None",
+                "itemDefinition": "None",
+                "eventFlag": ""
+              },
+              "missionAlertRequirements": []
+            },
+            {
+              "displayName": "Hit the Road - Twine Peaks 1",
+              "uniqueId": "Region_Mayday_TwinePeaks_T1",
+              "regionTags": {
+                "gameplayTags": []
+              },
+              "tileIndices": [
+                39
+              ],
+              "regionThemeIcon": "None",
+              "missionData": {
+                "missionWeights": [],
+                "difficultyWeights": [],
+                "numMissionsAvailable": 0,
+                "numMissionsToChange": 0,
+                "missionChangeFrequency": 0.0
+              },
+              "requirements": {
+                "commanderLevel": 0,
+                "personalPowerRating": 76,
+                "maxPersonalPowerRating": 0,
+                "partyPowerRating": 0,
+                "maxPartyPowerRating": 0,
+                "activeQuestDefinitions": [],
+                "questDefinition": "None",
+                "objectiveStatHandle": {
+                  "dataTable": "None",
+                  "rowName": "None"
+                },
+                "uncompletedQuestDefinition": "None",
+                "itemDefinition": "None",
+                "eventFlag": ""
+              },
+              "missionAlertRequirements": []
+            },
+            {
+              "displayName": "Hit the Road - Canny Valley Tier 1",
+              "uniqueId": "Region_Mayday_CannyValley_T1",
+              "regionTags": {
+                "gameplayTags": []
+              },
+              "tileIndices": [
+                40
+              ],
+              "regionThemeIcon": "None",
+              "missionData": {
+                "missionWeights": [],
+                "difficultyWeights": [],
+                "numMissionsAvailable": 0,
+                "numMissionsToChange": 0,
+                "missionChangeFrequency": 0.0
+              },
+              "requirements": {
+                "commanderLevel": 0,
+                "personalPowerRating": 46,
+                "maxPersonalPowerRating": 75,
+                "partyPowerRating": 0,
+                "maxPartyPowerRating": 0,
+                "activeQuestDefinitions": [],
+                "questDefinition": "None",
+                "objectiveStatHandle": {
+                  "dataTable": "None",
+                  "rowName": "None"
+                },
+                "uncompletedQuestDefinition": "None",
+                "itemDefinition": "None",
+                "eventFlag": ""
+              },
+              "missionAlertRequirements": []
+            },
+            {
+              "displayName": "Hit the Road - Plankerton Tier 1",
+              "uniqueId": "Region_Mayday_Plankerton_T1",
+              "regionTags": {
+                "gameplayTags": []
+              },
+              "tileIndices": [
+                41
+              ],
+              "regionThemeIcon": "None",
+              "missionData": {
+                "missionWeights": [],
+                "difficultyWeights": [],
+                "numMissionsAvailable": 0,
+                "numMissionsToChange": 0,
+                "missionChangeFrequency": 0.0
+              },
+              "requirements": {
+                "commanderLevel": 0,
+                "personalPowerRating": 21,
+                "maxPersonalPowerRating": 45,
+                "partyPowerRating": 0,
+                "maxPartyPowerRating": 0,
+                "activeQuestDefinitions": [],
+                "questDefinition": "None",
+                "objectiveStatHandle": {
+                  "dataTable": "None",
+                  "rowName": "None"
+                },
+                "uncompletedQuestDefinition": "None",
+                "itemDefinition": "None",
+                "eventFlag": ""
+              },
+              "missionAlertRequirements": []
+            }
+          ]
+        }
+      ],
+      "missions": [
+        {
+          "theaterId": "4FF9902F4E66D5754137B5B8A2C06CCE",
+          "availableMissions": [
+            {
+              "missionGuid": "f6d24793-3d8b-4021-a07a-e6b1d52c3938",
+              "missionRewards": {
+                "tierGroupName": "Mission_Select_Mayday_T05",
+                "items": [
+                  {
+                    "itemType": "CardPack:zcp_mayday_t05",
+                    "quantity": 1
+                  }
+                ]
+              },
+              "bonusMissionRewards": {
+                "tierGroupName": "Mission_Select_Bonus_T15",
+                "items": [
+                  {
+                    "itemType": "CardPack:zcp_schematicxp_t15",
+                    "quantity": 1
+                  }
+                ]
+              },
+              "overrideMissionRewards": {},
+              "missionGenerator": "/Game/World/MissionGens/MissionGen_Mayday.MissionGen_Mayday_C",
+              "missionDifficultyInfo": {
+                "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
+                "rowName": "Theater_Mayday_Hard_Zone5"
+              },
+              "tileIndex": 12,
+              "availableUntil": "2017-07-25T23:59:59.999Z"
+            },
+            {
+              "missionGuid": "bc5d8e36-fb38-4854-be6c-603c8385eb39",
+              "missionRewards": {
+                "tierGroupName": "Mission_Select_Mayday_T03",
+                "items": [
+                  {
+                    "itemType": "CardPack:zcp_mayday_t03",
+                    "quantity": 1
+                  }
+                ]
+              },
+              "bonusMissionRewards": {
+                "tierGroupName": "Mission_Select_Bonus_T10",
+                "items": [
+                  {
+                    "itemType": "CardPack:zcp_reagent_c_t02_verylow",
+                    "quantity": 1
+                  }
+                ]
+              },
+              "overrideMissionRewards": {},
+              "missionGenerator": "/Game/World/MissionGens/MissionGen_Mayday.MissionGen_Mayday_C",
+              "missionDifficultyInfo": {
+                "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
+                "rowName": "Theater_Mayday_Normal_Zone5"
+              },
+              "tileIndex": 13,
+              "availableUntil": "2017-07-25T23:59:59.999Z"
+            },
+            {
+              "missionGuid": "482922c8-a9ed-45a4-9841-579b5dc621cc",
+              "missionRewards": {
+                "tierGroupName": "Mission_Select_Mayday_T01",
+                "items": [
+                  {
+                    "itemType": "CardPack:zcp_mayday_t01",
+                    "quantity": 1
+                  }
+                ]
+              },
+              "bonusMissionRewards": {
+                "tierGroupName": "Mission_Select_Bonus_T05",
+                "items": [
+                  {
+                    "itemType": "CardPack:zcp_schematicxp_t05",
+                    "quantity": 1
+                  }
+                ]
+              },
+              "overrideMissionRewards": {},
+              "missionGenerator": "/Game/World/MissionGens/MissionGen_Mayday.MissionGen_Mayday_C",
+              "missionDifficultyInfo": {
+                "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
+                "rowName": "Theater_Mayday_Start_Zone5"
+              },
+              "tileIndex": 25,
+              "availableUntil": "2017-07-25T23:59:59.999Z"
+            },
+            {
+              "missionGuid": "bf1550b1-9cbc-4b34-acd4-1ec8e073f5da",
+              "missionRewards": {
+                "tierGroupName": "Mission_Select_Mayday_T08",
+                "items": [
+                  {
+                    "itemType": "CardPack:zcp_mayday_t08",
+                    "quantity": 1
+                  }
+                ]
+              },
+              "bonusMissionRewards": {
+                "tierGroupName": "Mission_Select_Bonus_T25",
+                "items": [
+                  {
+                    "itemType": "CardPack:zcp_reagent_alteration_upgrade_sr_high",
+                    "quantity": 1
+                  }
+                ]
+              },
+              "overrideMissionRewards": {},
+              "missionGenerator": "/Game/World/MissionGens/MissionGen_Mayday.MissionGen_Mayday_C",
+              "missionDifficultyInfo": {
+                "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
+                "rowName": "Theater_Mayday_Endgame_Zone5"
+              },
+              "tileIndex": 37,
+              "availableUntil": "2017-07-25T23:59:59.999Z"
+            },
+            {
+              "missionGuid": "d858818c-5f1c-478b-9cdd-d71ef74c43c5",
+              "missionRewards": {
+                "tierGroupName": "Mission_Select_Mayday_T07",
+                "items": [
+                  {
+                    "itemType": "CardPack:zcp_mayday_t07",
+                    "quantity": 1
+                  }
+                ]
+              },
+              "bonusMissionRewards": {
+                "tierGroupName": "Mission_Select_Bonus_T20",
+                "items": [
+                  {
+                    "itemType": "CardPack:zcp_reagent_c_t03_low",
+                    "quantity": 1
+                  }
+                ]
+              },
+              "overrideMissionRewards": {},
+              "missionGenerator": "/Game/World/MissionGens/MissionGen_Mayday.MissionGen_Mayday_C",
+              "missionDifficultyInfo": {
+                "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
+                "rowName": "Theater_Mayday_Nightmare_Zone5"
+              },
+              "tileIndex": 38,
+              "availableUntil": "2017-07-25T23:59:59.999Z"
+            },
+            {
+              "missionGuid": "c25f3d62-d796-48c0-ab79-0fb2325a9576",
+              "missionRewards": {
+                "tierGroupName": "Mission_Select_Mayday_T06",
+                "items": [
+                  {
+                    "itemType": "CardPack:zcp_mayday_t06",
+                    "quantity": 1
+                  }
+                ]
+              },
+              "bonusMissionRewards": {
+                "tierGroupName": "Mission_Select_Bonus_T18",
+                "items": [
+                  {
+                    "itemType": "CardPack:zcp_heroxp_t18",
+                    "quantity": 1
+                  }
+                ]
+              },
+              "overrideMissionRewards": {},
+              "missionGenerator": "/Game/World/MissionGens/MissionGen_Mayday.MissionGen_Mayday_C",
+              "missionDifficultyInfo": {
+                "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
+                "rowName": "Theater_Mayday_Nightmare_Zone3"
+              },
+              "tileIndex": 39,
+              "availableUntil": "2017-07-25T23:59:59.999Z"
+            },
+            {
+              "missionGuid": "b915d161-8f98-4832-9181-b228e71784c5",
+              "missionRewards": {
+                "tierGroupName": "Mission_Select_Mayday_T04",
+                "items": [
+                  {
+                    "itemType": "CardPack:zcp_mayday_t04",
+                    "quantity": 1
+                  }
+                ]
+              },
+              "bonusMissionRewards": {
+                "tierGroupName": "Mission_Select_Bonus_T13",
+                "items": [
+                  {
+                    "itemType": "CardPack:zcp_reagent_alteration_upgrade_r",
+                    "quantity": 1
+                  }
+                ]
+              },
+              "overrideMissionRewards": {},
+              "missionGenerator": "/Game/World/MissionGens/MissionGen_Mayday.MissionGen_Mayday_C",
+              "missionDifficultyInfo": {
+                "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
+                "rowName": "Theater_Mayday_Hard_Zone3"
+              },
+              "tileIndex": 40,
+              "availableUntil": "2017-07-25T23:59:59.999Z"
+            },
+            {
+              "missionGuid": "6396aecf-c4be-4fd1-a916-938478a04545",
+              "missionRewards": {
+                "tierGroupName": "Mission_Select_Mayday_T02",
+                "items": [
+                  {
+                    "itemType": "CardPack:zcp_mayday_t02",
+                    "quantity": 1
+                  }
+                ]
+              },
+              "bonusMissionRewards": {
+                "tierGroupName": "Mission_Select_Bonus_T08",
+                "items": [
+                  {
+                    "itemType": "CardPack:zcp_reagent_c_t02_verylow",
+                    "quantity": 1
+                  }
+                ]
+              },
+              "overrideMissionRewards": {},
+              "missionGenerator": "/Game/World/MissionGens/MissionGen_Mayday.MissionGen_Mayday_C",
+              "missionDifficultyInfo": {
+                "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
+                "rowName": "Theater_Mayday_Normal_Zone3"
+              },
+              "tileIndex": 41,
+              "availableUntil": "2017-07-25T23:59:59.999Z"
+            }
+          ],
+          "nextRefresh": "2017-07-25T23:59:59.999Z"
+        }
+      ],
+      "missionAlerts": [
+        {
+          "theaterId": "4FF9902F4E66D5754137B5B8A2C06CCE",
+          "availableMissionAlerts": [],
+          "nextRefresh": "2017-07-25T23:59:59.999Z"
+        }
+      ]
     }
   }
 }
