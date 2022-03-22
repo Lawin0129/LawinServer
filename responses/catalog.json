@@ -220,7 +220,7 @@
           ],
           "meta": {},
           "matchFilter": "",
-          "filterWeight": 0.0,
+          "filterWeight": 0,
           "appStoreId": [],
           "requirements": [],
           "offerType": "StaticPrice",
@@ -256,7 +256,7 @@
           ],
           "meta": {},
           "matchFilter": "",
-          "filterWeight": 0.0,
+          "filterWeight": 0,
           "appStoreId": [],
           "requirements": [],
           "offerType": "StaticPrice",
@@ -292,7 +292,7 @@
           ],
           "meta": {},
           "matchFilter": "",
-          "filterWeight": 0.0,
+          "filterWeight": 0,
           "appStoreId": [],
           "requirements": [],
           "offerType": "StaticPrice",
@@ -328,7 +328,7 @@
           ],
           "meta": {},
           "matchFilter": "",
-          "filterWeight": 0.0,
+          "filterWeight": 0,
           "appStoreId": [],
           "requirements": [],
           "offerType": "StaticPrice",
@@ -369,7 +369,7 @@
           ],
           "meta": {},
           "matchFilter": "",
-          "filterWeight": 0.0,
+          "filterWeight": 0,
           "appStoreId": [],
           "requirements": [],
           "offerType": "StaticPrice",
@@ -405,7 +405,7 @@
           ],
           "meta": {},
           "matchFilter": "",
-          "filterWeight": 0.0,
+          "filterWeight": 0,
           "appStoreId": [],
           "requirements": [],
           "offerType": "StaticPrice",
@@ -441,7 +441,7 @@
           ],
           "meta": {},
           "matchFilter": "",
-          "filterWeight": 0.0,
+          "filterWeight": 0,
           "appStoreId": [],
           "requirements": [],
           "offerType": "StaticPrice",
@@ -477,7 +477,7 @@
           ],
           "meta": {},
           "matchFilter": "",
-          "filterWeight": 0.0,
+          "filterWeight": 0,
           "appStoreId": [],
           "requirements": [],
           "offerType": "StaticPrice",
@@ -1040,6 +1040,1244 @@
               "quantity": 1
             }
           ]
+        }
+      ]
+    },
+    {
+      "name": "BRSeason2",
+      "catalogEntries": [
+        {
+          "offerId": "F4E17D0B56904F90A4B9A735D32DDD70",
+          "devName": "BR.Season2.BattlePass.01",
+          "offerType": "StaticPrice",
+          "prices": [
+            {
+              "currencyType": "MtxCurrency",
+              "currencySubType": "",
+              "regularPrice": 1800,
+              "finalPrice": 950,
+              "saleType": "PercentOff",
+              "saleExpiration": "9999-12-31T23:59:59.999Z",
+              "basePrice": 950
+            }
+          ],
+          "categories": [],
+          "dailyLimit": -1,
+          "weeklyLimit": -1,
+          "monthlyLimit": -1,
+          "appStoreId": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "requirements": [
+            {
+              "requirementType": "DenyOnFulfillment",
+              "requiredId": "2B4936F24F3179416FEFD49DA5C4B64C",
+              "minQuantity": 1
+            }
+          ],
+          "metaInfo": [],
+          "catalogGroup": "",
+          "catalogGroupPriority": 0,
+          "sortPriority": 1,
+          "title": "Battle Pass",
+          "shortDescription": "Season 2",
+          "displayAssetPath": "/Game/Catalog/DisplayAssets/DA_BR_Season2_BattlePass.DA_BR_Season2_BattlePass",
+          "itemGrants": []
+        },
+        {
+          "offerId": "F86AC2ED4B3EA4B2D65EF1B2629572A0",
+          "devName": "BR.Season2.SingleTier.01",
+          "offerType": "StaticPrice",
+          "prices": [
+            {
+              "currencyType": "MtxCurrency",
+              "currencySubType": "",
+              "regularPrice": 150,
+              "finalPrice": 150,
+              "saleExpiration": "9999-12-31T23:59:59.999Z",
+              "basePrice": 150
+            }
+          ],
+          "categories": [],
+          "dailyLimit": -1,
+          "weeklyLimit": -1,
+          "monthlyLimit": -1,
+          "appStoreId": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "requirements": [],
+          "metaInfo": [],
+          "catalogGroup": "",
+          "catalogGroupPriority": 0,
+          "sortPriority": 0,
+          "title": "Battle Pass Tier",
+          "shortDescription": "",
+          "description": "Get great rewards now!",
+          "displayAssetPath": "",
+          "itemGrants": []
+        }
+      ]
+    },
+    {
+      "name": "BRSeason3",
+      "catalogEntries": [
+        {
+          "offerId": "2A3FEEC4EE4541B2B717254FB6207437",
+          "devName": "BR.Season3.BattleBundle.01",
+          "offerType": "StaticPrice",
+          "prices": [
+            {
+              "currencyType": "MtxCurrency",
+              "currencySubType": "",
+              "regularPrice": 4700,
+              "finalPrice": 2800,
+              "saleType": "PercentOff",
+              "saleExpiration": "9999-12-31T23:59:59.999Z",
+              "basePrice": 2800
+            }
+          ],
+          "categories": [],
+          "dailyLimit": -1,
+          "weeklyLimit": -1,
+          "monthlyLimit": -1,
+          "appStoreId": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "requirements": [
+            {
+              "requirementType": "DenyOnFulfillment",
+              "requiredId": "2B4936F24F3179416FEFD49DA5C4B64B",
+              "minQuantity": 1
+            }
+          ],
+          "metaInfo": [],
+          "catalogGroup": "",
+          "catalogGroupPriority": 0,
+          "sortPriority": 0,
+          "title": "Battle Bundle",
+          "shortDescription": "Battle Pass + 25 tiers!",
+          "displayAssetPath": "/Game/Catalog/DisplayAssets/DA_BR_Season3_BattlePassWithLevels.DA_BR_Season3_BattlePassWithLevels",
+          "itemGrants": []
+        },
+        {
+          "offerId": "AC7AF21EE99E4719AC8F0388AA36292B",
+          "devName": "BR.Season3.BattlePass.01",
+          "offerType": "StaticPrice",
+          "prices": [
+            {
+              "currencyType": "MtxCurrency",
+              "currencySubType": "",
+              "regularPrice": 950,
+              "finalPrice": 950,
+              "saleExpiration": "9999-12-31T23:59:59.999Z",
+              "basePrice": 950
+            }
+          ],
+          "categories": [],
+          "dailyLimit": -1,
+          "weeklyLimit": -1,
+          "monthlyLimit": -1,
+          "appStoreId": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "requirements": [
+            {
+              "requirementType": "DenyOnFulfillment",
+              "requiredId": "2B4936F24F3179416FEFD49DA5C4B64B",
+              "minQuantity": 1
+            }
+          ],
+          "metaInfo": [],
+          "catalogGroup": "",
+          "catalogGroupPriority": 0,
+          "sortPriority": 1,
+          "title": "Battle Pass",
+          "shortDescription": "Season 3",
+          "displayAssetPath": "/Game/Catalog/DisplayAssets/DA_BR_Season3_BattlePass.DA_BR_Season3_BattlePass",
+          "itemGrants": []
+        },
+        {
+          "offerId": "E2D7975EFEC54A45900D8D9A6D9D273C",
+          "devName": "BR.Season3.SingleTier.01",
+          "offerType": "StaticPrice",
+          "prices": [
+            {
+              "currencyType": "MtxCurrency",
+              "currencySubType": "",
+              "regularPrice": 150,
+              "finalPrice": 150,
+              "saleExpiration": "9999-12-31T23:59:59.999Z",
+              "basePrice": 150
+            }
+          ],
+          "categories": [],
+          "dailyLimit": -1,
+          "weeklyLimit": -1,
+          "monthlyLimit": -1,
+          "appStoreId": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "requirements": [],
+          "metaInfo": [],
+          "catalogGroup": "",
+          "catalogGroupPriority": 0,
+          "sortPriority": 0,
+          "title": "Battle Pass Tier",
+          "shortDescription": "",
+          "description": "Get great rewards now!",
+          "displayAssetPath": "",
+          "itemGrants": []
+        }
+      ]
+    },
+    {
+      "name": "BRSeason4",
+      "catalogEntries": [
+        {
+          "offerId": "F960B1F46AF54392AE9A7B8EEDE61E73",
+          "devName": "BR.Season4.BattleBundle.01",
+          "offerType": "StaticPrice",
+          "prices": [
+            {
+              "currencyType": "MtxCurrency",
+              "currencySubType": "",
+              "regularPrice": 4700,
+              "finalPrice": 2800,
+              "saleType": "PercentOff",
+              "saleExpiration": "9999-12-31T23:59:59.999Z",
+              "basePrice": 2800
+            }
+          ],
+          "categories": [],
+          "dailyLimit": -1,
+          "weeklyLimit": -1,
+          "monthlyLimit": -1,
+          "appStoreId": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "requirements": [
+            {
+              "requirementType": "DenyOnFulfillment",
+              "requiredId": "2B4936F24F3179416FEFD49DA5C4B64A",
+              "minQuantity": 1
+            }
+          ],
+          "metaInfo": [],
+          "catalogGroup": "",
+          "catalogGroupPriority": 0,
+          "sortPriority": 0,
+          "title": "Battle Bundle",
+          "shortDescription": "Battle Pass + 25 tiers!",
+          "displayAssetPath": "/Game/Catalog/DisplayAssets/DA_BR_Season4_BattlePassWithLevels.DA_BR_Season4_BattlePassWithLevels",
+          "itemGrants": []
+        },
+        {
+          "offerId": "F5797183D12B4EC3A32F3B8BBCFFFC56",
+          "devName": "BR.Season4.BattlePass.01",
+          "offerType": "StaticPrice",
+          "prices": [
+            {
+              "currencyType": "MtxCurrency",
+              "currencySubType": "",
+              "regularPrice": 950,
+              "finalPrice": 950,
+              "saleExpiration": "9999-12-31T23:59:59.999Z",
+              "basePrice": 950
+            }
+          ],
+          "categories": [],
+          "dailyLimit": -1,
+          "weeklyLimit": -1,
+          "monthlyLimit": -1,
+          "appStoreId": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "requirements": [
+            {
+              "requirementType": "DenyOnFulfillment",
+              "requiredId": "2B4936F24F3179416FEFD49DA5C4B64A",
+              "minQuantity": 1
+            }
+          ],
+          "metaInfo": [],
+          "catalogGroup": "",
+          "catalogGroupPriority": 0,
+          "sortPriority": 1,
+          "title": "Battle Pass",
+          "shortDescription": "Season 4",
+          "displayAssetPath": "/Game/Catalog/DisplayAssets/DA_BR_Season4_BattlePass.DA_BR_Season4_BattlePass",
+          "itemGrants": []
+        },
+        {
+          "offerId": "E9527AF46F4B4A9CAE98D91F2AA53CB6",
+          "devName": "BR.Season4.SingleTier.01",
+          "offerType": "StaticPrice",
+          "prices": [
+            {
+              "currencyType": "MtxCurrency",
+              "currencySubType": "",
+              "regularPrice": 150,
+              "finalPrice": 150,
+              "saleExpiration": "9999-12-31T23:59:59.999Z",
+              "basePrice": 150
+            }
+          ],
+          "categories": [],
+          "dailyLimit": -1,
+          "weeklyLimit": -1,
+          "monthlyLimit": -1,
+          "appStoreId": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "requirements": [],
+          "metaInfo": [],
+          "catalogGroup": "",
+          "catalogGroupPriority": 0,
+          "sortPriority": 0,
+          "title": "Battle Pass Tier",
+          "shortDescription": "",
+          "description": "Get great rewards now!",
+          "displayAssetPath": "",
+          "itemGrants": []
+        }
+      ]
+    },
+    {
+      "name": "BRSeason5",
+      "catalogEntries": [
+        {
+          "offerId": "FF77356F424644529049280AFC8A795E",
+          "devName": "BR.Season5.BattleBundle.01",
+          "offerType": "StaticPrice",
+          "prices": [
+            {
+              "currencyType": "MtxCurrency",
+              "currencySubType": "",
+              "regularPrice": 4700,
+              "finalPrice": 2800,
+              "saleType": "PercentOff",
+              "saleExpiration": "9999-12-31T23:59:59.999Z",
+              "basePrice": 2800
+            }
+          ],
+          "categories": [],
+          "dailyLimit": -1,
+          "weeklyLimit": -1,
+          "monthlyLimit": -1,
+          "appStoreId": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "requirements": [
+            {
+              "requirementType": "DenyOnFulfillment",
+              "requiredId": "2B4936F24F3179416FEFD49DA5C4B64E",
+              "minQuantity": 1
+            }
+          ],
+          "metaInfo": [],
+          "catalogGroup": "",
+          "catalogGroupPriority": 0,
+          "sortPriority": 0,
+          "title": "Battle Bundle",
+          "shortDescription": "Battle Pass + 25 tiers!",
+          "description": "Season 5: Now thru Sept 25\n\nInstantly get these items valued at over 10,000 V-Bucks.\n  • “Huntress” Outfit\n  • “Drift” Outfit\n  • “Redline” Outfit\n  • “Balloon Axe” Pickaxe\n  • “Uplink” Back Bling\n  • “Lanterns” Skydiving Trail\n  • 2 Gliders\n  • 4 Sprays\n  • 70% Bonus Season Match XP\n  • 20% Bonus Season Friend Match XP\n  • Extra Weekly Challenges\n  • Drift Progressive Challenges\n  • and more!\n\nPlay to level up your Battle Pass, unlocking up to 75+ more rewards (typically takes 75 to 150 hours of play). Want it all faster? You can use V-Bucks to buy tiers any time!\n  • “Ragnarok” plus 4 other outfits\n  • 3 Pickaxes\n  • 4 Emotes\n  • 2 Gliders\n  • 4 Back Blings\n  • 4 Skydiving Trails\n  • 11 Sprays\n  • 1,300 V-Bucks\n  • and so much more!",
+          "displayAssetPath": "/Game/Catalog/DisplayAssets/DA_BR_Season5_BattlePassWithLevels.DA_BR_Season5_BattlePassWithLevels",
+          "itemGrants": []
+        },
+        {
+          "offerId": "D51A2F28AAF843C0B208F14197FBFE91",
+          "devName": "BR.Season5.BattlePass.01",
+          "offerType": "StaticPrice",
+          "prices": [
+            {
+              "currencyType": "MtxCurrency",
+              "currencySubType": "",
+              "regularPrice": 950,
+              "finalPrice": 950,
+              "saleExpiration": "9999-12-31T23:59:59.999Z",
+              "basePrice": 950
+            }
+          ],
+          "categories": [],
+          "dailyLimit": -1,
+          "weeklyLimit": -1,
+          "monthlyLimit": -1,
+          "appStoreId": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "requirements": [
+            {
+              "requirementType": "DenyOnFulfillment",
+              "requiredId": "2B4936F24F3179416FEFD49DA5C4B64E",
+              "minQuantity": 1
+            }
+          ],
+          "metaInfo": [],
+          "catalogGroup": "",
+          "catalogGroupPriority": 0,
+          "sortPriority": 1,
+          "title": "Battle Pass",
+          "shortDescription": "Season 5",
+          "description": "Season 5: Now thru Sept 25\n\nInstantly get these items valued at over 3,500 V-Bucks.\n  • Huntress Outfit\n  • Drift Outfit\n  • 50% Bonus Season Match XP\n  • 10% Bonus Season Friend Match XP\n  • Extra Weekly Challenges\n  • Drift Progressive Challenges\n\nPlay to level up your Battle Pass, unlocking over 100 rewards (typically takes 75 to 150 hours of play). Want it all faster? You can use V-Bucks to buy tiers any time!\n  • “Ragnarok” plus 5 other outfits\n  • 4 Pickaxes\n  • 5 Emotes\n  • 4 Gliders\n  • 5 Back Blings\n  • 5 Skydiving Trails\n  • 15 Sprays\n  • 1,300 V-Bucks\n  • and so much more!",
+          "displayAssetPath": "/Game/Catalog/DisplayAssets/DA_BR_Season5_BattlePass.DA_BR_Season5_BattlePass",
+          "itemGrants": []
+        },
+        {
+          "offerId": "4B2E310BC1AE40B292A16D5AAD747E0A",
+          "devName": "BR.Season5.SingleTier.01",
+          "offerType": "StaticPrice",
+          "prices": [
+            {
+              "currencyType": "MtxCurrency",
+              "currencySubType": "",
+              "regularPrice": 150,
+              "finalPrice": 150,
+              "saleExpiration": "9999-12-31T23:59:59.999Z",
+              "basePrice": 150
+            }
+          ],
+          "categories": [],
+          "dailyLimit": -1,
+          "weeklyLimit": -1,
+          "monthlyLimit": -1,
+          "appStoreId": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "requirements": [],
+          "metaInfo": [],
+          "catalogGroup": "",
+          "catalogGroupPriority": 0,
+          "sortPriority": 0,
+          "title": "Battle Pass Tier",
+          "shortDescription": "",
+          "description": "Get great rewards now!",
+          "displayAssetPath": "",
+          "itemGrants": []
+        }
+      ]
+    },
+    {
+      "name": "BRSeason6",
+      "catalogEntries": [
+        {
+          "offerId": "19D4A5ACC90B4CDF88766A0C8A6D13FB",
+          "devName": "BR.Season6.BattleBundle.01",
+          "offerType": "StaticPrice",
+          "prices": [
+            {
+              "currencyType": "MtxCurrency",
+              "currencySubType": "",
+              "regularPrice": 4700,
+              "finalPrice": 2800,
+              "saleType": "PercentOff",
+              "saleExpiration": "9999-12-31T23:59:59.999Z",
+              "basePrice": 2800
+            }
+          ],
+          "categories": [],
+          "dailyLimit": -1,
+          "weeklyLimit": -1,
+          "monthlyLimit": -1,
+          "appStoreId": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "requirements": [
+            {
+              "requirementType": "DenyOnFulfillment",
+              "requiredId": "854FAED044783BF137181887C325FFD2",
+              "minQuantity": 1
+            }
+          ],
+          "metaInfo": [],
+          "catalogGroup": "",
+          "catalogGroupPriority": 0,
+          "sortPriority": 0,
+          "title": "Battle Bundle",
+          "shortDescription": "Battle Pass + 25 tiers!",
+          "description": "Season 6: Now thru Dec 6\n\nInstantly get these items valued at over 10,000 V-Bucks.\n  • Calamity Outfit\n  • DJ Yonder Outfit\n  • Giddy-up Outfit\n  • Smash-Up Pickaxe\n  • Picnic Glider\n  • Fabled Cape Back Bling\n  • 3 Sprays\n  • Bonesy Pet\n  • Exhaust Skydiving Trail\n  • 70% Bonus Season Match XP\n  • 20% Bonus Season Friend Match XP\n  • Extra Weekly Challenges\n  • Calamity Challenges\n  • and more!\n\nPlay to level up your Battle Pass, unlocking up to 75+ more rewards (typically takes 75 to 150 hours of play). Want it all faster? You can use V-Bucks to buy tiers any time!\n  • Dire plus 3 other outfits\n  • 2 Pets\n  • 2 Pickaxes\n  • 4 Emotes\n  • 2 Gliders\n  • 4 Back Blings\n  • 4 Skydiving Trails\n  • 11 Sprays\n  • 1,300 V-Bucks\n  • and so much more!",
+          "displayAssetPath": "/Game/Catalog/DisplayAssets/DA_BR_Season6_BattlePassWithLevels.DA_BR_Season6_BattlePassWithLevels",
+          "itemGrants": []
+        },
+        {
+          "offerId": "A6FE59C497B844068E1B5D84396F19BA",
+          "devName": "BR.Season6.SingleTier.01",
+          "offerType": "StaticPrice",
+          "prices": [
+            {
+              "currencyType": "MtxCurrency",
+              "currencySubType": "",
+              "regularPrice": 150,
+              "finalPrice": 150,
+              "saleExpiration": "9999-12-31T23:59:59.999Z",
+              "basePrice": 150
+            }
+          ],
+          "categories": [],
+          "dailyLimit": -1,
+          "weeklyLimit": -1,
+          "monthlyLimit": -1,
+          "appStoreId": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "requirements": [],
+          "metaInfo": [],
+          "catalogGroup": "",
+          "catalogGroupPriority": 0,
+          "sortPriority": 0,
+          "title": "Battle Pass Tier",
+          "shortDescription": "",
+          "description": "Get great rewards now!",
+          "displayAssetPath": "",
+          "itemGrants": []
+        },
+        {
+          "offerId": "9C8D0323775A4F59A1D4283E3FDB356C",
+          "devName": "BR.Season6.BattlePass.01",
+          "offerType": "StaticPrice",
+          "prices": [
+            {
+              "currencyType": "MtxCurrency",
+              "currencySubType": "",
+              "regularPrice": 950,
+              "finalPrice": 950,
+              "saleExpiration": "9999-12-31T23:59:59.999Z",
+              "basePrice": 950
+            }
+          ],
+          "categories": [],
+          "dailyLimit": -1,
+          "weeklyLimit": -1,
+          "monthlyLimit": -1,
+          "appStoreId": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "requirements": [
+            {
+              "requirementType": "DenyOnFulfillment",
+              "requiredId": "854FAED044783BF137181887C325FFD2",
+              "minQuantity": 1
+            }
+          ],
+          "metaInfo": [],
+          "catalogGroup": "",
+          "catalogGroupPriority": 0,
+          "sortPriority": 1,
+          "title": "Battle Pass",
+          "shortDescription": "Season 6",
+          "description": "Season 6: Now thru Dec 6\n\nInstantly get these items valued at over 3,500 V-Bucks.\n  • Calamity Outfit\n  • DJ Yonder Outfit\n  • 50% Bonus Season Match XP\n  • 10% Bonus Season Friend Match XP\n  • Extra Weekly Challenges\n  • Calamity Progressive Challenges\n\nPlay to level up your Battle Pass, unlocking over  100 rewards (typically takes 75 to 150 hours of play). Want it all faster? You can use V-Bucks to buy tiers any time!\n  • Dire plus 4 other outfits\n  • 3 Pets\n  • 3 Pickaxes\n  • 5 Emotes\n  • 4 Gliders\n  • 4 Back Blings\n  • 5 Skydiving Trails\n  • 14 Sprays\n  • 2 Toys\n  • 3 Music Tracks\n  • 1,300 V-Bucks\n  • and so much more!",
+          "displayAssetPath": "/Game/Catalog/DisplayAssets/DA_BR_Season6_BattlePass.DA_BR_Season6_BattlePass",
+          "itemGrants": []
+        }
+      ]
+    },
+    {
+      "name": "BRSeason7",
+      "catalogEntries": [
+        {
+          "offerId": "347A90158C64424980E8C1B3DC088F37",
+          "devName": "BR.Season7.BattleBundle.01",
+          "offerType": "StaticPrice",
+          "prices": [
+            {
+              "currencyType": "MtxCurrency",
+              "currencySubType": "",
+              "regularPrice": 4700,
+              "finalPrice": 2800,
+              "saleType": "PercentOff",
+              "saleExpiration": "9999-12-31T23:59:59.999Z",
+              "basePrice": 2800
+            }
+          ],
+          "categories": [],
+          "dailyLimit": -1,
+          "weeklyLimit": -1,
+          "monthlyLimit": -1,
+          "appStoreId": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "requirements": [
+            {
+              "requirementType": "DenyOnFulfillment",
+              "requiredId": "601C6830460BFED07506F5A6D2C4CE7B",
+              "minQuantity": 1
+            }
+          ],
+          "metaInfo": [],
+          "catalogGroup": "",
+          "catalogGroupPriority": 0,
+          "sortPriority": 0,
+          "title": "Battle Bundle",
+          "shortDescription": "Battle Pass + 25 tiers!",
+          "description": "Season 7: Now thru Feb 28\n\nInstantly get these items <Bold>valued at over 10,000 V-Bucks</>.\n  • <ItemName>Zenith</> Progressive Outfit\n  • <ItemName>Lynx</> Progressive Outfit\n  • <ItemName>Sgt. Winter</> Outfit and Style Challenges\n  • <ItemName>Hamirez</> Pet\n  • <ItemName>Tactical Sleigh</> Glider\n  • <ItemName>Arctic Camo</> Wrap\n  • <ItemName>Perfect Present</> Back Bling\n  • <ItemName>String Lights</> Contrail\n  • 300 V-Bucks\n  • 1 Music Track\n  • <Bold>70% Bonus</> Season Match XP\n  • <Bold>20% Bonus</> Season Friend Match XP\n  • <Bold>Extra Weekly Challenges</>\n  • and more!\n\nPlay to level up your Battle Pass, unlocking <Bold>over 75 rewards</> (typically takes 75 to 150 hours of play).\n  • <Bold>4 more Outfits</>\n  • <Bold>1,300 V-Bucks</>\n  • 6 Emotes\n  • 3 Gliders\n  • 4 Back Blings\n  • 4 Wraps\n  • 4 Harvesting Tools\n  • 4 Contrails\n  • 1 Pet\n  • 12 Sprays\n  • 2 Music Tracks\n  • and so much more!\nWant it all faster? You can use V-Bucks to buy tiers any time!",
+          "displayAssetPath": "/Game/Catalog/DisplayAssets/DA_BR_Season7_BattlePassWithLevels.DA_BR_Season7_BattlePassWithLevels",
+          "itemGrants": []
+        },
+        {
+          "offerId": "3A3C99847F144AF3A030DB5690477F5A",
+          "devName": "BR.Season7.BattlePass.01",
+          "offerType": "StaticPrice",
+          "prices": [
+            {
+              "currencyType": "MtxCurrency",
+              "currencySubType": "",
+              "regularPrice": 950,
+              "finalPrice": 950,
+              "saleExpiration": "9999-12-31T23:59:59.999Z",
+              "basePrice": 950
+            }
+          ],
+          "categories": [],
+          "dailyLimit": -1,
+          "weeklyLimit": -1,
+          "monthlyLimit": -1,
+          "appStoreId": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "requirements": [
+            {
+              "requirementType": "DenyOnFulfillment",
+              "requiredId": "601C6830460BFED07506F5A6D2C4CE7B",
+              "minQuantity": 1
+            }
+          ],
+          "metaInfo": [],
+          "catalogGroup": "",
+          "catalogGroupPriority": 0,
+          "sortPriority": 1,
+          "title": "Battle Pass",
+          "shortDescription": "Season 7",
+          "description": "Season 7: Now thru Feb 28\n\nInstantly get these items <Bold>valued at over 3,500 V-Bucks</>.\n  • <ItemName>Zenith</> Progressive Outfit\n  • <ItemName>Lynx</> Progressive Outfit\n  • <Bold>50% Bonus</> Season Match XP\n  • <Bold>10% Bonus</> Season Friend Match XP\n  • <Bold>Extra Weekly Challenges</>\n\nPlay to level up your Battle Pass, unlocking <Bold>over 100 rewards</> (typically takes 75 to 150 hours of play).\n  • <ItemName>Sgt. Winter</> and <Bold>4 more Outfits</>\n  • <Bold>1,300 V-Bucks</>\n  • 2 Pets\n  • 6 Wraps\n  • 4 Harvesting Tools\n  • 7 Emotes\n  • 2 Toys\n  • 4 Gliders\n  • 6 Back Blings\n  • 5 Contrails\n  • 13 Sprays\n  • 3 Music Tracks\n  • and so much more!\nWant it all faster? You can use V-Bucks to buy tiers any time!",
+          "displayAssetPath": "/Game/Catalog/DisplayAssets/DA_BR_Season7_BattlePass.DA_BR_Season7_BattlePass",
+          "itemGrants": []
+        },
+        {
+          "offerId": "64A3020B098841A7805EE257D68C554F",
+          "devName": "BR.Season7.SingleTier.01",
+          "offerType": "StaticPrice",
+          "prices": [
+            {
+              "currencyType": "MtxCurrency",
+              "currencySubType": "",
+              "regularPrice": 150,
+              "finalPrice": 150,
+              "saleExpiration": "9999-12-31T23:59:59.999Z",
+              "basePrice": 150
+            }
+          ],
+          "categories": [],
+          "dailyLimit": -1,
+          "weeklyLimit": -1,
+          "monthlyLimit": -1,
+          "appStoreId": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "requirements": [],
+          "metaInfo": [],
+          "catalogGroup": "",
+          "catalogGroupPriority": 0,
+          "sortPriority": 0,
+          "title": "Battle Pass Tier",
+          "shortDescription": "",
+          "description": "Get great rewards now!",
+          "displayAssetPath": "",
+          "itemGrants": []
+        }
+      ]
+    },
+    {
+      "name": "BRSeason8",
+      "catalogEntries": [
+        {
+          "offerId": "18D9DA48000A40BFAEBAC55A99C55221",
+          "devName": "BR.Season8.BattleBundle.01",
+          "offerType": "StaticPrice",
+          "prices": [
+            {
+              "currencyType": "MtxCurrency",
+              "currencySubType": "",
+              "regularPrice": 4700,
+              "finalPrice": 2800,
+              "saleType": "PercentOff",
+              "saleExpiration": "9999-12-31T23:59:59.999Z",
+              "basePrice": 2800
+            }
+          ],
+          "categories": [],
+          "dailyLimit": -1,
+          "weeklyLimit": -1,
+          "monthlyLimit": -1,
+          "appStoreId": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "requirements": [
+            {
+              "requirementType": "DenyOnFulfillment",
+              "requiredId": "9DF02EA14FB15E475EBBEBBFDBB988DB",
+              "minQuantity": 1
+            }
+          ],
+          "metaInfo": [],
+          "catalogGroup": "",
+          "catalogGroupPriority": 0,
+          "sortPriority": 0,
+          "title": "Battle Bundle",
+          "shortDescription": "Battle Pass + 25 tiers!",
+          "description": "Season 8 Now thru May 8\n\nInstantly get these items <Bold>valued at over 10,000 V-Bucks</>.\n  • <ItemName>Blackheart</> Progressive Outfit\n  • <ItemName>Hybrid</> Progressive Outfit\n  • <ItemName>Sidewinder</> Outfit\n  • <ItemName>Tropical Camo</> Wrap\n  • <ItemName>Woodsy</> Pet\n  • <ItemName>Sky Serpents</> Glider\n  • <ItemName>Cobra</> Back Bling\n  • <ItemName>Flying Standard</> Contrail\n  • 300 V-Bucks\n  • 1 Music Track\n  • <Bold>70% Bonus</> Season Match XP\n  • <Bold>20% Bonus</> Season Friend Match XP\n  • <Bold>Extra Weekly Challenges</>\n  • and more!\n\nPlay to level up your Battle Pass, unlocking <Bold>over 75 rewards</> (typically takes 75 to 150 hours of play).\n  • <Bold>4 more Outfits</>\n  • <Bold>1,000 V-Bucks</>\n  • 6 Emotes\n  • 5 Wraps\n  • 3 Gliders\n  • 3 Back Blings\n  • 4 Harvesting Tools\n  • 4 Contrails\n  • 1 Pet\n  • 12 Sprays\n  • 2 Music Tracks\n  • and so much more!\nWant it all faster? You can use V-Bucks to buy tiers any time!",
+          "displayAssetPath": "/Game/Catalog/DisplayAssets/DA_BR_Season8_BattlePassWithLevels.DA_BR_Season8_BattlePassWithLevels",
+          "itemGrants": []
+        },
+        {
+          "offerId": "E07E41D52D4A425F8DC6592496B75301",
+          "devName": "BR.Season8.SingleTier.01",
+          "offerType": "StaticPrice",
+          "prices": [
+            {
+              "currencyType": "MtxCurrency",
+              "currencySubType": "",
+              "regularPrice": 150,
+              "finalPrice": 150,
+              "saleExpiration": "9999-12-31T23:59:59.999Z",
+              "basePrice": 150
+            }
+          ],
+          "categories": [],
+          "dailyLimit": -1,
+          "weeklyLimit": -1,
+          "monthlyLimit": -1,
+          "appStoreId": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "requirements": [],
+          "metaInfo": [],
+          "catalogGroup": "",
+          "catalogGroupPriority": 0,
+          "sortPriority": 0,
+          "title": "Battle Pass Tier",
+          "shortDescription": "",
+          "description": "Get great rewards now!",
+          "displayAssetPath": "",
+          "itemGrants": []
+        },
+        {
+          "offerId": "77F31B7F83FB422195DA60CDE683671D",
+          "devName": "BR.Season8.BattlePass.01",
+          "offerType": "StaticPrice",
+          "prices": [
+            {
+              "currencyType": "MtxCurrency",
+              "currencySubType": "",
+              "regularPrice": 950,
+              "finalPrice": 950,
+              "saleExpiration": "9999-12-31T23:59:59.999Z",
+              "basePrice": 950
+            }
+          ],
+          "categories": [],
+          "dailyLimit": -1,
+          "weeklyLimit": -1,
+          "monthlyLimit": -1,
+          "appStoreId": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "requirements": [
+            {
+              "requirementType": "DenyOnFulfillment",
+              "requiredId": "9DF02EA14FB15E475EBBEBBFDBB988DB",
+              "minQuantity": 1
+            }
+          ],
+          "metaInfo": [],
+          "catalogGroup": "",
+          "catalogGroupPriority": 0,
+          "sortPriority": 1,
+          "title": "Battle Pass",
+          "shortDescription": "Season 8",
+          "description": "Season 8 Now thru May 8 \n\nInstantly get these items <Bold>valued at over 3,500 V-Bucks</>.\n  • <ItemName>Blackheart</> Progressive Outfit\n  • <ItemName>Hybrid</> Progressive Outfit\n  • <Bold>50% Bonus</> Season Match XP\n  • <Bold>10% Bonus</> Season Friend Match XP\n  • <Bold>Extra Weekly Challenges</>\n\nPlay to level up your Battle Pass, unlocking <Bold>over 100 rewards</> (typically takes 75 to 150 hours of play).\n  • <ItemName>Sidewinder</> and <Bold>4 more Outfits</>\n  • <Bold>1,300 V-Bucks</>\n  • 7 Emotes\n  • 6 Wraps\n  • 2 Pets\n  • 5 Harvesting Tools\n  • 4 Gliders\n  • 4 Back Blings\n  • 5 Contrails\n  • 14 Sprays\n  • 3 Music Tracks\n  • 1 Toy\n  • 20 Loading Screens\n  • and so much more!\nWant it all faster? You can use V-Bucks to buy tiers any time!",
+          "displayAssetPath": "/Game/Catalog/DisplayAssets/DA_BR_Season8_BattlePass.DA_BR_Season8_BattlePass",
+          "itemGrants": []
+        }
+      ]
+    },
+    {
+      "name": "BRSeason9",
+      "catalogEntries": [
+        {
+          "offerId": "C7190ACA4E5E228A94CA3CB9C3FC7AE9",
+          "devName": "BR.Season9.BattleBundle.01",
+          "offerType": "StaticPrice",
+          "prices": [
+            {
+              "currencyType": "MtxCurrency",
+              "currencySubType": "",
+              "regularPrice": 4700,
+              "finalPrice": 2800,
+              "saleType": "PercentOff",
+              "saleExpiration": "9999-12-31T23:59:59.999Z",
+              "basePrice": 2800
+            }
+          ],
+          "categories": [],
+          "dailyLimit": -1,
+          "weeklyLimit": -1,
+          "monthlyLimit": -1,
+          "appStoreId": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "requirements": [
+            {
+              "requirementType": "DenyOnFulfillment",
+              "requiredId": "73E6EE6F4526EF97450D1592C3DB0EF5",
+              "minQuantity": 1
+            }
+          ],
+          "metaInfo": [],
+          "catalogGroup": "",
+          "catalogGroupPriority": 0,
+          "sortPriority": 0,
+          "title": "Battle Bundle",
+          "shortDescription": "Battle Pass + 25 tiers!",
+          "description": "Season 9: Now thru July 24\n\nInstantly get these items <Bold>valued at over 10,000 V-Bucks</>.\n  • <ItemName>Zenith</> Progressive Outfit\n  • <ItemName>Lynx</> Progressive Outfit\n  • <ItemName>Sgt. Winter</> Outfit and Style Challenges\n  • <ItemName>Hamirez</> Pet\n  • <ItemName>Tactical Sleigh</> Glider\n  • <ItemName>Arctic Camo</> Wrap\n  • <ItemName>Perfect Present</> Back Bling\n  • <ItemName>String Lights</> Contrail\n  • 300 V-Bucks\n  • 1 Music Track\n  • <Bold>70% Bonus</> Season Match XP\n  • <Bold>20% Bonus</> Season Friend Match XP\n  • <Bold>Extra Weekly Challenges</>\n  • and more!\n\nPlay to level up your Battle Pass, unlocking <Bold>over 75 rewards</> (typically takes 75 to 150 hours of play).\n  • <Bold>4 more Outfits</>\n  • <Bold>1,300 V-Bucks</>\n  • 6 Emotes\n  • 3 Gliders\n  • 4 Back Blings\n  • 4 Wraps\n  • 4 Harvesting Tools\n  • 4 Contrails\n  • 1 Pet\n  • 12 Sprays\n  • 2 Music Tracks\n  • and so much more!\nWant it all faster? You can use V-Bucks to buy tiers any time!",
+          "displayAssetPath": "/Game/Catalog/DisplayAssets/DA_BR_Season9_BattlePassWithLevels.DA_BR_Season9_BattlePassWithLevels",
+          "itemGrants": []
+        },
+        {
+          "offerId": "73E6EE6F4526EF97450D1592C3DB0EF5",
+          "devName": "BR.Season9.BattlePass.01",
+          "offerType": "StaticPrice",
+          "prices": [
+            {
+              "currencyType": "MtxCurrency",
+              "currencySubType": "",
+              "regularPrice": 950,
+              "finalPrice": 950,
+              "saleExpiration": "9999-12-31T23:59:59.999Z",
+              "basePrice": 950
+            }
+          ],
+          "categories": [],
+          "dailyLimit": -1,
+          "weeklyLimit": -1,
+          "monthlyLimit": -1,
+          "appStoreId": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "requirements": [
+            {
+              "requirementType": "DenyOnFulfillment",
+              "requiredId": "73E6EE6F4526EF97450D1592C3DB0EF5",
+              "minQuantity": 1
+            }
+          ],
+          "metaInfo": [],
+          "catalogGroup": "",
+          "catalogGroupPriority": 0,
+          "sortPriority": 1,
+          "title": "Battle Pass",
+          "shortDescription": "Season 9",
+          "description": "Season 9: Now thru July 24\n\nInstantly get these items <Bold>valued at over 3,500 V-Bucks</>.\n  • <ItemName>Zenith</> Progressive Outfit\n  • <ItemName>Lynx</> Progressive Outfit\n  • <Bold>50% Bonus</> Season Match XP\n  • <Bold>10% Bonus</> Season Friend Match XP\n  • <Bold>Extra Weekly Challenges</>\n\nPlay to level up your Battle Pass, unlocking <Bold>over 100 rewards</> (typically takes 75 to 150 hours of play).\n  • <ItemName>Sgt. Winter</> and <Bold>4 more Outfits</>\n  • <Bold>1,300 V-Bucks</>\n  • 2 Pets\n  • 6 Wraps\n  • 4 Harvesting Tools\n  • 7 Emotes\n  • 2 Toys\n  • 4 Gliders\n  • 6 Back Blings\n  • 5 Contrails\n  • 13 Sprays\n  • 3 Music Tracks\n  • and so much more!\nWant it all faster? You can use V-Bucks to buy tiers any time!",
+          "displayAssetPath": "/Game/Catalog/DisplayAssets/DA_BR_Season9_BattlePass.DA_BR_Season9_BattlePass",
+          "itemGrants": []
+        },
+        {
+          "offerId": "33E185A84ED7B64F2856E69AADFD092C",
+          "devName": "BR.Season9.SingleTier.01",
+          "offerType": "StaticPrice",
+          "prices": [
+            {
+              "currencyType": "MtxCurrency",
+              "currencySubType": "",
+              "regularPrice": 150,
+              "finalPrice": 150,
+              "saleExpiration": "9999-12-31T23:59:59.999Z",
+              "basePrice": 150
+            }
+          ],
+          "categories": [],
+          "dailyLimit": -1,
+          "weeklyLimit": -1,
+          "monthlyLimit": -1,
+          "appStoreId": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "requirements": [],
+          "metaInfo": [],
+          "catalogGroup": "",
+          "catalogGroupPriority": 0,
+          "sortPriority": 0,
+          "title": "Battle Pass Tier",
+          "shortDescription": "",
+          "description": "Get great rewards now!",
+          "displayAssetPath": "",
+          "itemGrants": []
+        }
+      ]
+    },
+    {
+      "name": "BRSeason10",
+      "catalogEntries": [
+        {
+          "offerId": "2E43CCD24C3BE8F5ABBDF28E233B9350",
+          "devName": "BR.Season10.BattlePass.01",
+          "offerType": "StaticPrice",
+          "prices": [
+            {
+              "currencyType": "MtxCurrency",
+              "currencySubType": "",
+              "regularPrice": 950,
+              "dynamicRegularPrice": -1,
+              "finalPrice": 950,
+              "saleExpiration": "9999-12-31T23:59:59.999Z",
+              "basePrice": 950
+            }
+          ],
+          "categories": [],
+          "dailyLimit": -1,
+          "weeklyLimit": -1,
+          "monthlyLimit": -1,
+          "refundable": false,
+          "appStoreId": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "requirements": [
+            {
+              "requirementType": "DenyOnFulfillment",
+              "requiredId": "2E43CCD24C3BE8F5ABBDF28E233B9350",
+              "minQuantity": 1
+            }
+          ],
+          "metaInfo": [
+            {
+              "key": "Preroll",
+              "value": "False"
+            }
+          ],
+          "catalogGroup": "",
+          "catalogGroupPriority": 0,
+          "sortPriority": 1,
+          "title": "Battle Pass",
+          "shortDescription": "Season X",
+          "description": "Season X Now through October 6.\n\nInstantly get these items <Bold>valued at over 3,500 V-Bucks</>.\n  • <ItemName>X-Lord</> Outfit\n  • <ItemName>Catalyst</> Outfit\n  • <Bold>50% Bonus</> Season Match XP\n  • <Bold>60% Bonus</> Season Friend Match XP\n\nPlay to level up your Battle Pass, unlocking <Bold>over 100 rewards</> (typically takes 75 to 150 hours of play).\n  • <ItemName>Ultima Knight</> and <Bold>4 more Outfits</>\n  • <Bold>1,300 V-Bucks</>\n  • 7 Emotes\n  • 6 Wraps\n  • 6 Harvesting Tools\n  • 1 Pet\n  • 7 Gliders\n  • 7 Back Blings\n  • 5 Contrails\n  • 17 Sprays\n  • 3 Music Tracks\n  • 1 Toy\n  • 27 Loading Screens\n  • and so much more!\nWant it all faster? You can use V-Bucks to buy tiers any time!",
+          "displayAssetPath": "/Game/Catalog/DisplayAssets/DA_BR_Season10_BattlePass.DA_BR_Season10_BattlePass",
+          "itemGrants": []
+        },
+        {
+          "offerId": "259920BC42F0AAC7C8672D856C9B622C",
+          "devName": "BR.Season10.BattleBundle.01",
+          "offerType": "StaticPrice",
+          "prices": [
+            {
+              "currencyType": "MtxCurrency",
+              "currencySubType": "",
+              "regularPrice": 4700,
+              "dynamicRegularPrice": -1,
+              "finalPrice": 2800,
+              "saleType": "PercentOff",
+              "saleExpiration": "9999-12-31T23:59:59.999Z",
+              "basePrice": 2800
+            }
+          ],
+          "categories": [],
+          "dailyLimit": -1,
+          "weeklyLimit": -1,
+          "monthlyLimit": -1,
+          "refundable": false,
+          "appStoreId": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "requirements": [
+            {
+              "requirementType": "DenyOnFulfillment",
+              "requiredId": "2E43CCD24C3BE8F5ABBDF28E233B9350",
+              "minQuantity": 1
+            }
+          ],
+          "metaInfo": [
+            {
+              "key": "Preroll",
+              "value": "False"
+            }
+          ],
+          "catalogGroup": "",
+          "catalogGroupPriority": 0,
+          "sortPriority": 0,
+          "title": "Battle Bundle",
+          "shortDescription": "Battle Pass + 25 tiers!",
+          "description": "Season X Now through October 6.\n\nInstantly get these items <Bold>valued at over 10,000 V-Bucks</>.\n  • <ItemName>X-Lord</> Outfit\n  • <ItemName>Catalyst</> Outfit\n  • <ItemName>Tilted Teknique</> Outfit\n  • <ItemName>Junk Bucket</> Glider\n  • <ItemName>Emote Camo </> Wrap\n  • <ItemName> Rift Lightning </> Contrails\n  • 300 V-Bucks\n  • <ItemName>The Final Showdown </> Music Track\n  • <Bold>70% Bonus</> Season Match XP\n  • <Bold>80% Bonus</> Season Friend Match XP\n  • and more!\n\nPlay to level up your Battle Pass, unlocking <Bold>over 75 rewards</> (typically takes 75 to 150 hours of play).\n  • <Bold>4 more Outfits</>\n  • <Bold>1,000 V-Bucks</>\n  • 6 Emotes\n  • 4 Wraps\n  • 5 Harvesting Tools\n  • 1 Pet\n  • 6 Gliders\n  • 7 Back Blings\n  • 3 Contrails\n  • 13 Sprays\n  • 2 Music Tracks\n  • 1 Toy\n  • 23 Loading Screens\n  • and so much more!\nWant it all faster? You can use V-Bucks to buy tiers any time!",
+          "displayAssetPath": "/Game/Catalog/DisplayAssets/DA_BR_Season10_BattlePassWithLevels.DA_BR_Season10_BattlePassWithLevels",
+          "itemGrants": []
+        },
+        {
+          "offerId": "AF1B7AC14A5F6A9ED255B88902120757",
+          "devName": "BR.Season10.SingleTier.01",
+          "offerType": "StaticPrice",
+          "prices": [
+            {
+              "currencyType": "MtxCurrency",
+              "currencySubType": "",
+              "regularPrice": 150,
+              "dynamicRegularPrice": -1,
+              "finalPrice": 150,
+              "saleExpiration": "9999-12-31T23:59:59.999Z",
+              "basePrice": 150
+            }
+          ],
+          "categories": [],
+          "dailyLimit": -1,
+          "weeklyLimit": -1,
+          "monthlyLimit": -1,
+          "refundable": false,
+          "appStoreId": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "requirements": [],
+          "metaInfo": [
+            {
+              "key": "Preroll",
+              "value": "False"
+            }
+          ],
+          "catalogGroup": "",
+          "catalogGroupPriority": 0,
+          "sortPriority": 0,
+          "title": "Battle Pass Tier",
+          "shortDescription": "",
+          "description": "Get great rewards now!",
+          "displayAssetPath": "",
+          "itemGrants": []
         }
       ]
     }

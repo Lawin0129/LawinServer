@@ -83520,7 +83520,7 @@
         "ettrr4h-2wedfgbn-8i9jsghj-lpw9t2to-loadout1"
       ],
       "favorite_victorypose": "",
-      "mfa_reward_claimed": false,
+      "mfa_reward_claimed": true,
       "quest_manager": {
         "dailyLoginInterval": "0001-01-01T00:00:00.000Z",
         "dailyQuestRerolls": 1
@@ -83532,7 +83532,7 @@
       "favorite_callingcard": "",
       "favorite_character": "",
       "favorite_spray": [],
-      "book_xp": 100,
+      "book_xp": 0,
       "battlestars": 100000,
       "battlestars_season_total": 100000,
       "style_points": 100000,
@@ -83562,7 +83562,7 @@
       "favorite_pickaxe": "AthenaPickaxe:DefaultPickaxe",
       "favorite_glider": "AthenaGlider:DefaultGlider",
       "daily_rewards": {},
-      "xp": 999,
+      "xp": 0,
       "season_friend_match_boost": 999999999,
       "active_loadout_index": 0,
       "favorite_musicpack": "",

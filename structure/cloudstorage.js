@@ -6,6 +6,18 @@ const path = require("path");
 const functions = require("./functions.js");
 const memory = require("./../memory.json");
 
+express.use((req, res, next) => {
+    // Get raw body in encoding latin1 for ClientSettings
+    if (req.originalUrl.includes('/fortnite/api/cloudstorage/user/') && req.method == "PUT") {
+        req.rawBody = "";
+        req.setEncoding("latin1");
+
+        req.on("data", (chunk) => req.rawBody += chunk);
+        req.on("end", () => next());
+    }
+    else return next();
+})
+
 express.get("/fortnite/api/cloudstorage/system", async (req, res) => {
     functions.GetVersionInfo(req, memory);
 
@@ -93,7 +105,7 @@ express.get("/fortnite/api/cloudstorage/user/:accountId", async (req, res) => {
     const file = path.join(process.env.LOCALAPPDATA, "LawinServer", "ClientSettings", `ClientSettings-${currentBuildID}.Sav`);
 
     if (fs.existsSync(file)) {
-        const ParsedFile = fs.readFileSync(file, 'utf-8');
+        const ParsedFile = fs.readFileSync(file, 'latin1');
         const ParsedStats = fs.statSync(file);
 
         return res.json([{

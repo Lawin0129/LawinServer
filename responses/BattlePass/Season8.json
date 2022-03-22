@@ -1,0 +1,453 @@
+{
+  "battleBundleOfferId": "18D9DA48000A40BFAEBAC55A99C55221",
+  "battlePassOfferId": "77F31B7F83FB422195DA60CDE683671D",
+  "tierOfferId": "E07E41D52D4A425F8DC6592496B75301",
+  "paidRewards": [
+    {
+      "Token:athenaseasonxpboost": 50,
+      "Token:athenaseasonfriendxpboost": 60,
+      "AthenaCharacter:cid_347_athena_commando_m_pirateprogressive": 1,
+      "AthenaCharacter:cid_346_athena_commando_m_dragonninja": 1,
+      "ChallengeBundleSchedule:season8_paid_schedule": 1,
+      "ChallengeBundleSchedule:season8_cumulative_schedule": 1,
+      "Token:athenaseasonmergedxpboosts": 1
+    },
+    {
+      "Token:athenaseasonxpboost": 10,
+      "Token:athenanextseasonxpboost": 30
+    },
+    {
+      "HomebaseBannerIcon:brs8pineapple": 1
+    },
+    {
+      "Currency:mtxgiveaway": 100
+    },
+    {
+      "AthenaItemWrap:wrap_020_tropicalcamo": 1
+    },
+    {
+      "AthenaDance:spid_091_dragonninja": 1
+    },
+    {
+      "AthenaBackpack:bid_218_medusa": 1
+    },
+    {
+      "HomebaseBannerIcon:brs8jellyfish": 1
+    },
+    {
+      "Token:athenaseasonfriendxpboost": 10
+    },
+    {
+      "AthenaLoadingScreen:lsid_106_treasuremap": 1
+    },
+    {
+      "Currency:mtxgiveaway": 100
+    },
+    {
+      "AthenaMusicPack:musicpack_007_pirate": 1
+    },
+    {
+      "AthenaDance:emoji_palmtree": 1
+    },
+    {
+      "AthenaDance:spid_092_bananapeel": 1
+    },
+    {
+      "AthenaGlider:glider_id_124_medusa": 1
+    },
+    {
+      "AthenaDance:emoji_octopirate": 1
+    },
+    {
+      "Token:athenaseasonxpboost": 10
+    },
+    {
+      "Currency:mtxgiveaway": 100
+    },
+    {
+      "AthenaBackpack:petcarrier_007_woodsy": 1
+    },
+    {
+      "AthenaDance:spid_103_mermaid": 1
+    },
+    {
+      "AthenaSkyDiveContrail:trails_id_046_clover": 1
+    },
+    {
+      "AthenaLoadingScreen:lsid_100_stpattyday": 1
+    },
+    {
+      "AthenaCharacter:cid_348_athena_commando_f_medusa": 1
+    },
+    {
+      "Token:athenaseasonfriendxpboost": 10
+    },
+    {
+      "AthenaDance:emoji_4leafclover": 1
+    },
+    {
+      "AthenaDance:toy_014_bouncyball": 1
+    },
+    {
+      "Currency:mtxgiveaway": 100
+    },
+    {
+      "AthenaItemWrap:wrap_021_pirate": 1
+    },
+    {
+      "HomebaseBannerIcon:brs8ziggurat": 1
+    },
+    {
+      "AthenaLoadingScreen:lsid_101_icequeen": 1
+    },
+    {
+      "AthenaDance:eid_conga": 1
+    },
+    {
+      "AthenaDance:emoji_spicy": 1
+    },
+    {
+      "Token:athenaseasonxpboost": 10
+    },
+    {
+      "Currency:mtxgiveaway": 100
+    },
+    {
+      "CosmeticVariantToken:vtid_129_petcarrier_woodsy_styleb": 1
+    },
+    {
+      "AthenaDance:spid_099_key": 1
+    },
+    {
+      "AthenaSkyDiveContrail:trails_id_048_spectral": 1
+    },
+    {
+      "HomebaseBannerIcon:brs8coconuts": 1
+    },
+    {
+      "AthenaGlider:glider_id_123_masterkey": 1
+    },
+    {
+      "AthenaLoadingScreen:lsid_102_triceraops": 1
+    },
+    {
+      "Token:athenaseasonfriendxpboost": 10
+    },
+    {
+      "Currency:mtxgiveaway": 100
+    },
+    {
+      "AthenaItemWrap:wrap_023_aztec": 1
+    },
+    {
+      "AthenaDance:spid_094_wootdog": 1
+    },
+    {
+      "AccountResource:athenaseasonalxp": 1000
+    },
+    {
+      "AthenaDance:emoji_skullbrite": 1
+    },
+    {
+      "AthenaCharacter:cid_349_athena_commando_m_banana": 1
+    },
+    {
+      "AthenaDance:spid_095_loveranger": 1
+    },
+    {
+      "Token:athenaseasonxpboost": 10
+    },
+    {
+      "HomebaseBannerIcon:brs8foxhead": 1
+    },
+    {
+      "Currency:mtxgiveaway": 100
+    },
+    {
+      "AthenaBackpack:petcarrier_008_fox": 1
+    },
+    {
+      "AthenaDance:emoji_aztecmask": 1
+    },
+    {
+      "AthenaDance:spid_096_fallenloveranger": 1
+    },
+    {
+      "AthenaPickaxe:pickaxe_id_165_masterkey": 1
+    },
+    {
+      "HomebaseBannerIcon:brs8roach": 1
+    },
+    {
+      "Token:athenaseasonfriendxpboost": 10
+    },
+    {
+      "AthenaSkyDiveContrail:trails_id_044_lava": 1
+    },
+    {
+      "Currency:mtxgiveaway": 100
+    },
+    {
+      "AthenaItemWrap:wrap_017_dragonninja": 1
+    },
+    {
+      "AccountResource:athenaseasonalxp": 1000
+    },
+    {
+      "HomebaseBannerIcon:brs8whaletail": 1
+    },
+    {
+      "AthenaDance:eid_banana": 1
+    },
+    {
+      "Token:athenaseasonxpboost": 10
+    },
+    {
+      "AthenaLoadingScreen:lsid_103_spraycollage": 1
+    },
+    {
+      "AccountResource:athenaseasonalxp": 1000
+    },
+    {
+      "CosmeticVariantToken:vtid_131_petcarrier_fox_styleb": 1
+    },
+    {
+      "AthenaDance:spid_101_britebomber": 1
+    },
+    {
+      "Currency:mtxgiveaway": 100
+    },
+    {
+      "AthenaDance:emoji_200m": 1
+    },
+    {
+      "AthenaCharacter:cid_351_athena_commando_f_fireelf": 1
+    },
+    {
+      "HomebaseBannerIcon:brs8tigerstripes": 1
+    },
+    {
+      "Token:athenaseasonfriendxpboost": 10
+    },
+    {
+      "AthenaLoadingScreen:lsid_097_powerchord": 1
+    },
+    {
+      "AthenaDance:spid_097_fireelf": 1
+    },
+    {
+      "Currency:mtxgiveaway": 100
+    },
+    {
+      "AthenaItemWrap:wrap_019_tiger": 1
+    },
+    {
+      "AthenaDance:emoji_cuddle": 1
+    },
+    {
+      "AthenaGlider:glider_id_128_bootybuoy": 1
+    },
+    {
+      "AthenaDance:spid_100_salty": 1
+    },
+    {
+      "Token:athenaseasonxpboost": 10
+    },
+    {
+      "Currency:mtxgiveaway": 100
+    },
+    {
+      "CosmeticVariantToken:vtid_130_petcarrier_woodsy_stylec": 1
+    },
+    {
+      "AthenaLoadingScreen:lsid_104_masterkey": 1
+    },
+    {
+      "AthenaSkyDiveContrail:trails_id_047_ammobelt": 1
+    },
+    {
+      "HomebaseBannerIcon:brs8crystalllama": 1
+    },
+    {
+      "AthenaCharacter:cid_350_athena_commando_m_masterkey": 1
+    },
+    {
+      "Token:athenaseasonfriendxpboost": 10
+    },
+    {
+      "AthenaDance:emoji_angryvolcano": 1
+    },
+    {
+      "AthenaDance:spid_098_shiny": 1
+    },
+    {
+      "Currency:mtxgiveaway": 100
+    },
+    {
+      "AthenaMusicPack:musicpack_009_starpower": 1
+    },
+    {
+      "CosmeticVariantToken:vtid_132_petcarrier_fox_stylec": 1
+    },
+    {
+      "AthenaLoadingScreen:lsid_105_blackwidow": 1
+    },
+    {
+      "AthenaDance:eid_hulahoop": 1
+    },
+    {
+      "Token:athenaseasonxpboost": 10
+    },
+    {
+      "Currency:mtxgiveaway": 100
+    },
+    {
+      "AthenaItemWrap:wrap_022_gemstone": 1
+    },
+    {
+      "CosmeticVariantToken:vtid_128_masterkey_styleb": 1
+    },
+    {
+      "AthenaCharacter:cid_352_athena_commando_f_shiny": 1,
+      "ChallengeBundleSchedule:season8_shiny_schedule": 1
+    }
+  ],
+  "freeRewards": [
+    {},
+    {
+      "AthenaDance:spid_102_ggaztec": 1
+    },
+    {},
+    {
+      "AthenaLoadingScreen:lsid_099_piratetheme": 1
+    },
+    {},
+    {
+      "AthenaSkyDiveContrail:trails_id_045_undertow": 1
+    },
+    {},
+    {
+      "AthenaDance:emoji_sun": 1
+    },
+    {},
+    {},
+    {
+      "Currency:mtxgiveaway": 100
+    },
+    {},
+    {},
+    {
+      "AthenaDance:eid_happywave": 1
+    },
+    {},
+    {},
+    {},
+    {
+      "HomebaseBannerIcon:brs8jollyroger": 1
+    },
+    {},
+    {},
+    {},
+    {
+      "AthenaBackpack:bid_215_masterkey": 1
+    },
+    {},
+    {},
+    {},
+    {
+      "AthenaDance:spid_090_dancefloorbox": 1
+    },
+    {},
+    {},
+    {},
+    {
+      "AthenaGlider:glider_id_129_fireelf": 1
+    },
+    {},
+    {},
+    {},
+    {
+      "Currency:mtxgiveaway": 100
+    },
+    {},
+    {},
+    {},
+    {
+      "AthenaPickaxe:pickaxe_id_167_medusa": 1
+    },
+    {},
+    {},
+    {},
+    {
+      "HomebaseBannerIcon:brs8treasurechest": 1
+    },
+    {},
+    {},
+    {},
+    {
+      "AthenaDance:eid_youboreme": 1
+    },
+    {},
+    {},
+    {},
+    {
+      "AthenaLoadingScreen:lsid_098_dragonninja": 1
+    },
+    {},
+    {},
+    {},
+    {
+      "AthenaMusicPack:musicpack_008_coral": 1
+    },
+    {},
+    {},
+    {},
+    {
+      "AthenaDance:emoji_ggjellyfish": 1
+    },
+    {},
+    {},
+    {},
+    {
+      "AthenaDance:spid_093_theend": 1
+    },
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {}
+  ]
+}

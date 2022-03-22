@@ -3,23 +3,6 @@ const express = Express();
 const fs = require("fs");
 const path = require("path");
 
-express.use(function(req, res, next) {
-    // Getting the raw body of a request for client saving
-    if (req.originalUrl.includes('/fortnite/api/cloudstorage/user/')) {
-        req.rawBody = '';
-        req.setEncoding('latin1');
-
-        req.on('data', function(chunk) {
-            req.rawBody += chunk;
-        });
-
-        req.on('end', function() {
-            next();
-        });
-    } else {
-        return next();
-    }
-});
 express.use(Express.json());
 express.use(Express.urlencoded({ extended: true }));
 express.use(Express.static('public'));
