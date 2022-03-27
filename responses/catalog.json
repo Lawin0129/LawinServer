@@ -3373,6 +3373,511 @@
           "itemGrants": []
         }
       ]
+    },
+    {
+      "name": "BRSeason11",
+      "catalogEntries": [
+        {
+          "offerId": "571D433C47E98F020EF099894CAF3B6A",
+          "devName": "BR.Season11.BattlePass.01",
+          "offerType": "StaticPrice",
+          "prices": [
+            {
+              "currencyType": "MtxCurrency",
+              "currencySubType": "",
+              "regularPrice": 950,
+              "dynamicRegularPrice": -1,
+              "finalPrice": 950,
+              "saleExpiration": "9999-12-31T23:59:59.999Z",
+              "basePrice": 950
+            }
+          ],
+          "categories": [],
+          "dailyLimit": -1,
+          "weeklyLimit": -1,
+          "monthlyLimit": -1,
+          "refundable": false,
+          "appStoreId": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "requirements": [
+            {
+              "requirementType": "DenyOnFulfillment",
+              "requiredId": "571D433C47E98F020EF099894CAF3B6A",
+              "minQuantity": 1
+            }
+          ],
+          "metaInfo": [
+            {
+              "key": "Preroll",
+              "value": "False"
+            }
+          ],
+          "catalogGroup": "",
+          "catalogGroupPriority": 0,
+          "sortPriority": 1,
+          "title": "Battle Pass",
+          "shortDescription": "Chapter 2 - Season 1",
+          "description": "Chapter 2 - Season 1 through February 6. \n\nInstantly get these items\n  • <ItemName>Turk | Riptide</> Outfit\n  • <ItemName>Journey | Hazard</> Outfit\n\n\nPlay to level up your Battle Pass, unlocking <Bold>over 100 rewards</> !\n  • <ItemName>Fusion</> and <Bold>4 more Outfits</>\n  • <Bold>1,500 V-Bucks</>\n  • 7 Emotes\n  • 6 Wraps\n  • 6 Harvesting Tools\n  • 5 Gliders\n  • 6 Back Blings\n  • 5 Contrails\n  • 8 Sprays\n  • 3 Music Tracks\n  • 16 Loading Screens\n  • and so much more!\nWant it all faster? You can use V-Bucks to buy rewards any time!",
+          "displayAssetPath": "/Game/Catalog/DisplayAssets/DA_BR_Season11_BattlePass.DA_BR_Season11_BattlePass",
+          "itemGrants": []
+        },
+        {
+          "offerId": "70DBDA11425B10AF7A005D82DB54BC59",
+          "devName": "BR.Season11.SingleTier.01",
+          "offerType": "StaticPrice",
+          "prices": [
+            {
+              "currencyType": "MtxCurrency",
+              "currencySubType": "",
+              "regularPrice": 150,
+              "dynamicRegularPrice": -1,
+              "finalPrice": 150,
+              "saleExpiration": "9999-12-31T23:59:59.999Z",
+              "basePrice": 150
+            }
+          ],
+          "categories": [],
+          "dailyLimit": -1,
+          "weeklyLimit": -1,
+          "monthlyLimit": -1,
+          "refundable": false,
+          "appStoreId": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "requirements": [],
+          "metaInfo": [
+            {
+              "key": "Preroll",
+              "value": "False"
+            }
+          ],
+          "catalogGroup": "",
+          "catalogGroupPriority": 0,
+          "sortPriority": 0,
+          "title": "Battle Pass Level",
+          "shortDescription": "",
+          "description": "Get great rewards now!",
+          "displayAssetPath": "",
+          "itemGrants": []
+        },
+        {
+          "offerId": "93E992BC45D487A943D769845441ABA5",
+          "devName": "BR.Season11.BattleBundle.01",
+          "offerType": "StaticPrice",
+          "prices": [
+            {
+              "currencyType": "MtxCurrency",
+              "currencySubType": "",
+              "regularPrice": 4700,
+              "dynamicRegularPrice": -1,
+              "finalPrice": 2800,
+              "saleType": "PercentOff",
+              "saleExpiration": "9999-12-31T23:59:59.999Z",
+              "basePrice": 2800
+            }
+          ],
+          "categories": [],
+          "dailyLimit": -1,
+          "weeklyLimit": -1,
+          "monthlyLimit": -1,
+          "refundable": false,
+          "appStoreId": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "requirements": [
+            {
+              "requirementType": "DenyOnFulfillment",
+              "requiredId": "571D433C47E98F020EF099894CAF3B6A",
+              "minQuantity": 1
+            },
+            {
+              "requirementType": "DenyOnItemOwnership",
+              "requiredId": "Token:athena_s11_nobattlebundleoption_token",
+              "minQuantity": 1
+            }
+          ],
+          "metaInfo": [
+            {
+              "key": "Preroll",
+              "value": "False"
+            }
+          ],
+          "catalogGroup": "",
+          "catalogGroupPriority": 0,
+          "sortPriority": 0,
+          "title": "Battle Bundle",
+          "shortDescription": "Battle Pass + 25 levels!",
+          "description": "Chapter 2 - Season 1 through February 6.\n\nInstantly get these items\n  •  <ItemName>Turk | Riptide</> Outfit\n  • <ItemName>Journey | Hazard</> Outfit\n  • <ItemName>Rippley | Sludge</> Outfit\n  • <ItemName>Respect The Peace</> Emote\n  • <ItemName>Sky Trawler</> Glider\n  • <ItemName>Riptide </> Wrap\n  • <ItemName> Slurpstream</> Contrails\n  • <ItemName>Storm Shredder </> Music Track\n  •  400 V-Bucks  \n  • and more!\n\nPlay to level up your Battle Pass, unlocking <Bold>over 75 rewards</>!\n  • <Bold>4 more Outfits</>\n  • <Bold>1,200 V-Bucks</>\n  • 5 Emotes\n  • 5 Wraps\n  • 5 Harvesting Tools\n  • 4 Gliders\n  • 4 Back Blings\n  • 4 Contrails\n  • 5 Sprays\n  • 2 Music Tracks\n  • 13 Loading Screens\n  • and so much more!\nWant it all faster? You can use V-Bucks to buy rewards any time!",
+          "displayAssetPath": "/Game/Catalog/DisplayAssets/DA_BR_Season11_BattlePassWithLevels.DA_BR_Season11_BattlePassWithLevels",
+          "itemGrants": []
+        }
+      ]
+    },
+    {
+      "name": "BRSeason12",
+      "catalogEntries": [
+        {
+          "offerId": "3D30A5B3128A4D539A548792BBFFACD4",
+          "devName": "BR.Season12.BattlePass.01",
+          "offerType": "StaticPrice",
+          "prices": [
+            {
+              "currencyType": "MtxCurrency",
+              "currencySubType": "",
+              "regularPrice": 950,
+              "dynamicRegularPrice": -1,
+              "finalPrice": 950,
+              "saleExpiration": "9999-12-31T23:59:59.999Z",
+              "basePrice": 950
+            }
+          ],
+          "categories": [],
+          "dailyLimit": -1,
+          "weeklyLimit": -1,
+          "monthlyLimit": -1,
+          "refundable": false,
+          "appStoreId": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "requirements": [
+            {
+              "requirementType": "DenyOnFulfillment",
+              "requiredId": "FD78DFF8453A49BD8B9E3CA7F0619200",
+              "minQuantity": 1
+            }
+          ],
+          "metaInfo": [
+            {
+              "key": "Preroll",
+              "value": "False"
+            }
+          ],
+          "catalogGroup": "",
+          "catalogGroupPriority": 0,
+          "sortPriority": 1,
+          "title": "Battle Pass",
+          "shortDescription": "Chapter 2 - Season 2",
+          "displayAssetPath": "/Game/Catalog/DisplayAssets/DA_BR_Season12_BattlePass.DA_BR_Season12_BattlePass",
+          "itemGrants": []
+        },
+        {
+          "offerId": "689DD7694B70D4EF412B2D811A63C5BC",
+          "devName": "BR.Season12.SingleTier.01",
+          "offerType": "StaticPrice",
+          "prices": [
+            {
+              "currencyType": "MtxCurrency",
+              "currencySubType": "",
+              "regularPrice": 150,
+              "dynamicRegularPrice": -1,
+              "finalPrice": 150,
+              "saleExpiration": "9999-12-31T23:59:59.999Z",
+              "basePrice": 150
+            }
+          ],
+          "categories": [],
+          "dailyLimit": -1,
+          "weeklyLimit": -1,
+          "monthlyLimit": -1,
+          "refundable": false,
+          "appStoreId": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "requirements": [],
+          "metaInfo": [
+            {
+              "key": "Preroll",
+              "value": "False"
+            }
+          ],
+          "catalogGroup": "",
+          "catalogGroupPriority": 0,
+          "sortPriority": 0,
+          "title": "Battle Pass Level",
+          "shortDescription": "",
+          "description": "Get great rewards now!",
+          "displayAssetPath": "",
+          "itemGrants": []
+        },
+        {
+          "offerId": "1355545DCD4C4627888C3EB5AE97D7BF",
+          "devName": "BR.Season12.BattleBundle.01",
+          "offerType": "StaticPrice",
+          "prices": [
+            {
+              "currencyType": "MtxCurrency",
+              "currencySubType": "",
+              "regularPrice": 4700,
+              "dynamicRegularPrice": -1,
+              "finalPrice": 2800,
+              "saleType": "PercentOff",
+              "saleExpiration": "9999-12-31T23:59:59.999Z",
+              "basePrice": 2800
+            }
+          ],
+          "categories": [],
+          "dailyLimit": -1,
+          "weeklyLimit": -1,
+          "monthlyLimit": -1,
+          "refundable": false,
+          "appStoreId": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "requirements": [
+            {
+              "requirementType": "DenyOnFulfillment",
+              "requiredId": "FD78DFF8453A49BD8B9E3CA7F0619200",
+              "minQuantity": 1
+            }
+          ],
+          "metaInfo": [
+            {
+              "key": "Preroll",
+              "value": "False"
+            }
+          ],
+          "catalogGroup": "",
+          "catalogGroupPriority": 0,
+          "sortPriority": 0,
+          "title": "Battle Bundle",
+          "shortDescription": "Battle Pass + 25 levels!",
+          "displayAssetPath": "/Game/Catalog/DisplayAssets/DA_BR_Season12_BattlePassWithLevels.DA_BR_Season12_BattlePassWithLevels",
+          "itemGrants": []
+        }
+      ]
+    },
+    {
+      "name": "BRSeason13",
+      "catalogEntries": [
+        {
+          "offerId": "A3A60070669140F198A0AFD38220CF22",
+          "devName": "BR.Season13.BattlePass.01",
+          "offerType": "StaticPrice",
+          "prices": [
+            {
+              "currencyType": "MtxCurrency",
+              "currencySubType": "",
+              "regularPrice": 950,
+              "dynamicRegularPrice": -1,
+              "finalPrice": 950,
+              "saleExpiration": "9999-12-31T23:59:59.999Z",
+              "basePrice": 950
+            }
+          ],
+          "categories": [],
+          "dailyLimit": -1,
+          "weeklyLimit": -1,
+          "monthlyLimit": -1,
+          "refundable": false,
+          "appStoreId": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "requirements": [
+            {
+              "requirementType": "DenyOnFulfillment",
+              "requiredId": "7C2119A8850445A1A13BA18D40D84EB1",
+              "minQuantity": 1
+            }
+          ],
+          "metaInfo": [
+            {
+              "key": "Preroll",
+              "value": "False"
+            }
+          ],
+          "catalogGroup": "",
+          "catalogGroupPriority": 0,
+          "sortPriority": 1,
+          "title": "Battle Pass",
+          "shortDescription": "Chapter 2 - Season 3",
+          "displayAssetPath": "/Game/Catalog/DisplayAssets/DA_BR_Season13_BattlePass.DA_BR_Season13_BattlePass",
+          "itemGrants": []
+        },
+        {
+          "offerId": "C677E22244C444256A79ACA0C59BAE7D",
+          "devName": "BR.Season13.SingleTier.01",
+          "offerType": "StaticPrice",
+          "prices": [
+            {
+              "currencyType": "MtxCurrency",
+              "currencySubType": "",
+              "regularPrice": 150,
+              "dynamicRegularPrice": -1,
+              "finalPrice": 150,
+              "saleExpiration": "9999-12-31T23:59:59.999Z",
+              "basePrice": 150
+            }
+          ],
+          "categories": [],
+          "dailyLimit": -1,
+          "weeklyLimit": -1,
+          "monthlyLimit": -1,
+          "refundable": false,
+          "appStoreId": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "requirements": [],
+          "metaInfo": [
+            {
+              "key": "Preroll",
+              "value": "False"
+            }
+          ],
+          "catalogGroup": "",
+          "catalogGroupPriority": 0,
+          "sortPriority": 0,
+          "title": "Battle Pass Level",
+          "shortDescription": "",
+          "description": "Get great rewards now!",
+          "displayAssetPath": "",
+          "itemGrants": []
+        },
+        {
+          "offerId": "A9DB423A2EDB4D8CA4D97204CE3F0D79",
+          "devName": "BR.Season13.BattleBundle.01",
+          "offerType": "StaticPrice",
+          "prices": [
+            {
+              "currencyType": "MtxCurrency",
+              "currencySubType": "",
+              "regularPrice": 4700,
+              "dynamicRegularPrice": -1,
+              "finalPrice": 2800,
+              "saleType": "PercentOff",
+              "saleExpiration": "9999-12-31T23:59:59.999Z",
+              "basePrice": 2800
+            }
+          ],
+          "categories": [],
+          "dailyLimit": -1,
+          "weeklyLimit": -1,
+          "monthlyLimit": -1,
+          "refundable": false,
+          "appStoreId": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "requirements": [
+            {
+              "requirementType": "DenyOnFulfillment",
+              "requiredId": "7C2119A8850445A1A13BA18D40D84EB1",
+              "minQuantity": 1
+            }
+          ],
+          "metaInfo": [
+            {
+              "key": "Preroll",
+              "value": "False"
+            }
+          ],
+          "catalogGroup": "",
+          "catalogGroupPriority": 0,
+          "sortPriority": 0,
+          "title": "Battle Bundle",
+          "shortDescription": "Battle Pass + 25 levels!",
+          "displayAssetPath": "/Game/Catalog/DisplayAssets/DA_BR_Season13_BattlePassWithLevels.DA_BR_Season13_BattlePassWithLevels",
+          "itemGrants": []
+        }
+      ]
     }
   ]
 }
