@@ -87,7 +87,7 @@ express.get("/launcher/api/public/assets/*", async (req, res) => {
     });
 })
 
-express.get("/Builds/Fortnite/Content/CloudDir/LawinServer.manifest", async (req, res) => {
+express.get("/Builds/Fortnite/Content/CloudDir/*.manifest", async (req, res) => {
     res.set("Content-Type", "application/octet-stream")
 
     const manifest = fs.readFileSync(path.join(__dirname, "..", "responses", "CloudDir", "LawinServer.manifest"));
@@ -95,7 +95,7 @@ express.get("/Builds/Fortnite/Content/CloudDir/LawinServer.manifest", async (req
     res.status(200).send(manifest).end();
 })
 
-express.get("/Builds/Fortnite/Content/CloudDir/LawinServer/Full.ini", async (req, res) => {
+express.get("/Builds/Fortnite/Content/CloudDir/*/Full.ini", async (req, res) => {
     const ini = fs.readFileSync(path.join(__dirname, "..", "responses", "CloudDir", "Full.ini"));
 
     res.status(200).send(ini).end();
