@@ -63216,6 +63216,35 @@
         "favorite": false
       },
       "quantity": 1000000000
+    },
+    "HomebaseNode:questreward_transformation": {
+      "templateId": "HomebaseNode:questreward_transformation",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "Quest:plankertonquest_tutorial_transform": {
+      "templateId": "Quest:plankertonquest_tutorial_transform",
+      "attributes": {
+        "level": -1,
+        "item_seen": true,
+        "sent_new_notification": true,
+        "challenge_bundle_id": "",
+        "xp_reward_scalar": 1,
+        "challenge_linked_quest_given": "",
+        "quest_pool": "",
+        "quest_state": "Claimed",
+        "last_state_change_time": "2020-01-27T21:00:37.783Z",
+        "challenge_linked_quest_parent": "",
+        "max_level_bonus": 0,
+        "completion_plankertonquest_tutorial_transform_obj_tabcallout": 1,
+        "completion_plankertonquest_tutorial_transform_obj_guardscreen01": 1,
+        "completion_plankertonquest_tutorial_transform_obj_buttonintro": 1,
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1
     }
   },
   "stats": {
