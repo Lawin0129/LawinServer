@@ -1955,6 +1955,87 @@ express.post("/fortnite/api/game/v2/profile/*/client/PromoteItem", async (req, r
     res.end();
 });
 
+// Transform items STW
+express.post("/fortnite/api/game/v2/profile/*/client/TransmogItem", async (req, res) => {
+    const profile = require(`./../profiles/${req.query.profileId || "campaign"}.json`);
+    const ItemIDS = require("./../responses/ItemIDS.json");
+
+    // do not change any of these or you will end up breaking it
+    var ApplyProfileChanges = [];
+    var Notifications = [];
+    var BaseRevision = profile.rvn || 0;
+    var QueryRevision = req.query.rvn || -1;
+    var StatChanged = false;
+
+    if (req.body.sacrificeItemIds) {
+        for (var i in req.body.sacrificeItemIds) {
+            var id = req.body.sacrificeItemIds[i];
+
+            delete profile.items[id];
+
+            ApplyProfileChanges.push({
+                "changeType": "itemRemoved",
+                "itemId": id
+            })
+        }
+
+        StatChanged = true;
+    }
+
+    if (StatChanged == true) {
+        profile.rvn += 1;
+        profile.commandRevision += 1;
+
+        const randomNumber = Math.floor(Math.random() * ItemIDS.length);
+        const ID = functions.MakeID();
+        var Item = {"templateId":ItemIDS[randomNumber],"attributes":{"legacy_alterations":[],"max_level_bonus":0,"level":1,"refund_legacy_item":false,"item_seen":false,"alterations":["","","","","",""],"xp":0,"refundable":false,"alteration_base_rarities":[],"favorite":false},"quantity":1};
+
+        profile.items[ID] = Item
+
+        Notifications.push({
+            "type": "transmogResult",
+            "primary": true,
+            "transmoggedItems": [
+                {
+                    "itemType": profile.items[ID].templateId,
+                    "itemGuid": ID,
+                    "itemProfile": req.query.profileId || "campaign",
+                    "attributes": profile.items[ID].attributes,
+                    "quantity": 1
+                }
+            ]
+        })
+
+        ApplyProfileChanges.push({
+            "changeType": "itemAdded",
+            "itemId": ID,
+            "item": Item
+        })
+
+        fs.writeFileSync(`./profiles/${req.query.profileId || "campaign"}.json`, JSON.stringify(profile, null, 2));
+    }
+
+    // this doesn't work properly on version v12.20 and above but whatever
+    if (QueryRevision != BaseRevision) {
+        ApplyProfileChanges = [{
+            "changeType": "fullProfileUpdate",
+            "profile": profile
+        }];
+    }
+
+    res.json({
+        "profileRevision": profile.rvn || 0,
+        "profileId": req.query.profileId || "campaign",
+        "profileChangesBaseRevision": BaseRevision,
+        "profileChanges": ApplyProfileChanges,
+        "notifications": Notifications,
+        "profileCommandRevision": profile.commandRevision || 0,
+        "serverTime": new Date().toISOString(),
+        "responseVersion": 1
+    })
+    res.end();
+});
+
 // Craft item STW (Guns, melees and traps only)
 express.post("/fortnite/api/game/v2/profile/*/client/CraftWorldItem", async (req, res) => {
     functions.GetVersionInfo(req, memory);
