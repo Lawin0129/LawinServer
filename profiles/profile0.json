@@ -32945,6 +32945,1189 @@
         "favorite": false
       },
       "quantity": 1000000000
+    },
+    "ConversionControl:cck_worker_core_unlimited": {
+      "templateId": "ConversionControl:cck_worker_core_unlimited",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "ConversionControl:cck_worker_core_unlimited_vr": {
+      "templateId": "ConversionControl:cck_worker_core_unlimited_vr",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "ConversionControl:cck_worker_core_consumable_vr": {
+      "templateId": "ConversionControl:cck_worker_core_consumable_vr",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "ConversionControl:cck_worker_core_consumable_uc": {
+      "templateId": "ConversionControl:cck_worker_core_consumable_uc",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "ConversionControl:cck_worker_core_consumable_sr": {
+      "templateId": "ConversionControl:cck_worker_core_consumable_sr",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "ConversionControl:cck_worker_core_consumable_r": {
+      "templateId": "ConversionControl:cck_worker_core_consumable_r",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "ConversionControl:cck_worker_core_consumable_c": {
+      "templateId": "ConversionControl:cck_worker_core_consumable_c",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "ConversionControl:cck_worker_core_consumable": {
+      "templateId": "ConversionControl:cck_worker_core_consumable",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "ConversionControl:cck_weapon_core_unlimited": {
+      "templateId": "ConversionControl:cck_weapon_core_unlimited",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "ConversionControl:cck_weapon_scavenger_consumable_sr": {
+      "templateId": "ConversionControl:cck_weapon_scavenger_consumable_sr",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "ConversionControl:cck_weapon_core_consumable": {
+      "templateId": "ConversionControl:cck_weapon_core_consumable",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "ConversionControl:cck_trap_core_unlimited": {
+      "templateId": "ConversionControl:cck_trap_core_unlimited",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "ConversionControl:cck_trap_core_consumable_vr": {
+      "templateId": "ConversionControl:cck_trap_core_consumable_vr",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "ConversionControl:cck_trap_core_consumable_uc": {
+      "templateId": "ConversionControl:cck_trap_core_consumable_uc",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "ConversionControl:cck_trap_core_consumable_sr": {
+      "templateId": "ConversionControl:cck_trap_core_consumable_sr",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "ConversionControl:cck_trap_core_consumable_r": {
+      "templateId": "ConversionControl:cck_trap_core_consumable_r",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "ConversionControl:cck_trap_core_consumable_c": {
+      "templateId": "ConversionControl:cck_trap_core_consumable_c",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "ConversionControl:cck_trap_core_consumable": {
+      "templateId": "ConversionControl:cck_trap_core_consumable",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "ConversionControl:cck_ranged_sniper_unlimited": {
+      "templateId": "ConversionControl:cck_ranged_sniper_unlimited",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "ConversionControl:cck_ranged_shotgun_unlimited": {
+      "templateId": "ConversionControl:cck_ranged_shotgun_unlimited",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "ConversionControl:cck_ranged_pistol_unlimited": {
+      "templateId": "ConversionControl:cck_ranged_pistol_unlimited",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "ConversionControl:cck_ranged_core_unlimited_vr": {
+      "templateId": "ConversionControl:cck_ranged_core_unlimited_vr",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "ConversionControl:cck_ranged_core_unlimited": {
+      "templateId": "ConversionControl:cck_ranged_core_unlimited",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "ConversionControl:cck_ranged_assault_unlimited": {
+      "templateId": "ConversionControl:cck_ranged_assault_unlimited",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "ConversionControl:cck_ranged_sniper_consumable_vr": {
+      "templateId": "ConversionControl:cck_ranged_sniper_consumable_vr",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "ConversionControl:cck_ranged_sniper_consumable_uc": {
+      "templateId": "ConversionControl:cck_ranged_sniper_consumable_uc",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "ConversionControl:cck_ranged_sniper_consumable_sr": {
+      "templateId": "ConversionControl:cck_ranged_sniper_consumable_sr",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "ConversionControl:cck_ranged_sniper_consumable_r": {
+      "templateId": "ConversionControl:cck_ranged_sniper_consumable_r",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "ConversionControl:cck_ranged_sniper_consumable_c": {
+      "templateId": "ConversionControl:cck_ranged_sniper_consumable_c",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "ConversionControl:cck_ranged_sniper_consumable": {
+      "templateId": "ConversionControl:cck_ranged_sniper_consumable",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "ConversionControl:cck_ranged_shotgun_consumable_vr": {
+      "templateId": "ConversionControl:cck_ranged_shotgun_consumable_vr",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "ConversionControl:cck_ranged_shotgun_consumable_uc": {
+      "templateId": "ConversionControl:cck_ranged_shotgun_consumable_uc",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "ConversionControl:cck_ranged_shotgun_consumable_sr": {
+      "templateId": "ConversionControl:cck_ranged_shotgun_consumable_sr",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "ConversionControl:cck_ranged_shotgun_consumable_r": {
+      "templateId": "ConversionControl:cck_ranged_shotgun_consumable_r",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "ConversionControl:cck_ranged_shotgun_consumable_c": {
+      "templateId": "ConversionControl:cck_ranged_shotgun_consumable_c",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "ConversionControl:cck_ranged_shotgun_consumable": {
+      "templateId": "ConversionControl:cck_ranged_shotgun_consumable",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "ConversionControl:cck_ranged_pistol_consumable_vr": {
+      "templateId": "ConversionControl:cck_ranged_pistol_consumable_vr",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "ConversionControl:cck_ranged_pistol_consumable_uc": {
+      "templateId": "ConversionControl:cck_ranged_pistol_consumable_uc",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "ConversionControl:cck_ranged_pistol_consumable_sr": {
+      "templateId": "ConversionControl:cck_ranged_pistol_consumable_sr",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "ConversionControl:cck_ranged_pistol_consumable_r": {
+      "templateId": "ConversionControl:cck_ranged_pistol_consumable_r",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "ConversionControl:cck_ranged_pistol_consumable_c": {
+      "templateId": "ConversionControl:cck_ranged_pistol_consumable_c",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "ConversionControl:cck_ranged_pistol_consumable": {
+      "templateId": "ConversionControl:cck_ranged_pistol_consumable",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "ConversionControl:cck_ranged_launcher_scavenger_consumable_sr": {
+      "templateId": "ConversionControl:cck_ranged_launcher_scavenger_consumable_sr",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "ConversionControl:cck_ranged_launcher_pumpkin_consumable_sr": {
+      "templateId": "ConversionControl:cck_ranged_launcher_pumpkin_consumable_sr",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "ConversionControl:cck_ranged_core_consumable": {
+      "templateId": "ConversionControl:cck_ranged_core_consumable",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "ConversionControl:cck_ranged_assault_hydra_consumable_sr": {
+      "templateId": "ConversionControl:cck_ranged_assault_hydra_consumable_sr",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "ConversionControl:cck_ranged_assault_consumable_vr": {
+      "templateId": "ConversionControl:cck_ranged_assault_consumable_vr",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "ConversionControl:cck_ranged_assault_consumable_uc": {
+      "templateId": "ConversionControl:cck_ranged_assault_consumable_uc",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "ConversionControl:cck_ranged_assault_consumable_sr": {
+      "templateId": "ConversionControl:cck_ranged_assault_consumable_sr",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "ConversionControl:cck_ranged_assault_consumable_r": {
+      "templateId": "ConversionControl:cck_ranged_assault_consumable_r",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "ConversionControl:cck_ranged_assault_consumable_c": {
+      "templateId": "ConversionControl:cck_ranged_assault_consumable_c",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "ConversionControl:cck_ranged_assault_consumable": {
+      "templateId": "ConversionControl:cck_ranged_assault_consumable",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "ConversionControl:cck_ranged_assault_auto_halloween_consumable_sr": {
+      "templateId": "ConversionControl:cck_ranged_assault_auto_halloween_consumable_sr",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "ConversionControl:cck_material_event_pumpkinwarhead": {
+      "templateId": "ConversionControl:cck_material_event_pumpkinwarhead",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "ConversionControl:cck_ranged_smg_consumable": {
+      "templateId": "ConversionControl:cck_ranged_smg_consumable",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "ConversionControl:cck_ranged_smg_consumable_c": {
+      "templateId": "ConversionControl:cck_ranged_smg_consumable_c",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "ConversionControl:cck_ranged_smg_consumable_r": {
+      "templateId": "ConversionControl:cck_ranged_smg_consumable_r",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "ConversionControl:cck_ranged_smg_consumable_sr": {
+      "templateId": "ConversionControl:cck_ranged_smg_consumable_sr",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "ConversionControl:cck_ranged_smg_consumable_uc": {
+      "templateId": "ConversionControl:cck_ranged_smg_consumable_uc",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "ConversionControl:cck_ranged_smg_consumable_vr": {
+      "templateId": "ConversionControl:cck_ranged_smg_consumable_vr",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "ConversionControl:cck_ranged_smg_unlimited": {
+      "templateId": "ConversionControl:cck_ranged_smg_unlimited",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "ConversionControl:cck_melee_tool_unlimited": {
+      "templateId": "ConversionControl:cck_melee_tool_unlimited",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "ConversionControl:cck_melee_sword_unlimited": {
+      "templateId": "ConversionControl:cck_melee_sword_unlimited",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "ConversionControl:cck_melee_spear_unlimited": {
+      "templateId": "ConversionControl:cck_melee_spear_unlimited",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "ConversionControl:cck_melee_scythe_unlimited": {
+      "templateId": "ConversionControl:cck_melee_scythe_unlimited",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "ConversionControl:cck_melee_piercing_unlimited": {
+      "templateId": "ConversionControl:cck_melee_piercing_unlimited",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "ConversionControl:cck_melee_edged_unlimited": {
+      "templateId": "ConversionControl:cck_melee_edged_unlimited",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "ConversionControl:cck_melee_core_unlimited_vr": {
+      "templateId": "ConversionControl:cck_melee_core_unlimited_vr",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "ConversionControl:cck_melee_core_unlimited": {
+      "templateId": "ConversionControl:cck_melee_core_unlimited",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "ConversionControl:cck_melee_club_unlimited": {
+      "templateId": "ConversionControl:cck_melee_club_unlimited",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "ConversionControl:cck_melee_blunt_unlimited": {
+      "templateId": "ConversionControl:cck_melee_blunt_unlimited",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "ConversionControl:cck_melee_axe_unlimited": {
+      "templateId": "ConversionControl:cck_melee_axe_unlimited",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "ConversionControl:cck_melee_tool_consumable_vr": {
+      "templateId": "ConversionControl:cck_melee_tool_consumable_vr",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "ConversionControl:cck_melee_tool_consumable_uc": {
+      "templateId": "ConversionControl:cck_melee_tool_consumable_uc",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "ConversionControl:cck_melee_tool_consumable_sr": {
+      "templateId": "ConversionControl:cck_melee_tool_consumable_sr",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "ConversionControl:cck_melee_tool_consumable_r": {
+      "templateId": "ConversionControl:cck_melee_tool_consumable_r",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "ConversionControl:cck_melee_tool_consumable_c": {
+      "templateId": "ConversionControl:cck_melee_tool_consumable_c",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "ConversionControl:cck_melee_tool_consumable": {
+      "templateId": "ConversionControl:cck_melee_tool_consumable",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "ConversionControl:cck_melee_sword_consumable_vr": {
+      "templateId": "ConversionControl:cck_melee_sword_consumable_vr",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "ConversionControl:cck_melee_sword_consumable_uc": {
+      "templateId": "ConversionControl:cck_melee_sword_consumable_uc",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "ConversionControl:cck_melee_sword_consumable_sr": {
+      "templateId": "ConversionControl:cck_melee_sword_consumable_sr",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "ConversionControl:cck_melee_sword_consumable_r": {
+      "templateId": "ConversionControl:cck_melee_sword_consumable_r",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "ConversionControl:cck_melee_sword_consumable_c": {
+      "templateId": "ConversionControl:cck_melee_sword_consumable_c",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "ConversionControl:cck_melee_sword_consumable": {
+      "templateId": "ConversionControl:cck_melee_sword_consumable",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "ConversionControl:cck_melee_spear_consumable_vr": {
+      "templateId": "ConversionControl:cck_melee_spear_consumable_vr",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "ConversionControl:cck_melee_spear_consumable_uc": {
+      "templateId": "ConversionControl:cck_melee_spear_consumable_uc",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "ConversionControl:cck_melee_spear_consumable_sr": {
+      "templateId": "ConversionControl:cck_melee_spear_consumable_sr",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "ConversionControl:cck_melee_spear_consumable_r": {
+      "templateId": "ConversionControl:cck_melee_spear_consumable_r",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "ConversionControl:cck_melee_spear_consumable_c": {
+      "templateId": "ConversionControl:cck_melee_spear_consumable_c",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "ConversionControl:cck_melee_spear_consumable": {
+      "templateId": "ConversionControl:cck_melee_spear_consumable",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "ConversionControl:cck_melee_scythe_consumable_vr": {
+      "templateId": "ConversionControl:cck_melee_scythe_consumable_vr",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "ConversionControl:cck_melee_scythe_consumable_uc": {
+      "templateId": "ConversionControl:cck_melee_scythe_consumable_uc",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "ConversionControl:cck_melee_scythe_consumable_sr": {
+      "templateId": "ConversionControl:cck_melee_scythe_consumable_sr",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "ConversionControl:cck_melee_scythe_consumable_r": {
+      "templateId": "ConversionControl:cck_melee_scythe_consumable_r",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "ConversionControl:cck_melee_scythe_consumable_c": {
+      "templateId": "ConversionControl:cck_melee_scythe_consumable_c",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "ConversionControl:cck_melee_scythe_consumable": {
+      "templateId": "ConversionControl:cck_melee_scythe_consumable",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "ConversionControl:cck_melee_piercing_consumable": {
+      "templateId": "ConversionControl:cck_melee_piercing_consumable",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "ConversionControl:cck_melee_edged_consumable": {
+      "templateId": "ConversionControl:cck_melee_edged_consumable",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "ConversionControl:cck_melee_core_consumable": {
+      "templateId": "ConversionControl:cck_melee_core_consumable",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "ConversionControl:cck_melee_club_consumable_vr": {
+      "templateId": "ConversionControl:cck_melee_club_consumable_vr",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "ConversionControl:cck_melee_club_consumable_uc": {
+      "templateId": "ConversionControl:cck_melee_club_consumable_uc",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "ConversionControl:cck_melee_club_consumable_sr": {
+      "templateId": "ConversionControl:cck_melee_club_consumable_sr",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "ConversionControl:cck_melee_club_consumable_r": {
+      "templateId": "ConversionControl:cck_melee_club_consumable_r",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "ConversionControl:cck_melee_club_consumable_c": {
+      "templateId": "ConversionControl:cck_melee_club_consumable_c",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "ConversionControl:cck_melee_club_consumable": {
+      "templateId": "ConversionControl:cck_melee_club_consumable",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "ConversionControl:cck_melee_blunt_consumable": {
+      "templateId": "ConversionControl:cck_melee_blunt_consumable",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "ConversionControl:cck_melee_axe_consumable_vr": {
+      "templateId": "ConversionControl:cck_melee_axe_consumable_vr",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "ConversionControl:cck_melee_axe_consumable_uc": {
+      "templateId": "ConversionControl:cck_melee_axe_consumable_uc",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "ConversionControl:cck_melee_axe_consumable_sr": {
+      "templateId": "ConversionControl:cck_melee_axe_consumable_sr",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "ConversionControl:cck_melee_axe_consumable_r": {
+      "templateId": "ConversionControl:cck_melee_axe_consumable_r",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "ConversionControl:cck_melee_axe_consumable_c": {
+      "templateId": "ConversionControl:cck_melee_axe_consumable_c",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "ConversionControl:cck_melee_axe_consumable": {
+      "templateId": "ConversionControl:cck_melee_axe_consumable",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "ConversionControl:cck_manager_core_unlimited": {
+      "templateId": "ConversionControl:cck_manager_core_unlimited",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "ConversionControl:cck_manager_core_consumable_vr": {
+      "templateId": "ConversionControl:cck_manager_core_consumable_vr",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "ConversionControl:cck_manager_core_consumable_uc": {
+      "templateId": "ConversionControl:cck_manager_core_consumable_uc",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "ConversionControl:cck_manager_core_consumable_sr": {
+      "templateId": "ConversionControl:cck_manager_core_consumable_sr",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "ConversionControl:cck_manager_core_consumable_r": {
+      "templateId": "ConversionControl:cck_manager_core_consumable_r",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "ConversionControl:cck_manager_core_consumable_c": {
+      "templateId": "ConversionControl:cck_manager_core_consumable_c",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "ConversionControl:cck_manager_core_consumable": {
+      "templateId": "ConversionControl:cck_manager_core_consumable",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "ConversionControl:cck_hero_outlander_unlimited": {
+      "templateId": "ConversionControl:cck_hero_outlander_unlimited",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "ConversionControl:cck_hero_ninja_unlimited": {
+      "templateId": "ConversionControl:cck_hero_ninja_unlimited",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "ConversionControl:cck_hero_core_unlimited": {
+      "templateId": "ConversionControl:cck_hero_core_unlimited",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "ConversionControl:cck_hero_constructor_unlimited": {
+      "templateId": "ConversionControl:cck_hero_constructor_unlimited",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "ConversionControl:cck_hero_commando_unlimited": {
+      "templateId": "ConversionControl:cck_hero_commando_unlimited",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "ConversionControl:cck_hero_outlander_consumable": {
+      "templateId": "ConversionControl:cck_hero_outlander_consumable",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "ConversionControl:cck_hero_ninja_consumable": {
+      "templateId": "ConversionControl:cck_hero_ninja_consumable",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "ConversionControl:cck_hero_core_unlimited_vr": {
+      "templateId": "ConversionControl:cck_hero_core_unlimited_vr",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "ConversionControl:cck_hero_core_consumable_vr": {
+      "templateId": "ConversionControl:cck_hero_core_consumable_vr",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "ConversionControl:cck_hero_core_consumable_uc": {
+      "templateId": "ConversionControl:cck_hero_core_consumable_uc",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "ConversionControl:cck_hero_core_consumable_sr": {
+      "templateId": "ConversionControl:cck_hero_core_consumable_sr",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "ConversionControl:cck_hero_core_consumable_r": {
+      "templateId": "ConversionControl:cck_hero_core_consumable_r",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "ConversionControl:cck_hero_core_consumable": {
+      "templateId": "ConversionControl:cck_hero_core_consumable",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "ConversionControl:cck_hero_constructor_consumable": {
+      "templateId": "ConversionControl:cck_hero_constructor_consumable",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "ConversionControl:cck_hero_commando_consumable": {
+      "templateId": "ConversionControl:cck_hero_commando_consumable",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "ConversionControl:cck_expedition_worker_veryrare": {
+      "templateId": "ConversionControl:cck_expedition_worker_veryrare",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "ConversionControl:cck_expedition_worker_uncommon": {
+      "templateId": "ConversionControl:cck_expedition_worker_uncommon",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "ConversionControl:cck_expedition_worker_superrare": {
+      "templateId": "ConversionControl:cck_expedition_worker_superrare",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "ConversionControl:cck_expedition_worker_rare": {
+      "templateId": "ConversionControl:cck_expedition_worker_rare",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "ConversionControl:cck_expedition_worker_common": {
+      "templateId": "ConversionControl:cck_expedition_worker_common",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "ConversionControl:cck_expedition_weapon_veryrare": {
+      "templateId": "ConversionControl:cck_expedition_weapon_veryrare",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "ConversionControl:cck_expedition_weapon_uncommon": {
+      "templateId": "ConversionControl:cck_expedition_weapon_uncommon",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "ConversionControl:cck_expedition_weapon_superrare": {
+      "templateId": "ConversionControl:cck_expedition_weapon_superrare",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "ConversionControl:cck_expedition_weapon_rare": {
+      "templateId": "ConversionControl:cck_expedition_weapon_rare",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "ConversionControl:cck_expedition_weapon_common": {
+      "templateId": "ConversionControl:cck_expedition_weapon_common",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "ConversionControl:cck_expedition_trap_veryrare": {
+      "templateId": "ConversionControl:cck_expedition_trap_veryrare",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "ConversionControl:cck_expedition_trap_uncommon": {
+      "templateId": "ConversionControl:cck_expedition_trap_uncommon",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "ConversionControl:cck_expedition_trap_superrare": {
+      "templateId": "ConversionControl:cck_expedition_trap_superrare",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "ConversionControl:cck_expedition_trap_rare": {
+      "templateId": "ConversionControl:cck_expedition_trap_rare",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "ConversionControl:cck_expedition_trap_common": {
+      "templateId": "ConversionControl:cck_expedition_trap_common",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "ConversionControl:cck_expedition_manager_veryrare": {
+      "templateId": "ConversionControl:cck_expedition_manager_veryrare",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "ConversionControl:cck_expedition_manager_unique": {
+      "templateId": "ConversionControl:cck_expedition_manager_unique",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "ConversionControl:cck_expedition_manager_uncommon": {
+      "templateId": "ConversionControl:cck_expedition_manager_uncommon",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "ConversionControl:cck_expedition_manager_superrare": {
+      "templateId": "ConversionControl:cck_expedition_manager_superrare",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "ConversionControl:cck_expedition_manager_rare": {
+      "templateId": "ConversionControl:cck_expedition_manager_rare",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "ConversionControl:cck_expedition_hero_veryrare": {
+      "templateId": "ConversionControl:cck_expedition_hero_veryrare",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "ConversionControl:cck_expedition_hero_uncommon": {
+      "templateId": "ConversionControl:cck_expedition_hero_uncommon",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "ConversionControl:cck_expedition_hero_superrare": {
+      "templateId": "ConversionControl:cck_expedition_hero_superrare",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "ConversionControl:cck_expedition_hero_rare": {
+      "templateId": "ConversionControl:cck_expedition_hero_rare",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "ConversionControl:cck_expedition_defender_veryrare": {
+      "templateId": "ConversionControl:cck_expedition_defender_veryrare",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "ConversionControl:cck_expedition_defender_uncommon": {
+      "templateId": "ConversionControl:cck_expedition_defender_uncommon",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "ConversionControl:cck_expedition_defender_superrare": {
+      "templateId": "ConversionControl:cck_expedition_defender_superrare",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "ConversionControl:cck_expedition_defender_rare": {
+      "templateId": "ConversionControl:cck_expedition_defender_rare",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "ConversionControl:cck_defender_core_unlimited": {
+      "templateId": "ConversionControl:cck_defender_core_unlimited",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "ConversionControl:cck_defender_core_consumable_vr": {
+      "templateId": "ConversionControl:cck_defender_core_consumable_vr",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "ConversionControl:cck_defender_core_consumable_uc": {
+      "templateId": "ConversionControl:cck_defender_core_consumable_uc",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "ConversionControl:cck_defender_core_consumable_sr": {
+      "templateId": "ConversionControl:cck_defender_core_consumable_sr",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "ConversionControl:cck_defender_core_consumable_r": {
+      "templateId": "ConversionControl:cck_defender_core_consumable_r",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "ConversionControl:cck_defender_core_consumable_c": {
+      "templateId": "ConversionControl:cck_defender_core_consumable_c",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "ConversionControl:cck_defender_core_consumable": {
+      "templateId": "ConversionControl:cck_defender_core_consumable",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
     }
   },
   "stats": {

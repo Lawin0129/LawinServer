@@ -40,6 +40,7 @@
 - Changing items edit styles
 - Support a Creator with specific codes
 - Fully working daily challenges system (New daily challenge every day, replacing daily challenges, etc...)
+- Item transformation
 
 ### Battle Royale:
 - CloudStorage and ClientSettings (Settings saving)
