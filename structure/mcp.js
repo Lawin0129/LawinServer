@@ -1958,7 +1958,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/PromoteItem", async (req, r
 // Transform items STW
 express.post("/fortnite/api/game/v2/profile/*/client/TransmogItem", async (req, res) => {
     const profile = require(`./../profiles/${req.query.profileId || "campaign"}.json`);
-    const ItemIDS = require("./../responses/ItemIDS.json");
+    var transformItemIDS = require("./../responses/transformItemIDS.json");
 
     // do not change any of these or you will end up breaking it
     var ApplyProfileChanges = [];
@@ -1967,7 +1967,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/TransmogItem", async (req, 
     var QueryRevision = req.query.rvn || -1;
     var StatChanged = false;
 
-    if (req.body.sacrificeItemIds) {
+    if (req.body.sacrificeItemIds && req.body.transmogKeyTemplateId) {
         for (var i in req.body.sacrificeItemIds) {
             var id = req.body.sacrificeItemIds[i];
 
@@ -1979,6 +1979,13 @@ express.post("/fortnite/api/game/v2/profile/*/client/TransmogItem", async (req, 
             })
         }
 
+        if (transformItemIDS.hasOwnProperty(req.body.transmogKeyTemplateId)) {
+            transformItemIDS = transformItemIDS[req.body.transmogKeyTemplateId]
+        }
+        else {
+            transformItemIDS = require("./../responses/ItemIDS.json");
+        }
+
         StatChanged = true;
     }
 
@@ -1986,9 +1993,9 @@ express.post("/fortnite/api/game/v2/profile/*/client/TransmogItem", async (req, 
         profile.rvn += 1;
         profile.commandRevision += 1;
 
-        const randomNumber = Math.floor(Math.random() * ItemIDS.length);
+        const randomNumber = Math.floor(Math.random() * transformItemIDS.length);
         const ID = functions.MakeID();
-        var Item = {"templateId":ItemIDS[randomNumber],"attributes":{"legacy_alterations":[],"max_level_bonus":0,"level":1,"refund_legacy_item":false,"item_seen":false,"alterations":["","","","","",""],"xp":0,"refundable":false,"alteration_base_rarities":[],"favorite":false},"quantity":1};
+        var Item = {"templateId":transformItemIDS[randomNumber],"attributes":{"legacy_alterations":[],"max_level_bonus":0,"level":1,"refund_legacy_item":false,"item_seen":false,"alterations":["","","","","",""],"xp":0,"refundable":false,"alteration_base_rarities":[],"favorite":false},"quantity":1};
 
         profile.items[ID] = Item
 
