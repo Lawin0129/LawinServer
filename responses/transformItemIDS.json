@@ -783,14 +783,14 @@
     "Schematic:sid_piercing_spear_r_ore_t01"
   ],
   "ConversionControl:cck_melee_edged_unlimited": [
-    "Schematic:SID_Edged_Sword_Medium_Laser_Founders_R_Ore_T01",
-    "Schematic:SID_Edged_Sword_Medium_R_Ore_T01",
-    "Schematic:SID_Edged_Sword_Light_R_Ore_T01",
-    "Schematic:SID_Edged_Sword_Heavy_R_Ore_T01",
-    "Schematic:SID_Edged_Scythe_R_Ore_T01",
-    "Schematic:SID_Edged_Axe_Medium_R_Ore_T01",
-    "Schematic:SID_Edged_Axe_Light_R_Ore_T01",
-    "Schematic:SID_Edged_Axe_Heavy_R_Ore_T01"
+    "Schematic:sid_edged_sword_medium_laser_founders_r_ore_t01",
+    "Schematic:sid_edged_sword_medium_r_ore_t01",
+    "Schematic:sid_edged_sword_light_r_ore_t01",
+    "Schematic:sid_edged_sword_heavy_r_ore_t01",
+    "Schematic:sid_edged_scythe_r_ore_t01",
+    "Schematic:sid_edged_axe_medium_r_ore_t01",
+    "Schematic:sid_edged_axe_light_r_ore_t01",
+    "Schematic:sid_edged_axe_heavy_r_ore_t01"
   ],
   "ConversionControl:cck_melee_core_unlimited_vr": [
     "Schematic:sid_piercing_spear_military_vr_ore_t01",
@@ -843,12 +843,12 @@
     "Schematic:sid_blunt_heavy_paddle_r_ore_t01"
   ],
   "ConversionControl:cck_melee_blunt_unlimited": [
-    "Schematic:SID_Blunt_Medium_R_Ore_T01",
-    "Schematic:SID_Blunt_Tool_Light_R_Ore_T01",
-    "Schematic:SID_Blunt_Hammer_Heavy_R_Ore_T01",
-    "Schematic:SID_Blunt_Light_Bat_R_Ore_T01",
-    "Schematic:SID_Blunt_Light_R_Ore_T01",
-    "Schematic:SID_Blunt_Heavy_Paddle_R_Ore_T01"
+    "Schematic:sid_blunt_medium_r_ore_t01",
+    "Schematic:sid_blunt_tool_light_r_ore_t01",
+    "Schematic:sid_blunt_hammer_heavy_r_ore_t01",
+    "Schematic:sid_blunt_light_bat_r_ore_t01",
+    "Schematic:sid_blunt_light_r_ore_t01",
+    "Schematic:sid_blunt_heavy_paddle_r_ore_t01"
   ],
   "ConversionControl:cck_melee_axe_unlimited": [
     "Schematic:sid_edged_axe_heavy_r_ore_t01",
@@ -939,21 +939,21 @@
     "Schematic:sid_piercing_spear_uc_ore_t01"
   ],
   "ConversionControl:cck_melee_spear_consumable_sr": [
-    "Schematic:SID_Piercing_Spear_Military_SR_Ore_T01",
-    "Schematic:SID_Piercing_Spear_Laser_SR_Ore_T01",
-    "Schematic:SID_Piercing_Spear_SR_Ore_T01"
+    "Schematic:sid_piercing_spear_military_sr_ore_t01",
+    "Schematic:sid_piercing_spear_laser_sr_ore_t01",
+    "Schematic:sid_piercing_spear_sr_ore_t01"
   ],
   "ConversionControl:cck_melee_spear_consumable_r": [
     "Schematic:sid_piercing_spear_military_r_ore_t01",
     "Schematic:sid_piercing_spear_r_ore_t01"
   ],
   "ConversionControl:cck_melee_spear_consumable_c": [
-    "Schematic:SID_Piercing_Spear_C_Ore_T01"
+    "Schematic:sid_piercing_spear_c_ore_t01"
   ],
   "ConversionControl:cck_melee_spear_consumable": [
-    "Schematic:SID_Piercing_Spear_Military_SR_Ore_T01",
-    "Schematic:SID_Piercing_Spear_Laser_SR_Ore_T01",
-    "Schematic:SID_Piercing_Spear_SR_Ore_T01"
+    "Schematic:sid_piercing_spear_military_sr_ore_t01",
+    "Schematic:sid_piercing_spear_laser_sr_ore_t01",
+    "Schematic:sid_piercing_spear_sr_ore_t01"
   ],
   "ConversionControl:cck_melee_scythe_consumable_vr": [
     "Schematic:sid_edged_scythe_vr_ore_t01",
@@ -977,46 +977,46 @@
     "Schematic:sid_edged_scythe_laser_sr_ore_t01"
   ],
   "ConversionControl:cck_melee_piercing_consumable": [
-    "Schematic:SID_Piercing_Spear_Military_SR_Ore_T01",
-    "Schematic:SID_Piercing_Spear_Laser_SR_Ore_T01",
-    "Schematic:SID_Piercing_Spear_SR_Ore_T01"
+    "Schematic:sid_piercing_spear_military_sr_ore_t01",
+    "Schematic:sid_piercing_spear_laser_sr_ore_t01",
+    "Schematic:sid_piercing_spear_sr_ore_t01"
   ],
   "ConversionControl:cck_melee_edged_consumable": [
-    "Schematic:SID_Edged_Sword_Medium_Laser_SR_Ore_T01",
-    "Schematic:SID_Edged_Sword_Medium_Laser_Founders_SR_Ore_T01",
-    "Schematic:SID_Edged_Sword_Medium_SR_Ore_T01",
-    "Schematic:SID_Edged_Sword_Light_SR_Ore_T01",
-    "Schematic:SID_Edged_Sword_Hydraulic_SR_Ore_T01",
-    "Schematic:SID_Edged_Sword_Heavy_SR_Ore_T01",
-    "Schematic:SID_Edged_Scythe_Laser_SR_Ore_T01",
-    "Schematic:SID_Edged_Scythe_SR_Ore_T01",
-    "Schematic:SID_Edged_Axe_Medium_Laser_SR_Ore_T01",
-    "Schematic:SID_Edged_Axe_Medium_SR_Ore_T01",
-    "Schematic:SID_Edged_Axe_Light_SR_Ore_T01",
-    "Schematic:SID_Edged_Axe_Heavy_SR_Ore_T01"
+    "Schematic:sid_edged_sword_medium_laser_sr_ore_t01",
+    "Schematic:sid_edged_sword_medium_laser_founders_sr_ore_t01",
+    "Schematic:sid_edged_sword_medium_sr_ore_t01",
+    "Schematic:sid_edged_sword_light_sr_ore_t01",
+    "Schematic:sid_edged_sword_hydraulic_sr_ore_t01",
+    "Schematic:sid_edged_sword_heavy_sr_ore_t01",
+    "Schematic:sid_edged_scythe_laser_sr_ore_t01",
+    "Schematic:sid_edged_scythe_sr_ore_t01",
+    "Schematic:sid_edged_axe_medium_laser_sr_ore_t01",
+    "Schematic:sid_edged_axe_medium_sr_ore_t01",
+    "Schematic:sid_edged_axe_light_sr_ore_t01",
+    "Schematic:sid_edged_axe_heavy_sr_ore_t01"
   ],
   "ConversionControl:cck_melee_core_consumable": [
-    "Schematic:SID_Piercing_Spear_Military_SR_Ore_T01",
-    "Schematic:SID_Piercing_Spear_Laser_SR_Ore_T01",
-    "Schematic:SID_Piercing_Spear_SR_Ore_T01",
-    "Schematic:SID_Edged_Sword_Medium_Laser_SR_Ore_T01",
-    "Schematic:SID_Edged_Sword_Medium_Laser_Founders_SR_Ore_T01",
-    "Schematic:SID_Edged_Sword_Medium_SR_Ore_T01",
-    "Schematic:SID_Edged_Sword_Light_SR_Ore_T01",
-    "Schematic:SID_Edged_Sword_Hydraulic_SR_Ore_T01",
-    "Schematic:SID_Edged_Sword_Heavy_SR_Ore_T01",
-    "Schematic:SID_Edged_Scythe_Laser_SR_Ore_T01",
-    "Schematic:SID_Edged_Scythe_SR_Ore_T01",
-    "Schematic:SID_Edged_Axe_Medium_Laser_SR_Ore_T01",
-    "Schematic:SID_Edged_Axe_Medium_SR_Ore_T01",
-    "Schematic:SID_Edged_Axe_Light_SR_Ore_T01",
-    "Schematic:SID_Edged_Axe_Heavy_SR_Ore_T01",
-    "Schematic:SID_Blunt_Medium_SR_Ore_T01",
-    "Schematic:SID_Blunt_Light_SR_Ore_T01",
-    "Schematic:SID_Blunt_Hammer_Rocket_SR_Ore_T01",
-    "Schematic:SID_Blunt_Hammer_Heavy_SR_Ore_T01",
-    "Schematic:SID_Blunt_Light_Rocketbat_SR_Ore_T01",
-    "Schematic:SID_Blunt_Club_Light_SR_Ore_T01"
+    "Schematic:sid_piercing_spear_military_sr_ore_t01",
+    "Schematic:sid_piercing_spear_laser_sr_ore_t01",
+    "Schematic:sid_piercing_spear_sr_ore_t01",
+    "Schematic:sid_edged_sword_medium_laser_sr_ore_t01",
+    "Schematic:sid_edged_sword_medium_laser_founders_sr_ore_t01",
+    "Schematic:sid_edged_sword_medium_sr_ore_t01",
+    "Schematic:sid_edged_sword_light_sr_ore_t01",
+    "Schematic:sid_edged_sword_hydraulic_sr_ore_t01",
+    "Schematic:sid_edged_sword_heavy_sr_ore_t01",
+    "Schematic:sid_edged_scythe_laser_sr_ore_t01",
+    "Schematic:sid_edged_scythe_sr_ore_t01",
+    "Schematic:sid_edged_axe_medium_laser_sr_ore_t01",
+    "Schematic:sid_edged_axe_medium_sr_ore_t01",
+    "Schematic:sid_edged_axe_light_sr_ore_t01",
+    "Schematic:sid_edged_axe_heavy_sr_ore_t01",
+    "Schematic:sid_blunt_medium_sr_ore_t01",
+    "Schematic:sid_blunt_light_sr_ore_t01",
+    "Schematic:sid_blunt_hammer_rocket_sr_ore_t01",
+    "Schematic:sid_blunt_hammer_heavy_sr_ore_t01",
+    "Schematic:sid_blunt_light_rocketbat_sr_ore_t01",
+    "Schematic:sid_blunt_club_light_sr_ore_t01"
   ],
   "ConversionControl:cck_melee_club_consumable_vr": [
     "Schematic:sid_blunt_light_rocketbat_vr_ore_t01",
@@ -1045,12 +1045,12 @@
     "Schematic:sid_blunt_club_light_sr_ore_t01"
   ],
   "ConversionControl:cck_melee_blunt_consumable": [
-    "Schematic:SID_Blunt_Medium_SR_Ore_T01",
-    "Schematic:SID_Blunt_Light_SR_Ore_T01",
-    "Schematic:SID_Blunt_Hammer_Rocket_SR_Ore_T01",
-    "Schematic:SID_Blunt_Hammer_Heavy_SR_Ore_T01",
-    "Schematic:SID_Blunt_Light_Rocketbat_SR_Ore_T01",
-    "Schematic:SID_Blunt_Club_Light_SR_Ore_T01"
+    "Schematic:sid_blunt_medium_sr_ore_t01",
+    "Schematic:sid_blunt_light_sr_ore_t01",
+    "Schematic:sid_blunt_hammer_rocket_sr_ore_t01",
+    "Schematic:sid_blunt_hammer_heavy_sr_ore_t01",
+    "Schematic:sid_blunt_light_rocketbat_sr_ore_t01",
+    "Schematic:sid_blunt_club_light_sr_ore_t01"
   ],
   "ConversionControl:cck_melee_axe_consumable_vr": [
     "Schematic:sid_edged_axe_heavy_vr_ore_t01",
