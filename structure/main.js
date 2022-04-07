@@ -190,6 +190,10 @@ express.get("/fortnite/api/game/v2/world/info", async (req, res) => {
     res.json(worldstw)
 })
 
+express.post("/fortnite/api/game/v2/chat/*/*/*/pc", async (req, res) => {
+    res.json({ "GlobalChatRooms": [{"roomName":"lawinserverglobal"}] })
+})
+
 express.post("/fortnite/api/game/v2/chat/*/recommendGeneralChatRooms/pc", async (req, res) => {
     res.json({})
 })
