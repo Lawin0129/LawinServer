@@ -760,11 +760,6 @@
           "_type": "FortPlaylistInfo"
         },
         {
-          "image": "https://cdn2.unrealengine.com/Fortnite/fortnite-game/playlistinformation/v94/11BR_Launch_ModeTiles_Trios-1024x512-8ef1dd32631d500736e63f781784430456607c0e.jpg",
-          "playlist_name": "Playlist_Trios",
-          "_type": "FortPlaylistInfo"
-        },
-        {
           "image": "https://cdn2.unrealengine.com/Fortnite/fortnite-game/playlistinformation/BR07_ModeTile_WinterDeimos_Squads-1024x512-cf4323aa9c2cfd027484cf4da14544128e3d4c7e.jpg",
           "playlist_name": "Playlist_Deimos_Squad_Winter",
           "_type": "FortPlaylistInfo"
@@ -1152,20 +1147,29 @@
           "_type": "FortPlaylistInfo"
         },
         {
-          "image": "",
+          "image": "https://cdn2.unrealengine.com/solo-1920x1080-1920x1080-bc0a5455ce20.jpg",
           "playlist_name": "Playlist_DefaultSolo",
+          "hidden": false,
           "special_border": "None",
           "_type": "FortPlaylistInfo"
         },
         {
-          "image": "",
+          "image": "https://cdn2.unrealengine.com/duos-1920x1080-1920x1080-5a411fe07b21.jpg",
           "playlist_name": "Playlist_DefaultDuo",
+          "hidden": false,
           "special_border": "None",
           "_type": "FortPlaylistInfo"
         },
         {
-          "image": "",
+          "image": "https://cdn2.unrealengine.com/trios-1920x1080-1920x1080-d5054bb9691a.jpg",
+          "playlist_name": "Playlist_Trios",
+          "hidden": false,
+          "_type": "FortPlaylistInfo"
+        },
+        {
+          "image": "https://cdn2.unrealengine.com/squads-1920x1080-1920x1080-095c0732502e.jpg",
           "playlist_name": "Playlist_DefaultSquad",
+          "hidden": false,
           "special_border": "None",
           "_type": "FortPlaylistInfo"
         }
