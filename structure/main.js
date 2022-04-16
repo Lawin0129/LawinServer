@@ -52,7 +52,11 @@ express.get("/fortnite/api/game/v2/friendcodes/*/epic", async (req, res) => {
 express.get("/launcher/api/public/distributionpoints/", async (req, res) => {
     res.json({
         "distributions": [
-            "https://lawinserver.ol.epicgames.com/"
+            "https://download.epicgames.com/",
+            "https://download2.epicgames.com/",
+            "https://download3.epicgames.com/",
+            "https://download4.epicgames.com/",
+            "https://epicgames-download1.akamaized.net/"
         ]
     });
 })
@@ -71,12 +75,6 @@ express.get("/launcher/api/public/assets/*", async (req, res) => {
                 "path": "Builds/Fortnite/Content/CloudDir/LawinServer.manifest",
                 "hash": "55bb954f5596cadbe03693e1c06ca73368d427f3",
                 "additionalDistributions": []
-            },
-            "CHUNKS": {
-                "signature": "LawinServer",
-                "distribution": "https://lawinserver.ol.epicgames.com/",
-                "path": "Builds/Fortnite/Content/CloudDir/LawinServer.manifest",
-                "additionalDistributions": []
             }
         },
         "assetId": "FortniteContentBuilds"
@@ -91,7 +89,15 @@ express.get("/Builds/Fortnite/Content/CloudDir/*.manifest", async (req, res) => 
     res.status(200).send(manifest).end();
 })
 
-express.get("/Builds/Fortnite/Content/CloudDir/*/Full.ini", async (req, res) => {
+express.get("/Builds/Fortnite/Content/CloudDir/*.chunk", async (req, res) => {
+    res.set("Content-Type", "application/octet-stream")
+
+    const chunk = fs.readFileSync(path.join(__dirname, "..", "responses", "CloudDir", "LawinServer.chunk"));
+
+    res.status(200).send(chunk).end();
+})
+
+express.get("/Builds/Fortnite/Content/CloudDir/*.ini", async (req, res) => {
     const ini = fs.readFileSync(path.join(__dirname, "..", "responses", "CloudDir", "Full.ini"));
 
     res.status(200).send(ini).end();
