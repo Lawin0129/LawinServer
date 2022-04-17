@@ -231,6 +231,10 @@ function getContentPages(req) {
             contentpages.subgameinfo.battleroyale.image = "https://cdn.discordapp.com/attachments/927739901540188200/930880421514846268/19br-wf-subgame-select-512x1024-16d8bb0f218f.jpg";
             contentpages.specialoffervideo.bSpecialOfferEnabled = "true";
         }
+
+        if (memory.season == 20) {
+            contentpages.dynamicbackgrounds.backgrounds.backgrounds[0].backgroundimage = "https://cdn2.unrealengine.com/t-bp20-lobby-2048x1024-d89eb522746c.png";
+        }
     } catch (err) {}
 
     return contentpages;

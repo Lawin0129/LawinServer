@@ -52,11 +52,7 @@ express.get("/fortnite/api/game/v2/friendcodes/*/epic", async (req, res) => {
 express.get("/launcher/api/public/distributionpoints/", async (req, res) => {
     res.json({
         "distributions": [
-            "https://download.epicgames.com/",
-            "https://download2.epicgames.com/",
-            "https://download3.epicgames.com/",
-            "https://download4.epicgames.com/",
-            "https://epicgames-download1.akamaized.net/"
+            "https://lawinserver.ol.epicgames.com/"
         ]
     });
 })
