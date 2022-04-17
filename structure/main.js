@@ -75,6 +75,12 @@ express.get("/launcher/api/public/assets/*", async (req, res) => {
                 "path": "Builds/Fortnite/Content/CloudDir/LawinServer.manifest",
                 "hash": "55bb954f5596cadbe03693e1c06ca73368d427f3",
                 "additionalDistributions": []
+            },
+            "CHUNKS": {
+                "signature": "LawinServer",
+                "distribution": "https://lawinserver.ol.epicgames.com/",
+                "path": "Builds/Fortnite/Content/CloudDir/LawinServer.manifest",
+                "additionalDistributions": []
             }
         },
         "assetId": "FortniteContentBuilds"

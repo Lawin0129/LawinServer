@@ -16,6 +16,7 @@
                 "creatorName": "Epic",
                 "descriptionTags": [],
                 "metadata": {
+                  "image_url": "https://cdn2.unrealengine.com/solo-1920x1080-1920x1080-bc0a5455ce20.jpg",
                   "matchmaking": {
                     "override_playlist": "playlist_defaultsolo"
                   }
@@ -34,6 +35,7 @@
                 "creatorName": "Epic",
                 "descriptionTags": [],
                 "metadata": {
+                  "image_url": "https://cdn2.unrealengine.com/duos-1920x1080-1920x1080-5a411fe07b21.jpg",
                   "matchmaking": {
                     "override_playlist": "playlist_defaultduo"
                   }
@@ -52,6 +54,7 @@
                 "creatorName": "Epic",
                 "descriptionTags": [],
                 "metadata": {
+                  "image_url": "https://cdn2.unrealengine.com/trios-1920x1080-1920x1080-d5054bb9691a.jpg",
                   "matchmaking": {
                     "override_playlist": "playlist_trios"
                   }
@@ -70,9 +73,7 @@
                 "creatorName": "Epic",
                 "descriptionTags": [],
                 "metadata": {
-                  "image_url": "",
-                  "image_urls": {},
-                  "tagline": "",
+                  "image_url": "https://cdn2.unrealengine.com/squads-1920x1080-1920x1080-095c0732502e.jpg",
                   "matchmaking": {
                     "override_playlist": "playlist_defaultsquad"
                   }
