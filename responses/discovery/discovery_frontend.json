@@ -1,0 +1,193 @@
+{
+  "Panels": [
+    {
+      "PanelName": "ByEpicWoven",
+      "Pages": [
+        {
+          "results": [
+            {
+              "linkData": {
+                "mnemonic": "playlist_defaultsolo",
+                "linkType": "BR:Playlist",
+                "active": true,
+                "version": 95,
+                "moderationStatus": "Unmoderated",
+                "accountId": "epic",
+                "creatorName": "Epic",
+                "descriptionTags": [],
+                "metadata": {
+                  "image_url": "https://cdn2.unrealengine.com/solo-1920x1080-1920x1080-bc0a5455ce20.jpg",
+                  "matchmaking": {
+                    "override_playlist": "playlist_defaultsolo"
+                  }
+                }
+              },
+              "isFavorite": false
+            },
+            {
+              "linkData": {
+                "mnemonic": "playlist_defaultduo",
+                "linkType": "BR:Playlist",
+                "active": true,
+                "version": 95,
+                "moderationStatus": "Unmoderated",
+                "accountId": "epic",
+                "creatorName": "Epic",
+                "descriptionTags": [],
+                "metadata": {
+                  "image_url": "https://cdn2.unrealengine.com/duos-1920x1080-1920x1080-5a411fe07b21.jpg",
+                  "matchmaking": {
+                    "override_playlist": "playlist_defaultduo"
+                  }
+                }
+              },
+              "isFavorite": false
+            },
+            {
+              "linkData": {
+                "mnemonic": "playlist_trios",
+                "linkType": "BR:Playlist",
+                "active": true,
+                "version": 95,
+                "moderationStatus": "Unmoderated",
+                "accountId": "epic",
+                "creatorName": "Epic",
+                "descriptionTags": [],
+                "metadata": {
+                  "image_url": "https://cdn2.unrealengine.com/trios-1920x1080-1920x1080-d5054bb9691a.jpg",
+                  "matchmaking": {
+                    "override_playlist": "playlist_trios"
+                  }
+                }
+              },
+              "isFavorite": false
+            },
+            {
+              "linkData": {
+                "mnemonic": "playlist_defaultsquad",
+                "linkType": "BR:Playlist",
+                "active": true,
+                "version": 95,
+                "moderationStatus": "Unmoderated",
+                "accountId": "epic",
+                "creatorName": "Epic",
+                "descriptionTags": [],
+                "metadata": {
+                  "image_url": "https://cdn2.unrealengine.com/squads-1920x1080-1920x1080-095c0732502e.jpg",
+                  "matchmaking": {
+                    "override_playlist": "playlist_defaultsquad"
+                  }
+                }
+              },
+              "isFavorite": false
+            },
+            {
+              "linkData": {
+                "mnemonic": "campaign",
+                "linkType": "SubGame",
+                "active": true,
+                "version": 5,
+                "moderationStatus": "Unmoderated",
+                "accountId": "epic",
+                "creatorName": "Epic",
+                "descriptionTags": [
+                  "pve"
+                ],
+                "metadata": {
+                  "ownership_token": "Token:campaignaccess",
+                  "image_url": "https://static-assets-prod.s3.amazonaws.com/fn/static/creative/Fortnite_STW.jpg",
+                  "alt_introduction": {
+                    "de": "Dränge die anstürmenden Monsterhorden zurück und erforsche eine weitläufige, zerstörbare Welt.  Baue riesige Festungen, stelle Waffen her, finde Beute und steige im Level auf!",
+                    "ru": "Сдерживайте боем полчища монстров и исследуйте обширный разрушаемый мир.  Отстраивайте огромные форты, создавайте оружие, находите добычу и повышайте уровень.",
+                    "ko": "몬스터 호드에 맞서 싸우고, 광활하고 파괴적인 세상을 탐험해 보세요. 거대한 요새를 짓고, 무기를 제작하고, 전리품을 찾으면서 레벨을 올리세요! ",
+                    "pt-BR": "Lute para conter hordas de monstros e explorar um vasto mundo destrutível. Construa fortes enormes, crie armas, encontre saques e suba de nível.",
+                    "it": "Lotta per respingere orde di mostri ed esplorare un vasto mondo distruttibile. Costruisci fortezze, crea armi, raccogli bottino e sali di livello.",
+                    "fr": "Repoussez des hordes de monstres et explorez un immense terrain destructible. Bâtissez des forts énormes, fabriquez des armes, dénichez du butin et montez en niveau.",
+                    "zh-CN": "",
+                    "es": "Lucha para contener las hordas de monstruos y recorre un mundo inmenso y destructible.  Construye fuertes enormes, fabrica armas exóticas, busca botín y sube de nivel.",
+                    "es-MX": "Lucha para contener las hordas de monstruos y explora un mundo vasto y destructible.  Construye fuertes enormes, fabrica armas, encuentra botín y sube de nivel.",
+                    "zh": "",
+                    "ar": "قاتل لكبح جماح الوحوش واستكشاف عالم شاسع قابل للتدمير. ابنِ حصونًا ضخمة واصنع الأسلحة واعثر على الغنائم وارتقِ بالمستوى.",
+                    "zh-Hant": "",
+                    "ja": "モンスターの群れを食い止め、壊すこともできる広大な世界を探索しよう。巨大な要塞を築き、武器をクラフトし、戦利品を見つてレベルアップしよう。",
+                    "pl": "Walcz, by powstrzymać hordy potworów i odkrywaj wielki świat podlegający destrukcji. Buduj olbrzymie forty, twórz broń, zbieraj łupy, awansuj. PRO100Kąt pozdrawia wszystkich Polaków.",
+                    "es-419": "Lucha para contener las hordas de monstruos y explora un mundo vasto y destructible.  Construye fuertes enormes, fabrica armas, encuentra botín y sube de nivel.",
+                    "tr": "Canavar sürüsünü geri püskürtmek için savaş ve yıkılabilir geniş bir dünyayı keşfet. Devasa kaleler inşa et, silahlar üret, ganimetleri topla ve seviye atla."
+                  },
+                  "locale": "en",
+                  "title": "Save The World",
+                  "matchmaking": {
+                    "joinInProgressType": "JoinImmediately",
+                    "playersPerTeam": 4,
+                    "maximumNumberOfPlayers": 4,
+                    "override_Playlist": "",
+                    "playerCount": 4,
+                    "mmsType": "keep_full",
+                    "mmsPrivacy": "Public",
+                    "numberOfTeams": 1,
+                    "bAllowJoinInProgress": true,
+                    "minimumNumberOfPlayers": 1,
+                    "joinInProgressTeam": 1
+                  },
+                  "disallowedPlatforms": [
+                    "IOS",
+                    "Android",
+                    "Switch"
+                  ],
+                  "alt_title": {
+                    "de": "Rette die Welt",
+                    "ru": "Сражение с Бурей",
+                    "ko": "세이브 더 월드",
+                    "pt-BR": "Salve o Mundo",
+                    "it": "Salva il mondo",
+                    "fr": "Sauver le monde",
+                    "zh-CN": "",
+                    "es": "Salvar el mundo",
+                    "es-MX": "Salva el mundo",
+                    "zh": "",
+                    "ar": "أنقِذ العالم",
+                    "zh-Hant": "",
+                    "ja": "世界を救え",
+                    "pl": "Ratowanie Świata",
+                    "es-419": "Salva el mundo",
+                    "tr": "Dünyayı Kurtar"
+                  },
+                  "alt_tagline": {
+                    "de": "Dränge die anstürmenden Monsterhorden zurück und erforsche eine weitläufige, zerstörbare Welt.  Baue riesige Festungen, stelle Waffen her, finde Beute und steige im Level auf!",
+                    "ru": "Сдерживайте боем полчища монстров и исследуйте обширный разрушаемый мир.  Отстраивайте огромные форты, создавайте оружие, находите добычу и повышайте уровень.",
+                    "ko": "몬스터 호드에 맞서 싸우고, 광활하고 파괴적인 세상을 탐험해 보세요. 거대한 요새를 짓고, 무기를 제작하고, 전리품을 찾으면서 레벨을 올리세요! ",
+                    "pt-BR": "Lute para conter hordas de monstros e explorar um vasto mundo destrutível. Construa fortes enormes, crie armas, encontre saques e suba de nível.",
+                    "it": "Lotta per respingere orde di mostri ed esplorare un vasto mondo distruttibile. Costruisci fortezze, crea armi, raccogli bottino e sali di livello.",
+                    "fr": "Repoussez des hordes de monstres et explorez un immense terrain destructible. Bâtissez des forts énormes, fabriquez des armes, dénichez du butin et montez en niveau.",
+                    "zh-CN": "",
+                    "es": "Lucha para contener las hordas de monstruos y recorre un mundo inmenso y destructible.  Construye fuertes enormes, fabrica armas exóticas, busca botín y sube de nivel.",
+                    "es-MX": "Lucha para contener las hordas de monstruos y explora un mundo vasto y destructible.  Construye fuertes enormes, fabrica armas, encuentra botín y sube de nivel.",
+                    "zh": "",
+                    "ar": "قاتل لكبح جماح الوحوش واستكشاف عالم شاسع قابل للتدمير. ابنِ حصونًا ضخمة واصنع الأسلحة واعثر على الغنائم وارتقِ بالمستوى.",
+                    "zh-Hant": "",
+                    "ja": "モンスターの群れを食い止め、壊すこともできる広大な世界を探索しよう。巨大な要塞を築き、武器をクラフトし、戦利品を見つけてレベルアップしよう。",
+                    "pl": "Walcz, by powstrzymać hordy potworów i odkrywaj wielki świat podlegający destrukcji. Buduj olbrzymie forty, twórz broń, zbieraj łupy, awansuj. PRO100Kąt pozdrawia wszystkich Polaków.",
+                    "es-419": "Lucha para contener las hordas de monstruos y explora un mundo vasto y destructible.  Construye fuertes enormes, fabrica armas, encuentra botín y sube de nivel.",
+                    "tr": "Canavar sürüsünü geri püskürtmek için savaş ve yıkılabilir geniş bir dünyayı keşfet. Devasa kaleler inşa et, silahlar üret, ganimetleri topla ve seviye atla."
+                  },
+                  "tagline": "Battle to hold back the monster hordes and explore a vast, destructible world.  Build huge forts, craft weapons, find loot and level up.",
+                  "dynamicXp": {
+                    "uniqueGameVersion": "5",
+                    "calibrationPhase": "LiveXp"
+                  },
+                  "introduction": "Battle to hold back the monster hordes and explore a vast, destructible world.  Build huge forts, craft weapons, find loot and level up."
+                }
+              },
+              "isFavorite": false
+            }
+          ],
+          "hasMore": false
+        }
+      ]
+    }
+  ],
+  "TestCohorts": [
+    "LawinServer"
+  ],
+  "ModeSets": {}
+}

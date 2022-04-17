@@ -640,12 +640,12 @@
           "_type": "FortPlaylistInfo"
         },
         {
-          "image": "",
+          "image": "https://i.imgur.com/Xm1p8oo.jpg",
           "playlist_name": "Playlist_PlaygroundV2",
           "_type": "FortPlaylistInfo"
         },
         {
-          "image": "",
+          "image": "https://i.imgur.com/Xm1p8oo.jpg",
           "playlist_name": "Playlist_Playground",
           "_type": "FortPlaylistInfo"
         },
@@ -757,11 +757,6 @@
         {
           "image": "https://cdn2.unrealengine.com/Fortnite/fortnite-game/playlistinformation/BR07_ModeTile_NFL_TeamRumble-1024x512-6facfc07214965dc2211d703904607a30c68d08a.jpg",
           "playlist_name": "Playlist_Omaha",
-          "_type": "FortPlaylistInfo"
-        },
-        {
-          "image": "https://cdn2.unrealengine.com/Fortnite/fortnite-game/playlistinformation/v94/11BR_Launch_ModeTiles_Trios-1024x512-8ef1dd32631d500736e63f781784430456607c0e.jpg",
-          "playlist_name": "Playlist_Trios",
           "_type": "FortPlaylistInfo"
         },
         {
@@ -1142,7 +1137,7 @@
           "_type": "FortPlaylistInfo"
         },
         {
-          "image": "",
+          "image": "https://i.imgur.com/r5Nyhn2.jpg",
           "playlist_name": "Playlist_50v50",
           "_type": "FortPlaylistInfo"
         },
@@ -1152,20 +1147,28 @@
           "_type": "FortPlaylistInfo"
         },
         {
-          "image": "",
+          "image": "https://i.imgur.com/zr4Fnnp.jpg",
           "playlist_name": "Playlist_DefaultSolo",
+          "hidden": false,
           "special_border": "None",
           "_type": "FortPlaylistInfo"
         },
         {
-          "image": "",
+          "image": "https://i.imgur.com/99n3n0m.jpg",
           "playlist_name": "Playlist_DefaultDuo",
+          "hidden": false,
           "special_border": "None",
           "_type": "FortPlaylistInfo"
         },
         {
-          "image": "",
+          "playlist_name": "Playlist_Trios",
+          "hidden": false,
+          "_type": "FortPlaylistInfo"
+        },
+        {
+          "image": "https://i.imgur.com/YA4ssMv.jpg",
           "playlist_name": "Playlist_DefaultSquad",
+          "hidden": false,
           "special_border": "None",
           "_type": "FortPlaylistInfo"
         }

@@ -52,11 +52,7 @@ express.get("/fortnite/api/game/v2/friendcodes/*/epic", async (req, res) => {
 express.get("/launcher/api/public/distributionpoints/", async (req, res) => {
     res.json({
         "distributions": [
-            "https://download.epicgames.com/",
-            "https://download2.epicgames.com/",
-            "https://download3.epicgames.com/",
-            "https://download4.epicgames.com/",
-            "https://epicgames-download1.akamaized.net/"
+            "https://lawinserver.ol.epicgames.com/"
         ]
     });
 })
@@ -71,14 +67,14 @@ express.get("/launcher/api/public/assets/*", async (req, res) => {
         "items": {
             "MANIFEST": {
                 "signature": "LawinServer",
-                "distribution": "https://ol.epicgames.com/",
+                "distribution": "https://lawinserver.ol.epicgames.com/",
                 "path": "Builds/Fortnite/Content/CloudDir/LawinServer.manifest",
                 "hash": "55bb954f5596cadbe03693e1c06ca73368d427f3",
                 "additionalDistributions": []
             },
             "CHUNKS": {
                 "signature": "LawinServer",
-                "distribution": "https://ol.epicgames.com/",
+                "distribution": "https://lawinserver.ol.epicgames.com/",
                 "path": "Builds/Fortnite/Content/CloudDir/LawinServer.manifest",
                 "additionalDistributions": []
             }
@@ -95,7 +91,15 @@ express.get("/Builds/Fortnite/Content/CloudDir/*.manifest", async (req, res) => 
     res.status(200).send(manifest).end();
 })
 
-express.get("/Builds/Fortnite/Content/CloudDir/*/Full.ini", async (req, res) => {
+express.get("/Builds/Fortnite/Content/CloudDir/*.chunk", async (req, res) => {
+    res.set("Content-Type", "application/octet-stream")
+
+    const chunk = fs.readFileSync(path.join(__dirname, "..", "responses", "CloudDir", "LawinServer.chunk"));
+
+    res.status(200).send(chunk).end();
+})
+
+express.get("/Builds/Fortnite/Content/CloudDir/*.ini", async (req, res) => {
     const ini = fs.readFileSync(path.join(__dirname, "..", "responses", "CloudDir", "Full.ini"));
 
     res.status(200).send(ini).end();
@@ -216,14 +220,20 @@ express.post("/datarouter/api/v1/public/data", async (req, res) => {
 })
 
 express.post("/api/v1/assets/Fortnite/*/*", async (req, res) => {
-    res.json({
-        "FortCreativeDiscoverySurface": {
-            "meta": {
-                "promotion": 0
-            },
-            "assets": {}
-        }
-    })
+    if (req.body.hasOwnProperty("FortCreativeDiscoverySurface") && req.body.FortCreativeDiscoverySurface == 0) {
+        const discovery_api_assets = require("./../responses/discovery/discovery_api_assets.json");
+        res.json(discovery_api_assets)
+    }
+    else {
+        res.json({
+            "FortCreativeDiscoverySurface": {
+                "meta": {
+                    "promotion": req.body.FortCreativeDiscoverySurface || 0
+                },
+                "assets": {}
+            }
+        })
+    }
 })
 
 express.get("/region", async (req, res) => {

@@ -36,20 +36,21 @@
         "completion_questcollect_survivoritemdata": 3,
         "xp": 0,
         "sent_new_notification": true,
-        "favorite": false
+        "favorite": false,
+        "completion_complete_evacuate_1_diff3": 1
       },
       "quantity": 1
     },
     "295ca2c9-e177-4bf2-9907-a7a867e27bb8": {
       "templateId": "Quest:homebasequest_researchpurchase",
       "attributes": {
-        "quest_state": "Active",
+        "quest_state": "Claimed",
         "last_state_change_time": "2017-08-31T13:50:01.896Z",
         "max_level_bonus": 0,
         "level": -1,
         "item_seen": false,
         "xp": 0,
-        "completion_unlock_skill_tree_researchfortitude": 0,
+        "completion_unlock_skill_tree_researchfortitude": 1,
         "sent_new_notification": true,
         "favorite": false
       },
@@ -278,7 +279,8 @@
         "item_seen": true,
         "xp": 0,
         "sent_new_notification": true,
-        "favorite": false
+        "favorite": false,
+        "completion_interact_treasurechest_pve01_diff2": 1
       },
       "quantity": 1
     },
@@ -521,11 +523,11 @@
     "92d46ee6-fc3c-4ee6-80c6-54059aabefce": {
       "templateId": "Quest:heroquest_ninjaleadership",
       "attributes": {
-        "quest_state": "Active",
+        "quest_state": "Claimed",
         "last_state_change_time": "2017-08-29T21:05:57.089Z",
         "max_level_bonus": 0,
         "level": -1,
-        "completion_unlock_skill_tree_ninja_leadership": 0,
+        "completion_unlock_skill_tree_ninja_leadership": 1,
         "item_seen": false,
         "xp": 0,
         "sent_new_notification": true,
@@ -562,11 +564,11 @@
     "9e51c6fd-2826-4dc5-b50c-18882e21a0d6": {
       "templateId": "Quest:homebasequest_unlockexpeditions",
       "attributes": {
-        "quest_state": "Active",
+        "quest_state": "Claimed",
         "last_state_change_time": "2017-08-29T21:05:57.089Z",
         "max_level_bonus": 0,
         "level": -1,
-        "completion_unlock_skill_tree_expeditions": 0,
+        "completion_unlock_skill_tree_expeditions": 1,
         "item_seen": false,
         "xp": 0,
         "sent_new_notification": true,
@@ -611,13 +613,13 @@
     "daea2ba9-bda3-4cdb-aee9-07de94ed361f": {
       "templateId": "Quest:heroquest_outlanderleadership",
       "attributes": {
-        "quest_state": "Active",
+        "quest_state": "Claimed",
         "last_state_change_time": "2017-08-29T21:05:57.089Z",
         "max_level_bonus": 0,
         "level": -1,
         "item_seen": false,
         "xp": 0,
-        "completion_unlock_skill_tree_outlander_leadership": 0,
+        "completion_unlock_skill_tree_outlander_leadership": 1,
         "sent_new_notification": true,
         "favorite": false
       },
@@ -795,7 +797,8 @@
         "xp": 0,
         "completion_complete_retrievedata_1": 1,
         "sent_new_notification": true,
-        "favorite": false
+        "favorite": false,
+        "completion_assign_defender": 1
       },
       "quantity": 1
     },
@@ -810,7 +813,8 @@
         "xp": 0,
         "completion_complete_retrievedata_1": 1,
         "sent_new_notification": true,
-        "favorite": false
+        "favorite": false,
+        "completion_unlock_skill_tree_outpostdefender": 1
       },
       "quantity": 1
     },
@@ -825,7 +829,8 @@
         "xp": 0,
         "completion_complete_retrievedata_1": 1,
         "sent_new_notification": true,
-        "favorite": false
+        "favorite": false,
+        "completion_unlock_skill_tree_missiondefender": 1
       },
       "quantity": 1
     },
@@ -840,7 +845,8 @@
         "xp": 0,
         "completion_complete_retrievedata_1": 1,
         "sent_new_notification": true,
-        "favorite": false
+        "favorite": false,
+        "completion_assign_defender_to_adventure_squadone": 1
       },
       "quantity": 1
     },
@@ -31038,7 +31044,8 @@
         "completion_complete_outpost_1_3": 1,
         "xp": 0,
         "quest_rarity": "uncommon",
-        "favorite": false
+        "favorite": false,
+        "completion_custom_defendersupplyreceived": 1
       },
       "quantity": 1
     },
@@ -34126,6 +34133,1558 @@
       "templateId": "ConversionControl:cck_defender_core_consumable",
       "attributes": {
         "item_seen": true
+      },
+      "quantity": 1
+    },
+    "bc937ad7-40e3-47fb-85a1-ddba5dc76fc8": {
+      "templateId": "Quest:heroquest_constructor_1",
+      "attributes": {
+        "quest_state": "Claimed",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": true,
+        "xp": 0,
+        "sent_new_notification": true,
+        "favorite": false,
+        "completion_assign_hero_constructor": 1,
+        "completion_upgrade_constructor": 1,
+        "completion_complete_pve01_diff2_constructor": 1
+      },
+      "quantity": 1
+    },
+    "7f5b6b54-832b-41eb-bc97-16100dc32fa7": {
+      "templateId": "Quest:heroquest_constructor_2",
+      "attributes": {
+        "quest_state": "Claimed",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": true,
+        "xp": 0,
+        "sent_new_notification": true,
+        "favorite": false,
+        "completion_ability_bullrush": 1,
+        "completion_build_any_floor_constructor": 1,
+        "completion_ability_base": 1,
+        "completion_complete_pve01_diff2_constructor": 1
+      },
+      "quantity": 1
+    },
+    "73034fc4-427b-42b4-9ac4-4dc9015016a3": {
+      "templateId": "Quest:heroquest_constructor_3",
+      "attributes": {
+        "quest_state": "Claimed",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": true,
+        "xp": 0,
+        "sent_new_notification": true,
+        "favorite": false,
+        "completion_complete_buildradar_1_diff2_con": 1
+      },
+      "quantity": 1
+    },
+    "1e8a3d87-5aaa-4bac-8860-86ae64c59875": {
+      "templateId": "Quest:heroquest_ninja_1",
+      "attributes": {
+        "quest_state": "Claimed",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": true,
+        "xp": 0,
+        "sent_new_notification": true,
+        "favorite": false,
+        "completion_kill_husk_melee": 20,
+        "completion_complete_pve01_diff2": 1
+      },
+      "quantity": 1
+    },
+    "c7116a13-c12c-4119-86b3-818cdf4fbe96": {
+      "templateId": "Quest:heroquest_ninja_2",
+      "attributes": {
+        "quest_state": "Claimed",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": true,
+        "xp": 0,
+        "sent_new_notification": true,
+        "favorite": false,
+        "completion_upgrade_ninja_lvl_3": 1,
+        "completion_ability_throwingstars": 3,
+        "completion_ability_mantisleap": 3,
+        "completion_complete_pve01_diff3_ninja": 3
+      },
+      "quantity": 1
+    },
+    "dcbec4e3-9d5a-411e-b6a2-a5b592b6290b": {
+      "templateId": "Quest:heroquest_outlander_1",
+      "attributes": {
+        "quest_state": "Claimed",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": true,
+        "xp": 0,
+        "sent_new_notification": true,
+        "favorite": false,
+        "completion_complete_exploration_1_diff2": 1
+      },
+      "quantity": 1
+    },
+    "eda063b3-e861-4104-b6b8-505e6e69c3dd": {
+      "templateId": "Quest:heroquest_outlander_2",
+      "attributes": {
+        "quest_state": "Claimed",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": true,
+        "xp": 0,
+        "sent_new_notification": true,
+        "favorite": false,
+        "completion_upgrade_outlander_lvl_3": 1,
+        "completion_ability_outlander_fragment": 1,
+        "completion_complete_pve01_diff3_outlander": 3
+      },
+      "quantity": 1
+    },
+    "d5bc9878-23bc-4718-9bc9-959286acd7a2": {
+      "templateId": "Quest:heroquest_soldier_1",
+      "attributes": {
+        "quest_state": "Claimed",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": true,
+        "xp": 0,
+        "sent_new_notification": true,
+        "favorite": false,
+        "completion_upgrade_soldier": 1,
+        "completion_kill_husk_commando_assault": 100
+      },
+      "quantity": 1
+    },
+    "6c03922f-90ac-448e-a5f6-8f082d06e75e": {
+      "templateId": "Quest:heroquest_soldier_2",
+      "attributes": {
+        "quest_state": "Claimed",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": true,
+        "xp": 0,
+        "sent_new_notification": true,
+        "favorite": false,
+        "completion_kill_husk_commando_fraggrenade": 10
+      },
+      "quantity": 1
+    },
+    "6a11ec33-7ec1-4a41-b93f-83cd031f1c29": {
+      "templateId": "Quest:homebasequest_completeexpedition",
+      "attributes": {
+        "quest_state": "Claimed",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": true,
+        "xp": 0,
+        "sent_new_notification": true,
+        "favorite": false,
+        "completion_collectexpedition": 1
+      },
+      "quantity": 1
+    },
+    "6039da8e-74ff-4813-acf0-9f32590479e0": {
+      "templateId": "Quest:homebasequest_slotfireteamalphaworker",
+      "attributes": {
+        "quest_state": "Claimed",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": true,
+        "xp": 0,
+        "sent_new_notification": true,
+        "favorite": false,
+        "completion_assign_worker_to_fire_squadone": 1
+      },
+      "quantity": 1
+    },
+    "6774cc13-ab09-41f5-8fc5-91e5e3b8e304": {
+      "templateId": "Quest:homebasequest_unlockemtworker",
+      "attributes": {
+        "quest_state": "Claimed",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": true,
+        "xp": 0,
+        "sent_new_notification": true,
+        "favorite": false,
+        "completion_unlock_skill_tree_emtworker": 1
+      },
+      "quantity": 1
+    },
+    "634e0a5c-5d17-4458-9de8-e78f07c94009": {
+      "templateId": "Quest:homebasequest_unlockfireteamalphaworker",
+      "attributes": {
+        "quest_state": "Claimed",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": true,
+        "xp": 0,
+        "sent_new_notification": true,
+        "favorite": false,
+        "completion_unlock_skill_tree_fireteamalpha": 1
+      },
+      "quantity": 1
+    },
+    "4f3ef9c5-2027-4b76-9c57-c6b810d6f61f": {
+      "templateId": "Quest:outpostquest_t1_p1",
+      "attributes": {
+        "quest_state": "Claimed",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": true,
+        "xp": 0,
+        "sent_new_notification": true,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "7444da5b-2e0d-460d-a2ac-857dfd7e74fe": {
+      "templateId": "Quest:outpostquest_t1_p2",
+      "attributes": {
+        "quest_state": "Claimed",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": true,
+        "xp": 0,
+        "sent_new_notification": true,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "945ccba1-abb0-4cd6-af6f-8b4d5b3f3c81": {
+      "templateId": "Quest:outpostquest_t2_p1",
+      "attributes": {
+        "quest_state": "Claimed",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": true,
+        "xp": 0,
+        "sent_new_notification": true,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "778df0d7-bfee-43ee-b3ee-88443a148acb": {
+      "templateId": "Quest:outpostquest_t2_p2",
+      "attributes": {
+        "quest_state": "Claimed",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": true,
+        "xp": 0,
+        "sent_new_notification": true,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "7d85c5bb-65c1-423a-93a8-afdd86201dd8": {
+      "templateId": "Quest:outpostquest_t3_p1",
+      "attributes": {
+        "quest_state": "Claimed",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": true,
+        "xp": 0,
+        "sent_new_notification": true,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "c040799a-160d-4612-8aec-5c39f975de6b": {
+      "templateId": "Quest:outpostquest_t3_p2",
+      "attributes": {
+        "quest_state": "Claimed",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": true,
+        "xp": 0,
+        "sent_new_notification": true,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "2ea21563-1796-47c0-b90d-f23cd623fd8e": {
+      "templateId": "Quest:outpostquest_t4_l10",
+      "attributes": {
+        "quest_state": "Claimed",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": true,
+        "xp": 0,
+        "sent_new_notification": true,
+        "favorite": false,
+        "completion_complete_outpost_4_10": 1
+      },
+      "quantity": 1
+    },
+    "a6090e7d-3dea-4a56-8a18-eb5ac1bcf92e": {
+      "templateId": "Quest:outpostquest_t4_l6",
+      "attributes": {
+        "quest_state": "Claimed",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": true,
+        "xp": 0,
+        "sent_new_notification": true,
+        "favorite": false,
+        "completion_complete_outpost_4_6": 1
+      },
+      "quantity": 1
+    },
+    "039eb2e6-f9bc-4276-bbb4-a9cb3817aed1": {
+      "templateId": "Quest:outpostquest_t4_l7",
+      "attributes": {
+        "quest_state": "Claimed",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": true,
+        "xp": 0,
+        "sent_new_notification": true,
+        "favorite": false,
+        "completion_complete_outpost_4_7": 1
+      },
+      "quantity": 1
+    },
+    "d0c37cc2-d5b1-4fc8-8ef1-e609f50b8d9e": {
+      "templateId": "Quest:outpostquest_t4_l8",
+      "attributes": {
+        "quest_state": "Claimed",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": true,
+        "xp": 0,
+        "sent_new_notification": true,
+        "favorite": false,
+        "completion_complete_outpost_4_8": 1
+      },
+      "quantity": 1
+    },
+    "fd37fb42-ed30-4710-80e6-793640cac803": {
+      "templateId": "Quest:outpostquest_t4_l9",
+      "attributes": {
+        "quest_state": "Claimed",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": true,
+        "xp": 0,
+        "sent_new_notification": true,
+        "favorite": false,
+        "completion_complete_outpost_4_9": 1
+      },
+      "quantity": 1
+    },
+    "2b00e018-4232-458f-8caf-69ba8aeaa8f5": {
+      "templateId": "Quest:plankertonquest_filler_10_d5",
+      "attributes": {
+        "quest_state": "Claimed",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": true,
+        "xp": 0,
+        "sent_new_notification": true,
+        "favorite": false,
+        "completion_complete_launchballoon_2_diff5": 1
+      },
+      "quantity": 1
+    },
+    "a1d785df-f204-43e0-9e89-5337ff7ccc17": {
+      "templateId": "Quest:plankertonquest_filler_1_d1",
+      "attributes": {
+        "quest_state": "Claimed",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": true,
+        "xp": 0,
+        "sent_new_notification": true,
+        "favorite": false,
+        "completion_complete_gate_double_2": 1
+      },
+      "quantity": 1
+    },
+    "3d0b6c92-0992-477b-baf7-a0cbe7a72a57": {
+      "templateId": "Quest:plankertonquest_filler_1_d2",
+      "attributes": {
+        "quest_state": "Claimed",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": true,
+        "xp": 0,
+        "sent_new_notification": true,
+        "favorite": false,
+        "completion_complete_powerreactor_2_diff2_v2": 1
+      },
+      "quantity": 1
+    },
+    "770b1b8a-c236-4e8f-ae5a-add0f02ff972": {
+      "templateId": "Quest:plankertonquest_filler_1_d3",
+      "attributes": {
+        "quest_state": "Claimed",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": true,
+        "xp": 0,
+        "sent_new_notification": true,
+        "favorite": false,
+        "completion_complete_stormchest_2_diff3": 1
+      },
+      "quantity": 1
+    },
+    "140fa991-81d3-41c1-a4d1-f7024dff4e0e": {
+      "templateId": "Quest:plankertonquest_filler_1_d4",
+      "attributes": {
+        "quest_state": "Claimed",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": true,
+        "xp": 0,
+        "sent_new_notification": true,
+        "favorite": false,
+        "completion_complete_evacuateshelter_2_diff4_v2": 1
+      },
+      "quantity": 1
+    },
+    "253bac92-00d3-4ba0-8650-6bd18b8a5759": {
+      "templateId": "Quest:plankertonquest_filler_1_d5",
+      "attributes": {
+        "quest_state": "Claimed",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": true,
+        "xp": 0,
+        "sent_new_notification": true,
+        "favorite": false,
+        "completion_complete_gate_triple_2_diff5": 1
+      },
+      "quantity": 1
+    },
+    "b8c87ff8-bec4-489d-a004-da8ace83374b": {
+      "templateId": "Quest:plankertonquest_filler_2_d1",
+      "attributes": {
+        "quest_state": "Claimed",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": true,
+        "xp": 0,
+        "sent_new_notification": true,
+        "favorite": false,
+        "completion_complete_evacuate_2": 1
+      },
+      "quantity": 1
+    },
+    "197eaa59-3412-4b39-9840-2d542b993991": {
+      "templateId": "Quest:plankertonquest_filler_2_d2",
+      "attributes": {
+        "quest_state": "Claimed",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": true,
+        "xp": 0,
+        "sent_new_notification": true,
+        "favorite": false,
+        "completion_complete_destroyencamp_2_diff2": 1
+      },
+      "quantity": 1
+    },
+    "8029a3e1-c7f1-4fc2-ace6-def69dd1e2f9": {
+      "templateId": "Quest:plankertonquest_filler_2_d3",
+      "attributes": {
+        "quest_state": "Claimed",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": true,
+        "xp": 0,
+        "sent_new_notification": true,
+        "favorite": false,
+        "completion_complete_delivergoods_2_diff3_v2": 1
+      },
+      "quantity": 1
+    },
+    "f7b8825e-1d90-4b5c-85ac-8dc99cbedec5": {
+      "templateId": "Quest:plankertonquest_filler_2_d4",
+      "attributes": {
+        "quest_state": "Claimed",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": true,
+        "xp": 0,
+        "sent_new_notification": true,
+        "favorite": false,
+        "completion_kill_husk_2_diff4_v2": 500
+      },
+      "quantity": 1
+    },
+    "3f16f63d-a3f2-453b-b99f-51c41b7833f9": {
+      "templateId": "Quest:plankertonquest_filler_2_d5",
+      "attributes": {
+        "quest_state": "Claimed",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": true,
+        "xp": 0,
+        "sent_new_notification": true,
+        "favorite": false,
+        "completion_questcollect_survivoritemdata": 25,
+        "completion_complete_evacuateshelter_2_diff5": 2
+      },
+      "quantity": 1
+    },
+    "dbc63d68-f0d7-4ec9-a1d4-9300f24b92c9": {
+      "templateId": "Quest:plankertonquest_filler_3_d1",
+      "attributes": {
+        "quest_state": "Claimed",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": true,
+        "xp": 0,
+        "sent_new_notification": true,
+        "favorite": false,
+        "completion_complete_launchballoon_2": 1
+      },
+      "quantity": 1
+    },
+    "36ed0a3e-09c7-44cf-bebf-7c36beab4fd6": {
+      "templateId": "Quest:plankertonquest_filler_3_d2",
+      "attributes": {
+        "quest_state": "Claimed",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": true,
+        "xp": 0,
+        "sent_new_notification": true,
+        "favorite": false,
+        "completion_custom_bluglosyphon_full_v2": 3
+      },
+      "quantity": 1
+    },
+    "94ab5675-280b-4ac5-ab1a-acd871a5ca65": {
+      "templateId": "Quest:plankertonquest_filler_3_d3",
+      "attributes": {
+        "quest_state": "Claimed",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": true,
+        "xp": 0,
+        "sent_new_notification": true,
+        "favorite": false,
+        "completion_complete_anomaly_2_diff3_v2": 3
+      },
+      "quantity": 1
+    },
+    "14aca648-f5a5-479d-a4e7-a32bab62a67e": {
+      "templateId": "Quest:plankertonquest_filler_3_d4",
+      "attributes": {
+        "quest_state": "Claimed",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": true,
+        "xp": 0,
+        "sent_new_notification": true,
+        "favorite": false,
+        "completion_custom_pylonused_build": 1,
+        "completion_custom_pylonused_health": 1,
+        "completion_custom_pylonused_movement": 1,
+        "completion_custom_pylonused_shield": 1,
+        "completion_custom_pylonused_stamina": 1
+      },
+      "quantity": 1
+    },
+    "2e58e703-2a33-42e5-897f-bb0e90f96c19": {
+      "templateId": "Quest:plankertonquest_filler_3_d5",
+      "attributes": {
+        "quest_state": "Claimed",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": true,
+        "xp": 0,
+        "sent_new_notification": true,
+        "favorite": false,
+        "completion_complete_retrievedata_2_diff5": 1
+      },
+      "quantity": 1
+    },
+    "1afa7e0e-5b10-46c8-bfc8-306f454f9373": {
+      "templateId": "Quest:plankertonquest_filler_4_d1",
+      "attributes": {
+        "quest_state": "Claimed",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": true,
+        "xp": 0,
+        "sent_new_notification": true,
+        "favorite": false,
+        "completion_complete_buildradargrid_2": 1
+      },
+      "quantity": 1
+    },
+    "7ffa60d0-9ffe-4b5d-8d0e-1b57261f54a5": {
+      "templateId": "Quest:plankertonquest_filler_4_d2",
+      "attributes": {
+        "quest_state": "Claimed",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": true,
+        "xp": 0,
+        "sent_new_notification": true,
+        "favorite": false,
+        "completion_complete_destroyencamp_2_diff2": 2
+      },
+      "quantity": 1
+    },
+    "150683ce-efc1-47d4-a903-1e9a74a9f51b": {
+      "templateId": "Quest:plankertonquest_filler_4_d3",
+      "attributes": {
+        "quest_state": "Claimed",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": true,
+        "xp": 0,
+        "sent_new_notification": true,
+        "favorite": false,
+        "completion_complete_relaysurvivor_2_diff3": 6
+      },
+      "quantity": 1
+    },
+    "1b238c25-792d-44cd-9907-211e616626e0": {
+      "templateId": "Quest:plankertonquest_filler_4_d4",
+      "attributes": {
+        "quest_state": "Claimed",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": true,
+        "xp": 0,
+        "sent_new_notification": true,
+        "favorite": false,
+        "completion_interact_treasurechest_pve02_diff4": 3,
+        "completion_complete_mimic_2_diff4": 1
+      },
+      "quantity": 1
+    },
+    "4905281a-e8ea-43ea-bba8-3f76513d34e5": {
+      "templateId": "Quest:plankertonquest_filler_4_d5",
+      "attributes": {
+        "quest_state": "Claimed",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": true,
+        "xp": 0,
+        "sent_new_notification": true,
+        "favorite": false,
+        "completion_complete_buildradar_2_diff5": 3
+      },
+      "quantity": 1
+    },
+    "fc5b84a4-be68-469a-b795-257ab4b1ac89": {
+      "templateId": "Quest:plankertonquest_filler_5_d1",
+      "attributes": {
+        "quest_state": "Claimed",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": true,
+        "xp": 0,
+        "sent_new_notification": true,
+        "favorite": false,
+        "completion_complete_exploration_2": 1
+      },
+      "quantity": 1
+    },
+    "97f61804-62e4-4b18-8d64-bd07e5769277": {
+      "templateId": "Quest:plankertonquest_filler_5_d2",
+      "attributes": {
+        "quest_state": "Claimed",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": true,
+        "xp": 0,
+        "sent_new_notification": true,
+        "favorite": false,
+        "completion_complete_medbot_2_diff2": 3
+      },
+      "quantity": 1
+    },
+    "ee0cbd0b-f6f1-47ce-adf2-607090269d44": {
+      "templateId": "Quest:plankertonquest_filler_5_d3",
+      "attributes": {
+        "quest_state": "Claimed",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": true,
+        "xp": 0,
+        "sent_new_notification": true,
+        "favorite": false,
+        "completion_questcollect_survivoritemdata": 15,
+        "completion_complete_powerreactor_2_diff3": 1
+      },
+      "quantity": 1
+    },
+    "cc5fe000-2aa1-4481-b4f5-12b3c363a748": {
+      "templateId": "Quest:plankertonquest_filler_5_d4",
+      "attributes": {
+        "quest_state": "Claimed",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": true,
+        "xp": 0,
+        "sent_new_notification": true,
+        "favorite": false,
+        "completion_complete_retrievedata_2_diff4": 2
+      },
+      "quantity": 1
+    },
+    "374dc592-3492-4ea5-b3c6-de4f583c25a1": {
+      "templateId": "Quest:plankertonquest_filler_5_d5",
+      "attributes": {
+        "quest_state": "Claimed",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": true,
+        "xp": 0,
+        "sent_new_notification": true,
+        "favorite": false,
+        "completion_complete_launchballoon_2_diff5": 1
+      },
+      "quantity": 1
+    },
+    "b639b791-883d-4a57-9224-554dfba919ec": {
+      "templateId": "Quest:plankertonquest_filler_6_d3",
+      "attributes": {
+        "quest_state": "Claimed",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": true,
+        "xp": 0,
+        "sent_new_notification": true,
+        "favorite": false,
+        "completion_quick_complete_pve02": 3
+      },
+      "quantity": 1
+    },
+    "b30afff5-ba2e-4c1e-8d5a-fca50e44de2c": {
+      "templateId": "Quest:plankertonquest_filler_6_d4",
+      "attributes": {
+        "quest_state": "Claimed",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": true,
+        "xp": 0,
+        "sent_new_notification": true,
+        "favorite": false,
+        "completion_complete_gate_2_diff4": 1,
+        "completion_complete_gate_double_2_diff4": 1
+      },
+      "quantity": 1
+    },
+    "47362cb6-7193-489e-94b4-6fd6162daa57": {
+      "templateId": "Quest:plankertonquest_filler_6_d5",
+      "attributes": {
+        "quest_state": "Claimed",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": true,
+        "xp": 0,
+        "sent_new_notification": true,
+        "favorite": false,
+        "completion_complete_relaysurvivor_2_diff5": 4
+      },
+      "quantity": 1
+    },
+    "13bc429d-a95c-4b73-a54c-b0a4dcaa19b4": {
+      "templateId": "Quest:plankertonquest_filler_7_d3",
+      "attributes": {
+        "quest_state": "Claimed",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": true,
+        "xp": 0,
+        "sent_new_notification": true,
+        "favorite": false,
+        "completion_complete_launchballoon_2_diff3": 2
+      },
+      "quantity": 1
+    },
+    "30d243e3-6414-4454-9b92-6021231dca68": {
+      "templateId": "Quest:plankertonquest_filler_7_d4",
+      "attributes": {
+        "quest_state": "Claimed",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": true,
+        "xp": 0,
+        "sent_new_notification": true,
+        "favorite": false,
+        "completion_kill_husk_smasher_2_diff4_v2": 20
+      },
+      "quantity": 1
+    },
+    "c43a994b-b4d1-40db-9c78-37f2205c3c8b": {
+      "templateId": "Quest:plankertonquest_filler_7_d5",
+      "attributes": {
+        "quest_state": "Claimed",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": true,
+        "xp": 0,
+        "sent_new_notification": true,
+        "favorite": false,
+        "completion_complete_exploration_2_diff5": 2
+      },
+      "quantity": 1
+    },
+    "f0b7656b-1122-4093-8916-11fe0fdd1a4e": {
+      "templateId": "Quest:plankertonquest_filler_8_d4",
+      "attributes": {
+        "quest_state": "Claimed",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": true,
+        "xp": 0,
+        "sent_new_notification": true,
+        "favorite": false,
+        "completion_complete_delivergoods_2_diff4": 1
+      },
+      "quantity": 1
+    },
+    "7665d228-6ed2-4acb-8095-c62c4470a111": {
+      "templateId": "Quest:plankertonquest_filler_8_d5",
+      "attributes": {
+        "quest_state": "Claimed",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": true,
+        "xp": 0,
+        "sent_new_notification": true,
+        "favorite": false,
+        "completion_complete_buildradar_2_diff5": 5
+      },
+      "quantity": 1
+    },
+    "9f40bf4f-fb3a-4f74-9452-514a207a996e": {
+      "templateId": "Quest:plankertonquest_filler_9_d4",
+      "attributes": {
+        "quest_state": "Claimed",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": true,
+        "xp": 0,
+        "sent_new_notification": true,
+        "favorite": false,
+        "completion_complete_powerreactor_2_diff4": 2
+      },
+      "quantity": 1
+    },
+    "6e5a618b-186c-4f02-b64b-57758294bf1e": {
+      "templateId": "Quest:plankertonquest_filler_9_d5",
+      "attributes": {
+        "quest_state": "Claimed",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": true,
+        "xp": 0,
+        "sent_new_notification": true,
+        "favorite": false,
+        "completion_complete_delivergoods_2_diff5": 3
+      },
+      "quantity": 1
+    },
+    "4b38dfae-b0a2-4dd8-90a4-9b900854e5aa": {
+      "templateId": "Quest:plankertonquest_launchrocket_d5",
+      "attributes": {
+        "quest_state": "Active",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": true,
+        "xp": 0,
+        "sent_new_notification": true,
+        "favorite": false,
+        "completion_complete_launchrocket_2": 0
+      },
+      "quantity": 1
+    },
+    "59a61bb3-18f2-45d1-b88e-1c916e4060cf": {
+      "templateId": "Quest:reactivequest_avoiceinthenight",
+      "attributes": {
+        "quest_state": "Claimed",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": true,
+        "xp": 0,
+        "sent_new_notification": true,
+        "favorite": false,
+        "completion_quest_reactive_avoiceinthenightv2": 4
+      },
+      "quantity": 1
+    },
+    "10d0a33c-082a-4355-adb3-c021228c55e0": {
+      "templateId": "Quest:reactivequest_blasters",
+      "attributes": {
+        "quest_state": "Claimed",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": true,
+        "xp": 0,
+        "sent_new_notification": true,
+        "favorite": false,
+        "completion_quest_reactive_blasters": 10
+      },
+      "quantity": 1
+    },
+    "fc02aa8c-f99b-4012-beea-6d61f992368f": {
+      "templateId": "Quest:reactivequest_destroyobject",
+      "attributes": {
+        "quest_state": "Claimed",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": true,
+        "xp": 0,
+        "sent_new_notification": true,
+        "favorite": false,
+        "completion_quest_reactive_destroyactor": 5
+      },
+      "quantity": 1
+    },
+    "eaa601dd-db11-4357-965b-206f338b16a3": {
+      "templateId": "Quest:reactivequest_distresscalls",
+      "attributes": {
+        "quest_state": "Claimed",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": true,
+        "xp": 0,
+        "sent_new_notification": true,
+        "favorite": false,
+        "completion_quest_reactive_distresscallv2": 5
+      },
+      "quantity": 1
+    },
+    "66040a7f-3e9f-4cc4-9922-474ffb59c045": {
+      "templateId": "Quest:reactivequest_elemhusky",
+      "attributes": {
+        "quest_state": "Claimed",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": true,
+        "xp": 0,
+        "sent_new_notification": true,
+        "favorite": false,
+        "completion_quest_reactive_elemhusky": 10
+      },
+      "quantity": 1
+    },
+    "a7b85267-f3a4-43ba-968e-8b462e764b04": {
+      "templateId": "Quest:reactivequest_finddj",
+      "attributes": {
+        "quest_state": "Claimed",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": true,
+        "xp": 0,
+        "sent_new_notification": true,
+        "favorite": false,
+        "completion_quest_reactive_finddj": 3
+      },
+      "quantity": 1
+    },
+    "b342d823-6026-4b4b-9c40-3cfff6a6f794": {
+      "templateId": "Quest:reactivequest_findmimic",
+      "attributes": {
+        "quest_state": "Claimed",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": true,
+        "xp": 0,
+        "sent_new_notification": true,
+        "favorite": false,
+        "completion_quest_reactive_findmimic": 1,
+        "completion_complete_mimic_1_diff5": 1
+      },
+      "quantity": 1
+    },
+    "49a5b3e9-e76e-48f9-9ab5-9b8dbeda795d": {
+      "templateId": "Quest:reactivequest_findpop",
+      "attributes": {
+        "quest_state": "Claimed",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": true,
+        "xp": 0,
+        "sent_new_notification": true,
+        "favorite": false,
+        "completion_quest_reactive_findpop": 3
+      },
+      "quantity": 1
+    },
+    "bfbc463c-975e-4fc1-adcd-c3e75ba19565": {
+      "templateId": "Quest:reactivequest_findsurvivor",
+      "attributes": {
+        "quest_state": "Claimed",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": true,
+        "xp": 0,
+        "sent_new_notification": true,
+        "favorite": false,
+        "completion_quest_reactive_findsurvivor": 50
+      },
+      "quantity": 1
+    },
+    "e05e0f18-3cad-4ad2-ab9b-75e711cab1fe": {
+      "templateId": "Quest:reactivequest_firehusks",
+      "attributes": {
+        "quest_state": "Claimed",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": true,
+        "xp": 0,
+        "sent_new_notification": true,
+        "favorite": false,
+        "completion_quest_reactive_firehusks": 10
+      },
+      "quantity": 1
+    },
+    "86626a05-5e70-49f4-93c6-56ab81f35a7f": {
+      "templateId": "Quest:reactivequest_flingers",
+      "attributes": {
+        "quest_state": "Claimed",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": true,
+        "xp": 0,
+        "sent_new_notification": true,
+        "favorite": false,
+        "completion_quest_reactive_flingers": 5
+      },
+      "quantity": 1
+    },
+    "14770096-aad6-478f-924d-3e95d442e701": {
+      "templateId": "Quest:reactivequest_gatherfood",
+      "attributes": {
+        "quest_state": "Claimed",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": true,
+        "xp": 0,
+        "sent_new_notification": true,
+        "favorite": false,
+        "completion_quest_reactive_gatherfood": 8
+      },
+      "quantity": 1
+    },
+    "9f9c2524-9668-4c7c-bf35-3b7eacd8ee4b": {
+      "templateId": "Quest:reactivequest_goodpop",
+      "attributes": {
+        "quest_state": "Claimed",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": true,
+        "xp": 0,
+        "sent_new_notification": true,
+        "favorite": false,
+        "completion_quest_reactive_goodpop": 4
+      },
+      "quantity": 1
+    },
+    "dbb567f1-fff3-40dd-a1f9-392a96c3f73a": {
+      "templateId": "Quest:reactivequest_itsatrap",
+      "attributes": {
+        "quest_state": "Claimed",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": true,
+        "xp": 0,
+        "sent_new_notification": true,
+        "favorite": false,
+        "completion_quest_reactive_trappartv2": 4,
+        "completion_complete_pve01_diff3": 2
+      },
+      "quantity": 1
+    },
+    "859c2f3d-caa7-4038-9729-e3561e2a802f": {
+      "templateId": "Quest:reactivequest_killsmasher",
+      "attributes": {
+        "quest_state": "Claimed",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": true,
+        "xp": 0,
+        "sent_new_notification": true,
+        "favorite": false,
+        "completion_quest_reactive_killsmasher": 50
+      },
+      "quantity": 1
+    },
+    "a3b2af7c-071a-476d-ad2d-35c8834f768f": {
+      "templateId": "Quest:reactivequest_knowyourenemy",
+      "attributes": {
+        "quest_state": "Claimed",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": true,
+        "xp": 0,
+        "sent_new_notification": true,
+        "favorite": false,
+        "completion_quest_reactive_knowyourenemy": 5
+      },
+      "quantity": 1
+    },
+    "1b75e5f5-1af2-4293-8f1a-6db3888a7256": {
+      "templateId": "Quest:reactivequest_lightninghusks",
+      "attributes": {
+        "quest_state": "Claimed",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": true,
+        "xp": 0,
+        "sent_new_notification": true,
+        "favorite": false,
+        "completion_quest_reactive_lightninghusks": 10
+      },
+      "quantity": 1
+    },
+    "8675c628-3479-487b-ad77-ddd9fcf0679d": {
+      "templateId": "Quest:reactivequest_masterservers",
+      "attributes": {
+        "quest_state": "Claimed",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": true,
+        "xp": 0,
+        "sent_new_notification": true,
+        "favorite": false,
+        "completion_complete_protecttheservers_2": 1
+      },
+      "quantity": 1
+    },
+    "7c984d3f-3fc6-4195-ada6-b97b2aff7587": {
+      "templateId": "Quest:reactivequest_medicaldata",
+      "attributes": {
+        "quest_state": "Claimed",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": true,
+        "xp": 0,
+        "sent_new_notification": true,
+        "favorite": false,
+        "completion_quest_reactive_medicaldata": 4,
+        "completion_complete_pve01_diff4": 2
+      },
+      "quantity": 1
+    },
+    "24b49eab-37c7-4136-a787-7565201eb7f0": {
+      "templateId": "Quest:reactivequest_medicalsupplies",
+      "attributes": {
+        "quest_state": "Claimed",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": true,
+        "xp": 0,
+        "sent_new_notification": true,
+        "favorite": false,
+        "completion_quest_reactive_medicalsupplies": 2
+      },
+      "quantity": 1
+    },
+    "81ca4dc2-3ca8-4e9f-ba6f-74fe44c82edc": {
+      "templateId": "Quest:reactivequest_poisonlobbers",
+      "attributes": {
+        "quest_state": "Claimed",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": true,
+        "xp": 0,
+        "sent_new_notification": true,
+        "favorite": false,
+        "completion_quest_reactive_poisonlobbers": 10
+      },
+      "quantity": 1
+    },
+    "f63b0d82-c762-45e4-92b6-1f4206a298ff": {
+      "templateId": "Quest:reactivequest_pumpkins",
+      "attributes": {
+        "quest_state": "Claimed",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": true,
+        "xp": 0,
+        "sent_new_notification": true,
+        "favorite": false,
+        "completion_questcollect_quest_pumpkins": 3
+      },
+      "quantity": 1
+    },
+    "96e9daeb-1b1f-4573-a5e9-a59e5570c8b9": {
+      "templateId": "Quest:reactivequest_radiostation",
+      "attributes": {
+        "quest_state": "Claimed",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": true,
+        "xp": 0,
+        "sent_new_notification": true,
+        "favorite": false,
+        "completion_quest_reactive_radiostation": 5
+      },
+      "quantity": 1
+    },
+    "34a9feff-d2e6-460e-b62a-e8650bef8916": {
+      "templateId": "Quest:reactivequest_riftdata",
+      "attributes": {
+        "quest_state": "Claimed",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": true,
+        "xp": 0,
+        "sent_new_notification": true,
+        "favorite": false,
+        "completion_quest_reactive_riftdata": 3
+      },
+      "quantity": 1
+    },
+    "dcb28fe6-a450-460e-9e3e-e5ac011f7096": {
+      "templateId": "Quest:reactivequest_roadhome",
+      "attributes": {
+        "quest_state": "Claimed",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": true,
+        "xp": 0,
+        "sent_new_notification": true,
+        "favorite": false,
+        "completion_quest_reactive_roadhome": 4
+      },
+      "quantity": 1
+    },
+    "57448914-9d02-4052-9f57-1169c3c3a351": {
+      "templateId": "Quest:reactivequest_seebot",
+      "attributes": {
+        "quest_state": "Claimed",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": true,
+        "xp": 0,
+        "sent_new_notification": true,
+        "favorite": false,
+        "completion_quest_reactive_seebotv2": 5
+      },
+      "quantity": 1
+    },
+    "b00a3345-cdf0-4d89-ae29-e98b49929e0b": {
+      "templateId": "Quest:reactivequest_smasher",
+      "attributes": {
+        "quest_state": "Claimed",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": true,
+        "xp": 0,
+        "sent_new_notification": true,
+        "favorite": false,
+        "completion_quest_reactive_smasher": 5
+      },
+      "quantity": 1
+    },
+    "34896334-cdeb-41ca-936b-189dc982596b": {
+      "templateId": "Quest:reactivequest_supplyrun",
+      "attributes": {
+        "quest_state": "Claimed",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": true,
+        "xp": 0,
+        "sent_new_notification": true,
+        "favorite": false,
+        "completion_quest_reactive_larssupplies": 4,
+        "completion_complete_pve01_diff5": 2
+      },
+      "quantity": 1
+    },
+    "77c2a7b1-c495-414b-99cd-8f53700bad92": {
+      "templateId": "Quest:reactivequest_survivorradios",
+      "attributes": {
+        "quest_state": "Claimed",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": true,
+        "xp": 0,
+        "sent_new_notification": true,
+        "favorite": false,
+        "completion_quest_reactive_survivorradio": 50
+      },
+      "quantity": 1
+    },
+    "f418c8cd-c9b8-4a74-a311-82eba2af8b23": {
+      "templateId": "Quest:reactivequest_taker",
+      "attributes": {
+        "quest_state": "Claimed",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": true,
+        "xp": 0,
+        "sent_new_notification": true,
+        "favorite": false,
+        "completion_quest_reactive_taker": 5
+      },
+      "quantity": 1
+    },
+    "973c9da6-e4c2-4795-b055-8fbe2b1d20b1": {
+      "templateId": "Quest:reactivequest_transmitters",
+      "attributes": {
+        "quest_state": "Claimed",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": true,
+        "xp": 0,
+        "sent_new_notification": true,
+        "favorite": false,
+        "completion_quest_reactive_transmitters": 3
+      },
+      "quantity": 1
+    },
+    "c3aa3984-a668-42ff-a312-41e49275553e": {
+      "templateId": "Quest:reactivequest_trollstash_r1",
+      "attributes": {
+        "quest_state": "Claimed",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": true,
+        "xp": 0,
+        "sent_new_notification": true,
+        "favorite": false,
+        "completion_quest_reactive_trollstashinit": 1
+      },
+      "quantity": 1
+    },
+    "f6487066-538a-4964-b50e-5a17201a0054": {
+      "templateId": "Quest:reactivequest_trollstash_r2",
+      "attributes": {
+        "quest_state": "Claimed",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": true,
+        "xp": 0,
+        "sent_new_notification": true,
+        "favorite": false,
+        "completion_quest_reactive_trollstash": 1
+      },
+      "quantity": 1
+    },
+    "3f692d02-85e9-4fd8-b584-be97935b2fa7": {
+      "templateId": "Quest:reactivequest_waterhusks",
+      "attributes": {
+        "quest_state": "Claimed",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": true,
+        "xp": 0,
+        "sent_new_notification": true,
+        "favorite": false,
+        "completion_quest_reactive_waterhusks": 10
+      },
+      "quantity": 1
+    },
+    "4c2b284e-a766-4b6a-976d-5b40f2221d7e": {
+      "templateId": "Quest:stonewoodquest_filler_1_d4",
+      "attributes": {
+        "quest_state": "Claimed",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": true,
+        "xp": 0,
+        "sent_new_notification": true,
+        "favorite": false,
+        "completion_complete_encampment_1_diff4": 4,
+        "completion_complete_pve01_diff4": 2
+      },
+      "quantity": 1
+    },
+    "c2273d3a-f663-4ed6-ad46-12e5ce1fda38": {
+      "templateId": "Quest:stonewoodquest_filler_2_d4",
+      "attributes": {
+        "quest_state": "Claimed",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": true,
+        "xp": 0,
+        "sent_new_notification": true,
+        "favorite": false,
+        "completion_craft_health_station": 5,
+        "completion_complete_pve01_diff3_v2": 2
+      },
+      "quantity": 1
+    },
+    "85e815c5-6ba5-431e-97b3-76e8a90a8945": {
+      "templateId": "Quest:stonewoodquest_filler_2_d5",
+      "attributes": {
+        "quest_state": "Claimed",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": true,
+        "xp": 0,
+        "sent_new_notification": true,
+        "favorite": false,
+        "completion_kill_husk_taker_1_diff5": 5,
+        "completion_complete_pve01_diff5": 3
+      },
+      "quantity": 1
+    },
+    "99d36ff6-10fa-4cd2-ae4d-0b2c39256a94": {
+      "templateId": "Quest:stonewoodquest_launchrocket_d5",
+      "attributes": {
+        "quest_state": "Claimed",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": true,
+        "xp": 0,
+        "sent_new_notification": true,
+        "favorite": false,
+        "completion_complete_launchrocket_1": 1
+      },
+      "quantity": 1
+    },
+    "9af658d7-8949-47b9-8489-28d7b711c155": {
+      "templateId": "Quest:stonewoodquest_side_1_d3",
+      "attributes": {
+        "quest_state": "Claimed",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": true,
+        "xp": 0,
+        "sent_new_notification": true,
+        "favorite": false,
+        "completion_complete_whackatroll_1_diff3": 2
+      },
+      "quantity": 1
+    },
+    "175f2b62-7a5c-43ed-baa9-ff14c8702ddc": {
+      "templateId": "Quest:stonewoodquest_side_1_d4",
+      "attributes": {
+        "quest_state": "Claimed",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": true,
+        "xp": 0,
+        "sent_new_notification": true,
+        "favorite": false,
+        "completion_quick_complete_pve01": 2
+      },
+      "quantity": 1
+    },
+    "05b856ad-93dc-4fd9-9e0a-a91dc287c698": {
+      "templateId": "Quest:stonewoodquest_side_1_d5",
+      "attributes": {
+        "quest_state": "Claimed",
+        "last_state_change_time": "2017-12-25T02:06:00.508Z",
+        "max_level_bonus": 0,
+        "level": -1,
+        "item_seen": true,
+        "xp": 0,
+        "sent_new_notification": true,
+        "favorite": false,
+        "completion_questcollect_survivoritemdata": 15,
+        "completion_complete_pve01_diff5_v2": 3
       },
       "quantity": 1
     }
