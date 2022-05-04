@@ -56,6 +56,7 @@
 - Fully working daily challenges system (New daily challenge every day, replacing daily challenges, etc...)
 - Seasonal Quests from Season 3 up to Season 19 (Can change)
 - Purchasable battle pass from Season 2 to Season 10 (Can change)
+- Discovery Tab
 
 ## How to use?
 1) Install [NodeJS](https://nodejs.org/en/)
