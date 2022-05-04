@@ -181,6 +181,75 @@ express.post("/fortnite/api/game/v2/profile/*/client/SetHomebaseBanner", async (
     res.end();
 });
 
+// Set Homebase Name STW
+express.post("/fortnite/api/game/v2/profile/*/client/SetHomebaseName", async (req, res) => {
+    const profile = require(`./../profiles/${req.query.profileId || "profile0"}.json`);
+
+    // do not change any of these or you will end up breaking it
+    var ApplyProfileChanges = [];
+    var BaseRevision = profile.rvn || 0;
+    var QueryRevision = req.query.rvn || -1;
+    var StatChanged = false;
+
+    if (req.body.homebaseName) {
+        switch (req.query.profileId) {
+
+            case "profile0":
+                profile.stats.attributes.homebase.townName = req.body.homebaseName;
+                StatChanged = true;
+                break;
+
+            case "common_public":
+                profile.stats.attributes.homebase_name = req.body.homebaseName;
+                StatChanged = true;
+                break;
+
+        }
+    }
+
+    if (StatChanged == true) {
+        profile.rvn += 1;
+        profile.commandRevision += 1;
+
+        if (req.query.profileId == "profile0") {
+            ApplyProfileChanges.push({
+                "changeType": "statModified",
+                "name": "homebase",
+                "value": profile.stats.attributes.homebase
+            })
+        }
+
+        if (req.query.profileId == "common_public") {
+            ApplyProfileChanges.push({
+                "changeType": "statModified",
+                "name": "homebase_name",
+                "value": profile.stats.attributes.homebase_name
+            })
+        }
+
+        fs.writeFileSync(`./profiles/${req.query.profileId || "profile0"}.json`, JSON.stringify(profile, null, 2));
+    }
+
+    // this doesn't work properly on version v12.20 and above but whatever
+    if (QueryRevision != BaseRevision) {
+        ApplyProfileChanges = [{
+            "changeType": "fullProfileUpdate",
+            "profile": profile
+        }];
+    }
+
+    res.json({
+        "profileRevision": profile.rvn || 0,
+        "profileId": req.query.profileId || "profile0",
+        "profileChangesBaseRevision": BaseRevision,
+        "profileChanges": ApplyProfileChanges,
+        "profileCommandRevision": profile.commandRevision || 0,
+        "serverTime": new Date().toISOString(),
+        "responseVersion": 1
+    })
+    res.end();
+});
+
 // Buy skill tree perk STW
 express.post("/fortnite/api/game/v2/profile/*/client/PurchaseHomebaseNode", async (req, res) => {
     const profile = require(`./../profiles/${req.query.profileId || "profile0"}.json`);
@@ -1116,6 +1185,94 @@ express.post("/fortnite/api/game/v2/profile/*/client/ClaimLoginReward", async (r
         "profileChangesBaseRevision": BaseRevision,
         "profileChanges": ApplyProfileChanges,
         "notifications": Notifications,
+        "profileCommandRevision": profile.commandRevision || 0,
+        "serverTime": new Date().toISOString(),
+        "responseVersion": 1
+    })
+    res.end();
+});
+
+// Update quest client objectives STW
+express.post("/fortnite/api/game/v2/profile/*/client/UpdateQuestClientObjectives", async (req, res) => {
+    const profile = require(`./../profiles/${req.query.profileId || "campaign"}.json`);
+
+    // do not change any of these or you will end up breaking it
+    var ApplyProfileChanges = [];
+    var BaseRevision = profile.rvn || 0;
+    var QueryRevision = req.query.rvn || -1;
+    var StatChanged = false;
+
+    if (req.body.advance) {
+        for (var i in req.body.advance) {
+            var Quest = [];
+            var bIncomplete = false;
+
+            for (var x in profile.items) {
+                if (profile.items[x].templateId.toLowerCase().startsWith("quest:")) {
+                    for (var y in profile.items[x].attributes) {
+                        if (y.toLowerCase() == `completion_${req.body.advance[i].statName}`) {
+                            Quest = x;
+                        }
+                    }
+                }
+            }
+
+            if (Quest) {
+                profile.items[Quest].attributes[`completion_${req.body.advance[i].statName}`] = req.body.advance[i].count;
+
+                ApplyProfileChanges.push({
+                    "changeType": "itemAttrChanged",
+                    "itemId": Quest,
+                    "attributeName": `completion_${req.body.advance[i].statName}`,
+                    "attributeValue": req.body.advance[i].count
+                })
+
+                if (profile.items[Quest].attributes.quest_state.toLowerCase() != "claimed") {
+                    for (var x in profile.items[Quest].attributes) {
+                        if (x.toLowerCase().startsWith("completion_")) {
+                            if (profile.items[Quest].attributes[x] == 0) {
+                                bIncomplete = true;
+                            }
+                        }
+                    }
+    
+                    if (bIncomplete == false) {
+                        profile.items[Quest].attributes.quest_state = "Claimed";
+    
+                        ApplyProfileChanges.push({
+                            "changeType": "itemAttrChanged",
+                            "itemId": Quest,
+                            "attributeName": "quest_state",
+                            "attributeValue": profile.items[Quest].attributes.quest_state
+                        })
+                    }
+                }
+
+                StatChanged = true;
+            }
+        }
+    }
+
+    if (StatChanged == true) {
+        profile.rvn += 1;
+        profile.commandRevision += 1;
+
+        fs.writeFileSync(`./profiles/${req.query.profileId || "campaign"}.json`, JSON.stringify(profile, null, 2));
+    }
+
+    // this doesn't work properly on version v12.20 and above but whatever
+    if (QueryRevision != BaseRevision) {
+        ApplyProfileChanges = [{
+            "changeType": "fullProfileUpdate",
+            "profile": profile
+        }];
+    }
+
+    res.json({
+        "profileRevision": profile.rvn || 0,
+        "profileId": req.query.profileId || "campaign",
+        "profileChangesBaseRevision": BaseRevision,
+        "profileChanges": ApplyProfileChanges,
         "profileCommandRevision": profile.commandRevision || 0,
         "serverTime": new Date().toISOString(),
         "responseVersion": 1
