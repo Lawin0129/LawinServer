@@ -135,26 +135,6 @@
       },
       "quantity": 1
     },
-    "4fc3a88c-fe05-4336-96fd-b8520a5b12b8": {
-      "templateId": "Quest:wargames_visibilityquest_wargame_tornado",
-      "attributes": {
-        "level": -1,
-        "item_seen": true,
-        "completion_wargames_visibilityquest_wargame_tornado": 0,
-        "sent_new_notification": true,
-        "challenge_bundle_id": "",
-        "xp_reward_scalar": 1,
-        "challenge_linked_quest_given": "",
-        "quest_pool": "",
-        "quest_state": "Active",
-        "last_state_change_time": "2020-01-09T15:12:41.065Z",
-        "challenge_linked_quest_parent": "",
-        "max_level_bonus": 0,
-        "xp": 0,
-        "favorite": false
-      },
-      "quantity": 1
-    },
     "e5592ea6-f206-4709-8481-a043d2d1f718": {
       "templateId": "Quest:plankertonquest_reactive_speakers",
       "attributes": {
@@ -257,26 +237,6 @@
       },
       "quantity": 1
     },
-    "a2a2097f-f9a9-4e16-8dfc-8a2ff0757a95": {
-      "templateId": "Quest:bbpromoquest_2019_reactive_kylecabinet",
-      "attributes": {
-        "level": -1,
-        "item_seen": true,
-        "completion_bbpromoquest_2019_reactive_kylecabinet": 3,
-        "sent_new_notification": true,
-        "challenge_bundle_id": "",
-        "xp_reward_scalar": 1,
-        "challenge_linked_quest_given": "",
-        "quest_pool": "",
-        "quest_state": "Active",
-        "last_state_change_time": "2020-01-20T18:44:07.281Z",
-        "challenge_linked_quest_parent": "",
-        "max_level_bonus": 0,
-        "xp": 0,
-        "favorite": false
-      },
-      "quantity": 1
-    },
     "5f06ead2-6021-4417-84de-6505558def86": {
       "templateId": "Quest:plankertonquest_filler_7_d4",
       "attributes": {
@@ -364,26 +324,6 @@
       },
       "quantity": 1
     },
-    "471be9df-2ef9-4d23-8280-61f3b4a486b6": {
-      "templateId": "Quest:starlightquest_finitespawners",
-      "attributes": {
-        "level": -1,
-        "item_seen": true,
-        "sent_new_notification": true,
-        "challenge_bundle_id": "",
-        "xp_reward_scalar": 1,
-        "challenge_linked_quest_given": "",
-        "quest_pool": "",
-        "quest_state": "Active",
-        "last_state_change_time": "2020-01-20T18:44:07.274Z",
-        "challenge_linked_quest_parent": "",
-        "max_level_bonus": 0,
-        "completion_starlightquest_finitespawners": 0,
-        "xp": 0,
-        "favorite": false
-      },
-      "quantity": 1
-    },
     "a20d050d-55db-42f6-8702-76f44e73900d": {
       "templateId": "Quest:reactivequest_roadhome",
       "attributes": {
@@ -414,29 +354,6 @@
         "favorite": false
       },
       "quantity": 540
-    },
-    "a43eb922-b295-4482-9257-7739385e9f92": {
-      "templateId": "Quest:starlightquest_complete_all",
-      "attributes": {
-        "completion_starlightquest_complete_all_d2": 0,
-        "completion_starlightquest_complete_all_d3": 0,
-        "completion_starlightquest_complete_all_d4": 0,
-        "level": -1,
-        "completion_starlightquest_complete_all_d1": 1,
-        "item_seen": true,
-        "sent_new_notification": true,
-        "challenge_bundle_id": "",
-        "xp_reward_scalar": 1,
-        "challenge_linked_quest_given": "",
-        "quest_pool": "",
-        "quest_state": "Active",
-        "last_state_change_time": "2020-01-20T18:44:07.274Z",
-        "challenge_linked_quest_parent": "",
-        "max_level_bonus": 0,
-        "xp": 0,
-        "favorite": false
-      },
-      "quantity": 1
     },
     "66a3fc2f-2c21-468e-be7d-66991e861d7b": {
       "templateId": "Quest:challenge_leavenoonebehind_12",
@@ -517,63 +434,6 @@
       },
       "quantity": 1
     },
-    "233877c3-b6af-476c-8d8b-aa417a661e07": {
-      "templateId": "Quest:wargames_dailyquest_lava_with_explode_canny",
-      "attributes": {
-        "level": -1,
-        "item_seen": false,
-        "completion_wargames_daily_canny_lava_with_explode": 0,
-        "sent_new_notification": true,
-        "challenge_bundle_id": "",
-        "xp_reward_scalar": 1,
-        "challenge_linked_quest_given": "",
-        "quest_pool": "dailywargamescanny_01",
-        "quest_state": "Active",
-        "last_state_change_time": "2020-02-05T19:05:26.901Z",
-        "challenge_linked_quest_parent": "",
-        "max_level_bonus": 0,
-        "xp": 0,
-        "favorite": false
-      },
-      "quantity": 1
-    },
-    "5d775edf-2cc0-4198-80db-7e14e9b7e87c": {
-      "templateId": "ConditionalAction:generic_instance",
-      "attributes": {
-        "alt_profile_types": [
-          "athena"
-        ],
-        "_private": true,
-        "devName": "MAJOR: Season 11 - Starlight - Quests Phase 3",
-        "conditions": {
-          "event": {
-            "instanceId": "1uphckd0jg75qo4uecudhcfa6n[0]0",
-            "eventName": "CalendarEvent_Starlight2019_Quests_Phase3",
-            "eventStart": "2020-01-20T00:00:00.000Z",
-            "eventEnd": "2020-07-03T20:00:00.000Z",
-            "startActions": {
-              "hasRun": true,
-              "conversions": [],
-              "itemsToGrant": [],
-              "questsToUnpause": []
-            },
-            "endActions": {
-              "hasRun": false,
-              "conversions": [],
-              "itemsToRemove": [
-                {
-                  "templateId": "Quest:starlightquest_daily_complete_d3",
-                  "quantity": 1
-                }
-              ],
-              "questsToPause": []
-            },
-            "metaData": {}
-          }
-        }
-      },
-      "quantity": 1
-    },
     "b7b5cacb-4eae-475a-841b-0c0b09da64a2": {
       "templateId": "HomebaseNode:questreward_cannyvalley_squad_ssd3",
       "attributes": {
@@ -596,66 +456,6 @@
         "last_state_change_time": "2020-01-21T15:07:00.153Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
-        "xp": 0,
-        "favorite": false
-      },
-      "quantity": 1
-    },
-    "4db2d0b6-cbdd-4098-b710-6db2d8c9813c": {
-      "templateId": "Quest:wargame_quest_firstopen",
-      "attributes": {
-        "level": -1,
-        "item_seen": false,
-        "sent_new_notification": true,
-        "challenge_bundle_id": "",
-        "completion_complete_wargame_firstopen": 1,
-        "xp_reward_scalar": 1,
-        "challenge_linked_quest_given": "",
-        "quest_pool": "",
-        "quest_state": "Claimed",
-        "last_state_change_time": "2020-01-31T15:20:20.016Z",
-        "challenge_linked_quest_parent": "",
-        "max_level_bonus": 0,
-        "xp": 0,
-        "favorite": false
-      },
-      "quantity": 1
-    },
-    "0b232582-5623-41f6-ae33-b65a15c7e78c": {
-      "templateId": "Quest:s11_holdfastquest_season_survive_30",
-      "attributes": {
-        "level": -1,
-        "item_seen": false,
-        "sent_new_notification": true,
-        "challenge_bundle_id": "",
-        "xp_reward_scalar": 1,
-        "challenge_linked_quest_given": "",
-        "quest_pool": "",
-        "quest_state": "Active",
-        "last_state_change_time": "2020-01-20T18:44:07.278Z",
-        "challenge_linked_quest_parent": "",
-        "max_level_bonus": 0,
-        "xp": 0,
-        "completion_s11_holdfastquest_season_survive_30": 0,
-        "favorite": false
-      },
-      "quantity": 1
-    },
-    "a98142f3-947a-4ad9-9815-b71e1f2f52da": {
-      "templateId": "Quest:starlightquest_complete_dailies_3",
-      "attributes": {
-        "level": -1,
-        "item_seen": false,
-        "sent_new_notification": true,
-        "challenge_bundle_id": "",
-        "xp_reward_scalar": 1,
-        "challenge_linked_quest_given": "",
-        "quest_pool": "",
-        "quest_state": "Active",
-        "last_state_change_time": "2020-01-20T18:44:07.274Z",
-        "challenge_linked_quest_parent": "",
-        "max_level_bonus": 0,
-        "completion_starlightquest_complete_dailies_3": 0,
         "xp": 0,
         "favorite": false
       },
@@ -716,176 +516,6 @@
         "building_slot_used": -1,
         "favorite": false,
         "set_bonus": "Homebase.Worker.SetBonus.IsFortitudeLow"
-      },
-      "quantity": 1
-    },
-    "40745a3f-a718-48f8-bed3-b3841e811e08": {
-      "templateId": "ConditionalAction:generic_instance",
-      "attributes": {
-        "alt_profile_types": [
-          "athena"
-        ],
-        "_private": true,
-        "devName": "MAJOR: Season 11-3 - Frostnite",
-        "conditions": {
-          "event": {
-            "instanceId": "5tv9tcl0l2o77i3cv191h0cl11[0]0",
-            "eventName": "CalendarEvent_Season11FrostniteEvent",
-            "eventStart": "2020-01-12T00:00:00.000Z",
-            "eventEnd": "2020-02-28T00:00:00.000Z",
-            "startActions": {
-              "hasRun": true,
-              "conversions": [],
-              "itemsToGrant": [
-                {
-                  "templateId": "Quest:s11_holdfastquest_repeat_ice",
-                  "quantity": 1
-                },
-                {
-                  "templateId": "Quest:s11_holdfastquest_repeat_taste",
-                  "quantity": 1
-                },
-                {
-                  "templateId": "Quest:s11_holdfastquest_season_burner",
-                  "quantity": 1
-                },
-                {
-                  "templateId": "Quest:s11_holdfastquest_season_furnacemaint",
-                  "quantity": 1
-                },
-                {
-                  "templateId": "Quest:s11_holdfastquest_season_loot",
-                  "quantity": 1
-                },
-                {
-                  "templateId": "Quest:s11_holdfastquest_season_misty",
-                  "quantity": 1
-                },
-                {
-                  "templateId": "Quest:s11_holdfastquest_season_survive_15",
-                  "quantity": 1
-                },
-                {
-                  "templateId": "Quest:s11_holdfastquest_season_survive_30",
-                  "quantity": 1
-                },
-                {
-                  "templateId": "Quest:s11_holdfastquest_season_survive_45",
-                  "quantity": 1
-                },
-                {
-                  "templateId": "Quest:s11_holdfastquest_season_trapcraft",
-                  "quantity": 1
-                },
-                {
-                  "templateId": "Quest:s11_holdfastquest_seasonelite_cramps",
-                  "quantity": 1
-                },
-                {
-                  "templateId": "Quest:s11_holdfastquest_seasonelite_group",
-                  "quantity": 1
-                },
-                {
-                  "templateId": "Quest:s11_holdfastquest_seasonelite_knight",
-                  "quantity": 1
-                }
-              ],
-              "questsToUnpause": []
-            },
-            "endActions": {
-              "hasRun": false,
-              "conversions": [],
-              "itemsToRemove": [
-                {
-                  "templateId": "Quest:s11_holdfastquest_repeat_ice",
-                  "quantity": 1
-                },
-                {
-                  "templateId": "Quest:s11_holdfastquest_repeat_taste",
-                  "quantity": 1
-                },
-                {
-                  "templateId": "Quest:s11_holdfastquest_season_burner",
-                  "quantity": 1
-                },
-                {
-                  "templateId": "Quest:s11_holdfastquest_season_furnacemaint",
-                  "quantity": 1
-                },
-                {
-                  "templateId": "Quest:s11_holdfastquest_season_loot",
-                  "quantity": 1
-                },
-                {
-                  "templateId": "Quest:s11_holdfastquest_season_misty",
-                  "quantity": 1
-                },
-                {
-                  "templateId": "Quest:s11_holdfastquest_season_survive_15",
-                  "quantity": 1
-                },
-                {
-                  "templateId": "Quest:s11_holdfastquest_season_survive_30",
-                  "quantity": 1
-                },
-                {
-                  "templateId": "Quest:s11_holdfastquest_season_survive_45",
-                  "quantity": 1
-                },
-                {
-                  "templateId": "Quest:s11_holdfastquest_season_trapcraft",
-                  "quantity": 1
-                },
-                {
-                  "templateId": "Quest:s11_holdfastquest_seasonelite_cramps",
-                  "quantity": 1
-                },
-                {
-                  "templateId": "Quest:s11_holdfastquest_seasonelite_group",
-                  "quantity": 1
-                },
-                {
-                  "templateId": "Quest:s11_holdfastquest_seasonelite_knight",
-                  "quantity": 1
-                },
-                {
-                  "templateId": "Quest:s11_holdfastquest_d1_burner",
-                  "quantity": 1
-                },
-                {
-                  "templateId": "Quest:s11_holdfastquest_d1_construct",
-                  "quantity": 1
-                },
-                {
-                  "templateId": "Quest:s11_holdfastquest_d1_cramp",
-                  "quantity": 1
-                },
-                {
-                  "templateId": "Quest:s11_holdfastquest_d1_ice",
-                  "quantity": 1
-                },
-                {
-                  "templateId": "Quest:s11_holdfastquest_d2_constructor",
-                  "quantity": 1
-                },
-                {
-                  "templateId": "Quest:s11_holdfastquest_d2_ninja",
-                  "quantity": 1
-                },
-                {
-                  "templateId": "Quest:s11_holdfastquest_d2_outlander",
-                  "quantity": 1
-                },
-                {
-                  "templateId": "Quest:s11_holdfastquest_d2_soldier",
-                  "quantity": 1
-                }
-              ],
-              "questsToPause": []
-            },
-            "metaData": {}
-          }
-        }
       },
       "quantity": 1
     },
@@ -961,26 +591,6 @@
         "quest_pool": "",
         "quest_state": "Claimed",
         "last_state_change_time": "2020-01-01T21:59:29.343Z",
-        "challenge_linked_quest_parent": "",
-        "max_level_bonus": 0,
-        "xp": 0,
-        "favorite": false
-      },
-      "quantity": 1
-    },
-    "4c75fe09-880e-4fa5-a626-6fbcf3de523f": {
-      "templateId": "Quest:wargames_visibilityquest_challenge_nobuild",
-      "attributes": {
-        "level": -1,
-        "completion_wargames_visibilityquest_challenge_nobuild": 0,
-        "item_seen": false,
-        "sent_new_notification": true,
-        "challenge_bundle_id": "",
-        "xp_reward_scalar": 1,
-        "challenge_linked_quest_given": "",
-        "quest_pool": "",
-        "quest_state": "Active",
-        "last_state_change_time": "2020-01-09T15:12:41.065Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -1128,26 +738,6 @@
       },
       "quantity": 1
     },
-    "2f0c4a53-11ad-413b-94e5-886c20733871": {
-      "templateId": "Quest:starlightquest_complete_d1_b",
-      "attributes": {
-        "level": -1,
-        "item_seen": true,
-        "sent_new_notification": true,
-        "challenge_bundle_id": "",
-        "xp_reward_scalar": 1,
-        "challenge_linked_quest_given": "",
-        "quest_pool": "",
-        "quest_state": "Active",
-        "last_state_change_time": "2020-01-25T12:19:38.118Z",
-        "challenge_linked_quest_parent": "",
-        "max_level_bonus": 0,
-        "xp": 0,
-        "completion_starlightquest_complete_d1_b": 0,
-        "favorite": false
-      },
-      "quantity": 1
-    },
     "a51211ef-7178-4e50-970c-37cbb6588c27": {
       "templateId": "Quest:challenge_herotraining_2",
       "attributes": {
@@ -1179,26 +769,6 @@
       "templateId": "HomebaseNode:questreward_expedition_truck3",
       "attributes": {
         "item_seen": false
-      },
-      "quantity": 1
-    },
-    "4ca4cb3c-4dac-405a-b8a6-e31a6dc8774b": {
-      "templateId": "Quest:s11_holdfastquest_season_trapcraft",
-      "attributes": {
-        "level": -1,
-        "item_seen": false,
-        "sent_new_notification": true,
-        "challenge_bundle_id": "",
-        "completion_s11_holdfastquest_season_trapcraft": 0,
-        "xp_reward_scalar": 1,
-        "challenge_linked_quest_given": "",
-        "quest_pool": "",
-        "quest_state": "Active",
-        "last_state_change_time": "2020-01-20T18:44:07.279Z",
-        "challenge_linked_quest_parent": "",
-        "max_level_bonus": 0,
-        "xp": 0,
-        "favorite": false
       },
       "quantity": 1
     },
@@ -1349,26 +919,6 @@
       },
       "quantity": 1
     },
-    "b528d492-be6f-41b7-9478-812a6612d8bb": {
-      "templateId": "Quest:wargames_visibilityquest_challenge_headgames",
-      "attributes": {
-        "level": -1,
-        "item_seen": false,
-        "sent_new_notification": true,
-        "challenge_bundle_id": "",
-        "xp_reward_scalar": 1,
-        "challenge_linked_quest_given": "",
-        "quest_pool": "",
-        "quest_state": "Active",
-        "completion_wargames_visibilityquest_challenge_headgames": 0,
-        "last_state_change_time": "2020-01-09T15:12:41.065Z",
-        "challenge_linked_quest_parent": "",
-        "max_level_bonus": 0,
-        "xp": 0,
-        "favorite": false
-      },
-      "quantity": 1
-    },
     "4780e849-5bec-4ddb-be24-e793aaad7875": {
       "templateId": "Worker:managerinventor_r_t01",
       "attributes": {
@@ -1443,46 +993,6 @@
         "max_level_bonus": 0,
         "xp": 0,
         "completion_complete_mimic": 2,
-        "favorite": false
-      },
-      "quantity": 1
-    },
-    "ff7fa9a9-9e2c-4002-b27e-2df36ab94530": {
-      "templateId": "Quest:wargames_visibilityquest_wargame_anomaly",
-      "attributes": {
-        "level": -1,
-        "item_seen": false,
-        "sent_new_notification": true,
-        "challenge_bundle_id": "",
-        "completion_wargames_visibilityquest_wargame_anomaly": 0,
-        "xp_reward_scalar": 1,
-        "challenge_linked_quest_given": "",
-        "quest_pool": "",
-        "quest_state": "Active",
-        "last_state_change_time": "2020-01-09T15:12:41.066Z",
-        "challenge_linked_quest_parent": "",
-        "max_level_bonus": 0,
-        "xp": 0,
-        "favorite": false
-      },
-      "quantity": 1
-    },
-    "365df8f2-41fe-450b-a921-8ac492d48ada": {
-      "templateId": "Quest:wargames_visibilityquest_challenge_notraps",
-      "attributes": {
-        "completion_wargames_visibilityquest_challenge_notraps": 0,
-        "level": -1,
-        "item_seen": false,
-        "sent_new_notification": true,
-        "challenge_bundle_id": "",
-        "xp_reward_scalar": 1,
-        "challenge_linked_quest_given": "",
-        "quest_pool": "",
-        "quest_state": "Active",
-        "last_state_change_time": "2020-01-09T15:12:41.065Z",
-        "challenge_linked_quest_parent": "",
-        "max_level_bonus": 0,
-        "xp": 0,
         "favorite": false
       },
       "quantity": 1
@@ -1611,26 +1121,6 @@
       },
       "quantity": 1
     },
-    "a0003e2a-306f-4a05-b811-b8f2dd8a695f": {
-      "templateId": "Quest:wargames_visibilityquest_wargame_meteor",
-      "attributes": {
-        "level": -1,
-        "item_seen": false,
-        "sent_new_notification": true,
-        "challenge_bundle_id": "",
-        "xp_reward_scalar": 1,
-        "challenge_linked_quest_given": "",
-        "quest_pool": "",
-        "quest_state": "Active",
-        "last_state_change_time": "2020-01-22T22:33:30.725Z",
-        "challenge_linked_quest_parent": "",
-        "max_level_bonus": 0,
-        "xp": 0,
-        "completion_wargames_visibilityquest_wargame_meteor": 0,
-        "favorite": false
-      },
-      "quantity": 1
-    },
     "440f94aa-576c-4a7b-ae9e-3e0948560bc0": {
       "templateId": "Worker:workerbasic_c_t01",
       "attributes": {
@@ -1647,26 +1137,6 @@
         "building_slot_used": -1,
         "favorite": false,
         "set_bonus": "Homebase.Worker.SetBonus.IsAbilityDamageLow"
-      },
-      "quantity": 1
-    },
-    "deb5b5ce-02f2-4384-99dd-28210a35a008": {
-      "templateId": "Quest:s11_holdfastquest_legend_15",
-      "attributes": {
-        "level": -1,
-        "item_seen": false,
-        "sent_new_notification": true,
-        "completion_s11_holdfastquest_legend_15": 0,
-        "challenge_bundle_id": "",
-        "xp_reward_scalar": 1,
-        "challenge_linked_quest_given": "",
-        "quest_pool": "",
-        "quest_state": "Active",
-        "last_state_change_time": "2020-01-31T10:28:35.698Z",
-        "challenge_linked_quest_parent": "",
-        "max_level_bonus": 0,
-        "xp": 0,
-        "favorite": false
       },
       "quantity": 1
     },
@@ -1882,72 +1352,6 @@
       },
       "quantity": 1
     },
-    "e56d780c-ce54-4184-9d89-b5863bc59ad8": {
-      "templateId": "ConditionalAction:generic_instance",
-      "attributes": {
-        "alt_profile_types": [
-          "athena"
-        ],
-        "_private": true,
-        "devName": "MAJOR: Season 11-3 - Winterfest - Quests - Phase 1",
-        "conditions": {
-          "event": {
-            "instanceId": "3047ae3ts5lmrppctojaj4ei7v[0]0",
-            "eventName": "CalendarEvent_Season11WinterEventNarrativePhase1",
-            "eventStart": "2020-01-12T00:00:00.000Z",
-            "eventEnd": "2020-02-28T00:00:00.000Z",
-            "startActions": {
-              "hasRun": true,
-              "conversions": [],
-              "itemsToGrant": [
-                {
-                  "templateId": "Quest:s11_landmark_quest_f1",
-                  "quantity": 1
-                }
-              ],
-              "questsToUnpause": []
-            },
-            "endActions": {
-              "hasRun": false,
-              "conversions": [],
-              "itemsToRemove": [
-                {
-                  "templateId": "Quest:s11_landmark_quest_f1",
-                  "quantity": 1
-                },
-                {
-                  "templateId": "Quest:s11_reactivekill_quest_f2",
-                  "quantity": 1
-                },
-                {
-                  "templateId": "Quest:s11_fetch_quest_f3",
-                  "quantity": 1
-                },
-                {
-                  "templateId": "Quest:s11_gathercollect_quest_f4",
-                  "quantity": 1
-                },
-                {
-                  "templateId": "Quest:s11_fetch_quest_f5",
-                  "quantity": 1
-                },
-                {
-                  "templateId": "Quest:s11_gathercollect_quest_f6",
-                  "quantity": 1
-                },
-                {
-                  "templateId": "Quest:s11_fetch_quest_f7",
-                  "quantity": 1
-                }
-              ],
-              "questsToPause": []
-            },
-            "metaData": {}
-          }
-        }
-      },
-      "quantity": 1
-    },
     "9377e9e5-2259-4b1e-9be8-e78a46966c53": {
       "templateId": "HomebaseNode:skilltree_supplydrop",
       "attributes": {
@@ -2030,26 +1434,6 @@
       },
       "quantity": 1
     },
-    "425faeab-78bd-48cc-ad9d-91d1ebe06186": {
-      "templateId": "Quest:wargames_visibilityquest_challenge_swarm",
-      "attributes": {
-        "completion_wargames_visibilityquest_challenge_swarm": 0,
-        "level": -1,
-        "item_seen": false,
-        "sent_new_notification": true,
-        "challenge_bundle_id": "",
-        "xp_reward_scalar": 1,
-        "challenge_linked_quest_given": "",
-        "quest_pool": "",
-        "quest_state": "Active",
-        "last_state_change_time": "2020-01-09T15:12:41.065Z",
-        "challenge_linked_quest_parent": "",
-        "max_level_bonus": 0,
-        "xp": 0,
-        "favorite": false
-      },
-      "quantity": 1
-    },
     "ab4a256b-e494-4f9a-a075-fcbb151aab56": {
       "templateId": "Quest:plankertonquest_filler_4_d5",
       "attributes": {
@@ -2067,26 +1451,6 @@
         "xp": 0,
         "favorite": false,
         "completion_complete_buildradar_2_diff5": 3
-      },
-      "quantity": 1
-    },
-    "df119146-ca37-4aac-98d1-a7736fc42ee6": {
-      "templateId": "Quest:wargames_visibilityquest_wargame_riotcity",
-      "attributes": {
-        "level": -1,
-        "item_seen": false,
-        "sent_new_notification": true,
-        "challenge_bundle_id": "",
-        "xp_reward_scalar": 1,
-        "challenge_linked_quest_given": "",
-        "quest_pool": "",
-        "quest_state": "Active",
-        "last_state_change_time": "2020-01-24T16:38:06.807Z",
-        "challenge_linked_quest_parent": "",
-        "max_level_bonus": 0,
-        "xp": 0,
-        "completion_wargames_visibilityquest_wargame_riotcity": 0,
-        "favorite": false
       },
       "quantity": 1
     },
@@ -2156,26 +1520,6 @@
       },
       "quantity": 1
     },
-    "14c7a8f9-2217-4357-aadf-19bbb1750d24": {
-      "templateId": "Quest:s11_holdfastquest_seasonelite_knight",
-      "attributes": {
-        "level": -1,
-        "item_seen": false,
-        "sent_new_notification": true,
-        "challenge_bundle_id": "",
-        "xp_reward_scalar": 1,
-        "challenge_linked_quest_given": "",
-        "quest_pool": "",
-        "quest_state": "Active",
-        "last_state_change_time": "2020-01-20T18:44:07.279Z",
-        "challenge_linked_quest_parent": "",
-        "max_level_bonus": 0,
-        "completion_s11_holdfastquest_seasonelite_knight": 0,
-        "xp": 0,
-        "favorite": false
-      },
-      "quantity": 1
-    },
     "2c0b72fc-35d3-4f37-afc6-e98a85ba50ae": {
       "templateId": "Worker:workerbasic_r_t01",
       "attributes": {
@@ -2209,26 +1553,6 @@
         "quest_state": "Claimed",
         "last_state_change_time": "2020-01-07T18:27:20.657Z",
         "challenge_linked_quest_parent": "",
-        "max_level_bonus": 0,
-        "xp": 0,
-        "favorite": false
-      },
-      "quantity": 1
-    },
-    "d8d37ee5-e53f-4135-8182-0b1894c495d6": {
-      "templateId": "Quest:s11_holdfastquest_season_misty",
-      "attributes": {
-        "level": -1,
-        "item_seen": false,
-        "sent_new_notification": true,
-        "challenge_bundle_id": "",
-        "xp_reward_scalar": 1,
-        "challenge_linked_quest_given": "",
-        "quest_pool": "",
-        "quest_state": "Active",
-        "last_state_change_time": "2020-01-20T18:44:07.278Z",
-        "challenge_linked_quest_parent": "",
-        "completion_s11_holdfastquest_season_misty": 0,
         "max_level_bonus": 0,
         "xp": 0,
         "favorite": false
@@ -2285,63 +1609,6 @@
         "quest_state": "Claimed",
         "last_state_change_time": "2020-01-10T19:38:40.174Z",
         "completion_quest_reactive_waterhusks": 10,
-        "challenge_linked_quest_parent": "",
-        "max_level_bonus": 0,
-        "xp": 0,
-        "favorite": false
-      },
-      "quantity": 1
-    },
-    "31cdb538-7572-4069-9e28-986604f0f9ba": {
-      "templateId": "ConditionalAction:generic_instance",
-      "attributes": {
-        "alt_profile_types": [
-          "athena"
-        ],
-        "_private": true,
-        "devName": "MAJOR: Season 11 - Starlight - Quests Phase 4",
-        "conditions": {
-          "event": {
-            "instanceId": "4f04esgoc9aaca514hl8f1ufrf[0]0",
-            "eventName": "CalendarEvent_Starlight2019_Quests_Phase4",
-            "eventStart": "2020-01-20T00:00:00.000Z",
-            "eventEnd": "2020-07-03T20:00:00.000Z",
-            "startActions": {
-              "hasRun": true,
-              "conversions": [],
-              "itemsToGrant": [],
-              "questsToUnpause": []
-            },
-            "endActions": {
-              "hasRun": false,
-              "conversions": [],
-              "itemsToRemove": [
-                {
-                  "templateId": "Quest:starlightquest_daily_complete_d4",
-                  "quantity": 1
-                }
-              ],
-              "questsToPause": []
-            },
-            "metaData": {}
-          }
-        }
-      },
-      "quantity": 1
-    },
-    "eb1b69c6-5fe4-4677-a616-b000f95bf2d3": {
-      "templateId": "Quest:s11_holdfastquest_season_survive_45",
-      "attributes": {
-        "completion_s11_holdfastquest_season_survive_45": 0,
-        "level": -1,
-        "item_seen": false,
-        "sent_new_notification": true,
-        "challenge_bundle_id": "",
-        "xp_reward_scalar": 1,
-        "challenge_linked_quest_given": "",
-        "quest_pool": "",
-        "quest_state": "Active",
-        "last_state_change_time": "2020-01-20T18:44:07.278Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -2487,26 +1754,6 @@
       },
       "quantity": 1
     },
-    "beb6c795-4c89-42a2-b8b5-eab243c737bf": {
-      "templateId": "Quest:s11_rescuehero_quest_h1",
-      "attributes": {
-        "level": -1,
-        "item_seen": false,
-        "sent_new_notification": true,
-        "challenge_bundle_id": "",
-        "xp_reward_scalar": 1,
-        "challenge_linked_quest_given": "",
-        "quest_pool": "",
-        "completion_s11_rescuehero_quest_h1": 0,
-        "quest_state": "Active",
-        "last_state_change_time": "2020-01-20T18:44:07.282Z",
-        "challenge_linked_quest_parent": "",
-        "max_level_bonus": 0,
-        "xp": 0,
-        "favorite": false
-      },
-      "quantity": 1
-    },
     "14ad8623-f163-40c0-8e93-29817181b29c": {
       "templateId": "Quest:challenge_leavenoonebehind_9",
       "attributes": {
@@ -2578,26 +1825,6 @@
       },
       "quantity": 968395829
     },
-    "77e6b823-3668-4e8f-acac-a13e3c36649e": {
-      "templateId": "Quest:wargames_visibilityquest_wargame_pods",
-      "attributes": {
-        "level": -1,
-        "item_seen": false,
-        "sent_new_notification": true,
-        "challenge_bundle_id": "",
-        "xp_reward_scalar": 1,
-        "challenge_linked_quest_given": "",
-        "quest_pool": "",
-        "quest_state": "Active",
-        "last_state_change_time": "2020-01-09T15:12:41.066Z",
-        "challenge_linked_quest_parent": "",
-        "max_level_bonus": 0,
-        "completion_wargames_visibilityquest_wargame_pods": 0,
-        "xp": 0,
-        "favorite": false
-      },
-      "quantity": 1
-    },
     "cb0ba21a-0534-417d-b487-e0ac4ec2f484": {
       "templateId": "Quest:stonewoodquest_tutorial_levelup_hero",
       "attributes": {
@@ -2618,26 +1845,6 @@
         "favorite": false,
         "completion_heroupgrade_guard_heroes": 1,
         "completion_heroupgrade_highlight_heroes_button": 1
-      },
-      "quantity": 1
-    },
-    "39beac1c-74f6-46c0-b81d-5b4195b5034b": {
-      "templateId": "Quest:wargames_dailyquest_meteor_with_nobuild_stonewood",
-      "attributes": {
-        "level": -1,
-        "item_seen": false,
-        "sent_new_notification": true,
-        "challenge_bundle_id": "",
-        "completion_wargames_daily_stonewood_meteor_with_nobuild": 0,
-        "xp_reward_scalar": 1,
-        "challenge_linked_quest_given": "",
-        "quest_pool": "dailywargamesstonewood_01",
-        "quest_state": "Active",
-        "last_state_change_time": "2020-02-05T19:05:26.902Z",
-        "challenge_linked_quest_parent": "",
-        "max_level_bonus": 0,
-        "xp": 0,
-        "favorite": false
       },
       "quantity": 1
     },
@@ -2665,26 +1872,6 @@
       "templateId": "HomebaseNode:questreward_expedition_dirtbike3",
       "attributes": {
         "item_seen": false
-      },
-      "quantity": 1
-    },
-    "88feadea-caba-47fe-83c5-b19299c9b97d": {
-      "templateId": "Quest:s11_landmark_quest_f1",
-      "attributes": {
-        "level": -1,
-        "item_seen": false,
-        "sent_new_notification": true,
-        "challenge_bundle_id": "",
-        "xp_reward_scalar": 1,
-        "challenge_linked_quest_given": "",
-        "quest_pool": "",
-        "quest_state": "Active",
-        "last_state_change_time": "2020-01-20T18:44:07.280Z",
-        "challenge_linked_quest_parent": "",
-        "max_level_bonus": 0,
-        "completion_s11_landmark_quest_f1": 0,
-        "xp": 0,
-        "favorite": false
       },
       "quantity": 1
     },
@@ -3394,26 +2581,6 @@
       },
       "quantity": 1
     },
-    "1446b973-586f-418a-9db5-4665119bb670": {
-      "templateId": "Quest:wargames_visibilityquest_challenge_dangerclose",
-      "attributes": {
-        "level": -1,
-        "item_seen": false,
-        "completion_wargames_visibilityquest_challenge_dangerclose": 0,
-        "sent_new_notification": true,
-        "challenge_bundle_id": "",
-        "xp_reward_scalar": 1,
-        "challenge_linked_quest_given": "",
-        "quest_pool": "",
-        "quest_state": "Active",
-        "last_state_change_time": "2020-01-09T15:12:41.065Z",
-        "challenge_linked_quest_parent": "",
-        "max_level_bonus": 0,
-        "xp": 0,
-        "favorite": false
-      },
-      "quantity": 1
-    },
     "478b90d8-ed64-4f0a-96aa-26e1800c9272": {
       "templateId": "Quest:challenge_eldritchabominations_15",
       "attributes": {
@@ -3450,29 +2617,6 @@
         "max_level_bonus": 0,
         "xp": 0,
         "completion_complete_mimic": 2,
-        "favorite": false
-      },
-      "quantity": 1
-    },
-    "8da889df-554f-4d98-80b7-912b2cee4dc9": {
-      "templateId": "Quest:starlightquest_complete_all_hard",
-      "attributes": {
-        "level": -1,
-        "item_seen": true,
-        "completion_starlightquest_complete_all_d1_hard": 0,
-        "sent_new_notification": true,
-        "challenge_bundle_id": "",
-        "xp_reward_scalar": 1,
-        "challenge_linked_quest_given": "",
-        "quest_pool": "",
-        "completion_starlightquest_complete_all_d3_hard": 0,
-        "quest_state": "Active",
-        "last_state_change_time": "2020-01-20T18:44:07.274Z",
-        "challenge_linked_quest_parent": "",
-        "completion_starlightquest_complete_all_d2_hard": 0,
-        "max_level_bonus": 0,
-        "xp": 0,
-        "completion_starlightquest_complete_all_d4_hard": 0,
         "favorite": false
       },
       "quantity": 1
@@ -3591,43 +2735,6 @@
         "building_slot_used": -1,
         "favorite": false,
         "set_bonus": "Homebase.Worker.SetBonus.IsMeleeDamageLow"
-      },
-      "quantity": 1
-    },
-    "a3c28d32-64cb-4337-b4a8-3efa769fcd2b": {
-      "templateId": "ConditionalAction:generic_instance",
-      "attributes": {
-        "alt_profile_types": [
-          "athena"
-        ],
-        "_private": true,
-        "devName": "MAJOR: Season 11 - Starlight - Quests Phase 1",
-        "conditions": {
-          "event": {
-            "instanceId": "0tmu6pv1n0jjdtmsnsnou4e078[0]0",
-            "eventName": "CalendarEvent_Starlight2019_Quests_Phase1",
-            "eventStart": "2020-01-20T00:00:00.000Z",
-            "eventEnd": "2020-07-03T20:00:00.000Z",
-            "startActions": {
-              "hasRun": true,
-              "conversions": [],
-              "itemsToGrant": [],
-              "questsToUnpause": []
-            },
-            "endActions": {
-              "hasRun": false,
-              "conversions": [],
-              "itemsToRemove": [
-                {
-                  "templateId": "Quest:starlightquest_daily_complete_d1",
-                  "quantity": 1
-                }
-              ],
-              "questsToPause": []
-            },
-            "metaData": {}
-          }
-        }
       },
       "quantity": 1
     },
@@ -4166,26 +3273,6 @@
       },
       "quantity": 1
     },
-    "83b49c86-dd3a-4792-8ef5-0765c8a6ddb3": {
-      "templateId": "Quest:wargames_visibilityquest_wargame_generators",
-      "attributes": {
-        "level": -1,
-        "item_seen": false,
-        "sent_new_notification": true,
-        "challenge_bundle_id": "",
-        "xp_reward_scalar": 1,
-        "challenge_linked_quest_given": "",
-        "quest_pool": "",
-        "quest_state": "Active",
-        "last_state_change_time": "2020-01-09T15:12:41.066Z",
-        "challenge_linked_quest_parent": "",
-        "max_level_bonus": 0,
-        "completion_wargames_visibilityquest_wargame_generators": 0,
-        "xp": 0,
-        "favorite": false
-      },
-      "quantity": 1
-    },
     "5d8d400c-506b-4b75-843c-a5bda783b7b5": {
       "templateId": "Stat:fortitude",
       "attributes": {
@@ -4319,26 +3406,6 @@
       },
       "quantity": 1
     },
-    "98ae1807-f516-42d4-9721-5fab57424d55": {
-      "templateId": "Quest:starlightquest_kill_mimics",
-      "attributes": {
-        "level": -1,
-        "completion_starlightquest_kill_mimics": 1,
-        "item_seen": true,
-        "sent_new_notification": true,
-        "challenge_bundle_id": "",
-        "xp_reward_scalar": 1,
-        "challenge_linked_quest_given": "",
-        "quest_pool": "",
-        "quest_state": "Active",
-        "last_state_change_time": "2020-01-20T18:44:07.274Z",
-        "challenge_linked_quest_parent": "",
-        "max_level_bonus": 0,
-        "xp": 0,
-        "favorite": false
-      },
-      "quantity": 1
-    },
     "62c9d8a8-a957-49f3-b20c-b131c648af95": {
       "templateId": "HomebaseNode:questreward_twinepeaks_squad_ssd4",
       "attributes": {
@@ -4401,26 +3468,6 @@
         "max_level_bonus": 0,
         "xp": 0,
         "completion_complete_mimic": 8,
-        "favorite": false
-      },
-      "quantity": 1
-    },
-    "b2174271-a332-465e-9e1e-bd768cb07444": {
-      "templateId": "Quest:wargames_visibilityquest_challenge_fog",
-      "attributes": {
-        "completion_wargames_visibilityquest_challenge_fog": 0,
-        "level": -1,
-        "item_seen": false,
-        "sent_new_notification": true,
-        "challenge_bundle_id": "",
-        "xp_reward_scalar": 1,
-        "challenge_linked_quest_given": "",
-        "quest_pool": "",
-        "quest_state": "Active",
-        "last_state_change_time": "2020-01-09T15:12:41.065Z",
-        "challenge_linked_quest_parent": "",
-        "max_level_bonus": 0,
-        "xp": 0,
         "favorite": false
       },
       "quantity": 1
@@ -4586,26 +3633,6 @@
       },
       "quantity": 1
     },
-    "84458f2b-aec1-44a9-9a21-beb9dbd1dab9": {
-      "templateId": "Quest:s11_holdfastquest_season_burner",
-      "attributes": {
-        "level": -1,
-        "completion_s11_holdfastquest_season_burner": 0,
-        "item_seen": false,
-        "sent_new_notification": true,
-        "challenge_bundle_id": "",
-        "xp_reward_scalar": 1,
-        "challenge_linked_quest_given": "",
-        "quest_pool": "",
-        "quest_state": "Active",
-        "last_state_change_time": "2020-01-20T18:44:07.278Z",
-        "challenge_linked_quest_parent": "",
-        "max_level_bonus": 0,
-        "xp": 0,
-        "favorite": false
-      },
-      "quantity": 1
-    },
     "d7e7a2e5-fd79-4c32-9344-dfbbc2a45aa7": {
       "templateId": "Worker:workerbasic_r_t01",
       "attributes": {
@@ -4622,26 +3649,6 @@
         "building_slot_used": -1,
         "favorite": false,
         "set_bonus": "Homebase.Worker.SetBonus.IsRangedDamageLow"
-      },
-      "quantity": 1
-    },
-    "5552c272-e4f0-4371-8f0f-105fcba1397b": {
-      "templateId": "Quest:wargames_visibilityquest_wargame_telebomb",
-      "attributes": {
-        "level": -1,
-        "item_seen": false,
-        "sent_new_notification": true,
-        "challenge_bundle_id": "",
-        "xp_reward_scalar": 1,
-        "challenge_linked_quest_given": "",
-        "quest_pool": "",
-        "quest_state": "Active",
-        "last_state_change_time": "2020-01-08T17:52:23.912Z",
-        "challenge_linked_quest_parent": "",
-        "max_level_bonus": 0,
-        "xp": 0,
-        "favorite": false,
-        "completion_wargames_visibilityquest_wargame_telebomb": 0
       },
       "quantity": 1
     },
@@ -4939,26 +3946,6 @@
       },
       "quantity": 1
     },
-    "bcd8ada9-8a47-4319-9102-97fe459cc7ce": {
-      "templateId": "Quest:s11_holdfastquest_legend_30",
-      "attributes": {
-        "level": -1,
-        "item_seen": false,
-        "sent_new_notification": true,
-        "completion_s11_holdfastquest_legend_30": 0,
-        "challenge_bundle_id": "",
-        "xp_reward_scalar": 1,
-        "challenge_linked_quest_given": "",
-        "quest_pool": "",
-        "quest_state": "Active",
-        "last_state_change_time": "2020-01-31T10:28:35.698Z",
-        "challenge_linked_quest_parent": "",
-        "max_level_bonus": 0,
-        "xp": 0,
-        "favorite": false
-      },
-      "quantity": 1
-    },
     "119bd706-523a-4d84-a12b-189e1939ec0c": {
       "templateId": "Worker:workerbasic_uc_t01",
       "attributes": {
@@ -4997,66 +3984,6 @@
         "completion_kill_husk_melee": 20,
         "favorite": false,
         "completion_complete_pve01_diff2": 1
-      },
-      "quantity": 1
-    },
-    "0dd26862-4694-412b-837d-a67dea9aba7a": {
-      "templateId": "Quest:s11_holdfastquest_repeat_ice",
-      "attributes": {
-        "completion_s11_holdfastquest_repeat_ice": 0,
-        "level": -1,
-        "item_seen": false,
-        "sent_new_notification": true,
-        "challenge_bundle_id": "",
-        "xp_reward_scalar": 1,
-        "challenge_linked_quest_given": "",
-        "quest_pool": "",
-        "quest_state": "Active",
-        "last_state_change_time": "2020-01-20T18:44:07.277Z",
-        "challenge_linked_quest_parent": "",
-        "max_level_bonus": 0,
-        "xp": 0,
-        "favorite": false
-      },
-      "quantity": 1
-    },
-    "1216b26a-a260-43b1-8d17-2c02fee5316f": {
-      "templateId": "Quest:s11_fetch_quest_g1",
-      "attributes": {
-        "level": -1,
-        "item_seen": true,
-        "sent_new_notification": true,
-        "challenge_bundle_id": "",
-        "xp_reward_scalar": 1,
-        "challenge_linked_quest_given": "",
-        "quest_pool": "",
-        "quest_state": "Claimed",
-        "last_state_change_time": "2020-02-01T23:34:22.885Z",
-        "challenge_linked_quest_parent": "",
-        "completion_s11_fetch_quest_g1": 7,
-        "max_level_bonus": 0,
-        "xp": 0,
-        "favorite": false
-      },
-      "quantity": 1
-    },
-    "2b1fad8b-d49d-4741-8747-3b5629f74bba": {
-      "templateId": "Quest:s11_holdfastquest_season_survive_15",
-      "attributes": {
-        "completion_s11_holdfastquest_season_survive_15": 0,
-        "level": -1,
-        "item_seen": false,
-        "sent_new_notification": true,
-        "challenge_bundle_id": "",
-        "xp_reward_scalar": 1,
-        "challenge_linked_quest_given": "",
-        "quest_pool": "",
-        "quest_state": "Active",
-        "last_state_change_time": "2020-01-20T18:44:07.278Z",
-        "challenge_linked_quest_parent": "",
-        "max_level_bonus": 0,
-        "xp": 0,
-        "favorite": false
       },
       "quantity": 1
     },
@@ -5099,112 +4026,10 @@
       },
       "quantity": 1
     },
-    "cd320727-ba98-48e4-a468-f46317174408": {
-      "templateId": "Quest:starlightquest_destructiblespawners",
-      "attributes": {
-        "level": -1,
-        "item_seen": false,
-        "sent_new_notification": true,
-        "challenge_bundle_id": "",
-        "xp_reward_scalar": 1,
-        "challenge_linked_quest_given": "",
-        "quest_pool": "",
-        "quest_state": "Claimed",
-        "last_state_change_time": "2020-01-25T12:19:25.139Z",
-        "challenge_linked_quest_parent": "",
-        "max_level_bonus": 0,
-        "xp": 0,
-        "completion_starlightquest_destructiblespawners": 6,
-        "favorite": false
-      },
-      "quantity": 1
-    },
     "43774fe9-0c05-4071-b42e-5513a50d3e25": {
       "templateId": "HomebaseNode:questreward_teamperk_slot1",
       "attributes": {
         "item_seen": false
-      },
-      "quantity": 1
-    },
-    "f304ee25-66cf-4f2f-a9db-07d74b463a63": {
-      "templateId": "ConditionalAction:generic_instance",
-      "attributes": {
-        "alt_profile_types": [
-          "athena"
-        ],
-        "_private": true,
-        "devName": "MAJOR: Season 11-3 - Repeatable Quests - Mission Alerts",
-        "conditions": {
-          "event": {
-            "instanceId": "0gqav31rd1gqbfa7mmc85phto6[0]0",
-            "eventName": "CalendarEvent_Season11WinterEventRepeatables",
-            "eventStart": "2020-01-12T00:00:00.000Z",
-            "eventEnd": "2020-02-28T00:00:00.000Z",
-            "startActions": {
-              "hasRun": true,
-              "conversions": [],
-              "itemsToGrant": [
-                {
-                  "templateId": "Quest:genericquest_killminibosses_repeatable",
-                  "quantity": 1
-                },
-                {
-                  "templateId": "Quest:genericquest_completestormzones_repeatable",
-                  "quantity": 1
-                },
-                {
-                  "templateId": "Quest:genericquest_killmistmonsters_repeatable",
-                  "quantity": 1
-                },
-                {
-                  "templateId": "Quest:genericquest_killfirehusks_repeatable",
-                  "quantity": 1
-                },
-                {
-                  "templateId": "Quest:genericquest_killnaturehusks_repeatable",
-                  "quantity": 1
-                },
-                {
-                  "templateId": "Quest:genericquest_killwaterhusks_repeatable",
-                  "quantity": 1
-                }
-              ],
-              "questsToUnpause": []
-            },
-            "endActions": {
-              "hasRun": false,
-              "conversions": [],
-              "itemsToRemove": [
-                {
-                  "templateId": "Quest:genericquest_killminibosses_repeatable",
-                  "quantity": 1
-                },
-                {
-                  "templateId": "Quest:genericquest_completestormzones_repeatable",
-                  "quantity": 1
-                },
-                {
-                  "templateId": "Quest:genericquest_killmistmonsters_repeatable",
-                  "quantity": 1
-                },
-                {
-                  "templateId": "Quest:genericquest_killfirehusks_repeatable",
-                  "quantity": 1
-                },
-                {
-                  "templateId": "Quest:genericquest_killnaturehusks_repeatable",
-                  "quantity": 1
-                },
-                {
-                  "templateId": "Quest:genericquest_killwaterhusks_repeatable",
-                  "quantity": 1
-                }
-              ],
-              "questsToPause": []
-            },
-            "metaData": {}
-          }
-        }
       },
       "quantity": 1
     },
@@ -5405,72 +4230,6 @@
         "max_level_bonus": 0,
         "xp": 0,
         "favorite": false
-      },
-      "quantity": 1
-    },
-    "e79513c8-f59e-47f6-8083-1c3bc21f9932": {
-      "templateId": "ConditionalAction:generic_instance",
-      "attributes": {
-        "alt_profile_types": [
-          "athena"
-        ],
-        "_private": true,
-        "devName": "MAJOR: Season 11-4 - Winterfest - Quests - Phase 3",
-        "conditions": {
-          "event": {
-            "instanceId": "732307dlje5b72qo9kuepns0u5[0]0",
-            "eventName": "CalendarEvent_Season11WinterEventNarrativePhase3",
-            "eventStart": "2020-01-16T00:00:00.000Z",
-            "eventEnd": "2020-02-28T00:00:00.000Z",
-            "startActions": {
-              "hasRun": true,
-              "conversions": [],
-              "itemsToGrant": [
-                {
-                  "templateId": "Quest:s11_rescuehero_quest_h1",
-                  "quantity": 1
-                }
-              ],
-              "questsToUnpause": []
-            },
-            "endActions": {
-              "hasRun": false,
-              "conversions": [],
-              "itemsToRemove": [
-                {
-                  "templateId": "Quest:s11_rescuehero_quest_h1",
-                  "quantity": 1
-                },
-                {
-                  "templateId": "Quest:s11_destroy_quest_h2",
-                  "quantity": 1
-                },
-                {
-                  "templateId": "Quest:s11_fetch_quest_h3",
-                  "quantity": 1
-                },
-                {
-                  "templateId": "Quest:s11_landmark_quest_h4",
-                  "quantity": 1
-                },
-                {
-                  "templateId": "Quest:s11_killcollect_quest_h5",
-                  "quantity": 1
-                },
-                {
-                  "templateId": "Quest:s11_fetch_quest_h6",
-                  "quantity": 1
-                },
-                {
-                  "templateId": "Quest:s11_reactivefetch_quest_h7",
-                  "quantity": 1
-                }
-              ],
-              "questsToPause": []
-            },
-            "metaData": {}
-          }
-        }
       },
       "quantity": 1
     },
@@ -5696,96 +4455,6 @@
       },
       "quantity": 1
     },
-    "0c721100-ff08-4ba0-9b6a-5627c6be36eb": {
-      "templateId": "ConditionalAction:generic_instance",
-      "attributes": {
-        "alt_profile_types": [
-          "athena"
-        ],
-        "_private": true,
-        "devName": "MAJOR: Season 11-3 - Winterfest - Quests - Phase 2",
-        "conditions": {
-          "event": {
-            "instanceId": "2kj84fotmeaq50ri4n7g4i29tu[0]0",
-            "eventName": "CalendarEvent_Season11WinterEventNarrativePhase2",
-            "eventStart": "2020-01-26T00:00:00.000Z",
-            "eventEnd": "2020-02-28T00:00:00.000Z",
-            "startActions": {
-              "hasRun": true,
-              "conversions": [],
-              "itemsToGrant": [
-                {
-                  "templateId": "Quest:s11_fetch_quest_g1",
-                  "quantity": 1
-                }
-              ],
-              "questsToUnpause": []
-            },
-            "endActions": {
-              "hasRun": false,
-              "conversions": [],
-              "itemsToRemove": [
-                {
-                  "templateId": "Quest:s11_fetch_quest_g1",
-                  "quantity": 1
-                },
-                {
-                  "templateId": "Quest:s11_gathercollect_quest_g2",
-                  "quantity": 1
-                },
-                {
-                  "templateId": "Quest:s11_fetch_quest_g3",
-                  "quantity": 1
-                },
-                {
-                  "templateId": "Quest:s11_reactivekill_quest_g4",
-                  "quantity": 1
-                },
-                {
-                  "templateId": "Quest:s11_killcollect_quest_g5",
-                  "quantity": 1
-                },
-                {
-                  "templateId": "Quest:s11_landmark_quest_g6",
-                  "quantity": 1
-                },
-                {
-                  "templateId": "Quest:s11_fetch_quest_g7",
-                  "quantity": 1
-                },
-                {
-                  "templateId": "Quest:s11_destroy_quest_f0",
-                  "quantity": 1
-                },
-                {
-                  "templateId": "Quest:s11_custom_quest_f0",
-                  "quantity": 1
-                },
-                {
-                  "templateId": "Quest:s11_gathercollect_quest_f0",
-                  "quantity": 1
-                },
-                {
-                  "templateId": "Quest:s11_fetch_quest_fkey",
-                  "quantity": 1
-                },
-                {
-                  "templateId": "Quest:s11_fetch_quest_fgift",
-                  "quantity": 1
-                },
-                {
-                  "templateId": "Quest:s11_reactivekill_quest_f0",
-                  "quantity": 1
-                }
-              ],
-              "questsToPause": []
-            },
-            "metaData": {}
-          }
-        }
-      },
-      "quantity": 1
-    },
     "1cfe5518-6510-4e8d-a90b-df8cbe4b7b7f": {
       "templateId": "HomebaseNode:questreward_feature_herolevelup",
       "attributes": {
@@ -5997,29 +4666,6 @@
       },
       "quantity": 1
     },
-    "14a307a3-1513-4c7b-bc93-0e0a851c450c": {
-      "templateId": "Quest:starlightquest_traptrial",
-      "attributes": {
-        "completion_starlightquest_traptrial_teleport": 1,
-        "level": -1,
-        "item_seen": false,
-        "sent_new_notification": true,
-        "challenge_bundle_id": "",
-        "xp_reward_scalar": 1,
-        "challenge_linked_quest_given": "",
-        "completion_starlightquest_traptrial_ceilingdrop": 1,
-        "quest_pool": "",
-        "quest_state": "Claimed",
-        "last_state_change_time": "2020-01-25T12:19:28.931Z",
-        "challenge_linked_quest_parent": "",
-        "max_level_bonus": 0,
-        "xp": 0,
-        "completion_starlightquest_traptrial_snares": 1,
-        "favorite": false,
-        "completion_starlightquest_traptrial_arrows": 1
-      },
-      "quantity": 1
-    },
     "2c8793c7-a81e-47d0-91ba-47a3560ff5a9": {
       "templateId": "Quest:stonewoodquest_joelkarolina_killmistmonsters",
       "attributes": {
@@ -6056,26 +4702,6 @@
         "max_level_bonus": 0,
         "xp": 0,
         "completion_complete_mimic": 7,
-        "favorite": false
-      },
-      "quantity": 1
-    },
-    "69d148d8-088f-4700-b27f-de9a1bf262a9": {
-      "templateId": "Quest:wargames_visibilityquest_wargame_tprifts",
-      "attributes": {
-        "level": -1,
-        "item_seen": false,
-        "sent_new_notification": true,
-        "challenge_bundle_id": "",
-        "xp_reward_scalar": 1,
-        "challenge_linked_quest_given": "",
-        "quest_pool": "",
-        "quest_state": "Active",
-        "last_state_change_time": "2020-01-24T16:38:06.807Z",
-        "completion_wargames_visibilityquest_wargame_tprifts": 0,
-        "challenge_linked_quest_parent": "",
-        "max_level_bonus": 0,
-        "xp": 0,
         "favorite": false
       },
       "quantity": 1
@@ -6126,26 +4752,6 @@
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "selection": -1,
-        "xp": 0,
-        "favorite": false
-      },
-      "quantity": 1
-    },
-    "04d95c17-3acd-4dc2-904f-e0e63fbc7da5": {
-      "templateId": "Quest:starlightquest_destroy_urns",
-      "attributes": {
-        "completion_starlightquest_destroy_urns": 0,
-        "level": -1,
-        "item_seen": true,
-        "sent_new_notification": true,
-        "challenge_bundle_id": "",
-        "xp_reward_scalar": 1,
-        "challenge_linked_quest_given": "",
-        "quest_pool": "",
-        "quest_state": "Active",
-        "last_state_change_time": "2020-01-25T12:19:15.950Z",
-        "challenge_linked_quest_parent": "",
-        "max_level_bonus": 0,
         "xp": 0,
         "favorite": false
       },
@@ -6326,26 +4932,6 @@
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
-        "favorite": false
-      },
-      "quantity": 1
-    },
-    "0cf33881-1d70-401e-b8fb-7f229838effc": {
-      "templateId": "Quest:wargames_visibilityquest_wargame_lava",
-      "attributes": {
-        "level": -1,
-        "item_seen": false,
-        "sent_new_notification": true,
-        "challenge_bundle_id": "",
-        "xp_reward_scalar": 1,
-        "challenge_linked_quest_given": "",
-        "quest_pool": "",
-        "quest_state": "Active",
-        "last_state_change_time": "2020-01-09T15:12:41.066Z",
-        "challenge_linked_quest_parent": "",
-        "max_level_bonus": 0,
-        "xp": 0,
-        "completion_wargames_visibilityquest_wargame_lava": 0,
         "favorite": false
       },
       "quantity": 1
@@ -6628,26 +5214,6 @@
       },
       "quantity": 1
     },
-    "490d884c-3ce5-4f3d-ad4b-51befa73868b": {
-      "templateId": "Quest:s11_holdfastquest_seasonelite_group",
-      "attributes": {
-        "level": -1,
-        "item_seen": false,
-        "completion_s11_holdfastquest_seasonelite_group": 0,
-        "sent_new_notification": true,
-        "challenge_bundle_id": "",
-        "xp_reward_scalar": 1,
-        "challenge_linked_quest_given": "",
-        "quest_pool": "",
-        "quest_state": "Active",
-        "last_state_change_time": "2020-01-20T18:44:07.279Z",
-        "challenge_linked_quest_parent": "",
-        "max_level_bonus": 0,
-        "xp": 0,
-        "favorite": false
-      },
-      "quantity": 1
-    },
     "bdc978bc-c70f-4fae-8eb9-e626e96fbf93": {
       "templateId": "Quest:challenge_eldritchabominations_16",
       "attributes": {
@@ -6767,26 +5333,6 @@
       },
       "quantity": 1
     },
-    "6afcf9b8-eaeb-49aa-a349-3af0d78e59f6": {
-      "templateId": "Quest:starlightquest_complete_d2_a",
-      "attributes": {
-        "level": -1,
-        "item_seen": true,
-        "sent_new_notification": true,
-        "challenge_bundle_id": "",
-        "xp_reward_scalar": 1,
-        "challenge_linked_quest_given": "",
-        "quest_pool": "",
-        "quest_state": "Active",
-        "last_state_change_time": "2020-01-25T12:19:38.118Z",
-        "challenge_linked_quest_parent": "",
-        "max_level_bonus": 0,
-        "xp": 0,
-        "completion_starlightquest_complete_d2_a": 0,
-        "favorite": false
-      },
-      "quantity": 1
-    },
     "f07f49b8-fe90-4f86-bbd8-b88171240061": {
       "templateId": "Token:hordepointstier1",
       "attributes": {
@@ -6853,26 +5399,6 @@
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
-        "favorite": false
-      },
-      "quantity": 1
-    },
-    "65ca9ae2-25ed-4ef9-8f02-c11a227dabca": {
-      "templateId": "Quest:s11_holdfastquest_season_furnacemaint",
-      "attributes": {
-        "level": -1,
-        "item_seen": false,
-        "sent_new_notification": true,
-        "challenge_bundle_id": "",
-        "xp_reward_scalar": 1,
-        "challenge_linked_quest_given": "",
-        "quest_pool": "",
-        "quest_state": "Active",
-        "last_state_change_time": "2020-01-20T18:44:07.278Z",
-        "challenge_linked_quest_parent": "",
-        "max_level_bonus": 0,
-        "xp": 0,
-        "completion_s11_holdfastquest_season_furnacemaint": 0,
         "favorite": false
       },
       "quantity": 1
@@ -7083,26 +5609,6 @@
       },
       "quantity": 1
     },
-    "54ef775a-2f72-4737-99a4-271b50a59218": {
-      "templateId": "Quest:wargames_visibilityquest_challenge_surprise",
-      "attributes": {
-        "level": -1,
-        "item_seen": false,
-        "sent_new_notification": true,
-        "completion_wargames_visibilityquest_challenge_surprise": 0,
-        "challenge_bundle_id": "",
-        "xp_reward_scalar": 1,
-        "challenge_linked_quest_given": "",
-        "quest_pool": "",
-        "quest_state": "Active",
-        "last_state_change_time": "2020-01-09T15:12:41.065Z",
-        "challenge_linked_quest_parent": "",
-        "max_level_bonus": 0,
-        "xp": 0,
-        "favorite": false
-      },
-      "quantity": 1
-    },
     "cc64f57b-2ccc-471b-8960-0c446ce1abfb": {
       "templateId": "Quest:challenge_toxictreasures_6",
       "attributes": {
@@ -7139,26 +5645,6 @@
         "building_slot_used": -1,
         "favorite": false,
         "set_bonus": "Homebase.Worker.SetBonus.IsFortitudeLow"
-      },
-      "quantity": 1
-    },
-    "d86e23e5-83dd-4c05-b695-0f2598424580": {
-      "templateId": "Quest:bbpromoquest_2019_reactive_hiddenspawner",
-      "attributes": {
-        "level": -1,
-        "item_seen": false,
-        "sent_new_notification": true,
-        "challenge_bundle_id": "",
-        "xp_reward_scalar": 1,
-        "challenge_linked_quest_given": "",
-        "quest_pool": "",
-        "quest_state": "Active",
-        "last_state_change_time": "2020-01-20T18:44:07.281Z",
-        "challenge_linked_quest_parent": "",
-        "max_level_bonus": 0,
-        "xp": 0,
-        "completion_bbpromoquest_2019_reactive_hiddenspawner": 0,
-        "favorite": false
       },
       "quantity": 1
     },
@@ -7312,26 +5798,6 @@
       },
       "quantity": 1
     },
-    "c1c1dbc2-3fa6-4931-a4ec-98aacff330e3": {
-      "templateId": "Quest:starlightquest_complete_dailies_2",
-      "attributes": {
-        "level": -1,
-        "item_seen": true,
-        "sent_new_notification": true,
-        "challenge_bundle_id": "",
-        "xp_reward_scalar": 1,
-        "challenge_linked_quest_given": "",
-        "quest_pool": "",
-        "quest_state": "Active",
-        "last_state_change_time": "2020-01-20T18:44:07.274Z",
-        "challenge_linked_quest_parent": "",
-        "max_level_bonus": 0,
-        "completion_starlightquest_complete_dailies_2": 0,
-        "xp": 0,
-        "favorite": false
-      },
-      "quantity": 1
-    },
     "599f888e-8848-4d12-82b7-2fdd03e0ee99": {
       "templateId": "Worker:workerbasic_vr_t01",
       "attributes": {
@@ -7366,27 +5832,6 @@
         "last_state_change_time": "2020-01-17T12:16:44.921Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
-        "xp": 0,
-        "favorite": false
-      },
-      "quantity": 1
-    },
-    "c18b6a71-f1b6-4e1c-91d2-56ff881f198a": {
-      "templateId": "Quest:wargames_dailyquest_tornado_with_nobuild_plankerton",
-      "attributes": {
-        "level": -1,
-        "item_seen": false,
-        "sent_new_notification": true,
-        "completion_wargames_daily_plankerton_tornado_with_nobuild": 0,
-        "challenge_bundle_id": "",
-        "xp_reward_scalar": 1,
-        "challenge_linked_quest_given": "",
-        "quest_pool": "dailywargamesplankerton_01",
-        "quest_state": "Active",
-        "last_state_change_time": "2020-02-05T19:05:26.902Z",
-        "challenge_linked_quest_parent": "",
-        "max_level_bonus": 0,
-        "selection": -1,
         "xp": 0,
         "favorite": false
       },
@@ -7435,63 +5880,6 @@
         "max_level_bonus": 0,
         "xp": 0,
         "favorite": false
-      },
-      "quantity": 1
-    },
-    "d321148d-1930-4ea1-b933-f640613cb79c": {
-      "templateId": "ConditionalAction:generic_instance",
-      "attributes": {
-        "alt_profile_types": [
-          "athena"
-        ],
-        "_private": true,
-        "devName": "MAJOR: Season 11 - Starlight - Quests Phase 5",
-        "conditions": {
-          "event": {
-            "instanceId": "5e00pbspdnqhsfo842383h1072[0]0",
-            "eventName": "CalendarEvent_Starlight2019_Quests_Phase5",
-            "eventStart": "2020-01-20T00:00:00.000Z",
-            "eventEnd": "2020-07-03T20:00:00.000Z",
-            "startActions": {
-              "hasRun": true,
-              "conversions": [],
-              "itemsToGrant": [],
-              "questsToUnpause": []
-            },
-            "endActions": {
-              "hasRun": false,
-              "conversions": [],
-              "itemsToRemove": [
-                {
-                  "templateId": "Quest:starlightquest_complete_melee_d1",
-                  "quantity": 1
-                },
-                {
-                  "templateId": "Quest:starlightquest_complete_melee_timed_d1",
-                  "quantity": 1
-                },
-                {
-                  "templateId": "Quest:starlightquest_complete_timed_d1",
-                  "quantity": 1
-                },
-                {
-                  "templateId": "Quest:starlightquest_complete_timed_d2",
-                  "quantity": 1
-                },
-                {
-                  "templateId": "Quest:starlightquest_complete_timed_d3",
-                  "quantity": 1
-                },
-                {
-                  "templateId": "Quest:starlightquest_complete_timed_d4",
-                  "quantity": 1
-                }
-              ],
-              "questsToPause": []
-            },
-            "metaData": {}
-          }
-        }
       },
       "quantity": 1
     },
@@ -7557,43 +5945,6 @@
         "building_slot_used": -1,
         "favorite": false,
         "set_bonus": "Homebase.Worker.SetBonus.IsFortitudeLow"
-      },
-      "quantity": 1
-    },
-    "7e599ff5-c1b3-44fe-aa63-79e87403b215": {
-      "templateId": "ConditionalAction:generic_instance",
-      "attributes": {
-        "alt_profile_types": [
-          "athena"
-        ],
-        "_private": true,
-        "devName": "MAJOR: Season 11 - Starlight - Quests Phase 2",
-        "conditions": {
-          "event": {
-            "instanceId": "0g2aos0p60t7komldlqeu4m27b[0]0",
-            "eventName": "CalendarEvent_Starlight2019_Quests_Phase2",
-            "eventStart": "2020-01-20T00:00:00.000Z",
-            "eventEnd": "2020-07-03T20:00:00.000Z",
-            "startActions": {
-              "hasRun": true,
-              "conversions": [],
-              "itemsToGrant": [],
-              "questsToUnpause": []
-            },
-            "endActions": {
-              "hasRun": false,
-              "conversions": [],
-              "itemsToRemove": [
-                {
-                  "templateId": "Quest:starlightquest_daily_complete_d2",
-                  "quantity": 1
-                }
-              ],
-              "questsToPause": []
-            },
-            "metaData": {}
-          }
-        }
       },
       "quantity": 1
     },
@@ -8026,26 +6377,6 @@
       },
       "quantity": 1
     },
-    "7b32a825-5a7a-4c3f-bca1-2b2b0aa7cea2": {
-      "templateId": "Quest:wargames_visibilityquest_wargame_overload",
-      "attributes": {
-        "level": -1,
-        "item_seen": false,
-        "sent_new_notification": true,
-        "challenge_bundle_id": "",
-        "xp_reward_scalar": 1,
-        "challenge_linked_quest_given": "",
-        "quest_pool": "",
-        "quest_state": "Active",
-        "last_state_change_time": "2020-01-24T16:38:06.807Z",
-        "challenge_linked_quest_parent": "",
-        "max_level_bonus": 0,
-        "xp": 0,
-        "completion_wargames_visibilityquest_wargame_overload": 0,
-        "favorite": false
-      },
-      "quantity": 1
-    },
     "df19c602-e03d-479f-bd4d-2051af8d2f94": {
       "templateId": "Quest:stonewoodquest_filler_1_d2",
       "attributes": {
@@ -8127,26 +6458,6 @@
       },
       "quantity": 1
     },
-    "f519843f-cfff-4991-8044-0b12c11ff700": {
-      "templateId": "Quest:wargames_visibilityquest_wargame_tiki",
-      "attributes": {
-        "level": -1,
-        "item_seen": false,
-        "sent_new_notification": true,
-        "challenge_bundle_id": "",
-        "xp_reward_scalar": 1,
-        "challenge_linked_quest_given": "",
-        "quest_pool": "",
-        "quest_state": "Active",
-        "last_state_change_time": "2020-01-22T22:33:30.725Z",
-        "challenge_linked_quest_parent": "",
-        "max_level_bonus": 0,
-        "completion_wargames_visibilityquest_wargame_tiki": 0,
-        "xp": 0,
-        "favorite": false
-      },
-      "quantity": 1
-    },
     "e3622ca4-8eae-487b-8940-02d3a57dec99": {
       "templateId": "Quest:plankertonquest_filler_3_d3",
       "attributes": {
@@ -8221,26 +6532,6 @@
       },
       "quantity": 1
     },
-    "b8839bc9-4dfa-4ae6-af13-089aad825e29": {
-      "templateId": "Quest:s11_holdfastquest_season_loot",
-      "attributes": {
-        "level": -1,
-        "item_seen": false,
-        "sent_new_notification": true,
-        "challenge_bundle_id": "",
-        "xp_reward_scalar": 1,
-        "challenge_linked_quest_given": "",
-        "quest_pool": "",
-        "quest_state": "Active",
-        "last_state_change_time": "2020-01-20T18:44:07.278Z",
-        "challenge_linked_quest_parent": "",
-        "max_level_bonus": 0,
-        "xp": 0,
-        "completion_s11_holdfastquest_season_loot": 0,
-        "favorite": false
-      },
-      "quantity": 1
-    },
     "6959e216-d078-4bd3-9d3f-40fe98a0afef": {
       "templateId": "Quest:homebasequest_slotmissiondefender",
       "attributes": {
@@ -8259,68 +6550,6 @@
         "max_level_bonus": 0,
         "xp": 0,
         "favorite": false
-      },
-      "quantity": 1
-    },
-    "4e419a70-a5b5-403d-997f-cb41304ed10e": {
-      "templateId": "ConditionalAction:generic_instance",
-      "attributes": {
-        "alt_profile_types": [
-          "athena"
-        ],
-        "_private": true,
-        "devName": "MAJOR: Winter - Holdfast - Challenge - Week 7",
-        "conditions": {
-          "event": {
-            "instanceId": "75lfn4b9v7324plb2eol1j57v4[0]0",
-            "eventName": "CalendarEvent_Holdfast_Week7",
-            "eventStart": "2020-01-30T06:00:00.000Z",
-            "eventEnd": "2020-02-06T06:00:00.000Z",
-            "startActions": {
-              "hasRun": true,
-              "conversions": [],
-              "itemsToGrant": [
-                {
-                  "templateId": "Quest:s11_holdfastquest_legend_15",
-                  "quantity": 1
-                },
-                {
-                  "templateId": "Quest:s11_holdfastquest_legend_30",
-                  "quantity": 1
-                },
-                {
-                  "templateId": "Quest:s11_holdfastquest_legend_elite",
-                  "quantity": 1
-                }
-              ],
-              "questsToUnpause": []
-            },
-            "endActions": {
-              "hasRun": false,
-              "conversions": [],
-              "itemsToRemove": [
-                {
-                  "templateId": "Quest:s11_holdfastquest_legend_15",
-                  "quantity": 1
-                },
-                {
-                  "templateId": "Quest:s11_holdfastquest_legend_30",
-                  "quantity": 1
-                },
-                {
-                  "templateId": "Quest:s11_holdfastquest_legend_elite",
-                  "quantity": 1
-                },
-                {
-                  "templateId": "Quest:s11_holdfastquest_legend_45",
-                  "quantity": 1
-                }
-              ],
-              "questsToPause": []
-            },
-            "metaData": {}
-          }
-        }
       },
       "quantity": 1
     },
@@ -8359,26 +6588,6 @@
         "quest_state": "Claimed",
         "last_state_change_time": "2020-01-17T12:16:44.895Z",
         "completion_stonewoodquest_mechanical_killhusks_melee": 20,
-        "challenge_linked_quest_parent": "",
-        "max_level_bonus": 0,
-        "xp": 0,
-        "favorite": false
-      },
-      "quantity": 1
-    },
-    "1750802c-c71a-4fed-84f4-91cf38f1481d": {
-      "templateId": "Quest:starlightquest_dungeoneer_soldier",
-      "attributes": {
-        "level": -1,
-        "item_seen": true,
-        "completion_starlightquest_dungeoneer_soldier_1": 0,
-        "sent_new_notification": true,
-        "challenge_bundle_id": "",
-        "xp_reward_scalar": 1,
-        "challenge_linked_quest_given": "",
-        "quest_pool": "",
-        "quest_state": "Active",
-        "last_state_change_time": "2020-01-20T18:44:07.275Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -8468,26 +6677,6 @@
       },
       "quantity": 1
     },
-    "98f48db2-50c7-48ee-92fb-99aa65a7ebb6": {
-      "templateId": "Quest:bbpromoquest_2019_reactive_jesscabinet",
-      "attributes": {
-        "level": -1,
-        "item_seen": true,
-        "sent_new_notification": true,
-        "challenge_bundle_id": "",
-        "completion_bbpromoquest_2019_reactive_jesscabinet": 3,
-        "xp_reward_scalar": 1,
-        "challenge_linked_quest_given": "",
-        "quest_pool": "",
-        "quest_state": "Active",
-        "last_state_change_time": "2020-01-20T18:44:07.281Z",
-        "challenge_linked_quest_parent": "",
-        "max_level_bonus": 0,
-        "xp": 0,
-        "favorite": false
-      },
-      "quantity": 1
-    },
     "296845f1-d4c1-471c-b82f-bd4dc0694e2f": {
       "templateId": "Worker:workerbasic_c_t01",
       "attributes": {
@@ -8565,58 +6754,6 @@
         "xp": 0,
         "expedition_expiration_start_time": "2020-02-05T21:42:19.787Z",
         "favorite": false
-      },
-      "quantity": 1
-    },
-    "0dd11143-452b-426b-a587-eb1c2b99d91d": {
-      "templateId": "ConditionalAction:generic_instance",
-      "attributes": {
-        "alt_profile_types": [
-          "athena"
-        ],
-        "_private": true,
-        "devName": "STORE: Season 11-3 - Campaign Currency",
-        "conditions": {
-          "event": {
-            "instanceId": "6c6shhimkd8l60hibb21ku5m5m[0]0",
-            "eventName": "CalendarEvent_Season11WinterCurrency",
-            "eventStart": "2020-01-14T00:00:00.000Z",
-            "eventEnd": "2020-02-28T00:00:00.000Z",
-            "startActions": {
-              "hasRun": true,
-              "conversions": [],
-              "itemsToGrant": [],
-              "questsToUnpause": [],
-              "eventCurrencyToSet": {
-                "templateId": "AccountResource:eventcurrency_snowballs",
-                "cf": 3550936
-              }
-            },
-            "endActions": {
-              "hasRun": false,
-              "conversions": [
-                {
-                  "recipe": {
-                    "static_results": [],
-                    "static_costs": [
-                      {
-                        "templateId": "AccountResource:eventcurrency_snowballs",
-                        "quantity": 8887917
-                      }
-                    ],
-                    "static_catalysts": []
-                  },
-                  "quantity": -1,
-                  "convert_remainder_up": true
-                }
-              ],
-              "itemsToRemove": [],
-              "questsToPause": [],
-              "eventCurrencyToUnset": "AccountResource:eventcurrency_snowballs"
-            },
-            "metaData": {}
-          }
-        }
       },
       "quantity": 1
     },
@@ -8831,64 +6968,6 @@
       },
       "quantity": 1
     },
-    "57954364-eeda-4d89-885b-488491d15ce8": {
-      "templateId": "ConditionalAction:generic_instance",
-      "attributes": {
-        "alt_profile_types": [
-          "athena"
-        ],
-        "_private": true,
-        "devName": "MAJOR: Season 11 - BBPromo Quests",
-        "conditions": {
-          "event": {
-            "instanceId": "5maoup0ffpt3c2og323ju7aqn7[0]0",
-            "eventName": "CalendarEvent_BBPromo2019_Quests",
-            "eventStart": "2020-01-19T00:00:00.000Z",
-            "eventEnd": "2090-02-14T00:00:00.000Z",
-            "startActions": {
-              "hasRun": true,
-              "conversions": [],
-              "itemsToGrant": [
-                {
-                  "templateId": "Quest:bbpromoquest_2019_reactive_kylecabinet",
-                  "quantity": 1
-                },
-                {
-                  "templateId": "Quest:bbpromoquest_2019_reactive_jesscabinet",
-                  "quantity": 1
-                },
-                {
-                  "templateId": "Quest:bbpromoquest_2019_reactive_hiddenspawner",
-                  "quantity": 1
-                }
-              ],
-              "questsToUnpause": []
-            },
-            "endActions": {
-              "hasRun": false,
-              "conversions": [],
-              "itemsToRemove": [
-                {
-                  "templateId": "Quest:bbpromoquest_2019_reactive_kylecabinet",
-                  "quantity": 1
-                },
-                {
-                  "templateId": "Quest:bbpromoquest_2019_reactive_jesscabinet",
-                  "quantity": 1
-                },
-                {
-                  "templateId": "Quest:bbpromoquest_2019_reactive_hiddenspawner",
-                  "quantity": 1
-                }
-              ],
-              "questsToPause": []
-            },
-            "metaData": {}
-          }
-        }
-      },
-      "quantity": 1
-    },
     "607ad331-cc3b-461d-915c-db24b89f68eb": {
       "templateId": "Quest:challenge_missionaccomplished_9",
       "attributes": {
@@ -8906,26 +6985,6 @@
         "max_level_bonus": 0,
         "xp": 0,
         "favorite": false
-      },
-      "quantity": 1
-    },
-    "8943bd0d-17c3-4ad0-aef6-42b76070cd47": {
-      "templateId": "Quest:wargames_visibilityquest_wargame_saucer",
-      "attributes": {
-        "level": -1,
-        "item_seen": false,
-        "sent_new_notification": true,
-        "challenge_bundle_id": "",
-        "xp_reward_scalar": 1,
-        "challenge_linked_quest_given": "",
-        "quest_pool": "",
-        "quest_state": "Active",
-        "last_state_change_time": "2020-01-08T17:52:23.912Z",
-        "challenge_linked_quest_parent": "",
-        "max_level_bonus": 0,
-        "xp": 0,
-        "favorite": false,
-        "completion_wargames_visibilityquest_wargame_saucer": 0
       },
       "quantity": 1
     },
@@ -8964,26 +7023,6 @@
         "quest_pool": "",
         "quest_state": "Claimed",
         "last_state_change_time": "2020-01-08T18:15:11.323Z",
-        "challenge_linked_quest_parent": "",
-        "max_level_bonus": 0,
-        "xp": 0,
-        "favorite": false
-      },
-      "quantity": 1
-    },
-    "4a19d590-628e-44f3-bb5f-ddb6999c7562": {
-      "templateId": "Quest:s11_holdfastquest_legend_elite",
-      "attributes": {
-        "level": -1,
-        "item_seen": false,
-        "sent_new_notification": true,
-        "challenge_bundle_id": "",
-        "completion_s11_holdfastquest_legend_elite": 0,
-        "xp_reward_scalar": 1,
-        "challenge_linked_quest_given": "",
-        "quest_pool": "",
-        "quest_state": "Active",
-        "last_state_change_time": "2020-01-31T10:28:35.698Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
@@ -9063,26 +7102,6 @@
         "quest_state": "Claimed",
         "last_state_change_time": "2020-01-25T18:36:06.830Z",
         "challenge_linked_quest_parent": "",
-        "max_level_bonus": 0,
-        "xp": 0,
-        "favorite": false
-      },
-      "quantity": 1
-    },
-    "beba9e81-fcf0-4ca8-a74e-346b57a5bfe0": {
-      "templateId": "Quest:wargames_visibilityquest_challenge_fulltime",
-      "attributes": {
-        "level": -1,
-        "item_seen": false,
-        "sent_new_notification": true,
-        "challenge_bundle_id": "",
-        "xp_reward_scalar": 1,
-        "challenge_linked_quest_given": "",
-        "quest_pool": "",
-        "quest_state": "Active",
-        "last_state_change_time": "2020-01-09T15:12:41.065Z",
-        "challenge_linked_quest_parent": "",
-        "completion_wargames_visibilityquest_challenge_fulltime": 0,
         "max_level_bonus": 0,
         "xp": 0,
         "favorite": false
@@ -9278,26 +7297,6 @@
       },
       "quantity": 1
     },
-    "b2f981d8-a2c6-4bfd-99ec-40713a875311": {
-      "templateId": "Quest:starlightquest_complete_dailies_1",
-      "attributes": {
-        "level": -1,
-        "item_seen": true,
-        "sent_new_notification": true,
-        "challenge_bundle_id": "",
-        "xp_reward_scalar": 1,
-        "challenge_linked_quest_given": "",
-        "quest_pool": "",
-        "quest_state": "Active",
-        "last_state_change_time": "2020-01-20T18:44:07.274Z",
-        "challenge_linked_quest_parent": "",
-        "max_level_bonus": 0,
-        "completion_starlightquest_complete_dailies_1": 0,
-        "xp": 0,
-        "favorite": false
-      },
-      "quantity": 1
-    },
     "33b9a594-0f17-4898-bb3f-dbc50d7a8610": {
       "templateId": "Worker:workerbasic_r_t01",
       "attributes": {
@@ -9469,26 +7468,6 @@
       },
       "quantity": 1
     },
-    "6c352060-a858-49a7-97a9-48c51696081d": {
-      "templateId": "Quest:wargames_visibilityquest_challenge_explode",
-      "attributes": {
-        "level": -1,
-        "item_seen": false,
-        "sent_new_notification": true,
-        "challenge_bundle_id": "",
-        "completion_wargames_visibilityquest_challenge_explode": 0,
-        "xp_reward_scalar": 1,
-        "challenge_linked_quest_given": "",
-        "quest_pool": "",
-        "quest_state": "Active",
-        "last_state_change_time": "2020-01-09T15:12:41.065Z",
-        "challenge_linked_quest_parent": "",
-        "max_level_bonus": 0,
-        "xp": 0,
-        "favorite": false
-      },
-      "quantity": 1
-    },
     "ec8ae2ea-82ee-4f11-a745-6131d54fe850": {
       "templateId": "HomebaseNode:questreward_expedition_propplane3",
       "attributes": {
@@ -9615,26 +7594,6 @@
         "last_state_change_time": "2020-01-07T18:26:49.543Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
-        "xp": 0,
-        "favorite": false
-      },
-      "quantity": 1
-    },
-    "a5f6d758-80e4-434d-a7e6-8082e7aabb9d": {
-      "templateId": "Quest:s11_gathercollect_quest_g2",
-      "attributes": {
-        "level": -1,
-        "item_seen": true,
-        "sent_new_notification": true,
-        "challenge_bundle_id": "",
-        "xp_reward_scalar": 1,
-        "challenge_linked_quest_given": "",
-        "quest_pool": "",
-        "quest_state": "Active",
-        "last_state_change_time": "2020-02-01T23:34:22.885Z",
-        "challenge_linked_quest_parent": "",
-        "max_level_bonus": 0,
-        "completion_s11_gathercollect_quest_g2": 2,
         "xp": 0,
         "favorite": false
       },
@@ -9788,27 +7747,6 @@
       "templateId": "HomebaseNode:questreward_expedition_propplane2",
       "attributes": {
         "item_seen": false
-      },
-      "quantity": 1
-    },
-    "220c35b1-c33f-441c-9133-85a1d7c4ec8d": {
-      "templateId": "Quest:s11_holdfastquest_seasonelite_cramps",
-      "attributes": {
-        "level": -1,
-        "item_seen": false,
-        "completion_s11_holdfastquest_seasonelite_cramps1": 0,
-        "sent_new_notification": true,
-        "challenge_bundle_id": "",
-        "xp_reward_scalar": 1,
-        "challenge_linked_quest_given": "",
-        "quest_pool": "",
-        "quest_state": "Active",
-        "last_state_change_time": "2020-01-20T18:44:07.279Z",
-        "challenge_linked_quest_parent": "",
-        "completion_s11_holdfastquest_seasonelite_cramps": 0,
-        "max_level_bonus": 0,
-        "xp": 0,
-        "favorite": false
       },
       "quantity": 1
     },
@@ -10210,26 +8148,6 @@
       },
       "quantity": 678493295
     },
-    "b833032a-9911-430a-85b8-919fbede08c8": {
-      "templateId": "Quest:s11_holdfastquest_repeat_taste",
-      "attributes": {
-        "level": -1,
-        "item_seen": false,
-        "sent_new_notification": true,
-        "challenge_bundle_id": "",
-        "xp_reward_scalar": 1,
-        "challenge_linked_quest_given": "",
-        "quest_pool": "",
-        "quest_state": "Active",
-        "last_state_change_time": "2020-01-20T18:44:07.278Z",
-        "challenge_linked_quest_parent": "",
-        "max_level_bonus": 0,
-        "xp": 0,
-        "favorite": false,
-        "completion_s11_holdfastquest_repeat_taste": 0
-      },
-      "quantity": 1
-    },
     "c5415984-bd79-47e9-8cea-416bafb61bf0": {
       "templateId": "HomebaseNode:skilltree_backpacksize",
       "attributes": {
@@ -10402,46 +8320,6 @@
         "building_slot_used": -1,
         "favorite": false,
         "set_bonus": "Homebase.Worker.SetBonus.IsResistanceLow"
-      },
-      "quantity": 1
-    },
-    "a476c2bf-84d7-44eb-b31a-fbc09f5783f6": {
-      "templateId": "Quest:starlightquest_complete_d1_a",
-      "attributes": {
-        "level": -1,
-        "item_seen": false,
-        "sent_new_notification": true,
-        "challenge_bundle_id": "",
-        "xp_reward_scalar": 1,
-        "challenge_linked_quest_given": "",
-        "quest_pool": "",
-        "quest_state": "Claimed",
-        "last_state_change_time": "2020-01-25T12:19:38.117Z",
-        "challenge_linked_quest_parent": "",
-        "max_level_bonus": 0,
-        "completion_starlightquest_complete_d1_a": 1,
-        "xp": 0,
-        "favorite": false
-      },
-      "quantity": 1
-    },
-    "6479a815-13ff-4588-8761-8ece1ec0df12": {
-      "templateId": "Quest:starlightquest_kill_minibosses",
-      "attributes": {
-        "level": -1,
-        "item_seen": true,
-        "completion_starlightquest_kill_minibosses": 2,
-        "sent_new_notification": true,
-        "challenge_bundle_id": "",
-        "xp_reward_scalar": 1,
-        "challenge_linked_quest_given": "",
-        "quest_pool": "",
-        "quest_state": "Active",
-        "last_state_change_time": "2020-01-20T18:44:07.274Z",
-        "challenge_linked_quest_parent": "",
-        "max_level_bonus": 0,
-        "xp": 0,
-        "favorite": false
       },
       "quantity": 1
     },
