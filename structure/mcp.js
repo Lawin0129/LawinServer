@@ -745,6 +745,10 @@ express.post("/fortnite/api/game/v2/profile/*/client/ClientQuestLogin", async (r
         if (req.query.profileId == "profile0" || req.query.profileId == "campaign") {
             DailyQuestIDS = QuestIDS.SaveTheWorld.Daily
 
+            if (QuestIDS.SaveTheWorld.hasOwnProperty(`Season${memory.season}`)) {
+                SeasonQuestIDS = QuestIDS.SaveTheWorld[`Season${memory.season}`]
+            }
+
             for (var key in profile.items) {
                 if (profile.items[key].templateId.toLowerCase().startsWith("quest:daily")) {
                     QuestCount += 1;
@@ -762,19 +766,6 @@ express.post("/fortnite/api/game/v2/profile/*/client/ClientQuestLogin", async (r
             for (var key in profile.items) {
                 if (profile.items[key].templateId.toLowerCase().startsWith("quest:athenadaily")) {
                     QuestCount += 1;
-                }
-
-                if (key.split("")[0] == "S" && (Number.isInteger(Number(key.split("")[1]))) && (key.split("")[2] == "-" || (Number.isInteger(Number(key.split("")[2])) && key.split("")[3] == "-"))) {
-                    if (!key.startsWith(`S${memory.season}-`)) {
-                        delete profile.items[key];
-
-                        ApplyProfileChanges.push({
-                            "changeType": "itemRemoved",
-                            "itemId": key
-                        })
-
-                        StatChanged = true;
-                    }
                 }
             }
         }
@@ -852,87 +843,104 @@ express.post("/fortnite/api/game/v2/profile/*/client/ClientQuestLogin", async (r
         }
     } catch (err) {}
 
-    if (SeasonQuestIDS) {
-        for (var ChallengeBundleSchedule in SeasonQuestIDS.ChallengeBundleSchedules) {
-            if (profile.items.hasOwnProperty(ChallengeBundleSchedule.itemGuid)) {
+    for (var key in profile.items) {
+        if (key.split("")[0] == "S" && (Number.isInteger(Number(key.split("")[1]))) && (key.split("")[2] == "-" || (Number.isInteger(Number(key.split("")[2])) && key.split("")[3] == "-"))) {
+            if (!key.startsWith(`S${memory.season}-`)) {
+                delete profile.items[key];
+
                 ApplyProfileChanges.push({
                     "changeType": "itemRemoved",
-                    "itemId": ChallengeBundleSchedule.itemGuid
+                    "itemId": key
                 })
+
+                StatChanged = true;
             }
-
-            ChallengeBundleSchedule = SeasonQuestIDS.ChallengeBundleSchedules[ChallengeBundleSchedule];
-
-            profile.items[ChallengeBundleSchedule.itemGuid] = {
-                "templateId": ChallengeBundleSchedule.templateId,
-                "attributes": {
-                    "unlock_epoch": "2018-01-31T00:00:00.000Z",
-                    "max_level_bonus": 0,
-                    "level": 1,
-                    "item_seen": true,
-                    "xp": 0,
-                    "favorite": false,
-                    "granted_bundles": ChallengeBundleSchedule.granted_bundles
-                },
-                "quantity": 1
-            }
-
-            ApplyProfileChanges.push({
-                "changeType": "itemAdded",
-                "itemId": ChallengeBundleSchedule.itemGuid,
-                "item": profile.items[ChallengeBundleSchedule.itemGuid]
-            })
-
-            StatChanged = true;
         }
+    }
 
-        for (var ChallengeBundle in SeasonQuestIDS.ChallengeBundles) {
-            if (profile.items.hasOwnProperty(ChallengeBundle.itemGuid)) {
+    if (SeasonQuestIDS) {
+        if (req.query.profileId == "athena") {
+            for (var ChallengeBundleSchedule in SeasonQuestIDS.ChallengeBundleSchedules) {
+                if (profile.items.hasOwnProperty(ChallengeBundleSchedule.itemGuid)) {
+                    ApplyProfileChanges.push({
+                        "changeType": "itemRemoved",
+                        "itemId": ChallengeBundleSchedule.itemGuid
+                    })
+                }
+
+                ChallengeBundleSchedule = SeasonQuestIDS.ChallengeBundleSchedules[ChallengeBundleSchedule];
+
+                profile.items[ChallengeBundleSchedule.itemGuid] = {
+                    "templateId": ChallengeBundleSchedule.templateId,
+                    "attributes": {
+                        "unlock_epoch": new Date().toISOString(),
+                        "max_level_bonus": 0,
+                        "level": 1,
+                        "item_seen": true,
+                        "xp": 0,
+                        "favorite": false,
+                        "granted_bundles": ChallengeBundleSchedule.granted_bundles
+                    },
+                    "quantity": 1
+                }
+
                 ApplyProfileChanges.push({
-                    "changeType": "itemRemoved",
-                    "itemId": ChallengeBundle.itemGuid
+                    "changeType": "itemAdded",
+                    "itemId": ChallengeBundleSchedule.itemGuid,
+                    "item": profile.items[ChallengeBundleSchedule.itemGuid]
                 })
+
+                StatChanged = true;
             }
 
-            ChallengeBundle = SeasonQuestIDS.ChallengeBundles[ChallengeBundle];
+            for (var ChallengeBundle in SeasonQuestIDS.ChallengeBundles) {
+                if (profile.items.hasOwnProperty(ChallengeBundle.itemGuid)) {
+                    ApplyProfileChanges.push({
+                        "changeType": "itemRemoved",
+                        "itemId": ChallengeBundle.itemGuid
+                    })
+                }
 
-            if (config.Profile.bCompletedSeasonalQuests == true && ChallengeBundle.hasOwnProperty("questStages")) {
-                ChallengeBundle.grantedquestinstanceids = ChallengeBundle.grantedquestinstanceids.concat(ChallengeBundle.questStages);
+                ChallengeBundle = SeasonQuestIDS.ChallengeBundles[ChallengeBundle];
+
+                if (config.Profile.bCompletedSeasonalQuests == true && ChallengeBundle.hasOwnProperty("questStages")) {
+                    ChallengeBundle.grantedquestinstanceids = ChallengeBundle.grantedquestinstanceids.concat(ChallengeBundle.questStages);
+                }
+
+                profile.items[ChallengeBundle.itemGuid] = {
+                    "templateId": ChallengeBundle.templateId,
+                    "attributes": {
+                        "has_unlock_by_completion": false,
+                        "num_quests_completed": 0,
+                        "level": 0,
+                        "grantedquestinstanceids": ChallengeBundle.grantedquestinstanceids,
+                        "item_seen": true,
+                        "max_allowed_bundle_level": 0,
+                        "num_granted_bundle_quests": 0,
+                        "max_level_bonus": 0,
+                        "challenge_bundle_schedule_id": ChallengeBundle.challenge_bundle_schedule_id,
+                        "num_progress_quests_completed": 0,
+                        "xp": 0,
+                        "favorite": false
+                    },
+                    "quantity": 1
+                }
+
+                profile.items[ChallengeBundle.itemGuid].attributes.num_granted_bundle_quests = ChallengeBundle.grantedquestinstanceids.length;
+
+                if (config.Profile.bCompletedSeasonalQuests == true) {
+                    profile.items[ChallengeBundle.itemGuid].attributes.num_quests_completed = ChallengeBundle.grantedquestinstanceids.length;
+                    profile.items[ChallengeBundle.itemGuid].attributes.num_progress_quests_completed = ChallengeBundle.grantedquestinstanceids.length;
+                }
+
+                ApplyProfileChanges.push({
+                    "changeType": "itemAdded",
+                    "itemId": ChallengeBundle.itemGuid,
+                    "item": profile.items[ChallengeBundle.itemGuid]
+                })
+
+                StatChanged = true;
             }
-
-            profile.items[ChallengeBundle.itemGuid] = {
-                "templateId": ChallengeBundle.templateId,
-                "attributes": {
-                    "has_unlock_by_completion": false,
-                    "num_quests_completed": 0,
-                    "level": 0,
-                    "grantedquestinstanceids": ChallengeBundle.grantedquestinstanceids,
-                    "item_seen": true,
-                    "max_allowed_bundle_level": 0,
-                    "num_granted_bundle_quests": 0,
-                    "max_level_bonus": 0,
-                    "challenge_bundle_schedule_id": ChallengeBundle.challenge_bundle_schedule_id,
-                    "num_progress_quests_completed": 0,
-                    "xp": 0,
-                    "favorite": false
-                },
-                "quantity": 1
-            }
-
-            profile.items[ChallengeBundle.itemGuid].attributes.num_granted_bundle_quests = ChallengeBundle.grantedquestinstanceids.length;
-
-            if (config.Profile.bCompletedSeasonalQuests == true) {
-                profile.items[ChallengeBundle.itemGuid].attributes.num_quests_completed = ChallengeBundle.grantedquestinstanceids.length;
-                profile.items[ChallengeBundle.itemGuid].attributes.num_progress_quests_completed = ChallengeBundle.grantedquestinstanceids.length;
-            }
-
-            ApplyProfileChanges.push({
-                "changeType": "itemAdded",
-                "itemId": ChallengeBundle.itemGuid,
-                "item": profile.items[ChallengeBundle.itemGuid]
-            })
-
-            StatChanged = true;
         }
 
         for (var Quest in SeasonQuestIDS.Quests) {
@@ -948,18 +956,18 @@ express.post("/fortnite/api/game/v2/profile/*/client/ClientQuestLogin", async (r
             profile.items[Quest.itemGuid] = {
                 "templateId": Quest.templateId,
                 "attributes": {
-                    "creation_time": "2018-01-31T00:00:00.000Z",
+                    "creation_time": new Date().toISOString(),
                     "level": -1,
                     "item_seen": true,
                     "playlists": [],
                     "sent_new_notification": true,
-                    "challenge_bundle_id": Quest.challenge_bundle_id,
+                    "challenge_bundle_id": Quest.challenge_bundle_id || "",
                     "xp_reward_scalar": 1,
                     "challenge_linked_quest_given": "",
                     "quest_pool": "",
                     "quest_state": "Active",
                     "bucket": "",
-                    "last_state_change_time": "2018-01-31T00:00:00.000Z",
+                    "last_state_change_time": new Date().toISOString(),
                     "challenge_linked_quest_parent": "",
                     "max_level_bonus": 0,
                     "xp": 0,

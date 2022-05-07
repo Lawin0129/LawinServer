@@ -24,22 +24,31 @@ express.get("/fortnite/api/calendar/v1/timeline", async (req, res) => {
             "eventType": "EventFlag.Spring2018Phase1",
             "activeUntil": "9999-01-01T00:00:00.000Z",
             "activeSince": "2020-01-01T00:00:00.000Z"
-        },
-        {
-            "eventType": "EventFlag.Spring2018Phase2",
-            "activeUntil": "9999-01-01T00:00:00.000Z",
-            "activeSince": "2020-01-01T00:00:00.000Z"
-        },
-        {
-            "eventType": "EventFlag.Spring2018Phase3",
-            "activeUntil": "9999-01-01T00:00:00.000Z",
-            "activeSince": "2020-01-01T00:00:00.000Z"
-        },
-        {
-            "eventType": "EventFlag.Spring2018Phase4",
-            "activeUntil": "9999-01-01T00:00:00.000Z",
-            "activeSince": "2020-01-01T00:00:00.000Z"
         })
+        if (memory.build >= 3.1) {
+            activeEvents.push(
+            {
+                "eventType": "EventFlag.Spring2018Phase2",
+                "activeUntil": "9999-01-01T00:00:00.000Z",
+                "activeSince": "2020-01-01T00:00:00.000Z"
+            })
+        }
+        if (memory.build >= 3.3) {
+            activeEvents.push(
+            {
+                "eventType": "EventFlag.Spring2018Phase3",
+                "activeUntil": "9999-01-01T00:00:00.000Z",
+                "activeSince": "2020-01-01T00:00:00.000Z"
+            })
+        }
+        if (memory.build >= 3.4) {
+            activeEvents.push(
+            {
+                "eventType": "EventFlag.Spring2018Phase4",
+                "activeUntil": "9999-01-01T00:00:00.000Z",
+                "activeSince": "2020-01-01T00:00:00.000Z"
+            })
+        }
     }
 
     if (memory.season == 4) {
@@ -54,7 +63,7 @@ express.get("/fortnite/api/calendar/v1/timeline", async (req, res) => {
             "activeUntil": "9999-01-01T00:00:00.000Z",
             "activeSince": "2020-01-01T00:00:00.000Z"
         })
-        if (memory.build.toString().includes(".") && (Number(memory.build.toString().split(".")[1].split("")[0]) >= 3)) {
+        if (memory.build >= 4.3) {
             activeEvents.push(
             {
                 "eventType": "EventFlag.Blockbuster2018Phase2",
@@ -62,7 +71,7 @@ express.get("/fortnite/api/calendar/v1/timeline", async (req, res) => {
                 "activeSince": "2020-01-01T00:00:00.000Z"
             })
         }
-        if (memory.build.toString().includes(".") && (Number(memory.build.toString().split(".")[1].split("")[0]) >= 4)) {
+        if (memory.build >= 4.4) {
             activeEvents.push(
             {
                 "eventType": "EventFlag.Blockbuster2018Phase3",
@@ -70,7 +79,7 @@ express.get("/fortnite/api/calendar/v1/timeline", async (req, res) => {
                 "activeSince": "2020-01-01T00:00:00.000Z"
             })
         }
-        if (memory.build.toString().includes(".") && (Number(memory.build.toString().split(".")[1].split("")[0]) >= 5)) {
+        if (memory.build >= 4.5) {
             activeEvents.push(
             {
                 "eventType": "EventFlag.Blockbuster2018Phase4",
@@ -116,21 +125,6 @@ express.get("/fortnite/api/calendar/v1/timeline", async (req, res) => {
     if (memory.season == 6) {
         activeEvents.push(
         {
-            "eventType": "EventFlag.Fortnitemares",
-            "activeUntil": "9999-01-01T00:00:00.000Z",
-            "activeSince": "2020-01-01T00:00:00.000Z"
-        },
-        {
-            "eventType": "EventFlag.FortnitemaresPhase1",
-            "activeUntil": "9999-01-01T00:00:00.000Z",
-            "activeSince": "2020-01-01T00:00:00.000Z"
-        },
-        {
-            "eventType": "EventFlag.FortnitemaresPhase2",
-            "activeUntil": "9999-01-01T00:00:00.000Z",
-            "activeSince": "2020-01-01T00:00:00.000Z"
-        },
-        {
             "eventType": "EventFlag.LTM_Fortnitemares",
             "activeUntil": "9999-01-01T00:00:00.000Z",
             "activeSince": "2020-01-01T00:00:00.000Z"
@@ -140,6 +134,27 @@ express.get("/fortnite/api/calendar/v1/timeline", async (req, res) => {
             "activeUntil": "9999-01-01T00:00:00.000Z",
             "activeSince": "2020-01-01T00:00:00.000Z"
         })
+        if (memory.build >= 6.20) {
+            activeEvents.push(
+            {
+                "eventType": "EventFlag.Fortnitemares",
+                "activeUntil": "9999-01-01T00:00:00.000Z",
+                "activeSince": "2020-01-01T00:00:00.000Z"
+            },
+            {
+                "eventType": "EventFlag.FortnitemaresPhase1",
+                "activeUntil": "9999-01-01T00:00:00.000Z",
+                "activeSince": "2020-01-01T00:00:00.000Z"
+            })
+        }
+        if (memory.build >= 6.22) {
+            activeEvents.push(
+            {
+                "eventType": "EventFlag.FortnitemaresPhase2",
+                "activeUntil": "9999-01-01T00:00:00.000Z",
+                "activeSince": "2020-01-01T00:00:00.000Z"
+            })
+        }
     }
     
     if (memory.build == 6.20 || memory.build == 6.21) {
@@ -217,7 +232,7 @@ express.get("/fortnite/api/calendar/v1/timeline", async (req, res) => {
             "activeUntil": "9999-01-01T00:00:00.000Z",
             "activeSince": "2020-01-01T00:00:00.000Z"
         })
-        if (memory.build.toString().includes(".") && (Number(memory.build.toString().split(".")[1].split("")[0]) >= 2)) {
+        if (memory.build >= 8.2) {
             activeEvents.push(
             {
                 "eventType": "EventFlag.Spring2019.Phase2",
@@ -255,7 +270,7 @@ express.get("/fortnite/api/calendar/v1/timeline", async (req, res) => {
             "activeUntil": "9999-01-01T00:00:00.000Z",
             "activeSince": "2020-01-01T00:00:00.000Z"
         })
-        if (memory.build.toString().includes(".") && (Number(memory.build.toString().split(".")[1].split("")[0]) >= 2)) {
+        if (memory.build >= 9.2) {
             activeEvents.push(
             {
                 "eventType": "EventFlag.Season9.Phase2",
@@ -327,7 +342,7 @@ express.get("/fortnite/api/calendar/v1/timeline", async (req, res) => {
             "activeSince": "2020-01-01T00:00:00.000Z"
         })
 
-        if (memory.build.toString().includes(".") && (Number(memory.build.toString().split(".")[1].split("")[0]) >= 2)) {
+        if (memory.build >= 11.2) {
             activeEvents.push(
             {
                 "eventType": "EventFlag.Starlight",
@@ -336,7 +351,7 @@ express.get("/fortnite/api/calendar/v1/timeline", async (req, res) => {
             })
         }
 
-        if (memory.build.toString().includes(".") && (Number(memory.build.toString().split(".")[1].split("")[0]) < 3)) {
+        if (memory.build < 11.3) {
             activeEvents.push(
             {
                 "eventType": "EventFlag.Season11.Fortnitemares.Quests.Phase1",

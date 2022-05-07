@@ -41,6 +41,7 @@
 - Support a Creator with specific codes
 - Fully working daily challenges system (New daily challenge every day, replacing daily challenges, etc...)
 - Item transformation
+- Event Quests from Season 2 up to Season X (Can change)
 
 ### Battle Royale:
 - CloudStorage and ClientSettings (Settings saving)
