@@ -12,7 +12,6 @@
 - CloudStorage and ClientSettings (Settings saving)
 - Llama purchasing and opening with random loot
 - Every Hero, Weapon, Defender and Resource
-- Almost all storyline quests completed
 - Crafting items in Backpack
 - Transferring items to and from Storage
 - Modifying and upgrading Schematic perks
