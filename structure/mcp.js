@@ -1193,6 +1193,58 @@ express.post("/fortnite/api/game/v2/profile/*/client/RefundMtxPurchase", async (
     res.end();
 });
 
+// Increase a named counter value (e.g. when selecting a game mode)
+express.post("/fortnite/api/game/v2/profile/*/client/IncrementNamedCounterStat", async (req, res) => {
+    const profile = require(`./../profiles/${req.query.profileId || "profile0"}.json`);
+
+    // do not change any of these or you will end up breaking it
+    var ApplyProfileChanges = [];
+    var BaseRevision = profile.rvn || 0;
+    var QueryRevision = req.query.rvn || -1;
+    var StatChanged = false;
+
+    if (req.body.counterName && profile.stats.attributes.hasOwnProperty("named_counters")) {
+        if (profile.stats.attributes.named_counters.hasOwnProperty(req.body.counterName)) {
+            profile.stats.attributes.named_counters[req.body.counterName].current_count += 1;
+            profile.stats.attributes.named_counters[req.body.counterName].last_incremented_time = new Date().toISOString();
+
+            StatChanged = true;
+        }
+    }
+
+    if (StatChanged == true) {
+        profile.rvn += 1;
+        profile.commandRevision += 1;
+
+        ApplyProfileChanges.push({
+            "changeType": "statModified",
+            "name": "named_counters",
+            "value": profile.stats.attributes.named_counters
+        })
+
+        fs.writeFileSync(`./profiles/${req.query.profileId || "profile0"}.json`, JSON.stringify(profile, null, 2));
+    }
+
+    // this doesn't work properly on version v12.20 and above but whatever
+    if (QueryRevision != BaseRevision) {
+        ApplyProfileChanges = [{
+            "changeType": "fullProfileUpdate",
+            "profile": profile
+        }];
+    }
+
+    res.json({
+        "profileRevision": profile.rvn || 0,
+        "profileId": req.query.profileId || "profile0",
+        "profileChangesBaseRevision": BaseRevision,
+        "profileChanges": ApplyProfileChanges,
+        "profileCommandRevision": profile.commandRevision || 0,
+        "serverTime": new Date().toISOString(),
+        "responseVersion": 1
+    })
+    res.end();
+});
+
 // Claim STW daily reward
 express.post("/fortnite/api/game/v2/profile/*/client/ClaimLoginReward", async (req, res) => {
     const profile = require(`./../profiles/${req.query.profileId || "campaign"}.json`);
@@ -1260,7 +1312,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/ClaimLoginReward", async (r
     res.end();
 });
 
-// Update quest client objectives STW
+// Update quest client objectives
 express.post("/fortnite/api/game/v2/profile/*/client/UpdateQuestClientObjectives", async (req, res) => {
     const profile = require(`./../profiles/${req.query.profileId || "campaign"}.json`);
 
@@ -1272,46 +1324,47 @@ express.post("/fortnite/api/game/v2/profile/*/client/UpdateQuestClientObjectives
 
     if (req.body.advance) {
         for (var i in req.body.advance) {
-            var Quest = [];
-            var bIncomplete = false;
+            var QuestsToUpdate = [];
 
             for (var x in profile.items) {
                 if (profile.items[x].templateId.toLowerCase().startsWith("quest:")) {
                     for (var y in profile.items[x].attributes) {
                         if (y.toLowerCase() == `completion_${req.body.advance[i].statName}`) {
-                            Quest = x;
+                            QuestsToUpdate.push(x)
                         }
                     }
                 }
             }
 
-            if (Quest) {
-                profile.items[Quest].attributes[`completion_${req.body.advance[i].statName}`] = req.body.advance[i].count;
+            for (var i = 0; i < QuestsToUpdate.length; i++) {
+                var bIncomplete = false;
+                
+                profile.items[QuestsToUpdate[i]].attributes[`completion_${req.body.advance[i].statName}`] = req.body.advance[i].count;
 
                 ApplyProfileChanges.push({
                     "changeType": "itemAttrChanged",
-                    "itemId": Quest,
+                    "itemId": QuestsToUpdate[i],
                     "attributeName": `completion_${req.body.advance[i].statName}`,
                     "attributeValue": req.body.advance[i].count
                 })
 
-                if (profile.items[Quest].attributes.quest_state.toLowerCase() != "claimed") {
-                    for (var x in profile.items[Quest].attributes) {
+                if (profile.items[QuestsToUpdate[i]].attributes.quest_state.toLowerCase() != "claimed") {
+                    for (var x in profile.items[QuestsToUpdate[i]].attributes) {
                         if (x.toLowerCase().startsWith("completion_")) {
-                            if (profile.items[Quest].attributes[x] == 0) {
+                            if (profile.items[QuestsToUpdate[i]].attributes[x] == 0) {
                                 bIncomplete = true;
                             }
                         }
                     }
     
                     if (bIncomplete == false) {
-                        profile.items[Quest].attributes.quest_state = "Claimed";
+                        profile.items[QuestsToUpdate[i]].attributes.quest_state = "Claimed";
     
                         ApplyProfileChanges.push({
                             "changeType": "itemAttrChanged",
-                            "itemId": Quest,
+                            "itemId": QuestsToUpdate[i],
                             "attributeName": "quest_state",
-                            "attributeValue": profile.items[Quest].attributes.quest_state
+                            "attributeValue": profile.items[QuestsToUpdate[i]].attributes.quest_state
                         })
                     }
                 }

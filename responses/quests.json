@@ -434,16 +434,6 @@
           ]
         },
         {
-          "itemGuid": "S2-Quest:WinterQuest_2017_Hidden_WatchVideo",
-          "templateId": "Quest:WinterQuest_2017_Hidden_WatchVideo",
-          "objectives": [
-            {
-              "name": "winterquest_2017_hidden_watchvideo",
-              "count": 1
-            }
-          ]
-        },
-        {
           "itemGuid": "S2-Quest:WinterQuest_2017_KillCoalLobbers",
           "templateId": "Quest:WinterQuest_2017_KillCoalLobbers",
           "objectives": [
@@ -1028,16 +1018,6 @@
           ]
         },
         {
-          "itemGuid": "S3-Quest:StormQuest_2018_Hidden_WatchVideo",
-          "templateId": "Quest:StormQuest_2018_Hidden_WatchVideo",
-          "objectives": [
-            {
-              "name": "stormquest_2018_hidden_watchvideo",
-              "count": 1
-            }
-          ]
-        },
-        {
           "itemGuid": "S3-Quest:StormQuest_2018_Landmark_Lars",
           "templateId": "Quest:StormQuest_2018_Landmark_Lars",
           "objectives": [
@@ -1237,16 +1217,6 @@
           "objectives": [
             {
               "name": "questcomplete_blockbusterquest_2018_reactive_magnets",
-              "count": 1
-            }
-          ]
-        },
-        {
-          "itemGuid": "S4-Quest:BlockbusterQuest_2018_Hidden_WatchVideo",
-          "templateId": "Quest:BlockbusterQuest_2018_Hidden_WatchVideo",
-          "objectives": [
-            {
-              "name": "blockbusterquest_2018_hidden_watchvideo",
               "count": 1
             }
           ]
@@ -3000,16 +2970,6 @@
           ]
         },
         {
-          "itemGuid": "S6-Quest:HalloweenQuest_2017_Hidden_WatchVideo",
-          "templateId": "Quest:HalloweenQuest_2017_Hidden_WatchVideo",
-          "objectives": [
-            {
-              "name": "halloweenquest_2017_hidden_watchvideo",
-              "count": 1
-            }
-          ]
-        },
-        {
           "itemGuid": "S6-Quest:HalloweenQuest_2017_KillMistMonsters",
           "templateId": "Quest:HalloweenQuest_2017_KillMistMonsters",
           "objectives": [
@@ -3766,16 +3726,6 @@
           ]
         },
         {
-          "itemGuid": "S7-Quest:WinterQuest_2018_Hidden_WatchVideo",
-          "templateId": "Quest:WinterQuest_2018_Hidden_WatchVideo",
-          "objectives": [
-            {
-              "name": "winterquest_2018_hidden_watchvideo",
-              "count": 1
-            }
-          ]
-        },
-        {
           "itemGuid": "S7-Quest:WinterQuest_2018_KillCoalLobbers",
           "templateId": "Quest:WinterQuest_2018_KillCoalLobbers",
           "objectives": [
@@ -4070,16 +4020,6 @@
           ]
         },
         {
-          "itemGuid": "S8-Quest:LoveQuest_2019_Hidden_WatchVideo",
-          "templateId": "Quest:LoveQuest_2019_Hidden_WatchVideo",
-          "objectives": [
-            {
-              "name": "lovequest_2019_hidden_watchvideo",
-              "count": 1
-            }
-          ]
-        },
-        {
           "itemGuid": "S8-Quest:LoveQuest_2019_KillCollect_LoveLobbers",
           "templateId": "Quest:LoveQuest_2019_KillCollect_LoveLobbers",
           "objectives": [
@@ -4206,16 +4146,6 @@
             {
               "name": "piratequest_2019_gathercollect_swings",
               "count": 30
-            }
-          ]
-        },
-        {
-          "itemGuid": "S8-Quest:PirateQuest_2019_Hidden_WatchVideo",
-          "templateId": "Quest:PirateQuest_2019_Hidden_WatchVideo",
-          "objectives": [
-            {
-              "name": "piratequest_2019_hidden_watchvideo",
-              "count": 1
             }
           ]
         },
@@ -4530,16 +4460,6 @@
             {
               "name": "s9_gather_quest_a8",
               "count": 30
-            }
-          ]
-        },
-        {
-          "itemGuid": "S9-Quest:S9_Hidden_WatchVideo_B0",
-          "templateId": "Quest:S9_Hidden_WatchVideo_B0",
-          "objectives": [
-            {
-              "name": "s9_hidden_watchvideo_b0",
-              "count": 1
             }
           ]
         },
