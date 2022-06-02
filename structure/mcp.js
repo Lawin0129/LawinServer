@@ -320,9 +320,10 @@ express.post("/fortnite/api/game/v2/profile/*/client/UnlockRewardNode", async (r
     var BaseRevision = profile.rvn || 0;
     var QueryRevision = req.query.rvn || -1;
     var StatChanged = false;
+    var ItemExists = false;
     var Season = "Season" + memory.season;
 
-    const ID = functions.MakeID();
+    var ID = functions.MakeID();
     const GiftID = functions.MakeID();
 
     if (req.body.nodeId && req.body.rewardGraphId) {
@@ -335,54 +336,95 @@ express.post("/fortnite/api/game/v2/profile/*/client/UnlockRewardNode", async (r
                 "profileCommandRevision": common_core.commandRevision || 0,
             })
 
-            common_core.items[ID] = {
-                "templateId": WinterFestIDS[Season][req.body.nodeId],
-                "attributes": {
-                    "max_level_bonus": 0,
-                    "level": 1,
-                    "item_seen": false,
-                    "xp": 0,
-                    "variants": [],
-                    "favorite": false
-                },
-                "quantity": 1
-            };
+            for (var key in common_core.items) {
+                if (common_core.items[key].templateId.toLowerCase() == WinterFestIDS[Season][req.body.nodeId].toLowerCase()) {
+                    common_core.items[key].attributes.item_seen = false;
+                    ID = key;
+                    ItemExists = true;
 
-            MultiUpdate[0].profileChanges.push({
-                "changeType": "itemAdded",
-                "itemId": ID,
-                "item": common_core.items[ID]
-            })
+                    MultiUpdate[0].profileChanges.push({
+                        "changeType": "itemAttrChanged",
+                        "itemId": key,
+                        "attributeName": "item_seen",
+                        "attributeValue": common_core.items[key].attributes.item_seen
+                    })
+                }
+            }
+
+            if (ItemExists == false) {
+                common_core.items[ID] = {
+                    "templateId": WinterFestIDS[Season][req.body.nodeId],
+                    "attributes": {
+                        "max_level_bonus": 0,
+                        "level": 1,
+                        "item_seen": false,
+                        "xp": 0,
+                        "variants": [],
+                        "favorite": false
+                    },
+                    "quantity": 1
+                };
+    
+                MultiUpdate[0].profileChanges.push({
+                    "changeType": "itemAdded",
+                    "itemId": ID,
+                    "item": common_core.items[ID]
+                })
+            }
+
+            ItemExists = false;
 
             common_core.rvn += 1;
             common_core.commandRevision += 1;
     
             MultiUpdate[0].profileRevision = common_core.rvn || 0;
             MultiUpdate[0].profileCommandRevision = common_core.commandRevision || 0;
+
+            profile.items[GiftID] = {"templateId":"GiftBox:gb_winterfestreward","attributes":{"max_level_bonus":0,"fromAccountId":"","lootList":[{"itemType":WinterFestIDS[Season][req.body.nodeId],"itemGuid":ID,"itemProfile":"common_core","attributes":{"creation_time":new Date().toISOString()},"quantity":1}],"level":1,"item_seen":false,"xp":0,"giftedOn":new Date().toISOString(),"params":{"SubGame":"Athena","winterfestGift":"true"},"favorite":false},"quantity":1};
         }
 
         if (!WinterFestIDS[Season][req.body.nodeId].toLowerCase().startsWith("homebasebannericon:")) {
-            profile.items[ID] = {
-                "templateId": WinterFestIDS[Season][req.body.nodeId],
-                "attributes": {
-                    "max_level_bonus": 0,
-                    "level": 1,
-                    "item_seen": false,
-                    "xp": 0,
-                    "variants": [],
-                    "favorite": false
-                },
-                "quantity": 1
-            };
+            for (var key in profile.items) {
+                if (profile.items[key].templateId.toLowerCase() == WinterFestIDS[Season][req.body.nodeId].toLowerCase()) {
+                    profile.items[key].attributes.item_seen = false;
+                    ID = key;
+                    ItemExists = true;
 
-            ApplyProfileChanges.push({
-                "changeType": "itemAdded",
-                "itemId": ID,
-                "item": profile.items[ID]
-            })
+                    ApplyProfileChanges.push({
+                        "changeType": "itemAttrChanged",
+                        "itemId": key,
+                        "attributeName": "item_seen",
+                        "attributeValue": profile.items[key].attributes.item_seen
+                    })
+                }
+            }
+
+            if (ItemExists == false) {
+                profile.items[ID] = {
+                    "templateId": WinterFestIDS[Season][req.body.nodeId],
+                    "attributes": {
+                        "max_level_bonus": 0,
+                        "level": 1,
+                        "item_seen": false,
+                        "xp": 0,
+                        "variants": [],
+                        "favorite": false
+                    },
+                    "quantity": 1
+                };
+    
+                ApplyProfileChanges.push({
+                    "changeType": "itemAdded",
+                    "itemId": ID,
+                    "item": profile.items[ID]
+                })
+            }
+
+            ItemExists = false;
+
+            profile.items[GiftID] = {"templateId":"GiftBox:gb_winterfestreward","attributes":{"max_level_bonus":0,"fromAccountId":"","lootList":[{"itemType":WinterFestIDS[Season][req.body.nodeId],"itemGuid":ID,"itemProfile":"athena","attributes":{"creation_time":new Date().toISOString()},"quantity":1}],"level":1,"item_seen":false,"xp":0,"giftedOn":new Date().toISOString(),"params":{"SubGame":"Athena","winterfestGift":"true"},"favorite":false},"quantity":1};
         }
 
-        profile.items[GiftID] = {"templateId":"GiftBox:gb_winterfestreward","attributes":{"max_level_bonus":0,"fromAccountId":"","lootList":[{"itemType":WinterFestIDS[Season][req.body.nodeId],"itemGuid":ID,"itemProfile":"athena","attributes":{"creation_time":new Date().toISOString()},"quantity":1}],"level":1,"item_seen":false,"xp":0,"giftedOn":new Date().toISOString(),"params":{"SubGame":"Athena","winterfestGift":"true"},"favorite":false},"quantity":1};
         profile.items[req.body.rewardGraphId].attributes.reward_keys[0].unlock_keys_used += 1;
         profile.items[req.body.rewardGraphId].attributes.reward_nodes_claimed.push(req.body.nodeId);
 
