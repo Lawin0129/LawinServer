@@ -35687,6 +35687,17 @@
         "completion_complete_pve01_diff5_v2": 3
       },
       "quantity": 1
+    },
+    "b196dfc1-2dd8-4a3e-b0a3-afd2bbc60d66": {
+      "templateId": "PersonalVehicle:vid_hoverboard",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": false,
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1
     }
   },
   "stats": {
