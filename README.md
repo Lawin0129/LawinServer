@@ -40,6 +40,7 @@
 - Support a Creator with specific codes
 - Fully working daily challenges system (New daily challenge every day, replacing daily challenges, etc...)
 - Item transformation
+- Event Quests from Season 2 up to Season X (Can change)
 
 ### Battle Royale:
 - CloudStorage and ClientSettings (Settings saving)
@@ -53,7 +54,7 @@
 - Changing items edit styles
 - Support a Creator with specific codes
 - Fully working daily challenges system (New daily challenge every day, replacing daily challenges, etc...)
-- Seasonal Quests from Season 3 up to Season 19 (Can change)
+- Seasonal Quests from Season 3 up to Season 20 (Can change)
 - Purchasable battle pass from Season 2 to Season 10 (Can change)
 - Discovery Tab
 

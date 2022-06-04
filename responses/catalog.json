@@ -791,6 +791,17 @@
             "ProfileId": "campaign",
             "EventLimit": "-1"
           },
+          "metaAssetInfo": {
+            "structName": "FortCatalogMeta",
+            "payload": {
+              "chaseItems": [
+                "FortSchematicItemDefinition'/Game/Items/Schematics/Ranged/Assault/Raygun/SID_Assault_Raygun_VR_Ore_T01.SID_Assault_Raygun_VR_Ore_T01'",
+                "FortSchematicItemDefinition'/Game/Items/Schematics/Melee/Blunt/Tools/Hammer_Heavy/SID_Blunt_Hammer_Heavy_R_Ore_T01.SID_Blunt_Hammer_Heavy_R_Ore_T01'",
+                "FortWorkerType'/Game/Items/Workers/Managers/ManagerDoctor_R_T01.ManagerDoctor_R_T01'"
+              ],
+              "packDefinition": "FortCardPackItemDefinition'/Game/Items/CardPacks/CardPack_Bronze.CardPack_Bronze'"
+            }
+          },
           "matchFilter": "",
           "filterWeight": 0,
           "appStoreId": [],
@@ -906,6 +917,20 @@
               "value": "-1"
             }
           ],
+          "metaAssetInfo": {
+            "structName": "FortCatalogMeta",
+            "payload": {
+              "chaseItems": [
+                "FortSchematicItemDefinition'/Game/Items/Schematics/Ranged/Assault/Hydraulic/SID_Assault_Hydraulic_Drum_SR_Ore_T01.SID_Assault_Hydraulic_Drum_SR_Ore_T01'",
+                "FortSchematicItemDefinition'/Game/Items/Schematics/Ranged/Sniper/TripleShot/SID_Sniper_TripleShot_VR_Ore_T01.SID_Sniper_TripleShot_VR_Ore_T01'",
+                "FortHeroType'/Game/Heroes/Outlander/ItemDefinition/HID_Outlander_010_M_SR_T01.HID_Outlander_010_M_SR_T01'",
+                "FortSchematicItemDefinition'/Game/Items/Schematics/Melee/Piercing/Spear_High/SID_Piercing_Spear_SR_Ore_T01.SID_Piercing_Spear_SR_Ore_T01'",
+                "FortHeroType'/Game/Heroes/Ninja/ItemDefinition/HID_Ninja_010_F_SR_T01.HID_Ninja_010_F_SR_T01'",
+                "FortSchematicItemDefinition'/Game/Items/Schematics/Ranged/Shotgun/Scavenger/SID_Shotgun_SemiAuto_Scavenger_SR_Ore_T01.SID_Shotgun_SemiAuto_Scavenger_SR_Ore_T01'"
+              ],
+              "packDefinition": "FortCardPackItemDefinition'/Game/Items/CardPacks/CardPack_Jackpot.CardPack_Jackpot'"
+            }
+          },
           "displayAssetPath": "/Game/Items/CardPacks/CardPack_Jackpot.CardPack_Jackpot",
           "itemGrants": [
             {
