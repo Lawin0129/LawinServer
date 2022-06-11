@@ -4,7 +4,6 @@ const fs = require("fs");
 const friendslist = require("./../responses/friendslist.json");
 const friendslist2 = require("./../responses/friendslist2.json");
 const functions = require("./functions.js");
-const memory = require("./../memory.json");
 
 express.get("/friends/api/v1/*/settings", async (req, res) => {
     res.json({})
@@ -15,7 +14,7 @@ express.get("/friends/api/v1/*/blocklist", async (req, res) => {
 })
 
 express.get("/friends/api/public/friends/:accountId", async (req, res) => {
-    functions.GetVersionInfo(req, memory);
+    const memory = functions.GetVersionInfo(req);
 
     if (!friendslist.find(i => i.accountId == req.params.accountId)) {
         var FriendObject = {

@@ -1,33 +1,37 @@
-const memory = require("./../memory.json");
 const XMLBuilder = require("xmlbuilder");
 const uuid = require("uuid");
 
-function GetVersionInfo(req, memory) {
+function GetVersionInfo(req) {
+    var memory = {
+        season: 0,
+        build: 0.0,
+        CL: "",
+        lobby: ""
+    }
+
     if (req.headers["user-agent"])
     {
         var CL = "";
 
-        if (req.headers["user-agent"]) {
-            try {
-                var BuildID = req.headers["user-agent"].split("-")[3].split(",")[0]
+        try {
+            var BuildID = req.headers["user-agent"].split("-")[3].split(",")[0]
+            if (!Number.isNaN(Number(BuildID))) {
+                CL = BuildID;
+            }
+
+            if (Number.isNaN(Number(BuildID))) {
+                var BuildID = req.headers["user-agent"].split("-")[3].split(" ")[0]
                 if (!Number.isNaN(Number(BuildID))) {
                     CL = BuildID;
                 }
-
-                if (Number.isNaN(Number(BuildID))) {
-                    var BuildID = req.headers["user-agent"].split("-")[3].split(" ")[0]
-                    if (!Number.isNaN(Number(BuildID))) {
-                        CL = BuildID;
-                    }
-                }
-            } catch (err) {
-                try {
-                    var BuildID = req.headers["user-agent"].split("-")[1].split("+")[0]
-                    if (!Number.isNaN(Number(BuildID))) {
-                        CL = BuildID;
-                    }
-                } catch (err) {}
             }
+        } catch (err) {
+            try {
+                var BuildID = req.headers["user-agent"].split("-")[1].split("+")[0]
+                if (!Number.isNaN(Number(BuildID))) {
+                    CL = BuildID;
+                }
+            } catch (err) {}
         }
 
         try {
@@ -53,6 +57,8 @@ function GetVersionInfo(req, memory) {
             memory.lobby = "LobbyWinterDecor";
         }
     }
+
+    return memory;
 }
 
 function getItemShop() {
@@ -131,7 +137,7 @@ function getItemShop() {
 }
 
 function getTheater(req) {
-    GetVersionInfo(req, memory);
+    const memory = GetVersionInfo(req);
 
     var theater = JSON.stringify(require("./../responses/worldstw.json"));
     var Season = "Season" + memory.season;
@@ -178,7 +184,7 @@ function getTheater(req) {
 }
 
 function getContentPages(req) {
-    GetVersionInfo(req, memory);
+    const memory = GetVersionInfo(req);
 
     const contentpages = JSON.parse(JSON.stringify(require("./../responses/contentpages.json")));
 

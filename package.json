@@ -4,6 +4,7 @@
   "description": "A fortnite backend which supports both BR and STW for every single fortnite build.",
   "main": "index.js",
   "dependencies": {
+    "cookie-parser": "^1.4.6",
     "crypto": "^1.0.1",
     "express": "^4.17.2",
     "fs": "^0.0.1-security",

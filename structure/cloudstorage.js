@@ -4,11 +4,10 @@ const crypto = require("crypto");
 const fs = require("fs");
 const path = require("path");
 const functions = require("./functions.js");
-const memory = require("./../memory.json");
 
 express.use((req, res, next) => {
     // Get raw body in encoding latin1 for ClientSettings
-    if (req.originalUrl.includes('/fortnite/api/cloudstorage/user/') && req.method == "PUT") {
+    if (req.originalUrl.toLowerCase().startsWith("/fortnite/api/cloudstorage/user/") && req.method == "PUT") {
         req.rawBody = "";
         req.setEncoding("latin1");
 
@@ -19,7 +18,7 @@ express.use((req, res, next) => {
 })
 
 express.get("/fortnite/api/cloudstorage/system", async (req, res) => {
-    functions.GetVersionInfo(req, memory);
+    const memory = functions.GetVersionInfo(req);
 
     if (memory.build >= 9.40 && memory.build <= 10.40) {
         return res.status(404).end();
@@ -65,9 +64,11 @@ express.get("/fortnite/api/cloudstorage/system/:file", async (req, res) => {
 })
 
 express.get("/fortnite/api/cloudstorage/user/*/:file", async (req, res) => {
-    if (!fs.existsSync(path.join(process.env.LOCALAPPDATA, "LawinServer", "ClientSettings"))) {
-        fs.mkdirSync(path.join(process.env.LOCALAPPDATA, "LawinServer", "ClientSettings"));
-    }
+    try {
+        if (!fs.existsSync(path.join(process.env.LOCALAPPDATA, "LawinServer", "ClientSettings"))) {
+            fs.mkdirSync(path.join(process.env.LOCALAPPDATA, "LawinServer", "ClientSettings"));
+        }
+    } catch (err) {}
 
     res.set("Content-Type", "application/octet-stream")
 
@@ -77,10 +78,13 @@ express.get("/fortnite/api/cloudstorage/user/*/:file", async (req, res) => {
         });
     }
 
-    functions.GetVersionInfo(req, memory);
+    const memory = functions.GetVersionInfo(req);
 
     var currentBuildID = memory.CL;
-    const file = path.join(process.env.LOCALAPPDATA, "LawinServer", "ClientSettings", `ClientSettings-${currentBuildID}.Sav`);
+
+    let file;
+    if (process.env.LOCALAPPDATA) file = path.join(process.env.LOCALAPPDATA, "LawinServer", "ClientSettings", `ClientSettings-${currentBuildID}.Sav`);
+    else file = path.join(__dirname, "..", "ClientSettings", `ClientSettings-${currentBuildID}.Sav`);
 
     if (fs.existsSync(file)) {
         const ParsedFile = fs.readFileSync(file);
@@ -93,16 +97,21 @@ express.get("/fortnite/api/cloudstorage/user/*/:file", async (req, res) => {
 })
 
 express.get("/fortnite/api/cloudstorage/user/:accountId", async (req, res) => {
-    if (!fs.existsSync(path.join(process.env.LOCALAPPDATA, "LawinServer", "ClientSettings"))) {
-        fs.mkdirSync(path.join(process.env.LOCALAPPDATA, "LawinServer", "ClientSettings"));
-    }
+    try {
+        if (!fs.existsSync(path.join(process.env.LOCALAPPDATA, "LawinServer", "ClientSettings"))) {
+            fs.mkdirSync(path.join(process.env.LOCALAPPDATA, "LawinServer", "ClientSettings"));
+        }
+    } catch (err) {}
 
     res.set("Content-Type", "application/json")
 
-    functions.GetVersionInfo(req, memory);
+    const memory = functions.GetVersionInfo(req);
 
     var currentBuildID = memory.CL;
-    const file = path.join(process.env.LOCALAPPDATA, "LawinServer", "ClientSettings", `ClientSettings-${currentBuildID}.Sav`);
+    
+    let file;
+    if (process.env.LOCALAPPDATA) file = path.join(process.env.LOCALAPPDATA, "LawinServer", "ClientSettings", `ClientSettings-${currentBuildID}.Sav`);
+    else file = path.join(__dirname, "..", "ClientSettings", `ClientSettings-${currentBuildID}.Sav`);
 
     if (fs.existsSync(file)) {
         const ParsedFile = fs.readFileSync(file, 'latin1');
@@ -126,15 +135,26 @@ express.get("/fortnite/api/cloudstorage/user/:accountId", async (req, res) => {
     }
 })
 
-express.put("/fortnite/api/cloudstorage/user/*/*", async (req, res) => {
-    if (!fs.existsSync(path.join(process.env.LOCALAPPDATA, "LawinServer", "ClientSettings"))) {
-        fs.mkdirSync(path.join(process.env.LOCALAPPDATA, "LawinServer", "ClientSettings"));
+express.put("/fortnite/api/cloudstorage/user/*/:file", async (req, res) => {
+    try {
+        if (!fs.existsSync(path.join(process.env.LOCALAPPDATA, "LawinServer", "ClientSettings"))) {
+            fs.mkdirSync(path.join(process.env.LOCALAPPDATA, "LawinServer", "ClientSettings"));
+        }
+    } catch (err) {}
+
+    if (req.params.file.toLowerCase() != "clientsettings.sav") {
+        return res.status(404).json({
+            "error": "file not found"
+        });
     }
 
-    functions.GetVersionInfo(req, memory);
+    const memory = functions.GetVersionInfo(req);
 
     var currentBuildID = memory.CL;
-    const file = path.join(process.env.LOCALAPPDATA, "LawinServer", "ClientSettings", `ClientSettings-${currentBuildID}.Sav`);
+
+    let file;
+    if (process.env.LOCALAPPDATA) file = path.join(process.env.LOCALAPPDATA, "LawinServer", "ClientSettings", `ClientSettings-${currentBuildID}.Sav`);
+    else file = path.join(__dirname, "..", "ClientSettings", `ClientSettings-${currentBuildID}.Sav`);
 
     fs.writeFileSync(file, req.rawBody, 'latin1');
     res.status(204).end();

@@ -1,10 +1,9 @@
 const Express = require("express");
 const express = Express.Router();
 const functions = require("./functions.js");
-const memory = require("./../memory.json");
 
 express.get("/fortnite/api/calendar/v1/timeline", async (req, res) => {
-    functions.GetVersionInfo(req, memory);
+    const memory = functions.GetVersionInfo(req);
 
     var activeEvents = [
     {

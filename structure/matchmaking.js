@@ -5,7 +5,6 @@ const path = require("path");
 const iniparser = require("ini");
 const config = iniparser.parse(fs.readFileSync(path.join(__dirname, "..", "Config", "config.ini")).toString());
 const functions = require("./functions.js");
-const memory = require("./../memory.json");
 
 express.get("/fortnite/api/matchmaking/session/findPlayer/*", async (req, res) => {
     res.status(200);
@@ -13,9 +12,7 @@ express.get("/fortnite/api/matchmaking/session/findPlayer/*", async (req, res) =
 })
 
 express.get("/fortnite/api/game/v2/matchmakingservice/ticket/player/*", async (req, res) => {
-    memory.currentbuildUniqueId = req.query.bucketId.split(":")[0];
-
-    fs.writeFileSync("./memory.json", JSON.stringify(memory, null, 2));
+    res.cookie("currentbuildUniqueId", req.query.bucketId.split(":")[0]);
 
     res.json({
         "serviceUrl": "ws://lawinservermatchmaker.herokuapp.com",
@@ -72,7 +69,7 @@ express.get("/fortnite/api/matchmaking/session/:session_id", async (req, res) =>
         "usesPresence": false,
         "allowJoinViaPresence": true,
         "allowJoinViaPresenceFriendsOnly": false,
-        "buildUniqueId": memory.currentbuildUniqueId, // buildUniqueId is different for every build, this uses the netver of the version you're currently using
+        "buildUniqueId": req.cookies.currentbuildUniqueId || "0", // buildUniqueId is different for every build, this uses the netver of the version you're currently using
         "lastUpdated": new Date().toISOString(),
         "started": false
       })

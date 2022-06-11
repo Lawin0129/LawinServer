@@ -6,10 +6,9 @@ const iniparser = require("ini");
 const config = iniparser.parse(fs.readFileSync(path.join(__dirname, "..", "Config", "config.ini")).toString());
 const functions = require("./functions.js");
 const catalog = functions.getItemShop();
-const memory = require("./../memory.json");
 
-express.use(function (req, res, next) {
-    if (!req.query.profileId) {
+express.use((req, res, next) => {
+    if (!req.query.profileId && req.originalUrl.toLowerCase().startsWith("/fortnite/api/game/v2/profile/")) {
         return res.status(404).json({
             error: "Profile not defined."
         });
@@ -17,7 +16,8 @@ express.use(function (req, res, next) {
 
     fs.readdirSync("./profiles").forEach((file) => {
         if (file.endsWith(".json")) {
-            functions.GetVersionInfo(req, memory);
+            const memory = functions.GetVersionInfo(req);
+
             const profile = require(`./../profiles/${file}`);
             if (!profile.rvn) profile.rvn = 0;
             if (!profile.items) profile.items = {}
@@ -61,6 +61,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/SetAffiliateName", async (r
         if (req.body.affiliateName.toLowerCase() == code.toLowerCase() || req.body.affiliateName == "") {
             profile.stats.attributes.mtx_affiliate_set_time = new Date().toISOString();
             profile.stats.attributes.mtx_affiliate = req.body.affiliateName;
+            
             StatChanged = true;
         }
     })
@@ -312,7 +313,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/UnlockRewardNode", async (r
     const profile = require(`./../profiles/${req.query.profileId || "athena"}.json`);
     const common_core = require("./../profiles/common_core.json");
     const WinterFestIDS = require("./../responses/winterfestrewards.json");
-    functions.GetVersionInfo(req, memory);
+    const memory = functions.GetVersionInfo(req);
 
     // do not change any of these or you will end up breaking it
     var ApplyProfileChanges = [];
@@ -865,7 +866,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/MarkNewQuestNotificationSen
 express.post("/fortnite/api/game/v2/profile/*/client/ClientQuestLogin", async (req, res) => {
     const profile = require(`./../profiles/${req.query.profileId || "athena"}.json`);
     var QuestIDS = JSON.parse(JSON.stringify(require("./../responses/quests.json")));
-    functions.GetVersionInfo(req, memory);
+    const memory = functions.GetVersionInfo(req);
 
     // do not change any of these or you will end up breaking it
     var ApplyProfileChanges = [];
@@ -1387,7 +1388,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/IncrementNamedCounterStat",
 express.post("/fortnite/api/game/v2/profile/*/client/ClaimLoginReward", async (req, res) => {
     const profile = require(`./../profiles/${req.query.profileId || "campaign"}.json`);
     const DailyRewards = require("./../responses/dailyrewards.json");
-    functions.GetVersionInfo(req, memory);
+    const memory = functions.GetVersionInfo(req);
 
     // do not change any of these or you will end up breaking it
     var ApplyProfileChanges = [];
@@ -2461,7 +2462,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/TransmogItem", async (req, 
 
 // Craft item STW (Guns, melees and traps only)
 express.post("/fortnite/api/game/v2/profile/*/client/CraftWorldItem", async (req, res) => {
-    functions.GetVersionInfo(req, memory);
+    const memory = functions.GetVersionInfo(req);
 
     const profile = require(`./../profiles/${req.query.profileId || "theater0"}.json`);
     var schematic_profile;
@@ -3512,7 +3513,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/ClearHeroLoadout", async (r
 
 // Recycle items STW
 express.post("/fortnite/api/game/v2/profile/*/client/RecycleItemBatch", async (req, res) => {
-    functions.GetVersionInfo(req, memory);
+    const memory = functions.GetVersionInfo(req);
 
     const profile = require(`./../profiles/${req.query.profileId || "campaign"}.json`);
 
@@ -5381,7 +5382,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/PurchaseCatalogEntry", asyn
                     if (value.offerId == req.body.offerId) {
                         var Quantity = 0;
                         catalog.storefronts[a].catalogEntries[b].itemGrants.forEach(function(value, c) {
-                            functions.GetVersionInfo(req, memory);
+                            const memory = functions.GetVersionInfo(req);
 
                             if (4 >= memory.season && PurchasedLlama == false) {
                                 if (MultiUpdate.length == 0) {

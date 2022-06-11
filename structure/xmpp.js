@@ -5,7 +5,12 @@ const XMLParser = require("xml-parser");
 const functions = require("./../structure/functions.js");
 
 const port = 80;
-const wss = new WebSocket({ port: port }, console.log("XMPP started listening on port", port));
+
+const wss = new WebSocket({ port: port }, () => console.log("XMPP started listening on port", port));
+wss.on("error", (err) => {
+    if (err.code == "EADDRINUSE") console.log("XMPP \x1b[31mFAILED\x1b[0m to start hosting on port", port);
+    else throw err;
+})
 
 global.Clients = [];
 
@@ -62,8 +67,10 @@ wss.on('connection', async (ws) => {
 
                 if (decodedBase64 && accountId && decodedBase64.length == 3) {
                     Authenticated = true;
+                    
                     console.log(`An xmpp client with the account id ${accountId} has logged in.`);
-                    Success(ws);
+
+                    ws.send(XMLBuilder.create("success").attribute("xmlns", "urn:ietf:params:xml:ns:xmpp-sasl").toString());
                 } else {
                     return Error(ws);
                 }
@@ -205,10 +212,6 @@ function RemoveClient(ws) {
 function Error(ws) {
     ws.send(XMLBuilder.create("close").attribute("xmlns", "urn:ietf:params:xml:ns:xmpp-framing").toString());
     ws.close();
-}
-
-function Success(ws) {
-    ws.send(XMLBuilder.create("success").attribute("xmlns", "urn:ietf:params:xml:ns:xmpp-sasl").toString());
 }
 
 function updatePresenceForAll(ws, body, away, offline) {
