@@ -209,7 +209,7 @@ function getContentPages(req) {
     } catch (err) {}
 
     try {
-        if (memory.season < 5 || (memory.season == 5 && Number(memory.build.toString().split(".")[1]) < 30)) { 
+        if (memory.build < 5.30) { 
             news.forEach(mode => {
                 contentpages[mode].news.messages[0].image = "https://cdn.discordapp.com/attachments/927739901540188200/930879507496308736/discord.png";
                 contentpages[mode].news.messages[1].image = "https://cdn.discordapp.com/attachments/927739901540188200/930879519882088508/lawin.png";
@@ -239,7 +239,16 @@ function getContentPages(req) {
         }
 
         if (memory.season == 20) {
-            contentpages.dynamicbackgrounds.backgrounds.backgrounds[0].backgroundimage = "https://cdn2.unrealengine.com/t-bp20-lobby-2048x1024-d89eb522746c.png";
+            if (memory.build == 20.40) {
+                contentpages.dynamicbackgrounds.backgrounds.backgrounds[0].backgroundimage = "https://cdn2.unrealengine.com/t-bp20-40-armadillo-glowup-lobby-2048x2048-2048x2048-3b83b887cc7f.jpg"
+            }
+            else {
+                contentpages.dynamicbackgrounds.backgrounds.backgrounds[0].backgroundimage = "https://cdn2.unrealengine.com/t-bp20-lobby-2048x1024-d89eb522746c.png";
+            }
+        }
+
+        if (memory.season == 21) {
+            contentpages.dynamicbackgrounds.backgrounds.backgrounds[0].backgroundimage = "https://cdn2.unrealengine.com/s21-lobby-background-2048x1024-2e7112b25dc3.jpg"
         }
     } catch (err) {}
 
