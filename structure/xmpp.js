@@ -8,8 +8,7 @@ const port = 80;
 
 const wss = new WebSocket({ port: port }, () => console.log("XMPP started listening on port", port));
 wss.on("error", (err) => {
-    if (err.code == "EACCES") console.log("XMPP \x1b[31mFAILED\x1b[0m to start hosting on port", port);
-    else throw err;
+    console.log("XMPP \x1b[31mFAILED\x1b[0m to start hosting (NOTE: This should not affect LawinServer).");
 })
 
 global.Clients = [];
