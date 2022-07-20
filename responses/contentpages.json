@@ -209,7 +209,7 @@
       "_type": "Battle Royale News",
       "messages": [
         {
-          "image": "https://cdn.discordapp.com/attachments/927739901540188200/930882355818823720/1_of9OCSRWoAoS3_lNVKqM2g.png",
+          "image": "https://fortnite-public-service-prod11.ol.epicgames.com/images/discord.png",
           "hidden": false,
           "_type": "CommonUI Simple Message Base",
           "adspace": "DISCORD!",
@@ -218,7 +218,7 @@
           "spotlight": false
         },
         {
-          "image": "https://cdn.discordapp.com/attachments/927739901540188200/930882658546876506/lawin.jpg",
+          "image": "https://fortnite-public-service-prod11.ol.epicgames.com/images/lawin.jpg",
           "hidden": false,
           "_type": "CommonUI Simple Message Base",
           "adspace": "ENJOY!",
@@ -640,12 +640,12 @@
           "_type": "FortPlaylistInfo"
         },
         {
-          "image": "https://i.imgur.com/Xm1p8oo.jpg",
+          "image": "https://fortnite-public-service-prod11.ol.epicgames.com/images/playlist_playground.jpg",
           "playlist_name": "Playlist_PlaygroundV2",
           "_type": "FortPlaylistInfo"
         },
         {
-          "image": "https://i.imgur.com/Xm1p8oo.jpg",
+          "image": "https://fortnite-public-service-prod11.ol.epicgames.com/images/playlist_playground.jpg",
           "playlist_name": "Playlist_Playground",
           "_type": "FortPlaylistInfo"
         },
@@ -1137,7 +1137,7 @@
           "_type": "FortPlaylistInfo"
         },
         {
-          "image": "https://i.imgur.com/r5Nyhn2.jpg",
+          "image": "https://fortnite-public-service-prod11.ol.epicgames.com/images/playlist_50v50.jpg",
           "playlist_name": "Playlist_50v50",
           "_type": "FortPlaylistInfo"
         },
@@ -1147,14 +1147,14 @@
           "_type": "FortPlaylistInfo"
         },
         {
-          "image": "https://i.imgur.com/zr4Fnnp.jpg",
+          "image": "https://fortnite-public-service-prod11.ol.epicgames.com/images/playlist_defaultsolo.jpg",
           "playlist_name": "Playlist_DefaultSolo",
           "hidden": false,
           "special_border": "None",
           "_type": "FortPlaylistInfo"
         },
         {
-          "image": "https://i.imgur.com/99n3n0m.jpg",
+          "image": "https://fortnite-public-service-prod11.ol.epicgames.com/images/playlist_defaultduo.jpg",
           "playlist_name": "Playlist_DefaultDuo",
           "hidden": false,
           "special_border": "None",
@@ -1166,7 +1166,7 @@
           "_type": "FortPlaylistInfo"
         },
         {
-          "image": "https://i.imgur.com/YA4ssMv.jpg",
+          "image": "https://fortnite-public-service-prod11.ol.epicgames.com/images/playlist_defaultsquad.jpg",
           "playlist_name": "Playlist_DefaultSquad",
           "hidden": false,
           "special_border": "None",
@@ -1184,10 +1184,10 @@
       "tournaments": [
         {
           "title_color": "FFFFFF",
-          "loading_screen_image": "https://cdn.discordapp.com/attachments/927739901540188200/930882658546876506/lawin.jpg",
+          "loading_screen_image": "https://fortnite-public-service-prod11.ol.epicgames.com/images/lawin.jpg",
           "background_text_color": "1B1B1B",
           "background_right_color": "DD091A",
-          "poster_back_image": "https://cdn.discordapp.com/attachments/927739901540188200/930882658546876506/lawin.jpg",
+          "poster_back_image": "https://fortnite-public-service-prod11.ol.epicgames.com/images/lawin.jpg",
           "_type": "Tournament Display Info",
           "pin_earned_text": "lawin is the winner!",
           "tournament_display_id": "s11_switchcup",
@@ -1195,7 +1195,7 @@
           "schedule_info": "November 2nd & 3rd: 2pm - 5pm JST",
           "primary_color": "FFFFFF",
           "flavor_description": "cool",
-          "poster_front_image": "https://cdn.discordapp.com/attachments/927739901540188200/930882658546876506/lawin.jpg",
+          "poster_front_image": "https://fortnite-public-service-prod11.ol.epicgames.com/images/lawin.jpg",
           "short_format_title": "Event Sessions",
           "title_line_2": "boomer",
           "title_line_1": "Solo",
@@ -1205,7 +1205,7 @@
           "long_format_title": "nice",
           "poster_fade_color": "DD091A",
           "secondary_color": "1B1B1B",
-          "playlist_tile_image": "https://cdn.discordapp.com/attachments/927739901540188200/930882658546876506/lawin.jpg",
+          "playlist_tile_image": "https://fortnite-public-service-prod11.ol.epicgames.com/images/lawin.jpg",
           "base_color": "FFFFFF"
         }
       ],
@@ -5941,7 +5941,7 @@
     "_locale": "en-US"
   },
   "lobby": {
-    "backgroundimage": "https://cdn.discordapp.com/attachments/927739901540188200/930883349831118878/Fortnite_fortnite-game_lobby_T_Lobby_SeasonX-2048x1024-24e02780ed533da8001016f4e6fb14dd15e2f860.png",
+    "backgroundimage": "https://fortnite-public-service-prod11.ol.epicgames.com/images/seasonx.png",
     "stage": "seasonx",
     "_title": "lobby",
     "_activeDate": "2019-05-31T21:24:39.892Z",
@@ -5969,7 +5969,7 @@
       "_type": "Battle Royale News",
       "messages": [
         {
-          "image": "https://cdn.discordapp.com/attachments/927739901540188200/930882355818823720/1_of9OCSRWoAoS3_lNVKqM2g.png",
+          "image": "https://fortnite-public-service-prod11.ol.epicgames.com/images/discord.png",
           "hidden": false,
           "_type": "CommonUI Simple Message Base",
           "adspace": "DISCORD!",
@@ -5978,7 +5978,7 @@
           "spotlight": false
         },
         {
-          "image": "https://cdn.discordapp.com/attachments/927739901540188200/930882658546876506/lawin.jpg",
+          "image": "https://fortnite-public-service-prod11.ol.epicgames.com/images/lawin.jpg",
           "hidden": false,
           "_type": "CommonUI Simple Message Base",
           "adspace": "ENJOY!",
@@ -6024,7 +6024,7 @@
       "_type": "Battle Royale News",
       "messages": [
         {
-          "image": "https://cdn.discordapp.com/attachments/927739901540188200/930882355818823720/1_of9OCSRWoAoS3_lNVKqM2g.png",
+          "image": "https://fortnite-public-service-prod11.ol.epicgames.com/images/discord.png",
           "hidden": false,
           "_type": "CommonUI Simple Message Base",
           "adspace": "DISCORD!",
@@ -6033,7 +6033,7 @@
           "spotlight": false
         },
         {
-          "image": "https://cdn.discordapp.com/attachments/927739901540188200/930882658546876506/lawin.jpg",
+          "image": "https://fortnite-public-service-prod11.ol.epicgames.com/images/lawin.jpg",
           "hidden": false,
           "_type": "CommonUI Simple Message Base",
           "adspace": "ENJOY!",
