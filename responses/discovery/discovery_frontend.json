@@ -7,9 +7,11 @@
           "results": [
             {
               "linkData": {
+                "namespace": "fn",
                 "mnemonic": "playlist_defaultsolo",
                 "linkType": "BR:Playlist",
                 "active": true,
+                "disabled": false,
                 "version": 95,
                 "moderationStatus": "Unmoderated",
                 "accountId": "epic",
@@ -22,13 +24,17 @@
                   }
                 }
               },
+              "lastVisited": null,
+              "linkCode": "playlist_defaultsolo",
               "isFavorite": false
             },
             {
               "linkData": {
+                "namespace": "fn",
                 "mnemonic": "playlist_defaultduo",
                 "linkType": "BR:Playlist",
                 "active": true,
+                "disabled": false,
                 "version": 95,
                 "moderationStatus": "Unmoderated",
                 "accountId": "epic",
@@ -41,13 +47,17 @@
                   }
                 }
               },
+              "lastVisited": null,
+              "linkCode": "playlist_defaultduo",
               "isFavorite": false
             },
             {
               "linkData": {
+                "namespace": "fn",
                 "mnemonic": "playlist_trios",
                 "linkType": "BR:Playlist",
                 "active": true,
+                "disabled": false,
                 "version": 95,
                 "moderationStatus": "Unmoderated",
                 "accountId": "epic",
@@ -60,13 +70,17 @@
                   }
                 }
               },
+              "lastVisited": null,
+              "linkCode": "playlist_trios",
               "isFavorite": false
             },
             {
               "linkData": {
+                "namespace": "fn",
                 "mnemonic": "playlist_defaultsquad",
                 "linkType": "BR:Playlist",
                 "active": true,
+                "disabled": false,
                 "version": 95,
                 "moderationStatus": "Unmoderated",
                 "accountId": "epic",
@@ -79,13 +93,17 @@
                   }
                 }
               },
+              "lastVisited": null,
+              "linkCode": "playlist_defaultsquad",
               "isFavorite": false
             },
             {
               "linkData": {
+                "namespace": "fn",
                 "mnemonic": "campaign",
                 "linkType": "SubGame",
                 "active": true,
+                "disabled": false,
                 "version": 5,
                 "moderationStatus": "Unmoderated",
                 "accountId": "epic",
@@ -129,11 +147,6 @@
                     "minimumNumberOfPlayers": 1,
                     "joinInProgressTeam": 1
                   },
-                  "disallowedPlatforms": [
-                    "IOS",
-                    "Android",
-                    "Switch"
-                  ],
                   "alt_title": {
                     "de": "Rette die Welt",
                     "ru": "Сражение с Бурей",
@@ -178,6 +191,8 @@
                   "introduction": "Battle to hold back the monster hordes and explore a vast, destructible world.  Build huge forts, craft weapons, find loot and level up."
                 }
               },
+              "lastVisited": null,
+              "linkCode": "campaign",
               "isFavorite": false
             }
           ],
