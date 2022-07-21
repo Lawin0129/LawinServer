@@ -191,7 +191,7 @@ function getContentPages(req) {
     var Language = "en";
 
     if (req.headers["accept-language"]) {
-        if (req.headers["accept-language"].includes("-") && req.headers["accept-language"] != "es-419") {
+        if (req.headers["accept-language"].includes("-") && req.headers["accept-language"] != "es-419" && req.headers["accept-language"] != "pt-BR") {
             Language = req.headers["accept-language"].split("-")[0];
         } else {
             Language = req.headers["accept-language"];
@@ -200,6 +200,7 @@ function getContentPages(req) {
 
     const modes = ["saveTheWorldUnowned", "battleRoyale", "creative", "saveTheWorld"];
     const news = ["savetheworldnews", "battleroyalenews"]
+    const motdnews = ["battleroyalenews", "battleroyalenewsv2"]
 
     try {
         modes.forEach(mode => {
@@ -209,12 +210,21 @@ function getContentPages(req) {
     } catch (err) {}
 
     try {
-        if (memory.season < 5 || (memory.season == 5 && Number(memory.build.toString().split(".")[1]) < 30)) { 
+        if (memory.build < 5.30) { 
             news.forEach(mode => {
-                contentpages[mode].news.messages[0].image = "https://cdn.discordapp.com/attachments/927739901540188200/930879507496308736/discord.png";
-                contentpages[mode].news.messages[1].image = "https://cdn.discordapp.com/attachments/927739901540188200/930879519882088508/lawin.png";
+                contentpages[mode].news.messages[0].image = "https://fortnite-public-service-prod11.ol.epicgames.com/images/discord-s.png";
+                contentpages[mode].news.messages[1].image = "https://fortnite-public-service-prod11.ol.epicgames.com/images/lawin-s.png";
             })
         }
+    } catch (err) {}
+
+    try {
+        motdnews.forEach(news => {
+            contentpages[news].news.motds.forEach(motd => {
+                motd.title = motd.title[Language];
+                motd.body = motd.body[Language];
+            })
+        })
     } catch (err) {}
 
     try {
@@ -239,7 +249,16 @@ function getContentPages(req) {
         }
 
         if (memory.season == 20) {
-            contentpages.dynamicbackgrounds.backgrounds.backgrounds[0].backgroundimage = "https://cdn2.unrealengine.com/t-bp20-lobby-2048x1024-d89eb522746c.png";
+            if (memory.build == 20.40) {
+                contentpages.dynamicbackgrounds.backgrounds.backgrounds[0].backgroundimage = "https://cdn2.unrealengine.com/t-bp20-40-armadillo-glowup-lobby-2048x2048-2048x2048-3b83b887cc7f.jpg"
+            }
+            else {
+                contentpages.dynamicbackgrounds.backgrounds.backgrounds[0].backgroundimage = "https://cdn2.unrealengine.com/t-bp20-lobby-2048x1024-d89eb522746c.png";
+            }
+        }
+
+        if (memory.season == 21) {
+            contentpages.dynamicbackgrounds.backgrounds.backgrounds[0].backgroundimage = "https://cdn2.unrealengine.com/s21-lobby-background-2048x1024-2e7112b25dc3.jpg"
         }
     } catch (err) {}
 

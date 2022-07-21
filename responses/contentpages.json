@@ -209,7 +209,7 @@
       "_type": "Battle Royale News",
       "messages": [
         {
-          "image": "https://cdn.discordapp.com/attachments/927739901540188200/930882355818823720/1_of9OCSRWoAoS3_lNVKqM2g.png",
+          "image": "https://fortnite-public-service-prod11.ol.epicgames.com/images/discord.png",
           "hidden": false,
           "_type": "CommonUI Simple Message Base",
           "adspace": "DISCORD!",
@@ -218,7 +218,7 @@
           "spotlight": false
         },
         {
-          "image": "https://cdn.discordapp.com/attachments/927739901540188200/930882658546876506/lawin.jpg",
+          "image": "https://fortnite-public-service-prod11.ol.epicgames.com/images/lawin.jpg",
           "hidden": false,
           "_type": "CommonUI Simple Message Base",
           "adspace": "ENJOY!",
@@ -434,6 +434,11 @@
           "_type": "FortPlaylistInfo"
         },
         {
+          "image": "https://cdn2.unrealengine.com/br06-teamrumble-800x450-800x450-a2265b85af06.jpg",
+          "playlist_name": "Playlist_Creative_TDM_v1",
+          "_type": "FortPlaylistInfo"
+        },
+        {
           "image": "https://cdn2.unrealengine.com/Fortnite/fortnite-game/playlistinformation/EN_CM09_BeachAssaultCreativeLTM_ContestWinner_ModeTile-1024x512-9cdeb2e0ea37179a37d3384cf73c9949d2d19546.jpg",
           "playlist_name": "Playlist_Creative_BeachAssault",
           "violator": "PLAYER MADE",
@@ -640,12 +645,12 @@
           "_type": "FortPlaylistInfo"
         },
         {
-          "image": "https://i.imgur.com/Xm1p8oo.jpg",
+          "image": "https://cdn2.unrealengine.com/Fortnite/fortnite-game/playlistinformation/CM_LobbyTileArt-1024x512-fbcd48db36552ccb1ab4021b722ea29d515377cc.jpg",
           "playlist_name": "Playlist_PlaygroundV2",
           "_type": "FortPlaylistInfo"
         },
         {
-          "image": "https://i.imgur.com/Xm1p8oo.jpg",
+          "image": "https://cdn2.unrealengine.com/Fortnite/fortnite-game/playlisttiles/BR_LTM-Tile_Playground-1024x512-53db8a4b5fb41251af279eaf923bc00ecbc17792.jpg",
           "playlist_name": "Playlist_Playground",
           "_type": "FortPlaylistInfo"
         },
@@ -1137,7 +1142,7 @@
           "_type": "FortPlaylistInfo"
         },
         {
-          "image": "https://i.imgur.com/r5Nyhn2.jpg",
+          "image": "https://cdn2.unrealengine.com/Fortnite/fortnite-game/playlisttiles/LTM_50v50-1024x512-788bf1a67426f54307c4296123ac2d3ff8cc0d6c.png",
           "playlist_name": "Playlist_50v50",
           "_type": "FortPlaylistInfo"
         },
@@ -1147,14 +1152,14 @@
           "_type": "FortPlaylistInfo"
         },
         {
-          "image": "https://i.imgur.com/zr4Fnnp.jpg",
+          "image": "https://cdn2.unrealengine.com/Fortnite/fortnite-game/playlisttiles/BR_LobbyTileArt_Solo-512x512-24446ea2a54612c5604ecf0e30475b4dec81c3bc.png",
           "playlist_name": "Playlist_DefaultSolo",
           "hidden": false,
           "special_border": "None",
           "_type": "FortPlaylistInfo"
         },
         {
-          "image": "https://i.imgur.com/99n3n0m.jpg",
+          "image": "https://cdn2.unrealengine.com/Fortnite/fortnite-game/playlisttiles/BR_LobbyTileArt_Duo-512x512-5dea8dfae97bddcd4e204dd47bfb245d3f68fc7b.png",
           "playlist_name": "Playlist_DefaultDuo",
           "hidden": false,
           "special_border": "None",
@@ -1166,8 +1171,15 @@
           "_type": "FortPlaylistInfo"
         },
         {
-          "image": "https://i.imgur.com/YA4ssMv.jpg",
+          "image": "https://cdn2.unrealengine.com/Fortnite/fortnite-game/playlisttiles/BR_LobbyTileArt_Squad-512x512-5225ec6ca3265611957834c2c549754fe1778449.png",
           "playlist_name": "Playlist_DefaultSquad",
+          "hidden": false,
+          "special_border": "None",
+          "_type": "FortPlaylistInfo"
+        },
+        {
+          "image": "https://cdn2.unrealengine.com/Fortnite/fortnite-game/playlistinformation/v12/partyroyaleupdated/EN_12PR_In-Game_Launch_ModeTile-1024x512-13cf734f07363d61f6fec3a2f5486a3550035c32.jpg",
+          "playlist_name": "Playlist_Papaya",
           "hidden": false,
           "special_border": "None",
           "_type": "FortPlaylistInfo"
@@ -1179,15 +1191,171 @@
     "lastModified": "2019-10-29T14:05:17.030Z",
     "_locale": "en-US"
   },
+  "playlistimages": {
+    "playlistimages": {
+      "images": [
+        {
+          "image": "https://cdn2.unrealengine.com/Fortnite/fortnite-game/playlisttiles/BR04_LTM_SolidGold-1024x512-36e202c36d3ef3bd151a97c060401d33ac6f549a.png",
+          "_type": "PlaylistImageEntry",
+          "playlistname": "Playlist_50v50SAU"
+        },
+        {
+          "image": "https://cdn2.unrealengine.com/Fortnite/fortnite-game/playlisttiles/BR04_LTM_SolidGold-1024x512-36e202c36d3ef3bd151a97c060401d33ac6f549a.png",
+          "_type": "PlaylistImageEntry",
+          "playlistname": "Playlist_SolidGold_Duos"
+        },
+        {
+          "image": "https://cdn2.unrealengine.com/Fortnite/fortnite-game/playlisttiles/BR05_LobbyTile_LTM_ScoreRoyale-1024x512-b608aaf7840cdf6b7a702c5cbe1848a2247516d6.jpg",
+          "_type": "PlaylistImageEntry",
+          "playlistname": "Playlist_Score_Squads"
+        },
+        {
+          "image": "https://cdn2.unrealengine.com/Fortnite/fortnite-game/playlisttiles/BR05_LobbyTile_LTM_ScoreRoyale-1024x512-b608aaf7840cdf6b7a702c5cbe1848a2247516d6.jpg",
+          "_type": "PlaylistImageEntry",
+          "playlistname": "Playlist_Score_Duos"
+        },
+        {
+          "image": "https://cdn2.unrealengine.com/Fortnite/fortnite-game/playlisttiles/BR05_LobbyTile_LTM_ScoreRoyale-1024x512-b608aaf7840cdf6b7a702c5cbe1848a2247516d6.jpg",
+          "_type": "PlaylistImageEntry",
+          "playlistname": "Playlist_Score_Solo"
+        },
+        {
+          "image": "https://cdn2.unrealengine.com/Fortnite/fortnite-game/playlisttiles/BR05_LTM_Soaring50s-1024x512-80762dcc260cc959c11dac2ca2f6ae176eb63ef3.jpg",
+          "_type": "PlaylistImageEntry",
+          "playlistname": "Playlist_Soaring_50s"
+        },
+        {
+          "image": "https://cdn2.unrealengine.com/Fortnite/fortnite-game/playlisttiles/BR05_LobbyTile_LTM-Steady-Storm-1024x512-f38e603ed9c80b6210a25c4737d3d8b675b8d28e.jpg",
+          "_type": "PlaylistImageEntry",
+          "playlistname": "Playlist_Steady_Squads"
+        },
+        {
+          "image": "https://cdn2.unrealengine.com/Fortnite/fortnite-game/playlisttiles/BR05_LobbyTile_LTM-Steady-Storm-1024x512-f38e603ed9c80b6210a25c4737d3d8b675b8d28e.jpg",
+          "_type": "PlaylistImageEntry",
+          "playlistname": "Playlist_Steady_Duos"
+        },
+        {
+          "image": "https://cdn2.unrealengine.com/Fortnite/fortnite-game/playlisttiles/BR05_LobbyTile_LTM-Steady-Storm-1024x512-f38e603ed9c80b6210a25c4737d3d8b675b8d28e.jpg",
+          "_type": "PlaylistImageEntry",
+          "playlistname": "Playlist_Steady_Solo"
+        },
+        {
+          "image": "https://cdn2.unrealengine.com/Fortnite/fortnite-game/playlisttiles/BR05_LTM_FlyExplosives-1024x512-6283e3392b3aa44794dac64423b22606f8773503.png",
+          "_type": "PlaylistImageEntry",
+          "playlistname": "Playlist_FlyExplosives_Squads"
+        },
+        {
+          "image": "https://cdn2.unrealengine.com/Fortnite/fortnite-game/playlisttiles/BR05_LTM_FlyExplosives-1024x512-6283e3392b3aa44794dac64423b22606f8773503.png",
+          "_type": "PlaylistImageEntry",
+          "playlistname": "Playlist_FlyExplosives_Duos"
+        },
+        {
+          "image": "https://cdn2.unrealengine.com/Fortnite/fortnite-game/playlisttiles/BR05_LTM_FlyExplosives-1024x512-6283e3392b3aa44794dac64423b22606f8773503.png",
+          "_type": "PlaylistImageEntry",
+          "playlistname": "Playlist_FlyExplosives_Solo"
+        },
+        {
+          "image": "https://cdn2.unrealengine.com/Fortnite/fortnite-game/playlisttiles/BR04_LTM_SniperShootout-1024x512-bcaf8004961e4e374d0603813f840f4b575d230b.jpg",
+          "_type": "PlaylistImageEntry",
+          "playlistname": "Playlist_Snipers_Squads"
+        },
+        {
+          "image": "https://cdn2.unrealengine.com/Fortnite/fortnite-game/playlisttiles/BR04_LTM_SniperShootout-1024x512-bcaf8004961e4e374d0603813f840f4b575d230b.jpg",
+          "_type": "PlaylistImageEntry",
+          "playlistname": "Playlist_Snipers_Duos"
+        },
+        {
+          "image": "https://cdn2.unrealengine.com/Fortnite/fortnite-game/playlisttiles/BR04_LTM_SniperShootout-1024x512-bcaf8004961e4e374d0603813f840f4b575d230b.jpg",
+          "_type": "PlaylistImageEntry",
+          "playlistname": "Playlist_Snipers_Solo"
+        },
+        {
+          "image": "https://cdn2.unrealengine.com/Fortnite/fortnite-game/playlisttiles/BR04_LTM_5x20-1024x512-451b402db5751c25a1e7616930c5ae37d8b20710.png",
+          "_type": "PlaylistImageEntry",
+          "playlistname": "Playlist_5x20"
+        },
+        {
+          "image": "https://cdn2.unrealengine.com/Fortnite/fortnite-game/playlisttiles/BR04_LTM_Blitz-1024x512-98c63417095442c210177ee9b5f3463d0003cd5a.png",
+          "_type": "PlaylistImageEntry",
+          "playlistname": "Playlist_Blitz_Solo"
+        },
+        {
+          "image": "https://cdn2.unrealengine.com/Fortnite/fortnite-game/playlisttiles/BR04_LTM_Blitz-1024x512-98c63417095442c210177ee9b5f3463d0003cd5a.png",
+          "_type": "PlaylistImageEntry",
+          "playlistname": "Playlist_Blitz_Duos"
+        },
+        {
+          "image": "https://cdn2.unrealengine.com/Fortnite/fortnite-game/playlisttiles/BR04_LTM_Blitz-1024x512-98c63417095442c210177ee9b5f3463d0003cd5a.png",
+          "_type": "PlaylistImageEntry",
+          "playlistname": "Playlist_Blitz_Squad"
+        },
+        {
+          "image": "https://cdn2.unrealengine.com/Fortnite/fortnite-game/playlisttiles/BR04_LTM_CloseEncounters-1024x512-e617b7603adb59353ba81ed392174859c0c6807b.jpg",
+          "_type": "PlaylistImageEntry",
+          "playlistname": "Playlist_Close_Solo"
+        },
+        {
+          "image": "https://cdn2.unrealengine.com/Fortnite/fortnite-game/playlisttiles/BR04_LTM_CloseEncounters-1024x512-e617b7603adb59353ba81ed392174859c0c6807b.jpg",
+          "_type": "PlaylistImageEntry",
+          "playlistname": "Playlist_Close_Squad"
+        },
+        {
+          "image": "https://cdn2.unrealengine.com/Fortnite/fortnite-game/playlisttiles/BR04_LTM_CloseEncounters-1024x512-e617b7603adb59353ba81ed392174859c0c6807b.jpg",
+          "_type": "PlaylistImageEntry",
+          "playlistname": "Playlist_Close_Duos"
+        },
+        {
+          "image": "https://cdn2.unrealengine.com/Fortnite/fortnite-game/playlisttiles/BR04_LTM_SolidGold-1024x512-36e202c36d3ef3bd151a97c060401d33ac6f549a.png",
+          "_type": "PlaylistImageEntry",
+          "playlistname": "Playlist_SolidGold_Solo"
+        },
+        {
+          "image": "https://cdn2.unrealengine.com/Fortnite/fortnite-game/playlisttiles/BR04_LTM_SolidGold-1024x512-36e202c36d3ef3bd151a97c060401d33ac6f549a.png",
+          "_type": "PlaylistImageEntry",
+          "playlistname": "Playlist_SolidGold_Squads"
+        },
+        {
+          "image": "https://cdn2.unrealengine.com/Fortnite/fortnite-game/playlisttiles/BR_LTM-Tile_Playground-1024x512-53db8a4b5fb41251af279eaf923bc00ecbc17792.jpg",
+          "_type": "PlaylistImageEntry",
+          "playlistname": "Playlist_Playground"
+        },
+        {
+          "image": "https://cdn2.unrealengine.com/Fortnite/fortnite-game/playlisttiles/LTM_50v50-1024x512-788bf1a67426f54307c4296123ac2d3ff8cc0d6c.png",
+          "_type": "PlaylistImageEntry",
+          "playlistname": "Playlist_50v50"
+        },
+        {
+          "image": "https://cdn2.unrealengine.com/Fortnite/fortnite-game/playlisttiles/BR_LobbyTileArt_Solo-512x512-24446ea2a54612c5604ecf0e30475b4dec81c3bc.png",
+          "_type": "PlaylistImageEntry",
+          "playlistname": "Playlist_DefaultSolo"
+        },
+        {
+          "image": "https://cdn2.unrealengine.com/Fortnite/fortnite-game/playlisttiles/BR_LobbyTileArt_Duo-512x512-5dea8dfae97bddcd4e204dd47bfb245d3f68fc7b.png",
+          "_type": "PlaylistImageEntry",
+          "playlistname": "Playlist_DefaultDuo"
+        },
+        {
+          "image": "https://cdn2.unrealengine.com/Fortnite/fortnite-game/playlisttiles/BR_LobbyTileArt_Squad-512x512-5225ec6ca3265611957834c2c549754fe1778449.png",
+          "_type": "PlaylistImageEntry",
+          "playlistname": "Playlist_DefaultSquad"
+        }
+      ],
+      "_type": "PlaylistImageList"
+    },
+    "_title": "playlistimages",
+    "_activeDate": "2018-08-07T02:14:56.108Z",
+    "lastModified": "2018-08-28T15:50:37.174Z",
+    "_locale": "en-US"
+  },
   "tournamentinformation": {
     "tournament_info": {
       "tournaments": [
         {
           "title_color": "FFFFFF",
-          "loading_screen_image": "https://cdn.discordapp.com/attachments/927739901540188200/930882658546876506/lawin.jpg",
+          "loading_screen_image": "https://fortnite-public-service-prod11.ol.epicgames.com/images/lawin.jpg",
           "background_text_color": "1B1B1B",
           "background_right_color": "DD091A",
-          "poster_back_image": "https://cdn.discordapp.com/attachments/927739901540188200/930882658546876506/lawin.jpg",
+          "poster_back_image": "https://fortnite-public-service-prod11.ol.epicgames.com/images/lawin.jpg",
           "_type": "Tournament Display Info",
           "pin_earned_text": "lawin is the winner!",
           "tournament_display_id": "s11_switchcup",
@@ -1195,7 +1363,7 @@
           "schedule_info": "November 2nd & 3rd: 2pm - 5pm JST",
           "primary_color": "FFFFFF",
           "flavor_description": "cool",
-          "poster_front_image": "https://cdn.discordapp.com/attachments/927739901540188200/930882658546876506/lawin.jpg",
+          "poster_front_image": "https://fortnite-public-service-prod11.ol.epicgames.com/images/lawin.jpg",
           "short_format_title": "Event Sessions",
           "title_line_2": "boomer",
           "title_line_1": "Solo",
@@ -1205,7 +1373,7 @@
           "long_format_title": "nice",
           "poster_fade_color": "DD091A",
           "secondary_color": "1B1B1B",
-          "playlist_tile_image": "https://cdn.discordapp.com/attachments/927739901540188200/930882658546876506/lawin.jpg",
+          "playlist_tile_image": "https://fortnite-public-service-prod11.ol.epicgames.com/images/lawin.jpg",
           "base_color": "FFFFFF"
         }
       ],
@@ -5941,7 +6109,7 @@
     "_locale": "en-US"
   },
   "lobby": {
-    "backgroundimage": "https://cdn.discordapp.com/attachments/927739901540188200/930883349831118878/Fortnite_fortnite-game_lobby_T_Lobby_SeasonX-2048x1024-24e02780ed533da8001016f4e6fb14dd15e2f860.png",
+    "backgroundimage": "https://fortnite-public-service-prod11.ol.epicgames.com/images/seasonx.png",
     "stage": "seasonx",
     "_title": "lobby",
     "_activeDate": "2019-05-31T21:24:39.892Z",
@@ -5950,26 +6118,61 @@
   },
   "battleroyalenews": {
     "news": {
-      "platform_messages": [
+      "_type": "Battle Royale News",
+      "motds": [
         {
+          "entryType": "Website",
+          "image": "https://fortnite-public-service-prod11.ol.epicgames.com/images/motd.png",
+          "tileImage": "https://fortnite-public-service-prod11.ol.epicgames.com/images/motd-s.png",
+          "videoMute": false,
           "hidden": false,
-          "_type": "CommonUI Simple Message Platform",
-          "message": {
-            "image": "https://cdn2.unrealengine.com/Fortnite/fortnite-game/battleroyalenews/v11/v1101/11BR_EpicGamesAndroidLauncherAssets_MOTD-1024x512-18dd3ddb2b4297abde65e0d898244181f4581326.jpg",
-            "hidden": false,
-            "_type": "CommonUI Simple Message Base",
-            "subgame": "br",
-            "title": "Epic Games app",
-            "body": "The Fortnite Installer on Android is now the Epic Games app!\nUse it to download Fortnite on Android and check out all that's new in #FortniteChapter2",
-            "spotlight": false
+          "tabTitleOverride": "LawinServer",
+          "_type": "CommonUI Simple Message MOTD",
+          "title": {
+            "ar": "مرحبًا بك في LawinServer!",
+            "en": "Welcome to LawinServer!",
+            "de": "Willkommen bei LawinServer!",
+            "es": "¡Bienvenidos a LawinServer!",
+            "es-419": "¡Bienvenidos a LawinServer!",
+            "fr": "Bienvenue sur LawinServer !",
+            "it": "Benvenuto in LawinServer!",
+            "ja": "LawinServerへようこそ！",
+            "ko": "LawinServer에 오신 것을 환영합니다!",
+            "pl": "Witaj w LawinServerze!",
+            "pt-BR": "Bem-vindo ao LawinServer!",
+            "ru": "Добро пожаловать в LawinServer!",
+            "tr": "LavinServer'a Hoş Geldiniz!"
           },
-          "platform": "android"
+          "body": {
+            "ar": "استمتع بتجربة لعب استثنائية!",
+            "en": "Have a phenomenal gaming experience!",
+            "de": "Wünsche allen ein wunderbares Spielerlebnis!",
+            "es": "¡Que disfrutes de tu experiencia de videojuegos!",
+            "es-419": "¡Ten una experiencia de juego espectacular!",
+            "fr": "Un bon jeu à toutes et à tous !",
+            "it": "Ti auguriamo un'esperienza di gioco fenomenale!",
+            "ja": "驚きの体験をしよう！",
+            "ko": "게임에서 환상적인 경험을 해보세요!",
+            "pl": "Życzymy fenomenalnej gry!",
+            "pt-BR": "Tenha uma experiência de jogo fenomenal!",
+            "ru": "Желаю невероятно приятной игры!",
+            "tr": "Muhteşem bir oyun deneyimi yaşamanı dileriz!"
+          },
+          "offerAction": "ShowOfferDetails",
+          "videoLoop": false,
+          "videoStreamingEnabled": false,
+          "sortingPriority": 90,
+          "websiteButtonText": "Discord",
+          "websiteURL": "https://discord.gg/KJ8UaHZ",
+          "id": "61fb3dd8-f23d-45cc-9058-058ab223ba5c",
+          "videoAutoplay": false,
+          "videoFullscreen": false,
+          "spotlight": false
         }
       ],
-      "_type": "Battle Royale News",
       "messages": [
         {
-          "image": "https://cdn.discordapp.com/attachments/927739901540188200/930882355818823720/1_of9OCSRWoAoS3_lNVKqM2g.png",
+          "image": "https://fortnite-public-service-prod11.ol.epicgames.com/images/discord.png",
           "hidden": false,
           "_type": "CommonUI Simple Message Base",
           "adspace": "DISCORD!",
@@ -5978,7 +6181,7 @@
           "spotlight": false
         },
         {
-          "image": "https://cdn.discordapp.com/attachments/927739901540188200/930882658546876506/lawin.jpg",
+          "image": "https://fortnite-public-service-prod11.ol.epicgames.com/images/lawin.jpg",
           "hidden": false,
           "_type": "CommonUI Simple Message Base",
           "adspace": "ENJOY!",
@@ -5995,6 +6198,70 @@
     "alwaysShow": false,
     "_activeDate": "2018-08-17T16:00:00.000Z",
     "lastModified": "2019-10-31T20:29:39.334Z",
+    "_locale": "en-US"
+  },
+  "battleroyalenewsv2": {
+    "news": {
+      "motds": [
+        {
+          "entryType": "Website",
+          "image": "https://fortnite-public-service-prod11.ol.epicgames.com/images/motd.png",
+          "tileImage": "https://fortnite-public-service-prod11.ol.epicgames.com/images/motd-s.png",
+          "videoMute": false,
+          "hidden": false,
+          "tabTitleOverride": "LawinServer",
+          "_type": "CommonUI Simple Message MOTD",
+          "title": {
+            "ar": "مرحبًا بك في LawinServer!",
+            "en": "Welcome to LawinServer!",
+            "de": "Willkommen bei LawinServer!",
+            "es": "¡Bienvenidos a LawinServer!",
+            "es-419": "¡Bienvenidos a LawinServer!",
+            "fr": "Bienvenue sur LawinServer !",
+            "it": "Benvenuto in LawinServer!",
+            "ja": "LawinServerへようこそ！",
+            "ko": "LawinServer에 오신 것을 환영합니다!",
+            "pl": "Witaj w LawinServerze!",
+            "pt-BR": "Bem-vindo ao LawinServer!",
+            "ru": "Добро пожаловать в LawinServer!",
+            "tr": "LavinServer'a Hoş Geldiniz!"
+          },
+          "body": {
+            "ar": "استمتع بتجربة لعب استثنائية!",
+            "en": "Have a phenomenal gaming experience!",
+            "de": "Wünsche allen ein wunderbares Spielerlebnis!",
+            "es": "¡Que disfrutes de tu experiencia de videojuegos!",
+            "es-419": "¡Ten una experiencia de juego espectacular!",
+            "fr": "Un bon jeu à toutes et à tous !",
+            "it": "Ti auguriamo un'esperienza di gioco fenomenale!",
+            "ja": "驚きの体験をしよう！",
+            "ko": "게임에서 환상적인 경험을 해보세요!",
+            "pl": "Życzymy fenomenalnej gry!",
+            "pt-BR": "Tenha uma experiência de jogo fenomenal!",
+            "ru": "Желаю невероятно приятной игры!",
+            "tr": "Muhteşem bir oyun deneyimi yaşamanı dileriz!"
+          },
+          "offerAction": "ShowOfferDetails",
+          "videoLoop": false,
+          "videoStreamingEnabled": false,
+          "sortingPriority": 90,
+          "websiteButtonText": "Discord",
+          "websiteURL": "https://discord.gg/KJ8UaHZ",
+          "id": "61fb3dd8-f23d-45cc-9058-058ab223ba5c",
+          "videoAutoplay": false,
+          "videoFullscreen": false,
+          "spotlight": false
+        }
+      ],
+      "_type": "Battle Royale News v2"
+    },
+    "jcr:isCheckedOut": true,
+    "_title": "battleroyalenewsv2",
+    "_noIndex": false,
+    "alwaysShow": false,
+    "jcr:baseVersion": "a7ca237317f1e7721def6e-9f96-4c43-b429-30c794953b04",
+    "_activeDate": "2020-01-21T14:00:00.000Z",
+    "lastModified": "2021-09-14T16:31:00.888Z",
     "_locale": "en-US"
   },
   "dynamicbackgrounds": {
@@ -6024,7 +6291,7 @@
       "_type": "Battle Royale News",
       "messages": [
         {
-          "image": "https://cdn.discordapp.com/attachments/927739901540188200/930882355818823720/1_of9OCSRWoAoS3_lNVKqM2g.png",
+          "image": "https://fortnite-public-service-prod11.ol.epicgames.com/images/discord.png",
           "hidden": false,
           "_type": "CommonUI Simple Message Base",
           "adspace": "DISCORD!",
@@ -6033,7 +6300,7 @@
           "spotlight": false
         },
         {
-          "image": "https://cdn.discordapp.com/attachments/927739901540188200/930882658546876506/lawin.jpg",
+          "image": "https://fortnite-public-service-prod11.ol.epicgames.com/images/lawin.jpg",
           "hidden": false,
           "_type": "CommonUI Simple Message Base",
           "adspace": "ENJOY!",
