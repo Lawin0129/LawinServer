@@ -191,7 +191,7 @@ function getContentPages(req) {
     var Language = "en";
 
     if (req.headers["accept-language"]) {
-        if (req.headers["accept-language"].includes("-") && req.headers["accept-language"] != "es-419") {
+        if (req.headers["accept-language"].includes("-") && req.headers["accept-language"] != "es-419" && req.headers["accept-language"] != "pt-BR") {
             Language = req.headers["accept-language"].split("-")[0];
         } else {
             Language = req.headers["accept-language"];
@@ -200,6 +200,7 @@ function getContentPages(req) {
 
     const modes = ["saveTheWorldUnowned", "battleRoyale", "creative", "saveTheWorld"];
     const news = ["savetheworldnews", "battleroyalenews"]
+    const motdnews = ["battleroyalenews", "battleroyalenewsv2"]
 
     try {
         modes.forEach(mode => {
@@ -215,6 +216,15 @@ function getContentPages(req) {
                 contentpages[mode].news.messages[1].image = "https://fortnite-public-service-prod11.ol.epicgames.com/images/lawin-s.png";
             })
         }
+    } catch (err) {}
+
+    try {
+        motdnews.forEach(news => {
+            contentpages[news].news.motds.forEach(motd => {
+                motd.title = motd.title[Language];
+                motd.body = motd.body[Language];
+            })
+        })
     } catch (err) {}
 
     try {

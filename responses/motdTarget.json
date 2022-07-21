@@ -1,0 +1,67 @@
+{
+  "contentType": "collection",
+  "contentId": "motd-default-collection",
+  "tcId": "634e8e85-e2fc-4c68-bb10-93604cf6605f",
+  "contentItems": [
+    {
+      "contentType": "content-item",
+      "contentId": "46874c56-0973-4cbe-ac98-b580c5b36df5",
+      "tcId": "61fb3dd8-f23d-45cc-9058-058ab223ba5c",
+      "contentFields": {
+        "body": {
+          "ar": "استمتع بتجربة لعب استثنائية!",
+          "en": "Have a phenomenal gaming experience!",
+          "de": "Wünsche allen ein wunderbares Spielerlebnis!",
+          "es": "¡Que disfrutes de tu experiencia de videojuegos!",
+          "es-419": "¡Ten una experiencia de juego espectacular!",
+          "fr": "Un bon jeu à toutes et à tous !",
+          "it": "Ti auguriamo un'esperienza di gioco fenomenale!",
+          "ja": "驚きの体験をしよう！",
+          "ko": "게임에서 환상적인 경험을 해보세요!",
+          "pl": "Życzymy fenomenalnej gry!",
+          "pt-BR": "Tenha uma experiência de jogo fenomenal!",
+          "ru": "Желаю невероятно приятной игры!",
+          "tr": "Muhteşem bir oyun deneyimi yaşamanı dileriz!"
+        },
+        "entryType": "Website",
+        "image": [
+          {
+            "width": 1920,
+            "height": 1080,
+            "url": "https://fortnite-public-service-prod11.ol.epicgames.com/images/motd.png"
+          }
+        ],
+        "tabTitleOverride": "LawinServer",
+        "tileImage": [
+          {
+            "width": 1024,
+            "height": 512,
+            "url": "https://fortnite-public-service-prod11.ol.epicgames.com/images/motd-s.png"
+          }
+        ],
+        "title": {
+          "ar": "مرحبًا بك في LawinServer!",
+          "en": "Welcome to LawinServer!",
+          "de": "Willkommen bei LawinServer!",
+          "es": "¡Bienvenidos a LawinServer!",
+          "es-419": "¡Bienvenidos a LawinServer!",
+          "fr": "Bienvenue sur LawinServer !",
+          "it": "Benvenuto in LawinServer!",
+          "ja": "LawinServerへようこそ！",
+          "ko": "LawinServer에 오신 것을 환영합니다!",
+          "pl": "Witaj w LawinServerze!",
+          "pt-BR": "Bem-vindo ao LawinServer!",
+          "ru": "Добро пожаловать в LawinServer!",
+          "tr": "LavinServer'a Hoş Geldiniz!"
+        },
+        "videoAutoplay": false,
+        "videoLoop": false,
+        "videoMute": false,
+        "videoStreamingEnabled": false,
+        "websiteButtonText": "Discord",
+        "websiteURL": "https://discord.gg/KJ8UaHZ"
+      },
+      "contentSchemaName": "MotdWebsiteNewsWithVideo"
+    }
+  ]
+}
