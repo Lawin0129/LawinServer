@@ -241,7 +241,7 @@
       "messages": [
         {
           "layout": "Right Image",
-          "image": "https://cdn2.unrealengine.com/Fortnite/fortnite-game/battle-pass-about/Season_8/11BR_Launch_Upsell_HowDoesItWork-1024x1024-faa688dad8111f0a944c351dd7b11e4bff3562aa.png",
+          "image": "https://fortnite-public-service-prod11.ol.epicgames.com/images/contentpages/11BR_Launch_Upsell_HowDoesItWork-1024x1024-faa688dad8111f0a944c351dd7b11e4bff3562aa.png",
           "hidden": false,
           "_type": "CommonUI Simple Message Base",
           "title": "HOW DOES IT WORK?",
@@ -250,7 +250,7 @@
         },
         {
           "layout": "Left Image",
-          "image": "https://cdn2.unrealengine.com/Fortnite/fortnite-game/battle-pass-about/Season_8/11BR_Launch_Upsell_WhatsInside-(1)-1024x1024-68356adb3844b46ada633ace2d168af74b446f35.png",
+          "image": "https://fortnite-public-service-prod11.ol.epicgames.com/images/contentpages/11BR_Launch_Upsell_WhatsInside-(1)-1024x1024-68356adb3844b46ada633ace2d168af74b446f35.png",
           "hidden": false,
           "_type": "CommonUI Simple Message Base",
           "title": "WHAT’S INSIDE?",
@@ -258,7 +258,7 @@
           "spotlight": false
         },
         {
-          "image": "https://cdn2.unrealengine.com/Fortnite/fortnite-game/battle-pass-about/Season_8/11BR_Launch_Upsell_Badges-1024x1024-94b54a7e241b5747d83095feb1e6fc330c49689f.png",
+          "image": "https://fortnite-public-service-prod11.ol.epicgames.com/images/contentpages/11BR_Launch_Upsell_Badges-1024x1024-94b54a7e241b5747d83095feb1e6fc330c49689f.png",
           "hidden": false,
           "_type": "CommonUI Simple Message Base",
           "title": "New This Season: Medals! ",
@@ -361,7 +361,7 @@
           "_type": "FortPlaylistInfo"
         },
         {
-          "image": "https://cdn2.unrealengine.com/Fortnite/fortnite-game/playlisttiles/BR_LTM-Tile_Playground-1024x512-53db8a4b5fb41251af279eaf923bc00ecbc17792.jpg",
+          "image": "https://fortnite-public-service-prod11.ol.epicgames.com/images/contentpages/BR_LTM-Tile_Playground-1024x512-53db8a4b5fb41251af279eaf923bc00ecbc17792.jpg",
           "playlist_name": "Playlist_Creative_PlayOnly_40",
           "special_border": "None",
           "_type": "FortPlaylistInfo"
@@ -645,12 +645,12 @@
           "_type": "FortPlaylistInfo"
         },
         {
-          "image": "https://cdn2.unrealengine.com/Fortnite/fortnite-game/playlistinformation/CM_LobbyTileArt-1024x512-fbcd48db36552ccb1ab4021b722ea29d515377cc.jpg",
+          "image": "https://fortnite-public-service-prod11.ol.epicgames.com/images/contentpages/CM_LobbyTileArt-1024x512-fbcd48db36552ccb1ab4021b722ea29d515377cc.jpg",
           "playlist_name": "Playlist_PlaygroundV2",
           "_type": "FortPlaylistInfo"
         },
         {
-          "image": "https://cdn2.unrealengine.com/Fortnite/fortnite-game/playlisttiles/BR_LTM-Tile_Playground-1024x512-53db8a4b5fb41251af279eaf923bc00ecbc17792.jpg",
+          "image": "https://fortnite-public-service-prod11.ol.epicgames.com/images/contentpages/BR_LTM-Tile_Playground-1024x512-53db8a4b5fb41251af279eaf923bc00ecbc17792.jpg",
           "playlist_name": "Playlist_Playground",
           "_type": "FortPlaylistInfo"
         },
@@ -1142,7 +1142,7 @@
           "_type": "FortPlaylistInfo"
         },
         {
-          "image": "https://cdn2.unrealengine.com/Fortnite/fortnite-game/playlisttiles/LTM_50v50-1024x512-788bf1a67426f54307c4296123ac2d3ff8cc0d6c.png",
+          "image": "https://fortnite-public-service-prod11.ol.epicgames.com/images/contentpages/LTM_50v50-1024x512-788bf1a67426f54307c4296123ac2d3ff8cc0d6c.png",
           "playlist_name": "Playlist_50v50",
           "_type": "FortPlaylistInfo"
         },
@@ -1152,14 +1152,14 @@
           "_type": "FortPlaylistInfo"
         },
         {
-          "image": "https://cdn2.unrealengine.com/Fortnite/fortnite-game/playlisttiles/BR_LobbyTileArt_Solo-512x512-24446ea2a54612c5604ecf0e30475b4dec81c3bc.png",
+          "image": "https://fortnite-public-service-prod11.ol.epicgames.com/images/contentpages/BR_LobbyTileArt_Solo-512x512-24446ea2a54612c5604ecf0e30475b4dec81c3bc.png",
           "playlist_name": "Playlist_DefaultSolo",
           "hidden": false,
           "special_border": "None",
           "_type": "FortPlaylistInfo"
         },
         {
-          "image": "https://cdn2.unrealengine.com/Fortnite/fortnite-game/playlisttiles/BR_LobbyTileArt_Duo-512x512-5dea8dfae97bddcd4e204dd47bfb245d3f68fc7b.png",
+          "image": "https://fortnite-public-service-prod11.ol.epicgames.com/images/contentpages/BR_LobbyTileArt_Duo-512x512-5dea8dfae97bddcd4e204dd47bfb245d3f68fc7b.png",
           "playlist_name": "Playlist_DefaultDuo",
           "hidden": false,
           "special_border": "None",
@@ -1171,14 +1171,14 @@
           "_type": "FortPlaylistInfo"
         },
         {
-          "image": "https://cdn2.unrealengine.com/Fortnite/fortnite-game/playlisttiles/BR_LobbyTileArt_Squad-512x512-5225ec6ca3265611957834c2c549754fe1778449.png",
+          "image": "https://fortnite-public-service-prod11.ol.epicgames.com/images/contentpages/BR_LobbyTileArt_Squad-512x512-5225ec6ca3265611957834c2c549754fe1778449.png",
           "playlist_name": "Playlist_DefaultSquad",
           "hidden": false,
           "special_border": "None",
           "_type": "FortPlaylistInfo"
         },
         {
-          "image": "https://cdn2.unrealengine.com/Fortnite/fortnite-game/playlistinformation/v12/partyroyaleupdated/EN_12PR_In-Game_Launch_ModeTile-1024x512-13cf734f07363d61f6fec3a2f5486a3550035c32.jpg",
+          "image": "https://fortnite-public-service-prod11.ol.epicgames.com/images/contentpages/EN_12PR_In-Game_Launch_ModeTile-1024x512-13cf734f07363d61f6fec3a2f5486a3550035c32.jpg",
           "playlist_name": "Playlist_Papaya",
           "hidden": false,
           "special_border": "None",
@@ -1315,27 +1315,27 @@
           "playlistname": "Playlist_SolidGold_Squads"
         },
         {
-          "image": "https://cdn2.unrealengine.com/Fortnite/fortnite-game/playlisttiles/BR_LTM-Tile_Playground-1024x512-53db8a4b5fb41251af279eaf923bc00ecbc17792.jpg",
+          "image": "https://fortnite-public-service-prod11.ol.epicgames.com/images/contentpages/BR_LTM-Tile_Playground-1024x512-53db8a4b5fb41251af279eaf923bc00ecbc17792.jpg",
           "_type": "PlaylistImageEntry",
           "playlistname": "Playlist_Playground"
         },
         {
-          "image": "https://cdn2.unrealengine.com/Fortnite/fortnite-game/playlisttiles/LTM_50v50-1024x512-788bf1a67426f54307c4296123ac2d3ff8cc0d6c.png",
+          "image": "https://fortnite-public-service-prod11.ol.epicgames.com/images/contentpages/LTM_50v50-1024x512-788bf1a67426f54307c4296123ac2d3ff8cc0d6c.png",
           "_type": "PlaylistImageEntry",
           "playlistname": "Playlist_50v50"
         },
         {
-          "image": "https://cdn2.unrealengine.com/Fortnite/fortnite-game/playlisttiles/BR_LobbyTileArt_Solo-512x512-24446ea2a54612c5604ecf0e30475b4dec81c3bc.png",
+          "image": "https://fortnite-public-service-prod11.ol.epicgames.com/images/contentpages/BR_LobbyTileArt_Solo-512x512-24446ea2a54612c5604ecf0e30475b4dec81c3bc.png",
           "_type": "PlaylistImageEntry",
           "playlistname": "Playlist_DefaultSolo"
         },
         {
-          "image": "https://cdn2.unrealengine.com/Fortnite/fortnite-game/playlisttiles/BR_LobbyTileArt_Duo-512x512-5dea8dfae97bddcd4e204dd47bfb245d3f68fc7b.png",
+          "image": "https://fortnite-public-service-prod11.ol.epicgames.com/images/contentpages/BR_LobbyTileArt_Duo-512x512-5dea8dfae97bddcd4e204dd47bfb245d3f68fc7b.png",
           "_type": "PlaylistImageEntry",
           "playlistname": "Playlist_DefaultDuo"
         },
         {
-          "image": "https://cdn2.unrealengine.com/Fortnite/fortnite-game/playlisttiles/BR_LobbyTileArt_Squad-512x512-5225ec6ca3265611957834c2c549754fe1778449.png",
+          "image": "https://fortnite-public-service-prod11.ol.epicgames.com/images/contentpages/BR_LobbyTileArt_Squad-512x512-5225ec6ca3265611957834c2c549754fe1778449.png",
           "_type": "PlaylistImageEntry",
           "playlistname": "Playlist_DefaultSquad"
         }

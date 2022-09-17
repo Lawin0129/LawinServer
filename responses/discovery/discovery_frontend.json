@@ -18,7 +18,7 @@
                 "creatorName": "Epic",
                 "descriptionTags": [],
                 "metadata": {
-                  "image_url": "https://cdn2.unrealengine.com/solo-1920x1080-1920x1080-bc0a5455ce20.jpg",
+                  "image_url": "https://fortnite-public-service-prod11.ol.epicgames.com/images/discovery/solo-1920x1080-1920x1080-bc0a5455ce20.jpg",
                   "matchmaking": {
                     "override_playlist": "playlist_defaultsolo"
                   }
@@ -41,7 +41,7 @@
                 "creatorName": "Epic",
                 "descriptionTags": [],
                 "metadata": {
-                  "image_url": "https://cdn2.unrealengine.com/duos-1920x1080-1920x1080-5a411fe07b21.jpg",
+                  "image_url": "https://fortnite-public-service-prod11.ol.epicgames.com/images/discovery/duos-1920x1080-1920x1080-5a411fe07b21.jpg",
                   "matchmaking": {
                     "override_playlist": "playlist_defaultduo"
                   }
@@ -64,7 +64,7 @@
                 "creatorName": "Epic",
                 "descriptionTags": [],
                 "metadata": {
-                  "image_url": "https://cdn2.unrealengine.com/trios-1920x1080-1920x1080-d5054bb9691a.jpg",
+                  "image_url": "https://fortnite-public-service-prod11.ol.epicgames.com/images/discovery/trios-1920x1080-1920x1080-d5054bb9691a.jpg",
                   "matchmaking": {
                     "override_playlist": "playlist_trios"
                   }
@@ -87,7 +87,7 @@
                 "creatorName": "Epic",
                 "descriptionTags": [],
                 "metadata": {
-                  "image_url": "https://cdn2.unrealengine.com/squads-1920x1080-1920x1080-095c0732502e.jpg",
+                  "image_url": "https://fortnite-public-service-prod11.ol.epicgames.com/images/discovery/squads-1920x1080-1920x1080-095c0732502e.jpg",
                   "matchmaking": {
                     "override_playlist": "playlist_defaultsquad"
                   }
@@ -113,7 +113,7 @@
                 ],
                 "metadata": {
                   "ownership_token": "Token:campaignaccess",
-                  "image_url": "https://static-assets-prod.s3.amazonaws.com/fn/static/creative/Fortnite_STW.jpg",
+                  "image_url": "https://fortnite-public-service-prod11.ol.epicgames.com/images/discovery/Fortnite_STW.jpg",
                   "alt_introduction": {
                     "de": "Dränge die anstürmenden Monsterhorden zurück und erforsche eine weitläufige, zerstörbare Welt.  Baue riesige Festungen, stelle Waffen her, finde Beute und steige im Level auf!",
                     "ru": "Сдерживайте боем полчища монстров и исследуйте обширный разрушаемый мир.  Отстраивайте огромные форты, создавайте оружие, находите добычу и повышайте уровень.",
