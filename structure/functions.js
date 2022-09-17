@@ -243,22 +243,22 @@ function getContentPages(req) {
 
         if (memory.build == 19.01) {
             contentpages.dynamicbackgrounds.backgrounds.backgrounds[0].stage = "winter2021";
-            contentpages.dynamicbackgrounds.backgrounds.backgrounds[0].backgroundimage = "https://cdn2.unrealengine.com/t-bp19-lobby-xmas-2048x1024-f85d2684b4af.png";
-            contentpages.subgameinfo.battleroyale.image = "https://cdn2.unrealengine.com/19br-wf-subgame-select-512x1024-16d8bb0f218f.jpg";
+            contentpages.dynamicbackgrounds.backgrounds.backgrounds[0].backgroundimage = "https://fortnite-public-service-prod11.ol.epicgames.com/images/contentpages/t-bp19-lobby-xmas-2048x1024-f85d2684b4af.png";
+            contentpages.subgameinfo.battleroyale.image = "https://fortnite-public-service-prod11.ol.epicgames.com/images/contentpages/19br-wf-subgame-select-512x1024-16d8bb0f218f.jpg";
             contentpages.specialoffervideo.bSpecialOfferEnabled = "true";
         }
 
         if (memory.season == 20) {
-            contentpages.dynamicbackgrounds.backgrounds.backgrounds[0].backgroundimage = "https://cdn2.unrealengine.com/t-bp20-lobby-2048x1024-d89eb522746c.png";
+            contentpages.dynamicbackgrounds.backgrounds.backgrounds[0].backgroundimage = "https://fortnite-public-service-prod11.ol.epicgames.com/images/contentpages/t-bp20-lobby-2048x1024-d89eb522746c.png";
             if (memory.build == 20.40) {
-                contentpages.dynamicbackgrounds.backgrounds.backgrounds[0].backgroundimage = "https://cdn2.unrealengine.com/t-bp20-40-armadillo-glowup-lobby-2048x2048-2048x2048-3b83b887cc7f.jpg"
+                contentpages.dynamicbackgrounds.backgrounds.backgrounds[0].backgroundimage = "https://fortnite-public-service-prod11.ol.epicgames.com/images/contentpages/t-bp20-40-armadillo-glowup-lobby-2048x2048-2048x2048-3b83b887cc7f.jpg"
             }
         }
 
         if (memory.season == 21) {
-            contentpages.dynamicbackgrounds.backgrounds.backgrounds[0].backgroundimage = "https://cdn2.unrealengine.com/s21-lobby-background-2048x1024-2e7112b25dc3.jpg"
+            contentpages.dynamicbackgrounds.backgrounds.backgrounds[0].backgroundimage = "https://fortnite-public-service-prod11.ol.epicgames.com/images/contentpages/s21-lobby-background-2048x1024-2e7112b25dc3.jpg"
             if (memory.build == 21.30) {
-                contentpages.dynamicbackgrounds.backgrounds.backgrounds[0].backgroundimage = "https://cdn2.unrealengine.com/nss-lobbybackground-2048x1024-f74a14565061.jpg";
+                contentpages.dynamicbackgrounds.backgrounds.backgrounds[0].backgroundimage = "https://fortnite-public-service-prod11.ol.epicgames.com/images/contentpages/nss-lobbybackground-2048x1024-f74a14565061.jpg";
                 contentpages.dynamicbackgrounds.backgrounds.backgrounds[0].stage = "season2130";
             }
         }
