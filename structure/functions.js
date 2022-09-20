@@ -262,6 +262,10 @@ function getContentPages(req) {
                 contentpages.dynamicbackgrounds.backgrounds.backgrounds[0].stage = "season2130";
             }
         }
+
+        if (memory.season == 22) {
+            contentpages.dynamicbackgrounds.backgrounds.backgrounds[0].backgroundimage = "https://fortnite-public-service-prod11.ol.epicgames.com/images/contentpages/t-bp22-lobby-square-2048x2048-2048x2048-e4e90c6e8018.jpg"
+        }
     } catch (err) {}
 
     return contentpages;
