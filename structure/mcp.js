@@ -2495,23 +2495,33 @@ express.post("/fortnite/api/game/v2/profile/*/client/CraftWorldItem", async (req
         Item = JSON.parse(Body);
 
         var ItemType = 'Weapon:';
-        var ItemIDType = 'WID';
+        var ItemIDType = 'WID_';
         if (Item.templateId.split("_")[1].split("_")[0].toLowerCase() == "wall") {
             ItemType = "Trap:";
-            ItemIDType = "TID";
+            ItemIDType = "TID_";
         }
         if (Item.templateId.split("_")[1].split("_")[0].toLowerCase() == "floor") {
             ItemType = "Trap:";
-            ItemIDType = "TID";
+            ItemIDType = "TID_";
         }
         if (Item.templateId.split("_")[1].split("_")[0].toLowerCase() == "ceiling") {
             ItemType = "Trap:";
-            ItemIDType = "TID";
+            ItemIDType = "TID_";
         }
 
-        Item.quantity = req.body.numTimesToCraft || 1;
+        // Fixes for items that have a slightly different WID from the SID    
+        // Lightning Pistol    
+        if (Item.templateId.toLowerCase().startsWith("schematic:sid_pistol_vacuumtube_auto_")) {
+            Item.templateId = `Schematic:SID_Pistol_Auto_VacuumTube_${Item.templateId.substring(37)}`
+        }
+        // Snowball Launcher
+        if (Item.templateId.toLowerCase().startsWith("schematic:sid_launcher_grenade_winter_")) {
+            Item.templateId = `Schematic:SID_Launcher_WinterGrenade_${Item.templateId.substring(38)}`
+        }
+
         Item.templateId = Item.templateId.replace(/schematic:/ig, ItemType);
-        Item.templateId = Item.templateId.replace(/sid/ig, ItemIDType);
+        Item.templateId = Item.templateId.replace(/sid_/ig, ItemIDType);
+        Item.quantity = req.body.numTimesToCraft || 1;
         if (req.body.targetSchematicTier) {
             switch (req.body.targetSchematicTier.toLowerCase()) {
 
@@ -2520,7 +2530,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/CraftWorldItem", async (req
                         Item.attributes.level = 10;
                     }
                     Item.templateId = Item.templateId.substring(0, Item.templateId.length-3) + "T01"
-                    Item.templateId = Item.templateId.replace(/crystal/ig, "Ore")
+                    Item.templateId = Item.templateId.replace(/_crystal_/ig, "_Ore_")
                 break;
 
                 case "ii":
@@ -2528,7 +2538,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/CraftWorldItem", async (req
                         Item.attributes.level = 20;
                     }
                     Item.templateId = Item.templateId.substring(0, Item.templateId.length-3) + "T02"
-                    Item.templateId = Item.templateId.replace(/crystal/ig, "Ore")
+                    Item.templateId = Item.templateId.replace(/_crystal_/ig, "_Ore_")
                 break;
 
                 case "iii":
@@ -2536,7 +2546,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/CraftWorldItem", async (req
                         Item.attributes.level = 30;
                     }
                     Item.templateId = Item.templateId.substring(0, Item.templateId.length-3) + "T03"
-                    Item.templateId = Item.templateId.replace(/crystal/ig, "Ore")
+                    Item.templateId = Item.templateId.replace(/_crystal_/ig, "_Ore_")
                 break;
 
                 case "iv":
