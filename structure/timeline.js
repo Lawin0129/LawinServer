@@ -1,6 +1,10 @@
 const Express = require("express");
 const express = Express.Router();
 const functions = require("./functions.js");
+const fs = require("fs");
+const path = require("path");
+const iniparser = require("ini");
+const config = iniparser.parse(fs.readFileSync(path.join(__dirname, "..", "Config", "config.ini")).toString());
 
 express.get("/fortnite/api/calendar/v1/timeline", async (req, res) => {
     const memory = functions.GetVersionInfo(req);
@@ -1060,6 +1064,81 @@ express.get("/fortnite/api/calendar/v1/timeline", async (req, res) => {
             "activeUntil": "9999-01-01T00:00:00.000Z",
             "activeSince": "2020-01-01T00:00:00.000Z"
         })
+    }
+
+    if (config.Profile.bAllSTWEventsActivated == true) {
+        var Events = [
+            "EventFlag.Blockbuster2018",
+            "EventFlag.Blockbuster2018Phase1",
+            "EventFlag.Blockbuster2018Phase2",
+            "EventFlag.Blockbuster2018Phase3",
+            "EventFlag.Blockbuster2018Phase4",
+            "EventFlag.Fortnitemares",
+            "EventFlag.FortnitemaresPhase1",
+            "EventFlag.FortnitemaresPhase2",
+            "EventFlag.Frostnite",
+            "EventFlag.HolidayDeco",
+            "EventFlag.Horde",
+            "EventFlag.Mayday",
+            "EventFlag.Outpost",
+            "EventFlag.Phoenix.Adventure",
+            "EventFlag.Phoenix.Fortnitemares",
+            "EventFlag.Phoenix.Fortnitemares.Clip",
+            "EventFlag.Phoenix.NewBeginnings",
+            "EventFlag.Phoenix.NewBeginnings.SpringTraining",
+            "EventFlag.Phoenix.RoadTrip",
+            "EventFlag.Phoenix.Winterfest",
+            "EventFlag.Phoenix.Winterfest.GhostOfChristmas",
+            "EventFlag.RoadTrip2018",
+            "EventFlag.STWBrainstorm",
+            "EventFlag.STWFennix",
+            "EventFlag.STWIrwin",
+            "EventFlag.Season10.Phase2",
+            "EventFlag.Season10.Phase3",
+            "EventFlag.Season11.Fortnitemares.Quests.Phase1",
+            "EventFlag.Season11.Fortnitemares.Quests.Phase2",
+            "EventFlag.Season11.Fortnitemares.Quests.Phase3",
+            "EventFlag.Season11.Fortnitemares.Quests.Phase4",
+            "EventFlag.Season11.Frostnite",
+            "EventFlag.Season11.WinterFest.Quests.Phase1",
+            "EventFlag.Season11.WinterFest.Quests.Phase2",
+            "EventFlag.Season11.WinterFest.Quests.Phase3",
+            "EventFlag.Season12.NoDancing.Quests",
+            "EventFlag.Season12.Spies.Quests",
+            "EventFlag.Season9.Phase1",
+            "EventFlag.Season9.Phase2",
+            "EventFlag.Spring2018Phase1",
+            "EventFlag.Spring2018Phase2",
+            "EventFlag.Spring2018Phase3",
+            "EventFlag.Spring2018Phase4",
+            "EventFlag.Spring2019",
+            "EventFlag.Spring2019.Phase1",
+            "EventFlag.Spring2019.Phase2",
+            "EventFlag.Starlight",
+            "EventFlag.StormKing.Landmark",
+            "EventFlag.YarrrTwo"
+        ]
+
+        for (var i = 0; i < Events.length; i++) {
+            var Event = Events[i];
+            var bAlreadyExists = false;
+
+            for (var x = 0; x < activeEvents.length; x++) {
+                var ActiveEvent = activeEvents[x];
+                if (ActiveEvent.eventType == Event) {
+                    bAlreadyExists = true;
+                }
+            }
+
+            if (bAlreadyExists == false) {
+                activeEvents.push(
+                {
+                    "eventType": Event,
+                    "activeUntil": "9999-01-01T00:00:00.000Z",
+                    "activeSince": "2020-01-01T00:00:00.000Z"
+                })
+            }
+        }
     }
 
     res.json({

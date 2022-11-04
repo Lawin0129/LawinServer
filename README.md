@@ -54,7 +54,7 @@
 - Changing items edit styles
 - Support a Creator with specific codes
 - Fully working daily challenges system (New daily challenge every day, replacing daily challenges, etc...)
-- Seasonal Quests from Season 3 up to Season 20 (Can change)
+- Seasonal Quests from Season 3 up to Season 21 (Can change)
 - Purchasable battle pass from Season 2 to Season 10 (Can change)
 - Discovery Tab
 
