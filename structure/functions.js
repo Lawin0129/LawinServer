@@ -69,7 +69,7 @@ function getItemShop() {
         for (var value in CatalogConfig) {
             if (Array.isArray(CatalogConfig[value].itemGrants)) {
                 if (CatalogConfig[value].itemGrants.length != 0) {
-                    const CatalogEntry = {"devName":"","offerId":"","fulfillmentIds":[],"dailyLimit":-1,"weeklyLimit":-1,"monthlyLimit":-1,"categories":[],"prices":[{"currencyType":"MtxCurrency","currencySubType":"","regularPrice":0,"finalPrice":0,"saleExpiration":"9999-12-02T01:12:00Z","basePrice":0}],"matchFilter":"","filterWeight":0,"appStoreId":[],"requirements":[],"offerType":"StaticPrice","giftInfo":{"bIsEnabled":false,"forcedGiftBoxTemplateId":"","purchaseRequirements":[],"giftRecordIds":[]},"refundable":true,"metaInfo":[],"displayAssetPath":"","itemGrants":[],"sortPriority":0,"catalogGroupPriority":0};
+                    const CatalogEntry = {"devName":"","offerId":"","fulfillmentIds":[],"dailyLimit":-1,"weeklyLimit":-1,"monthlyLimit":-1,"categories":[],"prices":[{"currencyType":"MtxCurrency","currencySubType":"","regularPrice":0,"finalPrice":0,"saleExpiration":"9999-12-02T01:12:00Z","basePrice":0}],"meta":{"SectionId":"Featured","TileSize":"Small"},"matchFilter":"","filterWeight":0,"appStoreId":[],"requirements":[],"offerType":"StaticPrice","giftInfo":{"bIsEnabled":false,"forcedGiftBoxTemplateId":"","purchaseRequirements":[],"giftRecordIds":[]},"refundable":true,"metaInfo":[{"key":"SectionId","value":"Featured"},{"key":"TileSize","value":"Small"}],"displayAssetPath":"","itemGrants":[],"sortPriority":0,"catalogGroupPriority":0};
 
                     if (value.toLowerCase().startsWith("daily")) {
                         catalog.storefronts.forEach((storefront, i) => {
@@ -92,6 +92,9 @@ function getItemShop() {
                                 CatalogEntry.prices[0].basePrice = CatalogConfig[value].price
                                 CatalogEntry.prices[0].regularPrice = CatalogConfig[value].price
                                 CatalogEntry.prices[0].finalPrice = CatalogConfig[value].price
+
+                                // Make featured items appear on the left side of the screen
+                                CatalogEntry.sortPriority = -1
 
                                 if (CatalogEntry.itemGrants.length != 0) {
                                     catalog.storefronts[i].catalogEntries.push(CatalogEntry);
@@ -121,6 +124,9 @@ function getItemShop() {
                                 CatalogEntry.prices[0].basePrice = CatalogConfig[value].price
                                 CatalogEntry.prices[0].regularPrice = CatalogConfig[value].price
                                 CatalogEntry.prices[0].finalPrice = CatalogConfig[value].price
+
+                                CatalogEntry.meta.TileSize = "Normal"
+                                CatalogEntry.metaInfo[1].value = "Normal"
 
                                 if (CatalogEntry.itemGrants.length != 0) {
                                     catalog.storefronts[i].catalogEntries.push(CatalogEntry);
