@@ -272,6 +272,10 @@ function getContentPages(req) {
         if (memory.season == 22) {
             contentpages.dynamicbackgrounds.backgrounds.backgrounds[0].backgroundimage = "https://cdn2.unrealengine.com/t-bp22-lobby-square-2048x2048-2048x2048-e4e90c6e8018.jpg"
         }
+
+        if (memory.season == 23) {
+            contentpages.dynamicbackgrounds.backgrounds.backgrounds[0].backgroundimage = "https://cdn2.unrealengine.com/t-bp23-lobby-2048x1024-2048x1024-26f2c1b27f63.png"
+        }
     } catch (err) {}
 
     return contentpages;
