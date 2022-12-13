@@ -308,7 +308,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/PurchaseHomebaseNode", asyn
     res.end();
 });
 
-// Open Winterfest presents (11.31 & 19.01)
+// Open Winterfest presents (11.31, 19.01 & 23.10)
 express.post("/fortnite/api/game/v2/profile/*/client/UnlockRewardNode", async (req, res) => {
     const profile = require(`./../profiles/${req.query.profileId || "athena"}.json`);
     const common_core = require("./../profiles/common_core.json");

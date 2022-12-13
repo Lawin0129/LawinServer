@@ -102722,6 +102722,39 @@
       },
       "quantity": 1
     },
+    "S23_GIFTS": {
+      "templateId": "AthenaRewardGraph:s23_winterfest",
+      "attributes": {
+        "reward_nodes_claimed": [],
+        "unlock_epoch": "2022-12-12T14:00:00.000Z",
+        "unlock_keys_used": 0,
+        "player_random_seed": -2143043306,
+        "item_seen": false,
+        "player_state": [],
+        "reward_graph_purchased_timestamp": 1639693875638,
+        "reward_graph_purchased": true,
+        "reward_keys": [
+          {
+            "static_key_template_id": "Token:athena_s23_winterfest_key",
+            "static_key_max_count": 14,
+            "static_key_initial_count": 0,
+            "unlock_keys_used": 0
+          }
+        ]
+      },
+      "quantity": 1
+    },
+    "S23_GIFT_KEY": {
+      "templateId": "Token:athena_s23_winterfest_key",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": false,
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 14
+    },
     "S19_GIFTS": {
       "templateId": "AthenaRewardGraph:s19_winterfest",
       "attributes": {

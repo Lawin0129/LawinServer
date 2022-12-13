@@ -1066,6 +1066,20 @@ express.get("/fortnite/api/calendar/v1/timeline", async (req, res) => {
         })
     }
 
+    if (memory.build == 23.10) {
+        activeEvents.push(
+        {
+            "eventType": "EventFlag.LTE_WinterFest",
+            "activeUntil": "9999-01-01T00:00:00.000Z",
+            "activeSince": "2020-01-01T00:00:00.000Z"
+        },
+        {
+            "eventType": "EventFlag.LTE_WinterFestTab",
+            "activeUntil": "9999-01-01T00:00:00.000Z",
+            "activeSince": "2020-01-01T00:00:00.000Z"
+        })
+    }
+
     if (config.Profile.bAllSTWEventsActivated == true) {
         var Events = [
             "EventFlag.Blockbuster2018",

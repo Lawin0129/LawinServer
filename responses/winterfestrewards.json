@@ -32,5 +32,21 @@
     "ERG.Node.A.10": "AthenaItemWrap:wrap_430_winterlights",
     "ERG.Node.A.11": "AthenaDance:spid_346_winterfest_2021",
     "ERG.Node.A.12": "AthenaPickaxe:pickaxe_ID_732_shovelmale"
+  },
+  "Season23": {
+    "ERG.Node.A.1": "AthenaCharacter:character_sportsfashion_winter",
+    "ERG.Node.B.1": "AthenaCharacter:character_cometdeer",
+    "ERG.Node.A.2": "AthenaGlider:glider_default_jolly",
+    "ERG.Node.A.3": "AthenaDance:eid_dashing",
+    "ERG.Node.A.4": "AthenaDance:spray_guffholidaytree_winterfest2022",
+    "ERG.Node.A.5": "AthenaDance:emoji_s23_winterfest_2022",
+    "ERG.Node.A.6": "AthenaMusicPack:musicpack_164_redpepper_winterfest",
+    "ERG.Node.A.7": "AthenaItemWrap:wrap_winter_pal",
+    "ERG.Node.A.8": "AthenaPickaxe:pickaxe_jollytroll",
+    "ERG.Node.A.9": "AthenaGlider:glider_jollytroll",
+    "ERG.Node.A.10": "AthenaBackpack:backpack_jollytroll",
+    "ERG.Node.A.11": "AthenaMusicPack:musicpack_163_winterfest_2022",
+    "ERG.Node.A.12": "AthenaItemWrap:wrap_cometwinter",
+    "ERG.Node.A.13": "AthenaSkyDiveContrail:contrail_jollytroll"
   }
 }
