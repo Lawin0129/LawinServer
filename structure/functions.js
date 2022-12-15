@@ -275,6 +275,10 @@ function getContentPages(req) {
 
         if (memory.season == 23) {
             contentpages.dynamicbackgrounds.backgrounds.backgrounds[0].backgroundimage = "https://cdn2.unrealengine.com/t-bp23-lobby-2048x1024-2048x1024-26f2c1b27f63.png"
+            if (memory.build == 23.10) {
+                contentpages.dynamicbackgrounds.backgrounds.backgrounds[0].backgroundimage = "https://cdn2.unrealengine.com/t-bp23-winterfest-lobby-square-2048x2048-2048x2048-277a476e5ca6.png"
+                contentpages.specialoffervideo.bSpecialOfferEnabled = "true";
+            }
         }
     } catch (err) {}
 

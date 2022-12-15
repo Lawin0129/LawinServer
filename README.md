@@ -44,7 +44,7 @@
 
 ### Battle Royale:
 - CloudStorage and ClientSettings (Settings saving)
-- Winterfest presents opening (11.31 & 19.01)
+- Winterfest presents opening (11.31, 19.01 & 23.10)
 - Purchasing Item Shop items
 - Refunding cosmetics in the refund tab
 - Favoriting items
