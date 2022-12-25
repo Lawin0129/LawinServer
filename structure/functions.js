@@ -69,7 +69,7 @@ function getItemShop() {
         for (var value in CatalogConfig) {
             if (Array.isArray(CatalogConfig[value].itemGrants)) {
                 if (CatalogConfig[value].itemGrants.length != 0) {
-                    const CatalogEntry = {"devName":"","offerId":"","fulfillmentIds":[],"dailyLimit":-1,"weeklyLimit":-1,"monthlyLimit":-1,"categories":[],"prices":[{"currencyType":"MtxCurrency","currencySubType":"","regularPrice":0,"finalPrice":0,"saleExpiration":"9999-12-02T01:12:00Z","basePrice":0}],"matchFilter":"","filterWeight":0,"appStoreId":[],"requirements":[],"offerType":"StaticPrice","giftInfo":{"bIsEnabled":false,"forcedGiftBoxTemplateId":"","purchaseRequirements":[],"giftRecordIds":[]},"refundable":true,"metaInfo":[],"displayAssetPath":"","itemGrants":[],"sortPriority":0,"catalogGroupPriority":0};
+                    const CatalogEntry = {"devName":"","offerId":"","fulfillmentIds":[],"dailyLimit":-1,"weeklyLimit":-1,"monthlyLimit":-1,"categories":[],"prices":[{"currencyType":"MtxCurrency","currencySubType":"","regularPrice":0,"finalPrice":0,"saleExpiration":"9999-12-02T01:12:00Z","basePrice":0}],"meta":{"SectionId":"Featured","TileSize":"Small"},"matchFilter":"","filterWeight":0,"appStoreId":[],"requirements":[],"offerType":"StaticPrice","giftInfo":{"bIsEnabled":false,"forcedGiftBoxTemplateId":"","purchaseRequirements":[],"giftRecordIds":[]},"refundable":true,"metaInfo":[{"key":"SectionId","value":"Featured"},{"key":"TileSize","value":"Small"}],"displayAssetPath":"","itemGrants":[],"sortPriority":0,"catalogGroupPriority":0};
 
                     if (value.toLowerCase().startsWith("daily")) {
                         catalog.storefronts.forEach((storefront, i) => {
@@ -92,6 +92,9 @@ function getItemShop() {
                                 CatalogEntry.prices[0].basePrice = CatalogConfig[value].price
                                 CatalogEntry.prices[0].regularPrice = CatalogConfig[value].price
                                 CatalogEntry.prices[0].finalPrice = CatalogConfig[value].price
+
+                                // Make featured items appear on the left side of the screen
+                                CatalogEntry.sortPriority = -1
 
                                 if (CatalogEntry.itemGrants.length != 0) {
                                     catalog.storefronts[i].catalogEntries.push(CatalogEntry);
@@ -121,6 +124,9 @@ function getItemShop() {
                                 CatalogEntry.prices[0].basePrice = CatalogConfig[value].price
                                 CatalogEntry.prices[0].regularPrice = CatalogConfig[value].price
                                 CatalogEntry.prices[0].finalPrice = CatalogConfig[value].price
+
+                                CatalogEntry.meta.TileSize = "Normal"
+                                CatalogEntry.metaInfo[1].value = "Normal"
 
                                 if (CatalogEntry.itemGrants.length != 0) {
                                     catalog.storefronts[i].catalogEntries.push(CatalogEntry);
@@ -265,6 +271,14 @@ function getContentPages(req) {
 
         if (memory.season == 22) {
             contentpages.dynamicbackgrounds.backgrounds.backgrounds[0].backgroundimage = "https://cdn2.unrealengine.com/t-bp22-lobby-square-2048x2048-2048x2048-e4e90c6e8018.jpg"
+        }
+
+        if (memory.season == 23) {
+            contentpages.dynamicbackgrounds.backgrounds.backgrounds[0].backgroundimage = "https://cdn2.unrealengine.com/t-bp23-lobby-2048x1024-2048x1024-26f2c1b27f63.png"
+            if (memory.build == 23.10) {
+                contentpages.dynamicbackgrounds.backgrounds.backgrounds[0].backgroundimage = "https://cdn2.unrealengine.com/t-bp23-winterfest-lobby-square-2048x2048-2048x2048-277a476e5ca6.png"
+                contentpages.specialoffervideo.bSpecialOfferEnabled = "true";
+            }
         }
     } catch (err) {}
 

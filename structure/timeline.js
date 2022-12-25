@@ -1066,6 +1066,25 @@ express.get("/fortnite/api/calendar/v1/timeline", async (req, res) => {
         })
     }
 
+    if (memory.build == 23.10) {
+        activeEvents.push(
+        {
+            "eventType": "EventFlag.LTE_WinterFest",
+            "activeUntil": "9999-01-01T00:00:00.000Z",
+            "activeSince": "2020-01-01T00:00:00.000Z"
+        },
+        {
+            "eventType": "EventFlag.LTE_WinterFestTab",
+            "activeUntil": "9999-01-01T00:00:00.000Z",
+            "activeSince": "2020-01-01T00:00:00.000Z"
+        },
+        {
+            "eventType": "WF_GUFF_AVAIL",
+            "activeUntil": "9999-01-01T00:00:00.000Z",
+            "activeSince": "2020-01-01T00:00:00.000Z"
+        })
+    }
+
     if (config.Profile.bAllSTWEventsActivated == true) {
         var Events = [
             "EventFlag.Blockbuster2018",
@@ -1163,6 +1182,9 @@ express.get("/fortnite/api/calendar/v1/timeline", async (req, res) => {
                         "weeklyStoreEnd": "9999-01-01T00:00:00Z",
                         "stwEventStoreEnd": "9999-01-01T00:00:00.000Z",
                         "stwWeeklyStoreEnd": "9999-01-01T00:00:00.000Z",
+                        "sectionStoreEnds": {
+                            "Featured": "9999-01-01T00:00:00.000Z"
+                        },
                         "dailyStoreEnd": "9999-01-01T00:00:00Z"
                     }
                 }],

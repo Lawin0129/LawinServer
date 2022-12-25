@@ -116,6 +116,81 @@
       },
       "quantity": 1
     },
+    "AthenaBackpack:Backpack_Apprentice": {
+      "templateId": "AthenaBackpack:Backpack_Apprentice",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [
+          {
+            "channel": "Parts",
+            "active": "Stage1",
+            "owned": [
+              "Stage1",
+              "Stage2"
+            ]
+          }
+        ],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaBackpack:Backpack_Ballerina": {
+      "templateId": "AthenaBackpack:Backpack_Ballerina",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [
+          {
+            "channel": "Material",
+            "active": "Mat0",
+            "owned": [
+              "Mat0",
+              "Mat1"
+            ]
+          }
+        ],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaBackpack:Backpack_BariumDemon": {
+      "templateId": "AthenaBackpack:Backpack_BariumDemon",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaBackpack:Backpack_Basil": {
+      "templateId": "AthenaBackpack:Backpack_Basil",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [
+          {
+            "channel": "Parts",
+            "active": "Stage1",
+            "owned": [
+              "Stage1",
+              "Stage2"
+            ]
+          }
+        ],
+        "favorite": false
+      },
+      "quantity": 1
+    },
     "AthenaBackpack:Backpack_Bites": {
       "templateId": "AthenaBackpack:Backpack_Bites",
       "attributes": {
@@ -133,6 +208,18 @@
             ]
           }
         ],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaBackpack:Backpack_BlueJet": {
+      "templateId": "AthenaBackpack:Backpack_BlueJet",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
         "favorite": false
       },
       "quantity": 1
@@ -224,6 +311,27 @@
       },
       "quantity": 1
     },
+    "AthenaBackpack:Backpack_Chainmail": {
+      "templateId": "AthenaBackpack:Backpack_Chainmail",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [
+          {
+            "channel": "Progressive",
+            "active": "Stage1",
+            "owned": [
+              "Stage1",
+              "Stage2"
+            ]
+          }
+        ],
+        "favorite": false
+      },
+      "quantity": 1
+    },
     "AthenaBackpack:Backpack_ChillCat": {
       "templateId": "AthenaBackpack:Backpack_ChillCat",
       "attributes": {
@@ -245,8 +353,73 @@
       },
       "quantity": 1
     },
+    "AthenaBackpack:Backpack_Citadel": {
+      "templateId": "AthenaBackpack:Backpack_Citadel",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaBackpack:Backpack_CitadelCape": {
+      "templateId": "AthenaBackpack:Backpack_CitadelCape",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
     "AthenaBackpack:Backpack_Conscience": {
       "templateId": "AthenaBackpack:Backpack_Conscience",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaBackpack:Backpack_CoyoteTrail": {
+      "templateId": "AthenaBackpack:Backpack_CoyoteTrail",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [
+          {
+            "channel": "Parts",
+            "active": "Stage1",
+            "owned": [
+              "Stage1",
+              "Stage2"
+            ]
+          },
+          {
+            "channel": "Mesh",
+            "active": "Stage1",
+            "owned": [
+              "Stage1",
+              "Stage2"
+            ]
+          }
+        ],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaBackpack:Backpack_CoyoteTrailDark": {
+      "templateId": "AthenaBackpack:Backpack_CoyoteTrailDark",
       "attributes": {
         "max_level_bonus": 0,
         "level": 1,
@@ -363,6 +536,66 @@
       },
       "quantity": 1
     },
+    "AthenaBackpack:Backpack_EmeraldGlassGreen": {
+      "templateId": "AthenaBackpack:Backpack_EmeraldGlassGreen",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaBackpack:Backpack_EmeraldGlassPink": {
+      "templateId": "AthenaBackpack:Backpack_EmeraldGlassPink",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaBackpack:Backpack_EmeraldGlassRebel": {
+      "templateId": "AthenaBackpack:Backpack_EmeraldGlassRebel",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaBackpack:Backpack_EmeraldGlassStandAlone": {
+      "templateId": "AthenaBackpack:Backpack_EmeraldGlassStandAlone",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaBackpack:Backpack_EmeraldGlassTransform": {
+      "templateId": "AthenaBackpack:Backpack_EmeraldGlassTransform",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
     "AthenaBackpack:Backpack_FNBirthday5": {
       "templateId": "AthenaBackpack:Backpack_FNBirthday5",
       "attributes": {
@@ -377,6 +610,18 @@
     },
     "AthenaBackpack:Backpack_FNCS22": {
       "templateId": "AthenaBackpack:Backpack_FNCS22",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaBackpack:Backpack_GelatinGummi": {
+      "templateId": "AthenaBackpack:Backpack_GelatinGummi",
       "attributes": {
         "max_level_bonus": 0,
         "level": 1,
@@ -489,6 +734,56 @@
       },
       "quantity": 1
     },
+    "AthenaBackpack:Backpack_Impulse": {
+      "templateId": "AthenaBackpack:Backpack_Impulse",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [
+          {
+            "channel": "Material",
+            "active": "Mat1",
+            "owned": [
+              "Mat1",
+              "Mat2",
+              "Mat3",
+              "Mat4",
+              "Mat5",
+              "Mat6",
+              "Mat7"
+            ]
+          }
+        ],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaBackpack:Backpack_JollyTroll": {
+      "templateId": "AthenaBackpack:Backpack_JollyTroll",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaBackpack:Backpack_JollyTroll_Winter": {
+      "templateId": "AthenaBackpack:Backpack_JollyTroll_Winter",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
     "AthenaBackpack:Backpack_JumbotronS22": {
       "templateId": "AthenaBackpack:Backpack_JumbotronS22",
       "attributes": {
@@ -497,6 +792,27 @@
         "item_seen": true,
         "xp": 0,
         "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaBackpack:Backpack_LettuceCat": {
+      "templateId": "AthenaBackpack:Backpack_LettuceCat",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [
+          {
+            "channel": "Parts",
+            "active": "Stage1",
+            "owned": [
+              "Stage1",
+              "Stage2"
+            ]
+          }
+        ],
         "favorite": false
       },
       "quantity": 1
@@ -518,6 +834,18 @@
             ]
           }
         ],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaBackpack:Backpack_MagicMeadow": {
+      "templateId": "AthenaBackpack:Backpack_MagicMeadow",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
         "favorite": false
       },
       "quantity": 1
@@ -560,6 +888,63 @@
             ]
           }
         ],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaBackpack:Backpack_Mouse": {
+      "templateId": "AthenaBackpack:Backpack_Mouse",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [
+          {
+            "channel": "Parts",
+            "active": "Stage1",
+            "owned": [
+              "Stage1",
+              "Stage2"
+            ]
+          }
+        ],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaBackpack:Backpack_Nox": {
+      "templateId": "AthenaBackpack:Backpack_Nox",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaBackpack:Backpack_PhotographerHoliday": {
+      "templateId": "AthenaBackpack:Backpack_PhotographerHoliday",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaBackpack:Backpack_PinkJet": {
+      "templateId": "AthenaBackpack:Backpack_PinkJet",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
         "favorite": false
       },
       "quantity": 1
@@ -639,6 +1024,42 @@
       },
       "quantity": 1
     },
+    "AthenaBackpack:Backpack_Radish": {
+      "templateId": "AthenaBackpack:Backpack_Radish",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaBackpack:Backpack_RedOasis": {
+      "templateId": "AthenaBackpack:Backpack_RedOasis",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaBackpack:Backpack_RedPepper": {
+      "templateId": "AthenaBackpack:Backpack_RedPepper",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
     "AthenaBackpack:Backpack_RoseDust": {
       "templateId": "AthenaBackpack:Backpack_RoseDust",
       "attributes": {
@@ -684,6 +1105,41 @@
       },
       "quantity": 1
     },
+    "AthenaBackpack:Backpack_SharpFang": {
+      "templateId": "AthenaBackpack:Backpack_SharpFang",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [
+          {
+            "channel": "Progressive",
+            "active": "Stage1",
+            "owned": [
+              "Stage1",
+              "Stage2",
+              "Stage3",
+              "Stage4"
+            ]
+          }
+        ],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaBackpack:Backpack_Silencer": {
+      "templateId": "AthenaBackpack:Backpack_Silencer",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
     "AthenaBackpack:Backpack_StallionAviator": {
       "templateId": "AthenaBackpack:Backpack_StallionAviator",
       "attributes": {
@@ -722,6 +1178,18 @@
             ]
           }
         ],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaBackpack:Backpack_Sunlit": {
+      "templateId": "AthenaBackpack:Backpack_Sunlit",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
         "favorite": false
       },
       "quantity": 1
@@ -788,6 +1256,48 @@
         "item_seen": true,
         "xp": 0,
         "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaBackpack:Backpack_Venice": {
+      "templateId": "AthenaBackpack:Backpack_Venice",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [
+          {
+            "channel": "Progressive",
+            "active": "Stage1",
+            "owned": [
+              "Stage1",
+              "Stage2"
+            ]
+          }
+        ],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaBackpack:Backpack_Virtuous": {
+      "templateId": "AthenaBackpack:Backpack_Virtuous",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [
+          {
+            "channel": "Material",
+            "active": "Mat0",
+            "owned": [
+              "Mat0",
+              "Mat1"
+            ]
+          }
+        ],
         "favorite": false
       },
       "quantity": 1
@@ -4803,7 +5313,16 @@
         "level": 1,
         "item_seen": true,
         "xp": 0,
-        "variants": [],
+        "variants": [
+          {
+            "channel": "Material",
+            "active": "Mat1",
+            "owned": [
+              "Mat1",
+              "Mat2"
+            ]
+          }
+        ],
         "favorite": false
       },
       "quantity": 1
@@ -5496,7 +6015,11 @@
               "Mat22",
               "Mat23",
               "Mat24",
-              "Mat25"
+              "Mat25",
+              "Mat26",
+              "Mat27",
+              "Mat28",
+              "Mat29"
             ]
           }
         ],
@@ -16525,6 +17048,18 @@
       },
       "quantity": 1
     },
+    "AthenaBackpack:BID_A_040_BariumFemale": {
+      "templateId": "AthenaBackpack:BID_A_040_BariumFemale",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
     "AthenaBackpack:BID_A_041_FNCS21Female": {
       "templateId": "AthenaBackpack:BID_A_041_FNCS21Female",
       "attributes": {
@@ -17054,6 +17589,37 @@
       },
       "quantity": 1
     },
+    "AthenaCharacter:Character_Apprentice": {
+      "templateId": "AthenaCharacter:Character_Apprentice",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [
+          {
+            "channel": "Progressive",
+            "active": "Stage1",
+            "owned": [
+              "Stage1",
+              "Stage2",
+              "Stage3",
+              "Stage4"
+            ]
+          },
+          {
+            "channel": "Parts",
+            "active": "Mat1",
+            "owned": [
+              "Mat1",
+              "Mat2"
+            ]
+          }
+        ],
+        "favorite": false
+      },
+      "quantity": 1
+    },
     "AthenaCharacter:Character_BadBear": {
       "templateId": "AthenaCharacter:Character_BadBear",
       "attributes": {
@@ -17064,6 +17630,60 @@
         "variants": [
           {
             "channel": "Progressive",
+            "active": "Stage1",
+            "owned": [
+              "Stage1",
+              "Stage2"
+            ]
+          }
+        ],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaCharacter:Character_Ballerina": {
+      "templateId": "AthenaCharacter:Character_Ballerina",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [
+          {
+            "channel": "Material",
+            "active": "Mat1",
+            "owned": [
+              "Mat1",
+              "Mat2"
+            ]
+          }
+        ],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaCharacter:Character_BariumDemon": {
+      "templateId": "AthenaCharacter:Character_BariumDemon",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaCharacter:Character_BasilStrong": {
+      "templateId": "AthenaCharacter:Character_BasilStrong",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [
+          {
+            "channel": "Parts",
             "active": "Stage1",
             "owned": [
               "Stage1",
@@ -17131,6 +17751,18 @@
             ]
           }
         ],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaCharacter:Character_BlueJet": {
+      "templateId": "AthenaCharacter:Character_BlueJet",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
         "favorite": false
       },
       "quantity": 1
@@ -17255,6 +17887,39 @@
       },
       "quantity": 1
     },
+    "AthenaCharacter:Character_Chainmail": {
+      "templateId": "AthenaCharacter:Character_Chainmail",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [
+          {
+            "channel": "Progressive",
+            "active": "Stage1",
+            "owned": [
+              "Stage1",
+              "Stage2",
+              "Stage3",
+              "Stage4"
+            ]
+          },
+          {
+            "channel": "Material",
+            "active": "Mat1",
+            "owned": [
+              "Mat1",
+              "Mat2",
+              "Mat3",
+              "Mat4"
+            ]
+          }
+        ],
+        "favorite": false
+      },
+      "quantity": 1
+    },
     "AthenaCharacter:Character_ChillCat": {
       "templateId": "AthenaCharacter:Character_ChillCat",
       "attributes": {
@@ -17291,6 +17956,70 @@
       },
       "quantity": 1
     },
+    "AthenaCharacter:Character_Citadel": {
+      "templateId": "AthenaCharacter:Character_Citadel",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [
+          {
+            "channel": "Progressive",
+            "active": "Stage1",
+            "owned": [
+              "Stage1",
+              "Stage2"
+            ]
+          },
+          {
+            "channel": "Material",
+            "active": "Mat1",
+            "owned": [
+              "Mat1",
+              "Mat2",
+              "Mat3"
+            ]
+          },
+          {
+            "channel": "Particle",
+            "active": "Particle1",
+            "owned": [
+              "Particle1",
+              "Particle2",
+              "Particle3",
+              "Particle4"
+            ]
+          }
+        ],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaCharacter:Character_CometDeer": {
+      "templateId": "AthenaCharacter:Character_CometDeer",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaCharacter:Character_CometWinter": {
+      "templateId": "AthenaCharacter:Character_CometWinter",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
     "AthenaCharacter:Character_Conscience": {
       "templateId": "AthenaCharacter:Character_Conscience",
       "attributes": {
@@ -17305,6 +18034,69 @@
             "owned": [
               "Stage1",
               "Stage2"
+            ]
+          }
+        ],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaCharacter:Character_CoyoteTrail": {
+      "templateId": "AthenaCharacter:Character_CoyoteTrail",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [
+          {
+            "channel": "Material",
+            "active": "Mat1",
+            "owned": [
+              "Mat1",
+              "Mat2",
+              "Mat3",
+              "Mat4",
+              "Mat5",
+              "Mat6",
+              "Mat7"
+            ]
+          },
+          {
+            "channel": "Parts",
+            "active": "Stage1",
+            "owned": [
+              "Stage1",
+              "Stage2"
+            ]
+          },
+          {
+            "channel": "Emissive",
+            "active": "Emissive0",
+            "owned": [
+              "Emissive0"
+            ]
+          }
+        ],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaCharacter:Character_CoyoteTrailDark": {
+      "templateId": "AthenaCharacter:Character_CoyoteTrailDark",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [
+          {
+            "channel": "Parts",
+            "active": "Stage1",
+            "owned": [
+              "Stage1",
+              "Stage2",
+              "Stage3"
             ]
           }
         ],
@@ -17486,6 +18278,93 @@
       },
       "quantity": 1
     },
+    "AthenaCharacter:Character_EmeraldGlassGreen": {
+      "templateId": "AthenaCharacter:Character_EmeraldGlassGreen",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [
+          {
+            "channel": "Material",
+            "active": "Mat1",
+            "owned": [
+              "Mat1",
+              "Mat2"
+            ]
+          }
+        ],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaCharacter:Character_EmeraldGlassPink": {
+      "templateId": "AthenaCharacter:Character_EmeraldGlassPink",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaCharacter:Character_EmeraldGlassRebel": {
+      "templateId": "AthenaCharacter:Character_EmeraldGlassRebel",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [
+          {
+            "channel": "Parts",
+            "active": "Stage1",
+            "owned": [
+              "Stage1",
+              "Stage2"
+            ]
+          }
+        ],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaCharacter:Character_EmeraldGlassTransform": {
+      "templateId": "AthenaCharacter:Character_EmeraldGlassTransform",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [
+          {
+            "channel": "Parts",
+            "active": "Stage1",
+            "owned": [
+              "Stage1",
+              "Stage2"
+            ]
+          }
+        ],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaCharacter:Character_GelatinGummi": {
+      "templateId": "AthenaCharacter:Character_GelatinGummi",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
     "AthenaCharacter:Character_Genius": {
       "templateId": "AthenaCharacter:Character_Genius",
       "attributes": {
@@ -17616,6 +18495,950 @@
       },
       "quantity": 1
     },
+    "AthenaCharacter:Character_Impulse": {
+      "templateId": "AthenaCharacter:Character_Impulse",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [
+          {
+            "channel": "Parts",
+            "active": "Stage1",
+            "owned": [
+              "Stage1",
+              "Stage2",
+              "Stage3"
+            ]
+          },
+          {
+            "channel": "Material",
+            "active": "Mat1",
+            "owned": [
+              "Mat1",
+              "Mat2"
+            ]
+          },
+          {
+            "channel": "Pattern",
+            "active": "Stage0",
+            "owned": [
+              "Stage0",
+              "Stage1",
+              "2",
+              "Stage3",
+              "Stage4",
+              "Stage5",
+              "Stage6"
+            ]
+          },
+          {
+            "channel": "JerseyColor",
+            "active": "Mat1",
+            "owned": [
+              "Mat1",
+              "Mat3",
+              "Mat4",
+              "Mat5",
+              "Mat6",
+              "Mat7",
+              "Mat8",
+              "Mat9",
+              "Mat10",
+              "Mat11",
+              "Mat12",
+              "Mat13",
+              "Mat14",
+              "Mat15",
+              "Mat16",
+              "Mat17",
+              "Mat18",
+              "Mat19",
+              "Mat20",
+              "Mat21",
+              "Mat22",
+              "Mat23",
+              "Mat24",
+              "Mat25",
+              "Stage10",
+              "Stage11",
+              "Stage12",
+              "Stage13",
+              "Stage14",
+              "Stage15",
+              "Stage16",
+              "Stage17"
+            ]
+          },
+          {
+            "channel": "ClothingColor",
+            "active": "Mat0",
+            "owned": [
+              "Mat0",
+              "Mat1"
+            ]
+          }
+        ],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaCharacter:Character_ImpulseSpring": {
+      "templateId": "AthenaCharacter:Character_ImpulseSpring",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [
+          {
+            "channel": "Parts",
+            "active": "Stage1",
+            "owned": [
+              "Stage1",
+              "Stage2",
+              "Stage3"
+            ]
+          },
+          {
+            "channel": "Material",
+            "active": "Mat1",
+            "owned": [
+              "Mat1",
+              "Mat2"
+            ]
+          },
+          {
+            "channel": "Pattern",
+            "active": "Stage0",
+            "owned": [
+              "Stage0",
+              "Stage1",
+              "2",
+              "Stage3",
+              "Stage4",
+              "Stage5",
+              "Stage6"
+            ]
+          },
+          {
+            "channel": "JerseyColor",
+            "active": "Mat1",
+            "owned": [
+              "Mat1",
+              "Mat3",
+              "Mat4",
+              "Mat5",
+              "Mat6",
+              "Mat7",
+              "Mat8",
+              "Mat9",
+              "Mat10",
+              "Mat11",
+              "Mat12",
+              "Mat13",
+              "Mat14",
+              "Mat15",
+              "Mat16",
+              "Mat17",
+              "Mat18",
+              "Mat19",
+              "Mat20",
+              "Mat21",
+              "Mat22",
+              "Mat23",
+              "Mat24",
+              "Mat25",
+              "Stage10",
+              "Stage11",
+              "Stage12",
+              "Stage13",
+              "Stage14",
+              "Stage15",
+              "Stage16",
+              "Stage17"
+            ]
+          },
+          {
+            "channel": "ClothingColor",
+            "active": "Mat0",
+            "owned": [
+              "Mat0",
+              "Mat1"
+            ]
+          }
+        ],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaCharacter:Character_ImpulseSpring_B": {
+      "templateId": "AthenaCharacter:Character_ImpulseSpring_B",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [
+          {
+            "channel": "Parts",
+            "active": "Stage1",
+            "owned": [
+              "Stage1",
+              "Stage2",
+              "Stage3"
+            ]
+          },
+          {
+            "channel": "Material",
+            "active": "Mat1",
+            "owned": [
+              "Mat1",
+              "Mat2"
+            ]
+          },
+          {
+            "channel": "Pattern",
+            "active": "Stage0",
+            "owned": [
+              "Stage0",
+              "Stage1",
+              "2",
+              "Stage3",
+              "Stage4",
+              "Stage5",
+              "Stage6"
+            ]
+          },
+          {
+            "channel": "JerseyColor",
+            "active": "Mat1",
+            "owned": [
+              "Mat1",
+              "Mat3",
+              "Mat4",
+              "Mat5",
+              "Mat6",
+              "Mat7",
+              "Mat8",
+              "Mat9",
+              "Mat10",
+              "Mat11",
+              "Mat12",
+              "Mat13",
+              "Mat14",
+              "Mat15",
+              "Mat16",
+              "Mat17",
+              "Mat18",
+              "Mat19",
+              "Mat20",
+              "Mat21",
+              "Mat22",
+              "Mat23",
+              "Mat24",
+              "Mat25",
+              "Stage10",
+              "Stage11",
+              "Stage12",
+              "Stage13",
+              "Stage14",
+              "Stage15",
+              "Stage16",
+              "Stage17"
+            ]
+          },
+          {
+            "channel": "ClothingColor",
+            "active": "Mat0",
+            "owned": [
+              "Mat0",
+              "Mat1"
+            ]
+          }
+        ],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaCharacter:Character_ImpulseSpring_C": {
+      "templateId": "AthenaCharacter:Character_ImpulseSpring_C",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [
+          {
+            "channel": "Parts",
+            "active": "Stage1",
+            "owned": [
+              "Stage1",
+              "Stage2",
+              "Stage3"
+            ]
+          },
+          {
+            "channel": "Material",
+            "active": "Mat1",
+            "owned": [
+              "Mat1",
+              "Mat2"
+            ]
+          },
+          {
+            "channel": "Pattern",
+            "active": "Stage0",
+            "owned": [
+              "Stage0",
+              "Stage1",
+              "2",
+              "Stage3",
+              "Stage4",
+              "Stage5",
+              "Stage6"
+            ]
+          },
+          {
+            "channel": "JerseyColor",
+            "active": "Mat1",
+            "owned": [
+              "Mat1",
+              "Mat3",
+              "Mat4",
+              "Mat5",
+              "Mat6",
+              "Mat7",
+              "Mat8",
+              "Mat9",
+              "Mat10",
+              "Mat11",
+              "Mat12",
+              "Mat13",
+              "Mat14",
+              "Mat15",
+              "Mat16",
+              "Mat17",
+              "Mat18",
+              "Mat19",
+              "Mat20",
+              "Mat21",
+              "Mat22",
+              "Mat23",
+              "Mat24",
+              "Mat25",
+              "Stage10",
+              "Stage11",
+              "Stage12",
+              "Stage13",
+              "Stage14",
+              "Stage15",
+              "Stage16",
+              "Stage17"
+            ]
+          },
+          {
+            "channel": "ClothingColor",
+            "active": "Mat0",
+            "owned": [
+              "Mat0",
+              "Mat1"
+            ]
+          }
+        ],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaCharacter:Character_ImpulseSpring_D": {
+      "templateId": "AthenaCharacter:Character_ImpulseSpring_D",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [
+          {
+            "channel": "Parts",
+            "active": "Stage1",
+            "owned": [
+              "Stage1",
+              "Stage2",
+              "Stage3"
+            ]
+          },
+          {
+            "channel": "Material",
+            "active": "Mat1",
+            "owned": [
+              "Mat1",
+              "Mat2"
+            ]
+          },
+          {
+            "channel": "Pattern",
+            "active": "Stage0",
+            "owned": [
+              "Stage0",
+              "Stage1",
+              "2",
+              "Stage3",
+              "Stage4",
+              "Stage5",
+              "Stage6"
+            ]
+          },
+          {
+            "channel": "JerseyColor",
+            "active": "Mat1",
+            "owned": [
+              "Mat1",
+              "Mat3",
+              "Mat4",
+              "Mat5",
+              "Mat6",
+              "Mat7",
+              "Mat8",
+              "Mat9",
+              "Mat10",
+              "Mat11",
+              "Mat12",
+              "Mat13",
+              "Mat14",
+              "Mat15",
+              "Mat16",
+              "Mat17",
+              "Mat18",
+              "Mat19",
+              "Mat20",
+              "Mat21",
+              "Mat22",
+              "Mat23",
+              "Mat24",
+              "Mat25",
+              "Stage10",
+              "Stage11",
+              "Stage12",
+              "Stage13",
+              "Stage14",
+              "Stage15",
+              "Stage16",
+              "Stage17"
+            ]
+          },
+          {
+            "channel": "ClothingColor",
+            "active": "Mat0",
+            "owned": [
+              "Mat0",
+              "Mat1"
+            ]
+          }
+        ],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaCharacter:Character_ImpulseSpring_E": {
+      "templateId": "AthenaCharacter:Character_ImpulseSpring_E",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [
+          {
+            "channel": "Parts",
+            "active": "Stage1",
+            "owned": [
+              "Stage1",
+              "Stage2",
+              "Stage3"
+            ]
+          },
+          {
+            "channel": "Material",
+            "active": "Mat1",
+            "owned": [
+              "Mat1",
+              "Mat2"
+            ]
+          },
+          {
+            "channel": "Pattern",
+            "active": "Stage0",
+            "owned": [
+              "Stage0",
+              "Stage1",
+              "2",
+              "Stage3",
+              "Stage4",
+              "Stage5",
+              "Stage6"
+            ]
+          },
+          {
+            "channel": "JerseyColor",
+            "active": "Mat1",
+            "owned": [
+              "Mat1",
+              "Mat3",
+              "Mat4",
+              "Mat5",
+              "Mat6",
+              "Mat7",
+              "Mat8",
+              "Mat9",
+              "Mat10",
+              "Mat11",
+              "Mat12",
+              "Mat13",
+              "Mat14",
+              "Mat15",
+              "Mat16",
+              "Mat17",
+              "Mat18",
+              "Mat19",
+              "Mat20",
+              "Mat21",
+              "Mat22",
+              "Mat23",
+              "Mat24",
+              "Mat25",
+              "Stage10",
+              "Stage11",
+              "Stage12",
+              "Stage13",
+              "Stage14",
+              "Stage15",
+              "Stage16",
+              "Stage17"
+            ]
+          },
+          {
+            "channel": "ClothingColor",
+            "active": "Mat0",
+            "owned": [
+              "Mat0",
+              "Mat1"
+            ]
+          }
+        ],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaCharacter:Character_Impulse_B": {
+      "templateId": "AthenaCharacter:Character_Impulse_B",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [
+          {
+            "channel": "Parts",
+            "active": "Stage1",
+            "owned": [
+              "Stage1",
+              "Stage2",
+              "Stage3"
+            ]
+          },
+          {
+            "channel": "Material",
+            "active": "Mat1",
+            "owned": [
+              "Mat1",
+              "Mat2"
+            ]
+          },
+          {
+            "channel": "Pattern",
+            "active": "Stage0",
+            "owned": [
+              "Stage0",
+              "Stage1",
+              "2",
+              "Stage3",
+              "Stage4",
+              "Stage5",
+              "Stage6"
+            ]
+          },
+          {
+            "channel": "JerseyColor",
+            "active": "Mat1",
+            "owned": [
+              "Mat1",
+              "Mat3",
+              "Mat4",
+              "Mat5",
+              "Mat6",
+              "Mat7",
+              "Mat8",
+              "Mat9",
+              "Mat10",
+              "Mat11",
+              "Mat12",
+              "Mat13",
+              "Mat14",
+              "Mat15",
+              "Mat16",
+              "Mat17",
+              "Mat18",
+              "Mat19",
+              "Mat20",
+              "Mat21",
+              "Mat22",
+              "Mat23",
+              "Mat24",
+              "Mat25",
+              "Stage10",
+              "Stage11",
+              "Stage12",
+              "Stage13",
+              "Stage14",
+              "Stage15",
+              "Stage16",
+              "Stage17"
+            ]
+          },
+          {
+            "channel": "ClothingColor",
+            "active": "Mat0",
+            "owned": [
+              "Mat0",
+              "Mat1"
+            ]
+          }
+        ],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaCharacter:Character_Impulse_C": {
+      "templateId": "AthenaCharacter:Character_Impulse_C",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [
+          {
+            "channel": "Parts",
+            "active": "Stage1",
+            "owned": [
+              "Stage1",
+              "Stage2",
+              "Stage3"
+            ]
+          },
+          {
+            "channel": "Material",
+            "active": "Mat1",
+            "owned": [
+              "Mat1",
+              "Mat2"
+            ]
+          },
+          {
+            "channel": "Pattern",
+            "active": "Stage0",
+            "owned": [
+              "Stage0",
+              "Stage1",
+              "2",
+              "Stage3",
+              "Stage4",
+              "Stage5",
+              "Stage6"
+            ]
+          },
+          {
+            "channel": "JerseyColor",
+            "active": "Mat1",
+            "owned": [
+              "Mat1",
+              "Mat3",
+              "Mat4",
+              "Mat5",
+              "Mat6",
+              "Mat7",
+              "Mat8",
+              "Mat9",
+              "Mat10",
+              "Mat11",
+              "Mat12",
+              "Mat13",
+              "Mat14",
+              "Mat15",
+              "Mat16",
+              "Mat17",
+              "Mat18",
+              "Mat19",
+              "Mat20",
+              "Mat21",
+              "Mat22",
+              "Mat23",
+              "Mat24",
+              "Mat25",
+              "Stage10",
+              "Stage11",
+              "Stage12",
+              "Stage13",
+              "Stage14",
+              "Stage15",
+              "Stage16",
+              "Stage17"
+            ]
+          },
+          {
+            "channel": "ClothingColor",
+            "active": "Mat0",
+            "owned": [
+              "Mat0",
+              "Mat1"
+            ]
+          }
+        ],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaCharacter:Character_Impulse_D": {
+      "templateId": "AthenaCharacter:Character_Impulse_D",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [
+          {
+            "channel": "Parts",
+            "active": "Stage1",
+            "owned": [
+              "Stage1",
+              "Stage2",
+              "Stage3"
+            ]
+          },
+          {
+            "channel": "Material",
+            "active": "Mat1",
+            "owned": [
+              "Mat1",
+              "Mat2"
+            ]
+          },
+          {
+            "channel": "Pattern",
+            "active": "Stage0",
+            "owned": [
+              "Stage0",
+              "Stage1",
+              "2",
+              "Stage3",
+              "Stage4",
+              "Stage5",
+              "Stage6"
+            ]
+          },
+          {
+            "channel": "JerseyColor",
+            "active": "Mat1",
+            "owned": [
+              "Mat1",
+              "Mat3",
+              "Mat4",
+              "Mat5",
+              "Mat6",
+              "Mat7",
+              "Mat8",
+              "Mat9",
+              "Mat10",
+              "Mat11",
+              "Mat12",
+              "Mat13",
+              "Mat14",
+              "Mat15",
+              "Mat16",
+              "Mat17",
+              "Mat18",
+              "Mat19",
+              "Mat20",
+              "Mat21",
+              "Mat22",
+              "Mat23",
+              "Mat24",
+              "Mat25",
+              "Stage10",
+              "Stage11",
+              "Stage12",
+              "Stage13",
+              "Stage14",
+              "Stage15",
+              "Stage16",
+              "Stage17"
+            ]
+          },
+          {
+            "channel": "ClothingColor",
+            "active": "Mat0",
+            "owned": [
+              "Mat0",
+              "Mat1"
+            ]
+          }
+        ],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaCharacter:Character_Impulse_E": {
+      "templateId": "AthenaCharacter:Character_Impulse_E",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [
+          {
+            "channel": "Parts",
+            "active": "Stage1",
+            "owned": [
+              "Stage1",
+              "Stage2",
+              "Stage3"
+            ]
+          },
+          {
+            "channel": "Material",
+            "active": "Mat1",
+            "owned": [
+              "Mat1",
+              "Mat2"
+            ]
+          },
+          {
+            "channel": "Pattern",
+            "active": "Stage0",
+            "owned": [
+              "Stage0",
+              "Stage1",
+              "2",
+              "Stage3",
+              "Stage4",
+              "Stage5",
+              "Stage6"
+            ]
+          },
+          {
+            "channel": "JerseyColor",
+            "active": "Mat1",
+            "owned": [
+              "Mat1",
+              "Mat3",
+              "Mat4",
+              "Mat5",
+              "Mat6",
+              "Mat7",
+              "Mat8",
+              "Mat9",
+              "Mat10",
+              "Mat11",
+              "Mat12",
+              "Mat13",
+              "Mat14",
+              "Mat15",
+              "Mat16",
+              "Mat17",
+              "Mat18",
+              "Mat19",
+              "Mat20",
+              "Mat21",
+              "Mat22",
+              "Mat23",
+              "Mat24",
+              "Mat25",
+              "Stage10",
+              "Stage11",
+              "Stage12",
+              "Stage13",
+              "Stage14",
+              "Stage15",
+              "Stage16",
+              "Stage17"
+            ]
+          },
+          {
+            "channel": "ClothingColor",
+            "active": "Mat0",
+            "owned": [
+              "Mat0",
+              "Mat1"
+            ]
+          }
+        ],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaCharacter:Character_Knight_Boss_NPC": {
+      "templateId": "AthenaCharacter:Character_Knight_Boss_NPC",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaCharacter:Character_Lettuce": {
+      "templateId": "AthenaCharacter:Character_Lettuce",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [
+          {
+            "channel": "Parts",
+            "active": "Stage1",
+            "owned": [
+              "Stage1",
+              "Stage2"
+            ]
+          }
+        ],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaCharacter:Character_LettuceCat": {
+      "templateId": "AthenaCharacter:Character_LettuceCat",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [
+          {
+            "channel": "Parts",
+            "active": "Stage1",
+            "owned": [
+              "Stage1",
+              "Stage2"
+            ]
+          }
+        ],
+        "favorite": false
+      },
+      "quantity": 1
+    },
     "AthenaCharacter:Character_LightningDragon": {
       "templateId": "AthenaCharacter:Character_LightningDragon",
       "attributes": {
@@ -17633,6 +19456,18 @@
             ]
           }
         ],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaCharacter:Character_MagicMeadow": {
+      "templateId": "AthenaCharacter:Character_MagicMeadow",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
         "favorite": false
       },
       "quantity": 1
@@ -17771,6 +19606,63 @@
       },
       "quantity": 1
     },
+    "AthenaCharacter:Character_Mouse": {
+      "templateId": "AthenaCharacter:Character_Mouse",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [
+          {
+            "channel": "Parts",
+            "active": "Stage1",
+            "owned": [
+              "Stage1",
+              "Stage2"
+            ]
+          }
+        ],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaCharacter:Character_Nox": {
+      "templateId": "AthenaCharacter:Character_Nox",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaCharacter:Character_Photographer_Holiday": {
+      "templateId": "AthenaCharacter:Character_Photographer_Holiday",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaCharacter:Character_PinkJet": {
+      "templateId": "AthenaCharacter:Character_PinkJet",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
     "AthenaCharacter:Character_PinkSpike": {
       "templateId": "AthenaCharacter:Character_PinkSpike",
       "attributes": {
@@ -17848,6 +19740,126 @@
       },
       "quantity": 1
     },
+    "AthenaCharacter:Character_PrimeRedux": {
+      "templateId": "AthenaCharacter:Character_PrimeRedux",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaCharacter:Character_PrimeRedux_B": {
+      "templateId": "AthenaCharacter:Character_PrimeRedux_B",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaCharacter:Character_PrimeRedux_C": {
+      "templateId": "AthenaCharacter:Character_PrimeRedux_C",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaCharacter:Character_PrimeRedux_D": {
+      "templateId": "AthenaCharacter:Character_PrimeRedux_D",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaCharacter:Character_PrimeRedux_E": {
+      "templateId": "AthenaCharacter:Character_PrimeRedux_E",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaCharacter:Character_PrimeRedux_F": {
+      "templateId": "AthenaCharacter:Character_PrimeRedux_F",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaCharacter:Character_PrimeRedux_G": {
+      "templateId": "AthenaCharacter:Character_PrimeRedux_G",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaCharacter:Character_PrimeRedux_H": {
+      "templateId": "AthenaCharacter:Character_PrimeRedux_H",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaCharacter:Character_PrimeRedux_I": {
+      "templateId": "AthenaCharacter:Character_PrimeRedux_I",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaCharacter:Character_PrimeRedux_J": {
+      "templateId": "AthenaCharacter:Character_PrimeRedux_J",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
     "AthenaCharacter:Character_PumpkinPunk_Glitch": {
       "templateId": "AthenaCharacter:Character_PumpkinPunk_Glitch",
       "attributes": {
@@ -17880,6 +19892,139 @@
         "item_seen": true,
         "xp": 0,
         "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaCharacter:Character_RedOasisApricot": {
+      "templateId": "AthenaCharacter:Character_RedOasisApricot",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [
+          {
+            "channel": "Parts",
+            "active": "Stage1",
+            "owned": [
+              "Stage1",
+              "Stage2",
+              "Stage3"
+            ]
+          }
+        ],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaCharacter:Character_RedOasisBlackberry": {
+      "templateId": "AthenaCharacter:Character_RedOasisBlackberry",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [
+          {
+            "channel": "Parts",
+            "active": "Stage1",
+            "owned": [
+              "Stage1",
+              "Stage2",
+              "Stage3"
+            ]
+          }
+        ],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaCharacter:Character_RedOasisGooseberry": {
+      "templateId": "AthenaCharacter:Character_RedOasisGooseberry",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [
+          {
+            "channel": "Parts",
+            "active": "Stage1",
+            "owned": [
+              "Stage1",
+              "Stage2",
+              "Stage3"
+            ]
+          }
+        ],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaCharacter:Character_RedOasisJackfruit": {
+      "templateId": "AthenaCharacter:Character_RedOasisJackfruit",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [
+          {
+            "channel": "Parts",
+            "active": "Stage1",
+            "owned": [
+              "Stage1",
+              "Stage2",
+              "Stage3"
+            ]
+          }
+        ],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaCharacter:Character_RedOasisPomegranate": {
+      "templateId": "AthenaCharacter:Character_RedOasisPomegranate",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [
+          {
+            "channel": "Parts",
+            "active": "Stage1",
+            "owned": [
+              "Stage1",
+              "Stage2",
+              "Stage3"
+            ]
+          }
+        ],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaCharacter:Character_RedPepper": {
+      "templateId": "AthenaCharacter:Character_RedPepper",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [
+          {
+            "channel": "Progressive",
+            "active": "Stage1",
+            "owned": [
+              "Stage1",
+              "Stage2",
+              "Stage3",
+              "Stage4"
+            ]
+          }
+        ],
         "favorite": false
       },
       "quantity": 1
@@ -17956,6 +20101,104 @@
       },
       "quantity": 1
     },
+    "AthenaCharacter:Character_SharpFang": {
+      "templateId": "AthenaCharacter:Character_SharpFang",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [
+          {
+            "channel": "Progressive",
+            "active": "Stage1",
+            "owned": [
+              "Stage1",
+              "Stage2",
+              "Stage3"
+            ]
+          },
+          {
+            "channel": "Material",
+            "active": "Mat1",
+            "owned": [
+              "Mat1",
+              "Mat2",
+              "Mat3",
+              "Mat4"
+            ]
+          }
+        ],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaCharacter:Character_Silencer": {
+      "templateId": "AthenaCharacter:Character_Silencer",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [
+          {
+            "channel": "Parts",
+            "active": "Stage1",
+            "owned": [
+              "Stage1",
+              "Stage2"
+            ]
+          },
+          {
+            "channel": "Material",
+            "active": "Stage1",
+            "owned": [
+              "Stage1",
+              "Stage2"
+            ]
+          },
+          {
+            "channel": "Mesh",
+            "active": "Stage1",
+            "owned": [
+              "Stage1",
+              "Stage2"
+            ]
+          },
+          {
+            "channel": "ClothingColor",
+            "active": "Mat1",
+            "owned": [
+              "Mat1",
+              "Mat2"
+            ]
+          }
+        ],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaCharacter:Character_SportsFashion_Winter": {
+      "templateId": "AthenaCharacter:Character_SportsFashion_Winter",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [
+          {
+            "channel": "Parts",
+            "active": "Stage1",
+            "owned": [
+              "Stage1",
+              "Stage2"
+            ]
+          }
+        ],
+        "favorite": false
+      },
+      "quantity": 1
+    },
     "AthenaCharacter:Character_StallionAviator": {
       "templateId": "AthenaCharacter:Character_StallionAviator",
       "attributes": {
@@ -18006,6 +20249,38 @@
       },
       "quantity": 1
     },
+    "AthenaCharacter:Character_Sunlit": {
+      "templateId": "AthenaCharacter:Character_Sunlit",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [
+          {
+            "channel": "Progressive",
+            "active": "Stage1",
+            "owned": [
+              "Stage1",
+              "Stage2",
+              "Stage3"
+            ]
+          },
+          {
+            "channel": "Material",
+            "active": "Mat1",
+            "owned": [
+              "Mat1",
+              "Mat2",
+              "Mat3",
+              "Mat4"
+            ]
+          }
+        ],
+        "favorite": false
+      },
+      "quantity": 1
+    },
     "AthenaCharacter:Character_TheHerald": {
       "templateId": "AthenaCharacter:Character_TheHerald",
       "attributes": {
@@ -18029,6 +20304,18 @@
     },
     "AthenaCharacter:Character_TheHerald_NPC": {
       "templateId": "AthenaCharacter:Character_TheHerald_NPC",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaCharacter:Character_TrainingGroundBot_NPC": {
+      "templateId": "AthenaCharacter:Character_TrainingGroundBot_NPC",
       "attributes": {
         "max_level_bonus": 0,
         "level": 1,
@@ -18065,6 +20352,67 @@
             "owned": [
               "Stage1",
               "Stage2"
+            ]
+          }
+        ],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaCharacter:Character_Venice": {
+      "templateId": "AthenaCharacter:Character_Venice",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [
+          {
+            "channel": "Progressive",
+            "active": "Stage1",
+            "owned": [
+              "Stage1",
+              "Stage2",
+              "Stage3"
+            ]
+          },
+          {
+            "channel": "Material",
+            "active": "Mat1",
+            "owned": [
+              "Mat1",
+              "Mat2"
+            ]
+          },
+          {
+            "channel": "Particle",
+            "active": "Particle1",
+            "owned": [
+              "Particle1",
+              "Particle2",
+              "Particle3",
+              "Particle4"
+            ]
+          }
+        ],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaCharacter:Character_Virtuous": {
+      "templateId": "AthenaCharacter:Character_Virtuous",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [
+          {
+            "channel": "Material",
+            "active": "Mat1",
+            "owned": [
+              "Mat1",
+              "Mat2"
             ]
           }
         ],
@@ -18465,6 +20813,14 @@
               "Mat2",
               "Mat3",
               "Mat4"
+            ]
+          },
+          {
+            "channel": "Parts",
+            "active": "Stage1",
+            "owned": [
+              "Stage1",
+              "Stage2"
             ]
           }
         ],
@@ -24014,7 +26370,16 @@
         "level": 1,
         "item_seen": true,
         "xp": 0,
-        "variants": [],
+        "variants": [
+          {
+            "channel": "Material",
+            "active": "Mat1",
+            "owned": [
+              "Mat1",
+              "Mat2"
+            ]
+          }
+        ],
         "favorite": false
       },
       "quantity": 1
@@ -46502,6 +48867,36 @@
       },
       "quantity": 1
     },
+    "AthenaCharacter:CID_A_452_Athena_Commando_F_Barium": {
+      "templateId": "AthenaCharacter:CID_A_452_Athena_Commando_F_Barium",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [
+          {
+            "channel": "Parts",
+            "active": "Stage1",
+            "owned": [
+              "Stage1",
+              "Stage2",
+              "Stage3"
+            ]
+          },
+          {
+            "channel": "Material",
+            "active": "Stage1",
+            "owned": [
+              "Stage1",
+              "Stage2"
+            ]
+          }
+        ],
+        "favorite": false
+      },
+      "quantity": 1
+    },
     "AthenaCharacter:CID_A_453_Athena_Commando_F_FuzzyBearSummer": {
       "templateId": "AthenaCharacter:CID_A_453_Athena_Commando_F_FuzzyBearSummer",
       "attributes": {
@@ -46516,6 +48911,14 @@
             "owned": [
               "Stage1",
               "Stage2"
+            ]
+          },
+          {
+            "channel": "Material",
+            "active": "Mat1",
+            "owned": [
+              "Mat1",
+              "Mat2"
             ]
           }
         ],
@@ -47048,6 +49451,18 @@
     },
     "AthenaCharacter:CID_NPC_Athena_Commando_F_CubeQueen": {
       "templateId": "AthenaCharacter:CID_NPC_Athena_Commando_F_CubeQueen",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaCharacter:CID_NPC_Athena_Commando_F_Fallback": {
+      "templateId": "AthenaCharacter:CID_NPC_Athena_Commando_F_Fallback",
       "attributes": {
         "max_level_bonus": 0,
         "level": 1,
@@ -47619,8 +50034,44 @@
       },
       "quantity": 1
     },
+    "AthenaSkyDiveContrail:Contrail_Apprentice": {
+      "templateId": "AthenaSkyDiveContrail:Contrail_Apprentice",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
     "AthenaSkyDiveContrail:Contrail_BadBear": {
       "templateId": "AthenaSkyDiveContrail:Contrail_BadBear",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaSkyDiveContrail:Contrail_Chainmail": {
+      "templateId": "AthenaSkyDiveContrail:Contrail_Chainmail",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaSkyDiveContrail:Contrail_JollyTroll": {
+      "templateId": "AthenaSkyDiveContrail:Contrail_JollyTroll",
       "attributes": {
         "max_level_bonus": 0,
         "level": 1,
@@ -47689,8 +50140,55 @@
       },
       "quantity": 1
     },
+    "AthenaSkyDiveContrail:Contrail_RedPepper": {
+      "templateId": "AthenaSkyDiveContrail:Contrail_RedPepper",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
     "AthenaSkyDiveContrail:Contrail_RoseDust": {
       "templateId": "AthenaSkyDiveContrail:Contrail_RoseDust",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaSkyDiveContrail:Contrail_SharpFang": {
+      "templateId": "AthenaSkyDiveContrail:Contrail_SharpFang",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [
+          {
+            "channel": "Particle",
+            "active": "Particle0",
+            "owned": [
+              "Particle0",
+              "Particle1",
+              "Particle2",
+              "Particle3"
+            ]
+          }
+        ],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaSkyDiveContrail:Contrail_Sunlit": {
+      "templateId": "AthenaSkyDiveContrail:Contrail_Sunlit",
       "attributes": {
         "max_level_bonus": 0,
         "level": 1,
@@ -47979,6 +50477,54 @@
     },
     "AthenaDance:EID_Applause": {
       "templateId": "AthenaDance:EID_Applause",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaDance:EID_Apprentice": {
+      "templateId": "AthenaDance:EID_Apprentice",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaDance:EID_ApprenticeSwirl": {
+      "templateId": "AthenaDance:EID_ApprenticeSwirl",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaDance:EID_Apprentice_Follower_Sync": {
+      "templateId": "AthenaDance:EID_Apprentice_Follower_Sync",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaDance:EID_Apprentice_Sync": {
+      "templateId": "AthenaDance:EID_Apprentice_Sync",
       "attributes": {
         "max_level_bonus": 0,
         "level": 1,
@@ -48313,6 +50859,30 @@
       },
       "quantity": 1
     },
+    "AthenaDance:EID_Barium": {
+      "templateId": "AthenaDance:EID_Barium",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaDance:EID_BasilStrong": {
+      "templateId": "AthenaDance:EID_BasilStrong",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
     "AthenaDance:EID_Basketball": {
       "templateId": "AthenaDance:EID_Basketball",
       "attributes": {
@@ -48471,6 +51041,18 @@
     },
     "AthenaDance:EID_Betty_Sync_Follower": {
       "templateId": "AthenaDance:EID_Betty_Sync_Follower",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaDance:EID_Beyond": {
+      "templateId": "AthenaDance:EID_Beyond",
       "attributes": {
         "max_level_bonus": 0,
         "level": 1,
@@ -49165,6 +51747,18 @@
       },
       "quantity": 1
     },
+    "AthenaDance:EID_Chainmail": {
+      "templateId": "AthenaDance:EID_Chainmail",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
     "AthenaDance:EID_ChairTime": {
       "templateId": "AthenaDance:EID_ChairTime",
       "attributes": {
@@ -49285,6 +51879,18 @@
       },
       "quantity": 1
     },
+    "AthenaDance:EID_Cherish": {
+      "templateId": "AthenaDance:EID_Cherish",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
     "AthenaDance:EID_Chicken": {
       "templateId": "AthenaDance:EID_Chicken",
       "attributes": {
@@ -49395,6 +52001,18 @@
     },
     "AthenaDance:EID_ChuggaFollower": {
       "templateId": "AthenaDance:EID_ChuggaFollower",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaDance:EID_Citadel": {
+      "templateId": "AthenaDance:EID_Citadel",
       "attributes": {
         "max_level_bonus": 0,
         "level": 1,
@@ -49623,6 +52241,42 @@
     },
     "AthenaDance:EID_CowboyDance": {
       "templateId": "AthenaDance:EID_CowboyDance",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaDance:EID_CoyoteTrail": {
+      "templateId": "AthenaDance:EID_CoyoteTrail",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaDance:EID_CoyoteTrail_Follower": {
+      "templateId": "AthenaDance:EID_CoyoteTrail_Follower",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaDance:EID_CoyoteTrail_Sync": {
+      "templateId": "AthenaDance:EID_CoyoteTrail_Sync",
       "attributes": {
         "max_level_bonus": 0,
         "level": 1,
@@ -50007,6 +52661,18 @@
     },
     "AthenaDance:EID_DarkFireLegends": {
       "templateId": "AthenaDance:EID_DarkFireLegends",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaDance:EID_Dashing": {
+      "templateId": "AthenaDance:EID_Dashing",
       "attributes": {
         "max_level_bonus": 0,
         "level": 1,
@@ -50425,6 +53091,30 @@
       },
       "quantity": 1
     },
+    "AthenaDance:EID_EmeraldGlassGreen": {
+      "templateId": "AthenaDance:EID_EmeraldGlassGreen",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaDance:EID_EmeraldGlassTransform": {
+      "templateId": "AthenaDance:EID_EmeraldGlassTransform",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
     "AthenaDance:EID_Emperor": {
       "templateId": "AthenaDance:EID_Emperor",
       "attributes": {
@@ -50667,6 +53357,18 @@
     },
     "AthenaDance:EID_FistPump": {
       "templateId": "AthenaDance:EID_FistPump",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaDance:EID_FlagPlant": {
+      "templateId": "AthenaDance:EID_FlagPlant",
       "attributes": {
         "max_level_bonus": 0,
         "level": 1,
@@ -51087,6 +53789,18 @@
     },
     "AthenaDance:EID_GolfClap": {
       "templateId": "AthenaDance:EID_GolfClap",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaDance:EID_Goodbye": {
+      "templateId": "AthenaDance:EID_Goodbye",
       "attributes": {
         "max_level_bonus": 0,
         "level": 1,
@@ -52105,8 +54819,44 @@
       },
       "quantity": 1
     },
+    "AthenaDance:EID_Iconic": {
+      "templateId": "AthenaDance:EID_Iconic",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
     "AthenaDance:EID_IDontKnow": {
       "templateId": "AthenaDance:EID_IDontKnow",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaDance:EID_Impulse": {
+      "templateId": "AthenaDance:EID_Impulse",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaDance:EID_Impulse_Follower": {
+      "templateId": "AthenaDance:EID_Impulse_Follower",
       "attributes": {
         "max_level_bonus": 0,
         "level": 1,
@@ -52215,6 +54965,18 @@
     },
     "AthenaDance:EID_IrishJig": {
       "templateId": "AthenaDance:EID_IrishJig",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaDance:EID_Irons": {
+      "templateId": "AthenaDance:EID_Irons",
       "attributes": {
         "max_level_bonus": 0,
         "level": 1,
@@ -52849,6 +55611,18 @@
       },
       "quantity": 1
     },
+    "AthenaDance:EID_Lettuce": {
+      "templateId": "AthenaDance:EID_Lettuce",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
     "AthenaDance:EID_Lexa": {
       "templateId": "AthenaDance:EID_Lexa",
       "attributes": {
@@ -53017,6 +55791,18 @@
       },
       "quantity": 1
     },
+    "AthenaDance:EID_Lonely": {
+      "templateId": "AthenaDance:EID_Lonely",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
     "AthenaDance:EID_LoneWolf": {
       "templateId": "AthenaDance:EID_LoneWolf",
       "attributes": {
@@ -53113,6 +55899,18 @@
       },
       "quantity": 1
     },
+    "AthenaDance:EID_MagicMeadow": {
+      "templateId": "AthenaDance:EID_MagicMeadow",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
     "AthenaDance:EID_Majesty_49JWY": {
       "templateId": "AthenaDance:EID_Majesty_49JWY",
       "attributes": {
@@ -53175,6 +55973,114 @@
     },
     "AthenaDance:EID_Maracas": {
       "templateId": "AthenaDance:EID_Maracas",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaDance:EID_Marionette": {
+      "templateId": "AthenaDance:EID_Marionette",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaDance:EID_Marionette_BassGuitar": {
+      "templateId": "AthenaDance:EID_Marionette_BassGuitar",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaDance:EID_Marionette_Drums": {
+      "templateId": "AthenaDance:EID_Marionette_Drums",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaDance:EID_Marionette_Follower": {
+      "templateId": "AthenaDance:EID_Marionette_Follower",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaDance:EID_Marionette_LeadGuitar": {
+      "templateId": "AthenaDance:EID_Marionette_LeadGuitar",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaDance:EID_Marionette_RhythmGuitar": {
+      "templateId": "AthenaDance:EID_Marionette_RhythmGuitar",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaDance:EID_Marionette_Sync": {
+      "templateId": "AthenaDance:EID_Marionette_Sync",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaDance:EID_Marionette_Sync_Follower": {
+      "templateId": "AthenaDance:EID_Marionette_Sync_Follower",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaDance:EID_Marionette_Sync_Leader": {
+      "templateId": "AthenaDance:EID_Marionette_Sync_Leader",
       "attributes": {
         "max_level_bonus": 0,
         "level": 1,
@@ -53415,6 +56321,18 @@
     },
     "AthenaDance:EID_Moonwalking": {
       "templateId": "AthenaDance:EID_Moonwalking",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaDance:EID_Mouse": {
+      "templateId": "AthenaDance:EID_Mouse",
       "attributes": {
         "max_level_bonus": 0,
         "level": 1,
@@ -54347,6 +57265,18 @@
       },
       "quantity": 1
     },
+    "AthenaDance:EID_RedPepper": {
+      "templateId": "AthenaDance:EID_RedPepper",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
     "AthenaDance:EID_RegalWave": {
       "templateId": "AthenaDance:EID_RegalWave",
       "attributes": {
@@ -54899,6 +57829,18 @@
       },
       "quantity": 1
     },
+    "AthenaDance:EID_Scribe": {
+      "templateId": "AthenaDance:EID_Scribe",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
     "AthenaDance:EID_ScrubDub": {
       "templateId": "AthenaDance:EID_ScrubDub",
       "attributes": {
@@ -55177,6 +58119,18 @@
     },
     "AthenaDance:EID_ShaolinSipUp": {
       "templateId": "AthenaDance:EID_ShaolinSipUp",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaDance:EID_Sharpfang": {
+      "templateId": "AthenaDance:EID_Sharpfang",
       "attributes": {
         "max_level_bonus": 0,
         "level": 1,
@@ -55835,6 +58789,18 @@
       },
       "quantity": 1
     },
+    "AthenaDance:EID_Sunlit": {
+      "templateId": "AthenaDance:EID_Sunlit",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
     "AthenaDance:EID_Sunrise_RPZ6M": {
       "templateId": "AthenaDance:EID_Sunrise_RPZ6M",
       "attributes": {
@@ -56291,6 +59257,42 @@
       },
       "quantity": 1
     },
+    "AthenaDance:EID_Toasted": {
+      "templateId": "AthenaDance:EID_Toasted",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaDance:EID_Toasted_Follower": {
+      "templateId": "AthenaDance:EID_Toasted_Follower",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaDance:EID_Toasted_Sync": {
+      "templateId": "AthenaDance:EID_Toasted_Sync",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
     "AthenaDance:EID_Tonal_51QI9": {
       "templateId": "AthenaDance:EID_Tonal_51QI9",
       "attributes": {
@@ -56713,6 +59715,18 @@
     },
     "AthenaDance:EID_Veiled": {
       "templateId": "AthenaDance:EID_Veiled",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaDance:EID_Venice": {
+      "templateId": "AthenaDance:EID_Venice",
       "attributes": {
         "max_level_bonus": 0,
         "level": 1,
@@ -61499,6 +64513,18 @@
       },
       "quantity": 1
     },
+    "AthenaDance:Emoji_S22_Impulse": {
+      "templateId": "AthenaDance:Emoji_S22_Impulse",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
     "AthenaDance:Emoji_S22_Invitational": {
       "templateId": "AthenaDance:Emoji_S22_Invitational",
       "attributes": {
@@ -61537,6 +64563,18 @@
     },
     "AthenaDance:Emoji_S22_RebootRally_RenegadeRaider": {
       "templateId": "AthenaDance:Emoji_S22_RebootRally_RenegadeRaider",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaDance:Emoji_S22_RL_Vista": {
+      "templateId": "AthenaDance:Emoji_S22_RL_Vista",
       "attributes": {
         "max_level_bonus": 0,
         "level": 1,
@@ -61609,6 +64647,138 @@
     },
     "AthenaDance:Emoji_S22_TheHerald": {
       "templateId": "AthenaDance:Emoji_S22_TheHerald",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaDance:Emoji_S23_Citadel": {
+      "templateId": "AthenaDance:Emoji_S23_Citadel",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaDance:Emoji_S23_Competitive_Fistbump": {
+      "templateId": "AthenaDance:Emoji_S23_Competitive_Fistbump",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaDance:Emoji_S23_EmeraldGlass_Punch": {
+      "templateId": "AthenaDance:Emoji_S23_EmeraldGlass_Punch",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaDance:Emoji_S23_RebootRally": {
+      "templateId": "AthenaDance:Emoji_S23_RebootRally",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaDance:Emoji_S23_RedPepper": {
+      "templateId": "AthenaDance:Emoji_S23_RedPepper",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaDance:Emoji_S23_RuslordFire": {
+      "templateId": "AthenaDance:Emoji_S23_RuslordFire",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaDance:Emoji_S23_SharpFang": {
+      "templateId": "AthenaDance:Emoji_S23_SharpFang",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaDance:Emoji_S23_Sunlit": {
+      "templateId": "AthenaDance:Emoji_S23_Sunlit",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaDance:Emoji_S23_Venice": {
+      "templateId": "AthenaDance:Emoji_S23_Venice",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaDance:Emoji_S23_Winterfest_2022": {
+      "templateId": "AthenaDance:Emoji_S23_Winterfest_2022",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaDance:Emoji_S23_ZeroWeekEvent": {
+      "templateId": "AthenaDance:Emoji_S23_ZeroWeekEvent",
       "attributes": {
         "max_level_bonus": 0,
         "level": 1,
@@ -62193,6 +65363,27 @@
       },
       "quantity": 1
     },
+    "AthenaGlider:Glider_Apprentice": {
+      "templateId": "AthenaGlider:Glider_Apprentice",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [
+          {
+            "channel": "Particle",
+            "active": "Particle1",
+            "owned": [
+              "Particle1",
+              "Particle2"
+            ]
+          }
+        ],
+        "favorite": false
+      },
+      "quantity": 1
+    },
     "AthenaGlider:Glider_BadBear": {
       "templateId": "AthenaGlider:Glider_BadBear",
       "attributes": {
@@ -62262,8 +65453,86 @@
       },
       "quantity": 1
     },
+    "AthenaGlider:Glider_Chainmail": {
+      "templateId": "AthenaGlider:Glider_Chainmail",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [
+          {
+            "channel": "Particle",
+            "active": "Particle1",
+            "owned": [
+              "Particle1",
+              "Particle2"
+            ]
+          }
+        ],
+        "favorite": false
+      },
+      "quantity": 1
+    },
     "AthenaGlider:Glider_ChillCat": {
       "templateId": "AthenaGlider:Glider_ChillCat",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaGlider:Glider_Citadel": {
+      "templateId": "AthenaGlider:Glider_Citadel",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaGlider:Glider_CoyoteTrail": {
+      "templateId": "AthenaGlider:Glider_CoyoteTrail",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [
+          {
+            "channel": "Material",
+            "active": "Mat1",
+            "owned": [
+              "Mat1",
+              "Mat2"
+            ]
+          }
+        ],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaGlider:Glider_CyberFuGlitch": {
+      "templateId": "AthenaGlider:Glider_CyberFuGlitch",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaGlider:Glider_Default_Jolly": {
+      "templateId": "AthenaGlider:Glider_Default_Jolly",
       "attributes": {
         "max_level_bonus": 0,
         "level": 1,
@@ -64017,7 +67286,16 @@
         "level": 1,
         "item_seen": true,
         "xp": 0,
-        "variants": [],
+        "variants": [
+          {
+            "channel": "Particle",
+            "active": "Particle1",
+            "owned": [
+              "Particle1",
+              "Particle2"
+            ]
+          }
+        ],
         "favorite": false
       },
       "quantity": 1
@@ -67485,6 +70763,18 @@
       },
       "quantity": 1
     },
+    "AthenaGlider:Glider_ID_380_BariumFemale": {
+      "templateId": "AthenaGlider:Glider_ID_380_BariumFemale",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
     "AthenaGlider:Glider_ID_381_CanaryMale": {
       "templateId": "AthenaGlider:Glider_ID_381_CanaryMale",
       "attributes": {
@@ -67603,6 +70893,30 @@
       },
       "quantity": 1
     },
+    "AthenaGlider:Glider_JollyTroll": {
+      "templateId": "AthenaGlider:Glider_JollyTroll",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaGlider:Glider_Lettuce": {
+      "templateId": "AthenaGlider:Glider_Lettuce",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
     "AthenaGlider:Glider_Meteorwomen_Alt": {
       "templateId": "AthenaGlider:Glider_Meteorwomen_Alt",
       "attributes": {
@@ -67696,6 +71010,18 @@
       },
       "quantity": 1
     },
+    "AthenaGlider:Glider_RedPepper": {
+      "templateId": "AthenaGlider:Glider_RedPepper",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
     "AthenaGlider:Glider_RoadTrip": {
       "templateId": "AthenaGlider:Glider_RoadTrip",
       "attributes": {
@@ -67768,6 +71094,18 @@
       },
       "quantity": 1
     },
+    "AthenaGlider:Glider_Sunlit": {
+      "templateId": "AthenaGlider:Glider_Sunlit",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
     "AthenaGlider:Glider_TestStaticParts": {
       "templateId": "AthenaGlider:Glider_TestStaticParts",
       "attributes": {
@@ -67776,6 +71114,27 @@
         "item_seen": true,
         "xp": 0,
         "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaGlider:Glider_Venice": {
+      "templateId": "AthenaGlider:Glider_Venice",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [
+          {
+            "channel": "Particle",
+            "active": "Particle1",
+            "owned": [
+              "Particle1",
+              "Particle2"
+            ]
+          }
+        ],
         "favorite": false
       },
       "quantity": 1
@@ -67840,6 +71199,30 @@
       },
       "quantity": 1
     },
+    "AthenaLoadingScreen:LoadingScreen_Apprentice_Blue": {
+      "templateId": "AthenaLoadingScreen:LoadingScreen_Apprentice_Blue",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaLoadingScreen:LoadingScreen_Apprentice_Forcefield": {
+      "templateId": "AthenaLoadingScreen:LoadingScreen_Apprentice_Forcefield",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
     "AthenaLoadingScreen:LoadingScreen_BadBear": {
       "templateId": "AthenaLoadingScreen:LoadingScreen_BadBear",
       "attributes": {
@@ -67876,8 +71259,56 @@
       },
       "quantity": 1
     },
+    "AthenaLoadingScreen:LoadingScreen_Chainmail": {
+      "templateId": "AthenaLoadingScreen:LoadingScreen_Chainmail",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaLoadingScreen:LoadingScreen_Chainmail_Bat": {
+      "templateId": "AthenaLoadingScreen:LoadingScreen_Chainmail_Bat",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
     "AthenaLoadingScreen:LoadingScreen_ChillCat": {
       "templateId": "AthenaLoadingScreen:LoadingScreen_ChillCat",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaLoadingScreen:LoadingScreen_Citadel": {
+      "templateId": "AthenaLoadingScreen:LoadingScreen_Citadel",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaLoadingScreen:LoadingScreen_Citadel_SwordRaise": {
+      "templateId": "AthenaLoadingScreen:LoadingScreen_Citadel_SwordRaise",
       "attributes": {
         "max_level_bonus": 0,
         "level": 1,
@@ -67912,6 +71343,18 @@
       },
       "quantity": 1
     },
+    "AthenaLoadingScreen:LoadingScreen_DowntimeMicrosite_Reward": {
+      "templateId": "AthenaLoadingScreen:LoadingScreen_DowntimeMicrosite_Reward",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
     "AthenaLoadingScreen:LoadingScreen_Fortnitemares_2022": {
       "templateId": "AthenaLoadingScreen:LoadingScreen_Fortnitemares_2022",
       "attributes": {
@@ -67926,6 +71369,18 @@
     },
     "AthenaLoadingScreen:LoadingScreen_Fortnitemares_Boss": {
       "templateId": "AthenaLoadingScreen:LoadingScreen_Fortnitemares_Boss",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaLoadingScreen:LoadingScreen_Genius": {
+      "templateId": "AthenaLoadingScreen:LoadingScreen_Genius",
       "attributes": {
         "max_level_bonus": 0,
         "level": 1,
@@ -67972,6 +71427,30 @@
       },
       "quantity": 1
     },
+    "AthenaLoadingScreen:LoadingScreen_Lettuce_Tournament": {
+      "templateId": "AthenaLoadingScreen:LoadingScreen_Lettuce_Tournament",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaLoadingScreen:LoadingScreen_MagicMeadow": {
+      "templateId": "AthenaLoadingScreen:LoadingScreen_MagicMeadow",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
     "AthenaLoadingScreen:LoadingScreen_MercurialStorm": {
       "templateId": "AthenaLoadingScreen:LoadingScreen_MercurialStorm",
       "attributes": {
@@ -67998,6 +71477,18 @@
     },
     "AthenaLoadingScreen:LoadingScreen_Mochi": {
       "templateId": "AthenaLoadingScreen:LoadingScreen_Mochi",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaLoadingScreen:LoadingScreen_Mouse": {
+      "templateId": "AthenaLoadingScreen:LoadingScreen_Mouse",
       "attributes": {
         "max_level_bonus": 0,
         "level": 1,
@@ -68044,6 +71535,54 @@
       },
       "quantity": 1
     },
+    "AthenaLoadingScreen:LoadingScreen_Questline": {
+      "templateId": "AthenaLoadingScreen:LoadingScreen_Questline",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaLoadingScreen:LoadingScreen_Radish_ConceptArt": {
+      "templateId": "AthenaLoadingScreen:LoadingScreen_Radish_ConceptArt",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaLoadingScreen:LoadingScreen_Radish_KeyArt": {
+      "templateId": "AthenaLoadingScreen:LoadingScreen_Radish_KeyArt",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaLoadingScreen:LoadingScreen_RedPepper": {
+      "templateId": "AthenaLoadingScreen:LoadingScreen_RedPepper",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
     "AthenaLoadingScreen:LoadingScreen_RoseDust": {
       "templateId": "AthenaLoadingScreen:LoadingScreen_RoseDust",
       "attributes": {
@@ -68058,6 +71597,30 @@
     },
     "AthenaLoadingScreen:LoadingScreen_RoseDust_Alt": {
       "templateId": "AthenaLoadingScreen:LoadingScreen_RoseDust_Alt",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaLoadingScreen:LoadingScreen_S23BP_Lineup": {
+      "templateId": "AthenaLoadingScreen:LoadingScreen_S23BP_Lineup",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaLoadingScreen:LoadingScreen_S23KeyArt": {
+      "templateId": "AthenaLoadingScreen:LoadingScreen_S23KeyArt",
       "attributes": {
         "max_level_bonus": 0,
         "level": 1,
@@ -68104,8 +71667,56 @@
       },
       "quantity": 1
     },
+    "AthenaLoadingScreen:LoadingScreen_SCRN_Silencer": {
+      "templateId": "AthenaLoadingScreen:LoadingScreen_SCRN_Silencer",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
     "AthenaLoadingScreen:LoadingScreen_SCRN_Veiled": {
       "templateId": "AthenaLoadingScreen:LoadingScreen_SCRN_Veiled",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaLoadingScreen:LoadingScreen_SharpFang_Extra": {
+      "templateId": "AthenaLoadingScreen:LoadingScreen_SharpFang_Extra",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaLoadingScreen:LoadingScreen_SharpFang_Slash": {
+      "templateId": "AthenaLoadingScreen:LoadingScreen_SharpFang_Slash",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaLoadingScreen:LoadingScreen_Silencer": {
+      "templateId": "AthenaLoadingScreen:LoadingScreen_Silencer",
       "attributes": {
         "max_level_bonus": 0,
         "level": 1,
@@ -68130,6 +71741,18 @@
     },
     "AthenaLoadingScreen:LoadingScreen_Stallion": {
       "templateId": "AthenaLoadingScreen:LoadingScreen_Stallion",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaLoadingScreen:LoadingScreen_Sunlit": {
+      "templateId": "AthenaLoadingScreen:LoadingScreen_Sunlit",
       "attributes": {
         "max_level_bonus": 0,
         "level": 1,
@@ -68166,6 +71789,30 @@
     },
     "AthenaLoadingScreen:LoadingScreen_Veiled": {
       "templateId": "AthenaLoadingScreen:LoadingScreen_Veiled",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaLoadingScreen:LoadingScreen_Venice": {
+      "templateId": "AthenaLoadingScreen:LoadingScreen_Venice",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaLoadingScreen:LoadingScreen_Venice_Skateboard": {
+      "templateId": "AthenaLoadingScreen:LoadingScreen_Venice_Skateboard",
       "attributes": {
         "max_level_bonus": 0,
         "level": 1,
@@ -73564,6 +77211,18 @@
       },
       "quantity": 1
     },
+    "AthenaLoadingScreen:LSID_473_Barium": {
+      "templateId": "AthenaLoadingScreen:LSID_473_Barium",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
     "AthenaLoadingScreen:LSID_475_SCRN_Stamina": {
       "templateId": "AthenaLoadingScreen:LSID_475_SCRN_Stamina",
       "attributes": {
@@ -75460,6 +79119,114 @@
       },
       "quantity": 1
     },
+    "AthenaMusicPack:MusicPack_156_Radish_Event": {
+      "templateId": "AthenaMusicPack:MusicPack_156_Radish_Event",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaMusicPack:MusicPack_157_Radish_NightNight": {
+      "templateId": "AthenaMusicPack:MusicPack_157_Radish_NightNight",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaMusicPack:MusicPack_158_VampireHunters": {
+      "templateId": "AthenaMusicPack:MusicPack_158_VampireHunters",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaMusicPack:MusicPack_159_Chainmail": {
+      "templateId": "AthenaMusicPack:MusicPack_159_Chainmail",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaMusicPack:MusicPack_160_Venice": {
+      "templateId": "AthenaMusicPack:MusicPack_160_Venice",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaMusicPack:MusicPack_161_Citadel": {
+      "templateId": "AthenaMusicPack:MusicPack_161_Citadel",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaMusicPack:MusicPack_162_S23Default": {
+      "templateId": "AthenaMusicPack:MusicPack_162_S23Default",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaMusicPack:MusicPack_163_Winterfest_2022": {
+      "templateId": "AthenaMusicPack:MusicPack_163_Winterfest_2022",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaMusicPack:MusicPack_164_RedPepper_Winterfest": {
+      "templateId": "AthenaMusicPack:MusicPack_164_RedPepper_Winterfest",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
     "AthenaMusicPack:MusicPack_STW001_CannyValley": {
       "templateId": "AthenaMusicPack:MusicPack_STW001_CannyValley",
       "attributes": {
@@ -75995,8 +79762,74 @@
       },
       "quantity": 1
     },
+    "AthenaPickaxe:Pickaxe_Apprentice": {
+      "templateId": "AthenaPickaxe:Pickaxe_Apprentice",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [
+          {
+            "channel": "Mesh",
+            "active": "Stage1",
+            "owned": [
+              "Stage1",
+              "Stage2"
+            ]
+          }
+        ],
+        "favorite": false
+      },
+      "quantity": 1
+    },
     "AthenaPickaxe:Pickaxe_BadBear": {
       "templateId": "AthenaPickaxe:Pickaxe_BadBear",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaPickaxe:Pickaxe_Ballerina": {
+      "templateId": "AthenaPickaxe:Pickaxe_Ballerina",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [
+          {
+            "channel": "Particle",
+            "active": "Particle1",
+            "owned": [
+              "Particle1",
+              "Particle2"
+            ]
+          }
+        ],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaPickaxe:Pickaxe_BariumDemon": {
+      "templateId": "AthenaPickaxe:Pickaxe_BariumDemon",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaPickaxe:Pickaxe_Basil": {
+      "templateId": "AthenaPickaxe:Pickaxe_Basil",
       "attributes": {
         "max_level_bonus": 0,
         "level": 1,
@@ -76030,6 +79863,18 @@
             ]
           }
         ],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaPickaxe:Pickaxe_BlueJet": {
+      "templateId": "AthenaPickaxe:Pickaxe_BlueJet",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
         "favorite": false
       },
       "quantity": 1
@@ -76112,6 +79957,27 @@
       },
       "quantity": 1
     },
+    "AthenaPickaxe:Pickaxe_Chainmail": {
+      "templateId": "AthenaPickaxe:Pickaxe_Chainmail",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [
+          {
+            "channel": "Mesh",
+            "active": "Stage1",
+            "owned": [
+              "Stage1",
+              "Stage2"
+            ]
+          }
+        ],
+        "favorite": false
+      },
+      "quantity": 1
+    },
     "AthenaPickaxe:Pickaxe_ChillCat": {
       "templateId": "AthenaPickaxe:Pickaxe_ChillCat",
       "attributes": {
@@ -76124,8 +79990,44 @@
       },
       "quantity": 1
     },
+    "AthenaPickaxe:Pickaxe_Citadel": {
+      "templateId": "AthenaPickaxe:Pickaxe_Citadel",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
     "AthenaPickaxe:Pickaxe_Conscience": {
       "templateId": "AthenaPickaxe:Pickaxe_Conscience",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaPickaxe:Pickaxe_CoyoteTrail": {
+      "templateId": "AthenaPickaxe:Pickaxe_CoyoteTrail",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaPickaxe:Pickaxe_CoyoteTrailDark": {
+      "templateId": "AthenaPickaxe:Pickaxe_CoyoteTrailDark",
       "attributes": {
         "max_level_bonus": 0,
         "level": 1,
@@ -76231,6 +80133,54 @@
       },
       "quantity": 1
     },
+    "AthenaPickaxe:Pickaxe_EmeraldGlassGreen": {
+      "templateId": "AthenaPickaxe:Pickaxe_EmeraldGlassGreen",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaPickaxe:Pickaxe_EmeraldGlassPink": {
+      "templateId": "AthenaPickaxe:Pickaxe_EmeraldGlassPink",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaPickaxe:Pickaxe_EmeraldGlassRebel": {
+      "templateId": "AthenaPickaxe:Pickaxe_EmeraldGlassRebel",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaPickaxe:Pickaxe_EmeraldGlassTransform": {
+      "templateId": "AthenaPickaxe:Pickaxe_EmeraldGlassTransform",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
     "AthenaPickaxe:Pickaxe_Flamingo": {
       "templateId": "AthenaPickaxe:Pickaxe_Flamingo",
       "attributes": {
@@ -76245,6 +80195,18 @@
     },
     "AthenaPickaxe:Pickaxe_FNBirthday5": {
       "templateId": "AthenaPickaxe:Pickaxe_FNBirthday5",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaPickaxe:Pickaxe_GelatinGummi": {
+      "templateId": "AthenaPickaxe:Pickaxe_GelatinGummi",
       "attributes": {
         "max_level_bonus": 0,
         "level": 1,
@@ -78409,7 +82371,16 @@
         "level": 1,
         "item_seen": true,
         "xp": 0,
-        "variants": [],
+        "variants": [
+          {
+            "channel": "Particle",
+            "active": "Particle1",
+            "owned": [
+              "Particle1",
+              "Particle2"
+            ]
+          }
+        ],
         "favorite": false
       },
       "quantity": 1
@@ -87721,6 +91692,18 @@
       },
       "quantity": 1
     },
+    "AthenaPickaxe:Pickaxe_ID_825_BariumFemale": {
+      "templateId": "AthenaPickaxe:Pickaxe_ID_825_BariumFemale",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
     "AthenaPickaxe:Pickaxe_ID_826_ParfaitFemale": {
       "templateId": "AthenaPickaxe:Pickaxe_ID_826_ParfaitFemale",
       "attributes": {
@@ -88243,6 +92226,77 @@
       },
       "quantity": 1
     },
+    "AthenaPickaxe:Pickaxe_Impulse": {
+      "templateId": "AthenaPickaxe:Pickaxe_Impulse",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [
+          {
+            "channel": "Material",
+            "active": "Mat1",
+            "owned": [
+              "Mat1",
+              "Mat2",
+              "Mat3",
+              "Mat4",
+              "Mat5",
+              "Mat6",
+              "Mat7"
+            ]
+          }
+        ],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaPickaxe:Pickaxe_JollyTroll": {
+      "templateId": "AthenaPickaxe:Pickaxe_JollyTroll",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaPickaxe:Pickaxe_Lettuce": {
+      "templateId": "AthenaPickaxe:Pickaxe_Lettuce",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [
+          {
+            "channel": "Particle",
+            "active": "Particle1",
+            "owned": [
+              "Particle1",
+              "Particle2"
+            ]
+          }
+        ],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaPickaxe:Pickaxe_LettuceCat": {
+      "templateId": "AthenaPickaxe:Pickaxe_LettuceCat",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
     "AthenaPickaxe:Pickaxe_LightningDragon": {
       "templateId": "AthenaPickaxe:Pickaxe_LightningDragon",
       "attributes": {
@@ -88257,6 +92311,18 @@
     },
     "AthenaPickaxe:Pickaxe_Lockjaw": {
       "templateId": "AthenaPickaxe:Pickaxe_Lockjaw",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaPickaxe:Pickaxe_MagicMeadow": {
+      "templateId": "AthenaPickaxe:Pickaxe_MagicMeadow",
       "attributes": {
         "max_level_bonus": 0,
         "level": 1,
@@ -88351,6 +92417,54 @@
       },
       "quantity": 1
     },
+    "AthenaPickaxe:Pickaxe_Mouse": {
+      "templateId": "AthenaPickaxe:Pickaxe_Mouse",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaPickaxe:Pickaxe_Nox": {
+      "templateId": "AthenaPickaxe:Pickaxe_Nox",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaPickaxe:Pickaxe_Photographer_Holiday_Female": {
+      "templateId": "AthenaPickaxe:Pickaxe_Photographer_Holiday_Female",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaPickaxe:Pickaxe_PinkJet": {
+      "templateId": "AthenaPickaxe:Pickaxe_PinkJet",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
     "AthenaPickaxe:Pickaxe_PinkSpike": {
       "templateId": "AthenaPickaxe:Pickaxe_PinkSpike",
       "attributes": {
@@ -88426,6 +92540,18 @@
       },
       "quantity": 1
     },
+    "AthenaPickaxe:Pickaxe_RedPepper": {
+      "templateId": "AthenaPickaxe:Pickaxe_RedPepper",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
     "AthenaPickaxe:Pickaxe_RenegadeRaider_Spark": {
       "templateId": "AthenaPickaxe:Pickaxe_RenegadeRaider_Spark",
       "attributes": {
@@ -88474,6 +92600,62 @@
       },
       "quantity": 1
     },
+    "AthenaPickaxe:Pickaxe_SharpFang": {
+      "templateId": "AthenaPickaxe:Pickaxe_SharpFang",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [
+          {
+            "channel": "Particle",
+            "active": "Particle1",
+            "owned": [
+              "Particle1",
+              "Particle2",
+              "Particle3"
+            ]
+          }
+        ],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaPickaxe:Pickaxe_SharpSilver": {
+      "templateId": "AthenaPickaxe:Pickaxe_SharpSilver",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaPickaxe:Pickaxe_Silencer": {
+      "templateId": "AthenaPickaxe:Pickaxe_Silencer",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [
+          {
+            "channel": "Particle",
+            "active": "Particle1",
+            "owned": [
+              "Particle1",
+              "Particle2",
+              "Particle3"
+            ]
+          }
+        ],
+        "favorite": false
+      },
+      "quantity": 1
+    },
     "AthenaPickaxe:Pickaxe_SpyMale_FNCS_22": {
       "templateId": "AthenaPickaxe:Pickaxe_SpyMale_FNCS_22",
       "attributes": {
@@ -88500,6 +92682,30 @@
     },
     "AthenaPickaxe:Pickaxe_StallionSmoke": {
       "templateId": "AthenaPickaxe:Pickaxe_StallionSmoke",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaPickaxe:Pickaxe_Sunlit": {
+      "templateId": "AthenaPickaxe:Pickaxe_Sunlit",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaPickaxe:Pickaxe_TaxiUpgraded_Vista": {
+      "templateId": "AthenaPickaxe:Pickaxe_TaxiUpgraded_Vista",
       "attributes": {
         "max_level_bonus": 0,
         "level": 1,
@@ -88542,6 +92748,48 @@
         "item_seen": true,
         "xp": 0,
         "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaPickaxe:Pickaxe_Venice": {
+      "templateId": "AthenaPickaxe:Pickaxe_Venice",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [
+          {
+            "channel": "Mesh",
+            "active": "Stage1",
+            "owned": [
+              "Stage1",
+              "Stage2"
+            ]
+          }
+        ],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaPickaxe:PIckaxe_Virtuous": {
+      "templateId": "AthenaPickaxe:PIckaxe_Virtuous",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [
+          {
+            "channel": "Particle",
+            "active": "Particle1",
+            "owned": [
+              "Particle1",
+              "Particle2"
+            ]
+          }
+        ],
         "favorite": false
       },
       "quantity": 1
@@ -93754,6 +98002,18 @@
       },
       "quantity": 1
     },
+    "AthenaDance:Spray_Apprentice": {
+      "templateId": "AthenaDance:Spray_Apprentice",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
     "AthenaDance:Spray_BadBear_Hand": {
       "templateId": "AthenaDance:Spray_BadBear_Hand",
       "attributes": {
@@ -93768,6 +98028,18 @@
     },
     "AthenaDance:Spray_BadBear_Muscle": {
       "templateId": "AthenaDance:Spray_BadBear_Muscle",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaDance:Spray_BasilStrong_Pickaxe": {
+      "templateId": "AthenaDance:Spray_BasilStrong_Pickaxe",
       "attributes": {
         "max_level_bonus": 0,
         "level": 1,
@@ -93826,8 +98098,44 @@
       },
       "quantity": 1
     },
+    "AthenaDance:Spray_Chainmail_Bat": {
+      "templateId": "AthenaDance:Spray_Chainmail_Bat",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaDance:Spray_Chainmail_Mask": {
+      "templateId": "AthenaDance:Spray_Chainmail_Mask",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
     "AthenaDance:Spray_ChillCat": {
       "templateId": "AthenaDance:Spray_ChillCat",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaDance:Spray_Citadel": {
+      "templateId": "AthenaDance:Spray_Citadel",
       "attributes": {
         "max_level_bonus": 0,
         "level": 1,
@@ -93850,8 +98158,68 @@
       },
       "quantity": 1
     },
+    "AthenaDance:Spray_CoyoteTrail": {
+      "templateId": "AthenaDance:Spray_CoyoteTrail",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaDance:Spray_DefacedSnowman_Winterfest2022": {
+      "templateId": "AthenaDance:Spray_DefacedSnowman_Winterfest2022",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
     "AthenaDance:Spray_Dizzy_Drip": {
       "templateId": "AthenaDance:Spray_Dizzy_Drip",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaDance:Spray_EmeraldGlass": {
+      "templateId": "AthenaDance:Spray_EmeraldGlass",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaDance:Spray_EmeraldGlass_Green": {
+      "templateId": "AthenaDance:Spray_EmeraldGlass_Green",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaDance:Spray_FFC": {
+      "templateId": "AthenaDance:Spray_FFC",
       "attributes": {
         "max_level_bonus": 0,
         "level": 1,
@@ -93898,6 +98266,30 @@
       },
       "quantity": 1
     },
+    "AthenaDance:Spray_GlitchPunk": {
+      "templateId": "AthenaDance:Spray_GlitchPunk",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaDance:Spray_GuffHolidayTree_Winterfest2022": {
+      "templateId": "AthenaDance:Spray_GuffHolidayTree_Winterfest2022",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
     "AthenaDance:Spray_Headset": {
       "templateId": "AthenaDance:Spray_Headset",
       "attributes": {
@@ -93910,8 +98302,44 @@
       },
       "quantity": 1
     },
+    "AthenaDance:Spray_Honk": {
+      "templateId": "AthenaDance:Spray_Honk",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
     "AthenaDance:Spray_Invitational": {
       "templateId": "AthenaDance:Spray_Invitational",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaDance:Spray_LettuceGaming": {
+      "templateId": "AthenaDance:Spray_LettuceGaming",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaDance:Spray_MagicMeadow": {
+      "templateId": "AthenaDance:Spray_MagicMeadow",
       "attributes": {
         "max_level_bonus": 0,
         "level": 1,
@@ -93958,6 +98386,18 @@
       },
       "quantity": 1
     },
+    "AthenaDance:Spray_NarrativeQuest": {
+      "templateId": "AthenaDance:Spray_NarrativeQuest",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
     "AthenaDance:Spray_PinkSpike": {
       "templateId": "AthenaDance:Spray_PinkSpike",
       "attributes": {
@@ -93972,6 +98412,42 @@
     },
     "AthenaDance:Spray_PurpleFootballLlama": {
       "templateId": "AthenaDance:Spray_PurpleFootballLlama",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaDance:Spray_RedOasis": {
+      "templateId": "AthenaDance:Spray_RedOasis",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaDance:Spray_RedPepper": {
+      "templateId": "AthenaDance:Spray_RedPepper",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaDance:Spray_RL_Vista": {
+      "templateId": "AthenaDance:Spray_RL_Vista",
       "attributes": {
         "max_level_bonus": 0,
         "level": 1,
@@ -94030,6 +98506,18 @@
       },
       "quantity": 1
     },
+    "AthenaDance:Spray_SharpFang_Sipping": {
+      "templateId": "AthenaDance:Spray_SharpFang_Sipping",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
     "AthenaDance:Spray_Showdown_Co": {
       "templateId": "AthenaDance:Spray_Showdown_Co",
       "attributes": {
@@ -94078,8 +98566,56 @@
       },
       "quantity": 1
     },
+    "AthenaDance:Spray_Sunlit": {
+      "templateId": "AthenaDance:Spray_Sunlit",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
     "AthenaDance:Spray_TheHerald": {
       "templateId": "AthenaDance:Spray_TheHerald",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaDance:Spray_Venice_Bird": {
+      "templateId": "AthenaDance:Spray_Venice_Bird",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaDance:Spray_Venice_Skateboard": {
+      "templateId": "AthenaDance:Spray_Venice_Skateboard",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaDance:Spray_WinterReindeer_Winterfest2022": {
+      "templateId": "AthenaDance:Spray_WinterReindeer_Winterfest2022",
       "attributes": {
         "max_level_bonus": 0,
         "level": 1,
@@ -95978,6 +100514,18 @@
       },
       "quantity": 1
     },
+    "AthenaGlider:Umbrella_Lettuce": {
+      "templateId": "AthenaGlider:Umbrella_Lettuce",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
     "AthenaGlider:Umbrella_PaperParasol": {
       "templateId": "AthenaGlider:Umbrella_PaperParasol",
       "attributes": {
@@ -96220,6 +100768,18 @@
     },
     "AthenaGlider:Umbrella_Season_22": {
       "templateId": "AthenaGlider:Umbrella_Season_22",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaGlider:Umbrella_Season_23": {
+      "templateId": "AthenaGlider:Umbrella_Season_23",
       "attributes": {
         "max_level_bonus": 0,
         "level": 1,
@@ -102074,6 +106634,18 @@
       },
       "quantity": 1
     },
+    "AthenaItemWrap:Wrap_500_Barium": {
+      "templateId": "AthenaItemWrap:Wrap_500_Barium",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
     "AthenaItemWrap:Wrap_501_GlassSpectrum": {
       "templateId": "AthenaItemWrap:Wrap_501_GlassSpectrum",
       "attributes": {
@@ -102338,8 +106910,32 @@
       },
       "quantity": 1
     },
+    "AthenaItemWrap:Wrap_Apprentice": {
+      "templateId": "AthenaItemWrap:Wrap_Apprentice",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
     "AthenaItemWrap:Wrap_BadBear": {
       "templateId": "AthenaItemWrap:Wrap_BadBear",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaItemWrap:Wrap_Barium_Demon": {
+      "templateId": "AthenaItemWrap:Wrap_Barium_Demon",
       "attributes": {
         "max_level_bonus": 0,
         "level": 1,
@@ -102398,6 +106994,18 @@
       },
       "quantity": 1
     },
+    "AthenaItemWrap:Wrap_Chainmail": {
+      "templateId": "AthenaItemWrap:Wrap_Chainmail",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
     "AthenaItemWrap:Wrap_ChillCat": {
       "templateId": "AthenaItemWrap:Wrap_ChillCat",
       "attributes": {
@@ -102424,6 +107032,30 @@
     },
     "AthenaItemWrap:Wrap_Circuit": {
       "templateId": "AthenaItemWrap:Wrap_Circuit",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaItemWrap:Wrap_Citadel": {
+      "templateId": "AthenaItemWrap:Wrap_Citadel",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaItemWrap:Wrap_CometWinter": {
+      "templateId": "AthenaItemWrap:Wrap_CometWinter",
       "attributes": {
         "max_level_bonus": 0,
         "level": 1,
@@ -102518,6 +107150,30 @@
       },
       "quantity": 1
     },
+    "AthenaItemWrap:Wrap_CoyoteTrail": {
+      "templateId": "AthenaItemWrap:Wrap_CoyoteTrail",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaItemWrap:Wrap_CyberFu_Glitch": {
+      "templateId": "AthenaItemWrap:Wrap_CyberFu_Glitch",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
     "AthenaItemWrap:Wrap_DarkAzeala": {
       "templateId": "AthenaItemWrap:Wrap_DarkAzeala",
       "attributes": {
@@ -102578,6 +107234,18 @@
       },
       "quantity": 1
     },
+    "AthenaItemWrap:Wrap_GreenGlass": {
+      "templateId": "AthenaItemWrap:Wrap_GreenGlass",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
     "AthenaItemWrap:Wrap_HeadSet": {
       "templateId": "AthenaItemWrap:Wrap_HeadSet",
       "attributes": {
@@ -102592,6 +107260,18 @@
     },
     "AthenaItemWrap:Wrap_HexagonColors": {
       "templateId": "AthenaItemWrap:Wrap_HexagonColors",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaItemWrap:Wrap_Lettuce": {
+      "templateId": "AthenaItemWrap:Wrap_Lettuce",
       "attributes": {
         "max_level_bonus": 0,
         "level": 1,
@@ -102638,6 +107318,42 @@
       },
       "quantity": 1
     },
+    "AthenaItemWrap:Wrap_Mouse": {
+      "templateId": "AthenaItemWrap:Wrap_Mouse",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaItemWrap:Wrap_Neon_Blob": {
+      "templateId": "AthenaItemWrap:Wrap_Neon_Blob",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaItemWrap:Wrap_Neon_Drip": {
+      "templateId": "AthenaItemWrap:Wrap_Neon_Drip",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
     "AthenaItemWrap:Wrap_PinkSpike": {
       "templateId": "AthenaItemWrap:Wrap_PinkSpike",
       "attributes": {
@@ -102650,8 +107366,56 @@
       },
       "quantity": 1
     },
+    "AthenaItemWrap:Wrap_RedPepper": {
+      "templateId": "AthenaItemWrap:Wrap_RedPepper",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
     "AthenaItemWrap:Wrap_RenegadeRaiderSpark": {
       "templateId": "AthenaItemWrap:Wrap_RenegadeRaiderSpark",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaItemWrap:Wrap_SharpFang": {
+      "templateId": "AthenaItemWrap:Wrap_SharpFang",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaItemWrap:Wrap_SquareCells": {
+      "templateId": "AthenaItemWrap:Wrap_SquareCells",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaItemWrap:Wrap_Sunlit": {
+      "templateId": "AthenaItemWrap:Wrap_Sunlit",
       "attributes": {
         "max_level_bonus": 0,
         "level": 1,
@@ -102698,6 +107462,42 @@
       },
       "quantity": 1
     },
+    "AthenaItemWrap:Wrap_Venice": {
+      "templateId": "AthenaItemWrap:Wrap_Venice",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaItemWrap:Wrap_Virtuous": {
+      "templateId": "AthenaItemWrap:Wrap_Virtuous",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "AthenaItemWrap:Wrap_Winter_Pal": {
+      "templateId": "AthenaItemWrap:Wrap_Winter_Pal",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "variants": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
     "AthenaCharacter:Dev_TestAsset": {
       "templateId": "AthenaCharacter:Dev_TestAsset",
       "attributes": {
@@ -102721,6 +107521,39 @@
         "favorite": false
       },
       "quantity": 1
+    },
+    "S23_GIFTS": {
+      "templateId": "AthenaRewardGraph:s23_winterfest",
+      "attributes": {
+        "reward_nodes_claimed": [],
+        "unlock_epoch": "2022-12-12T14:00:00.000Z",
+        "unlock_keys_used": 0,
+        "player_random_seed": -2143043306,
+        "item_seen": false,
+        "player_state": [],
+        "reward_graph_purchased_timestamp": 1639693875638,
+        "reward_graph_purchased": true,
+        "reward_keys": [
+          {
+            "static_key_template_id": "Token:athena_s23_winterfest_key",
+            "static_key_max_count": 14,
+            "static_key_initial_count": 0,
+            "unlock_keys_used": 0
+          }
+        ]
+      },
+      "quantity": 1
+    },
+    "S23_GIFT_KEY": {
+      "templateId": "Token:athena_s23_winterfest_key",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": false,
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 14
     },
     "S19_GIFTS": {
       "templateId": "AthenaRewardGraph:s19_winterfest",
@@ -103239,6 +108072,219 @@
         "completion_visit_location_maintower": 1,
         "completion_visit_location_governmentcomplex": 1,
         "completion_impossible_poi_of_permanence": 9001
+      },
+      "quantity": 1
+    },
+    "Quest:quest_c3_discover_landmarks": {
+      "templateId": "Quest:quest_c3_discover_landmarks",
+      "attributes": {
+        "creation_time": "2018-04-30T00:00:00.000Z",
+        "level": -1,
+        "item_seen": true,
+        "playlists": [],
+        "sent_new_notification": true,
+        "challenge_bundle_id": "",
+        "xp_reward_scalar": 1,
+        "challenge_linked_quest_given": "",
+        "quest_pool": "",
+        "quest_state": "Claimed",
+        "bucket": "",
+        "last_state_change_time": "2018-04-30T00:00:00.000Z",
+        "challenge_linked_quest_parent": "",
+        "max_level_bonus": 0,
+        "xp": 0,
+        "quest_rarity": "uncommon",
+        "favorite": false,
+        "completion_visit_location_ch3_lm_wreckravine": 1,
+        "completion_visit_location_ch3_lm_windpowerbuilding": 1,
+        "completion_visit_location_ch3_lm_windmillfarm": 1,
+        "completion_visit_location_ch3_lm_volcanomonitoringstation": 1,
+        "completion_visit_location_ch3_lm_villageshack": 1,
+        "completion_visit_location_ch3_lm_vanlife": 1,
+        "completion_visit_location_ch3_lm_tinytimbertent": 1,
+        "completion_visit_location_ch3_lm_templestairs": 1,
+        "completion_visit_location_ch3_lm_sunnystepruin": 1,
+        "completion_visit_location_ch3_lm_smalltemple": 1,
+        "completion_visit_location_ch3_lm_smallmine": 1,
+        "completion_visit_location_ch3_lm_skypirateship": 1,
+        "completion_visit_location_ch3_lm_sinkhole": 1,
+        "completion_visit_location_ch3_lm_shroomstation": 1,
+        "completion_visit_location_ch3_lm_sevenresearchlab_3": 1,
+        "completion_visit_location_ch3_lm_sevenresearchlab_2": 1,
+        "completion_visit_location_ch3_lm_sevenresearchlab_1": 1,
+        "completion_visit_location_ch3_lm_sevenfb_07": 1,
+        "completion_visit_location_ch3_lm_sevenfb_06": 1,
+        "completion_visit_location_ch3_lm_sevenfb_05": 1,
+        "completion_visit_location_ch3_lm_sevenfb_04": 1,
+        "completion_visit_location_ch3_lm_sevenfb_03": 1,
+        "completion_visit_location_ch3_lm_sevenfb_02": 1,
+        "completion_visit_location_ch3_lm_sevenfb_01": 1,
+        "completion_visit_location_ch3_lm_seven_rockrock": 3,
+        "completion_visit_location_ch3_lm_seven_rocketbase": 1,
+        "completion_visit_location_ch3_lm_rustycarbeach": 1,
+        "completion_visit_location_ch3_lm_ruralgasstation": 1,
+        "completion_visit_location_ch3_lm_ruinedtempletropical": 1,
+        "completion_visit_location_ch3_lm_ruinedtemplejungle": 3,
+        "completion_visit_location_ch3_lm_rockmounds": 1,
+        "completion_visit_location_ch3_lm_rentallodge": 2,
+        "completion_visit_location_ch3_lm_raptorfarmhouse": 1,
+        "completion_visit_location_ch3_lm_rangertower": 1,
+        "completion_visit_location_ch3_lm_radiotower": 1,
+        "completion_visit_location_ch3_lm_puddlepond": 1,
+        "completion_visit_location_ch3_lm_powertower": 1,
+        "completion_visit_location_ch3_lm_plantnursery": 2,
+        "completion_visit_location_ch3_lm_piraterowboat": 1,
+        "completion_visit_location_ch3_lm_pinnaclepeak": 1,
+        "completion_visit_location_ch3_lm_pawntoon": 3,
+        "completion_visit_location_ch3_lm_partyblimp": 1,
+        "completion_visit_location_ch3_lm_paracon5": 1,
+        "completion_visit_location_ch3_lm_paracon4": 1,
+        "completion_visit_location_ch3_lm_paracon3": 1,
+        "completion_visit_location_ch3_lm_paracon2": 1,
+        "completion_visit_location_ch3_lm_paracon1": 1,
+        "completion_visit_location_ch3_lm_nosweathq": 1,
+        "completion_visit_location_ch3_lm_mushroomvillage": 1,
+        "completion_visit_location_ch3_lm_mushroomfarm": 1,
+        "completion_visit_location_ch3_lm_meowsculescabin": 1,
+        "completion_visit_location_ch3_lm_lootlakeisland": 1,
+        "completion_visit_location_ch3_lm_lootlakehouse": 1,
+        "completion_visit_location_ch3_lm_lootlake": 2,
+        "completion_visit_location_ch3_lm_looperlanding": 1,
+        "completion_visit_location_ch3_lm_loggingshack": 1,
+        "completion_visit_location_ch3_lm_loggingdock": 1,
+        "completion_visit_location_ch3_lm_llamafarm": 1,
+        "completion_visit_location_ch3_lm_lighthouse": 3,
+        "completion_visit_location_ch3_lm_kayakcampsite": 1,
+        "completion_visit_location_ch3_lm_io_outpost05": 1,
+        "completion_visit_location_ch3_lm_io_outpost04": 1,
+        "completion_visit_location_ch3_lm_io_outpost03": 1,
+        "completion_visit_location_ch3_lm_io_outpost02": 1,
+        "completion_visit_location_ch3_lm_io_outpost01": 1,
+        "completion_visit_location_ch3_lm_io_ds_05": 1,
+        "completion_visit_location_ch3_lm_io_ds_04": 1,
+        "completion_visit_location_ch3_lm_io_ds_03": 1,
+        "completion_visit_location_ch3_lm_io_ds_02": 1,
+        "completion_visit_location_ch3_lm_io_ds_01": 1,
+        "completion_visit_location_ch3_lm_io_dblimp05": 1,
+        "completion_visit_location_ch3_lm_io_dblimp04": 1,
+        "completion_visit_location_ch3_lm_io_dblimp03": 1,
+        "completion_visit_location_ch3_lm_io_dblimp02": 1,
+        "completion_visit_location_ch3_lm_io_dblimp01": 1,
+        "completion_visit_location_ch3_lm_io_blimp05": 1,
+        "completion_visit_location_ch3_lm_io_blimp04": 1,
+        "completion_visit_location_ch3_lm_io_blimp03": 1,
+        "completion_visit_location_ch3_lm_io_blimp02": 1,
+        "completion_visit_location_ch3_lm_io_blimp01": 1,
+        "completion_visit_location_ch3_lm_impossiblerock": 1,
+        "completion_visit_location_ch3_lm_horseshoebend": 1,
+        "completion_visit_location_ch3_lm_hiddenvillage": 1,
+        "completion_visit_location_ch3_lm_henchhut": 1,
+        "completion_visit_location_ch3_lm_geysergulch": 1,
+        "completion_visit_location_ch3_lm_frostyfields": 1,
+        "completion_visit_location_ch3_lm_floatingvault6": 1,
+        "completion_visit_location_ch3_lm_floatingvault5": 1,
+        "completion_visit_location_ch3_lm_floatingvault4": 1,
+        "completion_visit_location_ch3_lm_floatingvault3": 1,
+        "completion_visit_location_ch3_lm_floatingvault2": 1,
+        "completion_visit_location_ch3_lm_floatingvault1": 1,
+        "completion_visit_location_ch3_lm_floatinghermit": 1,
+        "completion_visit_location_ch3_lm_fishyisland": 1,
+        "completion_visit_location_ch3_lm_fishingshacks": 1,
+        "completion_visit_location_ch3_lm_fishingshack": 1,
+        "completion_visit_location_ch3_lm_fernisle": 1,
+        "completion_visit_location_ch3_lm_fancymansion": 2,
+        "completion_visit_location_ch3_lm_drillhill": 1,
+        "completion_visit_location_ch3_lm_dockingbay05": 1,
+        "completion_visit_location_ch3_lm_dockingbay04": 1,
+        "completion_visit_location_ch3_lm_dockingbay03": 1,
+        "completion_visit_location_ch3_lm_dockingbay02": 2,
+        "completion_visit_location_ch3_lm_dockingbay01": 1,
+        "completion_visit_location_ch3_lm_dirttrack": 1,
+        "completion_visit_location_ch3_lm_desertoasis": 1,
+        "completion_visit_location_ch3_lm_desertmansion": 1,
+        "completion_visit_location_ch3_lm_desertarch": 1,
+        "completion_visit_location_ch3_lm_densemushroomgrove": 1,
+        "completion_visit_location_ch3_lm_deadtreepond": 1,
+        "completion_visit_location_ch3_lm_crazycactus": 1,
+        "completion_visit_location_ch3_lm_crater03": 1,
+        "completion_visit_location_ch3_lm_crater02": 1,
+        "completion_visit_location_ch3_lm_crater01": 1,
+        "completion_visit_location_ch3_lm_crackshotscabin": 2,
+        "completion_visit_location_ch3_lm_cliffhouse": 2,
+        "completion_visit_location_ch3_lm_clams": 1,
+        "completion_visit_location_ch3_lm_cauliflower": 1,
+        "completion_visit_location_ch3_lm_cattus": 1,
+        "completion_visit_location_ch3_lm_butterbarn": 2,
+        "completion_visit_location_ch3_lm_burieddeserttown": 1,
+        "completion_visit_location_ch3_lm_bobshouse": 1,
+        "completion_visit_location_ch3_lm_boatrentals": 1,
+        "completion_visit_location_ch3_lm_boatclub": 2,
+        "completion_visit_location_ch3_lm_blockhouse": 1,
+        "completion_visit_location_ch3_lm_birdingdunes": 1,
+        "completion_visit_location_ch3_lm_bigtree": 1,
+        "completion_visit_location_ch3_lm_bigbridge": 1,
+        "completion_visit_location_ch3_lm_beachshacks": 1,
+        "completion_visit_location_ch3_lm_beachparty": 1,
+        "completion_visit_location_ch3_lm_beachcarpark": 1,
+        "completion_visit_location_ch3_lm_adrift": 1,
+        "completion_quest_c3_discover_landmarks_sleepyshrubs": 1,
+        "completion_quest_c3_discover_landmarks_runway": 1,
+        "completion_quest_c3_discover_landmarks_realityroots": 1,
+        "completion_quest_c3_discover_landmarks_lushlogs": 1,
+        "completion_quest_c3_discover_landmarks_joels": 1,
+        "completion_quest_c3_discover_landmarks_floatingmineshaft": 1,
+        "completion_quest_c3_discover_landmarks_deadcabin": 1,
+        "completion_quest_c3_discover_landmarks_chopshop": 1,
+        "completion_quest_c3_discover_landmarks_bungalowblooms": 2,
+        "completion_quest_c3_discover_landmarks_biggas": 1,
+        "completion_impossible_landmark_of_permanence_ch3": 9001
+      },
+      "quantity": 1
+    },
+    "Quest:quest_c3_discover_namedlocations": {
+      "templateId": "Quest:quest_c3_discover_namedlocations",
+      "attributes": {
+        "creation_time": "2018-04-30T00:00:00.000Z",
+        "level": -1,
+        "item_seen": true,
+        "playlists": [],
+        "sent_new_notification": true,
+        "challenge_bundle_id": "",
+        "xp_reward_scalar": 1,
+        "challenge_linked_quest_given": "",
+        "quest_pool": "",
+        "quest_state": "Claimed",
+        "bucket": "",
+        "last_state_change_time": "2018-04-30T00:00:00.000Z",
+        "challenge_linked_quest_parent": "",
+        "max_level_bonus": 0,
+        "xp": 0,
+        "quest_rarity": "uncommon",
+        "favorite": false,
+        "completion_visit_location_ch3_tiltedtowers": 3,
+        "completion_visit_location_ch3_thetower": 1,
+        "completion_visit_location_ch3_thejoneses": 2,
+        "completion_visit_location_ch3_thefortress": 1,
+        "completion_visit_location_ch3_synapsestation": 1,
+        "completion_visit_location_ch3_sleepysound": 2,
+        "completion_visit_location_ch3_shuffledshrines": 5,
+        "completion_visit_location_ch3_shiftyshafts": 1,
+        "completion_visit_location_ch3_scientistlab": 1,
+        "completion_visit_location_ch3_sanctuary": 1,
+        "completion_visit_location_ch3_rockyreels": 2,
+        "completion_visit_location_ch3_logjam": 5,
+        "completion_visit_location_ch3_lazylagoon": 4,
+        "completion_visit_location_ch3_heraldfortress": 1,
+        "completion_visit_location_ch3_greasygrove": 2,
+        "completion_visit_location_ch3_dailybugle": 4,
+        "completion_visit_location_ch3_creamycrossroads": 3,
+        "completion_visit_location_ch3_covertcavern": 3,
+        "completion_visit_location_ch3_condocanyon": 3,
+        "completion_visit_location_ch3_chromerealitytree": 2,
+        "completion_visit_location_ch3_chonkersspeedway": 1,
+        "completion_visit_location_ch3_campcuddles": 2,
+        "completion_visit_location_ch3_airbornebutterbarn": 5,
+        "completion_impossible_poi_of_permanence_ch3": 9001
       },
       "quantity": 1
     }
