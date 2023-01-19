@@ -2850,7 +2850,7 @@
         "xp": 0,
         "favorite": false
       },
-      "quantity": 9579248
+      "quantity": 1000000000
     },
     "xp-boost": {
       "templateId": "Token:xpboost",
@@ -7275,7 +7275,7 @@
         "xp": 0,
         "favorite": false
       },
-      "quantity": 8339478
+      "quantity": 1000000000
     },
     "fe8032de-98da-4011-800a-db4ba851db85": {
       "templateId": "Quest:challenge_eldritchabominations_19",
