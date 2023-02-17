@@ -5,7 +5,6 @@
   "main": "index.js",
   "dependencies": {
     "cookie-parser": "^1.4.6",
-    "crypto": "^1.0.1",
     "express": "^4.17.2",
     "ini": "^2.0.0",
     "path": "^0.12.7",
