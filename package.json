@@ -7,7 +7,6 @@
     "cookie-parser": "^1.4.6",
     "crypto": "^1.0.1",
     "express": "^4.17.2",
-    "fs": "^0.0.1-security",
     "ini": "^2.0.0",
     "path": "^0.12.7",
     "uuid": "^8.3.2",
