@@ -1823,7 +1823,7 @@
         "xp": 0,
         "favorite": false
       },
-      "quantity": 968395829
+      "quantity": 1000000000
     },
     "cb0ba21a-0534-417d-b487-e0ac4ec2f484": {
       "templateId": "Quest:stonewoodquest_tutorial_levelup_hero",
@@ -5677,7 +5677,7 @@
         "xp": 0,
         "favorite": false
       },
-      "quantity": 459283945
+      "quantity": 1000000000
     },
     "d0298d94-68c1-4e4d-b7d4-e0d9caa9b945": {
       "templateId": "Quest:challenge_holdthedoor_16",
