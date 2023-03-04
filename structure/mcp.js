@@ -465,6 +465,16 @@ express.post("/fortnite/api/game/v2/profile/*/client/UnlockRewardNode", async (r
             "attributeValue": profile.items[req.body.rewardGraphId].attributes.reward_nodes_claimed
         })
 
+        if (memory.season == 11) {
+            profile.items.S11_GIFT_KEY.quantity -= 1;
+
+            ApplyProfileChanges.push({
+                "changeType": "itemQuantityChanged",
+                "itemId": "S11_GIFT_KEY",
+                "quantity": profile.items.S11_GIFT_KEY.quantity
+            })
+        }
+
         fs.writeFileSync(`./profiles/${req.query.profileId || "athena"}.json`, JSON.stringify(profile, null, 2));
         if (CommonCoreChanged == true) {
             fs.writeFileSync("./profiles/common_core.json", JSON.stringify(common_core, null, 2));

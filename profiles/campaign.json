@@ -1823,7 +1823,7 @@
         "xp": 0,
         "favorite": false
       },
-      "quantity": 968395829
+      "quantity": 1000000000
     },
     "cb0ba21a-0534-417d-b487-e0ac4ec2f484": {
       "templateId": "Quest:stonewoodquest_tutorial_levelup_hero",
@@ -2850,7 +2850,7 @@
         "xp": 0,
         "favorite": false
       },
-      "quantity": 9579248
+      "quantity": 1000000000
     },
     "xp-boost": {
       "templateId": "Token:xpboost",
@@ -5677,7 +5677,7 @@
         "xp": 0,
         "favorite": false
       },
-      "quantity": 459283945
+      "quantity": 1000000000
     },
     "d0298d94-68c1-4e4d-b7d4-e0d9caa9b945": {
       "templateId": "Quest:challenge_holdthedoor_16",
@@ -7275,7 +7275,7 @@
         "xp": 0,
         "favorite": false
       },
-      "quantity": 8339478
+      "quantity": 1000000000
     },
     "fe8032de-98da-4011-800a-db4ba851db85": {
       "templateId": "Quest:challenge_eldritchabominations_19",
@@ -13584,6 +13584,50 @@
             "owned": []
           }
         ],
+        "backblingvariants": [],
+        "gender": 0,
+        "level": 50,
+        "item_seen": true,
+        "squad_slot_idx": -1,
+        "portrait": "",
+        "hero_name": "DefaultHeroName",
+        "max_level_bonus": 0,
+        "squad_id": "",
+        "mode_loadouts": [],
+        "xp": 0,
+        "slotted_building_id": "",
+        "refundable": false,
+        "building_slot_used": -1,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Hero:HID_Commando_046_ForestQueen_SR_T05": {
+      "templateId": "Hero:HID_Commando_046_ForestQueen_SR_T05",
+      "attributes": {
+        "outfitvariants": [],
+        "backblingvariants": [],
+        "gender": 0,
+        "level": 50,
+        "item_seen": true,
+        "squad_slot_idx": -1,
+        "portrait": "",
+        "hero_name": "DefaultHeroName",
+        "max_level_bonus": 0,
+        "squad_id": "",
+        "mode_loadouts": [],
+        "xp": 0,
+        "slotted_building_id": "",
+        "refundable": false,
+        "building_slot_used": -1,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Hero:HID_Commando_046_ForestQueen_VR_T05": {
+      "templateId": "Hero:HID_Commando_046_ForestQueen_VR_T05",
+      "attributes": {
+        "outfitvariants": [],
         "backblingvariants": [],
         "gender": 0,
         "level": 50,

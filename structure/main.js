@@ -381,4 +381,9 @@ express.get("/region", async (req, res) => {
     })
 })
 
+// Parental Controls
+express.all("/v1/epic-settings/public/users/*/values", async (req, res) => {
+    res.json({})
+})
+
 module.exports = express;
