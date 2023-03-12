@@ -145,7 +145,7 @@ function getItemShop() {
 function getTheater(req) {
     const memory = GetVersionInfo(req);
 
-    var theater = JSON.stringify(require("./../responses/worldstw.json"));
+    var theater = JSON.stringify(require("./../responses/Campaign/worldstw.json"));
     var Season = "Season" + memory.season;
 
     try {

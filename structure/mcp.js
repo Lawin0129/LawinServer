@@ -26,7 +26,7 @@ express.use((req, res, next) => {
             if (!profile.commandRevision) profile.commandRevision = 0;
 
             if (file == "athena.json") {
-                var SeasonData = JSON.parse(JSON.stringify(require("./../responses/SeasonData.json")));
+                var SeasonData = JSON.parse(JSON.stringify(require("./../responses/Athena/SeasonData.json")));
                 profile.stats.attributes.season_num = memory.season;
 
                 if (SeasonData[`Season${memory.season}`]) {
@@ -312,7 +312,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/PurchaseHomebaseNode", asyn
 express.post("/fortnite/api/game/v2/profile/*/client/UnlockRewardNode", async (req, res) => {
     const profile = require(`./../profiles/${req.query.profileId || "athena"}.json`);
     const common_core = require("./../profiles/common_core.json");
-    const WinterFestIDS = require("./../responses/winterfestrewards.json");
+    const WinterFestIDS = require("./../responses/Athena/winterfestrewards.json");
     const memory = functions.GetVersionInfo(req);
 
     // do not change any of these or you will end up breaking it
@@ -1408,7 +1408,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/IncrementNamedCounterStat",
 // Claim STW daily reward
 express.post("/fortnite/api/game/v2/profile/*/client/ClaimLoginReward", async (req, res) => {
     const profile = require(`./../profiles/${req.query.profileId || "campaign"}.json`);
-    const DailyRewards = require("./../responses/dailyrewards.json");
+    const DailyRewards = require("./../responses/Campaign/dailyrewards.json");
     const memory = functions.GetVersionInfo(req);
 
     // do not change any of these or you will end up breaking it
@@ -2396,7 +2396,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/PromoteItem", async (req, r
 // Transform items STW
 express.post("/fortnite/api/game/v2/profile/*/client/TransmogItem", async (req, res) => {
     const profile = require(`./../profiles/${req.query.profileId || "campaign"}.json`);
-    var transformItemIDS = require("./../responses/transformItemIDS.json");
+    var transformItemIDS = require("./../responses/Campaign/transformItemIDS.json");
 
     // do not change any of these or you will end up breaking it
     var ApplyProfileChanges = [];
@@ -2421,7 +2421,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/TransmogItem", async (req, 
             transformItemIDS = transformItemIDS[req.body.transmogKeyTemplateId]
         }
         else {
-            transformItemIDS = require("./../responses/ItemIDS.json");
+            transformItemIDS = require("./../responses/Campaign/cardpackLootItemIDS.json");
         }
 
         StatChanged = true;
@@ -4539,7 +4539,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/UnassignAllSquads", async (
 // Open llama STW
 express.post("/fortnite/api/game/v2/profile/*/client/OpenCardPack", async (req, res) => {
     const profile = require(`./../profiles/${req.query.profileId || "campaign"}.json`);
-    const ItemIDS = require("./../responses/ItemIDS.json");
+    const ItemIDS = require("./../responses/Campaign/cardpackLootItemIDS.json");
 
     // do not change any of these or you will end up breaking it
     var ApplyProfileChanges = [];
@@ -4634,7 +4634,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/OpenCardPack", async (req, 
 // Add items to StW X-Ray Llamas
 express.post("/fortnite/api/game/v2/profile/*/client/PopulatePrerolledOffers", async (req, res) => {
     const profile = require(`./../profiles/${req.query.profileId || "campaign"}.json`);
-    const ItemIDS = require("./../responses/ItemIDS.json");
+    const ItemIDS = require("./../responses/Campaign/cardpackLootItemIDS.json");
 
     // do not change any of these or you will end up breaking it
     var ApplyProfileChanges = [];
@@ -4708,7 +4708,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/PurchaseCatalogEntry", asyn
     const profile = require(`./../profiles/${req.query.profileId || "profile0"}.json`);
     const campaign = require("./../profiles/campaign.json");
     const athena = require("./../profiles/athena.json");
-    const ItemIDS = require("./../responses/ItemIDS.json");
+    const ItemIDS = require("./../responses/Campaign/cardpackLootItemIDS.json");
 
     // do not change any of these or you will end up breaking it
     var ApplyProfileChanges = [];
@@ -4798,10 +4798,10 @@ express.post("/fortnite/api/game/v2/profile/*/client/PurchaseCatalogEntry", asyn
                         }
 
                         var Season = value.name.split("BR")[1];
-                        var BattlePass = require(`./../responses/BattlePass/${Season}.json`);
+                        var BattlePass = require(`./../responses/Athena/BattlePass/${Season}.json`);
 
                         if (BattlePass) {
-                            var SeasonData = require("./../responses/SeasonData.json");
+                            var SeasonData = require("./../responses/Athena/SeasonData.json");
 
                             if (BattlePass.battlePassOfferId == offer.offerId || BattlePass.battleBundleOfferId == offer.offerId) {
                                 var lootList = [];
@@ -5285,7 +5285,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/PurchaseCatalogEntry", asyn
                                 AthenaModified = true;
                             }
 
-                            fs.writeFileSync("./responses/SeasonData.json", JSON.stringify(SeasonData, null, 2));
+                            fs.writeFileSync("./responses/Athena/SeasonData.json", JSON.stringify(SeasonData, null, 2));
                         }
                     }
                 }
@@ -5667,10 +5667,10 @@ express.post("/fortnite/api/game/v2/profile/*/client/PurchaseCatalogEntry", asyn
                         }
 
                         var Season = value.name.split("BR")[1];
-                        var BattlePass = require(`./../responses/BattlePass/${Season}.json`);
+                        var BattlePass = require(`./../responses/Athena/BattlePass/${Season}.json`);
 
                         if (BattlePass) {
-                            var SeasonData = require("./../responses/SeasonData.json");
+                            var SeasonData = require("./../responses/Athena/SeasonData.json");
 
                             if (BattlePass.battlePassOfferId == offer.offerId || BattlePass.battleBundleOfferId == offer.offerId) {
                                 var lootList = [];
@@ -6154,7 +6154,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/PurchaseCatalogEntry", asyn
                                 AthenaModified = true;
                             }
 
-                            fs.writeFileSync("./responses/SeasonData.json", JSON.stringify(SeasonData, null, 2));
+                            fs.writeFileSync("./responses/Athena/SeasonData.json", JSON.stringify(SeasonData, null, 2));
                         }
                     }
                 }

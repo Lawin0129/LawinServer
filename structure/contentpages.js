@@ -9,7 +9,7 @@ express.get("/content/api/pages/*", async (req, res) => {
 })
 
 express.post("/api/v1/fortnite-br/surfaces/motd/target", async (req, res) => {
-    const motdTarget = JSON.parse(JSON.stringify(require("./../responses/motdTarget.json")));
+    const motdTarget = JSON.parse(JSON.stringify(require("./../responses/Athena/motdTarget.json")));
 
     try {
         motdTarget.contentItems.forEach(item => {
