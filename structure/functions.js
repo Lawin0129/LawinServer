@@ -284,6 +284,47 @@ function getContentPages(req) {
     return contentpages;
 }
 
+function MakeSurvivorAttributes(templateId) {
+    const SurvivorData = require("./../responses/Campaign/survivorData.json");
+    var SurvivorAttributes = {
+        "level": 1,
+        "item_seen": false,
+        "squad_slot_idx": -1,
+        "building_slot_used": -1
+    };
+
+    if (SurvivorData.fixedAttributes.hasOwnProperty(templateId)) {
+        SurvivorAttributes = {...SurvivorAttributes, ...SurvivorData.fixedAttributes[templateId]};
+    }
+
+    if (!SurvivorAttributes.hasOwnProperty("gender")) {
+        SurvivorAttributes.gender = (Math.floor(Math.random() * (1 - 3) + 3)).toString(); // Set a random survivor gender ("1" = male, "2" = female)
+    }
+
+    if (!SurvivorAttributes.hasOwnProperty("managerSynergy")) {
+        var randomNumber = Math.floor(Math.random() * SurvivorData.bonuses.length);
+        SurvivorAttributes.set_bonus = SurvivorData.bonuses[randomNumber];
+    }
+    
+    if (!SurvivorAttributes.hasOwnProperty("personality")) {
+        var randomNumber = Math.floor(Math.random() * SurvivorData.personalities.length);
+        SurvivorAttributes.personality = SurvivorData.personalities[randomNumber];
+    }
+
+    if (!SurvivorAttributes.hasOwnProperty("portrait")) {
+        portraitFactor = SurvivorAttributes.personality;
+        if (SurvivorAttributes.hasOwnProperty("managerSynergy")) {
+            portraitFactor = SurvivorAttributes.managerSynergy;
+        }
+
+        var gender = SurvivorAttributes.gender
+        var randomNumber = Math.floor(Math.random() * SurvivorData.portraits[portraitFactor][gender].length);
+        SurvivorAttributes.portrait = SurvivorData.portraits[portraitFactor][gender][randomNumber];
+    }
+
+    return SurvivorAttributes;
+}
+
 function MakeID() {
     return uuid.v4();
 }
@@ -311,6 +352,7 @@ module.exports = {
     getItemShop,
     getTheater,
     getContentPages,
+    MakeSurvivorAttributes,
     MakeID,
     sendXmppMessageToAll,
     DecodeBase64

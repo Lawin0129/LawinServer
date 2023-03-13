@@ -2434,6 +2434,9 @@ express.post("/fortnite/api/game/v2/profile/*/client/TransmogItem", async (req, 
         const randomNumber = Math.floor(Math.random() * transformItemIDS.length);
         const ID = functions.MakeID();
         var Item = {"templateId":transformItemIDS[randomNumber],"attributes":{"legacy_alterations":[],"max_level_bonus":0,"level":1,"refund_legacy_item":false,"item_seen":false,"alterations":["","","","","",""],"xp":0,"refundable":false,"alteration_base_rarities":[],"favorite":false},"quantity":1};
+        if (transformItemIDS[randomNumber].toLowerCase().startsWith("worker:")) {
+            Item.attributes = functions.MakeSurvivorAttributes(transformItemIDS[randomNumber]);
+        }
 
         profile.items[ID] = Item
 
@@ -4563,6 +4566,9 @@ express.post("/fortnite/api/game/v2/profile/*/client/OpenCardPack", async (req, 
             const randomNumber = Math.floor(Math.random() * ItemIDS.length);
             const ID = functions.MakeID();
             var Item = {"templateId":ItemIDS[randomNumber],"attributes":{"legacy_alterations":[],"max_level_bonus":0,"level":1,"refund_legacy_item":false,"item_seen":false,"alterations":["","","","","",""],"xp":0,"refundable":false,"alteration_base_rarities":[],"favorite":false},"quantity":1};
+            if (ItemIDS[randomNumber].toLowerCase().startsWith("worker:")) {
+                Item.attributes = functions.MakeSurvivorAttributes(ItemIDS[randomNumber]);
+            }
 
             profile.items[ID] = Item
 
@@ -4652,7 +4658,13 @@ express.post("/fortnite/api/game/v2/profile/*/client/PopulatePrerolledOffers", a
                 for (var i = 0; i < 10; i++) {
                     const randomNumber = Math.floor(Math.random() * ItemIDS.length);
 
-                    profile.items[key].attributes.items.push({"itemType":ItemIDS[randomNumber],"attributes":{"legacy_alterations":[],"max_level_bonus":0,"level":1,"refund_legacy_item":false,"item_seen":false,"alterations":["","","","","",""],"xp":0,"refundable":false,"alteration_base_rarities":[],"favorite":false},"quantity":1})
+                    var Item = {"itemType":ItemIDS[randomNumber],"attributes":{"legacy_alterations":[],"max_level_bonus":0,"level":1,"refund_legacy_item":false,"item_seen":false,"alterations":["","","","","",""],"xp":0,"refundable":false,"alteration_base_rarities":[],"favorite":false},"quantity":1};
+
+                    if (ItemIDS[randomNumber].toLowerCase().startsWith("worker:")) {
+                        Item.attributes = functions.MakeSurvivorAttributes(ItemIDS[randomNumber]);
+                    }
+
+                    profile.items[key].attributes.items.push(Item)
                 }
 
                 ApplyProfileChanges.push({
@@ -5593,7 +5605,13 @@ express.post("/fortnite/api/game/v2/profile/*/client/PurchaseCatalogEntry", asyn
                                                     for (var i = 0; i < 10; i++) {
                                                         const randomNumber = Math.floor(Math.random() * ItemIDS.length);
 
-                                                        campaign.items[key].attributes.items.push({"itemType":ItemIDS[randomNumber],"attributes":{"legacy_alterations":[],"max_level_bonus":0,"level":1,"refund_legacy_item":false,"item_seen":false,"alterations":["","","","","",""],"xp":0,"refundable":false,"alteration_base_rarities":[],"favorite":false},"quantity":1})
+                                                        var Item = {"itemType":ItemIDS[randomNumber],"attributes":{"legacy_alterations":[],"max_level_bonus":0,"level":1,"refund_legacy_item":false,"item_seen":false,"alterations":["","","","","",""],"xp":0,"refundable":false,"alteration_base_rarities":[],"favorite":false},"quantity":1};
+
+                                                        if (ItemIDS[randomNumber].toLowerCase().startsWith("worker:")) {
+                                                            Item.attributes = functions.MakeSurvivorAttributes(ItemIDS[randomNumber]);
+                                                        }
+
+                                                        campaign.items[key].attributes.items.push(Item)
                                                     }
 
                                                     MultiUpdate[0].profileChanges.push({
