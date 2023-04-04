@@ -145,20 +145,6 @@
       },
       "quantity": 1
     },
-    "agresdarti48ut387t8bgbgfuckaa": {
-      "templateId": "Quest:FoundersQuest_GetRewards_0_1",
-      "attributes": {
-        "quest_state": "Claimed",
-        "last_state_change_time": "2017-08-29T21:05:57.087Z",
-        "max_level_bonus": 0,
-        "level": -1,
-        "item_seen": false,
-        "xp": 0,
-        "sent_new_notification": true,
-        "favorite": false
-      },
-      "quantity": 1
-    },
     "1fakfgrughfaitcudghudhgdughdughudhgug": {
       "templateId": "gadget:g_commando_goincommando",
       "attributes": {
@@ -647,21 +633,6 @@
         "completion_complete_exploration_1": 0,
         "last_state_change_time": "2017-08-29T21:05:57.089Z",
         "max_level_bonus": 0,
-        "level": -1,
-        "item_seen": false,
-        "xp": 0,
-        "sent_new_notification": true,
-        "favorite": false
-      },
-      "quantity": 1
-    },
-    "2d4ea84f-b6d7-42dc-b193-98bb9a31b3aa": {
-      "templateId": "Quest:foundersquest_getrewards_0_1",
-      "attributes": {
-        "quest_state": "Claimed",
-        "last_state_change_time": "2017-08-29T21:19:45.200Z",
-        "max_level_bonus": 0,
-        "completion_questcomplete_homebaseonboardingafteroutpost": 1,
         "level": -1,
         "item_seen": false,
         "xp": 0,

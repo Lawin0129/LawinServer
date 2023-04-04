@@ -914,6 +914,53 @@ express.post("/fortnite/api/game/v2/profile/*/client/ClientQuestLogin", async (r
                     QuestCount += 1;
                 }
             }
+
+            // Grant completed founder's pack quests.
+            if (config.Profile.bGrantFoundersPacks == true) {
+                var QuestsToGrant = [
+                    "Quest:foundersquest_getrewards_0_1",
+                    "Quest:foundersquest_getrewards_1_2",
+                    "Quest:foundersquest_getrewards_2_3",
+                    "Quest:foundersquest_getrewards_3_4",
+                    "Quest:foundersquest_chooseherobundle",
+                    "Quest:foundersquest_getrewards_4_5",
+                    "Quest:foundersquest_herobundle_nochoice"
+                ]
+
+                for (var i in QuestsToGrant) {
+                    var bSkipThisQuest = false;
+                    for (var key in profile.items) {
+                        if (profile.items[key].templateId.toLowerCase() == QuestsToGrant[i].toLowerCase()) {
+                            bSkipThisQuest = true;
+                        }
+                    }
+                    if (bSkipThisQuest == true) {
+                        continue;
+                    }
+
+                    var ItemID = functions.MakeID();
+                    var Item = {
+                        "templateId": QuestsToGrant[i],
+                        "attributes": {
+                            "creation_time": "min",
+                            "quest_state": "Completed",
+                            "last_state_change_time": new Date().toISOString(),
+                            "level": -1,
+                            "sent_new_notification": true,
+                            "quest_rarity": "uncommon",
+                            "xp_reward_scalar": 1
+                        },
+                        "quantity": 1
+                    }
+                    profile.items[ItemID] = Item
+                    ApplyProfileChanges.push({
+                        "changeType": "itemAdded",
+                        "itemId": ItemID,
+                        "item": Item
+                    })
+                    StatChanged = true;
+                }
+            }
         }
 
         if (req.query.profileId == "athena") {
@@ -1852,14 +1899,132 @@ express.post("/fortnite/api/game/v2/profile/*/client/AssignWorkerToSquadBatch", 
 // Claim STW quest reward
 express.post("/fortnite/api/game/v2/profile/*/client/ClaimQuestReward", async (req, res) => {
     const profile = require(`./../profiles/${req.query.profileId || "campaign"}.json`);
+    const common_core = require("./../profiles/common_core.json");
+    const theater0 = require("./../profiles/theater0.json");
+    var Rewards = require("./../responses/Campaign/rewards.json").quest;
 
     // do not change any of these or you will end up breaking it
     var ApplyProfileChanges = [];
+    var MultiUpdate = [];
+    var Notifications = [];
     var BaseRevision = profile.rvn || 0;
     var QueryRevision = req.query.rvn || -1;
     var StatChanged = false;
+    var TheaterStatChanged = false;
+    var CommonCoreStatChanged = false;
 
     if (req.body.questId) {
+        var questTemplateId = [];
+        for (var key in profile.items) {
+            if (req.body.questId.toLowerCase() == key.toLowerCase()) {
+                questTemplateId = profile.items[key].templateId.toLowerCase();
+            }
+        }
+
+        if (questTemplateId && Rewards.hasOwnProperty(questTemplateId)) {
+            if (req.body.selectedRewardIndex != -1 && Rewards[questTemplateId].selectableRewards) {
+                Rewards = Rewards[questTemplateId].selectableRewards[req.body.selectedRewardIndex].rewards;
+            }
+            else {
+                Rewards = Rewards[questTemplateId].rewards;
+            }
+
+            MultiUpdate.push({
+                "profileRevision": theater0.rvn || 0,
+                "profileId": "theater0",
+                "profileChangesBaseRevision": theater0.rvn || 0,
+                "profileChanges": [],
+                "profileCommandRevision": theater0.commandRevision || 0,
+            })
+
+            if (req.query.profileId == "campaign") {
+                MultiUpdate.push({
+                    "profileRevision": common_core.rvn || 0,
+                    "profileId": "common_core",
+                    "profileChangesBaseRevision": common_core.rvn || 0,
+                    "profileChanges": [],
+                    "profileCommandRevision": common_core.commandRevision || 0,
+                })
+            }
+
+            Notifications.push({
+                "type": "questClaim",
+                "primary": true,
+                "questId": questTemplateId,
+                "loot": {
+                    "items": []
+                }
+            })
+
+            for (var i in Rewards) {
+                const ID = functions.MakeID();
+                const templateId = Rewards[i].templateId.toLowerCase();
+
+                if (templateId.startsWith("weapon:") || templateId.startsWith("trap:") || templateId.startsWith("ammo:")) {
+                    var Item = {"templateId":Rewards[i].templateId,"attributes":{"clipSizeScale": 0,"loadedAmmo": 999,"level": 1,"alterationDefinitions": [],"baseClipSize": 999,"durability": 375,"itemSource": "", "item_seen": false},"quantity":Rewards[i].quantity};
+                    
+                    theater0.items[ID] = Item;
+
+                    MultiUpdate[0].profileChanges.push({
+                        "changeType": "itemAdded",
+                        "itemId": ID,
+                        "item": theater0.items[ID]
+                    })
+
+                    Notifications[0].loot.items.push({
+                        "itemType": Rewards[i].templateId,
+                        "itemGuid": ID,
+                        "itemProfile": "theater0",
+                        "quantity": Rewards[i].quantity
+                    })
+
+                    TheaterStatChanged = true;
+                }
+                else if (req.query.profileId == "campaign" && (templateId.startsWith("homebasebannericon:") || templateId == "token:founderchatunlock")) {
+                    var Item = {"templateId":Rewards[i].templateId,"attributes":{"max_level_bonus":0,"level":1,"item_seen":false,"xp":0,"favorite":false},"quantity":Rewards[i].quantity};
+                    
+                    common_core.items[ID] = Item;
+
+                    MultiUpdate[1].profileChanges.push({
+                        "changeType": "itemAdded",
+                        "itemId": ID,
+                        "item": common_core.items[ID]
+                    })
+
+                    Notifications[0].loot.items.push({
+                        "itemType": Rewards[i].templateId,
+                        "itemGuid": ID,
+                        "itemProfile": "common_core",
+                        "quantity": Rewards[i].quantity
+                    })
+
+                    CommonCoreStatChanged = true;
+                }
+                else {
+                    var Item = {"templateId":Rewards[i].templateId,"attributes":{"legacy_alterations":[],"max_level_bonus":0,"level":1,"refund_legacy_item":false,"item_seen":false,"alterations":["","","","","",""],"xp":0,"refundable":false,"alteration_base_rarities":[],"favorite":false},"quantity":Rewards[i].quantity};
+                    
+                    if (templateId.startsWith("quest:")) {
+                        Item.attributes.quest_state = "Active";
+                    }
+
+                    profile.items[ID] = Item;
+
+                    ApplyProfileChanges.push({
+                        "changeType": "itemAdded",
+                        "itemId": ID,
+                        "item": profile.items[ID]
+                    })
+                    
+                    Notifications[0].loot.items.push({
+                        "itemType": Rewards[i].templateId,
+                        "itemGuid": ID,
+                        "itemProfile": req.query.profileId,
+                        "quantity": Rewards[i].quantity
+                    })
+                }
+            }
+        }
+
         profile.items[req.body.questId].attributes.quest_state = "Claimed";
         profile.items[req.body.questId].attributes.last_state_change_time = new Date().toISOString();
         StatChanged = true;
@@ -1868,6 +2033,24 @@ express.post("/fortnite/api/game/v2/profile/*/client/ClaimQuestReward", async (r
     if (StatChanged == true) {
         profile.rvn += 1;
         profile.commandRevision += 1;
+
+        if (TheaterStatChanged == true) {
+            theater0.rvn += 1;
+            theater0.commandRevision += 1;
+            MultiUpdate[0].profileRevision = theater0.rvn || 0;
+            MultiUpdate[0].profileCommandRevision = theater0.commandRevision || 0;
+
+            fs.writeFileSync("./profiles/theater0.json", JSON.stringify(theater0, null, 2));
+        }
+
+        if (CommonCoreStatChanged == true) {
+            common_core.rvn += 1;
+            common_core.commandRevision += 1;
+            MultiUpdate[1].profileRevision = common_core.rvn || 0;
+            MultiUpdate[1].profileCommandRevision = common_core.commandRevision || 0;
+
+            fs.writeFileSync("./profiles/common_core.json", JSON.stringify(common_core, null, 2));
+        }
 
         ApplyProfileChanges.push({
             "changeType": "itemAttrChanged",
@@ -1899,8 +2082,10 @@ express.post("/fortnite/api/game/v2/profile/*/client/ClaimQuestReward", async (r
         "profileId": req.query.profileId || "campaign",
         "profileChangesBaseRevision": BaseRevision,
         "profileChanges": ApplyProfileChanges,
+        "notifications": Notifications,
         "profileCommandRevision": profile.commandRevision || 0,
         "serverTime": new Date().toISOString(),
+        "multiUpdate": MultiUpdate,
         "responseVersion": 1
     })
     res.end();
