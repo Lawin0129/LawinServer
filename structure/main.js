@@ -309,7 +309,7 @@ express.post("/datarouter/api/v1/public/data", async (req, res) => {
 
 express.post("/api/v1/assets/Fortnite/*/*", async (req, res) => {
     if (req.body.hasOwnProperty("FortCreativeDiscoverySurface") && req.body.FortCreativeDiscoverySurface == 0) {
-        const discovery_api_assets = require("./../responses/discovery/discovery_api_assets.json");
+        const discovery_api_assets = require("./../responses/Athena/Discovery/discovery_api_assets.json");
         res.json(discovery_api_assets)
     }
     else {

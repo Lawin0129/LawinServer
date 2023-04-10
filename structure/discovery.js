@@ -1,6 +1,6 @@
 const Express = require("express");
 const express = Express.Router();
-const discovery = require("./../responses/discovery/discovery_frontend.json");
+const discovery = require("./../responses/Athena/Discovery/discovery_frontend.json");
 
 express.post("*/discovery/surface/*", async (req, res) => {
     res.json(discovery);

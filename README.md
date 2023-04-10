@@ -12,6 +12,7 @@
 - CloudStorage and ClientSettings (Settings saving)
 - Llama purchasing and opening with random loot
 - Every Hero, Weapon, Defender and Resource
+- All Founder's Packs rewards screen (togglable in the config)
 - Crafting items in Backpack
 - Transferring items to and from Storage
 - Modifying and upgrading Schematic perks

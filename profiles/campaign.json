@@ -375,27 +375,6 @@
       },
       "quantity": 1
     },
-    "2515b182-e065-4521-9616-e27bf092fbcd": {
-      "templateId": "Quest:foundersquest_getrewards_0_1",
-      "attributes": {
-        "level": -1,
-        "item_seen": false,
-        "completion_questcomplete_outpostquest_t1_l1": 0,
-        "sent_new_notification": true,
-        "challenge_bundle_id": "",
-        "xp_reward_scalar": 1,
-        "challenge_linked_quest_given": "",
-        "quest_pool": "",
-        "quest_state": "Claimed",
-        "last_state_change_time": "2020-01-25T19:10:38.959Z",
-        "challenge_linked_quest_parent": "",
-        "max_level_bonus": 0,
-        "completion_questcomplete_homebaseonboardingafteroutpost": 1,
-        "xp": 0,
-        "favorite": false
-      },
-      "quantity": 1
-    },
     "7b37f893-1b40-43ba-b4a6-81eb177f3939": {
       "templateId": "Worker:workerbasic_uc_t01",
       "attributes": {
@@ -3905,27 +3884,6 @@
       },
       "quantity": 1
     },
-    "4ccba65b-7221-4391-b562-8e4098693876": {
-      "templateId": "Quest:foundersquest_getrewards_1_2",
-      "attributes": {
-        "level": -1,
-        "item_seen": false,
-        "completion_questcomplete_outpostquest_t1_l1": 0,
-        "sent_new_notification": true,
-        "challenge_bundle_id": "",
-        "xp_reward_scalar": 1,
-        "challenge_linked_quest_given": "",
-        "quest_pool": "",
-        "quest_state": "Claimed",
-        "last_state_change_time": "2020-01-25T19:10:49.382Z",
-        "challenge_linked_quest_parent": "",
-        "max_level_bonus": 0,
-        "completion_questcomplete_homebaseonboardingafteroutpost": 1,
-        "xp": 0,
-        "favorite": false
-      },
-      "quantity": 1
-    },
     "6441c8bd-4f42-4cf8-baac-a07e67d5e6cd": {
       "templateId": "Quest:genericquest_killmistmonsters_repeatable",
       "attributes": {
@@ -6608,26 +6566,6 @@
         "quest_state": "Claimed",
         "last_state_change_time": "2020-01-18T19:49:05.509Z",
         "completion_quest_reactive_smasher": 5,
-        "challenge_linked_quest_parent": "",
-        "max_level_bonus": 0,
-        "xp": 0,
-        "favorite": false
-      },
-      "quantity": 1
-    },
-    "9dc86b38-6b37-4e98-a7be-38dc30275821": {
-      "templateId": "Quest:foundersquest_getrewards_2_3",
-      "attributes": {
-        "level": -1,
-        "item_seen": false,
-        "completion_questcomplete_outpostquest_t1_l1": 1,
-        "sent_new_notification": false,
-        "challenge_bundle_id": "",
-        "xp_reward_scalar": 1,
-        "challenge_linked_quest_given": "",
-        "quest_pool": "",
-        "quest_state": "Claimed",
-        "last_state_change_time": "2020-07-13T19:16:00.695Z",
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,

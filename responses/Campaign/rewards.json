@@ -1,0 +1,1160 @@
+{
+  "author": "This list was created by PRO100KatYT",
+  "catalog": {
+    "f5c0e8ab6c9a4530999041e89e9b6934": {
+      "rewards": [
+        {
+          "templateId": "Quest:foundersquest_getrewards_1_2",
+          "quantity": 1
+        },
+        {
+          "templateId": "Quest:foundersquest_getrewards_2_3",
+          "quantity": 1
+        },
+        {
+          "templateId": "Token:founderspack_2",
+          "quantity": 1
+        },
+        {
+          "templateId": "Token:founderspack_3",
+          "quantity": 1
+        }
+      ]
+    },
+    "9aa9f44cd8c24652953a1b204755b193": {
+      "rewards": [
+        {
+          "templateId": "Quest:foundersquest_getrewards_1_2",
+          "quantity": 1
+        },
+        {
+          "templateId": "Token:founderspack_2",
+          "quantity": 1
+        }
+      ]
+    },
+    "e2f25dae43604a839dd6f2c21b675d5e": {
+      "rewards": [
+        {
+          "templateId": "Quest:foundersquest_getrewards_0_1",
+          "quantity": 1
+        },
+        {
+          "templateId": "Token:founderspack_1",
+          "quantity": 1
+        }
+      ]
+    },
+    "d2da86026c71429a9cf5e76dfd89a1d3": {
+      "rewards": [
+        {
+          "templateId": "Quest:foundersquest_getrewards_2_3",
+          "quantity": 1
+        },
+        {
+          "templateId": "Quest:foundersquest_getrewards_3_4",
+          "quantity": 1
+        },
+        {
+          "templateId": "Quest:foundersquest_chooseherobundle",
+          "quantity": 1
+        },
+        {
+          "templateId": "Token:founderspack_3",
+          "quantity": 1
+        },
+        {
+          "templateId": "Token:founderspack_4",
+          "quantity": 1
+        }
+      ]
+    },
+    "e852b1940299435884365cec7dc3a608": {
+      "rewards": [
+        {
+          "templateId": "Quest:foundersquest_getrewards_4_5",
+          "quantity": 1
+        },
+        {
+          "templateId": "Quest:foundersquest_herobundle_nochoice",
+          "quantity": 1
+        },
+        {
+          "templateId": "Token:founderspack_5",
+          "quantity": 1
+        }
+      ]
+    },
+    "35759d71512b47e5b2825669f1d9166a": {
+      "rewards": [
+        {
+          "templateId": "Quest:foundersquest_getrewards_2_3",
+          "quantity": 1
+        },
+        {
+          "templateId": "Token:founderspack_3",
+          "quantity": 1
+        }
+      ]
+    },
+    "c8319a037f9840e8b7549de480efb9c7": {
+      "rewards": [
+        {
+          "templateId": "Quest:foundersquest_getrewards_0_1",
+          "quantity": 1
+        },
+        {
+          "templateId": "Quest:foundersquest_getrewards_1_2",
+          "quantity": 1
+        },
+        {
+          "templateId": "Quest:foundersquest_getrewards_2_3",
+          "quantity": 1
+        },
+        {
+          "templateId": "Token:founderspack_1",
+          "quantity": 1
+        },
+        {
+          "templateId": "Token:founderspack_2",
+          "quantity": 1
+        },
+        {
+          "templateId": "Token:founderspack_3",
+          "quantity": 1
+        }
+      ]
+    },
+    "f05c43f7c1d24f5fbb1a6fa5a5a60edb": {
+      "rewards": [
+        {
+          "templateId": "Quest:foundersquest_getrewards_3_4",
+          "quantity": 1
+        },
+        {
+          "templateId": "Quest:foundersquest_chooseherobundle",
+          "quantity": 1
+        },
+        {
+          "templateId": "Token:founderspack_4",
+          "quantity": 1
+        }
+      ]
+    },
+    "57f0419c4e4a4ea4858b2f37a98d5315": {
+      "rewards": [
+        {
+          "templateId": "Quest:foundersquest_getrewards_1_2",
+          "quantity": 1
+        },
+        {
+          "templateId": "Quest:foundersquest_getrewards_2_3",
+          "quantity": 1
+        },
+        {
+          "templateId": "Quest:foundersquest_getrewards_3_4",
+          "quantity": 1
+        },
+        {
+          "templateId": "Quest:foundersquest_chooseherobundle",
+          "quantity": 1
+        },
+        {
+          "templateId": "Token:founderspack_2",
+          "quantity": 1
+        },
+        {
+          "templateId": "Token:founderspack_3",
+          "quantity": 1
+        },
+        {
+          "templateId": "Token:founderspack_4",
+          "quantity": 1
+        }
+      ]
+    },
+    "41134f4ff35a45a4923604cbb15e487d": {
+      "rewards": [
+        {
+          "templateId": "Quest:foundersquest_getrewards_0_1",
+          "quantity": 1
+        },
+        {
+          "templateId": "Quest:foundersquest_getrewards_1_2",
+          "quantity": 1
+        },
+        {
+          "templateId": "Token:founderspack_1",
+          "quantity": 1
+        },
+        {
+          "templateId": "Token:founderspack_2",
+          "quantity": 1
+        }
+      ]
+    },
+    "85125898f3914946a9443bcce4667660": {
+      "rewards": [
+        {
+          "templateId": "Quest:foundersquest_getrewards_0_1",
+          "quantity": 1
+        },
+        {
+          "templateId": "Quest:foundersquest_getrewards_1_2",
+          "quantity": 1
+        },
+        {
+          "templateId": "Quest:foundersquest_getrewards_2_3",
+          "quantity": 1
+        },
+        {
+          "templateId": "Quest:foundersquest_getrewards_3_4",
+          "quantity": 1
+        },
+        {
+          "templateId": "Quest:foundersquest_chooseherobundle",
+          "quantity": 1
+        },
+        {
+          "templateId": "Token:founderspack_1",
+          "quantity": 1
+        },
+        {
+          "templateId": "Token:founderspack_2",
+          "quantity": 1
+        },
+        {
+          "templateId": "Token:founderspack_3",
+          "quantity": 1
+        },
+        {
+          "templateId": "Token:founderspack_4",
+          "quantity": 1
+        }
+      ]
+    }
+  },
+  "quest": {
+    "quest:foundersquest_chooseherobundle": {
+      "rewards": [],
+      "selectableRewards": [
+        {
+          "rewards": [
+            {
+              "templateId": "Hero:hid_constructor_008_foundersm_sr_t01",
+              "quantity": 1
+            },
+            {
+              "templateId": "Hero:hid_constructor_008_foundersf_sr_t01",
+              "quantity": 1
+            },
+            {
+              "templateId": "Schematic:sid_shotgun_tactical_founders_r_ore_t01",
+              "quantity": 1
+            },
+            {
+              "templateId": "Quest:foundersquest_constructor_weaponupgrade_vr",
+              "quantity": 1
+            },
+            {
+              "templateId": "Weapon:wid_shotgun_tactical_founders_sr_ore_t01",
+              "quantity": 1
+            }
+          ]
+        },
+        {
+          "rewards": [
+            {
+              "templateId": "Hero:hid_ninja_starsassassin_foundersf_sr_t01",
+              "quantity": 1
+            },
+            {
+              "templateId": "Hero:hid_ninja_starsassassin_foundersm_sr_t01",
+              "quantity": 1
+            },
+            {
+              "templateId": "Schematic:sid_edged_sword_medium_laser_founders_r_ore_t01",
+              "quantity": 1
+            },
+            {
+              "templateId": "Quest:foundersquest_ninja_weaponupgrade_vr",
+              "quantity": 1
+            },
+            {
+              "templateId": "Weapon:wid_edged_sword_medium_laser_founders_sr_ore_t01",
+              "quantity": 1
+            }
+          ]
+        },
+        {
+          "rewards": [
+            {
+              "templateId": "Hero:hid_outlander_008_foundersm_sr_t01",
+              "quantity": 1
+            },
+            {
+              "templateId": "Hero:hid_outlander_008_foundersf_sr_t01",
+              "quantity": 1
+            },
+            {
+              "templateId": "Schematic:sid_pistol_autoheavy_founders_r_ore_t01",
+              "quantity": 1
+            },
+            {
+              "templateId": "Quest:foundersquest_outlander_weaponupgrade_vr",
+              "quantity": 1
+            },
+            {
+              "templateId": "Weapon:wid_pistol_autoheavy_founders_sr_ore_t01",
+              "quantity": 1
+            }
+          ]
+        },
+        {
+          "rewards": [
+            {
+              "templateId": "Hero:hid_commando_008_foundersm_sr_t01",
+              "quantity": 1
+            },
+            {
+              "templateId": "Hero:hid_commando_008_foundersf_sr_t01",
+              "quantity": 1
+            },
+            {
+              "templateId": "Schematic:sid_assault_surgical_drum_founders_r_ore_t01",
+              "quantity": 1
+            },
+            {
+              "templateId": "Quest:foundersquest_soldier_weaponupgrade_vr",
+              "quantity": 1
+            },
+            {
+              "templateId": "Weapon:wid_assault_lmg_drum_founders_sr_ore_t01",
+              "quantity": 1
+            }
+          ]
+        }
+      ]
+    },
+    "quest:foundersquest_constructor_weaponupgrade_sr": {
+      "rewards": [
+        {
+          "templateId": "Schematic:sid_shotgun_tactical_founders_sr_ore_t01",
+          "quantity": 1
+        }
+      ],
+      "selectableRewards": []
+    },
+    "quest:foundersquest_constructor_weaponupgrade_vr": {
+      "rewards": [
+        {
+          "templateId": "Quest:foundersquest_constructor_weaponupgrade_sr",
+          "quantity": 1
+        },
+        {
+          "templateId": "Schematic:sid_shotgun_tactical_founders_vr_ore_t01",
+          "quantity": 1
+        }
+      ],
+      "selectableRewards": []
+    },
+    "quest:foundersquest_getrewards_0_1": {
+      "rewards": [
+        {
+          "templateId": "DailyRewardScheduleToken:founderspackdailyrewardtoken",
+          "quantity": 7
+        },
+        {
+          "templateId": "HomebaseBannerIcon:foundertier1banner1",
+          "quantity": 1
+        },
+        {
+          "templateId": "HomebaseBannerIcon:foundertier1banner2",
+          "quantity": 1
+        },
+        {
+          "templateId": "HomebaseBannerIcon:foundertier1banner3",
+          "quantity": 1
+        },
+        {
+          "templateId": "HomebaseBannerIcon:foundertier1banner4",
+          "quantity": 1
+        }
+      ],
+      "selectableRewards": []
+    },
+    "quest:foundersquest_getrewards_1_2": {
+      "rewards": [
+        {
+          "templateId": "AccountResource:voucher_cardpack_bronze",
+          "quantity": 5
+        },
+        {
+          "templateId": "ConsumableAccountItem:smallxpboost",
+          "quantity": 10
+        },
+        {
+          "templateId": "ConsumableAccountItem:smallxpboost_gift",
+          "quantity": 10
+        },
+        {
+          "templateId": "Token:accountinventorybonus",
+          "quantity": 50
+        },
+        {
+          "templateId": "Hero:hid_commando_grenadegun_r_t01",
+          "quantity": 1
+        },
+        {
+          "templateId": "Hero:hid_commando_guntough_r_t01",
+          "quantity": 1
+        },
+        {
+          "templateId": "Hero:hid_constructor_hammertank_r_t01",
+          "quantity": 1
+        },
+        {
+          "templateId": "Hero:hid_constructor_rushbase_r_t01",
+          "quantity": 1
+        },
+        {
+          "templateId": "Hero:hid_ninja_slashtail_r_t01",
+          "quantity": 1
+        },
+        {
+          "templateId": "Hero:hid_ninja_starsassassin_r_t01",
+          "quantity": 1
+        },
+        {
+          "templateId": "Hero:hid_outlander_punchphase_r_t01",
+          "quantity": 1
+        },
+        {
+          "templateId": "Hero:hid_outlander_zoneharvest_r_t01",
+          "quantity": 1
+        },
+        {
+          "templateId": "Weapon:wid_assault_auto_r_ore_t01",
+          "quantity": 1
+        },
+        {
+          "templateId": "Weapon:wid_shotgun_standard_r_ore_t01",
+          "quantity": 1
+        },
+        {
+          "templateId": "Weapon:wid_sniper_boltaction_scope_r_ore_t01",
+          "quantity": 1
+        },
+        {
+          "templateId": "Weapon:wid_edged_sword_medium_r_ore_t01",
+          "quantity": 1
+        },
+        {
+          "templateId": "Trap:tid_floor_spikes_r_t01",
+          "quantity": 5
+        },
+        {
+          "templateId": "Weapon:wid_pistol_rapid_founders_vr_ore_t01",
+          "quantity": 1
+        },
+        {
+          "templateId": "DailyRewardScheduleToken:founderspackdailyrewardtoken",
+          "quantity": 21
+        },
+        {
+          "templateId": "HomebaseBannerIcon:foundertier2banner1",
+          "quantity": 1
+        },
+        {
+          "templateId": "HomebaseBannerIcon:foundertier2banner2",
+          "quantity": 1
+        },
+        {
+          "templateId": "HomebaseBannerIcon:foundertier2banner3",
+          "quantity": 1
+        },
+        {
+          "templateId": "HomebaseBannerIcon:foundertier2banner4",
+          "quantity": 1
+        },
+        {
+          "templateId": "HomebaseBannerIcon:foundertier2banner5",
+          "quantity": 1
+        },
+        {
+          "templateId": "HomebaseBannerIcon:foundertier2banner6",
+          "quantity": 1
+        },
+        {
+          "templateId": "Schematic:sid_assault_auto_r_ore_t01",
+          "quantity": 1
+        },
+        {
+          "templateId": "Schematic:sid_shotgun_standard_r_ore_t01",
+          "quantity": 1
+        },
+        {
+          "templateId": "Schematic:sid_sniper_boltaction_scope_r_ore_t01",
+          "quantity": 1
+        },
+        {
+          "templateId": "Schematic:sid_edged_sword_medium_r_ore_t01",
+          "quantity": 1
+        },
+        {
+          "templateId": "Schematic:sid_floor_spikes_r_t01",
+          "quantity": 5
+        },
+        {
+          "templateId": "Schematic:sid_pistol_rapid_founders_vr_ore_t01",
+          "quantity": 1
+        }
+      ],
+      "selectableRewards": []
+    },
+    "quest:foundersquest_getrewards_2_3": {
+      "rewards": [
+        {
+          "templateId": "ConsumableAccountItem:smallxpboost",
+          "quantity": 10
+        },
+        {
+          "templateId": "ConsumableAccountItem:smallxpboost_gift",
+          "quantity": 10
+        },
+        {
+          "templateId": "Token:accountinventorybonus",
+          "quantity": 50
+        },
+        {
+          "templateId": "Buff:partyxpbuff",
+          "quantity": 1
+        },
+        {
+          "templateId": "Token:founderchatunlock",
+          "quantity": 1
+        },
+        {
+          "templateId": "DailyRewardScheduleToken:founderspackdailyrewardtoken",
+          "quantity": 14
+        },
+        {
+          "templateId": "ConsumableAccountItem:foundersfriendcode",
+          "quantity": 1
+        },
+        {
+          "templateId": "HomebaseBannerIcon:foundertier3banner1",
+          "quantity": 1
+        },
+        {
+          "templateId": "HomebaseBannerIcon:foundertier3banner2",
+          "quantity": 1
+        },
+        {
+          "templateId": "HomebaseBannerIcon:foundertier3banner3",
+          "quantity": 1
+        },
+        {
+          "templateId": "HomebaseBannerIcon:foundertier3banner4",
+          "quantity": 1
+        },
+        {
+          "templateId": "HomebaseBannerIcon:foundertier3banner5",
+          "quantity": 1
+        },
+        {
+          "templateId": "Defender:did_defenderassault_founders_vr_t01",
+          "quantity": 1
+        },
+        {
+          "templateId": "Defender:did_defenderpistol_founders_vr_t01",
+          "quantity": 1
+        }
+      ],
+      "selectableRewards": []
+    },
+    "quest:foundersquest_getrewards_3_4": {
+      "rewards": [
+        {
+          "templateId": "AccountResource:voucher_cardpack_bronze",
+          "quantity": 10
+        },
+        {
+          "templateId": "ConsumableAccountItem:smallxpboost",
+          "quantity": 20
+        },
+        {
+          "templateId": "ConsumableAccountItem:smallxpboost_gift",
+          "quantity": 20
+        },
+        {
+          "templateId": "Token:worldinventorybonus",
+          "quantity": 10
+        },
+        {
+          "templateId": "Token:accountinventorybonus",
+          "quantity": 100
+        },
+        {
+          "templateId": "DailyRewardScheduleToken:founderspackdailyrewardtoken",
+          "quantity": 42
+        },
+        {
+          "templateId": "ConsumableAccountItem:foundersfriendcode",
+          "quantity": 1
+        },
+        {
+          "templateId": "HomebaseBannerIcon:foundertier4banner1",
+          "quantity": 1
+        },
+        {
+          "templateId": "HomebaseBannerIcon:foundertier4banner2",
+          "quantity": 1
+        },
+        {
+          "templateId": "HomebaseBannerIcon:foundertier4banner3",
+          "quantity": 1
+        },
+        {
+          "templateId": "HomebaseBannerIcon:foundertier4banner4",
+          "quantity": 1
+        },
+        {
+          "templateId": "HomebaseBannerIcon:foundertier4banner5",
+          "quantity": 1
+        }
+      ],
+      "selectableRewards": []
+    },
+    "quest:foundersquest_getrewards_4_5": {
+      "rewards": [
+        {
+          "templateId": "AccountResource:voucher_cardpack_bronze",
+          "quantity": 10
+        },
+        {
+          "templateId": "ConsumableAccountItem:smallxpboost",
+          "quantity": 40
+        },
+        {
+          "templateId": "ConsumableAccountItem:smallxpboost_gift",
+          "quantity": 40
+        },
+        {
+          "templateId": "Token:worldinventorybonus",
+          "quantity": 10
+        },
+        {
+          "templateId": "Token:accountinventorybonus",
+          "quantity": 100
+        },
+        {
+          "templateId": "Weapon:wid_assault_auto_founders_sr_ore_t01",
+          "quantity": 1
+        },
+        {
+          "templateId": "ConversionControl:cck_hero_core_unlimited_vr",
+          "quantity": 1
+        },
+        {
+          "templateId": "ConversionControl:cck_melee_core_unlimited_vr",
+          "quantity": 1
+        },
+        {
+          "templateId": "ConversionControl:cck_ranged_core_unlimited_vr",
+          "quantity": 1
+        },
+        {
+          "templateId": "ConversionControl:cck_worker_core_unlimited_vr",
+          "quantity": 1
+        },
+        {
+          "templateId": "DailyRewardScheduleToken:founderspackdailyrewardtoken",
+          "quantity": 42
+        },
+        {
+          "templateId": "ConsumableAccountItem:foundersfriendcode",
+          "quantity": 2
+        },
+        {
+          "templateId": "HomebaseBannerIcon:foundertier5banner1",
+          "quantity": 1
+        },
+        {
+          "templateId": "HomebaseBannerIcon:foundertier5banner2",
+          "quantity": 1
+        },
+        {
+          "templateId": "HomebaseBannerIcon:foundertier5banner3",
+          "quantity": 1
+        },
+        {
+          "templateId": "HomebaseBannerIcon:foundertier5banner4",
+          "quantity": 1
+        },
+        {
+          "templateId": "HomebaseBannerIcon:foundertier5banner5",
+          "quantity": 1
+        },
+        {
+          "templateId": "Schematic:sid_assault_auto_founders_sr_ore_t01",
+          "quantity": 1
+        }
+      ],
+      "selectableRewards": []
+    },
+    "quest:foundersquest_getrewards_preorder": {
+      "rewards": [
+        {
+          "templateId": "Weapon:wid_launcher_rocket_r_ore_t01",
+          "quantity": 1
+        },
+        {
+          "templateId": "Weapon:wid_launcher_grenade_r_ore_t01",
+          "quantity": 1
+        },
+        {
+          "templateId": "Weapon:wid_shotgun_break_r_ore_t01",
+          "quantity": 1
+        },
+        {
+          "templateId": "Ammo:ammodatashells",
+          "quantity": 500
+        }
+      ],
+      "selectableRewards": []
+    },
+    "quest:foundersquest_getrewards_sony": {
+      "rewards": [
+        {
+          "templateId": "Hero:hid_commando_sony_r_t01",
+          "quantity": 1
+        },
+        {
+          "templateId": "Hero:hid_constructor_sony_r_t01",
+          "quantity": 1
+        },
+        {
+          "templateId": "Hero:hid_ninja_sony_r_t01",
+          "quantity": 1
+        },
+        {
+          "templateId": "Hero:hid_outlander_sony_r_t01",
+          "quantity": 1
+        }
+      ],
+      "selectableRewards": []
+    },
+    "quest:foundersquest_herobundle_nochoice": {
+      "rewards": [
+        {
+          "templateId": "Hero:hid_constructor_008_foundersm_sr_t01",
+          "quantity": 1
+        },
+        {
+          "templateId": "Hero:hid_constructor_008_foundersf_sr_t01",
+          "quantity": 1
+        },
+        {
+          "templateId": "Schematic:sid_shotgun_tactical_founders_r_ore_t01",
+          "quantity": 1
+        },
+        {
+          "templateId": "Quest:foundersquest_constructor_weaponupgrade_vr",
+          "quantity": 1
+        },
+        {
+          "templateId": "Weapon:wid_shotgun_tactical_founders_sr_ore_t01",
+          "quantity": 1
+        },
+        {
+          "templateId": "Hero:hid_ninja_starsassassin_foundersf_sr_t01",
+          "quantity": 1
+        },
+        {
+          "templateId": "Hero:hid_ninja_starsassassin_foundersm_sr_t01",
+          "quantity": 1
+        },
+        {
+          "templateId": "Schematic:sid_edged_sword_medium_laser_founders_r_ore_t01",
+          "quantity": 1
+        },
+        {
+          "templateId": "Quest:foundersquest_ninja_weaponupgrade_vr",
+          "quantity": 1
+        },
+        {
+          "templateId": "Weapon:wid_edged_sword_medium_laser_founders_sr_ore_t01",
+          "quantity": 1
+        },
+        {
+          "templateId": "Hero:hid_outlander_008_foundersm_sr_t01",
+          "quantity": 1
+        },
+        {
+          "templateId": "Hero:hid_outlander_008_foundersf_sr_t01",
+          "quantity": 1
+        },
+        {
+          "templateId": "Schematic:sid_pistol_autoheavy_founders_r_ore_t01",
+          "quantity": 1
+        },
+        {
+          "templateId": "Quest:foundersquest_outlander_weaponupgrade_vr",
+          "quantity": 1
+        },
+        {
+          "templateId": "Weapon:wid_pistol_autoheavy_founders_sr_ore_t01",
+          "quantity": 1
+        },
+        {
+          "templateId": "Hero:hid_commando_008_foundersm_sr_t01",
+          "quantity": 1
+        },
+        {
+          "templateId": "Hero:hid_commando_008_foundersf_sr_t01",
+          "quantity": 1
+        },
+        {
+          "templateId": "Schematic:sid_assault_surgical_drum_founders_r_ore_t01",
+          "quantity": 1
+        },
+        {
+          "templateId": "Quest:foundersquest_soldier_weaponupgrade_vr",
+          "quantity": 1
+        },
+        {
+          "templateId": "Weapon:wid_assault_lmg_drum_founders_sr_ore_t01",
+          "quantity": 1
+        }
+      ],
+      "selectableRewards": []
+    },
+    "quest:foundersquest_herobundle_noconstructor": {
+      "rewards": [
+        {
+          "templateId": "Hero:hid_ninja_starsassassin_foundersf_sr_t01",
+          "quantity": 1
+        },
+        {
+          "templateId": "Hero:hid_ninja_starsassassin_foundersm_sr_t01",
+          "quantity": 1
+        },
+        {
+          "templateId": "Schematic:sid_edged_sword_medium_laser_founders_r_ore_t01",
+          "quantity": 1
+        },
+        {
+          "templateId": "Quest:foundersquest_ninja_weaponupgrade_vr",
+          "quantity": 1
+        },
+        {
+          "templateId": "Weapon:wid_edged_sword_medium_laser_founders_sr_ore_t01",
+          "quantity": 1
+        },
+        {
+          "templateId": "Hero:hid_outlander_008_foundersm_sr_t01",
+          "quantity": 1
+        },
+        {
+          "templateId": "Hero:hid_outlander_008_foundersf_sr_t01",
+          "quantity": 1
+        },
+        {
+          "templateId": "Schematic:sid_pistol_autoheavy_founders_r_ore_t01",
+          "quantity": 1
+        },
+        {
+          "templateId": "Quest:foundersquest_outlander_weaponupgrade_vr",
+          "quantity": 1
+        },
+        {
+          "templateId": "Weapon:wid_pistol_autoheavy_founders_sr_ore_t01",
+          "quantity": 1
+        },
+        {
+          "templateId": "Hero:hid_commando_008_foundersm_sr_t01",
+          "quantity": 1
+        },
+        {
+          "templateId": "Hero:hid_commando_008_foundersf_sr_t01",
+          "quantity": 1
+        },
+        {
+          "templateId": "Schematic:sid_assault_surgical_drum_founders_r_ore_t01",
+          "quantity": 1
+        },
+        {
+          "templateId": "Quest:foundersquest_soldier_weaponupgrade_vr",
+          "quantity": 1
+        },
+        {
+          "templateId": "Weapon:wid_assault_lmg_drum_founders_sr_ore_t01",
+          "quantity": 1
+        }
+      ],
+      "selectableRewards": []
+    },
+    "quest:foundersquest_herobundle_noninja": {
+      "rewards": [
+        {
+          "templateId": "Hero:hid_constructor_008_foundersm_sr_t01",
+          "quantity": 1
+        },
+        {
+          "templateId": "Hero:hid_constructor_008_foundersf_sr_t01",
+          "quantity": 1
+        },
+        {
+          "templateId": "Schematic:sid_shotgun_tactical_founders_r_ore_t01",
+          "quantity": 1
+        },
+        {
+          "templateId": "Quest:foundersquest_constructor_weaponupgrade_vr",
+          "quantity": 1
+        },
+        {
+          "templateId": "Weapon:wid_shotgun_tactical_founders_sr_ore_t01",
+          "quantity": 1
+        },
+        {
+          "templateId": "Hero:hid_outlander_008_foundersm_sr_t01",
+          "quantity": 1
+        },
+        {
+          "templateId": "Hero:hid_outlander_008_foundersf_sr_t01",
+          "quantity": 1
+        },
+        {
+          "templateId": "Schematic:sid_pistol_autoheavy_founders_r_ore_t01",
+          "quantity": 1
+        },
+        {
+          "templateId": "Quest:foundersquest_outlander_weaponupgrade_vr",
+          "quantity": 1
+        },
+        {
+          "templateId": "Weapon:wid_pistol_autoheavy_founders_sr_ore_t01",
+          "quantity": 1
+        },
+        {
+          "templateId": "Hero:hid_commando_008_foundersm_sr_t01",
+          "quantity": 1
+        },
+        {
+          "templateId": "Hero:hid_commando_008_foundersf_sr_t01",
+          "quantity": 1
+        },
+        {
+          "templateId": "Schematic:sid_assault_surgical_drum_founders_r_ore_t01",
+          "quantity": 1
+        },
+        {
+          "templateId": "Quest:foundersquest_soldier_weaponupgrade_vr",
+          "quantity": 1
+        },
+        {
+          "templateId": "Weapon:wid_assault_lmg_drum_founders_sr_ore_t01",
+          "quantity": 1
+        }
+      ],
+      "selectableRewards": []
+    },
+    "quest:foundersquest_herobundle_nooutlander": {
+      "rewards": [
+        {
+          "templateId": "Hero:hid_constructor_008_foundersm_sr_t01",
+          "quantity": 1
+        },
+        {
+          "templateId": "Hero:hid_constructor_008_foundersf_sr_t01",
+          "quantity": 1
+        },
+        {
+          "templateId": "Schematic:sid_shotgun_tactical_founders_r_ore_t01",
+          "quantity": 1
+        },
+        {
+          "templateId": "Quest:foundersquest_constructor_weaponupgrade_vr",
+          "quantity": 1
+        },
+        {
+          "templateId": "Weapon:wid_shotgun_tactical_founders_sr_ore_t01",
+          "quantity": 1
+        },
+        {
+          "templateId": "Hero:hid_ninja_starsassassin_foundersf_sr_t01",
+          "quantity": 1
+        },
+        {
+          "templateId": "Hero:hid_ninja_starsassassin_foundersm_sr_t01",
+          "quantity": 1
+        },
+        {
+          "templateId": "Schematic:sid_edged_sword_medium_laser_founders_r_ore_t01",
+          "quantity": 1
+        },
+        {
+          "templateId": "Quest:foundersquest_ninja_weaponupgrade_vr",
+          "quantity": 1
+        },
+        {
+          "templateId": "Weapon:wid_edged_sword_medium_laser_founders_sr_ore_t01",
+          "quantity": 1
+        },
+        {
+          "templateId": "Hero:hid_commando_008_foundersm_sr_t01",
+          "quantity": 1
+        },
+        {
+          "templateId": "Hero:hid_commando_008_foundersf_sr_t01",
+          "quantity": 1
+        },
+        {
+          "templateId": "Schematic:sid_assault_surgical_drum_founders_r_ore_t01",
+          "quantity": 1
+        },
+        {
+          "templateId": "Quest:foundersquest_soldier_weaponupgrade_vr",
+          "quantity": 1
+        },
+        {
+          "templateId": "Weapon:wid_assault_lmg_drum_founders_sr_ore_t01",
+          "quantity": 1
+        }
+      ],
+      "selectableRewards": []
+    },
+    "quest:foundersquest_herobundle_nosoldier": {
+      "rewards": [
+        {
+          "templateId": "Hero:hid_constructor_008_foundersm_sr_t01",
+          "quantity": 1
+        },
+        {
+          "templateId": "Hero:hid_constructor_008_foundersf_sr_t01",
+          "quantity": 1
+        },
+        {
+          "templateId": "Schematic:sid_shotgun_tactical_founders_r_ore_t01",
+          "quantity": 1
+        },
+        {
+          "templateId": "Quest:foundersquest_constructor_weaponupgrade_vr",
+          "quantity": 1
+        },
+        {
+          "templateId": "Weapon:wid_shotgun_tactical_founders_sr_ore_t01",
+          "quantity": 1
+        },
+        {
+          "templateId": "Hero:hid_ninja_starsassassin_foundersf_sr_t01",
+          "quantity": 1
+        },
+        {
+          "templateId": "Hero:hid_ninja_starsassassin_foundersm_sr_t01",
+          "quantity": 1
+        },
+        {
+          "templateId": "Schematic:sid_edged_sword_medium_laser_founders_r_ore_t01",
+          "quantity": 1
+        },
+        {
+          "templateId": "Quest:foundersquest_ninja_weaponupgrade_vr",
+          "quantity": 1
+        },
+        {
+          "templateId": "Weapon:wid_edged_sword_medium_laser_founders_sr_ore_t01",
+          "quantity": 1
+        },
+        {
+          "templateId": "Hero:hid_outlander_008_foundersm_sr_t01",
+          "quantity": 1
+        },
+        {
+          "templateId": "Hero:hid_outlander_008_foundersf_sr_t01",
+          "quantity": 1
+        },
+        {
+          "templateId": "Schematic:sid_pistol_autoheavy_founders_r_ore_t01",
+          "quantity": 1
+        },
+        {
+          "templateId": "Quest:foundersquest_outlander_weaponupgrade_vr",
+          "quantity": 1
+        },
+        {
+          "templateId": "Weapon:wid_pistol_autoheavy_founders_sr_ore_t01",
+          "quantity": 1
+        }
+      ],
+      "selectableRewards": []
+    },
+    "quest:foundersquest_ninja_weaponupgrade_sr": {
+      "rewards": [
+        {
+          "templateId": "Schematic:sid_edged_sword_medium_laser_founders_sr_ore_t01",
+          "quantity": 1
+        }
+      ],
+      "selectableRewards": []
+    },
+    "quest:foundersquest_ninja_weaponupgrade_vr": {
+      "rewards": [
+        {
+          "templateId": "Quest:foundersquest_ninja_weaponupgrade_sr",
+          "quantity": 1
+        },
+        {
+          "templateId": "Schematic:sid_edged_sword_medium_laser_founders_vr_ore_t01",
+          "quantity": 1
+        }
+      ],
+      "selectableRewards": []
+    },
+    "quest:foundersquest_outlander_weaponupgrade_sr": {
+      "rewards": [
+        {
+          "templateId": "Schematic:sid_pistol_autoheavy_founders_sr_ore_t01",
+          "quantity": 1
+        }
+      ],
+      "selectableRewards": []
+    },
+    "quest:foundersquest_outlander_weaponupgrade_vr": {
+      "rewards": [
+        {
+          "templateId": "Quest:foundersquest_outlander_weaponupgrade_sr",
+          "quantity": 1
+        },
+        {
+          "templateId": "Schematic:sid_pistol_autoheavy_founders_vr_ore_t01",
+          "quantity": 1
+        }
+      ],
+      "selectableRewards": []
+    },
+    "quest:foundersquest_soldier_weaponupgrade_sr": {
+      "rewards": [
+        {
+          "templateId": "Schematic:sid_assault_surgical_drum_founders_sr_ore_t01",
+          "quantity": 1
+        }
+      ],
+      "selectableRewards": []
+    },
+    "quest:foundersquest_soldier_weaponupgrade_vr": {
+      "rewards": [
+        {
+          "templateId": "Quest:foundersquest_soldier_weaponupgrade_sr",
+          "quantity": 1
+        },
+        {
+          "templateId": "Schematic:sid_assault_surgical_drum_founders_vr_ore_t01",
+          "quantity": 1
+        }
+      ],
+      "selectableRewards": []
+    }
+  }
+}
