@@ -4543,6 +4543,659 @@ express.post("/fortnite/api/game/v2/profile/*/client/PurchaseOrUpgradeHomebaseNo
     res.end();
 });
 
+// Refresh expeditions STW
+express.post("/fortnite/api/game/v2/profile/*/client/RefreshExpeditions", async (req, res) => {
+    const profile = require(`./../profiles/${req.query.profileId || "campaign"}.json`);
+    var expeditionData = require("./../responses/Campaign/expeditionData.json");
+
+    // do not change any of these or you will end up breaking it
+    var ApplyProfileChanges = [];
+    var BaseRevision = profile.rvn || 0;
+    var QueryRevision = req.query.rvn || -1;
+    var StatChanged = false;
+
+    var ExpeditionSlots = [];
+    var date = new Date().toISOString();
+
+    // Check which quests that grant expedition slots are completed and add these slots to the list of available ones.
+    for (var key in profile.items) {
+        var templateId = profile.items[key].templateId.toLowerCase();
+        if (expeditionData.questsUnlockingSlots.includes(templateId)) {
+            if (profile.items[key].attributes.quest_state == "Claimed") {
+                ExpeditionSlots = ExpeditionSlots.concat(expeditionData.slotsFromQuests[templateId]);
+            }
+        }
+    }
+
+    // Remove the expired expeditions.
+    for (var key in profile.items) {
+        if (profile.items[key].templateId.toLowerCase().startsWith("expedition:")) {
+            var expiration_end_time = new Date(profile.items[key].attributes.expedition_expiration_end_time).toISOString();
+            if (date > expiration_end_time && !profile.items[key].attributes.hasOwnProperty("expedition_start_time")) {
+                delete profile.items[key];
+
+                ApplyProfileChanges.push({
+                    "changeType": "itemRemoved",
+                    "itemId": key
+                })
+
+                StatChanged = true;
+            } else { // If the expedition is still active, remove its slot from ExpeditionSlots list so the server doesn't make a new one for it.
+                var index = ExpeditionSlots.indexOf(profile.items[key].attributes.expedition_slot_id);
+                if (index !== -1) {
+                    ExpeditionSlots.splice(index, 1)
+                }
+            }
+        }
+    }
+
+    // Make new expeditions
+    for (var i = 0; i < ExpeditionSlots.length; i++) {
+        var slot = ExpeditionSlots[i];
+
+        // 5% (could be different) chance of making a rare expedition
+        var ExpeditionsToChoose = expeditionData.slots[slot];
+        if (ExpeditionsToChoose.hasOwnProperty("rare") && Math.random() < 0.05) {
+            ExpeditionsToChoose = ExpeditionsToChoose.rare;
+        } else {
+            ExpeditionsToChoose = ExpeditionsToChoose.normal;
+        }
+
+        var randomNumber = Math.floor(Math.random() * ExpeditionsToChoose.length);
+        var ID = functions.MakeID();
+        var templateId = ExpeditionsToChoose[randomNumber];
+
+        var endDate = new Date(date);
+        endDate.setMinutes(endDate.getMinutes() + expeditionData.attributes[templateId].expiration_duration_minutes);
+        endDate = endDate.toISOString();
+
+        var Item = {
+            "templateId": templateId,
+            "attributes": {
+                "expedition_expiration_end_time": endDate,
+                "expedition_criteria": [],
+                "level": 1,
+                "expedition_max_target_power": expeditionData.attributes[templateId].expedition_max_target_power,
+                "expedition_min_target_power": expeditionData.attributes[templateId].expedition_min_target_power,
+                "expedition_slot_id": slot,
+                "expedition_expiration_start_time": date
+            },
+            "quantity": 1
+        }
+
+        for (var x = 0; x < 3; x++) {
+            if (Math.random() < 0.2) { // 20% (could be different) chance of the expedition having a bonus criteria up to 3
+                randomNumber = Math.floor(Math.random() * expeditionData.criteria.length);
+                Item.attributes.expedition_criteria.push(expeditionData.criteria[randomNumber])
+            }
+        }
+
+        profile.items[ID] = Item;
+
+        ApplyProfileChanges.push({
+            "changeType": "itemAdded",
+            "itemId": ID,
+            "item": Item
+        })
+        StatChanged = true;
+    }
+
+    if (StatChanged == true) {
+        profile.rvn += 1;
+        profile.commandRevision += 1;
+
+        fs.writeFileSync(`./profiles/${req.query.profileId || "campaign"}.json`, JSON.stringify(profile, null, 2));
+    }
+
+    // this doesn't work properly on version v12.20 and above but whatever
+    if (QueryRevision != BaseRevision) {
+        ApplyProfileChanges = [{
+            "changeType": "fullProfileUpdate",
+            "profile": profile
+        }];
+    }
+
+    res.json({
+        "profileRevision": profile.rvn || 0,
+        "profileId": req.query.profileId || "campaign",
+        "profileChangesBaseRevision": BaseRevision,
+        "profileChanges": ApplyProfileChanges,
+        "profileCommandRevision": profile.commandRevision || 0,
+        "serverTime": new Date().toISOString(),
+        "responseVersion": 1
+    })
+    res.end();
+});
+
+// Start an expedition STW
+express.post("/fortnite/api/game/v2/profile/*/client/StartExpedition", async (req, res) => {
+    const profile = require(`./../profiles/${req.query.profileId || "campaign"}.json`);
+    const memory = functions.GetVersionInfo(req);
+    var expeditionData = require("./../responses/Campaign/expeditionData.json");
+
+    // do not change any of these or you will end up breaking it
+    var ApplyProfileChanges = [];
+    var BaseRevision = profile.rvn || 0;
+    var QueryRevision = req.query.rvn || -1;
+    var StatChanged = false;
+    
+    var date = new Date().toISOString();
+
+    if (req.body.expeditionId && req.body.squadId && req.body.itemIds && req.body.slotIndices) {
+        var ExpeditionLevel = profile.items[req.body.expeditionId].attributes.expedition_max_target_power;
+        var HeroLevels = expeditionData.heroLevels;
+        if (memory.build < 13.20) { // The levels got changed a bit in v13.20+
+            HeroLevels = HeroLevels.old;
+        } else {
+            HeroLevels = HeroLevels.new;
+        }
+
+        // Make a list with expedition heroes sorted by their power level
+        var SortedHeroes = []
+        for (var i = 0; i < req.body.itemIds.length; i++) {
+            var hero = req.body.itemIds[i];
+            for (var item in profile.items) {
+                if (hero == item) {
+                    var splitTemplateId = profile.items[item].templateId.split("_")
+                    var rarity = splitTemplateId.slice(-2, -1)[0].toLowerCase();
+                    var tier = splitTemplateId.slice(-1)[0].toLowerCase();
+                    var level = profile.items[item].attributes.level;
+                    var Hero = {
+                        "itemGuid": hero,
+                        "templateId": profile.items[item].templateId,
+                        "class": splitTemplateId[1].toLowerCase(),
+                        "rarity": rarity,
+                        "tier": tier,
+                        "level": level,
+                        "powerLevel": HeroLevels[rarity][tier][level],
+                        "bBoostedByCriteria": false
+                    }
+                    SortedHeroes.push(Hero)
+                }
+            }
+        }
+        SortedHeroes.sort((a, b) => b.powerLevel - a.powerLevel);
+
+        // Check if any of the heroes meet any of the available criterias. If so, then boost their power level.
+        if (profile.items[req.body.expeditionId].attributes.hasOwnProperty("expedition_criteria")) {
+            var criteria = profile.items[req.body.expeditionId].attributes.expedition_criteria;
+            for (var i = 0; i < criteria.length; i++) {
+                criterion = criteria[i];
+
+                for (var x = 0; x < SortedHeroes.length; x++) {
+                    var bIsMatchingHero = true;
+                    var requirements = expeditionData.criteriaRequirements[criterion].requirements;
+                    if (requirements.class != SortedHeroes[x].class) {
+                        bIsMatchingHero = false;
+                    }
+                    if (requirements.hasOwnProperty("rarity")) {
+                        if (!requirements.rarity.includes(SortedHeroes[x].rarity)) {
+                            bIsMatchingHero = false;
+                        }
+                    }
+
+                    if (bIsMatchingHero == true && SortedHeroes[x].bBoostedByCriteria == false) {
+                        SortedHeroes[x].powerLevel = SortedHeroes[x].powerLevel * expeditionData.criteriaRequirements[criterion].ModValue;
+                        SortedHeroes[x].bBoostedByCriteria = true;
+                        break;
+                    }
+                }
+            }
+        }
+
+        // Calculate the expedition success chance
+        var TotalPowerLevel = 0;
+        for (var i = 0; i < SortedHeroes.length; i++) {
+            TotalPowerLevel += SortedHeroes[i].powerLevel;
+        }
+        var ExpeditionSuccessChance = TotalPowerLevel / ExpeditionLevel;
+        if (ExpeditionSuccessChance > 1) {
+            ExpeditionSuccessChance = 1;
+        }
+
+        // Assign Squad ids and slots to selected heroes
+        for (var i = 0; i < req.body.itemIds.length; i++) {
+            var hero = req.body.itemIds[i];
+            profile.items[hero].attributes.squad_id = req.body.squadId.toLowerCase();
+            profile.items[hero].attributes.squad_slot_idx = req.body.slotIndices[i];
+
+            ApplyProfileChanges.push({
+                "changeType": "itemAttrChanged",
+                "itemId": hero,
+                "attributeName": "squad_id",
+                "attributeValue": profile.items[hero].attributes.squad_id
+            })
+            ApplyProfileChanges.push({
+                "changeType": "itemAttrChanged",
+                "itemId": hero,
+                "attributeName": "squad_slot_idx",
+                "attributeValue": profile.items[hero].attributes.squad_slot_idx
+            })
+        }
+
+        // Calculate the expedition end date
+        var endDate = new Date(date);
+        endDate.setMinutes(endDate.getMinutes() + expeditionData.attributes[profile.items[req.body.expeditionId].templateId].expedition_duration_minutes);
+        endDate = endDate.toISOString();
+
+        profile.items[req.body.expeditionId].attributes.expedition_squad_id = req.body.squadId.toLowerCase();
+        profile.items[req.body.expeditionId].attributes.expedition_success_chance = ExpeditionSuccessChance;
+        profile.items[req.body.expeditionId].attributes.expedition_start_time = date;
+        profile.items[req.body.expeditionId].attributes.expedition_end_time = endDate;
+
+        ApplyProfileChanges.push({
+            "changeType": "itemAttrChanged",
+            "itemId": req.body.expeditionId,
+            "attributeName": "expedition_squad_id",
+            "attributeValue": profile.items[req.body.expeditionId].attributes.expedition_squad_id
+        })
+        ApplyProfileChanges.push({
+            "changeType": "itemAttrChanged",
+            "itemId": req.body.expeditionId,
+            "attributeName": "expedition_success_chance",
+            "attributeValue": profile.items[req.body.expeditionId].attributes.expedition_success_chance
+        })
+        ApplyProfileChanges.push({
+            "changeType": "itemAttrChanged",
+            "itemId": req.body.expeditionId,
+            "attributeName": "expedition_start_time",
+            "attributeValue": profile.items[req.body.expeditionId].attributes.expedition_start_time
+        })
+        ApplyProfileChanges.push({
+            "changeType": "itemAttrChanged",
+            "itemId": req.body.expeditionId,
+            "attributeName": "expedition_end_time",
+            "attributeValue": profile.items[req.body.expeditionId].attributes.expedition_end_time
+        })
+
+        StatChanged = true;
+    }
+
+    if (StatChanged == true) {
+        profile.rvn += 1;
+        profile.commandRevision += 1;
+
+        fs.writeFileSync(`./profiles/${req.query.profileId || "campaign"}.json`, JSON.stringify(profile, null, 2));
+    }
+
+    // this doesn't work properly on version v12.20 and above but whatever
+    if (QueryRevision != BaseRevision) {
+        ApplyProfileChanges = [{
+            "changeType": "fullProfileUpdate",
+            "profile": profile
+        }];
+    }
+
+    res.json({
+        "profileRevision": profile.rvn || 0,
+        "profileId": req.query.profileId || "campaign",
+        "profileChangesBaseRevision": BaseRevision,
+        "profileChanges": ApplyProfileChanges,
+        "profileCommandRevision": profile.commandRevision || 0,
+        "serverTime": new Date().toISOString(),
+        "responseVersion": 1
+    })
+    res.end();
+});
+
+// Abandon an expedition STW
+express.post("/fortnite/api/game/v2/profile/*/client/AbandonExpedition", async (req, res) => {
+    const profile = require(`./../profiles/${req.query.profileId || "campaign"}.json`);
+    var expeditionData = require("./../responses/Campaign/expeditionData.json");
+
+    // do not change any of these or you will end up breaking it
+    var ApplyProfileChanges = [];
+    var BaseRevision = profile.rvn || 0;
+    var QueryRevision = req.query.rvn || -1;
+    var StatChanged = false;
+    
+    var date = new Date().toISOString();
+
+    if (req.body.expeditionId) {
+        var squad_id = profile.items[req.body.expeditionId].attributes.expedition_squad_id;
+        for (var item2 in profile.items) { // Remove the squad ids and slots from heroes
+            if (profile.items[item2].attributes.hasOwnProperty("squad_id")) {
+                if (profile.items[item2].attributes.squad_id == squad_id) {
+                    profile.items[item2].attributes.squad_id = "";
+                    profile.items[item2].attributes.squad_slot_idx = -1;
+                    ApplyProfileChanges.push({
+                        "changeType": "itemAttrChanged",
+                        "itemId": item2,
+                        "attributeName": "squad_id",
+                        "attributeValue": profile.items[item2].attributes.squad_id
+                    })
+                    ApplyProfileChanges.push({
+                        "changeType": "itemAttrChanged",
+                        "itemId": item2,
+                        "attributeName": "squad_slot_idx",
+                        "attributeValue": profile.items[item2].attributes.squad_slot_idx
+                    })
+                }
+            }
+        }
+
+        // Set the expedition back as availale
+        delete profile.items[req.body.expeditionId].attributes.expedition_squad_id
+        delete profile.items[req.body.expeditionId].attributes.expedition_start_time
+        delete profile.items[req.body.expeditionId].attributes.expedition_end_time
+        ApplyProfileChanges.push({
+            "changeType": "itemAttrChanged",
+            "itemId": req.body.expeditionId,
+            "attributeName": "expedition_squad_id",
+            "attributeValue": ""
+        })
+        ApplyProfileChanges.push({
+            "changeType": "itemAttrChanged",
+            "itemId": req.body.expeditionId,
+            "attributeName": "expedition_start_time",
+            "attributeValue": null
+        })
+        ApplyProfileChanges.push({
+            "changeType": "itemAttrChanged",
+            "itemId": req.body.expeditionId,
+            "attributeName": "expedition_end_time",
+            "attributeValue": null
+        })
+
+        var expiration_end_time = new Date(profile.items[req.body.expeditionId].attributes.expedition_expiration_end_time).toISOString();
+        if (date > expiration_end_time) {
+            // Remove the abandoned expedition and make a new one to replace it
+            var slot = profile.items[req.body.expeditionId].attributes.expedition_slot_id;
+            delete profile.items[req.body.expeditionId]
+            ApplyProfileChanges.push({
+                "changeType": "itemRemoved",
+                "itemId": req.body.expeditionId
+            })
+
+            // 5% (could be different) chance of making a rare expedition
+            var ExpeditionsToChoose = expeditionData.slots[slot];
+            if (ExpeditionsToChoose.hasOwnProperty("rare") && Math.random() < 0.05) {
+                ExpeditionsToChoose = ExpeditionsToChoose.rare;
+            } else {
+                ExpeditionsToChoose = ExpeditionsToChoose.normal;
+            }
+
+            var randomNumber = Math.floor(Math.random() * ExpeditionsToChoose.length);
+            var ID = functions.MakeID();
+            var templateId = ExpeditionsToChoose[randomNumber];
+
+            var endDate = new Date(date);
+            endDate.setMinutes(endDate.getMinutes() + expeditionData.attributes[templateId].expiration_duration_minutes);
+            endDate = endDate.toISOString();
+
+            var Item = {
+                "templateId": templateId,
+                "attributes": {
+                    "expedition_expiration_end_time": endDate,
+                    "expedition_criteria": [],
+                    "level": 1,
+                    "expedition_max_target_power": expeditionData.attributes[templateId].expedition_max_target_power,
+                    "expedition_min_target_power": expeditionData.attributes[templateId].expedition_min_target_power,
+                    "expedition_slot_id": slot,
+                    "expedition_expiration_start_time": date
+                },
+                "quantity": 1
+            }
+
+            for (var x = 0; x < 3; x++) {
+                if (Math.random() < 0.2) { // 20% (could be different) chance of the expedition having a bonus criteria up to 3
+                    randomNumber = Math.floor(Math.random() * expeditionData.criteria.length);
+                    Item.attributes.expedition_criteria.push(expeditionData.criteria[randomNumber])
+                }
+            }
+
+            profile.items[ID] = Item;
+
+            ApplyProfileChanges.push({
+                "changeType": "itemAdded",
+                "itemId": ID,
+                "item": Item
+            })
+        }
+
+        StatChanged = true;
+    }
+
+    if (StatChanged == true) {
+        profile.rvn += 1;
+        profile.commandRevision += 1;
+
+        fs.writeFileSync(`./profiles/${req.query.profileId || "campaign"}.json`, JSON.stringify(profile, null, 2));
+    }
+
+    // this doesn't work properly on version v12.20 and above but whatever
+    if (QueryRevision != BaseRevision) {
+        ApplyProfileChanges = [{
+            "changeType": "fullProfileUpdate",
+            "profile": profile
+        }];
+    }
+
+    res.json({
+        "profileRevision": profile.rvn || 0,
+        "profileId": req.query.profileId || "campaign",
+        "profileChangesBaseRevision": BaseRevision,
+        "profileChanges": ApplyProfileChanges,
+        "profileCommandRevision": profile.commandRevision || 0,
+        "serverTime": new Date().toISOString(),
+        "responseVersion": 1
+    })
+    res.end();
+});
+
+// Collect a finished expedition STW
+express.post("/fortnite/api/game/v2/profile/*/client/CollectExpedition", async (req, res) => {
+    const profile = require(`./../profiles/${req.query.profileId || "campaign"}.json`);
+    var expeditionData = require("./../responses/Campaign/expeditionData.json");
+
+    // do not change any of these or you will end up breaking it
+    var ApplyProfileChanges = [];
+    var MultiUpdate = [];
+    var Notifications = [];
+    var OtherProfiles = [];
+    var BaseRevision = profile.rvn || 0;
+    var QueryRevision = req.query.rvn || -1;
+    var StatChanged = false;
+    
+    var date = new Date().toISOString();
+
+    if (req.body.expeditionId) {
+        Notifications.push({
+            "type": "expeditionResult",
+            "primary": true,
+            "client_request_id": "",
+            "bExpeditionSucceeded" : false
+        })
+
+        // Determine if the expedition was successful
+        if (Math.random() < profile.items[req.body.expeditionId].attributes.expedition_success_chance) {
+            Notifications[0].bExpeditionSucceeded = true;
+            Notifications[0].expeditionRewards = [];
+
+            // If so, then grant the rewards
+            for (var i = 0; i < expeditionData.rewards.length; i++) {
+                var randomNumber = Math.floor(Math.random() * expeditionData.rewards[i].length);
+                var ID = functions.MakeID();
+                var templateId = expeditionData.rewards[i][randomNumber].templateId;
+                var itemProfile = expeditionData.rewards[i][randomNumber].itemProfile;
+
+                var minQ = expeditionData.rewards[i][randomNumber].minQuantity;
+                var maxQ = expeditionData.rewards[i][randomNumber].maxQuantity;
+                var quantity = Math.floor(Math.random() * (maxQ - minQ + 1)) + minQ;
+
+                var Item = {
+                    "templateId": templateId,
+                    "attributes": {
+                        "loadedAmmo": 0,
+                        "inventory_overflow_date": false,
+                        "level": 0,
+                        "alterationDefinitions": [],
+                        "durability": 1,
+                        "itemSource": ""
+                    },
+                    "quantity": quantity
+                }
+
+                Notifications[0].expeditionRewards.push({
+                    "itemType": templateId,
+                    "itemGuid": ID,
+                    "itemProfile": itemProfile,
+                    "quantity": quantity
+                })
+
+                if (itemProfile == req.query.profileId) {
+                    profile.items[ID] = Item;
+                    ApplyProfileChanges.push({
+                        "changeType": "itemAdded",
+                        "itemId": ID,
+                        "item": Item
+                    })
+                } else {
+                    var k = -1; // index of item profile in MultiUpdate
+                    for (var x = 0; x < MultiUpdate.length; x++) {
+                        if (MultiUpdate[x].profileId == itemProfile) {
+                            k = x;
+                        }
+                    }
+                    if (k == -1) {
+                        OtherProfiles.push(require(`./../profiles/${itemProfile}.json`))
+                        k = MultiUpdate.length;
+                        MultiUpdate.push({
+                            "profileRevision": OtherProfiles[k].rvn || 0,
+                            "profileId": OtherProfiles[k].profileId,
+                            "profileChangesBaseRevision": OtherProfiles[k].rvn || 0,
+                            "profileChanges": [],
+                            "profileCommandRevision": OtherProfiles[k].commandRevision || 0,
+                        })
+                    }
+
+                    OtherProfiles[k].items[ID] = Item;
+                    MultiUpdate[k].profileChanges.push({
+                        "changeType": "itemAdded",
+                        "itemId": ID,
+                        "item": Item
+                    })
+                }
+            }
+        }
+
+        var squad_id = profile.items[req.body.expeditionId].attributes.expedition_squad_id;
+        for (var item2 in profile.items) { // Remove the squad ids and slots from heroes
+            if (profile.items[item2].attributes.hasOwnProperty("squad_id")) {
+                if (profile.items[item2].attributes.squad_id == squad_id) {
+                    profile.items[item2].attributes.squad_id = "";
+                    profile.items[item2].attributes.squad_slot_idx = -1;
+                    ApplyProfileChanges.push({
+                        "changeType": "itemAttrChanged",
+                        "itemId": item2,
+                        "attributeName": "squad_id",
+                        "attributeValue": profile.items[item2].attributes.squad_id
+                    })
+                    ApplyProfileChanges.push({
+                        "changeType": "itemAttrChanged",
+                        "itemId": item2,
+                        "attributeName": "squad_slot_idx",
+                        "attributeValue": profile.items[item2].attributes.squad_slot_idx
+                    })
+                }
+            }
+        }
+
+        // Make a new expedition to replace the finished one
+        var slot = profile.items[req.body.expeditionId].attributes.expedition_slot_id;
+        delete profile.items[req.body.expeditionId]
+        ApplyProfileChanges.push({
+            "changeType": "itemRemoved",
+            "itemId": req.body.expeditionId
+        })
+
+        // 5% (could be different) chance of making a rare expedition
+        var ExpeditionsToChoose = expeditionData.slots[slot];
+        if (ExpeditionsToChoose.hasOwnProperty("rare") && Math.random() < 0.05) {
+            ExpeditionsToChoose = ExpeditionsToChoose.rare;
+        } else {
+            ExpeditionsToChoose = ExpeditionsToChoose.normal;
+        }
+
+        var randomNumber = Math.floor(Math.random() * ExpeditionsToChoose.length);
+        var ID = functions.MakeID();
+        var templateId = ExpeditionsToChoose[randomNumber];
+
+        var endDate = new Date(date);
+        endDate.setMinutes(endDate.getMinutes() + expeditionData.attributes[templateId].expiration_duration_minutes);
+        endDate = endDate.toISOString();
+
+        var Item = {
+            "templateId": templateId,
+            "attributes": {
+                "expedition_expiration_end_time": endDate,
+                "expedition_criteria": [],
+                "level": 1,
+                "expedition_max_target_power": expeditionData.attributes[templateId].expedition_max_target_power,
+                "expedition_min_target_power": expeditionData.attributes[templateId].expedition_min_target_power,
+                "expedition_slot_id": slot,
+                "expedition_expiration_start_time": date
+            },
+            "quantity": 1
+        }
+
+        for (var x = 0; x < 3; x++) {
+            if (Math.random() < 0.2) { // 20% (could be different) chance of the expedition having a bonus criteria up to 3
+                randomNumber = Math.floor(Math.random() * expeditionData.criteria.length);
+                Item.attributes.expedition_criteria.push(expeditionData.criteria[randomNumber])
+            }
+        }
+
+        profile.items[ID] = Item;
+
+        ApplyProfileChanges.push({
+            "changeType": "itemAdded",
+            "itemId": ID,
+            "item": Item
+        })
+
+        StatChanged = true;
+    }
+
+    if (StatChanged == true) {
+        profile.rvn += 1;
+        profile.commandRevision += 1;
+
+        fs.writeFileSync(`./profiles/${req.query.profileId || "campaign"}.json`, JSON.stringify(profile, null, 2));
+
+        for (var i = 0; i < OtherProfiles.length; i++) {
+            OtherProfiles[i].rvn += 1;
+            OtherProfiles[i].commandRevision += 1;
+
+            MultiUpdate[i].profileRevision += 1;
+            MultiUpdate[i].profileCommandRevision += 1;
+
+            fs.writeFileSync(`./profiles/${OtherProfiles[i].profileId || "campaign"}.json`, JSON.stringify(OtherProfiles[i], null, 2));
+        }
+    }
+
+    // this doesn't work properly on version v12.20 and above but whatever
+    if (QueryRevision != BaseRevision) {
+        ApplyProfileChanges = [{
+            "changeType": "fullProfileUpdate",
+            "profile": profile
+        }];
+    }
+
+    res.json({
+        "profileRevision": profile.rvn || 0,
+        "profileId": req.query.profileId || "campaign",
+        "profileChangesBaseRevision": BaseRevision,
+        "profileChanges": ApplyProfileChanges,
+        "notifications": Notifications,
+        "profileCommandRevision": profile.commandRevision || 0,
+        "serverTime": new Date().toISOString(),
+        "multiUpdate": MultiUpdate,
+        "responseVersion": 1
+    })
+    res.end();
+});
+
 // Set active hero loadout STW
 express.post("/fortnite/api/game/v2/profile/*/client/SetActiveHeroLoadout", async (req, res) => {
     const profile = require(`./../profiles/${req.query.profileId || "campaign"}.json`);
