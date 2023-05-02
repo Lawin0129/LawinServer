@@ -62844,6 +62844,90 @@
         "completion_interact_treasurechest_pve01_diff2": 1
       },
       "quantity": 1
+    },
+    "989d5d18-9b86-4094-a1c7-5e3cea4e1fe1": {
+      "templateId": "HomebaseNode:questreward_expedition_truck4",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "912b45b8-8535-4b8a-b661-8ef1f44e7a6a": {
+      "templateId": "HomebaseNode:questreward_expedition_speedboat4",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "61ce9d39-0757-4ae7-a524-cab520a528b6": {
+      "templateId": "HomebaseNode:questreward_expedition_helicopter3",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "1d49d658-0424-472a-8339-57d31197244e": {
+      "templateId": "HomebaseNode:questreward_expedition_truck5",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "40529638-e895-4588-8672-828085c3846f": {
+      "templateId": "HomebaseNode:questreward_homebase_defender5",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "77731529-beea-43a3-bc06-21fc314c5ff7": {
+      "templateId": "HomebaseNode:questreward_twinepeaks_squad_ssd5",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "54e176f1-8a09-4101-bdbf-31d91b9cc4c8": {
+      "templateId": "HomebaseNode:questreward_expedition_helicopter4",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "c610a3f4-c8e1-496c-b844-dab5bd0ad2b5": {
+      "templateId": "HomebaseNode:questreward_expedition_speedboat5",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "5fedcfc6-a28a-434b-8110-033d859b640f": {
+      "templateId": "HomebaseNode:questreward_twinepeaks_squad_ssd6",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "4f409636-b384-4932-ad5e-a066bde69c0c": {
+      "templateId": "HomebaseNode:questreward_buildingresourcecap3",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "eae3f102-5c0c-4858-a84e-94cad3d9c238": {
+      "templateId": "HomebaseNode:questreward_expedition_helicopter2",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "70dbebe1-47e2-4392-8bc4-8f95bf180c78": {
+      "templateId": "HomebaseNode:questreward_newheroloadout8_dummy",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
     }
   },
   "stats": {
