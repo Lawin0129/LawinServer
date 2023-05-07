@@ -1085,6 +1085,25 @@ express.get("/fortnite/api/calendar/v1/timeline", async (req, res) => {
         })
     }
 
+    if (memory.season == 24 && memory.build >= 24.3) {
+        activeEvents.push(
+        {
+            "eventType": "EventFlag.HordeV3",
+            "activeUntil": "9999-01-01T00:00:00.000Z",
+            "activeSince": "2020-01-01T00:00:00.000Z"
+        },
+        {
+            "eventType": "EventFlag.HordeV3.Week02",
+            "activeUntil": "9999-01-01T00:00:00.000Z",
+            "activeSince": "2020-01-01T00:00:00.000Z"
+        },
+        {
+            "eventType": "EventFlag.HordeV3.Week03",
+            "activeUntil": "9999-01-01T00:00:00.000Z",
+            "activeSince": "2020-01-01T00:00:00.000Z"
+        })
+    }
+
     if (config.Profile.bAllSTWEventsActivated == true) {
         var Events = [
             "EventFlag.Blockbuster2018",
@@ -1098,6 +1117,7 @@ express.get("/fortnite/api/calendar/v1/timeline", async (req, res) => {
             "EventFlag.Frostnite",
             "EventFlag.HolidayDeco",
             "EventFlag.Horde",
+            "EventFlag.HordeV3",
             "EventFlag.Mayday",
             "EventFlag.Outpost",
             "EventFlag.Phoenix.Adventure",

@@ -13,6 +13,7 @@
 - Llama purchasing and opening with random loot
 - Every Hero, Weapon, Defender and Resource
 - All Founder's Packs rewards screen (togglable in the config)
+- Refreshing, sending, collecting and aborting expeditions
 - Crafting items in Backpack
 - Transferring items to and from Storage
 - Modifying and upgrading Schematic perks
@@ -41,7 +42,7 @@
 - Support a Creator with specific codes
 - Fully working daily challenges system (New daily challenge every day, replacing daily challenges, etc...)
 - Item transformation
-- Event Quests from Season 2 up to Season X (Can change)
+- Event Quests from Season 2 up to Season X & Season 24 (Can change)
 
 ### Battle Royale:
 - CloudStorage and ClientSettings (Settings saving)

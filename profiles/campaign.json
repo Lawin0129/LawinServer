@@ -460,25 +460,6 @@
       },
       "quantity": 1
     },
-    "02eb2429-2da2-45f9-bca7-b41f6ec98e04": {
-      "templateId": "Expedition:expedition_choppingwood_t00",
-      "attributes": {
-        "expedition_criteria": [],
-        "level": 1,
-        "item_seen": false,
-        "expedition_max_target_power": 15,
-        "expedition_min_target_power": 1,
-        "expedition_slot_id": "expedition.generation.miningore",
-        "expedition_squad_id": "",
-        "max_level_bonus": 0,
-        "expedition_expiration_end_time": "9999-12-31T23:12:19.785Z",
-        "expedition_success_chance": 0,
-        "xp": 0,
-        "expedition_expiration_start_time": "2020-02-05T21:42:19.785Z",
-        "favorite": false
-      },
-      "quantity": 1
-    },
     "f07f3d45-1f6a-4eac-af65-93818e54fca7": {
       "templateId": "Worker:workerbasic_c_t01",
       "attributes": {
@@ -788,27 +769,6 @@
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
-        "favorite": false
-      },
-      "quantity": 1
-    },
-    "759a1e85-73d7-4a48-ae2f-10442bc09ad4": {
-      "templateId": "Expedition:expedition_sea_supplyrun_long_t03",
-      "attributes": {
-        "expedition_criteria": [
-          "RequiresEpicCommando"
-        ],
-        "level": 1,
-        "item_seen": false,
-        "expedition_max_target_power": 475,
-        "expedition_min_target_power": 23,
-        "expedition_slot_id": "expedition.generation.sea.t03_0",
-        "expedition_squad_id": "",
-        "max_level_bonus": 0,
-        "expedition_expiration_end_time": "9999-12-31T23:12:19.783Z",
-        "expedition_success_chance": 0,
-        "xp": 0,
-        "expedition_expiration_start_time": "2020-02-05T21:42:19.783Z",
         "favorite": false
       },
       "quantity": 1
@@ -1184,27 +1144,6 @@
       },
       "quantity": 1
     },
-    "bb3823ee-d866-49e9-9787-9b176e8a457e": {
-      "templateId": "Expedition:expedition_traprun_air_medium_t03",
-      "attributes": {
-        "expedition_criteria": [
-          "RequiresEpicNinja"
-        ],
-        "level": 1,
-        "item_seen": false,
-        "expedition_max_target_power": 325,
-        "expedition_min_target_power": 16,
-        "expedition_slot_id": "expedition.generation.air.t03_1",
-        "expedition_squad_id": "",
-        "max_level_bonus": 0,
-        "expedition_expiration_end_time": "9999-12-31T23:12:19.783Z",
-        "expedition_success_chance": 0,
-        "xp": 0,
-        "expedition_expiration_start_time": "2020-02-05T21:42:19.783Z",
-        "favorite": false
-      },
-      "quantity": 1
-    },
     "02f36a91-9818-43e5-9d57-d11657134a1b": {
       "templateId": "Quest:challenge_leavenoonebehind_14",
       "attributes": {
@@ -1221,27 +1160,6 @@
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
-        "favorite": false
-      },
-      "quantity": 1
-    },
-    "a6209842-fe61-4f30-83f5-0ff20a82e387": {
-      "templateId": "Expedition:expedition_supplyrun_short_t00",
-      "attributes": {
-        "expedition_criteria": [
-          "RequiresNinja"
-        ],
-        "level": 1,
-        "item_seen": false,
-        "expedition_max_target_power": 70,
-        "expedition_min_target_power": 3,
-        "expedition_slot_id": "expedition.generation.land.t01_0",
-        "expedition_squad_id": "",
-        "max_level_bonus": 0,
-        "expedition_expiration_end_time": "9999-12-31T23:12:19.786Z",
-        "expedition_success_chance": 0,
-        "xp": 0,
-        "expedition_expiration_start_time": "2020-02-05T21:42:19.786Z",
         "favorite": false
       },
       "quantity": 1
@@ -2056,28 +1974,6 @@
       },
       "quantity": 1
     },
-    "a94c4107-b137-4a50-8e8d-75995996bcfb": {
-      "templateId": "Expedition:expedition_sea_survivorscouting_short_t01",
-      "attributes": {
-        "expedition_criteria": [
-          "RequiresNinja",
-          "RequiresCommando"
-        ],
-        "level": 1,
-        "item_seen": false,
-        "expedition_max_target_power": 95,
-        "expedition_min_target_power": 4,
-        "expedition_slot_id": "expedition.generation.sea.t01_1",
-        "expedition_squad_id": "",
-        "max_level_bonus": 0,
-        "expedition_expiration_end_time": "9999-12-31T23:12:19.786Z",
-        "expedition_success_chance": 0,
-        "xp": 0,
-        "expedition_expiration_start_time": "2020-02-05T21:42:19.786Z",
-        "favorite": false
-      },
-      "quantity": 1
-    },
     "5488a9c1-281d-4f32-8e62-15b472a87d56": {
       "templateId": "Worker:workerbasic_r_t01",
       "attributes": {
@@ -2408,28 +2304,6 @@
       },
       "quantity": 1
     },
-    "3bd2ba1d-8598-43f3-a7dd-77b88fdc11c2": {
-      "templateId": "Expedition:expedition_sea_survivorscouting_short_t01",
-      "attributes": {
-        "expedition_criteria": [
-          "RequiresCommando",
-          "RequiresOutlander"
-        ],
-        "level": 1,
-        "item_seen": false,
-        "expedition_max_target_power": 95,
-        "expedition_min_target_power": 4,
-        "expedition_slot_id": "expedition.generation.sea.t01_0",
-        "expedition_squad_id": "",
-        "max_level_bonus": 0,
-        "expedition_expiration_end_time": "9999-12-31T23:12:19.786Z",
-        "expedition_success_chance": 0,
-        "xp": 0,
-        "expedition_expiration_start_time": "2020-02-05T21:42:19.786Z",
-        "favorite": false
-      },
-      "quantity": 1
-    },
     "5283d939-426d-4fc4-b70e-4c3d16843882": {
       "templateId": "HomebaseNode:questreward_feature_defenderlevelup",
       "attributes": {
@@ -2714,28 +2588,6 @@
         "building_slot_used": -1,
         "favorite": false,
         "set_bonus": "Homebase.Worker.SetBonus.IsMeleeDamageLow"
-      },
-      "quantity": 1
-    },
-    "0738f521-eef1-4b7d-8ed4-c030261ffc75": {
-      "templateId": "Expedition:expedition_air_supplyrun_long_t02",
-      "attributes": {
-        "expedition_criteria": [
-          "RequiresCommando",
-          "RequiresRareConstructor"
-        ],
-        "level": 1,
-        "item_seen": false,
-        "expedition_max_target_power": 305,
-        "expedition_min_target_power": 15,
-        "expedition_slot_id": "expedition.generation.air.t02_0",
-        "expedition_squad_id": "",
-        "max_level_bonus": 0,
-        "expedition_expiration_end_time": "9999-12-31T23:12:19.784Z",
-        "expedition_success_chance": 0,
-        "xp": 0,
-        "expedition_expiration_start_time": "2020-02-05T21:42:19.784Z",
-        "favorite": false
       },
       "quantity": 1
     },
@@ -3118,27 +2970,6 @@
         "max_level_bonus": 0,
         "completion_kill_husk_commando_assault": 100,
         "xp": 0,
-        "favorite": false
-      },
-      "quantity": 1
-    },
-    "681851b0-2c70-4868-9721-73cf870aea23": {
-      "templateId": "Expedition:expedition_traprun_sea_medium_t03",
-      "attributes": {
-        "expedition_criteria": [
-          "RequiresRareConstructor"
-        ],
-        "level": 1,
-        "item_seen": false,
-        "expedition_max_target_power": 325,
-        "expedition_min_target_power": 16,
-        "expedition_slot_id": "expedition.generation.sea.t03_1",
-        "expedition_squad_id": "",
-        "max_level_bonus": 0,
-        "expedition_expiration_end_time": "9999-12-31T23:12:19.783Z",
-        "expedition_success_chance": 0,
-        "xp": 0,
-        "expedition_expiration_start_time": "2020-02-05T21:42:19.783Z",
         "favorite": false
       },
       "quantity": 1
@@ -3796,28 +3627,6 @@
       },
       "quantity": 1
     },
-    "9c63c78d-dff7-48d4-8833-e396910914bb": {
-      "templateId": "Expedition:expedition_traprun_medium_t02",
-      "attributes": {
-        "expedition_criteria": [
-          "RequiresOutlander",
-          "RequiresRareNinja"
-        ],
-        "level": 1,
-        "item_seen": false,
-        "expedition_max_target_power": 210,
-        "expedition_min_target_power": 10,
-        "expedition_slot_id": "expedition.generation.land.t02_0",
-        "expedition_squad_id": "",
-        "max_level_bonus": 0,
-        "expedition_expiration_end_time": "9999-12-31T23:12:19.785Z",
-        "expedition_success_chance": 0,
-        "xp": 0,
-        "expedition_expiration_start_time": "2020-02-05T21:42:19.785Z",
-        "favorite": false
-      },
-      "quantity": 1
-    },
     "074ef96e-9a86-4313-8f32-04bf160e739d": {
       "templateId": "Quest:plankertonquest_filler_7_d5",
       "attributes": {
@@ -4207,27 +4016,6 @@
         "challenge_linked_quest_parent": "",
         "max_level_bonus": 0,
         "xp": 0,
-        "favorite": false
-      },
-      "quantity": 1
-    },
-    "d2c82901-49f1-4462-8964-9c035d5000fa": {
-      "templateId": "Expedition:expedition_craftingrun_short_t03",
-      "attributes": {
-        "expedition_criteria": [
-          "RequiresRareOutlander"
-        ],
-        "level": 1,
-        "item_seen": false,
-        "expedition_max_target_power": 200,
-        "expedition_min_target_power": 10,
-        "expedition_slot_id": "expedition.generation.land.t03_1",
-        "expedition_squad_id": "",
-        "max_level_bonus": 0,
-        "expedition_expiration_end_time": "9999-12-31T23:12:19.786Z",
-        "expedition_success_chance": 0,
-        "xp": 0,
-        "expedition_expiration_start_time": "2020-02-05T21:42:19.786Z",
         "favorite": false
       },
       "quantity": 1
@@ -4852,28 +4640,6 @@
       },
       "quantity": 1
     },
-    "4e4db777-d3aa-4faa-bd4e-f18cb6186f8e": {
-      "templateId": "Expedition:expedition_supplyrun_long_t02",
-      "attributes": {
-        "expedition_criteria": [
-          "RequiresRareConstructor",
-          "RequiresRareNinja"
-        ],
-        "level": 1,
-        "item_seen": false,
-        "expedition_max_target_power": 270,
-        "expedition_min_target_power": 13,
-        "expedition_slot_id": "expedition.generation.land.t02_1",
-        "expedition_squad_id": "",
-        "max_level_bonus": 0,
-        "expedition_expiration_end_time": "9999-12-31T23:12:19.787Z",
-        "expedition_success_chance": 0,
-        "xp": 0,
-        "expedition_expiration_start_time": "2020-02-05T21:42:19.787Z",
-        "favorite": false
-      },
-      "quantity": 1
-    },
     "25de8383-9153-4518-b967-20cb73e1a135": {
       "templateId": "Quest:genericquest_killminibosses_repeatable",
       "attributes": {
@@ -5216,50 +4982,6 @@
       "templateId": "HomebaseNode:questreward_expedition_speedboat",
       "attributes": {
         "item_seen": false
-      },
-      "quantity": 1
-    },
-    "60eb521a-acc2-42da-ada0-55521a85b58c": {
-      "templateId": "Expedition:expedition_sea_supplyrun_medium_t02",
-      "attributes": {
-        "expedition_criteria": [
-          "RequiresRareNinja",
-          "RequiresCommando"
-        ],
-        "level": 1,
-        "item_seen": false,
-        "expedition_max_target_power": 190,
-        "expedition_min_target_power": 9,
-        "expedition_slot_id": "expedition.generation.sea.t02_1",
-        "expedition_squad_id": "",
-        "max_level_bonus": 0,
-        "expedition_expiration_end_time": "9999-12-31T23:12:19.782Z",
-        "expedition_success_chance": 0,
-        "xp": 0,
-        "expedition_expiration_start_time": "2020-02-05T21:42:19.782Z",
-        "favorite": false
-      },
-      "quantity": 1
-    },
-    "9110389e-9bc0-4b1d-9298-13697f81c91b": {
-      "templateId": "Expedition:expedition_air_supplyrun_medium_t02",
-      "attributes": {
-        "expedition_criteria": [
-          "RequiresRareConstructor",
-          "RequiresNinja"
-        ],
-        "level": 1,
-        "item_seen": false,
-        "expedition_max_target_power": 205,
-        "expedition_min_target_power": 10,
-        "expedition_slot_id": "expedition.generation.air.t02_1",
-        "expedition_squad_id": "",
-        "max_level_bonus": 0,
-        "expedition_expiration_end_time": "9999-12-31T23:12:19.784Z",
-        "expedition_success_chance": 0,
-        "xp": 0,
-        "expedition_expiration_start_time": "2020-02-05T21:42:19.784Z",
-        "favorite": false
       },
       "quantity": 1
     },
@@ -6060,7 +5782,7 @@
         "xp": 0,
         "favorite": false
       },
-      "quantity": 675948324
+      "quantity": 1000000000
     },
     "f45fd23d-73dd-4a4f-8a11-a6f5d2eafb2f": {
       "templateId": "Quest:heroquest_loadout_ninja_2",
@@ -6303,27 +6025,6 @@
         "max_level_bonus": 0,
         "completion_heroloadout_preset_highlight": 1,
         "xp": 0,
-        "favorite": false
-      },
-      "quantity": 1
-    },
-    "e4fe99c7-c67a-47ae-9b5f-38ce1357996a": {
-      "templateId": "Expedition:expedition_air_survivorscouting_medium_t03",
-      "attributes": {
-        "expedition_criteria": [
-          "RequiresRareConstructor"
-        ],
-        "level": 1,
-        "item_seen": false,
-        "expedition_max_target_power": 365,
-        "expedition_min_target_power": 18,
-        "expedition_slot_id": "expedition.generation.air.t03_0",
-        "expedition_squad_id": "",
-        "max_level_bonus": 0,
-        "expedition_expiration_end_time": "9999-12-31T23:12:19.784Z",
-        "expedition_success_chance": 0,
-        "xp": 0,
-        "expedition_expiration_start_time": "2020-02-05T21:42:19.784Z",
         "favorite": false
       },
       "quantity": 1
@@ -6635,25 +6336,6 @@
       "quantity": 1,
       "item_guid": " i"
     },
-    "4e72b4db-5378-4fa8-acf2-4eede383fdf8": {
-      "templateId": "Expedition:expedition_resourcerun_wood_short",
-      "attributes": {
-        "expedition_criteria": [],
-        "level": 1,
-        "item_seen": false,
-        "expedition_max_target_power": 70,
-        "expedition_min_target_power": 3,
-        "expedition_slot_id": "expedition.generation.land.t01_1",
-        "expedition_squad_id": "",
-        "max_level_bonus": 0,
-        "expedition_expiration_end_time": "9999-12-31T23:12:19.785Z",
-        "expedition_success_chance": 0,
-        "xp": 0,
-        "expedition_expiration_start_time": "2020-02-05T21:42:19.785Z",
-        "favorite": false
-      },
-      "quantity": 1
-    },
     "3f151fbb-5e85-4d2f-973c-6e83e62168fd": {
       "templateId": "Worker:managergadgeteer_c_t01",
       "attributes": {
@@ -6669,28 +6351,6 @@
         "slotted_building_id": "",
         "managerSynergy": "Homebase.Manager.IsGadgeteer",
         "building_slot_used": -1,
-        "favorite": false
-      },
-      "quantity": 1
-    },
-    "019dea71-373b-432b-86b0-c550de581206": {
-      "templateId": "Expedition:expedition_supplyrun_short_t03",
-      "attributes": {
-        "expedition_criteria": [
-          "RequiresEpicCommando",
-          "RequiresRareNinja"
-        ],
-        "level": 1,
-        "item_seen": false,
-        "expedition_max_target_power": 200,
-        "expedition_min_target_power": 10,
-        "expedition_slot_id": "expedition.generation.land.t03_0",
-        "expedition_squad_id": "",
-        "max_level_bonus": 0,
-        "expedition_expiration_end_time": "9999-12-31T23:12:19.787Z",
-        "expedition_success_chance": 0,
-        "xp": 0,
-        "expedition_expiration_start_time": "2020-02-05T21:42:19.787Z",
         "favorite": false
       },
       "quantity": 1
@@ -6841,28 +6501,6 @@
       "templateId": "HomebaseNode:questreward_evolution",
       "attributes": {
         "item_seen": false
-      },
-      "quantity": 1
-    },
-    "4fdb010b-b528-4138-9021-a6979628fc9a": {
-      "templateId": "Expedition:expedition_sea_supplyrun_medium_t02",
-      "attributes": {
-        "expedition_criteria": [
-          "RequiresCommando",
-          "RequiresOutlander"
-        ],
-        "level": 1,
-        "item_seen": false,
-        "expedition_max_target_power": 190,
-        "expedition_min_target_power": 9,
-        "expedition_slot_id": "expedition.generation.sea.t02_0",
-        "expedition_squad_id": "",
-        "max_level_bonus": 0,
-        "expedition_expiration_end_time": "9999-12-31T23:12:19.786Z",
-        "expedition_success_chance": 0,
-        "xp": 0,
-        "expedition_expiration_start_time": "2020-02-05T21:42:19.786Z",
-        "favorite": false
       },
       "quantity": 1
     },
@@ -7182,25 +6820,6 @@
         "building_slot_used": -1,
         "favorite": false,
         "set_bonus": "Homebase.Worker.SetBonus.IsResistanceLow"
-      },
-      "quantity": 1
-    },
-    "d84f92bb-f725-45bb-8572-c6fd2aac20ac": {
-      "templateId": "Expedition:expedition_miningore_t00",
-      "attributes": {
-        "expedition_criteria": [],
-        "level": 1,
-        "item_seen": false,
-        "expedition_max_target_power": 20,
-        "expedition_min_target_power": 1,
-        "expedition_slot_id": "expedition.generation.choppingwood",
-        "expedition_squad_id": "",
-        "max_level_bonus": 0,
-        "expedition_expiration_end_time": "9999-12-31T23:12:19.785Z",
-        "expedition_success_chance": 0,
-        "xp": 0,
-        "expedition_expiration_start_time": "2020-02-05T21:42:19.785Z",
-        "favorite": false
       },
       "quantity": 1
     },
@@ -8084,7 +7703,7 @@
         "xp": 0,
         "favorite": false
       },
-      "quantity": 678493295
+      "quantity": 1000000000
     },
     "c5415984-bd79-47e9-8cea-416bafb61bf0": {
       "templateId": "HomebaseNode:skilltree_backpacksize",
@@ -63223,6 +62842,90 @@
         "sent_new_notification": true,
         "favorite": false,
         "completion_interact_treasurechest_pve01_diff2": 1
+      },
+      "quantity": 1
+    },
+    "989d5d18-9b86-4094-a1c7-5e3cea4e1fe1": {
+      "templateId": "HomebaseNode:questreward_expedition_truck4",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "912b45b8-8535-4b8a-b661-8ef1f44e7a6a": {
+      "templateId": "HomebaseNode:questreward_expedition_speedboat4",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "61ce9d39-0757-4ae7-a524-cab520a528b6": {
+      "templateId": "HomebaseNode:questreward_expedition_helicopter3",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "1d49d658-0424-472a-8339-57d31197244e": {
+      "templateId": "HomebaseNode:questreward_expedition_truck5",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "40529638-e895-4588-8672-828085c3846f": {
+      "templateId": "HomebaseNode:questreward_homebase_defender5",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "77731529-beea-43a3-bc06-21fc314c5ff7": {
+      "templateId": "HomebaseNode:questreward_twinepeaks_squad_ssd5",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "54e176f1-8a09-4101-bdbf-31d91b9cc4c8": {
+      "templateId": "HomebaseNode:questreward_expedition_helicopter4",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "c610a3f4-c8e1-496c-b844-dab5bd0ad2b5": {
+      "templateId": "HomebaseNode:questreward_expedition_speedboat5",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "5fedcfc6-a28a-434b-8110-033d859b640f": {
+      "templateId": "HomebaseNode:questreward_twinepeaks_squad_ssd6",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "4f409636-b384-4932-ad5e-a066bde69c0c": {
+      "templateId": "HomebaseNode:questreward_buildingresourcecap3",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "eae3f102-5c0c-4858-a84e-94cad3d9c238": {
+      "templateId": "HomebaseNode:questreward_expedition_helicopter2",
+      "attributes": {
+        "item_seen": true
+      },
+      "quantity": 1
+    },
+    "70dbebe1-47e2-4392-8bc4-8f95bf180c78": {
+      "templateId": "HomebaseNode:questreward_newheroloadout8_dummy",
+      "attributes": {
+        "item_seen": true
       },
       "quantity": 1
     }
