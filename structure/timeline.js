@@ -148,6 +148,11 @@ express.get("/fortnite/api/calendar/v1/timeline", async (req, res) => {
                 "eventType": "EventFlag.FortnitemaresPhase1",
                 "activeUntil": "9999-01-01T00:00:00.000Z",
                 "activeSince": "2020-01-01T00:00:00.000Z"
+            },
+            {
+                "eventType": "POI0",
+                "activeUntil": "9999-01-01T00:00:00.000Z",
+                "activeSince": "2020-01-01T00:00:00.000Z"
             })
         }
         if (memory.build >= 6.22) {
