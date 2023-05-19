@@ -42411,8 +42411,8 @@
               "bDisallowQuickplay": false
             },
             {
-              "tileType": "NonMission",
-              "zoneTheme": "/SaveTheWorld/World/ZoneThemes/ZT_TheIndustrialPark/BP_ZT_TheIndustrialPark.BP_ZT_TheIndustrialPark_C",
+              "tileType": "AlwaysActive",
+              "zoneTheme": "/STW_Horde/World/ZoneThemes/BP_ZT_HordeV3.BP_ZT_HordeV3_C",
               "requirements": {
                 "commanderLevel": 0,
                 "personalPowerRating": 0,
@@ -42427,12 +42427,25 @@
                 },
                 "uncompletedQuestDefinition": "None",
                 "itemDefinition": "None",
-                "eventFlag": ""
+                "eventFlag": "EventFlag.HordeV3.Week06"
               },
-              "linkedQuests": [],
+              "linkedQuests": [
+                {
+                  "questDefinition": "/Script/FortniteGame.FortQuestItemDefinition_Campaign'/STW_Horde/Quests/HordeV3/HordeV3_Quest_Weekly_W06.HordeV3_Quest_Weekly_W06'",
+                  "objectiveStatHandle": {
+                    "dataTable": "None",
+                    "rowName": "None"
+                  }
+                }
+              ],
               "xCoordinate": 8,
               "yCoordinate": 12,
-              "missionWeightOverrides": [],
+              "missionWeightOverrides": [
+                {
+                  "weight": 1.0,
+                  "missionGenerator": "/STW_Horde/Missions/WeeklyMods/Week06/MissionGen_HordeV3_Mod_06_T1.MissionGen_HordeV3_Mod_06_T1_C"
+                }
+              ],
               "difficultyWeightOverrides": [],
               "canBeMissionAlert": false,
               "tileTags": {
@@ -42531,8 +42544,8 @@
               "bDisallowQuickplay": false
             },
             {
-              "tileType": "NonMission",
-              "zoneTheme": "/SaveTheWorld/World/ZoneThemes/AD/BP_ZT_AD_TheCity.BP_ZT_AD_TheCity_C",
+              "tileType": "AlwaysActive",
+              "zoneTheme": "/STW_Horde/World/ZoneThemes/BP_ZT_HordeV3.BP_ZT_HordeV3_C",
               "requirements": {
                 "commanderLevel": 0,
                 "personalPowerRating": 0,
@@ -42547,12 +42560,25 @@
                 },
                 "uncompletedQuestDefinition": "None",
                 "itemDefinition": "None",
-                "eventFlag": ""
+                "eventFlag": "EventFlag.HordeV3.Week04"
               },
-              "linkedQuests": [],
+              "linkedQuests": [
+                {
+                  "questDefinition": "/Script/FortniteGame.FortQuestItemDefinition_Campaign'/STW_Horde/Quests/HordeV3/HordeV3_Quest_Weekly_W04.HordeV3_Quest_Weekly_W04'",
+                  "objectiveStatHandle": {
+                    "dataTable": "None",
+                    "rowName": "None"
+                  }
+                }
+              ],
               "xCoordinate": 10,
               "yCoordinate": 12,
-              "missionWeightOverrides": [],
+              "missionWeightOverrides": [
+                {
+                  "weight": 1.0,
+                  "missionGenerator": "/STW_Horde/Missions/WeeklyMods/Week04/MissionGen_HordeV3_Mod_04_T1.MissionGen_HordeV3_Mod_04_T1_C"
+                }
+              ],
               "difficultyWeightOverrides": [],
               "canBeMissionAlert": false,
               "tileTags": {
@@ -42561,8 +42587,8 @@
               "bDisallowQuickplay": false
             },
             {
-              "tileType": "NonMission",
-              "zoneTheme": "/SaveTheWorld/World/ZoneThemes/ZT_TheIndustrialPark/BP_ZT_TheIndustrialPark.BP_ZT_TheIndustrialPark_C",
+              "tileType": "AlwaysActive",
+              "zoneTheme": "/STW_Horde/World/ZoneThemes/BP_ZT_HordeV3.BP_ZT_HordeV3_C",
               "requirements": {
                 "commanderLevel": 0,
                 "personalPowerRating": 0,
@@ -42577,12 +42603,25 @@
                 },
                 "uncompletedQuestDefinition": "None",
                 "itemDefinition": "None",
-                "eventFlag": ""
+                "eventFlag": "EventFlag.HordeV3.Week04"
               },
-              "linkedQuests": [],
+              "linkedQuests": [
+                {
+                  "questDefinition": "/Script/FortniteGame.FortQuestItemDefinition_Campaign'/STW_Horde/Quests/HordeV3/HordeV3_Quest_Weekly_W04.HordeV3_Quest_Weekly_W04'",
+                  "objectiveStatHandle": {
+                    "dataTable": "None",
+                    "rowName": "None"
+                  }
+                }
+              ],
               "xCoordinate": 6,
               "yCoordinate": 12,
-              "missionWeightOverrides": [],
+              "missionWeightOverrides": [
+                {
+                  "weight": 1.0,
+                  "missionGenerator": "/STW_Horde/Missions/WeeklyMods/Week04/MissionGen_HordeV3_Mod_04_T1.MissionGen_HordeV3_Mod_04_T1_C"
+                }
+              ],
               "difficultyWeightOverrides": [],
               "canBeMissionAlert": false,
               "tileTags": {
@@ -42999,8 +43038,8 @@
               "bDisallowQuickplay": false
             },
             {
-              "tileType": "NonMission",
-              "zoneTheme": "/SaveTheWorld/World/ZoneThemes/ZT_TheIndustrialPark/BP_ZT_TheIndustrialPark.BP_ZT_TheIndustrialPark_C",
+              "tileType": "AlwaysActive",
+              "zoneTheme": "/STW_Horde/World/ZoneThemes/BP_ZT_HordeV3.BP_ZT_HordeV3_C",
               "requirements": {
                 "commanderLevel": 0,
                 "personalPowerRating": 0,
@@ -43015,12 +43054,25 @@
                 },
                 "uncompletedQuestDefinition": "None",
                 "itemDefinition": "None",
-                "eventFlag": ""
+                "eventFlag": "EventFlag.HordeV3.Week06"
               },
-              "linkedQuests": [],
+              "linkedQuests": [
+                {
+                  "questDefinition": "/Script/FortniteGame.FortQuestItemDefinition_Campaign'/STW_Horde/Quests/HordeV3/HordeV3_Quest_Weekly_W06.HordeV3_Quest_Weekly_W06'",
+                  "objectiveStatHandle": {
+                    "dataTable": "None",
+                    "rowName": "None"
+                  }
+                }
+              ],
               "xCoordinate": 4,
               "yCoordinate": 12,
-              "missionWeightOverrides": [],
+              "missionWeightOverrides": [
+                {
+                  "weight": 1.0,
+                  "missionGenerator": "/STW_Horde/Missions/WeeklyMods/Week06/MissionGen_HordeV3_Mod_06_T1.MissionGen_HordeV3_Mod_06_T1_C"
+                }
+              ],
               "difficultyWeightOverrides": [],
               "canBeMissionAlert": false,
               "tileTags": {
@@ -43132,8 +43184,8 @@
               "bDisallowQuickplay": false
             },
             {
-              "tileType": "NonMission",
-              "zoneTheme": "/SaveTheWorld/World/ZoneThemes/ZT_TheIndustrialPark/BP_ZT_TheIndustrialPark.BP_ZT_TheIndustrialPark_C",
+              "tileType": "AlwaysActive",
+              "zoneTheme": "/STW_Horde/World/ZoneThemes/BP_ZT_HordeV3.BP_ZT_HordeV3_C",
               "requirements": {
                 "commanderLevel": 0,
                 "personalPowerRating": 0,
@@ -43148,12 +43200,25 @@
                 },
                 "uncompletedQuestDefinition": "None",
                 "itemDefinition": "None",
-                "eventFlag": ""
+                "eventFlag": "EventFlag.HordeV3.Week05"
               },
-              "linkedQuests": [],
+              "linkedQuests": [
+                {
+                  "questDefinition": "/Script/FortniteGame.FortQuestItemDefinition_Campaign'/STW_Horde/Quests/HordeV3/HordeV3_Quest_Weekly_W05.HordeV3_Quest_Weekly_W05'",
+                  "objectiveStatHandle": {
+                    "dataTable": "None",
+                    "rowName": "None"
+                  }
+                }
+              ],
               "xCoordinate": 7,
               "yCoordinate": 12,
-              "missionWeightOverrides": [],
+              "missionWeightOverrides": [
+                {
+                  "weight": 1.0,
+                  "missionGenerator": "/STW_Horde/Missions/WeeklyMods/Week05/MissionGen_HordeV3_Mod_05_T1.MissionGen_HordeV3_Mod_05_T1_C"
+                }
+              ],
               "difficultyWeightOverrides": [],
               "canBeMissionAlert": false,
               "tileTags": {
@@ -43377,8 +43442,8 @@
               "bDisallowQuickplay": false
             },
             {
-              "tileType": "NonMission",
-              "zoneTheme": "/SaveTheWorld/World/ZoneThemes/ZT_TheIndustrialPark/BP_ZT_TheIndustrialPark.BP_ZT_TheIndustrialPark_C",
+              "tileType": "AlwaysActive",
+              "zoneTheme": "/STW_Horde/World/ZoneThemes/BP_ZT_HordeV3.BP_ZT_HordeV3_C",
               "requirements": {
                 "commanderLevel": 0,
                 "personalPowerRating": 0,
@@ -43393,12 +43458,25 @@
                 },
                 "uncompletedQuestDefinition": "None",
                 "itemDefinition": "None",
-                "eventFlag": ""
+                "eventFlag": "EventFlag.HordeV3.Week04"
               },
-              "linkedQuests": [],
+              "linkedQuests": [
+                {
+                  "questDefinition": "/Script/FortniteGame.FortQuestItemDefinition_Campaign'/STW_Horde/Quests/HordeV3/HordeV3_Quest_Weekly_W04.HordeV3_Quest_Weekly_W04'",
+                  "objectiveStatHandle": {
+                    "dataTable": "None",
+                    "rowName": "None"
+                  }
+                }
+              ],
               "xCoordinate": 7,
               "yCoordinate": 8,
-              "missionWeightOverrides": [],
+              "missionWeightOverrides": [
+                {
+                  "weight": 1.0,
+                  "missionGenerator": "/STW_Horde/Missions/WeeklyMods/Week04/MissionGen_HordeV3_Mod_04_T1.MissionGen_HordeV3_Mod_04_T1_C"
+                }
+              ],
               "difficultyWeightOverrides": [],
               "canBeMissionAlert": false,
               "tileTags": {
@@ -43407,8 +43485,8 @@
               "bDisallowQuickplay": false
             },
             {
-              "tileType": "NonMission",
-              "zoneTheme": "/SaveTheWorld/World/ZoneThemes/ZT_TheIndustrialPark/BP_ZT_TheIndustrialPark.BP_ZT_TheIndustrialPark_C",
+              "tileType": "AlwaysActive",
+              "zoneTheme": "/STW_Horde/World/ZoneThemes/BP_ZT_HordeV3.BP_ZT_HordeV3_C",
               "requirements": {
                 "commanderLevel": 0,
                 "personalPowerRating": 0,
@@ -43423,12 +43501,25 @@
                 },
                 "uncompletedQuestDefinition": "None",
                 "itemDefinition": "None",
-                "eventFlag": ""
+                "eventFlag": "EventFlag.HordeV3.Week05"
               },
-              "linkedQuests": [],
+              "linkedQuests": [
+                {
+                  "questDefinition": "/Script/FortniteGame.FortQuestItemDefinition_Campaign'/STW_Horde/Quests/HordeV3/HordeV3_Quest_Weekly_W05.HordeV3_Quest_Weekly_W05'",
+                  "objectiveStatHandle": {
+                    "dataTable": "None",
+                    "rowName": "None"
+                  }
+                }
+              ],
               "xCoordinate": 8,
               "yCoordinate": 9,
-              "missionWeightOverrides": [],
+              "missionWeightOverrides": [
+                {
+                  "weight": 1.0,
+                  "missionGenerator": "/STW_Horde/Missions/WeeklyMods/Week05/MissionGen_HordeV3_Mod_05_T1.MissionGen_HordeV3_Mod_05_T1_C"
+                }
+              ],
               "difficultyWeightOverrides": [],
               "canBeMissionAlert": false,
               "tileTags": {
@@ -43557,8 +43648,8 @@
               "bDisallowQuickplay": false
             },
             {
-              "tileType": "NonMission",
-              "zoneTheme": "/SaveTheWorld/World/ZoneThemes/ZT_TheIndustrialPark/BP_ZT_TheIndustrialPark.BP_ZT_TheIndustrialPark_C",
+              "tileType": "AlwaysActive",
+              "zoneTheme": "/STW_Horde/World/ZoneThemes/BP_ZT_HordeV3.BP_ZT_HordeV3_C",
               "requirements": {
                 "commanderLevel": 0,
                 "personalPowerRating": 0,
@@ -43573,12 +43664,25 @@
                 },
                 "uncompletedQuestDefinition": "None",
                 "itemDefinition": "None",
-                "eventFlag": ""
+                "eventFlag": "EventFlag.HordeV3.Week06"
               },
-              "linkedQuests": [],
+              "linkedQuests": [
+                {
+                  "questDefinition": "/Script/FortniteGame.FortQuestItemDefinition_Campaign'/STW_Horde/Quests/HordeV3/HordeV3_Quest_Weekly_W06.HordeV3_Quest_Weekly_W06'",
+                  "objectiveStatHandle": {
+                    "dataTable": "None",
+                    "rowName": "None"
+                  }
+                }
+              ],
               "xCoordinate": 9,
               "yCoordinate": 8,
-              "missionWeightOverrides": [],
+              "missionWeightOverrides": [
+                {
+                  "weight": 1.0,
+                  "missionGenerator": "/STW_Horde/Missions/WeeklyMods/Week06/MissionGen_HordeV3_Mod_06_T1.MissionGen_HordeV3_Mod_06_T1_C"
+                }
+              ],
               "difficultyWeightOverrides": [],
               "canBeMissionAlert": false,
               "tileTags": {
@@ -43677,8 +43781,8 @@
               "bDisallowQuickplay": false
             },
             {
-              "tileType": "NonMission",
-              "zoneTheme": "/SaveTheWorld/World/ZoneThemes/ZT_TheIndustrialPark/BP_ZT_TheIndustrialPark.BP_ZT_TheIndustrialPark_C",
+              "tileType": "AlwaysActive",
+              "zoneTheme": "/STW_Horde/World/ZoneThemes/BP_ZT_HordeV3.BP_ZT_HordeV3_C",
               "requirements": {
                 "commanderLevel": 0,
                 "personalPowerRating": 0,
@@ -43693,12 +43797,25 @@
                 },
                 "uncompletedQuestDefinition": "None",
                 "itemDefinition": "None",
-                "eventFlag": ""
+                "eventFlag": "EventFlag.HordeV3.Week05"
               },
-              "linkedQuests": [],
+              "linkedQuests": [
+                {
+                  "questDefinition": "/Script/FortniteGame.FortQuestItemDefinition_Campaign'/STW_Horde/Quests/HordeV3/HordeV3_Quest_Weekly_W05.HordeV3_Quest_Weekly_W05'",
+                  "objectiveStatHandle": {
+                    "dataTable": "None",
+                    "rowName": "None"
+                  }
+                }
+              ],
               "xCoordinate": 4,
               "yCoordinate": 9,
-              "missionWeightOverrides": [],
+              "missionWeightOverrides": [
+                {
+                  "weight": 1.0,
+                  "missionGenerator": "/STW_Horde/Missions/WeeklyMods/Week05/MissionGen_HordeV3_Mod_05_T1.MissionGen_HordeV3_Mod_05_T1_C"
+                }
+              ],
               "difficultyWeightOverrides": [],
               "canBeMissionAlert": false,
               "tileTags": {
@@ -43707,8 +43824,8 @@
               "bDisallowQuickplay": false
             },
             {
-              "tileType": "NonMission",
-              "zoneTheme": "/SaveTheWorld/World/ZoneThemes/ZT_TheIndustrialPark/BP_ZT_TheIndustrialPark.BP_ZT_TheIndustrialPark_C",
+              "tileType": "AlwaysActive",
+              "zoneTheme": "/STW_Horde/World/ZoneThemes/BP_ZT_HordeV3.BP_ZT_HordeV3_C",
               "requirements": {
                 "commanderLevel": 0,
                 "personalPowerRating": 0,
@@ -43723,12 +43840,25 @@
                 },
                 "uncompletedQuestDefinition": "None",
                 "itemDefinition": "None",
-                "eventFlag": ""
+                "eventFlag": "EventFlag.HordeV3.Week06"
               },
-              "linkedQuests": [],
+              "linkedQuests": [
+                {
+                  "questDefinition": "/Script/FortniteGame.FortQuestItemDefinition_Campaign'/STW_Horde/Quests/HordeV3/HordeV3_Quest_Weekly_W06.HordeV3_Quest_Weekly_W06'",
+                  "objectiveStatHandle": {
+                    "dataTable": "None",
+                    "rowName": "None"
+                  }
+                }
+              ],
               "xCoordinate": 5,
               "yCoordinate": 8,
-              "missionWeightOverrides": [],
+              "missionWeightOverrides": [
+                {
+                  "weight": 1.0,
+                  "missionGenerator": "/STW_Horde/Missions/WeeklyMods/Week06/MissionGen_HordeV3_Mod_06_T1.MissionGen_HordeV3_Mod_06_T1_C"
+                }
+              ],
               "difficultyWeightOverrides": [],
               "canBeMissionAlert": false,
               "tileTags": {
@@ -44493,8 +44623,8 @@
               "bDisallowQuickplay": false
             },
             {
-              "tileType": "NonMission",
-              "zoneTheme": "/SaveTheWorld/World/ZoneThemes/ZT_TheIndustrialPark/BP_ZT_TheIndustrialPark.BP_ZT_TheIndustrialPark_C",
+              "tileType": "AlwaysActive",
+              "zoneTheme": "/STW_Horde/World/ZoneThemes/BP_ZT_HordeV3.BP_ZT_HordeV3_C",
               "requirements": {
                 "commanderLevel": 0,
                 "personalPowerRating": 0,
@@ -44509,12 +44639,25 @@
                 },
                 "uncompletedQuestDefinition": "None",
                 "itemDefinition": "None",
-                "eventFlag": ""
+                "eventFlag": "EventFlag.HordeV3.Week04"
               },
-              "linkedQuests": [],
+              "linkedQuests": [
+                {
+                  "questDefinition": "/Script/FortniteGame.FortQuestItemDefinition_Campaign'/STW_Horde/Quests/HordeV3/HordeV3_Quest_Weekly_W04.HordeV3_Quest_Weekly_W04'",
+                  "objectiveStatHandle": {
+                    "dataTable": "None",
+                    "rowName": "None"
+                  }
+                }
+              ],
               "xCoordinate": 2,
               "yCoordinate": 12,
-              "missionWeightOverrides": [],
+              "missionWeightOverrides": [
+                {
+                  "weight": 1.0,
+                  "missionGenerator": "/STW_Horde/Missions/WeeklyMods/Week04/MissionGen_HordeV3_Mod_04_T1.MissionGen_HordeV3_Mod_04_T1_C"
+                }
+              ],
               "difficultyWeightOverrides": [],
               "canBeMissionAlert": false,
               "tileTags": {
@@ -44523,8 +44666,8 @@
               "bDisallowQuickplay": false
             },
             {
-              "tileType": "NonMission",
-              "zoneTheme": "/SaveTheWorld/World/ZoneThemes/ZT_TheIndustrialPark/BP_ZT_TheIndustrialPark.BP_ZT_TheIndustrialPark_C",
+              "tileType": "AlwaysActive",
+              "zoneTheme": "/STW_Horde/World/ZoneThemes/BP_ZT_HordeV3.BP_ZT_HordeV3_C",
               "requirements": {
                 "commanderLevel": 0,
                 "personalPowerRating": 0,
@@ -44539,12 +44682,25 @@
                 },
                 "uncompletedQuestDefinition": "None",
                 "itemDefinition": "None",
-                "eventFlag": ""
+                "eventFlag": "EventFlag.HordeV3.Week05"
               },
-              "linkedQuests": [],
+              "linkedQuests": [
+                {
+                  "questDefinition": "/Script/FortniteGame.FortQuestItemDefinition_Campaign'/STW_Horde/Quests/HordeV3/HordeV3_Quest_Weekly_W05.HordeV3_Quest_Weekly_W05'",
+                  "objectiveStatHandle": {
+                    "dataTable": "None",
+                    "rowName": "None"
+                  }
+                }
+              ],
               "xCoordinate": 3,
               "yCoordinate": 12,
-              "missionWeightOverrides": [],
+              "missionWeightOverrides": [
+                {
+                  "weight": 1.0,
+                  "missionGenerator": "/STW_Horde/Missions/WeeklyMods/Week05/MissionGen_HordeV3_Mod_05_T1.MissionGen_HordeV3_Mod_05_T1_C"
+                }
+              ],
               "difficultyWeightOverrides": [],
               "canBeMissionAlert": false,
               "tileTags": {
@@ -44849,8 +45005,8 @@
               "bDisallowQuickplay": false
             },
             {
-              "tileType": "NonMission",
-              "zoneTheme": "/SaveTheWorld/World/ZoneThemes/ZT_TheIndustrialPark/BP_ZT_TheIndustrialPark.BP_ZT_TheIndustrialPark_C",
+              "tileType": "AlwaysActive",
+              "zoneTheme": "/STW_Horde/World/ZoneThemes/BP_ZT_HordeV3.BP_ZT_HordeV3_C",
               "requirements": {
                 "commanderLevel": 0,
                 "personalPowerRating": 0,
@@ -44865,12 +45021,25 @@
                 },
                 "uncompletedQuestDefinition": "None",
                 "itemDefinition": "None",
-                "eventFlag": ""
+                "eventFlag": "EventFlag.HordeV3.Week04"
               },
-              "linkedQuests": [],
+              "linkedQuests": [
+                {
+                  "questDefinition": "/Script/FortniteGame.FortQuestItemDefinition_Campaign'/STW_Horde/Quests/HordeV3/HordeV3_Quest_Weekly_W04.HordeV3_Quest_Weekly_W04'",
+                  "objectiveStatHandle": {
+                    "dataTable": "None",
+                    "rowName": "None"
+                  }
+                }
+              ],
               "xCoordinate": 3,
               "yCoordinate": 8,
-              "missionWeightOverrides": [],
+              "missionWeightOverrides": [
+                {
+                  "weight": 1.0,
+                  "missionGenerator": "/STW_Horde/Missions/WeeklyMods/Week04/MissionGen_HordeV3_Mod_04_T1.MissionGen_HordeV3_Mod_04_T1_C"
+                }
+              ],
               "difficultyWeightOverrides": [],
               "canBeMissionAlert": false,
               "tileTags": {
@@ -44961,8 +45130,8 @@
               "bDisallowQuickplay": false
             },
             {
-              "tileType": "NonMission",
-              "zoneTheme": "/SaveTheWorld/World/ZoneThemes/ZT_TheIndustrialPark/BP_ZT_TheIndustrialPark.BP_ZT_TheIndustrialPark_C",
+              "tileType": "AlwaysActive",
+              "zoneTheme": "/STW_Horde/World/ZoneThemes/BP_ZT_HordeV3.BP_ZT_HordeV3_C",
               "requirements": {
                 "commanderLevel": 0,
                 "personalPowerRating": 0,
@@ -44977,12 +45146,25 @@
                 },
                 "uncompletedQuestDefinition": "None",
                 "itemDefinition": "None",
-                "eventFlag": ""
+                "eventFlag": "EventFlag.HordeV3.Week05"
               },
-              "linkedQuests": [],
+              "linkedQuests": [
+                {
+                  "questDefinition": "/Script/FortniteGame.FortQuestItemDefinition_Campaign'/STW_Horde/Quests/HordeV3/HordeV3_Quest_Weekly_W05.HordeV3_Quest_Weekly_W05'",
+                  "objectiveStatHandle": {
+                    "dataTable": "None",
+                    "rowName": "None"
+                  }
+                }
+              ],
               "xCoordinate": 3,
               "yCoordinate": 5,
-              "missionWeightOverrides": [],
+              "missionWeightOverrides": [
+                {
+                  "weight": 1.0,
+                  "missionGenerator": "/STW_Horde/Missions/WeeklyMods/Week05/MissionGen_HordeV3_Mod_05_T1.MissionGen_HordeV3_Mod_05_T1_C"
+                }
+              ],
               "difficultyWeightOverrides": [],
               "canBeMissionAlert": false,
               "tileTags": {
@@ -45154,8 +45336,8 @@
               "bDisallowQuickplay": false
             },
             {
-              "tileType": "NonMission",
-              "zoneTheme": "/SaveTheWorld/World/ZoneThemes/ZT_TheIndustrialPark/BP_ZT_TheIndustrialPark.BP_ZT_TheIndustrialPark_C",
+              "tileType": "AlwaysActive",
+              "zoneTheme": "/STW_Horde/World/ZoneThemes/BP_ZT_HordeV3.BP_ZT_HordeV3_C",
               "requirements": {
                 "commanderLevel": 0,
                 "personalPowerRating": 0,
@@ -45170,12 +45352,25 @@
                 },
                 "uncompletedQuestDefinition": "None",
                 "itemDefinition": "None",
-                "eventFlag": ""
+                "eventFlag": "EventFlag.HordeV3.Week04"
               },
-              "linkedQuests": [],
+              "linkedQuests": [
+                {
+                  "questDefinition": "/Script/FortniteGame.FortQuestItemDefinition_Campaign'/STW_Horde/Quests/HordeV3/HordeV3_Quest_Weekly_W04.HordeV3_Quest_Weekly_W04'",
+                  "objectiveStatHandle": {
+                    "dataTable": "None",
+                    "rowName": "None"
+                  }
+                }
+              ],
               "xCoordinate": 2,
               "yCoordinate": 5,
-              "missionWeightOverrides": [],
+              "missionWeightOverrides": [
+                {
+                  "weight": 1.0,
+                  "missionGenerator": "/STW_Horde/Missions/WeeklyMods/Week04/MissionGen_HordeV3_Mod_04_T1.MissionGen_HordeV3_Mod_04_T1_C"
+                }
+              ],
               "difficultyWeightOverrides": [],
               "canBeMissionAlert": false,
               "tileTags": {
@@ -45317,8 +45512,8 @@
               "bDisallowQuickplay": false
             },
             {
-              "tileType": "NonMission",
-              "zoneTheme": "/SaveTheWorld/World/ZoneThemes/ZT_TheIndustrialPark/BP_ZT_TheIndustrialPark.BP_ZT_TheIndustrialPark_C",
+              "tileType": "AlwaysActive",
+              "zoneTheme": "/STW_Horde/World/ZoneThemes/BP_ZT_HordeV3.BP_ZT_HordeV3_C",
               "requirements": {
                 "commanderLevel": 0,
                 "personalPowerRating": 0,
@@ -45333,12 +45528,25 @@
                 },
                 "uncompletedQuestDefinition": "None",
                 "itemDefinition": "None",
-                "eventFlag": ""
+                "eventFlag": "EventFlag.HordeV3.Week06"
               },
-              "linkedQuests": [],
+              "linkedQuests": [
+                {
+                  "questDefinition": "/Script/FortniteGame.FortQuestItemDefinition_Campaign'/STW_Horde/Quests/HordeV3/HordeV3_Quest_Weekly_W06.HordeV3_Quest_Weekly_W06'",
+                  "objectiveStatHandle": {
+                    "dataTable": "None",
+                    "rowName": "None"
+                  }
+                }
+              ],
               "xCoordinate": 4,
               "yCoordinate": 5,
-              "missionWeightOverrides": [],
+              "missionWeightOverrides": [
+                {
+                  "weight": 1.0,
+                  "missionGenerator": "/STW_Horde/Missions/WeeklyMods/Week06/MissionGen_HordeV3_Mod_06_T1.MissionGen_HordeV3_Mod_06_T1_C"
+                }
+              ],
               "difficultyWeightOverrides": [],
               "canBeMissionAlert": false,
               "tileTags": {
@@ -45437,8 +45645,8 @@
               "bDisallowQuickplay": false
             },
             {
-              "tileType": "NonMission",
-              "zoneTheme": "/SaveTheWorld/World/ZoneThemes/ZT_TheIndustrialPark/BP_ZT_TheIndustrialPark.BP_ZT_TheIndustrialPark_C",
+              "tileType": "AlwaysActive",
+              "zoneTheme": "/STW_Horde/World/ZoneThemes/BP_ZT_HordeV3.BP_ZT_HordeV3_C",
               "requirements": {
                 "commanderLevel": 0,
                 "personalPowerRating": 0,
@@ -45453,12 +45661,25 @@
                 },
                 "uncompletedQuestDefinition": "None",
                 "itemDefinition": "None",
-                "eventFlag": ""
+                "eventFlag": "EventFlag.HordeV3.Week05"
               },
-              "linkedQuests": [],
+              "linkedQuests": [
+                {
+                  "questDefinition": "/Script/FortniteGame.FortQuestItemDefinition_Campaign'/STW_Horde/Quests/HordeV3/HordeV3_Quest_Weekly_W05.HordeV3_Quest_Weekly_W05'",
+                  "objectiveStatHandle": {
+                    "dataTable": "None",
+                    "rowName": "None"
+                  }
+                }
+              ],
               "xCoordinate": 7,
               "yCoordinate": 5,
-              "missionWeightOverrides": [],
+              "missionWeightOverrides": [
+                {
+                  "weight": 1.0,
+                  "missionGenerator": "/STW_Horde/Missions/WeeklyMods/Week05/MissionGen_HordeV3_Mod_05_T1.MissionGen_HordeV3_Mod_05_T1_C"
+                }
+              ],
               "difficultyWeightOverrides": [],
               "canBeMissionAlert": false,
               "tileTags": {
@@ -45510,8 +45731,8 @@
               "bDisallowQuickplay": false
             },
             {
-              "tileType": "NonMission",
-              "zoneTheme": "/SaveTheWorld/World/ZoneThemes/ZT_TheIndustrialPark/BP_ZT_TheIndustrialPark.BP_ZT_TheIndustrialPark_C",
+              "tileType": "AlwaysActive",
+              "zoneTheme": "/STW_Horde/World/ZoneThemes/BP_ZT_HordeV3.BP_ZT_HordeV3_C",
               "requirements": {
                 "commanderLevel": 0,
                 "personalPowerRating": 0,
@@ -45526,12 +45747,25 @@
                 },
                 "uncompletedQuestDefinition": "None",
                 "itemDefinition": "None",
-                "eventFlag": ""
+                "eventFlag": "EventFlag.HordeV3.Week04"
               },
-              "linkedQuests": [],
+              "linkedQuests": [
+                {
+                  "questDefinition": "/Script/FortniteGame.FortQuestItemDefinition_Campaign'/STW_Horde/Quests/HordeV3/HordeV3_Quest_Weekly_W04.HordeV3_Quest_Weekly_W04'",
+                  "objectiveStatHandle": {
+                    "dataTable": "None",
+                    "rowName": "None"
+                  }
+                }
+              ],
               "xCoordinate": 6,
               "yCoordinate": 5,
-              "missionWeightOverrides": [],
+              "missionWeightOverrides": [
+                {
+                  "weight": 1.0,
+                  "missionGenerator": "/STW_Horde/Missions/WeeklyMods/Week04/MissionGen_HordeV3_Mod_04_T1.MissionGen_HordeV3_Mod_04_T1_C"
+                }
+              ],
               "difficultyWeightOverrides": [],
               "canBeMissionAlert": false,
               "tileTags": {
@@ -45733,8 +45967,8 @@
               "bDisallowQuickplay": false
             },
             {
-              "tileType": "NonMission",
-              "zoneTheme": "/SaveTheWorld/World/ZoneThemes/ZT_TheIndustrialPark/BP_ZT_TheIndustrialPark.BP_ZT_TheIndustrialPark_C",
+              "tileType": "AlwaysActive",
+              "zoneTheme": "/STW_Horde/World/ZoneThemes/BP_ZT_HordeV3.BP_ZT_HordeV3_C",
               "requirements": {
                 "commanderLevel": 0,
                 "personalPowerRating": 0,
@@ -45749,12 +45983,25 @@
                 },
                 "uncompletedQuestDefinition": "None",
                 "itemDefinition": "None",
-                "eventFlag": ""
+                "eventFlag": "EventFlag.HordeV3.Week06"
               },
-              "linkedQuests": [],
+              "linkedQuests": [
+                {
+                  "questDefinition": "/Script/FortniteGame.FortQuestItemDefinition_Campaign'/STW_Horde/Quests/HordeV3/HordeV3_Quest_Weekly_W06.HordeV3_Quest_Weekly_W06'",
+                  "objectiveStatHandle": {
+                    "dataTable": "None",
+                    "rowName": "None"
+                  }
+                }
+              ],
               "xCoordinate": 8,
               "yCoordinate": 5,
-              "missionWeightOverrides": [],
+              "missionWeightOverrides": [
+                {
+                  "weight": 1.0,
+                  "missionGenerator": "/STW_Horde/Missions/WeeklyMods/Week06/MissionGen_HordeV3_Mod_06_T1.MissionGen_HordeV3_Mod_06_T1_C"
+                }
+              ],
               "difficultyWeightOverrides": [],
               "canBeMissionAlert": false,
               "tileTags": {
@@ -46141,8 +46388,8 @@
               "bDisallowQuickplay": false
             },
             {
-              "tileType": "NonMission",
-              "zoneTheme": "/SaveTheWorld/World/ZoneThemes/ZT_TheIndustrialPark/BP_ZT_TheIndustrialPark.BP_ZT_TheIndustrialPark_C",
+              "tileType": "AlwaysActive",
+              "zoneTheme": "/STW_Horde/World/ZoneThemes/BP_ZT_HordeV3.BP_ZT_HordeV3_C",
               "requirements": {
                 "commanderLevel": 0,
                 "personalPowerRating": 0,
@@ -46157,12 +46404,25 @@
                 },
                 "uncompletedQuestDefinition": "None",
                 "itemDefinition": "None",
-                "eventFlag": ""
+                "eventFlag": "EventFlag.HordeV3.Week06"
               },
-              "linkedQuests": [],
+              "linkedQuests": [
+                {
+                  "questDefinition": "/Script/FortniteGame.FortQuestItemDefinition_Campaign'/STW_Horde/Quests/HordeV3/HordeV3_Quest_Weekly_W06.HordeV3_Quest_Weekly_W06'",
+                  "objectiveStatHandle": {
+                    "dataTable": "None",
+                    "rowName": "None"
+                  }
+                }
+              ],
               "xCoordinate": 5,
               "yCoordinate": 1,
-              "missionWeightOverrides": [],
+              "missionWeightOverrides": [
+                {
+                  "weight": 1.0,
+                  "missionGenerator": "/STW_Horde/Missions/WeeklyMods/Week06/MissionGen_HordeV3_Mod_06_T1.MissionGen_HordeV3_Mod_06_T1_C"
+                }
+              ],
               "difficultyWeightOverrides": [],
               "canBeMissionAlert": false,
               "tileTags": {
@@ -46201,8 +46461,8 @@
               "bDisallowQuickplay": false
             },
             {
-              "tileType": "NonMission",
-              "zoneTheme": "/SaveTheWorld/World/ZoneThemes/ZT_TheIndustrialPark/BP_ZT_TheIndustrialPark.BP_ZT_TheIndustrialPark_C",
+              "tileType": "AlwaysActive",
+              "zoneTheme": "/STW_Horde/World/ZoneThemes/BP_ZT_HordeV3.BP_ZT_HordeV3_C",
               "requirements": {
                 "commanderLevel": 0,
                 "personalPowerRating": 0,
@@ -46217,12 +46477,25 @@
                 },
                 "uncompletedQuestDefinition": "None",
                 "itemDefinition": "None",
-                "eventFlag": ""
+                "eventFlag": "EventFlag.HordeV3.Week04"
               },
-              "linkedQuests": [],
+              "linkedQuests": [
+                {
+                  "questDefinition": "/Script/FortniteGame.FortQuestItemDefinition_Campaign'/STW_Horde/Quests/HordeV3/HordeV3_Quest_Weekly_W04.HordeV3_Quest_Weekly_W04'",
+                  "objectiveStatHandle": {
+                    "dataTable": "None",
+                    "rowName": "None"
+                  }
+                }
+              ],
               "xCoordinate": 3,
               "yCoordinate": 1,
-              "missionWeightOverrides": [],
+              "missionWeightOverrides": [
+                {
+                  "weight": 1.0,
+                  "missionGenerator": "/STW_Horde/Missions/WeeklyMods/Week04/MissionGen_HordeV3_Mod_04_T1.MissionGen_HordeV3_Mod_04_T1_C"
+                }
+              ],
               "difficultyWeightOverrides": [],
               "canBeMissionAlert": false,
               "tileTags": {
@@ -46231,8 +46504,8 @@
               "bDisallowQuickplay": false
             },
             {
-              "tileType": "NonMission",
-              "zoneTheme": "/SaveTheWorld/World/ZoneThemes/ZT_TheIndustrialPark/BP_ZT_TheIndustrialPark.BP_ZT_TheIndustrialPark_C",
+              "tileType": "AlwaysActive",
+              "zoneTheme": "/STW_Horde/World/ZoneThemes/BP_ZT_HordeV3.BP_ZT_HordeV3_C",
               "requirements": {
                 "commanderLevel": 0,
                 "personalPowerRating": 0,
@@ -46247,12 +46520,25 @@
                 },
                 "uncompletedQuestDefinition": "None",
                 "itemDefinition": "None",
-                "eventFlag": ""
+                "eventFlag": "EventFlag.HordeV3.Week05"
               },
-              "linkedQuests": [],
+              "linkedQuests": [
+                {
+                  "questDefinition": "/Script/FortniteGame.FortQuestItemDefinition_Campaign'/STW_Horde/Quests/HordeV3/HordeV3_Quest_Weekly_W05.HordeV3_Quest_Weekly_W05'",
+                  "objectiveStatHandle": {
+                    "dataTable": "None",
+                    "rowName": "None"
+                  }
+                }
+              ],
               "xCoordinate": 4,
               "yCoordinate": 2,
-              "missionWeightOverrides": [],
+              "missionWeightOverrides": [
+                {
+                  "weight": 1.0,
+                  "missionGenerator": "/STW_Horde/Missions/WeeklyMods/Week05/MissionGen_HordeV3_Mod_05_T1.MissionGen_HordeV3_Mod_05_T1_C"
+                }
+              ],
               "difficultyWeightOverrides": [],
               "canBeMissionAlert": false,
               "tileTags": {
@@ -46476,8 +46762,8 @@
               "bDisallowQuickplay": false
             },
             {
-              "tileType": "NonMission",
-              "zoneTheme": "/SaveTheWorld/World/ZoneThemes/ZT_TheIndustrialPark/BP_ZT_TheIndustrialPark.BP_ZT_TheIndustrialPark_C",
+              "tileType": "AlwaysActive",
+              "zoneTheme": "/STW_Horde/World/ZoneThemes/BP_ZT_HordeV3.BP_ZT_HordeV3_C",
               "requirements": {
                 "commanderLevel": 0,
                 "personalPowerRating": 0,
@@ -46492,12 +46778,25 @@
                 },
                 "uncompletedQuestDefinition": "None",
                 "itemDefinition": "None",
-                "eventFlag": ""
+                "eventFlag": "EventFlag.HordeV3.Week06"
               },
-              "linkedQuests": [],
+              "linkedQuests": [
+                {
+                  "questDefinition": "/Script/FortniteGame.FortQuestItemDefinition_Campaign'/STW_Horde/Quests/HordeV3/HordeV3_Quest_Weekly_W06.HordeV3_Quest_Weekly_W06'",
+                  "objectiveStatHandle": {
+                    "dataTable": "None",
+                    "rowName": "None"
+                  }
+                }
+              ],
               "xCoordinate": 9,
               "yCoordinate": 1,
-              "missionWeightOverrides": [],
+              "missionWeightOverrides": [
+                {
+                  "weight": 1.0,
+                  "missionGenerator": "/STW_Horde/Missions/WeeklyMods/Week06/MissionGen_HordeV3_Mod_06_T1.MissionGen_HordeV3_Mod_06_T1_C"
+                }
+              ],
               "difficultyWeightOverrides": [],
               "canBeMissionAlert": false,
               "tileTags": {
@@ -46626,8 +46925,8 @@
               "bDisallowQuickplay": false
             },
             {
-              "tileType": "NonMission",
-              "zoneTheme": "/SaveTheWorld/World/ZoneThemes/ZT_TheIndustrialPark/BP_ZT_TheIndustrialPark.BP_ZT_TheIndustrialPark_C",
+              "tileType": "AlwaysActive",
+              "zoneTheme": "/STW_Horde/World/ZoneThemes/BP_ZT_HordeV3.BP_ZT_HordeV3_C",
               "requirements": {
                 "commanderLevel": 0,
                 "personalPowerRating": 0,
@@ -46642,12 +46941,25 @@
                 },
                 "uncompletedQuestDefinition": "None",
                 "itemDefinition": "None",
-                "eventFlag": ""
+                "eventFlag": "EventFlag.HordeV3.Week05"
               },
-              "linkedQuests": [],
+              "linkedQuests": [
+                {
+                  "questDefinition": "/Script/FortniteGame.FortQuestItemDefinition_Campaign'/STW_Horde/Quests/HordeV3/HordeV3_Quest_Weekly_W05.HordeV3_Quest_Weekly_W05'",
+                  "objectiveStatHandle": {
+                    "dataTable": "None",
+                    "rowName": "None"
+                  }
+                }
+              ],
               "xCoordinate": 8,
               "yCoordinate": 2,
-              "missionWeightOverrides": [],
+              "missionWeightOverrides": [
+                {
+                  "weight": 1.0,
+                  "missionGenerator": "/STW_Horde/Missions/WeeklyMods/Week05/MissionGen_HordeV3_Mod_05_T1.MissionGen_HordeV3_Mod_05_T1_C"
+                }
+              ],
               "difficultyWeightOverrides": [],
               "canBeMissionAlert": false,
               "tileTags": {
@@ -46656,8 +46968,8 @@
               "bDisallowQuickplay": false
             },
             {
-              "tileType": "NonMission",
-              "zoneTheme": "/SaveTheWorld/World/ZoneThemes/ZT_TheIndustrialPark/BP_ZT_TheIndustrialPark.BP_ZT_TheIndustrialPark_C",
+              "tileType": "AlwaysActive",
+              "zoneTheme": "/STW_Horde/World/ZoneThemes/BP_ZT_HordeV3.BP_ZT_HordeV3_C",
               "requirements": {
                 "commanderLevel": 0,
                 "personalPowerRating": 0,
@@ -46672,12 +46984,25 @@
                 },
                 "uncompletedQuestDefinition": "None",
                 "itemDefinition": "None",
-                "eventFlag": ""
+                "eventFlag": "EventFlag.HordeV3.Week04"
               },
-              "linkedQuests": [],
+              "linkedQuests": [
+                {
+                  "questDefinition": "/Script/FortniteGame.FortQuestItemDefinition_Campaign'/STW_Horde/Quests/HordeV3/HordeV3_Quest_Weekly_W04.HordeV3_Quest_Weekly_W04'",
+                  "objectiveStatHandle": {
+                    "dataTable": "None",
+                    "rowName": "None"
+                  }
+                }
+              ],
               "xCoordinate": 7,
               "yCoordinate": 1,
-              "missionWeightOverrides": [],
+              "missionWeightOverrides": [
+                {
+                  "weight": 1.0,
+                  "missionGenerator": "/STW_Horde/Missions/WeeklyMods/Week04/MissionGen_HordeV3_Mod_04_T1.MissionGen_HordeV3_Mod_04_T1_C"
+                }
+              ],
               "difficultyWeightOverrides": [],
               "canBeMissionAlert": false,
               "tileTags": {
@@ -47729,8 +48054,8 @@
               "bDisallowQuickplay": false
             },
             {
-              "tileType": "NonMission",
-              "zoneTheme": "/SaveTheWorld/World/ZoneThemes/ZT_TheIndustrialPark/BP_ZT_TheIndustrialPark.BP_ZT_TheIndustrialPark_C",
+              "tileType": "AlwaysActive",
+              "zoneTheme": "/STW_Horde/World/ZoneThemes/BP_ZT_HordeV3.BP_ZT_HordeV3_C",
               "requirements": {
                 "commanderLevel": 0,
                 "personalPowerRating": 0,
@@ -47745,12 +48070,25 @@
                 },
                 "uncompletedQuestDefinition": "None",
                 "itemDefinition": "None",
-                "eventFlag": ""
+                "eventFlag": "EventFlag.HordeV3.Week06"
               },
-              "linkedQuests": [],
+              "linkedQuests": [
+                {
+                  "questDefinition": "/Script/FortniteGame.FortQuestItemDefinition_Campaign'/STW_Horde/Quests/HordeV3/HordeV3_Quest_Weekly_W06.HordeV3_Quest_Weekly_W06'",
+                  "objectiveStatHandle": {
+                    "dataTable": "None",
+                    "rowName": "None"
+                  }
+                }
+              ],
               "xCoordinate": 13,
               "yCoordinate": 1,
-              "missionWeightOverrides": [],
+              "missionWeightOverrides": [
+                {
+                  "weight": 1.0,
+                  "missionGenerator": "/STW_Horde/Missions/WeeklyMods/Week06/MissionGen_HordeV3_Mod_06_T1.MissionGen_HordeV3_Mod_06_T1_C"
+                }
+              ],
               "difficultyWeightOverrides": [],
               "canBeMissionAlert": false,
               "tileTags": {
@@ -47909,8 +48247,8 @@
               "bDisallowQuickplay": false
             },
             {
-              "tileType": "NonMission",
-              "zoneTheme": "/SaveTheWorld/World/ZoneThemes/ZT_TheIndustrialPark/BP_ZT_TheIndustrialPark.BP_ZT_TheIndustrialPark_C",
+              "tileType": "AlwaysActive",
+              "zoneTheme": "/STW_Horde/World/ZoneThemes/BP_ZT_HordeV3.BP_ZT_HordeV3_C",
               "requirements": {
                 "commanderLevel": 0,
                 "personalPowerRating": 0,
@@ -47925,12 +48263,25 @@
                 },
                 "uncompletedQuestDefinition": "None",
                 "itemDefinition": "None",
-                "eventFlag": ""
+                "eventFlag": "EventFlag.HordeV3.Week06"
               },
-              "linkedQuests": [],
+              "linkedQuests": [
+                {
+                  "questDefinition": "/Script/FortniteGame.FortQuestItemDefinition_Campaign'/STW_Horde/Quests/HordeV3/HordeV3_Quest_Weekly_W06.HordeV3_Quest_Weekly_W06'",
+                  "objectiveStatHandle": {
+                    "dataTable": "None",
+                    "rowName": "None"
+                  }
+                }
+              ],
               "xCoordinate": 13,
               "yCoordinate": 8,
-              "missionWeightOverrides": [],
+              "missionWeightOverrides": [
+                {
+                  "weight": 1.0,
+                  "missionGenerator": "/STW_Horde/Missions/WeeklyMods/Week06/MissionGen_HordeV3_Mod_06_T1.MissionGen_HordeV3_Mod_06_T1_C"
+                }
+              ],
               "difficultyWeightOverrides": [],
               "canBeMissionAlert": false,
               "tileTags": {
@@ -48299,8 +48650,8 @@
               "bDisallowQuickplay": false
             },
             {
-              "tileType": "NonMission",
-              "zoneTheme": "/SaveTheWorld/World/ZoneThemes/ZT_TheIndustrialPark/BP_ZT_TheIndustrialPark.BP_ZT_TheIndustrialPark_C",
+              "tileType": "AlwaysActive",
+              "zoneTheme": "/STW_Horde/World/ZoneThemes/BP_ZT_HordeV3.BP_ZT_HordeV3_C",
               "requirements": {
                 "commanderLevel": 0,
                 "personalPowerRating": 0,
@@ -48315,12 +48666,25 @@
                 },
                 "uncompletedQuestDefinition": "None",
                 "itemDefinition": "None",
-                "eventFlag": ""
+                "eventFlag": "EventFlag.HordeV3.Week05"
               },
-              "linkedQuests": [],
+              "linkedQuests": [
+                {
+                  "questDefinition": "/Script/FortniteGame.FortQuestItemDefinition_Campaign'/STW_Horde/Quests/HordeV3/HordeV3_Quest_Weekly_W05.HordeV3_Quest_Weekly_W05'",
+                  "objectiveStatHandle": {
+                    "dataTable": "None",
+                    "rowName": "None"
+                  }
+                }
+              ],
               "xCoordinate": 11,
               "yCoordinate": 12,
-              "missionWeightOverrides": [],
+              "missionWeightOverrides": [
+                {
+                  "weight": 1.0,
+                  "missionGenerator": "/STW_Horde/Missions/WeeklyMods/Week05/MissionGen_HordeV3_Mod_05_T1.MissionGen_HordeV3_Mod_05_T1_C"
+                }
+              ],
               "difficultyWeightOverrides": [],
               "canBeMissionAlert": false,
               "tileTags": {
@@ -48329,8 +48693,8 @@
               "bDisallowQuickplay": false
             },
             {
-              "tileType": "NonMission",
-              "zoneTheme": "/SaveTheWorld/World/ZoneThemes/ZT_TheIndustrialPark/BP_ZT_TheIndustrialPark.BP_ZT_TheIndustrialPark_C",
+              "tileType": "AlwaysActive",
+              "zoneTheme": "/STW_Horde/World/ZoneThemes/BP_ZT_HordeV3.BP_ZT_HordeV3_C",
               "requirements": {
                 "commanderLevel": 0,
                 "personalPowerRating": 0,
@@ -48345,12 +48709,25 @@
                 },
                 "uncompletedQuestDefinition": "None",
                 "itemDefinition": "None",
-                "eventFlag": ""
+                "eventFlag": "EventFlag.HordeV3.Week06"
               },
-              "linkedQuests": [],
+              "linkedQuests": [
+                {
+                  "questDefinition": "/Script/FortniteGame.FortQuestItemDefinition_Campaign'/STW_Horde/Quests/HordeV3/HordeV3_Quest_Weekly_W06.HordeV3_Quest_Weekly_W06'",
+                  "objectiveStatHandle": {
+                    "dataTable": "None",
+                    "rowName": "None"
+                  }
+                }
+              ],
               "xCoordinate": 12,
               "yCoordinate": 12,
-              "missionWeightOverrides": [],
+              "missionWeightOverrides": [
+                {
+                  "weight": 1.0,
+                  "missionGenerator": "/STW_Horde/Missions/WeeklyMods/Week06/MissionGen_HordeV3_Mod_06_T1.MissionGen_HordeV3_Mod_06_T1_C"
+                }
+              ],
               "difficultyWeightOverrides": [],
               "canBeMissionAlert": false,
               "tileTags": {
@@ -48509,8 +48886,8 @@
               "bDisallowQuickplay": false
             },
             {
-              "tileType": "NonMission",
-              "zoneTheme": "/SaveTheWorld/World/ZoneThemes/ZT_TheIndustrialPark/BP_ZT_TheIndustrialPark.BP_ZT_TheIndustrialPark_C",
+              "tileType": "AlwaysActive",
+              "zoneTheme": "/STW_Horde/World/ZoneThemes/BP_ZT_HordeV3.BP_ZT_HordeV3_C",
               "requirements": {
                 "commanderLevel": 0,
                 "personalPowerRating": 0,
@@ -48525,12 +48902,25 @@
                 },
                 "uncompletedQuestDefinition": "None",
                 "itemDefinition": "None",
-                "eventFlag": ""
+                "eventFlag": "EventFlag.HordeV3.Week05"
               },
-              "linkedQuests": [],
+              "linkedQuests": [
+                {
+                  "questDefinition": "/Script/FortniteGame.FortQuestItemDefinition_Campaign'/STW_Horde/Quests/HordeV3/HordeV3_Quest_Weekly_W05.HordeV3_Quest_Weekly_W05'",
+                  "objectiveStatHandle": {
+                    "dataTable": "None",
+                    "rowName": "None"
+                  }
+                }
+              ],
               "xCoordinate": 12,
               "yCoordinate": 9,
-              "missionWeightOverrides": [],
+              "missionWeightOverrides": [
+                {
+                  "weight": 1.0,
+                  "missionGenerator": "/STW_Horde/Missions/WeeklyMods/Week05/MissionGen_HordeV3_Mod_05_T1.MissionGen_HordeV3_Mod_05_T1_C"
+                }
+              ],
               "difficultyWeightOverrides": [],
               "canBeMissionAlert": false,
               "tileTags": {
@@ -48539,8 +48929,8 @@
               "bDisallowQuickplay": false
             },
             {
-              "tileType": "NonMission",
-              "zoneTheme": "/SaveTheWorld/World/ZoneThemes/ZT_TheIndustrialPark/BP_ZT_TheIndustrialPark.BP_ZT_TheIndustrialPark_C",
+              "tileType": "AlwaysActive",
+              "zoneTheme": "/STW_Horde/World/ZoneThemes/BP_ZT_HordeV3.BP_ZT_HordeV3_C",
               "requirements": {
                 "commanderLevel": 0,
                 "personalPowerRating": 0,
@@ -48555,12 +48945,25 @@
                 },
                 "uncompletedQuestDefinition": "None",
                 "itemDefinition": "None",
-                "eventFlag": ""
+                "eventFlag": "EventFlag.HordeV3.Week04"
               },
-              "linkedQuests": [],
+              "linkedQuests": [
+                {
+                  "questDefinition": "/Script/FortniteGame.FortQuestItemDefinition_Campaign'/STW_Horde/Quests/HordeV3/HordeV3_Quest_Weekly_W04.HordeV3_Quest_Weekly_W04'",
+                  "objectiveStatHandle": {
+                    "dataTable": "None",
+                    "rowName": "None"
+                  }
+                }
+              ],
               "xCoordinate": 11,
               "yCoordinate": 8,
-              "missionWeightOverrides": [],
+              "missionWeightOverrides": [
+                {
+                  "weight": 1.0,
+                  "missionGenerator": "/STW_Horde/Missions/WeeklyMods/Week04/MissionGen_HordeV3_Mod_04_T1.MissionGen_HordeV3_Mod_04_T1_C"
+                }
+              ],
               "difficultyWeightOverrides": [],
               "canBeMissionAlert": false,
               "tileTags": {
@@ -48719,8 +49122,8 @@
               "bDisallowQuickplay": false
             },
             {
-              "tileType": "NonMission",
-              "zoneTheme": "/SaveTheWorld/World/ZoneThemes/ZT_TheIndustrialPark/BP_ZT_TheIndustrialPark.BP_ZT_TheIndustrialPark_C",
+              "tileType": "AlwaysActive",
+              "zoneTheme": "/STW_Horde/World/ZoneThemes/BP_ZT_HordeV3.BP_ZT_HordeV3_C",
               "requirements": {
                 "commanderLevel": 0,
                 "personalPowerRating": 0,
@@ -48735,12 +49138,25 @@
                 },
                 "uncompletedQuestDefinition": "None",
                 "itemDefinition": "None",
-                "eventFlag": ""
+                "eventFlag": "EventFlag.HordeV3.Week05"
               },
-              "linkedQuests": [],
+              "linkedQuests": [
+                {
+                  "questDefinition": "/Script/FortniteGame.FortQuestItemDefinition_Campaign'/STW_Horde/Quests/HordeV3/HordeV3_Quest_Weekly_W05.HordeV3_Quest_Weekly_W05'",
+                  "objectiveStatHandle": {
+                    "dataTable": "None",
+                    "rowName": "None"
+                  }
+                }
+              ],
               "xCoordinate": 11,
               "yCoordinate": 5,
-              "missionWeightOverrides": [],
+              "missionWeightOverrides": [
+                {
+                  "weight": 1.0,
+                  "missionGenerator": "/STW_Horde/Missions/WeeklyMods/Week05/MissionGen_HordeV3_Mod_05_T1.MissionGen_HordeV3_Mod_05_T1_C"
+                }
+              ],
               "difficultyWeightOverrides": [],
               "canBeMissionAlert": false,
               "tileTags": {
@@ -48779,8 +49195,8 @@
               "bDisallowQuickplay": false
             },
             {
-              "tileType": "NonMission",
-              "zoneTheme": "/SaveTheWorld/World/ZoneThemes/ZT_TheIndustrialPark/BP_ZT_TheIndustrialPark.BP_ZT_TheIndustrialPark_C",
+              "tileType": "AlwaysActive",
+              "zoneTheme": "/STW_Horde/World/ZoneThemes/BP_ZT_HordeV3.BP_ZT_HordeV3_C",
               "requirements": {
                 "commanderLevel": 0,
                 "personalPowerRating": 0,
@@ -48795,12 +49211,25 @@
                 },
                 "uncompletedQuestDefinition": "None",
                 "itemDefinition": "None",
-                "eventFlag": ""
+                "eventFlag": "EventFlag.HordeV3.Week04"
               },
-              "linkedQuests": [],
+              "linkedQuests": [
+                {
+                  "questDefinition": "/Script/FortniteGame.FortQuestItemDefinition_Campaign'/STW_Horde/Quests/HordeV3/HordeV3_Quest_Weekly_W04.HordeV3_Quest_Weekly_W04'",
+                  "objectiveStatHandle": {
+                    "dataTable": "None",
+                    "rowName": "None"
+                  }
+                }
+              ],
               "xCoordinate": 10,
               "yCoordinate": 5,
-              "missionWeightOverrides": [],
+              "missionWeightOverrides": [
+                {
+                  "weight": 1.0,
+                  "missionGenerator": "/STW_Horde/Missions/WeeklyMods/Week04/MissionGen_HordeV3_Mod_04_T1.MissionGen_HordeV3_Mod_04_T1_C"
+                }
+              ],
               "difficultyWeightOverrides": [],
               "canBeMissionAlert": false,
               "tileTags": {
@@ -48899,8 +49328,8 @@
               "bDisallowQuickplay": false
             },
             {
-              "tileType": "NonMission",
-              "zoneTheme": "/SaveTheWorld/World/ZoneThemes/ZT_TheIndustrialPark/BP_ZT_TheIndustrialPark.BP_ZT_TheIndustrialPark_C",
+              "tileType": "AlwaysActive",
+              "zoneTheme": "/STW_Horde/World/ZoneThemes/BP_ZT_HordeV3.BP_ZT_HordeV3_C",
               "requirements": {
                 "commanderLevel": 0,
                 "personalPowerRating": 0,
@@ -48915,12 +49344,25 @@
                 },
                 "uncompletedQuestDefinition": "None",
                 "itemDefinition": "None",
-                "eventFlag": ""
+                "eventFlag": "EventFlag.HordeV3.Week06"
               },
-              "linkedQuests": [],
+              "linkedQuests": [
+                {
+                  "questDefinition": "/Script/FortniteGame.FortQuestItemDefinition_Campaign'/STW_Horde/Quests/HordeV3/HordeV3_Quest_Weekly_W06.HordeV3_Quest_Weekly_W06'",
+                  "objectiveStatHandle": {
+                    "dataTable": "None",
+                    "rowName": "None"
+                  }
+                }
+              ],
               "xCoordinate": 12,
               "yCoordinate": 5,
-              "missionWeightOverrides": [],
+              "missionWeightOverrides": [
+                {
+                  "weight": 1.0,
+                  "missionGenerator": "/STW_Horde/Missions/WeeklyMods/Week06/MissionGen_HordeV3_Mod_06_T1.MissionGen_HordeV3_Mod_06_T1_C"
+                }
+              ],
               "difficultyWeightOverrides": [],
               "canBeMissionAlert": false,
               "tileTags": {
@@ -49049,8 +49491,8 @@
               "bDisallowQuickplay": false
             },
             {
-              "tileType": "NonMission",
-              "zoneTheme": "/SaveTheWorld/World/ZoneThemes/ZT_TheIndustrialPark/BP_ZT_TheIndustrialPark.BP_ZT_TheIndustrialPark_C",
+              "tileType": "AlwaysActive",
+              "zoneTheme": "/STW_Horde/World/ZoneThemes/BP_ZT_HordeV3.BP_ZT_HordeV3_C",
               "requirements": {
                 "commanderLevel": 0,
                 "personalPowerRating": 0,
@@ -49065,12 +49507,25 @@
                 },
                 "uncompletedQuestDefinition": "None",
                 "itemDefinition": "None",
-                "eventFlag": ""
+                "eventFlag": "EventFlag.HordeV3.Week05"
               },
-              "linkedQuests": [],
+              "linkedQuests": [
+                {
+                  "questDefinition": "/Script/FortniteGame.FortQuestItemDefinition_Campaign'/STW_Horde/Quests/HordeV3/HordeV3_Quest_Weekly_W05.HordeV3_Quest_Weekly_W05'",
+                  "objectiveStatHandle": {
+                    "dataTable": "None",
+                    "rowName": "None"
+                  }
+                }
+              ],
               "xCoordinate": 12,
               "yCoordinate": 2,
-              "missionWeightOverrides": [],
+              "missionWeightOverrides": [
+                {
+                  "weight": 1.0,
+                  "missionGenerator": "/STW_Horde/Missions/WeeklyMods/Week05/MissionGen_HordeV3_Mod_05_T1.MissionGen_HordeV3_Mod_05_T1_C"
+                }
+              ],
               "difficultyWeightOverrides": [],
               "canBeMissionAlert": false,
               "tileTags": {
@@ -49079,8 +49534,8 @@
               "bDisallowQuickplay": false
             },
             {
-              "tileType": "NonMission",
-              "zoneTheme": "/SaveTheWorld/World/ZoneThemes/ZT_TheIndustrialPark/BP_ZT_TheIndustrialPark.BP_ZT_TheIndustrialPark_C",
+              "tileType": "AlwaysActive",
+              "zoneTheme": "/STW_Horde/World/ZoneThemes/BP_ZT_HordeV3.BP_ZT_HordeV3_C",
               "requirements": {
                 "commanderLevel": 0,
                 "personalPowerRating": 0,
@@ -49095,12 +49550,25 @@
                 },
                 "uncompletedQuestDefinition": "None",
                 "itemDefinition": "None",
-                "eventFlag": ""
+                "eventFlag": "EventFlag.HordeV3.Week04"
               },
-              "linkedQuests": [],
+              "linkedQuests": [
+                {
+                  "questDefinition": "/Script/FortniteGame.FortQuestItemDefinition_Campaign'/STW_Horde/Quests/HordeV3/HordeV3_Quest_Weekly_W04.HordeV3_Quest_Weekly_W04'",
+                  "objectiveStatHandle": {
+                    "dataTable": "None",
+                    "rowName": "None"
+                  }
+                }
+              ],
               "xCoordinate": 11,
               "yCoordinate": 1,
-              "missionWeightOverrides": [],
+              "missionWeightOverrides": [
+                {
+                  "weight": 1.0,
+                  "missionGenerator": "/STW_Horde/Missions/WeeklyMods/Week04/MissionGen_HordeV3_Mod_04_T1.MissionGen_HordeV3_Mod_04_T1_C"
+                }
+              ],
               "difficultyWeightOverrides": [],
               "canBeMissionAlert": false,
               "tileTags": {
@@ -49123,7 +49591,10 @@
               "tileIndices": [
                 0,
                 2,
-                12
+                12,
+                33,
+                34,
+                39
               ],
               "regionThemeIcon": "None",
               "missionData": {
@@ -49173,12 +49644,9 @@
               "tileIndices": [
                 1,
                 3,
-                4,
                 5,
                 6,
                 7,
-                8,
-                9,
                 10,
                 11,
                 13,
@@ -49188,26 +49656,19 @@
                 19,
                 20,
                 21,
-                22,
                 23,
                 24,
-                26,
                 27,
                 28,
                 31,
                 32,
-                33,
-                34,
                 35,
                 36,
                 37,
                 38,
-                39,
                 40,
                 41,
                 42,
-                43,
-                44,
                 45,
                 46,
                 47,
@@ -49224,8 +49685,6 @@
                 64,
                 65,
                 66,
-                67,
-                68,
                 69,
                 70,
                 72,
@@ -49233,29 +49692,22 @@
                 75,
                 76,
                 77,
-                78,
                 79,
-                81,
                 82,
                 84,
                 85,
                 86,
-                87,
                 89,
                 90,
                 91,
-                92,
                 93,
                 94,
                 95,
-                96,
-                98,
                 99,
                 100,
                 101,
                 102,
                 104,
-                105,
                 106,
                 110,
                 111,
@@ -49264,21 +49716,15 @@
                 114,
                 115,
                 116,
-                117,
                 118,
-                119,
-                120,
                 121,
                 124,
                 125,
                 126,
-                127,
                 128,
                 129,
                 130,
                 131,
-                132,
-                133,
                 144,
                 145,
                 146,
@@ -49298,13 +49744,11 @@
                 160,
                 161,
                 162,
-                163,
                 164,
                 165,
                 166,
                 167,
                 168,
-                169,
                 170,
                 171,
                 172,
@@ -49317,33 +49761,24 @@
                 179,
                 180,
                 181,
-                182,
-                183,
                 184,
                 185,
                 186,
                 187,
                 188,
-                189,
-                190,
                 191,
                 192,
                 193,
                 194,
                 195,
-                196,
                 197,
-                198,
                 199,
                 200,
                 201,
-                202,
                 203,
                 204,
                 205,
-                206,
-                207,
-                208
+                206
               ],
               "regionThemeIcon": "None",
               "missionData": {
@@ -49382,9 +49817,12 @@
                 ]
               },
               "tileIndices": [
+                4,
+                9,
                 16,
                 18,
-                25
+                25,
+                26
               ],
               "regionThemeIcon": "None",
               "missionData": {
@@ -49436,9 +49874,12 @@
                 ]
               },
               "tileIndices": [
+                8,
                 29,
                 134,
-                135
+                135,
+                182,
+                183
               ],
               "regionThemeIcon": "None",
               "missionData": {
@@ -49481,6 +49922,63 @@
             },
             {
               "displayName": "Survive the Horde",
+              "uniqueId": "Region_HordeV3_T1",
+              "regionTags": {
+                "gameplayTags": [
+                  {
+                    "tagName": "Stat.Theater.PvE01.Difficulty04"
+                  }
+                ]
+              },
+              "tileIndices": [
+                22,
+                60,
+                61,
+                62,
+                67,
+                68
+              ],
+              "regionThemeIcon": "None",
+              "missionData": {
+                "missionWeights": [
+                  {
+                    "weight": 1.0,
+                    "missionGenerator": "/STW_Horde/World/MissionGens/MissionGen_HordeV3_T1.MissionGen_HordeV3_T1_C"
+                  }
+                ],
+                "difficultyWeights": [
+                  {
+                    "weight": 1.0,
+                    "difficultyInfo": {
+                      "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
+                      "rowName": "Theater_HV3_01"
+                    }
+                  }
+                ],
+                "numMissionsAvailable": 0,
+                "numMissionsToChange": 0,
+                "missionChangeFrequency": 0.0
+              },
+              "requirements": {
+                "commanderLevel": 0,
+                "personalPowerRating": 0,
+                "maxPersonalPowerRating": 22,
+                "partyPowerRating": 0,
+                "maxPartyPowerRating": 0,
+                "activeQuestDefinitions": [],
+                "questDefinition": "None",
+                "objectiveStatHandle": {
+                  "dataTable": "None",
+                  "rowName": "None"
+                },
+                "uncompletedQuestDefinition": "None",
+                "itemDefinition": "None",
+                "eventFlag": ""
+              },
+              "missionAlertRequirements": []
+            },
+            {
+              "displayName": "Survive the Horde",
               "uniqueId": "Region_HordeV3_T2",
               "regionTags": {
                 "gameplayTags": [
@@ -49491,8 +49989,11 @@
               },
               "tileIndices": [
                 30,
+                43,
+                44,
                 71,
-                74
+                74,
+                78
               ],
               "regionThemeIcon": "None",
               "missionData": {
@@ -49546,7 +50047,10 @@
               "tileIndices": [
                 48,
                 50,
-                97
+                96,
+                97,
+                98,
+                105
               ],
               "regionThemeIcon": "None",
               "missionData": {
@@ -49600,7 +50104,10 @@
               "tileIndices": [
                 53,
                 139,
-                140
+                140,
+                196,
+                198,
+                202
               ],
               "regionThemeIcon": "None",
               "missionData": {
@@ -49643,60 +50150,6 @@
             },
             {
               "displayName": "Survive the Horde",
-              "uniqueId": "Region_HordeV3_T1",
-              "regionTags": {
-                "gameplayTags": [
-                  {
-                    "tagName": "Stat.Theater.PvE01.Difficulty04"
-                  }
-                ]
-              },
-              "tileIndices": [
-                60,
-                61,
-                62
-              ],
-              "regionThemeIcon": "None",
-              "missionData": {
-                "missionWeights": [
-                  {
-                    "weight": 1.0,
-                    "missionGenerator": "/STW_Horde/World/MissionGens/MissionGen_HordeV3_T1.MissionGen_HordeV3_T1_C"
-                  }
-                ],
-                "difficultyWeights": [
-                  {
-                    "weight": 1.0,
-                    "difficultyInfo": {
-                      "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
-                      "rowName": "Theater_HV3_01"
-                    }
-                  }
-                ],
-                "numMissionsAvailable": 0,
-                "numMissionsToChange": 0,
-                "missionChangeFrequency": 0.0
-              },
-              "requirements": {
-                "commanderLevel": 0,
-                "personalPowerRating": 0,
-                "maxPersonalPowerRating": 22,
-                "partyPowerRating": 0,
-                "maxPartyPowerRating": 0,
-                "activeQuestDefinitions": [],
-                "questDefinition": "None",
-                "objectiveStatHandle": {
-                  "dataTable": "None",
-                  "rowName": "None"
-                },
-                "uncompletedQuestDefinition": "None",
-                "itemDefinition": "None",
-                "eventFlag": ""
-              },
-              "missionAlertRequirements": []
-            },
-            {
-              "displayName": "Survive the Horde",
               "uniqueId": "Region_HordeV3_T3",
               "regionTags": {
                 "gameplayTags": [
@@ -49707,8 +50160,11 @@
               },
               "tileIndices": [
                 80,
+                81,
                 83,
-                88
+                87,
+                88,
+                92
               ],
               "regionThemeIcon": "None",
               "missionData": {
@@ -49762,7 +50218,10 @@
               "tileIndices": [
                 103,
                 122,
-                123
+                123,
+                127,
+                132,
+                133
               ],
               "regionThemeIcon": "None",
               "missionData": {
@@ -49816,7 +50275,10 @@
               "tileIndices": [
                 107,
                 108,
-                109
+                109,
+                117,
+                119,
+                120
               ],
               "regionThemeIcon": "None",
               "missionData": {
@@ -49870,7 +50332,10 @@
               "tileIndices": [
                 136,
                 137,
-                138
+                138,
+                169,
+                189,
+                190
               ],
               "regionThemeIcon": "None",
               "missionData": {
@@ -49924,7 +50389,10 @@
               "tileIndices": [
                 141,
                 142,
-                143
+                143,
+                163,
+                207,
+                208
               ],
               "regionThemeIcon": "None",
               "missionData": {
@@ -49968,734 +50436,1452 @@
           ]
         }
       ],
-      "missions": [
-        {
-          "theaterId": "DB73FE4C445040F5886B5FB337BC8C83",
-          "availableMissions": [
-            {
-              "missionGuid": "954e2aae-b89a-4603-ac91-9f3ed4b3b22e",
-              "missionRewards": {
-                "tierGroupName": "Mission_Select_HordeV3_T15",
-                "items": [
-                  {
-                    "itemType": "CardPack:zcp_hordev3_t15",
-                    "quantity": 1
-                  }
-                ]
-              },
-              "overrideMissionRewards": {},
-              "missionGenerator": "/STW_Horde/World/MissionGens/MissionGen_HordeV3_T1.MissionGen_HordeV3_T1_C",
-              "missionDifficultyInfo": {
-                "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
-                "rowName": "Theater_HV3_07"
-              },
-              "tileIndex": 0,
-              "availableUntil": "2017-07-25T23:59:59.999Z"
+      "missions": [{
+        "theaterId": "DB73FE4C445040F5886B5FB337BC8C83",
+        "availableMissions": [
+          {
+            "missionGuid": "39295ef1-fb24-4d80-beb0-a4703fd717d2",
+            "missionRewards": {
+              "tierGroupName": "Mission_Select_HordeV3_T15",
+              "items": [
+                {
+                  "itemType": "CardPack:zcp_hordev3_t15",
+                  "quantity": 1
+                }
+              ]
             },
-            {
-              "missionGuid": "5d45dd09-a286-4307-9f4a-3b1ff29f0606",
-              "missionRewards": {
-                "tierGroupName": "Mission_Select_HordeV3_T15",
-                "items": [
-                  {
-                    "itemType": "CardPack:zcp_hordev3_t15",
-                    "quantity": 1
-                  }
-                ]
-              },
-              "overrideMissionRewards": {},
-              "missionGenerator": "/STW_Horde/Missions/WeeklyMods/Week02/MissionGen_HordeV3_Mod_02_T1.MissionGen_HordeV3_Mod_02_T1_C",
-              "missionDifficultyInfo": {
-                "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
-                "rowName": "Theater_HV3_07"
-              },
-              "tileIndex": 2,
-              "availableUntil": "2017-07-25T23:59:59.999Z"
+            "overrideMissionRewards": {},
+            "missionGenerator": "/STW_Horde/World/MissionGens/MissionGen_HordeV3_T1.MissionGen_HordeV3_T1_C",
+            "missionDifficultyInfo": {
+              "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
+              "rowName": "Theater_HV3_07"
             },
-            {
-              "missionGuid": "fe6a9c8e-2e70-4392-80e2-53c346967975",
-              "missionRewards": {
-                "tierGroupName": "Mission_Select_HordeV3_T15",
-                "items": [
-                  {
-                    "itemType": "CardPack:zcp_hordev3_t15",
-                    "quantity": 1
-                  }
-                ]
-              },
-              "overrideMissionRewards": {},
-              "missionGenerator": "/STW_Horde/Missions/WeeklyMods/Week03/MissionGen_HordeV3_Mod_03_T1.MissionGen_HordeV3_Mod_03_T1_C",
-              "missionDifficultyInfo": {
-                "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
-                "rowName": "Theater_HV3_07"
-              },
-              "tileIndex": 12,
-              "availableUntil": "2017-07-25T23:59:59.999Z"
+            "tileIndex": 0,
+            "availableUntil": "2017-07-25T23:59:59.999Z"
+          },
+          {
+            "missionGuid": "d65a6035-c20c-4c6b-85d5-c80b69b1f2f5",
+            "missionRewards": {
+              "tierGroupName": "Mission_Select_HordeV3_T15",
+              "items": [
+                {
+                  "itemType": "CardPack:zcp_hordev3_t15",
+                  "quantity": 1
+                }
+              ]
             },
-            {
-              "missionGuid": "9349baea-719d-4fa4-8ac8-bf5a90960a98",
-              "missionRewards": {
-                "tierGroupName": "Mission_Select_HordeV3_T17",
-                "items": [
-                  {
-                    "itemType": "CardPack:zcp_hordev3_t17",
-                    "quantity": 1
-                  }
-                ]
-              },
-              "overrideMissionRewards": {},
-              "missionGenerator": "/STW_Horde/Missions/WeeklyMods/Week02/MissionGen_HordeV3_Mod_02_T1.MissionGen_HordeV3_Mod_02_T1_C",
-              "missionDifficultyInfo": {
-                "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
-                "rowName": "Theater_HV3_08"
-              },
-              "tileIndex": 16,
-              "availableUntil": "2017-07-25T23:59:59.999Z"
+            "overrideMissionRewards": {},
+            "missionGenerator": "/STW_Horde/Missions/WeeklyMods/Week02/MissionGen_HordeV3_Mod_02_T1.MissionGen_HordeV3_Mod_02_T1_C",
+            "missionDifficultyInfo": {
+              "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
+              "rowName": "Theater_HV3_07"
             },
-            {
-              "missionGuid": "50eefe34-d090-4746-abc1-1567cc725ce5",
-              "missionRewards": {
-                "tierGroupName": "Mission_Select_HordeV3_T17",
-                "items": [
-                  {
-                    "itemType": "CardPack:zcp_hordev3_t17",
-                    "quantity": 1
-                  }
-                ]
-              },
-              "overrideMissionRewards": {},
-              "missionGenerator": "/STW_Horde/World/MissionGens/MissionGen_HordeV3_T1.MissionGen_HordeV3_T1_C",
-              "missionDifficultyInfo": {
-                "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
-                "rowName": "Theater_HV3_08"
-              },
-              "tileIndex": 18,
-              "availableUntil": "2017-07-25T23:59:59.999Z"
+            "tileIndex": 2,
+            "availableUntil": "2017-07-25T23:59:59.999Z"
+          },
+          {
+            "missionGuid": "07776710-1e9a-43d4-9f64-b2ff95e0beda",
+            "missionRewards": {
+              "tierGroupName": "Mission_Select_HordeV3_T15",
+              "items": [
+                {
+                  "itemType": "CardPack:zcp_hordev3_t15",
+                  "quantity": 1
+                }
+              ]
             },
-            {
-              "missionGuid": "611e9fff-6667-4e08-8548-f3713a5b0f64",
-              "missionRewards": {
-                "tierGroupName": "Mission_Select_HordeV3_T17",
-                "items": [
-                  {
-                    "itemType": "CardPack:zcp_hordev3_t17",
-                    "quantity": 1
-                  }
-                ]
-              },
-              "overrideMissionRewards": {},
-              "missionGenerator": "/STW_Horde/Missions/WeeklyMods/Week03/MissionGen_HordeV3_Mod_03_T1.MissionGen_HordeV3_Mod_03_T1_C",
-              "missionDifficultyInfo": {
-                "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
-                "rowName": "Theater_HV3_08"
-              },
-              "tileIndex": 25,
-              "availableUntil": "2017-07-25T23:59:59.999Z"
+            "overrideMissionRewards": {},
+            "missionGenerator": "/STW_Horde/Missions/WeeklyMods/Week03/MissionGen_HordeV3_Mod_03_T1.MissionGen_HordeV3_Mod_03_T1_C",
+            "missionDifficultyInfo": {
+              "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
+              "rowName": "Theater_HV3_07"
             },
-            {
-              "missionGuid": "51024952-cc78-4430-8b7f-b10c87a2aaae",
-              "missionRewards": {
-                "tierGroupName": "Mission_Select_HordeV3_T19",
-                "items": [
-                  {
-                    "itemType": "CardPack:zcp_hordev3_t19",
-                    "quantity": 1
-                  }
-                ]
-              },
-              "overrideMissionRewards": {},
-              "missionGenerator": "/STW_Horde/Missions/WeeklyMods/Week03/MissionGen_HordeV3_Mod_03_T1.MissionGen_HordeV3_Mod_03_T1_C",
-              "missionDifficultyInfo": {
-                "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
-                "rowName": "Theater_HV3_09"
-              },
-              "tileIndex": 29,
-              "availableUntil": "2017-07-25T23:59:59.999Z"
+            "tileIndex": 12,
+            "availableUntil": "2017-07-25T23:59:59.999Z"
+          },
+          {
+            "missionGuid": "9f0ebf75-91a3-4e41-a639-c6fdc2704ac4",
+            "missionRewards": {
+              "tierGroupName": "Mission_Select_HordeV3_T15",
+              "items": [
+                {
+                  "itemType": "CardPack:zcp_hordev3_t15",
+                  "quantity": 1
+                }
+              ]
             },
-            {
-              "missionGuid": "2f6ea138-c122-4887-9c7a-ef35a7615615",
-              "missionRewards": {
-                "tierGroupName": "Mission_Select_HordeV3_T19",
-                "items": [
-                  {
-                    "itemType": "CardPack:zcp_hordev3_t19",
-                    "quantity": 1
-                  }
-                ]
-              },
-              "overrideMissionRewards": {},
-              "missionGenerator": "/STW_Horde/World/MissionGens/MissionGen_HordeV3_T1.MissionGen_HordeV3_T1_C",
-              "missionDifficultyInfo": {
-                "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
-                "rowName": "Theater_HV3_09"
-              },
-              "tileIndex": 134,
-              "availableUntil": "2017-07-25T23:59:59.999Z"
+            "overrideMissionRewards": {},
+            "missionGenerator": "/STW_Horde/Missions/WeeklyMods/Week04/MissionGen_HordeV3_Mod_04_T1.MissionGen_HordeV3_Mod_04_T1_C",
+            "missionDifficultyInfo": {
+              "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
+              "rowName": "Theater_HV3_07"
             },
-            {
-              "missionGuid": "dc728c97-e09a-41d9-91b8-f6bf6ac5a430",
-              "missionRewards": {
-                "tierGroupName": "Mission_Select_HordeV3_T19",
-                "items": [
-                  {
-                    "itemType": "CardPack:zcp_hordev3_t19",
-                    "quantity": 1
-                  }
-                ]
-              },
-              "overrideMissionRewards": {},
-              "missionGenerator": "/STW_Horde/Missions/WeeklyMods/Week02/MissionGen_HordeV3_Mod_02_T1.MissionGen_HordeV3_Mod_02_T1_C",
-              "missionDifficultyInfo": {
-                "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
-                "rowName": "Theater_HV3_09"
-              },
-              "tileIndex": 135,
-              "availableUntil": "2017-07-25T23:59:59.999Z"
+            "tileIndex": 33,
+            "availableUntil": "2017-07-25T23:59:59.999Z"
+          },
+          {
+            "missionGuid": "8611fdfd-6c41-488a-98b2-a2153230299d",
+            "missionRewards": {
+              "tierGroupName": "Mission_Select_HordeV3_T15",
+              "items": [
+                {
+                  "itemType": "CardPack:zcp_hordev3_t15",
+                  "quantity": 1
+                }
+              ]
             },
-            {
-              "missionGuid": "65d1c7a6-2d83-4b4f-96bb-ecd2b3fec992",
-              "missionRewards": {
-                "tierGroupName": "Mission_Select_HordeV3_T05",
-                "items": [
-                  {
-                    "itemType": "CardPack:zcp_hordev3_t05",
-                    "quantity": 1
-                  }
-                ]
-              },
-              "overrideMissionRewards": {},
-              "missionGenerator": "/STW_Horde/World/MissionGens/MissionGen_HordeV3_T1.MissionGen_HordeV3_T1_C",
-              "missionDifficultyInfo": {
-                "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
-                "rowName": "Theater_HV3_02"
-              },
-              "tileIndex": 30,
-              "availableUntil": "2017-07-25T23:59:59.999Z"
+            "overrideMissionRewards": {},
+            "missionGenerator": "/STW_Horde/Missions/WeeklyMods/Week05/MissionGen_HordeV3_Mod_05_T1.MissionGen_HordeV3_Mod_05_T1_C",
+            "missionDifficultyInfo": {
+              "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
+              "rowName": "Theater_HV3_07"
             },
-            {
-              "missionGuid": "fca5f17a-723a-4d8e-9eea-8a42db25d6dd",
-              "missionRewards": {
-                "tierGroupName": "Mission_Select_HordeV3_T05",
-                "items": [
-                  {
-                    "itemType": "CardPack:zcp_hordev3_t05",
-                    "quantity": 1
-                  }
-                ]
-              },
-              "overrideMissionRewards": {},
-              "missionGenerator": "/STW_Horde/Missions/WeeklyMods/Week02/MissionGen_HordeV3_Mod_02_T1.MissionGen_HordeV3_Mod_02_T1_C",
-              "missionDifficultyInfo": {
-                "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
-                "rowName": "Theater_HV3_02"
-              },
-              "tileIndex": 71,
-              "availableUntil": "2017-07-25T23:59:59.999Z"
+            "tileIndex": 34,
+            "availableUntil": "2017-07-25T23:59:59.999Z"
+          },
+          {
+            "missionGuid": "34efb661-60b6-49a5-be3b-2934a82b51dd",
+            "missionRewards": {
+              "tierGroupName": "Mission_Select_HordeV3_T15",
+              "items": [
+                {
+                  "itemType": "CardPack:zcp_hordev3_t15",
+                  "quantity": 1
+                }
+              ]
             },
-            {
-              "missionGuid": "b65812e9-088f-4a9a-9c3a-e848c1219d9d",
-              "missionRewards": {
-                "tierGroupName": "Mission_Select_HordeV3_T05",
-                "items": [
-                  {
-                    "itemType": "CardPack:zcp_hordev3_t05",
-                    "quantity": 1
-                  }
-                ]
-              },
-              "overrideMissionRewards": {},
-              "missionGenerator": "/STW_Horde/Missions/WeeklyMods/Week03/MissionGen_HordeV3_Mod_03_T1.MissionGen_HordeV3_Mod_03_T1_C",
-              "missionDifficultyInfo": {
-                "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
-                "rowName": "Theater_HV3_02"
-              },
-              "tileIndex": 74,
-              "availableUntil": "2017-07-25T23:59:59.999Z"
+            "overrideMissionRewards": {},
+            "missionGenerator": "/STW_Horde/Missions/WeeklyMods/Week06/MissionGen_HordeV3_Mod_06_T1.MissionGen_HordeV3_Mod_06_T1_C",
+            "missionDifficultyInfo": {
+              "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
+              "rowName": "Theater_HV3_07"
             },
-            {
-              "missionGuid": "0e096d9e-4407-43d7-8d5b-66a8e1594f80",
-              "missionRewards": {
-                "tierGroupName": "Mission_Select_HordeV3_T13",
-                "items": [
-                  {
-                    "itemType": "CardPack:zcp_hordev3_t13",
-                    "quantity": 1
-                  }
-                ]
-              },
-              "overrideMissionRewards": {},
-              "missionGenerator": "/STW_Horde/Missions/WeeklyMods/Week02/MissionGen_HordeV3_Mod_02_T1.MissionGen_HordeV3_Mod_02_T1_C",
-              "missionDifficultyInfo": {
-                "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
-                "rowName": "Theater_HV3_06"
-              },
-              "tileIndex": 48,
-              "availableUntil": "2017-07-25T23:59:59.999Z"
+            "tileIndex": 39,
+            "availableUntil": "2017-07-25T23:59:59.999Z"
+          },
+          {
+            "missionGuid": "2d978bc1-fb2c-4b14-8075-2a5250c94c5c",
+            "missionRewards": {
+              "tierGroupName": "Mission_Select_HordeV3_T17",
+              "items": [
+                {
+                  "itemType": "CardPack:zcp_hordev3_t17",
+                  "quantity": 1
+                }
+              ]
             },
-            {
-              "missionGuid": "7fe535fb-5189-4f35-b879-e5f284987d5b",
-              "missionRewards": {
-                "tierGroupName": "Mission_Select_HordeV3_T13",
-                "items": [
-                  {
-                    "itemType": "CardPack:zcp_hordev3_t13",
-                    "quantity": 1
-                  }
-                ]
-              },
-              "overrideMissionRewards": {},
-              "missionGenerator": "/STW_Horde/World/MissionGens/MissionGen_HordeV3_T1.MissionGen_HordeV3_T1_C",
-              "missionDifficultyInfo": {
-                "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
-                "rowName": "Theater_HV3_06"
-              },
-              "tileIndex": 50,
-              "availableUntil": "2017-07-25T23:59:59.999Z"
+            "overrideMissionRewards": {},
+            "missionGenerator": "/STW_Horde/Missions/WeeklyMods/Week06/MissionGen_HordeV3_Mod_06_T1.MissionGen_HordeV3_Mod_06_T1_C",
+            "missionDifficultyInfo": {
+              "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
+              "rowName": "Theater_HV3_08"
             },
-            {
-              "missionGuid": "c1940bc7-af5d-43ae-ae86-78280167e4c2",
-              "missionRewards": {
-                "tierGroupName": "Mission_Select_HordeV3_T13",
-                "items": [
-                  {
-                    "itemType": "CardPack:zcp_hordev3_t13",
-                    "quantity": 1
-                  }
-                ]
-              },
-              "overrideMissionRewards": {},
-              "missionGenerator": "/STW_Horde/Missions/WeeklyMods/Week03/MissionGen_HordeV3_Mod_03_T1.MissionGen_HordeV3_Mod_03_T1_C",
-              "missionDifficultyInfo": {
-                "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
-                "rowName": "Theater_HV3_06"
-              },
-              "tileIndex": 97,
-              "availableUntil": "2017-07-25T23:59:59.999Z"
+            "tileIndex": 4,
+            "availableUntil": "2017-07-25T23:59:59.999Z"
+          },
+          {
+            "missionGuid": "852812e5-5288-4947-a948-b69313d40964",
+            "missionRewards": {
+              "tierGroupName": "Mission_Select_HordeV3_T17",
+              "items": [
+                {
+                  "itemType": "CardPack:zcp_hordev3_t17",
+                  "quantity": 1
+                }
+              ]
             },
-            {
-              "missionGuid": "8f418904-bef4-47fe-9c85-34f8b4ea0737",
-              "missionRewards": {
-                "tierGroupName": "Mission_Select_HordeV3_T23",
-                "items": [
-                  {
-                    "itemType": "CardPack:zcp_hordev3_t23",
-                    "quantity": 1
-                  }
-                ]
-              },
-              "overrideMissionRewards": {},
-              "missionGenerator": "/STW_Horde/Missions/WeeklyMods/Week02/MissionGen_HordeV3_Mod_02_T1.MissionGen_HordeV3_Mod_02_T1_C",
-              "missionDifficultyInfo": {
-                "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
-                "rowName": "Theater_HV3_11"
-              },
-              "tileIndex": 53,
-              "availableUntil": "2017-07-25T23:59:59.999Z"
+            "overrideMissionRewards": {},
+            "missionGenerator": "/STW_Horde/Missions/WeeklyMods/Week04/MissionGen_HordeV3_Mod_04_T1.MissionGen_HordeV3_Mod_04_T1_C",
+            "missionDifficultyInfo": {
+              "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
+              "rowName": "Theater_HV3_08"
             },
-            {
-              "missionGuid": "2752af0c-a816-4fa9-bfe9-2fc5e4ac5988",
-              "missionRewards": {
-                "tierGroupName": "Mission_Select_HordeV3_T23",
-                "items": [
-                  {
-                    "itemType": "CardPack:zcp_hordev3_t23",
-                    "quantity": 1
-                  }
-                ]
-              },
-              "overrideMissionRewards": {},
-              "missionGenerator": "/STW_Horde/World/MissionGens/MissionGen_HordeV3_T1.MissionGen_HordeV3_T1_C",
-              "missionDifficultyInfo": {
-                "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
-                "rowName": "Theater_HV3_11"
-              },
-              "tileIndex": 139,
-              "availableUntil": "2017-07-25T23:59:59.999Z"
+            "tileIndex": 9,
+            "availableUntil": "2017-07-25T23:59:59.999Z"
+          },
+          {
+            "missionGuid": "8b34c348-69d3-4ced-88ad-fb603225cc11",
+            "missionRewards": {
+              "tierGroupName": "Mission_Select_HordeV3_T17",
+              "items": [
+                {
+                  "itemType": "CardPack:zcp_hordev3_t17",
+                  "quantity": 1
+                }
+              ]
             },
-            {
-              "missionGuid": "c4e2c27d-c9d0-4260-b9ba-9ee8f05a72c4",
-              "missionRewards": {
-                "tierGroupName": "Mission_Select_HordeV3_T23",
-                "items": [
-                  {
-                    "itemType": "CardPack:zcp_hordev3_t23",
-                    "quantity": 1
-                  }
-                ]
-              },
-              "overrideMissionRewards": {},
-              "missionGenerator": "/STW_Horde/Missions/WeeklyMods/Week03/MissionGen_HordeV3_Mod_03_T1.MissionGen_HordeV3_Mod_03_T1_C",
-              "missionDifficultyInfo": {
-                "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
-                "rowName": "Theater_HV3_11"
-              },
-              "tileIndex": 140,
-              "availableUntil": "2017-07-25T23:59:59.999Z"
+            "overrideMissionRewards": {},
+            "missionGenerator": "/STW_Horde/Missions/WeeklyMods/Week02/MissionGen_HordeV3_Mod_02_T1.MissionGen_HordeV3_Mod_02_T1_C",
+            "missionDifficultyInfo": {
+              "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
+              "rowName": "Theater_HV3_08"
             },
-            {
-              "missionGuid": "56a63d8c-5a87-4735-b2e6-fc8cbc3a8129",
-              "missionRewards": {
-                "tierGroupName": "Mission_Select_HordeV3_T04",
-                "items": [
-                  {
-                    "itemType": "CardPack:zcp_hordev3_t04",
-                    "quantity": 1
-                  }
-                ]
-              },
-              "overrideMissionRewards": {},
-              "missionGenerator": "/STW_Horde/World/MissionGens/MissionGen_HordeV3_T1.MissionGen_HordeV3_T1_C",
-              "missionDifficultyInfo": {
-                "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
-                "rowName": "Theater_HV3_01"
-              },
-              "tileIndex": 60,
-              "availableUntil": "2017-07-25T23:59:59.999Z"
+            "tileIndex": 16,
+            "availableUntil": "2017-07-25T23:59:59.999Z"
+          },
+          {
+            "missionGuid": "0f227678-03cb-4932-b0a1-b3e7afc33110",
+            "missionRewards": {
+              "tierGroupName": "Mission_Select_HordeV3_T17",
+              "items": [
+                {
+                  "itemType": "CardPack:zcp_hordev3_t17",
+                  "quantity": 1
+                }
+              ]
             },
-            {
-              "missionGuid": "c1fbda63-e12a-4777-bd20-6898519f495f",
-              "missionRewards": {
-                "tierGroupName": "Mission_Select_HordeV3_T04",
-                "items": [
-                  {
-                    "itemType": "CardPack:zcp_hordev3_t04",
-                    "quantity": 1
-                  }
-                ]
-              },
-              "overrideMissionRewards": {},
-              "missionGenerator": "/STW_Horde/Missions/WeeklyMods/Week02/MissionGen_HordeV3_Mod_02_T1.MissionGen_HordeV3_Mod_02_T1_C",
-              "missionDifficultyInfo": {
-                "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
-                "rowName": "Theater_HV3_01"
-              },
-              "tileIndex": 61,
-              "availableUntil": "2017-07-25T23:59:59.999Z"
+            "overrideMissionRewards": {},
+            "missionGenerator": "/STW_Horde/World/MissionGens/MissionGen_HordeV3_T1.MissionGen_HordeV3_T1_C",
+            "missionDifficultyInfo": {
+              "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
+              "rowName": "Theater_HV3_08"
             },
-            {
-              "missionGuid": "17e54486-7d61-46aa-a902-8928ea34063d",
-              "missionRewards": {
-                "tierGroupName": "Mission_Select_HordeV3_T04",
-                "items": [
-                  {
-                    "itemType": "CardPack:zcp_hordev3_t04",
-                    "quantity": 1
-                  }
-                ]
-              },
-              "overrideMissionRewards": {},
-              "missionGenerator": "/STW_Horde/Missions/WeeklyMods/Week03/MissionGen_HordeV3_Mod_03_T1.MissionGen_HordeV3_Mod_03_T1_C",
-              "missionDifficultyInfo": {
-                "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
-                "rowName": "Theater_HV3_01"
-              },
-              "tileIndex": 62,
-              "availableUntil": "2017-07-25T23:59:59.999Z"
+            "tileIndex": 18,
+            "availableUntil": "2017-07-25T23:59:59.999Z"
+          },
+          {
+            "missionGuid": "1897a1ef-fd15-40a9-b1ff-747428b2f0be",
+            "missionRewards": {
+              "tierGroupName": "Mission_Select_HordeV3_T17",
+              "items": [
+                {
+                  "itemType": "CardPack:zcp_hordev3_t17",
+                  "quantity": 1
+                }
+              ]
             },
-            {
-              "missionGuid": "1a4317a6-cdd3-482e-8ea8-38ab9a03e17c",
-              "missionRewards": {
-                "tierGroupName": "Mission_Select_HordeV3_T07",
-                "items": [
-                  {
-                    "itemType": "CardPack:zcp_hordev3_t07",
-                    "quantity": 1
-                  }
-                ]
-              },
-              "overrideMissionRewards": {},
-              "missionGenerator": "/STW_Horde/World/MissionGens/MissionGen_HordeV3_T1.MissionGen_HordeV3_T1_C",
-              "missionDifficultyInfo": {
-                "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
-                "rowName": "Theater_HV3_03"
-              },
-              "tileIndex": 80,
-              "availableUntil": "2017-07-25T23:59:59.999Z"
+            "overrideMissionRewards": {},
+            "missionGenerator": "/STW_Horde/Missions/WeeklyMods/Week03/MissionGen_HordeV3_Mod_03_T1.MissionGen_HordeV3_Mod_03_T1_C",
+            "missionDifficultyInfo": {
+              "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
+              "rowName": "Theater_HV3_08"
             },
-            {
-              "missionGuid": "d8711d25-1631-424c-9e42-c55b8040879d",
-              "missionRewards": {
-                "tierGroupName": "Mission_Select_HordeV3_T07",
-                "items": [
-                  {
-                    "itemType": "CardPack:zcp_hordev3_t07",
-                    "quantity": 1
-                  }
-                ]
-              },
-              "overrideMissionRewards": {},
-              "missionGenerator": "/STW_Horde/Missions/WeeklyMods/Week02/MissionGen_HordeV3_Mod_02_T1.MissionGen_HordeV3_Mod_02_T1_C",
-              "missionDifficultyInfo": {
-                "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
-                "rowName": "Theater_HV3_03"
-              },
-              "tileIndex": 83,
-              "availableUntil": "2017-07-25T23:59:59.999Z"
+            "tileIndex": 25,
+            "availableUntil": "2017-07-25T23:59:59.999Z"
+          },
+          {
+            "missionGuid": "322d7478-d5af-457d-8518-3f7d6963fe60",
+            "missionRewards": {
+              "tierGroupName": "Mission_Select_HordeV3_T17",
+              "items": [
+                {
+                  "itemType": "CardPack:zcp_hordev3_t17",
+                  "quantity": 1
+                }
+              ]
             },
-            {
-              "missionGuid": "8a81d281-cdf4-46af-8693-2884df741668",
-              "missionRewards": {
-                "tierGroupName": "Mission_Select_HordeV3_T07",
-                "items": [
-                  {
-                    "itemType": "CardPack:zcp_hordev3_t07",
-                    "quantity": 1
-                  }
-                ]
-              },
-              "overrideMissionRewards": {},
-              "missionGenerator": "/STW_Horde/Missions/WeeklyMods/Week03/MissionGen_HordeV3_Mod_03_T1.MissionGen_HordeV3_Mod_03_T1_C",
-              "missionDifficultyInfo": {
-                "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
-                "rowName": "Theater_HV3_03"
-              },
-              "tileIndex": 88,
-              "availableUntil": "2017-07-25T23:59:59.999Z"
+            "overrideMissionRewards": {},
+            "missionGenerator": "/STW_Horde/Missions/WeeklyMods/Week05/MissionGen_HordeV3_Mod_05_T1.MissionGen_HordeV3_Mod_05_T1_C",
+            "missionDifficultyInfo": {
+              "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
+              "rowName": "Theater_HV3_08"
             },
-            {
-              "missionGuid": "0c77e552-504a-4517-93f3-fba9b288578f",
-              "missionRewards": {
-                "tierGroupName": "Mission_Select_HordeV3_T11",
-                "items": [
-                  {
-                    "itemType": "CardPack:zcp_hordev3_t11",
-                    "quantity": 1
-                  }
-                ]
-              },
-              "overrideMissionRewards": {},
-              "missionGenerator": "/STW_Horde/Missions/WeeklyMods/Week02/MissionGen_HordeV3_Mod_02_T1.MissionGen_HordeV3_Mod_02_T1_C",
-              "missionDifficultyInfo": {
-                "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
-                "rowName": "Theater_HV3_05"
-              },
-              "tileIndex": 103,
-              "availableUntil": "2017-07-25T23:59:59.999Z"
+            "tileIndex": 26,
+            "availableUntil": "2017-07-25T23:59:59.999Z"
+          },
+          {
+            "missionGuid": "29d1ec23-b4bb-45e2-94b4-5a62d914f4d6",
+            "missionRewards": {
+              "tierGroupName": "Mission_Select_HordeV3_T19",
+              "items": [
+                {
+                  "itemType": "CardPack:zcp_hordev3_t19",
+                  "quantity": 1
+                }
+              ]
             },
-            {
-              "missionGuid": "b2cc5126-4aef-4090-b15e-7987769c2716",
-              "missionRewards": {
-                "tierGroupName": "Mission_Select_HordeV3_T11",
-                "items": [
-                  {
-                    "itemType": "CardPack:zcp_hordev3_t11",
-                    "quantity": 1
-                  }
-                ]
-              },
-              "overrideMissionRewards": {},
-              "missionGenerator": "/STW_Horde/World/MissionGens/MissionGen_HordeV3_T1.MissionGen_HordeV3_T1_C",
-              "missionDifficultyInfo": {
-                "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
-                "rowName": "Theater_HV3_05"
-              },
-              "tileIndex": 122,
-              "availableUntil": "2017-07-25T23:59:59.999Z"
+            "overrideMissionRewards": {},
+            "missionGenerator": "/STW_Horde/Missions/WeeklyMods/Week04/MissionGen_HordeV3_Mod_04_T1.MissionGen_HordeV3_Mod_04_T1_C",
+            "missionDifficultyInfo": {
+              "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
+              "rowName": "Theater_HV3_09"
             },
-            {
-              "missionGuid": "5c685f2f-148a-48c0-9b43-f197e6e83aaa",
-              "missionRewards": {
-                "tierGroupName": "Mission_Select_HordeV3_T11",
-                "items": [
-                  {
-                    "itemType": "CardPack:zcp_hordev3_t11",
-                    "quantity": 1
-                  }
-                ]
-              },
-              "overrideMissionRewards": {},
-              "missionGenerator": "/STW_Horde/Missions/WeeklyMods/Week03/MissionGen_HordeV3_Mod_03_T1.MissionGen_HordeV3_Mod_03_T1_C",
-              "missionDifficultyInfo": {
-                "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
-                "rowName": "Theater_HV3_05"
-              },
-              "tileIndex": 123,
-              "availableUntil": "2017-07-25T23:59:59.999Z"
+            "tileIndex": 8,
+            "availableUntil": "2017-07-25T23:59:59.999Z"
+          },
+          {
+            "missionGuid": "2717365c-dc8e-4b63-bb29-771837c41b8f",
+            "missionRewards": {
+              "tierGroupName": "Mission_Select_HordeV3_T19",
+              "items": [
+                {
+                  "itemType": "CardPack:zcp_hordev3_t19",
+                  "quantity": 1
+                }
+              ]
             },
-            {
-              "missionGuid": "ac12ad78-f3f1-4e10-8ac4-218268c7a4cc",
-              "missionRewards": {
-                "tierGroupName": "Mission_Select_HordeV3_T09",
-                "items": [
-                  {
-                    "itemType": "CardPack:zcp_hordev3_t09",
-                    "quantity": 1
-                  }
-                ]
-              },
-              "overrideMissionRewards": {},
-              "missionGenerator": "/STW_Horde/World/MissionGens/MissionGen_HordeV3_T1.MissionGen_HordeV3_T1_C",
-              "missionDifficultyInfo": {
-                "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
-                "rowName": "Theater_HV3_04"
-              },
-              "tileIndex": 107,
-              "availableUntil": "2017-07-25T23:59:59.999Z"
+            "overrideMissionRewards": {},
+            "missionGenerator": "/STW_Horde/Missions/WeeklyMods/Week03/MissionGen_HordeV3_Mod_03_T1.MissionGen_HordeV3_Mod_03_T1_C",
+            "missionDifficultyInfo": {
+              "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
+              "rowName": "Theater_HV3_09"
             },
-            {
-              "missionGuid": "cd18515c-1cf5-4270-b815-7a7715ec348a",
-              "missionRewards": {
-                "tierGroupName": "Mission_Select_HordeV3_T09",
-                "items": [
-                  {
-                    "itemType": "CardPack:zcp_hordev3_t09",
-                    "quantity": 1
-                  }
-                ]
-              },
-              "overrideMissionRewards": {},
-              "missionGenerator": "/STW_Horde/Missions/WeeklyMods/Week02/MissionGen_HordeV3_Mod_02_T1.MissionGen_HordeV3_Mod_02_T1_C",
-              "missionDifficultyInfo": {
-                "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
-                "rowName": "Theater_HV3_04"
-              },
-              "tileIndex": 108,
-              "availableUntil": "2017-07-25T23:59:59.999Z"
+            "tileIndex": 29,
+            "availableUntil": "2017-07-25T23:59:59.999Z"
+          },
+          {
+            "missionGuid": "e7f25135-ee7e-4629-86d6-3000aaea8997",
+            "missionRewards": {
+              "tierGroupName": "Mission_Select_HordeV3_T19",
+              "items": [
+                {
+                  "itemType": "CardPack:zcp_hordev3_t19",
+                  "quantity": 1
+                }
+              ]
             },
-            {
-              "missionGuid": "df56b2e3-451f-4a56-9dd6-5f989b0a0cdd",
-              "missionRewards": {
-                "tierGroupName": "Mission_Select_HordeV3_T09",
-                "items": [
-                  {
-                    "itemType": "CardPack:zcp_hordev3_t09",
-                    "quantity": 1
-                  }
-                ]
-              },
-              "overrideMissionRewards": {},
-              "missionGenerator": "/STW_Horde/Missions/WeeklyMods/Week03/MissionGen_HordeV3_Mod_03_T1.MissionGen_HordeV3_Mod_03_T1_C",
-              "missionDifficultyInfo": {
-                "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
-                "rowName": "Theater_HV3_04"
-              },
-              "tileIndex": 109,
-              "availableUntil": "2017-07-25T23:59:59.999Z"
+            "overrideMissionRewards": {},
+            "missionGenerator": "/STW_Horde/World/MissionGens/MissionGen_HordeV3_T1.MissionGen_HordeV3_T1_C",
+            "missionDifficultyInfo": {
+              "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
+              "rowName": "Theater_HV3_09"
             },
-            {
-              "missionGuid": "47732ffa-f6c4-4d9b-86df-05aaac9c3ed8",
-              "missionRewards": {
-                "tierGroupName": "Mission_Select_HordeV3_T21",
-                "items": [
-                  {
-                    "itemType": "CardPack:zcp_hordev3_t21",
-                    "quantity": 1
-                  }
-                ]
-              },
-              "overrideMissionRewards": {},
-              "missionGenerator": "/STW_Horde/Missions/WeeklyMods/Week02/MissionGen_HordeV3_Mod_02_T1.MissionGen_HordeV3_Mod_02_T1_C",
-              "missionDifficultyInfo": {
-                "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
-                "rowName": "Theater_HV3_10"
-              },
-              "tileIndex": 136,
-              "availableUntil": "2017-07-25T23:59:59.999Z"
+            "tileIndex": 134,
+            "availableUntil": "2017-07-25T23:59:59.999Z"
+          },
+          {
+            "missionGuid": "502b9cb7-417c-444e-8bc3-5ad53fa0cef2",
+            "missionRewards": {
+              "tierGroupName": "Mission_Select_HordeV3_T19",
+              "items": [
+                {
+                  "itemType": "CardPack:zcp_hordev3_t19",
+                  "quantity": 1
+                }
+              ]
             },
-            {
-              "missionGuid": "a9842251-7497-4c17-913f-bd60e009659e",
-              "missionRewards": {
-                "tierGroupName": "Mission_Select_HordeV3_T21",
-                "items": [
-                  {
-                    "itemType": "CardPack:zcp_hordev3_t21",
-                    "quantity": 1
-                  }
-                ]
-              },
-              "overrideMissionRewards": {},
-              "missionGenerator": "/STW_Horde/Missions/WeeklyMods/Week03/MissionGen_HordeV3_Mod_03_T1.MissionGen_HordeV3_Mod_03_T1_C",
-              "missionDifficultyInfo": {
-                "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
-                "rowName": "Theater_HV3_10"
-              },
-              "tileIndex": 137,
-              "availableUntil": "2017-07-25T23:59:59.999Z"
+            "overrideMissionRewards": {},
+            "missionGenerator": "/STW_Horde/Missions/WeeklyMods/Week02/MissionGen_HordeV3_Mod_02_T1.MissionGen_HordeV3_Mod_02_T1_C",
+            "missionDifficultyInfo": {
+              "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
+              "rowName": "Theater_HV3_09"
             },
-            {
-              "missionGuid": "686b8e6b-116c-431e-b8c3-c19606f0b1d8",
-              "missionRewards": {
-                "tierGroupName": "Mission_Select_HordeV3_T21",
-                "items": [
-                  {
-                    "itemType": "CardPack:zcp_hordev3_t21",
-                    "quantity": 1
-                  }
-                ]
-              },
-              "overrideMissionRewards": {},
-              "missionGenerator": "/STW_Horde/World/MissionGens/MissionGen_HordeV3_T1.MissionGen_HordeV3_T1_C",
-              "missionDifficultyInfo": {
-                "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
-                "rowName": "Theater_HV3_10"
-              },
-              "tileIndex": 138,
-              "availableUntil": "2017-07-25T23:59:59.999Z"
+            "tileIndex": 135,
+            "availableUntil": "2017-07-25T23:59:59.999Z"
+          },
+          {
+            "missionGuid": "f34ce97f-0b57-49a4-a694-c9ef3be0e3f9",
+            "missionRewards": {
+              "tierGroupName": "Mission_Select_HordeV3_T19",
+              "items": [
+                {
+                  "itemType": "CardPack:zcp_hordev3_t19",
+                  "quantity": 1
+                }
+              ]
             },
-            {
-              "missionGuid": "3462fd4e-3da1-4f62-8c41-c3f136b662de",
-              "missionRewards": {
-                "tierGroupName": "Mission_Select_HordeV3_T25",
-                "items": [
-                  {
-                    "itemType": "CardPack:zcp_hordev3_t25",
-                    "quantity": 1
-                  }
-                ]
-              },
-              "overrideMissionRewards": {},
-              "missionGenerator": "/STW_Horde/Missions/WeeklyMods/Week03/MissionGen_HordeV3_Mod_03_T1.MissionGen_HordeV3_Mod_03_T1_C",
-              "missionDifficultyInfo": {
-                "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
-                "rowName": "Theater_HV3_12"
-              },
-              "tileIndex": 141,
-              "availableUntil": "2017-07-25T23:59:59.999Z"
+            "overrideMissionRewards": {},
+            "missionGenerator": "/STW_Horde/Missions/WeeklyMods/Week05/MissionGen_HordeV3_Mod_05_T1.MissionGen_HordeV3_Mod_05_T1_C",
+            "missionDifficultyInfo": {
+              "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
+              "rowName": "Theater_HV3_09"
             },
-            {
-              "missionGuid": "294ae22b-7451-4c99-9c79-ba7333d3d0b5",
-              "missionRewards": {
-                "tierGroupName": "Mission_Select_HordeV3_T25",
-                "items": [
-                  {
-                    "itemType": "CardPack:zcp_hordev3_t25",
-                    "quantity": 1
-                  }
-                ]
-              },
-              "overrideMissionRewards": {},
-              "missionGenerator": "/STW_Horde/Missions/WeeklyMods/Week02/MissionGen_HordeV3_Mod_02_T1.MissionGen_HordeV3_Mod_02_T1_C",
-              "missionDifficultyInfo": {
-                "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
-                "rowName": "Theater_HV3_12"
-              },
-              "tileIndex": 142,
-              "availableUntil": "2017-07-25T23:59:59.999Z"
+            "tileIndex": 182,
+            "availableUntil": "2017-07-25T23:59:59.999Z"
+          },
+          {
+            "missionGuid": "1d96de16-dbbe-4d9a-9dfa-e155ac46a44b",
+            "missionRewards": {
+              "tierGroupName": "Mission_Select_HordeV3_T19",
+              "items": [
+                {
+                  "itemType": "CardPack:zcp_hordev3_t19",
+                  "quantity": 1
+                }
+              ]
             },
-            {
-              "missionGuid": "eee82e28-a946-46c6-814d-bdd481ac58f2",
-              "missionRewards": {
-                "tierGroupName": "Mission_Select_HordeV3_T25",
-                "items": [
-                  {
-                    "itemType": "CardPack:zcp_hordev3_t25",
-                    "quantity": 1
-                  }
-                ]
-              },
-              "overrideMissionRewards": {},
-              "missionGenerator": "/STW_Horde/World/MissionGens/MissionGen_HordeV3_T1.MissionGen_HordeV3_T1_C",
-              "missionDifficultyInfo": {
-                "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
-                "rowName": "Theater_HV3_12"
-              },
-              "tileIndex": 143,
-              "availableUntil": "2017-07-25T23:59:59.999Z"
-            }
-          ],
-          "nextRefresh": "2017-07-25T23:59:59.999Z"
-        }
-      ],
+            "overrideMissionRewards": {},
+            "missionGenerator": "/STW_Horde/Missions/WeeklyMods/Week06/MissionGen_HordeV3_Mod_06_T1.MissionGen_HordeV3_Mod_06_T1_C",
+            "missionDifficultyInfo": {
+              "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
+              "rowName": "Theater_HV3_09"
+            },
+            "tileIndex": 183,
+            "availableUntil": "2017-07-25T23:59:59.999Z"
+          },
+          {
+            "missionGuid": "f45f75ad-3210-490e-8e1f-97faa13f57ba",
+            "missionRewards": {
+              "tierGroupName": "Mission_Select_HordeV3_T04",
+              "items": [
+                {
+                  "itemType": "CardPack:zcp_hordev3_t04",
+                  "quantity": 1
+                }
+              ]
+            },
+            "overrideMissionRewards": {},
+            "missionGenerator": "/STW_Horde/Missions/WeeklyMods/Week06/MissionGen_HordeV3_Mod_06_T1.MissionGen_HordeV3_Mod_06_T1_C",
+            "missionDifficultyInfo": {
+              "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
+              "rowName": "Theater_HV3_01"
+            },
+            "tileIndex": 22,
+            "availableUntil": "2017-07-25T23:59:59.999Z"
+          },
+          {
+            "missionGuid": "f953ada4-4edb-4a79-a85a-00a6ffec5884",
+            "missionRewards": {
+              "tierGroupName": "Mission_Select_HordeV3_T04",
+              "items": [
+                {
+                  "itemType": "CardPack:zcp_hordev3_t04",
+                  "quantity": 1
+                }
+              ]
+            },
+            "overrideMissionRewards": {},
+            "missionGenerator": "/STW_Horde/World/MissionGens/MissionGen_HordeV3_T1.MissionGen_HordeV3_T1_C",
+            "missionDifficultyInfo": {
+              "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
+              "rowName": "Theater_HV3_01"
+            },
+            "tileIndex": 60,
+            "availableUntil": "2017-07-25T23:59:59.999Z"
+          },
+          {
+            "missionGuid": "eee27a7e-bb93-43b3-80b7-28a67efa85ae",
+            "missionRewards": {
+              "tierGroupName": "Mission_Select_HordeV3_T04",
+              "items": [
+                {
+                  "itemType": "CardPack:zcp_hordev3_t04",
+                  "quantity": 1
+                }
+              ]
+            },
+            "overrideMissionRewards": {},
+            "missionGenerator": "/STW_Horde/Missions/WeeklyMods/Week02/MissionGen_HordeV3_Mod_02_T1.MissionGen_HordeV3_Mod_02_T1_C",
+            "missionDifficultyInfo": {
+              "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
+              "rowName": "Theater_HV3_01"
+            },
+            "tileIndex": 61,
+            "availableUntil": "2017-07-25T23:59:59.999Z"
+          },
+          {
+            "missionGuid": "fe9027ac-de79-4ad5-ac89-3beaf77b2a8e",
+            "missionRewards": {
+              "tierGroupName": "Mission_Select_HordeV3_T04",
+              "items": [
+                {
+                  "itemType": "CardPack:zcp_hordev3_t04",
+                  "quantity": 1
+                }
+              ]
+            },
+            "overrideMissionRewards": {},
+            "missionGenerator": "/STW_Horde/Missions/WeeklyMods/Week03/MissionGen_HordeV3_Mod_03_T1.MissionGen_HordeV3_Mod_03_T1_C",
+            "missionDifficultyInfo": {
+              "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
+              "rowName": "Theater_HV3_01"
+            },
+            "tileIndex": 62,
+            "availableUntil": "2017-07-25T23:59:59.999Z"
+          },
+          {
+            "missionGuid": "ec7bc679-f1a3-44aa-a5cd-19ecc0ceea2e",
+            "missionRewards": {
+              "tierGroupName": "Mission_Select_HordeV3_T04",
+              "items": [
+                {
+                  "itemType": "CardPack:zcp_hordev3_t04",
+                  "quantity": 1
+                }
+              ]
+            },
+            "overrideMissionRewards": {},
+            "missionGenerator": "/STW_Horde/Missions/WeeklyMods/Week04/MissionGen_HordeV3_Mod_04_T1.MissionGen_HordeV3_Mod_04_T1_C",
+            "missionDifficultyInfo": {
+              "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
+              "rowName": "Theater_HV3_01"
+            },
+            "tileIndex": 67,
+            "availableUntil": "2017-07-25T23:59:59.999Z"
+          },
+          {
+            "missionGuid": "5e0e257d-baf1-4d5d-a4d4-5e8d9f4ea7b5",
+            "missionRewards": {
+              "tierGroupName": "Mission_Select_HordeV3_T04",
+              "items": [
+                {
+                  "itemType": "CardPack:zcp_hordev3_t04",
+                  "quantity": 1
+                }
+              ]
+            },
+            "overrideMissionRewards": {},
+            "missionGenerator": "/STW_Horde/Missions/WeeklyMods/Week05/MissionGen_HordeV3_Mod_05_T1.MissionGen_HordeV3_Mod_05_T1_C",
+            "missionDifficultyInfo": {
+              "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
+              "rowName": "Theater_HV3_01"
+            },
+            "tileIndex": 68,
+            "availableUntil": "2017-07-25T23:59:59.999Z"
+          },
+          {
+            "missionGuid": "f698dfb2-892a-4564-8f60-026aa7db7232",
+            "missionRewards": {
+              "tierGroupName": "Mission_Select_HordeV3_T05",
+              "items": [
+                {
+                  "itemType": "CardPack:zcp_hordev3_t05",
+                  "quantity": 1
+                }
+              ]
+            },
+            "overrideMissionRewards": {},
+            "missionGenerator": "/STW_Horde/World/MissionGens/MissionGen_HordeV3_T1.MissionGen_HordeV3_T1_C",
+            "missionDifficultyInfo": {
+              "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
+              "rowName": "Theater_HV3_02"
+            },
+            "tileIndex": 30,
+            "availableUntil": "2017-07-25T23:59:59.999Z"
+          },
+          {
+            "missionGuid": "51e25d26-e21d-4084-9c82-2b67cde953d6",
+            "missionRewards": {
+              "tierGroupName": "Mission_Select_HordeV3_T05",
+              "items": [
+                {
+                  "itemType": "CardPack:zcp_hordev3_t05",
+                  "quantity": 1
+                }
+              ]
+            },
+            "overrideMissionRewards": {},
+            "missionGenerator": "/STW_Horde/Missions/WeeklyMods/Week05/MissionGen_HordeV3_Mod_05_T1.MissionGen_HordeV3_Mod_05_T1_C",
+            "missionDifficultyInfo": {
+              "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
+              "rowName": "Theater_HV3_02"
+            },
+            "tileIndex": 43,
+            "availableUntil": "2017-07-25T23:59:59.999Z"
+          },
+          {
+            "missionGuid": "4996c460-103f-4e00-bc27-0eaa8db053df",
+            "missionRewards": {
+              "tierGroupName": "Mission_Select_HordeV3_T05",
+              "items": [
+                {
+                  "itemType": "CardPack:zcp_hordev3_t05",
+                  "quantity": 1
+                }
+              ]
+            },
+            "overrideMissionRewards": {},
+            "missionGenerator": "/STW_Horde/Missions/WeeklyMods/Week06/MissionGen_HordeV3_Mod_06_T1.MissionGen_HordeV3_Mod_06_T1_C",
+            "missionDifficultyInfo": {
+              "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
+              "rowName": "Theater_HV3_02"
+            },
+            "tileIndex": 44,
+            "availableUntil": "2017-07-25T23:59:59.999Z"
+          },
+          {
+            "missionGuid": "e1f573e9-59b8-4db6-b005-bc08e03a1867",
+            "missionRewards": {
+              "tierGroupName": "Mission_Select_HordeV3_T05",
+              "items": [
+                {
+                  "itemType": "CardPack:zcp_hordev3_t05",
+                  "quantity": 1
+                }
+              ]
+            },
+            "overrideMissionRewards": {},
+            "missionGenerator": "/STW_Horde/Missions/WeeklyMods/Week02/MissionGen_HordeV3_Mod_02_T1.MissionGen_HordeV3_Mod_02_T1_C",
+            "missionDifficultyInfo": {
+              "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
+              "rowName": "Theater_HV3_02"
+            },
+            "tileIndex": 71,
+            "availableUntil": "2017-07-25T23:59:59.999Z"
+          },
+          {
+            "missionGuid": "0cfb00f5-f732-463f-a5a1-2c98c9ed69bd",
+            "missionRewards": {
+              "tierGroupName": "Mission_Select_HordeV3_T05",
+              "items": [
+                {
+                  "itemType": "CardPack:zcp_hordev3_t05",
+                  "quantity": 1
+                }
+              ]
+            },
+            "overrideMissionRewards": {},
+            "missionGenerator": "/STW_Horde/Missions/WeeklyMods/Week03/MissionGen_HordeV3_Mod_03_T1.MissionGen_HordeV3_Mod_03_T1_C",
+            "missionDifficultyInfo": {
+              "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
+              "rowName": "Theater_HV3_02"
+            },
+            "tileIndex": 74,
+            "availableUntil": "2017-07-25T23:59:59.999Z"
+          },
+          {
+            "missionGuid": "11edfba8-e934-4ea5-92f4-0f645542dfaf",
+            "missionRewards": {
+              "tierGroupName": "Mission_Select_HordeV3_T05",
+              "items": [
+                {
+                  "itemType": "CardPack:zcp_hordev3_t05",
+                  "quantity": 1
+                }
+              ]
+            },
+            "overrideMissionRewards": {},
+            "missionGenerator": "/STW_Horde/Missions/WeeklyMods/Week04/MissionGen_HordeV3_Mod_04_T1.MissionGen_HordeV3_Mod_04_T1_C",
+            "missionDifficultyInfo": {
+              "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
+              "rowName": "Theater_HV3_02"
+            },
+            "tileIndex": 78,
+            "availableUntil": "2017-07-25T23:59:59.999Z"
+          },
+          {
+            "missionGuid": "7a96db62-6df4-478a-80be-84c996d4618e",
+            "missionRewards": {
+              "tierGroupName": "Mission_Select_HordeV3_T13",
+              "items": [
+                {
+                  "itemType": "CardPack:zcp_hordev3_t13",
+                  "quantity": 1
+                }
+              ]
+            },
+            "overrideMissionRewards": {},
+            "missionGenerator": "/STW_Horde/Missions/WeeklyMods/Week02/MissionGen_HordeV3_Mod_02_T1.MissionGen_HordeV3_Mod_02_T1_C",
+            "missionDifficultyInfo": {
+              "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
+              "rowName": "Theater_HV3_06"
+            },
+            "tileIndex": 48,
+            "availableUntil": "2017-07-25T23:59:59.999Z"
+          },
+          {
+            "missionGuid": "a3be8845-ff33-49e1-9c0a-d2f257f92b41",
+            "missionRewards": {
+              "tierGroupName": "Mission_Select_HordeV3_T13",
+              "items": [
+                {
+                  "itemType": "CardPack:zcp_hordev3_t13",
+                  "quantity": 1
+                }
+              ]
+            },
+            "overrideMissionRewards": {},
+            "missionGenerator": "/STW_Horde/World/MissionGens/MissionGen_HordeV3_T1.MissionGen_HordeV3_T1_C",
+            "missionDifficultyInfo": {
+              "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
+              "rowName": "Theater_HV3_06"
+            },
+            "tileIndex": 50,
+            "availableUntil": "2017-07-25T23:59:59.999Z"
+          },
+          {
+            "missionGuid": "b4d19f5f-6cd0-43bf-8eb1-83a690e6a5c7",
+            "missionRewards": {
+              "tierGroupName": "Mission_Select_HordeV3_T13",
+              "items": [
+                {
+                  "itemType": "CardPack:zcp_hordev3_t13",
+                  "quantity": 1
+                }
+              ]
+            },
+            "overrideMissionRewards": {},
+            "missionGenerator": "/STW_Horde/Missions/WeeklyMods/Week05/MissionGen_HordeV3_Mod_05_T1.MissionGen_HordeV3_Mod_05_T1_C",
+            "missionDifficultyInfo": {
+              "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
+              "rowName": "Theater_HV3_06"
+            },
+            "tileIndex": 96,
+            "availableUntil": "2017-07-25T23:59:59.999Z"
+          },
+          {
+            "missionGuid": "e0d3e5cc-7fba-4267-9d0b-5161c343c542",
+            "missionRewards": {
+              "tierGroupName": "Mission_Select_HordeV3_T13",
+              "items": [
+                {
+                  "itemType": "CardPack:zcp_hordev3_t13",
+                  "quantity": 1
+                }
+              ]
+            },
+            "overrideMissionRewards": {},
+            "missionGenerator": "/STW_Horde/Missions/WeeklyMods/Week03/MissionGen_HordeV3_Mod_03_T1.MissionGen_HordeV3_Mod_03_T1_C",
+            "missionDifficultyInfo": {
+              "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
+              "rowName": "Theater_HV3_06"
+            },
+            "tileIndex": 97,
+            "availableUntil": "2017-07-25T23:59:59.999Z"
+          },
+          {
+            "missionGuid": "fe191b1b-d8a8-456a-a84a-c521a52dde25",
+            "missionRewards": {
+              "tierGroupName": "Mission_Select_HordeV3_T13",
+              "items": [
+                {
+                  "itemType": "CardPack:zcp_hordev3_t13",
+                  "quantity": 1
+                }
+              ]
+            },
+            "overrideMissionRewards": {},
+            "missionGenerator": "/STW_Horde/Missions/WeeklyMods/Week04/MissionGen_HordeV3_Mod_04_T1.MissionGen_HordeV3_Mod_04_T1_C",
+            "missionDifficultyInfo": {
+              "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
+              "rowName": "Theater_HV3_06"
+            },
+            "tileIndex": 98,
+            "availableUntil": "2017-07-25T23:59:59.999Z"
+          },
+          {
+            "missionGuid": "65115d4d-38fe-436d-b18c-0f488c1e5719",
+            "missionRewards": {
+              "tierGroupName": "Mission_Select_HordeV3_T13",
+              "items": [
+                {
+                  "itemType": "CardPack:zcp_hordev3_t13",
+                  "quantity": 1
+                }
+              ]
+            },
+            "overrideMissionRewards": {},
+            "missionGenerator": "/STW_Horde/Missions/WeeklyMods/Week06/MissionGen_HordeV3_Mod_06_T1.MissionGen_HordeV3_Mod_06_T1_C",
+            "missionDifficultyInfo": {
+              "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
+              "rowName": "Theater_HV3_06"
+            },
+            "tileIndex": 105,
+            "availableUntil": "2017-07-25T23:59:59.999Z"
+          },
+          {
+            "missionGuid": "b8535f4c-13f2-4cde-9d57-95e86d536a9d",
+            "missionRewards": {
+              "tierGroupName": "Mission_Select_HordeV3_T23",
+              "items": [
+                {
+                  "itemType": "CardPack:zcp_hordev3_t23",
+                  "quantity": 1
+                }
+              ]
+            },
+            "overrideMissionRewards": {},
+            "missionGenerator": "/STW_Horde/Missions/WeeklyMods/Week02/MissionGen_HordeV3_Mod_02_T1.MissionGen_HordeV3_Mod_02_T1_C",
+            "missionDifficultyInfo": {
+              "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
+              "rowName": "Theater_HV3_11"
+            },
+            "tileIndex": 53,
+            "availableUntil": "2017-07-25T23:59:59.999Z"
+          },
+          {
+            "missionGuid": "6761bc42-c840-4321-8b8b-2f571e6b7e0f",
+            "missionRewards": {
+              "tierGroupName": "Mission_Select_HordeV3_T23",
+              "items": [
+                {
+                  "itemType": "CardPack:zcp_hordev3_t23",
+                  "quantity": 1
+                }
+              ]
+            },
+            "overrideMissionRewards": {},
+            "missionGenerator": "/STW_Horde/World/MissionGens/MissionGen_HordeV3_T1.MissionGen_HordeV3_T1_C",
+            "missionDifficultyInfo": {
+              "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
+              "rowName": "Theater_HV3_11"
+            },
+            "tileIndex": 139,
+            "availableUntil": "2017-07-25T23:59:59.999Z"
+          },
+          {
+            "missionGuid": "aed6b6e5-be84-42ad-9b54-d42849aa0628",
+            "missionRewards": {
+              "tierGroupName": "Mission_Select_HordeV3_T23",
+              "items": [
+                {
+                  "itemType": "CardPack:zcp_hordev3_t23",
+                  "quantity": 1
+                }
+              ]
+            },
+            "overrideMissionRewards": {},
+            "missionGenerator": "/STW_Horde/Missions/WeeklyMods/Week03/MissionGen_HordeV3_Mod_03_T1.MissionGen_HordeV3_Mod_03_T1_C",
+            "missionDifficultyInfo": {
+              "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
+              "rowName": "Theater_HV3_11"
+            },
+            "tileIndex": 140,
+            "availableUntil": "2017-07-25T23:59:59.999Z"
+          },
+          {
+            "missionGuid": "468d4b1a-30e7-4717-a037-56cbaa7c5602",
+            "missionRewards": {
+              "tierGroupName": "Mission_Select_HordeV3_T23",
+              "items": [
+                {
+                  "itemType": "CardPack:zcp_hordev3_t23",
+                  "quantity": 1
+                }
+              ]
+            },
+            "overrideMissionRewards": {},
+            "missionGenerator": "/STW_Horde/Missions/WeeklyMods/Week05/MissionGen_HordeV3_Mod_05_T1.MissionGen_HordeV3_Mod_05_T1_C",
+            "missionDifficultyInfo": {
+              "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
+              "rowName": "Theater_HV3_11"
+            },
+            "tileIndex": 196,
+            "availableUntil": "2017-07-25T23:59:59.999Z"
+          },
+          {
+            "missionGuid": "81de5d94-3c68-4485-adc5-5963a08791e9",
+            "missionRewards": {
+              "tierGroupName": "Mission_Select_HordeV3_T23",
+              "items": [
+                {
+                  "itemType": "CardPack:zcp_hordev3_t23",
+                  "quantity": 1
+                }
+              ]
+            },
+            "overrideMissionRewards": {},
+            "missionGenerator": "/STW_Horde/Missions/WeeklyMods/Week04/MissionGen_HordeV3_Mod_04_T1.MissionGen_HordeV3_Mod_04_T1_C",
+            "missionDifficultyInfo": {
+              "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
+              "rowName": "Theater_HV3_11"
+            },
+            "tileIndex": 198,
+            "availableUntil": "2017-07-25T23:59:59.999Z"
+          },
+          {
+            "missionGuid": "aac0c617-0bd3-4e80-810b-801ea3c26980",
+            "missionRewards": {
+              "tierGroupName": "Mission_Select_HordeV3_T23",
+              "items": [
+                {
+                  "itemType": "CardPack:zcp_hordev3_t23",
+                  "quantity": 1
+                }
+              ]
+            },
+            "overrideMissionRewards": {},
+            "missionGenerator": "/STW_Horde/Missions/WeeklyMods/Week06/MissionGen_HordeV3_Mod_06_T1.MissionGen_HordeV3_Mod_06_T1_C",
+            "missionDifficultyInfo": {
+              "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
+              "rowName": "Theater_HV3_11"
+            },
+            "tileIndex": 202,
+            "availableUntil": "2017-07-25T23:59:59.999Z"
+          },
+          {
+            "missionGuid": "53f2a738-f032-4806-be48-197734ec2732",
+            "missionRewards": {
+              "tierGroupName": "Mission_Select_HordeV3_T07",
+              "items": [
+                {
+                  "itemType": "CardPack:zcp_hordev3_t07",
+                  "quantity": 1
+                }
+              ]
+            },
+            "overrideMissionRewards": {},
+            "missionGenerator": "/STW_Horde/World/MissionGens/MissionGen_HordeV3_T1.MissionGen_HordeV3_T1_C",
+            "missionDifficultyInfo": {
+              "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
+              "rowName": "Theater_HV3_03"
+            },
+            "tileIndex": 80,
+            "availableUntil": "2017-07-25T23:59:59.999Z"
+          },
+          {
+            "missionGuid": "dd5cfded-fb84-49ea-96b4-c575da5e3b46",
+            "missionRewards": {
+              "tierGroupName": "Mission_Select_HordeV3_T07",
+              "items": [
+                {
+                  "itemType": "CardPack:zcp_hordev3_t07",
+                  "quantity": 1
+                }
+              ]
+            },
+            "overrideMissionRewards": {},
+            "missionGenerator": "/STW_Horde/Missions/WeeklyMods/Week05/MissionGen_HordeV3_Mod_05_T1.MissionGen_HordeV3_Mod_05_T1_C",
+            "missionDifficultyInfo": {
+              "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
+              "rowName": "Theater_HV3_03"
+            },
+            "tileIndex": 81,
+            "availableUntil": "2017-07-25T23:59:59.999Z"
+          },
+          {
+            "missionGuid": "743d871b-ab07-4130-90f1-ee68b058943f",
+            "missionRewards": {
+              "tierGroupName": "Mission_Select_HordeV3_T07",
+              "items": [
+                {
+                  "itemType": "CardPack:zcp_hordev3_t07",
+                  "quantity": 1
+                }
+              ]
+            },
+            "overrideMissionRewards": {},
+            "missionGenerator": "/STW_Horde/Missions/WeeklyMods/Week02/MissionGen_HordeV3_Mod_02_T1.MissionGen_HordeV3_Mod_02_T1_C",
+            "missionDifficultyInfo": {
+              "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
+              "rowName": "Theater_HV3_03"
+            },
+            "tileIndex": 83,
+            "availableUntil": "2017-07-25T23:59:59.999Z"
+          },
+          {
+            "missionGuid": "67a06139-943c-4cb0-9524-e84c9d1af58f",
+            "missionRewards": {
+              "tierGroupName": "Mission_Select_HordeV3_T07",
+              "items": [
+                {
+                  "itemType": "CardPack:zcp_hordev3_t07",
+                  "quantity": 1
+                }
+              ]
+            },
+            "overrideMissionRewards": {},
+            "missionGenerator": "/STW_Horde/Missions/WeeklyMods/Week04/MissionGen_HordeV3_Mod_04_T1.MissionGen_HordeV3_Mod_04_T1_C",
+            "missionDifficultyInfo": {
+              "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
+              "rowName": "Theater_HV3_03"
+            },
+            "tileIndex": 87,
+            "availableUntil": "2017-07-25T23:59:59.999Z"
+          },
+          {
+            "missionGuid": "0f47b8d3-dadb-4b53-929f-89d6663d0bc1",
+            "missionRewards": {
+              "tierGroupName": "Mission_Select_HordeV3_T07",
+              "items": [
+                {
+                  "itemType": "CardPack:zcp_hordev3_t07",
+                  "quantity": 1
+                }
+              ]
+            },
+            "overrideMissionRewards": {},
+            "missionGenerator": "/STW_Horde/Missions/WeeklyMods/Week03/MissionGen_HordeV3_Mod_03_T1.MissionGen_HordeV3_Mod_03_T1_C",
+            "missionDifficultyInfo": {
+              "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
+              "rowName": "Theater_HV3_03"
+            },
+            "tileIndex": 88,
+            "availableUntil": "2017-07-25T23:59:59.999Z"
+          },
+          {
+            "missionGuid": "ff76fe7b-fe21-43ae-b2c0-d30efaac682e",
+            "missionRewards": {
+              "tierGroupName": "Mission_Select_HordeV3_T07",
+              "items": [
+                {
+                  "itemType": "CardPack:zcp_hordev3_t07",
+                  "quantity": 1
+                }
+              ]
+            },
+            "overrideMissionRewards": {},
+            "missionGenerator": "/STW_Horde/Missions/WeeklyMods/Week06/MissionGen_HordeV3_Mod_06_T1.MissionGen_HordeV3_Mod_06_T1_C",
+            "missionDifficultyInfo": {
+              "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
+              "rowName": "Theater_HV3_03"
+            },
+            "tileIndex": 92,
+            "availableUntil": "2017-07-25T23:59:59.999Z"
+          },
+          {
+            "missionGuid": "fe99e3a6-08bb-4fb1-aea5-8e7239f653fe",
+            "missionRewards": {
+              "tierGroupName": "Mission_Select_HordeV3_T11",
+              "items": [
+                {
+                  "itemType": "CardPack:zcp_hordev3_t11",
+                  "quantity": 1
+                }
+              ]
+            },
+            "overrideMissionRewards": {},
+            "missionGenerator": "/STW_Horde/Missions/WeeklyMods/Week02/MissionGen_HordeV3_Mod_02_T1.MissionGen_HordeV3_Mod_02_T1_C",
+            "missionDifficultyInfo": {
+              "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
+              "rowName": "Theater_HV3_05"
+            },
+            "tileIndex": 103,
+            "availableUntil": "2017-07-25T23:59:59.999Z"
+          },
+          {
+            "missionGuid": "b2e38290-9f99-4d26-804f-b8fc5514e91d",
+            "missionRewards": {
+              "tierGroupName": "Mission_Select_HordeV3_T11",
+              "items": [
+                {
+                  "itemType": "CardPack:zcp_hordev3_t11",
+                  "quantity": 1
+                }
+              ]
+            },
+            "overrideMissionRewards": {},
+            "missionGenerator": "/STW_Horde/World/MissionGens/MissionGen_HordeV3_T1.MissionGen_HordeV3_T1_C",
+            "missionDifficultyInfo": {
+              "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
+              "rowName": "Theater_HV3_05"
+            },
+            "tileIndex": 122,
+            "availableUntil": "2017-07-25T23:59:59.999Z"
+          },
+          {
+            "missionGuid": "891ea42e-d3b4-41b4-a77b-f14a981d3430",
+            "missionRewards": {
+              "tierGroupName": "Mission_Select_HordeV3_T11",
+              "items": [
+                {
+                  "itemType": "CardPack:zcp_hordev3_t11",
+                  "quantity": 1
+                }
+              ]
+            },
+            "overrideMissionRewards": {},
+            "missionGenerator": "/STW_Horde/Missions/WeeklyMods/Week03/MissionGen_HordeV3_Mod_03_T1.MissionGen_HordeV3_Mod_03_T1_C",
+            "missionDifficultyInfo": {
+              "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
+              "rowName": "Theater_HV3_05"
+            },
+            "tileIndex": 123,
+            "availableUntil": "2017-07-25T23:59:59.999Z"
+          },
+          {
+            "missionGuid": "9f21ea8b-815d-46c9-aa02-128418edb3f4",
+            "missionRewards": {
+              "tierGroupName": "Mission_Select_HordeV3_T11",
+              "items": [
+                {
+                  "itemType": "CardPack:zcp_hordev3_t11",
+                  "quantity": 1
+                }
+              ]
+            },
+            "overrideMissionRewards": {},
+            "missionGenerator": "/STW_Horde/Missions/WeeklyMods/Week06/MissionGen_HordeV3_Mod_06_T1.MissionGen_HordeV3_Mod_06_T1_C",
+            "missionDifficultyInfo": {
+              "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
+              "rowName": "Theater_HV3_05"
+            },
+            "tileIndex": 127,
+            "availableUntil": "2017-07-25T23:59:59.999Z"
+          },
+          {
+            "missionGuid": "4014e4b0-7b46-4bc7-92ee-3fbe52d26019",
+            "missionRewards": {
+              "tierGroupName": "Mission_Select_HordeV3_T11",
+              "items": [
+                {
+                  "itemType": "CardPack:zcp_hordev3_t11",
+                  "quantity": 1
+                }
+              ]
+            },
+            "overrideMissionRewards": {},
+            "missionGenerator": "/STW_Horde/Missions/WeeklyMods/Week05/MissionGen_HordeV3_Mod_05_T1.MissionGen_HordeV3_Mod_05_T1_C",
+            "missionDifficultyInfo": {
+              "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
+              "rowName": "Theater_HV3_05"
+            },
+            "tileIndex": 132,
+            "availableUntil": "2017-07-25T23:59:59.999Z"
+          },
+          {
+            "missionGuid": "fdde07a9-6c44-4630-9405-576376f0bb0a",
+            "missionRewards": {
+              "tierGroupName": "Mission_Select_HordeV3_T11",
+              "items": [
+                {
+                  "itemType": "CardPack:zcp_hordev3_t11",
+                  "quantity": 1
+                }
+              ]
+            },
+            "overrideMissionRewards": {},
+            "missionGenerator": "/STW_Horde/Missions/WeeklyMods/Week04/MissionGen_HordeV3_Mod_04_T1.MissionGen_HordeV3_Mod_04_T1_C",
+            "missionDifficultyInfo": {
+              "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
+              "rowName": "Theater_HV3_05"
+            },
+            "tileIndex": 133,
+            "availableUntil": "2017-07-25T23:59:59.999Z"
+          },
+          {
+            "missionGuid": "19dab462-81ad-4d65-bd45-ca631911300c",
+            "missionRewards": {
+              "tierGroupName": "Mission_Select_HordeV3_T09",
+              "items": [
+                {
+                  "itemType": "CardPack:zcp_hordev3_t09",
+                  "quantity": 1
+                }
+              ]
+            },
+            "overrideMissionRewards": {},
+            "missionGenerator": "/STW_Horde/World/MissionGens/MissionGen_HordeV3_T1.MissionGen_HordeV3_T1_C",
+            "missionDifficultyInfo": {
+              "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
+              "rowName": "Theater_HV3_04"
+            },
+            "tileIndex": 107,
+            "availableUntil": "2017-07-25T23:59:59.999Z"
+          },
+          {
+            "missionGuid": "bca6188d-c4d9-45ee-ade5-8f3a8bd05f65",
+            "missionRewards": {
+              "tierGroupName": "Mission_Select_HordeV3_T09",
+              "items": [
+                {
+                  "itemType": "CardPack:zcp_hordev3_t09",
+                  "quantity": 1
+                }
+              ]
+            },
+            "overrideMissionRewards": {},
+            "missionGenerator": "/STW_Horde/Missions/WeeklyMods/Week02/MissionGen_HordeV3_Mod_02_T1.MissionGen_HordeV3_Mod_02_T1_C",
+            "missionDifficultyInfo": {
+              "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
+              "rowName": "Theater_HV3_04"
+            },
+            "tileIndex": 108,
+            "availableUntil": "2017-07-25T23:59:59.999Z"
+          },
+          {
+            "missionGuid": "d0484452-0ee5-4fd7-a8f3-60f12fb42e4b",
+            "missionRewards": {
+              "tierGroupName": "Mission_Select_HordeV3_T09",
+              "items": [
+                {
+                  "itemType": "CardPack:zcp_hordev3_t09",
+                  "quantity": 1
+                }
+              ]
+            },
+            "overrideMissionRewards": {},
+            "missionGenerator": "/STW_Horde/Missions/WeeklyMods/Week03/MissionGen_HordeV3_Mod_03_T1.MissionGen_HordeV3_Mod_03_T1_C",
+            "missionDifficultyInfo": {
+              "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
+              "rowName": "Theater_HV3_04"
+            },
+            "tileIndex": 109,
+            "availableUntil": "2017-07-25T23:59:59.999Z"
+          },
+          {
+            "missionGuid": "c1db9924-f71c-4849-86d9-f6ee1030577d",
+            "missionRewards": {
+              "tierGroupName": "Mission_Select_HordeV3_T09",
+              "items": [
+                {
+                  "itemType": "CardPack:zcp_hordev3_t09",
+                  "quantity": 1
+                }
+              ]
+            },
+            "overrideMissionRewards": {},
+            "missionGenerator": "/STW_Horde/Missions/WeeklyMods/Week06/MissionGen_HordeV3_Mod_06_T1.MissionGen_HordeV3_Mod_06_T1_C",
+            "missionDifficultyInfo": {
+              "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
+              "rowName": "Theater_HV3_04"
+            },
+            "tileIndex": 117,
+            "availableUntil": "2017-07-25T23:59:59.999Z"
+          },
+          {
+            "missionGuid": "9986e149-d438-43d9-a53f-68ca7d36d2cd",
+            "missionRewards": {
+              "tierGroupName": "Mission_Select_HordeV3_T09",
+              "items": [
+                {
+                  "itemType": "CardPack:zcp_hordev3_t09",
+                  "quantity": 1
+                }
+              ]
+            },
+            "overrideMissionRewards": {},
+            "missionGenerator": "/STW_Horde/Missions/WeeklyMods/Week04/MissionGen_HordeV3_Mod_04_T1.MissionGen_HordeV3_Mod_04_T1_C",
+            "missionDifficultyInfo": {
+              "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
+              "rowName": "Theater_HV3_04"
+            },
+            "tileIndex": 119,
+            "availableUntil": "2017-07-25T23:59:59.999Z"
+          },
+          {
+            "missionGuid": "65212e64-60de-4501-8a17-3f42a5d6be54",
+            "missionRewards": {
+              "tierGroupName": "Mission_Select_HordeV3_T09",
+              "items": [
+                {
+                  "itemType": "CardPack:zcp_hordev3_t09",
+                  "quantity": 1
+                }
+              ]
+            },
+            "overrideMissionRewards": {},
+            "missionGenerator": "/STW_Horde/Missions/WeeklyMods/Week05/MissionGen_HordeV3_Mod_05_T1.MissionGen_HordeV3_Mod_05_T1_C",
+            "missionDifficultyInfo": {
+              "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
+              "rowName": "Theater_HV3_04"
+            },
+            "tileIndex": 120,
+            "availableUntil": "2017-07-25T23:59:59.999Z"
+          },
+          {
+            "missionGuid": "2c54a981-4111-43e5-a139-cb3e71286062",
+            "missionRewards": {
+              "tierGroupName": "Mission_Select_HordeV3_T21",
+              "items": [
+                {
+                  "itemType": "CardPack:zcp_hordev3_t21",
+                  "quantity": 1
+                }
+              ]
+            },
+            "overrideMissionRewards": {},
+            "missionGenerator": "/STW_Horde/Missions/WeeklyMods/Week02/MissionGen_HordeV3_Mod_02_T1.MissionGen_HordeV3_Mod_02_T1_C",
+            "missionDifficultyInfo": {
+              "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
+              "rowName": "Theater_HV3_10"
+            },
+            "tileIndex": 136,
+            "availableUntil": "2017-07-25T23:59:59.999Z"
+          },
+          {
+            "missionGuid": "3d01bfba-1e3d-4fd5-9c30-520a36de806d",
+            "missionRewards": {
+              "tierGroupName": "Mission_Select_HordeV3_T21",
+              "items": [
+                {
+                  "itemType": "CardPack:zcp_hordev3_t21",
+                  "quantity": 1
+                }
+              ]
+            },
+            "overrideMissionRewards": {},
+            "missionGenerator": "/STW_Horde/Missions/WeeklyMods/Week03/MissionGen_HordeV3_Mod_03_T1.MissionGen_HordeV3_Mod_03_T1_C",
+            "missionDifficultyInfo": {
+              "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
+              "rowName": "Theater_HV3_10"
+            },
+            "tileIndex": 137,
+            "availableUntil": "2017-07-25T23:59:59.999Z"
+          },
+          {
+            "missionGuid": "b1adeb2e-a608-4206-8b8b-98c271935dfa",
+            "missionRewards": {
+              "tierGroupName": "Mission_Select_HordeV3_T21",
+              "items": [
+                {
+                  "itemType": "CardPack:zcp_hordev3_t21",
+                  "quantity": 1
+                }
+              ]
+            },
+            "overrideMissionRewards": {},
+            "missionGenerator": "/STW_Horde/World/MissionGens/MissionGen_HordeV3_T1.MissionGen_HordeV3_T1_C",
+            "missionDifficultyInfo": {
+              "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
+              "rowName": "Theater_HV3_10"
+            },
+            "tileIndex": 138,
+            "availableUntil": "2017-07-25T23:59:59.999Z"
+          },
+          {
+            "missionGuid": "9dc3ab7b-22f0-4627-a4b9-1b279a2ea233",
+            "missionRewards": {
+              "tierGroupName": "Mission_Select_HordeV3_T21",
+              "items": [
+                {
+                  "itemType": "CardPack:zcp_hordev3_t21",
+                  "quantity": 1
+                }
+              ]
+            },
+            "overrideMissionRewards": {},
+            "missionGenerator": "/STW_Horde/Missions/WeeklyMods/Week06/MissionGen_HordeV3_Mod_06_T1.MissionGen_HordeV3_Mod_06_T1_C",
+            "missionDifficultyInfo": {
+              "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
+              "rowName": "Theater_HV3_10"
+            },
+            "tileIndex": 169,
+            "availableUntil": "2017-07-25T23:59:59.999Z"
+          },
+          {
+            "missionGuid": "471035da-bc09-44f8-9485-ea89dcf92c60",
+            "missionRewards": {
+              "tierGroupName": "Mission_Select_HordeV3_T21",
+              "items": [
+                {
+                  "itemType": "CardPack:zcp_hordev3_t21",
+                  "quantity": 1
+                }
+              ]
+            },
+            "overrideMissionRewards": {},
+            "missionGenerator": "/STW_Horde/Missions/WeeklyMods/Week05/MissionGen_HordeV3_Mod_05_T1.MissionGen_HordeV3_Mod_05_T1_C",
+            "missionDifficultyInfo": {
+              "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
+              "rowName": "Theater_HV3_10"
+            },
+            "tileIndex": 189,
+            "availableUntil": "2017-07-25T23:59:59.999Z"
+          },
+          {
+            "missionGuid": "ecee02d2-614d-4a1c-a3f1-c9d185b22b84",
+            "missionRewards": {
+              "tierGroupName": "Mission_Select_HordeV3_T21",
+              "items": [
+                {
+                  "itemType": "CardPack:zcp_hordev3_t21",
+                  "quantity": 1
+                }
+              ]
+            },
+            "overrideMissionRewards": {},
+            "missionGenerator": "/STW_Horde/Missions/WeeklyMods/Week04/MissionGen_HordeV3_Mod_04_T1.MissionGen_HordeV3_Mod_04_T1_C",
+            "missionDifficultyInfo": {
+              "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
+              "rowName": "Theater_HV3_10"
+            },
+            "tileIndex": 190,
+            "availableUntil": "2017-07-25T23:59:59.999Z"
+          },
+          {
+            "missionGuid": "a9e767cb-c547-44d9-a8b4-642260c47f27",
+            "missionRewards": {
+              "tierGroupName": "Mission_Select_HordeV3_T25",
+              "items": [
+                {
+                  "itemType": "CardPack:zcp_hordev3_t25",
+                  "quantity": 1
+                }
+              ]
+            },
+            "overrideMissionRewards": {},
+            "missionGenerator": "/STW_Horde/Missions/WeeklyMods/Week03/MissionGen_HordeV3_Mod_03_T1.MissionGen_HordeV3_Mod_03_T1_C",
+            "missionDifficultyInfo": {
+              "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
+              "rowName": "Theater_HV3_12"
+            },
+            "tileIndex": 141,
+            "availableUntil": "2017-07-25T23:59:59.999Z"
+          },
+          {
+            "missionGuid": "12089892-d372-424d-9907-a56e2808508b",
+            "missionRewards": {
+              "tierGroupName": "Mission_Select_HordeV3_T25",
+              "items": [
+                {
+                  "itemType": "CardPack:zcp_hordev3_t25",
+                  "quantity": 1
+                }
+              ]
+            },
+            "overrideMissionRewards": {},
+            "missionGenerator": "/STW_Horde/Missions/WeeklyMods/Week02/MissionGen_HordeV3_Mod_02_T1.MissionGen_HordeV3_Mod_02_T1_C",
+            "missionDifficultyInfo": {
+              "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
+              "rowName": "Theater_HV3_12"
+            },
+            "tileIndex": 142,
+            "availableUntil": "2017-07-25T23:59:59.999Z"
+          },
+          {
+            "missionGuid": "5a07006f-4df7-40da-942b-90a86200cb63",
+            "missionRewards": {
+              "tierGroupName": "Mission_Select_HordeV3_T25",
+              "items": [
+                {
+                  "itemType": "CardPack:zcp_hordev3_t25",
+                  "quantity": 1
+                }
+              ]
+            },
+            "overrideMissionRewards": {},
+            "missionGenerator": "/STW_Horde/World/MissionGens/MissionGen_HordeV3_T1.MissionGen_HordeV3_T1_C",
+            "missionDifficultyInfo": {
+              "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
+              "rowName": "Theater_HV3_12"
+            },
+            "tileIndex": 143,
+            "availableUntil": "2017-07-25T23:59:59.999Z"
+          },
+          {
+            "missionGuid": "85da85a2-4adc-4b04-be65-b386d264f456",
+            "missionRewards": {
+              "tierGroupName": "Mission_Select_HordeV3_T25",
+              "items": [
+                {
+                  "itemType": "CardPack:zcp_hordev3_t25",
+                  "quantity": 1
+                }
+              ]
+            },
+            "overrideMissionRewards": {},
+            "missionGenerator": "/STW_Horde/Missions/WeeklyMods/Week06/MissionGen_HordeV3_Mod_06_T1.MissionGen_HordeV3_Mod_06_T1_C",
+            "missionDifficultyInfo": {
+              "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
+              "rowName": "Theater_HV3_12"
+            },
+            "tileIndex": 163,
+            "availableUntil": "2017-07-25T23:59:59.999Z"
+          },
+          {
+            "missionGuid": "3cc97980-7aed-4886-a1bb-d65bc5583e9b",
+            "missionRewards": {
+              "tierGroupName": "Mission_Select_HordeV3_T25",
+              "items": [
+                {
+                  "itemType": "CardPack:zcp_hordev3_t25",
+                  "quantity": 1
+                }
+              ]
+            },
+            "overrideMissionRewards": {},
+            "missionGenerator": "/STW_Horde/Missions/WeeklyMods/Week05/MissionGen_HordeV3_Mod_05_T1.MissionGen_HordeV3_Mod_05_T1_C",
+            "missionDifficultyInfo": {
+              "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
+              "rowName": "Theater_HV3_12"
+            },
+            "tileIndex": 207,
+            "availableUntil": "2017-07-25T23:59:59.999Z"
+          },
+          {
+            "missionGuid": "14341cd9-480b-419a-a687-ba63ec7eef0c",
+            "missionRewards": {
+              "tierGroupName": "Mission_Select_HordeV3_T25",
+              "items": [
+                {
+                  "itemType": "CardPack:zcp_hordev3_t25",
+                  "quantity": 1
+                }
+              ]
+            },
+            "overrideMissionRewards": {},
+            "missionGenerator": "/STW_Horde/Missions/WeeklyMods/Week04/MissionGen_HordeV3_Mod_04_T1.MissionGen_HordeV3_Mod_04_T1_C",
+            "missionDifficultyInfo": {
+              "dataTable": "DataTable'/Game/Balance/DataTables/GameDifficultyGrowthBounds.GameDifficultyGrowthBounds'",
+              "rowName": "Theater_HV3_12"
+            },
+            "tileIndex": 208,
+            "availableUntil": "2017-07-25T23:59:59.999Z"
+          }
+        ],
+        "nextRefresh": "2017-07-25T23:59:59.999Z"
+      }],
       "missionAlerts": [
         {
           "theaterId": "DB73FE4C445040F5886B5FB337BC8C83",
