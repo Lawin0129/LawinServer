@@ -1085,7 +1085,7 @@ express.get("/fortnite/api/calendar/v1/timeline", async (req, res) => {
         })
     }
 
-    if (memory.season == 24 && memory.build >= 24.3) {
+    if (24.3 <= memory.build <= 25) {
         activeEvents.push(
         {
             "eventType": "EventFlag.HordeV3",
@@ -1114,6 +1114,16 @@ express.get("/fortnite/api/calendar/v1/timeline", async (req, res) => {
         },
         {
             "eventType": "EventFlag.HordeV3.Week06",
+            "activeUntil": "9999-01-01T00:00:00.000Z",
+            "activeSince": "2020-01-01T00:00:00.000Z"
+        },
+        {
+            "eventType": "EventFlag.HordeV3.Week07",
+            "activeUntil": "9999-01-01T00:00:00.000Z",
+            "activeSince": "2020-01-01T00:00:00.000Z"
+        },
+        {
+            "eventType": "EventFlag.HordeV3.Week08",
             "activeUntil": "9999-01-01T00:00:00.000Z",
             "activeSince": "2020-01-01T00:00:00.000Z"
         })
