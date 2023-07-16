@@ -53277,7 +53277,7 @@
           "followerslot3": "",
           "followerslot2": "",
           "followerslot1": "",
-          "commanderslot": "Hero:HID_Outlander_SphereFragment_SR_T05",
+          "commanderslot": "Hero:HID_Commando_GrenadeGun_SR_T05",
           "followerslot5": "",
           "followerslot4": ""
         },
@@ -53304,7 +53304,7 @@
           "followerslot3": "",
           "followerslot2": "",
           "followerslot1": "",
-          "commanderslot": "Hero:HID_Constructor_008_SR_T05",
+          "commanderslot": "Hero:HID_Commando_GrenadeGun_SR_T05",
           "followerslot5": "",
           "followerslot4": ""
         },
@@ -53325,14 +53325,13 @@
     "CampaignHeroLoadout5": {
       "templateId": "CampaignHeroLoadout:defaultloadout",
       "attributes": {
-        "slot_id": "a ",
         "team_perk": "",
         "loadout_name": "",
         "crew_members": {
           "followerslot3": "",
           "followerslot2": "",
           "followerslot1": "",
-          "commanderslot": "Hero:HID_Ninja_029_DinoNinja_SR_T05",
+          "commanderslot": "Hero:HID_Commando_GrenadeGun_SR_T05",
           "followerslot5": "",
           "followerslot4": ""
         },
@@ -53359,7 +53358,7 @@
           "followerslot3": "",
           "followerslot2": "",
           "followerslot1": "",
-          "commanderslot": "Hero:HID_Constructor_HammerTank_SR_T05",
+          "commanderslot": "Hero:HID_Commando_GrenadeGun_SR_T05",
           "followerslot5": "",
           "followerslot4": ""
         },
@@ -53386,7 +53385,7 @@
           "followerslot3": "",
           "followerslot2": "",
           "followerslot1": "",
-          "commanderslot": "Hero:HID_Commando_GCGrenade_SR_T05",
+          "commanderslot": "Hero:HID_Commando_GrenadeGun_SR_T05",
           "followerslot5": "",
           "followerslot4": ""
         },
@@ -53413,7 +53412,7 @@
           "followerslot3": "",
           "followerslot2": "",
           "followerslot1": "",
-          "commanderslot": "Hero:HID_Ninja_023_SR_T05",
+          "commanderslot": "Hero:HID_Commando_GrenadeGun_SR_T05",
           "followerslot5": "",
           "followerslot4": ""
         },
@@ -53440,7 +53439,7 @@
           "followerslot3": "",
           "followerslot2": "",
           "followerslot1": "",
-          "commanderslot": "Hero:HID_Commando_008_SR_T05",
+          "commanderslot": "Hero:HID_Commando_GrenadeGun_SR_T05",
           "followerslot5": "",
           "followerslot4": ""
         },
