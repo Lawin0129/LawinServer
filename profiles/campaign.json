@@ -39202,6 +39202,374 @@
       },
       "quantity": 1
     },
+    "Schematic:SID_Assault_Bone_SR_Crystal_T05": {
+      "templateId": "Schematic:SID_Assault_Bone_SR_Crystal_T05",
+      "attributes": {
+        "legacy_alterations": [],
+        "max_level_bonus": 0,
+        "level": 50,
+        "refund_legacy_item": false,
+        "item_seen": true,
+        "alterations": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "xp": 0,
+        "refundable": false,
+        "alteration_base_rarities": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Schematic:SID_Assault_Bone_SR_Ore_T05": {
+      "templateId": "Schematic:SID_Assault_Bone_SR_Ore_T05",
+      "attributes": {
+        "legacy_alterations": [],
+        "max_level_bonus": 0,
+        "level": 50,
+        "refund_legacy_item": false,
+        "item_seen": true,
+        "alterations": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "xp": 0,
+        "refundable": false,
+        "alteration_base_rarities": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Schematic:SID_Assault_Bone_VR_Crystal_T05": {
+      "templateId": "Schematic:SID_Assault_Bone_VR_Crystal_T05",
+      "attributes": {
+        "legacy_alterations": [],
+        "max_level_bonus": 0,
+        "level": 50,
+        "refund_legacy_item": false,
+        "item_seen": true,
+        "alterations": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "xp": 0,
+        "refundable": false,
+        "alteration_base_rarities": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Schematic:SID_Assault_Bone_VR_Ore_T05": {
+      "templateId": "Schematic:SID_Assault_Bone_VR_Ore_T05",
+      "attributes": {
+        "legacy_alterations": [],
+        "max_level_bonus": 0,
+        "level": 50,
+        "refund_legacy_item": false,
+        "item_seen": true,
+        "alterations": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "xp": 0,
+        "refundable": false,
+        "alteration_base_rarities": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Schematic:SID_Pistol_Bone_Pistol_SR_Crystal_T05": {
+      "templateId": "Schematic:SID_Pistol_Bone_Pistol_SR_Crystal_T05",
+      "attributes": {
+        "legacy_alterations": [],
+        "max_level_bonus": 0,
+        "level": 50,
+        "refund_legacy_item": false,
+        "item_seen": true,
+        "alterations": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "xp": 0,
+        "refundable": false,
+        "alteration_base_rarities": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Schematic:SID_Pistol_Bone_Pistol_SR_Ore_T05": {
+      "templateId": "Schematic:SID_Pistol_Bone_Pistol_SR_Ore_T05",
+      "attributes": {
+        "legacy_alterations": [],
+        "max_level_bonus": 0,
+        "level": 50,
+        "refund_legacy_item": false,
+        "item_seen": true,
+        "alterations": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "xp": 0,
+        "refundable": false,
+        "alteration_base_rarities": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Schematic:SID_Pistol_Bone_Pistol_VR_Crystal_T05": {
+      "templateId": "Schematic:SID_Pistol_Bone_Pistol_VR_Crystal_T05",
+      "attributes": {
+        "legacy_alterations": [],
+        "max_level_bonus": 0,
+        "level": 50,
+        "refund_legacy_item": false,
+        "item_seen": true,
+        "alterations": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "xp": 0,
+        "refundable": false,
+        "alteration_base_rarities": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Schematic:SID_Pistol_Bone_Pistol_VR_Ore_T05": {
+      "templateId": "Schematic:SID_Pistol_Bone_Pistol_VR_Ore_T05",
+      "attributes": {
+        "legacy_alterations": [],
+        "max_level_bonus": 0,
+        "level": 50,
+        "refund_legacy_item": false,
+        "item_seen": true,
+        "alterations": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "xp": 0,
+        "refundable": false,
+        "alteration_base_rarities": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Schematic:SID_Shotgun_Bone_SR_Crystal_T05": {
+      "templateId": "Schematic:SID_Shotgun_Bone_SR_Crystal_T05",
+      "attributes": {
+        "legacy_alterations": [],
+        "max_level_bonus": 0,
+        "level": 50,
+        "refund_legacy_item": false,
+        "item_seen": true,
+        "alterations": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "xp": 0,
+        "refundable": false,
+        "alteration_base_rarities": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Schematic:SID_Shotgun_Bone_SR_Ore_T05": {
+      "templateId": "Schematic:SID_Shotgun_Bone_SR_Ore_T05",
+      "attributes": {
+        "legacy_alterations": [],
+        "max_level_bonus": 0,
+        "level": 50,
+        "refund_legacy_item": false,
+        "item_seen": true,
+        "alterations": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "xp": 0,
+        "refundable": false,
+        "alteration_base_rarities": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Schematic:SID_Shotgun_Bone_VR_Crystal_T05": {
+      "templateId": "Schematic:SID_Shotgun_Bone_VR_Crystal_T05",
+      "attributes": {
+        "legacy_alterations": [],
+        "max_level_bonus": 0,
+        "level": 50,
+        "refund_legacy_item": false,
+        "item_seen": true,
+        "alterations": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "xp": 0,
+        "refundable": false,
+        "alteration_base_rarities": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Schematic:SID_Shotgun_Bone_VR_Ore_T05": {
+      "templateId": "Schematic:SID_Shotgun_Bone_VR_Ore_T05",
+      "attributes": {
+        "legacy_alterations": [],
+        "max_level_bonus": 0,
+        "level": 50,
+        "refund_legacy_item": false,
+        "item_seen": true,
+        "alterations": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "xp": 0,
+        "refundable": false,
+        "alteration_base_rarities": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Schematic:SID_SMG_bone_SR_Crystal_T05": {
+      "templateId": "Schematic:SID_SMG_bone_SR_Crystal_T05",
+      "attributes": {
+        "legacy_alterations": [],
+        "max_level_bonus": 0,
+        "level": 50,
+        "refund_legacy_item": false,
+        "item_seen": true,
+        "alterations": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "xp": 0,
+        "refundable": false,
+        "alteration_base_rarities": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Schematic:SID_SMG_bone_SR_Ore_T05": {
+      "templateId": "Schematic:SID_SMG_bone_SR_Ore_T05",
+      "attributes": {
+        "legacy_alterations": [],
+        "max_level_bonus": 0,
+        "level": 50,
+        "refund_legacy_item": false,
+        "item_seen": true,
+        "alterations": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "xp": 0,
+        "refundable": false,
+        "alteration_base_rarities": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Schematic:SID_SMG_bone_VR_Crystal_T05": {
+      "templateId": "Schematic:SID_SMG_bone_VR_Crystal_T05",
+      "attributes": {
+        "legacy_alterations": [],
+        "max_level_bonus": 0,
+        "level": 50,
+        "refund_legacy_item": false,
+        "item_seen": true,
+        "alterations": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "xp": 0,
+        "refundable": false,
+        "alteration_base_rarities": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Schematic:SID_SMG_bone_VR_Ore_T05": {
+      "templateId": "Schematic:SID_SMG_bone_VR_Ore_T05",
+      "attributes": {
+        "legacy_alterations": [],
+        "max_level_bonus": 0,
+        "level": 50,
+        "refund_legacy_item": false,
+        "item_seen": true,
+        "alterations": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "xp": 0,
+        "refundable": false,
+        "alteration_base_rarities": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
     "Schematic:SID_Assault_Winter_SR_Ore_T05": {
       "templateId": "Schematic:SID_Assault_Winter_SR_Ore_T05",
       "attributes": {
@@ -61012,6 +61380,28 @@
             "owned": []
           }
         ],
+        "backblingvariants": [],
+        "gender": 0,
+        "level": 50,
+        "item_seen": true,
+        "squad_slot_idx": -1,
+        "portrait": "",
+        "hero_name": "DefaultHeroName",
+        "max_level_bonus": 0,
+        "squad_id": "",
+        "mode_loadouts": [],
+        "xp": 0,
+        "slotted_building_id": "",
+        "refundable": false,
+        "building_slot_used": -1,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Hero:HID_Commando_047_Prickly_Patroller_SR_T05": {
+      "templateId": "Hero:HID_Commando_047_Prickly_Patroller_SR_T05",
+      "attributes": {
+        "outfitvariants": [],
         "backblingvariants": [],
         "gender": 0,
         "level": 50,
