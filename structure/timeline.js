@@ -1090,7 +1090,7 @@ express.get("/fortnite/api/calendar/v1/timeline", async (req, res) => {
         })
     }
 
-    if (24.3 <= memory.build <= 25) {
+    if (24.3 <= memory.build && memory.build <= 25) {
         activeEvents.push(
         {
             "eventType": "EventFlag.HordeV3",
@@ -1188,25 +1188,174 @@ express.get("/fortnite/api/calendar/v1/timeline", async (req, res) => {
             "EventFlag.YarrrTwo"
         ]
 
+        var activeEventsSet = new Set(activeEvents.map(e => e.eventType));
         for (var i = 0; i < Events.length; i++) {
             var Event = Events[i];
-            var bAlreadyExists = false;
-
-            for (var x = 0; x < activeEvents.length; x++) {
-                var ActiveEvent = activeEvents[x];
-                if (ActiveEvent.eventType == Event) {
-                    bAlreadyExists = true;
-                }
-            }
-
-            if (bAlreadyExists == false) {
-                activeEvents.push(
-                {
+            if (!activeEventsSet.has(Event)) {
+                activeEvents.push({
                     "eventType": Event,
                     "activeUntil": "9999-01-01T00:00:00.000Z",
                     "activeSince": "2020-01-01T00:00:00.000Z"
+                });
+            }
+        }
+    }
+
+    const stateTemplate = {
+        "activeStorefronts": [],
+        "eventNamedWeights": {},
+        "seasonNumber": memory.season,
+        "seasonTemplateId": `AthenaSeason:athenaseason${memory.season}`,
+        "matchXpBonusPoints": 0,
+        "seasonBegin": "2020-01-01T13:00:00Z",
+        "seasonEnd": "9999-01-01T14:00:00Z",
+        "seasonDisplayedEnd": "9999-01-01T07:30:00Z",
+        "weeklyStoreEnd": "9999-01-01T00:00:00Z",
+        "stwEventStoreEnd": "9999-01-01T00:00:00.000Z",
+        "stwWeeklyStoreEnd": "9999-01-01T00:00:00.000Z",
+        "sectionStoreEnds": {
+            "Featured": "9999-01-01T00:00:00.000Z"
+        },
+        "dailyStoreEnd": "9999-01-01T00:00:00Z"
+    };
+    
+    var states = [{
+        validFrom: "2020-01-01T00:00:00.000Z",
+        activeEvents: activeEvents.slice(),
+        state: stateTemplate
+    }]
+
+    if (memory.build == 4.5) {
+        if (config.Events.bEnableGeodeEvent == true) {
+            states[0].activeEvents.push({
+                "eventType": "EventFlag.BR_S4_Geode_Countdown",
+                "activeUntil": config.Events.geodeEventStartDate
+            })
+            
+            states.push({
+                validFrom: config.Events.geodeEventStartDate,
+                activeEvents: activeEvents.slice(),
+                state: stateTemplate
+            })
+
+            var EventEndDate = new Date(new Date(config.Events.geodeEventStartDate).getTime() + 3 * 60000).toISOString();
+
+            states[1].activeEvents.push({
+                "eventType": "EventFlag.BR_S4_Geode_Begin",
+                "activeUntil": EventEndDate
+            })
+
+            activeEvents.push({
+                "eventType": "EventFlag.BR_S4_Geode_Over",
+                "activeUntil": "9999-01-01T00:00:00.000Z"
+            })
+
+            if (config.Events.bEnableCrackInTheSky == true) {
+                activeEvents.push({
+                    "eventType": "EventFlag.BR_S4_Rift_Growth",
+                    "activeUntil": new Date(new Date(EventEndDate).getTime() + 13.6 * 24 * 60 * 60 * 1000).toISOString() // It takes 13.6 days for the crack to fully expand.
                 })
             }
+
+            states.push({
+                validFrom: EventEndDate,
+                activeEvents: activeEvents.slice(),
+                state: stateTemplate
+            })
+        }
+
+        if (config.Events.bEnableS4OddityPrecursor == true) {
+            for (var i = 1; i <= 8; i++) {
+                var StartDate = new Date(new Date(config.Events.S4OddityEventStartDate).getTime() + config.Events.S4OddityEventsInterval * (i-1) * 60000).toISOString();
+                activeEvents.push({
+                    "eventType": `EventFlag.BR_S4_Oddity_0${i}_Tell`,
+                    "activeUntil": StartDate
+                })
+            }
+            states[states.length - 1].activeEvents = activeEvents.slice();
+        }
+        if (config.Events.bEnableS4OddityExecution == true) {
+            for (var i = 1; i <= 8; i++) {
+                var StartDate = new Date(new Date(config.Events.S4OddityEventStartDate).getTime() + config.Events.S4OddityEventsInterval * (i-1) * 60000).toISOString();
+
+                activeEvents.push({
+                    "eventType": `EventFlag.BR_S4_Oddity_0${i}_Event`,
+                    "activeUntil": "9999-01-01T00:00:00.000Z"
+                })
+
+                var index = activeEvents.findIndex(item => item.eventType === `EventFlag.BR_S4_Oddity_0${i}_Tell`);
+                if (index !== -1) {
+                    activeEvents.splice(index, 1);
+                }
+
+                states.push({
+                    validFrom: StartDate,
+                    activeEvents: activeEvents.slice(),
+                    state: stateTemplate
+                })
+            }
+        }
+    }
+
+    if (memory.build == 5.21) {
+        if (config.Events.bEnableS5OddityPrecursor == true) {
+            states.push({
+                validFrom: config.Events.S5OddityPrecursorDate,
+                activeEvents: activeEvents.slice(),
+                state: stateTemplate
+            })
+            
+            states[1].activeEvents.push(
+            {
+                "eventType": "EventFlag.BR_S5_Oddity_Tomato_Tell",
+                "activeUntil": "9999-01-01T00:00:00.000Z"
+            })
+        }
+        if (config.Events.bEnableS5OddityExecution == true) {
+            states.push({
+                validFrom: config.Events.S5OddityExecutionDate,
+                activeEvents: activeEvents.slice(),
+                state: stateTemplate
+            })
+            
+            states[states.length - 1].activeEvents.push(
+            {
+                "eventType": "EventFlag.BR_S5_Oddity_Tomato_Event",
+                "activeUntil": "9999-01-01T00:00:00.000Z"
+            })
+        }
+    }
+
+    if (memory.build == 5.30) {
+        if (config.Events.bEnableBlockbusterRiskyEvent == true) {
+            activeEvents.push({
+                "eventType": "EventFlag.BR_S5_RiskyReels_Event",
+                "activeUntil": "9999-01-01T00:00:00.000Z"
+            })
+            states[0].activeEvents = activeEvents.slice();
+        }
+        
+        if (config.Events.bEnableCubeLightning == true) {
+            states[0].activeEvents.push(
+            {
+                "eventType": "EventFlag.BR_S5_Rift_Corrupt",
+                "activeUntil": config.Events.cubeSpawnDate
+            },
+            {
+                "eventType": "EventFlag.BR_S5_Cube_Lightning",
+                "activeUntil": config.Events.cubeSpawnDate
+            })
+
+            activeEvents.push({
+                "eventType": "EventFlag.BR_S5_Cube_TurnOn",
+                "activeUntil": "9999-01-01T00:00:00.000Z"
+            })
+
+            states.push({
+                validFrom: config.Events.cubeSpawnDate,
+                activeEvents: activeEvents.slice(),
+                state: stateTemplate
+            })
         }
     }
 
@@ -1217,27 +1366,7 @@ express.get("/fortnite/api/calendar/v1/timeline", async (req, res) => {
                 "cacheExpire": "9999-01-01T22:28:47.830Z"
             },
             "client-events": {
-                "states": [{
-                    "validFrom": "2020-01-01T20:28:47.830Z",
-                    "activeEvents": activeEvents,
-                    "state": {
-                        "activeStorefronts": [],
-                        "eventNamedWeights": {},
-                        "seasonNumber": memory.season,
-                        "seasonTemplateId": `AthenaSeason:athenaseason${memory.season}`,
-                        "matchXpBonusPoints": 0,
-                        "seasonBegin": "2020-01-01T13:00:00Z",
-                        "seasonEnd": "9999-01-01T14:00:00Z",
-                        "seasonDisplayedEnd": "9999-01-01T07:30:00Z",
-                        "weeklyStoreEnd": "9999-01-01T00:00:00Z",
-                        "stwEventStoreEnd": "9999-01-01T00:00:00.000Z",
-                        "stwWeeklyStoreEnd": "9999-01-01T00:00:00.000Z",
-                        "sectionStoreEnds": {
-                            "Featured": "9999-01-01T00:00:00.000Z"
-                        },
-                        "dailyStoreEnd": "9999-01-01T00:00:00Z"
-                    }
-                }],
+                "states": states,
                 "cacheExpire": "9999-01-01T22:28:47.830Z"
             }
         },

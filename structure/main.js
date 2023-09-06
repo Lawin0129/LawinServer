@@ -386,4 +386,12 @@ express.all("/v1/epic-settings/public/users/*/values", async (req, res) => {
     res.json({})
 })
 
+express.get("/fortnite/api/game/v2/br-inventory/account/*", async (req, res) => {
+    res.json({
+        "stash": {
+            "globalcash": 5000
+        }
+    })
+})
+
 module.exports = express;
