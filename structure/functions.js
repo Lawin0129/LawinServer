@@ -236,7 +236,6 @@ function getContentPages(req) {
     try {
         const backgrounds = contentpages.dynamicbackgrounds.backgrounds.backgrounds;
         const season = `season${memory.season}${memory.season >= 21 ? "00" : ""}`;
-        console.log(season)
         backgrounds[0].stage = season;
         backgrounds[1].stage = season;
         
@@ -353,6 +352,12 @@ function DecodeBase64(str) {
     return Buffer.from(str, 'base64').toString()
 }
 
+async function sleep(ms) {
+    await new Promise((resolve, reject) => {
+        setTimeout(resolve, ms);
+    })
+}
+
 module.exports = {
     GetVersionInfo,
     getItemShop,
@@ -361,5 +366,6 @@ module.exports = {
     MakeSurvivorAttributes,
     MakeID,
     sendXmppMessageToAll,
-    DecodeBase64
+    DecodeBase64,
+    sleep,
 }

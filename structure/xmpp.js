@@ -3,6 +3,7 @@ const XMLBuilder = require("xmlbuilder");
 const XMLParser = require("xml-parser");
 
 const functions = require("./../structure/functions.js");
+const matchmaker = require("./matchmaker.js");
 
 const port = 80;
 
@@ -11,9 +12,12 @@ wss.on("error", (err) => {
     console.log("XMPP \x1b[31mFAILED\x1b[0m to start hosting (NOTE: This should not affect LawinServer).");
 })
 
+
 global.Clients = [];
 
 wss.on('connection', async (ws) => {
+    if (ws.protocol.toLowerCase() != "xmpp") return matchmaker(ws);
+    
     var accountId = "";
     var jid = "";
     var id = "";
