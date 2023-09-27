@@ -3,17 +3,21 @@ const XMLBuilder = require("xmlbuilder");
 const XMLParser = require("xml-parser");
 
 const functions = require("./../structure/functions.js");
+const matchmaker = require("./matchmaker.js");
 
 const port = 80;
 
-const wss = new WebSocket({ port: port }, () => console.log("XMPP started listening on port", port));
+const wss = new WebSocket({ port: port }, () => console.log("XMPP and Matchmaker started listening on port", port));
 wss.on("error", (err) => {
-    console.log("XMPP \x1b[31mFAILED\x1b[0m to start hosting (NOTE: This should not affect LawinServer).");
+    console.log("XMPP and Matchmaker \x1b[31mFAILED\x1b[0m to start hosting.");
 })
+
 
 global.Clients = [];
 
 wss.on('connection', async (ws) => {
+    if (ws.protocol.toLowerCase() != "xmpp") return matchmaker(ws);
+    
     var accountId = "";
     var jid = "";
     var id = "";

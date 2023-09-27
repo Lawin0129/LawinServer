@@ -1,6 +1,12 @@
 const XMLBuilder = require("xmlbuilder");
 const uuid = require("uuid");
 
+async function sleep(ms) {
+    await new Promise((resolve, reject) => {
+        setTimeout(resolve, ms);
+    })
+}
+
 function GetVersionInfo(req) {
     var memory = {
         season: 0,
@@ -236,7 +242,6 @@ function getContentPages(req) {
     try {
         const backgrounds = contentpages.dynamicbackgrounds.backgrounds.backgrounds;
         const season = `season${memory.season}${memory.season >= 21 ? "00" : ""}`;
-        console.log(season)
         backgrounds[0].stage = season;
         backgrounds[1].stage = season;
         
@@ -354,6 +359,7 @@ function DecodeBase64(str) {
 }
 
 module.exports = {
+    sleep,
     GetVersionInfo,
     getItemShop,
     getTheater,
