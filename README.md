@@ -6,6 +6,12 @@
 </div>
 <br>
 
+## Credits
+| Name | Contributions |
+| --------------- | ----------- |
+| Lawin | Creator |
+| [PRO100KatYT](https://github.com/PRO100KatYT) | Contributor & Maintainer |
+
 ## Features:
 
 ### Save the World:
@@ -61,7 +67,7 @@
 - Discovery Tab
 - Configurable backend sided in-game events - check out the Events seciton in config.ini for more details
 
-## How to use?
+## How to host/use LawinServer
 1) Install [NodeJS](https://nodejs.org/en/)
 2) Run "install_packages.bat" (This file isn't required after the packages are installed.)
 3) Run "start.bat", It should say "Started listening on port 3551"
