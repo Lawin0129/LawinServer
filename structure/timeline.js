@@ -1359,6 +1359,53 @@ express.get("/fortnite/api/calendar/v1/timeline", async (req, res) => {
         }
     }
 
+    if (memory.build == 5.41) {
+        if (config.Events.bEnableCubeLake == true) {
+            states[0].activeEvents.push(
+            {
+                "eventType": "EventFlag.BR_S5_Cube_StartMove",
+                "activeUntil": config.Events.cubeLakeDate
+            },
+            {
+                "eventType": "EventFlag.BR_S5_Cube_TurnOn",
+                "activeUntil": config.Events.cubeLakeDate
+            })
+            
+            states.push({
+                validFrom: config.Events.cubeLakeDate,
+                activeEvents: activeEvents.slice(),
+                state: stateTemplate
+            })
+
+            states[1].activeEvents.push(
+            {
+                "eventType": "EventFlag.BR_S5_Cube_StartMove",
+                "activeUntil": config.Events.cubeLakeDate
+            },
+            {
+                "eventType": "EventFlag.BR_S5_Cube_TurnOn",
+                "activeUntil": config.Events.cubeLakeDate
+            },       
+            {
+                "eventType": "EventFlag.BR_S5_Cube_MoveTo8",
+                "activeUntil": config.Events.cubeLakeDate
+            })
+
+            var EventEndDate = new Date(new Date(config.Events.cubeLakeDate).getTime() + 1.5 * 60000).toISOString();
+
+            states.push({
+                validFrom: EventEndDate,
+                activeEvents: activeEvents.slice(),
+                state: stateTemplate
+            })
+
+            states[2].activeEvents.push({
+                "eventType": "EventFlag.BR_S5_Cube_Destination",
+                "activeUntil": "9999-01-01T00:00:00.000Z"
+            })
+        }
+    }
+
     res.json({
         "channels": {
             "client-matchmaking": {
