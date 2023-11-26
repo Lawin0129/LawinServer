@@ -44189,6 +44189,98 @@
       },
       "quantity": 1
     },
+    "Schematic:SID_Edged_IceSword_SR_Crystal_T05": {
+      "templateId": "Schematic:SID_Edged_IceSword_SR_Crystal_T05",
+      "attributes": {
+        "legacy_alterations": [],
+        "max_level_bonus": 0,
+        "level": 50,
+        "refund_legacy_item": false,
+        "item_seen": true,
+        "alterations": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "xp": 0,
+        "refundable": false,
+        "alteration_base_rarities": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Schematic:SID_Edged_IceSword_SR_Ore_T05": {
+      "templateId": "Schematic:SID_Edged_IceSword_SR_Ore_T05",
+      "attributes": {
+        "legacy_alterations": [],
+        "max_level_bonus": 0,
+        "level": 50,
+        "refund_legacy_item": false,
+        "item_seen": true,
+        "alterations": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "xp": 0,
+        "refundable": false,
+        "alteration_base_rarities": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Schematic:SID_Edged_IceSword_VR_Crystal_T05": {
+      "templateId": "Schematic:SID_Edged_IceSword_VR_Crystal_T05",
+      "attributes": {
+        "legacy_alterations": [],
+        "max_level_bonus": 0,
+        "level": 50,
+        "refund_legacy_item": false,
+        "item_seen": true,
+        "alterations": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "xp": 0,
+        "refundable": false,
+        "alteration_base_rarities": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Schematic:SID_Edged_IceSword_VR_Ore_T05": {
+      "templateId": "Schematic:SID_Edged_IceSword_VR_Ore_T05",
+      "attributes": {
+        "legacy_alterations": [],
+        "max_level_bonus": 0,
+        "level": 50,
+        "refund_legacy_item": false,
+        "item_seen": true,
+        "alterations": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "xp": 0,
+        "refundable": false,
+        "alteration_base_rarities": [],
+        "favorite": false
+      },
+      "quantity": 1
+    },
     "Schematic:Ingredient_Duct_Tape": {
       "templateId": "Schematic:Ingredient_Duct_Tape",
       "attributes": {
