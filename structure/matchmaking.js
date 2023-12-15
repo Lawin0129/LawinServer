@@ -15,7 +15,7 @@ express.get("/fortnite/api/game/v2/matchmakingservice/ticket/player/*", async (r
     res.cookie("currentbuildUniqueId", req.query.bucketId.split(":")[0]);
 
     res.json({
-        "serviceUrl": "ws://lawinservermatchmaker.herokuapp.com",
+        "serviceUrl": "ws://127.0.0.1",
         "ticketType": "mms-player",
         "payload": "69=",
         "signature": "420="
