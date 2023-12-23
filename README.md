@@ -10,7 +10,7 @@
 
 ### Save the World:
 - CloudStorage and ClientSettings (Settings saving)
-- Llama purchasing and opening with random loot
+- Llama purchasing and opening with random loot and choice packs
 - Every Hero, Weapon, Defender and Resource
 - All Founder's Packs rewards screen (togglable in the config)
 - Refreshing, sending, collecting and aborting expeditions
