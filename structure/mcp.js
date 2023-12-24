@@ -312,7 +312,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/PurchaseHomebaseNode", asyn
 express.post("/fortnite/api/game/v2/profile/*/client/UnlockRewardNode", async (req, res) => {
     const profile = require(`./../profiles/${req.query.profileId || "athena"}.json`);
     const common_core = require("./../profiles/common_core.json");
-    const WinterFestIDS = require("./../responses/Athena/winterfestrewards.json");
+    const WinterFestIDS = require("./../responses/Athena/winterfestRewards.json");
     const memory = functions.GetVersionInfo(req);
 
     // do not change any of these or you will end up breaking it
@@ -1455,7 +1455,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/IncrementNamedCounterStat",
 // Claim STW daily reward
 express.post("/fortnite/api/game/v2/profile/*/client/ClaimLoginReward", async (req, res) => {
     const profile = require(`./../profiles/${req.query.profileId || "campaign"}.json`);
-    const DailyRewards = require("./../responses/Campaign/dailyrewards.json");
+    const DailyRewards = require("./../responses/Campaign/dailyRewards.json");
     const memory = functions.GetVersionInfo(req);
 
     // do not change any of these or you will end up breaking it
