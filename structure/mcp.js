@@ -2606,7 +2606,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/TransmogItem", async (req, 
             transformItemIDS = transformItemIDS[req.body.transmogKeyTemplateId]
         }
         else {
-            transformItemIDS = require("./../responses/Campaign/cardpackData.json").default;
+            transformItemIDS = require("./../responses/Campaign/cardPackData.json").default;
         }
 
         StatChanged = true;
@@ -2623,7 +2623,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/TransmogItem", async (req, 
             Item.attributes = functions.MakeSurvivorAttributes(transformItemIDS[randomNumber]);
         }
 
-        profile.items[ID] = Item
+        profile.items[ID] = Item;
 
         Notifications.push({
             "type": "transmogResult",
@@ -5380,7 +5380,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/UnassignAllSquads", async (
 // Open llama STW
 express.post("/fortnite/api/game/v2/profile/*/client/OpenCardPack", async (req, res) => {
     const profile = require(`./../profiles/${req.query.profileId || "campaign"}.json`);
-    const cardpackData = require("./../responses/Campaign/cardpackData.json");
+    const cardpackData = require("./../responses/Campaign/cardPackData.json");
 
     // do not change any of these or you will end up breaking it
     var ApplyProfileChanges = [];
@@ -5400,10 +5400,12 @@ express.post("/fortnite/api/game/v2/profile/*/client/OpenCardPack", async (req, 
             "displayLevel": 0
         })
 
-        if (cardpackData.choiceCardpacks.includes(profile.items[req.body.cardPackItemId].templateId)) {
+        if (cardpackData.choiceCardPacks.includes(profile.items[req.body.cardPackItemId].templateId)) {
             var ChosenItem = profile.items[req.body.cardPackItemId].attributes.options[req.body.selectionIdx];
             var Item = {"templateId":ChosenItem.itemType,"attributes":ChosenItem.attributes,"quantity":ChosenItem.quantity};
             const ID = functions.MakeID();
+
+            profile.items[ID] = Item;
 
             ApplyProfileChanges.push({
                 "changeType": "itemAdded",
@@ -5428,23 +5430,24 @@ express.post("/fortnite/api/game/v2/profile/*/client/OpenCardPack", async (req, 
                     Item.attributes = functions.MakeSurvivorAttributes(ItemIDS[randomNumber]);
                 }
     
-                if (Math.random() < 0.1) { // 10% (could be dfferent) chance of getting a choice Cardpack.
-                    var CPTemplateId = cardpackData.choiceCardpacks[Math.floor(Math.random() * cardpackData.choiceCardpacks.length)];
+                if (Math.random() < 0.1) { // 10% (could be dfferent) chance of getting a choice CardPack.
+                    var CPTemplateId = cardpackData.choiceCardPacks[Math.floor(Math.random() * cardpackData.choiceCardPacks.length)];
                     var CPItem = {"templateId":CPTemplateId,"attributes":{"level":1,"pack_source":"Store","options":[]},"quantity":1}
-    
+                    ItemIDS = cardpackData[CPTemplateId.toLowerCase()] || cardpackData.default;
+
                     for (var x = 0; x < 2; x++) {
-                        ItemIDS = cardpackData[CPTemplateId.toLowerCase()] || cardpackData.default;
                         randomNumber = Math.floor(Math.random() * ItemIDS.length);
                         Item = {"itemType":ItemIDS[randomNumber],"attributes":{"legacy_alterations":[],"max_level_bonus":0,"level":1,"refund_legacy_item":false,"item_seen":false,"alterations":["","","","","",""],"xp":0,"refundable":false,"alteration_base_rarities":[],"favorite":false},"quantity":1};
                         if (ItemIDS[randomNumber].toLowerCase().startsWith("worker:")) {
                             Item.attributes = functions.MakeSurvivorAttributes(ItemIDS[randomNumber]);
                         }
+                        ItemIDS.splice(ItemIDS.indexOf(ItemIDS[randomNumber]), 1);
                         CPItem.attributes.options.push(Item);
                     }
                     Item = CPItem;
                 }
     
-                profile.items[ID] = Item
+                profile.items[ID] = Item;
     
                 ApplyProfileChanges.push({
                     "changeType": "itemAdded",
@@ -5515,7 +5518,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/OpenCardPack", async (req, 
 // Add items to StW X-Ray Llamas
 express.post("/fortnite/api/game/v2/profile/*/client/PopulatePrerolledOffers", async (req, res) => {
     const profile = require(`./../profiles/${req.query.profileId || "campaign"}.json`);
-    const cardpackData = require("./../responses/Campaign/cardpackData.json");
+    const cardpackData = require("./../responses/Campaign/cardPackData.json");
 
     // do not change any of these or you will end up breaking it
     var ApplyProfileChanges = [];
@@ -5539,16 +5542,17 @@ express.post("/fortnite/api/game/v2/profile/*/client/PopulatePrerolledOffers", a
                     }
         
                     if (Math.random() < 0.1) { // 10% (could be dfferent) chance of getting a choice Cardpack.
-                        var CPTemplateId = cardpackData.choiceCardpacks[Math.floor(Math.random() * cardpackData.choiceCardpacks.length)];
+                        var CPTemplateId = cardpackData.choiceCardPacks[Math.floor(Math.random() * cardpackData.choiceCardPacks.length)];
                         var CPItem = {"itemType":CPTemplateId,"attributes":{"level":1,"pack_source":"Store","options":[]},"quantity":1}
-        
+                        ItemIDS = cardpackData[CPTemplateId.toLowerCase()] || cardpackData.default;
+
                         for (var x = 0; x < 2; x++) {
-                            ItemIDS = cardpackData[CPTemplateId.toLowerCase()] || cardpackData.default;
                             randomNumber = Math.floor(Math.random() * ItemIDS.length);
                             Item = {"itemType":ItemIDS[randomNumber],"attributes":{"legacy_alterations":[],"max_level_bonus":0,"level":1,"refund_legacy_item":false,"item_seen":false,"alterations":["","","","","",""],"xp":0,"refundable":false,"alteration_base_rarities":[],"favorite":false},"quantity":1};
                             if (ItemIDS[randomNumber].toLowerCase().startsWith("worker:")) {
                                 Item.attributes = functions.MakeSurvivorAttributes(ItemIDS[randomNumber]);
                             }
+                            ItemIDS.splice(ItemIDS.indexOf(ItemIDS[randomNumber]), 1);
                             CPItem.attributes.options.push(Item);
                         }
                         Item = CPItem;
@@ -5610,7 +5614,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/PurchaseCatalogEntry", asyn
     const profile = require(`./../profiles/${req.query.profileId || "profile0"}.json`);
     const campaign = require("./../profiles/campaign.json");
     const athena = require("./../profiles/athena.json");
-    const cardpackData = require("./../responses/Campaign/cardpackData.json");
+    const cardpackData = require("./../responses/Campaign/cardPackData.json");
 
     // do not change any of these or you will end up breaking it
     var ApplyProfileChanges = [];
@@ -5649,7 +5653,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/PurchaseCatalogEntry", asyn
                             for (var i = 0; i < Quantity; i++) {
                                 var ID = functions.MakeID();
 
-                                profile.items[ID] = Item
+                                profile.items[ID] = Item;
 
                                 ApplyProfileChanges.push({
                                     "changeType": "itemAdded",
@@ -6501,16 +6505,17 @@ express.post("/fortnite/api/game/v2/profile/*/client/PurchaseCatalogEntry", asyn
                                                         }
                                             
                                                         if (Math.random() < 0.1) { // 10% (could be dfferent) chance of getting a choice Cardpack.
-                                                            var CPTemplateId = cardpackData.choiceCardpacks[Math.floor(Math.random() * cardpackData.choiceCardpacks.length)];
+                                                            var CPTemplateId = cardpackData.choiceCardPacks[Math.floor(Math.random() * cardpackData.choiceCardPacks.length)];
                                                             var CPItem = {"itemType":CPTemplateId,"attributes":{"level":1,"pack_source":"Store","options":[]},"quantity":1}
-                                            
+                                                            ItemIDS = cardpackData[CPTemplateId.toLowerCase()] || cardpackData.default;
+
                                                             for (var x = 0; x < 2; x++) {
-                                                                ItemIDS = cardpackData[CPTemplateId.toLowerCase()] || cardpackData.default;
                                                                 randomNumber = Math.floor(Math.random() * ItemIDS.length);
                                                                 Item = {"itemType":ItemIDS[randomNumber],"attributes":{"legacy_alterations":[],"max_level_bonus":0,"level":1,"refund_legacy_item":false,"item_seen":false,"alterations":["","","","","",""],"xp":0,"refundable":false,"alteration_base_rarities":[],"favorite":false},"quantity":1};
                                                                 if (ItemIDS[randomNumber].toLowerCase().startsWith("worker:")) {
                                                                     Item.attributes = functions.MakeSurvivorAttributes(ItemIDS[randomNumber]);
                                                                 }
+                                                                ItemIDS.splice(ItemIDS.indexOf(ItemIDS[randomNumber]), 1);
                                                                 CPItem.attributes.options.push(Item);
                                                             }
                                                             Item = CPItem;
