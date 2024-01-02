@@ -215,9 +215,92 @@ express.get("/fortnite/api/receipts/v1/account/*/receipts", async (req, res) => 
     res.json([])
 })
 
-express.get("/fortnite/api/game/v2/leaderboards/cohort/*", async (req, res) => {
-    res.json([])
+express.get("/fortnite/api/game/v2/leaderboards/cohort/:accountId", async (req, res) => {
+    res.json({
+        "accountId": req.params.accountId,
+        "cohortAccounts": [
+            req.params.accountId,
+            "Lawin",
+            "TI93",
+            "PRO100KatYT",
+            "Playeereq",
+            "Matteoki"
+        ],
+        "expiresAt": "9999-12-31T00:00:00.000Z",
+        "playlist": req.query.playlist
+    })
 })
+
+express.post("/fortnite/api/leaderboards/type/group/stat/:statName/window/:statWindow", async (req, res) => {
+    var entries = [];
+    
+    for (var i = 0; i < req.body.length; i++) {
+        entries.push({
+            "accountId": req.body[i],
+            "value": Math.floor(Math.random() * 68) + 1
+        })
+    }
+
+    res.json({
+        "entries": entries,
+        "statName": req.params.statName,
+        "statWindow": req.params.statWindow
+    })
+    res.end();
+});
+
+express.post("/fortnite/api/leaderboards/type/global/stat/:statName/window/:statWindow", async (req, res) => {
+    var HeroNames = [
+        "Hawk",
+        "Banshee",
+        "Wildcat",
+        "Jonsey",
+        "Spitfire",
+        "Ramirez",
+        "Headhunter",
+        "Renegade",
+        "Harper",
+        "Knox",
+        "Hype",
+        "Bull",
+        "Hazard",
+        "Penny",
+        "Izza",
+        "Kyle",
+        "Luna",
+        "Crash",
+        "Edge",
+        "Scorpion",
+        "Scorch",
+        "Ken",
+        "Mari",
+        "Sarah",
+        "Grizzly",
+        "Eagle Eye",
+        "Southie",
+        "A.C.",
+        "Buzz",
+        "Quinn",
+        "Jess",
+        "Deadeye"
+    ]
+
+    var entries = [];
+    
+    for (var i = 0; i < HeroNames.length; i++) {
+        entries.push({
+            "accountId": HeroNames[i],
+            "value": Math.floor(Math.random() * 68) + 1
+        })
+    }
+
+    res.json({
+        "entries": entries,
+        "statName": req.params.statName,
+        "statWindow": req.params.statWindow
+    })
+    res.end();
+});
 
 express.get("/fortnite/api/game/v2/homebase/allowed-name-chars", async (req, res) => {
     res.json({
