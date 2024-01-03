@@ -160,23 +160,26 @@ function getTheater(req) {
             theater = theater.replace(/\"DataTable\'\/SaveTheWorld\//ig, "\"DataTable\'\/Game\/");
         }
 
-        var date = new Date().toISOString()
+        var date = new Date();
+        var hour = date.getHours();
 
         // Set the 24-hour StW mission refresh date for version season 9 and above
         if (memory.season >= 9) {
-            date = date.split("T")[0] + "T23:59:59.999Z";
+            date.setHours(23, 59, 59, 999);
         } else {
             // Set the 6-hour StW mission refresh date for versions below season 9
-            if (date < (date.split("T")[0] + "T05:59:59.999Z")) {
-                date = date.split("T")[0] + "T05:59:59.999Z";
-            } else if (date < (date.split("T")[0] + "T11:59:59.999Z")) {
-                date = date.split("T")[0] + "T11:59:59.999Z";
-            } else if (date < (date.split("T")[0] + "T17:59:59.999Z")) {
-                date = date.split("T")[0] + "T17:59:59.999Z";
-            } else if (date < (date.split("T")[0] + "T23:59:59.999Z")) {
-                date = date.split("T")[0] + "T23:59:59.999Z";
+            if (hour < 6) {
+                date.setHours(5, 59, 59, 999);
+            } else if (hour < 12) {
+                date.setHours(11, 59, 59, 999);
+            } else if (hour < 18) {
+                date.setHours(17, 59, 59, 999);
+            } else {
+                date.setHours(23, 59, 59, 999);
             }
         }
+
+        date = date.toISOString();
 
         theater = theater.replace(/2017-07-25T23:59:59.999Z/ig, date);
     } catch (err) {}

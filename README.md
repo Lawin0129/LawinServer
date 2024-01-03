@@ -16,7 +16,7 @@
 
 ### Save the World:
 - CloudStorage and ClientSettings (Settings saving)
-- Llama purchasing and opening with random loot
+- Llama purchasing and opening with random loot and choice packs
 - Every Hero, Weapon, Defender and Resource
 - All Founder's Packs rewards screen (togglable in the config)
 - Refreshing, sending, collecting and aborting expeditions
@@ -62,9 +62,11 @@
 - Changing items edit styles
 - Support a Creator with specific codes
 - Fully working daily challenges system (New daily challenge every day, replacing daily challenges, etc...)
+- Completed Location & Discovery quests (discovered map in game & in lobby) for Chapter 2, 3 & 4 (Can change)
 - Seasonal Quests from Season 3 up to Season 21 (Can change)
 - Purchasable battle pass from Season 2 to Season 10 (Can change)
 - Discovery Tab
+- Leaderboards (v1)
 - Configurable backend sided in-game events - check out the Events seciton in config.ini for more details
 - Joining gameservers using the matchmaker - check out the GameServer seciton in config.ini for more details
 
