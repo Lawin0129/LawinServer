@@ -175,7 +175,6 @@ function getTheater(req) {
 
         date = date.toISOString();
 
-
         theater = theater.replace(/2017-07-25T23:59:59.999Z/ig, date);
     } catch (err) {}
 

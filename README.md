@@ -61,6 +61,7 @@
 - Purchasable battle pass from Season 2 to Season 10 (Can change)
 - Discovery Tab
 - Configurable backend sided in-game events - check out the Events seciton in config.ini for more details
+- Leaderboards (v1)
 
 ## How to use?
 1) Install [NodeJS](https://nodejs.org/en/)
