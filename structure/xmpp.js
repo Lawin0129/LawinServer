@@ -16,6 +16,8 @@ wss.on("error", (err) => {
 global.Clients = [];
 
 wss.on('connection', async (ws) => {
+    ws.on('error', () => {});
+    
     if (ws.protocol.toLowerCase() != "xmpp") return matchmaker(ws);
     
     var accountId = "";
