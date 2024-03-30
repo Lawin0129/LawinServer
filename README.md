@@ -1,5 +1,5 @@
 <div align=center>
-  <img src="https://cdn.discordapp.com/attachments/927739901540188200/930871981874757632/lawinserver.png" alt="LawinServer Logo">
+  <img src="https://i.ibb.co/Bcj3VXm/68747470733a2f2f63646e2e646973636f72646170702e636f6d2f6174746163686d656e74732f3932373733393930313534.png" alt="LawinServer Logo">
 
   ### LawinServer is a private server that supports all Fortnite versions!
   
