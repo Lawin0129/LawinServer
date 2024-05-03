@@ -466,7 +466,8 @@ express.get("/region", async (req, res) => {
 
 // Parental Controls
 express.all("/v1/epic-settings/public/users/*/values", async (req, res) => {
-    res.json({})
+    const epicsettings = require("./../responses/epic-settings.json");
+    res.json(epicsettings)
 })
 
 express.get("/fortnite/api/game/v2/br-inventory/account/*", async (req, res) => {

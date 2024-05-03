@@ -6350,5 +6350,57 @@
     "_locale": "en-US",
     "_templateName": "FortniteGameShopSections"
   },
+  "mpItemShop": {
+    "shopData": {
+      "_type": "MP Item Shop - Data Root",
+      "sections": [
+        {
+          "metadata": {
+            "offerGroups": [
+              {
+                "bUseWidePreview": false,
+                "_type": "MP Item Shop - Row",
+                "offerGroupId": "99",
+                "stackRanks": [
+                  {
+                    "stackRankValue": 99,
+                    "_type": "MP Item Shop - Stack Rank",
+                    "context": "battleRoyale",
+                    "contentType": "battleRoyale",
+                    "startDate": "2023-01-01T00:00:00.000Z"
+                  }
+                ]
+              }
+            ],
+            "background": {
+              "_type": "MP Item Shop - Background",
+              "customTexture": ""
+            },
+            "_type": "MP Item Shop - Section Metadata",
+            "showIneligibleOffers": "Always",
+            "stackRanks": [
+              {
+                "stackRankValue": 79,
+                "_type": "MP Item Shop - Stack Rank",
+                "context": "battleRoyale",
+                "contentType": "battleRoyale",
+                "startDate": "2023-01-01T00:00:00.000Z"
+              }
+            ]
+          },
+          "displayName": "LawinServer Item Shop",
+          "_type": "MP Item Shop - Section",
+          "sectionID": "LawinServer",
+          "category": "LawinServer Item Shop"
+        }
+      ]
+    },
+    "_title": "mp-item-shop",
+    "_noIndex": false,
+    "_activeDate": "2023-12-31T23:45:00.000Z",
+    "lastModified": "2023-12-31T19:09:35.746Z",
+    "_locale": "en-US",
+    "_templateName": "FortniteGameMPItemShop"
+  },
   "_suggestedPrefetch": []
 }
