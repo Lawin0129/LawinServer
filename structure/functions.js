@@ -283,14 +283,15 @@ function getContentPages(req) {
             }
         } else if (memory.season == 24) {
             backgrounds[0].backgroundimage = "https://cdn2.unrealengine.com/t-ch4s2-bp-lobby-4096x2048-edde08d15f7e.jpg"
-        }        
-
-        else if (memory.season == 25) {
+        } else if (memory.season == 25) {
             backgrounds[0].backgroundimage = "https://cdn2.unrealengine.com/s25-lobby-4k-4096x2048-4a832928e11f.jpg";
             backgrounds[1].backgroundimage = "https://cdn2.unrealengine.com/fn-shop-ch4s3-04-1920x1080-785ce1d90213.png";
             if (memory.build == 25.11) {
                 backgrounds[0].backgroundimage = "https://cdn2.unrealengine.com/t-s25-14dos-lobby-4096x2048-2be24969eee3.jpg";
             }
+        } else {
+            backgrounds[0].stage = "defaultnotris"
+            backgrounds[0].backgroundimage = "https://fortnite-public-service-prod11.ol.epicgames.com/images/lightlobbybg.png";
         }
 
     } catch (err) {}
