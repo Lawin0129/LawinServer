@@ -7875,6 +7875,100 @@ express.post("/fortnite/api/game/v2/profile/*/client/SetCosmeticLockerSlot", asy
     res.end();
 });
 
+// Set BR Locker 3
+express.post("/fortnite/api/game/v2/profile/*/client/PutModularCosmeticLoadout", async (req, res) => {
+    const profile = require(`./../profiles/${req.query.profileId || "athena"}.json`);
+
+    // do not change any of these or you will end up breaking it
+    var ApplyProfileChanges = [];
+    var BaseRevision = profile.rvn || 0;
+    var QueryRevision = req.query.rvn || -1;
+    var StatChanged = false;
+
+    if (!profile.stats.attributes.hasOwnProperty("loadout_presets")) {
+        profile.stats.attributes.loadout_presets = {};
+
+        ApplyProfileChanges.push({
+            "changeType": "statModified",
+            "name": "loadout_presets",
+            "value": {}
+        })
+
+        StatChanged = true;
+    }
+
+    if (!profile.stats.attributes.loadout_presets.hasOwnProperty(req.body.loadoutType)) {
+        const NewLoadoutID = functions.MakeID();
+
+        profile.items[NewLoadoutID] = {
+            "templateId": req.body.loadoutType,
+            "attributes": {},
+            "quantity": 1
+        }
+
+        ApplyProfileChanges.push({
+            "changeType": "itemAdded",
+            "itemId": NewLoadoutID,
+            "item": profile.items[NewLoadoutID]
+        })
+
+        profile.stats.attributes.loadout_presets[req.body.loadoutType] = {
+            [req.body.presetId]: NewLoadoutID
+        };
+
+        ApplyProfileChanges.push({
+            "changeType": "statModified",
+            "name": "loadout_presets",
+            "value": profile.stats.attributes.loadout_presets
+        })
+
+        StatChanged = true;
+    }
+
+    var LoadoutGUID = [];
+
+    try {
+        LoadoutGUID = profile.stats.attributes.loadout_presets[req.body.loadoutType][req.body.presetId];
+        profile.items[LoadoutGUID].attributes = JSON.parse(req.body.loadoutData);
+
+        ApplyProfileChanges.push({
+            "changeType": "itemAttrChanged",
+            "itemId": LoadoutGUID,
+            "attributeName": "slots",
+            "attributeValue": profile.items[LoadoutGUID].attributes.slots
+        })
+
+        StatChanged = true;
+        
+    } catch (err) {}
+
+    if (StatChanged == true) {
+        profile.rvn += 1;
+        profile.commandRevision += 1;
+
+        fs.writeFileSync(`./profiles/${req.query.profileId || "athena"}.json`, JSON.stringify(profile, null, 2));
+    }
+
+    // this doesn't work properly on version v12.20 and above but whatever
+    if (QueryRevision != BaseRevision) {
+        ApplyProfileChanges = [{
+            "changeType": "fullProfileUpdate",
+            "profile": profile
+        }];
+    }
+
+    res.json({
+        "profileRevision": profile.rvn || 0,
+        "profileId": req.query.profileId || "athena",
+        "profileChangesBaseRevision": BaseRevision,
+        "profileChanges": ApplyProfileChanges,
+        "profileCommandRevision": profile.commandRevision || 0,
+        "serverTime": new Date().toISOString(),
+        "responseVersion": 1
+    })
+    res.end();
+});
+
 // Set hero variants STW
 express.post("/fortnite/api/game/v2/profile/*/client/SetHeroCosmeticVariants", async (req, res) => {
     const profile = require(`./../profiles/${req.query.profileId || "campaign"}.json`);

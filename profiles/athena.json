@@ -105,6 +105,55 @@
       },
       "quantity": 1
     },
+    "lawin-characterloadout": {
+      "templateId": "CosmeticLoadout:LoadoutSchema_Character",
+      "attributes": {
+        "slots": [],
+        "display_name": "LawinServer"
+      },
+      "quantity": 1
+    },
+    "lawin-emotesloadout": {
+      "templateId": "CosmeticLoadout:LoadoutSchema_Emotes",
+      "attributes": {
+        "slots": [],
+        "display_name": "LawinServer"
+      },
+      "quantity": 1
+    },
+    "lawin-platformloadout": {
+      "templateId": "CosmeticLoadout:LoadoutSchema_Platform",
+      "attributes": {
+        "slots": [
+          {
+            "slot_template": "CosmeticLoadoutSlotTemplate:LoadoutSlot_Banner_Icon",
+            "equipped_item": "HomebaseBannerIcon:survivalbannerstonewoodcomplete"
+          },
+          {
+            "slot_template": "CosmeticLoadoutSlotTemplate:LoadoutSlot_Banner_Color",
+            "equipped_item": "HomebaseBannerColor:defaultcolor15"
+          }
+        ],
+        "display_name": "LawinServer"
+      },
+      "quantity": 1
+    },
+    "lawin-wrapsloadout": {
+      "templateId": "CosmeticLoadout:LoadoutSchema_Wraps",
+      "attributes": {
+        "slots": [],
+        "display_name": "LawinServer"
+      },
+      "quantity": 1
+    },
+    "lawin-vehicleloadout": {
+      "templateId": "CosmeticLoadout:LoadoutSchema_Vehicle",
+      "attributes": {
+        "slots": [],
+        "display_name": "LawinServer"
+      },
+      "quantity": 1
+    },
     "AthenaBackpack:Backpack_AgentSherbert": {
       "templateId": "AthenaBackpack:Backpack_AgentSherbert",
       "attributes": {
@@ -131935,6 +131984,23 @@
       "loadouts": [
         "lawin-loadout"
       ],
+      "loadout_presets": {
+        "CosmeticLoadout:LoadoutSchema_Character": {
+          "0": "lawin-characterloadout"
+        },
+        "CosmeticLoadout:LoadoutSchema_Emotes": {
+          "0": "lawin-emotesloadout"
+        },
+        "CosmeticLoadout:LoadoutSchema_Platform": {
+          "0": "lawin-platformloadout"
+        },
+        "CosmeticLoadout:LoadoutSchema_Wraps": {
+          "0": "lawin-wrapsloadout"
+        },
+        "CosmeticLoadout:LoadoutSchema_Vehicle": {
+          "0": "lawin-vehicleloadout"
+        }
+      },
       "favorite_victorypose": "",
       "mfa_reward_claimed": true,
       "quest_manager": {
