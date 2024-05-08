@@ -132,6 +132,10 @@
           {
             "slot_template": "CosmeticLoadoutSlotTemplate:LoadoutSlot_Banner_Color",
             "equipped_item": "HomebaseBannerColor:defaultcolor15"
+          },
+          {
+            "slot_template": "CosmeticLoadoutSlotTemplate:LoadoutSlot_LobbyMusic",
+            "equipped_item": "AthenaMusicPack:musicpack_119_ch1_defaultmusic"
           }
         ],
         "display_name": "LawinServer"
