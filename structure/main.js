@@ -131,8 +131,10 @@ express.get("/socialban/api/public/v1/*", async (req, res) => {
     });
 })
 
-express.get("/fortnite/api/game/v2/events/tournamentandhistory/*/EU/WindowsClient", async (req, res) => {
-    res.json({});
+express.get("/fortnite/api/game/v2/events/tournamentandhistory/*", async (req, res) => {
+    const tournamentandhistory = require("./../responses/Athena/Tournament/tournamentandhistory.json");
+    
+    res.json(tournamentandhistory)
 })
 
 express.get("/fortnite/api/statsv2/account/:accountId", async (req, res) => {
@@ -185,8 +187,60 @@ express.get("/fortnite/api/game/v2/enabled_features", async (req, res) => {
 })
 
 express.get("/api/v1/events/Fortnite/download/*", async (req, res) => {
-    res.json({})
+    const tournament = require("./../responses/Athena/Tournament/tournament.json");
+    
+    res.json(tournament)
 })
+
+express.get("/api/v1/events/Fortnite/:eventId/history/:accountId", async (req, res) => {
+    var history = require("./../responses/Athena/Tournament/history.json");
+    history[0].scoreKey.eventId = req.params.eventId;
+    history[0].teamId = req.params.accountId;
+    history[0].teamAccountIds.push(req.params.accountId);
+    
+    res.json(history)
+})
+
+express.get("/api/v1/leaderboards/Fortnite/:eventId/:eventWindowId/:accountId", async (req, res) => {
+    var leaderboards = require("./../responses/Athena/Tournament/leaderboard.json");
+    var heroNames = require("./../responses/Campaign/heroNames.json");
+    heroNames = heroNames.sort(() => Math.random() - 0.5);
+    heroNames.unshift(req.params.accountId);
+
+    leaderboards.eventId = req.params.eventId;
+    leaderboards.eventWindowId = req.params.eventWindowId;
+
+    var entryTemplate = leaderboards.entryTemplate;
+    var sessionHistoryTemplate = leaderboards.sessionHistoryTemplate;
+
+    for (var i = 0; i < heroNames.length; i++) {
+        var entry = { ...entryTemplate };
+        entry.eventId = req.params.eventId;
+        entry.eventWindowId = req.params.eventWindowId;
+
+        entry.teamAccountIds = [heroNames[i]];
+        entry.teamId = heroNames[i];
+        
+        entry.pointsEarned = entry.score = 69 - i;
+        var splittedPoints = Math.floor(Math.random() * entry.pointsEarned);
+        entry.pointBreakdown = {
+            "PLACEMENT_STAT_INDEX:13": {
+                "timesAchieved": 13,
+                "pointsEarned": splittedPoints
+            },
+            "TEAM_ELIMS_STAT_INDEX:37": {
+                "timesAchieved": 13,
+                "pointsEarned": entry.pointsEarned - splittedPoints
+            }
+        };
+        entry.rank = i + 1;
+
+        leaderboards.entries.push(entry)
+    }
+    
+    res.json(leaderboards)
+})
+
 
 express.get("/fortnite/api/game/v2/twitch/*", async (req, res) => {
     res.status(200);
@@ -250,46 +304,13 @@ express.post("/fortnite/api/leaderboards/type/group/stat/:statName/window/:statW
 });
 
 express.post("/fortnite/api/leaderboards/type/global/stat/:statName/window/:statWindow", async (req, res) => {
-    var HeroNames = [
-        "Hawk",
-        "Banshee",
-        "Wildcat",
-        "Jonsey",
-        "Spitfire",
-        "Ramirez",
-        "Headhunter",
-        "Renegade",
-        "Harper",
-        "Knox",
-        "Hype",
-        "Bull",
-        "Hazard",
-        "Penny",
-        "Izza",
-        "Kyle",
-        "Luna",
-        "Crash",
-        "Edge",
-        "Scorpion",
-        "Scorch",
-        "Ken",
-        "Mari",
-        "Sarah",
-        "Grizzly",
-        "Eagle Eye",
-        "Southie",
-        "A.C.",
-        "Buzz",
-        "Quinn",
-        "Jess",
-        "Deadeye"
-    ]
+    var heroNames = require("./../responses/Campaign/heroNames.json");
 
     var entries = [];
     
-    for (var i = 0; i < HeroNames.length; i++) {
+    for (var i = 0; i < heroNames.length; i++) {
         entries.push({
-            "accountId": HeroNames[i],
+            "accountId": heroNames[i],
             "value": Math.floor(Math.random() * 68) + 1
         })
     }

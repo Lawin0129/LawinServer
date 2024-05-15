@@ -1,0 +1,451 @@
+{
+  "gameId": "Fortnite",
+  "eventId": "lawinstournamentidlol",
+  "eventWindowId": "lawinswindowidlol",
+  "page": 0,
+  "totalPages": 1,
+  "updatedTime": "2018-10-16T20:00:00Z",
+  "entryTemplate": {
+    "gameId": "Fortnite",
+    "eventId": "lawinstournamentidlol",
+    "eventWindowId": "lawinswindowidlol",
+    "teamAccountIds": [],
+    "pointsEarned": 1,
+    "score": 1.0,
+    "rank": 1,
+    "percentile": 0.1,
+    "tokens": [
+      "GroupIdentity_GeoIdentity_fortnite"
+    ],
+    "teamId": "",
+    "liveSessionId": null,
+    "pointBreakdown": {
+      "PLACEMENT_STAT_INDEX:13": {
+        "timesAchieved": 1,
+        "pointsEarned": 2
+      },
+      "TEAM_ELIMS_STAT_INDEX:37": {
+        "timesAchieved": 2,
+        "pointsEarned": 8
+      }
+    },
+    "sessionHistory": [
+      {
+        "sessionId": "lawinsessionid1lol",
+        "endTime": "2018-10-16T20:00:00Z",
+        "trackedStats": {
+          "PLACEMENT_STAT_INDEX": 24,
+          "GainedHealthTimes": 22,
+          "TIME_ALIVE_STAT": 20,
+          "MATCH_PLAYED_STAT": 18,
+          "PLACEMENT_TIEBREAKER_STAT": 16,
+          "DamageDealt": 14,
+          "DamageReceived": 12,
+          "VICTORY_ROYALE_STAT": 10,
+          "Headshots": 8,
+          "Travel_Distance_Ground": 6,
+          "TEAM_ELIMS_STAT_INDEX": 4,
+          "GainedShieldTimes": 2
+        }
+      },
+      {
+        "sessionId": "lawinsessionid2lol",
+        "endTime": "2018-10-16T20:00:00Z",
+        "trackedStats": {
+          "PLACEMENT_STAT_INDEX": 24,
+          "GainedHealthTimes": 22,
+          "TIME_ALIVE_STAT": 20,
+          "MATCH_PLAYED_STAT": 18,
+          "PLACEMENT_TIEBREAKER_STAT": 16,
+          "DamageDealt": 14,
+          "DamageReceived": 12,
+          "VICTORY_ROYALE_STAT": 10,
+          "Headshots": 8,
+          "Travel_Distance_Ground": 6,
+          "TEAM_ELIMS_STAT_INDEX": 4,
+          "GainedShieldTimes": 2
+        }
+      },
+      {
+        "sessionId": "lawinsessionid3lol",
+        "endTime": "2018-10-16T20:00:00Z",
+        "trackedStats": {
+          "PLACEMENT_STAT_INDEX": 24,
+          "GainedHealthTimes": 22,
+          "TIME_ALIVE_STAT": 20,
+          "MATCH_PLAYED_STAT": 18,
+          "PLACEMENT_TIEBREAKER_STAT": 16,
+          "DamageDealt": 14,
+          "DamageReceived": 12,
+          "VICTORY_ROYALE_STAT": 10,
+          "Headshots": 8,
+          "Travel_Distance_Ground": 6,
+          "TEAM_ELIMS_STAT_INDEX": 4,
+          "GainedShieldTimes": 2
+        }
+      },
+      {
+        "sessionId": "lawinsessionid4lol",
+        "endTime": "2018-10-16T20:00:00Z",
+        "trackedStats": {
+          "PLACEMENT_STAT_INDEX": 24,
+          "GainedHealthTimes": 22,
+          "TIME_ALIVE_STAT": 20,
+          "MATCH_PLAYED_STAT": 18,
+          "PLACEMENT_TIEBREAKER_STAT": 16,
+          "DamageDealt": 14,
+          "DamageReceived": 12,
+          "VICTORY_ROYALE_STAT": 10,
+          "Headshots": 8,
+          "Travel_Distance_Ground": 6,
+          "TEAM_ELIMS_STAT_INDEX": 4,
+          "GainedShieldTimes": 2
+        }
+      },
+      {
+        "sessionId": "lawinsessionid5lol",
+        "endTime": "2018-10-16T20:00:00Z",
+        "trackedStats": {
+          "PLACEMENT_STAT_INDEX": 24,
+          "GainedHealthTimes": 22,
+          "TIME_ALIVE_STAT": 20,
+          "MATCH_PLAYED_STAT": 18,
+          "PLACEMENT_TIEBREAKER_STAT": 16,
+          "DamageDealt": 14,
+          "DamageReceived": 12,
+          "VICTORY_ROYALE_STAT": 10,
+          "Headshots": 8,
+          "Travel_Distance_Ground": 6,
+          "TEAM_ELIMS_STAT_INDEX": 4,
+          "GainedShieldTimes": 2
+        }
+      },
+      {
+        "sessionId": "lawinsessionid6lol",
+        "endTime": "2018-10-16T20:00:00Z",
+        "trackedStats": {
+          "PLACEMENT_STAT_INDEX": 24,
+          "GainedHealthTimes": 22,
+          "TIME_ALIVE_STAT": 20,
+          "MATCH_PLAYED_STAT": 18,
+          "PLACEMENT_TIEBREAKER_STAT": 16,
+          "DamageDealt": 14,
+          "DamageReceived": 12,
+          "VICTORY_ROYALE_STAT": 10,
+          "Headshots": 8,
+          "Travel_Distance_Ground": 6,
+          "TEAM_ELIMS_STAT_INDEX": 4,
+          "GainedShieldTimes": 2
+        }
+      },
+      {
+        "sessionId": "lawinsessionid7lol",
+        "endTime": "2018-10-16T20:00:00Z",
+        "trackedStats": {
+          "PLACEMENT_STAT_INDEX": 24,
+          "GainedHealthTimes": 22,
+          "TIME_ALIVE_STAT": 20,
+          "MATCH_PLAYED_STAT": 18,
+          "PLACEMENT_TIEBREAKER_STAT": 16,
+          "DamageDealt": 14,
+          "DamageReceived": 12,
+          "VICTORY_ROYALE_STAT": 10,
+          "Headshots": 8,
+          "Travel_Distance_Ground": 6,
+          "TEAM_ELIMS_STAT_INDEX": 4,
+          "GainedShieldTimes": 2
+        }
+      },
+      {
+        "sessionId": "lawinsessionid8lol",
+        "endTime": "2018-10-16T20:00:00Z",
+        "trackedStats": {
+          "PLACEMENT_STAT_INDEX": 24,
+          "GainedHealthTimes": 22,
+          "TIME_ALIVE_STAT": 20,
+          "MATCH_PLAYED_STAT": 18,
+          "PLACEMENT_TIEBREAKER_STAT": 16,
+          "DamageDealt": 14,
+          "DamageReceived": 12,
+          "VICTORY_ROYALE_STAT": 10,
+          "Headshots": 8,
+          "Travel_Distance_Ground": 6,
+          "TEAM_ELIMS_STAT_INDEX": 4,
+          "GainedShieldTimes": 2
+        }
+      },
+      {
+        "sessionId": "lawinsessionid9lol",
+        "endTime": "2018-10-16T20:00:00Z",
+        "trackedStats": {
+          "PLACEMENT_STAT_INDEX": 24,
+          "GainedHealthTimes": 22,
+          "TIME_ALIVE_STAT": 20,
+          "MATCH_PLAYED_STAT": 18,
+          "PLACEMENT_TIEBREAKER_STAT": 16,
+          "DamageDealt": 14,
+          "DamageReceived": 12,
+          "VICTORY_ROYALE_STAT": 10,
+          "Headshots": 8,
+          "Travel_Distance_Ground": 6,
+          "TEAM_ELIMS_STAT_INDEX": 4,
+          "GainedShieldTimes": 2
+        }
+      },
+      {
+        "sessionId": "lawinsessionid10lol",
+        "endTime": "2018-10-16T20:00:00Z",
+        "trackedStats": {
+          "PLACEMENT_STAT_INDEX": 24,
+          "GainedHealthTimes": 22,
+          "TIME_ALIVE_STAT": 20,
+          "MATCH_PLAYED_STAT": 18,
+          "PLACEMENT_TIEBREAKER_STAT": 16,
+          "DamageDealt": 14,
+          "DamageReceived": 12,
+          "VICTORY_ROYALE_STAT": 10,
+          "Headshots": 8,
+          "Travel_Distance_Ground": 6,
+          "TEAM_ELIMS_STAT_INDEX": 4,
+          "GainedShieldTimes": 2
+        }
+      },
+      {
+        "sessionId": "lawinsessionid11lol",
+        "endTime": "2018-10-16T20:00:00Z",
+        "trackedStats": {
+          "PLACEMENT_STAT_INDEX": 24,
+          "GainedHealthTimes": 22,
+          "TIME_ALIVE_STAT": 20,
+          "MATCH_PLAYED_STAT": 18,
+          "PLACEMENT_TIEBREAKER_STAT": 16,
+          "DamageDealt": 14,
+          "DamageReceived": 12,
+          "VICTORY_ROYALE_STAT": 10,
+          "Headshots": 8,
+          "Travel_Distance_Ground": 6,
+          "TEAM_ELIMS_STAT_INDEX": 4,
+          "GainedShieldTimes": 2
+        }
+      },
+      {
+        "sessionId": "lawinsessionid12lol",
+        "endTime": "2018-10-16T20:00:00Z",
+        "trackedStats": {
+          "PLACEMENT_STAT_INDEX": 24,
+          "GainedHealthTimes": 22,
+          "TIME_ALIVE_STAT": 20,
+          "MATCH_PLAYED_STAT": 18,
+          "PLACEMENT_TIEBREAKER_STAT": 16,
+          "DamageDealt": 14,
+          "DamageReceived": 12,
+          "VICTORY_ROYALE_STAT": 10,
+          "Headshots": 8,
+          "Travel_Distance_Ground": 6,
+          "TEAM_ELIMS_STAT_INDEX": 4,
+          "GainedShieldTimes": 2
+        }
+      },
+      {
+        "sessionId": "lawinsessionid13lol",
+        "endTime": "2018-10-16T20:00:00Z",
+        "trackedStats": {
+          "PLACEMENT_STAT_INDEX": 24,
+          "GainedHealthTimes": 22,
+          "TIME_ALIVE_STAT": 20,
+          "MATCH_PLAYED_STAT": 18,
+          "PLACEMENT_TIEBREAKER_STAT": 16,
+          "DamageDealt": 14,
+          "DamageReceived": 12,
+          "VICTORY_ROYALE_STAT": 10,
+          "Headshots": 8,
+          "Travel_Distance_Ground": 6,
+          "TEAM_ELIMS_STAT_INDEX": 4,
+          "GainedShieldTimes": 2
+        }
+      },
+      {
+        "sessionId": "lawinsessionid14lol",
+        "endTime": "2018-10-16T20:00:00Z",
+        "trackedStats": {
+          "PLACEMENT_STAT_INDEX": 24,
+          "GainedHealthTimes": 22,
+          "TIME_ALIVE_STAT": 20,
+          "MATCH_PLAYED_STAT": 18,
+          "PLACEMENT_TIEBREAKER_STAT": 16,
+          "DamageDealt": 14,
+          "DamageReceived": 12,
+          "VICTORY_ROYALE_STAT": 10,
+          "Headshots": 8,
+          "Travel_Distance_Ground": 6,
+          "TEAM_ELIMS_STAT_INDEX": 4,
+          "GainedShieldTimes": 2
+        }
+      },
+      {
+        "sessionId": "lawinsessionid15lol",
+        "endTime": "2018-10-16T20:00:00Z",
+        "trackedStats": {
+          "PLACEMENT_STAT_INDEX": 24,
+          "GainedHealthTimes": 22,
+          "TIME_ALIVE_STAT": 20,
+          "MATCH_PLAYED_STAT": 18,
+          "PLACEMENT_TIEBREAKER_STAT": 16,
+          "DamageDealt": 14,
+          "DamageReceived": 12,
+          "VICTORY_ROYALE_STAT": 10,
+          "Headshots": 8,
+          "Travel_Distance_Ground": 6,
+          "TEAM_ELIMS_STAT_INDEX": 4,
+          "GainedShieldTimes": 2
+        }
+      },
+      {
+        "sessionId": "lawinsessionid16lol",
+        "endTime": "2018-10-16T20:00:00Z",
+        "trackedStats": {
+          "PLACEMENT_STAT_INDEX": 24,
+          "GainedHealthTimes": 22,
+          "TIME_ALIVE_STAT": 20,
+          "MATCH_PLAYED_STAT": 18,
+          "PLACEMENT_TIEBREAKER_STAT": 16,
+          "DamageDealt": 14,
+          "DamageReceived": 12,
+          "VICTORY_ROYALE_STAT": 10,
+          "Headshots": 8,
+          "Travel_Distance_Ground": 6,
+          "TEAM_ELIMS_STAT_INDEX": 4,
+          "GainedShieldTimes": 2
+        }
+      },
+      {
+        "sessionId": "lawinsessionid17lol",
+        "endTime": "2018-10-16T20:00:00Z",
+        "trackedStats": {
+          "PLACEMENT_STAT_INDEX": 24,
+          "GainedHealthTimes": 22,
+          "TIME_ALIVE_STAT": 20,
+          "MATCH_PLAYED_STAT": 18,
+          "PLACEMENT_TIEBREAKER_STAT": 16,
+          "DamageDealt": 14,
+          "DamageReceived": 12,
+          "VICTORY_ROYALE_STAT": 10,
+          "Headshots": 8,
+          "Travel_Distance_Ground": 6,
+          "TEAM_ELIMS_STAT_INDEX": 4,
+          "GainedShieldTimes": 2
+        }
+      },
+      {
+        "sessionId": "lawinsessionid18lol",
+        "endTime": "2018-10-16T20:00:00Z",
+        "trackedStats": {
+          "PLACEMENT_STAT_INDEX": 24,
+          "GainedHealthTimes": 22,
+          "TIME_ALIVE_STAT": 20,
+          "MATCH_PLAYED_STAT": 18,
+          "PLACEMENT_TIEBREAKER_STAT": 16,
+          "DamageDealt": 14,
+          "DamageReceived": 12,
+          "VICTORY_ROYALE_STAT": 10,
+          "Headshots": 8,
+          "Travel_Distance_Ground": 6,
+          "TEAM_ELIMS_STAT_INDEX": 4,
+          "GainedShieldTimes": 2
+        }
+      },
+      {
+        "sessionId": "lawinsessionid19lol",
+        "endTime": "2018-10-16T20:00:00Z",
+        "trackedStats": {
+          "PLACEMENT_STAT_INDEX": 24,
+          "GainedHealthTimes": 22,
+          "TIME_ALIVE_STAT": 20,
+          "MATCH_PLAYED_STAT": 18,
+          "PLACEMENT_TIEBREAKER_STAT": 16,
+          "DamageDealt": 14,
+          "DamageReceived": 12,
+          "VICTORY_ROYALE_STAT": 10,
+          "Headshots": 8,
+          "Travel_Distance_Ground": 6,
+          "TEAM_ELIMS_STAT_INDEX": 4,
+          "GainedShieldTimes": 2
+        }
+      },
+      {
+        "sessionId": "lawinsessionid20lol",
+        "endTime": "2018-10-16T20:00:00Z",
+        "trackedStats": {
+          "PLACEMENT_STAT_INDEX": 24,
+          "GainedHealthTimes": 22,
+          "TIME_ALIVE_STAT": 20,
+          "MATCH_PLAYED_STAT": 18,
+          "PLACEMENT_TIEBREAKER_STAT": 16,
+          "DamageDealt": 14,
+          "DamageReceived": 12,
+          "VICTORY_ROYALE_STAT": 10,
+          "Headshots": 8,
+          "Travel_Distance_Ground": 6,
+          "TEAM_ELIMS_STAT_INDEX": 4,
+          "GainedShieldTimes": 2
+        }
+      },
+      {
+        "sessionId": "lawinsessionid21lol",
+        "endTime": "2018-10-16T20:00:00Z",
+        "trackedStats": {
+          "PLACEMENT_STAT_INDEX": 24,
+          "GainedHealthTimes": 22,
+          "TIME_ALIVE_STAT": 20,
+          "MATCH_PLAYED_STAT": 18,
+          "PLACEMENT_TIEBREAKER_STAT": 16,
+          "DamageDealt": 14,
+          "DamageReceived": 12,
+          "VICTORY_ROYALE_STAT": 10,
+          "Headshots": 8,
+          "Travel_Distance_Ground": 6,
+          "TEAM_ELIMS_STAT_INDEX": 4,
+          "GainedShieldTimes": 2
+        }
+      },
+      {
+        "sessionId": "lawinsessionid22lol",
+        "endTime": "2018-10-16T20:00:00Z",
+        "trackedStats": {
+          "PLACEMENT_STAT_INDEX": 24,
+          "GainedHealthTimes": 22,
+          "TIME_ALIVE_STAT": 20,
+          "MATCH_PLAYED_STAT": 18,
+          "PLACEMENT_TIEBREAKER_STAT": 16,
+          "DamageDealt": 14,
+          "DamageReceived": 12,
+          "VICTORY_ROYALE_STAT": 10,
+          "Headshots": 8,
+          "Travel_Distance_Ground": 6,
+          "TEAM_ELIMS_STAT_INDEX": 4,
+          "GainedShieldTimes": 2
+        }
+      },
+      {
+        "sessionId": "lawinsessionid23lol",
+        "endTime": "2018-10-16T20:00:00Z",
+        "trackedStats": {
+          "PLACEMENT_STAT_INDEX": 24,
+          "GainedHealthTimes": 22,
+          "TIME_ALIVE_STAT": 20,
+          "MATCH_PLAYED_STAT": 18,
+          "PLACEMENT_TIEBREAKER_STAT": 16,
+          "DamageDealt": 14,
+          "DamageReceived": 12,
+          "VICTORY_ROYALE_STAT": 10,
+          "Headshots": 8,
+          "Travel_Distance_Ground": 6,
+          "TEAM_ELIMS_STAT_INDEX": 4,
+          "GainedShieldTimes": 2
+        }
+      }
+    ]
+  },
+  "entries": [],
+  "liveSessions": {}
+}
