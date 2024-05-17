@@ -1347,6 +1347,14 @@
     "lastModified": "2018-08-28T15:50:37.174Z",
     "_locale": "en-US"
   },
+  "sparkTracks": {
+    "_title": "spark-tracks",
+    "_noIndex": false,
+    "_activeDate": "2023-10-06T04:15:09.015Z",
+    "lastModified": "2023-10-06T04:15:55.135Z",
+    "_locale": "en-US",
+    "_templateName": "blank"
+  },
   "tournamentinformation": {
     "tournament_info": {
       "tournaments": [
@@ -1468,6 +1476,300 @@
     "_activeDate": "2019-03-27T14:47:20.426Z",
     "lastModified": "2019-06-20T22:06:24.590Z",
     "_locale": "en-US"
+  },
+  "radioStations": {
+    "_title": "Radio Stations",
+    "radioStationList": {
+      "_type": "RadioStationList",
+      "stations": [
+        {
+          "resourceID": "eaIPyhOJafbnZUIYnZ",
+          "gameplayTagDenylist": [
+            "*UGC*",
+            "*Creative*"
+          ],
+          "stationImage": "https://cdn2.unrealengine.com/s15-radio-rl-rockroyale-256x256-256x256-c2b19d746f09.png",
+          "_type": "RadioStationItem",
+          "title": "Rock & Royale"
+        },
+        {
+          "resourceID": "AxraiOXbAdcOPnthxV",
+          "gameplayTagDenylist": [
+            "*UGC*",
+            "*Creative*"
+          ],
+          "stationImage": "https://cdn2.unrealengine.com/s13-radio-underground-radio-256x256-256x256-12ec3d7367c5.png",
+          "_type": "RadioStationItem",
+          "title": "Radio Underground"
+        },
+        {
+          "resourceID": "QWGQAynCdixzoLIdJl",
+          "stationImage": "https://cdn2.unrealengine.com/s13-radio-party-royale-256x256-256x256-41b6d427e012.png",
+          "_type": "RadioStationItem",
+          "title": "Party Royale"
+        },
+        {
+          "resourceID": "liZWCXyJDbxNMHWlyk",
+          "gameplayTagDenylist": [
+            "*UGC*",
+            "*Creative*"
+          ],
+          "stationImage": "https://cdn2.unrealengine.com/s13-radio-radio-yonder-256x256-256x256-f9a05292b87c.png",
+          "_type": "RadioStationItem",
+          "title": "Radio Yonder"
+        },
+        {
+          "resourceID": "SesARghrQNsflAozoD",
+          "gameplayTagDenylist": [
+            "*UGC*",
+            "*Creative*"
+          ],
+          "stationImage": "https://cdn2.unrealengine.com/s13-radio-beat-box-256x256-256x256-19277d48c502.png",
+          "_type": "RadioStationItem",
+          "title": "Beat Box"
+        },
+        {
+          "resourceID": "dWkLynOluUUuCAPJHA",
+          "gameplayTagDenylist": [
+            "*UGC*",
+            "*Creative*"
+          ],
+          "stationImage": "https://cdn2.unrealengine.com/s13-radio-power-play-256x256-256x256-2f3bacc8ecbf.png",
+          "_type": "RadioStationItem",
+          "title": "Power Play"
+        }
+      ]
+    }
+  },
+  "scoringrulesinformation": {
+    "scoring_rules_info": {
+      "_type": "Scoring Rules Info",
+      "scoring_rules": [
+        {
+          "poster_description": "Loot Island Captured",
+          "rule_name": "MMO_LootIsland",
+          "_type": "Scoring Rules Display Info",
+          "icon": "/Game/UI/Foundation/Textures/Icons/Quest/T-Icon-Trophy-32.T-Icon-Trophy-32",
+          "description": "Loot Island Captured",
+          "hide_score_toast_notifications": false,
+          "poster_interval_description": "Loot Island Captured"
+        },
+        {
+          "poster_description": "{0}|plural(one=Each Forcast Tower Captured,other=Every {0} Forcast Tower Captures)",
+          "rule_name": "EACH_MMO_RadioTower",
+          "_type": "Scoring Rules Display Info",
+          "icon": "/Game/UI/Foundation/Textures/Icons/Quest/T-Icon-Trophy-32.T-Icon-Trophy-32",
+          "description": "{0}|plural(one=Each Forcast Tower Captured,other=Every {0} Forcast Tower Captures)",
+          "hide_score_toast_notifications": false,
+          "poster_interval_description": "{0} - {1} Forcast Towers Captured"
+        },
+        {
+          "poster_description": "{0}|plural(one=Each Vault Captured,other=Every {0} Vault Captures)",
+          "rule_name": "EACH_MMO_Vault",
+          "_type": "Scoring Rules Display Info",
+          "icon": "/Game/UI/Foundation/Textures/Icons/Quest/T-Icon-Trophy-32.T-Icon-Trophy-32",
+          "description": "{0}|plural(one=Each Vault Captured,other=Every {0} Vault Captures)",
+          "hide_score_toast_notifications": false,
+          "poster_interval_description": "{0} - {1} Vault Captured"
+        },
+        {
+          "poster_description": "{0}|plural(one=Each Cache Captured, other=Every {0} Cache Captures)",
+          "rule_name": "EACH_MMO_Cache",
+          "_type": "Scoring Rules Display Info",
+          "icon": "/Game/UI/Foundation/Textures/Icons/Quest/T-Icon-Trophy-32.T-Icon-Trophy-32",
+          "description": "{0}|plural(one=Each Cache Captured, other=Every {0} Cache Captures)",
+          "hide_score_toast_notifications": false,
+          "poster_interval_description": "{0} - {1} Cache Captured"
+        },
+        {
+          "poster_description": "Victory Royale",
+          "rule_name": "VICTORY_ROYALE_STAT",
+          "_type": "Scoring Rules Display Info",
+          "icon": "/Game/UI/Foundation/Textures/Icons/Quest/T-Icon-Trophy-32.T-Icon-Trophy-32",
+          "description": "Victory Royale",
+          "hide_score_toast_notifications": false,
+          "poster_interval_description": "Victory Royale"
+        },
+        {
+          "poster_description": "{0} {0}|plural(one=Elimination,other=Eliminations)",
+          "rule_name": "Eliminations",
+          "_type": "Scoring Rules Display Info",
+          "icon": "/Game/Athena/HUD/Art/killsico_alt.KillsIco_Alt",
+          "description": "{0} {0}|plural(one=Elimination,other=Eliminations)",
+          "hide_score_toast_notifications": false,
+          "poster_interval_description": "{0} - {1}  Eliminations"
+        },
+        {
+          "poster_description": "{0} {0}|plural(one=Elimination,other=Eliminations)",
+          "rule_name": "TEAM_ELIMS_STAT_INDEX",
+          "_type": "Scoring Rules Display Info",
+          "icon": "/Game/Athena/HUD/Art/killsico_alt.KillsIco_Alt",
+          "description": "{0} {0}|plural(one=Elimination,other=Eliminations)",
+          "hide_score_toast_notifications": false,
+          "poster_interval_description": "{0} - {1}  Eliminations"
+        },
+        {
+          "poster_description": "{0}{0}|ordinal(one=st,two=nd,few=rd,other=th) Place",
+          "rule_name": "Placement",
+          "_type": "Scoring Rules Display Info",
+          "icon": "/Game/UI/Foundation/Textures/Icons/Quest/T-Icon-Trophy-32.T-Icon-Trophy-32",
+          "description": "Reach Top {0}",
+          "hide_score_toast_notifications": false,
+          "poster_interval_description": "{0}{0}|ordinal(one=st,two=nd,few=rd,other=th) - {1}{1}|ordinal(one=st,two=nd,few=rd,other=th) Place"
+        },
+        {
+          "poster_description": "{0}|plural(one=Each Elimination,other=Every {0} Eliminations)",
+          "rule_name": "EachElimination",
+          "_type": "Scoring Rules Display Info",
+          "icon": "/Game/Athena/HUD/Art/killsico_alt.KillsIco_Alt",
+          "description": "{0}|plural(one=Each Elimination,other=Every {0} Eliminations)",
+          "hide_score_toast_notifications": false,
+          "poster_interval_description": ""
+        },
+        {
+          "poster_description": "{0}|plural(one=Each Elimination,other=Every {0} Eliminations)",
+          "rule_name": "EACH_CREATIVE_ELIMINATIONS_STAT",
+          "_type": "Scoring Rules Display Info",
+          "icon": "/Game/Athena/HUD/Art/killsico_alt.KillsIco_Alt",
+          "description": "{0}|plural(one=Each Elimination,other=Every {0} Eliminations)",
+          "hide_score_toast_notifications": false,
+          "poster_interval_description": "{0} - {1}  Eliminations"
+        },
+        {
+          "poster_description": "Bus Fare",
+          "rule_name": "MatchEntryFee",
+          "_type": "Scoring Rules Display Info",
+          "icon": "/Game/UI/Events/Icons/T-Icon-Bus-Fare-Flat.T-Icon-Bus-Fare-Flat",
+          "description": "Bus Fare",
+          "hide_score_toast_notifications": false
+        },
+        {
+          "poster_description": "{0} {0}|plural(one=Bow Elimination,other=Bow Eliminations)",
+          "rule_name": "BowKills",
+          "_type": "Scoring Rules Display Info",
+          "icon": "/Game/Athena/HUD/Art/killsico_alt.KillsIco_Alt",
+          "description": "{0} {0}|plural(one=Bow Elimination,other=Bow Eliminations)",
+          "hide_score_toast_notifications": false,
+          "poster_interval_description": "{0} -  {1} Bow Eliminations"
+        },
+        {
+          "poster_description": "Each score of {0}",
+          "rule_name": "EACH_CREATIVE_SCORE_STAT",
+          "_type": "Scoring Rules Display Info",
+          "icon": "/Game/UI/Foundation/Textures/Icons/Quest/T-Icon-Trophy-32.T-Icon-Trophy-32",
+          "description": "Each score of {0}",
+          "hide_score_toast_notifications": true,
+          "poster_interval_description": ""
+        },
+        {
+          "poster_description": "Score of {0}",
+          "rule_name": "Scores",
+          "_type": "Scoring Rules Display Info",
+          "icon": "/Game/UI/Foundation/Textures/Icons/Quest/T-Icon-Trophy-32.T-Icon-Trophy-32",
+          "description": "Score of {0}",
+          "hide_score_toast_notifications": false,
+          "poster_interval_description": "Score of {0} - {1}"
+        },
+        {
+          "poster_description": "{0} {0}|plural(one=Time Eliminated,other=Times Eliminated)",
+          "rule_name": "EACH_CREATIVE_ELIMINATED_STAT",
+          "_type": "Scoring Rules Display Info",
+          "icon": "/Game/Athena/HUD/Art/killsico_alt.KillsIco_Alt",
+          "description": "{0} {0}|plural(one=Time Eliminated,other=Times Eliminated)",
+          "hide_score_toast_notifications": false,
+          "poster_interval_description": "{0} - {1}  Times Eliminated"
+        },
+        {
+          "poster_description": "{0}|plural(one=Each Damage Dealt,other=Every {0} Damage Dealt)",
+          "rule_name": "CREATIVE_DAMAGE_DEALT_STAT",
+          "_type": "Scoring Rules Display Info",
+          "icon": "/Game/Athena/HUD/Art/icon_health.icon_health",
+          "description": "{0}|plural(one=Each Damage Dealt,other=Every {0} Damage Dealt)",
+          "hide_score_toast_notifications": true
+        },
+        {
+          "poster_description": "{0}|plural(one=Each Damage Taken,other=Every {0} Damage Taken)",
+          "rule_name": "CREATIVE_DAMAGE_TAKEN_STAT",
+          "_type": "Scoring Rules Display Info",
+          "icon": "/Game/Athena/HUD/Art/icon_health.icon_health",
+          "description": "{0}|plural(one=Each Damage Taken,other=Every {0} Damage Taken)",
+          "hide_score_toast_notifications": false
+        },
+        {
+          "poster_description": "{0}|plural(one=Each Item Collected,other=Every {0} Items Collected)",
+          "rule_name": "EACH_CREATIVE_COLLECT_ITEMS_STAT",
+          "_type": "Scoring Rules Display Info",
+          "icon": "/Game/UI/Foundation/Textures/Icons/Quest/T-Icon-Trophy-32.T-Icon-Trophy-32",
+          "description": "{0}|plural(one=Each Item Collected,other=Every {0} Items Collected)",
+          "hide_score_toast_notifications": false,
+          "poster_interval_description": "{0} - {1}  Items Collected"
+        },
+        {
+          "poster_description": "Every {0} Remaining Spawn",
+          "rule_name": "CREATIVE_SPAWNS_LEFT_STAT",
+          "_type": "Scoring Rules Display Info",
+          "icon": "/Game/UI/Foundation/Textures/Icons/Quest/T-Icon-Trophy-32.T-Icon-Trophy-32",
+          "description": "Every {0} Remaining Spawn",
+          "hide_score_toast_notifications": false
+        },
+        {
+          "poster_description": "Every {0} Health Remaining",
+          "rule_name": "CREATIVE_REMAINING_HEALTH_STAT",
+          "_type": "Scoring Rules Display Info",
+          "icon": "/Game/Athena/HUD/Art/icon_health.icon_health",
+          "description": "Every {0} Health Remaining",
+          "hide_score_toast_notifications": false
+        },
+        {
+          "poster_description": "{0}|plural(one=Each Objective Completed,other=Every {0} Objectives Completed)",
+          "rule_name": "EACH_CREATIVE_OBJECTIVES_STAT",
+          "_type": "Scoring Rules Display Info",
+          "icon": "/Game/UI/Foundation/Textures/Icons/Quest/T-Icon-Trophy-32.T-Icon-Trophy-32",
+          "description": "{0}|plural(one=Each Each Objective Completed,other=Every {0} Objectives Completed)",
+          "hide_score_toast_notifications": false
+        },
+        {
+          "poster_description": "{0}|plural(one=AI Elimination,other=Every {0} AI Eliminations)",
+          "rule_name": "EACH_CREATIVE_AI_ELIMINATIONS_STAT",
+          "_type": "Scoring Rules Display Info",
+          "icon": "/Game/Athena/HUD/Art/killsico_alt.KillsIco_Alt",
+          "description": "{0}|plural(one=AI Elimination,other=Every {0} AI Eliminations)",
+          "hide_score_toast_notifications": false,
+          "poster_interval_description": "{0} - {1}  AI Eliminated"
+        },
+        {
+          "poster_description": "{0}|plural(one=Each Assist,other=Assists)",
+          "rule_name": "EACH_CREATIVE_ASSISTS_STAT",
+          "_type": "Scoring Rules Display Info",
+          "icon": "/Game/Athena/HUD/Art/killsico_alt.KillsIco_Alt",
+          "description": "{0}|plural(one=Each Assist,other=Assists)",
+          "hide_score_toast_notifications": false,
+          "poster_interval_description": "{0} - {1}  Assists"
+        },
+        {
+          "poster_description": "{0}|plural(one=Each millisecond Alive ,other=Every {0} Milliseconds Alive)",
+          "rule_name": "EACH_CREATIVE_TIME_ALIVE_STAT",
+          "_type": "Scoring Rules Display Info",
+          "icon": "/Game/Athena/HUD/Art/icon_health.icon_health",
+          "description": "{0}|plural(one=Each millisecond Alive ,other=Every {0} Milliseconds Alive)",
+          "hide_score_toast_notifications": true
+        },
+        {
+          "poster_description": "For every lap under {0} milliseconds ",
+          "rule_name": "CREATIVE_RACE_TIME_STAT",
+          "_type": "Scoring Rules Display Info",
+          "icon": "ns/Quest/T-Icon-Trophy-32.T-Icon-Trophy-32",
+          "description": "For every lap under {0} milliseconds ",
+          "hide_score_toast_notifications": false
+        }
+      ]
+    },
+    "_title": "scoringrulesinformation",
+    "_noIndex": false,
+    "_activeDate": "2021-10-12T19:24:18.962Z",
+    "lastModified": "2023-11-16T19:22:34.542Z",
+    "_locale": "en-US",
+    "_templateName": "FortniteGameScoringRulesInfo"
   },
   "specialoffervideo": {
     "_activeDate": "2021-08-14T23:58:00.000Z",
