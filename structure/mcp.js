@@ -7969,6 +7969,59 @@ express.post("/fortnite/api/game/v2/profile/*/client/PutModularCosmeticLoadout",
     res.end();
 });
 
+// Set Active Archetype (e.g. main vehicle in v30.00+)
+express.post("/fortnite/api/game/v2/profile/*/client/SetActiveArchetype", async (req, res) => {
+    const profile = require(`./../profiles/${req.query.profileId || "athena"}.json`);
+
+    // do not change any of these or you will end up breaking it
+    var ApplyProfileChanges = [];
+    var BaseRevision = profile.rvn || 0;
+    var QueryRevision = req.query.rvn || -1;
+    var StatChanged = false;
+
+    if (req.body.archetypeGroup && req.body.archetype) {
+        if (!profile.stats.attributes.hasOwnProperty("loadout_archetype_values")) {
+            profile.stats.attributes.loadout_archetype_values = {}
+        }
+
+        profile.stats.attributes.loadout_archetype_values[req.body.archetypeGroup] = req.body.archetype;
+
+        StatChanged = true;
+    }
+
+    if (StatChanged == true) {
+        profile.rvn += 1;
+        profile.commandRevision += 1;
+
+        ApplyProfileChanges.push({
+            "changeType": "statModified",
+            "name": "loadout_archetype_values",
+            "value": profile.stats.attributes.loadout_archetype_values
+        })
+
+        fs.writeFileSync(`./profiles/${req.query.profileId || "athena"}.json`, JSON.stringify(profile, null, 2));
+    }
+
+    // this doesn't work properly on version v12.20 and above but whatever
+    if (QueryRevision != BaseRevision) {
+        ApplyProfileChanges = [{
+            "changeType": "fullProfileUpdate",
+            "profile": profile
+        }];
+    }
+
+    res.json({
+        "profileRevision": profile.rvn || 0,
+        "profileId": req.query.profileId || "athena",
+        "profileChangesBaseRevision": BaseRevision,
+        "profileChanges": ApplyProfileChanges,
+        "profileCommandRevision": profile.commandRevision || 0,
+        "serverTime": new Date().toISOString(),
+        "responseVersion": 1
+    })
+    res.end();
+});
+
 // Set hero variants STW
 express.post("/fortnite/api/game/v2/profile/*/client/SetHeroCosmeticVariants", async (req, res) => {
     const profile = require(`./../profiles/${req.query.profileId || "campaign"}.json`);
