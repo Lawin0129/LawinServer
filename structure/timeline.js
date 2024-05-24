@@ -1478,6 +1478,35 @@ express.get("/fortnite/api/calendar/v1/timeline", async (req, res) => {
                 "activeSince": "2020-01-01T00:00:00.000Z"
             })
             break;
+
+        case 29:
+            activeEvents.push(
+            {
+                "eventType": "Event_S29_ColdDayPrelude",
+                "activeUntil": "9999-01-01T00:00:00.000Z",
+                "activeSince": "2020-01-01T00:00:00.000Z"
+            },
+            {
+                "eventType": "EventFlag.Event_S29_LevelUpPass",
+                "activeUntil": "9999-01-01T00:00:00.000Z",
+                "activeSince": "2020-01-01T00:00:00.000Z"
+            },
+            {
+                "eventType": "EventFlag.Event_S29_RebootRally",
+                "activeUntil": "9999-01-01T00:00:00.000Z",
+                "activeSince": "2020-01-01T00:00:00.000Z"
+            },
+            {
+                "eventType": "EventFlag.Event_S29_SeasonalActivation",
+                "activeUntil": "9999-01-01T00:00:00.000Z",
+                "activeSince": "2020-01-01T00:00:00.000Z"
+            },
+            {
+                "eventType": "EventFlag.Event_S29_WhiplashWW",
+                "activeUntil": "9999-01-01T00:00:00.000Z",
+                "activeSince": "2020-01-01T00:00:00.000Z"
+            })
+            break;
     }
 
     if (24.3 <= memory.build && memory.build <= 25) {
