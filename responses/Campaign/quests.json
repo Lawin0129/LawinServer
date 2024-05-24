@@ -1,0 +1,3158 @@
+{
+  "author": "This list was created by PRO100KatYT",
+  "Daily": [
+    {
+      "templateId": "Quest:Daily_DestroyArcadeMachines",
+      "objectives": [
+        "quest_reactive_destroyarcade_v4"
+      ]
+    },
+    {
+      "templateId": "Quest:Daily_DestroyBears",
+      "objectives": [
+        "quest_reactive_destroybear_v3"
+      ]
+    },
+    {
+      "templateId": "Quest:Daily_DestroyFireTrucks",
+      "objectives": [
+        "quest_reactive_destroyfiretruck_v2"
+      ]
+    },
+    {
+      "templateId": "Quest:Daily_DestroyGnomes",
+      "objectives": [
+        "quest_reactive_destroygnome_v2"
+      ]
+    },
+    {
+      "templateId": "Quest:Daily_DestroyPropaneTanks",
+      "objectives": [
+        "quest_reactive_destroypropane_v2"
+      ]
+    },
+    {
+      "templateId": "Quest:Daily_DestroySeesaws",
+      "objectives": [
+        "quest_reactive_destroyseesaw_v3"
+      ]
+    },
+    {
+      "templateId": "Quest:Daily_DestroyServerRacks",
+      "objectives": [
+        "quest_reactive_destroyserverrack_v2"
+      ]
+    },
+    {
+      "templateId": "Quest:Daily_DestroyTransformers",
+      "objectives": [
+        "quest_reactive_destroytransform_v3"
+      ]
+    },
+    {
+      "templateId": "Quest:Daily_DestroyTVs",
+      "objectives": [
+        "quest_reactive_destroytv_v2"
+      ]
+    },
+    {
+      "templateId": "Quest:Daily_High_Priority",
+      "objectives": [
+        "questcollect_survivoritemdata"
+      ]
+    },
+    {
+      "templateId": "Quest:Daily_HuskExtermination_AnyHero",
+      "objectives": [
+        "kill_husk"
+      ]
+    },
+    {
+      "templateId": "Quest:Daily_HuskExtermination_Constructor",
+      "objectives": [
+        "kill_husk_constructor_v2"
+      ]
+    },
+    {
+      "templateId": "Quest:Daily_HuskExtermination_Ninja",
+      "objectives": [
+        "kill_husk_ninja_v2"
+      ]
+    },
+    {
+      "templateId": "Quest:Daily_HuskExtermination_Outlander",
+      "objectives": [
+        "kill_husk_outlander_v2"
+      ]
+    },
+    {
+      "templateId": "Quest:Daily_HuskExtermination_Soldier",
+      "objectives": [
+        "kill_husk_commando_v2"
+      ]
+    },
+    {
+      "templateId": "Quest:Daily_Mission_Specialist_Constructor",
+      "objectives": [
+        "complete_constructor"
+      ]
+    },
+    {
+      "templateId": "Quest:Daily_Mission_Specialist_Ninja",
+      "objectives": [
+        "complete_ninja"
+      ]
+    },
+    {
+      "templateId": "Quest:Daily_Mission_Specialist_Outlander",
+      "objectives": [
+        "complete_outlander"
+      ]
+    },
+    {
+      "templateId": "Quest:Daily_Mission_Specialist_Soldier",
+      "objectives": [
+        "complete_commando"
+      ]
+    },
+    {
+      "templateId": "Quest:Daily_PartyOf50",
+      "objectives": [
+        "questcollect_survivoritemdata_v2"
+      ]
+    }
+  ],
+  "Season02": {
+    "Quests": {
+      "QS02-Quest:LoveQuest_2018_Reactive_Chocolates": {
+        "templateId": "Quest:LoveQuest_2018_Reactive_Chocolates",
+        "objectives": {
+          "lovequest_2018_reactive_chocolates": 10
+        }
+      },
+      "QS02-Quest:LoveQuest_2018_Reactive_Flowers": {
+        "templateId": "Quest:LoveQuest_2018_Reactive_Flowers",
+        "objectives": {
+          "lovequest_2018_reactive_flowers": 7
+        }
+      },
+      "QS02-Quest:LoveQuest_2018_Reactive_Mailboxes": {
+        "templateId": "Quest:LoveQuest_2018_Reactive_Mailboxes",
+        "objectives": {
+          "lovequest_2018_reactive_mailboxes": 5
+        }
+      },
+      "QS02-Quest:LoveQuest_2018_Reactive_RescueDennis": {
+        "templateId": "Quest:LoveQuest_2018_Reactive_RescueDennis",
+        "objectives": {
+          "lovequest_2018_reactive_rescuedennis": 1
+        }
+      },
+      "QS02-Quest:LoveQuest_2018_Reactive_RescueSummer": {
+        "templateId": "Quest:LoveQuest_2018_Reactive_RescueSummer",
+        "objectives": {
+          "lovequest_2018_reactive_rescuesummer": 1
+        }
+      },
+      "QS02-Quest:LoveQuest_2018_Reactive_Song": {
+        "templateId": "Quest:LoveQuest_2018_Reactive_Song",
+        "objectives": {
+          "LoveQuest_2018_Reactive_Song": 5
+        }
+      },
+      "QS02-Quest:LoveQuest_2018_Reactive_TeddyBears": {
+        "templateId": "Quest:LoveQuest_2018_Reactive_TeddyBears",
+        "objectives": {
+          "lovequest_2018_reactive_teddybears": 9
+        }
+      },
+      "QS02-Quest:SpringQuest_2018_Complete_BumpedDifficulty": {
+        "templateId": "Quest:SpringQuest_2018_Complete_BumpedDifficulty",
+        "objectives": {
+          "springquest_2018_complete_bumpeddifficulty": 2
+        }
+      },
+      "QS02-Quest:SpringQuest_2018_Complete_FireworkClusters": {
+        "templateId": "Quest:SpringQuest_2018_Complete_FireworkClusters",
+        "objectives": {
+          "springquest_2018_complete_fireworkclusters": 2
+        }
+      },
+      "QS02-Quest:SpringQuest_2018_KillHusksMelee": {
+        "templateId": "Quest:SpringQuest_2018_KillHusksMelee",
+        "objectives": {
+          "springquest_2018_killhusksmelee": 50
+        }
+      },
+      "QS02-Quest:SpringQuest_2018_Reactive_Clothing": {
+        "templateId": "Quest:SpringQuest_2018_Reactive_Clothing",
+        "objectives": {
+          "springquest_2018_reactive_clothing": 8
+        }
+      },
+      "QS02-Quest:SpringQuest_2018_Reactive_EggHunt": {
+        "templateId": "Quest:SpringQuest_2018_Reactive_EggHunt",
+        "objectives": {
+          "springquest_2018_reactive_egghunt": 9
+        }
+      },
+      "QS02-Quest:SpringQuest_2018_Reactive_Fireworks": {
+        "templateId": "Quest:SpringQuest_2018_Reactive_Fireworks",
+        "objectives": {
+          "springquest_2018_reactive_fireworks": 1
+        }
+      },
+      "QS02-Quest:SpringQuest_2018_Reactive_Fireworks_Repeatable": {
+        "templateId": "Quest:SpringQuest_2018_Reactive_Fireworks_Repeatable",
+        "objectives": {
+          "springquest_2018_reactive_fireworks_repeatable": 40
+        }
+      },
+      "QS02-Quest:SpringQuest_2018_Reactive_GymStuff": {
+        "templateId": "Quest:SpringQuest_2018_Reactive_GymStuff",
+        "objectives": {
+          "springquest_2018_reactive_gymstuff": 5
+        }
+      },
+      "QS02-Quest:SpringQuest_2018_Reactive_HuntMiniboss_Finale": {
+        "templateId": "Quest:SpringQuest_2018_Reactive_HuntMiniboss_Finale",
+        "objectives": {
+          "springquest_2018_reactive_huntminiboss_finale": 1
+        }
+      },
+      "QS02-Quest:SpringQuest_2018_Reactive_KillCollect_Clovers": {
+        "templateId": "Quest:SpringQuest_2018_Reactive_KillCollect_Clovers",
+        "objectives": {
+          "SpringQuest_2018_Reactive_KillCollect_Clovers": 50
+        }
+      },
+      "QS02-Quest:SpringQuest_2018_Reactive_Lanterns": {
+        "templateId": "Quest:SpringQuest_2018_Reactive_Lanterns",
+        "objectives": {
+          "SpringQuest_2018_Reactive_Lanterns": 8
+        }
+      },
+      "QS02-Quest:SpringQuest_2018_Reactive_LocationDiscovery_Pub": {
+        "templateId": "Quest:SpringQuest_2018_Reactive_LocationDiscovery_Pub",
+        "objectives": {
+          "springquest_2018_reactive_locationdiscovery_pub": 1
+        }
+      },
+      "QS02-Quest:SpringQuest_2018_Reactive_Quotes": {
+        "templateId": "Quest:SpringQuest_2018_Reactive_Quotes",
+        "objectives": {
+          "springquest_2018_reactive_quotes": 5
+        }
+      },
+      "QS02-Quest:SpringQuest_2018_Reactive_RescueVal": {
+        "templateId": "Quest:SpringQuest_2018_Reactive_RescueVal",
+        "objectives": {
+          "springquest_2018_reactive_rescueval": 1
+        }
+      },
+      "QS02-Quest:SpringQuest_2018_Reactive_Tents": {
+        "templateId": "Quest:SpringQuest_2018_Reactive_Tents",
+        "objectives": {
+          "springquest_2018_reactive_tents": 5
+        }
+      },
+      "QS02-Quest:SpringQuest_2018_Reactive_VHS": {
+        "templateId": "Quest:SpringQuest_2018_Reactive_VHS",
+        "objectives": {
+          "springquest_2018_reactive_vhs": 10
+        }
+      },
+      "QS02-Quest:SpringQuest_2018_StarterHidden": {
+        "templateId": "Quest:SpringQuest_2018_StarterHidden",
+        "objectives": {
+          "SpringQuest_2018_StarterHidden": 1
+        }
+      },
+      "QS02-Quest:WinterQuest_2017_CompleteSurvive7Day_D1": {
+        "templateId": "Quest:WinterQuest_2017_CompleteSurvive7Day_D1",
+        "objectives": {
+          "complete_survivalmode_pve01_7day": 1
+        }
+      },
+      "QS02-Quest:WinterQuest_2017_CompleteSurvive7Day_D2": {
+        "templateId": "Quest:WinterQuest_2017_CompleteSurvive7Day_D2",
+        "objectives": {
+          "complete_survivalmode_pve02_7day": 1
+        }
+      },
+      "QS02-Quest:WinterQuest_2017_CompleteSurvive7Day_D3": {
+        "templateId": "Quest:WinterQuest_2017_CompleteSurvive7Day_D3",
+        "objectives": {
+          "complete_survivalmode_pve03_7day": 1
+        }
+      },
+      "QS02-Quest:WinterQuest_2017_CompleteSurviveAny": {
+        "templateId": "Quest:WinterQuest_2017_CompleteSurviveAny",
+        "objectives": {
+          "complete_survivalmode_any": 3
+        }
+      },
+      "QS02-Quest:WinterQuest_2017_Complete_PresentDrop_Repeatable": {
+        "templateId": "Quest:WinterQuest_2017_Complete_PresentDrop_Repeatable",
+        "objectives": {
+          "complete_presentdrop": 1
+        }
+      },
+      "QS02-Quest:WinterQuest_2017_Hidden_1": {
+        "templateId": "Quest:WinterQuest_2017_Hidden_1",
+        "objectives": {
+          "questcomplete_winterquest_2017_killmallsantas": 1,
+          "questcomplete_winterquest_2017_killevilhelpers": 1,
+          "questcomplete_winterquest_2017_killcoallobbers": 1
+        }
+      },
+      "QS02-Quest:WinterQuest_2017_KillCoalLobbers": {
+        "templateId": "Quest:WinterQuest_2017_KillCoalLobbers",
+        "objectives": {
+          "kill_husk_coal_lobbers": 50
+        }
+      },
+      "QS02-Quest:WinterQuest_2017_KillEvilHelpers": {
+        "templateId": "Quest:WinterQuest_2017_KillEvilHelpers",
+        "objectives": {
+          "kill_husk_little_evil_helpers": 750
+        }
+      },
+      "QS02-Quest:WinterQuest_2017_KillMallSantas": {
+        "templateId": "Quest:WinterQuest_2017_KillMallSantas",
+        "objectives": {
+          "kill_husk_mall_santas": 30
+        }
+      },
+      "QS02-Quest:WinterQuest_2017_KillMiniBosses": {
+        "templateId": "Quest:WinterQuest_2017_KillMiniBosses",
+        "objectives": {
+          "kill_miniboss_missionalert": 10
+        }
+      },
+      "QS02-Quest:WinterQuest_2017_KillMiniBosses_Repeatable": {
+        "templateId": "Quest:WinterQuest_2017_KillMiniBosses_Repeatable",
+        "objectives": {
+          "kill_miniboss_missionalert": 1
+        }
+      },
+      "QS02-Quest:WinterQuest_2017_KillMistMonsters": {
+        "templateId": "Quest:WinterQuest_2017_KillMistMonsters",
+        "objectives": {
+          "kill_smasher_vacuumtube": 50
+        }
+      },
+      "QS02-Quest:WinterQuest_2017_LarsLandmarkMission": {
+        "templateId": "Quest:WinterQuest_2017_LarsLandmarkMission",
+        "objectives": {
+          "complete_lars_landmark": 1
+        }
+      },
+      "QS02-Quest:WinterQuest_2017_Reactive_Fetch_CollectPresent": {
+        "templateId": "Quest:WinterQuest_2017_Reactive_Fetch_CollectPresent",
+        "objectives": {
+          "winterquest_2017_reactive_fetch_collectpresent": 1
+        }
+      },
+      "QS02-Quest:WinterQuest_2017_Reactive_Fetch_Decorations": {
+        "templateId": "Quest:WinterQuest_2017_Reactive_Fetch_Decorations",
+        "objectives": {
+          "winterquest_2017_reactive_fetch_decoration": 7
+        }
+      },
+      "QS02-Quest:WinterQuest_2017_Reactive_Fetch_DeployTrees": {
+        "templateId": "Quest:WinterQuest_2017_Reactive_Fetch_DeployTrees",
+        "objectives": {
+          "winterquest_2017_reactive_fetch_deploytree": 11
+        }
+      },
+      "QS02-Quest:WinterQuest_2017_Reactive_Fetch_PackingPresents": {
+        "templateId": "Quest:WinterQuest_2017_Reactive_Fetch_PackingPresents",
+        "objectives": {
+          "winterquest_2017_reactive_fetch_presentfiller": 12
+        }
+      },
+      "QS02-Quest:WinterQuest_2017_Reactive_Fetch_Radios": {
+        "templateId": "Quest:WinterQuest_2017_Reactive_Fetch_Radios",
+        "objectives": {
+          "winterquest_2017_reactive_fetch_radio": 8
+        }
+      },
+      "QS02-Quest:WinterQuest_2017_Reactive_FrozenTroll": {
+        "templateId": "Quest:WinterQuest_2017_Reactive_FrozenTroll",
+        "objectives": {
+          "winterquest_2017_reactive_frozentroll": 1
+        }
+      },
+      "QS02-Quest:WinterQuest_2017_Reactive_Gather_Books": {
+        "templateId": "Quest:WinterQuest_2017_Reactive_Gather_Books",
+        "objectives": {
+          "winterquest_2017_reactive_gather_book": 10
+        }
+      },
+      "QS02-Quest:WinterQuest_2017_Reactive_Gather_Fridges": {
+        "templateId": "Quest:WinterQuest_2017_Reactive_Gather_Fridges",
+        "objectives": {
+          "winterquest_2017_reactive_gather_fridge": 12
+        }
+      },
+      "QS02-Quest:WinterQuest_2017_Reactive_Gather_FruitNuts": {
+        "templateId": "Quest:WinterQuest_2017_Reactive_Gather_FruitNuts",
+        "objectives": {
+          "winterquest_2017_reactive_gather_fruit": 15
+        }
+      },
+      "QS02-Quest:WinterQuest_2017_Reactive_Gather_TrafficLights": {
+        "templateId": "Quest:WinterQuest_2017_Reactive_Gather_TrafficLights",
+        "objectives": {
+          "winterquest_2017_reactive_gather_trafficlight": 10
+        }
+      },
+      "QS02-Quest:WinterQuest_2017_Reactive_Gather_Trees": {
+        "templateId": "Quest:WinterQuest_2017_Reactive_Gather_Trees",
+        "objectives": {
+          "winterquest_2107_reactive_gather_pinetree": 20
+        }
+      },
+      "QS02-Quest:WinterQuest_2017_Reactive_Presents_Hidden": {
+        "templateId": "Quest:WinterQuest_2017_Reactive_Presents_Hidden",
+        "objectives": {
+          "winterquest_2017_reactive_presents_hidden": 6
+        }
+      }
+    }
+  },
+  "Season03": {
+    "Quests": {
+      "QS03-Quest:LoveQuest_2018_Reactive_Chocolates": {
+        "templateId": "Quest:LoveQuest_2018_Reactive_Chocolates",
+        "objectives": {
+          "lovequest_2018_reactive_chocolates": 10
+        }
+      },
+      "QS03-Quest:LoveQuest_2018_Reactive_Flowers": {
+        "templateId": "Quest:LoveQuest_2018_Reactive_Flowers",
+        "objectives": {
+          "lovequest_2018_reactive_flowers": 7
+        }
+      },
+      "QS03-Quest:LoveQuest_2018_Reactive_Mailboxes": {
+        "templateId": "Quest:LoveQuest_2018_Reactive_Mailboxes",
+        "objectives": {
+          "lovequest_2018_reactive_mailboxes": 5
+        }
+      },
+      "QS03-Quest:LoveQuest_2018_Reactive_RescueDennis": {
+        "templateId": "Quest:LoveQuest_2018_Reactive_RescueDennis",
+        "objectives": {
+          "lovequest_2018_reactive_rescuedennis": 1
+        }
+      },
+      "QS03-Quest:LoveQuest_2018_Reactive_RescueSummer": {
+        "templateId": "Quest:LoveQuest_2018_Reactive_RescueSummer",
+        "objectives": {
+          "lovequest_2018_reactive_rescuesummer": 1
+        }
+      },
+      "QS03-Quest:LoveQuest_2018_Reactive_Song": {
+        "templateId": "Quest:LoveQuest_2018_Reactive_Song",
+        "objectives": {
+          "LoveQuest_2018_Reactive_Song": 5
+        }
+      },
+      "QS03-Quest:LoveQuest_2018_Reactive_TeddyBears": {
+        "templateId": "Quest:LoveQuest_2018_Reactive_TeddyBears",
+        "objectives": {
+          "lovequest_2018_reactive_teddybears": 9
+        }
+      },
+      "QS03-Quest:SpringQuest_2018_Build_Trojan_Bunny": {
+        "templateId": "Quest:SpringQuest_2018_Build_Trojan_Bunny",
+        "objectives": {
+          "springquest_2018_build_trojan_bunny": 1
+        }
+      },
+      "QS03-Quest:SpringQuest_2018_Complete_BumpedDifficulty": {
+        "templateId": "Quest:SpringQuest_2018_Complete_BumpedDifficulty",
+        "objectives": {
+          "springquest_2018_complete_bumpeddifficulty": 2
+        }
+      },
+      "QS03-Quest:SpringQuest_2018_Complete_FireworkClusters": {
+        "templateId": "Quest:SpringQuest_2018_Complete_FireworkClusters",
+        "objectives": {
+          "springquest_2018_complete_fireworkclusters": 2
+        }
+      },
+      "QS03-Quest:SpringQuest_2018_EvolveDragonWeapon": {
+        "templateId": "Quest:SpringQuest_2018_EvolveDragonWeapon",
+        "objectives": {
+          "springquest_2018_evolvedragonweapon": 1
+        }
+      },
+      "QS03-Quest:SpringQuest_2018_KillHusksDragonWeapon": {
+        "templateId": "Quest:SpringQuest_2018_KillHusksDragonWeapon",
+        "objectives": {
+          "springquest_2018_killhusksdragonweapon": 886
+        }
+      },
+      "QS03-Quest:SpringQuest_2018_KillHusksMelee": {
+        "templateId": "Quest:SpringQuest_2018_KillHusksMelee",
+        "objectives": {
+          "springquest_2018_killhusksmelee": 50
+        }
+      },
+      "QS03-Quest:SpringQuest_2018_KillMistMonstersDragonWeapon": {
+        "templateId": "Quest:SpringQuest_2018_KillMistMonstersDragonWeapon",
+        "objectives": {
+          "springquest_2018_killmistmonstersdragonweapon_smasher": 38
+        }
+      },
+      "QS03-Quest:SpringQuest_2018_Reactive_CCTV_Cameras": {
+        "templateId": "Quest:SpringQuest_2018_Reactive_CCTV_Cameras",
+        "objectives": {
+          "springquest_2018_reactive_cctv_cameras": 6
+        }
+      },
+      "QS03-Quest:SpringQuest_2018_Reactive_Clothing": {
+        "templateId": "Quest:SpringQuest_2018_Reactive_Clothing",
+        "objectives": {
+          "springquest_2018_reactive_clothing": 8
+        }
+      },
+      "QS03-Quest:SpringQuest_2018_Reactive_EggHunt": {
+        "templateId": "Quest:SpringQuest_2018_Reactive_EggHunt",
+        "objectives": {
+          "springquest_2018_reactive_egghunt": 9
+        }
+      },
+      "QS03-Quest:SpringQuest_2018_Reactive_Fireworks": {
+        "templateId": "Quest:SpringQuest_2018_Reactive_Fireworks",
+        "objectives": {
+          "springquest_2018_reactive_fireworks": 1
+        }
+      },
+      "QS03-Quest:SpringQuest_2018_Reactive_Fireworks_Repeatable": {
+        "templateId": "Quest:SpringQuest_2018_Reactive_Fireworks_Repeatable",
+        "objectives": {
+          "springquest_2018_reactive_fireworks_repeatable": 40
+        }
+      },
+      "QS03-Quest:SpringQuest_2018_Reactive_Fountains": {
+        "templateId": "Quest:SpringQuest_2018_Reactive_Fountains",
+        "objectives": {
+          "springquest_2018_reactive_fountains": 10
+        }
+      },
+      "QS03-Quest:SpringQuest_2018_Reactive_Garden_Gnomes": {
+        "templateId": "Quest:SpringQuest_2018_Reactive_Garden_Gnomes",
+        "objectives": {
+          "SpringQuest_2018_Reactive_Garden_Gnomes": 5
+        }
+      },
+      "QS03-Quest:SpringQuest_2018_Reactive_GymStuff": {
+        "templateId": "Quest:SpringQuest_2018_Reactive_GymStuff",
+        "objectives": {
+          "springquest_2018_reactive_gymstuff": 5
+        }
+      },
+      "QS03-Quest:SpringQuest_2018_Reactive_HuntMiniboss_Finale": {
+        "templateId": "Quest:SpringQuest_2018_Reactive_HuntMiniboss_Finale",
+        "objectives": {
+          "SpringQuest_2018_Reactive_HuntMiniboss_Finale": 1
+        }
+      },
+      "QS03-Quest:SpringQuest_2018_Reactive_KillCollect_Clovers": {
+        "templateId": "Quest:SpringQuest_2018_Reactive_KillCollect_Clovers",
+        "objectives": {
+          "SpringQuest_2018_Reactive_KillCollect_Clovers": 50
+        }
+      },
+      "QS03-Quest:SpringQuest_2018_Reactive_Lanterns": {
+        "templateId": "Quest:SpringQuest_2018_Reactive_Lanterns",
+        "objectives": {
+          "SpringQuest_2018_Reactive_Lanterns": 8
+        }
+      },
+      "QS03-Quest:SpringQuest_2018_Reactive_Leprechaun_Traps": {
+        "templateId": "Quest:SpringQuest_2018_Reactive_Leprechaun_Traps",
+        "objectives": {
+          "springquest_2018_reactive_leprechaun_traps": 5
+        }
+      },
+      "QS03-Quest:SpringQuest_2018_Reactive_LocationDiscovery_Pub": {
+        "templateId": "Quest:SpringQuest_2018_Reactive_LocationDiscovery_Pub",
+        "objectives": {
+          "springquest_2018_reactive_locationdiscovery_pub": 1
+        }
+      },
+      "QS03-Quest:SpringQuest_2018_Reactive_PotsOfGold": {
+        "templateId": "Quest:SpringQuest_2018_Reactive_PotsOfGold",
+        "objectives": {
+          "springquest_2018_reactive_potsofgold": 7
+        }
+      },
+      "QS03-Quest:SpringQuest_2018_Reactive_Quotes": {
+        "templateId": "Quest:SpringQuest_2018_Reactive_Quotes",
+        "objectives": {
+          "springquest_2018_reactive_quotes": 5
+        }
+      },
+      "QS03-Quest:SpringQuest_2018_Reactive_RescueVal": {
+        "templateId": "Quest:SpringQuest_2018_Reactive_RescueVal",
+        "objectives": {
+          "springquest_2018_reactive_rescueval": 1
+        }
+      },
+      "QS03-Quest:SpringQuest_2018_Reactive_Tents": {
+        "templateId": "Quest:SpringQuest_2018_Reactive_Tents",
+        "objectives": {
+          "springquest_2018_reactive_tents": 5
+        }
+      },
+      "QS03-Quest:SpringQuest_2018_Reactive_VHS": {
+        "templateId": "Quest:SpringQuest_2018_Reactive_VHS",
+        "objectives": {
+          "springquest_2018_reactive_vhs": 8
+        }
+      },
+      "QS03-Quest:SpringQuest_2018_StarterHidden": {
+        "templateId": "Quest:SpringQuest_2018_StarterHidden",
+        "objectives": {
+          "SpringQuest_2018_StarterHidden": 1
+        }
+      },
+      "QS03-Quest:StormQuest_2018_CompleteStormZones_Repeatable": {
+        "templateId": "Quest:StormQuest_2018_CompleteStormZones_Repeatable",
+        "objectives": {
+          "complete_stormzone": 2
+        }
+      },
+      "QS03-Quest:StormQuest_2018_CompleteSurvive7Day_D1": {
+        "templateId": "Quest:StormQuest_2018_CompleteSurvive7Day_D1",
+        "objectives": {
+          "complete_survivalmode_pve01_7day": 1
+        }
+      },
+      "QS03-Quest:StormQuest_2018_CompleteSurvive7Day_D2": {
+        "templateId": "Quest:StormQuest_2018_CompleteSurvive7Day_D2",
+        "objectives": {
+          "complete_survivalmode_pve02_7day": 1
+        }
+      },
+      "QS03-Quest:StormQuest_2018_CompleteSurvive7Day_D3": {
+        "templateId": "Quest:StormQuest_2018_CompleteSurvive7Day_D3",
+        "objectives": {
+          "complete_survivalmode_pve03_7day": 1
+        }
+      },
+      "QS03-Quest:StormQuest_2018_CompleteSurviveAny": {
+        "templateId": "Quest:StormQuest_2018_CompleteSurviveAny",
+        "objectives": {
+          "complete_survivalmode_any": 3
+        }
+      },
+      "QS03-Quest:StormQuest_2018_Hidden_1": {
+        "templateId": "Quest:StormQuest_2018_Hidden_1",
+        "objectives": {
+          "questcomplete_stormquest_2018_reactive_skyatlases": 1
+        }
+      },
+      "QS03-Quest:StormQuest_2018_Landmark_Lars": {
+        "templateId": "Quest:StormQuest_2018_Landmark_Lars",
+        "objectives": {
+          "stormquest_2018_landmark_lars": 1
+        }
+      },
+      "QS03-Quest:StormQuest_2018_Landmark_Observe": {
+        "templateId": "Quest:StormQuest_2018_Landmark_Observe",
+        "objectives": {
+          "stormquest_2018_landmark_observe": 1
+        }
+      },
+      "QS03-Quest:StormQuest_2018_Reactive_ACParts": {
+        "templateId": "Quest:StormQuest_2018_Reactive_ACParts",
+        "objectives": {
+          "stormquest_2018_reactive_acparts": 99
+        }
+      },
+      "QS03-Quest:StormQuest_2018_Reactive_Equipment": {
+        "templateId": "Quest:StormQuest_2018_Reactive_Equipment",
+        "objectives": {
+          "stormquest_2018_reactive_equipment": 5
+        }
+      },
+      "QS03-Quest:StormQuest_2018_Reactive_Hoverboards": {
+        "templateId": "Quest:StormQuest_2018_Reactive_Hoverboards",
+        "objectives": {
+          "stormquest_2018_reactive_hoverboards": 10
+        }
+      },
+      "QS03-Quest:StormQuest_2018_Reactive_HuskData": {
+        "templateId": "Quest:StormQuest_2018_Reactive_HuskData",
+        "objectives": {
+          "stormquest_2018_reactive_huskdata": 10
+        }
+      },
+      "QS03-Quest:StormQuest_2018_Reactive_Insulators": {
+        "templateId": "Quest:StormQuest_2018_Reactive_Insulators",
+        "objectives": {
+          "stormquest_2018_reactive_insulators": 30
+        }
+      },
+      "QS03-Quest:StormQuest_2018_Reactive_Maps": {
+        "templateId": "Quest:StormQuest_2018_Reactive_Maps",
+        "objectives": {
+          "stormquest_2018_reactive_maps": 15
+        }
+      },
+      "QS03-Quest:StormQuest_2018_Reactive_Payphones": {
+        "templateId": "Quest:StormQuest_2018_Reactive_Payphones",
+        "objectives": {
+          "stormquest_2018_reactive_payphones": 7
+        }
+      },
+      "QS03-Quest:StormQuest_2018_Reactive_Records": {
+        "templateId": "Quest:StormQuest_2018_Reactive_Records",
+        "objectives": {
+          "stormquest_2018_reactive_records": 5
+        }
+      },
+      "QS03-Quest:StormQuest_2018_Reactive_Research": {
+        "templateId": "Quest:StormQuest_2018_Reactive_Research",
+        "objectives": {
+          "stormquest_2018_reactive_research": 9
+        }
+      },
+      "QS03-Quest:StormQuest_2018_Reactive_Servers": {
+        "templateId": "Quest:StormQuest_2018_Reactive_Servers",
+        "objectives": {
+          "stormquest_2018_reactive_servers": 5
+        }
+      },
+      "QS03-Quest:StormQuest_2018_Reactive_ServiceCars": {
+        "templateId": "Quest:StormQuest_2018_Reactive_ServiceCars",
+        "objectives": {
+          "stormquest_2018_reactive_servicecars": 20
+        }
+      },
+      "QS03-Quest:StormQuest_2018_Reactive_SkyAtlases": {
+        "templateId": "Quest:StormQuest_2018_Reactive_SkyAtlases",
+        "objectives": {
+          "stormquest_2018_reactive_skyatlases": 12
+        }
+      },
+      "QS03-Quest:StormQuest_2018_Reactive_Speakers": {
+        "templateId": "Quest:StormQuest_2018_Reactive_Speakers",
+        "objectives": {
+          "stormquest_2018_reactive_speakers": 7
+        }
+      },
+      "QS03-Quest:StormQuest_2018_Reactive_Telescopes": {
+        "templateId": "Quest:StormQuest_2018_Reactive_Telescopes",
+        "objectives": {
+          "stormquest_2018_reactive_telescopes": 6
+        }
+      }
+    }
+  },
+  "Season04": {
+    "Quests": {
+      "QS04-Quest:BlockbusterQuest_2018_Hidden_1": {
+        "templateId": "Quest:BlockbusterQuest_2018_Hidden_1",
+        "objectives": {
+          "questcomplete_blockbusterquest_2018_reactive_raysignal": 1
+        }
+      },
+      "QS04-Quest:BlockbusterQuest_2018_Hidden_2": {
+        "templateId": "Quest:BlockbusterQuest_2018_Hidden_2",
+        "objectives": {
+          "blockbusterquest_2018_hidden_2": 1
+        }
+      },
+      "QS04-Quest:BlockbusterQuest_2018_Hidden_3": {
+        "templateId": "Quest:BlockbusterQuest_2018_Hidden_3",
+        "objectives": {
+          "questcomplete_blockbusterquest_2018_landmark_meteor": 1
+        }
+      },
+      "QS04-Quest:BlockbusterQuest_2018_Hidden_EnableHusky": {
+        "templateId": "Quest:BlockbusterQuest_2018_Hidden_EnableHusky",
+        "objectives": {
+          "questcomplete_blockbusterquest_2018_reactive_magnets": 1
+        }
+      },
+      "QS04-Quest:BlockbusterQuest_2018_KillChromeHusky_Repeatable": {
+        "templateId": "Quest:BlockbusterQuest_2018_KillChromeHusky_Repeatable",
+        "objectives": {
+          "kill_husk_chromehusky": 1
+        }
+      },
+      "QS04-Quest:BlockbusterQuest_2018_KillFireHusks_Repeatable": {
+        "templateId": "Quest:BlockbusterQuest_2018_KillFireHusks_Repeatable",
+        "objectives": {
+          "kill_husk_ele_fire": 300
+        }
+      },
+      "QS04-Quest:BlockbusterQuest_2018_KillMiniBosses_Repeatable": {
+        "templateId": "Quest:BlockbusterQuest_2018_KillMiniBosses_Repeatable",
+        "objectives": {
+          "kill_miniboss_missionalert": 1
+        }
+      },
+      "QS04-Quest:BlockbusterQuest_2018_KillMistMonsters_Repeatable": {
+        "templateId": "Quest:BlockbusterQuest_2018_KillMistMonsters_Repeatable",
+        "objectives": {
+          "kill_husk_smasher": 50
+        }
+      },
+      "QS04-Quest:BlockbusterQuest_2018_KillNatureHusks_Repeatable": {
+        "templateId": "Quest:BlockbusterQuest_2018_KillNatureHusks_Repeatable",
+        "objectives": {
+          "kill_husk_ele_nature": 300
+        }
+      },
+      "QS04-Quest:BlockbusterQuest_2018_KillWaterHusks_Repeatable": {
+        "templateId": "Quest:BlockbusterQuest_2018_KillWaterHusks_Repeatable",
+        "objectives": {
+          "kill_husk_ele_water": 300
+        }
+      },
+      "QS04-Quest:BlockbusterQuest_2018_Landmark_Comet": {
+        "templateId": "Quest:BlockbusterQuest_2018_Landmark_Comet",
+        "objectives": {
+          "blockbusterquest_2018_landmark_comet": 1
+        }
+      },
+      "QS04-Quest:BlockbusterQuest_2018_Landmark_Meteor": {
+        "templateId": "Quest:BlockbusterQuest_2018_Landmark_Meteor",
+        "objectives": {
+          "blockbusterquest_2018_landmark_meteor": 1
+        }
+      },
+      "QS04-Quest:BlockbusterQuest_2018_Landmark_Suit": {
+        "templateId": "Quest:BlockbusterQuest_2018_Landmark_Suit",
+        "objectives": {
+          "blockbusterquest_2018_landmark_suit": 1
+        }
+      },
+      "QS04-Quest:BlockbusterQuest_2018_OpenCaches_Repeatable": {
+        "templateId": "Quest:BlockbusterQuest_2018_OpenCaches_Repeatable",
+        "objectives": {
+          "open_caches": 10
+        }
+      },
+      "QS04-Quest:BlockbusterQuest_2018_Reactive_Barrels": {
+        "templateId": "Quest:BlockbusterQuest_2018_Reactive_Barrels",
+        "objectives": {
+          "blockbusterquest_2018_reactive_barrels": 5
+        }
+      },
+      "QS04-Quest:BlockbusterQuest_2018_Reactive_Bees": {
+        "templateId": "Quest:BlockbusterQuest_2018_Reactive_Bees",
+        "objectives": {
+          "blockbusterquest_2018_reactive_bees": 15
+        }
+      },
+      "QS04-Quest:BlockbusterQuest_2018_Reactive_Broadcasts": {
+        "templateId": "Quest:BlockbusterQuest_2018_Reactive_Broadcasts",
+        "objectives": {
+          "blockbusterquest_2018_reactive_broadcasts": 10
+        }
+      },
+      "QS04-Quest:BlockbusterQuest_2018_Reactive_CarbonDating": {
+        "templateId": "Quest:BlockbusterQuest_2018_Reactive_CarbonDating",
+        "objectives": {
+          "BlockbusterQuest_2018_Reactive_CarbonDating": 1
+        }
+      },
+      "QS04-Quest:BlockbusterQuest_2018_Reactive_ChromeHuskData": {
+        "templateId": "Quest:BlockbusterQuest_2018_Reactive_ChromeHuskData",
+        "objectives": {
+          "blockbusterquest_2018_reactive_chromehuskdata": 5
+        }
+      },
+      "QS04-Quest:BlockbusterQuest_2018_Reactive_Clocks": {
+        "templateId": "Quest:BlockbusterQuest_2018_Reactive_Clocks",
+        "objectives": {
+          "blockbusterquest_2018_reactive_clocks": 4
+        }
+      },
+      "QS04-Quest:BlockbusterQuest_2018_Reactive_CometShards": {
+        "templateId": "Quest:BlockbusterQuest_2018_Reactive_CometShards",
+        "objectives": {
+          "blockbusterquest_2018_reactive_cometshards": 11
+        }
+      },
+      "QS04-Quest:BlockbusterQuest_2018_Reactive_Consoles": {
+        "templateId": "Quest:BlockbusterQuest_2018_Reactive_Consoles",
+        "objectives": {
+          "blockbusterquest_2018_reactive_consoles": 6
+        }
+      },
+      "QS04-Quest:BlockbusterQuest_2018_Reactive_Cows": {
+        "templateId": "Quest:BlockbusterQuest_2018_Reactive_Cows",
+        "objectives": {
+          "blockbusterquest_2018_reactive_cows": 5
+        }
+      },
+      "QS04-Quest:BlockbusterQuest_2018_Reactive_DeployCBots": {
+        "templateId": "Quest:BlockbusterQuest_2018_Reactive_DeployCBots",
+        "objectives": {
+          "blockbusterquest_2018_reactive_deploycbots": 7
+        }
+      },
+      "QS04-Quest:BlockbusterQuest_2018_Reactive_Earthquakes": {
+        "templateId": "Quest:BlockbusterQuest_2018_Reactive_Earthquakes",
+        "objectives": {
+          "blockbusterquest_2018_reactive_earthquakes": 5
+        }
+      },
+      "QS04-Quest:BlockbusterQuest_2018_Reactive_Fans": {
+        "templateId": "Quest:BlockbusterQuest_2018_Reactive_Fans",
+        "objectives": {
+          "blockbusterquest_2018_reactive_fans": 5
+        }
+      },
+      "QS04-Quest:BlockbusterQuest_2018_Reactive_Flyers": {
+        "templateId": "Quest:BlockbusterQuest_2018_Reactive_Flyers",
+        "objectives": {
+          "blockbusterquest_2018_reactive_flyers": 11
+        }
+      },
+      "QS04-Quest:BlockbusterQuest_2018_Reactive_JulyFourth": {
+        "templateId": "Quest:BlockbusterQuest_2018_Reactive_JulyFourth",
+        "objectives": {
+          "blockbusterquest_2018_reactive_julyfourth": 11
+        }
+      },
+      "QS04-Quest:BlockbusterQuest_2018_Reactive_Magnets": {
+        "templateId": "Quest:BlockbusterQuest_2018_Reactive_Magnets",
+        "objectives": {
+          "blockbusterquest_2018_reactive_magnets": 4
+        }
+      },
+      "QS04-Quest:BlockbusterQuest_2018_Reactive_Mailboxes": {
+        "templateId": "Quest:BlockbusterQuest_2018_Reactive_Mailboxes",
+        "objectives": {
+          "blockbusterquest_2018_reactive_mailboxes": 5
+        }
+      },
+      "QS04-Quest:BlockbusterQuest_2018_Reactive_Mattresses": {
+        "templateId": "Quest:BlockbusterQuest_2018_Reactive_Mattresses",
+        "objectives": {
+          "blockbusterquest_2018_reactive_mattresses": 15
+        }
+      },
+      "QS04-Quest:BlockbusterQuest_2018_Reactive_Mayhem": {
+        "templateId": "Quest:BlockbusterQuest_2018_Reactive_Mayhem",
+        "objectives": {
+          "blockbusterquest_2018_reactive_mayhem": 8
+        }
+      },
+      "QS04-Quest:BlockbusterQuest_2018_Reactive_PortaPottys": {
+        "templateId": "Quest:BlockbusterQuest_2018_Reactive_PortaPottys",
+        "objectives": {
+          "blockbusterquest_2018_reactive_portapottys": 5
+        }
+      },
+      "QS04-Quest:BlockbusterQuest_2018_Reactive_RaySignal": {
+        "templateId": "Quest:BlockbusterQuest_2018_Reactive_RaySignal",
+        "objectives": {
+          "blockbusterquest_2018_reactive_raysignal": 4
+        }
+      },
+      "QS04-Quest:BlockbusterQuest_2018_Reactive_Rescue": {
+        "templateId": "Quest:BlockbusterQuest_2018_Reactive_Rescue",
+        "objectives": {
+          "blockbusterquest_2018_reactive_rescue": 1
+        }
+      },
+      "QS04-Quest:BlockbusterQuest_2018_Reactive_Restaurant": {
+        "templateId": "Quest:BlockbusterQuest_2018_Reactive_Restaurant",
+        "objectives": {
+          "blockbusterquest_2018_reactive_restaurant": 1
+        }
+      },
+      "QS04-Quest:BlockbusterQuest_2018_Reactive_RetrieveCBots": {
+        "templateId": "Quest:BlockbusterQuest_2018_Reactive_RetrieveCBots",
+        "objectives": {
+          "blockbusterquest_2018_reactive_retrievecbots": 5
+        }
+      },
+      "QS04-Quest:BlockbusterQuest_2018_Reactive_Rubber": {
+        "templateId": "Quest:BlockbusterQuest_2018_Reactive_Rubber",
+        "objectives": {
+          "blockbusterquest_2018_reactive_rubber": 10
+        }
+      },
+      "QS04-Quest:BlockbusterQuest_2018_Reactive_Scanners": {
+        "templateId": "Quest:BlockbusterQuest_2018_Reactive_Scanners",
+        "objectives": {
+          "blockbusterquest_2018_reactive_scanners": 5
+        }
+      },
+      "QS04-Quest:BlockbusterQuest_2018_Reactive_ShielderData": {
+        "templateId": "Quest:BlockbusterQuest_2018_Reactive_ShielderData",
+        "objectives": {
+          "blockbusterquest_2018_reactive_shielderdata": 7
+        }
+      },
+      "QS04-Quest:BlockbusterQuest_2018_Reactive_Tankers": {
+        "templateId": "Quest:BlockbusterQuest_2018_Reactive_Tankers",
+        "objectives": {
+          "blockbusterquest_2018_reactive_tankers": 5
+        }
+      },
+      "QS04-Quest:BlockbusterQuest_2018_Reactive_Tombstones": {
+        "templateId": "Quest:BlockbusterQuest_2018_Reactive_Tombstones",
+        "objectives": {
+          "blockbusterquest_2018_reactive_tombstones": 5
+        }
+      },
+      "QS04-Quest:BlockbusterQuest_2018_Reactive_Toys": {
+        "templateId": "Quest:BlockbusterQuest_2018_Reactive_Toys",
+        "objectives": {
+          "blockbusterquest_2018_reactive_toys": 6
+        }
+      },
+      "QS04-Quest:BlockbusterQuest_2018_Reactive_Trodes": {
+        "templateId": "Quest:BlockbusterQuest_2018_Reactive_Trodes",
+        "objectives": {
+          "blockbusterquest_2018_reactive_trodes": 5
+        }
+      }
+    }
+  },
+  "Season05": {
+    "Quests": {
+      "QS05-Quest:AnniversaryQuest_2018_Complete_Cake_Repeatable": {
+        "templateId": "Quest:AnniversaryQuest_2018_Complete_Cake_Repeatable",
+        "objectives": {
+          "anniversaryquest_2018_complete_cake_repeatable": 5
+        }
+      },
+      "QS05-Quest:AnniversaryQuest_2018_Kill_Cake_Sploders": {
+        "templateId": "Quest:AnniversaryQuest_2018_Kill_Cake_Sploders",
+        "objectives": {
+          "kill_husk_sploder": 50
+        }
+      },
+      "QS05-Quest:HordeQuest_BuildBase": {
+        "templateId": "Quest:HordeQuest_BuildBase",
+        "objectives": {
+          "hordequest_buildbase": 10
+        }
+      },
+      "QS05-Quest:HordeQuest_Hidden_0": {
+        "templateId": "Quest:HordeQuest_Hidden_0",
+        "objectives": {
+          "questcomplete_outpostquest_t1_l4": 1,
+          "questcomplete_hordequest_progression_stonewood_1": 1
+        }
+      },
+      "QS05-Quest:HordeQuest_Hidden_1": {
+        "templateId": "Quest:HordeQuest_Hidden_1",
+        "objectives": {
+          "questcomplete_outpostquest_t2_l1": 1,
+          "questcomplete_hordequest_progression_stonewood_4": 1
+        }
+      },
+      "QS05-Quest:HordeQuest_Hidden_2": {
+        "templateId": "Quest:HordeQuest_Hidden_2",
+        "objectives": {
+          "questcomplete_outpostquest_t2_l2": 1,
+          "questcomplete_hordequest_progression_plankerton_2": 1
+        }
+      },
+      "QS05-Quest:HordeQuest_Hidden_3": {
+        "templateId": "Quest:HordeQuest_Hidden_3",
+        "objectives": {
+          "questcomplete_outpostquest_t2_l4": 1,
+          "questcomplete_hordequest_progression_plankerton_4": 1
+        }
+      },
+      "QS05-Quest:HordeQuest_Hidden_4": {
+        "templateId": "Quest:HordeQuest_Hidden_4",
+        "objectives": {
+          "questcomplete_outpostquest_t3_l1": 1,
+          "questcomplete_hordequest_progression_plankerton_5": 1
+        }
+      },
+      "QS05-Quest:HordeQuest_Hidden_5": {
+        "templateId": "Quest:HordeQuest_Hidden_5",
+        "objectives": {
+          "questcomplete_outpostquest_t3_l2": 1,
+          "questcomplete_hordequest_progression_canny_2": 1
+        }
+      },
+      "QS05-Quest:HordeQuest_Hidden_6": {
+        "templateId": "Quest:HordeQuest_Hidden_6",
+        "objectives": {
+          "questcomplete_outpostquest_t3_l4": 1,
+          "questcomplete_hordequest_progression_canny_4": 1
+        }
+      },
+      "QS05-Quest:HordeQuest_Hidden_7": {
+        "templateId": "Quest:HordeQuest_Hidden_7",
+        "objectives": {
+          "questcomplete_outpostquest_t4_l1": 1,
+          "questcomplete_hordequest_progression_canny_5": 1
+        }
+      },
+      "QS05-Quest:HordeQuest_Hidden_Weekly1": {
+        "templateId": "Quest:HordeQuest_Hidden_Weekly1",
+        "objectives": {
+          "questcomplete_outpostquest_t1_l3": 1
+        }
+      },
+      "QS05-Quest:HordeQuest_Hidden_Weekly2": {
+        "templateId": "Quest:HordeQuest_Hidden_Weekly2",
+        "objectives": {
+          "questcomplete_outpostquest_t1_l3": 1
+        }
+      },
+      "QS05-Quest:HordeQuest_Hidden_Weekly3": {
+        "templateId": "Quest:HordeQuest_Hidden_Weekly3",
+        "objectives": {
+          "questcomplete_outpostquest_t1_l3": 1
+        }
+      },
+      "QS05-Quest:HordeQuest_Hidden_Weekly4": {
+        "templateId": "Quest:HordeQuest_Hidden_Weekly4",
+        "objectives": {
+          "questcomplete_outpostquest_t1_l3": 1
+        }
+      },
+      "QS05-Quest:HordeQuest_Hidden_Weekly5": {
+        "templateId": "Quest:HordeQuest_Hidden_Weekly5",
+        "objectives": {
+          "questcomplete_outpostquest_t1_l3": 1
+        }
+      },
+      "QS05-Quest:HordeQuest_Hidden_Weekly6": {
+        "templateId": "Quest:HordeQuest_Hidden_Weekly6",
+        "objectives": {
+          "questcomplete_outpostquest_t1_l3": 1
+        }
+      },
+      "QS05-Quest:HordeQuest_Hidden_Weekly7": {
+        "templateId": "Quest:HordeQuest_Hidden_Weekly7",
+        "objectives": {
+          "questcomplete_outpostquest_t1_l3": 1
+        }
+      },
+      "QS05-Quest:HordeQuest_HordeUnlock": {
+        "templateId": "Quest:HordeQuest_HordeUnlock",
+        "objectives": {
+          "unlock_skill_tree_horde": 1
+        }
+      },
+      "QS05-Quest:HordeQuest_Progression_Canny_1": {
+        "templateId": "Quest:HordeQuest_Progression_Canny_1",
+        "objectives": {
+          "hordequest_progression_canny_1": 1
+        }
+      },
+      "QS05-Quest:HordeQuest_Progression_Canny_2": {
+        "templateId": "Quest:HordeQuest_Progression_Canny_2",
+        "objectives": {
+          "hordequest_progression_canny_2": 1
+        }
+      },
+      "QS05-Quest:HordeQuest_Progression_Canny_3": {
+        "templateId": "Quest:HordeQuest_Progression_Canny_3",
+        "objectives": {
+          "hordequest_progression_canny_3": 1
+        }
+      },
+      "QS05-Quest:HordeQuest_Progression_Canny_4": {
+        "templateId": "Quest:HordeQuest_Progression_Canny_4",
+        "objectives": {
+          "hordequest_progression_canny_4": 1
+        }
+      },
+      "QS05-Quest:HordeQuest_Progression_Canny_5": {
+        "templateId": "Quest:HordeQuest_Progression_Canny_5",
+        "objectives": {
+          "hordequest_progression_canny_5": 1
+        }
+      },
+      "QS05-Quest:HordeQuest_Progression_Canny_5_Repeatable": {
+        "templateId": "Quest:HordeQuest_Progression_Canny_5_Repeatable",
+        "objectives": {
+          "hordequest_progression_canny_5_repeatable": 1
+        }
+      },
+      "QS05-Quest:HordeQuest_Progression_Plankerton_1": {
+        "templateId": "Quest:HordeQuest_Progression_Plankerton_1",
+        "objectives": {
+          "hordequest_progression_plankerton_1": 1
+        }
+      },
+      "QS05-Quest:HordeQuest_Progression_Plankerton_2": {
+        "templateId": "Quest:HordeQuest_Progression_Plankerton_2",
+        "objectives": {
+          "hordequest_progression_plankerton_2": 1
+        }
+      },
+      "QS05-Quest:HordeQuest_Progression_Plankerton_3": {
+        "templateId": "Quest:HordeQuest_Progression_Plankerton_3",
+        "objectives": {
+          "hordequest_progression_plankerton_3": 1
+        }
+      },
+      "QS05-Quest:HordeQuest_Progression_Plankerton_4": {
+        "templateId": "Quest:HordeQuest_Progression_Plankerton_4",
+        "objectives": {
+          "hordequest_progression_plankerton_4": 1
+        }
+      },
+      "QS05-Quest:HordeQuest_Progression_Plankerton_5": {
+        "templateId": "Quest:HordeQuest_Progression_Plankerton_5",
+        "objectives": {
+          "hordequest_progression_plankerton_5": 1
+        }
+      },
+      "QS05-Quest:HordeQuest_Progression_Plankerton_5_Repeatable": {
+        "templateId": "Quest:HordeQuest_Progression_Plankerton_5_Repeatable",
+        "objectives": {
+          "hordequest_progression_plankerton_5_repeatable": 1
+        }
+      },
+      "QS05-Quest:HordeQuest_Progression_Stonewood_1": {
+        "templateId": "Quest:HordeQuest_Progression_Stonewood_1",
+        "objectives": {
+          "hordequest_progression_stonewood_1": 1
+        }
+      },
+      "QS05-Quest:HordeQuest_Progression_Stonewood_2": {
+        "templateId": "Quest:HordeQuest_Progression_Stonewood_2",
+        "objectives": {
+          "hordequest_progression_stonewood_2": 1
+        }
+      },
+      "QS05-Quest:HordeQuest_Progression_Stonewood_3": {
+        "templateId": "Quest:HordeQuest_Progression_Stonewood_3",
+        "objectives": {
+          "hordequest_progression_stonewood_3": 1
+        }
+      },
+      "QS05-Quest:HordeQuest_Progression_Stonewood_4": {
+        "templateId": "Quest:HordeQuest_Progression_Stonewood_4",
+        "objectives": {
+          "hordequest_progression_stonewood_4": 1
+        }
+      },
+      "QS05-Quest:HordeQuest_Progression_Stonewood_4_Repeatable": {
+        "templateId": "Quest:HordeQuest_Progression_Stonewood_4_Repeatable",
+        "objectives": {
+          "hordequest_progression_stonewood_4_repeatable": 1
+        }
+      },
+      "QS05-Quest:HordeQuest_Progression_Twine_1": {
+        "templateId": "Quest:HordeQuest_Progression_Twine_1",
+        "objectives": {
+          "hordequest_progression_twine_1": 1
+        }
+      },
+      "QS05-Quest:HordeQuest_Progression_Twine_10": {
+        "templateId": "Quest:HordeQuest_Progression_Twine_10",
+        "objectives": {
+          "hordequest_progression_twine_10": 1
+        }
+      },
+      "QS05-Quest:HordeQuest_Progression_Twine_11": {
+        "templateId": "Quest:HordeQuest_Progression_Twine_11",
+        "objectives": {
+          "hordequest_progression_twine_11": 1
+        }
+      },
+      "QS05-Quest:HordeQuest_Progression_Twine_12": {
+        "templateId": "Quest:HordeQuest_Progression_Twine_12",
+        "objectives": {
+          "hordequest_progression_twine_12": 1
+        }
+      },
+      "QS05-Quest:HordeQuest_Progression_Twine_13": {
+        "templateId": "Quest:HordeQuest_Progression_Twine_13",
+        "objectives": {
+          "hordequest_progression_twine_13": 1
+        }
+      },
+      "QS05-Quest:HordeQuest_Progression_Twine_14": {
+        "templateId": "Quest:HordeQuest_Progression_Twine_14",
+        "objectives": {
+          "hordequest_progression_twine_14": 1
+        }
+      },
+      "QS05-Quest:HordeQuest_Progression_Twine_2": {
+        "templateId": "Quest:HordeQuest_Progression_Twine_2",
+        "objectives": {
+          "hordequest_progression_twine_2": 1
+        }
+      },
+      "QS05-Quest:HordeQuest_Progression_Twine_3": {
+        "templateId": "Quest:HordeQuest_Progression_Twine_3",
+        "objectives": {
+          "hordequest_progression_twine_3": 1
+        }
+      },
+      "QS05-Quest:HordeQuest_Progression_Twine_4": {
+        "templateId": "Quest:HordeQuest_Progression_Twine_4",
+        "objectives": {
+          "hordequest_progression_twine_4": 1
+        }
+      },
+      "QS05-Quest:HordeQuest_Progression_Twine_5": {
+        "templateId": "Quest:HordeQuest_Progression_Twine_5",
+        "objectives": {
+          "hordequest_progression_twine_5": 1
+        }
+      },
+      "QS05-Quest:HordeQuest_Progression_Twine_5_Repeatable": {
+        "templateId": "Quest:HordeQuest_Progression_Twine_5_Repeatable",
+        "objectives": {
+          "hordequest_progression_twine_5_repeatable": 1
+        }
+      },
+      "QS05-Quest:HordeQuest_Progression_Twine_6": {
+        "templateId": "Quest:HordeQuest_Progression_Twine_6",
+        "objectives": {
+          "hordequest_progression_twine_6": 1
+        }
+      },
+      "QS05-Quest:HordeQuest_Progression_Twine_7": {
+        "templateId": "Quest:HordeQuest_Progression_Twine_7",
+        "objectives": {
+          "hordequest_progression_twine_7": 1
+        }
+      },
+      "QS05-Quest:HordeQuest_Progression_Twine_8": {
+        "templateId": "Quest:HordeQuest_Progression_Twine_8",
+        "objectives": {
+          "hordequest_progression_twine_8": 1
+        }
+      },
+      "QS05-Quest:HordeQuest_Progression_Twine_9": {
+        "templateId": "Quest:HordeQuest_Progression_Twine_9",
+        "objectives": {
+          "hordequest_progression_twine_9": 1
+        }
+      },
+      "QS05-Quest:HordeQuest_Weekly1_Canny1": {
+        "templateId": "Quest:HordeQuest_Weekly1_Canny1",
+        "objectives": {
+          "hordequest_weekly1_canny_1": 1
+        }
+      },
+      "QS05-Quest:HordeQuest_Weekly1_Canny1_repeatable": {
+        "templateId": "Quest:HordeQuest_Weekly1_Canny1_repeatable",
+        "objectives": {
+          "hordequest_weekly1_canny_1_repeatable": 1
+        }
+      },
+      "QS05-Quest:HordeQuest_Weekly1_Plankerton1": {
+        "templateId": "Quest:HordeQuest_Weekly1_Plankerton1",
+        "objectives": {
+          "hordequest_weekly1_plankerton_1": 1
+        }
+      },
+      "QS05-Quest:HordeQuest_Weekly1_Plankerton1_repeatable": {
+        "templateId": "Quest:HordeQuest_Weekly1_Plankerton1_repeatable",
+        "objectives": {
+          "hordequest_weekly1_plankerton_1_repeatable": 1
+        }
+      },
+      "QS05-Quest:HordeQuest_Weekly1_Stonewood1": {
+        "templateId": "Quest:HordeQuest_Weekly1_Stonewood1",
+        "objectives": {
+          "hordequest_weekly1_stonewood_1": 1
+        }
+      },
+      "QS05-Quest:HordeQuest_Weekly1_Stonewood1_repeatable": {
+        "templateId": "Quest:HordeQuest_Weekly1_Stonewood1_repeatable",
+        "objectives": {
+          "hordequest_weekly1_stonewood_1_repeatable": 1
+        }
+      },
+      "QS05-Quest:HordeQuest_Weekly1_Twine1": {
+        "templateId": "Quest:HordeQuest_Weekly1_Twine1",
+        "objectives": {
+          "hordequest_weekly1_twine_1": 1
+        }
+      },
+      "QS05-Quest:HordeQuest_Weekly1_Twine1_repeatable": {
+        "templateId": "Quest:HordeQuest_Weekly1_Twine1_repeatable",
+        "objectives": {
+          "hordequest_weekly1_twine_1_repeatable": 1
+        }
+      },
+      "QS05-Quest:HordeQuest_Weekly2_Canny1": {
+        "templateId": "Quest:HordeQuest_Weekly2_Canny1",
+        "objectives": {
+          "hordequest_weekly2_canny_1": 1
+        }
+      },
+      "QS05-Quest:HordeQuest_Weekly2_Canny1_repeatable": {
+        "templateId": "Quest:HordeQuest_Weekly2_Canny1_repeatable",
+        "objectives": {
+          "hordequest_weekly2_canny_1_repeatable": 1
+        }
+      },
+      "QS05-Quest:HordeQuest_Weekly2_Plankerton1": {
+        "templateId": "Quest:HordeQuest_Weekly2_Plankerton1",
+        "objectives": {
+          "hordequest_weekly2_plankerton_1": 1
+        }
+      },
+      "QS05-Quest:HordeQuest_Weekly2_Plankerton1_repeatable": {
+        "templateId": "Quest:HordeQuest_Weekly2_Plankerton1_repeatable",
+        "objectives": {
+          "hordequest_weekly2_plankerton_1_repeatable": 1
+        }
+      },
+      "QS05-Quest:HordeQuest_Weekly2_Stonewood1": {
+        "templateId": "Quest:HordeQuest_Weekly2_Stonewood1",
+        "objectives": {
+          "hordequest_weekly2_stonewood_1": 1
+        }
+      },
+      "QS05-Quest:HordeQuest_Weekly2_Stonewood1_repeatable": {
+        "templateId": "Quest:HordeQuest_Weekly2_Stonewood1_repeatable",
+        "objectives": {
+          "hordequest_weekly1_stonewood_2_repeatable": 1
+        }
+      },
+      "QS05-Quest:HordeQuest_Weekly2_Twine1": {
+        "templateId": "Quest:HordeQuest_Weekly2_Twine1",
+        "objectives": {
+          "hordequest_weekly2_twine_1": 1
+        }
+      },
+      "QS05-Quest:HordeQuest_Weekly2_Twine1_repeatable": {
+        "templateId": "Quest:HordeQuest_Weekly2_Twine1_repeatable",
+        "objectives": {
+          "hordequest_weekly2_twine_1_repeatable": 1
+        }
+      },
+      "QS05-Quest:HordeQuest_Weekly3_Canny1": {
+        "templateId": "Quest:HordeQuest_Weekly3_Canny1",
+        "objectives": {
+          "hordequest_weekly3_canny_1": 1
+        }
+      },
+      "QS05-Quest:HordeQuest_Weekly3_Canny1_repeatable": {
+        "templateId": "Quest:HordeQuest_Weekly3_Canny1_repeatable",
+        "objectives": {
+          "hordequest_weekly3_canny_1_repeatable": 1
+        }
+      },
+      "QS05-Quest:HordeQuest_Weekly3_Plankerton1": {
+        "templateId": "Quest:HordeQuest_Weekly3_Plankerton1",
+        "objectives": {
+          "hordequest_weekly3_plankerton_1": 1
+        }
+      },
+      "QS05-Quest:HordeQuest_Weekly3_Plankerton1_repeatable": {
+        "templateId": "Quest:HordeQuest_Weekly3_Plankerton1_repeatable",
+        "objectives": {
+          "hordequest_weekly3_plankerton_1_repeatable": 1
+        }
+      },
+      "QS05-Quest:HordeQuest_Weekly3_Stonewood1": {
+        "templateId": "Quest:HordeQuest_Weekly3_Stonewood1",
+        "objectives": {
+          "hordequest_weekly3_stonewood_1": 1
+        }
+      },
+      "QS05-Quest:HordeQuest_Weekly3_Stonewood1_repeatable": {
+        "templateId": "Quest:HordeQuest_Weekly3_Stonewood1_repeatable",
+        "objectives": {
+          "hordequest_weekly3_stonewood_1_repeatable": 1
+        }
+      },
+      "QS05-Quest:HordeQuest_Weekly3_Twine1": {
+        "templateId": "Quest:HordeQuest_Weekly3_Twine1",
+        "objectives": {
+          "hordequest_weekly3_twine_1": 1
+        }
+      },
+      "QS05-Quest:HordeQuest_Weekly3_Twine1_repeatable": {
+        "templateId": "Quest:HordeQuest_Weekly3_Twine1_repeatable",
+        "objectives": {
+          "hordequest_weekly3_twine_1_repeatable": 1
+        }
+      },
+      "QS05-Quest:HordeQuest_Weekly4_Canny1": {
+        "templateId": "Quest:HordeQuest_Weekly4_Canny1",
+        "objectives": {
+          "hordequest_weekly4_canny_1": 1
+        }
+      },
+      "QS05-Quest:HordeQuest_Weekly4_Canny1_repeatable": {
+        "templateId": "Quest:HordeQuest_Weekly4_Canny1_repeatable",
+        "objectives": {
+          "hordequest_weekly4_canny_1_repeatable": 1
+        }
+      },
+      "QS05-Quest:HordeQuest_Weekly4_Plankerton1": {
+        "templateId": "Quest:HordeQuest_Weekly4_Plankerton1",
+        "objectives": {
+          "hordequest_weekly4_plankerton_1": 1
+        }
+      },
+      "QS05-Quest:HordeQuest_Weekly4_Plankerton1_repeatable": {
+        "templateId": "Quest:HordeQuest_Weekly4_Plankerton1_repeatable",
+        "objectives": {
+          "hordequest_weekly4_plankerton_1_repeatable": 1
+        }
+      },
+      "QS05-Quest:HordeQuest_Weekly4_Stonewood1": {
+        "templateId": "Quest:HordeQuest_Weekly4_Stonewood1",
+        "objectives": {
+          "hordequest_weekly4_stonewood_1": 1
+        }
+      },
+      "QS05-Quest:HordeQuest_Weekly4_Stonewood1_repeatable": {
+        "templateId": "Quest:HordeQuest_Weekly4_Stonewood1_repeatable",
+        "objectives": {
+          "hordequest_weekly4_stonewood_1_repeatable": 1
+        }
+      },
+      "QS05-Quest:HordeQuest_Weekly4_Twine1": {
+        "templateId": "Quest:HordeQuest_Weekly4_Twine1",
+        "objectives": {
+          "hordequest_weekly4_twine_1": 1
+        }
+      },
+      "QS05-Quest:HordeQuest_Weekly4_Twine1_repeatable": {
+        "templateId": "Quest:HordeQuest_Weekly4_Twine1_repeatable",
+        "objectives": {
+          "hordequest_weekly4_twine_1_repeatable": 1
+        }
+      },
+      "QS05-Quest:HordeQuest_Weekly5_Canny1": {
+        "templateId": "Quest:HordeQuest_Weekly5_Canny1",
+        "objectives": {
+          "hordequest_weekly5_canny_1": 1
+        }
+      },
+      "QS05-Quest:HordeQuest_Weekly5_Canny1_repeatable": {
+        "templateId": "Quest:HordeQuest_Weekly5_Canny1_repeatable",
+        "objectives": {
+          "hordequest_weekly5_canny_1_repeatable": 1
+        }
+      },
+      "QS05-Quest:HordeQuest_Weekly5_Plankerton1": {
+        "templateId": "Quest:HordeQuest_Weekly5_Plankerton1",
+        "objectives": {
+          "hordequest_weekly5_plankerton_1": 1
+        }
+      },
+      "QS05-Quest:HordeQuest_Weekly5_Plankerton1_repeatable": {
+        "templateId": "Quest:HordeQuest_Weekly5_Plankerton1_repeatable",
+        "objectives": {
+          "hordequest_weekly5_plankerton_1_repeatable": 1
+        }
+      },
+      "QS05-Quest:HordeQuest_Weekly5_Stonewood1": {
+        "templateId": "Quest:HordeQuest_Weekly5_Stonewood1",
+        "objectives": {
+          "hordequest_weekly5_stonewood_1": 1
+        }
+      },
+      "QS05-Quest:HordeQuest_Weekly5_Stonewood1_repeatable": {
+        "templateId": "Quest:HordeQuest_Weekly5_Stonewood1_repeatable",
+        "objectives": {
+          "hordequest_weekly5_stonewood_1_repeatable": 1
+        }
+      },
+      "QS05-Quest:HordeQuest_Weekly5_Twine1": {
+        "templateId": "Quest:HordeQuest_Weekly5_Twine1",
+        "objectives": {
+          "hordequest_weekly5_twine_1": 1
+        }
+      },
+      "QS05-Quest:HordeQuest_Weekly5_Twine1_repeatable": {
+        "templateId": "Quest:HordeQuest_Weekly5_Twine1_repeatable",
+        "objectives": {
+          "hordequest_weekly5_twine_1_repeatable": 1
+        }
+      },
+      "QS05-Quest:HordeQuest_Weekly6_Canny1": {
+        "templateId": "Quest:HordeQuest_Weekly6_Canny1",
+        "objectives": {
+          "hordequest_weekly6_canny_1": 1
+        }
+      },
+      "QS05-Quest:HordeQuest_Weekly6_Canny1_repeatable": {
+        "templateId": "Quest:HordeQuest_Weekly6_Canny1_repeatable",
+        "objectives": {
+          "hordequest_weekly6_canny_1_repeatable": 1
+        }
+      },
+      "QS05-Quest:HordeQuest_Weekly6_Plankerton1": {
+        "templateId": "Quest:HordeQuest_Weekly6_Plankerton1",
+        "objectives": {
+          "hordequest_weekly6_plankerton_1": 1
+        }
+      },
+      "QS05-Quest:HordeQuest_Weekly6_Plankerton1_repeatable": {
+        "templateId": "Quest:HordeQuest_Weekly6_Plankerton1_repeatable",
+        "objectives": {
+          "hordequest_weekly6_plankerton_1_repeatable": 1
+        }
+      },
+      "QS05-Quest:HordeQuest_Weekly6_Stonewood1": {
+        "templateId": "Quest:HordeQuest_Weekly6_Stonewood1",
+        "objectives": {
+          "hordequest_weekly6_stonewood_1": 1
+        }
+      },
+      "QS05-Quest:HordeQuest_Weekly6_Stonewood1_repeatable": {
+        "templateId": "Quest:HordeQuest_Weekly6_Stonewood1_repeatable",
+        "objectives": {
+          "hordequest_weekly6_stonewood_1_repeatable": 1
+        }
+      },
+      "QS05-Quest:HordeQuest_Weekly6_Twine1": {
+        "templateId": "Quest:HordeQuest_Weekly6_Twine1",
+        "objectives": {
+          "hordequest_weekly6_twine_1": 1
+        }
+      },
+      "QS05-Quest:HordeQuest_Weekly6_Twine1_repeatable": {
+        "templateId": "Quest:HordeQuest_Weekly6_Twine1_repeatable",
+        "objectives": {
+          "hordequest_weekly6_twine_1_repeatable": 1
+        }
+      },
+      "QS05-Quest:HordeQuest_Weekly7_Canny1": {
+        "templateId": "Quest:HordeQuest_Weekly7_Canny1",
+        "objectives": {
+          "hordequest_weekly7_canny_1": 1
+        }
+      },
+      "QS05-Quest:HordeQuest_Weekly7_Canny1_repeatable": {
+        "templateId": "Quest:HordeQuest_Weekly7_Canny1_repeatable",
+        "objectives": {
+          "hordequest_weekly7_canny_1_repeatable": 1
+        }
+      },
+      "QS05-Quest:HordeQuest_Weekly7_Plankerton1": {
+        "templateId": "Quest:HordeQuest_Weekly7_Plankerton1",
+        "objectives": {
+          "hordequest_weekly7_plankerton_1": 1
+        }
+      },
+      "QS05-Quest:HordeQuest_Weekly7_Plankerton1_repeatable": {
+        "templateId": "Quest:HordeQuest_Weekly7_Plankerton1_repeatable",
+        "objectives": {
+          "hordequest_weekly7_plankerton_1_repeatable": 1
+        }
+      },
+      "QS05-Quest:HordeQuest_Weekly7_Stonewood1": {
+        "templateId": "Quest:HordeQuest_Weekly7_Stonewood1",
+        "objectives": {
+          "hordequest_weekly7_stonewood_1": 1
+        }
+      },
+      "QS05-Quest:HordeQuest_Weekly7_Stonewood1_repeatable": {
+        "templateId": "Quest:HordeQuest_Weekly7_Stonewood1_repeatable",
+        "objectives": {
+          "hordequest_weekly7_stonewood_1_repeatable": 1
+        }
+      },
+      "QS05-Quest:HordeQuest_Weekly7_Twine1": {
+        "templateId": "Quest:HordeQuest_Weekly7_Twine1",
+        "objectives": {
+          "hordequest_weekly7_twine_1": 1
+        }
+      },
+      "QS05-Quest:HordeQuest_Weekly7_Twine1_repeatable": {
+        "templateId": "Quest:HordeQuest_Weekly7_Twine1_repeatable",
+        "objectives": {
+          "hordequest_weekly7_twine_1_repeatable": 1
+        }
+      }
+    }
+  },
+  "Season06": {
+    "Quests": {
+      "QS06-Quest:HalloweenQuest_2017_CompleteMissions_1": {
+        "templateId": "Quest:HalloweenQuest_2017_CompleteMissions_1",
+        "objectives": {
+          "halloween_completemissions_1": 30
+        }
+      },
+      "QS06-Quest:HalloweenQuest_2017_CompleteMissions_10": {
+        "templateId": "Quest:HalloweenQuest_2017_CompleteMissions_10",
+        "objectives": {
+          "halloween_completemissions_10": 30
+        }
+      },
+      "QS06-Quest:HalloweenQuest_2017_CompleteMissions_11": {
+        "templateId": "Quest:HalloweenQuest_2017_CompleteMissions_11",
+        "objectives": {
+          "halloween_completemissions_11": 30
+        }
+      },
+      "QS06-Quest:HalloweenQuest_2017_CompleteMissions_12": {
+        "templateId": "Quest:HalloweenQuest_2017_CompleteMissions_12",
+        "objectives": {
+          "halloween_completemissions_12": 30
+        }
+      },
+      "QS06-Quest:HalloweenQuest_2017_CompleteMissions_13": {
+        "templateId": "Quest:HalloweenQuest_2017_CompleteMissions_13",
+        "objectives": {
+          "halloween_completemissions_13": 30
+        }
+      },
+      "QS06-Quest:HalloweenQuest_2017_CompleteMissions_14": {
+        "templateId": "Quest:HalloweenQuest_2017_CompleteMissions_14",
+        "objectives": {
+          "halloween_completemissions_14": 30
+        }
+      },
+      "QS06-Quest:HalloweenQuest_2017_CompleteMissions_2": {
+        "templateId": "Quest:HalloweenQuest_2017_CompleteMissions_2",
+        "objectives": {
+          "halloween_completemissions_2": 30
+        }
+      },
+      "QS06-Quest:HalloweenQuest_2017_CompleteMissions_3": {
+        "templateId": "Quest:HalloweenQuest_2017_CompleteMissions_3",
+        "objectives": {
+          "halloween_completemissions_3": 30
+        }
+      },
+      "QS06-Quest:HalloweenQuest_2017_CompleteMissions_4": {
+        "templateId": "Quest:HalloweenQuest_2017_CompleteMissions_4",
+        "objectives": {
+          "halloween_completemissions_4": 30
+        }
+      },
+      "QS06-Quest:HalloweenQuest_2017_CompleteMissions_5": {
+        "templateId": "Quest:HalloweenQuest_2017_CompleteMissions_5",
+        "objectives": {
+          "halloween_completemissions_5": 30
+        }
+      },
+      "QS06-Quest:HalloweenQuest_2017_CompleteMissions_6": {
+        "templateId": "Quest:HalloweenQuest_2017_CompleteMissions_6",
+        "objectives": {
+          "halloween_completemissions_6": 30
+        }
+      },
+      "QS06-Quest:HalloweenQuest_2017_CompleteMissions_7": {
+        "templateId": "Quest:HalloweenQuest_2017_CompleteMissions_7",
+        "objectives": {
+          "halloween_completemissions_7": 30
+        }
+      },
+      "QS06-Quest:HalloweenQuest_2017_CompleteMissions_8": {
+        "templateId": "Quest:HalloweenQuest_2017_CompleteMissions_8",
+        "objectives": {
+          "halloween_completemissions_8": 30
+        }
+      },
+      "QS06-Quest:HalloweenQuest_2017_CompleteMissions_9": {
+        "templateId": "Quest:HalloweenQuest_2017_CompleteMissions_9",
+        "objectives": {
+          "halloween_completemissions_9": 30
+        }
+      },
+      "QS06-Quest:HalloweenQuest_2017_EpicHeroes": {
+        "templateId": "Quest:HalloweenQuest_2017_EpicHeroes",
+        "objectives": {
+          "questcomplete_reactivequest_gathercollect_halloween_1": 1
+        }
+      },
+      "QS06-Quest:HalloweenQuest_2017_Hidden_1": {
+        "templateId": "Quest:HalloweenQuest_2017_Hidden_1",
+        "objectives": {
+          "questcomplete_reactivequest_halloween_destroy_1": 1,
+          "questcomplete_reactivequest_halloween_destroy_2": 1
+        }
+      },
+      "QS06-Quest:HalloweenQuest_2017_Hidden_2": {
+        "templateId": "Quest:HalloweenQuest_2017_Hidden_2",
+        "objectives": {
+          "questcomplete_reactivequest_halloween_destroy_3": 1,
+          "questcomplete_reactivequest_halloween_destroy_4": 1
+        }
+      },
+      "QS06-Quest:HalloweenQuest_2017_Hidden_3": {
+        "templateId": "Quest:HalloweenQuest_2017_Hidden_3",
+        "objectives": {
+          "questcomplete_reactivequest_halloween_destroy_5": 1,
+          "questcomplete_reactivequest_halloween_destroy_6": 1
+        }
+      },
+      "QS06-Quest:HalloweenQuest_2017_Hidden_4": {
+        "templateId": "Quest:HalloweenQuest_2017_Hidden_4",
+        "objectives": {
+          "questcomplete_reactivequest_halloween_destroy_7": 1,
+          "questcomplete_reactivequest_halloween_destroy_8": 1
+        }
+      },
+      "QS06-Quest:HalloweenQuest_2017_Hidden_5": {
+        "templateId": "Quest:HalloweenQuest_2017_Hidden_5",
+        "objectives": {
+          "questcomplete_reactivequest_halloween_destroy_9": 1,
+          "questcomplete_reactivequest_halloween_destroy_10": 1
+        }
+      },
+      "QS06-Quest:HalloweenQuest_2017_Hidden_6": {
+        "templateId": "Quest:HalloweenQuest_2017_Hidden_6",
+        "objectives": {
+          "questcomplete_reactivequest_findcastles": 1,
+          "questcomplete_reactivequest_findcatacombs": 1,
+          "questcomplete_reactivequest_findmansions": 1
+        }
+      },
+      "QS06-Quest:HalloweenQuest_2017_KillMistMonsters": {
+        "templateId": "Quest:HalloweenQuest_2017_KillMistMonsters",
+        "objectives": {
+          "kill_mist_monster_halloween_outlander": 30
+        }
+      },
+      "QS06-Quest:HalloweenQuest_2017_KillPumpkinHusks": {
+        "templateId": "Quest:HalloweenQuest_2017_KillPumpkinHusks",
+        "objectives": {
+          "kill_husk_pumpkinhead": 300
+        }
+      },
+      "QS06-Quest:HalloweenQuest_2017_LegendaryHeroes": {
+        "templateId": "Quest:HalloweenQuest_2017_LegendaryHeroes",
+        "objectives": {
+          "questcomplete_reactivequest_halloween_fetch_5": 1
+        }
+      },
+      "QS06-Quest:HalloweenQuest_2017_Opener": {
+        "templateId": "Quest:HalloweenQuest_2017_Opener",
+        "objectives": {
+          "complete_trv_landmark": 1
+        }
+      },
+      "QS06-Quest:HalloweenQuest_2017_TrainHero": {
+        "templateId": "Quest:HalloweenQuest_2017_TrainHero",
+        "objectives": {
+          "upgrade_halloween_outlander": 1
+        }
+      },
+      "QS06-Quest:HalloweenQuest_2017_TtS_Intro": {
+        "templateId": "Quest:HalloweenQuest_2017_TtS_Intro",
+        "objectives": {
+          "complete_trv_trapthestorm": 1
+        }
+      },
+      "QS06-Quest:HalloweenQuest_CannyValleyMissions": {
+        "templateId": "Quest:HalloweenQuest_CannyValleyMissions",
+        "objectives": {
+          "complete_pve03_diff3": 5
+        }
+      },
+      "QS06-Quest:HalloweenQuest_ClearHuskEncampments": {
+        "templateId": "Quest:HalloweenQuest_ClearHuskEncampments",
+        "objectives": {
+          "complete_encampment_1_diff4": 6,
+          "complete_pve01_diff4": 2
+        }
+      },
+      "QS06-Quest:HalloweenQuest_CollectPumpkinHeads": {
+        "templateId": "Quest:HalloweenQuest_CollectPumpkinHeads",
+        "objectives": {
+          "quest_reactive_pumpkinhead": 10,
+          "complete_pve01_diff2": 2
+        }
+      },
+      "QS06-Quest:HalloweenQuest_CraftPumpkinLauncher": {
+        "templateId": "Quest:HalloweenQuest_CraftPumpkinLauncher",
+        "objectives": {
+          "craft_pumpkin_launcher": 1,
+          "kill_husk_lobber_pumplauncher": 6,
+          "complete_pve01_diff5": 1
+        }
+      },
+      "QS06-Quest:HalloweenQuest_FindGravestones": {
+        "templateId": "Quest:HalloweenQuest_FindGravestones",
+        "objectives": {
+          "quest_reactive_gravestone": 1,
+          "complete_pve01": 3
+        }
+      },
+      "QS06-Quest:HalloweenQuest_KillPumpkinHusks": {
+        "templateId": "Quest:HalloweenQuest_KillPumpkinHusks",
+        "objectives": {
+          "kill_husk_pumpkinhead": 20,
+          "complete_pve01_diff1": 2
+        }
+      },
+      "QS06-Quest:HalloweenQuest_KillVlad": {
+        "templateId": "Quest:HalloweenQuest_KillVlad",
+        "objectives": {
+          "kill_miniboss_vlad": 1
+        }
+      },
+      "QS06-Quest:HalloweenQuest_PlankertonMissions": {
+        "templateId": "Quest:HalloweenQuest_PlankertonMissions",
+        "objectives": {
+          "complete_pve02_diff3": 5
+        }
+      },
+      "QS06-Quest:HalloweenQuest_SaveSurvivors": {
+        "templateId": "Quest:HalloweenQuest_SaveSurvivors",
+        "objectives": {
+          "questcollect_survivoritemdata": 15,
+          "complete_pve01_diff3": 3
+        }
+      },
+      "QS06-Quest:ReactiveQuest_GatherCollect_Halloween_1": {
+        "templateId": "Quest:ReactiveQuest_GatherCollect_Halloween_1",
+        "objectives": {
+          "quest_reactive_gather_halloween_1": 20
+        }
+      },
+      "QS06-Quest:ReactiveQuest_GatherCollect_Halloween_2": {
+        "templateId": "Quest:ReactiveQuest_GatherCollect_Halloween_2",
+        "objectives": {
+          "quest_reactive_gather_halloween_2": 25
+        }
+      },
+      "QS06-Quest:ReactiveQuest_GatherCollect_Halloween_3": {
+        "templateId": "Quest:ReactiveQuest_GatherCollect_Halloween_3",
+        "objectives": {
+          "quest_reactive_gather_halloween_3": 13
+        }
+      },
+      "QS06-Quest:ReactiveQuest_GatherCollect_Halloween_4": {
+        "templateId": "Quest:ReactiveQuest_GatherCollect_Halloween_4",
+        "objectives": {
+          "quest_reactive_gather_halloween_4": 12
+        }
+      },
+      "QS06-Quest:ReactiveQuest_GatherCollect_Halloween_5": {
+        "templateId": "Quest:ReactiveQuest_GatherCollect_Halloween_5",
+        "objectives": {
+          "quest_reactive_gather_halloween_5": 30
+        }
+      },
+      "QS06-Quest:ReactiveQuest_GatherCollect_Halloween_6": {
+        "templateId": "Quest:ReactiveQuest_GatherCollect_Halloween_6",
+        "objectives": {
+          "quest_reactive_gather_halloween_6": 10
+        }
+      },
+      "QS06-Quest:ReactiveQuest_Halloween_Destroy_1": {
+        "templateId": "Quest:ReactiveQuest_Halloween_Destroy_1",
+        "objectives": {
+          "quest_reactive_destroy_halloween_1": 8
+        }
+      },
+      "QS06-Quest:ReactiveQuest_Halloween_Destroy_10": {
+        "templateId": "Quest:ReactiveQuest_Halloween_Destroy_10",
+        "objectives": {
+          "quest_reactive_destroy_halloween_10": 6
+        }
+      },
+      "QS06-Quest:ReactiveQuest_Halloween_Destroy_2": {
+        "templateId": "Quest:ReactiveQuest_Halloween_Destroy_2",
+        "objectives": {
+          "quest_reactive_destroy_halloween_2": 10
+        }
+      },
+      "QS06-Quest:ReactiveQuest_Halloween_Destroy_3": {
+        "templateId": "Quest:ReactiveQuest_Halloween_Destroy_3",
+        "objectives": {
+          "quest_reactive_destroy_halloween_3": 10
+        }
+      },
+      "QS06-Quest:ReactiveQuest_Halloween_Destroy_4": {
+        "templateId": "Quest:ReactiveQuest_Halloween_Destroy_4",
+        "objectives": {
+          "quest_reactive_destroy_halloween_4": 4
+        }
+      },
+      "QS06-Quest:ReactiveQuest_Halloween_Destroy_5": {
+        "templateId": "Quest:ReactiveQuest_Halloween_Destroy_5",
+        "objectives": {
+          "quest_reactive_destroy_halloween_5": 12
+        }
+      },
+      "QS06-Quest:ReactiveQuest_Halloween_Destroy_6": {
+        "templateId": "Quest:ReactiveQuest_Halloween_Destroy_6",
+        "objectives": {
+          "quest_reactive_destroy_halloween_6": 12
+        }
+      },
+      "QS06-Quest:ReactiveQuest_Halloween_Destroy_7": {
+        "templateId": "Quest:ReactiveQuest_Halloween_Destroy_7",
+        "objectives": {
+          "quest_reactive_destroy_halloween_7": 8
+        }
+      },
+      "QS06-Quest:ReactiveQuest_Halloween_Destroy_8": {
+        "templateId": "Quest:ReactiveQuest_Halloween_Destroy_8",
+        "objectives": {
+          "quest_reactive_destroy_halloween_8": 10
+        }
+      },
+      "QS06-Quest:ReactiveQuest_Halloween_Destroy_9": {
+        "templateId": "Quest:ReactiveQuest_Halloween_Destroy_9",
+        "objectives": {
+          "quest_reactive_destroy_halloween_9": 24
+        }
+      },
+      "QS06-Quest:ReactiveQuest_Halloween_Fetch_1": {
+        "templateId": "Quest:ReactiveQuest_Halloween_Fetch_1",
+        "objectives": {
+          "quest_reactive_fetch_halloween_1": 15
+        }
+      },
+      "QS06-Quest:ReactiveQuest_Halloween_Fetch_2": {
+        "templateId": "Quest:ReactiveQuest_Halloween_Fetch_2",
+        "objectives": {
+          "quest_reactive_fetch_halloween_2": 10
+        }
+      },
+      "QS06-Quest:ReactiveQuest_Halloween_Fetch_3": {
+        "templateId": "Quest:ReactiveQuest_Halloween_Fetch_3",
+        "objectives": {
+          "quest_reactive_fetch_halloween_3": 6
+        }
+      },
+      "QS06-Quest:ReactiveQuest_Halloween_Fetch_4": {
+        "templateId": "Quest:ReactiveQuest_Halloween_Fetch_4",
+        "objectives": {
+          "quest_reactive_fetch_halloween_4": 5
+        }
+      },
+      "QS06-Quest:ReactiveQuest_Halloween_Fetch_5": {
+        "templateId": "Quest:ReactiveQuest_Halloween_Fetch_5",
+        "objectives": {
+          "quest_reactive_fetch_halloween_5": 15
+        }
+      },
+      "QS06-Quest:ReactiveQuest_Halloween_Fetch_6": {
+        "templateId": "Quest:ReactiveQuest_Halloween_Fetch_6",
+        "objectives": {
+          "quest_reactive_fetch_halloween_6": 1,
+          "quest_reactive_fetch_halloween_8": 1
+        }
+      },
+      "QS06-Quest:ReactiveQuest_Halloween_Fetch_7": {
+        "templateId": "Quest:ReactiveQuest_Halloween_Fetch_7",
+        "objectives": {
+          "quest_reactive_fetch_halloween_7": 5
+        }
+      },
+      "QS06-Quest:ReactiveQuest_Halloween_KillCollect_PumpkinHusks": {
+        "templateId": "Quest:ReactiveQuest_Halloween_KillCollect_PumpkinHusks",
+        "objectives": {
+          "quest_reactive_killpumpkinhusk_halloween": 40
+        }
+      },
+      "QS06-Quest:ReactiveQuest_Halloween_KillCollect_Taker": {
+        "templateId": "Quest:ReactiveQuest_Halloween_KillCollect_Taker",
+        "objectives": {
+          "quest_reactive_killtaker_halloween": 15
+        }
+      }
+    }
+  },
+  "Season07": {
+    "Quests": {
+      "QS07-Quest:WinterQuest_2018_CompleteMissionAlerts": {
+        "templateId": "Quest:WinterQuest_2018_CompleteMissionAlerts",
+        "objectives": {
+          "winterquest_2018_completemissionalerts": 2
+        }
+      },
+      "QS07-Quest:WinterQuest_2018_EndgameWave30_Completion": {
+        "templateId": "Quest:WinterQuest_2018_EndgameWave30_Completion",
+        "objectives": {
+          "winterquest_2018_endgamecompletewave30": 1
+        }
+      },
+      "QS07-Quest:WinterQuest_2018_Frostnite_Collect_BluGlo": {
+        "templateId": "Quest:WinterQuest_2018_Frostnite_Collect_BluGlo",
+        "objectives": {
+          "winterquest_2018_frostnite_fill_heater": 200
+        }
+      },
+      "QS07-Quest:WinterQuest_2018_Frostnite_Collect_Treasure": {
+        "templateId": "Quest:WinterQuest_2018_Frostnite_Collect_Treasure",
+        "objectives": {
+          "winterquest_2018_frostnite_interact_treasure": 40
+        }
+      },
+      "QS07-Quest:WinterQuest_2018_Frostnite_CraftTraps": {
+        "templateId": "Quest:WinterQuest_2018_Frostnite_CraftTraps",
+        "objectives": {
+          "winterquest_2018_frostnite_craft_traps_rareplus": 50
+        }
+      },
+      "QS07-Quest:WinterQuest_2018_Frostnite_Exploration": {
+        "templateId": "Quest:WinterQuest_2018_Frostnite_Exploration",
+        "objectives": {
+          "winterquest_2018_frostnite_explorezone": 1
+        }
+      },
+      "QS07-Quest:WinterQuest_2018_Frostnite_Survive_15m": {
+        "templateId": "Quest:WinterQuest_2018_Frostnite_Survive_15m",
+        "objectives": {
+          "winterquest_2018_frostnite_survive_15m": 1
+        }
+      },
+      "QS07-Quest:WinterQuest_2018_Frostnite_Survive_30m": {
+        "templateId": "Quest:WinterQuest_2018_Frostnite_Survive_30m",
+        "objectives": {
+          "WinterQuest_2018_Frostnite_Survive_30m": 1
+        }
+      },
+      "QS07-Quest:WinterQuest_2018_Frostnite_Survive_45m": {
+        "templateId": "Quest:WinterQuest_2018_Frostnite_Survive_45m",
+        "objectives": {
+          "winterquest_2018_frostnite_survive_45m": 1
+        }
+      },
+      "QS07-Quest:WinterQuest_2018_Frostnite_Survive_Challenge_Week1_Major": {
+        "templateId": "Quest:WinterQuest_2018_Frostnite_Survive_Challenge_Week1_Major",
+        "objectives": {
+          "winterquest_2018_frostnite_challenge_01_major": 3
+        }
+      },
+      "QS07-Quest:WinterQuest_2018_Frostnite_Survive_Challenge_Week1_Minor": {
+        "templateId": "Quest:WinterQuest_2018_Frostnite_Survive_Challenge_Week1_Minor",
+        "objectives": {
+          "winterquest_2018_frostnite_challenge_01_minor": 1
+        }
+      },
+      "QS07-Quest:WinterQuest_2018_Frostnite_Survive_Challenge_Week2_Major": {
+        "templateId": "Quest:WinterQuest_2018_Frostnite_Survive_Challenge_Week2_Major",
+        "objectives": {
+          "winterquest_2018_frostnite_challenge_02_major": 3
+        }
+      },
+      "QS07-Quest:WinterQuest_2018_Frostnite_Survive_Challenge_Week2_Minor": {
+        "templateId": "Quest:WinterQuest_2018_Frostnite_Survive_Challenge_Week2_Minor",
+        "objectives": {
+          "winterquest_2018_frostnite_challenge_02_minor": 1
+        }
+      },
+      "QS07-Quest:WinterQuest_2018_Frostnite_Survive_Challenge_Week3_Major": {
+        "templateId": "Quest:WinterQuest_2018_Frostnite_Survive_Challenge_Week3_Major",
+        "objectives": {
+          "winterquest_2018_frostnite_challenge_03_major": 3
+        }
+      },
+      "QS07-Quest:WinterQuest_2018_Frostnite_Survive_Challenge_Week3_Minor": {
+        "templateId": "Quest:WinterQuest_2018_Frostnite_Survive_Challenge_Week3_Minor",
+        "objectives": {
+          "winterquest_2018_frostnite_challenge_03_minor": 1
+        }
+      },
+      "QS07-Quest:WinterQuest_2018_Frostnite_Survive_Challenge_Week4_Major": {
+        "templateId": "Quest:WinterQuest_2018_Frostnite_Survive_Challenge_Week4_Major",
+        "objectives": {
+          "winterquest_2018_frostnite_challenge_04_major": 3
+        }
+      },
+      "QS07-Quest:WinterQuest_2018_Frostnite_Survive_Challenge_Week4_Minor": {
+        "templateId": "Quest:WinterQuest_2018_Frostnite_Survive_Challenge_Week4_Minor",
+        "objectives": {
+          "winterquest_2018_frostnite_challenge_04_minor": 1
+        }
+      },
+      "QS07-Quest:WinterQuest_2018_Frostnite_Survive_Challenge_Week5_Major": {
+        "templateId": "Quest:WinterQuest_2018_Frostnite_Survive_Challenge_Week5_Major",
+        "objectives": {
+          "winterquest_2018_frostnite_challenge_05_major": 3
+        }
+      },
+      "QS07-Quest:WinterQuest_2018_Frostnite_Survive_Challenge_Week5_Minor": {
+        "templateId": "Quest:WinterQuest_2018_Frostnite_Survive_Challenge_Week5_Minor",
+        "objectives": {
+          "winterquest_2018_frostnite_challenge_05_minor": 1
+        }
+      },
+      "QS07-Quest:WinterQuest_2018_Frostnite_Survive_Challenge_Week6_Major": {
+        "templateId": "Quest:WinterQuest_2018_Frostnite_Survive_Challenge_Week6_Major",
+        "objectives": {
+          "winterquest_2018_frostnite_challenge_06_major": 3
+        }
+      },
+      "QS07-Quest:WinterQuest_2018_Frostnite_Survive_Challenge_Week6_Minor": {
+        "templateId": "Quest:WinterQuest_2018_Frostnite_Survive_Challenge_Week6_Minor",
+        "objectives": {
+          "winterquest_2018_frostnite_challenge_06_minor": 1
+        }
+      },
+      "QS07-Quest:WinterQuest_2018_Frostnite_Survive_Challenge_Week7_Major": {
+        "templateId": "Quest:WinterQuest_2018_Frostnite_Survive_Challenge_Week7_Major",
+        "objectives": {
+          "winterquest_2018_frostnite_challenge_07_major": 3
+        }
+      },
+      "QS07-Quest:WinterQuest_2018_Frostnite_Survive_Challenge_Week7_Minor": {
+        "templateId": "Quest:WinterQuest_2018_Frostnite_Survive_Challenge_Week7_Minor",
+        "objectives": {
+          "winterquest_2018_frostnite_challenge_07_minor": 1
+        }
+      },
+      "QS07-Quest:WinterQuest_2018_Frostnite_Survive_Challenge_Week8_Major": {
+        "templateId": "Quest:WinterQuest_2018_Frostnite_Survive_Challenge_Week8_Major",
+        "objectives": {
+          "winterquest_2018_frostnite_challenge_08_major": 3
+        }
+      },
+      "QS07-Quest:WinterQuest_2018_Frostnite_Survive_Challenge_Week8_Minor": {
+        "templateId": "Quest:WinterQuest_2018_Frostnite_Survive_Challenge_Week8_Minor",
+        "objectives": {
+          "winterquest_2018_frostnite_challenge_08_minor": 1
+        }
+      },
+      "QS07-Quest:WinterQuest_2018_Hidden_1": {
+        "templateId": "Quest:WinterQuest_2018_Hidden_1",
+        "objectives": {
+          "questcomplete_winterquest_2018_reactive_fetch_packingpresents": 1
+        }
+      },
+      "QS07-Quest:WinterQuest_2018_Hidden_2": {
+        "templateId": "Quest:WinterQuest_2018_Hidden_2",
+        "objectives": {
+          "questcomplete_winterquest_2018_reactive_gather_trees": 1
+        }
+      },
+      "QS07-Quest:WinterQuest_2018_Hidden_3": {
+        "templateId": "Quest:WinterQuest_2018_Hidden_3",
+        "objectives": {
+          "questcomplete_winterquest_2018_reactive_fetch_decorations": 1
+        }
+      },
+      "QS07-Quest:WinterQuest_2018_Hidden_4": {
+        "templateId": "Quest:WinterQuest_2018_Hidden_4",
+        "objectives": {
+          "questcomplete_winterquest_2018_reactive_fetch_deploytrees": 1
+        }
+      },
+      "QS07-Quest:WinterQuest_2018_Hidden_5": {
+        "templateId": "Quest:WinterQuest_2018_Hidden_5",
+        "objectives": {
+          "questcomplete_winterquest_2018_reactive_gather_fridges": 1
+        }
+      },
+      "QS07-Quest:WinterQuest_2018_Hidden_6": {
+        "templateId": "Quest:WinterQuest_2018_Hidden_6",
+        "objectives": {
+          "questcomplete_winterquest_2018_reactive_fetch_collectpresent": 1
+        }
+      },
+      "QS07-Quest:WinterQuest_2018_Hidden_7": {
+        "templateId": "Quest:WinterQuest_2018_Hidden_7",
+        "objectives": {
+          "questcomplete_winterquest_2018_reactive_frozentroll": 1
+        }
+      },
+      "QS07-Quest:WinterQuest_2018_KillCoalLobbers": {
+        "templateId": "Quest:WinterQuest_2018_KillCoalLobbers",
+        "objectives": {
+          "winterquest_2018_killcoallobbers": 8
+        }
+      },
+      "QS07-Quest:WinterQuest_2018_KillEvilHelpers": {
+        "templateId": "Quest:WinterQuest_2018_KillEvilHelpers",
+        "objectives": {
+          "winterquest_2018_killevilhelpers": 75
+        }
+      },
+      "QS07-Quest:WinterQuest_2018_KillKrampus": {
+        "templateId": "Quest:WinterQuest_2018_KillKrampus",
+        "objectives": {
+          "winterquest_2018_killkrampus": 5
+        }
+      },
+      "QS07-Quest:WinterQuest_2018_KillLoneKrampus": {
+        "templateId": "Quest:WinterQuest_2018_KillLoneKrampus",
+        "objectives": {
+          "kill_husk_lonekrampus": 20
+        }
+      },
+      "QS07-Quest:WinterQuest_2018_KillMallSantas": {
+        "templateId": "Quest:WinterQuest_2018_KillMallSantas",
+        "objectives": {
+          "winterquest_2018_killmallsantas": 15
+        }
+      },
+      "QS07-Quest:WinterQuest_2018_KillMistMonsters": {
+        "templateId": "Quest:WinterQuest_2018_KillMistMonsters",
+        "objectives": {
+          "kill_mist_monster_winter2018": 50
+        }
+      },
+      "QS07-Quest:WinterQuest_2018_Landmark_CelebrateNewYear": {
+        "templateId": "Quest:WinterQuest_2018_Landmark_CelebrateNewYear",
+        "objectives": {
+          "winterquest_2018_landmark_celebratenewyear": 1
+        }
+      },
+      "QS07-Quest:WinterQuest_2018_Reactive_Fetch_CollectPresent": {
+        "templateId": "Quest:WinterQuest_2018_Reactive_Fetch_CollectPresent",
+        "objectives": {
+          "winterquest_2018_reactive_fetch_collectpresent": 1
+        }
+      },
+      "QS07-Quest:WinterQuest_2018_Reactive_Fetch_Decorations": {
+        "templateId": "Quest:WinterQuest_2018_Reactive_Fetch_Decorations",
+        "objectives": {
+          "winterquest_2018_reactive_fetch_decorations": 10
+        }
+      },
+      "QS07-Quest:WinterQuest_2018_Reactive_Fetch_DeployTrees": {
+        "templateId": "Quest:WinterQuest_2018_Reactive_Fetch_DeployTrees",
+        "objectives": {
+          "winterquest_2018_reactive_fetch_deploytrees": 11
+        }
+      },
+      "QS07-Quest:WinterQuest_2018_Reactive_Fetch_PackingPresents": {
+        "templateId": "Quest:WinterQuest_2018_Reactive_Fetch_PackingPresents",
+        "objectives": {
+          "winterquest_2018_reactive_fetch_packingpresents": 12
+        }
+      },
+      "QS07-Quest:WinterQuest_2018_Reactive_FrozenTroll": {
+        "templateId": "Quest:WinterQuest_2018_Reactive_FrozenTroll",
+        "objectives": {
+          "winterquest_2018_reactive_frozentroll": 1
+        }
+      },
+      "QS07-Quest:WinterQuest_2018_Reactive_Gather_Fridges": {
+        "templateId": "Quest:WinterQuest_2018_Reactive_Gather_Fridges",
+        "objectives": {
+          "winterquest_2018_reactive_gather_fridges": 12
+        }
+      },
+      "QS07-Quest:WinterQuest_2018_Reactive_Gather_Trees": {
+        "templateId": "Quest:WinterQuest_2018_Reactive_Gather_Trees",
+        "objectives": {
+          "winterquest_2018_reactive_gather_trees": 20
+        }
+      },
+      "QS07-Quest:WinterQuest_2018_SaveSurvivors": {
+        "templateId": "Quest:WinterQuest_2018_SaveSurvivors",
+        "objectives": {
+          "questcollect_survivoritemdata": 12
+        }
+      }
+    }
+  },
+  "Season08": {
+    "Quests": {
+      "QS08-Quest:BetaStormQuest_CompleteBetaStorms_Repeatable": {
+        "templateId": "Quest:BetaStormQuest_CompleteBetaStorms_Repeatable",
+        "objectives": {
+          "betastorms_complete_repeatable": 2
+        }
+      },
+      "QS08-Quest:LoveQuest_2019_Fetch_Boxes": {
+        "templateId": "Quest:LoveQuest_2019_Fetch_Boxes",
+        "objectives": {
+          "lovequest_2019_fetch_boxes": 7
+        }
+      },
+      "QS08-Quest:LoveQuest_2019_Fetch_Chests": {
+        "templateId": "Quest:LoveQuest_2019_Fetch_Chests",
+        "objectives": {
+          "lovequest_2019_fetch_chests": 5
+        }
+      },
+      "QS08-Quest:LoveQuest_2019_Fetch_Decanters": {
+        "templateId": "Quest:LoveQuest_2019_Fetch_Decanters",
+        "objectives": {
+          "lovequest_2019_fetch_decanters": 9
+        }
+      },
+      "QS08-Quest:LoveQuest_2019_Fetch_Phones": {
+        "templateId": "Quest:LoveQuest_2019_Fetch_Phones",
+        "objectives": {
+          "lovequest_2019_fetch_phones": 5
+        }
+      },
+      "QS08-Quest:LoveQuest_2019_Fetch_Sensors": {
+        "templateId": "Quest:LoveQuest_2019_Fetch_Sensors",
+        "objectives": {
+          "lovequest_2019_fetch_sensors": 7
+        }
+      },
+      "QS08-Quest:LoveQuest_2019_Fetch_Teddys": {
+        "templateId": "Quest:LoveQuest_2019_Fetch_Teddys",
+        "objectives": {
+          "lovequest_2019_fetch_teddys": 7
+        }
+      },
+      "QS08-Quest:LoveQuest_2019_Fetch_Telescopes": {
+        "templateId": "Quest:LoveQuest_2019_Fetch_Telescopes",
+        "objectives": {
+          "lovequest_2019_fetch_telescopes": 5
+        }
+      },
+      "QS08-Quest:LoveQuest_2019_Fetch_VHS": {
+        "templateId": "Quest:LoveQuest_2019_Fetch_VHS",
+        "objectives": {
+          "lovequest_2019_fetch_vhs": 5
+        }
+      },
+      "QS08-Quest:LoveQuest_2019_GatherCollect_Containers": {
+        "templateId": "Quest:LoveQuest_2019_GatherCollect_Containers",
+        "objectives": {
+          "lovequest_2019_gathercollect_containers": 30
+        }
+      },
+      "QS08-Quest:LoveQuest_2019_GatherCollect_Mailboxes": {
+        "templateId": "Quest:LoveQuest_2019_GatherCollect_Mailboxes",
+        "objectives": {
+          "lovequest_2019_gathercollect_mailboxes": 30
+        }
+      },
+      "QS08-Quest:LoveQuest_2019_GatherCollect_Mushrooms": {
+        "templateId": "Quest:LoveQuest_2019_GatherCollect_Mushrooms",
+        "objectives": {
+          "lovequest_2019_gathercollect_mushrooms": 30
+        }
+      },
+      "QS08-Quest:LoveQuest_2019_GatherCollect_Newspapers": {
+        "templateId": "Quest:LoveQuest_2019_GatherCollect_Newspapers",
+        "objectives": {
+          "lovequest_2019_gathercollect_newspapers": 30
+        }
+      },
+      "QS08-Quest:LoveQuest_2019_GatherCollect_OfficeStuff": {
+        "templateId": "Quest:LoveQuest_2019_GatherCollect_OfficeStuff",
+        "objectives": {
+          "lovequest_2019_gathercollect_officestuff": 30
+        }
+      },
+      "QS08-Quest:LoveQuest_2019_KillCollect_LoveLobbers": {
+        "templateId": "Quest:LoveQuest_2019_KillCollect_LoveLobbers",
+        "objectives": {
+          "lovequest_2019_killcollect_lovelobbers": 30
+        }
+      },
+      "QS08-Quest:LoveQuest_2019_Landmark_Trebuchet": {
+        "templateId": "Quest:LoveQuest_2019_Landmark_Trebuchet",
+        "objectives": {
+          "lovequest_2019_landmark_trebuchet": 1
+        }
+      },
+      "QS08-Quest:PirateQuest_2019_Fetch_Banners": {
+        "templateId": "Quest:PirateQuest_2019_Fetch_Banners",
+        "objectives": {
+          "piratequest_2019_fetch_banners": 5
+        }
+      },
+      "QS08-Quest:PirateQuest_2019_Fetch_Bottles": {
+        "templateId": "Quest:PirateQuest_2019_Fetch_Bottles",
+        "objectives": {
+          "piratequest_2019_fetch_bottles": 5
+        }
+      },
+      "QS08-Quest:PirateQuest_2019_Fetch_Lighthouses": {
+        "templateId": "Quest:PirateQuest_2019_Fetch_Lighthouses",
+        "objectives": {
+          "piratequest_2019_fetch_lighthouses": 7
+        }
+      },
+      "QS08-Quest:PirateQuest_2019_Fetch_Mounds": {
+        "templateId": "Quest:PirateQuest_2019_Fetch_Mounds",
+        "objectives": {
+          "piratequest_2019_fetch_mounds": 6
+        }
+      },
+      "QS08-Quest:PirateQuest_2019_Fetch_SeeBots": {
+        "templateId": "Quest:PirateQuest_2019_Fetch_SeeBots",
+        "objectives": {
+          "piratequest_2019_fetch_seebots": 6
+        }
+      },
+      "QS08-Quest:PirateQuest_2019_Fetch_Shanties": {
+        "templateId": "Quest:PirateQuest_2019_Fetch_Shanties",
+        "objectives": {
+          "piratequest_2019_fetch_shanties": 6
+        }
+      },
+      "QS08-Quest:PirateQuest_2019_Fetch_Statues": {
+        "templateId": "Quest:PirateQuest_2019_Fetch_Statues",
+        "objectives": {
+          "piratequest_2019_fetch_statues": 5
+        }
+      },
+      "QS08-Quest:PirateQuest_2019_Fetch_Treasure": {
+        "templateId": "Quest:PirateQuest_2019_Fetch_Treasure",
+        "objectives": {
+          "piratequest_2019_fetch_treasure": 1
+        }
+      },
+      "QS08-Quest:PirateQuest_2019_GatherCollect_Chairs": {
+        "templateId": "Quest:PirateQuest_2019_GatherCollect_Chairs",
+        "objectives": {
+          "piratequest_2019_gathercollect_chairs": 30
+        }
+      },
+      "QS08-Quest:PirateQuest_2019_GatherCollect_GrillParts": {
+        "templateId": "Quest:PirateQuest_2019_GatherCollect_GrillParts",
+        "objectives": {
+          "piratequest_2019_gathercollect_grillparts": 30
+        }
+      },
+      "QS08-Quest:PirateQuest_2019_GatherCollect_Swings": {
+        "templateId": "Quest:PirateQuest_2019_GatherCollect_Swings",
+        "objectives": {
+          "piratequest_2019_gathercollect_swings": 30
+        }
+      },
+      "QS08-Quest:PirateQuest_2019_KillCollect_Melee": {
+        "templateId": "Quest:PirateQuest_2019_KillCollect_Melee",
+        "objectives": {
+          "piratequest_2019_killcollect_melee": 10
+        }
+      },
+      "QS08-Quest:PirateQuest_2019_KillCollect_MistMonsters": {
+        "templateId": "Quest:PirateQuest_2019_KillCollect_MistMonsters",
+        "objectives": {
+          "piratequest_2019_killcollect_mistmonsters": 8
+        }
+      },
+      "QS08-Quest:PirateQuest_2019_Landmark_Island": {
+        "templateId": "Quest:PirateQuest_2019_Landmark_Island",
+        "objectives": {
+          "piratequest_2019_landmark_island": 1
+        }
+      },
+      "QS08-Quest:PirateQuest_2019_Landmark_WalkThePlank": {
+        "templateId": "Quest:PirateQuest_2019_Landmark_WalkThePlank",
+        "objectives": {
+          "piratequest_2019_landmark_walktheplank": 1
+        }
+      }
+    }
+  },
+  "Season09": {
+    "Quests": {
+      "QS09-Quest:AnniversaryQuest_2019_Complete_Cake_Repeatable": {
+        "templateId": "Quest:AnniversaryQuest_2019_Complete_Cake_Repeatable",
+        "objectives": {
+          "anniversaryquest_2019_complete_cake_repeatable": 5
+        }
+      },
+      "QS09-Quest:AnniversaryQuest_2019_Kill_Cake_Sploders": {
+        "templateId": "Quest:AnniversaryQuest_2019_Kill_Cake_Sploders",
+        "objectives": {
+          "anniversaryquest_2019_kill_cake_sploders": 30
+        }
+      },
+      "QS09-Quest:S9_Destroy_Quest_A6": {
+        "templateId": "Quest:S9_Destroy_Quest_A6",
+        "objectives": {
+          "s9_destroy_quest_a6": 30
+        }
+      },
+      "QS09-Quest:S9_Fetch_Quest_A1": {
+        "templateId": "Quest:S9_Fetch_Quest_A1",
+        "objectives": {
+          "s9_fetch_quest_a1": 6
+        }
+      },
+      "QS09-Quest:S9_Fetch_Quest_A11": {
+        "templateId": "Quest:S9_Fetch_Quest_A11",
+        "objectives": {
+          "s9_fetch_quest_a11": 4
+        }
+      },
+      "QS09-Quest:S9_Fetch_Quest_A13": {
+        "templateId": "Quest:S9_Fetch_Quest_A13",
+        "objectives": {
+          "s9_fetch_quest_a13": 5
+        }
+      },
+      "QS09-Quest:S9_Fetch_Quest_A14": {
+        "templateId": "Quest:S9_Fetch_Quest_A14",
+        "objectives": {
+          "s9_fetch_quest_a14": 5
+        }
+      },
+      "QS09-Quest:S9_Fetch_Quest_A2": {
+        "templateId": "Quest:S9_Fetch_Quest_A2",
+        "objectives": {
+          "s9_fetch_quest_a2": 5
+        }
+      },
+      "QS09-Quest:S9_Fetch_Quest_A3": {
+        "templateId": "Quest:S9_Fetch_Quest_A3",
+        "objectives": {
+          "s9_fetch_quest_a3": 5
+        }
+      },
+      "QS09-Quest:S9_Fetch_Quest_A7": {
+        "templateId": "Quest:S9_Fetch_Quest_A7",
+        "objectives": {
+          "s9_fetch_quest_a7": 5
+        }
+      },
+      "QS09-Quest:S9_Fetch_Quest_A9": {
+        "templateId": "Quest:S9_Fetch_Quest_A9",
+        "objectives": {
+          "s9_fetch_quest_a9": 5
+        }
+      },
+      "QS09-Quest:S9_Fetch_Quest_B1": {
+        "templateId": "Quest:S9_Fetch_Quest_B1",
+        "objectives": {
+          "s9_fetch_quest_b1": 5
+        }
+      },
+      "QS09-Quest:S9_Fetch_Quest_B10": {
+        "templateId": "Quest:S9_Fetch_Quest_B10",
+        "objectives": {
+          "s9_fetch_quest_b10": 5
+        }
+      },
+      "QS09-Quest:S9_Fetch_Quest_B11": {
+        "templateId": "Quest:S9_Fetch_Quest_B11",
+        "objectives": {
+          "s9_fetch_quest_b11": 5
+        }
+      },
+      "QS09-Quest:S9_Fetch_Quest_B13": {
+        "templateId": "Quest:S9_Fetch_Quest_B13",
+        "objectives": {
+          "s9_fetch_quest_b13": 7
+        }
+      },
+      "QS09-Quest:S9_Fetch_Quest_B14": {
+        "templateId": "Quest:S9_Fetch_Quest_B14",
+        "objectives": {
+          "s9_fetch_quest_b14": 5
+        }
+      },
+      "QS09-Quest:S9_Fetch_Quest_B15": {
+        "templateId": "Quest:S9_Fetch_Quest_B15",
+        "objectives": {
+          "s9_fetch_quest_b15": 5
+        }
+      },
+      "QS09-Quest:S9_Fetch_Quest_B3": {
+        "templateId": "Quest:S9_Fetch_Quest_B3",
+        "objectives": {
+          "s9_fetch_quest_b3": 5
+        }
+      },
+      "QS09-Quest:S9_Fetch_Quest_B6": {
+        "templateId": "Quest:S9_Fetch_Quest_B6",
+        "objectives": {
+          "s9_fetch_quest_b6": 5
+        }
+      },
+      "QS09-Quest:S9_Fetch_Quest_B7": {
+        "templateId": "Quest:S9_Fetch_Quest_B7",
+        "objectives": {
+          "s9_fetch_quest_b7": 5
+        }
+      },
+      "QS09-Quest:S9_Fetch_Quest_B9": {
+        "templateId": "Quest:S9_Fetch_Quest_B9",
+        "objectives": {
+          "s9_fetch_quest_b9": 5
+        }
+      },
+      "QS09-Quest:S9_GatherCollect_Quest_A12": {
+        "templateId": "Quest:S9_GatherCollect_Quest_A12",
+        "objectives": {
+          "s9_gathercollect_quest_a12": 30
+        }
+      },
+      "QS09-Quest:S9_GatherCollect_Quest_A15": {
+        "templateId": "Quest:S9_GatherCollect_Quest_A15",
+        "objectives": {
+          "s9_gathercollect_quest_a15": 30
+        }
+      },
+      "QS09-Quest:S9_GatherCollect_Quest_A4": {
+        "templateId": "Quest:S9_GatherCollect_Quest_A4",
+        "objectives": {
+          "s9_gathercollect_quest_a4": 30
+        }
+      },
+      "QS09-Quest:S9_GatherCollect_Quest_B5": {
+        "templateId": "Quest:S9_GatherCollect_Quest_B5",
+        "objectives": {
+          "s9_gathercollect_quest_b5": 30
+        }
+      },
+      "QS09-Quest:S9_GatherCollect_Quest_B8": {
+        "templateId": "Quest:S9_GatherCollect_Quest_B8",
+        "objectives": {
+          "s9_gathercollect_quest_b8": 30
+        }
+      },
+      "QS09-Quest:S9_Gather_Quest_A8": {
+        "templateId": "Quest:S9_Gather_Quest_A8",
+        "objectives": {
+          "s9_gather_quest_a8": 30
+        }
+      },
+      "QS09-Quest:S9_KillCollect_Quest_A10": {
+        "templateId": "Quest:S9_KillCollect_Quest_A10",
+        "objectives": {
+          "s9_killcollect_quest_a10": 5
+        }
+      },
+      "QS09-Quest:S9_KillCollect_Quest_A5": {
+        "templateId": "Quest:S9_KillCollect_Quest_A5",
+        "objectives": {
+          "s9_killcollect_quest_a5": 10
+        }
+      },
+      "QS09-Quest:S9_KillCollect_Quest_B4": {
+        "templateId": "Quest:S9_KillCollect_Quest_B4",
+        "objectives": {
+          "s9_killcollect_quest_b4": 10
+        }
+      },
+      "QS09-Quest:S9_Landmark_Quest_B12": {
+        "templateId": "Quest:S9_Landmark_Quest_B12",
+        "objectives": {
+          "s9_landmark_quest_b12": 1
+        }
+      },
+      "QS09-Quest:S9_Landmark_Quest_B2": {
+        "templateId": "Quest:S9_Landmark_Quest_B2",
+        "objectives": {
+          "s9_landmark_quest_b2": 1
+        }
+      },
+      "QS09-Quest:SummerQuest_2019_Complete_All": {
+        "templateId": "Quest:SummerQuest_2019_Complete_All",
+        "objectives": {
+          "questcomplete_summerquest_2019_fetch_water": 1,
+          "questcomplete_summerquest_2019_search_ice": 1,
+          "questcomplete_summerquest_2019_kill_melee": 1,
+          "questcomplete_summerquest_2019_kill_wargames": 1,
+          "questcomplete_summerquest_2019_fetch_towels": 1,
+          "questcomplete_summerquest_2019_harvest_basketball_hoops": 1,
+          "questcomplete_summerquest_2019_kill_mist": 1,
+          "questcomplete_summerquest_2019_fetch_flamingo": 1,
+          "questcomplete_summerquest_2019_fetch_fireworks": 1,
+          "questcomplete_summerquest_2019_light_fireworks": 1,
+          "questcomplete_summerquest_2019_kill_200": 1,
+          "questcomplete_summerquest_2019_harvest_lawnmower": 1,
+          "questcomplete_summerquest_2019_gather_air_conditioners": 1,
+          "questcomplete_summerquest_2019_rescue_survivors": 1
+        }
+      },
+      "QS09-Quest:SummerQuest_2019_Fetch_Fireworks": {
+        "templateId": "Quest:SummerQuest_2019_Fetch_Fireworks",
+        "objectives": {
+          "summerquest_2019_fetch_fireworks": 7
+        }
+      },
+      "QS09-Quest:SummerQuest_2019_Fetch_Flamingo": {
+        "templateId": "Quest:SummerQuest_2019_Fetch_Flamingo",
+        "objectives": {
+          "summerquest_2019_fetch_flamingo": 10
+        }
+      },
+      "QS09-Quest:SummerQuest_2019_Fetch_Towels": {
+        "templateId": "Quest:SummerQuest_2019_Fetch_Towels",
+        "objectives": {
+          "summerquest_2019_fetch_towels": 6
+        }
+      },
+      "QS09-Quest:SummerQuest_2019_Fetch_Water": {
+        "templateId": "Quest:SummerQuest_2019_Fetch_Water",
+        "objectives": {
+          "summerquest_2019_fetch_water": 6
+        }
+      },
+      "QS09-Quest:SummerQuest_2019_Gather_Air_Conditioners": {
+        "templateId": "Quest:SummerQuest_2019_Gather_Air_Conditioners",
+        "objectives": {
+          "summerquest_2019_gather_air_conditioners": 30
+        }
+      },
+      "QS09-Quest:SummerQuest_2019_Harvest_Basketball_Hoops": {
+        "templateId": "Quest:SummerQuest_2019_Harvest_Basketball_Hoops",
+        "objectives": {
+          "summerquest_2019_harvest_basketball_hoops": 2
+        }
+      },
+      "QS09-Quest:SummerQuest_2019_Harvest_Lawnmower": {
+        "templateId": "Quest:SummerQuest_2019_Harvest_Lawnmower",
+        "objectives": {
+          "summerquest_2019_harvest_lawnmower": 3
+        }
+      },
+      "QS09-Quest:SummerQuest_2019_Kill_200": {
+        "templateId": "Quest:SummerQuest_2019_Kill_200",
+        "objectives": {
+          "summerquest_2019_kill_200": 200
+        }
+      },
+      "QS09-Quest:SummerQuest_2019_Kill_Melee": {
+        "templateId": "Quest:SummerQuest_2019_Kill_Melee",
+        "objectives": {
+          "SummerQuest_2019_Kill_Melee": 25
+        }
+      },
+      "QS09-Quest:SummerQuest_2019_Kill_Mist": {
+        "templateId": "Quest:SummerQuest_2019_Kill_Mist",
+        "objectives": {
+          "summerquest_2019_kill_mist": 5
+        }
+      },
+      "QS09-Quest:SummerQuest_2019_Kill_Wargames": {
+        "templateId": "Quest:SummerQuest_2019_Kill_Wargames",
+        "objectives": {
+          "summerquest_2019_kill_wargames": 2
+        }
+      },
+      "QS09-Quest:SummerQuest_2019_Light_Fireworks": {
+        "templateId": "Quest:SummerQuest_2019_Light_Fireworks",
+        "objectives": {
+          "summerquest_2019_light_fireworks": 7
+        }
+      },
+      "QS09-Quest:SummerQuest_2019_Rescue_Survivors": {
+        "templateId": "Quest:SummerQuest_2019_Rescue_Survivors",
+        "objectives": {
+          "questcollect_survivoritemdata": 10
+        }
+      },
+      "QS09-Quest:SummerQuest_2019_Search_Ice": {
+        "templateId": "Quest:SummerQuest_2019_Search_Ice",
+        "objectives": {
+          "summerquest_2019_search_ice": 10
+        }
+      }
+    }
+  },
+  "Season10": {
+    "Quests": {
+      "QS10-Quest:MaydayQuest_2019_CollectCasettes_Repeatable": {
+        "templateId": "Quest:MaydayQuest_2019_CollectCasettes_Repeatable",
+        "objectives": {
+          "maydayquest_2019_collectcasettes_repeatable": 25
+        }
+      },
+      "QS10-Quest:MaydayQuest_2019_CompleteSubMissions": {
+        "templateId": "Quest:MaydayQuest_2019_CompleteSubMissions",
+        "objectives": {
+          "maydayquest_completesubmissions_bridgeout": 1,
+          "maydayquest_completesubmissions_infestation": 1,
+          "maydayquest_completesubmissions_minordelay": 1,
+          "maydayquest_completesubmissions_feelinblu": 1,
+          "maydayquest_completesubmissions_pitstop": 1,
+          "maydayquest_completesubmissions_overheat": 1,
+          "maydayquest_completesubmissions_signalboost": 1,
+          "maydayquest_completesubmissions_recorddash": 1
+        }
+      },
+      "QS10-Quest:MaydayQuest_2019_Complete_Beatbot": {
+        "templateId": "Quest:MaydayQuest_2019_Complete_Beatbot",
+        "objectives": {
+          "maydayquest_2019_complete_beatbot": 3
+        }
+      },
+      "QS10-Quest:MaydayQuest_2019_Complete_CloakedStar1": {
+        "templateId": "Quest:MaydayQuest_2019_Complete_CloakedStar1",
+        "objectives": {
+          "maydayquest_2019_complete_cloakedstar1": 1
+        }
+      },
+      "QS10-Quest:MaydayQuest_2019_Complete_CloakedStar2": {
+        "templateId": "Quest:MaydayQuest_2019_Complete_CloakedStar2",
+        "objectives": {
+          "maydayquest_2019_complete_cloakedstar2": 1
+        }
+      },
+      "QS10-Quest:MaydayQuest_2019_Complete_Crackshot2": {
+        "templateId": "Quest:MaydayQuest_2019_Complete_Crackshot2",
+        "objectives": {
+          "maydayquest_2019_complete_crackshot2": 1
+        }
+      },
+      "QS10-Quest:MaydayQuest_2019_Complete_Penny1": {
+        "templateId": "Quest:MaydayQuest_2019_Complete_Penny1",
+        "objectives": {
+          "maydayquest_2019_complete_penny1": 1
+        }
+      },
+      "QS10-Quest:MaydayQuest_2019_Complete_Penny2": {
+        "templateId": "Quest:MaydayQuest_2019_Complete_Penny2",
+        "objectives": {
+          "maydayquest_2019_complete_penny2": 1
+        }
+      },
+      "QS10-Quest:MaydayQuest_2019_Complete_Quinn2": {
+        "templateId": "Quest:MaydayQuest_2019_Complete_Quinn2",
+        "objectives": {
+          "maydayquest_2019_complete_quinn2": 1
+        }
+      },
+      "QS10-Quest:MaydayQuest_2019_Complete_Quinn3": {
+        "templateId": "Quest:MaydayQuest_2019_Complete_Quinn3",
+        "objectives": {
+          "maydayquest_2019_complete_quinn3": 1
+        }
+      },
+      "QS10-Quest:MaydayQuest_2019_Complete_Week1": {
+        "templateId": "Quest:MaydayQuest_2019_Complete_Week1",
+        "objectives": {
+          "maydayquest_2019_complete_quinn1": 1
+        }
+      },
+      "QS10-Quest:MaydayQuest_2019_Complete_Week4": {
+        "templateId": "Quest:MaydayQuest_2019_Complete_Week4",
+        "objectives": {
+          "maydayquest_2019_complete_crackshot1": 1
+        }
+      },
+      "QS10-Quest:MaydayQuest_2019_Daily_Complete": {
+        "templateId": "Quest:MaydayQuest_2019_Daily_Complete",
+        "objectives": {
+          "maydayquest_2019_daily_complete": 1
+        }
+      },
+      "QS10-Quest:MaydayQuest_2019_KillMistMonsters": {
+        "templateId": "Quest:MaydayQuest_2019_KillMistMonsters",
+        "objectives": {
+          "maydayquest_2019_killmistmonsters": 40
+        }
+      },
+      "QS10-Quest:MaydayQuest_2019_LootChests": {
+        "templateId": "Quest:MaydayQuest_2019_LootChests",
+        "objectives": {
+          "maydayquest_lootchests": 40
+        }
+      },
+      "QS10-Quest:MaydayQuest_2019_NoVehicleDamage": {
+        "templateId": "Quest:MaydayQuest_2019_NoVehicleDamage",
+        "objectives": {
+          "maydayquest_2019_novehicledamage": 1
+        }
+      },
+      "QS10-Quest:MaydayQuest_2019_NoVehicleDamage_Endgame": {
+        "templateId": "Quest:MaydayQuest_2019_NoVehicleDamage_Endgame",
+        "objectives": {
+          "maydayquest_2019_novehicledamage_endgame": 1
+        }
+      },
+      "QS10-Quest:MaydayQuest_2019_Strangelands": {
+        "templateId": "Quest:MaydayQuest_2019_Strangelands",
+        "objectives": {
+          "MaydayQuest_2019_Strangelands": 3
+        }
+      },
+      "QS10-Quest:MaydayQuest_2019_TruckTravel": {
+        "templateId": "Quest:MaydayQuest_2019_TruckTravel",
+        "objectives": {
+          "maydayquest_2019_trucktravel": 2500
+        }
+      },
+      "QS10-Quest:S10_Explore_Quest_A5": {
+        "templateId": "Quest:S10_Explore_Quest_A5",
+        "objectives": {
+          "s10_explore_quest_a5": 4
+        }
+      },
+      "QS10-Quest:S10_Explore_Quest_A8": {
+        "templateId": "Quest:S10_Explore_Quest_A8",
+        "objectives": {
+          "s10_explore_quest_restaurant_a8": 1,
+          "s10_explore_quest_campsite_a8": 1,
+          "s10_explore_quest_park_a8": 1
+        }
+      },
+      "QS10-Quest:S10_Fetch_Quest_A10": {
+        "templateId": "Quest:S10_Fetch_Quest_A10",
+        "objectives": {
+          "s10_fetch_quest_a10": 7
+        }
+      },
+      "QS10-Quest:S10_Fetch_Quest_A11": {
+        "templateId": "Quest:S10_Fetch_Quest_A11",
+        "objectives": {
+          "s10_fetch_quest_a11": 5
+        }
+      },
+      "QS10-Quest:S10_Fetch_Quest_A12": {
+        "templateId": "Quest:S10_Fetch_Quest_A12",
+        "objectives": {
+          "s10_fetch_quest_a12": 5
+        }
+      },
+      "QS10-Quest:S10_Fetch_Quest_A15": {
+        "templateId": "Quest:S10_Fetch_Quest_A15",
+        "objectives": {
+          "s10_fetch_quest_a15": 5
+        }
+      },
+      "QS10-Quest:S10_Fetch_Quest_A3": {
+        "templateId": "Quest:S10_Fetch_Quest_A3",
+        "objectives": {
+          "s10_fetch_quest_a3": 5
+        }
+      },
+      "QS10-Quest:S10_Fetch_Quest_A4": {
+        "templateId": "Quest:S10_Fetch_Quest_A4",
+        "objectives": {
+          "s10_fetch_quest_a4": 5
+        }
+      },
+      "QS10-Quest:S10_Fetch_Quest_B1": {
+        "templateId": "Quest:S10_Fetch_Quest_B1",
+        "objectives": {
+          "s10_fetch_quest_b1": 4
+        }
+      },
+      "QS10-Quest:S10_Fetch_Quest_B2": {
+        "templateId": "Quest:S10_Fetch_Quest_B2",
+        "objectives": {
+          "s10_fetch_quest_b2": 5
+        }
+      },
+      "QS10-Quest:S10_GatherCollect_Quest_A14": {
+        "templateId": "Quest:S10_GatherCollect_Quest_A14",
+        "objectives": {
+          "s10_gathercollect_quest_a14": 30
+        }
+      },
+      "QS10-Quest:s10_gathercollect_quest_a2": {
+        "templateId": "Quest:s10_gathercollect_quest_a2",
+        "objectives": {
+          "s10_gathercollect_quest_a2": 30
+        }
+      },
+      "QS10-Quest:s10_gathercollect_quest_a6": {
+        "templateId": "Quest:s10_gathercollect_quest_a6",
+        "objectives": {
+          "s10_gathercollect_quest_a6": 10
+        }
+      },
+      "QS10-Quest:S10_GatherCollect_Quest_A9": {
+        "templateId": "Quest:S10_GatherCollect_Quest_A9",
+        "objectives": {
+          "s10_gathercollect_quest_a9": 20
+        }
+      },
+      "QS10-Quest:S10_KillCollect_QuestA7": {
+        "templateId": "Quest:S10_KillCollect_QuestA7",
+        "objectives": {
+          "s10_killcollect_quest_a7": 5
+        }
+      },
+      "QS10-Quest:S10_Kill_Quest_B3": {
+        "templateId": "Quest:S10_Kill_Quest_B3",
+        "objectives": {
+          "s10_kill_quest_b3": 7
+        }
+      },
+      "QS10-Quest:S10_Landmark_Quest_A1": {
+        "templateId": "Quest:S10_Landmark_Quest_A1",
+        "objectives": {
+          "s10_landmark_quest_a1": 1
+        }
+      },
+      "QS10-Quest:S10_ReactiveKill_Quest_A13": {
+        "templateId": "Quest:S10_ReactiveKill_Quest_A13",
+        "objectives": {
+          "s10_reactivekill_quest_a13": 7
+        }
+      }
+    }
+  },
+  "Season24": {
+    "Quests": {
+      "QS24-Quest:HordeV3_Quest_Daily_A01": {
+        "templateId": "Quest:HordeV3_Quest_Daily_A01",
+        "objectives": {
+          "hordev3_quest_daily_a01": 5
+        }
+      },
+      "QS24-Quest:HordeV3_Quest_Daily_A02": {
+        "templateId": "Quest:HordeV3_Quest_Daily_A02",
+        "objectives": {
+          "hordev3_quest_daily_a02": 10
+        }
+      },
+      "QS24-Quest:HordeV3_Quest_Daily_A03": {
+        "templateId": "Quest:HordeV3_Quest_Daily_A03",
+        "objectives": {
+          "hordev3_quest_daily_a03": 15
+        }
+      },
+      "QS24-Quest:HordeV3_Quest_Event_A01": {
+        "templateId": "Quest:HordeV3_Quest_Event_A01",
+        "objectives": {
+          "hordev3_quest_event_a01": 1
+        }
+      },
+      "QS24-Quest:HordeV3_Quest_Event_A02": {
+        "templateId": "Quest:HordeV3_Quest_Event_A02",
+        "objectives": {
+          "hordev3_quest_event_a02": 1
+        }
+      },
+      "QS24-Quest:HordeV3_Quest_Event_A03": {
+        "templateId": "Quest:HordeV3_Quest_Event_A03",
+        "objectives": {
+          "hordev3_quest_event_a03": 5
+        }
+      },
+      "QS24-Quest:HordeV3_Quest_Event_A04": {
+        "templateId": "Quest:HordeV3_Quest_Event_A04",
+        "objectives": {
+          "hordev3_quest_event_a04": 1000
+        }
+      },
+      "QS24-Quest:HordeV3_Quest_Event_A05": {
+        "templateId": "Quest:HordeV3_Quest_Event_A05",
+        "objectives": {
+          "hordev3_quest_event_a05": 1
+        }
+      },
+      "QS24-Quest:HordeV3_Quest_Event_A06": {
+        "templateId": "Quest:HordeV3_Quest_Event_A06",
+        "objectives": {
+          "hordev3_quest_event_a06": 1
+        }
+      },
+      "QS24-Quest:HordeV3_Quest_Event_A07": {
+        "templateId": "Quest:HordeV3_Quest_Event_A07",
+        "objectives": {
+          "hordev3_quest_event_a07": 2
+        }
+      },
+      "QS24-Quest:HordeV3_Quest_Event_A08": {
+        "templateId": "Quest:HordeV3_Quest_Event_A08",
+        "objectives": {
+          "hordev3_quest_event_a08": 2
+        }
+      },
+      "QS24-Quest:HordeV3_Quest_Weekly_W02": {
+        "templateId": "Quest:HordeV3_Quest_Weekly_W02",
+        "objectives": {
+          "hordev3_quest_weekly_w02": 1
+        }
+      },
+      "QS24-Quest:HordeV3_Quest_Weekly_W03": {
+        "templateId": "Quest:HordeV3_Quest_Weekly_W03",
+        "objectives": {
+          "hordev3_quest_weekly_w03": 1
+        }
+      }
+    }
+  }
+}

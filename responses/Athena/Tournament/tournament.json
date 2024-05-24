@@ -1,0 +1,300 @@
+{
+  "player": {
+    "tokens": [
+      "ARENA_Division2",
+      "ARENA_S11_Division1",
+      "Arena_S24_Division1",
+      "LGArena_S21_v2_Division1"
+    ],
+    "gameId": "Fortnite",
+    "accountId": "b7a7f61a84b044cba603cbc2db89311e",
+    "teams": {},
+    "pendingPayouts": [],
+    "pendingPenalties": {},
+    "persistentScores": {
+      "Hype": 39,
+      "Hype_S11": 0,
+      "Hype_S24_P": 30,
+      "LGHype_S21_Pv2": 3
+    },
+    "groupIdentity": {}
+  },
+  "scoringRuleSets": {
+    "lawinscoringruleslol": [
+      {
+        "trackedStat": "PLACEMENT_STAT_INDEX",
+        "matchRule": "lte",
+        "rewardTiers": [
+          {
+            "keyValue": 1,
+            "pointsEarned": 2,
+            "multiplicative": false
+          }
+        ]
+      },
+      {
+        "trackedStat": "TEAM_ELIMS_STAT_INDEX",
+        "matchRule": "gte",
+        "rewardTiers": [
+          {
+            "keyValue": 1,
+            "pointsEarned": 3,
+            "multiplicative": false
+          },
+          {
+            "keyValue": 2,
+            "pointsEarned": 1,
+            "multiplicative": false
+          },
+          {
+            "keyValue": 3,
+            "pointsEarned": 7,
+            "multiplicative": false
+          }
+        ]
+      }
+    ]
+  },
+  "events": [
+    {
+      "gameId": "Fortnite",
+      "eventId": "lawinstournamentidlol",
+      "beginTime": "2018-10-16T17:00:00Z",
+      "endTime": "2018-10-16T20:00:00Z",
+      "displayDataId": "lawinserver_cup",
+      "eventGroup": "lawinseventgrouplol",
+      "announcementTime": "2024-04-20T08:00:00Z",
+      "regions": [
+        "ASIA",
+        "BR",
+        "EU",
+        "ME",
+        "NAE",
+        "NAW",
+        "OCE"
+      ],
+      "regionMappings": {},
+      "platforms": [
+        "XboxOneGDK",
+        "PS4",
+        "XCloud",
+        "Helios",
+        "Luna",
+        "XCloudMobile",
+        "XB1",
+        "XboxOne",
+        "XSX",
+        "Android",
+        "LunaMobile",
+        "PS5",
+        "HeliosMobile",
+        "GFN",
+        "Switch",
+        "GFNMobile",
+        "Windows"
+      ],
+      "platformMappings": {},
+      "appId": null,
+      "environment": null,
+      "metadata": {
+        "TeamLockType": "Window",
+        "minimumAccountLevel": 15,
+        "DisqualifyType": "Window",
+        "RegionLockType": "Window",
+        "AccountLockType": "Window"
+      },
+      "eventWindows": [
+        {
+          "eventWindowId": "lawinswindowidlol",
+          "eventTemplateId": "EventTemplate_lawinswindowidlol",
+          "countdownBeginTime": "2018-10-16T15:00:00Z",
+          "beginTime": "2018-10-16T17:00:00Z",
+          "endTime": "2018-10-16T20:00:00Z",
+          "round": 0,
+          "payoutDelay": 32,
+          "isTBD": false,
+          "leaderboardId": "lawinsleaderboardidlol",
+          "visibility": "public",
+          "teammateEligibility": "all",
+          "blackoutPeriods": [],
+          "scoreLocations": [
+            {
+              "leaderboardId": "lawinsleaderboardidlol",
+              "leaderboardDefId": "lawinsleaderboardidlol",
+              "scoreId": null,
+              "scoreMode": "window",
+              "isMainWindowLeaderboard": true,
+              "windowEndCondition": null
+            }
+          ],
+          "canLiveSpectate": false,
+          "requireAllTokens": [],
+          "requireAnyTokens": [],
+          "requireNoneTokensCaller": [],
+          "requireAllTokensCaller": [],
+          "requireAnyTokensCaller": [],
+          "additionalRequirements": [],
+          "regionMappings": null,
+          "metadata": {
+            "ServerReplays": false,
+            "RoundType": "Qualifiers",
+            "liveSpectateAccessToken": "WeeklyTournamentSpectator"
+          }
+        }
+      ],
+      "link": {
+        "type": "br:tournament",
+        "code": "tournament_lawinstournamentidlol",
+        "version": 1
+      }
+    }
+  ],
+  "templates": [
+    {
+      "playlistId": "Playlist_DefaultSolo",
+      "matchCap": 23,
+      "tiebreakerFormula": {
+        "basePointsBits": 11,
+        "components": [
+          {
+            "trackedStat": "VICTORY_ROYALE_STAT",
+            "bits": 4,
+            "aggregation": "sum",
+            "multiplier": null
+          },
+          {
+            "trackedStat": "TEAM_ELIMS_STAT_INDEX",
+            "bits": 13,
+            "aggregation": "avg",
+            "multiplier": 100
+          },
+          {
+            "trackedStat": "PLACEMENT_TIEBREAKER_STAT",
+            "bits": 14,
+            "aggregation": "avg",
+            "multiplier": 100
+          },
+          {
+            "trackedStat": "TIME_ALIVE_STAT",
+            "bits": 11,
+            "aggregation": "avg",
+            "multiplier": null
+          }
+        ]
+      },
+      "gameId": "Fortnite",
+      "eventTemplateId": "EventTemplate_lawinswindowidlol",
+      "scoringRules": [
+        {
+          "trackedStat": "PLACEMENT_STAT_INDEX",
+          "mathRule": "lte",
+          "rewardTiers": [
+            {
+              "keyValue": 1,
+              "pointsEarned": 2,
+              "multiplicative": false
+            }
+          ]
+        },
+        {
+          "trackedStat": "TEAM_ELIMS_STAT_INDEX",
+          "mathRule": "gte",
+          "rewardTiers": [
+            {
+              "keyValue": 1,
+              "pointsEarned": 3,
+              "multiplicative": false
+            },
+            {
+              "keyValue": 2,
+              "pointsEarned": 1,
+              "multiplicative": false
+            },
+            {
+              "keyValue": 3,
+              "pointsEarned": 7,
+              "multiplicative": false
+            }
+          ]
+        }
+      ],
+      "payoutTable": [
+        {
+          "scoringType": "rank",
+          "ranks": [
+            {
+              "threshold": 1337,
+              "payouts": [
+                {
+                  "rewardType": "game",
+                  "rewardMode": "standard",
+                  "value": "Token:campaignaccess",
+                  "quantity": 1
+                }
+              ]
+            }
+          ],
+          "scoreId": null
+        }
+      ],
+      "liveSessionAttributes": [],
+      "clampsToZero": false,
+      "onlyScoreTopN": null
+    }
+  ],
+  "scores": [],
+  "leaderboardDefs": [
+    {
+      "gameId": "Fortnite",
+      "leaderboardDefId": "lawinsleaderboardidlol",
+      "leaderboardStorageId": "Fortnite_GLOBAL",
+      "leaderboardInstanceGroupingKeyFormat": "${eventId}",
+      "leaderboardInstanceIdFormat": "${windowId}",
+      "maxSessionHistorySize": 10,
+      "useIndividualScores": false,
+      "tiebreakerFormula": {
+        "basePointsBits": 11,
+        "components": [
+          {
+            "trackedStat": "VICTORY_ROYALE_STAT",
+            "bits": 4,
+            "aggregation": "sum",
+            "multiplier": null
+          },
+          {
+            "trackedStat": "TEAM_ELIMS_STAT_INDEX",
+            "bits": 13,
+            "aggregation": "avg",
+            "multiplier": 100
+          },
+          {
+            "trackedStat": "PLACEMENT_TIEBREAKER_STAT",
+            "bits": 14,
+            "aggregation": "avg",
+            "multiplier": 100
+          },
+          {
+            "trackedStat": "TIME_ALIVE_STAT",
+            "bits": 11,
+            "aggregation": "avg",
+            "multiplier": null
+          }
+        ]
+      },
+      "scoringRuleSetId": "lawinscoringruleslol",
+      "clampsToZero": true,
+      "onlyScoreTopN": null,
+      "payoutsConfig": null,
+      "bestNTeams": null,
+      "hidePlayerScores": false,
+      "percentileAccuracy": 1,
+      "requiredPlayerListings": [],
+      "invalidScoreThreshold": null
+    }
+  ],
+  "resolvedWindowLocations": {
+    "Fortnite:lawinstournamentidlol:lawinswindowidlol": [
+      "Fortnite:lawinstournamentidlol:lawinswindowidlol"
+    ]
+  }
+}

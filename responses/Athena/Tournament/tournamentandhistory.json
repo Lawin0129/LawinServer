@@ -1,0 +1,141 @@
+{
+  "author": "This response was recreated by PRO100KatYT for versions using the tournamentandhistory route (v6.10-v7.20)",
+  "eventTournaments": [
+    {
+      "tournamentId": "lawinstournamentidlol",
+      "regions": [
+        "ASIA",
+        "BR",
+        "EU",
+        "ME",
+        "NAE",
+        "NAW",
+        "OCE"
+      ],
+      "platformGroups": [
+        "XboxOneGDK",
+        "PS4",
+        "XCloud",
+        "Helios",
+        "Luna",
+        "XCloudMobile",
+        "XB1",
+        "XboxOne",
+        "XSX",
+        "Android",
+        "LunaMobile",
+        "PS5",
+        "HeliosMobile",
+        "GFN",
+        "Switch",
+        "GFNMobile",
+        "Windows"
+      ],
+      "displayDataId": "lawinserver_cup",
+      "announcementTime": "2018-10-16T08:00:00Z",
+      "beginTime": "2018-10-16T17:00:00Z",
+      "endTime": "2018-10-16T20:00:00Z",
+      "eventWindows": [
+        {
+          "eventWindowId": "lawinswindowidlol",
+          "countdownBeginTime": "2018-10-16T15:00:00Z",
+          "beginTime": "2018-10-16T17:00:00Z",
+          "endTime": "2018-10-16T20:00:00Z",
+          "isTBD": false,
+          "eventData": {
+            "playlistId": "Playlist_DefaultSolo",
+            "scoringRules": [
+              {
+                "trackedStat": "PLACEMENT_STAT_INDEX",
+                "mathRule": "lte",
+                "rewardTiers": [
+                  {
+                    "keyValue": 1,
+                    "pointsEarned": 2
+                  }
+                ]
+              },
+              {
+                "trackedStat": "TEAM_ELIMS_STAT_INDEX",
+                "mathRule": "gte",
+                "rewardTiers": [
+                  {
+                    "keyValue": 1,
+                    "pointsEarned": 3
+                  },
+                  {
+                    "keyValue": 2,
+                    "pointsEarned": 1
+                  },
+                  {
+                    "keyValue": 3,
+                    "pointsEarned": 7
+                  }
+                ]
+              }
+            ],
+            "rewardTable": [
+              {
+                "pointsEarned": 69,
+                "mcpTokenRewards": [
+                  "Token:campaignaccess"
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "eventWindowHistories": [
+    {
+      "tournamentId": "lawinstournamentidlol",
+      "eventWindowId": "lawinswindowidlol",
+      "matchIds": [
+        "lawinsmatchid1lol",
+        "lawinsmatchid2lol",
+        "lawinsmatchid3lol",
+        "lawinsmatchid4lol",
+        "lawinsmatchid5lol",
+        "lawinsmatchid6lol",
+        "lawinsmatchid7lol",
+        "lawinsmatchid8lol",
+        "lawinsmatchid9lol",
+        "lawinsmatchid10lol",
+        "lawinsmatchid11lol",
+        "lawinsmatchid12lol",
+        "lawinsmatchid13lol",
+        "lawinsmatchid14lol",
+        "lawinsmatchid15lol",
+        "lawinsmatchid16lol",
+        "lawinsmatchid17lol",
+        "lawinsmatchid18lol",
+        "lawinsmatchid19lol",
+        "lawinsmatchid20lol",
+        "lawinsmatchid21lol",
+        "lawinsmatchid22lol",
+        "lawinsmatchid23lol"
+      ],
+      "teammateIds": [
+        "lawin",
+        "ti93",
+        "pro100katyt",
+        "playeereq",
+        "matteoki"
+      ],
+      "payload": {
+        "pointsEarned": 69,
+        "pointBreakdown": {
+          "TEAM_ELIMS_STAT_INDEX:1": {
+            "timesAchieved": 8,
+            "pointsEarned": 5
+          },
+          "PLACEMENT_STAT_INDEX:2": {
+            "timesAchieved": 7,
+            "pointsEarned": 64
+          }
+        }
+      }
+    }
+  ]
+}

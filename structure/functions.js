@@ -75,7 +75,7 @@ function getItemShop() {
         for (var value in CatalogConfig) {
             if (Array.isArray(CatalogConfig[value].itemGrants)) {
                 if (CatalogConfig[value].itemGrants.length != 0) {
-                    const CatalogEntry = {"devName":"","offerId":"","fulfillmentIds":[],"dailyLimit":-1,"weeklyLimit":-1,"monthlyLimit":-1,"categories":[],"prices":[{"currencyType":"MtxCurrency","currencySubType":"","regularPrice":0,"finalPrice":0,"saleExpiration":"9999-12-02T01:12:00Z","basePrice":0}],"meta":{"SectionId":"Featured","TileSize":"Small"},"matchFilter":"","filterWeight":0,"appStoreId":[],"requirements":[],"offerType":"StaticPrice","giftInfo":{"bIsEnabled":false,"forcedGiftBoxTemplateId":"","purchaseRequirements":[],"giftRecordIds":[]},"refundable":true,"metaInfo":[{"key":"SectionId","value":"Featured"},{"key":"TileSize","value":"Small"}],"displayAssetPath":"","itemGrants":[],"sortPriority":0,"catalogGroupPriority":0};
+                    const CatalogEntry = {"devName":"","offerId":"","fulfillmentIds":[],"dailyLimit":-1,"weeklyLimit":-1,"monthlyLimit":-1,"categories":[],"prices":[{"currencyType":"MtxCurrency","currencySubType":"","regularPrice":0,"finalPrice":0,"saleExpiration":"9999-12-02T01:12:00Z","basePrice":0}],"meta":{"NewDisplayAssetPath":"","SectionId":"Featured","LayoutId":"LawinServer.99","TileSize":"Small","AnalyticOfferGroupId":"LawinServer/Attitude8","FirstSeen":"2/2/2020"},"matchFilter":"","filterWeight":0,"appStoreId":[],"requirements":[],"offerType":"StaticPrice","giftInfo":{"bIsEnabled":false,"forcedGiftBoxTemplateId":"","purchaseRequirements":[],"giftRecordIds":[]},"refundable":true,"metaInfo":[{"key":"NewDisplayAssetPath","value":"="},{"key":"SectionId","value":"Featured"},{"key":"LayoutId","value":"LawinServer.99"},{"key":"TileSize","value":"Small"},{"key":"AnalyticOfferGroupId","value":"LawinServer/Attitude8"},{"key":"FirstSeen","value":"2/2/2020"}],"displayAssetPath":"","itemGrants":[],"sortPriority":0,"catalogGroupPriority":0};
 
                     if (value.toLowerCase().startsWith("daily")) {
                         catalog.storefronts.forEach((storefront, i) => {
@@ -132,7 +132,7 @@ function getItemShop() {
                                 CatalogEntry.prices[0].finalPrice = CatalogConfig[value].price
 
                                 CatalogEntry.meta.TileSize = "Normal"
-                                CatalogEntry.metaInfo[1].value = "Normal"
+                                CatalogEntry.metaInfo[3].value = "Normal"
 
                                 if (CatalogEntry.itemGrants.length != 0) {
                                     catalog.storefronts[i].catalogEntries.push(CatalogEntry);
@@ -282,15 +282,18 @@ function getContentPages(req) {
                 contentpages.specialoffervideo.bSpecialOfferEnabled = "true";
             }
         } else if (memory.season == 24) {
-            backgrounds[0].backgroundimage = "https://cdn2.unrealengine.com/t-ch4s2-bp-lobby-4096x2048-edde08d15f7e.jpg"
-        }        
-
-        else if (memory.season == 25) {
+            backgrounds[0].backgroundimage = "https://cdn2.unrealengine.com/t-ch4s2-bp-lobby-4096x2048-edde08d15f7e.jpg";
+        } else if (memory.season == 25) {
             backgrounds[0].backgroundimage = "https://cdn2.unrealengine.com/s25-lobby-4k-4096x2048-4a832928e11f.jpg";
             backgrounds[1].backgroundimage = "https://cdn2.unrealengine.com/fn-shop-ch4s3-04-1920x1080-785ce1d90213.png";
             if (memory.build == 25.11) {
                 backgrounds[0].backgroundimage = "https://cdn2.unrealengine.com/t-s25-14dos-lobby-4096x2048-2be24969eee3.jpg";
             }
+        } else if (memory.season == 27) {
+            backgrounds[0].stage = "rufus";
+        } else {
+            backgrounds[0].stage = "defaultnotris";
+            backgrounds[0].backgroundimage = "https://fortnite-public-service-prod11.ol.epicgames.com/images/lightlobbybg.png";
         }
 
     } catch (err) {}

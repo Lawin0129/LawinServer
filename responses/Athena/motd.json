@@ -1,0 +1,134 @@
+{
+  "contentType": "collection",
+  "contentId": "motd-default-collection",
+  "tcId": "634e8e85-e2fc-4c68-bb10-93604cf6605f",
+  "contentMeta": "{\"ee4bbb74ba76ef92e1303e839abeaa42\":[\"d6bb7afb-63eb-4348-8d7d-c3d72c801294\"],\"dd484731b31d032d925f9856a1918a9c\":[\"c565dde9-e269-4552-8174-ba0f0f77f144\"],\"5b893e46b65641216e3a97bd533a3fe9\":[\"e268b405-1513-4b6d-aa9c-e29fc1296794\"],\"2dd1a586bf81687c11c496f028077e82\":[\"a5227131-c79c-4e9f-bf55-3c9007ad9b20\"]}",
+  "contentItems": [
+    {
+      "contentType": "content-item",
+      "contentId": "46874c56-0973-4cbe-ac98-b580c5b36df5",
+      "tcId": "61fb3dd8-f23d-45cc-9058-058ab223ba5c",
+      "contentFields": {
+        "body": {
+          "ar": "استمتع بتجربة لعب استثنائية!",
+          "en": "Have a phenomenal gaming experience!",
+          "de": "Wünsche allen ein wunderbares Spielerlebnis!",
+          "es": "¡Que disfrutes de tu experiencia de videojuegos!",
+          "es-419": "¡Ten una experiencia de juego espectacular!",
+          "fr": "Un bon jeu à toutes et à tous !",
+          "it": "Ti auguriamo un'esperienza di gioco fenomenale!",
+          "ja": "驚きの体験をしよう！",
+          "ko": "게임에서 환상적인 경험을 해보세요!",
+          "pl": "Życzymy fenomenalnej gry!",
+          "pt-BR": "Tenha uma experiência de jogo fenomenal!",
+          "ru": "Желаю невероятно приятной игры!",
+          "tr": "Muhteşem bir oyun deneyimi yaşamanı dileriz!"
+        },
+        "FullScreenBody": {
+          "ar": "استمتع بتجربة لعب استثنائية!\nDiscord: https://discord.gg/KJ8UaHZ",
+          "en": "Have a phenomenal gaming experience\nDiscord: https://discord.gg/KJ8UaHZ!",
+          "de": "Wünsche allen ein wunderbares Spielerlebnis!\nDiscord: https://discord.gg/KJ8UaHZ",
+          "es": "¡Que disfrutes de tu experiencia de videojuegos!\nDiscord: https://discord.gg/KJ8UaHZ",
+          "es-419": "¡Ten una experiencia de juego espectacular!\nDiscord: https://discord.gg/KJ8UaHZ",
+          "fr": "Un bon jeu à toutes et à tous !\nDiscord: https://discord.gg/KJ8UaHZ",
+          "it": "Ti auguriamo un'esperienza di gioco fenomenale!\nDiscord: https://discord.gg/KJ8UaHZ",
+          "ja": "驚きの体験をしよう！\nDiscord: https://discord.gg/KJ8UaHZ",
+          "ko": "게임에서 환상적인 경험을 해보세요!\nDiscord: https://discord.gg/KJ8UaHZ",
+          "pl": "Życzymy fenomenalnej gry!\nDiscord: https://discord.gg/KJ8UaHZ",
+          "pt-BR": "Tenha uma experiência de jogo fenomenal!\nDiscord: https://discord.gg/KJ8UaHZ",
+          "ru": "Желаю невероятно приятной игры!\nDiscord: https://discord.gg/KJ8UaHZ",
+          "tr": "Muhteşem bir oyun deneyimi yaşamanı dileriz!\nDiscord: https://discord.gg/KJ8UaHZ"
+        },
+        "entryType": "Website",
+        "image": [
+          {
+            "width": 1920,
+            "height": 1080,
+            "url": "https://fortnite-public-service-prod11.ol.epicgames.com/images/motd.png"
+          }
+        ],
+        "FullScreenBackground": {
+          "Image": [
+            {
+              "width": 1920,
+              "height": 1080,
+              "url": "https://fortnite-public-service-prod11.ol.epicgames.com/images/motd.png"
+            }
+          ],
+          "_type": "FullScreenBackground"
+        },
+        "tabTitleOverride": "LawinServer",
+        "TeaserTitle": {
+          "ar": "مرحبًا بك في LawinServer!",
+          "en": "Welcome to LawinServer!",
+          "de": "Willkommen bei LawinServer!",
+          "es": "¡Bienvenidos a LawinServer!",
+          "es-419": "¡Bienvenidos a LawinServer!",
+          "fr": "Bienvenue sur LawinServer !",
+          "it": "Benvenuto in LawinServer!",
+          "ja": "LawinServerへようこそ！",
+          "ko": "LawinServer에 오신 것을 환영합니다!",
+          "pl": "Witaj w LawinServerze!",
+          "pt-BR": "Bem-vindo ao LawinServer!",
+          "ru": "Добро пожаловать в LawinServer!",
+          "tr": "LavinServer'a Hoş Geldiniz!"
+        },
+        "tileImage": [
+          {
+            "width": 1024,
+            "height": 512,
+            "url": "https://fortnite-public-service-prod11.ol.epicgames.com/images/motd-s.png"
+          }
+        ],
+        "TeaserBackground": {
+          "Image": [
+            {
+              "width": 1024,
+              "height": 512,
+              "url": "https://fortnite-public-service-prod11.ol.epicgames.com/images/motd-s.png"
+            }
+          ],
+          "_type": "TeaserBackground"
+        },
+        "title": {
+          "ar": "مرحبًا بك في LawinServer!",
+          "en": "Welcome to LawinServer!",
+          "de": "Willkommen bei LawinServer!",
+          "es": "¡Bienvenidos a LawinServer!",
+          "es-419": "¡Bienvenidos a LawinServer!",
+          "fr": "Bienvenue sur LawinServer !",
+          "it": "Benvenuto in LawinServer!",
+          "ja": "LawinServerへようこそ！",
+          "ko": "LawinServer에 오신 것을 환영합니다!",
+          "pl": "Witaj w LawinServerze!",
+          "pt-BR": "Bem-vindo ao LawinServer!",
+          "ru": "Добро пожаловать в LawinServer!",
+          "tr": "LavinServer'a Hoş Geldiniz!"
+        },
+        "FullScreenTitle": {
+          "ar": "مرحبًا بك في LawinServer!",
+          "en": "Welcome to LawinServer!",
+          "de": "Willkommen bei LawinServer!",
+          "es": "¡Bienvenidos a LawinServer!",
+          "es-419": "¡Bienvenidos a LawinServer!",
+          "fr": "Bienvenue sur LawinServer !",
+          "it": "Benvenuto in LawinServer!",
+          "ja": "LawinServerへようこそ！",
+          "ko": "LawinServer에 오신 것을 환영합니다!",
+          "pl": "Witaj w LawinServerze!",
+          "pt-BR": "Bem-vindo ao LawinServer!",
+          "ru": "Добро пожаловать в LawinServer!",
+          "tr": "LavinServer'a Hoş Geldiniz!"
+        },
+        "VerticalTextLayout": false,
+        "videoAutoplay": false,
+        "videoLoop": false,
+        "videoMute": false,
+        "videoStreamingEnabled": false,
+        "websiteButtonText": "Discord",
+        "websiteURL": "https://discord.gg/KJ8UaHZ"
+      },
+      "contentSchemaName": "MotdWebsiteNewsWithVideo"
+    }
+  ]
+}

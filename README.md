@@ -60,10 +60,11 @@
 - Changing items in Locker
 - Changing banner icon and banner color
 - Changing items edit styles
+- Jam Track playback in lobby (currently all tracks will play the OG Remix audio)
 - Support a Creator with specific codes
 - Fully working daily challenges system (New daily challenge every day, replacing daily challenges, etc...)
 - Completed Location & Discovery quests (discovered map in game & in lobby) for Chapter 2, 3 & 4 (Can change)
-- Seasonal Quests from Season 3 up to Season 21 (Can change)
+- Seasonal Quests from Season 3 up to Season 29 (Can change)
 - Purchasable battle pass from Season 2 to Season 10 (Can change)
 - Discovery Tab
 - Leaderboards (v1)
