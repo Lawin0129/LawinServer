@@ -66,6 +66,7 @@
 - Completed Location & Discovery quests (discovered map in game & in lobby) for Chapter 2, 3 & 4 (Can change)
 - Seasonal Quests from Season 3 up to Season 29 (Can change)
 - Purchasable battle pass from Season 2 to Season 10 (Can change)
+- Events Tab (Tournaments)
 - Discovery Tab
 - Leaderboards (v1)
 - Configurable backend sided in-game events - check out the Events seciton in config.ini for more details
