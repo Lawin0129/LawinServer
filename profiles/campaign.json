@@ -13134,7 +13134,13 @@
     "Hero:HID_Ninja_EternalWanderer_SR_T05": {
       "templateId": "Hero:HID_Ninja_EternalWanderer_SR_T05",
       "attributes": {
-        "outfitvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Legendary",
+            "owned": []
+          }
+        ],
         "backblingvariants": [],
         "gender": 0,
         "level": 50,
