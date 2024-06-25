@@ -61,6 +61,7 @@
 - Changing banner icon and banner color
 - Changing items edit styles
 - Jam Track playback in lobby (currently all tracks will play the OG Remix audio)
+- Radio Station in cars support*
 - Support a Creator with specific codes
 - Fully working daily challenges system (New daily challenge every day, replacing daily challenges, etc...)
 - Completed Location & Discovery quests (discovered map in game & in lobby) for Chapter 2, 3 & 4 (Can change)
@@ -71,6 +72,7 @@
 - Leaderboards (v1)
 - Configurable backend sided in-game events - check out the Events seciton in config.ini for more details
 - Joining gameservers using the matchmaker - check out the GameServer seciton in config.ini for more details
+##### * Included in the [LawinServer Addon](https://github.com/PRO100KatYT/LawinServerAddon). To install it, merge its `public` folder with the one in your LawinServer folder. [(Direct download link)](https://github.com/PRO100KatYT/LawinServerAddon/archive/refs/heads/main.zip)
 
 ## How to host/use LawinServer
 1) Install [NodeJS](https://nodejs.org/en/)
