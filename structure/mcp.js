@@ -7979,12 +7979,12 @@ express.post("/fortnite/api/game/v2/profile/*/client/SetActiveArchetype", async 
     var QueryRevision = req.query.rvn || -1;
     var StatChanged = false;
 
-    if (req.body.archetypeGroup && req.body.archetype) {
+    if (req.body.archetypeGroup) {
         if (!profile.stats.attributes.hasOwnProperty("loadout_archetype_values")) {
             profile.stats.attributes.loadout_archetype_values = {}
         }
 
-        profile.stats.attributes.loadout_archetype_values[req.body.archetypeGroup] = req.body.archetype;
+        profile.stats.attributes.loadout_archetype_values[req.body.archetypeGroup] = req.body.archetype || "";
 
         StatChanged = true;
     }
