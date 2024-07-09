@@ -14,6 +14,9 @@ express.get("/fortnite/api/storefront/v2/catalog", async (req, res) => {
     if (memory.build >= 30.10) {
         catalog = JSON.parse(JSON.stringify(catalog).replace(/"Normal"/g, '"Size_1_x_2"'));
     }
+    if (memory.build >= 30.20) {
+        catalog = JSON.parse(JSON.stringify(catalog).replace(/Game\/Items\/CardPacks\//g, 'SaveTheWorld/Items/CardPacks/'));
+    }
 
     res.json(catalog);
 })
