@@ -6201,7 +6201,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/PurchaseCatalogEntry", asyn
                 catalog.storefronts[a].catalogEntries.forEach(function(value, b) {
                     if (value.offerId == req.body.offerId) {
                         catalog.storefronts[a].catalogEntries[b].itemGrants.forEach(function(value, c) {
-                            const ID = value.templateId;
+                            const ID = functions.MakeID();
 
                             for (var key in athena.items) {
                                 if (value.templateId.toLowerCase() == athena.items[key].templateId.toLowerCase()) {
@@ -6284,6 +6284,66 @@ express.post("/fortnite/api/game/v2/profile/*/client/PurchaseCatalogEntry", asyn
                                 }
                             }
                         }
+                    }
+                })
+            }
+
+            if (value.name.startsWith("STW")) {
+                catalog.storefronts[a].catalogEntries.forEach(function(value, b) {
+                    if (value.offerId == req.body.offerId) {
+                        catalog.storefronts[a].catalogEntries[b].itemGrants.forEach(function(value, c) {
+                            const ID = functions.MakeID();
+
+                            if (Notifications.length == 0) {
+                                Notifications.push({
+                                    "type": "CatalogPurchase",
+                                    "primary": true,
+                                    "lootResult": {
+                                        "items": []
+                                    }
+                                })
+                            }
+
+                            var Item = {"templateId": value.templateId, "attributes": {"legacy_alterations": [], "max_level_bonus": 0, "level": 1, "refund_legacy_item": false, "item_seen": false, "alterations": ["", "", "", "", "", ""], "xp": 0, "refundable": false, "alteration_base_rarities": [], "favorite": false}, "quantity": req.body.purchaseQuantity * value.quantity || 1};
+
+                            if (Item.templateId.toLowerCase().startsWith("worker:")) {
+                                Item.attributes = functions.MakeSurvivorAttributes(Item.templateId);
+                            }
+
+                            profile.items[ID] = Item;
+
+                            ApplyProfileChanges.push({
+                                "changeType": "itemAdded",
+                                "itemId": ID,
+                                "item": Item
+                            })
+
+                            Notifications[0].lootResult.items.push({
+                                "itemType": value.templateId,
+                                "itemGuid": ID,
+                                "itemProfile": "profile0",
+                                "quantity": req.body.purchaseQuantity * value.quantity || 1
+                            })
+                        })
+                        // STW currency spending
+                        if (catalog.storefronts[a].catalogEntries[b].prices[0].currencyType.toLowerCase() == "gameitem") {
+                            for (var key in profile.items) {
+                                if (profile.items[key].templateId.toLowerCase() == catalog.storefronts[a].catalogEntries[b].prices[0].currencySubType.toLowerCase()) {
+                                    profile.items[key].quantity -= (catalog.storefronts[a].catalogEntries[b].prices[0].finalPrice) * req.body.purchaseQuantity || 1;
+                                            
+                                    ApplyProfileChanges.push({
+                                        "changeType": "itemQuantityChanged",
+                                        "itemId": key,
+                                        "quantity": profile.items[key].quantity
+                                    })
+                    
+                                    break;
+                                }
+                            }
+                        }
+
+                        profile.rvn += 1;
+                        profile.commandRevision += 1;
                     }
                 })
             }
@@ -7092,7 +7152,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/PurchaseCatalogEntry", asyn
                 catalog.storefronts[a].catalogEntries.forEach(function(value, b) {
                     if (value.offerId == req.body.offerId) {
                         catalog.storefronts[a].catalogEntries[b].itemGrants.forEach(function(value, c) {
-                            const ID = value.templateId;
+                            const ID = functions.MakeID();
 
                             for (var key in athena.items) {
                                 if (value.templateId.toLowerCase() == athena.items[key].templateId.toLowerCase()) {
@@ -7183,6 +7243,76 @@ express.post("/fortnite/api/game/v2/profile/*/client/PurchaseCatalogEntry", asyn
                                 "name": "mtx_purchase_history",
                                 "value": profile.stats.attributes.mtx_purchase_history
                             })
+                        }
+
+                        profile.rvn += 1;
+                        profile.commandRevision += 1;
+                    }
+                })
+            }
+
+            if (value.name.startsWith("STW")) {
+                catalog.storefronts[a].catalogEntries.forEach(function(value, b) {
+                    if (value.offerId == req.body.offerId) {
+                        catalog.storefronts[a].catalogEntries[b].itemGrants.forEach(function(value, c) {
+                            const ID = functions.MakeID();
+
+                            if (MultiUpdate.length == 0) {
+                                MultiUpdate.push({
+                                    "profileRevision": campaign.rvn || 0,
+                                    "profileId": "campaign",
+                                    "profileChangesBaseRevision": campaign.rvn || 0,
+                                    "profileChanges": [],
+                                    "profileCommandRevision": campaign.commandRevision || 0,
+                                })
+                            }
+
+                            if (Notifications.length == 0) {
+                                Notifications.push({
+                                    "type": "CatalogPurchase",
+                                    "primary": true,
+                                    "lootResult": {
+                                        "items": []
+                                    }
+                                })
+                            }
+
+                            var Item = {"templateId": value.templateId, "attributes": {"legacy_alterations": [], "max_level_bonus": 0, "level": 1, "refund_legacy_item": false, "item_seen": false, "alterations": ["", "", "", "", "", ""], "xp": 0, "refundable": false, "alteration_base_rarities": [], "favorite": false}, "quantity": req.body.purchaseQuantity * value.quantity || 1};
+
+                            if (Item.templateId.toLowerCase().startsWith("worker:")) {
+                                Item.attributes = functions.MakeSurvivorAttributes(Item.templateId);
+                            }
+
+                            campaign.items[ID] = Item;
+
+                            MultiUpdate[0].profileChanges.push({
+                                "changeType": "itemAdded",
+                                "itemId": ID,
+                                "item": Item
+                            })
+
+                            Notifications[0].lootResult.items.push({
+                                "itemType": value.templateId,
+                                "itemGuid": ID,
+                                "itemProfile": "campaign",
+                                "quantity": req.body.purchaseQuantity * value.quantity || 1
+                            })
+                        })
+                        // STW currency spending
+                        if (catalog.storefronts[a].catalogEntries[b].prices[0].currencyType.toLowerCase() == "gameitem") {
+                            for (var key in campaign.items) {
+                                if (campaign.items[key].templateId.toLowerCase() == catalog.storefronts[a].catalogEntries[b].prices[0].currencySubType.toLowerCase()) {
+                                    campaign.items[key].quantity -= (catalog.storefronts[a].catalogEntries[b].prices[0].finalPrice) * req.body.purchaseQuantity || 1;
+                                            
+                                    MultiUpdate[0].profileChanges.push({
+                                        "changeType": "itemQuantityChanged",
+                                        "itemId": key,
+                                        "quantity": campaign.items[key].quantity
+                                    })
+                    
+                                    break;
+                                }
+                            }
                         }
 
                         profile.rvn += 1;
