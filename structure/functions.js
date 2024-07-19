@@ -163,7 +163,7 @@ function getTheater(req) {
         var date = new Date();
         var hour = date.getHours();
 
-        // Set the 24-hour StW mission refresh date for version season 9 and above
+        // Set the 24-hour StW mission refresh date for season 9 and above
         if (memory.season >= 9) {
             date.setHours(23, 59, 59, 999);
         } else {
