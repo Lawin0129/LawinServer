@@ -4874,7 +4874,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/AbandonExpedition", async (
             }
         }
 
-        // Set the expedition back as availale
+        // Set the expedition back as available
         delete profile.items[req.body.expeditionId].attributes.expedition_squad_id
         delete profile.items[req.body.expeditionId].attributes.expedition_start_time
         delete profile.items[req.body.expeditionId].attributes.expedition_end_time
@@ -7616,39 +7616,14 @@ express.post("/fortnite/api/game/v2/profile/*/client/EquipBattleRoyaleCustomizat
     if (req.body.slotName) {
 
         switch (req.body.slotName) {
-
             case "Character":
-                profile.stats.attributes.favorite_character = req.body.itemToSlot || "";
-                StatChanged = true;
-                break;
-
             case "Backpack":
-                profile.stats.attributes.favorite_backpack = req.body.itemToSlot || "";
-                StatChanged = true;
-                break;
-
             case "Pickaxe":
-                profile.stats.attributes.favorite_pickaxe = req.body.itemToSlot || "";
-                StatChanged = true;
-                break;
-
             case "Glider":
-                profile.stats.attributes.favorite_glider = req.body.itemToSlot || "";
-                StatChanged = true;
-                break;
-
             case "SkyDiveContrail":
-                profile.stats.attributes.favorite_skydivecontrail = req.body.itemToSlot || "";
-                StatChanged = true;
-                break;
-
             case "MusicPack":
-                profile.stats.attributes.favorite_musicpack = req.body.itemToSlot || "";
-                StatChanged = true;
-                break;
-
             case "LoadingScreen":
-                profile.stats.attributes.favorite_loadingscreen = req.body.itemToSlot || "";
+                profile.stats.attributes[`favorite_${req.body.slotName.toLowerCase()}`] = req.body.itemToSlot || "";
                 StatChanged = true;
                 break;
 
@@ -7668,9 +7643,6 @@ express.post("/fortnite/api/game/v2/profile/*/client/EquipBattleRoyaleCustomizat
                 switch (Math.sign(indexwithinslot)) {
 
                     case 0:
-                        profile.stats.attributes.favorite_itemwraps[indexwithinslot] = req.body.itemToSlot || "";
-                        break;
-
                     case 1:
                         profile.stats.attributes.favorite_itemwraps[indexwithinslot] = req.body.itemToSlot || "";
                         break;
@@ -7870,17 +7842,30 @@ express.post("/fortnite/api/game/v2/profile/*/client/SetCosmeticLockerSlot", asy
             ];
 
             if (profile.profileId == "athena") {
-                if (profile.items[req.body.itemToSlot].attributes.variants.length == 0) {
-                    profile.items[req.body.itemToSlot].attributes.variants = req.body.variantUpdates || [];
-                }
-				
-                for (var i in profile.items[req.body.itemToSlot].attributes.variants) {
-                    try {
-                        if (profile.items[req.body.itemToSlot].attributes.variants[i].channel.toLowerCase() == req.body.variantUpdates[i].channel.toLowerCase()) {
-                            profile.items[req.body.itemToSlot].attributes.variants[i].active = req.body.variantUpdates[i].active || "";
+
+                for (var variantUpdate in req.body.variantUpdates) {
+                    var bFound = false;
+                    for (var variant in profile.items[req.body.itemToSlot].attributes.variants) {
+                        if (req.body.variantUpdates[variantUpdate].channel == profile.items[req.body.itemToSlot].attributes.variants[variant].channel) {
+                            profile.items[req.body.itemToSlot].attributes.variants[variant].active = req.body.variantUpdates[variantUpdate].active;
+
+                            bFound = true;
+                            break;
                         }
-                    } catch (err) {}
+                    }
+                    if (bFound == false) {
+                        profile.items[req.body.itemToSlot].attributes.variants.push(req.body.variantUpdates[variantUpdate])
+                    }
                 }
+
+                ApplyProfileChanges.push({
+                    "changeType": "itemAttrChanged",
+                    "itemId": req.body.itemToSlot,
+                    "attributeName": "variants",
+                    "attributeValue": profile.items[req.body.itemToSlot].attributes.variants
+                })
+
+                StatChanged = true;
             }
 
             for (var i in req.body.variantUpdates) {
@@ -7897,39 +7882,14 @@ express.post("/fortnite/api/game/v2/profile/*/client/SetCosmeticLockerSlot", asy
     if (req.body.category && req.body.lockerItem) {
 
         switch (req.body.category) {
-
             case "Character":
-                profile.items[req.body.lockerItem].attributes.locker_slots_data.slots.Character.items = [req.body.itemToSlot || ""];
-                StatChanged = true;
-                break;
-
             case "Backpack":
-                profile.items[req.body.lockerItem].attributes.locker_slots_data.slots.Backpack.items = [req.body.itemToSlot || ""];
-                StatChanged = true;
-                break;
-
             case "Pickaxe":
-                profile.items[req.body.lockerItem].attributes.locker_slots_data.slots.Pickaxe.items = [req.body.itemToSlot || ""];
-                StatChanged = true;
-                break;
-
             case "Glider":
-                profile.items[req.body.lockerItem].attributes.locker_slots_data.slots.Glider.items = [req.body.itemToSlot || ""];
-                StatChanged = true;
-                break;
-
             case "SkyDiveContrail":
-                profile.items[req.body.lockerItem].attributes.locker_slots_data.slots.SkyDiveContrail.items = [req.body.itemToSlot || ""];
-                StatChanged = true;
-                break;
-
             case "MusicPack":
-                profile.items[req.body.lockerItem].attributes.locker_slots_data.slots.MusicPack.items = [req.body.itemToSlot || ""];
-                StatChanged = true;
-                break;
-
             case "LoadingScreen":
-                profile.items[req.body.lockerItem].attributes.locker_slots_data.slots.LoadingScreen.items = [req.body.itemToSlot || ""];
+                profile.items[req.body.lockerItem].attributes.locker_slots_data.slots[req.body.category].items = [req.body.itemToSlot || ""];
                 StatChanged = true;
                 break;
 
@@ -8015,6 +7975,8 @@ express.post("/fortnite/api/game/v2/profile/*/client/PutModularCosmeticLoadout",
     var QueryRevision = req.query.rvn || -1;
     var StatChanged = false;
 
+    var loadoutData = JSON.parse(req.body.loadoutData);
+
     if (!profile.stats.attributes.hasOwnProperty("loadout_presets")) {
         profile.stats.attributes.loadout_presets = {};
 
@@ -8059,7 +8021,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/PutModularCosmeticLoadout",
 
     try {
         LoadoutGUID = profile.stats.attributes.loadout_presets[req.body.loadoutType][req.body.presetId];
-        profile.items[LoadoutGUID].attributes = JSON.parse(req.body.loadoutData);
+        profile.items[LoadoutGUID].attributes = loadoutData;
 
         ApplyProfileChanges.push({
             "changeType": "itemAttrChanged",
@@ -8071,6 +8033,43 @@ express.post("/fortnite/api/game/v2/profile/*/client/PutModularCosmeticLoadout",
         StatChanged = true;
         
     } catch (err) {}
+
+    // Apply the edit style changes to the item attributes too
+    for (var slot in loadoutData.slots) {
+        if (loadoutData.slots[slot].hasOwnProperty("customization_info")) {
+            for (var item in profile.items) {
+                if (profile.items[item].templateId.toLowerCase() == loadoutData.slots[slot].equipped_item.toLowerCase()) {
+                    for (var customization in loadoutData.slots[slot].customization_info) {
+                        var bFound = false;
+                        for (var profileCustomization in profile.items[item].attributes.variants) {
+                            if (loadoutData.slots[slot].customization_info[customization].channel_tag == profile.items[item].attributes.variants[profileCustomization].channel) {
+                                profile.items[item].attributes.variants[profileCustomization].active = `${loadoutData.slots[slot].customization_info[customization].variant_tag}.${loadoutData.slots[slot].customization_info[customization].additional_data}`;
+
+                                bFound = true;
+                                break;
+                            }
+                        }
+                        if (bFound == false) {
+                            profile.items[item].attributes.variants.push({
+                                "channel": loadoutData.slots[slot].customization_info[customization].channel_tag,
+                                "active": `${loadoutData.slots[slot].customization_info[customization].variant_tag}.${loadoutData.slots[slot].customization_info[customization].additional_data}`,
+                                "owned": []
+                            })
+                        }
+                    }
+
+                    ApplyProfileChanges.push({
+                        "changeType": "itemAttrChanged",
+                        "itemId": item,
+                        "attributeName": "variants",
+                        "attributeValue": profile.items[item].attributes.variants
+                    })
+            
+                    StatChanged = true;
+                }
+            }
+        }
+    }
 
     if (StatChanged == true) {
         profile.rvn += 1;
