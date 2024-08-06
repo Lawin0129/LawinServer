@@ -1604,7 +1604,8 @@ express.get("/fortnite/api/calendar/v1/timeline", async (req, res) => {
             "EventFlag.Spring2019.Phase2",
             "EventFlag.Starlight",
             "EventFlag.StormKing.Landmark",
-            "EventFlag.YarrrTwo"
+            "EventFlag.STWOutlandish",
+            "EventFlag.YarrrTwo",
         ]
 
         var activeEventsSet = new Set(activeEvents.map(e => e.eventType));
