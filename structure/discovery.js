@@ -54,4 +54,25 @@ express.get("/links/api/fn/mnemonic/*", async (req, res) => {
     }
 })
 
+express.post("/api/v1/links/lock-status/:accountId/check", async (req, res) => {
+    var response = {
+        "results": [],
+        "hasMore": false
+    };
+
+    if (req.body.linkCodes) {
+        for (var linkCode in req.body.linkCodes) {
+            response.results.push({
+                "playerId": req.params.accountId,
+                "linkCode": req.body.linkCodes[linkCode],
+                "lockStatus": "UNLOCKED",
+                "lockStatusReason": "NONE",
+                "isVisible": true
+            })
+        }        
+    }    
+
+    res.json(response);
+})
+
 module.exports = express;
