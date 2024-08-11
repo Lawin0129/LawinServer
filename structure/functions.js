@@ -155,9 +155,14 @@ function getTheater(req) {
     var Season = "Season" + memory.season;
 
     try {
+        if (memory.build >= 30.20) { // Those changes have to be made before the 15.30+ ones
+            theater = theater.replace(/\/Game\/World\/ZoneThemes/g, "/STW_Zones/World/ZoneThemes");
+            theater = theater.replace(/\"DataTable\'\/Game\//ig, "\"/Script/Engine.DataTable\'\/Game\/");
+        }
+
         if (memory.build >= 15.30) {
             theater = theater.replace(/\/Game\//ig, "\/SaveTheWorld\/");
-            theater = theater.replace(/\"DataTable\'\/SaveTheWorld\//ig, "\"DataTable\'\/Game\/");
+            theater = theater.replace(/\"DataTable\'\/SaveTheWorld\//ig, "\"DataTable\'\/Game\/"); // For those versions keep /Game/ for DataTables
         }
 
         var date = new Date();
