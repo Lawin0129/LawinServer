@@ -61493,7 +61493,13 @@
     "Hero:HID_Outlander_043_MadCommander_SR_T05": {
       "templateId": "Hero:HID_Outlander_043_MadCommander_SR_T05",
       "attributes": {
-        "outfitvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Legendary",
+            "owned": []
+          }
+        ],
         "backblingvariants": [],
         "gender": 0,
         "level": 50,
@@ -61537,7 +61543,13 @@
     "Hero:HID_Outlander_042_Madcap_SR_T05": {
       "templateId": "Hero:HID_Outlander_042_Madcap_SR_T05",
       "attributes": {
-        "outfitvariants": [],
+        "outfitvariants": [
+          {
+            "channel": "Parts",
+            "active": "CampaignHero.Tier2.Legendary",
+            "owned": []
+          }
+        ],
         "backblingvariants": [],
         "gender": 0,
         "level": 50,
