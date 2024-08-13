@@ -1507,6 +1507,45 @@ express.get("/fortnite/api/calendar/v1/timeline", async (req, res) => {
                 "activeSince": "2020-01-01T00:00:00.000Z"
             })
             break;
+
+        case 30:
+            activeEvents.push(
+            {
+                "eventType": "EventFlag.Event_S30_FlatWare",
+                "activeUntil": "9999-01-01T00:00:00.000Z",
+                "activeSince": "2020-01-01T00:00:00.000Z"
+            },
+            {
+                "eventType": "Event_GreenhousePrelude",
+                "activeUntil": "9999-01-01T00:00:00.000Z",
+                "activeSince": "2020-01-01T00:00:00.000Z"
+            },
+            {
+                "eventType": "EventFlag.Event_S30_LevelUpPass",
+                "activeUntil": "9999-01-01T00:00:00.000Z",
+                "activeSince": "2020-01-01T00:00:00.000Z"
+            },
+            {
+                "eventType": "EventFlag.Event_S30_RebootRally",
+                "activeUntil": "9999-01-01T00:00:00.000Z",
+                "activeSince": "2020-01-01T00:00:00.000Z"
+            },
+            {
+                "eventType": "EventFlag.Event_S30_StoryQuests",
+                "activeUntil": "9999-01-01T00:00:00.000Z",
+                "activeSince": "2020-01-01T00:00:00.000Z"
+            },
+            {
+                "eventType": "EventFlag.Event_S30_StoryQuests_P6",
+                "activeUntil": "9999-01-01T00:00:00.000Z",
+                "activeSince": "2020-01-01T00:00:00.000Z"
+            },
+            {
+                "eventType": "EventFlag.Event_S30_AllSweat",
+                "activeUntil": "9999-01-01T00:00:00.000Z",
+                "activeSince": "2020-01-01T00:00:00.000Z"
+            })
+            break;
     }
 
     if (24.3 <= memory.build && memory.build <= 25) {
@@ -1605,7 +1644,7 @@ express.get("/fortnite/api/calendar/v1/timeline", async (req, res) => {
             "EventFlag.Starlight",
             "EventFlag.StormKing.Landmark",
             "EventFlag.STWOutlandish",
-            "EventFlag.YarrrTwo",
+            "EventFlag.YarrrTwo"
         ]
 
         var activeEventsSet = new Set(activeEvents.map(e => e.eventType));
