@@ -47,20 +47,20 @@ express.get("/eulatracking/api/shared/agreements/fn*", async (req, res) => {
 
 express.get("/fortnite/api/game/v2/friendcodes/*/epic", async (req, res) => {
     res.json([{
-    "codeId": "L4WINS3RV3R",
-    "codeType": "CodeToken:FounderFriendInvite",
-    "dateCreated": "2024-04-02T21:37:00.420Z"
-  },
-  {
-    "codeId": "playeereq",
-    "codeType": "CodeToken:FounderFriendInvite_XBOX",
-    "dateCreated": "2024-04-02T21:37:00.420Z"
-  },
-  {
-    "codeId": "lawinscodelol",
-    "codeType": "CodeToken:MobileInvite",
-    "dateCreated": "2024-04-02T21:37:00.420Z"
-  }])
+        "codeId": "L4WINS3RV3R",
+        "codeType": "CodeToken:FounderFriendInvite",
+        "dateCreated": "2024-04-02T21:37:00.420Z"
+    },
+    {
+        "codeId": "playeereq",
+        "codeType": "CodeToken:FounderFriendInvite_XBOX",
+        "dateCreated": "2024-04-02T21:37:00.420Z"
+    },
+    {
+        "codeId": "lawinscodelol",
+        "codeType": "CodeToken:MobileInvite",
+        "dateCreated": "2024-04-02T21:37:00.420Z"
+    }])
 })
 
 express.get("/launcher/api/public/distributionpoints/", async (req, res) => {
