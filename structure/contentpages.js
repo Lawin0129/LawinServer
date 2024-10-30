@@ -53,18 +53,32 @@ express.get("/content/api/pages/*", async (req, res) => {
     res.json(contentpages)
 })
 
-express.post("/api/v1/fortnite-br/surfaces/*/target", async (req, res) => {
+express.post("/api/v1/fortnite-br/*/target", async (req, res) => {
     const motd = JSON.parse(JSON.stringify(require("./../responses/Athena/motd.json")));
     const fields = ["title", "body", "TeaserTitle", "FullScreenTitle", "FullScreenBody"];
+    var language = req.body.language || req.body.parameters.language;
 
-    try {
-        motd.contentItems.forEach(item => {
-            fields.forEach(field => {
-                item.contentFields[field] = item.contentFields[field][req.body.language];
-            })
+    motd.contentItems.forEach(item => {
+        fields.forEach(field => {
+            try {
+                item.contentFields[field] = item.contentFields[field][language];
+            } catch (err) {}
         })
-    } catch (err) {}
+    })
 
+    if (req.body.hasOwnProperty("tags")) {
+        motd.contentItems.forEach(item => {
+            item.placements = [];
+            req.body.tags.forEach(tag => {
+                item.placements.push({
+                    "trackingId": "lawinstrackingidlol",
+                    "tag": tag,
+                    "position": 0
+                })
+            })
+        })    
+    }
+    
     res.json(motd)
 })
 

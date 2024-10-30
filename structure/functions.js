@@ -156,7 +156,7 @@ function getTheater(req) {
 
     try {
         if (memory.build >= 30.20) { // Those changes have to be made before the 15.30+ ones
-            theater = theater.replace(/\/Game\/World\/ZoneThemes/g, "/STW_Zones/World/ZoneThemes");
+            theater = theater.replace(/\/Game\/World\/ZoneThemes/ig, "/STW_Zones/World/ZoneThemes");
             theater = theater.replace(/\"DataTable\'\/Game\//ig, "\"/Script/Engine.DataTable\'\/Game\/");
         }
 

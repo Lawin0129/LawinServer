@@ -340,7 +340,9 @@
                   "accountId": "epic",
                   "creatorName": "Epic",
                   "descriptionTags": [],
+                  "discoveryIntent": "PUBLIC",
                   "metadata": {
+                    "product_tag": "Product.LawinServer",
                     "image_url": "https://cdn2.unrealengine.com/solo-1920x1080-1920x1080-bc0a5455ce20.jpg",
                     "alt_introduction": {
                       "ar": "انطلق وحدك في معركة لتصبح آخر لاعب صامد.",
@@ -418,7 +420,9 @@
                   "accountId": "epic",
                   "creatorName": "Epic",
                   "descriptionTags": [],
+                  "discoveryIntent": "PUBLIC",
                   "metadata": {
+                    "product_tag": "Product.LawinServer",
                     "image_url": "https://cdn2.unrealengine.com/duos-1920x1080-1920x1080-5a411fe07b21.jpg",
                     "alt_introduction": {
                       "ar": "تعاون مع أحد الأصدقاء واقض على الجميع.",
@@ -496,7 +500,9 @@
                   "accountId": "epic",
                   "creatorName": "Epic",
                   "descriptionTags": [],
+                  "discoveryIntent": "PUBLIC",
                   "metadata": {
+                    "product_tag": "Product.LawinServer",
                     "image_url": "https://cdn2.unrealengine.com/trios-1920x1080-1920x1080-d5054bb9691a.jpg",
                     "alt_introduction": {
                       "ar": "باتل رويال الكلاسيكية بفرق مكونة من ثلاثة أشخاص.",
@@ -574,7 +580,9 @@
                   "accountId": "epic",
                   "creatorName": "Epic",
                   "descriptionTags": [],
+                  "discoveryIntent": "PUBLIC",
                   "metadata": {
+                    "product_tag": "Product.LawinServer",
                     "image_url": "https://cdn2.unrealengine.com/squads-1920x1080-1920x1080-095c0732502e.jpg",
                     "alt_introduction": {
                       "ar": "انضم لمجموعة وتفوق على جميع الفرق الأخرى التي تقاتل للوصول للنصر.",
@@ -654,7 +662,9 @@
                   "descriptionTags": [
                     "pve"
                   ],
+                  "discoveryIntent": "PUBLIC",
                   "metadata": {
+                    "product_tag": "Product.LawinServer",
                     "ownership_token": "Token:campaignaccess",
                     "image_url": "https://cdn2.unrealengine.com/stw-1920-1920x1080-5a049ecca449.jpg",
                     "alt_introduction": {
