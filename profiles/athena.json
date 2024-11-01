@@ -150571,7 +150571,7 @@
         "xp_reward_scalar": 1,
         "challenge_linked_quest_given": "",
         "quest_pool": "",
-        "quest_state": "Claimed",
+        "quest_state": "Active",
         "bucket": "",
         "last_state_change_time": "2018-04-30T00:00:00.000Z",
         "challenge_linked_quest_parent": "",
@@ -150830,8 +150830,7 @@
         "completion_visit_papaya_obstaclecourse": 1,
         "completion_visit_papaya_racecenter": 1,
         "completion_visit_papaya_mountainpeak": 1,
-        "completion_visit_boogieboat": 1,
-        "completion_impossible_landmark_of_permanence": 9001
+        "completion_visit_boogieboat": 1
       },
       "quantity": 1
     },
@@ -150847,7 +150846,7 @@
         "xp_reward_scalar": 1,
         "challenge_linked_quest_given": "",
         "quest_pool": "",
-        "quest_state": "Claimed",
+        "quest_state": "Active",
         "bucket": "",
         "last_state_change_time": "2018-04-30T00:00:00.000Z",
         "challenge_linked_quest_parent": "",
@@ -150882,8 +150881,7 @@
         "completion_visit_location_heroesharvest": 1,
         "completion_visit_location_maintower": 1,
         "completion_visit_location_governmentcomplex": 1,
-        "completion_visit_location_theconvergence": 2,
-        "completion_impossible_poi_of_permanence": 9001
+        "completion_visit_location_theconvergence": 2
       },
       "quantity": 1
     },
@@ -150899,7 +150897,7 @@
         "xp_reward_scalar": 1,
         "challenge_linked_quest_given": "",
         "quest_pool": "",
-        "quest_state": "Claimed",
+        "quest_state": "Active",
         "bucket": "",
         "last_state_change_time": "2018-04-30T00:00:00.000Z",
         "challenge_linked_quest_parent": "",
@@ -151048,8 +151046,7 @@
         "completion_quest_c3_discover_landmarks_deadcabin": 1,
         "completion_quest_c3_discover_landmarks_chopshop": 1,
         "completion_quest_c3_discover_landmarks_bungalowblooms": 2,
-        "completion_quest_c3_discover_landmarks_biggas": 1,
-        "completion_impossible_landmark_of_permanence_ch3": 9001
+        "completion_quest_c3_discover_landmarks_biggas": 1
       },
       "quantity": 1
     },
@@ -151065,7 +151062,7 @@
         "xp_reward_scalar": 1,
         "challenge_linked_quest_given": "",
         "quest_pool": "",
-        "quest_state": "Claimed",
+        "quest_state": "Active",
         "bucket": "",
         "last_state_change_time": "2018-04-30T00:00:00.000Z",
         "challenge_linked_quest_parent": "",
@@ -151095,8 +151092,7 @@
         "completion_visit_location_ch3_chromerealitytree": 2,
         "completion_visit_location_ch3_chonkersspeedway": 1,
         "completion_visit_location_ch3_campcuddles": 2,
-        "completion_visit_location_ch3_airbornebutterbarn": 5,
-        "completion_impossible_poi_of_permanence_ch3": 9001
+        "completion_visit_location_ch3_airbornebutterbarn": 5
       },
       "quantity": 1
     },
@@ -151112,7 +151108,7 @@
         "xp_reward_scalar": 1,
         "challenge_linked_quest_given": "",
         "quest_pool": "",
-        "quest_state": "Claimed",
+        "quest_state": "Active",
         "bucket": "",
         "last_state_change_time": "2018-04-30T00:00:00.000Z",
         "challenge_linked_quest_parent": "",
@@ -151205,8 +151201,7 @@
         "completion_quest_c4_discover_landmarks_kapokcove": 1,
         "completion_quest_c4_discover_landmarks_lagoon": 1,
         "completion_quest_c4_discover_landmarks_squadhq": 1,
-        "completion_quest_c4_discover_landmarks_innersanctum": 1,
-        "completion_impossible_landmark_of_permanence_ch4": 9001
+        "completion_quest_c4_discover_landmarks_innersanctum": 1
       },
       "quantity": 1
     },
@@ -151222,7 +151217,7 @@
         "xp_reward_scalar": 1,
         "challenge_linked_quest_given": "",
         "quest_pool": "",
-        "quest_state": "Claimed",
+        "quest_state": "Active",
         "bucket": "",
         "last_state_change_time": "2018-04-30T00:00:00.000Z",
         "challenge_linked_quest_parent": "",
@@ -151248,8 +151243,7 @@
         "completion_quest_c4_discover_namedlocations_junglecompound": 1,
         "completion_quest_c4_discover_namedlocations_estatelair": 1,
         "completion_quest_c4_discover_namedlocations_hotel": 1,
-        "completion_quest_c4_discover_namedlocations_resort": 1,
-        "completion_impossible_poi_of_permanence_ch4": 9001
+        "completion_quest_c4_discover_namedlocations_resort": 1
       },
       "quantity": 1
     },
@@ -151265,7 +151259,7 @@
         "xp_reward_scalar": 1,
         "challenge_linked_quest_given": "",
         "quest_pool": "",
-        "quest_state": "Claimed",
+        "quest_state": "Active",
         "bucket": "",
         "last_state_change_time": "2018-04-30T00:00:00.000Z",
         "challenge_linked_quest_parent": "",
@@ -151293,7 +151287,6 @@
         "completion_quest_rufus_discover_namedlocations_obj17": 1,
         "completion_quest_rufus_discover_namedlocations_obj18": 1,
         "completion_quest_rufus_discover_namedlocations_obj19": 1,
-        "completion_quest_rufus_discover_namedlocations_obj20": 9001,
         "completion_quest_rufus_discover_namedlocations_obj21": 1
       },
       "quantity": 1
@@ -151310,7 +151303,7 @@
         "xp_reward_scalar": 1,
         "challenge_linked_quest_given": "",
         "quest_pool": "",
-        "quest_state": "Claimed",
+        "quest_state": "Active",
         "bucket": "",
         "last_state_change_time": "2018-04-30T00:00:00.000Z",
         "challenge_linked_quest_parent": "",
@@ -151358,8 +151351,7 @@
         "completion_quest_ch5_discover_landmarks_watermill": 1,
         "completion_quest_ch5_discover_landmarks_moulinbleu": 1,
         "completion_quest_ch5_discover_landmarks_winterisland": 1,
-        "completion_quest_ch5_discover_landmarks_undergroundlair": 1,
-        "completion_impossible_landmark_of_permanence_ch5": 9001
+        "completion_quest_ch5_discover_landmarks_undergroundlair": 1
       },
       "quantity": 1
     },
@@ -151375,7 +151367,7 @@
         "xp_reward_scalar": 1,
         "challenge_linked_quest_given": "",
         "quest_pool": "",
-        "quest_state": "Claimed",
+        "quest_state": "Active",
         "bucket": "",
         "last_state_change_time": "2018-04-30T00:00:00.000Z",
         "challenge_linked_quest_parent": "",
@@ -151404,8 +151396,7 @@
         "completion_quest_ch5_discover_namedlocations_castledoom": 1,
         "completion_quest_ch5_discover_namedlocations_doomstadt": 1,
         "completion_quest_ch5_discover_namedlocations_raft": 1,
-        "completion_quest_ch5_discover_namedlocations_doomscourtyard": 1,
-        "completion_impossible_poi_of_permanence_ch5": 9001
+        "completion_quest_ch5_discover_namedlocations_doomscourtyard": 1
       },
       "quantity": 1
     }
