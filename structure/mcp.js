@@ -8284,6 +8284,207 @@ express.put("/api/locker/v3/:deploymentId/loadout/:loadoutType/account/:accountI
     res.end();
 });
 
+// Get BR Locker 5
+express.get("/api/locker/v4/:deploymentId/account/:accountId/items", async (req, res) => {
+    const profile = require("./../profiles/athena.json");
+    var StatChanged = false;
+
+    if (!profile.stats.attributes.hasOwnProperty("loadout_presets")) {
+        profile.stats.attributes.loadout_presets = {};
+
+        StatChanged = true;
+    }
+
+    var response = {
+        "activeLoadoutGroup": {
+            "accountId": req.params.accountId,
+            "athenaItemId": "lawinsathenaitemidlol",
+            "creationTime": new Date().toISOString(),
+            "deploymentId": req.params.deploymentId,
+            "loadouts": {}
+        },
+        "loadoutGroupPresets": [],
+        "loadoutPresets": []
+    };
+
+    for (var CosmeticLoadout in profile.stats.attributes.loadout_presets) {
+        for (var Loadout in profile.stats.attributes.loadout_presets[CosmeticLoadout]) {
+            var LoadoutID = profile.stats.attributes.loadout_presets[CosmeticLoadout][Loadout];
+            var LoadoutItem = profile.items[LoadoutID];
+            var date = new Date().toISOString();
+
+            var activeCosmeticLoadout = {
+                "loadoutSlots": [],
+                "shuffleType": "DISABLED"
+            }
+
+            var loadoutToAdd = {
+                "deploymentId": req.params.deploymentId,
+                "accountId": req.params.accountId,
+                "loadoutType": LoadoutItem.templateId,
+                "loadoutShuffleType": "DISABLED",
+                "athenaItemId": LoadoutID,
+                "creationTime": date,
+                "updatedTime": date,
+                "loadoutSlots": []
+            }
+
+            var slots = LoadoutItem.attributes.slots;
+            for (var slot in slots) {
+                var slotToAdd = {
+                    "slotTemplate": slots[slot].slot_template,
+                    "equippedItemId": slots[slot].equipped_item,
+                    "itemCustomizations": []
+                }
+
+                for (var customization in slots[slot].customization_info) {
+                    customization = slots[slot].customization_info[customization];
+                    var customizationToAdd = {
+                        "channelTag": customization.channel_tag,
+                        "variantTag": customization.variant_tag,
+                        "additionalData": customization.additional_data
+                    }
+                    slotToAdd.itemCustomizations.push(customizationToAdd)
+                }
+                loadoutToAdd.loadoutSlots.push(slotToAdd)
+                activeCosmeticLoadout.loadoutSlots.push(slotToAdd)
+            }
+            response.loadoutPresets.push(loadoutToAdd)
+            response.activeLoadoutGroup.loadouts[LoadoutItem.templateId] = activeCosmeticLoadout;
+        }
+    }
+
+    if (StatChanged == true) {
+        profile.rvn += 1;
+        profile.commandRevision += 1;
+
+        fs.writeFileSync("./../profiles/athena.json", JSON.stringify(profile, null, 2));
+    }
+
+    res.json(response)
+    res.end();
+});
+
+// Set BR Locker 5
+express.put("/api/locker/v4/:deploymentId/account/:accountId/active-loadout-group", async (req, res) => {
+    const profile = require("./../profiles/athena.json");
+    var StatChanged = false;
+
+    var date = new Date().toISOString();
+    var response = {
+        "deploymentId": req.params.deploymentId,
+        "accountId": req.params.accountId,
+        "athenaItemId": "lawinsathenaitemidlol",
+        "creationTime": date,
+        "updatedTime": date,
+        "loadouts": req.body.loadouts,
+        "shuffleType": "DISABLED"
+    }
+
+    if (!profile.stats.attributes.hasOwnProperty("loadout_presets")) {
+        profile.stats.attributes.loadout_presets = {};
+
+        StatChanged = true;
+    }
+
+    for (var loadoutType in req.body.loadouts) {
+        // Format the body data to Locker V3
+        var loadoutData = {
+            "slots": []
+        }
+        for (var slot in req.body.loadouts[loadoutType].loadoutSlots) {
+            slot = req.body.loadouts[loadoutType].loadoutSlots[slot];
+            var slotToAdd = {}
+            if (slot.slotTemplate)
+                slotToAdd.slot_template = slot.slotTemplate;
+            if (slot.equippedItemId)
+                slotToAdd.equipped_item = slot.equippedItemId;
+    
+            for (var customization in slot.itemCustomizations) {
+                customization = slot.itemCustomizations[customization];
+                var customizationToAdd = {}
+                if (customization.channelTag)
+                    customizationToAdd.channel_tag = customization.channelTag;
+                if (customization.variantTag)
+                    customizationToAdd.variant_tag = customization.variantTag;
+                if (customization.additionalData)
+                    customizationToAdd.additional_data = customization.additionalData;
+                if (!slotToAdd.hasOwnProperty("customization_info"))
+                    slotToAdd.customization_info = [];
+                
+                slotToAdd.customization_info.push(customizationToAdd)
+            }
+            loadoutData.slots.push(slotToAdd)
+        }
+    
+        if (!profile.stats.attributes.loadout_presets.hasOwnProperty(loadoutType)) {
+            const NewLoadoutID = functions.MakeID();
+    
+            profile.items[NewLoadoutID] = {
+                "templateId": loadoutType,
+                "attributes": {},
+                "quantity": 1
+            }
+    
+            profile.stats.attributes.loadout_presets[loadoutType] = {
+                "0": NewLoadoutID
+            };
+    
+            StatChanged = true;
+        }
+    
+        var LoadoutGUID = [];
+    
+        try {
+            LoadoutGUID = profile.stats.attributes.loadout_presets[loadoutType]["0"];
+            profile.items[LoadoutGUID].attributes = loadoutData;
+    
+            StatChanged = true;
+            
+        } catch (err) {}
+    
+        // Apply the edit style changes to the item attributes too
+        for (var slot in loadoutData.slots) {
+            if (loadoutData.slots[slot].hasOwnProperty("customization_info")) {
+                for (var item in profile.items) {
+                    if (profile.items[item].templateId.toLowerCase() == loadoutData.slots[slot].equipped_item.toLowerCase()) {
+                        for (var customization in loadoutData.slots[slot].customization_info) {
+                            var bFound = false;
+                            for (var profileCustomization in profile.items[item].attributes.variants) {
+                                if (loadoutData.slots[slot].customization_info[customization].channel_tag == profile.items[item].attributes.variants[profileCustomization].channel) {
+                                    profile.items[item].attributes.variants[profileCustomization].active = `${loadoutData.slots[slot].customization_info[customization].variant_tag}.${loadoutData.slots[slot].customization_info[customization].additional_data}`;
+    
+                                    bFound = true;
+                                    break;
+                                }
+                            }
+                            if (bFound == false) {
+                                profile.items[item].attributes.variants.push({
+                                    "channel": loadoutData.slots[slot].customization_info[customization].channel_tag,
+                                    "active": `${loadoutData.slots[slot].customization_info[customization].variant_tag}.${loadoutData.slots[slot].customization_info[customization].additional_data}`,
+                                    "owned": []
+                                })
+                            }
+                        }
+                
+                        StatChanged = true;
+                    }
+                }
+            }
+        }
+    }
+
+    if (StatChanged == true) {
+        profile.rvn += 1;
+        profile.commandRevision += 1;
+
+        fs.writeFileSync("./../profiles/athena.json", JSON.stringify(profile, null, 2));
+    }
+
+    res.json(response)
+    res.end();
+});
+
 // Set Active Archetype (e.g. main vehicle in v30.00+)
 express.post("/fortnite/api/game/v2/profile/*/client/SetActiveArchetype", async (req, res) => {
     const profile = require(`./../profiles/${req.query.profileId || "athena"}.json`);
