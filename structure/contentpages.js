@@ -55,16 +55,8 @@ express.get("/content/api/pages/*", async (req, res) => {
 
 express.post("/api/v1/fortnite-br/*/target", async (req, res) => {
     const motd = JSON.parse(JSON.stringify(require("./../responses/Athena/motd.json")));
-    const fields = ["title", "body", "TeaserTitle", "FullScreenTitle", "FullScreenBody"];
     var language = req.body.language || req.body.parameters.language;
-
-    motd.contentItems.forEach(item => {
-        fields.forEach(field => {
-            try {
-                item.contentFields[field] = item.contentFields[field][language];
-            } catch (err) {}
-        })
-    })
+    functions.chooseTranslationsInJSON(motd, language)
 
     if (req.body.hasOwnProperty("tags")) {
         motd.contentItems.forEach(item => {

@@ -203,6 +203,24 @@ function getTheater(req) {
     return theater;
 }
 
+function chooseTranslationsInJSON(obj, targetLanguage = "en") {
+    if (Array.isArray(obj)) {
+        for (var i = 0; i < obj.length; i++) {
+            chooseTranslationsInJSON(obj[i], targetLanguage);
+        }
+    } else if (typeof obj === "object" && obj !== null) {
+        for (const key in obj) {
+            if (typeof obj[key] === "object" && obj[key] !== null) {
+                if (obj[key][targetLanguage] || obj[key]["en"]) {
+                    obj[key] = obj[key][targetLanguage] || obj[key]["en"];
+                } else {
+                    chooseTranslationsInJSON(obj[key], targetLanguage);
+                }
+            }
+        }
+    }
+}
+
 function getContentPages(req) {
     const memory = GetVersionInfo(req);
 
@@ -218,16 +236,7 @@ function getContentPages(req) {
         }
     }
 
-    const modes = ["saveTheWorldUnowned", "battleRoyale", "creative", "saveTheWorld"];
-    const news = ["savetheworldnews", "battleroyalenews"]
-    const motdnews = ["battleroyalenews", "battleroyalenewsv2"]
-
-    try {
-        modes.forEach(mode => {
-            contentpages.subgameselectdata[mode].message.title = contentpages.subgameselectdata[mode].message.title[Language]
-            contentpages.subgameselectdata[mode].message.body = contentpages.subgameselectdata[mode].message.body[Language]
-        })
-    } catch (err) {}
+    chooseTranslationsInJSON(contentpages, Language)
 
     try {
         if (memory.build < 5.30) { 
@@ -236,15 +245,6 @@ function getContentPages(req) {
                 contentpages[mode].news.messages[1].image = "https://fortnite-public-service-prod11.ol.epicgames.com/images/lawin-s.png";
             })
         }
-    } catch (err) {}
-
-    try {
-        motdnews.forEach(news => {
-            contentpages[news].news.motds.forEach(motd => {
-                motd.title = motd.title[Language];
-                motd.body = motd.body[Language];
-            })
-        })
     } catch (err) {}
 
     try {
@@ -371,7 +371,7 @@ function MakeSurvivorAttributes(templateId) {
             portraitFactor = SurvivorAttributes.managerSynergy;
         }
 
-        var gender = SurvivorAttributes.gender
+        var gender = SurvivorAttributes.gender;
         var randomNumber = Math.floor(Math.random() * SurvivorData.portraits[portraitFactor][gender].length);
         SurvivorAttributes.portrait = SurvivorData.portraits[portraitFactor][gender][randomNumber];
     }
@@ -406,6 +406,7 @@ module.exports = {
     GetVersionInfo,
     getItemShop,
     getTheater,
+    chooseTranslationsInJSON,
     getContentPages,
     MakeSurvivorAttributes,
     MakeID,
