@@ -10,7 +10,23 @@
       "message": {
         "_type": "CommonUI Simple Message Base",
         "title": "LawinServer",
-        "body": "Join our discord: https://discord.gg/KJ8UaHZ\nYouTube: Lawin\nTwitter: @lawin_010"
+        "body": {
+          "ar": "انضم إلى خادم الديسكورد الخاص بنا: https://discord.gg/KJ8UaHZ\nيوتيوب: Lawin\nتويتر: @lawin_010",
+          "de": "Tritt unserem Discord bei: https://discord.gg/KJ8UaHZ\nYouTube: Lawin\nTwitter: @lawin_010",
+          "en": "Join our Discord: https://discord.gg/KJ8UaHZ\nYouTube: Lawin\nTwitter: @lawin_010",
+          "es": "Únete a nuestro Discord: https://discord.gg/KJ8UaHZ\nYouTube: Lawin\nTwitter: @lawin_010",
+          "es-419": "Únete a nuestro Discord: https://discord.gg/KJ8UaHZ\nYouTube: Lawin\nTwitter: @lawin_010",
+          "fr": "Rejoignez notre Discord : https://discord.gg/KJ8UaHZ\nYouTube : Lawin\nTwitter : @lawin_010",
+          "it": "Unisciti al nostro Discord: https://discord.gg/KJ8UaHZ\nYouTube: Lawin\nTwitter: @lawin_010",
+          "ja": "私たちのDiscordに参加してください: https://discord.gg/KJ8UaHZ\nYouTube: Lawin\nTwitter: @lawin_010",
+          "ko": "우리의 Discord에 참여하세요: https://discord.gg/KJ8UaHZ\nYouTube: Lawin\nTwitter: @lawin_010",
+          "pl": "Dołącz do naszego Discorda: https://discord.gg/KJ8UaHZ\nYouTube: Lawin\nTwitter: @lawin_010",
+          "pt-BR": "Junte-se ao nosso Discord: https://discord.gg/KJ8UaHZ\nYouTube: Lawin\nTwitter: @lawin_010",
+          "ru": "Присоединяйтесь к нашему Discord: https://discord.gg/KJ8UaHZ\nYouTube: Lawin\nTwitter: @lawin_010",
+          "tr": "Discord sunucumuza katıl: https://discord.gg/KJ8UaHZ\nYouTube: Lawin\nTwitter: @lawin_010",
+          "zh-CN": "加入我们的Discord: https://discord.gg/KJ8UaHZ\nYouTube: Lawin\nTwitter: @lawin_010",
+          "zh-Hant": "加入我們的Discord: https://discord.gg/KJ8UaHZ\nYouTube: Lawin\nTwitter: @lawin_010"
+        }
       }
     },
     "_activeDate": "2017-07-19T13:14:04.490Z",

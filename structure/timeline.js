@@ -1706,21 +1706,23 @@ express.get("/fortnite/api/calendar/v1/timeline", async (req, res) => {
             "EventFlag.Spring2019.Phase2",
             "EventFlag.Starlight",
             "EventFlag.StormKing.Landmark",
+            "EventFlag.STWHuntMonster",
             "EventFlag.STWOutlandish",
             "EventFlag.YarrrTwo"
         ]
 
-        var activeEventsSet = new Set(activeEvents.map(e => e.eventType));
-        for (var i = 0; i < Events.length; i++) {
-            var Event = Events[i];
+        const activeEventsSet = new Set(activeEvents.map(e => e.eventType));
+        Events.forEach(Event => {
             if (!activeEventsSet.has(Event)) {
                 activeEvents.push({
                     "eventType": Event,
                     "activeUntil": "9999-01-01T00:00:00.000Z",
                     "activeSince": "2020-01-01T00:00:00.000Z"
                 });
+                activeEventsSet.add(Event);
             }
         }
+        });
     }
 
     const stateTemplate = {
