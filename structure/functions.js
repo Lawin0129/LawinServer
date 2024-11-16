@@ -238,8 +238,9 @@ function getContentPages(req) {
 
     chooseTranslationsInJSON(contentpages, Language)
 
+    const news = ["savetheworldnews", "battleroyalenews"];
     try {
-        if (memory.build < 5.30) { 
+        if (memory.build < 5.30) {
             news.forEach(mode => {
                 contentpages[mode].news.messages[0].image = "https://fortnite-public-service-prod11.ol.epicgames.com/images/discord-s.png";
                 contentpages[mode].news.messages[1].image = "https://fortnite-public-service-prod11.ol.epicgames.com/images/lawin-s.png";
