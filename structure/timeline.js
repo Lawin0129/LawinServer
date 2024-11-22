@@ -1721,7 +1721,6 @@ express.get("/fortnite/api/calendar/v1/timeline", async (req, res) => {
                 });
                 activeEventsSet.add(Event);
             }
-        }
         });
     }
 
