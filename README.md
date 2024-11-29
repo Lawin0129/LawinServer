@@ -65,7 +65,7 @@
 - Support a Creator with specific codes
 - Fully working daily challenges system (New daily challenge every day, replacing daily challenges, etc...)
 - Completed Location & Discovery quests (discovered map in game & in lobby) for Chapter 2, 3, 4 and Season OG (Can change)
-- Seasonal Quests from Season 3 up to Season 30 (Can change)
+- Seasonal Quests from Season 3 up to Season 32 (Can change)
 - Purchasable battle pass from Season 2 to Season 10 (Can change)
 - Events Tab (Tournaments)
 - Discovery Tab
