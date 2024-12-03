@@ -155,15 +155,20 @@ function getTheater(req) {
     var Season = "Season" + memory.season;
 
     try {
+        if (memory.build >= 30.20) { // Those changes have to be made before the 15.30+ ones
+            theater = theater.replace(/\/Game\/World\/ZoneThemes/ig, "/STW_Zones/World/ZoneThemes");
+            theater = theater.replace(/\"DataTable\'\/Game\//ig, "\"/Script/Engine.DataTable\'\/Game\/");
+        }
+
         if (memory.build >= 15.30) {
             theater = theater.replace(/\/Game\//ig, "\/SaveTheWorld\/");
-            theater = theater.replace(/\"DataTable\'\/SaveTheWorld\//ig, "\"DataTable\'\/Game\/");
+            theater = theater.replace(/\"DataTable\'\/SaveTheWorld\//ig, "\"DataTable\'\/Game\/"); // For those versions keep /Game/ for DataTables
         }
 
         var date = new Date();
         var hour = date.getHours();
 
-        // Set the 24-hour StW mission refresh date for version season 9 and above
+        // Set the 24-hour StW mission refresh date for season 9 and above
         if (memory.season >= 9) {
             date.setHours(23, 59, 59, 999);
         } else {
@@ -198,6 +203,24 @@ function getTheater(req) {
     return theater;
 }
 
+function chooseTranslationsInJSON(obj, targetLanguage = "en") {
+    if (Array.isArray(obj)) {
+        for (var i = 0; i < obj.length; i++) {
+            chooseTranslationsInJSON(obj[i], targetLanguage);
+        }
+    } else if (typeof obj === "object" && obj !== null) {
+        for (const key in obj) {
+            if (typeof obj[key] === "object" && obj[key] !== null) {
+                if (obj[key][targetLanguage] || obj[key]["en"]) {
+                    obj[key] = obj[key][targetLanguage] || obj[key]["en"];
+                } else {
+                    chooseTranslationsInJSON(obj[key], targetLanguage);
+                }
+            }
+        }
+    }
+}
+
 function getContentPages(req) {
     const memory = GetVersionInfo(req);
 
@@ -213,19 +236,11 @@ function getContentPages(req) {
         }
     }
 
-    const modes = ["saveTheWorldUnowned", "battleRoyale", "creative", "saveTheWorld"];
-    const news = ["savetheworldnews", "battleroyalenews"]
-    const motdnews = ["battleroyalenews", "battleroyalenewsv2"]
+    chooseTranslationsInJSON(contentpages, Language)
 
+    const news = ["savetheworldnews", "battleroyalenews"];
     try {
-        modes.forEach(mode => {
-            contentpages.subgameselectdata[mode].message.title = contentpages.subgameselectdata[mode].message.title[Language]
-            contentpages.subgameselectdata[mode].message.body = contentpages.subgameselectdata[mode].message.body[Language]
-        })
-    } catch (err) {}
-
-    try {
-        if (memory.build < 5.30) { 
+        if (memory.build < 5.30) {
             news.forEach(mode => {
                 contentpages[mode].news.messages[0].image = "https://fortnite-public-service-prod11.ol.epicgames.com/images/discord-s.png";
                 contentpages[mode].news.messages[1].image = "https://fortnite-public-service-prod11.ol.epicgames.com/images/lawin-s.png";
@@ -234,66 +249,89 @@ function getContentPages(req) {
     } catch (err) {}
 
     try {
-        motdnews.forEach(news => {
-            contentpages[news].news.motds.forEach(motd => {
-                motd.title = motd.title[Language];
-                motd.body = motd.body[Language];
-            })
-        })
-    } catch (err) {}
-
-    try {
         const backgrounds = contentpages.dynamicbackgrounds.backgrounds.backgrounds;
         const season = `season${memory.season}${memory.season >= 21 ? "00" : ""}`;
         backgrounds[0].stage = season;
         backgrounds[1].stage = season;
-        
-        if (memory.season == 10) {
-            backgrounds[0].stage = "seasonx";
-            backgrounds[1].stage = "seasonx";
-        } else if (memory.build == 11.31 || memory.build == 11.40) {
-            backgrounds[0].stage = "Winter19";
-            backgrounds[1].stage = "Winter19";
-        } else if (memory.build == 19.01) {
-            backgrounds[0].stage = "winter2021";
-            backgrounds[0].backgroundimage = "https://cdn2.unrealengine.com/t-bp19-lobby-xmas-2048x1024-f85d2684b4af.png";
-            contentpages.subgameinfo.battleroyale.image = "https://cdn2.unrealengine.com/19br-wf-subgame-select-512x1024-16d8bb0f218f.jpg";
-            contentpages.specialoffervideo.bSpecialOfferEnabled = "true";
-        } else if (memory.season == 20) {
-            backgrounds[0].backgroundimage = "https://cdn2.unrealengine.com/t-bp20-lobby-2048x1024-d89eb522746c.png";
-            if (memory.build == 20.40) {
+
+        switch (memory.season) {
+
+            case 10:
+                backgrounds[0].stage = "seasonx";
+                backgrounds[1].stage = "seasonx";
+                break;
+
+            case 20:
+                backgrounds[0].backgroundimage = "https://cdn2.unrealengine.com/t-bp20-lobby-2048x1024-d89eb522746c.png";
+                break;
+
+            case 21:
+                backgrounds[0].backgroundimage = "https://cdn2.unrealengine.com/s21-lobby-background-2048x1024-2e7112b25dc3.jpg";
+                break;
+
+            case 22:
+                backgrounds[0].backgroundimage = "https://cdn2.unrealengine.com/t-bp22-lobby-square-2048x2048-2048x2048-e4e90c6e8018.jpg";
+                break;
+
+            case 23:
+                backgrounds[0].backgroundimage = "https://cdn2.unrealengine.com/t-bp23-lobby-2048x1024-2048x1024-26f2c1b27f63.png";
+                break;
+            
+            case 24:
+                backgrounds[0].backgroundimage = "https://cdn2.unrealengine.com/t-ch4s2-bp-lobby-4096x2048-edde08d15f7e.jpg";
+                break;
+
+            case 25:
+                backgrounds[0].backgroundimage = "https://cdn2.unrealengine.com/s25-lobby-4k-4096x2048-4a832928e11f.jpg";
+                backgrounds[1].backgroundimage = "https://cdn2.unrealengine.com/fn-shop-ch4s3-04-1920x1080-785ce1d90213.png";
+                break;
+
+            case 27:
+                backgrounds[0].stage = "rufus";
+                break;
+
+            default:
+                backgrounds[0].stage = "defaultnotris";
+                backgrounds[0].backgroundimage = "https://fortnite-public-service-prod11.ol.epicgames.com/images/lightlobbybg.png";
+
+        }
+
+        switch (memory.build) {
+
+            case 11.31:
+            case 11.40:
+                backgrounds[0].stage = "Winter19";
+                backgrounds[1].stage = "Winter19";
+                break;
+
+            case 19.01:
+                backgrounds[0].stage = "winter2021";
+                backgrounds[0].backgroundimage = "https://cdn2.unrealengine.com/t-bp19-lobby-xmas-2048x1024-f85d2684b4af.png";
+                contentpages.subgameinfo.battleroyale.image = "https://cdn2.unrealengine.com/19br-wf-subgame-select-512x1024-16d8bb0f218f.jpg";
+                contentpages.specialoffervideo.bSpecialOfferEnabled = "true";
+                break;
+
+            case 20.40:
                 backgrounds[0].backgroundimage = "https://cdn2.unrealengine.com/t-bp20-40-armadillo-glowup-lobby-2048x2048-2048x2048-3b83b887cc7f.jpg";
-            }
-        } else if (memory.season == 21) {
-            backgrounds[0].backgroundimage = "https://cdn2.unrealengine.com/s21-lobby-background-2048x1024-2e7112b25dc3.jpg";
-            if (memory.build == 21.10) {
+                break;
+
+            case 21.10:
                 backgrounds[0].stage = "season2100";
-            }
-            if (memory.build == 21.30) {
+                break;
+
+            case 21.30:
                 backgrounds[0].backgroundimage = "https://cdn2.unrealengine.com/nss-lobbybackground-2048x1024-f74a14565061.jpg";
                 backgrounds[0].stage = "season2130";
-            }
-        } else if (memory.season == 22) {
-            backgrounds[0].backgroundimage = "https://cdn2.unrealengine.com/t-bp22-lobby-square-2048x2048-2048x2048-e4e90c6e8018.jpg";
-        } else if (memory.season == 23) {
-            backgrounds[0].backgroundimage = "https://cdn2.unrealengine.com/t-bp23-lobby-2048x1024-2048x1024-26f2c1b27f63.png";
-            if (memory.build == 23.10) {
+                break;
+
+            case 23.10:
                 backgrounds[0].backgroundimage = "https://cdn2.unrealengine.com/t-bp23-winterfest-lobby-square-2048x2048-2048x2048-277a476e5ca6.png";
                 contentpages.specialoffervideo.bSpecialOfferEnabled = "true";
-            }
-        } else if (memory.season == 24) {
-            backgrounds[0].backgroundimage = "https://cdn2.unrealengine.com/t-ch4s2-bp-lobby-4096x2048-edde08d15f7e.jpg";
-        } else if (memory.season == 25) {
-            backgrounds[0].backgroundimage = "https://cdn2.unrealengine.com/s25-lobby-4k-4096x2048-4a832928e11f.jpg";
-            backgrounds[1].backgroundimage = "https://cdn2.unrealengine.com/fn-shop-ch4s3-04-1920x1080-785ce1d90213.png";
-            if (memory.build == 25.11) {
+                break;
+
+            case 25.11:
                 backgrounds[0].backgroundimage = "https://cdn2.unrealengine.com/t-s25-14dos-lobby-4096x2048-2be24969eee3.jpg";
-            }
-        } else if (memory.season == 27) {
-            backgrounds[0].stage = "rufus";
-        } else {
-            backgrounds[0].stage = "defaultnotris";
-            backgrounds[0].backgroundimage = "https://fortnite-public-service-prod11.ol.epicgames.com/images/lightlobbybg.png";
+
         }
 
     } catch (err) {}
@@ -334,7 +372,7 @@ function MakeSurvivorAttributes(templateId) {
             portraitFactor = SurvivorAttributes.managerSynergy;
         }
 
-        var gender = SurvivorAttributes.gender
+        var gender = SurvivorAttributes.gender;
         var randomNumber = Math.floor(Math.random() * SurvivorData.portraits[portraitFactor][gender].length);
         SurvivorAttributes.portrait = SurvivorData.portraits[portraitFactor][gender][randomNumber];
     }
@@ -369,6 +407,7 @@ module.exports = {
     GetVersionInfo,
     getItemShop,
     getTheater,
+    chooseTranslationsInJSON,
     getContentPages,
     MakeSurvivorAttributes,
     MakeID,

@@ -78,9 +78,15 @@ express.post("/auth/v1/oauth/token", async (req, res) => {
         "token_type": "bearer",
         "expires_in": 28800,
         "expires_at": "9999-12-31T23:59:59.999Z",
+        "nonce": "lawinserver",
+        "features": ["AntiCheat", "Connect", "Ecom", "Inventories", "LockerService"],
         "deployment_id": "lawinsdeploymentidlol",
         "organization_id": "lawinsorganizationidlol",
+        "organization_user_id": "lawinsorganisationuseridlol",
         "product_id": "prod-fn",
+        "product_user_id": "lawinsproductuseridlol",
+        "product_user_id_created": false,
+        "id_token": "lawinsidtokenlol",
         "sandbox_id": "fn"
     })
 })

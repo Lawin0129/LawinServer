@@ -1507,6 +1507,121 @@ express.get("/fortnite/api/calendar/v1/timeline", async (req, res) => {
                 "activeSince": "2020-01-01T00:00:00.000Z"
             })
             break;
+
+        case 30:
+            activeEvents.push(
+            {
+                "eventType": "EventFlag.Event_S30_FlatWare",
+                "activeUntil": "9999-01-01T00:00:00.000Z",
+                "activeSince": "2020-01-01T00:00:00.000Z"
+            },
+            {
+                "eventType": "Event_GreenhousePrelude",
+                "activeUntil": "9999-01-01T00:00:00.000Z",
+                "activeSince": "2020-01-01T00:00:00.000Z"
+            },
+            {
+                "eventType": "EventFlag.Event_S30_LevelUpPass",
+                "activeUntil": "9999-01-01T00:00:00.000Z",
+                "activeSince": "2020-01-01T00:00:00.000Z"
+            },
+            {
+                "eventType": "EventFlag.Event_S30_RebootRally",
+                "activeUntil": "9999-01-01T00:00:00.000Z",
+                "activeSince": "2020-01-01T00:00:00.000Z"
+            },
+            {
+                "eventType": "EventFlag.Event_S30_StoryQuests",
+                "activeUntil": "9999-01-01T00:00:00.000Z",
+                "activeSince": "2020-01-01T00:00:00.000Z"
+            },
+            {
+                "eventType": "EventFlag.Event_S30_StoryQuests_P6",
+                "activeUntil": "9999-01-01T00:00:00.000Z",
+                "activeSince": "2020-01-01T00:00:00.000Z"
+            },
+            {
+                "eventType": "EventFlag.Event_S30_AllSweat",
+                "activeUntil": "9999-01-01T00:00:00.000Z",
+                "activeSince": "2020-01-01T00:00:00.000Z"
+            })
+            break;
+
+        case 31:
+            activeEvents.push(
+            {
+                "eventType": "EventFlag.Event_S31_Birthday",
+                "activeUntil": "9999-01-01T00:00:00.000Z",
+                "activeSince": "2020-01-01T00:00:00.000Z"
+            },
+            {
+                "eventType": "EventFlag.Event_S31_QuestDeckBed",
+                "activeUntil": "9999-01-01T00:00:00.000Z",
+                "activeSince": "2020-01-01T00:00:00.000Z"
+            },
+            {
+                "eventType": "Event_S31_FoundQuests_GreenTown",
+                "activeUntil": "9999-01-01T00:00:00.000Z",
+                "activeSince": "2020-01-01T00:00:00.000Z"
+            },
+            {
+                "eventType": "Event_S31_FoundQuests_PB_P01",
+                "activeUntil": "9999-01-01T00:00:00.000Z",
+                "activeSince": "2020-01-01T00:00:00.000Z"
+            },
+            {
+                "eventType": "Event_S31_FoundQuests_PB_P02",
+                "activeUntil": "9999-01-01T00:00:00.000Z",
+                "activeSince": "2020-01-01T00:00:00.000Z"
+            },
+            {
+                "eventType": "EventFlag.Event_S31_FoundQuests_TroutWrist",
+                "activeUntil": "9999-01-01T00:00:00.000Z",
+                "activeSince": "2020-01-01T00:00:00.000Z"
+            },
+            {
+                "eventType": "EventFlag.Event_S31_LevelUpPass",
+                "activeUntil": "9999-01-01T00:00:00.000Z",
+                "activeSince": "2020-01-01T00:00:00.000Z"
+            },
+            {
+                "eventType": "EventFlag.Event_S31_Mash",
+                "activeUntil": "9999-01-01T00:00:00.000Z",
+                "activeSince": "2020-01-01T00:00:00.000Z"
+            },
+            {
+                "eventType": "EventFlag.Event_S31_MobileQuests",
+                "activeUntil": "9999-01-01T00:00:00.000Z",
+                "activeSince": "2020-01-01T00:00:00.000Z"
+            },
+            {
+                "eventType": "EventFlag.Event_S31_RebootRally",
+                "activeUntil": "9999-01-01T00:00:00.000Z",
+                "activeSince": "2020-01-01T00:00:00.000Z"
+            },
+            {
+                "eventType": "EventFlag.Event_S31_Sweatember",
+                "activeUntil": "9999-01-01T00:00:00.000Z",
+                "activeSince": "2020-01-01T00:00:00.000Z"
+            },
+            {
+                "eventType": "EventFlag.Event_S31_ToadJam",
+                "activeUntil": "9999-01-01T00:00:00.000Z",
+                "activeSince": "2020-01-01T00:00:00.000Z"
+            })
+            break;
+        case 32:
+            activeEvents.push(
+            {
+                "eventType": "EventFlag.Event_S32_RebootRally",
+                "activeUntil": "9999-01-01T00:00:00.000Z",
+                "activeSince": "2020-01-01T00:00:00.000Z"
+            },
+            {
+                "eventType": "EventFlag.Event_S32_ScytheGold",
+                "activeUntil": "9999-01-01T00:00:00.000Z",
+                "activeSince": "2020-01-01T00:00:00.000Z"
+            })
     }
 
     if (24.3 <= memory.build && memory.build <= 25) {
@@ -1604,20 +1719,22 @@ express.get("/fortnite/api/calendar/v1/timeline", async (req, res) => {
             "EventFlag.Spring2019.Phase2",
             "EventFlag.Starlight",
             "EventFlag.StormKing.Landmark",
+            "EventFlag.STWHuntMonster",
+            "EventFlag.STWOutlandish",
             "EventFlag.YarrrTwo"
         ]
 
-        var activeEventsSet = new Set(activeEvents.map(e => e.eventType));
-        for (var i = 0; i < Events.length; i++) {
-            var Event = Events[i];
+        const activeEventsSet = new Set(activeEvents.map(e => e.eventType));
+        Events.forEach(Event => {
             if (!activeEventsSet.has(Event)) {
                 activeEvents.push({
                     "eventType": Event,
                     "activeUntil": "9999-01-01T00:00:00.000Z",
                     "activeSince": "2020-01-01T00:00:00.000Z"
                 });
+                activeEventsSet.add(Event);
             }
-        }
+        });
     }
 
     const stateTemplate = {
