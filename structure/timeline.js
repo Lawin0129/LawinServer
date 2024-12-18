@@ -1627,6 +1627,26 @@ express.get("/fortnite/api/calendar/v1/timeline", async (req, res) => {
                 "activeUntil": "9999-01-01T00:00:00.000Z",
                 "activeSince": "2020-01-01T00:00:00.000Z"
             })
+            break;
+        case 33:
+            if (memory.build == 33.11) {
+                activeEvents.push(
+                {
+                    "eventType": "EventFlag.Winterfest_S33_CabinRewards",
+                    "activeUntil": "9999-01-01T00:00:00.000Z",
+                    "activeSince": "2020-01-01T00:00:00.000Z"
+                },
+                {
+                    "eventType": "EventFlag.S33_WinterFestTab",
+                    "activeUntil": "9999-01-01T00:00:00.000Z",
+                    "activeSince": "2020-01-01T00:00:00.000Z"
+                },
+                {
+                    "eventType": "WF_GUFF_AVAIL",
+                    "activeUntil": "9999-01-01T00:00:00.000Z",
+                    "activeSince": "2020-01-01T00:00:00.000Z"
+                })
+            }
     }
 
     if (24.3 <= memory.build && memory.build <= 25) {
