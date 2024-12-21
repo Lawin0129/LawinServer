@@ -8226,7 +8226,7 @@ express.get("/api/locker/v3/:deploymentId/account/:accountId/items", async (req,
         profile.rvn += 1;
         profile.commandRevision += 1;
 
-        fs.writeFileSync("./../profiles/athena.json", JSON.stringify(profile, null, 2));
+        fs.writeFileSync("./profiles/athena.json", JSON.stringify(profile, null, 2));
     }
 
     res.json(response)
@@ -8345,7 +8345,7 @@ express.put("/api/locker/v3/:deploymentId/loadout/:loadoutType/account/:accountI
         profile.rvn += 1;
         profile.commandRevision += 1;
 
-        fs.writeFileSync("./../profiles/athena.json", JSON.stringify(profile, null, 2));
+        fs.writeFileSync("./profiles/athena.json", JSON.stringify(profile, null, 2));
     }
 
     res.json(response)
@@ -8426,7 +8426,7 @@ express.get("/api/locker/v4/:deploymentId/account/:accountId/items", async (req,
         profile.rvn += 1;
         profile.commandRevision += 1;
 
-        fs.writeFileSync("./../profiles/athena.json", JSON.stringify(profile, null, 2));
+        fs.writeFileSync("./profiles/athena.json", JSON.stringify(profile, null, 2));
     }
 
     res.json(response)
@@ -8546,7 +8546,7 @@ express.put("/api/locker/v4/:deploymentId/account/:accountId/active-loadout-grou
         profile.rvn += 1;
         profile.commandRevision += 1;
 
-        fs.writeFileSync("./../profiles/athena.json", JSON.stringify(profile, null, 2));
+        fs.writeFileSync("./profiles/athena.json", JSON.stringify(profile, null, 2));
     }
 
     res.json(response)
