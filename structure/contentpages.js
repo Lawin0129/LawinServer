@@ -47,6 +47,13 @@ express.get("/content/api/pages/fortnite-game/radio-stations", async (req, res) 
     })
 })
 
+express.get("/content/api/pages/fortnite-game/seasonpasses", async (req, res) => {
+    const seasonPasses = require("./../responses/Athena/seasonPasses.json");
+    functions.chooseTranslationsInJSON(seasonPasses, req)
+
+    res.json(seasonPasses)
+})
+
 express.get("/content/api/pages/*", async (req, res) => {
     const contentpages = functions.getContentPages(req);
 
@@ -56,7 +63,7 @@ express.get("/content/api/pages/*", async (req, res) => {
 express.post("/api/v1/fortnite-br/*/target", async (req, res) => {
     const motd = JSON.parse(JSON.stringify(require("./../responses/Athena/motd.json")));
     var language = req.body.language || req.body.parameters.language;
-    functions.chooseTranslationsInJSON(motd, language)
+    functions.chooseTranslationsInJSON(motd, req, language)
 
     if (req.body.hasOwnProperty("tags")) {
         motd.contentItems.forEach(item => {

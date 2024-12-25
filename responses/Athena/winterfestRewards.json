@@ -48,5 +48,21 @@
     "ERG.Node.A.11": ["AthenaMusicPack:musicpack_163_winterfest_2022", "AthenaMusicPack:musicpack_157_radish_nightnight"],
     "ERG.Node.A.12": ["AthenaItemWrap:wrap_cometwinter"],
     "ERG.Node.A.13": ["AthenaSkyDiveContrail:contrail_jollytroll"]
+  },
+  "Season33": {
+    "ERG.Node.A.1": ["AthenaCharacter:character_blowwire"],
+    "ERG.Node.A.2": ["SparksBass:sparks_bass_almondsplash"],
+    "ERG.Node.A.3": ["SparksGuitar:sparks_guitar_icewater"],
+    "ERG.Node.A.4": ["AthenaDance:spray_s33winterfest", "AthenaDance:spray_s33winterfest2", "AthenaDance:spray_musicpasswinterfests32"],
+    "ERG.Node.A.5": ["AthenaDance:emoji_s33_winterfest"],
+    "ERG.Node.A.6": ["SparksSong:sid_placeholder_437"],
+    "ERG.Node.A.7": ["AthenaItemWrap:wrap_blowwire"],
+    "ERG.Node.A.8": ["AthenaPickaxe:pickaxe_blowwire"],
+    "ERG.Node.A.9": ["AthenaGlider:glider_blowwire"],
+    "ERG.Node.A.10": ["AthenaBackpack:backpack_blowwire"],
+    "ERG.Node.A.11": ["AthenaBackpack:backpack_almondsplash"],
+    "ERG.Node.A.12": ["AthenaSkyDiveContrail:contrail_frostedglass"],
+    "ERG.Node.B.1": ["AthenaCharacter:character_almondsplash"],
+    "ERG.Node.A.13": ["AthenaPickaxe:pickaxe_almondsplash"]
   }
 }

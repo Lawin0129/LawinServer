@@ -203,10 +203,21 @@ function getTheater(req) {
     return theater;
 }
 
-function chooseTranslationsInJSON(obj, targetLanguage = "en") {
+function chooseTranslationsInJSON(obj, req, targetLanguage = "") {
+    if (!targetLanguage) {
+        if (req.headers["accept-language"]) {
+            if (req.headers["accept-language"].includes("-") && req.headers["accept-language"] != "es-419" && req.headers["accept-language"] != "pt-BR") {
+                targetLanguage = req.headers["accept-language"].split("-")[0];
+            } else {
+                targetLanguage = req.headers["accept-language"];
+            }
+        } else {
+            targetLanguage = "en";
+        }
+    }
     if (Array.isArray(obj)) {
         for (var i = 0; i < obj.length; i++) {
-            chooseTranslationsInJSON(obj[i], targetLanguage);
+            chooseTranslationsInJSON(obj[i], req, targetLanguage);
         }
     } else if (typeof obj === "object" && obj !== null) {
         for (const key in obj) {
@@ -214,7 +225,7 @@ function chooseTranslationsInJSON(obj, targetLanguage = "en") {
                 if (obj[key][targetLanguage] || obj[key]["en"]) {
                     obj[key] = obj[key][targetLanguage] || obj[key]["en"];
                 } else {
-                    chooseTranslationsInJSON(obj[key], targetLanguage);
+                    chooseTranslationsInJSON(obj[key], req, targetLanguage);
                 }
             }
         }
@@ -226,17 +237,7 @@ function getContentPages(req) {
 
     const contentpages = JSON.parse(JSON.stringify(require("./../responses/contentpages.json")));
 
-    var Language = "en";
-
-    if (req.headers["accept-language"]) {
-        if (req.headers["accept-language"].includes("-") && req.headers["accept-language"] != "es-419" && req.headers["accept-language"] != "pt-BR") {
-            Language = req.headers["accept-language"].split("-")[0];
-        } else {
-            Language = req.headers["accept-language"];
-        }
-    }
-
-    chooseTranslationsInJSON(contentpages, Language)
+    chooseTranslationsInJSON(contentpages, req)
 
     const news = ["savetheworldnews", "battleroyalenews"];
     try {

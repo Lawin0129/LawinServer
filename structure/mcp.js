@@ -7375,6 +7375,70 @@ express.post("/fortnite/api/game/v2/profile/*/client/PurchaseCatalogEntry", asyn
     res.end();
 });
 
+// Set auto claim for a season pass
+express.post("/fortnite/api/game/v2/profile/*/client/SetSeasonPassAutoClaim", async (req, res) => {
+    const profile = require(`./../profiles/${req.query.profileId || "athena"}.json`);
+
+    // do not change any of these or you will end up breaking it
+    var ApplyProfileChanges = [];
+    var BaseRevision = profile.rvn || 0;
+    var QueryRevision = req.query.rvn || -1;
+    var StatChanged = false;
+
+    if (req.body.seasonIds && req.body.bEnabled !== undefined) {
+        for (var seasonId of req.body.seasonIds) {
+            if (!profile.stats.attributes.hasOwnProperty("auto_spend_season_currency_ids")) {
+                profile.stats.attributes.auto_spend_season_currency_ids = [];
+            }
+    
+            if (req.body.bEnabled === true) {
+                if (!profile.stats.attributes.auto_spend_season_currency_ids.includes(seasonId)) {
+                    profile.stats.attributes.auto_spend_season_currency_ids.push(seasonId);
+                    StatChanged = true;
+                }
+            } else {
+                let index = profile.stats.attributes.auto_spend_season_currency_ids.indexOf(seasonId);
+                if (index !== -1) {
+                    profile.stats.attributes.auto_spend_season_currency_ids.splice(index, 1);
+                    StatChanged = true;
+                }
+            }
+        }
+    }    
+
+    if (StatChanged == true) {
+        ApplyProfileChanges.push({
+            "changeType": "statModified",
+            "name": "auto_spend_season_currency_ids",
+            "value": profile.stats.attributes.auto_spend_season_currency_ids
+        })
+
+        profile.rvn += 1;
+        profile.commandRevision += 1;
+
+        fs.writeFileSync(`./profiles/${req.query.profileId || "athena"}.json`, JSON.stringify(profile, null, 2));
+    }
+
+    // this doesn't work properly on version v12.20 and above but whatever
+    if (QueryRevision != BaseRevision) {
+        ApplyProfileChanges = [{
+            "changeType": "fullProfileUpdate",
+            "profile": profile
+        }];
+    }
+
+    res.json({
+        "profileRevision": profile.rvn || 0,
+        "profileId": req.query.profileId || "athena",
+        "profileChangesBaseRevision": BaseRevision,
+        "profileChanges": ApplyProfileChanges,
+        "profileCommandRevision": profile.commandRevision || 0,
+        "serverTime": new Date().toISOString(),
+        "responseVersion": 1
+    })
+    res.end();
+});
+
 // Archive locker items
 express.post("/fortnite/api/game/v2/profile/*/client/SetItemArchivedStatusBatch", async (req, res) => {
     const profile = require(`./../profiles/${req.query.profileId || "athena"}.json`);
@@ -8162,7 +8226,7 @@ express.get("/api/locker/v3/:deploymentId/account/:accountId/items", async (req,
         profile.rvn += 1;
         profile.commandRevision += 1;
 
-        fs.writeFileSync("./../profiles/athena.json", JSON.stringify(profile, null, 2));
+        fs.writeFileSync("./profiles/athena.json", JSON.stringify(profile, null, 2));
     }
 
     res.json(response)
@@ -8281,7 +8345,7 @@ express.put("/api/locker/v3/:deploymentId/loadout/:loadoutType/account/:accountI
         profile.rvn += 1;
         profile.commandRevision += 1;
 
-        fs.writeFileSync("./../profiles/athena.json", JSON.stringify(profile, null, 2));
+        fs.writeFileSync("./profiles/athena.json", JSON.stringify(profile, null, 2));
     }
 
     res.json(response)
@@ -8362,7 +8426,7 @@ express.get("/api/locker/v4/:deploymentId/account/:accountId/items", async (req,
         profile.rvn += 1;
         profile.commandRevision += 1;
 
-        fs.writeFileSync("./../profiles/athena.json", JSON.stringify(profile, null, 2));
+        fs.writeFileSync("./profiles/athena.json", JSON.stringify(profile, null, 2));
     }
 
     res.json(response)
@@ -8482,7 +8546,7 @@ express.put("/api/locker/v4/:deploymentId/account/:accountId/active-loadout-grou
         profile.rvn += 1;
         profile.commandRevision += 1;
 
-        fs.writeFileSync("./../profiles/athena.json", JSON.stringify(profile, null, 2));
+        fs.writeFileSync("./profiles/athena.json", JSON.stringify(profile, null, 2));
     }
 
     res.json(response)
