@@ -16626,6 +16626,50 @@
       },
       "quantity": 1
     },
+    "Hero:HID_Constructor_042_Butterfly_SR_T05": {
+      "templateId": "Hero:HID_Constructor_042_Butterfly_SR_T05",
+      "attributes": {
+        "outfitvariants": [],
+        "backblingvariants": [],
+        "gender": 0,
+        "level": 50,
+        "item_seen": true,
+        "squad_slot_idx": -1,
+        "portrait": "",
+        "hero_name": "DefaultHeroName",
+        "max_level_bonus": 0,
+        "squad_id": "",
+        "mode_loadouts": [],
+        "xp": 0,
+        "slotted_building_id": "",
+        "refundable": false,
+        "building_slot_used": -1,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "Hero:HID_Constructor_043_Hotwire_SR_T05": {
+      "templateId": "Hero:HID_Constructor_043_Hotwire_SR_T05",
+      "attributes": {
+        "outfitvariants": [],
+        "backblingvariants": [],
+        "gender": 0,
+        "level": 50,
+        "item_seen": true,
+        "squad_slot_idx": -1,
+        "portrait": "",
+        "hero_name": "DefaultHeroName",
+        "max_level_bonus": 0,
+        "squad_id": "",
+        "mode_loadouts": [],
+        "xp": 0,
+        "slotted_building_id": "",
+        "refundable": false,
+        "building_slot_used": -1,
+        "favorite": false
+      },
+      "quantity": 1
+    },
     "Hero:HID_Constructor_XBOX_VR_T05": {
       "templateId": "Hero:HID_Constructor_XBOX_VR_T05",
       "attributes": {
