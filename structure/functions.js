@@ -256,6 +256,12 @@ function getContentPages(req) {
         backgrounds[1].stage = season;
 
         switch (memory.season) {
+
+            case 9:
+                contentpages.lobby.backgroundimage = "";
+                contentpages.lobby.stage = "default";
+                break;
+            
             case 10:
                 backgrounds[0].stage = "seasonx";
                 backgrounds[1].stage = "seasonx";
@@ -302,10 +308,19 @@ function getContentPages(req) {
 
         switch (memory.build) {
 
+            case 9.30:
+                contentpages.lobby.stage = "summer";
+                break;
+
+            case 11.10:
+                backgrounds[0].stage = "fortnitemares";
+                backgrounds[1].stage = "fortnitemares";
+                break;
+
             case 11.31:
             case 11.40:
-                backgrounds[0].stage = "Winter19";
-                backgrounds[1].stage = "Winter19";
+                backgrounds[0].stage = "winter19";
+                backgrounds[1].stage = "winter19";
                 break;
 
             case 19.01:
