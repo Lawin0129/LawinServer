@@ -8439,15 +8439,6 @@ express.put("/api/locker/v4/:deploymentId/account/:accountId/active-loadout-grou
     var StatChanged = false;
 
     var date = new Date().toISOString();
-    var response = {
-        "deploymentId": req.params.deploymentId,
-        "accountId": req.params.accountId,
-        "athenaItemId": "lawinsathenaitemidlol",
-        "creationTime": date,
-        "updatedTime": date,
-        "loadouts": req.body.loadouts,
-        "shuffleType": "DISABLED"
-    }
 
     if (!profile.stats.attributes.hasOwnProperty("loadout_presets")) {
         profile.stats.attributes.loadout_presets = {};
@@ -8466,6 +8457,7 @@ express.put("/api/locker/v4/:deploymentId/account/:accountId/active-loadout-grou
             if (slot.slotTemplate)
                 slotToAdd.slot_template = slot.slotTemplate;
             if (slot.equippedItemId)
+                slot.equippedItemId = slot.equippedItemId.split(':').slice(0, 2).join(':');
                 slotToAdd.equipped_item = slot.equippedItemId;
     
             for (var customization in slot.itemCustomizations) {
@@ -8540,6 +8532,16 @@ express.put("/api/locker/v4/:deploymentId/account/:accountId/active-loadout-grou
                 }
             }
         }
+    }
+
+    var response = {
+        "deploymentId": req.params.deploymentId,
+        "accountId": req.params.accountId,
+        "athenaItemId": "lawinsathenaitemidlol",
+        "creationTime": date,
+        "updatedTime": date,
+        "loadouts": req.body.loadouts,
+        "shuffleType": "DISABLED"
     }
 
     if (StatChanged == true) {
