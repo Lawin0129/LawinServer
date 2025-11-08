@@ -216,6 +216,13 @@ express.get("/fortnite/api/game/v2/enabled_features", async (req, res) => {
     res.json([])
 })
 
+// Sidekicks' icons
+express.get("/v1/item/*", async (req, res) => {
+    res.set("Content-Type", "image/png");
+    const lawinpfp = fs.readFileSync(path.join(__dirname, "..", "public", "images", "lawinpfp.png"));
+    res.send(lawinpfp);
+})
+
 express.get("/api/v1/events/Fortnite/download/*", async (req, res) => {
     const tournament = require("./../responses/Athena/Tournament/tournament.json");
     

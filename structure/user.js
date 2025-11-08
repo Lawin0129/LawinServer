@@ -79,7 +79,7 @@ express.post("/auth/v1/oauth/token", async (req, res) => {
         "expires_in": 28800,
         "expires_at": "9999-12-31T23:59:59.999Z",
         "nonce": "lawinserver",
-        "features": ["AntiCheat", "Connect", "Ecom", "Inventories", "LockerService"],
+        "features": ["AntiCheat", "CommerceService", "Connect", "ContentService", "Ecom", "EpicConnect", "Inventories", "LockerService", "MagpieService", "Matchmaking Service", "PCBService", "QuestService", "Stats"],
         "deployment_id": "lawinsdeploymentidlol",
         "organization_id": "lawinsorganizationidlol",
         "organization_user_id": "lawinsorganisationuseridlol",

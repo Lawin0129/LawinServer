@@ -8555,6 +8555,67 @@ express.put("/api/locker/v4/:deploymentId/account/:accountId/active-loadout-grou
     res.end();
 });
 
+// Set immutable item attributes (e.g. sidekicks)
+express.post("/api/locker/v4/:deploymentId/account/:accountId/lock-in-immutable-item/:cosmeticItemId", async (req, res) => {
+    const profile = require("./../profiles/athena.json");
+    var StatChanged = false;
+
+    var itemGuid = req.params.cosmeticItemId.split(":")[2] || "";
+
+    if (itemGuid) {
+        for (const [key, value] of Object.entries(req.body.variants)) {
+            if (!profile.items[itemGuid].attributes.hasOwnProperty("variants")) {
+                profile.items[itemGuid].attributes.variants = [];
+            }
+            profile.items[itemGuid].attributes.variants.push({
+                "channel": key,
+                "active": value.variantTag,
+                "owned": []
+            })
+        }
+        profile.items[itemGuid].attributes.locked_in = true;
+
+        StatChanged = true;
+    }
+
+    if (StatChanged == true) {
+        profile.rvn += 1;
+        profile.commandRevision += 1;
+
+        fs.writeFileSync("./profiles/athena.json", JSON.stringify(profile, null, 2));
+    }
+
+    res.status(204);
+    res.end();
+});
+
+// Set companion name
+express.patch("/api/locker/v4/:deploymentId/account/:accountId/companion-name", async (req, res) => {
+    const profile = require("./../profiles/athena.json");
+    var StatChanged = false;
+
+    if (req.body.cosmeticItemId && req.body.companionName) {
+        var itemGuid = req.body.cosmeticItemId.split(":")[2];
+        profile.items[itemGuid].attributes.variants.push({
+            "channel": "CustomName",
+            "active": req.body.companionName,
+            "owned": []
+        })
+
+        StatChanged = true;
+    }
+
+    if (StatChanged == true) {
+        profile.rvn += 1;
+        profile.commandRevision += 1;
+
+        fs.writeFileSync("./profiles/athena.json", JSON.stringify(profile, null, 2));
+    }
+
+    res.status(204);
+    res.end();
+});
+
 // Set Active Archetype (e.g. main vehicle in v30.00+)
 express.post("/fortnite/api/game/v2/profile/*/client/SetActiveArchetype", async (req, res) => {
     const profile = require(`./../profiles/${req.query.profileId || "athena"}.json`);
