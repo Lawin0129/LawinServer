@@ -1,9 +1,5 @@
 {
   "client": {
-    "RateLimiter.InventoryClient": {
-      "MessageCount": 100,
-      "TimeIntervalInSeconds": 60.0
-    },
     "BaseService": {
       "HttpRetryLimit": 4,
       "HttpRetryResponseCodes": [
@@ -12,13 +8,9 @@
         504
       ]
     },
-    "RateLimiter.AuthClient": {
-      "MessageCount": 300,
-      "TimeIntervalInSeconds": 60.0
-    },
     "RateLimiter.PresenceClient.Operations": {
-      "MessageCount": 3,
-      "TimeIntervalInSeconds": 20.0,
+      "MessageCount": 6,
+      "TimeIntervalInSeconds": 10.0,
       "Operation": [
         "SendUpdate",
         "SetPresence"
@@ -28,15 +20,15 @@
       "MessageCount": 300,
       "TimeIntervalInSeconds": 60.0
     },
-    "RateLimiter.LeaderboardsClient": {
-      "MessageCount": 300,
-      "TimeIntervalInSeconds": 60.0
-    },
-    "RateLimiter.MetricsClient": {
-      "MessageCount": 300,
-      "TimeIntervalInSeconds": 60.0
-    },
     "RateLimiter.StatsClient": {
+      "MessageCount": 300,
+      "TimeIntervalInSeconds": 60.0
+    },
+    "RateLimiter.InventoryClient": {
+      "MessageCount": 1000,
+      "TimeIntervalInSeconds": 60.0
+    },
+    "RateLimiter.MatchmakingClient": {
       "MessageCount": 300,
       "TimeIntervalInSeconds": 60.0
     },
@@ -46,6 +38,10 @@
       "Operation": [
         "RequestUpdate"
       ]
+    },
+    "RateLimiter.WorldInventoryClient": {
+      "MessageCount": 1000,
+      "TimeIntervalInSeconds": 60.0
     },
     "RateLimiter.TitleStorageClient": {
       "MessageCount": 300,
@@ -81,6 +77,10 @@
         "SendCustomInvite"
       ]
     },
+    "RateLimiter.PartiesInternalClient": {
+      "MessageCount": 300,
+      "TimeIntervalInSeconds": 60.0
+    },
     "HTTP": {
       "HttpReceiveTimeout": 30,
       "bEnableHttp": true,
@@ -106,8 +106,33 @@
       "MessageCount": 300,
       "TimeIntervalInSeconds": 60.0
     },
+    "TextChatClientFN": {
+      "MaxConversationMessagesToQuery": 30,
+      "MaxConversationTypesToQuery": 3
+    },
+    "RateLimiter.AuthClient": {
+      "MessageCount": 300,
+      "TimeIntervalInSeconds": 60.0
+    },
     "/Script/Engine.NetworkSettings": {
       "n.VerifyPeer": false
+    },
+    "RateLimiter.PartiesInternalClient.Operations": {
+      "MessageCount": 300,
+      "TimeIntervalInSeconds": 60.0,
+      "Operation": [
+        "CreateParty",
+        "JoinParty",
+        "UpdateParty",
+        "SendInvite",
+        "DeclineInvite",
+        "SendJoinRequest",
+        "LeaveParty",
+        "DisconnectFromParty",
+        "JoinPartyByGroup",
+        "UpdateUserPrivacySettings",
+        "QueryUserPartyInfo"
+      ]
     },
     "WebSockets.LibWebSockets": {
       "ThreadStackSize": 131072,
@@ -116,6 +141,11 @@
     },
     "StatsClient": {
       "MaxQueryStatsStatNamesStrLength": 1900
+    },
+    "EcomClient.EcomSalesMappings": {
+      "defaultStore": "EGA",
+      "com.epicgames.portal": "EGA",
+      "com.epicgames.store": "EGA"
     },
     "RateLimiter.MetricsClient.Operations": {
       "MessageCount": 300,
@@ -127,6 +157,10 @@
     "RateLimiter.DataStorageClient": {
       "MessageCount": 300,
       "TimeIntervalInSeconds": 60.0
+    },
+    "WorldInventoryClient": {
+      "MaxBinaryDataSizeBytes": 104857600,
+      "BaseUrlLive": "https://fngw-svc-ds-livefn.ol.epicgames.com/api/inventory"
     },
     "SanitizerClient": {
       "ReplaceChar": "*",
@@ -158,6 +192,10 @@
         "SetParticipantHardMute"
       ]
     },
+    "RateLimiter.K3SClient": {
+      "MessageCount": 300,
+      "TimeIntervalInSeconds": 60.0
+    },
     "RateLimiter.FriendClient": {
       "MessageCount": 300,
       "TimeIntervalInSeconds": 60.0
@@ -179,12 +217,37 @@
       "MessageCount": 120,
       "TimeIntervalInSeconds": 60.0
     },
+    "RateLimiter.TextChatServerFN.Operations": {
+      "MessageCount": 300,
+      "TimeIntervalInSeconds": 60.0,
+      "Operation": [
+        "CreateConversationFN",
+        "DeleteConversationFN",
+        "AddConversationMembersFN",
+        "RemoveConversationMembersFN"
+      ]
+    },
     "RateLimiter.ProgressionSnapshot": {
       "MessageCount": 300,
       "TimeIntervalInSeconds": 60.0
     },
     "SessionsClient": {
       "HeartbeatIntervalSecs": 30
+    },
+    "RateLimiter.WorldInventoryClient.Operations": {
+      "MessageCount": 1000,
+      "TimeIntervalInSeconds": 60.0,
+      "Operation": [
+        "Open",
+        "Close",
+        "Write",
+        "WriteTransaction",
+        "QueryVersionMetadata"
+      ]
+    },
+    "InventoryClient.WorldInventory": {
+      "MaxBinaryDataSizeBytes": 104857600,
+      "BaseUrlLive": "https://fngw-svc-ds-livefn.ol.epicgames.com/api/inventory"
     },
     "RateLimiter.UserInfoClient.Operations": {
       "MessageCount": 300,
@@ -205,6 +268,7 @@
       "WebSocketConnectTaskMaxNetworkWaitSeconds": 15.0,
       "RecoveryWaitTimeSecs": 2,
       "InitialRetryDelaySeconds": 5,
+      "bDisableRTCVoice": false,
       "MaxSendRetries": 3,
       "SentMessageTimeout": 5,
       "HeartbeatIntervalSecs": 30,
@@ -237,7 +301,6 @@
         "JoinLobby",
         "LeaveLobby",
         "HeartbeatLobby",
-        "UpdateLobby",
         "PromoteMember",
         "KickLobbyMember",
         "SendLobbyInvite",
@@ -272,7 +335,7 @@
       ]
     },
     "RateLimiter.InventoryClient.Operations": {
-      "MessageCount": 100,
+      "MessageCount": 1000,
       "TimeIntervalInSeconds": 60.0,
       "Operation": [
         "Open",
@@ -294,10 +357,17 @@
     },
     "Messaging.EpicConnect": {
       "FailedConnectionDelayMultiplier": 2.5,
+      "RetryBackoffExponentialExponentBias": 0.0,
       "ServerHeartbeatIntervalMilliseconds": 0,
-      "FailedConnectionDelayMaxSeconds": 180,
+      "RetryBackoffMaxSeconds": 180,
+      "RetryBackoffJitterCoefficientMin": 0.5,
+      "Urlv2": "wss://connect.epicgames.dev/v2",
       "ClientHeartbeatIntervalMilliseconds": 30000,
+      "RetryBackoffExponentialBase": 2.0,
+      "RetryBackoffJitterCoefficientMax": 1.0,
+      "FailedConnectionDelayMaxSeconds": 180,
       "FailedConnectionDelayIntervalSeconds": 5,
+      "UseV2Connection": false,
       "Url": "wss://connect.epicgames.dev"
     },
     "MetricsClient": {
@@ -322,18 +392,26 @@
       ]
     },
     "Messaging.Stomp": {
+      "Url": "",
       "ClientHeartbeatIntervalMs": 30000,
-      "RequestedServerHeartbeatIntervalMs": 30000,
-      "Url": "wss://api.epicgames.dev/notifications/v1/`deploymentid`/connect",
-      "BlocklistMessageTypeFilters": [
-        "lobbyinvite"
-      ]
+      "InitialRetryDelaySeconds": 3600,
+      "RequestedServerHeartbeatIntervalMs": 0,
+      "MaxRetryIntervalSeconds": 3600
     },
     "TitleStorageClient": {
       "AccessLinkDurationSeconds": 300,
       "UnusedCachedFileDaysToLive": 7,
       "ClearInvalidFileCacheFrequencyDays": 2,
       "MaxSimultaneousReads": 10
+    },
+    "TrustAndSafety": {
+      "bQueryLocalPrivilegeEnabled": false
+    },
+    "Overlay": {
+      "ValidDomains": [
+        ".epicgames.com",
+        ".epicgames.dev"
+      ]
     },
     "ConnectClient": {
       "MaxProductUserIdMappingsQueryUserIds": 128,
@@ -356,9 +434,11 @@
       ]
     },
     "EcomClient": {
-      "PurchaseUrl": "https://launcher-website-prod07.ol.epicgames.com/purchase",
       "PurchaseCookieName": "EPIC_BEARER_TOKEN",
-      "PurchaseEpicIdUrl": "https://www.epicgames.com/ecom/payment/v1/purchase"
+      "PurchaseEpicIdMobileLandscapeUrl": "https://www.epicgames.com/ecom/payment/v2/purchase",
+      "PurchaseEpicIdMobilePortraitUrl": "https://www.epicgames.com/ecom/payment/v2/purchase",
+      "PurchaseEpicIdUrl": "https://www.epicgames.com/ecom/payment/v1/purchase",
+      "PurchaseUrl": "https://launcher-website-prod07.ol.epicgames.com/purchase"
     },
     "RateLimiter.SessionsClient.Operations": {
       "MessageCount": 300,
@@ -384,6 +464,10 @@
         "QueryStats"
       ]
     },
+    "RateLimiter.WeblinksClient": {
+      "MessageCount": 300,
+      "TimeIntervalInSeconds": 60.0
+    },
     "RateLimiter.ReceiptValidatorClient.Operations": {
       "MessageCount": 300,
       "TimeIntervalInSeconds": 60.0,
@@ -408,6 +492,37 @@
         "VerifyIdToken"
       ]
     },
+    "InventoryClient": {
+      "MaxNumberOfParallelUpdateRequestsInFlight": 3,
+      "SessionLockTTLSeconds": 60,
+      "bDisableUnlockingAgainAfterSessionLockRefresh": true,
+      "MaxNumberOfLockEntriesPerRequest": 10,
+      "MaxNumberOfWriteEntriesPerRequest": 10,
+      "SessionLockUpdateIntervalRandomAddSeconds": 20.0,
+      "MaxNumberOfParallelLockRequestsInFlight": 3,
+      "SessionLockUpdateIntervalSeconds": 30.0,
+      "MaxNumberOfSubTasksPerParallelLockTask": 20,
+      "BaseUrlLive": "https://fngw-svc-ds-livefn.ol.epicgames.com/api/inventory",
+      "HttpRetryResponseCodes": [
+        429,
+        500,
+        503,
+        504
+      ],
+      "LockType": "Session",
+      "BaseUrl": "https://fngw-svc-ds-livefn.ol.epicgames.com/api/inventory",
+      "MaxNumberOfSubTasksPerParallelUpdateTask": 20,
+      "QueryInventoryPageLimit": 0,
+      "HttpRetryVerbs": [
+        "GET",
+        "HEAD",
+        "POST"
+      ]
+    },
+    "RateLimiter.TextChatServerFN": {
+      "MessageCount": 300,
+      "TimeIntervalInSeconds": 60.0
+    },
     "P2PClient": {
       "IceServers": [
         "stun:stun.l.google.com:19302",
@@ -421,18 +536,65 @@
       "MessageCount": 30,
       "TimeIntervalInSeconds": 60.0
     },
+    "RateLimiter.TextChatClientFN": {
+      "MessageCount": 300,
+      "TimeIntervalInSeconds": 60.0
+    },
+    "RateLimiter.LeaderboardsClient": {
+      "MessageCount": 300,
+      "TimeIntervalInSeconds": 60.0
+    },
     "SDKAnalytics": {
       "BaseUrl": "https://api.epicgames.dev/telemetry/data/",
       "DevPhase": 2,
       "AppEnvironment": "Production",
       "UploadType": "sdkevents"
     },
+    "TextChatServerFN": {
+      "TextChatGatewayServerURL": "https://fngw-svc-ds-livefn.ol.epicgames.com/chat"
+    },
     "RateLimiter.ConnectClient": {
       "MessageCount": 300,
       "TimeIntervalInSeconds": 60.0
     },
+    "RateLimiter.TextChatClientFN.Operations": {
+      "MessageCount": 300,
+      "TimeIntervalInSeconds": 60.0,
+      "Operation": [
+        "SendConversationMessageFN",
+        "SendDirectMessageFN",
+        "QueryPersistentConversationsInfoFN",
+        "QueryPersistentConversationInfoFN",
+        "QueryConversationMessagesFN",
+        "QueryConversationDetailsFN",
+        "QueryDirectMessageConversationDetailsFN",
+        "CreateConversationFN",
+        "ChangeConversationTitleFN",
+        "AddConversationMembersFN",
+        "RemoveConversationMembersFN",
+        "UpdateLastReadMessageFN",
+        "UpdateInviteFN",
+        "QueryUserConversationSummaryFN",
+        "ConfirmPlatformFriendshipFN"
+      ]
+    },
+    "RateLimiter.InventoryClient.ThrottledOperations": {
+      "MessageCount": 20000,
+      "TimeIntervalInSeconds": 60.0,
+      "Operation": [
+        "Write"
+      ]
+    },
+    "RateLimiter.MetricsClient": {
+      "MessageCount": 300,
+      "TimeIntervalInSeconds": 60.0
+    },
+    "GameClient": {
+      "UseGzipEncoding": false
+    },
     "AntiCheat.GameplayData": {
-      "Url": "wss://api.epicgames.dev/cerberus-edge/v1/"
+      "Url": "wss://api.epicgames.dev/cerberus-edge/v1/",
+      "MinCompressibleMessageSize": 4096
     },
     "AuthClient": {
       "AccountPortalURLLocaleSuffix": "lang=`code",
@@ -441,13 +603,14 @@
       "VPCRegisterURL": "https://epicgames.com/id/register/quick/minor/await?code=`challenge_id&display=embedded",
       "AuthorizeContinuationEndpoint": "https://epicgames.com/id/login?continuation=`continuation&prompt=skip_merge%20skip_upgrade",
       "AuthorizeCodeEndpoint": "https://epicgames.com/id/authorize?client_id=`client_id&response_type=code&scope=`scope&redirect_uri=`redirect_uri&display=popup&prompt=login",
-      "AuthorizeContinuationEmbeddedEndpoint": "https://epicgames.com/id/embedded/login?continuation=`continuation&prompt=skip_merge%20skip_upgrade",
-      "VerifyTokenInterval": 60.0,
+      "VerifyTokenInterval": 600.0,
       "PollExpiresIn": 300,
       "IdTokenCacheMinExpirySeconds": 300,
       "AuthorizeEndpoint": "https://epicgames.com/id/authorize?exchange_code=`exchange_code&scope=`scope&prompt=skip_merge%20skip_upgrade",
       "AccountPortalScheme": "eos.`client_id://epic/auth",
-      "bOfflineAccountToken": true
+      "bOfflineAccountToken": true,
+      "bFailLoginIfExternalAccountIdDoesNotMatchAuthToken": false,
+      "AuthorizeContinuationEmbeddedEndpoint": "https://epicgames.com/id/embedded/login?continuation=`continuation&prompt=skip_merge%20skip_upgrade"
     },
     "RateLimiter.ProgressionSnapshot.Operations": {
       "MessageCount": 300,
@@ -470,6 +633,35 @@
         "SendClientMessage"
       ]
     },
+    "RateLimiter.MatchmakingClient.Operations": {
+      "MessageCount": 300,
+      "TimeIntervalInSeconds": 60.0,
+      "Operation": [
+        "SessionRegister",
+        "SessionDeregister",
+        "SessionAcknowledgeAssignment",
+        "TicketJoin",
+        "TicketClose",
+        "SessionHeartbeat",
+        "TicketHeartbeat"
+      ]
+    },
+    "K3SClient.RemainingPlaytimeLimits": {
+      "play": [
+        1800,
+        900,
+        600,
+        120,
+        0
+      ],
+      "create": [
+        1800,
+        900,
+        600,
+        120,
+        0
+      ]
+    },
     "Core.Log": {
       "LogEOS": "verbose",
       "LogEOSMessaging": "verbose",
@@ -483,7 +675,7 @@
       "LogEOSSessions": "verbose"
     },
     "UIClient": {
-      "FriendsURL": "https://epic-social-game-overlay-prod.ol.epicgames.com/index.html",
+      "FriendsURL": "https://api.epicgames.dev/overlay-override/v1/",
       "SocialSPAClientId": "cf27c69fe66441e8a8a4e8faf396ee4c",
       "VPCURLLocaleSuffix": "&lang=`code",
       "FriendsURLExchangeCodeSuffix": "?exchange_code=`exchange_code",
@@ -492,6 +684,17 @@
     "RateLimiter.AntiCheatServer": {
       "MessageCount": 100000,
       "TimeIntervalInSeconds": 60.0
+    },
+    "RateLimiter.InventoryClient.WorldInventory.Operations": {
+      "MessageCount": 1000,
+      "TimeIntervalInSeconds": 60.0,
+      "Operation": [
+        "WorldOpen",
+        "WorldClose",
+        "WorldWrite",
+        "WriteTransaction",
+        "QueryVersionMetadata"
+      ]
     },
     "Messaging.XMPP": {
       "ReconnectionDelayJitter": 1.5,
@@ -504,6 +707,32 @@
       "ReconnectionDelayBackoffExponent": 2.0,
       "ServerAddr": "wss://xmpp-service-prod.ol.epicgames.com",
       "PingInterval": 60
+    },
+    "RateLimiter.WeblinksClient.Operations": {
+      "MessageCount": 300,
+      "TimeIntervalInSeconds": 60.0,
+      "Operation": [
+        "CreateWeblinkSession"
+      ]
+    },
+    "RateLimiter.CustomInvitesClient.IncomingOperations": {
+      "MessageCount": 30,
+      "TimeIntervalInSeconds": 60.0,
+      "Operation": [
+        "HandleCustomInviteMessageReceived",
+        "HandleSignalMessageReceived"
+      ]
+    },
+    "RateLimiter.K3SClient.Operations": {
+      "MessageCount": 300,
+      "TimeIntervalInSeconds": 60.0,
+      "Operation": [
+        "QuerySettings",
+        "UpdateSettings",
+        "RequestAdditionalPlaytime",
+        "GrantAdditionalPlaytime",
+        "RequestConsent"
+      ]
     },
     "RateLimiter.SDKConfigClient": {
       "MessageCount": 300,
@@ -549,7 +778,8 @@
         "TransferDeviceIdAccount",
         "QueryExternalAccountMappings",
         "QueryProductUserIdMappings",
-        "VerifyIdToken"
+        "VerifyIdToken",
+        "RequestExchangeToken"
       ]
     },
     "RateLimiter.AuthClient.SensitiveOperations": {
@@ -565,26 +795,14 @@
     }
   },
   "services": {
-    "RTCService": {
-      "BaseUrl": "https://api.epicgames.dev/rtc"
-    },
     "DataStorageService": {
       "BaseUrl": "https://api.epicgames.dev/datastorage"
     },
     "AccountsEpicIdService": {
       "BaseUrl": "https://api.epicgames.dev"
     },
-    "MetricsService": {
-      "BaseUrl": "https://api.epicgames.dev/datarouter"
-    },
-    "EcommerceService": {
-      "BaseUrl": "https://ecommerceintegration-public-service-ecomprod02.ol.epicgames.com/ecommerceintegration"
-    },
-    "KWSService": {
-      "BaseUrl": "https://api.epicgames.dev/kws"
-    },
-    "AntiCheatService": {
-      "BaseUrl": "https://api.epicgames.dev/anticheat"
+    "PartiesInternalService": {
+      "BaseUrl": "https://api.epicgames.dev/epic/party/internal"
     },
     "LobbyService": {
       "BaseUrl": "https://api.epicgames.dev/lobby"
@@ -595,9 +813,15 @@
     "PriceEngineService": {
       "BaseUrl": "https://priceengine-public-service-ecomprod01.ol.epicgames.com/priceengine"
     },
+    "MatchmakingService": {
+      "BaseUrl": "https://api.epicgames.dev/epic/matchmaking"
+    },
     "AccountsService": {
       "BaseUrl": "https://egp-idsoc-proxy-prod.ol.epicgames.com/account",
       "RedirectUrl": "accounts.epicgames.com"
+    },
+    "PartiesService": {
+      "BaseUrl": "https://api.epicgames.dev/epic/party"
     },
     "EcommerceEpicIdService": {
       "BaseUrl": "https://api.epicgames.dev/epic/ecom"
@@ -611,14 +835,50 @@
     "FriendService": {
       "BaseUrl": "https://egp-idsoc-proxy-prod.ol.epicgames.com/friends"
     },
+    "TextChatTrustedServerFNService": {
+      "BaseUrl": "https://api.epicgames.dev/epic/chat"
+    },
     "ReceiptValidatorService": {
       "BaseUrl": "https://api.epicgames.dev/receipt-validator"
+    },
+    "RTCService": {
+      "BaseUrl": "https://api.epicgames.dev/rtc"
+    },
+    "WeblinksService": {
+      "BaseUrl": "https://api.epicgames.dev/external-session-sync"
+    },
+    "MetricsService": {
+      "BaseUrl": "https://api.epicgames.dev/datarouter"
+    },
+    "PostPartyService": {
+      "BaseUrl": "https://global-postparty.game-social.epicgames.com"
+    },
+    "EcommerceService": {
+      "BaseUrl": "https://ecommerceintegration-public-service-ecomprod02.ol.epicgames.com/ecommerceintegration"
+    },
+    "EULATrackingService": {
+      "BaseUrl": "https://eulatracking-public-service-prod06.ol.epicgames.com/eulatracking"
     },
     "FriendEpicIdService": {
       "BaseUrl": "https://api.epicgames.dev/epic/friends"
     },
     "CatalogService": {
       "BaseUrl": "https://catalog-public-service-prod06.ol.epicgames.com/catalog"
+    },
+    "KWSService": {
+      "BaseUrl": "https://api.epicgames.dev/kws"
+    },
+    "TextChatFNService": {
+      "BaseUrl": "https://api.epicgames.dev/epic/chat"
+    },
+    "GalleryService": {
+      "BaseUrl": "https://gallery-service-prod.social.live.on.epicgames.com"
+    },
+    "PlaytimeTrackingService": {
+      "BaseUrl": "https://api.kws.ol.epicgames.com"
+    },
+    "AntiCheatService": {
+      "BaseUrl": "https://api.epicgames.dev/anticheat"
     },
     "EOSAuthService": {
       "BaseUrl": "https://api.epicgames.dev"
@@ -647,12 +907,18 @@
     "StatsIngestService": {
       "BaseUrl": "https://api.epicgames.dev/ingestion/stats"
     },
+    "SupervisedSettingsService": {
+      "BaseUrl": "https://api.kws.ol.epicgames.com"
+    },
+    "TextChatGatewayServerFNService": {
+      "BaseUrl": "https://fngw-svc-ds-livefn.ol.epicgames.com/chat"
+    },
     "LeaderboardsService": {
       "BaseUrl": "https://api.epicgames.dev/leaderboards"
     },
     "InventoryService": {
-      "BaseUrl": "https://api.epicgames.dev/inventory"
+      "BaseUrl": "https://fngw-svc-ds-livefn.ol.epicgames.com/api/inventory"
     }
   },
-  "watermark": -934553538
+  "watermark": 2137694201337
 }
