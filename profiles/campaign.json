@@ -54126,6 +54126,2787 @@
       },
       "quantity": 1
     },
+    "CampaignHeroLoadout10": {
+      "templateId": "CampaignHeroLoadout:defaultloadout",
+      "attributes": {
+        "team_perk": "",
+        "loadout_name": "",
+        "crew_members": {
+          "followerslot3": "",
+          "followerslot2": "",
+          "followerslot1": "",
+          "commanderslot": "Hero:HID_Commando_GrenadeGun_SR_T05",
+          "followerslot5": "",
+          "followerslot4": ""
+        },
+        "loadout_index": 9,
+        "gadgets": [
+          {
+            "gadget": "",
+            "slot_index": 0
+          },
+          {
+            "gadget": "",
+            "slot_index": 1
+          }
+        ]
+      },
+      "quantity": 1
+    },
+    "CampaignHeroLoadout11": {
+      "templateId": "CampaignHeroLoadout:defaultloadout",
+      "attributes": {
+        "team_perk": "",
+        "loadout_name": "",
+        "crew_members": {
+          "followerslot3": "",
+          "followerslot2": "",
+          "followerslot1": "",
+          "commanderslot": "Hero:HID_Commando_GrenadeGun_SR_T05",
+          "followerslot5": "",
+          "followerslot4": ""
+        },
+        "loadout_index": 10,
+        "gadgets": [
+          {
+            "gadget": "",
+            "slot_index": 0
+          },
+          {
+            "gadget": "",
+            "slot_index": 1
+          }
+        ]
+      },
+      "quantity": 1
+    },
+    "CampaignHeroLoadout12": {
+      "templateId": "CampaignHeroLoadout:defaultloadout",
+      "attributes": {
+        "team_perk": "",
+        "loadout_name": "",
+        "crew_members": {
+          "followerslot3": "",
+          "followerslot2": "",
+          "followerslot1": "",
+          "commanderslot": "Hero:HID_Commando_GrenadeGun_SR_T05",
+          "followerslot5": "",
+          "followerslot4": ""
+        },
+        "loadout_index": 11,
+        "gadgets": [
+          {
+            "gadget": "",
+            "slot_index": 0
+          },
+          {
+            "gadget": "",
+            "slot_index": 1
+          }
+        ]
+      },
+      "quantity": 1
+    },
+    "CampaignHeroLoadout13": {
+      "templateId": "CampaignHeroLoadout:defaultloadout",
+      "attributes": {
+        "team_perk": "",
+        "loadout_name": "",
+        "crew_members": {
+          "followerslot3": "",
+          "followerslot2": "",
+          "followerslot1": "",
+          "commanderslot": "Hero:HID_Commando_GrenadeGun_SR_T05",
+          "followerslot5": "",
+          "followerslot4": ""
+        },
+        "loadout_index": 12,
+        "gadgets": [
+          {
+            "gadget": "",
+            "slot_index": 0
+          },
+          {
+            "gadget": "",
+            "slot_index": 1
+          }
+        ]
+      },
+      "quantity": 1
+    },
+    "CampaignHeroLoadout14": {
+      "templateId": "CampaignHeroLoadout:defaultloadout",
+      "attributes": {
+        "team_perk": "",
+        "loadout_name": "",
+        "crew_members": {
+          "followerslot3": "",
+          "followerslot2": "",
+          "followerslot1": "",
+          "commanderslot": "Hero:HID_Commando_GrenadeGun_SR_T05",
+          "followerslot5": "",
+          "followerslot4": ""
+        },
+        "loadout_index": 13,
+        "gadgets": [
+          {
+            "gadget": "",
+            "slot_index": 0
+          },
+          {
+            "gadget": "",
+            "slot_index": 1
+          }
+        ]
+      },
+      "quantity": 1
+    },
+    "CampaignHeroLoadout15": {
+      "templateId": "CampaignHeroLoadout:defaultloadout",
+      "attributes": {
+        "team_perk": "",
+        "loadout_name": "",
+        "crew_members": {
+          "followerslot3": "",
+          "followerslot2": "",
+          "followerslot1": "",
+          "commanderslot": "Hero:HID_Commando_GrenadeGun_SR_T05",
+          "followerslot5": "",
+          "followerslot4": ""
+        },
+        "loadout_index": 14,
+        "gadgets": [
+          {
+            "gadget": "",
+            "slot_index": 0
+          },
+          {
+            "gadget": "",
+            "slot_index": 1
+          }
+        ]
+      },
+      "quantity": 1
+    },
+    "CampaignHeroLoadout16": {
+      "templateId": "CampaignHeroLoadout:defaultloadout",
+      "attributes": {
+        "team_perk": "",
+        "loadout_name": "",
+        "crew_members": {
+          "followerslot3": "",
+          "followerslot2": "",
+          "followerslot1": "",
+          "commanderslot": "Hero:HID_Commando_GrenadeGun_SR_T05",
+          "followerslot5": "",
+          "followerslot4": ""
+        },
+        "loadout_index": 15,
+        "gadgets": [
+          {
+            "gadget": "",
+            "slot_index": 0
+          },
+          {
+            "gadget": "",
+            "slot_index": 1
+          }
+        ]
+      },
+      "quantity": 1
+    },
+    "CampaignHeroLoadout17": {
+      "templateId": "CampaignHeroLoadout:defaultloadout",
+      "attributes": {
+        "team_perk": "",
+        "loadout_name": "",
+        "crew_members": {
+          "followerslot3": "",
+          "followerslot2": "",
+          "followerslot1": "",
+          "commanderslot": "Hero:HID_Commando_GrenadeGun_SR_T05",
+          "followerslot5": "",
+          "followerslot4": ""
+        },
+        "loadout_index": 16,
+        "gadgets": [
+          {
+            "gadget": "",
+            "slot_index": 0
+          },
+          {
+            "gadget": "",
+            "slot_index": 1
+          }
+        ]
+      },
+      "quantity": 1
+    },
+    "CampaignHeroLoadout18": {
+      "templateId": "CampaignHeroLoadout:defaultloadout",
+      "attributes": {
+        "team_perk": "",
+        "loadout_name": "",
+        "crew_members": {
+          "followerslot3": "",
+          "followerslot2": "",
+          "followerslot1": "",
+          "commanderslot": "Hero:HID_Commando_GrenadeGun_SR_T05",
+          "followerslot5": "",
+          "followerslot4": ""
+        },
+        "loadout_index": 17,
+        "gadgets": [
+          {
+            "gadget": "",
+            "slot_index": 0
+          },
+          {
+            "gadget": "",
+            "slot_index": 1
+          }
+        ]
+      },
+      "quantity": 1
+    },
+    "CampaignHeroLoadout19": {
+      "templateId": "CampaignHeroLoadout:defaultloadout",
+      "attributes": {
+        "team_perk": "",
+        "loadout_name": "",
+        "crew_members": {
+          "followerslot3": "",
+          "followerslot2": "",
+          "followerslot1": "",
+          "commanderslot": "Hero:HID_Commando_GrenadeGun_SR_T05",
+          "followerslot5": "",
+          "followerslot4": ""
+        },
+        "loadout_index": 18,
+        "gadgets": [
+          {
+            "gadget": "",
+            "slot_index": 0
+          },
+          {
+            "gadget": "",
+            "slot_index": 1
+          }
+        ]
+      },
+      "quantity": 1
+    },
+    "CampaignHeroLoadout20": {
+      "templateId": "CampaignHeroLoadout:defaultloadout",
+      "attributes": {
+        "team_perk": "",
+        "loadout_name": "",
+        "crew_members": {
+          "followerslot3": "",
+          "followerslot2": "",
+          "followerslot1": "",
+          "commanderslot": "Hero:HID_Commando_GrenadeGun_SR_T05",
+          "followerslot5": "",
+          "followerslot4": ""
+        },
+        "loadout_index": 19,
+        "gadgets": [
+          {
+            "gadget": "",
+            "slot_index": 0
+          },
+          {
+            "gadget": "",
+            "slot_index": 1
+          }
+        ]
+      },
+      "quantity": 1
+    },
+    "CampaignHeroLoadout21": {
+      "templateId": "CampaignHeroLoadout:defaultloadout",
+      "attributes": {
+        "team_perk": "",
+        "loadout_name": "",
+        "crew_members": {
+          "followerslot3": "",
+          "followerslot2": "",
+          "followerslot1": "",
+          "commanderslot": "Hero:HID_Commando_GrenadeGun_SR_T05",
+          "followerslot5": "",
+          "followerslot4": ""
+        },
+        "loadout_index": 20,
+        "gadgets": [
+          {
+            "gadget": "",
+            "slot_index": 0
+          },
+          {
+            "gadget": "",
+            "slot_index": 1
+          }
+        ]
+      },
+      "quantity": 1
+    },
+    "CampaignHeroLoadout22": {
+      "templateId": "CampaignHeroLoadout:defaultloadout",
+      "attributes": {
+        "team_perk": "",
+        "loadout_name": "",
+        "crew_members": {
+          "followerslot3": "",
+          "followerslot2": "",
+          "followerslot1": "",
+          "commanderslot": "Hero:HID_Commando_GrenadeGun_SR_T05",
+          "followerslot5": "",
+          "followerslot4": ""
+        },
+        "loadout_index": 21,
+        "gadgets": [
+          {
+            "gadget": "",
+            "slot_index": 0
+          },
+          {
+            "gadget": "",
+            "slot_index": 1
+          }
+        ]
+      },
+      "quantity": 1
+    },
+    "CampaignHeroLoadout23": {
+      "templateId": "CampaignHeroLoadout:defaultloadout",
+      "attributes": {
+        "team_perk": "",
+        "loadout_name": "",
+        "crew_members": {
+          "followerslot3": "",
+          "followerslot2": "",
+          "followerslot1": "",
+          "commanderslot": "Hero:HID_Commando_GrenadeGun_SR_T05",
+          "followerslot5": "",
+          "followerslot4": ""
+        },
+        "loadout_index": 22,
+        "gadgets": [
+          {
+            "gadget": "",
+            "slot_index": 0
+          },
+          {
+            "gadget": "",
+            "slot_index": 1
+          }
+        ]
+      },
+      "quantity": 1
+    },
+    "CampaignHeroLoadout24": {
+      "templateId": "CampaignHeroLoadout:defaultloadout",
+      "attributes": {
+        "team_perk": "",
+        "loadout_name": "",
+        "crew_members": {
+          "followerslot3": "",
+          "followerslot2": "",
+          "followerslot1": "",
+          "commanderslot": "Hero:HID_Commando_GrenadeGun_SR_T05",
+          "followerslot5": "",
+          "followerslot4": ""
+        },
+        "loadout_index": 23,
+        "gadgets": [
+          {
+            "gadget": "",
+            "slot_index": 0
+          },
+          {
+            "gadget": "",
+            "slot_index": 1
+          }
+        ]
+      },
+      "quantity": 1
+    },
+    "CampaignHeroLoadout25": {
+      "templateId": "CampaignHeroLoadout:defaultloadout",
+      "attributes": {
+        "team_perk": "",
+        "loadout_name": "",
+        "crew_members": {
+          "followerslot3": "",
+          "followerslot2": "",
+          "followerslot1": "",
+          "commanderslot": "Hero:HID_Commando_GrenadeGun_SR_T05",
+          "followerslot5": "",
+          "followerslot4": ""
+        },
+        "loadout_index": 24,
+        "gadgets": [
+          {
+            "gadget": "",
+            "slot_index": 0
+          },
+          {
+            "gadget": "",
+            "slot_index": 1
+          }
+        ]
+      },
+      "quantity": 1
+    },
+    "CampaignHeroLoadout26": {
+      "templateId": "CampaignHeroLoadout:defaultloadout",
+      "attributes": {
+        "team_perk": "",
+        "loadout_name": "",
+        "crew_members": {
+          "followerslot3": "",
+          "followerslot2": "",
+          "followerslot1": "",
+          "commanderslot": "Hero:HID_Commando_GrenadeGun_SR_T05",
+          "followerslot5": "",
+          "followerslot4": ""
+        },
+        "loadout_index": 25,
+        "gadgets": [
+          {
+            "gadget": "",
+            "slot_index": 0
+          },
+          {
+            "gadget": "",
+            "slot_index": 1
+          }
+        ]
+      },
+      "quantity": 1
+    },
+    "CampaignHeroLoadout27": {
+      "templateId": "CampaignHeroLoadout:defaultloadout",
+      "attributes": {
+        "team_perk": "",
+        "loadout_name": "",
+        "crew_members": {
+          "followerslot3": "",
+          "followerslot2": "",
+          "followerslot1": "",
+          "commanderslot": "Hero:HID_Commando_GrenadeGun_SR_T05",
+          "followerslot5": "",
+          "followerslot4": ""
+        },
+        "loadout_index": 26,
+        "gadgets": [
+          {
+            "gadget": "",
+            "slot_index": 0
+          },
+          {
+            "gadget": "",
+            "slot_index": 1
+          }
+        ]
+      },
+      "quantity": 1
+    },
+    "CampaignHeroLoadout28": {
+      "templateId": "CampaignHeroLoadout:defaultloadout",
+      "attributes": {
+        "team_perk": "",
+        "loadout_name": "",
+        "crew_members": {
+          "followerslot3": "",
+          "followerslot2": "",
+          "followerslot1": "",
+          "commanderslot": "Hero:HID_Commando_GrenadeGun_SR_T05",
+          "followerslot5": "",
+          "followerslot4": ""
+        },
+        "loadout_index": 27,
+        "gadgets": [
+          {
+            "gadget": "",
+            "slot_index": 0
+          },
+          {
+            "gadget": "",
+            "slot_index": 1
+          }
+        ]
+      },
+      "quantity": 1
+    },
+    "CampaignHeroLoadout29": {
+      "templateId": "CampaignHeroLoadout:defaultloadout",
+      "attributes": {
+        "team_perk": "",
+        "loadout_name": "",
+        "crew_members": {
+          "followerslot3": "",
+          "followerslot2": "",
+          "followerslot1": "",
+          "commanderslot": "Hero:HID_Commando_GrenadeGun_SR_T05",
+          "followerslot5": "",
+          "followerslot4": ""
+        },
+        "loadout_index": 28,
+        "gadgets": [
+          {
+            "gadget": "",
+            "slot_index": 0
+          },
+          {
+            "gadget": "",
+            "slot_index": 1
+          }
+        ]
+      },
+      "quantity": 1
+    },
+    "CampaignHeroLoadout30": {
+      "templateId": "CampaignHeroLoadout:defaultloadout",
+      "attributes": {
+        "team_perk": "",
+        "loadout_name": "",
+        "crew_members": {
+          "followerslot3": "",
+          "followerslot2": "",
+          "followerslot1": "",
+          "commanderslot": "Hero:HID_Commando_GrenadeGun_SR_T05",
+          "followerslot5": "",
+          "followerslot4": ""
+        },
+        "loadout_index": 29,
+        "gadgets": [
+          {
+            "gadget": "",
+            "slot_index": 0
+          },
+          {
+            "gadget": "",
+            "slot_index": 1
+          }
+        ]
+      },
+      "quantity": 1
+    },
+    "CampaignHeroLoadout31": {
+      "templateId": "CampaignHeroLoadout:defaultloadout",
+      "attributes": {
+        "team_perk": "",
+        "loadout_name": "",
+        "crew_members": {
+          "followerslot3": "",
+          "followerslot2": "",
+          "followerslot1": "",
+          "commanderslot": "Hero:HID_Commando_GrenadeGun_SR_T05",
+          "followerslot5": "",
+          "followerslot4": ""
+        },
+        "loadout_index": 30,
+        "gadgets": [
+          {
+            "gadget": "",
+            "slot_index": 0
+          },
+          {
+            "gadget": "",
+            "slot_index": 1
+          }
+        ]
+      },
+      "quantity": 1
+    },
+    "CampaignHeroLoadout32": {
+      "templateId": "CampaignHeroLoadout:defaultloadout",
+      "attributes": {
+        "team_perk": "",
+        "loadout_name": "",
+        "crew_members": {
+          "followerslot3": "",
+          "followerslot2": "",
+          "followerslot1": "",
+          "commanderslot": "Hero:HID_Commando_GrenadeGun_SR_T05",
+          "followerslot5": "",
+          "followerslot4": ""
+        },
+        "loadout_index": 31,
+        "gadgets": [
+          {
+            "gadget": "",
+            "slot_index": 0
+          },
+          {
+            "gadget": "",
+            "slot_index": 1
+          }
+        ]
+      },
+      "quantity": 1
+    },
+    "CampaignHeroLoadout33": {
+      "templateId": "CampaignHeroLoadout:defaultloadout",
+      "attributes": {
+        "team_perk": "",
+        "loadout_name": "",
+        "crew_members": {
+          "followerslot3": "",
+          "followerslot2": "",
+          "followerslot1": "",
+          "commanderslot": "Hero:HID_Commando_GrenadeGun_SR_T05",
+          "followerslot5": "",
+          "followerslot4": ""
+        },
+        "loadout_index": 32,
+        "gadgets": [
+          {
+            "gadget": "",
+            "slot_index": 0
+          },
+          {
+            "gadget": "",
+            "slot_index": 1
+          }
+        ]
+      },
+      "quantity": 1
+    },
+    "CampaignHeroLoadout34": {
+      "templateId": "CampaignHeroLoadout:defaultloadout",
+      "attributes": {
+        "team_perk": "",
+        "loadout_name": "",
+        "crew_members": {
+          "followerslot3": "",
+          "followerslot2": "",
+          "followerslot1": "",
+          "commanderslot": "Hero:HID_Commando_GrenadeGun_SR_T05",
+          "followerslot5": "",
+          "followerslot4": ""
+        },
+        "loadout_index": 33,
+        "gadgets": [
+          {
+            "gadget": "",
+            "slot_index": 0
+          },
+          {
+            "gadget": "",
+            "slot_index": 1
+          }
+        ]
+      },
+      "quantity": 1
+    },
+    "CampaignHeroLoadout35": {
+      "templateId": "CampaignHeroLoadout:defaultloadout",
+      "attributes": {
+        "team_perk": "",
+        "loadout_name": "",
+        "crew_members": {
+          "followerslot3": "",
+          "followerslot2": "",
+          "followerslot1": "",
+          "commanderslot": "Hero:HID_Commando_GrenadeGun_SR_T05",
+          "followerslot5": "",
+          "followerslot4": ""
+        },
+        "loadout_index": 34,
+        "gadgets": [
+          {
+            "gadget": "",
+            "slot_index": 0
+          },
+          {
+            "gadget": "",
+            "slot_index": 1
+          }
+        ]
+      },
+      "quantity": 1
+    },
+    "CampaignHeroLoadout36": {
+      "templateId": "CampaignHeroLoadout:defaultloadout",
+      "attributes": {
+        "team_perk": "",
+        "loadout_name": "",
+        "crew_members": {
+          "followerslot3": "",
+          "followerslot2": "",
+          "followerslot1": "",
+          "commanderslot": "Hero:HID_Commando_GrenadeGun_SR_T05",
+          "followerslot5": "",
+          "followerslot4": ""
+        },
+        "loadout_index": 35,
+        "gadgets": [
+          {
+            "gadget": "",
+            "slot_index": 0
+          },
+          {
+            "gadget": "",
+            "slot_index": 1
+          }
+        ]
+      },
+      "quantity": 1
+    },
+    "CampaignHeroLoadout37": {
+      "templateId": "CampaignHeroLoadout:defaultloadout",
+      "attributes": {
+        "team_perk": "",
+        "loadout_name": "",
+        "crew_members": {
+          "followerslot3": "",
+          "followerslot2": "",
+          "followerslot1": "",
+          "commanderslot": "Hero:HID_Commando_GrenadeGun_SR_T05",
+          "followerslot5": "",
+          "followerslot4": ""
+        },
+        "loadout_index": 36,
+        "gadgets": [
+          {
+            "gadget": "",
+            "slot_index": 0
+          },
+          {
+            "gadget": "",
+            "slot_index": 1
+          }
+        ]
+      },
+      "quantity": 1
+    },
+    "CampaignHeroLoadout38": {
+      "templateId": "CampaignHeroLoadout:defaultloadout",
+      "attributes": {
+        "team_perk": "",
+        "loadout_name": "",
+        "crew_members": {
+          "followerslot3": "",
+          "followerslot2": "",
+          "followerslot1": "",
+          "commanderslot": "Hero:HID_Commando_GrenadeGun_SR_T05",
+          "followerslot5": "",
+          "followerslot4": ""
+        },
+        "loadout_index": 37,
+        "gadgets": [
+          {
+            "gadget": "",
+            "slot_index": 0
+          },
+          {
+            "gadget": "",
+            "slot_index": 1
+          }
+        ]
+      },
+      "quantity": 1
+    },
+    "CampaignHeroLoadout39": {
+      "templateId": "CampaignHeroLoadout:defaultloadout",
+      "attributes": {
+        "team_perk": "",
+        "loadout_name": "",
+        "crew_members": {
+          "followerslot3": "",
+          "followerslot2": "",
+          "followerslot1": "",
+          "commanderslot": "Hero:HID_Commando_GrenadeGun_SR_T05",
+          "followerslot5": "",
+          "followerslot4": ""
+        },
+        "loadout_index": 38,
+        "gadgets": [
+          {
+            "gadget": "",
+            "slot_index": 0
+          },
+          {
+            "gadget": "",
+            "slot_index": 1
+          }
+        ]
+      },
+      "quantity": 1
+    },
+    "CampaignHeroLoadout40": {
+      "templateId": "CampaignHeroLoadout:defaultloadout",
+      "attributes": {
+        "team_perk": "",
+        "loadout_name": "",
+        "crew_members": {
+          "followerslot3": "",
+          "followerslot2": "",
+          "followerslot1": "",
+          "commanderslot": "Hero:HID_Commando_GrenadeGun_SR_T05",
+          "followerslot5": "",
+          "followerslot4": ""
+        },
+        "loadout_index": 39,
+        "gadgets": [
+          {
+            "gadget": "",
+            "slot_index": 0
+          },
+          {
+            "gadget": "",
+            "slot_index": 1
+          }
+        ]
+      },
+      "quantity": 1
+    },
+    "CampaignHeroLoadout41": {
+      "templateId": "CampaignHeroLoadout:defaultloadout",
+      "attributes": {
+        "team_perk": "",
+        "loadout_name": "",
+        "crew_members": {
+          "followerslot3": "",
+          "followerslot2": "",
+          "followerslot1": "",
+          "commanderslot": "Hero:HID_Commando_GrenadeGun_SR_T05",
+          "followerslot5": "",
+          "followerslot4": ""
+        },
+        "loadout_index": 40,
+        "gadgets": [
+          {
+            "gadget": "",
+            "slot_index": 0
+          },
+          {
+            "gadget": "",
+            "slot_index": 1
+          }
+        ]
+      },
+      "quantity": 1
+    },
+    "CampaignHeroLoadout42": {
+      "templateId": "CampaignHeroLoadout:defaultloadout",
+      "attributes": {
+        "team_perk": "",
+        "loadout_name": "",
+        "crew_members": {
+          "followerslot3": "",
+          "followerslot2": "",
+          "followerslot1": "",
+          "commanderslot": "Hero:HID_Commando_GrenadeGun_SR_T05",
+          "followerslot5": "",
+          "followerslot4": ""
+        },
+        "loadout_index": 41,
+        "gadgets": [
+          {
+            "gadget": "",
+            "slot_index": 0
+          },
+          {
+            "gadget": "",
+            "slot_index": 1
+          }
+        ]
+      },
+      "quantity": 1
+    },
+    "CampaignHeroLoadout43": {
+      "templateId": "CampaignHeroLoadout:defaultloadout",
+      "attributes": {
+        "team_perk": "",
+        "loadout_name": "",
+        "crew_members": {
+          "followerslot3": "",
+          "followerslot2": "",
+          "followerslot1": "",
+          "commanderslot": "Hero:HID_Commando_GrenadeGun_SR_T05",
+          "followerslot5": "",
+          "followerslot4": ""
+        },
+        "loadout_index": 42,
+        "gadgets": [
+          {
+            "gadget": "",
+            "slot_index": 0
+          },
+          {
+            "gadget": "",
+            "slot_index": 1
+          }
+        ]
+      },
+      "quantity": 1
+    },
+    "CampaignHeroLoadout44": {
+      "templateId": "CampaignHeroLoadout:defaultloadout",
+      "attributes": {
+        "team_perk": "",
+        "loadout_name": "",
+        "crew_members": {
+          "followerslot3": "",
+          "followerslot2": "",
+          "followerslot1": "",
+          "commanderslot": "Hero:HID_Commando_GrenadeGun_SR_T05",
+          "followerslot5": "",
+          "followerslot4": ""
+        },
+        "loadout_index": 43,
+        "gadgets": [
+          {
+            "gadget": "",
+            "slot_index": 0
+          },
+          {
+            "gadget": "",
+            "slot_index": 1
+          }
+        ]
+      },
+      "quantity": 1
+    },
+    "CampaignHeroLoadout45": {
+      "templateId": "CampaignHeroLoadout:defaultloadout",
+      "attributes": {
+        "team_perk": "",
+        "loadout_name": "",
+        "crew_members": {
+          "followerslot3": "",
+          "followerslot2": "",
+          "followerslot1": "",
+          "commanderslot": "Hero:HID_Commando_GrenadeGun_SR_T05",
+          "followerslot5": "",
+          "followerslot4": ""
+        },
+        "loadout_index": 44,
+        "gadgets": [
+          {
+            "gadget": "",
+            "slot_index": 0
+          },
+          {
+            "gadget": "",
+            "slot_index": 1
+          }
+        ]
+      },
+      "quantity": 1
+    },
+    "CampaignHeroLoadout46": {
+      "templateId": "CampaignHeroLoadout:defaultloadout",
+      "attributes": {
+        "team_perk": "",
+        "loadout_name": "",
+        "crew_members": {
+          "followerslot3": "",
+          "followerslot2": "",
+          "followerslot1": "",
+          "commanderslot": "Hero:HID_Commando_GrenadeGun_SR_T05",
+          "followerslot5": "",
+          "followerslot4": ""
+        },
+        "loadout_index": 45,
+        "gadgets": [
+          {
+            "gadget": "",
+            "slot_index": 0
+          },
+          {
+            "gadget": "",
+            "slot_index": 1
+          }
+        ]
+      },
+      "quantity": 1
+    },
+    "CampaignHeroLoadout47": {
+      "templateId": "CampaignHeroLoadout:defaultloadout",
+      "attributes": {
+        "team_perk": "",
+        "loadout_name": "",
+        "crew_members": {
+          "followerslot3": "",
+          "followerslot2": "",
+          "followerslot1": "",
+          "commanderslot": "Hero:HID_Commando_GrenadeGun_SR_T05",
+          "followerslot5": "",
+          "followerslot4": ""
+        },
+        "loadout_index": 46,
+        "gadgets": [
+          {
+            "gadget": "",
+            "slot_index": 0
+          },
+          {
+            "gadget": "",
+            "slot_index": 1
+          }
+        ]
+      },
+      "quantity": 1
+    },
+    "CampaignHeroLoadout48": {
+      "templateId": "CampaignHeroLoadout:defaultloadout",
+      "attributes": {
+        "team_perk": "",
+        "loadout_name": "",
+        "crew_members": {
+          "followerslot3": "",
+          "followerslot2": "",
+          "followerslot1": "",
+          "commanderslot": "Hero:HID_Commando_GrenadeGun_SR_T05",
+          "followerslot5": "",
+          "followerslot4": ""
+        },
+        "loadout_index": 47,
+        "gadgets": [
+          {
+            "gadget": "",
+            "slot_index": 0
+          },
+          {
+            "gadget": "",
+            "slot_index": 1
+          }
+        ]
+      },
+      "quantity": 1
+    },
+    "CampaignHeroLoadout49": {
+      "templateId": "CampaignHeroLoadout:defaultloadout",
+      "attributes": {
+        "team_perk": "",
+        "loadout_name": "",
+        "crew_members": {
+          "followerslot3": "",
+          "followerslot2": "",
+          "followerslot1": "",
+          "commanderslot": "Hero:HID_Commando_GrenadeGun_SR_T05",
+          "followerslot5": "",
+          "followerslot4": ""
+        },
+        "loadout_index": 48,
+        "gadgets": [
+          {
+            "gadget": "",
+            "slot_index": 0
+          },
+          {
+            "gadget": "",
+            "slot_index": 1
+          }
+        ]
+      },
+      "quantity": 1
+    },
+    "CampaignHeroLoadout50": {
+      "templateId": "CampaignHeroLoadout:defaultloadout",
+      "attributes": {
+        "team_perk": "",
+        "loadout_name": "",
+        "crew_members": {
+          "followerslot3": "",
+          "followerslot2": "",
+          "followerslot1": "",
+          "commanderslot": "Hero:HID_Commando_GrenadeGun_SR_T05",
+          "followerslot5": "",
+          "followerslot4": ""
+        },
+        "loadout_index": 49,
+        "gadgets": [
+          {
+            "gadget": "",
+            "slot_index": 0
+          },
+          {
+            "gadget": "",
+            "slot_index": 1
+          }
+        ]
+      },
+      "quantity": 1
+    },
+    "CampaignHeroLoadout51": {
+      "templateId": "CampaignHeroLoadout:defaultloadout",
+      "attributes": {
+        "team_perk": "",
+        "loadout_name": "",
+        "crew_members": {
+          "followerslot3": "",
+          "followerslot2": "",
+          "followerslot1": "",
+          "commanderslot": "Hero:HID_Commando_GrenadeGun_SR_T05",
+          "followerslot5": "",
+          "followerslot4": ""
+        },
+        "loadout_index": 50,
+        "gadgets": [
+          {
+            "gadget": "",
+            "slot_index": 0
+          },
+          {
+            "gadget": "",
+            "slot_index": 1
+          }
+        ]
+      },
+      "quantity": 1
+    },
+    "CampaignHeroLoadout52": {
+      "templateId": "CampaignHeroLoadout:defaultloadout",
+      "attributes": {
+        "team_perk": "",
+        "loadout_name": "",
+        "crew_members": {
+          "followerslot3": "",
+          "followerslot2": "",
+          "followerslot1": "",
+          "commanderslot": "Hero:HID_Commando_GrenadeGun_SR_T05",
+          "followerslot5": "",
+          "followerslot4": ""
+        },
+        "loadout_index": 51,
+        "gadgets": [
+          {
+            "gadget": "",
+            "slot_index": 0
+          },
+          {
+            "gadget": "",
+            "slot_index": 1
+          }
+        ]
+      },
+      "quantity": 1
+    },
+    "CampaignHeroLoadout53": {
+      "templateId": "CampaignHeroLoadout:defaultloadout",
+      "attributes": {
+        "team_perk": "",
+        "loadout_name": "",
+        "crew_members": {
+          "followerslot3": "",
+          "followerslot2": "",
+          "followerslot1": "",
+          "commanderslot": "Hero:HID_Commando_GrenadeGun_SR_T05",
+          "followerslot5": "",
+          "followerslot4": ""
+        },
+        "loadout_index": 52,
+        "gadgets": [
+          {
+            "gadget": "",
+            "slot_index": 0
+          },
+          {
+            "gadget": "",
+            "slot_index": 1
+          }
+        ]
+      },
+      "quantity": 1
+    },
+    "CampaignHeroLoadout54": {
+      "templateId": "CampaignHeroLoadout:defaultloadout",
+      "attributes": {
+        "team_perk": "",
+        "loadout_name": "",
+        "crew_members": {
+          "followerslot3": "",
+          "followerslot2": "",
+          "followerslot1": "",
+          "commanderslot": "Hero:HID_Commando_GrenadeGun_SR_T05",
+          "followerslot5": "",
+          "followerslot4": ""
+        },
+        "loadout_index": 53,
+        "gadgets": [
+          {
+            "gadget": "",
+            "slot_index": 0
+          },
+          {
+            "gadget": "",
+            "slot_index": 1
+          }
+        ]
+      },
+      "quantity": 1
+    },
+    "CampaignHeroLoadout55": {
+      "templateId": "CampaignHeroLoadout:defaultloadout",
+      "attributes": {
+        "team_perk": "",
+        "loadout_name": "",
+        "crew_members": {
+          "followerslot3": "",
+          "followerslot2": "",
+          "followerslot1": "",
+          "commanderslot": "Hero:HID_Commando_GrenadeGun_SR_T05",
+          "followerslot5": "",
+          "followerslot4": ""
+        },
+        "loadout_index": 54,
+        "gadgets": [
+          {
+            "gadget": "",
+            "slot_index": 0
+          },
+          {
+            "gadget": "",
+            "slot_index": 1
+          }
+        ]
+      },
+      "quantity": 1
+    },
+    "CampaignHeroLoadout56": {
+      "templateId": "CampaignHeroLoadout:defaultloadout",
+      "attributes": {
+        "team_perk": "",
+        "loadout_name": "",
+        "crew_members": {
+          "followerslot3": "",
+          "followerslot2": "",
+          "followerslot1": "",
+          "commanderslot": "Hero:HID_Commando_GrenadeGun_SR_T05",
+          "followerslot5": "",
+          "followerslot4": ""
+        },
+        "loadout_index": 55,
+        "gadgets": [
+          {
+            "gadget": "",
+            "slot_index": 0
+          },
+          {
+            "gadget": "",
+            "slot_index": 1
+          }
+        ]
+      },
+      "quantity": 1
+    },
+    "CampaignHeroLoadout57": {
+      "templateId": "CampaignHeroLoadout:defaultloadout",
+      "attributes": {
+        "team_perk": "",
+        "loadout_name": "",
+        "crew_members": {
+          "followerslot3": "",
+          "followerslot2": "",
+          "followerslot1": "",
+          "commanderslot": "Hero:HID_Commando_GrenadeGun_SR_T05",
+          "followerslot5": "",
+          "followerslot4": ""
+        },
+        "loadout_index": 56,
+        "gadgets": [
+          {
+            "gadget": "",
+            "slot_index": 0
+          },
+          {
+            "gadget": "",
+            "slot_index": 1
+          }
+        ]
+      },
+      "quantity": 1
+    },
+    "CampaignHeroLoadout58": {
+      "templateId": "CampaignHeroLoadout:defaultloadout",
+      "attributes": {
+        "team_perk": "",
+        "loadout_name": "",
+        "crew_members": {
+          "followerslot3": "",
+          "followerslot2": "",
+          "followerslot1": "",
+          "commanderslot": "Hero:HID_Commando_GrenadeGun_SR_T05",
+          "followerslot5": "",
+          "followerslot4": ""
+        },
+        "loadout_index": 57,
+        "gadgets": [
+          {
+            "gadget": "",
+            "slot_index": 0
+          },
+          {
+            "gadget": "",
+            "slot_index": 1
+          }
+        ]
+      },
+      "quantity": 1
+    },
+    "CampaignHeroLoadout59": {
+      "templateId": "CampaignHeroLoadout:defaultloadout",
+      "attributes": {
+        "team_perk": "",
+        "loadout_name": "",
+        "crew_members": {
+          "followerslot3": "",
+          "followerslot2": "",
+          "followerslot1": "",
+          "commanderslot": "Hero:HID_Commando_GrenadeGun_SR_T05",
+          "followerslot5": "",
+          "followerslot4": ""
+        },
+        "loadout_index": 58,
+        "gadgets": [
+          {
+            "gadget": "",
+            "slot_index": 0
+          },
+          {
+            "gadget": "",
+            "slot_index": 1
+          }
+        ]
+      },
+      "quantity": 1
+    },
+    "CampaignHeroLoadout60": {
+      "templateId": "CampaignHeroLoadout:defaultloadout",
+      "attributes": {
+        "team_perk": "",
+        "loadout_name": "",
+        "crew_members": {
+          "followerslot3": "",
+          "followerslot2": "",
+          "followerslot1": "",
+          "commanderslot": "Hero:HID_Commando_GrenadeGun_SR_T05",
+          "followerslot5": "",
+          "followerslot4": ""
+        },
+        "loadout_index": 59,
+        "gadgets": [
+          {
+            "gadget": "",
+            "slot_index": 0
+          },
+          {
+            "gadget": "",
+            "slot_index": 1
+          }
+        ]
+      },
+      "quantity": 1
+    },
+    "CampaignHeroLoadout61": {
+      "templateId": "CampaignHeroLoadout:defaultloadout",
+      "attributes": {
+        "team_perk": "",
+        "loadout_name": "",
+        "crew_members": {
+          "followerslot3": "",
+          "followerslot2": "",
+          "followerslot1": "",
+          "commanderslot": "Hero:HID_Commando_GrenadeGun_SR_T05",
+          "followerslot5": "",
+          "followerslot4": ""
+        },
+        "loadout_index": 60,
+        "gadgets": [
+          {
+            "gadget": "",
+            "slot_index": 0
+          },
+          {
+            "gadget": "",
+            "slot_index": 1
+          }
+        ]
+      },
+      "quantity": 1
+    },
+    "CampaignHeroLoadout62": {
+      "templateId": "CampaignHeroLoadout:defaultloadout",
+      "attributes": {
+        "team_perk": "",
+        "loadout_name": "",
+        "crew_members": {
+          "followerslot3": "",
+          "followerslot2": "",
+          "followerslot1": "",
+          "commanderslot": "Hero:HID_Commando_GrenadeGun_SR_T05",
+          "followerslot5": "",
+          "followerslot4": ""
+        },
+        "loadout_index": 61,
+        "gadgets": [
+          {
+            "gadget": "",
+            "slot_index": 0
+          },
+          {
+            "gadget": "",
+            "slot_index": 1
+          }
+        ]
+      },
+      "quantity": 1
+    },
+    "CampaignHeroLoadout63": {
+      "templateId": "CampaignHeroLoadout:defaultloadout",
+      "attributes": {
+        "team_perk": "",
+        "loadout_name": "",
+        "crew_members": {
+          "followerslot3": "",
+          "followerslot2": "",
+          "followerslot1": "",
+          "commanderslot": "Hero:HID_Commando_GrenadeGun_SR_T05",
+          "followerslot5": "",
+          "followerslot4": ""
+        },
+        "loadout_index": 62,
+        "gadgets": [
+          {
+            "gadget": "",
+            "slot_index": 0
+          },
+          {
+            "gadget": "",
+            "slot_index": 1
+          }
+        ]
+      },
+      "quantity": 1
+    },
+    "CampaignHeroLoadout64": {
+      "templateId": "CampaignHeroLoadout:defaultloadout",
+      "attributes": {
+        "team_perk": "",
+        "loadout_name": "",
+        "crew_members": {
+          "followerslot3": "",
+          "followerslot2": "",
+          "followerslot1": "",
+          "commanderslot": "Hero:HID_Commando_GrenadeGun_SR_T05",
+          "followerslot5": "",
+          "followerslot4": ""
+        },
+        "loadout_index": 63,
+        "gadgets": [
+          {
+            "gadget": "",
+            "slot_index": 0
+          },
+          {
+            "gadget": "",
+            "slot_index": 1
+          }
+        ]
+      },
+      "quantity": 1
+    },
+    "CampaignHeroLoadout65": {
+      "templateId": "CampaignHeroLoadout:defaultloadout",
+      "attributes": {
+        "team_perk": "",
+        "loadout_name": "",
+        "crew_members": {
+          "followerslot3": "",
+          "followerslot2": "",
+          "followerslot1": "",
+          "commanderslot": "Hero:HID_Commando_GrenadeGun_SR_T05",
+          "followerslot5": "",
+          "followerslot4": ""
+        },
+        "loadout_index": 64,
+        "gadgets": [
+          {
+            "gadget": "",
+            "slot_index": 0
+          },
+          {
+            "gadget": "",
+            "slot_index": 1
+          }
+        ]
+      },
+      "quantity": 1
+    },
+    "CampaignHeroLoadout66": {
+      "templateId": "CampaignHeroLoadout:defaultloadout",
+      "attributes": {
+        "team_perk": "",
+        "loadout_name": "",
+        "crew_members": {
+          "followerslot3": "",
+          "followerslot2": "",
+          "followerslot1": "",
+          "commanderslot": "Hero:HID_Commando_GrenadeGun_SR_T05",
+          "followerslot5": "",
+          "followerslot4": ""
+        },
+        "loadout_index": 65,
+        "gadgets": [
+          {
+            "gadget": "",
+            "slot_index": 0
+          },
+          {
+            "gadget": "",
+            "slot_index": 1
+          }
+        ]
+      },
+      "quantity": 1
+    },
+    "CampaignHeroLoadout67": {
+      "templateId": "CampaignHeroLoadout:defaultloadout",
+      "attributes": {
+        "team_perk": "",
+        "loadout_name": "",
+        "crew_members": {
+          "followerslot3": "",
+          "followerslot2": "",
+          "followerslot1": "",
+          "commanderslot": "Hero:HID_Ninja_040_Dennis_SR_T05",
+          "followerslot5": "",
+          "followerslot4": ""
+        },
+        "loadout_index": 66,
+        "gadgets": [
+          {
+            "gadget": "",
+            "slot_index": 0
+          },
+          {
+            "gadget": "",
+            "slot_index": 1
+          }
+        ]
+      },
+      "quantity": 1
+    },
+    "CampaignHeroLoadout68": {
+      "templateId": "CampaignHeroLoadout:defaultloadout",
+      "attributes": {
+        "team_perk": "",
+        "loadout_name": "",
+        "crew_members": {
+          "followerslot3": "",
+          "followerslot2": "",
+          "followerslot1": "",
+          "commanderslot": "Hero:HID_Commando_042_Major_SR_T05",
+          "followerslot5": "",
+          "followerslot4": ""
+        },
+        "loadout_index": 67,
+        "gadgets": [
+          {
+            "gadget": "",
+            "slot_index": 0
+          },
+          {
+            "gadget": "",
+            "slot_index": 1
+          }
+        ]
+      },
+      "quantity": 1
+    },
+    "CampaignHeroLoadout69": {
+      "templateId": "CampaignHeroLoadout:defaultloadout",
+      "attributes": {
+        "team_perk": "",
+        "loadout_name": "",
+        "crew_members": {
+          "followerslot3": "",
+          "followerslot2": "",
+          "followerslot1": "",
+          "commanderslot": "Hero:HID_Commando_008_FoundersF_SR_T05",
+          "followerslot5": "",
+          "followerslot4": ""
+        },
+        "loadout_index": 68,
+        "gadgets": [
+          {
+            "gadget": "",
+            "slot_index": 0
+          },
+          {
+            "gadget": "",
+            "slot_index": 1
+          }
+        ]
+      },
+      "quantity": 1
+    },
+    "CampaignHeroLoadout70": {
+      "templateId": "CampaignHeroLoadout:defaultloadout",
+      "attributes": {
+        "team_perk": "",
+        "loadout_name": "",
+        "crew_members": {
+          "followerslot3": "",
+          "followerslot2": "",
+          "followerslot1": "",
+          "commanderslot": "Hero:HID_Commando_GrenadeGun_SR_T05",
+          "followerslot5": "",
+          "followerslot4": ""
+        },
+        "loadout_index": 69,
+        "gadgets": [
+          {
+            "gadget": "",
+            "slot_index": 0
+          },
+          {
+            "gadget": "",
+            "slot_index": 1
+          }
+        ]
+      },
+      "quantity": 1
+    },
+    "CampaignHeroLoadout71": {
+      "templateId": "CampaignHeroLoadout:defaultloadout",
+      "attributes": {
+        "team_perk": "",
+        "loadout_name": "",
+        "crew_members": {
+          "followerslot3": "",
+          "followerslot2": "",
+          "followerslot1": "",
+          "commanderslot": "Hero:HID_Commando_GrenadeGun_SR_T05",
+          "followerslot5": "",
+          "followerslot4": ""
+        },
+        "loadout_index": 70,
+        "gadgets": [
+          {
+            "gadget": "",
+            "slot_index": 0
+          },
+          {
+            "gadget": "",
+            "slot_index": 1
+          }
+        ]
+      },
+      "quantity": 1
+    },
+    "CampaignHeroLoadout72": {
+      "templateId": "CampaignHeroLoadout:defaultloadout",
+      "attributes": {
+        "team_perk": "",
+        "loadout_name": "",
+        "crew_members": {
+          "followerslot3": "",
+          "followerslot2": "",
+          "followerslot1": "",
+          "commanderslot": "Hero:HID_Commando_GrenadeGun_SR_T05",
+          "followerslot5": "",
+          "followerslot4": ""
+        },
+        "loadout_index": 71,
+        "gadgets": [
+          {
+            "gadget": "",
+            "slot_index": 0
+          },
+          {
+            "gadget": "",
+            "slot_index": 1
+          }
+        ]
+      },
+      "quantity": 1
+    },
+    "CampaignHeroLoadout73": {
+      "templateId": "CampaignHeroLoadout:defaultloadout",
+      "attributes": {
+        "team_perk": "",
+        "loadout_name": "",
+        "crew_members": {
+          "followerslot3": "",
+          "followerslot2": "",
+          "followerslot1": "",
+          "commanderslot": "Hero:HID_Commando_GrenadeGun_SR_T05",
+          "followerslot5": "",
+          "followerslot4": ""
+        },
+        "loadout_index": 72,
+        "gadgets": [
+          {
+            "gadget": "",
+            "slot_index": 0
+          },
+          {
+            "gadget": "",
+            "slot_index": 1
+          }
+        ]
+      },
+      "quantity": 1
+    },
+    "CampaignHeroLoadout74": {
+      "templateId": "CampaignHeroLoadout:defaultloadout",
+      "attributes": {
+        "team_perk": "",
+        "loadout_name": "",
+        "crew_members": {
+          "followerslot3": "",
+          "followerslot2": "",
+          "followerslot1": "",
+          "commanderslot": "Hero:HID_Commando_GrenadeGun_SR_T05",
+          "followerslot5": "",
+          "followerslot4": ""
+        },
+        "loadout_index": 73,
+        "gadgets": [
+          {
+            "gadget": "",
+            "slot_index": 0
+          },
+          {
+            "gadget": "",
+            "slot_index": 1
+          }
+        ]
+      },
+      "quantity": 1
+    },
+    "CampaignHeroLoadout75": {
+      "templateId": "CampaignHeroLoadout:defaultloadout",
+      "attributes": {
+        "team_perk": "",
+        "loadout_name": "",
+        "crew_members": {
+          "followerslot3": "",
+          "followerslot2": "",
+          "followerslot1": "",
+          "commanderslot": "Hero:HID_Commando_GrenadeGun_SR_T05",
+          "followerslot5": "",
+          "followerslot4": ""
+        },
+        "loadout_index": 74,
+        "gadgets": [
+          {
+            "gadget": "",
+            "slot_index": 0
+          },
+          {
+            "gadget": "",
+            "slot_index": 1
+          }
+        ]
+      },
+      "quantity": 1
+    },
+    "CampaignHeroLoadout76": {
+      "templateId": "CampaignHeroLoadout:defaultloadout",
+      "attributes": {
+        "team_perk": "",
+        "loadout_name": "",
+        "crew_members": {
+          "followerslot3": "",
+          "followerslot2": "",
+          "followerslot1": "",
+          "commanderslot": "Hero:HID_Commando_GrenadeGun_SR_T05",
+          "followerslot5": "",
+          "followerslot4": ""
+        },
+        "loadout_index": 75,
+        "gadgets": [
+          {
+            "gadget": "",
+            "slot_index": 0
+          },
+          {
+            "gadget": "",
+            "slot_index": 1
+          }
+        ]
+      },
+      "quantity": 1
+    },
+    "CampaignHeroLoadout77": {
+      "templateId": "CampaignHeroLoadout:defaultloadout",
+      "attributes": {
+        "team_perk": "",
+        "loadout_name": "",
+        "crew_members": {
+          "followerslot3": "",
+          "followerslot2": "",
+          "followerslot1": "",
+          "commanderslot": "Hero:HID_Commando_GrenadeGun_SR_T05",
+          "followerslot5": "",
+          "followerslot4": ""
+        },
+        "loadout_index": 76,
+        "gadgets": [
+          {
+            "gadget": "",
+            "slot_index": 0
+          },
+          {
+            "gadget": "",
+            "slot_index": 1
+          }
+        ]
+      },
+      "quantity": 1
+    },
+    "CampaignHeroLoadout78": {
+      "templateId": "CampaignHeroLoadout:defaultloadout",
+      "attributes": {
+        "team_perk": "",
+        "loadout_name": "",
+        "crew_members": {
+          "followerslot3": "",
+          "followerslot2": "",
+          "followerslot1": "",
+          "commanderslot": "Hero:HID_Commando_GrenadeGun_SR_T05",
+          "followerslot5": "",
+          "followerslot4": ""
+        },
+        "loadout_index": 77,
+        "gadgets": [
+          {
+            "gadget": "",
+            "slot_index": 0
+          },
+          {
+            "gadget": "",
+            "slot_index": 1
+          }
+        ]
+      },
+      "quantity": 1
+    },
+    "CampaignHeroLoadout79": {
+      "templateId": "CampaignHeroLoadout:defaultloadout",
+      "attributes": {
+        "team_perk": "",
+        "loadout_name": "",
+        "crew_members": {
+          "followerslot3": "",
+          "followerslot2": "",
+          "followerslot1": "",
+          "commanderslot": "Hero:HID_Commando_GrenadeGun_SR_T05",
+          "followerslot5": "",
+          "followerslot4": ""
+        },
+        "loadout_index": 78,
+        "gadgets": [
+          {
+            "gadget": "",
+            "slot_index": 0
+          },
+          {
+            "gadget": "",
+            "slot_index": 1
+          }
+        ]
+      },
+      "quantity": 1
+    },
+    "CampaignHeroLoadout80": {
+      "templateId": "CampaignHeroLoadout:defaultloadout",
+      "attributes": {
+        "team_perk": "",
+        "loadout_name": "",
+        "crew_members": {
+          "followerslot3": "",
+          "followerslot2": "",
+          "followerslot1": "",
+          "commanderslot": "Hero:HID_Commando_GrenadeGun_SR_T05",
+          "followerslot5": "",
+          "followerslot4": ""
+        },
+        "loadout_index": 79,
+        "gadgets": [
+          {
+            "gadget": "",
+            "slot_index": 0
+          },
+          {
+            "gadget": "",
+            "slot_index": 1
+          }
+        ]
+      },
+      "quantity": 1
+    },
+    "CampaignHeroLoadout81": {
+      "templateId": "CampaignHeroLoadout:defaultloadout",
+      "attributes": {
+        "team_perk": "",
+        "loadout_name": "",
+        "crew_members": {
+          "followerslot3": "",
+          "followerslot2": "",
+          "followerslot1": "",
+          "commanderslot": "Hero:HID_Commando_GrenadeGun_SR_T05",
+          "followerslot5": "",
+          "followerslot4": ""
+        },
+        "loadout_index": 80,
+        "gadgets": [
+          {
+            "gadget": "",
+            "slot_index": 0
+          },
+          {
+            "gadget": "",
+            "slot_index": 1
+          }
+        ]
+      },
+      "quantity": 1
+    },
+    "CampaignHeroLoadout82": {
+      "templateId": "CampaignHeroLoadout:defaultloadout",
+      "attributes": {
+        "team_perk": "",
+        "loadout_name": "",
+        "crew_members": {
+          "followerslot3": "",
+          "followerslot2": "",
+          "followerslot1": "",
+          "commanderslot": "Hero:HID_Commando_GrenadeGun_SR_T05",
+          "followerslot5": "",
+          "followerslot4": ""
+        },
+        "loadout_index": 81,
+        "gadgets": [
+          {
+            "gadget": "",
+            "slot_index": 0
+          },
+          {
+            "gadget": "",
+            "slot_index": 1
+          }
+        ]
+      },
+      "quantity": 1
+    },
+    "CampaignHeroLoadout83": {
+      "templateId": "CampaignHeroLoadout:defaultloadout",
+      "attributes": {
+        "team_perk": "",
+        "loadout_name": "",
+        "crew_members": {
+          "followerslot3": "",
+          "followerslot2": "",
+          "followerslot1": "",
+          "commanderslot": "Hero:HID_Commando_GrenadeGun_SR_T05",
+          "followerslot5": "",
+          "followerslot4": ""
+        },
+        "loadout_index": 82,
+        "gadgets": [
+          {
+            "gadget": "",
+            "slot_index": 0
+          },
+          {
+            "gadget": "",
+            "slot_index": 1
+          }
+        ]
+      },
+      "quantity": 1
+    },
+    "CampaignHeroLoadout84": {
+      "templateId": "CampaignHeroLoadout:defaultloadout",
+      "attributes": {
+        "team_perk": "",
+        "loadout_name": "",
+        "crew_members": {
+          "followerslot3": "",
+          "followerslot2": "",
+          "followerslot1": "",
+          "commanderslot": "Hero:HID_Commando_GrenadeGun_SR_T05",
+          "followerslot5": "",
+          "followerslot4": ""
+        },
+        "loadout_index": 83,
+        "gadgets": [
+          {
+            "gadget": "",
+            "slot_index": 0
+          },
+          {
+            "gadget": "",
+            "slot_index": 1
+          }
+        ]
+      },
+      "quantity": 1
+    },
+    "CampaignHeroLoadout85": {
+      "templateId": "CampaignHeroLoadout:defaultloadout",
+      "attributes": {
+        "team_perk": "",
+        "loadout_name": "",
+        "crew_members": {
+          "followerslot3": "",
+          "followerslot2": "",
+          "followerslot1": "",
+          "commanderslot": "Hero:HID_Commando_GrenadeGun_SR_T05",
+          "followerslot5": "",
+          "followerslot4": ""
+        },
+        "loadout_index": 84,
+        "gadgets": [
+          {
+            "gadget": "",
+            "slot_index": 0
+          },
+          {
+            "gadget": "",
+            "slot_index": 1
+          }
+        ]
+      },
+      "quantity": 1
+    },
+    "CampaignHeroLoadout86": {
+      "templateId": "CampaignHeroLoadout:defaultloadout",
+      "attributes": {
+        "team_perk": "",
+        "loadout_name": "",
+        "crew_members": {
+          "followerslot3": "",
+          "followerslot2": "",
+          "followerslot1": "",
+          "commanderslot": "Hero:HID_Commando_GrenadeGun_SR_T05",
+          "followerslot5": "",
+          "followerslot4": ""
+        },
+        "loadout_index": 85,
+        "gadgets": [
+          {
+            "gadget": "",
+            "slot_index": 0
+          },
+          {
+            "gadget": "",
+            "slot_index": 1
+          }
+        ]
+      },
+      "quantity": 1
+    },
+    "CampaignHeroLoadout87": {
+      "templateId": "CampaignHeroLoadout:defaultloadout",
+      "attributes": {
+        "team_perk": "",
+        "loadout_name": "",
+        "crew_members": {
+          "followerslot3": "",
+          "followerslot2": "",
+          "followerslot1": "",
+          "commanderslot": "Hero:HID_Commando_GrenadeGun_SR_T05",
+          "followerslot5": "",
+          "followerslot4": ""
+        },
+        "loadout_index": 86,
+        "gadgets": [
+          {
+            "gadget": "",
+            "slot_index": 0
+          },
+          {
+            "gadget": "",
+            "slot_index": 1
+          }
+        ]
+      },
+      "quantity": 1
+    },
+    "CampaignHeroLoadout88": {
+      "templateId": "CampaignHeroLoadout:defaultloadout",
+      "attributes": {
+        "team_perk": "",
+        "loadout_name": "",
+        "crew_members": {
+          "followerslot3": "",
+          "followerslot2": "",
+          "followerslot1": "",
+          "commanderslot": "Hero:HID_Commando_GrenadeGun_SR_T05",
+          "followerslot5": "",
+          "followerslot4": ""
+        },
+        "loadout_index": 87,
+        "gadgets": [
+          {
+            "gadget": "",
+            "slot_index": 0
+          },
+          {
+            "gadget": "",
+            "slot_index": 1
+          }
+        ]
+      },
+      "quantity": 1
+    },
+    "CampaignHeroLoadout89": {
+      "templateId": "CampaignHeroLoadout:defaultloadout",
+      "attributes": {
+        "team_perk": "",
+        "loadout_name": "",
+        "crew_members": {
+          "followerslot3": "",
+          "followerslot2": "",
+          "followerslot1": "",
+          "commanderslot": "Hero:HID_Commando_GrenadeGun_SR_T05",
+          "followerslot5": "",
+          "followerslot4": ""
+        },
+        "loadout_index": 88,
+        "gadgets": [
+          {
+            "gadget": "",
+            "slot_index": 0
+          },
+          {
+            "gadget": "",
+            "slot_index": 1
+          }
+        ]
+      },
+      "quantity": 1
+    },
+    "CampaignHeroLoadout90": {
+      "templateId": "CampaignHeroLoadout:defaultloadout",
+      "attributes": {
+        "team_perk": "",
+        "loadout_name": "",
+        "crew_members": {
+          "followerslot3": "",
+          "followerslot2": "",
+          "followerslot1": "",
+          "commanderslot": "Hero:HID_Commando_GrenadeGun_SR_T05",
+          "followerslot5": "",
+          "followerslot4": ""
+        },
+        "loadout_index": 89,
+        "gadgets": [
+          {
+            "gadget": "",
+            "slot_index": 0
+          },
+          {
+            "gadget": "",
+            "slot_index": 1
+          }
+        ]
+      },
+      "quantity": 1
+    },
+    "CampaignHeroLoadout91": {
+      "templateId": "CampaignHeroLoadout:defaultloadout",
+      "attributes": {
+        "team_perk": "",
+        "loadout_name": "",
+        "crew_members": {
+          "followerslot3": "",
+          "followerslot2": "",
+          "followerslot1": "",
+          "commanderslot": "Hero:HID_Commando_GrenadeGun_SR_T05",
+          "followerslot5": "",
+          "followerslot4": ""
+        },
+        "loadout_index": 90,
+        "gadgets": [
+          {
+            "gadget": "",
+            "slot_index": 0
+          },
+          {
+            "gadget": "",
+            "slot_index": 1
+          }
+        ]
+      },
+      "quantity": 1
+    },
+    "CampaignHeroLoadout92": {
+      "templateId": "CampaignHeroLoadout:defaultloadout",
+      "attributes": {
+        "team_perk": "",
+        "loadout_name": "",
+        "crew_members": {
+          "followerslot3": "",
+          "followerslot2": "",
+          "followerslot1": "",
+          "commanderslot": "Hero:HID_Commando_GrenadeGun_SR_T05",
+          "followerslot5": "",
+          "followerslot4": ""
+        },
+        "loadout_index": 91,
+        "gadgets": [
+          {
+            "gadget": "",
+            "slot_index": 0
+          },
+          {
+            "gadget": "",
+            "slot_index": 1
+          }
+        ]
+      },
+      "quantity": 1
+    },
+    "CampaignHeroLoadout93": {
+      "templateId": "CampaignHeroLoadout:defaultloadout",
+      "attributes": {
+        "team_perk": "",
+        "loadout_name": "",
+        "crew_members": {
+          "followerslot3": "",
+          "followerslot2": "",
+          "followerslot1": "",
+          "commanderslot": "Hero:HID_Commando_GrenadeGun_SR_T05",
+          "followerslot5": "",
+          "followerslot4": ""
+        },
+        "loadout_index": 92,
+        "gadgets": [
+          {
+            "gadget": "",
+            "slot_index": 0
+          },
+          {
+            "gadget": "",
+            "slot_index": 1
+          }
+        ]
+      },
+      "quantity": 1
+    },
+    "CampaignHeroLoadout94": {
+      "templateId": "CampaignHeroLoadout:defaultloadout",
+      "attributes": {
+        "team_perk": "",
+        "loadout_name": "",
+        "crew_members": {
+          "followerslot3": "",
+          "followerslot2": "",
+          "followerslot1": "",
+          "commanderslot": "Hero:HID_Commando_GrenadeGun_SR_T05",
+          "followerslot5": "",
+          "followerslot4": ""
+        },
+        "loadout_index": 93,
+        "gadgets": [
+          {
+            "gadget": "",
+            "slot_index": 0
+          },
+          {
+            "gadget": "",
+            "slot_index": 1
+          }
+        ]
+      },
+      "quantity": 1
+    },
+    "CampaignHeroLoadout95": {
+      "templateId": "CampaignHeroLoadout:defaultloadout",
+      "attributes": {
+        "team_perk": "",
+        "loadout_name": "",
+        "crew_members": {
+          "followerslot3": "",
+          "followerslot2": "",
+          "followerslot1": "",
+          "commanderslot": "Hero:HID_Commando_GrenadeGun_SR_T05",
+          "followerslot5": "",
+          "followerslot4": ""
+        },
+        "loadout_index": 94,
+        "gadgets": [
+          {
+            "gadget": "",
+            "slot_index": 0
+          },
+          {
+            "gadget": "",
+            "slot_index": 1
+          }
+        ]
+      },
+      "quantity": 1
+    },
+    "CampaignHeroLoadout96": {
+      "templateId": "CampaignHeroLoadout:defaultloadout",
+      "attributes": {
+        "team_perk": "",
+        "loadout_name": "",
+        "crew_members": {
+          "followerslot3": "",
+          "followerslot2": "",
+          "followerslot1": "",
+          "commanderslot": "Hero:HID_Commando_GrenadeGun_SR_T05",
+          "followerslot5": "",
+          "followerslot4": ""
+        },
+        "loadout_index": 95,
+        "gadgets": [
+          {
+            "gadget": "",
+            "slot_index": 0
+          },
+          {
+            "gadget": "",
+            "slot_index": 1
+          }
+        ]
+      },
+      "quantity": 1
+    },
+    "CampaignHeroLoadout97": {
+      "templateId": "CampaignHeroLoadout:defaultloadout",
+      "attributes": {
+        "team_perk": "",
+        "loadout_name": "",
+        "crew_members": {
+          "followerslot3": "",
+          "followerslot2": "",
+          "followerslot1": "",
+          "commanderslot": "Hero:HID_Commando_GrenadeGun_SR_T05",
+          "followerslot5": "",
+          "followerslot4": ""
+        },
+        "loadout_index": 96,
+        "gadgets": [
+          {
+            "gadget": "",
+            "slot_index": 0
+          },
+          {
+            "gadget": "",
+            "slot_index": 1
+          }
+        ]
+      },
+      "quantity": 1
+    },
+    "CampaignHeroLoadout98": {
+      "templateId": "CampaignHeroLoadout:defaultloadout",
+      "attributes": {
+        "team_perk": "",
+        "loadout_name": "",
+        "crew_members": {
+          "followerslot3": "",
+          "followerslot2": "",
+          "followerslot1": "",
+          "commanderslot": "Hero:HID_Commando_GrenadeGun_SR_T05",
+          "followerslot5": "",
+          "followerslot4": ""
+        },
+        "loadout_index": 97,
+        "gadgets": [
+          {
+            "gadget": "",
+            "slot_index": 0
+          },
+          {
+            "gadget": "",
+            "slot_index": 1
+          }
+        ]
+      },
+      "quantity": 1
+    },
+    "CampaignHeroLoadout99": {
+      "templateId": "CampaignHeroLoadout:defaultloadout",
+      "attributes": {
+        "team_perk": "",
+        "loadout_name": "",
+        "crew_members": {
+          "followerslot3": "",
+          "followerslot2": "",
+          "followerslot1": "",
+          "commanderslot": "Hero:HID_Commando_GrenadeGun_SR_T05",
+          "followerslot5": "",
+          "followerslot4": ""
+        },
+        "loadout_index": 98,
+        "gadgets": [
+          {
+            "gadget": "",
+            "slot_index": 0
+          },
+          {
+            "gadget": "",
+            "slot_index": 1
+          }
+        ]
+      },
+      "quantity": 1
+    },
+    "CampaignHeroLoadout100": {
+      "templateId": "CampaignHeroLoadout:defaultloadout",
+      "attributes": {
+        "team_perk": "",
+        "loadout_name": "",
+        "crew_members": {
+          "followerslot3": "",
+          "followerslot2": "",
+          "followerslot1": "",
+          "commanderslot": "Hero:HID_Commando_GrenadeGun_SR_T05",
+          "followerslot5": "",
+          "followerslot4": ""
+        },
+        "loadout_index": 99,
+        "gadgets": [
+          {
+            "gadget": "",
+            "slot_index": 0
+          },
+          {
+            "gadget": "",
+            "slot_index": 1
+          }
+        ]
+      },
+      "quantity": 1
+    },
+    "CampaignHeroLoadout101": {
+      "templateId": "CampaignHeroLoadout:defaultloadout",
+      "attributes": {
+        "team_perk": "",
+        "loadout_name": "",
+        "crew_members": {
+          "followerslot3": "",
+          "followerslot2": "",
+          "followerslot1": "",
+          "commanderslot": "Hero:HID_Commando_GrenadeGun_SR_T05",
+          "followerslot5": "",
+          "followerslot4": ""
+        },
+        "loadout_index": 100,
+        "gadgets": [
+          {
+            "gadget": "",
+            "slot_index": 0
+          },
+          {
+            "gadget": "",
+            "slot_index": 1
+          }
+        ]
+      },
+      "quantity": 1
+    },
+    "CampaignHeroLoadout102": {
+      "templateId": "CampaignHeroLoadout:defaultloadout",
+      "attributes": {
+        "team_perk": "",
+        "loadout_name": "",
+        "crew_members": {
+          "followerslot3": "",
+          "followerslot2": "",
+          "followerslot1": "",
+          "commanderslot": "Hero:HID_Commando_GrenadeGun_SR_T05",
+          "followerslot5": "",
+          "followerslot4": ""
+        },
+        "loadout_index": 101,
+        "gadgets": [
+          {
+            "gadget": "",
+            "slot_index": 0
+          },
+          {
+            "gadget": "",
+            "slot_index": 1
+          }
+        ]
+      },
+      "quantity": 1
+    },
+    "CampaignHeroLoadout103": {
+      "templateId": "CampaignHeroLoadout:defaultloadout",
+      "attributes": {
+        "team_perk": "",
+        "loadout_name": "",
+        "crew_members": {
+          "followerslot3": "",
+          "followerslot2": "",
+          "followerslot1": "",
+          "commanderslot": "Hero:HID_Commando_GrenadeGun_SR_T05",
+          "followerslot5": "",
+          "followerslot4": ""
+        },
+        "loadout_index": 102,
+        "gadgets": [
+          {
+            "gadget": "",
+            "slot_index": 0
+          },
+          {
+            "gadget": "",
+            "slot_index": 1
+          }
+        ]
+      },
+      "quantity": 1
+    },
+    "CampaignHeroLoadout104": {
+      "templateId": "CampaignHeroLoadout:defaultloadout",
+      "attributes": {
+        "team_perk": "",
+        "loadout_name": "",
+        "crew_members": {
+          "followerslot3": "",
+          "followerslot2": "",
+          "followerslot1": "",
+          "commanderslot": "Hero:HID_Commando_GrenadeGun_SR_T05",
+          "followerslot5": "",
+          "followerslot4": ""
+        },
+        "loadout_index": 103,
+        "gadgets": [
+          {
+            "gadget": "",
+            "slot_index": 0
+          },
+          {
+            "gadget": "",
+            "slot_index": 1
+          }
+        ]
+      },
+      "quantity": 1
+    },
+    "CampaignHeroLoadout105": {
+      "templateId": "CampaignHeroLoadout:defaultloadout",
+      "attributes": {
+        "team_perk": "",
+        "loadout_name": "",
+        "crew_members": {
+          "followerslot3": "",
+          "followerslot2": "",
+          "followerslot1": "",
+          "commanderslot": "Hero:HID_Commando_GrenadeGun_SR_T05",
+          "followerslot5": "",
+          "followerslot4": ""
+        },
+        "loadout_index": 104,
+        "gadgets": [
+          {
+            "gadget": "",
+            "slot_index": 0
+          },
+          {
+            "gadget": "",
+            "slot_index": 1
+          }
+        ]
+      },
+      "quantity": 1
+    },
+    "CampaignHeroLoadout106": {
+      "templateId": "CampaignHeroLoadout:defaultloadout",
+      "attributes": {
+        "team_perk": "",
+        "loadout_name": "",
+        "crew_members": {
+          "followerslot3": "",
+          "followerslot2": "",
+          "followerslot1": "",
+          "commanderslot": "Hero:HID_Commando_GrenadeGun_SR_T05",
+          "followerslot5": "",
+          "followerslot4": ""
+        },
+        "loadout_index": 105,
+        "gadgets": [
+          {
+            "gadget": "",
+            "slot_index": 0
+          },
+          {
+            "gadget": "",
+            "slot_index": 1
+          }
+        ]
+      },
+      "quantity": 1
+    },
+    "CampaignHeroLoadout107": {
+      "templateId": "CampaignHeroLoadout:defaultloadout",
+      "attributes": {
+        "team_perk": "",
+        "loadout_name": "",
+        "crew_members": {
+          "followerslot3": "",
+          "followerslot2": "",
+          "followerslot1": "",
+          "commanderslot": "Hero:HID_Commando_GrenadeGun_SR_T05",
+          "followerslot5": "",
+          "followerslot4": ""
+        },
+        "loadout_index": 106,
+        "gadgets": [
+          {
+            "gadget": "",
+            "slot_index": 0
+          },
+          {
+            "gadget": "",
+            "slot_index": 1
+          }
+        ]
+      },
+      "quantity": 1
+    },
+    "CampaignHeroLoadout108": {
+      "templateId": "CampaignHeroLoadout:defaultloadout",
+      "attributes": {
+        "team_perk": "",
+        "loadout_name": "",
+        "crew_members": {
+          "followerslot3": "",
+          "followerslot2": "",
+          "followerslot1": "",
+          "commanderslot": "Hero:HID_Commando_GrenadeGun_SR_T05",
+          "followerslot5": "",
+          "followerslot4": ""
+        },
+        "loadout_index": 107,
+        "gadgets": [
+          {
+            "gadget": "",
+            "slot_index": 0
+          },
+          {
+            "gadget": "",
+            "slot_index": 1
+          }
+        ]
+      },
+      "quantity": 1
+    },
+    "CampaignHeroLoadout109": {
+      "templateId": "CampaignHeroLoadout:defaultloadout",
+      "attributes": {
+        "team_perk": "",
+        "loadout_name": "",
+        "crew_members": {
+          "followerslot3": "",
+          "followerslot2": "",
+          "followerslot1": "",
+          "commanderslot": "Hero:HID_Commando_GrenadeGun_SR_T05",
+          "followerslot5": "",
+          "followerslot4": ""
+        },
+        "loadout_index": 108,
+        "gadgets": [
+          {
+            "gadget": "",
+            "slot_index": 0
+          },
+          {
+            "gadget": "",
+            "slot_index": 1
+          }
+        ]
+      },
+      "quantity": 1
+    },
+    "CampaignHeroLoadout110": {
+      "templateId": "CampaignHeroLoadout:defaultloadout",
+      "attributes": {
+        "team_perk": "",
+        "loadout_name": "",
+        "crew_members": {
+          "followerslot3": "",
+          "followerslot2": "",
+          "followerslot1": "",
+          "commanderslot": "Hero:HID_Commando_GrenadeGun_SR_T05",
+          "followerslot5": "",
+          "followerslot4": ""
+        },
+        "loadout_index": 109,
+        "gadgets": [
+          {
+            "gadget": "",
+            "slot_index": 0
+          },
+          {
+            "gadget": "",
+            "slot_index": 1
+          }
+        ]
+      },
+      "quantity": 1
+    },
+    "CampaignHeroLoadout111": {
+      "templateId": "CampaignHeroLoadout:defaultloadout",
+      "attributes": {
+        "team_perk": "",
+        "loadout_name": "",
+        "crew_members": {
+          "followerslot3": "",
+          "followerslot2": "",
+          "followerslot1": "",
+          "commanderslot": "Hero:HID_Commando_GrenadeGun_SR_T05",
+          "followerslot5": "",
+          "followerslot4": ""
+        },
+        "loadout_index": 110,
+        "gadgets": [
+          {
+            "gadget": "",
+            "slot_index": 0
+          },
+          {
+            "gadget": "",
+            "slot_index": 1
+          }
+        ]
+      },
+      "quantity": 1
+    },
+    "CampaignHeroLoadout112": {
+      "templateId": "CampaignHeroLoadout:defaultloadout",
+      "attributes": {
+        "team_perk": "",
+        "loadout_name": "",
+        "crew_members": {
+          "followerslot3": "",
+          "followerslot2": "",
+          "followerslot1": "",
+          "commanderslot": "Hero:HID_Commando_GrenadeGun_SR_T05",
+          "followerslot5": "",
+          "followerslot4": ""
+        },
+        "loadout_index": 111,
+        "gadgets": [
+          {
+            "gadget": "",
+            "slot_index": 0
+          },
+          {
+            "gadget": "",
+            "slot_index": 1
+          }
+        ]
+      },
+      "quantity": 1
+    },
     "Quest:outpostquest_t1_l1": {
       "templateId": "Quest:outpostquest_t1_l1",
       "attributes": {
