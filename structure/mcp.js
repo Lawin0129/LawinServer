@@ -8616,6 +8616,100 @@ express.patch("/api/locker/v4/:deploymentId/account/:accountId/companion-name", 
     res.end();
 });
 
+// Get BR quest progress on S36+
+express.get("/api/quest/v3/:deploymentId/progress/account/:accountId", async (req, res) => {
+    const profile = require("./../profiles/athena.json");
+    const memory = functions.GetVersionInfo(req);
+
+    const SeasonPrefix = memory.season < 10 ? `0${memory.season}` : memory.season;
+    var QuestProgress = {
+        "challengeBundleSchedules": [],
+        "challengeBundles": [],
+        "quests": []
+    };
+
+    for (var key in profile.items) {
+        if (!key.startsWith(`QS${SeasonPrefix}-`)) {
+            continue;
+        }
+
+        var templateId = profile.items[key].templateId;
+        var attributes = profile.items[key].attributes;
+
+        if (templateId.toLowerCase().startsWith("challengebundleschedule:")) {
+            QuestProgress.challengeBundleSchedules.push({
+                "itemId": key,
+                "templateId": templateId,
+                "attributes": {
+                    "unlock_epoch": attributes.unlock_epoch,
+                    "granted_bundles": attributes.granted_bundles
+                }
+            })
+        } else if (templateId.toLowerCase().startsWith("challengebundle:")) {
+            QuestProgress.challengeBundles.push({
+                "itemId": key,
+                "templateId": templateId,
+                "challengeScheduleId": attributes.challenge_bundle_schedule_id,
+                "attributes": {
+                    "num_granted_bundle_quests": attributes.num_granted_bundle_quests,
+                    "grantedquestinstanceids": attributes.grantedquestinstanceids
+                }
+            })
+        } else if (templateId.toLowerCase().startsWith("quest:")) {
+            var objectives = [];
+            for (var key2 in attributes) {
+                if (!key2.startsWith("completion_")) {
+                    continue;
+                }
+                objectives.push({
+                    "statName": key2.substring("completion_".length),
+                    "quantity": attributes[key2],
+                    "stage": -1
+                })
+            }
+            QuestProgress.quests.push({
+                "templateId": templateId,
+                "productTags": [],
+                "state": attributes.quest_state,
+                "objectives": objectives,
+                "challengeBundleId": attributes.challenge_bundle_id,
+                "itemId": key
+            })
+        }
+    }
+
+    var response = {
+        "questProgress": QuestProgress,
+        "tokens": [],
+        "accountXp": {
+            "dynamicXp": {
+                "timespan": -1.0,
+                "bucketXp": 0,
+                "bankXp": 0,
+                "bankXpMult": 1.0,
+                "boosterBucketXp": 0,
+                "boosterXpMult": 1.0,
+                "weeklyExcessXpMult": 1.0,
+                "currentWeekXp": 0,
+                "currentWeek": 12
+            },
+            "playtimeXp": {
+                "currentWeek": 12,
+                "currentWeekXp": 0
+            },
+            "restedXp": 0,
+            "seasonXp": 100000,
+            "seasonLevel": 100,
+            "seasonNumber": memory.season,
+            "seasonBegin": "2020-01-01T00:00:00Z",
+            "timeDilation": 0
+        }
+    }
+
+    res.json(response)
+    res.end();
+});
+
 // Set Active Archetype (e.g. main vehicle in v30.00+)
 express.post("/fortnite/api/game/v2/profile/*/client/SetActiveArchetype", async (req, res) => {
     const profile = require(`./../profiles/${req.query.profileId || "athena"}.json`);
