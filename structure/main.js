@@ -223,23 +223,57 @@ express.get("/v1/item/*", async (req, res) => {
     res.send(lawinpfp);
 })
 
-express.get("/api/v1/events/Fortnite/download/*", async (req, res) => {
+express.get("/api/v1/events/Fortnite/download/:accountId", async (req, res) => {
+    const memory = functions.GetVersionInfo(req);
     const tournament = require("./../responses/Athena/Tournament/tournament.json");
+    tournament.player.accountId = req.params.accountId;
+
+    if (memory.season >= 33) {
+        // Dates must be more recent than 2018 for the Tournament to be displayed in the new UI.
+        const nowMinusOneDay = new Date(Date.now() - 86400000).toISOString().split('T')[0];
+
+        try {
+            const event = tournament.events[0];
+            const window = event.eventWindows[0];
+
+            event.beginTime = event.beginTime.replace(/^[^T]+/, nowMinusOneDay);
+            window.beginTime = window.beginTime.replace(/^[^T]+/, nowMinusOneDay);
+            window.countdownBeginTime = window.countdownBeginTime.replace(/^[^T]+/, nowMinusOneDay);
+            event.endTime = event.endTime.replace(/^[^T]+/, nowMinusOneDay);
+            window.endTime = window.endTime.replace(/^[^T]+/, nowMinusOneDay);
+        } catch (err) {}
+    }
     
     res.json(tournament)
 })
 
+
 express.get("/api/v1/events/Fortnite/:eventId/history/:accountId", async (req, res) => {
-    var history = require("./../responses/Athena/Tournament/history.json");
+    const history = require("./../responses/Athena/Tournament/history.json");
     history[0].scoreKey.eventId = req.params.eventId;
     history[0].teamId = req.params.accountId;
-    history[0].teamAccountIds.push(req.params.accountId);
+    history[0].teamAccountIds = [req.params.accountId];
     
     res.json(history)
 })
 
+express.get("/api/v1/players/Fortnite/tokens", async (req, res) => {
+    const teamAccountIds = (req.query.teamAccountIds || "").split(",");
+    const tournament = require("./../responses/Athena/Tournament/tournament.json");
+    var response = {"accounts": []}
+
+    for (const accountId of teamAccountIds) {
+        response.accounts.push({
+            "accountId": accountId,
+            "tokens": tournament.player.tokens
+        })
+    }
+    
+    res.json(response)
+})
+
 express.get("/api/v1/leaderboards/Fortnite/:eventId/:eventWindowId/:accountId", async (req, res) => {
-    var leaderboards = require("./../responses/Athena/Tournament/leaderboard.json");
+    const leaderboards = require("./../responses/Athena/Tournament/leaderboard.json");
     var heroNames = require("./../responses/Campaign/heroNames.json");
     heroNames = heroNames.sort(() => Math.random() - 0.5);
     heroNames.unshift(req.params.accountId);

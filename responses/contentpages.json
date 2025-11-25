@@ -1402,6 +1402,12 @@
     "_templateName": "blank"
   },
   "tournamentinformation": {
+    "conversion_config": {
+      "containerName": "tournament_info",
+      "_type": "Conversion Config",
+      "enableReferences": true,
+      "contentName": "tournaments"
+    },
     "tournament_info": {
       "tournaments": [
         {
@@ -1410,6 +1416,8 @@
           "background_text_color": "040E4C",
           "background_right_color": "012162",
           "poster_back_image": "https://fortnite-public-service-prod11.ol.epicgames.com/images/poster_back.png",
+          "square_poster_image": "https://fortnite-public-service-prod11.ol.epicgames.com/images/square_poster.png",
+          "tournament_view_background_image": "https://fortnite-public-service-prod11.ol.epicgames.com/images/tournament_view_background.png",
           "_type": "Tournament Display Info",
           "pin_score_requirement": 420,
           "pin_earned_text": {
