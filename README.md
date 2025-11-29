@@ -64,8 +64,8 @@
 - Radio Station in cars support*
 - Support a Creator with specific codes
 - Fully working daily challenges system (New daily challenge every day, replacing daily challenges, etc...)
-- Completed Location & Discovery quests (discovered map in game & in lobby) for Chapter 2 - 5 (Can change)
-- Seasonal Quests from Season 3 up to Season 37 (Can change)
+- Completed Named Locations & Landmarks discovery quests (discovered map in game & in lobby) for Chapter 2 - 6 (Can change)
+- Seasonal Quests from Season 3 up to Season 38 (Can change)
 - Purchasable battle pass from Season 2 to Season 10 (Can change)
 - Events Tab (Tournaments)
 - Discovery Tab
