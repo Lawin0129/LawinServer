@@ -75,7 +75,7 @@ function getItemShop() {
         for (var value in CatalogConfig) {
             if (Array.isArray(CatalogConfig[value].itemGrants)) {
                 if (CatalogConfig[value].itemGrants.length != 0) {
-                    const CatalogEntry = {"devName":"","offerId":"","fulfillmentIds":[],"dailyLimit":-1,"weeklyLimit":-1,"monthlyLimit":-1,"categories":[],"prices":[{"currencyType":"MtxCurrency","currencySubType":"","regularPrice":0,"finalPrice":0,"saleExpiration":"9999-12-02T01:12:00Z","basePrice":0}],"meta":{"NewDisplayAssetPath":"","SectionId":"Featured","LayoutId":"LawinServer.99","TileSize":"Small","AnalyticOfferGroupId":"LawinServer/Attitude8","FirstSeen":"2/2/2020"},"matchFilter":"","filterWeight":0,"appStoreId":[],"requirements":[],"offerType":"StaticPrice","giftInfo":{"bIsEnabled":false,"forcedGiftBoxTemplateId":"","purchaseRequirements":[],"giftRecordIds":[]},"refundable":true,"metaInfo":[{"key":"NewDisplayAssetPath","value":"="},{"key":"SectionId","value":"Featured"},{"key":"LayoutId","value":"LawinServer.99"},{"key":"TileSize","value":"Small"},{"key":"AnalyticOfferGroupId","value":"LawinServer/Attitude8"},{"key":"FirstSeen","value":"2/2/2020"}],"displayAssetPath":"","itemGrants":[],"sortPriority":0,"catalogGroupPriority":0};
+                    const CatalogEntry = {"devName":"","offerId":"","fulfillmentIds":[],"dailyLimit":-1,"weeklyLimit":-1,"monthlyLimit":-1,"categories":[],"prices":[{"currencyType":"MtxCurrency","currencySubType":"","regularPrice":0,"finalPrice":0,"saleExpiration":"9999-12-02T01:12:00Z","basePrice":0}],"meta":{"SectionId":"Featured","LayoutId":"LawinServer.99","TileSize":"Small","AnalyticOfferGroupId":"LawinServer/Attitude8","FirstSeen":"2/2/2020","inDate":"2018-04-30T00:00:00.000Z","outDate":"9999-12-31T23:59:59.999Z","color1":"#50C878","color2":"#1B5E20","textBackgroundColor":"#0D3D0D"},"matchFilter":"","filterWeight":0,"appStoreId":[],"requirements":[],"offerType":"StaticPrice","giftInfo":{"bIsEnabled":false,"forcedGiftBoxTemplateId":"","purchaseRequirements":[],"giftRecordIds":[]},"refundable":true,"metaInfo":[{"key":"SectionId","value":"Featured"},{"key":"LayoutId","value":"LawinServer.99"},{"key":"TileSize","value":"Small"},{"key":"AnalyticOfferGroupId","value":"LawinServer/Attitude8"},{"key":"FirstSeen","value":"2/2/2020"},{"key":"inDate","value":"2018-04-30T00:00:00.000Z"},{"key":"outDate","value":"9999-12-31T23:59:59.999Z"},{"key":"color1","value":"#50C878"},{"key":"color2","value":"#1B5E20"},{"key":"textBackgroundColor","value":"#0D3D0D"}],"displayAssetPath":"","itemGrants":[],"sortPriority":0,"catalogGroupPriority":0};
 
                     if (value.toLowerCase().startsWith("daily")) {
                         catalog.storefronts.forEach((storefront, i) => {
@@ -91,6 +91,8 @@ function getItemShop() {
 
                                             CatalogEntry.requirements.push({ "requirementType": "DenyOnItemOwnership", "requiredId": CatalogConfig[value].itemGrants[x], "minQuantity": 1 })
                                             CatalogEntry.itemGrants.push({ "templateId": CatalogConfig[value].itemGrants[x], "quantity": 1 });
+                                            CatalogEntry.meta.templateId = CatalogConfig[value].itemGrants[x];
+                                            CatalogEntry.metaInfo.push({ "key": "templateId", "value": CatalogConfig[value].itemGrants[x] })
                                         }
                                     }
                                 }
@@ -123,6 +125,8 @@ function getItemShop() {
 
                                             CatalogEntry.requirements.push({ "requirementType": "DenyOnItemOwnership", "requiredId": CatalogConfig[value].itemGrants[x], "minQuantity": 1 })
                                             CatalogEntry.itemGrants.push({ "templateId": CatalogConfig[value].itemGrants[x], "quantity": 1 });
+                                            CatalogEntry.meta.templateId = CatalogConfig[value].itemGrants[x];
+                                            CatalogEntry.metaInfo.push({ "key":"templateId", "value": CatalogConfig[value].itemGrants[x] })
                                         }
                                     }
                                 }
@@ -139,6 +143,15 @@ function getItemShop() {
                                 }
                             }
                         })
+                    }
+
+                    if (CatalogConfig[value].displayAssetPath.length != 0) {
+                        CatalogEntry.meta.displayAssetPath = CatalogConfig[value].displayAssetPath;
+                        CatalogEntry.metaInfo.push({"key":"displayAssetPath", "value": CatalogConfig[value].displayAssetPath})
+                    }
+                    if (CatalogConfig[value].NewDisplayAssetPath.length != 0) {
+                        CatalogEntry.meta.NewDisplayAssetPath = CatalogConfig[value].NewDisplayAssetPath;
+                        CatalogEntry.metaInfo.push({"key":"NewDisplayAssetPath", "value": CatalogConfig[value].NewDisplayAssetPath})
                     }
                 }
             }

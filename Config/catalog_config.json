@@ -1,35 +1,51 @@
 {
     "//": "BR Item Shop Config",
     "daily1": {
-        "itemGrants": [""],
-        "price": 0
+        "itemGrants": ["AthenaCharacter:CID_009_Athena_Commando_M"],
+        "displayAssetPath": "",
+        "NewDisplayAssetPath": "/OfferCatalog/NewDisplayAssets/S29/DAv2_CID_009_Athena_Commando_M.DAv2_CID_009_Athena_Commando_M",
+        "price": 800
     },
     "daily2": {
-        "itemGrants": [""],
-        "price": 0
+        "itemGrants": ["AthenaCharacter:CID_011_Athena_Commando_M"],
+        "displayAssetPath": "",
+        "NewDisplayAssetPath": "/OfferCatalog/NewDisplayAssets/S30/DAv2_Character_Commando011.DAv2_Character_Commando011",
+        "price": 800
     },
     "daily3": {
-        "itemGrants": [""],
-        "price": 0
+        "itemGrants": ["AthenaCharacter:CID_012_Athena_Commando_M"],
+        "displayAssetPath": "",
+        "NewDisplayAssetPath": "/OfferCatalog/NewDisplayAssets/DAv2_CID_012_Athena_Commando_M.DAv2_CID_012_Athena_Commando_M",
+        "price": 800
     },
     "daily4": {
-        "itemGrants": [""],
-        "price": 0
+        "itemGrants": ["AthenaCharacter:CID_013_Athena_Commando_F"],
+        "displayAssetPath": "",
+        "NewDisplayAssetPath": "/OfferCatalog/NewDisplayAssets/DAv2_CID_013_F_Renegade.DAv2_CID_013_F_Renegade",
+        "price": 800
     },
     "daily5": {
-        "itemGrants": [""],
-        "price": 0
+        "itemGrants": ["AthenaCharacter:CID_014_Athena_Commando_F"],
+        "displayAssetPath": "",
+        "NewDisplayAssetPath": "/OfferCatalog/NewDisplayAssets/DAv2_CID_014_F_Pathfinder.DAv2_CID_014_F_Pathfinder",
+        "price": 800
     },
     "daily6": {
-        "itemGrants": [""],
-        "price": 0
+        "itemGrants": ["AthenaCharacter:CID_015_Athena_Commando_F"],
+        "displayAssetPath": "",
+        "NewDisplayAssetPath": "/OfferCatalog/NewDisplayAssets/DAv2_CID_015_Commando_F.DAv2_CID_015_Commando_F",
+        "price": 800
     },
     "featured1": {
-        "itemGrants": [""],
-        "price": 0
+        "itemGrants": ["AthenaCharacter:CID_016_Athena_Commando_F"],
+        "displayAssetPath": "",
+        "NewDisplayAssetPath": "/OfferCatalog/NewDisplayAssets/DAv2_CID_016_Commando_F.DAv2_CID_016_Commando_F",
+        "price": 800
     },
     "featured2": {
-        "itemGrants": [""],
-        "price": 0
+        "itemGrants": ["AthenaCharacter:CID_010_Athena_Commando_M"],
+        "displayAssetPath": "",
+        "NewDisplayAssetPath": "/OfferCatalog/NewDisplayAssets/DAv2_CID_010_M.DAv2_CID_010_M",
+        "price": 800
     }
 }
