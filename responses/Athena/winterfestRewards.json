@@ -69,7 +69,7 @@
     "ERG.Node.A.1": ["AthenaCharacter:character_chubbyjingle"],
     "ERG.Node.A.2": ["AthenaCharacter:character_frostiron"],
     "ERG.Node.A.3": ["AthenaBackpack:backpack_polargander"],
-    "ERG.Node.A.4": ["AthenaDance:emoticon_s39winterfest"],
+    "ERG.Node.A.4": ["AthenaDance:emoticon_s39winterfest", "AthenaDance:spray_winterfest3"],
     "ERG.Node.A.5": ["AthenaBackpack:backpack_winkfin"],
     "ERG.Node.A.6": ["SparksSong:sid_placeholder_728"],
     "ERG.Node.A.7": ["AthenaPickaxe:pickaxe_hunsting"],
