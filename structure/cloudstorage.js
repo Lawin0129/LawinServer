@@ -58,7 +58,7 @@ express.get("/fortnite/api/cloudstorage/system/:file", async (req, res) => {
         let ParsedFile = fs.readFileSync(file);
 
         // Fixes kicks ingame on higher versions
-        if (req.params.file === "DefaultEngine.ini" && memory.season >= 24) {
+        if (req.params.file === "DefaultEngine.ini" && memory.season >= 23) {
             ParsedFile += "\n[ConsoleVariables]\nnet.AllowEncryption=0\n";
         }
 
