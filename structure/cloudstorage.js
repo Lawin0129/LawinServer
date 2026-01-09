@@ -62,6 +62,11 @@ express.get("/fortnite/api/cloudstorage/system/:file", async (req, res) => {
             ParsedFile += "\n[ConsoleVariables]\nnet.AllowEncryption=0\n";
         }
 
+        // This hotfix on versions > 19.30 would cause player to be unable to go back to BR from STW
+        if (req.params.file === "DefaultRuntimeOptions.ini" && 17.50 <= memory.build && memory.build <= 19.30) {
+            ParsedFile += "\nbLoadDirectlyIntoLobby=false\n";
+        }
+
         return res.status(200).send(ParsedFile).end();
     } else {
         res.status(200);
