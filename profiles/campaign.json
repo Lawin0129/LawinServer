@@ -66499,6 +66499,196 @@
         "item_seen": true
       },
       "quantity": 1
+    },
+    "fdabc770-907b-4fe8-921d-e0eebd32c529": {
+      "templateId": "Token:campaignresearchtoken",
+      "attributes": {
+        "items_for_schematic_creation_data": [
+          {
+            "itemId": "Trap:tid_wall_mechstructor_sr_t05",
+            "itemPerks": [
+              "Alteration:aid_ele_energy_intrin_t05",
+              "Alteration:aid_att_damage_t05",
+              "Alteration:aid_att_critdamage_t05",
+              "Alteration:aid_att_critchance_t05",
+              "Alteration:aid_att_reloadspeed_trap_t05",
+              "Alteration:aid_att_maxdurability_trap_t05"
+            ],
+            "itemLevel": 60
+          },
+          {
+            "itemId": "Weapon:wid_shotgun_tactical_founders_sr_crystal_t05",
+            "itemPerks": [
+              "Alteration:aid_att_magazinesize_t05",
+              "Alteration:aid_att_critdamage_t05",
+              "Alteration:aid_ele_energy_t05",
+              "Alteration:aid_att_critchance_t05",
+              "Alteration:aid_att_critdamage_t05",
+              "Alteration:aid_g_weapon_onreload_damagestack"
+            ],
+            "itemLevel": 60
+          },
+          {
+            "itemId": "Weapon:wid_pistol_stormking_sr_crystal_t05",
+            "itemPerks": [
+              "Alteration:aid_g_stormkingpistolhomingprojectiles",
+              "Alteration:aid_att_critdamage_t05",
+              "Alteration:aid_att_critchance_t05",
+              "Alteration:aid_ele_energy_t05",
+              "Alteration:aid_att_critdamage_t05",
+              "Alteration:aid_att_damage_t05"
+            ],
+            "itemLevel": 60
+          },
+          {
+            "itemId": "Weapon:wid_pistol_rapid_founders_vr_crystal_t05",
+            "itemPerks": [
+              "Alteration:aid_att_critchance_t05",
+              "Alteration:aid_att_damage_t05",
+              "Alteration:aid_ele_energy_t05",
+              "Alteration:aid_att_critdamage_t05",
+              "Alteration:aid_att_reloadspeed_ranged_t05",
+              "Alteration:aid_g_ranged_chainbullet"
+            ],
+            "itemLevel": 60
+          },
+          {
+            "itemId": "Weapon:wid_pistol_autoheavy_founders_sr_crystal_t05",
+            "itemPerks": [
+              "Alteration:aid_att_critchance_t05",
+              "Alteration:aid_att_magazinesize_t05",
+              "Alteration:aid_ele_energy_t05",
+              "Alteration:aid_att_critdamage_t05",
+              "Alteration:aid_att_critdamage_t05",
+              "Alteration:aid_g_weapon_onreload_damagebuff"
+            ],
+            "itemLevel": 60
+          },
+          {
+            "itemId": "Weapon:wid_explosive_stormking_sr_ore_t05",
+            "itemPerks": [
+              "Alteration:aid_g_stormkinglaunchercharge",
+              "Alteration:aid_att_critdamage_t05",
+              "Alteration:aid_att_critdamage_t05",
+              "Alteration:aid_att_damage_physical_t05",
+              "Alteration:aid_att_critchance_t05",
+              "Alteration:aid_att_damage_t05"
+            ],
+            "itemLevel": 60
+          },
+          {
+            "itemId": "Weapon:wid_assault_stormking_sr_crystal_t05",
+            "itemPerks": [
+              "Alteration:aid_g_onhit_stack_stormkingassault",
+              "Alteration:aid_att_critdamage_t05",
+              "Alteration:aid_att_critchance_t05",
+              "Alteration:aid_ele_energy_t05",
+              "Alteration:aid_att_critdamage_t05",
+              "Alteration:aid_att_firerate_ranged_t05"
+            ],
+            "itemLevel": 60
+          },
+          {
+            "itemId": "Weapon:wid_assault_shockwave_sr_crystal_t05",
+            "itemPerks": [
+              "Alteration:aid_ele_energy_t05",
+              "Alteration:aid_att_firerate_ranged_t05",
+              "Alteration:aid_att_damage_t05",
+              "Alteration:aid_att_critchance_t05",
+              "Alteration:aid_att_critdamage_t05",
+              "Alteration:aid_g_affliction_v2"
+            ],
+            "itemLevel": 60
+          },
+          {
+            "itemId": "Weapon:wid_assault_lmg_drum_founders_sr_crystal_t05",
+            "itemPerks": [
+              "Alteration:aid_att_magazinesize_t05",
+              "Alteration:aid_att_reloadspeed_ranged_t05",
+              "Alteration:aid_ele_energy_t05",
+              "Alteration:aid_att_critchance_t05",
+              "Alteration:aid_att_critdamage_t05",
+              "Alteration:aid_g_weapon_onfire_damagestack"
+            ],
+            "itemLevel": 60
+          },
+          {
+            "itemId": "Weapon:wid_assault_auto_founders_sr_crystal_t05",
+            "itemPerks": [
+              "Alteration:aid_att_magazinesize_t05",
+              "Alteration:aid_att_critdamage_t05",
+              "Alteration:aid_ele_water_t05",
+              "Alteration:aid_att_critdamage_t05",
+              "Alteration:aid_att_critdamage_t05",
+              "Alteration:aid_g_weapon_onreload_explode"
+            ],
+            "itemLevel": 60
+          },
+          {
+            "itemId": "Weapon:wid_assault_autodrum_teddy_sr_crystal_t05",
+            "itemPerks": [
+              "Alteration:aid_att_firerate_ranged_t05",
+              "Alteration:aid_att_magazinesize_t05",
+              "Alteration:aid_ele_energy_t05",
+              "Alteration:aid_att_critchance_t05",
+              "Alteration:aid_att_critdamage_t05",
+              "Alteration:aid_g_affliction_v2"
+            ],
+            "itemLevel": 60
+          },
+          {
+            "itemId": "Weapon:wid_piercing_junkyard_sr_crystal_t05",
+            "itemPerks": [
+              "Alteration:aid_att_heavyattackstaminacost_t05",
+              "Alteration:aid_att_damageresistance_t05",
+              "Alteration:aid_att_damage_physical_t05",
+              "Alteration:aid_att_damageresistance_t05",
+              "Alteration:aid_att_heavyattackstaminacost_t05",
+              "Alteration:aid_g_onmeleehit_stackbuff_armor"
+            ],
+            "itemLevel": 60
+          },
+          {
+            "itemId": "Weapon:wid_edged_sword_stormking_sr_crystal_t05",
+            "itemPerks": [
+              "Alteration:aid_g_onhit_chargestormkingsword",
+              "Alteration:aid_att_critdamage_t05",
+              "Alteration:aid_att_critchance_t05",
+              "Alteration:aid_ele_energy_t05",
+              "Alteration:aid_att_firerate_melee_t05",
+              "Alteration:aid_att_critdamage_t05"
+            ],
+            "itemLevel": 60
+          },
+          {
+            "itemId": "Weapon:wid_edged_sword_medium_laser_founders_sr_crystal_t05",
+            "itemPerks": [
+              "Alteration:aid_ele_fire_intrin_t05",
+              "Alteration:aid_att_critdamage_t05",
+              "Alteration:aid_att_critdamage_t05",
+              "Alteration:aid_att_critchance_t05",
+              "Alteration:aid_att_damage_t05",
+              "Alteration:aid_g_weapon_onhit_energynova"
+            ],
+            "itemLevel": 60
+          },
+          {
+            "itemId": "Weapon:wid_blunt_hammer_stormking_sr_crystal_t05",
+            "itemPerks": [
+              "Alteration:aid_g_onhit_chargestormkinghammer",
+              "Alteration:aid_att_critdamage_t05",
+              "Alteration:aid_att_critdamage_t05",
+              "Alteration:aid_ele_energy_t05",
+              "Alteration:aid_att_firerate_melee_t05",
+              "Alteration:aid_att_critchance_t05"
+            ],
+            "itemLevel": 60
+          }
+        ],
+        "level": 1,
+        "num_awarded_items_for_schematic_creation": 1
+      },
+      "quantity": 1
     }
   },
   "stats": {

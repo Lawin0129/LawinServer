@@ -2673,6 +2673,105 @@ express.post("/fortnite/api/game/v2/profile/*/client/TransmogItem", async (req, 
     res.end();
 });
 
+// Research a weapon from mission into a schematic STW
+express.post("/fortnite/api/game/v2/profile/*/client/RedeemResearchToken", async (req, res) => {
+    const memory = functions.GetVersionInfo(req);
+
+    const profile = require(`./../profiles/${req.query.profileId || "campaign"}.json`);
+
+    // do not change any of these or you will end up breaking it
+    var ApplyProfileChanges = [];
+    var BaseRevision = profile.rvn || 0;
+    var QueryRevision = req.query.rvn || -1;
+    var StatChanged = false;
+
+    if (req.body.index !== undefined) {
+        var ResearchTokenID;
+        const ItemID = functions.MakeID();
+
+        for (var key in profile.items) {
+            if (profile.items[key].templateId.toLowerCase() == "token:campaignresearchtoken") {
+                ResearchTokenID = key;
+                break;
+            }
+        }
+
+        if (ResearchTokenID && profile.items[ResearchTokenID].attributes.hasOwnProperty("items_for_schematic_creation_data")) {
+            var TokenItems = profile.items[ResearchTokenID].attributes.items_for_schematic_creation_data;
+            var SelectedItem = TokenItems[req.body.index];
+            const idToTierMap = {"t01": "i", "t02": "ii", "t03": "iii", "t04": "iv", "t05": "v", "t06": "vi"}
+            const idToRarityMap = {"c": "Common", "uc": "Uncommon", "r": "Rare", "vr": "Epic", "sr": "Legendary", "ur": "Mythic"}
+
+            SelectedItem.itemId = SelectedItem.itemId.replace(/Weapon:wid_/i, "Schematic:sid_").replace(/Trap:tid_/i, "Schematic:sid_");
+            var templateIdSplit = SelectedItem.itemId.toLowerCase().split("_");
+
+            var Item = {
+                "templateId": SelectedItem.itemId,
+                "attributes": {
+                    "starting_level": SelectedItem.itemLevel,
+                    "level": SelectedItem.itemLevel,
+                    "item_seen": false,
+                    "starting_tier": idToTierMap[templateIdSplit[templateIdSplit.length - 1]],
+                    "alterations": SelectedItem.itemPerks,
+                    "starting_rarity": idToRarityMap[templateIdSplit.find(part => idToRarityMap.hasOwnProperty(part))]
+                },
+                "quantity": 1
+            }
+
+            // Fixes for items that have a slightly different WID from the SID
+            // Lightning Pistol
+            if (Item.templateId.toLowerCase().startsWith("schematic:sid_pistol_auto_vacuumtube_")) {
+                Item.templateId = `Schematic:SID_Pistol_VacuumTube_Auto_${Item.templateId.substring(37)}`;
+            }
+            // Snowball Launcher
+            if (Item.templateId.toLowerCase().startsWith("schematic:sid_launcher_wintergrenade_")) {
+                Item.templateId = `Schematic:SID_Launcher_Grenade_Winter_${Item.templateId.substring(37)}`;
+            }
+
+            profile.items[ItemID] = Item;
+            ApplyProfileChanges.push({
+                "changeType": "itemAdded",
+                "itemId": ItemID,
+                "item": profile.items[ItemID]
+            });
+
+            delete profile.items[ResearchTokenID];
+            ApplyProfileChanges.push({
+                "changeType": "itemRemoved",
+                "itemId": ResearchTokenID
+            })
+
+            StatChanged = true;
+        }
+    }
+
+    if (StatChanged == true) {
+        profile.rvn += 1;
+        profile.commandRevision += 1;
+
+        fs.writeFileSync(`./profiles/${req.query.profileId || "campaign"}.json`, JSON.stringify(profile, null, 2));
+    }
+
+    // this doesn't work properly on version v12.20 and above but whatever
+    if (QueryRevision != BaseRevision) {
+        ApplyProfileChanges = [{
+            "changeType": "fullProfileUpdate",
+            "profile": profile
+        }];
+    }
+
+    res.json({
+        "profileRevision": profile.rvn || 0,
+        "profileId": req.query.profileId || "campaign",
+        "profileChangesBaseRevision": BaseRevision,
+        "profileChanges": ApplyProfileChanges,
+        "profileCommandRevision": profile.commandRevision || 0,
+        "serverTime": new Date().toISOString(),
+        "responseVersion": 1
+    })
+    res.end();
+});
+
 // Craft item STW (Guns, melees and traps only)
 express.post("/fortnite/api/game/v2/profile/*/client/CraftWorldItem", async (req, res) => {
     const memory = functions.GetVersionInfo(req);
