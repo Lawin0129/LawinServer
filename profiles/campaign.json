@@ -58236,6 +58236,17 @@
       },
       "quantity": 1000000000
     },
+    "AccountResource:PeopleXP": {
+      "templateId": "AccountResource:PeopleXP",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1000000000
+    },
     "AccountResource:PeopleResource": {
       "templateId": "AccountResource:PeopleResource",
       "attributes": {
