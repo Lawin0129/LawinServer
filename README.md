@@ -48,6 +48,7 @@
 - Support a Creator with specific codes
 - Fully working daily challenges system (New daily challenge every day, replacing daily challenges, etc...)
 - Item transformation
+- Item to Schematic Research
 - Event Quests from Season 2 up to Season X & Season 24 (Can change)
 
 ### Battle Royale:
@@ -65,7 +66,7 @@
 - Support a Creator with specific codes
 - Fully working daily challenges system (New daily challenge every day, replacing daily challenges, etc...)
 - Completed Named Locations & Landmarks discovery quests (discovered map in game & in lobby) for Chapter 2 - 6 (Can change)
-- Seasonal Quests from Season 3 up to Season 38 (Can change)
+- Seasonal Quests from Season 3 up to Season 39 (Can change)
 - Purchasable battle pass from Season 2 to Season 10 (Can change)
 - Events Tab (Tournaments)
 - Discovery Tab
