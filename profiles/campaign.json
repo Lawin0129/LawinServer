@@ -58533,6 +58533,17 @@
       },
       "quantity": 1000000000
     },
+    "AccountResource:Reagent_Schematic": {
+      "templateId": "AccountResource:Reagent_Schematic",
+      "attributes": {
+        "max_level_bonus": 0,
+        "level": 1,
+        "item_seen": true,
+        "xp": 0,
+        "favorite": false
+      },
+      "quantity": 1000000000
+    },
     "AccountResource:SchematicXP": {
       "templateId": "AccountResource:SchematicXP",
       "attributes": {
