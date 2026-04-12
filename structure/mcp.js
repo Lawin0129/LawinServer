@@ -4775,6 +4775,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/StartExpedition", async (re
     const profile = require(`./../profiles/${req.query.profileId || "campaign"}.json`);
     const memory = functions.GetVersionInfo(req);
     var expeditionData = require("./../responses/Campaign/expeditionData.json");
+    var itemRatingData = require("./../responses/Campaign/itemRatingData.json");
 
     // do not change any of these or you will end up breaking it
     var ApplyProfileChanges = [];
@@ -4786,11 +4787,10 @@ express.post("/fortnite/api/game/v2/profile/*/client/StartExpedition", async (re
 
     if (req.body.expeditionId && req.body.squadId && req.body.itemIds && req.body.slotIndices) {
         var ExpeditionLevel = profile.items[req.body.expeditionId].attributes.expedition_max_target_power;
-        var HeroLevels = expeditionData.heroLevels;
         if (memory.build < 13.20) { // The levels got changed a bit in v13.20+
-            HeroLevels = HeroLevels.old;
+            itemRatingData = itemRatingData.old;
         } else {
-            HeroLevels = HeroLevels.new;
+            itemRatingData = itemRatingData.new;
         }
 
         // Make a list with expedition heroes sorted by their power level
@@ -4799,18 +4799,23 @@ express.post("/fortnite/api/game/v2/profile/*/client/StartExpedition", async (re
             var hero = req.body.itemIds[i];
             for (var item in profile.items) {
                 if (hero == item) {
-                    var splitTemplateId = profile.items[item].templateId.split("_")
-                    var rarity = splitTemplateId.slice(-2, -1)[0].toLowerCase();
-                    var tier = splitTemplateId.slice(-1)[0].toLowerCase();
+                    var splitTemplateId = profile.items[item].templateId.split("_");
                     var level = profile.items[item].attributes.level;
+                    var ratingKey = "_" + splitTemplateId.slice(-2).join("_").toUpperCase();
+                    
+                    var powerLevel = 0;
+                    if (itemRatingData.hasOwnProperty(ratingKey) && itemRatingData[ratingKey].hasOwnProperty(level)) {
+                        powerLevel = itemRatingData[ratingKey][level];
+                    }
+
                     var Hero = {
                         "itemGuid": hero,
                         "templateId": profile.items[item].templateId,
                         "class": splitTemplateId[1].toLowerCase(),
-                        "rarity": rarity,
-                        "tier": tier,
+                        "rarity": splitTemplateId.slice(-2, -1)[0].toLowerCase(),
+                        "tier": splitTemplateId.slice(-1)[0].toLowerCase(),
                         "level": level,
-                        "powerLevel": HeroLevels[rarity][tier][level],
+                        "powerLevel": powerLevel,
                         "bBoostedByCriteria": false
                     }
                     SortedHeroes.push(Hero)
