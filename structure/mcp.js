@@ -4816,7 +4816,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/StartExpedition", async (re
                         "tier": splitTemplateId.slice(-1)[0].toLowerCase(),
                         "level": level,
                         "powerLevel": powerLevel,
-                        "bBoostedByCriteria": false
+                        "contributedLevel": powerLevel
                     }
                     SortedHeroes.push(Hero)
                 }
@@ -4842,9 +4842,8 @@ express.post("/fortnite/api/game/v2/profile/*/client/StartExpedition", async (re
                         }
                     }
 
-                    if (bIsMatchingHero == true && SortedHeroes[x].bBoostedByCriteria == false) {
-                        SortedHeroes[x].powerLevel = SortedHeroes[x].powerLevel * expeditionData.criteriaRequirements[criterion].ModValue;
-                        SortedHeroes[x].bBoostedByCriteria = true;
+                    if (bIsMatchingHero == true) {
+                        SortedHeroes[x].contributedLevel += SortedHeroes[x].powerLevel * (expeditionData.criteriaRequirements[criterion].ModValue - 1);
                         break;
                     }
                 }
@@ -4854,7 +4853,7 @@ express.post("/fortnite/api/game/v2/profile/*/client/StartExpedition", async (re
         // Calculate the expedition success chance
         var TotalPowerLevel = 0;
         for (var i = 0; i < SortedHeroes.length; i++) {
-            TotalPowerLevel += SortedHeroes[i].powerLevel;
+            TotalPowerLevel += SortedHeroes[i].contributedLevel;
         }
         var ExpeditionSuccessChance = TotalPowerLevel / ExpeditionLevel;
         if (ExpeditionSuccessChance > 1) {
