@@ -2049,6 +2049,7 @@ express.get("/fortnite/api/calendar/v1/timeline", async (req, res) => {
             "EventFlag.Spring2019",
             "EventFlag.Spring2019.Phase1",
             "EventFlag.Spring2019.Phase2",
+            "EventFlag.Spring2026",
             "EventFlag.Starlight",
             "EventFlag.StormKing.Landmark",
             "EventFlag.STWHuntMonster",
