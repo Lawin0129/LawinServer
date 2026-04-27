@@ -3578,138 +3578,84 @@ express.post("/fortnite/api/game/v2/profile/*/client/AssignHeroToLoadout", async
     var StatChanged = false;
 
     if (req.body.loadoutId && req.body.slotName) {
-        switch (req.body.slotName) {
-            case "CommanderSlot":
-                if (req.body.heroId.toLowerCase() == profile.items[req.body.loadoutId].attributes.crew_members.followerslot1.toLowerCase()) {
-                    profile.items[req.body.loadoutId].attributes.crew_members.followerslot1 = "";
-                }
-                if (req.body.heroId.toLowerCase() == profile.items[req.body.loadoutId].attributes.crew_members.followerslot2.toLowerCase()) {
-                    profile.items[req.body.loadoutId].attributes.crew_members.followerslot2 = "";
-                }
-                if (req.body.heroId.toLowerCase() == profile.items[req.body.loadoutId].attributes.crew_members.followerslot3.toLowerCase()) {
-                    profile.items[req.body.loadoutId].attributes.crew_members.followerslot3 = "";
-                }
-                if (req.body.heroId.toLowerCase() == profile.items[req.body.loadoutId].attributes.crew_members.followerslot4.toLowerCase()) {
-                    profile.items[req.body.loadoutId].attributes.crew_members.followerslot4 = "";
-                }
-                if (req.body.heroId.toLowerCase() == profile.items[req.body.loadoutId].attributes.crew_members.followerslot5.toLowerCase()) {
-                    profile.items[req.body.loadoutId].attributes.crew_members.followerslot5 = "";
-                }
+        var TargetSlot = req.body.slotName.toLowerCase();
+        var HeroIDLower = req.body.heroId.toLowerCase();
+        var ValidSlots = ["commanderslot", "followerslot1", "followerslot2", "followerslot3", "followerslot4", "followerslot5"];
 
-                profile.items[req.body.loadoutId].attributes.crew_members.commanderslot = req.body.heroId || "";
+        if (ValidSlots.includes(TargetSlot)) {
+            var CrewMembers = profile.items[req.body.loadoutId].attributes.crew_members;
 
-                StatChanged = true;
-            break;
+            for (var slot of ValidSlots) {
+                if (CrewMembers[slot] && CrewMembers[slot].toLowerCase() == HeroIDLower) {
+                    CrewMembers[slot] = "";
+                }
+            }
 
-            case "FollowerSlot1":
-                if (req.body.heroId.toLowerCase() == profile.items[req.body.loadoutId].attributes.crew_members.commanderslot.toLowerCase()) {
-                    profile.items[req.body.loadoutId].attributes.crew_members.commanderslot = "";
-                }
-                if (req.body.heroId.toLowerCase() == profile.items[req.body.loadoutId].attributes.crew_members.followerslot2.toLowerCase()) {
-                    profile.items[req.body.loadoutId].attributes.crew_members.followerslot2 = "";
-                }
-                if (req.body.heroId.toLowerCase() == profile.items[req.body.loadoutId].attributes.crew_members.followerslot3.toLowerCase()) {
-                    profile.items[req.body.loadoutId].attributes.crew_members.followerslot3 = "";
-                }
-                if (req.body.heroId.toLowerCase() == profile.items[req.body.loadoutId].attributes.crew_members.followerslot4.toLowerCase()) {
-                    profile.items[req.body.loadoutId].attributes.crew_members.followerslot4 = "";
-                }
-                if (req.body.heroId.toLowerCase() == profile.items[req.body.loadoutId].attributes.crew_members.followerslot5.toLowerCase()) {
-                    profile.items[req.body.loadoutId].attributes.crew_members.followerslot5 = "";
-                }
+            CrewMembers[TargetSlot] = req.body.heroId;
+            StatChanged = true;
+        }
+    }
 
-                profile.items[req.body.loadoutId].attributes.crew_members.followerslot1 = req.body.heroId || "";
+    if (StatChanged == true) {
+        profile.rvn += 1;
+        profile.commandRevision += 1;
 
-                StatChanged = true;
-            break;
+        ApplyProfileChanges.push({
+            "changeType": "itemAttrChanged",
+            "itemId": req.body.loadoutId,
+            "attributeName": "crew_members",
+            "attributeValue": profile.items[req.body.loadoutId].attributes.crew_members
+        })
 
-            case "FollowerSlot2":
-                if (req.body.heroId.toLowerCase() == profile.items[req.body.loadoutId].attributes.crew_members.followerslot1.toLowerCase()) {
-                    profile.items[req.body.loadoutId].attributes.crew_members.followerslot1 = "";
-                }
-                if (req.body.heroId.toLowerCase() == profile.items[req.body.loadoutId].attributes.crew_members.commanderslot.toLowerCase()) {
-                    profile.items[req.body.loadoutId].attributes.crew_members.commanderslot = "";
-                }
-                if (req.body.heroId.toLowerCase() == profile.items[req.body.loadoutId].attributes.crew_members.followerslot3.toLowerCase()) {
-                    profile.items[req.body.loadoutId].attributes.crew_members.followerslot3 = "";
-                }
-                if (req.body.heroId.toLowerCase() == profile.items[req.body.loadoutId].attributes.crew_members.followerslot4.toLowerCase()) {
-                    profile.items[req.body.loadoutId].attributes.crew_members.followerslot4 = "";
-                }
-                if (req.body.heroId.toLowerCase() == profile.items[req.body.loadoutId].attributes.crew_members.followerslot5.toLowerCase()) {
-                    profile.items[req.body.loadoutId].attributes.crew_members.followerslot5 = "";
-                }
+        fs.writeFileSync(`./profiles/${req.query.profileId || "campaign"}.json`, JSON.stringify(profile, null, 2));
+    }
 
-                profile.items[req.body.loadoutId].attributes.crew_members.followerslot2 = req.body.heroId || "";
+    // this doesn't work properly on version v12.20 and above but whatever
+    if (QueryRevision != BaseRevision) {
+        ApplyProfileChanges = [{
+            "changeType": "fullProfileUpdate",
+            "profile": profile
+        }];
+    }
 
-                StatChanged = true;
-            break;
+    res.json({
+        "profileRevision": profile.rvn || 0,
+        "profileId": req.query.profileId || "campaign",
+        "profileChangesBaseRevision": BaseRevision,
+        "profileChanges": ApplyProfileChanges,
+        "profileCommandRevision": profile.commandRevision || 0,
+        "serverTime": new Date().toISOString(),
+        "responseVersion": 1
+    })
+    res.end();
+});
 
-            case "FollowerSlot3":
-                if (req.body.heroId.toLowerCase() == profile.items[req.body.loadoutId].attributes.crew_members.followerslot1.toLowerCase()) {
-                    profile.items[req.body.loadoutId].attributes.crew_members.followerslot1 = "";
-                }
-                if (req.body.heroId.toLowerCase() == profile.items[req.body.loadoutId].attributes.crew_members.followerslot2.toLowerCase()) {
-                    profile.items[req.body.loadoutId].attributes.crew_members.followerslot2 = "";
-                }
-                if (req.body.heroId.toLowerCase() == profile.items[req.body.loadoutId].attributes.crew_members.commanderslot.toLowerCase()) {
-                    profile.items[req.body.loadoutId].attributes.crew_members.commanderslot = "";
-                }
-                if (req.body.heroId.toLowerCase() == profile.items[req.body.loadoutId].attributes.crew_members.followerslot4.toLowerCase()) {
-                    profile.items[req.body.loadoutId].attributes.crew_members.followerslot4 = "";
-                }
-                if (req.body.heroId.toLowerCase() == profile.items[req.body.loadoutId].attributes.crew_members.followerslot5.toLowerCase()) {
-                    profile.items[req.body.loadoutId].attributes.crew_members.followerslot5 = "";
-                }
+// Defender equipping STW
+express.post("/fortnite/api/game/v2/profile/*/client/AssignDefenderToLoadout", async (req, res) => {
+    const profile = require(`./../profiles/${req.query.profileId || "campaign"}.json`);
 
-                profile.items[req.body.loadoutId].attributes.crew_members.followerslot3 = req.body.heroId || "";
+    // do not change any of these or you will end up breaking it
+    var ApplyProfileChanges = [];
+    var BaseRevision = profile.rvn || 0;
+    var QueryRevision = req.query.rvn || -1;
+    var StatChanged = false;
 
-                StatChanged = true;
-            break;
+    if (req.body.loadoutId && req.body.slotName) {
+        var TargetSlot = req.body.slotName.toLowerCase();
+        var DefenderIDLower = req.body.defenderId.toLowerCase();
+        var ValidSlots = ["defenderslot1", "defenderslot2", "defenderslot3"];
 
-            case "FollowerSlot4":
-                if (req.body.heroId.toLowerCase() == profile.items[req.body.loadoutId].attributes.crew_members.followerslot1.toLowerCase()) {
-                    profile.items[req.body.loadoutId].attributes.crew_members.followerslot1 = "";
-                }
-                if (req.body.heroId.toLowerCase() == profile.items[req.body.loadoutId].attributes.crew_members.followerslot2.toLowerCase()) {
-                    profile.items[req.body.loadoutId].attributes.crew_members.followerslot2 = "";
-                }
-                if (req.body.heroId.toLowerCase() == profile.items[req.body.loadoutId].attributes.crew_members.followerslot3.toLowerCase()) {
-                    profile.items[req.body.loadoutId].attributes.crew_members.followerslot3 = "";
-                }
-                if (req.body.heroId.toLowerCase() == profile.items[req.body.loadoutId].attributes.crew_members.commanderslot.toLowerCase()) {
-                    profile.items[req.body.loadoutId].attributes.crew_members.commanderslot = "";
-                }
-                if (req.body.heroId.toLowerCase() == profile.items[req.body.loadoutId].attributes.crew_members.followerslot5.toLowerCase()) {
-                    profile.items[req.body.loadoutId].attributes.crew_members.followerslot5 = "";
-                }
+        if (ValidSlots.includes(TargetSlot)) {
+            var CrewMembers = profile.items[req.body.loadoutId].attributes.crew_members;
 
-                profile.items[req.body.loadoutId].attributes.crew_members.followerslot4 = req.body.heroId || "";
+            for (var slot of ValidSlots) {
+                if (CrewMembers[slot] && CrewMembers[slot].toLowerCase() == DefenderIDLower) {
+                    CrewMembers[slot] = "";
+                }
+            }
 
-                StatChanged = true;
-            break;
-
-            case "FollowerSlot5":
-                if (req.body.heroId.toLowerCase() == profile.items[req.body.loadoutId].attributes.crew_members.followerslot1.toLowerCase()) {
-                    profile.items[req.body.loadoutId].attributes.crew_members.followerslot1 = "";
-                }
-                if (req.body.heroId.toLowerCase() == profile.items[req.body.loadoutId].attributes.crew_members.followerslot2.toLowerCase()) {
-                    profile.items[req.body.loadoutId].attributes.crew_members.followerslot2 = "";
-                }
-                if (req.body.heroId.toLowerCase() == profile.items[req.body.loadoutId].attributes.crew_members.followerslot3.toLowerCase()) {
-                    profile.items[req.body.loadoutId].attributes.crew_members.followerslot3 = "";
-                }
-                if (req.body.heroId.toLowerCase() == profile.items[req.body.loadoutId].attributes.crew_members.followerslot4.toLowerCase()) {
-                    profile.items[req.body.loadoutId].attributes.crew_members.followerslot4 = "";
-                }
-                if (req.body.heroId.toLowerCase() == profile.items[req.body.loadoutId].attributes.crew_members.commanderslot.toLowerCase()) {
-                    profile.items[req.body.loadoutId].attributes.crew_members.commanderslot = "";
-                }
-
-                profile.items[req.body.loadoutId].attributes.crew_members.followerslot5 = req.body.heroId || "";
-
-                StatChanged = true;
-            break;
+            CrewMembers[TargetSlot] = req.body.defenderId;
+            StatChanged = true;
         }
     }
 
@@ -7705,6 +7651,10 @@ express.post("/fortnite/api/game/v2/profile/*/client/MarkItemSeen", async (req, 
 
     if (req.body.itemIds) {
         for (var i in req.body.itemIds) {
+            if (!req.body.itemIds[i]) {
+                continue;
+            }
+
             profile.items[req.body.itemIds[i]].attributes.item_seen = true;
 
             ApplyProfileChanges.push({
