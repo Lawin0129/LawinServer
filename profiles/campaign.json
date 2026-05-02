@@ -1691,6 +1691,32 @@
       },
       "quantity": 1
     },
+    "08b8a040-1c3f-4e53-b49a-3578577f0ed3": {
+      "templateId": "Quest:stonewoodquest_tutorial_gadgets",
+      "attributes": {
+        "creation_time": "2026-04-16T08:09:59.583Z",
+        "completion_gadgetstutorial_guard_gadgetsgrid": 1,
+        "completion_gadgetstutorial_guard_addgadget": 1,
+        "completion_gadgetstutorial_highlight_gadgets": 1,
+        "completion_gadgetstutorial_guard_introgadgets": 1,
+        "level": -1,
+        "completion_gadgetstutorial_guard_upgrades": 1,
+        "completion_gadgetstutorial_highlight_changehero": 1,
+        "completion_gadgetstutorial_highlight_addgadget": 1,
+        "completion_gadgetstutorial_guard_availablegadgets": 1,
+        "completion_gadgetstutorial_intro_gadgets": 1,
+        "quest_state": "Claimed",
+        "last_state_change_time": "2026-04-16T08:09:59.587Z",
+        "completion_gadgetstutorial_guard_changehero": 1,
+        "completion_gadgetstutorial_highlight_availablegadgets": 1,
+        "completion_gadgetstutorial_highlight_upgrades": 1,
+        "quest_rarity": "uncommon",
+        "completion_gadgetstutorial_guard_kevin": 1,
+        "completion_gadgetstutorial_guard_rayintro": 1,
+        "completion_gadgetstutorial_guard_conclusion": 1
+      },
+      "quantity": 1
+    },
     "641a351d-de17-4bc3-bf8f-07b1163c59b8": {
       "templateId": "Quest:challenge_toxictreasures_11",
       "attributes": {
