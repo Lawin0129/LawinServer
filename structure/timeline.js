@@ -1954,6 +1954,59 @@ express.get("/fortnite/api/calendar/v1/timeline", async (req, res) => {
                 "activeUntil": "9999-01-01T00:00:00.000Z",
                 "activeSince": "2020-01-01T00:00:00.000Z"
             })
+            break;
+        case 40:
+            activeEvents.push(
+            {
+                "eventType": "EventFlag.Event_S40_BR_CommunityDay_Quests",
+                "activeUntil": "9999-01-01T00:00:00.000Z",
+                "activeSince": "2020-01-01T00:00:00.000Z"
+            },
+            {
+                "eventType": "EventFlag.Event_S40_BR_Elites_Quests",
+                "activeUntil": "9999-01-01T00:00:00.000Z",
+                "activeSince": "2020-01-01T00:00:00.000Z"
+            },
+            {
+                "eventType": "EventFlag.Event_S40_LlamaRama",
+                "activeUntil": "9999-01-01T00:00:00.000Z",
+                "activeSince": "2020-01-01T00:00:00.000Z"
+            },
+            {
+                "eventType": "EventFlag.Event_S40_SpearShawl",
+                "activeUntil": "9999-01-01T00:00:00.000Z",
+                "activeSince": "2020-01-01T00:00:00.000Z"
+            },
+            {
+                "eventType": "EventFlag.Event_S40_STWPromo",
+                "activeUntil": "9999-01-01T00:00:00.000Z",
+                "activeSince": "2020-01-01T00:00:00.000Z"
+            },
+            {
+                "eventType": "EventFlag.Event_HulkShip_General",
+                "activeUntil": "9999-01-01T00:00:00.000Z",
+                "activeSince": "2020-01-01T00:00:00.000Z"
+            },
+            {
+                "eventType": "EventFlag.Event_HulkShip_Island_01",
+                "activeUntil": "9999-01-01T00:00:00.000Z",
+                "activeSince": "2020-01-01T00:00:00.000Z"
+            },
+            {
+                "eventType": "EventFlag.Event_HulkShip_Island_02",
+                "activeUntil": "9999-01-01T00:00:00.000Z",
+                "activeSince": "2020-01-01T00:00:00.000Z"
+            },
+            {
+                "eventType": "EventFlag.Event_HulkShip_Island_03",
+                "activeUntil": "9999-01-01T00:00:00.000Z",
+                "activeSince": "2020-01-01T00:00:00.000Z"
+            },
+            {
+                "eventType": "EventFlag.Event_HulkShip_Shiba",
+                "activeUntil": "9999-01-01T00:00:00.000Z",
+                "activeSince": "2020-01-01T00:00:00.000Z"
+            })
     }
 
     if (24.3 <= memory.build && memory.build <= 25) {
