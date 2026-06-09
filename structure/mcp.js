@@ -3693,6 +3693,55 @@ express.post("/fortnite/api/game/v2/profile/*/client/AssignDefenderToLoadout", a
     res.end();
 });
 
+// Assigning a Schematic to Defender
+express.post("/fortnite/api/game/v2/profile/*/client/AssignWeaponToDefender", async (req, res) => {
+    const profile = require(`./../profiles/${req.query.profileId || "campaign"}.json`);
+
+    // do not change any of these or you will end up breaking it
+    var ApplyProfileChanges = [];
+    var BaseRevision = profile.rvn || 0;
+    var QueryRevision = req.query.rvn || -1;
+    var StatChanged = false;
+
+    if (req.body.defenderId) {
+        profile.items[req.body.defenderId].attributes.weapon_schematic = req.body.weaponSchematicId || "";
+        StatChanged = true;
+    }
+
+    if (StatChanged == true) {
+        profile.rvn += 1;
+        profile.commandRevision += 1;
+
+        ApplyProfileChanges.push({
+            "changeType": "itemAttrChanged",
+            "itemId": req.body.defenderId,
+            "attributeName": "weapon_schematic",
+            "attributeValue": profile.items[req.body.defenderId].attributes.weapon_schematic
+        })
+
+        fs.writeFileSync(`./profiles/${req.query.profileId || "campaign"}.json`, JSON.stringify(profile, null, 2));
+    }
+
+    // this doesn't work properly on version v12.20 and above but whatever
+    if (QueryRevision != BaseRevision) {
+        ApplyProfileChanges = [{
+            "changeType": "fullProfileUpdate",
+            "profile": profile
+        }];
+    }
+
+    res.json({
+        "profileRevision": profile.rvn || 0,
+        "profileId": req.query.profileId || "campaign",
+        "profileChangesBaseRevision": BaseRevision,
+        "profileChanges": ApplyProfileChanges,
+        "profileCommandRevision": profile.commandRevision || 0,
+        "serverTime": new Date().toISOString(),
+        "responseVersion": 1
+    })
+    res.end();
+});
+
 // Clear hero loadout STW
 express.post("/fortnite/api/game/v2/profile/*/client/ClearHeroLoadout", async (req, res) => {
     const profile = require(`./../profiles/${req.query.profileId || "campaign"}.json`);
