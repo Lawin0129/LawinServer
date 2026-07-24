@@ -72,7 +72,7 @@
 - Discovery Tab
 - Leaderboards (v1)
 - Configurable backend sided in-game events - check out the Events section in config.ini for more details
-- Joining gameservers using the matchmaker - check out the GameServer seciton in config.ini for more details
+- Joining gameservers using the matchmaker - check out the GameServer section in config.ini for more details
 ##### * Included in the [LawinServer Addon](https://github.com/PRO100KatYT/LawinServerAddon). To install it, merge its `public` folder with the one in your LawinServer folder. [(Direct download link)](https://github.com/PRO100KatYT/LawinServerAddon/archive/refs/heads/main.zip)
 
 ## How to host/use LawinServer
