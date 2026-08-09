@@ -124,6 +124,10 @@ express.get("/account/api/public/account/*/externalAuths", async (req, res) => {
 })
 
 express.delete("/account/api/oauth/sessions/kill", async (req, res) => {
+    const authHeader = req.headers["authorization"];
+    if (!authHeader || !authHeader.toLowerCase().startsWith("bearer ")) {
+        return res.status(401).end();
+    }
     res.status(204);
     res.end();
 })
