@@ -34,7 +34,9 @@
               "basePrice": 500
             }
           ],
-          "meta": {},
+          "meta": {
+            "season_level": "5"
+          },
           "matchFilter": "",
           "filterWeight": 0,
           "appStoreId": [],
@@ -48,7 +50,12 @@
           "offerType": "StaticPrice",
           "giftInfo": {},
           "refundable": true,
-          "metaInfo": [],
+          "metaInfo": [
+            {
+              "key": "season_level",
+              "value": "5"
+            }
+          ],
           "displayAssetPath": "/Game/Catalog/DisplayAssets/DA_Featured_GliderMiG.DA_Featured_GliderMiG",
           "itemGrants": [
             {
@@ -79,7 +86,9 @@
               "basePrice": 1200
             }
           ],
-          "meta": {},
+          "meta": {
+            "season_level": "15"
+          },
           "matchFilter": "",
           "filterWeight": 0,
           "appStoreId": [],
@@ -93,7 +102,12 @@
           "offerType": "StaticPrice",
           "giftInfo": {},
           "refundable": true,
-          "metaInfo": [],
+          "metaInfo": [
+            {
+              "key": "season_level",
+              "value": "15"
+            }
+          ],
           "displayAssetPath": "/Game/Catalog/DisplayAssets/DA_Featured_SMaleHID017.DA_Featured_SMaleHID017",
           "itemGrants": [
             {
@@ -124,7 +138,9 @@
               "basePrice": 1200
             }
           ],
-          "meta": {},
+          "meta": {
+            "season_level": "20"
+          },
           "matchFilter": "",
           "filterWeight": 0,
           "appStoreId": [],
@@ -138,7 +154,12 @@
           "offerType": "StaticPrice",
           "giftInfo": {},
           "refundable": true,
-          "metaInfo": [],
+          "metaInfo": [
+            {
+              "key": "season_level",
+              "value": "20"
+            }
+          ],
           "displayAssetPath": "/Game/Catalog/DisplayAssets/DA_Featured_SFemaleHID028.DA_Featured_SFemaleHID028",
           "itemGrants": [
             {
@@ -169,7 +190,9 @@
               "basePrice": 1500
             }
           ],
-          "meta": {},
+          "meta": {
+            "season_level": "35"
+          },
           "matchFilter": "",
           "filterWeight": 0,
           "appStoreId": [],
@@ -183,7 +206,12 @@
           "offerType": "StaticPrice",
           "giftInfo": {},
           "refundable": true,
-          "metaInfo": [],
+          "metaInfo": [
+            {
+              "key": "season_level",
+              "value": "35"
+            }
+          ],
           "displayAssetPath": "/Game/Catalog/DisplayAssets/DA_Featured_PickaxeLockjaw.DA_Featured_PickaxeLockjaw",
           "itemGrants": [
             {
