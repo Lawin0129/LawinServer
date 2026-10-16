@@ -119,6 +119,19 @@ express.post("/epic/oauth/v2/token", async (req, res) => {
     })
 })
 
+express.post("/epic/oauth/v2/tokenInfo", async (req, res) => {
+    res.json({
+        "active": true,
+        "scope": "basic_profile friends_list openid offline_access presence",
+        "token_type": "bearer",
+        "expires_in": 28800,
+        "expires_at": "9999-12-31T23:59:59.999Z",
+        "account_id": Memory_CurrentAccountID,
+        "client_id": "lawinsclientidlol",
+        "application_id": "lawinsapplicationidlol"
+    })
+})
+
 express.get("/account/api/public/account/*/externalAuths", async (req, res) => {
     res.json([])
 })
