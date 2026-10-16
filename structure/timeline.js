@@ -2144,6 +2144,7 @@ express.get("/fortnite/api/calendar/v1/timeline", async (req, res) => {
             "EventFlag.STWBrainstorm",
             "EventFlag.STWFennix",
             "EventFlag.STWIrwin",
+            "EventFlag.STWMiniBoss",
             "EventFlag.Season10.Phase2",
             "EventFlag.Season10.Phase3",
             "EventFlag.Season11.Fortnitemares.Quests.Phase1",
