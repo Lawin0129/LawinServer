@@ -7739,6 +7739,10 @@ express.post("/fortnite/api/game/v2/profile/*/client/MarkItemSeen", async (req, 
                 continue;
             }
 
+            if (!profile.items.hasOwnProperty(req.body.itemIds[i])) {
+                continue;
+            }
+
             profile.items[req.body.itemIds[i]].attributes.item_seen = true;
 
             ApplyProfileChanges.push({
