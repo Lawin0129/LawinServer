@@ -2070,6 +2070,114 @@ express.get("/fortnite/api/calendar/v1/timeline", async (req, res) => {
                 "activeUntil": "9999-01-01T00:00:00.000Z",
                 "activeSince": "2020-01-01T00:00:00.000Z"
             })
+            break;
+        case 42:
+            activeEvents.push(
+            {
+                "eventType": "EventFlag.Event_S42_BlockStackCosmetics",
+                "activeUntil": "9999-01-01T00:00:00.000Z",
+                "activeSince": "2020-01-01T00:00:00.000Z"
+            },
+            {
+                "eventType": "EventFlag.Event_S42_SpriteMastery_P01",
+                "activeUntil": "9999-01-01T00:00:00.000Z",
+                "activeSince": "2020-01-01T00:00:00.000Z"
+            },
+            {
+                "eventType": "EventFlag.Event_S42_SpriteMastery_P02",
+                "activeUntil": "9999-01-01T00:00:00.000Z",
+                "activeSince": "2020-01-01T00:00:00.000Z"
+            },
+            {
+                "eventType": "EventFlag.Event_S42_SpriteMastery_P03",
+                "activeUntil": "9999-01-01T00:00:00.000Z",
+                "activeSince": "2020-01-01T00:00:00.000Z"
+            },
+            {
+                "eventType": "EventFlag.Event_S42_SpriteMastery_P04",
+                "activeUntil": "9999-01-01T00:00:00.000Z",
+                "activeSince": "2020-01-01T00:00:00.000Z"
+            },
+            {
+                "eventType": "EventFlag.Event_S42_SpriteMastery_P05",
+                "activeUntil": "9999-01-01T00:00:00.000Z",
+                "activeSince": "2020-01-01T00:00:00.000Z"
+            },
+            {
+                "eventType": "EventFlag.Event_S42_CosmicThunder_TutorialQuests",
+                "activeUntil": "9999-01-01T00:00:00.000Z",
+                "activeSince": "2020-01-01T00:00:00.000Z"
+            },
+            {
+                "eventType": "EventFlag.Event_S42_NarrowFlea",
+                "activeUntil": "9999-01-01T00:00:00.000Z",
+                "activeSince": "2020-01-01T00:00:00.000Z"
+            },
+            {
+                "eventType": "EventFlag.PreviousSeason_SpriteDust",
+                "activeUntil": "9999-01-01T00:00:00.000Z",
+                "activeSince": "2020-01-01T00:00:00.000Z"
+            },
+            {
+                "eventType": "EventFlag.ProgressionTrack_S42",
+                "activeUntil": "9999-01-01T00:00:00.000Z",
+                "activeSince": "2020-01-01T00:00:00.000Z"
+            },
+            {
+                "eventType": "EventFlag.Event_S42_Audiologs_4200",
+                "activeUntil": "9999-01-01T00:00:00.000Z",
+                "activeSince": "2020-01-01T00:00:00.000Z"
+            },
+            {
+                "eventType": "EventFlag.Event_S42_Story_BlockStack_BonusGoals",
+                "activeUntil": "9999-01-01T00:00:00.000Z",
+                "activeSince": "2020-01-01T00:00:00.000Z"
+            },
+            {
+                "eventType": "EventFlag.Event_S42_Story_BlockStack_P01",
+                "activeUntil": "9999-01-01T00:00:00.000Z",
+                "activeSince": "2020-01-01T00:00:00.000Z"
+            },
+            {
+                "eventType": "EventFlag.Event_S42_Story_BlockStack_P02",
+                "activeUntil": "9999-01-01T00:00:00.000Z",
+                "activeSince": "2020-01-01T00:00:00.000Z"
+            },
+            {
+                "eventType": "EventFlag.Event_S42_Story_HeroicTale_BonusGoals",
+                "activeUntil": "9999-01-01T00:00:00.000Z",
+                "activeSince": "2020-01-01T00:00:00.000Z"
+            },
+            {
+                "eventType": "EventFlag.Event_S42_Story_HeroicTale",
+                "activeUntil": "9999-01-01T00:00:00.000Z",
+                "activeSince": "2020-01-01T00:00:00.000Z"
+            },
+            {
+                "eventType": "EventFlag.Event_S42_Story_PhoenixKick_BonusGoals",
+                "activeUntil": "9999-01-01T00:00:00.000Z",
+                "activeSince": "2020-01-01T00:00:00.000Z"
+            },
+            {
+                "eventType": "EventFlag.Event_S42_Story_PhoenixKick",
+                "activeUntil": "9999-01-01T00:00:00.000Z",
+                "activeSince": "2020-01-01T00:00:00.000Z"
+            },
+            {
+                "eventType": "EventFlag.Event_S42_Story_SheerWill_BonusGoals",
+                "activeUntil": "9999-01-01T00:00:00.000Z",
+                "activeSince": "2020-01-01T00:00:00.000Z"
+            },
+            {
+                "eventType": "EventFlag.Event_S42_Story_SheerWill_P01",
+                "activeUntil": "9999-01-01T00:00:00.000Z",
+                "activeSince": "2020-01-01T00:00:00.000Z"
+            },
+            {
+                "eventType": "EventFlag.Event_S42_Story_SheerWill_P02",
+                "activeUntil": "9999-01-01T00:00:00.000Z",
+                "activeSince": "2020-01-01T00:00:00.000Z"
+            })
     }
 
     if (24.3 <= memory.build && memory.build <= 25) {
